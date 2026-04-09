@@ -1,4 +1,10 @@
-"""Verbatim helper functions from upstream persona agents."""
+"""Verbatim helper functions from upstream persona agents.
+Duplicate function names across personas are prefixed with a persona short-code.
+Short codes: wb=warren_buffett, cm=charlie_munger, bg=ben_graham, ba=bill_ackman,
+cw=cathie_wood, mb=michael_burry, nt=nassim_taleb, pl=peter_lynch, pf=phil_fisher,
+sd=stanley_druckenmiller, mp=mohnish_pabrai, rj=rakesh_jhunjhunwala,
+ad=aswath_damodaran, ga=growth_agent, ns=news_sentiment
+"""
 from __future__ import annotations
 import math, statistics
 from typing import Any
@@ -8,9 +14,9 @@ from ai_hedge.data.api import get_financial_metrics, search_line_items, get_mark
 from ai_hedge.data.models import FinancialMetrics, LineItem, InsiderTrade, CompanyNews, Price
 
 
-# ========================
+# ==========================
 # Warren Buffett helpers
-# ========================
+# ==========================
 
 def analyze_fundamentals(metrics: list) -> dict[str, any]:
     """Analyze company fundamentals based on Buffett's criteria."""
@@ -190,7 +196,7 @@ def analyze_moat(metrics: list) -> dict[str, any]:
         "details": "; ".join(reasoning) if reasoning else "Limited moat analysis available",
     }
 
-def analyze_management_quality(financial_line_items: list) -> dict[str, any]:
+def wb_analyze_management_quality(financial_line_items: list) -> dict[str, any]:
     """
     Checks for share dilution or consistent buybacks, and some dividend track record.
     A simplified approach:
@@ -358,7 +364,7 @@ def estimate_maintenance_capex(financial_line_items: list) -> float:
         # Use the higher of method 1 and 2
         return max(method_1, method_2)
 
-def calculate_intrinsic_value(financial_line_items: list) -> dict[str, any]:
+def wb_calculate_intrinsic_value(financial_line_items: list) -> dict[str, any]:
     """
     Calculate intrinsic value using enhanced DCF with owner earnings.
     Uses more sophisticated assumptions and conservative approach like Buffett.
@@ -593,9 +599,9 @@ def analyze_pricing_power(financial_line_items: list, metrics: list) -> dict[str
     }
 
 
-# ========================
+# ==========================
 # Charlie Munger helpers
-# ========================
+# ==========================
 
 def analyze_moat_strength(metrics: list, financial_line_items: list) -> dict:
     """
@@ -703,7 +709,7 @@ def analyze_moat_strength(metrics: list, financial_line_items: list) -> dict:
         
     }
 
-def analyze_management_quality(financial_line_items: list, insider_trades: list) -> dict:
+def cm_analyze_management_quality(financial_line_items: list, insider_trades: list) -> dict:
     """
     Evaluate management quality using Munger's criteria:
     - Capital allocation wisdom
@@ -1242,9 +1248,9 @@ def compute_confidence(analysis: dict, signal: str) -> int:
     return max(10, min(100, conf))
 
 
-# ========================
+# ==========================
 # Ben Graham helpers
-# ========================
+# ==========================
 
 def analyze_earnings_stability(metrics: list, financial_line_items: list) -> dict:
     """
@@ -1429,9 +1435,9 @@ def analyze_valuation_graham(financial_line_items: list, market_cap: float) -> d
     return {"score": score, "details": "; ".join(details)}
 
 
-# ========================
+# ==========================
 # Bill Ackman helpers
-# ========================
+# ==========================
 
 def analyze_business_quality(metrics: list, financial_line_items: list) -> dict:
     """
@@ -1628,7 +1634,7 @@ def analyze_activism_potential(financial_line_items: list) -> dict:
     
     return {"score": score, "details": "; ".join(details)}
 
-def analyze_valuation(financial_line_items: list, market_cap: float) -> dict:
+def ba_analyze_valuation(financial_line_items: list, market_cap: float) -> dict:
     """
     Ackman invests in companies trading at a discount to intrinsic value.
     Uses a simplified DCF with FCF as a proxy, plus margin of safety analysis.
@@ -1692,9 +1698,9 @@ def analyze_valuation(financial_line_items: list, market_cap: float) -> dict:
     }
 
 
-# ========================
+# ==========================
 # Cathie Wood helpers
-# ========================
+# ==========================
 
 def analyze_disruptive_potential(metrics: list, financial_line_items: list) -> dict:
     """
@@ -1946,9 +1952,9 @@ def analyze_cathie_wood_valuation(financial_line_items: list, market_cap: float)
     return {"score": score, "details": "; ".join(details), "intrinsic_value": intrinsic_value, "margin_of_safety": margin_of_safety}
 
 
-# ========================
+# ==========================
 # Michael Burry helpers
-# ========================
+# ==========================
 
 def _analyze_value(metrics, line_items, market_cap):
     """Free cash‑flow yield, EV/EBIT, other classic deep‑value metrics."""
@@ -2080,9 +2086,18 @@ def _analyze_contrarian_sentiment(news):
     return {"score": score, "max_score": max_score, "details": "; ".join(details)}
 
 
-# ========================
+# ==========================
 # Nassim Taleb helpers
-# ========================
+# ==========================
+
+def safe_float(value, default=0.0):
+    """Safely convert a value to float, handling NaN cases."""
+    try:
+        if pd.isna(value) or np.isnan(value):
+            return default
+        return float(value)
+    except (ValueError, TypeError, OverflowError):
+        return default
 
 def analyze_tail_risk(prices_df: pd.DataFrame) -> dict[str, any]:
     """Assess fat tails, skewness, tail ratio, and max drawdown."""
@@ -2565,9 +2580,9 @@ def analyze_black_swan_sentinel(news: list, prices_df: pd.DataFrame) -> dict[str
     return {"score": score, "max_score": 4, "details": "; ".join(reasoning)}
 
 
-# ========================
+# ==========================
 # Peter Lynch helpers
-# ========================
+# ==========================
 
 def analyze_lynch_growth(financial_line_items: list) -> dict:
     """
@@ -2770,7 +2785,7 @@ def analyze_lynch_valuation(financial_line_items: list, market_cap: float | None
     final_score = min(10, (raw_score / 5) * 10)
     return {"score": final_score, "details": "; ".join(details)}
 
-def analyze_sentiment(news_items: list) -> dict:
+def pl_analyze_sentiment(news_items: list) -> dict:
     """
     Basic news sentiment check. Negative headlines weigh on the final score.
     """
@@ -2800,7 +2815,7 @@ def analyze_sentiment(news_items: list) -> dict:
 
     return {"score": score, "details": "; ".join(details)}
 
-def analyze_insider_activity(insider_trades: list) -> dict:
+def pl_analyze_insider_activity(insider_trades: list) -> dict:
     """
     Simple insider-trade analysis:
       - If there's heavy insider buying, it's a positive sign.
@@ -2845,9 +2860,9 @@ def analyze_insider_activity(insider_trades: list) -> dict:
     return {"score": score, "details": "; ".join(details)}
 
 
-# ========================
+# ==========================
 # Phil Fisher helpers
-# ========================
+# ==========================
 
 def analyze_fisher_growth_quality(financial_line_items: list) -> dict:
     """
@@ -3139,7 +3154,7 @@ def analyze_fisher_valuation(financial_line_items: list, market_cap: float | Non
     final_score = min(10, (raw_score / 4) * 10)
     return {"score": final_score, "details": "; ".join(details)}
 
-def analyze_insider_activity(insider_trades: list) -> dict:
+def pf_analyze_insider_activity(insider_trades: list) -> dict:
     """
     Simple insider-trade analysis:
       - If there's heavy insider buying, we nudge the score up.
@@ -3180,7 +3195,7 @@ def analyze_insider_activity(insider_trades: list) -> dict:
 
     return {"score": score, "details": "; ".join(details)}
 
-def analyze_sentiment(news_items: list) -> dict:
+def pf_analyze_sentiment(news_items: list) -> dict:
     """
     Basic news sentiment: negative keyword check vs. overall volume.
     """
@@ -3208,9 +3223,9 @@ def analyze_sentiment(news_items: list) -> dict:
     return {"score": score, "details": "; ".join(details)}
 
 
-# ========================
+# ==========================
 # Stanley Druckenmiller helpers
-# ========================
+# ==========================
 
 def analyze_growth_and_momentum(financial_line_items: list, prices: list) -> dict:
     """
@@ -3318,7 +3333,7 @@ def analyze_growth_and_momentum(financial_line_items: list, prices: list) -> dic
 
     return {"score": final_score, "details": "; ".join(details)}
 
-def analyze_insider_activity(insider_trades: list) -> dict:
+def sd_analyze_insider_activity(insider_trades: list) -> dict:
     """
     Simple insider-trade analysis:
       - If there's heavy insider buying, we nudge the score up.
@@ -3364,7 +3379,7 @@ def analyze_insider_activity(insider_trades: list) -> dict:
 
     return {"score": score, "details": "; ".join(details)}
 
-def analyze_sentiment(news_items: list) -> dict:
+def sd_analyze_sentiment(news_items: list) -> dict:
     """
     Basic news sentiment: negative keyword check vs. overall volume.
     """
@@ -3571,9 +3586,9 @@ def analyze_druckenmiller_valuation(financial_line_items: list, market_cap: floa
     return {"score": final_score, "details": "; ".join(details)}
 
 
-# ========================
+# ==========================
 # Mohnish Pabrai helpers
-# ========================
+# ==========================
 
 def analyze_downside_protection(financial_line_items: list) -> dict[str, any]:
     """Assess balance-sheet strength and downside resiliency (capital preservation first)."""
@@ -3749,9 +3764,9 @@ def analyze_double_potential(financial_line_items: list, market_cap: float | Non
     return {"score": min(10, score), "details": "; ".join(details)}
 
 
-# ========================
+# ==========================
 # Rakesh Jhunjhunwala helpers
-# ========================
+# ==========================
 
 def analyze_profitability(financial_line_items: list) -> dict[str, any]:
     """
@@ -4083,7 +4098,7 @@ def assess_quality_metrics(financial_line_items: list) -> float:
     # Return average quality score
     return sum(quality_factors) / len(quality_factors) if quality_factors else 0.5
 
-def calculate_intrinsic_value(financial_line_items: list, market_cap: float) -> float:
+def rj_calculate_intrinsic_value(financial_line_items: list, market_cap: float) -> float:
     """
     Calculate intrinsic value using Rakesh Jhunjhunwala's approach:
     - Focus on earnings power and growth
@@ -4225,9 +4240,9 @@ def analyze_rakesh_jhunjhunwala_style(
     }
 
 
-# ========================
+# ==========================
 # Aswath Damodaran helpers
-# ========================
+# ==========================
 
 def analyze_growth_and_reinvestment(metrics: list, line_items: list) -> dict[str, any]:
     """
@@ -4437,9 +4452,9 @@ def estimate_cost_of_equity(beta: float | None) -> float:
     return risk_free + beta * erp
 
 
-# ========================
+# ==========================
 # Growth Agent helpers
-# ========================
+# ==========================
 
 def _calculate_trend(data: list[float | None]) -> float:
     """Calculates the slope of the trend line for the given data."""
@@ -4512,7 +4527,7 @@ def analyze_growth_trends(metrics: list) -> dict:
         "fcf_trend": fcf_trend
     }
 
-def analyze_valuation(metrics) -> dict:
+def ga_analyze_valuation(metrics) -> dict:
     """Analyzes valuation from a growth perspective."""
     
     peg_ratio = metrics.peg_ratio
@@ -4613,10 +4628,40 @@ def analyze_insider_conviction(trades: list) -> dict:
         "sells": sells
     }
 
+def check_financial_health(metrics) -> dict:
+    """Checks the company's financial health."""
+    
+    debt_to_equity = metrics.debt_to_equity
+    current_ratio = metrics.current_ratio
+    
+    score = 1.0
+    
+    # Debt to Equity
+    if debt_to_equity is not None:
+        if debt_to_equity > 1.5:
+            score -= 0.5
+        elif debt_to_equity > 0.8:
+            score -= 0.2
+            
+    # Current Ratio
+    if current_ratio is not None:
+        if current_ratio < 1.0:
+            score -= 0.5
+        elif current_ratio < 1.5:
+            score -= 0.2
+            
+    score = max(score, 0.0)
+    
+    return {
+        "score": score,
+        "debt_to_equity": debt_to_equity,
+        "current_ratio": current_ratio
+    }
 
-# ========================
+
+# ==========================
 # News Sentiment helpers
-# ========================
+# ==========================
 
 def _calculate_confidence_score(
     sentiment_confidences: dict,
