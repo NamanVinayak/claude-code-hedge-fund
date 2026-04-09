@@ -19,9 +19,6 @@ from ai_hedge.data.models import (
 from ai_hedge.data.providers.yfinance_provider import (
     get_prices_yf,
     get_market_cap_yf,
-    get_income_stmt_yf,
-    get_balance_sheet_yf,
-    get_cash_flow_yf,
 )
 from ai_hedge.data.providers.sec_edgar_provider import (
     get_cik,
@@ -340,7 +337,8 @@ def _build_metrics_for_period(
 
     # Turnover ratios
     asset_turnover = _safe_div(revenue, total_assets)
-    inventory_turnover = _safe_div(revenue, inventory) if inventory and inventory > 0 else None
+    cogs = (revenue - gross_profit) if (revenue is not None and gross_profit is not None) else None
+    inventory_turnover = _safe_div(cogs, inventory) if (cogs and inventory and inventory > 0) else None
     receivables_turnover = _safe_div(revenue, accounts_receivable) if accounts_receivable and accounts_receivable > 0 else None
     dso = None
     if receivables_turnover and receivables_turnover > 0:
@@ -498,6 +496,17 @@ def get_financial_metrics(
         bv_dict = _series_dict(bv_series)
         eps_dict = _series_dict(eps_series)
 
+        def _prior_growth(dates, d_dict, current_rp):
+            prior_dates = [d for d in dates if d < current_rp]
+            if not prior_dates:
+                return None
+            prior = prior_dates[-1]
+            current_dates = [d for d in dates if d <= current_rp]
+            if not current_dates:
+                return None
+            current = current_dates[-1]
+            return _growth(d_dict.get(current), d_dict.get(prior))
+
         # Compute per-period growth rates
         if results:
             # Pre-build FCF dicts once
@@ -531,17 +540,6 @@ def get_financial_metrics(
                         m.free_cash_flow_growth = _growth(fcf1, fcf0)
                 else:
                     # For annual, find the prior period for each series
-                    def _prior_growth(dates, d_dict, current_rp):
-                        prior_dates = [d for d in dates if d < current_rp]
-                        if not prior_dates:
-                            return None
-                        prior = prior_dates[-1]
-                        current_dates = [d for d in dates if d <= current_rp]
-                        if not current_dates:
-                            return None
-                        current = current_dates[-1]
-                        return _growth(d_dict.get(current), d_dict.get(prior))
-
                     m.revenue_growth = _prior_growth(rev_dates, rev_dict, rp)
                     m.earnings_growth = _prior_growth(ni_dates, ni_dict, rp)
                     m.book_value_growth = _prior_growth(bv_dates, bv_dict, rp)

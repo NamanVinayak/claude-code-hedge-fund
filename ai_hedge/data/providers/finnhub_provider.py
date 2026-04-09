@@ -1,17 +1,25 @@
 """Finnhub data provider for insider trades and company news."""
 
 import os
-import finnhub
 from dotenv import load_dotenv
+
+try:
+    import finnhub as _finnhub_lib
+    _FINNHUB_AVAILABLE = True
+except ImportError:
+    _finnhub_lib = None
+    _FINNHUB_AVAILABLE = False
 
 load_dotenv()
 
 
 def _client():
+    if not _FINNHUB_AVAILABLE:
+        return None
     key = os.getenv("FINNHUB_API_KEY", "")
     if not key:
         return None
-    return finnhub.Client(api_key=key)
+    return _finnhub_lib.Client(api_key=key)
 
 
 def get_insider_trades_fh(ticker: str, start_date: str, end_date: str, limit: int = 1000) -> list[dict]:
@@ -31,7 +39,7 @@ def get_insider_trades_fh(ticker: str, start_date: str, end_date: str, limit: in
                 "ticker": ticker,
                 "issuer": None,
                 "name": t.get("name"),
-                "title": t.get("share"),  # Finnhub doesn't provide title directly
+                "title": None,  # Finnhub doesn't provide job titles
                 "is_board_director": None,
                 "transaction_date": t.get("transactionDate"),
                 "transaction_shares": float(t.get("change", 0)) if t.get("change") is not None else None,
@@ -65,7 +73,7 @@ def get_company_news_fh(ticker: str, start_date: str, end_date: str, limit: int 
             dt = n.get("datetime")
             if dt:
                 import datetime
-                date_str = datetime.datetime.utcfromtimestamp(dt).strftime("%Y-%m-%d")
+                date_str = datetime.datetime.fromtimestamp(dt, tz=datetime.timezone.utc).strftime("%Y-%m-%d")
             else:
                 date_str = ""
             results.append({

@@ -92,8 +92,9 @@ def get_line_item_history(cik: str, concept: str, unit: str = "USD") -> list[dic
         val = entry.get("val")
         if val is None:
             continue
-        # Prefer existing entry if already present (avoid duplicates from amended filings)
-        if key not in seen:
+        # Keep the entry with the largest accn (amended filings have a higher accn)
+        existing = seen.get(key)
+        if existing is None or entry.get("accn", "") > existing.get("accn", ""):
             seen[key] = {
                 "end": end,
                 "val": float(val),
