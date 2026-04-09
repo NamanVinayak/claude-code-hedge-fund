@@ -576,12 +576,42 @@ def _rakesh_jhunjhunwala(m: dict, ticker: str) -> dict:
     line_items = m["line_items"]
     market_cap = m["market_cap"]
 
-    growth = analyze_growth(line_items)
-    profitability = analyze_profitability(line_items)
-    balance = analyze_balance_sheet(line_items)
-    cashflow = analyze_cash_flow(line_items)
-    mgmt = analyze_management_actions(line_items)
-    intrinsic_value = rj_calculate_intrinsic_value(line_items, market_cap)
+    # Each helper may fail on ETFs/instruments lacking financial statements
+    try:
+        growth = analyze_growth(line_items)
+    except Exception as exc:
+        print(f"  [WARN] rakesh_jhunjhunwala/{ticker}: analyze_growth failed: {exc}")
+        growth = {"score": 0, "details": "No data available (ETF or missing financials)"}
+
+    try:
+        profitability = analyze_profitability(line_items)
+    except Exception as exc:
+        print(f"  [WARN] rakesh_jhunjhunwala/{ticker}: analyze_profitability failed: {exc}")
+        profitability = {"score": 0, "details": "No data available"}
+
+    try:
+        balance = analyze_balance_sheet(line_items)
+    except Exception as exc:
+        print(f"  [WARN] rakesh_jhunjhunwala/{ticker}: analyze_balance_sheet failed: {exc}")
+        balance = {"score": 0, "details": "No data available"}
+
+    try:
+        cashflow = analyze_cash_flow(line_items)
+    except Exception as exc:
+        print(f"  [WARN] rakesh_jhunjhunwala/{ticker}: analyze_cash_flow failed: {exc}")
+        cashflow = {"score": 0, "details": "No data available"}
+
+    try:
+        mgmt = analyze_management_actions(line_items)
+    except Exception as exc:
+        print(f"  [WARN] rakesh_jhunjhunwala/{ticker}: analyze_management_actions failed: {exc}")
+        mgmt = {"score": 0, "details": "No data available"}
+
+    try:
+        intrinsic_value = rj_calculate_intrinsic_value(line_items, market_cap)
+    except Exception as exc:
+        print(f"  [WARN] rakesh_jhunjhunwala/{ticker}: rj_calculate_intrinsic_value failed: {exc}")
+        intrinsic_value = None
 
     total_score = (
         growth["score"] + profitability["score"] + balance["score"]
@@ -594,7 +624,11 @@ def _rakesh_jhunjhunwala(m: dict, ticker: str) -> dict:
         if intrinsic_value and market_cap else None
     )
 
-    quality_score = assess_quality_metrics(line_items)
+    try:
+        quality_score = assess_quality_metrics(line_items)
+    except Exception as exc:
+        print(f"  [WARN] rakesh_jhunjhunwala/{ticker}: assess_quality_metrics failed: {exc}")
+        quality_score = 0.5
 
     if margin_of_safety is not None and margin_of_safety >= 0.30:
         signal = "bullish"
@@ -608,11 +642,15 @@ def _rakesh_jhunjhunwala(m: dict, ticker: str) -> dict:
         else:
             signal = "neutral"
 
-    intrinsic_value_analysis = analyze_rakesh_jhunjhunwala_style(
-        line_items,
-        intrinsic_value=intrinsic_value,
-        current_price=market_cap,
-    )
+    try:
+        intrinsic_value_analysis = analyze_rakesh_jhunjhunwala_style(
+            line_items,
+            intrinsic_value=intrinsic_value,
+            current_price=market_cap,
+        )
+    except Exception as exc:
+        print(f"  [WARN] rakesh_jhunjhunwala/{ticker}: analyze_rakesh_jhunjhunwala_style failed: {exc}")
+        intrinsic_value_analysis = {"details": "Analysis unavailable (ETF or missing financials)"}
 
     return {
         "signal": signal,

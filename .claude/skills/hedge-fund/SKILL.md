@@ -35,28 +35,35 @@ Set variables: `MODE`, `TICKERS`, `RUN_ID`.
 
 This fetches all raw data, saves metadata.json, builds invest persona facts, and conditionally builds swing/daytrade facts based on mode.
 
-## Step 3 — Dispatch LLM subagents sequentially
+## Step 3 — Dispatch LLM subagents in batches of 4
 
-Dispatch agents **ONE AT A TIME**. For each agent, send one Agent tool call, wait for it to complete, then dispatch the next. This avoids API rate limits.
+Dispatch agents **in batches of 4**. Send 4 Agent tool calls in a SINGLE message, wait for all 4 to complete, then send the next batch.
 
-### If MODE is `invest`: dispatch these 14 agents sequentially (one at a time, wait for completion)
+### If MODE is `invest`: dispatch these 14 agents in 4 batches
 
 (`growth_analyst_agent` is already computed deterministically in Step 2 — do NOT dispatch it.)
 
-1. `warren_buffett`
-2. `charlie_munger`
-3. `ben_graham`
-4. `bill_ackman`
-5. `cathie_wood`
-6. `michael_burry`
-7. `nassim_taleb`
-8. `peter_lynch`
-9. `phil_fisher`
-10. `stanley_druckenmiller`
-11. `mohnish_pabrai`
-12. `rakesh_jhunjhunwala`
-13. `aswath_damodaran`
-14. `news_sentiment`
+**Batch 1** (send all 4 in one message, wait for completion):
+- `warren_buffett`
+- `charlie_munger`
+- `ben_graham`
+- `bill_ackman`
+
+**Batch 2**:
+- `cathie_wood`
+- `michael_burry`
+- `nassim_taleb`
+- `peter_lynch`
+
+**Batch 3**:
+- `phil_fisher`
+- `stanley_druckenmiller`
+- `mohnish_pabrai`
+- `rakesh_jhunjhunwala`
+
+**Batch 4**:
+- `aswath_damodaran`
+- `news_sentiment`
 
 For each agent, use this prompt template for `{AGENT}`:
 
@@ -82,17 +89,22 @@ Use exactly the schema from ai_hedge/schemas.py for this persona.
 
 After ALL 14 agents complete, proceed to Step 4.
 
-### If MODE is `swing`: dispatch these 9 agents sequentially (one at a time, wait for completion)
+### If MODE is `swing`: dispatch these 9 agents in 3 batches
 
-1. `swing_trend_follower`
-2. `swing_pullback_trader`
-3. `swing_breakout_trader`
-4. `swing_momentum_ranker`
-5. `swing_mean_reversion`
-6. `swing_catalyst_trader`
-7. `swing_sector_rotation`
-8. `stanley_druckenmiller`
-9. `news_sentiment`
+**Batch 1** (send all 4 in one message, wait for completion):
+- `swing_trend_follower`
+- `swing_pullback_trader`
+- `swing_breakout_trader`
+- `swing_momentum_ranker`
+
+**Batch 2**:
+- `swing_mean_reversion`
+- `swing_catalyst_trader`
+- `swing_sector_rotation`
+- `stanley_druckenmiller`
+
+**Batch 3**:
+- `news_sentiment`
 
 For each agent, use this prompt template for `{AGENT}`:
 
@@ -117,17 +129,22 @@ Write your output to: runs/{RUN_ID}/signals/{AGENT}.json
 
 After ALL 9 agents complete, proceed to Step 4.
 
-### If MODE is `daytrade`: dispatch these 9 agents sequentially (one at a time, wait for completion)
+### If MODE is `daytrade`: dispatch these 9 agents in 3 batches
 
-1. `dt_vwap_trader`
-2. `dt_momentum_scalper`
-3. `dt_mean_reversion`
-4. `dt_breakout_hunter`
-5. `dt_gap_analyst`
-6. `dt_volume_profiler`
-7. `dt_pattern_reader`
-8. `dt_stat_arb`
-9. `dt_news_catalyst`
+**Batch 1** (send all 4 in one message, wait for completion):
+- `dt_vwap_trader`
+- `dt_momentum_scalper`
+- `dt_mean_reversion`
+- `dt_breakout_hunter`
+
+**Batch 2**:
+- `dt_gap_analyst`
+- `dt_volume_profiler`
+- `dt_pattern_reader`
+- `dt_stat_arb`
+
+**Batch 3**:
+- `dt_news_catalyst`
 
 For each agent, use this prompt template for `{AGENT}`:
 
@@ -151,47 +168,59 @@ Write your output to: runs/{RUN_ID}/signals/{AGENT}.json
 
 After ALL 9 agents complete, proceed to Step 4.
 
-### If MODE is `research`: dispatch ALL 30 agents sequentially (one at a time, wait for completion)
+### If MODE is `research`: dispatch ALL 30 agents in 9 batches
 
-Dispatch all agents one at a time in this order. Use the invest template for invest agents, swing template for swing agents, daytrade template for daytrade agents.
+Use the invest template for invest agents, swing template for swing agents, daytrade template for daytrade agents.
 
-Note: `stanley_druckenmiller` and `news_sentiment` appear in both invest and swing lists. Only dispatch each once (use the invest template — their facts file is the same).
+Note: `stanley_druckenmiller` and `news_sentiment` appear in both invest and swing lists. Only dispatch each once (in invest batches — their facts file is the same). Do NOT dispatch them again in swing batches.
 
-**Invest agents (14):**
-1. `warren_buffett`
-2. `charlie_munger`
-3. `ben_graham`
-4. `bill_ackman`
-5. `cathie_wood`
-6. `michael_burry`
-7. `nassim_taleb`
-8. `peter_lynch`
-9. `phil_fisher`
-10. `stanley_druckenmiller`
-11. `mohnish_pabrai`
-12. `rakesh_jhunjhunwala`
-13. `aswath_damodaran`
-14. `news_sentiment`
+**Batch 1** (invest — send all 4 in one message, wait for completion):
+- `warren_buffett`
+- `charlie_munger`
+- `ben_graham`
+- `bill_ackman`
 
-**Swing-only agents (7):**
-15. `swing_trend_follower`
-16. `swing_pullback_trader`
-17. `swing_breakout_trader`
-18. `swing_momentum_ranker`
-19. `swing_mean_reversion`
-20. `swing_catalyst_trader`
-21. `swing_sector_rotation`
+**Batch 2** (invest):
+- `cathie_wood`
+- `michael_burry`
+- `nassim_taleb`
+- `peter_lynch`
 
-**Day-trade agents (9):**
-22. `dt_vwap_trader`
-23. `dt_momentum_scalper`
-24. `dt_mean_reversion`
-25. `dt_breakout_hunter`
-26. `dt_gap_analyst`
-27. `dt_volume_profiler`
-28. `dt_pattern_reader`
-29. `dt_stat_arb`
-30. `dt_news_catalyst`
+**Batch 3** (invest):
+- `phil_fisher`
+- `stanley_druckenmiller`
+- `mohnish_pabrai`
+- `rakesh_jhunjhunwala`
+
+**Batch 4** (invest):
+- `aswath_damodaran`
+- `news_sentiment`
+
+**Batch 5** (swing):
+- `swing_trend_follower`
+- `swing_pullback_trader`
+- `swing_breakout_trader`
+- `swing_momentum_ranker`
+
+**Batch 6** (swing):
+- `swing_mean_reversion`
+- `swing_catalyst_trader`
+- `swing_sector_rotation`
+
+**Batch 7** (daytrade):
+- `dt_vwap_trader`
+- `dt_momentum_scalper`
+- `dt_mean_reversion`
+- `dt_breakout_hunter`
+
+**Batch 8** (daytrade):
+- `dt_gap_analyst`
+- `dt_volume_profiler`
+- `dt_pattern_reader`
+- `dt_stat_arb`
+
+**Batch 9** (daytrade):
+- `dt_news_catalyst`
 
 After ALL 30 agents complete, proceed to Step 4 (skip Step 4 for research, go to Step 5).
 

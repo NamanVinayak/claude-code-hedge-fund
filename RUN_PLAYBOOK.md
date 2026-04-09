@@ -32,18 +32,25 @@ This command:
 
 ---
 
-## STEP 3 — Dispatch LLM subagents sequentially
+## STEP 3 — Dispatch LLM subagents in batches of 4
 
-Dispatch agents **one at a time**. Send one Agent tool call, wait for it to complete, then dispatch the next. This avoids API rate limits. Which agents to dispatch depends on mode:
+Dispatch agents **in batches of 4**. Send 4 Agent tool calls in a SINGLE message, wait for all 4 to complete, then send the next batch. Which agents to dispatch depends on mode:
 
-### Invest mode (14 agents)
+### Invest mode (14 agents, 4 batches)
 
 `growth_analyst_agent` is skipped — already computed deterministically in Step 2.
 
-Personas:
-`warren_buffett`, `charlie_munger`, `ben_graham`, `bill_ackman`, `cathie_wood`,
-`michael_burry`, `nassim_taleb`, `peter_lynch`, `phil_fisher`, `stanley_druckenmiller`,
-`mohnish_pabrai`, `rakesh_jhunjhunwala`, `aswath_damodaran`, `news_sentiment`
+**Batch 1** (send all 4 in one message, wait for completion):
+`warren_buffett`, `charlie_munger`, `ben_graham`, `bill_ackman`
+
+**Batch 2**:
+`cathie_wood`, `michael_burry`, `nassim_taleb`, `peter_lynch`
+
+**Batch 3**:
+`phil_fisher`, `stanley_druckenmiller`, `mohnish_pabrai`, `rakesh_jhunjhunwala`
+
+**Batch 4**:
+`aswath_damodaran`, `news_sentiment`
 
 Prompt template for each persona:
 
@@ -67,12 +74,16 @@ Write your output to: runs/{RUN_ID}/signals/{PERSONA}.json
 Use exactly the schema from ai_hedge/schemas.py for this persona.
 ```
 
-### Swing mode (9 agents)
+### Swing mode (9 agents, 3 batches)
 
-Strategies:
-`swing_trend_follower`, `swing_pullback_trader`, `swing_breakout_trader`, `swing_momentum_ranker`,
-`swing_mean_reversion`, `swing_catalyst_trader`, `swing_sector_rotation`,
-`stanley_druckenmiller`, `news_sentiment`
+**Batch 1** (send all 4 in one message, wait for completion):
+`swing_trend_follower`, `swing_pullback_trader`, `swing_breakout_trader`, `swing_momentum_ranker`
+
+**Batch 2**:
+`swing_mean_reversion`, `swing_catalyst_trader`, `swing_sector_rotation`, `stanley_druckenmiller`
+
+**Batch 3**:
+`news_sentiment`
 
 Prompt template for each strategy:
 
@@ -94,11 +105,15 @@ Return a JSON object mapping each ticker to your signal:
 Write your output to: runs/{RUN_ID}/signals/{STRATEGY}.json
 ```
 
-### Day-trade mode (9 agents)
+### Day-trade mode (9 agents, 3 batches)
 
-Strategies:
-`dt_vwap_trader`, `dt_momentum_scalper`, `dt_mean_reversion`, `dt_breakout_hunter`,
-`dt_gap_analyst`, `dt_volume_profiler`, `dt_pattern_reader`, `dt_stat_arb`,
+**Batch 1** (send all 4 in one message, wait for completion):
+`dt_vwap_trader`, `dt_momentum_scalper`, `dt_mean_reversion`, `dt_breakout_hunter`
+
+**Batch 2**:
+`dt_gap_analyst`, `dt_volume_profiler`, `dt_pattern_reader`, `dt_stat_arb`
+
+**Batch 3**:
 `dt_news_catalyst`
 
 Prompt template for each strategy:
@@ -121,9 +136,16 @@ Return a JSON object mapping each ticker to your signal:
 Write your output to: runs/{RUN_ID}/signals/{STRATEGY}.json
 ```
 
-### Research mode (30 agents)
+### Research mode (30 agents, 9 batches)
 
-Dispatch ALL agents from invest + swing + daytrade modes sequentially, one at a time. All 14 invest personas + 7 swing-only strategies + 9 day-trade strategies (30 total). `stanley_druckenmiller` and `news_sentiment` appear in both invest and swing — dispatch each once only.
+Dispatch ALL agents from invest + swing + daytrade modes in batches of 4. All 14 invest personas + 7 swing-only strategies + 9 day-trade strategies (30 total). `stanley_druckenmiller` and `news_sentiment` appear in both invest and swing — dispatch each once only (in invest batches).
+
+**Batches 1-4**: Same as invest mode batches above.
+**Batch 5**: `swing_trend_follower`, `swing_pullback_trader`, `swing_breakout_trader`, `swing_momentum_ranker`
+**Batch 6**: `swing_mean_reversion`, `swing_catalyst_trader`, `swing_sector_rotation`
+**Batch 7**: `dt_vwap_trader`, `dt_momentum_scalper`, `dt_mean_reversion`, `dt_breakout_hunter`
+**Batch 8**: `dt_gap_analyst`, `dt_volume_profiler`, `dt_pattern_reader`, `dt_stat_arb`
+**Batch 9**: `dt_news_catalyst`
 
 ---
 
