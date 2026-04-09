@@ -13,35 +13,28 @@ echo "Run ID: $RUN_ID"
 
 ---
 
-## STEP 2 — Fetch raw data
+## STEP 2 — Fetch raw data + build facts bundles
 
 ```bash
 python -m ai_hedge.runner.prepare --tickers TICKER1,TICKER2 --run-id $RUN_ID
 ```
 
-Creates `runs/$RUN_ID/raw/<TICKER>.json` for each ticker with:
-- financial metrics, line items, market cap, insider trades, company news, prices
+This single command does two things:
+1. Fetches all raw financial data → `runs/$RUN_ID/raw/<TICKER>.json`
+2. Automatically calls `facts_builder` → `runs/$RUN_ID/facts/<persona>__<ticker>.json` for each persona × ticker
+3. Also writes `runs/$RUN_ID/signals/growth_analyst_agent.json` (fully deterministic, no subagent needed)
 
 ---
 
-## STEP 3 — Build facts bundles
+## STEP 3 — Dispatch 14 persona subagents IN PARALLEL
 
-```bash
-python -m ai_hedge.personas.facts_builder --tickers TICKER1,TICKER2 --run-id $RUN_ID
-```
-
-Creates `runs/$RUN_ID/facts/<persona>__<ticker>.json` for each persona × ticker combo.
-
----
-
-## STEP 4 — Dispatch 15 persona subagents IN PARALLEL
-
-Send **all 15 Agent tool calls in a single message** (one per persona).
+Send **all 14 Agent tool calls in a single message** (one per persona).
+`growth_analyst_agent` is skipped — it was already computed deterministically in Step 2.
 
 Personas:
 `warren_buffett`, `charlie_munger`, `ben_graham`, `bill_ackman`, `cathie_wood`,
 `michael_burry`, `nassim_taleb`, `peter_lynch`, `phil_fisher`, `stanley_druckenmiller`,
-`mohnish_pabrai`, `rakesh_jhunjhunwala`, `aswath_damodaran`, `growth_agent`, `news_sentiment`
+`mohnish_pabrai`, `rakesh_jhunjhunwala`, `aswath_damodaran`, `news_sentiment`
 
 Prompt template for each persona (replace `{PERSONA}`, `{RUN_ID}`, `{TICKERS}`):
 
@@ -67,13 +60,13 @@ Use exactly the schema from ai_hedge/schemas.py for this persona.
 
 ---
 
-## STEP 5 — Aggregate signals
+## STEP 4 — Aggregate signals
 
 ```bash
 python -m ai_hedge.runner.aggregate --run-id $RUN_ID --tickers TICKER1,TICKER2 --cash 100000
 ```
 
-- Loads all persona signals from `runs/$RUN_ID/signals/*.json`
+- Loads all persona signals from `runs/$RUN_ID/signals/*.json` (includes growth_analyst_agent written in Step 2)
 - Runs 4 deterministic agents: fundamentals, technicals, valuation, sentiment
 - Runs risk manager
 - Computes allowed actions given portfolio limits
@@ -85,7 +78,7 @@ Optional flags:
 
 ---
 
-## STEP 6 — Portfolio manager subagent
+## STEP 5 — Portfolio manager subagent
 
 Dispatch **one** Agent tool call:
 
@@ -111,7 +104,7 @@ Write the output to: runs/{RUN_ID}/decisions.json
 
 ---
 
-## STEP 7 — Display results
+## STEP 6 — Display results
 
 ```bash
 python -m ai_hedge.runner.finalize --run-id $RUN_ID
