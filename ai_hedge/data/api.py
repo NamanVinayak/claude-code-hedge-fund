@@ -66,6 +66,8 @@ def prices_to_df(prices: list[Price]) -> pd.DataFrame:
     df = pd.DataFrame([p.model_dump() for p in prices])
     df["Date"] = pd.to_datetime(df["time"])
     df.set_index("Date", inplace=True)
+    if "time" in df.columns:
+        df.drop(columns=["time"], inplace=True)
     for col in ["open", "close", "high", "low", "volume"]:
         df[col] = pd.to_numeric(df[col], errors="coerce")
     df.sort_index(inplace=True)
@@ -496,33 +498,63 @@ def get_financial_metrics(
         bv_dict = _series_dict(bv_series)
         eps_dict = _series_dict(eps_series)
 
-        # For TTM result, use the most recent annual pair for growth
+        # Compute per-period growth rates
         if results:
-            dates = sorted(rev_dict.keys())
-            if len(dates) >= 2:
-                latest_rev = rev_dict.get(dates[-1])
-                prev_rev = rev_dict.get(dates[-2])
-                latest_ni = ni_dict.get(dates[-1])
-                prev_ni = ni_dict.get(dates[-2])
-                latest_bv = bv_dict.get(dates[-1])
-                prev_bv = bv_dict.get(dates[-2])
-                latest_eps = eps_dict.get(dates[-1])
-                prev_eps = eps_dict.get(dates[-2])
+            # Pre-build FCF dicts once
+            fcf_annual = get_annual_series(fcf_raw, n=5)
+            capex_annual = get_annual_series(capex_raw, n=5)
+            fcf_d = {d: v for d, v in fcf_annual}
+            cx_d = {d: v for d, v in capex_annual}
+            all_fcf_dates = sorted(set(fcf_d.keys()) & set(cx_d.keys()))
 
-                for m in results:
-                    m.revenue_growth = _growth(latest_rev, prev_rev)
-                    m.earnings_growth = _growth(latest_ni, prev_ni)
-                    m.book_value_growth = _growth(latest_bv, prev_bv)
-                    m.earnings_per_share_growth = _growth(latest_eps, prev_eps)
-                    # FCF growth — use annual
-                    fcf_annual = get_annual_series(fcf_raw, n=5)
-                    capex_annual = get_annual_series(capex_raw, n=5)
-                    fcf_d = {d: v for d, v in fcf_annual}
-                    cx_d = {d: v for d, v in capex_annual}
-                    all_fcf_dates = sorted(set(fcf_d.keys()) & set(cx_d.keys()))
+            rev_dates = sorted(rev_dict.keys())
+            ni_dates = sorted(ni_dict.keys())
+            bv_dates = sorted(bv_dict.keys())
+            eps_dates = sorted(eps_dict.keys())
+
+            for m in results:
+                rp = m.report_period
+
+                if period == "ttm":
+                    # For TTM, use the most recent annual pair
+                    if len(rev_dates) >= 2:
+                        m.revenue_growth = _growth(rev_dict.get(rev_dates[-1]), rev_dict.get(rev_dates[-2]))
+                    if len(ni_dates) >= 2:
+                        m.earnings_growth = _growth(ni_dict.get(ni_dates[-1]), ni_dict.get(ni_dates[-2]))
+                    if len(bv_dates) >= 2:
+                        m.book_value_growth = _growth(bv_dict.get(bv_dates[-1]), bv_dict.get(bv_dates[-2]))
+                    if len(eps_dates) >= 2:
+                        m.earnings_per_share_growth = _growth(eps_dict.get(eps_dates[-1]), eps_dict.get(eps_dates[-2]))
                     if len(all_fcf_dates) >= 2:
                         fcf1 = fcf_d[all_fcf_dates[-1]] - cx_d[all_fcf_dates[-1]]
                         fcf0 = fcf_d[all_fcf_dates[-2]] - cx_d[all_fcf_dates[-2]]
+                        m.free_cash_flow_growth = _growth(fcf1, fcf0)
+                else:
+                    # For annual, find the prior period for each series
+                    def _prior_growth(dates, d_dict, current_rp):
+                        prior_dates = [d for d in dates if d < current_rp]
+                        if not prior_dates:
+                            return None
+                        prior = prior_dates[-1]
+                        current_dates = [d for d in dates if d <= current_rp]
+                        if not current_dates:
+                            return None
+                        current = current_dates[-1]
+                        return _growth(d_dict.get(current), d_dict.get(prior))
+
+                    m.revenue_growth = _prior_growth(rev_dates, rev_dict, rp)
+                    m.earnings_growth = _prior_growth(ni_dates, ni_dict, rp)
+                    m.book_value_growth = _prior_growth(bv_dates, bv_dict, rp)
+                    m.earnings_per_share_growth = _prior_growth(eps_dates, eps_dict, rp)
+
+                    # FCF growth — find prior FCF date
+                    prior_fcf_dates = [d for d in all_fcf_dates if d < rp]
+                    current_fcf_dates = [d for d in all_fcf_dates if d <= rp]
+                    if prior_fcf_dates and current_fcf_dates:
+                        cur_d = current_fcf_dates[-1]
+                        prv_d = prior_fcf_dates[-1]
+                        fcf1 = fcf_d[cur_d] - cx_d[cur_d]
+                        fcf0 = fcf_d[prv_d] - cx_d[prv_d]
                         m.free_cash_flow_growth = _growth(fcf1, fcf0)
 
         # Filter to end_date and apply limit
