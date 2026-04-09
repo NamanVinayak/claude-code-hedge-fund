@@ -2,7 +2,7 @@
 Aggregate persona signals + deterministic agent signals into signals_combined.json.
 
 Usage:
-    python -m ai_hedge.runner.aggregate --run-id 20240101_120000 --tickers AAPL,MSFT --cash 100000
+    python -m ai_hedge.runner.aggregate --run-id 20240101_120000 --tickers AAPL,MSFT --cash 100000 --mode invest
 """
 import argparse
 import glob
@@ -16,6 +16,8 @@ from ai_hedge.deterministic.valuation import valuation_analyst_agent
 from ai_hedge.deterministic.sentiment import sentiment_analyst_agent
 from ai_hedge.deterministic.risk_manager import risk_management_agent
 from ai_hedge.portfolio.allowed_actions import compute_allowed_actions
+
+VALID_MODES = ("invest", "swing", "daytrade", "research")
 
 
 def _build_state(tickers: list[str], start_date: str, end_date: str) -> dict:
@@ -67,18 +69,33 @@ def _load_start_date(raw_dir: str, tickers: list[str]) -> str:
     return (datetime.today() - timedelta(days=365)).strftime("%Y-%m-%d")
 
 
+def _load_mode(run_dir: str) -> str:
+    """Load mode from metadata.json, defaulting to 'invest'."""
+    meta_path = os.path.join(run_dir, "metadata.json")
+    if os.path.exists(meta_path):
+        with open(meta_path) as f:
+            return json.load(f).get("mode", "invest")
+    return "invest"
+
+
 def main():
     parser = argparse.ArgumentParser(description="Aggregate signals for hedge fund run.")
     parser.add_argument("--run-id", required=True, help="Run identifier")
     parser.add_argument("--tickers", required=True, help="Comma-separated ticker symbols")
     parser.add_argument("--cash", type=float, default=100000.0, help="Starting cash (default: 100000)")
     parser.add_argument("--margin-requirement", type=float, default=0.0, help="Margin requirement (default: 0.0)")
+    parser.add_argument("--mode", choices=VALID_MODES, default=None,
+                        help="Analysis mode override (default: read from metadata.json)")
     args = parser.parse_args()
 
     tickers = [t.strip().upper() for t in args.tickers.split(",")]
     run_dir = os.path.join("runs", args.run_id)
     signals_dir = os.path.join(run_dir, "signals")
     raw_dir = os.path.join(run_dir, "raw")
+
+    # Determine mode: CLI flag overrides metadata.json
+    mode = args.mode or _load_mode(run_dir)
+    print(f"Aggregate mode: {mode}")
 
     end_date = _load_end_date(raw_dir, tickers)
     start_date = _load_start_date(raw_dir, tickers)
@@ -122,6 +139,12 @@ def main():
     print("Running risk manager...")
     state.update(risk_management_agent(state))
 
+    # Intraday technicals: run for daytrade and research modes
+    if mode in ("daytrade", "research"):
+        print("Running intraday technicals agent...")
+        from ai_hedge.deterministic.technicals_intraday import technical_intraday_agent
+        state.update(technical_intraday_agent(state))
+
     all_signals = state["data"]["analyst_signals"]
 
     # Extract current_prices and max_shares from risk manager output
@@ -141,6 +164,7 @@ def main():
 
     # Write combined signals file
     combined = {
+        "mode": mode,
         "analyst_signals": all_signals,
         "allowed_actions": allowed_actions,
         "portfolio": portfolio,

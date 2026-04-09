@@ -42,33 +42,29 @@ def _signal_color(signal: str) -> str:
     return Fore.YELLOW
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Display hedge fund trading decisions.")
-    parser.add_argument("--run-id", required=True, help="Run identifier")
-    args = parser.parse_args()
+def _load_mode(run_dir: str) -> str:
+    """Load mode from metadata.json, defaulting to 'invest'."""
+    meta_path = os.path.join(run_dir, "metadata.json")
+    if os.path.exists(meta_path):
+        with open(meta_path) as f:
+            return json.load(f).get("mode", "invest")
+    return "invest"
 
-    run_dir = os.path.join("runs", args.run_id)
-    decisions_path = os.path.join(run_dir, "decisions.json")
-    combined_path = os.path.join(run_dir, "signals_combined.json")
 
-    if not os.path.exists(decisions_path):
-        print(f"Error: {decisions_path} not found. Has the portfolio manager run?")
-        return
+# ---------------------------------------------------------------------------
+# Invest mode display (original)
+# ---------------------------------------------------------------------------
 
-    with open(decisions_path) as f:
-        decisions_data = json.load(f)
-
-    analyst_signals = {}
-    if os.path.exists(combined_path):
-        with open(combined_path) as f:
-            combined = json.load(f)
-        analyst_signals = combined.get("analyst_signals", {})
-
+def _display_invest(decisions_data: dict, analyst_signals: dict, combined: dict):
     decisions = decisions_data.get("decisions", {})
+    duration = decisions_data.get("duration", "")
 
     print(f"\n{Style.BRIGHT}{'=' * 60}")
-    print(f"{'=== TRADING DECISIONS ===':^60}")
+    print(f"{'=== TRADING DECISIONS (INVEST) ===':^60}")
     print(f"{'=' * 60}{Style.RESET_ALL}\n")
+
+    if duration:
+        print(f"  Portfolio Duration: {Fore.CYAN}{duration}{Style.RESET_ALL}\n")
 
     for ticker, decision in decisions.items():
         action = decision.get("action", "hold").lower()
@@ -108,25 +104,283 @@ def main():
                 if ticker in signals:
                     sig = signals[ticker].get("signal", "neutral")
                     conf = signals[ticker].get("confidence", "?")
+                    hp = signals[ticker].get("holding_period", "")
                     rsn = signals[ticker].get("reasoning", "")
-                    rsn_short = rsn[:80] + "..." if len(rsn) > 80 else rsn
+                    rsn_short = rsn[:80] + "..." if len(str(rsn)) > 80 else rsn
                     sig_col = _signal_color(sig)
+                    hp_str = f" [{hp}]" if hp else ""
                     print(f"    {agent:35s} {sig_col}{sig:8s}{Style.RESET_ALL} "
-                          f"({conf}%) {rsn_short}")
+                          f"({conf}%){hp_str} {rsn_short}")
 
         print()
 
-    # Portfolio summary
+    _display_portfolio_summary(combined)
+
+
+# ---------------------------------------------------------------------------
+# Swing mode display
+# ---------------------------------------------------------------------------
+
+def _display_swing(decisions_data: dict, analyst_signals: dict, combined: dict):
+    decisions = decisions_data.get("decisions", decisions_data)
+
+    print(f"\n{Style.BRIGHT}{'=' * 60}")
+    print(f"{'=== SWING TRADE PLAN ===':^60}")
+    print(f"{'=' * 60}{Style.RESET_ALL}\n")
+
+    # Head Trader synthesis
+    synthesis = decisions_data.get("synthesis", "")
+    if synthesis:
+        print(f"  {Style.BRIGHT}Head Trader Synthesis:{Style.RESET_ALL}")
+        print(f"  {synthesis}\n")
+
+    tickers = decisions if isinstance(decisions, dict) else {}
+    for ticker, plan in tickers.items():
+        if ticker in ("synthesis", "duration"):
+            continue
+        print(f"{Style.BRIGHT}{Fore.CYAN}{ticker}{Style.RESET_ALL}")
+        signal = plan.get("signal", plan.get("action", "neutral"))
+        sig_col = _signal_color(signal) if signal in ("bullish", "bearish", "neutral") else ACTION_COLORS.get(signal, Fore.WHITE)
+        print(f"  Signal:       {sig_col}{signal.upper()}{Style.RESET_ALL}")
+        print(f"  Entry:        ${plan.get('entry', 'N/A')}")
+        print(f"  Target:       ${plan.get('target', 'N/A')}")
+        print(f"  Stop:         ${plan.get('stop', 'N/A')}")
+        rr = plan.get("risk_reward", "N/A")
+        print(f"  Risk/Reward:  {rr}")
+        tf = plan.get("timeframe", plan.get("holding_period", "N/A"))
+        print(f"  Timeframe:    {tf}")
+        conf = plan.get("confidence", "")
+        if conf:
+            print(f"  Confidence:   {conf}%")
+        reasoning = plan.get("reasoning", "")
+        if reasoning:
+            rsn_short = str(reasoning)[:120] + "..." if len(str(reasoning)) > 120 else reasoning
+            print(f"  Reasoning:    {rsn_short}")
+
+        # Per-strategy breakdown from analyst signals
+        strat_count = 0
+        for agent, signals in analyst_signals.items():
+            if ticker in signals:
+                strat_count += 1
+        if strat_count > 0:
+            print(f"\n  Strategy signals ({strat_count}):")
+            for agent, signals in analyst_signals.items():
+                if ticker in signals:
+                    sig = signals[ticker].get("signal", "neutral")
+                    conf_s = signals[ticker].get("confidence", "?")
+                    sig_col = _signal_color(sig)
+                    print(f"    {agent:35s} {sig_col}{sig:8s}{Style.RESET_ALL} ({conf_s}%)")
+        print()
+
+    _display_portfolio_summary(combined)
+
+
+# ---------------------------------------------------------------------------
+# Day-trade mode display
+# ---------------------------------------------------------------------------
+
+def _display_daytrade(decisions_data: dict, analyst_signals: dict, combined: dict):
+    decisions = decisions_data.get("decisions", decisions_data)
+
+    print(f"\n{Style.BRIGHT}{'=' * 60}")
+    print(f"{'=== DAY TRADE PLAN ===':^60}")
+    print(f"{'=' * 60}{Style.RESET_ALL}\n")
+
+    # Head Trader synthesis
+    synthesis = decisions_data.get("synthesis", "")
+    if synthesis:
+        print(f"  {Style.BRIGHT}Head Trader Synthesis:{Style.RESET_ALL}")
+        print(f"  {synthesis}\n")
+
+    tickers = decisions if isinstance(decisions, dict) else {}
+    for ticker, plan in tickers.items():
+        if ticker in ("synthesis", "duration"):
+            continue
+        print(f"{Style.BRIGHT}{Fore.CYAN}{ticker}{Style.RESET_ALL}")
+        setup = plan.get("setup", plan.get("signal", "N/A"))
+        print(f"  Setup:          {setup}")
+        print(f"  Entry Trigger:  {plan.get('entry_trigger', plan.get('entry', 'N/A'))}")
+        targets = plan.get("targets", [plan.get("target", "N/A")])
+        if isinstance(targets, list):
+            for i, t in enumerate(targets, 1):
+                print(f"  Target {i}:       ${t}")
+        else:
+            print(f"  Target:         ${targets}")
+        print(f"  Stop:           ${plan.get('stop', 'N/A')}")
+        pos_size = plan.get("position_size", plan.get("quantity", "N/A"))
+        print(f"  Position Size:  {pos_size}")
+        window = plan.get("time_window", plan.get("timeframe", "N/A"))
+        print(f"  Time Window:    {window}")
+        conf = plan.get("confidence", "")
+        if conf:
+            print(f"  Confidence:     {conf}%")
+        reasoning = plan.get("reasoning", "")
+        if reasoning:
+            rsn_short = str(reasoning)[:120] + "..." if len(str(reasoning)) > 120 else reasoning
+            print(f"  Reasoning:      {rsn_short}")
+
+        # Per-strategy signals
+        strat_count = 0
+        for agent, signals in analyst_signals.items():
+            if ticker in signals:
+                strat_count += 1
+        if strat_count > 0:
+            print(f"\n  Strategy signals ({strat_count}):")
+            for agent, signals in analyst_signals.items():
+                if ticker in signals:
+                    sig = signals[ticker].get("signal", "neutral")
+                    conf_s = signals[ticker].get("confidence", "?")
+                    sig_col = _signal_color(sig)
+                    print(f"    {agent:35s} {sig_col}{sig:8s}{Style.RESET_ALL} ({conf_s}%)")
+        print()
+
+    _display_portfolio_summary(combined)
+
+
+# ---------------------------------------------------------------------------
+# Research mode display
+# ---------------------------------------------------------------------------
+
+def _display_research(decisions_data: dict, analyst_signals: dict, combined: dict):
+    print(f"\n{Style.BRIGHT}{'=' * 60}")
+    print(f"{'=== COMPREHENSIVE RESEARCH REPORT ===':^60}")
+    print(f"{'=' * 60}{Style.RESET_ALL}\n")
+
+    # Bull case
+    bull_case = decisions_data.get("bull_case", [])
+    if bull_case:
+        print(f"  {Style.BRIGHT}{Fore.GREEN}BULL CASE{Style.RESET_ALL}")
+        for item in bull_case:
+            if isinstance(item, dict):
+                print(f"    + {item.get('agent', 'Unknown')}: {item.get('reasoning', '')}")
+            else:
+                print(f"    + {item}")
+        print()
+
+    # Bear case
+    bear_case = decisions_data.get("bear_case", [])
+    if bear_case:
+        print(f"  {Style.BRIGHT}{Fore.RED}BEAR CASE{Style.RESET_ALL}")
+        for item in bear_case:
+            if isinstance(item, dict):
+                print(f"    - {item.get('agent', 'Unknown')}: {item.get('reasoning', '')}")
+            else:
+                print(f"    - {item}")
+        print()
+
+    # Key metrics
+    key_metrics = decisions_data.get("key_metrics", {})
+    if key_metrics:
+        print(f"  {Style.BRIGHT}KEY METRICS{Style.RESET_ALL}")
+        for metric, value in key_metrics.items():
+            print(f"    {metric:30s} {value}")
+        print()
+
+    # Risk factors
+    risk_factors = decisions_data.get("risk_factors", [])
+    if risk_factors:
+        print(f"  {Style.BRIGHT}{Fore.YELLOW}RISK FACTORS{Style.RESET_ALL}")
+        for rf in risk_factors:
+            print(f"    ! {rf}")
+        print()
+
+    # Sentiment distribution
+    sentiment = decisions_data.get("sentiment_distribution", {})
+    if sentiment:
+        print(f"  {Style.BRIGHT}SENTIMENT DISTRIBUTION{Style.RESET_ALL}")
+        b = sentiment.get("bullish", 0)
+        br = sentiment.get("bearish", 0)
+        n = sentiment.get("neutral", 0)
+        total = b + br + n
+        print(f"    {Fore.GREEN}Bullish: {b}{Style.RESET_ALL}  "
+              f"{Fore.RED}Bearish: {br}{Style.RESET_ALL}  "
+              f"{Fore.YELLOW}Neutral: {n}{Style.RESET_ALL}  "
+              f"(Total: {total})")
+        print()
+
+    # Full agent signal grid
+    tickers = combined.get("tickers", [])
+    if analyst_signals and tickers:
+        print(f"  {Style.BRIGHT}AGENT SIGNAL GRID{Style.RESET_ALL}")
+        header = f"    {'Agent':35s}"
+        for t in tickers:
+            header += f" {t:>12s}"
+        print(header)
+        print(f"    {'─' * (35 + 13 * len(tickers))}")
+
+        for agent in sorted(analyst_signals.keys()):
+            signals = analyst_signals[agent]
+            row = f"    {agent:35s}"
+            for t in tickers:
+                if t in signals:
+                    sig = signals[t].get("signal", "?")
+                    conf = signals[t].get("confidence", "?")
+                    sig_col = _signal_color(sig)
+                    row += f" {sig_col}{sig[:4]:>4s}{Style.RESET_ALL}({conf:>3s}%) " if isinstance(conf, str) else f" {sig_col}{sig[:4]:>4s}{Style.RESET_ALL}({conf:>3d}%) "
+                else:
+                    row += f" {'─':>12s}"
+            print(row)
+        print()
+
+
+# ---------------------------------------------------------------------------
+# Shared helpers
+# ---------------------------------------------------------------------------
+
+def _display_portfolio_summary(combined: dict):
+    portfolio = combined.get("portfolio", {})
+    if not portfolio:
+        return
+    cash = portfolio.get("cash", 0)
+    print(f"{Style.BRIGHT}{'─' * 60}")
+    print("Portfolio Summary")
+    print(f"{'─' * 60}{Style.RESET_ALL}")
+    print(f"  Cash:               ${cash:,.2f}")
+    print(f"  Margin used:        ${portfolio.get('margin_used', 0):,.2f}")
+    print(f"  Margin requirement: {portfolio.get('margin_requirement', 0):.0%}")
+    print()
+
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
+
+MODE_DISPLAY = {
+    "invest": _display_invest,
+    "swing": _display_swing,
+    "daytrade": _display_daytrade,
+    "research": _display_research,
+}
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Display hedge fund trading decisions.")
+    parser.add_argument("--run-id", required=True, help="Run identifier")
+    args = parser.parse_args()
+
+    run_dir = os.path.join("runs", args.run_id)
+    mode = _load_mode(run_dir)
+
+    # Determine decisions file based on mode
+    decisions_path = os.path.join(run_dir, "decisions.json")
+    combined_path = os.path.join(run_dir, "signals_combined.json")
+
+    if not os.path.exists(decisions_path):
+        print(f"Error: {decisions_path} not found. Has the final agent run?")
+        return
+
+    with open(decisions_path) as f:
+        decisions_data = json.load(f)
+
+    analyst_signals = {}
+    combined = {}
     if os.path.exists(combined_path):
-        portfolio = combined.get("portfolio", {})
-        cash = portfolio.get("cash", 0)
-        print(f"{Style.BRIGHT}{'─' * 60}")
-        print("Portfolio Summary")
-        print(f"{'─' * 60}{Style.RESET_ALL}")
-        print(f"  Cash:               ${cash:,.2f}")
-        print(f"  Margin used:        ${portfolio.get('margin_used', 0):,.2f}")
-        print(f"  Margin requirement: {portfolio.get('margin_requirement', 0):.0%}")
-        print()
+        with open(combined_path) as f:
+            combined = json.load(f)
+        analyst_signals = combined.get("analyst_signals", {})
+
+    display_fn = MODE_DISPLAY.get(mode, _display_invest)
+    display_fn(decisions_data, analyst_signals, combined)
 
 
 if __name__ == "__main__":

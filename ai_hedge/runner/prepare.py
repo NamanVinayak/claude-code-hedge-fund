@@ -2,7 +2,7 @@
 Fetch all raw financial data for given tickers and save to disk.
 
 Usage:
-    python -m ai_hedge.runner.prepare --tickers AAPL,MSFT --run-id 20240101_120000
+    python -m ai_hedge.runner.prepare --tickers AAPL,MSFT --run-id 20240101_120000 --mode invest
 """
 import argparse
 import json
@@ -18,6 +18,8 @@ from ai_hedge.data.api import (
     get_prices,
     search_line_items,
 )
+
+VALID_MODES = ("invest", "swing", "daytrade", "research")
 
 ALL_LINE_ITEMS = [
     "revenue",
@@ -70,7 +72,10 @@ def main():
     parser.add_argument("--start-date", default=None, help="Start date YYYY-MM-DD (default: 1 year ago)")
     parser.add_argument("--end-date", default=None, help="End date YYYY-MM-DD (default: today)")
     parser.add_argument("--run-id", required=True, help="Unique run identifier, e.g. 20240101_120000")
+    parser.add_argument("--mode", choices=VALID_MODES, default="invest",
+                        help="Analysis mode: invest (default), swing, daytrade, or research")
     args = parser.parse_args()
+    mode = args.mode
 
     tickers = [t.strip().upper() for t in args.tickers.split(",")]
 
@@ -115,9 +120,35 @@ def main():
 
     print(f"Data ready in runs/{args.run_id}/raw/")
 
+    # Save run metadata
+    metadata = {
+        "mode": mode,
+        "tickers": tickers,
+        "start_date": start_date,
+        "end_date": end_date,
+    }
+    meta_path = os.path.join("runs", args.run_id, "metadata.json")
+    with open(meta_path, "w") as f:
+        json.dump(metadata, f, indent=2)
+    print(f"Saved metadata ({mode} mode) → runs/{args.run_id}/metadata.json")
+
+    # Always build invest-mode persona facts (all modes need this foundational data)
     print("\nBuilding persona facts bundles...")
     from ai_hedge.personas.facts_builder import build_all_facts
     build_all_facts(args.run_id, tickers)
+
+    # Swing facts: needed for swing and research modes
+    if mode in ("swing", "research"):
+        print("\nBuilding swing strategy facts...")
+        from ai_hedge.personas.swing_facts_builder import build_swing_facts
+        build_swing_facts(args.run_id, tickers)
+
+    # Day-trade facts: needed for daytrade and research modes
+    if mode in ("daytrade", "research"):
+        print("\nBuilding day-trade strategy facts...")
+        from ai_hedge.personas.dt_facts_builder import build_dt_facts
+        build_dt_facts(args.run_id, tickers)
+
     print("Prepare complete.")
 
 
