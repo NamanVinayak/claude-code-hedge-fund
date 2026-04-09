@@ -1,5 +1,5 @@
 from langchain_core.messages import HumanMessage
-from ai_hedge.data.api import get_prices, prices_to_df
+from ai_hedge.data.api import get_prices, prices_to_df, get_current_price
 import json
 import numpy as np
 import pandas as pd
@@ -62,7 +62,9 @@ def risk_management_agent(state: AgentState, agent_id: str = "risk_management_ag
         prices_df = prices_to_df(prices)
 
         if not prices_df.empty and len(prices_df) > 1:
-            current_price = prices_df["close"].iloc[-1]
+            # Prefer real-time price over yesterday's close
+            realtime = get_current_price(ticker)
+            current_price = realtime if realtime else prices_df["close"].iloc[-1]
             current_prices[ticker] = current_price
 
             # Calculate volatility metrics

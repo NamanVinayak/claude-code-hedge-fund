@@ -12,6 +12,7 @@ from datetime import datetime, timedelta
 from ai_hedge.data.api import (
     get_financial_metrics,
     get_market_cap,
+    get_current_price,
     get_insider_trades,
     get_company_news,
     get_prices,
@@ -88,9 +89,12 @@ def main():
         metrics = get_financial_metrics(ticker, end_date=end_date, period="ttm", limit=10)
         line_items = search_line_items(ticker, ALL_LINE_ITEMS, end_date=end_date, period="ttm", limit=10)
         market_cap = get_market_cap(ticker, end_date=end_date)
+        current_price = get_current_price(ticker)
         insider_trades = get_insider_trades(ticker, end_date=end_date, start_date=start_date, limit=1000)
         company_news = get_company_news(ticker, end_date=end_date, start_date=start_date, limit=1000)
         prices = get_prices(ticker, start_date=start_date, end_date=end_date)
+
+        print(f"  Current price (real-time): ${current_price:.2f}" if current_price else "  Current price: unavailable")
 
         raw = {
             "ticker": ticker,
@@ -99,6 +103,7 @@ def main():
             "financial_metrics": _to_json_serializable(metrics),
             "line_items": _to_json_serializable(line_items),
             "market_cap": market_cap,
+            "current_price": current_price,
             "insider_trades": _to_json_serializable(insider_trades),
             "company_news": _to_json_serializable(company_news),
             "prices": _to_json_serializable(prices),

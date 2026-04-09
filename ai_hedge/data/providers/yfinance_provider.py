@@ -25,6 +25,16 @@ def get_prices_yf(ticker: str, start_date: str, end_date: str) -> list[dict]:
         return []
 
 
+def get_current_price_yf(ticker: str) -> float | None:
+    """Returns real-time (or delayed) price using fast_info — more current than last historical close."""
+    try:
+        t = yf.Ticker(ticker)
+        price = t.fast_info.get("last_price") or t.fast_info.get("lastPrice")
+        return float(price) if price else None
+    except Exception:
+        return None
+
+
 def get_market_cap_yf(ticker: str) -> float | None:
     """Returns current market cap from yfinance info."""
     try:

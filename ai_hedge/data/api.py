@@ -19,6 +19,7 @@ from ai_hedge.data.models import (
 from ai_hedge.data.providers.yfinance_provider import (
     get_prices_yf,
     get_market_cap_yf,
+    get_current_price_yf,
 )
 from ai_hedge.data.providers.sec_edgar_provider import (
     get_cik,
@@ -84,6 +85,11 @@ def get_price_data(ticker: str, start_date: str, end_date: str, api_key: str = N
 def get_market_cap(ticker: str, end_date: str, api_key: str = None) -> float | None:
     """Return market cap. Uses yfinance (real-time) — end_date is accepted for signature compat."""
     return get_market_cap_yf(ticker)
+
+
+def get_current_price(ticker: str) -> float | None:
+    """Return real-time price via yfinance fast_info. More current than last historical close."""
+    return get_current_price_yf(ticker)
 
 
 # ---------------------------------------------------------------------------
