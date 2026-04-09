@@ -672,10 +672,9 @@ def _news_sentiment(m: dict, ticker: str) -> dict:
         "ticker": ticker,
         "company_news": [
             {
-                "headline": n.headline,
-                "summary": n.summary,
+                "headline": n.title,
                 "sentiment": n.sentiment,
-                "date": str(n.date) if n.date else None,
+                "date": n.date,
             }
             for n in company_news[:50]
         ],

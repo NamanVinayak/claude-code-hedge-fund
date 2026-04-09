@@ -88,7 +88,7 @@ Read the following files:
 - ai_hedge/personas/prompts/portfolio_manager.md
 
 Make final trading decisions for each ticker in {TICKERS} based on:
-- analyst_signals: all 15 persona signals + 4 deterministic signals + risk manager
+- analyst_signals: 14 LLM persona signals + growth_analyst_agent (deterministic) + 4 deterministic agents + risk manager
 - allowed_actions: what actions are physically possible given current portfolio limits
 
 Return JSON in this exact format:
@@ -130,9 +130,10 @@ runs/
     │   ├── warren_buffett__AAPL.json
     │   └── ...
     ├── signals/
+    │   ├── growth_analyst_agent.json   ← written by prepare (deterministic)
     │   ├── warren_buffett.json
     │   ├── charlie_munger.json
-    │   └── ...  (15 persona files)
+    │   └── ...  (14 LLM persona files)
     ├── signals_combined.json
     └── decisions.json
 ```
