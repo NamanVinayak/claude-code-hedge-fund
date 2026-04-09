@@ -15,6 +15,10 @@ dependencies = [
     "finnhub-python>=2.4.20",
 ]
 
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ai_hedge*"]
+
 [build-system]
 requires = ["setuptools>=68"]
-build-backend = "setuptools.backends.legacy:build"
+build-backend = "setuptools.build_meta"
