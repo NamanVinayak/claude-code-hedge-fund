@@ -966,3 +966,38 @@ def get_company_news(
     if news:
         _cache.set_company_news(cache_key, [n.model_dump() for n in news])
     return news
+
+
+# ---------------------------------------------------------------------------
+# Intraday prices
+# ---------------------------------------------------------------------------
+
+def get_intraday_prices(ticker: str, interval: str = "5m", period: str = "5d", api_key: str = None) -> list:
+    """Get intraday OHLCV price bars.
+
+    Args:
+        ticker: Stock symbol
+        interval: Bar size - "1m", "5m", "15m", "30m"
+        period: Lookback - "1d", "5d", "1mo", "2mo"
+        api_key: Unused, kept for API compatibility
+
+    Returns list of dicts with: open, close, high, low, volume, time
+    """
+    from ai_hedge.data.providers.yfinance_intraday import get_intraday_prices_yf
+    return get_intraday_prices_yf(ticker, interval=interval, period=period)
+
+
+def get_premarket_data(ticker: str) -> dict | None:
+    """Get pre-market price data (price, change %, previous close)."""
+    from ai_hedge.data.providers.yfinance_intraday import get_premarket_data_yf
+    return get_premarket_data_yf(ticker)
+
+
+def intraday_to_df(bars: list) -> pd.DataFrame:
+    """Convert intraday bars to DataFrame with datetime index."""
+    if not bars:
+        return pd.DataFrame()
+    df = pd.DataFrame(bars)
+    df["time"] = pd.to_datetime(df["time"])
+    df = df.set_index("time").sort_index()
+    return df
