@@ -1,0 +1,20 @@
+[project]
+name = "ai-hedge"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "yfinance>=0.2.40",
+    "pandas>=2.1.0",
+    "numpy>=1.24.0",
+    "requests>=2.31.0",
+    "pydantic>=2.4.2",
+    "python-dotenv>=1.0.0",
+    "sqlalchemy>=2.0.22",
+    "colorama>=0.4.6",
+    "questionary>=2.0.0",
+    "finnhub-python>=2.4.20",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"

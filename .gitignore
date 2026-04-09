@@ -1,0 +1,19 @@
+# Secrets
+.env
+
+# Runtime data
+runs/*
+!runs/.gitkeep
+
+# Python cache
+__pycache__/
+*.pyc
+.DS_Store
+
+# Reference clone (full git repo, do not nest)
+reference/
+
+# Virtual environment and build artifacts
+.venv/
+dist/
+*.egg-info/
