@@ -35,17 +35,30 @@ Set variables: `MODE`, `TICKERS`, `RUN_ID`.
 
 This fetches all raw data, saves metadata.json, builds invest persona facts, and conditionally builds swing/daytrade facts based on mode.
 
-## Step 3 — Dispatch LLM subagents in parallel
+## Step 3 — Dispatch LLM subagents sequentially
 
-Send ALL agents for the mode as Agent tool calls **in a single message** (maximum parallelism).
+Dispatch agents **ONE AT A TIME**. For each agent, send one Agent tool call, wait for it to complete, then dispatch the next. This avoids API rate limits.
 
-### If MODE is `invest`: dispatch 14 agents
-
-Agents: `warren_buffett`, `charlie_munger`, `ben_graham`, `bill_ackman`, `cathie_wood`, `michael_burry`, `nassim_taleb`, `peter_lynch`, `phil_fisher`, `stanley_druckenmiller`, `mohnish_pabrai`, `rakesh_jhunjhunwala`, `aswath_damodaran`, `news_sentiment`
+### If MODE is `invest`: dispatch these 14 agents sequentially (one at a time, wait for completion)
 
 (`growth_analyst_agent` is already computed deterministically in Step 2 — do NOT dispatch it.)
 
-Use this prompt template for each `{AGENT}`:
+1. `warren_buffett`
+2. `charlie_munger`
+3. `ben_graham`
+4. `bill_ackman`
+5. `cathie_wood`
+6. `michael_burry`
+7. `nassim_taleb`
+8. `peter_lynch`
+9. `phil_fisher`
+10. `stanley_druckenmiller`
+11. `mohnish_pabrai`
+12. `rakesh_jhunjhunwala`
+13. `aswath_damodaran`
+14. `news_sentiment`
+
+For each agent, use this prompt template for `{AGENT}`:
 
 ```
 You are the {AGENT} investor agent.
@@ -67,11 +80,21 @@ Write your output to: runs/{RUN_ID}/signals/{AGENT}.json
 Use exactly the schema from ai_hedge/schemas.py for this persona.
 ```
 
-### If MODE is `swing`: dispatch 9 agents
+After ALL 14 agents complete, proceed to Step 4.
 
-Agents: `swing_trend_follower`, `swing_pullback_trader`, `swing_breakout_trader`, `swing_momentum_ranker`, `swing_mean_reversion`, `swing_catalyst_trader`, `swing_sector_rotation`, `stanley_druckenmiller`, `news_sentiment`
+### If MODE is `swing`: dispatch these 9 agents sequentially (one at a time, wait for completion)
 
-Use this prompt template for each `{AGENT}`:
+1. `swing_trend_follower`
+2. `swing_pullback_trader`
+3. `swing_breakout_trader`
+4. `swing_momentum_ranker`
+5. `swing_mean_reversion`
+6. `swing_catalyst_trader`
+7. `swing_sector_rotation`
+8. `stanley_druckenmiller`
+9. `news_sentiment`
+
+For each agent, use this prompt template for `{AGENT}`:
 
 ```
 You are the {AGENT} swing trade analyst.
@@ -92,11 +115,21 @@ Return a JSON object mapping each ticker to your signal:
 Write your output to: runs/{RUN_ID}/signals/{AGENT}.json
 ```
 
-### If MODE is `daytrade`: dispatch 9 agents
+After ALL 9 agents complete, proceed to Step 4.
 
-Agents: `dt_vwap_trader`, `dt_momentum_scalper`, `dt_mean_reversion`, `dt_breakout_hunter`, `dt_gap_analyst`, `dt_volume_profiler`, `dt_pattern_reader`, `dt_stat_arb`, `dt_news_catalyst`
+### If MODE is `daytrade`: dispatch these 9 agents sequentially (one at a time, wait for completion)
 
-Use this prompt template for each `{AGENT}`:
+1. `dt_vwap_trader`
+2. `dt_momentum_scalper`
+3. `dt_mean_reversion`
+4. `dt_breakout_hunter`
+5. `dt_gap_analyst`
+6. `dt_volume_profiler`
+7. `dt_pattern_reader`
+8. `dt_stat_arb`
+9. `dt_news_catalyst`
+
+For each agent, use this prompt template for `{AGENT}`:
 
 ```
 You are the {AGENT} day trade analyst.
@@ -116,14 +149,51 @@ Return a JSON object mapping each ticker to your signal:
 Write your output to: runs/{RUN_ID}/signals/{AGENT}.json
 ```
 
-### If MODE is `research`: dispatch ALL agents (30+)
+After ALL 9 agents complete, proceed to Step 4.
 
-Dispatch all 14 invest agents + all 9 swing agents + all 9 daytrade agents in a single message.
-Use the invest template for invest agents, swing template for swing agents, daytrade template for daytrade agents.
+### If MODE is `research`: dispatch ALL 30 agents sequentially (one at a time, wait for completion)
+
+Dispatch all agents one at a time in this order. Use the invest template for invest agents, swing template for swing agents, daytrade template for daytrade agents.
 
 Note: `stanley_druckenmiller` and `news_sentiment` appear in both invest and swing lists. Only dispatch each once (use the invest template — their facts file is the same).
 
-Total unique agents for research: 14 (invest) + 7 (swing-only) + 9 (daytrade) = 30.
+**Invest agents (14):**
+1. `warren_buffett`
+2. `charlie_munger`
+3. `ben_graham`
+4. `bill_ackman`
+5. `cathie_wood`
+6. `michael_burry`
+7. `nassim_taleb`
+8. `peter_lynch`
+9. `phil_fisher`
+10. `stanley_druckenmiller`
+11. `mohnish_pabrai`
+12. `rakesh_jhunjhunwala`
+13. `aswath_damodaran`
+14. `news_sentiment`
+
+**Swing-only agents (7):**
+15. `swing_trend_follower`
+16. `swing_pullback_trader`
+17. `swing_breakout_trader`
+18. `swing_momentum_ranker`
+19. `swing_mean_reversion`
+20. `swing_catalyst_trader`
+21. `swing_sector_rotation`
+
+**Day-trade agents (9):**
+22. `dt_vwap_trader`
+23. `dt_momentum_scalper`
+24. `dt_mean_reversion`
+25. `dt_breakout_hunter`
+26. `dt_gap_analyst`
+27. `dt_volume_profiler`
+28. `dt_pattern_reader`
+29. `dt_stat_arb`
+30. `dt_news_catalyst`
+
+After ALL 30 agents complete, proceed to Step 4 (skip Step 4 for research, go to Step 5).
 
 ## Step 4 — Head Trader synthesis (swing and daytrade only)
 

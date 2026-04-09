@@ -143,10 +143,10 @@ def _display_swing(decisions_data: dict, analyst_signals: dict, combined: dict):
         signal = plan.get("signal", plan.get("action", "neutral"))
         sig_col = _signal_color(signal) if signal in ("bullish", "bearish", "neutral") else ACTION_COLORS.get(signal, Fore.WHITE)
         print(f"  Signal:       {sig_col}{signal.upper()}{Style.RESET_ALL}")
-        print(f"  Entry:        ${plan.get('entry', 'N/A')}")
-        print(f"  Target:       ${plan.get('target', 'N/A')}")
-        print(f"  Stop:         ${plan.get('stop', 'N/A')}")
-        rr = plan.get("risk_reward", "N/A")
+        print(f"  Entry:        ${plan.get('entry', plan.get('entry_price', 'N/A'))}")
+        print(f"  Target:       ${plan.get('target', plan.get('target_price', 'N/A'))}")
+        print(f"  Stop:         ${plan.get('stop', plan.get('stop_loss', 'N/A'))}")
+        rr = plan.get("risk_reward", plan.get("risk_reward_ratio", "N/A"))
         print(f"  Risk/Reward:  {rr}")
         tf = plan.get("timeframe", plan.get("holding_period", "N/A"))
         print(f"  Timeframe:    {tf}")
@@ -201,13 +201,22 @@ def _display_daytrade(decisions_data: dict, analyst_signals: dict, combined: dic
         setup = plan.get("setup", plan.get("signal", "N/A"))
         print(f"  Setup:          {setup}")
         print(f"  Entry Trigger:  {plan.get('entry_trigger', plan.get('entry', 'N/A'))}")
-        targets = plan.get("targets", [plan.get("target", "N/A")])
+        targets = plan.get("targets", [])
+        if not targets:
+            t1 = plan.get("target_1")
+            t2 = plan.get("target_2")
+            if t1:
+                targets.append(t1)
+            if t2:
+                targets.append(t2)
+        if not targets:
+            targets = [plan.get("target", plan.get("target_price", "N/A"))]
         if isinstance(targets, list):
             for i, t in enumerate(targets, 1):
                 print(f"  Target {i}:       ${t}")
         else:
             print(f"  Target:         ${targets}")
-        print(f"  Stop:           ${plan.get('stop', 'N/A')}")
+        print(f"  Stop:           ${plan.get('stop', plan.get('stop_loss', 'N/A'))}")
         pos_size = plan.get("position_size", plan.get("quantity", "N/A"))
         print(f"  Position Size:  {pos_size}")
         window = plan.get("time_window", plan.get("timeframe", "N/A"))

@@ -32,9 +32,9 @@ This command:
 
 ---
 
-## STEP 3 — Dispatch LLM subagents IN PARALLEL
+## STEP 3 — Dispatch LLM subagents sequentially
 
-Send **all Agent tool calls in a single message**. Which agents to dispatch depends on mode:
+Dispatch agents **one at a time**. Send one Agent tool call, wait for it to complete, then dispatch the next. This avoids API rate limits. Which agents to dispatch depends on mode:
 
 ### Invest mode (14 agents)
 
@@ -121,9 +121,9 @@ Return a JSON object mapping each ticker to your signal:
 Write your output to: runs/{RUN_ID}/signals/{STRATEGY}.json
 ```
 
-### Research mode (30+ agents)
+### Research mode (30 agents)
 
-Dispatch ALL agents from invest + swing + daytrade modes. All 14 invest personas + 9 swing strategies + 9 day-trade strategies, all in parallel.
+Dispatch ALL agents from invest + swing + daytrade modes sequentially, one at a time. All 14 invest personas + 7 swing-only strategies + 9 day-trade strategies (30 total). `stanley_druckenmiller` and `news_sentiment` appear in both invest and swing — dispatch each once only.
 
 ---
 
