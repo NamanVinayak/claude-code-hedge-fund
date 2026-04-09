@@ -142,8 +142,8 @@ def main():
     # Intraday technicals: run for daytrade and research modes
     if mode in ("daytrade", "research"):
         print("Running intraday technicals agent...")
-        from ai_hedge.deterministic.technicals_intraday import technical_intraday_agent
-        state.update(technical_intraday_agent(state))
+        from ai_hedge.deterministic.technicals_intraday import technical_intraday_analyst_agent
+        state.update(technical_intraday_analyst_agent(state))
 
     all_signals = state["data"]["analyst_signals"]
 

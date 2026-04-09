@@ -106,7 +106,8 @@ def _display_invest(decisions_data: dict, analyst_signals: dict, combined: dict)
                     conf = signals[ticker].get("confidence", "?")
                     hp = signals[ticker].get("holding_period", "")
                     rsn = signals[ticker].get("reasoning", "")
-                    rsn_short = rsn[:80] + "..." if len(str(rsn)) > 80 else rsn
+                    rsn = str(rsn) if not isinstance(rsn, str) else rsn
+                    rsn_short = rsn[:80] + "..." if len(rsn) > 80 else rsn
                     sig_col = _signal_color(sig)
                     hp_str = f" [{hp}]" if hp else ""
                     print(f"    {agent:35s} {sig_col}{sig:8s}{Style.RESET_ALL} "
@@ -316,7 +317,7 @@ def _display_research(decisions_data: dict, analyst_signals: dict, combined: dic
                     sig = signals[t].get("signal", "?")
                     conf = signals[t].get("confidence", "?")
                     sig_col = _signal_color(sig)
-                    row += f" {sig_col}{sig[:4]:>4s}{Style.RESET_ALL}({conf:>3s}%) " if isinstance(conf, str) else f" {sig_col}{sig[:4]:>4s}{Style.RESET_ALL}({conf:>3d}%) "
+                    row += f" {sig_col}{sig[:4]:>4s}{Style.RESET_ALL}({conf:>3s}%) " if isinstance(conf, str) else f" {sig_col}{sig[:4]:>4s}{Style.RESET_ALL}({int(conf):>3d}%) "
                 else:
                     row += f" {'─':>12s}"
             print(row)
