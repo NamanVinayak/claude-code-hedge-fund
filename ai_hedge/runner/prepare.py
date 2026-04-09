@@ -110,6 +110,11 @@ def main():
 
     print(f"Data ready in runs/{args.run_id}/raw/")
 
+    print("\nBuilding persona facts bundles...")
+    from ai_hedge.personas.facts_builder import build_all_facts
+    build_all_facts(args.run_id, tickers)
+    print("Prepare complete.")
+
 
 if __name__ == "__main__":
     main()

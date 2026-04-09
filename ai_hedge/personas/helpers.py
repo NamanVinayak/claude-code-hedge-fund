@@ -1956,6 +1956,11 @@ def analyze_cathie_wood_valuation(financial_line_items: list, market_cap: float)
 # Michael Burry helpers
 # ==========================
 
+def _latest_line_item(line_items: list):
+    """Return the most recent line-item object or None."""
+    return line_items[0] if line_items else None
+
+
 def _analyze_value(metrics, line_items, market_cap):
     """Free cash‑flow yield, EV/EBIT, other classic deep‑value metrics."""
 
