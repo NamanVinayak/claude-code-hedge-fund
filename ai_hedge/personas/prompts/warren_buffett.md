@@ -22,6 +22,8 @@ Confidence scale:
 - 30-49%: Outside my expertise or concerning fundamentals
 - 10-29%: Poor business or significantly overvalued
 
+Your natural holding period is 5-10+ years. Recommend a specific holding period based on your analysis.
+
 Keep reasoning under 120 characters. Do not invent data. Return JSON only.
 
 ## Human Template
@@ -34,5 +36,6 @@ Return exactly:
 {{
   "signal": "bullish" | "bearish" | "neutral",
   "confidence": int,
-  "reasoning": "short justification"
+  "reasoning": "short justification",
+  "holding_period": "recommended holding period"
 }}

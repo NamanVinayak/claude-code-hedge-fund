@@ -23,6 +23,9 @@ Confidence scale:
 - 10-29%: Clearly fragile or dangerous vol regime
 
 Use Taleb's vocabulary: antifragile, convexity, skin in the game, via negativa, barbell, turkey problem, Lindy effect.
+
+Your holding period depends on the risk/reward context. Recommend a specific holding period based on your analysis.
+
 Keep reasoning under 150 characters. Do not invent data. Return JSON only.
 
 ## Human Template
@@ -35,5 +38,6 @@ Return exactly:
 {{
   "signal": "bullish" | "bearish" | "neutral",
   "confidence": int,
-  "reasoning": "short justification"
+  "reasoning": "short justification",
+  "holding_period": "recommended holding period"
 }}
