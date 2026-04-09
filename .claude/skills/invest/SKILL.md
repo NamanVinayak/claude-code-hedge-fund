@@ -1,0 +1,120 @@
+---
+name: invest
+description: Analyze stocks using 14 legendary investor personas (Buffett, Munger, Graham, etc.). Long-term portfolio decisions.
+disable-model-invocation: true
+allowed-tools: Bash(*) Read Write Agent
+argument-hint: TICKER1[,TICKER2,...]
+---
+
+# Invest Mode — AI Hedge Fund
+
+## Step 1 — Parse arguments and generate run ID
+
+```bash
+RUN_ID=$(date +%Y%m%d_%H%M%S)
+```
+
+Parse `$ARGUMENTS` as the comma-separated ticker list. Normalize to uppercase, comma-separated, no spaces.
+
+Set variables: `TICKERS`, `RUN_ID`.
+
+## Step 2 — Fetch data and build facts
+
+```bash
+python -m ai_hedge.runner.prepare --tickers $TICKERS --run-id $RUN_ID --mode invest
+```
+
+This fetches all raw data, saves metadata.json, and builds invest persona facts.
+
+## Step 3 — Dispatch 14 LLM subagents in batches of 4
+
+Dispatch agents **in batches of 4**. Send 4 Agent tool calls in a SINGLE message, wait for all 4 to complete, then send the next batch.
+
+(`growth_analyst_agent` is already computed deterministically in Step 2 — do NOT dispatch it.)
+
+**Batch 1** (send all 4 in one message, wait for completion):
+- `warren_buffett`
+- `charlie_munger`
+- `ben_graham`
+- `bill_ackman`
+
+**Batch 2**:
+- `cathie_wood`
+- `michael_burry`
+- `nassim_taleb`
+- `peter_lynch`
+
+**Batch 3**:
+- `phil_fisher`
+- `stanley_druckenmiller`
+- `mohnish_pabrai`
+- `rakesh_jhunjhunwala`
+
+**Batch 4**:
+- `aswath_damodaran`
+- `news_sentiment`
+
+For each agent, use this prompt template for `{AGENT}`:
+
+```
+You are the {AGENT} investor agent.
+
+1. Read your system prompt from: ai_hedge/personas/prompts/{AGENT}.md
+2. For each ticker in [{TICKERS}], read the facts bundle from:
+   runs/{RUN_ID}/facts/{AGENT}__{TICKER}.json
+
+Analyze each ticker using ONLY the provided facts data.
+
+Return a JSON object mapping each ticker to your signal:
+{{
+  "TICKER1": {{"signal": "bullish|bearish|neutral", "confidence": 0-100, "reasoning": "...", "holding_period": "..."}},
+  "TICKER2": {{"signal": "bullish|bearish|neutral", "confidence": 0-100, "reasoning": "...", "holding_period": "..."}}
+}}
+
+Write your output to: runs/{RUN_ID}/signals/{AGENT}.json
+
+Use exactly the schema from ai_hedge/schemas.py for this persona.
+```
+
+After ALL 14 agents complete, proceed to Step 4.
+
+## Step 4 — Aggregate signals
+
+```bash
+python -m ai_hedge.runner.aggregate --run-id $RUN_ID --tickers $TICKERS --cash 100000
+```
+
+This loads all signals, runs deterministic agents (fundamentals, technicals, valuation, sentiment, risk_manager), computes allowed actions, and writes `signals_combined.json`.
+
+## Step 5 — Dispatch Portfolio Manager
+
+Dispatch **one** Agent tool call:
+
+```
+Read the following files:
+- runs/{RUN_ID}/signals_combined.json
+- ai_hedge/personas/prompts/portfolio_manager.md
+
+You are the Portfolio Manager. Make final trading decisions for each ticker in [{TICKERS}] based on:
+- analyst_signals: 14 LLM persona signals + growth_analyst_agent (deterministic) + 5 deterministic agents
+- allowed_actions: what actions are physically possible given current portfolio limits
+
+Return JSON in this exact format:
+{{
+  "decisions": {{
+    "TICKER1": {{"action": "buy|sell|short|cover|hold", "quantity": 123, "confidence": 75, "reasoning": "..."}},
+    "TICKER2": ...
+  }},
+  "duration": "recommended portfolio holding period"
+}}
+
+Write the output to: runs/{RUN_ID}/decisions.json
+```
+
+## Step 6 — Display results
+
+```bash
+python -m ai_hedge.runner.finalize --run-id $RUN_ID
+```
+
+This displays: action/quantity/confidence, analyst breakdown, holding periods, portfolio summary.
