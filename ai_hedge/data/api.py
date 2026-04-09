@@ -82,9 +82,36 @@ def get_price_data(ticker: str, start_date: str, end_date: str, api_key: str = N
 # Market cap
 # ---------------------------------------------------------------------------
 
-def get_market_cap(ticker: str, end_date: str, api_key: str = None) -> float | None:
-    """Return market cap. Uses yfinance (real-time) — end_date is accepted for signature compat."""
-    return get_market_cap_yf(ticker)
+def get_market_cap(ticker: str, end_date: str = None, api_key: str = None) -> float | None:
+    """Return market cap. For historical dates, uses close_price × shares_outstanding."""
+    # Current or very recent: use yfinance real-time
+    try:
+        if end_date is None:
+            return get_market_cap_yf(ticker)
+        ed = datetime.strptime(end_date, "%Y-%m-%d")
+        if (datetime.now() - ed).days <= 5:
+            return get_market_cap_yf(ticker)
+    except (ValueError, TypeError):
+        return get_market_cap_yf(ticker)
+
+    # Historical: close_price(date) × shares_outstanding(date) from EDGAR
+    start = (ed - timedelta(days=10)).strftime("%Y-%m-%d")
+    prices = get_prices_yf(ticker, start, end_date)
+    if not prices:
+        return get_market_cap_yf(ticker)
+    price = prices[-1]["close"]
+
+    cik = get_cik(ticker)
+    if not cik:
+        return get_market_cap_yf(ticker)
+    shares_series = get_line_item_history(cik, GAAP_CONCEPTS["outstanding_shares"], unit="shares")
+    candidates = [v for v in shares_series if v["end"] <= end_date]
+    if not candidates:
+        return get_market_cap_yf(ticker)
+    candidates.sort(key=lambda x: x["end"])
+    shares = candidates[-1]["val"]
+
+    return price * shares
 
 
 def get_current_price(ticker: str) -> float | None:
@@ -199,6 +226,22 @@ def _get_stock_value(series: list[dict]) -> float | None:
     return quarters[-1]["val"]
 
 
+def _historical_market_cap(date: str, price_by_date: dict, shares_series: list[dict]) -> float | None:
+    """Compute market cap at a historical date: price × shares_outstanding."""
+    if not price_by_date or not shares_series:
+        return None
+    price_dates = sorted(d for d in price_by_date if d <= date)
+    if not price_dates:
+        return None
+    price = price_by_date[price_dates[-1]]
+    candidates = [v for v in shares_series if v["end"] <= date]
+    if not candidates:
+        return None
+    candidates.sort(key=lambda x: x["end"])
+    shares = candidates[-1]["val"]
+    return price * shares
+
+
 def _build_metrics_for_period(
     ticker: str,
     report_period: str,
@@ -207,6 +250,7 @@ def _build_metrics_for_period(
     market_cap: float | None,
     yf_info: dict,
     is_ttm: bool,
+    cutoff_date: str | None = None,
 ) -> FinancialMetrics:
     """Build a FinancialMetrics object from EDGAR data and yfinance info."""
 
@@ -214,6 +258,10 @@ def _build_metrics_for_period(
         series = edgar_data.get(key, [])
         if not series:
             return None
+        if cutoff_date:
+            series = [v for v in series if v["end"] <= cutoff_date]
+            if not series:
+                return None
         if flow and is_ttm:
             return _get_ttm_or_annual(series, prefer_ttm=True)
         return _get_stock_value(series)
@@ -421,12 +469,12 @@ def _build_metrics_for_period(
     )
 
 
-def _get_annual_flow_series(edgar_data: dict, key: str, fallback_key: str = None) -> list[tuple[str, float]]:
-    """Get last 5 annual values for a flow concept."""
+def _get_annual_flow_series(edgar_data: dict, key: str, fallback_key: str = None, n: int = 5) -> list[tuple[str, float]]:
+    """Get last n annual values for a flow concept."""
     series = edgar_data.get(key, [])
     if not series and fallback_key:
         series = edgar_data.get(fallback_key, [])
-    return get_annual_series(series, n=5)
+    return get_annual_series(series, n=n)
 
 
 def get_financial_metrics(
@@ -454,18 +502,44 @@ def get_financial_metrics(
 
         results: list[FinancialMetrics] = []
 
+        # Pre-fetch shares series for historical market cap
+        shares_series = edgar_data.get("outstanding_shares", [])
+
         if period == "ttm":
-            # Single TTM entry with today's report_period
-            m = _build_metrics_for_period(
-                ticker=ticker,
-                report_period=end_date,
-                period="ttm",
-                edgar_data=edgar_data,
-                market_cap=market_cap,
-                yf_info=yf_info,
-                is_ttm=True,
-            )
-            results = [m]
+            # Multiple TTM snapshots — one per quarterly filing date
+            rev_raw = edgar_data.get("revenue", []) or edgar_data.get("revenue_fb", [])
+            q_dates = sorted(set(
+                v["end"] for v in rev_raw if v["form"] == "10-Q" and v["end"] <= end_date
+            ), reverse=True)[:limit]
+
+            if not q_dates:
+                q_dates = [end_date]
+
+            # Pre-fetch prices for historical market cap computation
+            earliest = q_dates[-1]
+            price_start = (datetime.strptime(earliest, "%Y-%m-%d") - timedelta(days=10)).strftime("%Y-%m-%d")
+            all_prices = get_prices_yf(ticker, price_start, end_date)
+            price_by_date = {p["time"]: p["close"] for p in all_prices}
+
+            for i, qd in enumerate(q_dates):
+                if i == 0:
+                    mc = market_cap
+                else:
+                    mc = _historical_market_cap(qd, price_by_date, shares_series)
+                    if mc is None:
+                        mc = market_cap
+
+                m = _build_metrics_for_period(
+                    ticker=ticker,
+                    report_period=qd,
+                    period="ttm",
+                    edgar_data=edgar_data,
+                    market_cap=mc,
+                    yf_info=yf_info if i == 0 else {},
+                    is_ttm=True,
+                    cutoff_date=qd,
+                )
+                results.append(m)
         else:
             # Annual periods — build one entry per fiscal year
             rev_series = _get_annual_flow_series(edgar_data, "revenue", "revenue_fb")
@@ -474,23 +548,38 @@ def get_financial_metrics(
             periods_available = [d for d, _ in rev_series if d <= end_date]
             periods_available = sorted(set(periods_available), reverse=True)[:limit]
 
-            for rp in periods_available:
+            # Pre-fetch prices for historical market cap (annual)
+            if periods_available:
+                _ea = periods_available[-1]
+                _ps = (datetime.strptime(_ea, "%Y-%m-%d") - timedelta(days=10)).strftime("%Y-%m-%d")
+                _ap = get_prices_yf(ticker, _ps, end_date)
+                _apbd = {p["time"]: p["close"] for p in _ap}
+            else:
+                _apbd = {}
+
+            for i, rp in enumerate(periods_available):
+                mc = _historical_market_cap(rp, _apbd, shares_series)
+                if mc is None:
+                    mc = market_cap
                 m = _build_metrics_for_period(
                     ticker=ticker,
                     report_period=rp,
                     period="annual",
                     edgar_data=edgar_data,
-                    market_cap=market_cap,
-                    yf_info=yf_info,
+                    market_cap=mc,
+                    yf_info=yf_info if i == 0 else {},
                     is_ttm=False,
                 )
                 results.append(m)
 
         # Compute growth rates using consecutive periods in the revenue/NI series
-        rev_series = _get_annual_flow_series(edgar_data, "revenue", "revenue_fb")
-        ni_series = _get_annual_flow_series(edgar_data, "net_income")
-        bv_series = _get_annual_flow_series(edgar_data, "shareholders_equity")
-        eps_series = _get_annual_flow_series(edgar_data, "earnings_per_share", "earnings_per_share_fb")
+        _gn = 10  # enough annual history for multiple TTM snapshots
+        rev_series = _get_annual_flow_series(edgar_data, "revenue", "revenue_fb", n=_gn)
+        ni_series = _get_annual_flow_series(edgar_data, "net_income", n=_gn)
+        bv_series = _get_annual_flow_series(edgar_data, "shareholders_equity", n=_gn)
+        eps_series = _get_annual_flow_series(edgar_data, "earnings_per_share", "earnings_per_share_fb", n=_gn)
+        oi_series = _get_annual_flow_series(edgar_data, "operating_income", n=_gn)
+        da_series_annual = _get_annual_flow_series(edgar_data, "depreciation_and_amortization", n=_gn)
         fcf_raw = edgar_data.get("operating_cash_flow", [])
         capex_raw = edgar_data.get("capital_expenditure", [])
 
@@ -501,6 +590,16 @@ def get_financial_metrics(
         ni_dict = _series_dict(ni_series)
         bv_dict = _series_dict(bv_series)
         eps_dict = _series_dict(eps_series)
+        oi_dict = _series_dict(oi_series)
+        da_dict = _series_dict(da_series_annual)
+
+        # EBITDA = operating_income + D&A
+        ebitda_dict = {}
+        for d in set(list(oi_dict.keys()) + list(da_dict.keys())):
+            oi_v = oi_dict.get(d)
+            da_v = da_dict.get(d)
+            if oi_v is not None and da_v is not None:
+                ebitda_dict[d] = oi_v + da_v
 
         def _prior_growth(dates, d_dict, current_rp):
             prior_dates = [d for d in dates if d < current_rp]
@@ -515,9 +614,8 @@ def get_financial_metrics(
 
         # Compute per-period growth rates
         if results:
-            # Pre-build FCF dicts once
-            fcf_annual = get_annual_series(fcf_raw, n=5)
-            capex_annual = get_annual_series(capex_raw, n=5)
+            fcf_annual = get_annual_series(fcf_raw, n=_gn)
+            capex_annual = get_annual_series(capex_raw, n=_gn)
             fcf_d = {d: v for d, v in fcf_annual}
             cx_d = {d: v for d, v in capex_annual}
             all_fcf_dates = sorted(set(fcf_d.keys()) & set(cx_d.keys()))
@@ -526,32 +624,45 @@ def get_financial_metrics(
             ni_dates = sorted(ni_dict.keys())
             bv_dates = sorted(bv_dict.keys())
             eps_dates = sorted(eps_dict.keys())
+            oi_dates = sorted(oi_dict.keys())
+            ebitda_dates = sorted(ebitda_dict.keys())
 
             for m in results:
                 rp = m.report_period
 
                 if period == "ttm":
-                    # For TTM, use the most recent annual pair
-                    if len(rev_dates) >= 2:
-                        m.revenue_growth = _growth(rev_dict.get(rev_dates[-1]), rev_dict.get(rev_dates[-2]))
-                    if len(ni_dates) >= 2:
-                        m.earnings_growth = _growth(ni_dict.get(ni_dates[-1]), ni_dict.get(ni_dates[-2]))
-                    if len(bv_dates) >= 2:
-                        m.book_value_growth = _growth(bv_dict.get(bv_dates[-1]), bv_dict.get(bv_dates[-2]))
-                    if len(eps_dates) >= 2:
-                        m.earnings_per_share_growth = _growth(eps_dict.get(eps_dates[-1]), eps_dict.get(eps_dates[-2]))
-                    if len(all_fcf_dates) >= 2:
-                        fcf1 = fcf_d[all_fcf_dates[-1]] - cx_d[all_fcf_dates[-1]]
-                        fcf0 = fcf_d[all_fcf_dates[-2]] - cx_d[all_fcf_dates[-2]]
+                    # For each TTM snapshot, use annual values on or before its report_period
+                    rp_rev = [d for d in rev_dates if d <= rp]
+                    if len(rp_rev) >= 2:
+                        m.revenue_growth = _growth(rev_dict[rp_rev[-1]], rev_dict[rp_rev[-2]])
+                    rp_ni = [d for d in ni_dates if d <= rp]
+                    if len(rp_ni) >= 2:
+                        m.earnings_growth = _growth(ni_dict[rp_ni[-1]], ni_dict[rp_ni[-2]])
+                    rp_bv = [d for d in bv_dates if d <= rp]
+                    if len(rp_bv) >= 2:
+                        m.book_value_growth = _growth(bv_dict[rp_bv[-1]], bv_dict[rp_bv[-2]])
+                    rp_eps = [d for d in eps_dates if d <= rp]
+                    if len(rp_eps) >= 2:
+                        m.earnings_per_share_growth = _growth(eps_dict[rp_eps[-1]], eps_dict[rp_eps[-2]])
+                    rp_fcf = [d for d in all_fcf_dates if d <= rp]
+                    if len(rp_fcf) >= 2:
+                        fcf1 = fcf_d[rp_fcf[-1]] - cx_d[rp_fcf[-1]]
+                        fcf0 = fcf_d[rp_fcf[-2]] - cx_d[rp_fcf[-2]]
                         m.free_cash_flow_growth = _growth(fcf1, fcf0)
+                    rp_oi = [d for d in oi_dates if d <= rp]
+                    if len(rp_oi) >= 2:
+                        m.operating_income_growth = _growth(oi_dict[rp_oi[-1]], oi_dict[rp_oi[-2]])
+                    rp_ebitda = [d for d in ebitda_dates if d <= rp]
+                    if len(rp_ebitda) >= 2:
+                        m.ebitda_growth = _growth(ebitda_dict[rp_ebitda[-1]], ebitda_dict[rp_ebitda[-2]])
                 else:
-                    # For annual, find the prior period for each series
                     m.revenue_growth = _prior_growth(rev_dates, rev_dict, rp)
                     m.earnings_growth = _prior_growth(ni_dates, ni_dict, rp)
                     m.book_value_growth = _prior_growth(bv_dates, bv_dict, rp)
                     m.earnings_per_share_growth = _prior_growth(eps_dates, eps_dict, rp)
+                    m.operating_income_growth = _prior_growth(oi_dates, oi_dict, rp)
+                    m.ebitda_growth = _prior_growth(ebitda_dates, ebitda_dict, rp)
 
-                    # FCF growth — find prior FCF date
                     prior_fcf_dates = [d for d in all_fcf_dates if d < rp]
                     current_fcf_dates = [d for d in all_fcf_dates if d <= rp]
                     if prior_fcf_dates and current_fcf_dates:
@@ -637,7 +748,13 @@ def search_line_items(
         results = []
 
         if period == "ttm":
-            periods_to_process = [(end_date, "ttm")]
+            rev_raw = edgar_data.get("revenue", []) or edgar_data.get("revenue_fb", [])
+            q_dates = sorted(set(
+                v["end"] for v in rev_raw if v["form"] == "10-Q" and v["end"] <= end_date
+            ), reverse=True)[:limit]
+            if not q_dates:
+                q_dates = [end_date]
+            periods_to_process = [(d, "ttm") for d in q_dates]
         else:
             periods_to_process = [(d, "annual") for d in annual_dates]
 
@@ -652,7 +769,8 @@ def search_line_items(
                 if not series:
                     return None
                 if is_ttm:
-                    return _get_ttm_or_annual(series, prefer_ttm=True)
+                    filtered = [v for v in series if v["end"] <= rp]
+                    return _get_ttm_or_annual(filtered, prefer_ttm=True)
                 else:
                     # Get value for specific period
                     annuals = [v for v in series if v["form"] == "10-K" and v["end"] <= rp]

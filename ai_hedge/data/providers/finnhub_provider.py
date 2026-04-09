@@ -43,8 +43,8 @@ def get_insider_trades_fh(ticker: str, start_date: str, end_date: str, limit: in
                 "is_board_director": None,
                 "transaction_date": t.get("transactionDate"),
                 "transaction_shares": float(t.get("change", 0)) if t.get("change") is not None else None,
-                "transaction_price_per_share": None,  # Finnhub doesn't provide this directly
-                "transaction_value": None,
+                "transaction_price_per_share": float(t["transactionPrice"]) if t.get("transactionPrice") is not None else None,
+                "transaction_value": (abs(float(t.get("change", 0))) * float(t["transactionPrice"])) if t.get("transactionPrice") is not None and t.get("change") is not None else None,
                 "shares_owned_before_transaction": None,
                 "shares_owned_after_transaction": float(t.get("share", 0)) if t.get("share") is not None else None,
                 "security_title": None,
