@@ -542,3 +542,5 @@ def calculate_hurst_exponent(price_series: pd.Series, max_lag: int = 20) -> floa
     except (ValueError, RuntimeWarning):
         # Return 0.5 (random walk) if calculation fails
         return 0.5
+
+technicals_agent = technical_analyst_agent

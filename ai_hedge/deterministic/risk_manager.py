@@ -330,3 +330,5 @@ def calculate_correlation_multiplier(avg_correlation: float) -> float:
     if avg_correlation >= 0.20:
         return 1.05
     return 1.10
+
+risk_manager_agent = risk_management_agent
