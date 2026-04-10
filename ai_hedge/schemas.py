@@ -185,6 +185,7 @@ class ResearchReport(BaseModel):
     risks: list[str] = Field(description="Key risk factors identified")
     agent_breakdown: dict = Field(description="Per-agent signal summary")
     overall_sentiment: Literal["bullish", "bearish", "neutral", "mixed"]
+    confidence_range: str = Field(description="Range of confidence across agents, e.g. '45-92'")
 
 
 class TickerExplanation(BaseModel):
