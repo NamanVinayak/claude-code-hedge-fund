@@ -185,4 +185,18 @@ class ResearchReport(BaseModel):
     risks: list[str] = Field(description="Key risk factors identified")
     agent_breakdown: dict = Field(description="Per-agent signal summary")
     overall_sentiment: Literal["bullish", "bearish", "neutral", "mixed"]
-    confidence_range: str = Field(description="Range of confidence across agents, e.g. '45-92'")
+
+
+class TickerExplanation(BaseModel):
+    verdict: str = Field(description="One-sentence verdict with confidence")
+    bull_case: str = Field(description="Plain English bull case paragraph")
+    bear_case: str = Field(description="Plain English bear case paragraph")
+    key_numbers: dict[str, str] = Field(description="Metric name → value + plain English explanation")
+    risk_summary: str = Field(description="Plain English risk paragraph")
+
+
+class ExplainerOutput(BaseModel):
+    tldr: str = Field(description="2-3 sentence plain English summary")
+    narrative: str = Field(description="Multi-paragraph story explaining the analysis")
+    per_ticker: dict[str, TickerExplanation] = Field(description="Per-ticker educational breakdown")
+    concepts: dict[str, str] = Field(description="Glossary of technical terms used, in plain English")
