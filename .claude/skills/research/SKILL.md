@@ -191,7 +191,28 @@ Return JSON:
 Write the output to: runs/{RUN_ID}/decisions.json
 ```
 
-## Step 6 — Display results
+## Step 6 — Explainer Agent
+
+Dispatch **one** Agent tool call to produce a plain-English educational explanation:
+
+```
+You are a Financial Explainer agent.
+
+1. Read your system prompt from: ai_hedge/personas/prompts/explainer.md
+2. Read the mode from: runs/{RUN_ID}/metadata.json
+3. Read the final decisions from: runs/{RUN_ID}/decisions.json
+4. Read all signals from: runs/{RUN_ID}/signals_combined.json
+
+The mode is: research
+The tickers are: [{TICKERS}]
+
+Produce a layered educational explanation following the prompt exactly.
+Return JSON matching the format in the prompt.
+
+Write the output to: runs/{RUN_ID}/explanation.json
+```
+
+## Step 7 — Display results
 
 ```bash
 python -m ai_hedge.runner.finalize --run-id $RUN_ID
