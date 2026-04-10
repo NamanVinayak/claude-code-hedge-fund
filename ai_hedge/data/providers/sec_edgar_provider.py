@@ -1,6 +1,8 @@
 """SEC EDGAR XBRL companyfacts API provider for US-GAAP financial data."""
 
 import time
+from datetime import datetime as _dt
+
 import requests
 
 # Rate limiting: SEC allows 10 req/sec, we use ~9/sec to be safe
@@ -10,6 +12,14 @@ _HEADERS = {
     "User-Agent": "ai-hedge-fund research@example.com",
     "Accept-Encoding": "gzip, deflate",
 }
+
+
+def _period_days(start: str, end: str) -> int | None:
+    """Return number of days between two YYYY-MM-DD date strings, or None if unparseable."""
+    try:
+        return (_dt.strptime(end, "%Y-%m-%d") - _dt.strptime(start, "%Y-%m-%d")).days
+    except (ValueError, TypeError):
+        return None
 
 # In-memory cache keyed by CIK
 _cik_map: dict[str, str] | None = None  # ticker -> CIK (zero-padded to 10 digits)
@@ -66,9 +76,12 @@ def get_company_facts(cik: str) -> dict | None:
 
 def get_line_item_history(cik: str, concept: str, unit: str = "USD") -> list[dict]:
     """
-    Returns list of {end: 'YYYY-MM-DD', val: float, form: str, accn: str}
+    Returns list of {start: 'YYYY-MM-DD', end: 'YYYY-MM-DD', val: float, form: str, accn: str}
     from companyfacts for a given US-GAAP concept.
     Filters to 10-K and 10-Q forms. Sorted by end date ascending.
+
+    Uses (start, end, form) as dedup key so that quarterly (3-month) and
+    cumulative YTD entries from the same 10-Q filing are kept as separate records.
     """
     facts = get_company_facts(cik)
     if not facts:
@@ -78,7 +91,7 @@ def get_line_item_history(cik: str, concept: str, unit: str = "USD") -> list[dic
     except (KeyError, TypeError):
         return []
 
-    seen = {}  # (end, form) -> dict, prefer 10-K over 10-Q
+    seen = {}  # (start, end, form) -> dict
     for entry in units_data:
         form = entry.get("form", "")
         if form not in ("10-K", "10-Q", "10-K/A", "10-Q/A"):
@@ -88,7 +101,8 @@ def get_line_item_history(cik: str, concept: str, unit: str = "USD") -> list[dic
             continue
         # Normalize form
         norm_form = "10-K" if "10-K" in form else "10-Q"
-        key = (end, norm_form)
+        start = entry.get("start", "")
+        key = (start, end, norm_form)
         val = entry.get("val")
         if val is None:
             continue
@@ -96,6 +110,7 @@ def get_line_item_history(cik: str, concept: str, unit: str = "USD") -> list[dic
         existing = seen.get(key)
         if existing is None or entry.get("accn", "") > existing.get("accn", ""):
             seen[key] = {
+                "start": start,
                 "end": end,
                 "val": float(val),
                 "form": norm_form,
@@ -108,14 +123,35 @@ def get_line_item_history(cik: str, concept: str, unit: str = "USD") -> list[dic
 
 
 def compute_ttm(quarterly_values: list[dict]) -> float | None:
-    """Sum the last 4 quarterly values (by end date). Returns None if fewer than 4."""
-    # Filter to 10-Q only
-    quarters = [v for v in quarterly_values if v["form"] == "10-Q"]
+    """Sum the last 4 quarterly values (by end date). Returns None if fewer than 4.
+
+    Filters to entries with ~3-month period duration (60-120 days) to avoid
+    accidentally including cumulative year-to-date values from 10-Q filings.
+    """
+    quarters = []
+    for v in quarterly_values:
+        if v["form"] != "10-Q":
+            continue
+        start = v.get("start", "")
+        end = v.get("end", "")
+        if start and end:
+            days = _period_days(start, end)
+            if days is not None and 60 <= days <= 120:
+                quarters.append(v)
+        elif not start:
+            # No start date available — include for backward compat
+            quarters.append(v)
     quarters.sort(key=lambda x: x["end"])
     if len(quarters) < 4:
         return None
     last4 = quarters[-4:]
     return sum(q["val"] for q in last4)
+
+
+def compute_ttm_with_source(quarterly_values: list[dict]) -> tuple[float | None, str]:
+    """Like compute_ttm but also returns period source: 'ttm' or 'none'."""
+    val = compute_ttm(quarterly_values)
+    return (val, "ttm" if val is not None else "none")
 
 
 def get_latest_annual(annual_values: list[dict]) -> float | None:

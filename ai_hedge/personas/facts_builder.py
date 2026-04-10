@@ -821,10 +821,23 @@ def build_all_facts(run_id: str, tickers: list[str]) -> None:
         else:
             print(f"  [growth_analyst_agent] Not enough metrics, skipping.")
 
+        # Load web research if available
+        web_research_path = os.path.join("runs", run_id, "web_research", f"{ticker}.json")
+        web_context = None
+        if os.path.exists(web_research_path):
+            try:
+                with open(web_research_path) as f:
+                    web_context = json.load(f)
+                print(f"  [web_context] Loaded web research for {ticker}")
+            except Exception as exc:
+                print(f"  [web_context] Failed to load: {exc}")
+
         # LLM persona facts
         for persona, builder in PERSONA_BUILDERS.items():
             try:
                 facts = builder(models, ticker)
+                if web_context:
+                    facts["web_context"] = web_context
                 out_path = os.path.join(facts_dir, f"{persona}__{ticker}.json")
                 with open(out_path, "w") as f:
                     json.dump(_safe_serialize(facts), f, indent=2, default=str)

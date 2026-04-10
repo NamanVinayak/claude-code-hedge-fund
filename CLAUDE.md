@@ -154,6 +154,39 @@ Five function names existed in multiple upstream persona files. In `helpers.py` 
 
 All short codes: `wb`=warren_buffett, `cm`=charlie_munger, `bg`=ben_graham, `ba`=bill_ackman, `cw`=cathie_wood, `mb`=michael_burry, `nt`=nassim_taleb, `pl`=peter_lynch, `pf`=phil_fisher, `sd`=stanley_druckenmiller, `mp`=mohnish_pabrai, `rj`=rakesh_jhunjhunwala, `ad`=aswath_damodaran, `ga`=growth_agent, `ns`=news_sentiment
 
+## Paper Trading (Moomoo) — Internal Validation
+
+A separate automated paper trading system to prove model accuracy. **Not part of the pip package** — `pyproject.toml` only packages `ai_hedge*`.
+
+### Setup
+
+- **Platform**: Moomoo (works in Canada; Alpaca is blocked, IBKR gates on income)
+- **OpenD gateway**: `opend/OpenD.app` — local daemon that bridges Python API to Moomoo servers
+- **Config**: `opend/OpenD.xml` — credentials stored as MD5 hash, port 11111
+- **Python API**: `moomoo-api` package in .venv (`from moomoo import *`)
+- **Paper trading**: Use `trd_env=TrdEnv.SIMULATE` on all order calls
+
+### Starting OpenD
+
+```bash
+# First time after download: remove macOS quarantine
+sudo bash opend/fixrun.sh
+
+# Then launch (must be running for API to work)
+open opend/OpenD.app
+```
+
+### Architecture
+
+```
+Model runs (/invest, /swing, /daytrade) → decisions.json
+→ Executor reads decisions, places paper orders via Moomoo API
+→ Moomoo handles fills, position tracking, P&L
+→ Reporter generates accuracy stats after 10-20 days
+```
+
+The executor/tracker code will live in `tracker/` at project root (not inside `ai_hedge/`), keeping it separate from the user-facing package.
+
 ## Environment
 
 - Python 3.14, venv at `.venv/`

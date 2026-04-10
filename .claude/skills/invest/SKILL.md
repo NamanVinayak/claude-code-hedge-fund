@@ -37,6 +37,46 @@ python -m ai_hedge.runner.prepare --tickers $TICKERS --run-id $RUN_ID --mode inv
 
 This fetches all raw data, saves metadata.json, and builds invest persona facts.
 
+## Step 2.5 — Web Research Agent
+
+Dispatch one Agent tool call **per ticker** (can be parallel if multiple tickers):
+
+```
+You are the Web Research Agent.
+
+1. Read your system prompt from: ai_hedge/personas/prompts/web_researcher.md
+2. For ticker {TICKER}, use WebSearch to research:
+   - Current macro market conditions (search: "stock market news today", "Federal Reserve latest decision", "geopolitical news affecting stock market")
+   - Ticker-specific news (search: "{TICKER} news this week", "{TICKER} analyst rating upgrade downgrade")
+   - Analyst consensus (search: "{TICKER} price target analyst consensus")
+   - Earnings info (search: "{TICKER} next earnings date estimate")
+   - Competitor activity (search: "{TICKER} competitors news")
+3. Write your research to: runs/{RUN_ID}/web_research/{TICKER}.json
+
+Follow the JSON format in your system prompt exactly.
+```
+
+After web research completes for all tickers, rebuild facts to include web context:
+```bash
+python -m ai_hedge.personas.facts_builder --run-id $RUN_ID --tickers $TICKERS
+```
+
+## Step 2.8 — Web Verification Agent
+
+Dispatch **one** Agent tool call (covers all tickers):
+
+```
+You are the Data Verification Agent.
+
+1. Read your system prompt from: ai_hedge/personas/prompts/web_verifier.md
+2. For each ticker in [{TICKERS}]:
+   - Read facts bundles from runs/{RUN_ID}/facts/ (check 2-3 persona files per ticker)
+   - Extract key metrics: net_margin, operating_margin, pe_ratio, revenue, market_cap
+   - Use WebSearch to verify each metric (search: "{TICKER} net margin TTM", "{TICKER} PE ratio")
+   - If any metric deviates >20% from web data, update ALL facts bundles for that ticker
+3. Write verification report to: runs/{RUN_ID}/verification/{TICKER}.json for each ticker
+```
+
 ## Step 3 — Dispatch 14 LLM subagents in batches of 4
 
 Dispatch agents **in batches of 4**. Send 4 Agent tool calls in a SINGLE message, wait for all 4 to complete, then send the next batch.
@@ -73,6 +113,7 @@ You are the {AGENT} investor agent.
 1. Read your system prompt from: ai_hedge/personas/prompts/{AGENT}.md
 2. For each ticker in [{TICKERS}], read the facts bundle from:
    runs/{RUN_ID}/facts/{AGENT}__{TICKER}.json
+   The facts include financial data AND a "web_context" section with current market conditions and news. Use both in your analysis.
 
 Analyze each ticker using ONLY the provided facts data.
 

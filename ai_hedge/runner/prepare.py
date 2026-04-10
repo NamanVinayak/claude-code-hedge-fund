@@ -120,6 +120,13 @@ def main():
 
     print(f"Data ready in runs/{args.run_id}/raw/")
 
+    # Create web research and verification directories
+    web_research_dir = os.path.join("runs", args.run_id, "web_research")
+    verification_dir = os.path.join("runs", args.run_id, "verification")
+    os.makedirs(web_research_dir, exist_ok=True)
+    os.makedirs(verification_dir, exist_ok=True)
+    print("Web research and verification directories ready.")
+
     # Save run metadata
     metadata = {
         "mode": mode,

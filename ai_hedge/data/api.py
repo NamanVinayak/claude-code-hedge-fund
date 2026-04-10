@@ -26,6 +26,7 @@ from ai_hedge.data.providers.sec_edgar_provider import (
     get_company_facts,
     get_line_item_history,
     compute_ttm,
+    compute_ttm_with_source,
     get_latest_annual,
     get_latest_annual_with_date,
     get_annual_series,
@@ -199,15 +200,27 @@ def _fetch_edgar_data(ticker: str) -> dict:
     return results
 
 
+def _get_ttm_or_annual_with_source(series: list[dict], prefer_ttm: bool = True) -> tuple[float | None, str]:
+    """Get TTM or annual value and which source was used.
+
+    Returns (value, source) where source is 'ttm', 'annual', or 'none'.
+    """
+    if not series:
+        return (None, "none")
+    if prefer_ttm:
+        val, src = compute_ttm_with_source(series)
+        if val is not None:
+            return (val, "ttm")
+    annual = get_latest_annual(series)
+    if annual is not None:
+        return (annual, "annual")
+    return (None, "none")
+
+
 def _get_ttm_or_annual(series: list[dict], prefer_ttm: bool = True) -> float | None:
     """Get TTM (sum of last 4 quarters) if available, else latest annual."""
-    if not series:
-        return None
-    if prefer_ttm:
-        ttm = compute_ttm(series)
-        if ttm is not None:
-            return ttm
-    return get_latest_annual(series)
+    val, _ = _get_ttm_or_annual_with_source(series, prefer_ttm)
+    return val
 
 
 def _get_stock_value(series: list[dict]) -> float | None:
@@ -254,22 +267,44 @@ def _build_metrics_for_period(
 ) -> FinancialMetrics:
     """Build a FinancialMetrics object from EDGAR data and yfinance info."""
 
-    def _pick(key: str, flow: bool = True) -> float | None:
+    # Track period sources for consistency enforcement
+    _flow_sources = {}  # key -> source ('ttm', 'annual', or 'none')
+
+    def _best_series(key: str, fallback_key: str = None) -> list[dict]:
+        """Return the better of primary/fallback series based on data freshness."""
         series = edgar_data.get(key, [])
-        if not series:
-            return None
         if cutoff_date:
             series = [v for v in series if v["end"] <= cutoff_date]
-            if not series:
-                return None
+        if fallback_key:
+            fb = edgar_data.get(fallback_key, [])
+            if cutoff_date:
+                fb = [v for v in fb if v["end"] <= cutoff_date]
+            if fb:
+                max_fb = max(v["end"] for v in fb)
+                max_primary = max((v["end"] for v in series), default="")
+                if max_fb > max_primary:
+                    return fb
+        return series
+
+    def _pick(key: str, flow: bool = True, fallback_key: str = None) -> float | None:
+        series = _best_series(key, fallback_key)
+        if not series:
+            return None
         if flow and is_ttm:
-            return _get_ttm_or_annual(series, prefer_ttm=True)
+            val, src = _get_ttm_or_annual_with_source(series, prefer_ttm=True)
+            _flow_sources[key] = src
+            return val
         return _get_stock_value(series)
 
+    def _pick_annual_only(key: str, fallback_key: str = None) -> float | None:
+        """Force annual-only retrieval for a flow item."""
+        series = _best_series(key, fallback_key)
+        if not series:
+            return None
+        return get_latest_annual(series)
+
     # Flow items (sum for TTM)
-    revenue = _pick("revenue", flow=True)
-    if revenue is None:
-        revenue = _pick("revenue_fb", flow=True)
+    revenue = _pick("revenue", flow=True, fallback_key="revenue_fb")
 
     gross_profit = _pick("gross_profit", flow=True)
     operating_income = _pick("operating_income", flow=True)
@@ -282,6 +317,29 @@ def _build_metrics_for_period(
     dividends = _pick("dividends", flow=True)
     stock_issuance = _pick("stock_issuance", flow=True)
     stock_repurchase = _pick("stock_repurchase", flow=True)
+
+    # Period consistency enforcement: if flow items mixed TTM and annual,
+    # force all to annual to prevent meaningless ratios.
+    if is_ttm:
+        flow_source_values = [s for s in _flow_sources.values() if s != "none"]
+        if flow_source_values and "ttm" in flow_source_values and "annual" in flow_source_values:
+            logger.debug(
+                "Period mismatch for %s (%s): mixed TTM/annual sources %s. "
+                "Forcing all flow items to annual.",
+                ticker, report_period, _flow_sources,
+            )
+            revenue = _pick_annual_only("revenue", fallback_key="revenue_fb")
+            gross_profit = _pick_annual_only("gross_profit")
+            operating_income = _pick_annual_only("operating_income")
+            net_income = _pick_annual_only("net_income")
+            r_and_d = _pick_annual_only("research_and_development")
+            interest_expense = _pick_annual_only("interest_expense")
+            da = _pick_annual_only("depreciation_and_amortization")
+            capex = _pick_annual_only("capital_expenditure")
+            ocf = _pick_annual_only("operating_cash_flow")
+            dividends = _pick_annual_only("dividends")
+            stock_issuance = _pick_annual_only("stock_issuance")
+            stock_repurchase = _pick_annual_only("stock_repurchase")
 
     # Stock items (latest point-in-time)
     total_assets = _pick("total_assets", flow=False)
@@ -330,9 +388,7 @@ def _build_metrics_for_period(
     book_value_per_share = _safe_div(shareholders_equity, shares_out)
 
     # EPS — try EDGAR, fall back to yfinance
-    eps = _pick("earnings_per_share", flow=False)
-    if eps is None:
-        eps = _pick("earnings_per_share_fb", flow=False)
+    eps = _pick("earnings_per_share", flow=False, fallback_key="earnings_per_share_fb")
     if eps is None and shares_out and shares_out > 0 and net_income is not None:
         eps = net_income / shares_out
 
@@ -469,6 +525,40 @@ def _build_metrics_for_period(
     )
 
 
+def _sanity_check_metrics(m: FinancialMetrics) -> FinancialMetrics:
+    """Null out obviously implausible metric values and log warnings."""
+    warnings = []
+
+    # Margins should be between -200% and 200% for any real company
+    for attr, label in [
+        ("gross_margin", "Gross margin"),
+        ("operating_margin", "Operating margin"),
+        ("net_margin", "Net margin"),
+    ]:
+        val = getattr(m, attr, None)
+        if val is not None and (val > 2.0 or val < -2.0):
+            warnings.append(f"{label}={val:.2%} is implausible")
+            setattr(m, attr, None)
+
+    # ROE/ROA/ROIC > 500% is almost certainly wrong
+    for attr, label in [
+        ("return_on_equity", "ROE"),
+        ("return_on_assets", "ROA"),
+        ("return_on_invested_capital", "ROIC"),
+    ]:
+        val = getattr(m, attr, None)
+        if val is not None and (val > 5.0 or val < -5.0):
+            warnings.append(f"{label}={val:.2%} is implausible")
+            setattr(m, attr, None)
+
+    if warnings:
+        logger.warning(
+            "Sanity check for %s (%s): %s", m.ticker, m.report_period, "; ".join(warnings)
+        )
+
+    return m
+
+
 def _get_annual_flow_series(edgar_data: dict, key: str, fallback_key: str = None, n: int = 5) -> list[tuple[str, float]]:
     """Get last n annual values for a flow concept."""
     series = edgar_data.get(key, [])
@@ -507,7 +597,16 @@ def get_financial_metrics(
 
         if period == "ttm":
             # Multiple TTM snapshots — one per quarterly filing date
-            rev_raw = edgar_data.get("revenue", []) or edgar_data.get("revenue_fb", [])
+            # Prefer the fresher of primary/fallback revenue series
+            rev_raw = edgar_data.get("revenue", [])
+            rev_raw_fb = edgar_data.get("revenue_fb", [])
+            if rev_raw_fb:
+                max_fb = max((v["end"] for v in rev_raw_fb), default="")
+                max_primary = max((v["end"] for v in rev_raw), default="") if rev_raw else ""
+                if max_fb > max_primary:
+                    rev_raw = rev_raw_fb
+            if not rev_raw:
+                rev_raw = rev_raw_fb or []
             q_dates = sorted(set(
                 v["end"] for v in rev_raw if v["form"] == "10-Q" and v["end"] <= end_date
             ), reverse=True)[:limit]
@@ -539,6 +638,7 @@ def get_financial_metrics(
                     is_ttm=True,
                     cutoff_date=qd,
                 )
+                m = _sanity_check_metrics(m)
                 results.append(m)
         else:
             # Annual periods — build one entry per fiscal year
@@ -570,6 +670,7 @@ def get_financial_metrics(
                     yf_info=yf_info if i == 0 else {},
                     is_ttm=False,
                 )
+                m = _sanity_check_metrics(m)
                 results.append(m)
 
         # Compute growth rates using consecutive periods in the revenue/NI series
@@ -739,8 +840,16 @@ def search_line_items(
         edgar_data = _fetch_edgar_data(ticker)
 
         # Determine report periods to cover
-        # Use revenue series as anchor
-        rev_series = edgar_data.get("revenue", []) or edgar_data.get("revenue_fb", [])
+        # Use revenue series as anchor — prefer the fresher of primary/fallback
+        rev_series = edgar_data.get("revenue", [])
+        rev_fb = edgar_data.get("revenue_fb", [])
+        if rev_fb:
+            max_fb = max((v["end"] for v in rev_fb), default="")
+            max_primary = max((v["end"] for v in rev_series), default="") if rev_series else ""
+            if max_fb > max_primary:
+                rev_series = rev_fb
+        if not rev_series:
+            rev_series = rev_fb
         annual_revs = get_annual_series(rev_series, n=limit + 1)
         annual_dates = [d for d, _ in annual_revs if d <= end_date]
         annual_dates = sorted(set(annual_dates), reverse=True)[:limit]
@@ -748,7 +857,7 @@ def search_line_items(
         results = []
 
         if period == "ttm":
-            rev_raw = edgar_data.get("revenue", []) or edgar_data.get("revenue_fb", [])
+            rev_raw = rev_series
             q_dates = sorted(set(
                 v["end"] for v in rev_raw if v["form"] == "10-Q" and v["end"] <= end_date
             ), reverse=True)[:limit]
@@ -762,22 +871,47 @@ def search_line_items(
             is_ttm = rp_period == "ttm"
 
             # Build base values
-            def _pick_flow(key, fallback=None):
+            _flow_sources_li = {}  # key -> source ('ttm', 'annual', 'none')
+
+            def _best_series_li(key, fallback=None):
+                """Return the better of primary/fallback series based on data freshness."""
                 series = edgar_data.get(key, [])
-                if not series and fallback:
-                    series = edgar_data.get(fallback, [])
+                series = [v for v in series if v["end"] <= rp]
+                if fallback:
+                    fb = edgar_data.get(fallback, [])
+                    fb = [v for v in fb if v["end"] <= rp]
+                    if fb:
+                        max_fb = max(v["end"] for v in fb)
+                        max_primary = max((v["end"] for v in series), default="")
+                        if max_fb > max_primary:
+                            return fb
+                return series
+
+            def _pick_flow(key, fallback=None):
+                series = _best_series_li(key, fallback)
                 if not series:
                     return None
                 if is_ttm:
-                    filtered = [v for v in series if v["end"] <= rp]
-                    return _get_ttm_or_annual(filtered, prefer_ttm=True)
+                    val, src = _get_ttm_or_annual_with_source(series, prefer_ttm=True)
+                    _flow_sources_li[key] = src
+                    return val
                 else:
-                    # Get value for specific period
-                    annuals = [v for v in series if v["form"] == "10-K" and v["end"] <= rp]
+                    annuals = [v for v in series if v["form"] == "10-K"]
                     if not annuals:
                         return None
                     annuals.sort(key=lambda x: x["end"])
                     return annuals[-1]["val"]
+
+            def _pick_flow_annual_only(key, fallback=None):
+                """Force annual-only retrieval for a flow item."""
+                series = _best_series_li(key, fallback)
+                if not series:
+                    return None
+                annuals = [v for v in series if v["form"] == "10-K"]
+                if not annuals:
+                    return None
+                annuals.sort(key=lambda x: x["end"])
+                return annuals[-1]["val"]
 
             def _pick_stock(key, fallback=None):
                 series = edgar_data.get(key, [])
@@ -785,7 +919,6 @@ def search_line_items(
                     series = edgar_data.get(fallback, [])
                 if not series:
                     return None
-                # Latest value on or before rp
                 candidates = [v for v in series if v["end"] <= rp]
                 if not candidates:
                     return None
@@ -806,6 +939,28 @@ def search_line_items(
             stock_issuance = _pick_flow("stock_issuance")
             stock_repurchase = _pick_flow("stock_repurchase")
             operating_expense = _pick_flow("operating_expense")
+
+            # Period consistency enforcement for line items
+            if is_ttm:
+                flow_src_vals = [s for s in _flow_sources_li.values() if s != "none"]
+                if flow_src_vals and "ttm" in flow_src_vals and "annual" in flow_src_vals:
+                    logger.debug(
+                        "search_line_items period mismatch for %s (%s): %s. Forcing annual.",
+                        ticker, rp, _flow_sources_li,
+                    )
+                    revenue = _pick_flow_annual_only("revenue", "revenue_fb")
+                    gross_profit = _pick_flow_annual_only("gross_profit")
+                    operating_income = _pick_flow_annual_only("operating_income")
+                    net_income = _pick_flow_annual_only("net_income")
+                    r_and_d = _pick_flow_annual_only("research_and_development")
+                    interest_expense = _pick_flow_annual_only("interest_expense")
+                    da = _pick_flow_annual_only("depreciation_and_amortization")
+                    capex = _pick_flow_annual_only("capital_expenditure")
+                    ocf = _pick_flow_annual_only("operating_cash_flow")
+                    dividends = _pick_flow_annual_only("dividends")
+                    stock_issuance = _pick_flow_annual_only("stock_issuance")
+                    stock_repurchase = _pick_flow_annual_only("stock_repurchase")
+                    operating_expense = _pick_flow_annual_only("operating_expense")
 
             total_assets = _pick_stock("total_assets")
             current_assets = _pick_stock("current_assets")

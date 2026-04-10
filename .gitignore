@@ -17,3 +17,10 @@ reference/
 .venv/
 dist/
 *.egg-info/
+
+# Moomoo OpenD (contains credentials)
+opend/
+
+# Tracker data (internal validation, not for users)
+tracker/tracker.db
+tracker/*.log
