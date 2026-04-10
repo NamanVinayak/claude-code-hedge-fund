@@ -28,6 +28,9 @@ python -m ai_hedge.runner.aggregate --run-id <id> --tickers AAPL,MSFT
 
 # Step 4: dispatch final agent (portfolio manager / head trader / research writer)
 
+# Step 4.5: dispatch explainer agent
+# (reads decisions.json + signals_combined.json, writes explanation.json)
+
 # Step 5: display results
 python -m ai_hedge.runner.finalize --run-id <id>
 ```
@@ -63,7 +66,8 @@ Claude Code (orchestrator)
 ├── [Agent × 1 Head Trader]             → swing/daytrade only: synthesizes strategy signals
 ├── python -m ai_hedge.runner.aggregate → deterministic agents + risk manager
 ├── Agent × 1 (final agent)             → PM / Head Trader PM / Research Writer
-└── python -m ai_hedge.runner.finalize  → prints mode-specific results
+├── Agent × 1 (explainer)               → reads all signals + decisions, writes educational narrative
+└── python -m ai_hedge.runner.finalize  → prints explanation + mode-specific results
 ```
 
 ### Data flow
@@ -77,7 +81,8 @@ Claude Code (orchestrator)
 6. LLM subagents read facts + prompts, write `runs/<id>/signals/<agent>.json`
 7. `aggregate.py` loads all signals, runs deterministic agents (fundamentals/technicals/valuation/sentiment/risk_manager, plus technicals_intraday for daytrade/research), writes `runs/<id>/signals_combined.json`
 8. Final agent reads `signals_combined.json` + its prompt, writes `runs/<id>/decisions.json`
-9. `finalize.py` pretty-prints mode-specific results
+9. Explainer subagent reads `signals_combined.json` + `decisions.json`, writes `runs/<id>/explanation.json`
+10. `finalize.py` pretty-prints educational explanation + mode-specific results
 
 ### Key modules
 
@@ -92,6 +97,7 @@ Claude Code (orchestrator)
 | `ai_hedge/personas/swing_facts_builder.py` | Swing-mode facts: technical setups for swing strategies |
 | `ai_hedge/personas/dt_facts_builder.py` | Day-trade facts: intraday data + indicators for DT strategies |
 | `ai_hedge/personas/prompts/` | System prompts for all agents (invest, swing, daytrade, research) |
+| `ai_hedge/personas/prompts/explainer.md` | System prompt for the explainer agent (educational output for all modes) |
 | `ai_hedge/deterministic/` | Deterministic agents: fundamentals, technicals, valuation, sentiment, risk_manager |
 | `ai_hedge/deterministic/technicals_intraday.py` | Intraday technicals agent (daytrade/research modes) |
 | `ai_hedge/schemas.py` | Pydantic signal schemas for all agent types |
