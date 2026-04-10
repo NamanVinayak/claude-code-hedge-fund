@@ -18,8 +18,19 @@ Parse `$ARGUMENTS` as the comma-separated ticker list. Normalize to uppercase, c
 
 Set variables: `TICKERS`, `RUN_ID`.
 
-## Step 2 — Fetch data and build facts
+## Step 2 — Check environment and fetch data
 
+First check if the package is installed:
+```bash
+python -c "import ai_hedge" 2>/dev/null || echo "ERROR: ai-hedge-fund not installed. Run: pip install ai-hedge-fund"
+```
+
+Check for optional Finnhub key and inform user:
+```bash
+python -c "import os; from dotenv import load_dotenv; load_dotenv(); key=os.getenv('FINNHUB_API_KEY',''); print('Finnhub API key: configured' if key else 'Note: No FINNHUB_API_KEY found. Insider trades and news data will be unavailable. Get a free key at finnhub.io and add FINNHUB_API_KEY=your_key to .env')"
+```
+
+Fetch data:
 ```bash
 python -m ai_hedge.runner.prepare --tickers $TICKERS --run-id $RUN_ID --mode swing
 ```

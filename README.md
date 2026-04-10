@@ -41,7 +41,20 @@ Your ticker → Fetch financial data → N AI agents analyze independently
 - **SEC EDGAR** — 10+ years of quarterly financials, TTM snapshots
 - **Finnhub** (free tier) — insider trades, company news
 
-No paid API keys required. Optional `FINNHUB_API_KEY` in `.env` for enhanced data.
+No paid API keys required. Works out of the box with prices, financials, and technicals.
+
+### Optional: Finnhub API key (free, recommended)
+
+For insider trading data and company news sentiment, add a free Finnhub API key:
+
+1. Go to [finnhub.io](https://finnhub.io) and create a free account (no credit card needed)
+2. Copy your API key from the dashboard
+3. Create a `.env` file in your project directory:
+```
+FINNHUB_API_KEY=your_key_here
+```
+
+Without this key, the system still works — you just won't get insider trade patterns or news sentiment analysis.
 
 ## Uninstall
 
