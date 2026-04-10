@@ -50,3 +50,74 @@ def test_explainer_output_json_roundtrip():
     restored = ExplainerOutput(**dumped)
     assert restored.tldr == "Test summary."
     assert restored.per_ticker["MSFT"].verdict == "HOLD"
+
+
+import io
+import sys
+
+
+def _make_sample_explanation() -> dict:
+    """Return a sample explanation.json as a dict."""
+    return {
+        "tldr": "Apple is a strong buy. 10 out of 14 analysts are bullish, driven by rock-solid margins and steady growth.",
+        "narrative": (
+            "The AI hedge fund ran Apple through 14 different analytical lenses — from Warren Buffett's "
+            "value investing approach to Cathie Wood's innovation-focused framework.\n\n"
+            "The overwhelming consensus is bullish. Apple's fundamentals are excellent: 26% net margins, "
+            "8.5% revenue growth, and a fortress balance sheet with $60B in cash.\n\n"
+            "The main pushback comes from valuation-focused analysts like Michael Burry and Ben Graham, "
+            "who flag the P/E ratio of 32 as expensive. But momentum and quality analysts counter that "
+            "Apple's consistency justifies a premium."
+        ),
+        "per_ticker": {
+            "AAPL": {
+                "verdict": "BUY 150 shares with 78% confidence — fundamentals and momentum align.",
+                "bull_case": "Strong margins, steady growth, Buffett and Lynch both bullish.",
+                "bear_case": "Valuation stretched at 32x earnings, Burry and Graham bearish.",
+                "key_numbers": {
+                    "P/E Ratio": "32 (paying $32 per $1 of earnings — above market avg of ~20)",
+                    "Net Margin": "26% (keeps 26 cents of every dollar — very healthy)",
+                },
+                "risk_summary": "If growth slows, the premium valuation could correct sharply.",
+            }
+        },
+        "concepts": {
+            "P/E Ratio": "How much investors pay per dollar of profit. Lower = cheaper stock.",
+            "Net Margin": "What percentage of revenue becomes actual profit after all costs.",
+        },
+    }
+
+
+def test_display_explanation_produces_output():
+    """_display_explanation prints the TL;DR, narrative, and per-ticker sections."""
+    from ai_hedge.runner.finalize import _display_explanation
+
+    explanation = _make_sample_explanation()
+    captured = io.StringIO()
+    old_stdout = sys.stdout
+    sys.stdout = captured
+    try:
+        _display_explanation(explanation)
+    finally:
+        sys.stdout = old_stdout
+
+    output = captured.getvalue()
+    assert "Apple is a strong buy" in output
+    assert "AAPL" in output
+    assert "P/E Ratio" in output
+    assert "Concepts" in output or "GLOSSARY" in output
+
+
+def test_display_explanation_handles_empty():
+    """_display_explanation gracefully handles missing/empty explanation."""
+    from ai_hedge.runner.finalize import _display_explanation
+
+    captured = io.StringIO()
+    old_stdout = sys.stdout
+    sys.stdout = captured
+    try:
+        _display_explanation({})
+        _display_explanation(None)
+    finally:
+        sys.stdout = old_stdout
+    # Should not crash

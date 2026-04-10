@@ -334,6 +334,89 @@ def _display_research(decisions_data: dict, analyst_signals: dict, combined: dic
 
 
 # ---------------------------------------------------------------------------
+# Explanation display (all modes)
+# ---------------------------------------------------------------------------
+
+def _display_explanation(explanation: dict | None):
+    """Display the explainer agent's educational narrative."""
+    if not explanation:
+        return
+
+    tldr = explanation.get("tldr", "")
+    narrative = explanation.get("narrative", "")
+    per_ticker = explanation.get("per_ticker", {})
+    concepts = explanation.get("concepts", {})
+
+    if not tldr and not narrative:
+        return
+
+    print(f"\n{Style.BRIGHT}{'=' * 60}")
+    print(f"{'=== ANALYSIS EXPLAINED ===':^60}")
+    print(f"{'=' * 60}{Style.RESET_ALL}\n")
+
+    # TL;DR
+    if tldr:
+        print(f"  {Style.BRIGHT}TL;DR{Style.RESET_ALL}")
+        print(f"  {tldr}\n")
+
+    # Narrative
+    if narrative:
+        print(f"  {Style.BRIGHT}THE FULL STORY{Style.RESET_ALL}")
+        for paragraph in narrative.split("\n"):
+            paragraph = paragraph.strip()
+            if paragraph:
+                # Word-wrap at ~76 chars with 2-space indent
+                words = paragraph.split()
+                line = "  "
+                for word in words:
+                    if len(line) + len(word) + 1 > 78:
+                        print(line)
+                        line = "  " + word
+                    else:
+                        line = line + " " + word if line.strip() else "  " + word
+                if line.strip():
+                    print(line)
+                print()
+
+    # Per-ticker breakdown
+    for ticker, details in per_ticker.items():
+        if not isinstance(details, dict):
+            continue
+        print(f"  {Style.BRIGHT}{Fore.CYAN}{ticker}{Style.RESET_ALL}")
+
+        verdict = details.get("verdict", "")
+        if verdict:
+            print(f"    {Style.BRIGHT}Verdict:{Style.RESET_ALL} {verdict}")
+
+        bull = details.get("bull_case", "")
+        if bull:
+            print(f"    {Fore.GREEN}Bull Case:{Style.RESET_ALL} {bull}")
+
+        bear = details.get("bear_case", "")
+        if bear:
+            print(f"    {Fore.RED}Bear Case:{Style.RESET_ALL} {bear}")
+
+        key_numbers = details.get("key_numbers", {})
+        if key_numbers:
+            print(f"    {Style.BRIGHT}Key Numbers:{Style.RESET_ALL}")
+            for metric, value in key_numbers.items():
+                print(f"      {metric}: {value}")
+
+        risk = details.get("risk_summary", "")
+        if risk:
+            print(f"    {Fore.YELLOW}Risk:{Style.RESET_ALL} {risk}")
+
+        print()
+
+    # Concepts glossary
+    if concepts:
+        print(f"  {Style.BRIGHT}GLOSSARY{Style.RESET_ALL}")
+        for term, definition in concepts.items():
+            print(f"    {Style.BRIGHT}{term}:{Style.RESET_ALL} {definition}")
+        print()
+
+
+# ---------------------------------------------------------------------------
 # Shared helpers
 # ---------------------------------------------------------------------------
 
@@ -389,6 +472,14 @@ def main():
             combined = json.load(f)
         analyst_signals = combined.get("analyst_signals", {})
 
+    # Display explanation first (if available)
+    explanation_path = os.path.join(run_dir, "explanation.json")
+    if os.path.exists(explanation_path):
+        with open(explanation_path) as f:
+            explanation = json.load(f)
+        _display_explanation(explanation)
+
+    # Then display the raw data tables
     display_fn = MODE_DISPLAY.get(mode, _display_invest)
     display_fn(decisions_data, analyst_signals, combined)
 
