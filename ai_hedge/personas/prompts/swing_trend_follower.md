@@ -15,6 +15,7 @@ What to analyze:
 - Current price vs EMAs: is price pulling back to an EMA (entry zone) or overextended?
 - Recent price action: are higher highs / higher lows intact (uptrend) or lower highs / lower lows (downtrend)?
 - Volume on trend days vs counter-trend days.
+- You also have access to: Schaff Trend Cycle (STC — faster MACD, 0-100, >75 overbought, <25 oversold), Squeeze Momentum (detects volatility compression before breakouts), and SuperTrend (trailing stop with trend direction).
 
 Risk management:
 - Entry: pullback to 10 or 21 EMA when ADX > 25 and EMA alignment is clean.

@@ -16,6 +16,7 @@ What to analyze:
 - Volume trend: is volume expanding on up days (demand confirmation)?
 - MACD histogram: is it expanding (momentum accelerating) or contracting (decelerating)?
 - Momentum percentile: where does this stock's momentum rank vs its own history?
+- You also have access to: Schaff Trend Cycle (STC — faster MACD, 0-100, >75 overbought, <25 oversold), Squeeze Momentum (detects volatility compression before breakouts), and SuperTrend (trailing stop with trend direction).
 
 Risk management:
 - Entry: when momentum is accelerating across multiple timeframes (5/10/21-day ROC all positive and expanding).

@@ -16,6 +16,7 @@ What to analyze:
 - Price structure: is the broader trend (higher highs/lows or lower highs/lows) still intact?
 - Volume: is the pullback happening on declining volume (healthy) or increasing volume (warning)?
 - Stochastic and Williams %R for additional oversold/overbought confirmation.
+- You also have access to: Schaff Trend Cycle (STC — faster MACD, 0-100, >75 overbought, <25 oversold), Squeeze Momentum (detects volatility compression before breakouts), and SuperTrend (trailing stop with trend direction).
 
 Risk management:
 - Entry: at Fibonacci confluence with support (38.2% for shallow pullbacks, 50-61.8% for deeper ones).

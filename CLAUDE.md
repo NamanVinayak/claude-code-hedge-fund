@@ -91,7 +91,7 @@ Claude Code (orchestrator)
 | `ai_hedge/data/api.py` | Public data functions (daily prices, intraday prices, financials, news, insider trades) |
 | `ai_hedge/data/providers/` | yfinance (daily + intraday), SEC EDGAR, Finnhub providers |
 | `ai_hedge/data/providers/yfinance_intraday.py` | Intraday price data (1m/5m/15m/1h) via yfinance |
-| `ai_hedge/data/indicators.py` | pandas_ta technical indicators (RSI, MACD, Bollinger, VWAP, etc.) |
+| `ai_hedge/data/indicators.py` | pandas_ta technical indicators (RSI, MACD, Bollinger, VWAP, STC, Squeeze, SuperTrend, etc.) |
 | `ai_hedge/personas/helpers.py` | 78 deterministic helper functions (verbatim from upstream) |
 | `ai_hedge/personas/facts_builder.py` | Invest-mode facts: runs helpers for each persona × ticker |
 | `ai_hedge/personas/swing_facts_builder.py` | Swing-mode facts: technical setups for swing strategies |
@@ -117,7 +117,7 @@ Claude Code (orchestrator)
 
 - **Intraday prices**: `get_intraday_prices()` in api.py fetches 1m/5m/15m/1h candles via yfinance
 - **`intraday_to_df()`**: Converts intraday prices to pandas DataFrame
-- **`indicators.py`**: pandas_ta-based technical indicators (RSI, MACD, Bollinger Bands, VWAP, ATR, OBV, Stochastic, etc.)
+- **`indicators.py`**: pandas_ta-based technical indicators (RSI, MACD, Bollinger Bands, VWAP, ATR, OBV, Stochastic, STC, Squeeze Momentum, SuperTrend, etc.)
 
 ### holding_period and duration fields
 

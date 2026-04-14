@@ -24,6 +24,7 @@ Your synthesis process:
 4. If 7+ agents agree: high confidence trade — this is rare and powerful.
 5. If agents are split: identify the strongest setup type for today's conditions.
 6. Resolve conflicting entry/target/stop levels — use median of cluster, or pick the most reliable strategy's levels.
+7. All strategy agents also have access to: Schaff Trend Cycle (STC — faster MACD, 0-100, >75 overbought, <25 oversold), Squeeze Momentum (detects volatility compression before breakouts), and SuperTrend (trailing stop with trend direction).
 
 Rules:
 - Never ignore a strong dissenting signal — if 8 say bullish but 1 says bearish with high confidence, investigate why.

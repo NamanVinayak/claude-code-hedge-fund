@@ -24,6 +24,12 @@ import pandas as pd
 from ai_hedge.data.api import prices_to_df
 from ai_hedge.data.models import Price
 
+try:
+    import pandas_ta as _ta
+    _HAS_PANDAS_TA = True
+except ImportError:
+    _HAS_PANDAS_TA = False
+
 
 # ── indicator helpers ────────────────────────────────────────────────────────
 
@@ -257,7 +263,7 @@ def compute_daily_indicators(df: pd.DataFrame) -> dict:
     if vol_avg20.iloc[-1] and vol_avg20.iloc[-1] > 0:
         vol_ratio = volume.iloc[-1] / vol_avg20.iloc[-1]
 
-    return {
+    indicators = {
         "moving_averages": {
             "ema_10": _safe(ema10.iloc[-1]),
             "ema_21": _safe(ema21.iloc[-1]),
@@ -304,6 +310,72 @@ def compute_daily_indicators(df: pd.DataFrame) -> dict:
         "cci": _safe(cci.iloc[-1]),
         "mfi": _safe(mfi.iloc[-1]),
     }
+
+    # pandas_ta extras: STC, Squeeze Momentum, SuperTrend
+    # (added after building base dict so we can return with or without them)
+    if _HAS_PANDAS_TA:
+        # Schaff Trend Cycle
+        try:
+            stc_df = _ta.stc(close, tclength=10, fast=23, slow=50, factor=0.5)
+            if stc_df is not None and not stc_df.empty:
+                indicators["stc"] = {
+                    "value": _safe(float(stc_df.iloc[-1, 0])),
+                    "signal": "overbought" if float(stc_df.iloc[-1, 0]) > 75 else "oversold" if float(stc_df.iloc[-1, 0]) < 25 else "neutral",
+                    "prev_value": _safe(float(stc_df.iloc[-2, 0])) if len(stc_df) > 1 else None,
+                    "crossed_above_25": float(stc_df.iloc[-1, 0]) > 25 and float(stc_df.iloc[-2, 0]) <= 25 if len(stc_df) > 1 else False,
+                    "crossed_below_75": float(stc_df.iloc[-1, 0]) < 75 and float(stc_df.iloc[-2, 0]) >= 75 if len(stc_df) > 1 else False,
+                }
+        except Exception:
+            pass
+
+        # Squeeze Momentum
+        try:
+            squeeze_df = _ta.squeeze(high, low, close, lazybear=True)
+            if squeeze_df is not None and not squeeze_df.empty:
+                cols = squeeze_df.columns.tolist()
+                sqz_on_col = [c for c in cols if 'SQZ' in c and 'ON' in c.upper()]
+                sqz_off_col = [c for c in cols if 'SQZ' in c and 'OFF' in c.upper()]
+                mom_col = [c for c in cols if 'LB' in c]
+
+                mom_val = float(squeeze_df[mom_col[0]].iloc[-1]) if mom_col else 0.0
+                prev_mom = float(squeeze_df[mom_col[0]].iloc[-2]) if mom_col and len(squeeze_df) > 1 else 0.0
+                is_off = sqz_off_col and bool(squeeze_df[sqz_off_col[0]].iloc[-1])
+                is_on = sqz_on_col and bool(squeeze_df[sqz_on_col[0]].iloc[-1])
+
+                indicators["squeeze"] = {
+                    "squeeze_on": bool(squeeze_df[sqz_on_col[0]].iloc[-1]) if sqz_on_col else None,
+                    "squeeze_off": bool(squeeze_df[sqz_off_col[0]].iloc[-1]) if sqz_off_col else None,
+                    "momentum": _safe(mom_val),
+                    "momentum_increasing": mom_val > prev_mom if len(squeeze_df) > 1 else None,
+                    "signal": "bullish_breakout" if (is_off and mom_val > 0) else
+                              "bearish_breakout" if (is_off and mom_val < 0) else
+                              "squeeze_building" if is_on else "no_squeeze",
+                }
+        except Exception:
+            pass
+
+        # SuperTrend
+        try:
+            st_df = _ta.supertrend(high, low, close, length=10, multiplier=3.0)
+            if st_df is not None and not st_df.empty:
+                cols = st_df.columns.tolist()
+                trend_col = [c for c in cols if 'SUPERTd' in c][0]
+                value_col = [c for c in cols if 'SUPERT_' in c and 'SUPERTd' not in c][0]
+
+                direction = int(st_df[trend_col].iloc[-1])
+                supertrend_value = float(st_df[value_col].iloc[-1])
+                prev_direction = int(st_df[trend_col].iloc[-2]) if len(st_df) > 1 else direction
+
+                indicators["supertrend"] = {
+                    "value": _safe(supertrend_value),
+                    "direction": "bullish" if direction == 1 else "bearish",
+                    "trend_changed": direction != prev_direction,
+                    "distance_pct": _safe((float(close.iloc[-1]) - supertrend_value) / supertrend_value * 100),
+                }
+        except Exception:
+            pass
+
+    return indicators
 
 
 # ── swing agent list ─────────────────────────────────────────────────────────

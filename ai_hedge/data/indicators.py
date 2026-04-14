@@ -199,6 +199,67 @@ def compute_daily_indicators(prices_df: pd.DataFrame) -> dict:
         except Exception:
             pass
 
+        # Schaff Trend Cycle
+        try:
+            stc_df = ta.stc(prices_df["close"], tclength=10, fast=23, slow=50, factor=0.5)
+            if stc_df is not None and not stc_df.empty:
+                result["stc"] = {
+                    "value": round(float(stc_df.iloc[-1, 0]), 2),
+                    "signal": "overbought" if float(stc_df.iloc[-1, 0]) > 75 else "oversold" if float(stc_df.iloc[-1, 0]) < 25 else "neutral",
+                    "prev_value": round(float(stc_df.iloc[-2, 0]), 2) if len(stc_df) > 1 else None,
+                    "crossed_above_25": float(stc_df.iloc[-1, 0]) > 25 and float(stc_df.iloc[-2, 0]) <= 25 if len(stc_df) > 1 else False,
+                    "crossed_below_75": float(stc_df.iloc[-1, 0]) < 75 and float(stc_df.iloc[-2, 0]) >= 75 if len(stc_df) > 1 else False,
+                }
+        except Exception:
+            pass
+
+        # Squeeze Momentum
+        try:
+            squeeze_df = ta.squeeze(prices_df["high"], prices_df["low"], prices_df["close"], lazybear=True)
+            if squeeze_df is not None and not squeeze_df.empty:
+                cols = squeeze_df.columns.tolist()
+                sqz_on_col = [c for c in cols if 'SQZ' in c and 'ON' in c.upper()]
+                sqz_off_col = [c for c in cols if 'SQZ' in c and 'OFF' in c.upper()]
+                mom_col = [c for c in cols if 'LB' in c]
+
+                mom_val = float(squeeze_df[mom_col[0]].iloc[-1]) if mom_col else 0.0
+                prev_mom = float(squeeze_df[mom_col[0]].iloc[-2]) if mom_col and len(squeeze_df) > 1 else 0.0
+                is_off = sqz_off_col and bool(squeeze_df[sqz_off_col[0]].iloc[-1])
+                is_on = sqz_on_col and bool(squeeze_df[sqz_on_col[0]].iloc[-1])
+
+                result["squeeze"] = {
+                    "squeeze_on": bool(squeeze_df[sqz_on_col[0]].iloc[-1]) if sqz_on_col else None,
+                    "squeeze_off": bool(squeeze_df[sqz_off_col[0]].iloc[-1]) if sqz_off_col else None,
+                    "momentum": round(mom_val, 4),
+                    "momentum_increasing": mom_val > prev_mom if len(squeeze_df) > 1 else None,
+                    "signal": "bullish_breakout" if (is_off and mom_val > 0) else
+                              "bearish_breakout" if (is_off and mom_val < 0) else
+                              "squeeze_building" if is_on else "no_squeeze",
+                }
+        except Exception:
+            pass
+
+        # SuperTrend
+        try:
+            st_df = ta.supertrend(prices_df["high"], prices_df["low"], prices_df["close"], length=10, multiplier=3.0)
+            if st_df is not None and not st_df.empty:
+                cols = st_df.columns.tolist()
+                trend_col = [c for c in cols if 'SUPERTd' in c][0]
+                value_col = [c for c in cols if 'SUPERT_' in c and 'SUPERTd' not in c][0]
+
+                direction = int(st_df[trend_col].iloc[-1])
+                supertrend_value = float(st_df[value_col].iloc[-1])
+                prev_direction = int(st_df[trend_col].iloc[-2]) if len(st_df) > 1 else direction
+
+                result["supertrend"] = {
+                    "value": round(supertrend_value, 2),
+                    "direction": "bullish" if direction == 1 else "bearish",
+                    "trend_changed": direction != prev_direction,
+                    "distance_pct": round((current_price - supertrend_value) / supertrend_value * 100, 2),
+                }
+        except Exception:
+            pass
+
     return result
 
 
@@ -385,5 +446,72 @@ def compute_intraday_indicators(intraday_df: pd.DataFrame) -> dict:
                 }
     except Exception:
         pass
+
+    # --- pandas_ta extras (if available) ---
+    if HAS_PANDAS_TA:
+        close = intraday_df["close"]
+        high = intraday_df["high"]
+        low = intraday_df["low"]
+
+        # Schaff Trend Cycle
+        try:
+            stc_df = ta.stc(close, tclength=10, fast=23, slow=50, factor=0.5)
+            if stc_df is not None and not stc_df.empty:
+                result["stc"] = {
+                    "value": round(float(stc_df.iloc[-1, 0]), 2),
+                    "signal": "overbought" if float(stc_df.iloc[-1, 0]) > 75 else "oversold" if float(stc_df.iloc[-1, 0]) < 25 else "neutral",
+                    "prev_value": round(float(stc_df.iloc[-2, 0]), 2) if len(stc_df) > 1 else None,
+                    "crossed_above_25": float(stc_df.iloc[-1, 0]) > 25 and float(stc_df.iloc[-2, 0]) <= 25 if len(stc_df) > 1 else False,
+                    "crossed_below_75": float(stc_df.iloc[-1, 0]) < 75 and float(stc_df.iloc[-2, 0]) >= 75 if len(stc_df) > 1 else False,
+                }
+        except Exception:
+            pass
+
+        # Squeeze Momentum
+        try:
+            squeeze_df = ta.squeeze(high, low, close, lazybear=True)
+            if squeeze_df is not None and not squeeze_df.empty:
+                cols = squeeze_df.columns.tolist()
+                sqz_on_col = [c for c in cols if 'SQZ' in c and 'ON' in c.upper()]
+                sqz_off_col = [c for c in cols if 'SQZ' in c and 'OFF' in c.upper()]
+                mom_col = [c for c in cols if 'LB' in c]
+
+                mom_val = float(squeeze_df[mom_col[0]].iloc[-1]) if mom_col else 0.0
+                prev_mom = float(squeeze_df[mom_col[0]].iloc[-2]) if mom_col and len(squeeze_df) > 1 else 0.0
+                is_off = sqz_off_col and bool(squeeze_df[sqz_off_col[0]].iloc[-1])
+                is_on = sqz_on_col and bool(squeeze_df[sqz_on_col[0]].iloc[-1])
+
+                result["squeeze"] = {
+                    "squeeze_on": bool(squeeze_df[sqz_on_col[0]].iloc[-1]) if sqz_on_col else None,
+                    "squeeze_off": bool(squeeze_df[sqz_off_col[0]].iloc[-1]) if sqz_off_col else None,
+                    "momentum": round(mom_val, 4),
+                    "momentum_increasing": mom_val > prev_mom if len(squeeze_df) > 1 else None,
+                    "signal": "bullish_breakout" if (is_off and mom_val > 0) else
+                              "bearish_breakout" if (is_off and mom_val < 0) else
+                              "squeeze_building" if is_on else "no_squeeze",
+                }
+        except Exception:
+            pass
+
+        # SuperTrend
+        try:
+            st_df = ta.supertrend(high, low, close, length=10, multiplier=3.0)
+            if st_df is not None and not st_df.empty:
+                cols = st_df.columns.tolist()
+                trend_col = [c for c in cols if 'SUPERTd' in c][0]
+                value_col = [c for c in cols if 'SUPERT_' in c and 'SUPERTd' not in c][0]
+
+                direction = int(st_df[trend_col].iloc[-1])
+                supertrend_value = float(st_df[value_col].iloc[-1])
+                prev_direction = int(st_df[trend_col].iloc[-2]) if len(st_df) > 1 else direction
+
+                result["supertrend"] = {
+                    "value": round(supertrend_value, 2),
+                    "direction": "bullish" if direction == 1 else "bearish",
+                    "trend_changed": direction != prev_direction,
+                    "distance_pct": round((current_price - supertrend_value) / supertrend_value * 100, 2),
+                }
+        except Exception:
+            pass
 
     return result

@@ -17,6 +17,7 @@ What to analyze:
 - Support/resistance: where are the key levels that would contain post-catalyst moves?
 - Implied volatility context (from ATR): is the stock coiling (low ATR) before a catalyst (potential explosive move)?
 - Historical price action around similar past catalysts (infer from recent news patterns).
+- You also have access to: Schaff Trend Cycle (STC — faster MACD, 0-100, >75 overbought, <25 oversold), Squeeze Momentum (detects volatility compression before breakouts), and SuperTrend (trailing stop with trend direction).
 
 Risk management:
 - Entry: when technical setup is constructive AND a catalyst is approaching within 1-10 trading days.

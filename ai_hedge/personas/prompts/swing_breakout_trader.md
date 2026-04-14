@@ -16,6 +16,7 @@ What to analyze:
 - Bollinger Band width: is it contracting (squeeze → potential breakout)?
 - ATR: is volatility expanding (confirming the breakout)?
 - Price relative to Bollinger Bands: a close above the upper band with volume = breakout signal.
+- You also have access to: Schaff Trend Cycle (STC — faster MACD, 0-100, >75 overbought, <25 oversold), Squeeze Momentum (detects volatility compression before breakouts), and SuperTrend (trailing stop with trend direction).
 
 Risk management:
 - Entry: on confirmed breakout above resistance with volume 1.5x+ average.

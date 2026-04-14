@@ -17,6 +17,7 @@ What to analyze:
 - MACD direction: does MACD confirm the rotation direction?
 - Relative performance: is this stock outperforming or underperforming recently?
 - News/catalysts: any sector-wide themes (regulatory changes, commodity moves, rate decisions)?
+- You also have access to: Schaff Trend Cycle (STC — faster MACD, 0-100, >75 overbought, <25 oversold), Squeeze Momentum (detects volatility compression before breakouts), and SuperTrend (trailing stop with trend direction).
 
 Risk management:
 - Entry: when sector rotation is confirmed — stock showing relative strength improvement with volume.

@@ -19,6 +19,7 @@ What to analyze:
 - MFI (Money Flow Index): divergence between MFI and price suggests reversal.
 - Distance from 50-SMA as a percentage: > 5% extension is noteworthy, > 10% is extreme.
 - Recent price action: is there a reversal candle forming (hammer, engulfing, doji at extreme)?
+- You also have access to: Schaff Trend Cycle (STC — faster MACD, 0-100, >75 overbought, <25 oversold), Squeeze Momentum (detects volatility compression before breakouts), and SuperTrend (trailing stop with trend direction).
 
 Risk management:
 - Entry: at extremes (Z-score > 2 or < -2) WITH reversal confirmation (not blindly).

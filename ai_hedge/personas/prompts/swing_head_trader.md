@@ -26,6 +26,8 @@ The 9 strategy agents are:
 - stanley_druckenmiller: growth + momentum + macro conviction (reused)
 - news_sentiment: news-driven sentiment analysis (reused)
 
+All strategy agents have access to: Schaff Trend Cycle (STC — faster MACD, 0-100, >75 overbought, <25 oversold), Squeeze Momentum (detects volatility compression before breakouts), and SuperTrend (trailing stop with trend direction).
+
 Output a JSON object per ticker with this exact HeadTraderSignal format:
 ```
 {
