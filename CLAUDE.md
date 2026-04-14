@@ -154,9 +154,26 @@ Five function names existed in multiple upstream persona files. In `helpers.py` 
 
 All short codes: `wb`=warren_buffett, `cm`=charlie_munger, `bg`=ben_graham, `ba`=bill_ackman, `cw`=cathie_wood, `mb`=michael_burry, `nt`=nassim_taleb, `pl`=peter_lynch, `pf`=phil_fisher, `sd`=stanley_druckenmiller, `mp`=mohnish_pabrai, `rj`=rakesh_jhunjhunwala, `ad`=aswath_damodaran, `ga`=growth_agent, `ns`=news_sentiment
 
-## Paper Trading (Moomoo) — Internal Validation
+## Enhanced Pipeline (Web Research + Verification)
 
-A separate automated paper trading system to prove model accuracy. **Not part of the pip package** — `pyproject.toml` only packages `ai_hedge*`.
+Two extra agent steps added between data fetch and LLM dispatch:
+
+```
+prepare.py (fetch data)
+→ Step 2.5: Web Research Agent (macro context + ticker news via WebSearch)
+→ build facts (now includes web_context section)
+→ Step 2.8: Web Verification Agent (checks metrics against web, corrects >20% deviations)
+→ LLM agents (enriched + verified data)
+→ aggregate → PM → explainer → finalize
+```
+
+- Prompts: `ai_hedge/personas/prompts/web_researcher.md`, `web_verifier.md`
+- Output: `runs/{id}/web_research/{TICKER}.json`, `runs/{id}/verification/{TICKER}.json`
+- Facts bundles include `web_context` key when web research is available
+
+## Paper Trading System (Moomoo) — Internal Validation
+
+Automated paper trading to prove model accuracy. **Not part of the pip package** — `pyproject.toml` only packages `ai_hedge*`.
 
 ### Setup
 
@@ -164,7 +181,8 @@ A separate automated paper trading system to prove model accuracy. **Not part of
 - **OpenD gateway**: `opend/OpenD.app` — local daemon that bridges Python API to Moomoo servers
 - **Config**: `opend/OpenD.xml` — credentials stored as MD5 hash, port 11111
 - **Python API**: `moomoo-api` package in .venv (`from moomoo import *`)
-- **Paper trading**: Use `trd_env=TrdEnv.SIMULATE` on all order calls
+- **Paper trading**: `trd_env=TrdEnv.SIMULATE`, `filter_trdmarket=TrdMarket.US`
+- **Account ID**: 76568910
 
 ### Starting OpenD
 
@@ -176,16 +194,54 @@ sudo bash opend/fixrun.sh
 open opend/OpenD.app
 ```
 
-### Architecture
+### Moomoo API quirks (paper trading)
+
+- `OrderType.NORMAL` for limit orders (NOT `OrderType.LIMIT` — doesn't exist)
+- `TimeInForce.DAY` only (paper trading rejects `GTC`)
+- `TrdSide.SELL` for shorts (NOT `SELL_SHORT` — paper doesn't support it)
+- `TrdSide.BUY` for covering (NOT `BUY_BACK`)
+- Fractional shares NOT supported via API (only in Moomoo app)
+- Orders expire end of each day — must re-place unfilled orders daily
+
+### Tracker module (`tracker/` at project root)
 
 ```
-Model runs (/invest, /swing, /daytrade) → decisions.json
-→ Executor reads decisions, places paper orders via Moomoo API
-→ Moomoo handles fills, position tracking, P&L
-→ Reporter generates accuracy stats after 10-20 days
+tracker/
+├── db.py              — SQLAlchemy models (Trade, DailySummary), get_available_cash()
+├── moomoo_client.py   — MoomooClient wrapper (place_entry/stop/target, cancel, positions)
+├── executor.py        — reads decisions.json → places Moomoo paper orders
+├── monitor.py         — syncs fills, manages stops/targets, handles expiry
+├── reporter.py        — accuracy dashboard (hit rate, P&L, per-mode, confidence calibration)
+├── cli.py             — unified CLI
+├── watchlist.json     — tickers, modes, schedule, budget config
+└── tracker.db         — SQLite trade history (in .gitignore)
 ```
 
-The executor/tracker code will live in `tracker/` at project root (not inside `ai_hedge/`), keeping it separate from the user-facing package.
+### Commands
+
+```bash
+python -m tracker execute --run-id RUN_ID    # place orders from a model run
+python -m tracker monitor                     # sync fills, manage positions
+python -m tracker report [--last N] [--mode M]  # accuracy dashboard
+python -m tracker status                      # show open positions
+python -m tracker cash                        # show available capital
+```
+
+### Daily routine (slash command)
+
+```
+/autorun [--force]     # runs everything: monitor → model → execute → dashboard
+```
+
+Reads `tracker/watchlist.json` for schedule. `--force` runs all schedules regardless of day.
+
+### Budget system
+
+- Budget tracked in our DB, not Moomoo (Moomoo has $2M, we enforce our own limit)
+- `available_cash = paper_account_size + realized_P&L - open_exposure`
+- `--cash` flag flows through SKILL.md → aggregate → PM prompt
+- Default $100,000 for regular users, $5,000 for our paper trading test
+- Max 25% of capital per position, max 8 concurrent trades
 
 ## Environment
 

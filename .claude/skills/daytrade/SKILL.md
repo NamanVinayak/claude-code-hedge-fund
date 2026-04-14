@@ -140,8 +140,10 @@ Write your output to: runs/{RUN_ID}/signals/dt_head_trader.json
 
 ## Step 5 — Aggregate signals
 
+Parse `$ARGUMENTS` for an optional `--cash` flag. If present, use that value. Otherwise default to 100000.
+
 ```bash
-python -m ai_hedge.runner.aggregate --run-id $RUN_ID --tickers $TICKERS --cash 100000
+python -m ai_hedge.runner.aggregate --run-id $RUN_ID --tickers $TICKERS --cash $CASH
 ```
 
 This loads all signals, runs deterministic agents (fundamentals, technicals, valuation, sentiment, risk_manager, technicals_intraday), computes allowed actions, and writes `signals_combined.json`.
@@ -155,7 +157,9 @@ Read the following files:
 - runs/{RUN_ID}/signals_combined.json
 - ai_hedge/personas/prompts/dt_portfolio_manager.md
 
-You are the Day Trade Portfolio Manager. Make intraday trade decisions for each ticker in [{TICKERS}].
+You are the Day Trade Portfolio Manager. You are managing a portfolio with ${CASH} total capital. Size all positions to fit within this budget. Maximum 25% of capital per position.
+
+Make intraday trade decisions for each ticker in [{TICKERS}].
 Consider the Head Day Trader's synthesis in signals_combined along with all strategy signals and deterministic agent outputs (including intraday technicals).
 
 Return JSON with per-ticker setup/entry-trigger/targets/stop/position-size/time-window and an overall synthesis.

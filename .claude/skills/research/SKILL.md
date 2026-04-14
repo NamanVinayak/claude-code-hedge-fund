@@ -202,8 +202,10 @@ After ALL 30 agents complete, proceed to Step 4 (skip Head Trader — go straigh
 
 ## Step 4 — Aggregate signals
 
+Parse `$ARGUMENTS` for an optional `--cash` flag. If present, use that value. Otherwise default to 100000.
+
 ```bash
-python -m ai_hedge.runner.aggregate --run-id $RUN_ID --tickers $TICKERS --cash 100000
+python -m ai_hedge.runner.aggregate --run-id $RUN_ID --tickers $TICKERS --cash $CASH
 ```
 
 This loads all signals, runs deterministic agents (fundamentals, technicals, valuation, sentiment, risk_manager, technicals_intraday), computes allowed actions, and writes `signals_combined.json`.

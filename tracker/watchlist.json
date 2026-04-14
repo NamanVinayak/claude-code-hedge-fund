@@ -1,0 +1,11 @@
+{
+  "schedules": [
+    {"mode": "swing", "tickers": ["TSLA", "AAPL", "NVDA", "AMD", "META", "MSFT", "GOOG", "AMZN", "JPM", "BAC", "GS", "UNH", "JNJ", "PFE", "XOM", "CVX", "WMT", "NKE", "DIS"], "days": "mon,tue,wed,thu,fri"},
+    {"mode": "daytrade", "tickers": ["SPY", "QQQ", "IWM"], "days": "mon,tue,wed,thu,fri"}
+  ],
+  "settings": {
+    "max_position_size_usd": 1250,
+    "max_concurrent_trades": 8,
+    "paper_account_size": 5000
+  }
+}
