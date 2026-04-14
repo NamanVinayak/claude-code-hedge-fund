@@ -21,7 +21,7 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
-from ai_hedge.data.api import prices_to_df
+from ai_hedge.data.api import get_intraday_prices, intraday_to_df, prices_to_df
 from ai_hedge.data.models import Price
 
 try:
@@ -412,6 +412,19 @@ def build_swing_facts(run_id: str, tickers: list[str]):
 
         daily_indicators = compute_daily_indicators(prices_df) if not prices_df.empty else {}
 
+        # Fetch hourly bars and compute hourly indicators (multi-timeframe analysis)
+        hourly_indicators = {}
+        try:
+            hourly_prices = get_intraday_prices(ticker, interval="1h", period="1mo")
+            hourly_df = intraday_to_df(hourly_prices) if hourly_prices else pd.DataFrame()
+            if not hourly_df.empty and len(hourly_df) >= 21:
+                hourly_indicators = compute_daily_indicators(hourly_df)
+                print(f"  Computed hourly indicators ({len(hourly_df)} bars)")
+            elif not hourly_df.empty:
+                print(f"  [WARN] Only {len(hourly_df)} hourly bars for {ticker}, need >= 21")
+        except Exception as exc:
+            print(f"  [WARN] Could not fetch hourly data for {ticker}: {exc}")
+
         # Recent price action (last 5 days OHLCV)
         recent_prices = prices_raw[-5:] if len(prices_raw) >= 5 else prices_raw
 
@@ -427,6 +440,7 @@ def build_swing_facts(run_id: str, tickers: list[str]):
         base_facts = {
             "ticker": ticker,
             "daily_indicators": daily_indicators,
+            "hourly_indicators": hourly_indicators,
             "recent_prices": recent_prices,
             "recent_insider_trades": recent_insiders,
             "recent_news": recent_news,

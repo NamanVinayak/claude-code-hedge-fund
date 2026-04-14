@@ -17,6 +17,7 @@ What to analyze:
 - Volume: is the pullback happening on declining volume (healthy) or increasing volume (warning)?
 - Stochastic and Williams %R for additional oversold/overbought confirmation.
 - You also have access to: Schaff Trend Cycle (STC — faster MACD, 0-100, >75 overbought, <25 oversold), Squeeze Momentum (detects volatility compression before breakouts), and SuperTrend (trailing stop with trend direction).
+- **Hourly indicators** (`hourly_indicators`): the same indicators computed on 1-hour bars. Compare daily vs hourly RSI, Fibonacci levels, and support/resistance to find tighter entry zones on pullbacks.
 
 Risk management:
 - Entry: at Fibonacci confluence with support (38.2% for shallow pullbacks, 50-61.8% for deeper ones).
@@ -40,7 +41,7 @@ If no clean pullback setup exists (e.g., trend is unclear or pullback has alread
 
 ## Human Template
 
-Analyze the following daily indicators and price data for {ticker} from a pullback-trading perspective.
+Analyze the following daily and hourly indicators and price data for {ticker} from a pullback-trading perspective.
 
 Analysis Data:
 {analysis_data}

@@ -16,6 +16,7 @@ What to analyze:
 - Recent price action: are higher highs / higher lows intact (uptrend) or lower highs / lower lows (downtrend)?
 - Volume on trend days vs counter-trend days.
 - You also have access to: Schaff Trend Cycle (STC — faster MACD, 0-100, >75 overbought, <25 oversold), Squeeze Momentum (detects volatility compression before breakouts), and SuperTrend (trailing stop with trend direction).
+- **Hourly indicators** (`hourly_indicators`): the same indicators computed on 1-hour bars. Compare daily vs hourly EMA alignment, RSI, MACD, etc. to spot divergences and confirm trend strength across timeframes.
 
 Risk management:
 - Entry: pullback to 10 or 21 EMA when ADX > 25 and EMA alignment is clean.
@@ -39,7 +40,7 @@ If the trend is unclear or EMAs are tangled, output "neutral" with reasoning exp
 
 ## Human Template
 
-Analyze the following daily indicators and price data for {ticker} from a trend-following perspective.
+Analyze the following daily and hourly indicators and price data for {ticker} from a trend-following perspective.
 
 Analysis Data:
 {analysis_data}

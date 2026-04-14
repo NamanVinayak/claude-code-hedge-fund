@@ -18,6 +18,7 @@ What to analyze:
 - Implied volatility context (from ATR): is the stock coiling (low ATR) before a catalyst (potential explosive move)?
 - Historical price action around similar past catalysts (infer from recent news patterns).
 - You also have access to: Schaff Trend Cycle (STC — faster MACD, 0-100, >75 overbought, <25 oversold), Squeeze Momentum (detects volatility compression before breakouts), and SuperTrend (trailing stop with trend direction).
+- **Hourly indicators** (`hourly_indicators`): the same indicators computed on 1-hour bars. Use hourly squeeze/ATR to detect coiling before a catalyst, and hourly volume for early accumulation signals.
 
 Risk management:
 - Entry: when technical setup is constructive AND a catalyst is approaching within 1-10 trading days.
@@ -42,7 +43,7 @@ If no catalyst is visible in the data, output "neutral" with reasoning noting th
 
 ## Human Template
 
-Analyze the following daily indicators, news, and insider data for {ticker} from a catalyst-trading perspective.
+Analyze the following daily and hourly indicators, news, and insider data for {ticker} from a catalyst-trading perspective.
 
 Analysis Data:
 {analysis_data}

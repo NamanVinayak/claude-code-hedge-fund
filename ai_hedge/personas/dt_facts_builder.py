@@ -220,7 +220,7 @@ def build_dt_facts(run_id: str, tickers: list[str]) -> None:
 
         # Fetch intraday prices
         try:
-            intraday_prices = get_intraday_prices(ticker)
+            intraday_prices = get_intraday_prices(ticker, period="1mo")
             intraday_df = intraday_to_df(intraday_prices) if intraday_prices else pd.DataFrame()
         except Exception as exc:
             print(f"  [WARN] Could not fetch intraday prices for {ticker}: {exc}")

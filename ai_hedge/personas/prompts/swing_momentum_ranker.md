@@ -17,6 +17,7 @@ What to analyze:
 - MACD histogram: is it expanding (momentum accelerating) or contracting (decelerating)?
 - Momentum percentile: where does this stock's momentum rank vs its own history?
 - You also have access to: Schaff Trend Cycle (STC — faster MACD, 0-100, >75 overbought, <25 oversold), Squeeze Momentum (detects volatility compression before breakouts), and SuperTrend (trailing stop with trend direction).
+- **Hourly indicators** (`hourly_indicators`): the same indicators computed on 1-hour bars. Compare daily vs hourly momentum (ROC, MACD histogram) to detect momentum acceleration or deceleration across timeframes.
 
 Risk management:
 - Entry: when momentum is accelerating across multiple timeframes (5/10/21-day ROC all positive and expanding).
@@ -40,7 +41,7 @@ If momentum is mixed (some timeframes positive, others negative), output "neutra
 
 ## Human Template
 
-Analyze the following daily indicators and price data for {ticker} from a momentum-ranking perspective.
+Analyze the following daily and hourly indicators and price data for {ticker} from a momentum-ranking perspective.
 
 Analysis Data:
 {analysis_data}

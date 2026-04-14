@@ -94,8 +94,8 @@ Claude Code (orchestrator)
 | `ai_hedge/data/indicators.py` | pandas_ta technical indicators (RSI, MACD, Bollinger, VWAP, STC, Squeeze, SuperTrend, etc.) |
 | `ai_hedge/personas/helpers.py` | 78 deterministic helper functions (verbatim from upstream) |
 | `ai_hedge/personas/facts_builder.py` | Invest-mode facts: runs helpers for each persona × ticker |
-| `ai_hedge/personas/swing_facts_builder.py` | Swing-mode facts: technical setups for swing strategies |
-| `ai_hedge/personas/dt_facts_builder.py` | Day-trade facts: intraday data + indicators for DT strategies |
+| `ai_hedge/personas/swing_facts_builder.py` | Swing-mode facts: daily + hourly indicators for swing strategies |
+| `ai_hedge/personas/dt_facts_builder.py` | Day-trade facts: intraday data (1mo of 5m bars) + indicators for DT strategies |
 | `ai_hedge/personas/prompts/` | System prompts for all agents (invest, swing, daytrade, research) |
 | `ai_hedge/personas/prompts/explainer.md` | System prompt for the explainer agent (educational output for all modes) |
 | `ai_hedge/deterministic/` | Deterministic agents: fundamentals, technicals, valuation, sentiment, risk_manager |
@@ -118,6 +118,11 @@ Claude Code (orchestrator)
 - **Intraday prices**: `get_intraday_prices()` in api.py fetches 1m/5m/15m/1h candles via yfinance
 - **`intraday_to_df()`**: Converts intraday prices to pandas DataFrame
 - **`indicators.py`**: pandas_ta-based technical indicators (RSI, MACD, Bollinger Bands, VWAP, ATR, OBV, Stochastic, STC, Squeeze Momentum, SuperTrend, etc.)
+
+### Multi-timeframe analysis
+
+- **Swing mode**: Facts bundles include both `daily_indicators` and `hourly_indicators`. Hourly indicators are computed from 1 month of 1H bars using the same `compute_daily_indicators()` function (all indicators are bar-based). This enables divergence detection (e.g., daily RSI overbought but hourly RSI neutral) and finer-grained entry timing.
+- **Daytrade mode**: Intraday data extended from 5 days to ~22 trading days (`period="1mo"`) for deeper indicator history on 5-minute bars.
 
 ### holding_period and duration fields
 

@@ -18,6 +18,7 @@ What to analyze:
 - Relative performance: is this stock outperforming or underperforming recently?
 - News/catalysts: any sector-wide themes (regulatory changes, commodity moves, rate decisions)?
 - You also have access to: Schaff Trend Cycle (STC — faster MACD, 0-100, >75 overbought, <25 oversold), Squeeze Momentum (detects volatility compression before breakouts), and SuperTrend (trailing stop with trend direction).
+- **Hourly indicators** (`hourly_indicators`): the same indicators computed on 1-hour bars. Compare daily vs hourly RSI trend and volume patterns to detect early sector rotation signals before they show on daily charts.
 
 Risk management:
 - Entry: when sector rotation is confirmed — stock showing relative strength improvement with volume.
@@ -41,7 +42,7 @@ If there is no clear sector rotation signal (stock tracking its sector normally)
 
 ## Human Template
 
-Analyze the following daily indicators and market data for {ticker} from a sector-rotation perspective.
+Analyze the following daily and hourly indicators and market data for {ticker} from a sector-rotation perspective.
 
 Analysis Data:
 {analysis_data}

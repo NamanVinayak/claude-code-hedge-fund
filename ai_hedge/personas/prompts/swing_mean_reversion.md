@@ -20,6 +20,7 @@ What to analyze:
 - Distance from 50-SMA as a percentage: > 5% extension is noteworthy, > 10% is extreme.
 - Recent price action: is there a reversal candle forming (hammer, engulfing, doji at extreme)?
 - You also have access to: Schaff Trend Cycle (STC — faster MACD, 0-100, >75 overbought, <25 oversold), Squeeze Momentum (detects volatility compression before breakouts), and SuperTrend (trailing stop with trend direction).
+- **Hourly indicators** (`hourly_indicators`): the same indicators computed on 1-hour bars. Compare daily vs hourly RSI and Z-score to see if the overbought/oversold condition persists across timeframes or is diverging.
 
 Risk management:
 - Entry: at extremes (Z-score > 2 or < -2) WITH reversal confirmation (not blindly).
@@ -43,7 +44,7 @@ If the stock is near its mean (Z-score between -1 and +1), output "neutral" — 
 
 ## Human Template
 
-Analyze the following daily indicators and price data for {ticker} from a mean-reversion perspective.
+Analyze the following daily and hourly indicators and price data for {ticker} from a mean-reversion perspective.
 
 Analysis Data:
 {analysis_data}

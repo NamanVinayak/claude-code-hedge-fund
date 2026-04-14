@@ -17,6 +17,7 @@ What to analyze:
 - ATR: is volatility expanding (confirming the breakout)?
 - Price relative to Bollinger Bands: a close above the upper band with volume = breakout signal.
 - You also have access to: Schaff Trend Cycle (STC — faster MACD, 0-100, >75 overbought, <25 oversold), Squeeze Momentum (detects volatility compression before breakouts), and SuperTrend (trailing stop with trend direction).
+- **Hourly indicators** (`hourly_indicators`): the same indicators computed on 1-hour bars. Check hourly Bollinger squeeze and volume surge on the breakout timeframe to confirm daily breakout signals.
 
 Risk management:
 - Entry: on confirmed breakout above resistance with volume 1.5x+ average.
@@ -40,7 +41,7 @@ If no breakout setup is forming (no consolidation, no clear range), output "neut
 
 ## Human Template
 
-Analyze the following daily indicators and price data for {ticker} from a breakout-trading perspective.
+Analyze the following daily and hourly indicators and price data for {ticker} from a breakout-trading perspective.
 
 Analysis Data:
 {analysis_data}
