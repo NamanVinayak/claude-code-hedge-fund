@@ -12,6 +12,46 @@ This project is for **educational purposes only** and is not intended for real t
 
 ---
 
+## The story behind this fork
+
+[virattt's ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) blew up on GitHub — 55,000+ stars — because the idea clicked instantly: what if Warren Buffett, Charlie Munger, Michael Burry, and a dozen other legendary investors were AI agents that actually analyzed your stocks together? It's a brilliant proof of concept.
+
+But when we started using it, we noticed a few things:
+
+**It only did one thing.** Long-term investing. "Should I hold this stock for a year?" is a valid question, but most people watching charts also want to know: *should I trade this over the next week? Is there a day trade setup here today? What about crypto?*
+
+**It required paid APIs.** Every analysis call went to OpenAI or Groq. That adds up fast, especially when you're running 14 agents across 10 tickers.
+
+**There was no way to act on the output.** The system produced signals — but they just printed to the terminal and disappeared.
+
+So we rebuilt it. Here's what changed:
+
+### 1. Three new trading modes, each with its own team of agents
+
+The original had one mode. We added three:
+
+- **`/swing`** — nine specialized swing trading strategies analyze each ticker together. A Mean Reversion agent, a Breakout Trader, a Trend Follower, a Momentum Ranker, and five more each write an independent signal. A Head Swing Trader synthesizes all nine into a unified view. A Portfolio Manager makes the final call with a specific entry price, target, stop loss, and risk/reward ratio.
+
+- **`/daytrade`** — same multi-agent structure, but built for intraday. Nine day-trade strategies (VWAP, Opening Range, Gap Analyst, Volume Profiler, etc.) debate the setup. Output is a concrete trade plan for the current session: entry trigger, targets, stop, time window.
+
+- **`/crypto-swing` and `/crypto-day`** — the same pipeline adapted for crypto. Swapped out the fundamental agents (no SEC filings for Bitcoin) and added crypto-native signals: Fear & Greed Index, whale wallet movements, exchange funding rates, ETF flow data. Runs 24/7 with a simulated local exchange — no real account needed.
+
+### 2. Rebuilt on Claude Code — zero cost, slash command interface
+
+Instead of calling OpenAI's API, every agent runs as a **Claude Code subagent**. If you have Claude Code, you already have everything you need. No API keys, no usage bills, no rate limits to manage.
+
+The interface is three slash commands: `/swing`, `/daytrade`, `/autorun`. Type one in Claude Code and the entire pipeline — data fetch, 9+ agent debates, synthesis, final decision, plain-English explanation — runs automatically.
+
+### 3. Live web research built in
+
+Before the agents analyze anything, a Web Research agent pulls the current macro picture and live news for each ticker using real web searches. Every agent decision is grounded in what's actually happening today — not just historical price data.
+
+### 4. Paper trading to validate the signals
+
+We added an optional Moomoo paper trading integration. After each run, `/autorun` places the model's recommended trades in a simulated account. Over time, this builds an accuracy log: how often does the model's entry get filled? How often does the target hit before the stop? This turns the system from a signal generator into something you can actually evaluate.
+
+---
+
 ## What's new vs. the original
 
 | | [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) | This repo |
