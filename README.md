@@ -1,151 +1,253 @@
-# claude-code-hedge-fund
+# Claude Code Hedge Fund
 
-> A fork of [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) (55k+ stars) rebuilt as Claude Code slash commands — with new trading modes, zero paid APIs, and optional paper trading.
+This is a fork of [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) rebuilt as **Claude Code slash commands** — with new trading modes, zero paid APIs, and optional paper trading.
 
-**For educational purposes only. Not financial advice.**
+Instead of calling OpenAI or Groq, every AI agent runs as a Claude Code subagent. This means the entire system is **free to run** if you already use Claude Code.
+
+This project is for **educational purposes only** and is not intended for real trading or investment.
+
+> Built on top of virattt's original work. Core investor persona logic is adapted from the upstream repo. Swing trading, day trading, crypto modes, the slash command interface, web research pipeline, and paper trading integration are original additions.
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/virattt?style=social)](https://twitter.com/virattt)
 
 ---
 
-## What's different from the original
+## What's new vs. the original
 
-| | virattt/ai-hedge-fund | This repo |
+| | [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) | This repo |
 |---|---|---|
 | Interface | Python CLI | **Claude Code slash commands** |
-| LLM cost | Paid APIs (OpenAI/Groq/etc.) | **Free** — uses Claude Code subagents |
-| Trading modes | Long-term invest only | Invest + **Swing + Day Trade + Crypto** |
+| LLM cost | Paid APIs required | **Free** — Claude Code subagents |
+| Trading modes | Long-term invest | Invest + **Swing + Day Trade + Crypto** |
 | Paper trading | None | Optional Moomoo integration |
 | Web research | None | Live news + macro context per ticker |
 | Budget control | None | `--cash` flag, position limits |
 
 ---
 
-## The three headline commands
+## Agents
 
-### `/swing AAPL,TSLA,NVDA`
-Multi-day trade setups (2–20 day holds). Nine specialized agents — breakout, mean reversion, trend follower, momentum, sector rotation, and more — debate each ticker. A Head Trader synthesizes. A Portfolio Manager makes the final call with entry, target, stop, and risk/reward.
+**Invest mode** — 14 legendary investor personas:
 
-### `/daytrade SPY,QQQ,IWM`
-Intraday trade plans for the current session. Nine day-trade strategies — VWAP, opening range, momentum scalper, gap analyst, volume profiler — each analyze the same tickers. Produces setup type, entry trigger, targets, stop, and time window.
+1. Aswath Damodaran — The Dean of Valuation
+2. Ben Graham — Godfather of value investing, margin of safety
+3. Bill Ackman — Activist investor, bold concentrated positions
+4. Cathie Wood — Queen of growth investing, disruptive innovation
+5. Charlie Munger — Wonderful businesses at fair prices
+6. Michael Burry — The Big Short contrarian
+7. Mohnish Pabrai — Dhandho investor, doubles at low risk
+8. Nassim Taleb — Black Swan risk analyst, tail risk and antifragility
+9. Peter Lynch — Practical investor seeking ten-baggers
+10. Phil Fisher — Deep scuttlebutt growth research
+11. Rakesh Jhunjhunwala — The Big Bull of India
+12. Stanley Druckenmiller — Macro legend, asymmetric opportunities
+13. Warren Buffett — Oracle of Omaha, wonderful companies at fair prices
+14. Growth Agent — Quantitative growth metrics
 
-### `/autorun`
-The daily routine in one command: syncs open positions → runs the analysis pipeline → places paper orders → prints the accuracy dashboard. Schedule is driven by `tracker/watchlist.json`.
+**Swing mode** — 9 specialized strategies:
+Trend Follower · Pullback Trader · Breakout Trader · Momentum Ranker · Mean Reversion · Catalyst Trader · Sector Rotation · Stanley Druckenmiller · News Sentiment
 
-### Bonus: crypto modes
-```
-/crypto-swing BTC-USD,ETH-USD,SOL-USD
-/crypto-day BTC-USD,ETH-USD,SOL-USD
-/crypto-autorun
-```
-Same pipeline, crypto-native agents (Fear & Greed, whale movements, funding rates), simulated locally — no exchange needed.
+**Day trade mode** — 9 intraday strategies:
+VWAP Trader · Momentum Scalper · Mean Reversion · Breakout Hunter · Gap Analyst · Volume Profiler · Pattern Reader · Stat Arb · News Catalyst
 
----
-
-## How it works
-
-```
-/swing AAPL,MSFT,NVDA
-  └─ prepare.py        — fetches prices, financials, news via yfinance + SEC EDGAR
-  └─ web research      — live macro context + ticker news via WebSearch
-  └─ 9 swing agents    — each reads a facts bundle, writes a signal (parallel)
-  └─ head trader       — synthesizes the 9 signals into a unified view
-  └─ aggregate.py      — deterministic technicals, fundamentals, risk manager
-  └─ portfolio manager — final entry/target/stop decisions
-  └─ explainer         — plain-English educational breakdown
-  └─ finalize.py       — prints results
-```
-
-All LLM calls use Claude Code's built-in `Agent` tool — **no OpenAI key, no Anthropic API key, no paid data provider.**
-
----
-
-## Setup
-
-### 1. Prerequisites
-- [Claude Code](https://claude.ai/code) (the CLI)
-- Python 3.11+
-
-### 2. Install
-```bash
-git clone https://github.com/YOUR_USERNAME/claude-code-hedge-fund
-cd claude-code-hedge-fund
-python -m venv .venv
-source .venv/bin/activate
-pip install -e .
-```
-
-### 3. Optional: API keys
-```bash
-cp .env.example .env
-# FINNHUB_API_KEY — free tier at finnhub.io (improves news quality)
-# COINGECKO_API_KEY — free tier at coingecko.com (for crypto sentiment)
-```
-Both are optional. The system works without them using yfinance + SEC EDGAR.
-
-### 4. Run a slash command
-Open Claude Code in this directory and type:
-```
-/swing AAPL,TSLA,NVDA
-```
-
----
-
-## Optional: Paper Trading (Moomoo)
-
-Connect your own Moomoo account to have the system place paper trades automatically.
-
-### Setup
-1. Download [Moomoo OpenD](https://www.moomoo.com/download) — the local gateway
-2. Copy `opend/OpenD.xml.example` → `opend/OpenD.xml` and fill in your credentials
-3. Find your account ID in Moomoo app → Settings → About
-4. Set it as an environment variable: `MOOMOO_ACCOUNT_ID=your_id`
-5. Launch OpenD: `open opend/OpenD.app`
-
-### Commands
-```bash
-python -m tracker execute --run-id RUN_ID   # place orders from a model run
-python -m tracker monitor                    # sync fills, manage stops/targets
-python -m tracker report                     # accuracy dashboard
-python -m tracker status                     # open positions
-```
-
-> Moomoo paper trading is supported in Canada and other regions. US users may need to verify availability.
-
----
-
-## Project structure
-
-```
-ai_hedge/              — core analysis pipeline
-  data/                — yfinance, SEC EDGAR, Finnhub providers
-  personas/            — 14 investor agents + 9 swing + 9 daytrade strategies
-  deterministic/       — fundamentals, technicals, valuation, sentiment, risk
-  runner/              — prepare, aggregate, finalize scripts
-tracker/               — Moomoo paper trading integration (optional)
-crypto_tracker/        — crypto simulated trading (optional)
-.claude/skills/        — slash command definitions
-```
-
----
-
-## Analysis modes
-
-| Mode | Command | Agents | Output |
-|---|---|---|---|
-| Invest | `/invest AAPL` | 14 legendary investor personas | Buy/sell/hold, holding period |
-| Swing | `/swing AAPL` | 9 swing strategies | Entry, target, stop, R/R |
-| Day Trade | `/daytrade SPY` | 9 intraday strategies | Setup, trigger, targets, time window |
-| Research | `/research AAPL` | All 30+ agents | Bull/bear case, full signal grid |
-| Crypto Swing | `/crypto-swing BTC-USD` | 9 strategies + crypto agents | Entry, target, stop |
-| Crypto Day | `/crypto-day BTC-USD` | 9 strategies + crypto agents | Intraday setup |
-
----
-
-## Credits
-
-Built on top of [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund). Core investor persona logic, helper functions, and portfolio management are adapted verbatim from the original. The swing trading mode, day trading mode, crypto mode, Claude Code slash command interface, paper trading integration, and web research pipeline are original additions.
+**Supporting agents** (all modes):
+Fundamentals · Technicals · Valuation · Sentiment · Risk Manager · Portfolio Manager · Web Researcher · Web Verifier · Explainer
 
 ---
 
 ## Disclaimer
 
-This project is for **educational purposes only**. It is not intended for real trading or investment. The authors assume no liability for financial losses. Past paper trading performance does not guarantee future results.
+This project is for **educational and research purposes only**.
+
+- Not intended for real trading or investment
+- No investment advice or guarantees provided
+- Creator assumes no liability for financial losses
+- Consult a financial advisor for investment decisions
+- Past performance does not indicate future results
+
+By using this software, you agree to use it solely for learning purposes.
+
+---
+
+## Table of Contents
+- [How to Install](#how-to-install)
+- [How to Run](#how-to-run)
+  - [Slash Commands](#slash-commands)
+  - [Manual CLI](#manual-cli)
+- [Optional: Paper Trading](#optional-paper-trading-moomoo)
+- [How to Contribute](#how-to-contribute)
+- [License](#license)
+
+---
+
+## How to Install
+
+### 1. Prerequisites
+- [Claude Code](https://claude.ai/code) CLI installed and authenticated
+- Python 3.11+
+
+### 2. Clone the repository
+
+```bash
+git clone https://github.com/NamanVinayak/claude-code-hedge-fund.git
+cd claude-code-hedge-fund
+```
+
+### 3. Create a virtual environment and install
+
+```bash
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -e .
+```
+
+### 4. Optional API keys
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env` and add your keys:
+```bash
+# Free tier at finnhub.io — improves news quality
+FINNHUB_API_KEY=your-finnhub-key
+
+# Free tier at coingecko.com — enables crypto sentiment agent
+COINGECKO_API_KEY=your-coingecko-key
+```
+
+Both keys are optional. The system works without them using yfinance + SEC EDGAR.
+
+---
+
+## How to Run
+
+### Slash Commands
+
+Open Claude Code in this directory and use any of these commands:
+
+#### `/swing AAPL,TSLA,NVDA`
+Multi-day trade setups (2–20 day holds). Nine specialized swing strategies debate each ticker, a Head Trader synthesizes, a Portfolio Manager decides. Output: entry price, target, stop, risk/reward, position size.
+
+#### `/daytrade SPY,QQQ,IWM`
+Intraday trade plans for the current session. Nine day-trade strategies analyze each ticker. Output: setup type, entry trigger, targets, stop, time window.
+
+#### `/autorun`
+The full daily routine in one command: syncs open positions → runs the model → places paper orders → prints the accuracy dashboard. Schedule and tickers are configured in `tracker/watchlist.json`.
+
+#### `/invest AAPL,MSFT`
+Long-term portfolio decisions powered by 14 legendary investor personas. Output: buy/sell/hold with holding period and conviction.
+
+#### `/research AAPL`
+Comprehensive deep-dive using all 30+ agents. Output: bull/bear case, full signal grid, key risks and catalysts. No trade recommendation.
+
+#### Crypto modes
+```
+/crypto-swing BTC-USD,ETH-USD,SOL-USD
+/crypto-day BTC-USD,ETH-USD,SOL-USD
+/crypto-autorun
+```
+Same pipeline with crypto-native agents: Fear & Greed Index, whale movements, funding rates, ETF flows, regulatory news. Simulated locally — no exchange account needed.
+
+---
+
+### Manual CLI
+
+You can also run the pipeline directly from the terminal:
+
+```bash
+# Step 1: Fetch data and build facts bundles
+python -m ai_hedge.runner.prepare --tickers AAPL,MSFT --run-id $(date +%Y%m%d_%H%M%S) --mode swing
+
+# Step 2: Run agents (Claude Code handles this when using slash commands)
+
+# Step 3: Aggregate signals + risk manager
+python -m ai_hedge.runner.aggregate --run-id <id> --tickers AAPL,MSFT
+
+# Step 4: Display results
+python -m ai_hedge.runner.finalize --run-id <id>
+```
+
+---
+
+## How It Works
+
+```
+/swing AAPL,MSFT,NVDA
+  └─ prepare.py          fetch prices, financials, news (yfinance + SEC EDGAR + Finnhub)
+  └─ web research        live macro context + ticker news per ticker (WebSearch)
+  └─ 9 swing agents      each reads a facts bundle, writes a signal (run in parallel)
+  └─ head trader         synthesizes 9 signals into a unified market view
+  └─ aggregate.py        deterministic technicals, fundamentals, valuation, risk manager
+  └─ portfolio manager   final entry / target / stop decisions with position sizing
+  └─ explainer           plain-English educational breakdown of every signal
+  └─ finalize.py         prints the results
+```
+
+All LLM calls use Claude Code's built-in Agent tool — **no OpenAI key, no Anthropic API key, no paid data provider.**
+
+---
+
+## Optional: Paper Trading (Moomoo)
+
+Connect your own Moomoo account to have the system place paper trades automatically after each analysis run.
+
+### Setup
+
+1. Download [Moomoo OpenD](https://www.moomoo.com/download) — the local API gateway
+2. Copy the config template:
+   ```bash
+   cp opend/OpenD.xml.example opend/OpenD.xml
+   ```
+3. Fill in your phone number and MD5 password hash in `opend/OpenD.xml`
+4. Set your account ID as an environment variable:
+   ```bash
+   export MOOMOO_ACCOUNT_ID=your_account_id
+   ```
+5. Launch OpenD:
+   ```bash
+   open opend/OpenD.app
+   ```
+
+### Commands
+
+```bash
+python -m tracker execute --run-id RUN_ID    # place orders from a model run
+python -m tracker monitor                     # sync fills, manage stops/targets
+python -m tracker report                      # accuracy dashboard
+python -m tracker status                      # open positions and P&L
+python -m tracker cash                        # available capital
+```
+
+---
+
+## Project Structure
+
+```
+ai_hedge/
+  data/             yfinance, SEC EDGAR, Finnhub providers + indicators
+  personas/         investor agents, swing/daytrade strategies, prompt files
+  deterministic/    fundamentals, technicals, valuation, sentiment, risk manager
+  runner/           prepare, aggregate, finalize scripts
+tracker/            Moomoo paper trading integration (optional)
+crypto_tracker/     crypto simulated trading (optional)
+.claude/skills/     slash command definitions (/swing, /daytrade, /autorun, etc.)
+```
+
+---
+
+## How to Contribute
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+Please keep pull requests small and focused.
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
