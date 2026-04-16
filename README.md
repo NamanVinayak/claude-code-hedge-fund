@@ -160,6 +160,52 @@ Both keys are optional. The system works without them using yfinance + SEC EDGAR
 
 ---
 
+## Example Output
+
+### `/swing AMZN,BAC,AMD,MSFT,DIS,XOM,GS,JNJ,PFE,WMT`
+
+The system runs 16 agents per ticker in parallel, synthesizes all signals, and produces a concrete trade plan:
+
+```
+SWING TRADE DECISIONS — April 15, 2026
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AMZN  BUY    3 shares  Entry $246.00  Target $263.00  Stop $238.50  R/R 2.27:1  72% confidence
+BAC   BUY   18 shares  Entry  $53.00  Target  $57.00  Stop  $51.50  R/R 2.67:1  65% confidence
+AMD   BUY    2 shares  Entry $248.00  Target $268.00  Stop $241.00  R/R 2.86:1  62% confidence
+MSFT  BUY    1 share   Entry $400.00  Target $422.00  Stop $390.00  R/R 2.20:1  60% confidence
+DIS   BUY    9 shares  Entry $100.50  Target $108.00  Stop  $97.50  R/R 2.50:1  55% confidence
+XOM   SHORT  6 shares  Entry $151.00  Target $143.00  Stop $154.00  R/R 2.67:1  62% confidence
+GS    HOLD   —         ADX 19 too weak, wait for momentum confirmation
+JNJ   HOLD   —         Daily squeeze building, direction unresolved
+PFE   HOLD   —         No trigger, binary earnings risk ahead
+WMT   HOLD   —         Failed breakout, $4.6B insider selling headwind
+```
+
+**Followed by a plain-English explanation of every decision:**
+
+```
+SUMMARY
+The system analyzed 10 stocks and recommends buying 5 (Amazon, Bank of America, AMD,
+Microsoft, and Disney) while shorting 1 (ExxonMobil). Four stocks get a sit-tight.
+
+TOP TRADE — AMZN (72% confidence)
+Amazon has the strongest setup. The $11.6B Globalstar acquisition is a fresh catalyst
+that lit up the Catalyst Trader and News Sentiment agents. Volume came in 1.57× above
+average — the only name in the batch to clear the 1.5× conviction threshold. EMAs are
+fully aligned, ADX is 37 (strong trend), and the squeeze just fired a bullish breakout
+signal. Enter on a pullback to $246 fib support; stop below the hourly SuperTrend at
+$238.50.
+
+XOM SHORT — Why bet against oil?
+ExxonMobil is in a confirmed downtrend despite bullish oil macro. Five consecutive down
+days, RSI at 29, MACD deeply negative, daily SuperTrend flipped bearish. The Iran
+ceasefire is actually a headwind for oil prices here. 6 of 9 agents are bearish.
+Enter on a bounce to $151 resistance, stop at $154.
+```
+
+---
+
 ## How to Run
 
 ### Slash Commands
