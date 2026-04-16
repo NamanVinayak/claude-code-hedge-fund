@@ -1,0 +1,23 @@
+<moomoo_opend>
+	<!-- Basic parameters -->
+		<ip>127.0.0.1</ip>
+		<api_port>11111</api_port>
+
+		<!-- ============================================================ -->
+		<!-- Fill in your Moomoo phone number and password below.          -->
+		<!-- Phone format: +1 6471234567                                   -->
+		<!-- Password: store as MD5 hash — never plain text               -->
+		<!-- To get MD5: echo -n "yourpassword" | md5                     -->
+		<!-- ============================================================ -->
+		<login_account>+1 YOUR_PHONE_NUMBER</login_account>
+		<login_pwd_md5>YOUR_MD5_PASSWORD_HASH</login_pwd_md5>
+
+		<lang>en</lang>
+	<!-- Advanced parameters -->
+		<log_level>info</log_level>
+		<push_proto_type>0</push_proto_type>
+		<price_reminder_push>1</price_reminder_push>
+		<auto_hold_quote_right>1</auto_hold_quote_right>
+		<!-- Adjust timezone to your region -->
+		<timezone>America/Toronto</timezone>
+</moomoo_opend>

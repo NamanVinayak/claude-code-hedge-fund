@@ -1,0 +1,24 @@
+# Personal data
+.env
+*.db
+opend/OpenD.app
+opend/OpenD.xml
+
+# Run output
+runs/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/

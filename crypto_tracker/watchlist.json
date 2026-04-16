@@ -1,0 +1,21 @@
+{
+  "schedules": [
+    {
+      "name": "crypto_swing",
+      "mode": "swing",
+      "tickers": "BTC-USD,ETH-USD,SOL-USD,BNB-USD,XRP-USD,ADA-USD,AVAX-USD,DOT-USD,MATIC-USD,LINK-USD,DOGE-USD,ATOM-USD,UNI-USD,NEAR-USD,FTM-USD,ARB-USD,OP-USD,APT-USD,SUI-USD,INJ-USD",
+      "days": "all"
+    },
+    {
+      "name": "crypto_day",
+      "mode": "daytrade",
+      "tickers": "BTC-USD,ETH-USD,SOL-USD",
+      "days": "all"
+    }
+  ],
+  "settings": {
+    "paper_account_size": 4000,
+    "max_position_size_usd": 500,
+    "max_concurrent_trades": 10
+  }
+}
