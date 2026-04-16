@@ -274,6 +274,63 @@ All LLM calls use Claude Code's built-in Agent tool — **no OpenAI key, no Anth
 
 ---
 
+## Technical Indicators and Price Data
+
+One of the core additions in this fork is a full technical analysis layer that runs before any AI agent sees a single ticker. Every agent receives a pre-computed **facts bundle** — a structured JSON snapshot of the stock's price action — rather than raw OHLCV data. This lets agents reason about specific numbers ("RSI is 78, ADX is 37, squeeze just fired") rather than asking generic questions.
+
+### What data gets fetched
+
+- **Daily OHLCV prices** — 1 year of history via yfinance (used for trend context and daily indicators)
+- **Hourly prices** — 1 month of 1-hour bars via yfinance (swing mode only, for entry timing)
+- **5-minute intraday bars** — 1 month of 5m candles via yfinance (day trade mode only)
+- **Fundamentals** — income statements, balance sheets, cash flow via SEC EDGAR (free, no key needed)
+- **News** — recent headlines via Finnhub free tier + live web research
+
+### Indicators computed per ticker
+
+Every timeframe (daily, hourly, 5-minute) runs the same indicator suite:
+
+| Category | Indicators |
+|---|---|
+| Trend | EMA 9/20/50/200, SMA 20/50/200, ADX (14) with trend-strength label |
+| Momentum | RSI (7/14/21), MACD (12/26/9) with histogram and crossover flag |
+| Volatility | Bollinger Bands (20,2), ATR (14), Keltner Channels |
+| Volume | OBV with direction label, volume ratio vs. 20-day average |
+| Oscillators | Stochastic (%K/%D), Schaff Trend Cycle (STC) |
+| Advanced | **Squeeze Momentum** (TTM Squeeze) — fires when Bollinger Bands compress inside Keltner Channels |
+| Trend system | **SuperTrend** — directional trend filter with `trend_changed` flag for recent flips |
+
+The **Squeeze Momentum** and **SuperTrend** indicators were added specifically because they're the ones active swing traders actually use. Squeeze tells you when a stock is coiling for a breakout. SuperTrend tells you which direction the breakout is most likely to go.
+
+### Multi-timeframe analysis (swing mode)
+
+Swing agents see two independent indicator snapshots for every ticker:
+
+```
+daily_indicators   ← based on 1 year of daily bars
+hourly_indicators  ← based on 1 month of 1-hour bars
+```
+
+This enables the kind of analysis professional traders do manually — check the daily trend for direction, then drop to the hourly chart to time the entry. For example:
+
+- Daily RSI at 78 (extended) + hourly RSI at 52 (neutral) → possible short-term pullback coming, wait for better entry
+- Daily SuperTrend bullish + hourly EMA crossover just happened → entry timing aligns, higher conviction
+
+### Intraday analysis (day trade mode)
+
+Day trade agents see 1 month of 5-minute bars, giving the indicator history needed to calculate reliable values on intraday data. Each agent gets only the indicators relevant to its strategy:
+
+- VWAP Trader → VWAP levels, distance from VWAP, volume profile
+- Momentum Scalper → EMA stack, RSI, momentum direction
+- Breakout Hunter → gap analysis, previous day high/low, pre-market range
+- Stat Arb → Hurst exponent, autocorrelation (mean-reversion vs. trending regime detection)
+
+### How agents use this data
+
+Each agent reads its facts bundle and writes a structured signal — a JSON file with action, confidence, reasoning, and specific price levels. Agents never need to fetch data themselves. They just reason about the numbers in front of them. This is what makes it possible to run 9+ agents in parallel without them stepping on each other or hitting API rate limits.
+
+---
+
 ## Optional: Paper Trading (Moomoo)
 
 Connect your own Moomoo account to have the system place paper trades automatically after each analysis run.
