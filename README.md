@@ -391,6 +391,12 @@ Please keep pull requests small and focused.
 
 ---
 
+## Author
+
+Built by **[Naman Vinayak](https://github.com/NamanVinayak)** — forked from [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) and extended with new trading modes, Claude Code slash commands, and a full technical analysis pipeline.
+
+---
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
