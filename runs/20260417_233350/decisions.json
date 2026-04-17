@@ -1,0 +1,159 @@
+{
+  "decisions": {
+    "AAPL": {
+      "action": "buy",
+      "quantity": 40,
+      "confidence": 60,
+      "entry_price": 262.50,
+      "target_price": 282.00,
+      "stop_loss": 256.50,
+      "risk_reward": 3.25,
+      "timeframe": "5-8 trading days",
+      "reasoning": "Trend+pullback+breakout+sector bullish; fundamental overhang. Wider target for 3.25:1 R:R. Moderate size on split conviction."
+    },
+    "MSFT": {
+      "action": "buy",
+      "quantity": 25,
+      "confidence": 72,
+      "entry_price": 420.26,
+      "target_price": 442.00,
+      "stop_loss": 412.00,
+      "risk_reward": 2.63,
+      "timeframe": "7-10 trading days",
+      "reasoning": "Strong trend + accelerating momentum (78 conf each). Tightened stop and extended target for 2.63:1. Overbought warns caution on size."
+    },
+    "TSLA": {
+      "action": "hold",
+      "quantity": 0,
+      "confidence": 48,
+      "entry_price": 391.95,
+      "target_price": 408.00,
+      "stop_loss": 382.00,
+      "risk_reward": 1.64,
+      "timeframe": "await clarity",
+      "reasoning": "Daily downtrend vs hourly uptrend conflict; momentum divergence 5d+ vs 21d-. R:R<2 and HT confidence 48. Stand aside."
+    },
+    "NVDA": {
+      "action": "buy",
+      "quantity": 50,
+      "confidence": 78,
+      "entry_price": 199.50,
+      "target_price": 210.00,
+      "stop_loss": 195.00,
+      "risk_reward": 2.33,
+      "timeframe": "6-10 trading days",
+      "reasoning": "78% agent agreement: multi-TF aligned, Druckenmiller bullish, sector leading. Tightened stop hits 2.33:1 R:R. Overbought managed by size."
+    },
+    "META": {
+      "action": "buy",
+      "quantity": 15,
+      "confidence": 74,
+      "entry_price": 676.87,
+      "target_price": 710.00,
+      "stop_loss": 665.00,
+      "risk_reward": 2.79,
+      "timeframe": "8-12 trading days",
+      "reasoning": "Explosive breakout with 1.75x volume, hourly ADX 66. Tightened stop to 665 gives 2.79:1. Fundamental bearish kept size moderate."
+    },
+    "GOOGL": {
+      "action": "buy",
+      "quantity": 45,
+      "confidence": 82,
+      "entry_price": 337.12,
+      "target_price": 350.00,
+      "stop_loss": 325.00,
+      "risk_reward": 2.17,
+      "timeframe": "8-14 trading days",
+      "reasoning": "Strongest conviction in cohort (82): multi-TF aligned, hourly ADX 72, ROC accelerating. R:R 2.17:1 meets rule as-is."
+    },
+    "AMZN": {
+      "action": "buy",
+      "quantity": 35,
+      "confidence": 72,
+      "entry_price": 249.70,
+      "target_price": 262.00,
+      "stop_loss": 244.00,
+      "risk_reward": 2.16,
+      "timeframe": "8-14 trading days",
+      "reasoning": "77 momentum rank, daily ADX 44, cloud rotation. Tighter 244 stop gives 2.16:1. Extreme Z-score 2.84 risk sizes down."
+    },
+    "AMD": {
+      "action": "buy",
+      "quantity": 15,
+      "confidence": 70,
+      "entry_price": 278.26,
+      "target_price": 305.00,
+      "stop_loss": 270.00,
+      "risk_reward": 3.24,
+      "timeframe": "7-12 trading days",
+      "reasoning": "Highest momentum in universe (41.7% 21d ROC) but RSI 91 + hourly STC cross down = pullback risk. Smaller size; 3.24:1 R:R buffer."
+    },
+    "JPM": {
+      "action": "buy",
+      "quantity": 30,
+      "confidence": 62,
+      "entry_price": 309.95,
+      "target_price": 325.00,
+      "stop_loss": 304.00,
+      "risk_reward": 2.53,
+      "timeframe": "5-8 trading days",
+      "reasoning": "Trend+sector rotation bullish but momentum ranker neutral and Druckenmiller bearish on fundamentals. Modest size, 2.53:1 R:R."
+    },
+    "GS": {
+      "action": "hold",
+      "quantity": 0,
+      "confidence": 62,
+      "entry_price": 909.63,
+      "target_price": 925.00,
+      "stop_loss": 890.00,
+      "risk_reward": 1.43,
+      "timeframe": "await daily confirmation",
+      "reasoning": "HT neutral; daily ADX weak (20.66), 5d ROC -0.4%, momentum decelerating. R:R cannot reach 2:1 cleanly. Stand aside."
+    },
+    "NKE": {
+      "action": "short",
+      "quantity": 180,
+      "confidence": 70,
+      "entry_price": 45.54,
+      "target_price": 41.50,
+      "stop_loss": 47.50,
+      "risk_reward": 2.06,
+      "timeframe": "5-10 trading days",
+      "reasoning": "Strong downtrend: daily EMAs down ADX 48, -17% 21d, collapsing EPS. Oversold-bounce risk sized moderate; 2.06:1 R:R."
+    },
+    "XOM": {
+      "action": "short",
+      "quantity": 70,
+      "confidence": 72,
+      "entry_price": 151.97,
+      "target_price": 144.00,
+      "stop_loss": 154.00,
+      "risk_reward": 3.93,
+      "timeframe": "5-10 trading days",
+      "reasoning": "Bearish consensus: all ROC negative, sector outflow, EPS -10.3%, uncorrelated (-0.04) diversifier. 3.93:1 R:R on tight stop."
+    },
+    "SPY": {
+      "action": "buy",
+      "quantity": 15,
+      "confidence": 72,
+      "entry_price": 701.66,
+      "target_price": 722.00,
+      "stop_loss": 695.00,
+      "risk_reward": 3.05,
+      "timeframe": "7-10 trading days",
+      "reasoning": "Broad uptrend, hourly ADX 65. Reduced size due to high correlation with QQQ+single-names. 3.05:1 R:R."
+    },
+    "QQQ": {
+      "action": "buy",
+      "quantity": 12,
+      "confidence": 72,
+      "entry_price": 640.47,
+      "target_price": 668.00,
+      "stop_loss": 634.00,
+      "risk_reward": 4.25,
+      "timeframe": "8-12 trading days",
+      "reasoning": "Tech-heavy uptrend, 83 sector conf. Cut size - 0.96 corr with SPY and overlaps with single-name tech longs. 4.25:1 R:R."
+    }
+  },
+  "portfolio_notes": "Swing book: 10 longs, 2 shorts, 2 holds. Longs concentrated in large-cap tech (AAPL, MSFT, NVDA, META, GOOGL, AMZN, AMD) with high inter-correlation (QQQ/SPY 0.96; NVDA-QQQ 0.74; AMZN-QQQ 0.67) - single-name sizes trimmed and index ETF allocations cut (SPY 15, QQQ 12) to avoid double-counting tech exposure. AMD sized small (15 shares, ~$4.2k) despite high conviction due to extreme overbought (RSI 91, Z-score 3.66) and hourly STC momentum divergence. NKE + XOM shorts add negatively-correlated ballast (XOM corr -0.04 to book) and hedge tech beta. TSLA hold on multi-TF conflict; GS hold on weak daily ADX. All trades enforce R:R >= 2.0 per mandate - several head-trader R:Rs tightened via stop adjustment or target extension. Total gross exposure ~75% of $100k cash, leaving dry powder for follow-through adds. Max single position $14.2k (META) well below 20% risk-manager limit. Key monitoring: tech mean-reversion (Z-scores 1.7-3.7) could trigger book-wide drawdown given correlation; stops are the risk gate."
+}

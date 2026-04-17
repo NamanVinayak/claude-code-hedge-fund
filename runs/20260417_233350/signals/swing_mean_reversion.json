@@ -1,0 +1,128 @@
+{
+  "AAPL": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "Daily Z-score 0.33 is near mean (not extreme), RSI 62 is mid-range. Hourly shows overbought STC at 99 but daily STC is broken. Price within normal bands without strong reversion signal.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": null
+  },
+  "MSFT": {
+    "signal": "bearish",
+    "confidence": 72,
+    "reasoning": "Daily Z-score 1.79 with 7.2% extension above SMA, RSI 82 overbought, Stochastic >99. While MACD bullish, the extreme overbought conditions combined with 7% extension suggest short-term pullback. Entry on weakness toward 50-SMA.",
+    "entry_price": 420.0,
+    "target_price": 391.9,
+    "stop_loss": 430.0,
+    "timeframe": "3-7 trading days"
+  },
+  "TSLA": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "Daily Z-score near 0, RSI 56 mid-range, price near 50-SMA. Despite hourly overbought STC, daily indicators lack extremes for reliable mean-reversion entry. Squeeze off but no clear reversal setup.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": null
+  },
+  "NVDA": {
+    "signal": "bearish",
+    "confidence": 78,
+    "reasoning": "Daily Z-score 2.07 (overbought), RSI 84 extreme, Stochastic >94, distance 8.5% from 50-SMA. Hourly also overbought (RSI 63, Stochastic >99). Multiple extremes suggest pullback toward 182.74 support/SMA.",
+    "entry_price": 198.5,
+    "target_price": 182.74,
+    "stop_loss": 202.5,
+    "timeframe": "3-6 trading days"
+  },
+  "META": {
+    "signal": "bearish",
+    "confidence": 75,
+    "reasoning": "Daily Z-score 1.26, RSI 85 extreme, Stochastic 99, 7.6% extension from SMA, overbought across multiple oscillators. Hourly RSI 79 also elevated. Mean-reversion target is 629.16 (50-SMA), risk-reward favorable.",
+    "entry_price": 676.0,
+    "target_price": 629.2,
+    "stop_loss": 688.5,
+    "timeframe": "3-7 trading days"
+  },
+  "GOOGL": {
+    "signal": "bearish",
+    "confidence": 76,
+    "reasoning": "Daily Z-score 2.05 (extreme overbought), RSI 85, Stochastic 94, 9.2% extension above 50-SMA. Hourly also elevated (RSI 68, Stochastic 91). Clear overbought extremes across timeframes suggest pullback to 307.6.",
+    "entry_price": 336.0,
+    "target_price": 307.6,
+    "stop_loss": 342.0,
+    "timeframe": "3-6 trading days"
+  },
+  "AMZN": {
+    "signal": "bearish",
+    "confidence": 74,
+    "reasoning": "Daily Z-score 2.84 (extreme), RSI 84, Stochastic 95, 16.7% extension from SMA. Largest extension in basket signals strong reversion. Hourly RSI 56 neutral but daily extremes dominate. Target 213.89.",
+    "entry_price": 249.0,
+    "target_price": 213.9,
+    "stop_loss": 254.6,
+    "timeframe": "5-10 trading days"
+  },
+  "AMD": {
+    "signal": "bearish",
+    "confidence": 82,
+    "reasoning": "Daily Z-score 3.66 (extreme), RSI 91 (highest in basket), Stochastic 99, 32% extension from 50-SMA. Hourly STC crossed below 75, indicating momentum fade. Strongest mean-reversion candidate. Target 210.57.",
+    "entry_price": 275.0,
+    "target_price": 210.6,
+    "stop_loss": 290.0,
+    "timeframe": "7-15 trading days"
+  },
+  "JPM": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "Daily Z-score 1.06 (mid-range), RSI 68 moderately elevated, 3.9% extension from SMA. While Stochastic 87 is high, extension is not extreme enough for reliable mean-reversion. No clear setup.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": null
+  },
+  "GS": {
+    "signal": "neutral",
+    "confidence": 50,
+    "reasoning": "Daily Z-score 0.70 near mean, RSI 72 moderately high, 3.7% extension. While hourly overbought (RSI 76, STC 99), daily indicators lack extremes. Momentum improving but not enough for strong short entry.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": null
+  },
+  "NKE": {
+    "signal": "bullish",
+    "confidence": 68,
+    "reasoning": "Daily Z-score -1.30 (oversold), RSI 33 (low), 17.3% below 50-SMA, Stochastic <33. Hourly squeeze building (positive divergence). Price near lower Bollinger Band suggests bounce setup. Target 53.5.",
+    "entry_price": 45.8,
+    "target_price": 53.5,
+    "stop_loss": 42.6,
+    "timeframe": "5-10 trading days"
+  },
+  "XOM": {
+    "signal": "neutral",
+    "confidence": 42,
+    "reasoning": "Daily Z-score -0.39 near mean, RSI 32 (oversold), but hourly RSI 42 less extreme. Negative momentum (ROC -5.5%) and bearish SuperTrend suggest continuation down rather than bounce. No reversal candle present.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": null
+  },
+  "SPY": {
+    "signal": "bearish",
+    "confidence": 70,
+    "reasoning": "Daily Z-score 1.73, RSI 84 extreme, Stochastic >98, 4.2% above 50-SMA. Hourly overbought (RSI 75, STC 97). Multiple overbought extremes across timeframes suggest pullback toward 673.36 (50-SMA) over 5-10 days.",
+    "entry_price": 701.0,
+    "target_price": 673.4,
+    "stop_loss": 712.0,
+    "timeframe": "5-10 trading days"
+  },
+  "QQQ": {
+    "signal": "bearish",
+    "confidence": 73,
+    "reasoning": "Daily Z-score 2.54 (extreme overbought), RSI 84, Stochastic 98, 6.6% extension from 50-SMA. Hourly RSI 75, STC overbought. Bullish momentum but price stretched; mean-reversion target 600.75 (50-SMA).",
+    "entry_price": 640.0,
+    "target_price": 600.8,
+    "stop_loss": 652.0,
+    "timeframe": "5-10 trading days"
+  }
+}

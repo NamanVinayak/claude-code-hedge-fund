@@ -1,0 +1,128 @@
+{
+  "AAPL": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "Daily EMAs not aligned (10 > 21 > 50 is tangled at 259.88/258.06/259.05). Hourly shows uptrend (10 > 21 > 50), but daily ADX is weak at 14.5, below the 25 threshold needed for trend strength. Price action is choppy.",
+    "entry_price": 260.48,
+    "target_price": 268.43,
+    "stop_loss": 255.32,
+    "timeframe": "wait for clarity"
+  },
+  "MSFT": {
+    "signal": "bullish",
+    "confidence": 78,
+    "reasoning": "Hourly EMAs perfectly aligned uptrend (421.91 > 415.71 > 401.56) with strong hourly ADX 58.37. Daily EMAs tangled but hourly shows clean uptrend. RSI 66.7 on hourly. Squeeze off, bullish breakout confirmed. Price pulled back to hourly 21 EMA, entry zone triggered.",
+    "entry_price": 420.26,
+    "target_price": 437.89,
+    "stop_loss": 414.37,
+    "timeframe": "3-5 trading days"
+  },
+  "TSLA": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "Daily shows downtrend alignment (EMA 368 < 371 < 387). But hourly EMAs show uptrend (398.26 > 390.80 > 377.39) with ADX 42.33. Hourly RSI 59.3, STC overbought 99.99. Recent price action jumped to 400.62 with high volume on 4/15. Hourly momentum still building. Follow hourly uptrend on pullback.",
+    "entry_price": 391.95,
+    "target_price": 408.13,
+    "stop_loss": 385.74,
+    "timeframe": "2-4 trading days"
+  },
+  "NVDA": {
+    "signal": "bullish",
+    "confidence": 82,
+    "reasoning": "Daily EMAs aligned uptrend (189.12 > 184.56 > 183.13) with ADX 35.02. Hourly EMAs also uptrend (200.16 > 198.47 > 193.45) with ADX 33.78. RSI 83.6 daily (overbought but in strong uptrend). Squeeze off, bullish breakout. Price 201.68 above both moving averages. Clean multi-timeframe alignment.",
+    "entry_price": 198.87,
+    "target_price": 204.82,
+    "stop_loss": 196.25,
+    "timeframe": "3-5 trading days"
+  },
+  "META": {
+    "signal": "bullish",
+    "confidence": 80,
+    "reasoning": "Daily EMAs tangled (634.66 > 620.16 > 625.90). Hourly EMAs perfectly aligned uptrend (681.96 > 674.83 > 653.77) with very strong ADX 66.02. Hourly RSI 79.3, momentum strong. Squeeze off, bullish breakout signal. Recent spike from 671.58 to 688.55 shows strong momentum. Follow hourly uptrend.",
+    "entry_price": 676.87,
+    "target_price": 691.47,
+    "stop_loss": 670.02,
+    "timeframe": "2-3 trading days"
+  },
+  "GOOGL": {
+    "signal": "bullish",
+    "confidence": 85,
+    "reasoning": "Daily EMAs aligned uptrend (320.61 > 311.98 > 309.01) with strong ADX 43.31. Hourly EMAs also uptrend (339.09 > 336.29 > 328.13) with very strong ADX 72.54. RSI 85.4 daily (overbought in healthy uptrend). Squeeze off, bullish breakout confirmed. Multi-timeframe alignment is clean.",
+    "entry_price": 337.12,
+    "target_price": 345.88,
+    "stop_loss": 332.87,
+    "timeframe": "2-4 trading days"
+  },
+  "AMZN": {
+    "signal": "bullish",
+    "confidence": 76,
+    "reasoning": "Daily EMAs aligned uptrend (235.10 > 225.37 > 220.61) with ADX 43.97. Hourly EMAs also uptrend (251.19 > 249.42 > 242.23) though hourly ADX is lower at 28.77. Daily RSI 84.4, momentum strong. Squeeze off, bullish breakout. Price 250.56 extended but hourly still shows uptrend structure.",
+    "entry_price": 249.70,
+    "target_price": 254.43,
+    "stop_loss": 245.56,
+    "timeframe": "2-3 trading days"
+  },
+  "AMD": {
+    "signal": "bullish",
+    "confidence": 88,
+    "reasoning": "Daily EMAs aligned uptrend (244.87 > 229.78 > 219.44) with ADX 49.92 (strong trend). Hourly EMAs also uptrend (276.34 > 270.41 > 256.72) with ADX 52.02. Daily RSI 91.4 (extremely overbought) but SuperTrend bullish. Momentum 32.37 ROC 10d shows strong rally. Recent candle 264.99 to 278.26 was massive. Trend is strong.",
+    "entry_price": 278.26,
+    "target_price": 290.33,
+    "stop_loss": 269.08,
+    "timeframe": "2-4 trading days"
+  },
+  "JPM": {
+    "signal": "bullish",
+    "confidence": 70,
+    "reasoning": "Daily EMAs aligned uptrend (305.36 > 300.43 > 299.39) with ADX 31.79. Hourly EMAs also uptrend (310.80 > 310.07 > 308.01) with ADX 38.59. Daily RSI 67.9, hourly STC overbought at 95.2. Recent consolidation near 309.95 after pullback from 313.68. Squeeze off, bullish. Setup is solid on pullbacks.",
+    "entry_price": 309.95,
+    "target_price": 313.68,
+    "stop_loss": 305.02,
+    "timeframe": "2-3 trading days"
+  },
+  "GS": {
+    "signal": "bullish",
+    "confidence": 68,
+    "reasoning": "Daily EMAs aligned uptrend (888.02 > 871.43 > 867.62) with ADX 20.66 (weak). Hourly EMAs uptrend (919.12 > 913.03 > 901.79) with ADX 45.93. Hourly RSI 76, STC overbought 99.2. Daily momentum turning (ROC 4.6 is slowing). Price 925.95 is extended. Hourly shows strength but daily ADX is weak - wait for daily confirmation.",
+    "entry_price": 909.63,
+    "target_price": 925.91,
+    "stop_loss": 899.47,
+    "timeframe": "2-3 trading days"
+  },
+  "NKE": {
+    "signal": "bearish",
+    "confidence": 75,
+    "reasoning": "Daily EMAs show downtrend (45.22 < 47.82 < 53.05) with ADX 48.13 (strong downtrend). Hourly EMAs uptrend (45.92 > 45.57 > 45.10) but daily SuperTrend bearish. Daily RSI 32.6 (oversold), MACD negative. Squeeze on hourly (rare). Divergence: hourly trying to bounce but daily trend is down. Stay with downtrend; short NKE on bounces.",
+    "entry_price": 45.54,
+    "target_price": 42.62,
+    "stop_loss": 47.82,
+    "timeframe": "3-5 trading days"
+  },
+  "XOM": {
+    "signal": "bearish",
+    "confidence": 72,
+    "reasoning": "Daily EMAs tangled (154.61 < 156.49 but > 152.13) with ADX 27.35 (weak). Hourly EMAs show downtrend (147.07 < 148.33 < 151.19) with ADX 38.62. Both daily and hourly RSI low (32.4 daily, 42.0 hourly). MACD negative on both timeframes. Squeeze off, bearish breakout signal. Volume is low. Risk-reward favors staying in cash or shorting on bounces.",
+    "entry_price": 151.97,
+    "target_price": 149.01,
+    "stop_loss": 153.97,
+    "timeframe": "2-4 trading days"
+  },
+  "SPY": {
+    "signal": "bullish",
+    "confidence": 82,
+    "reasoning": "Daily EMAs aligned uptrend (682.62 > 673.73 > 672.84) with ADX 36.23. Hourly EMAs also uptrend (707.49 > 702.97 > 692.16) with strong ADX 65.48. Daily RSI 83.79, hourly RSI 74.84 (both strong). Squeeze off, bullish breakout. Multi-timeframe alignment is solid. Price 710.14 above all EMAs on both timeframes.",
+    "entry_price": 701.66,
+    "target_price": 713.84,
+    "stop_loss": 697.36,
+    "timeframe": "2-3 trading days"
+  },
+  "QQQ": {
+    "signal": "bullish",
+    "confidence": 84,
+    "reasoning": "Daily EMAs aligned uptrend (615.95 > 605.31 > 603.21) with ADX 36.75. Hourly EMAs also uptrend (645.54 > 640.14 > 627.03) with strong ADX 63.77. Daily RSI 84.12, hourly RSI 74.61. Momentum strong (ROC 10d = 9.61). Squeeze off, bullish breakout confirmed. Price 648.85 above all EMAs. Clean multi-timeframe structure.",
+    "entry_price": 640.47,
+    "target_price": 652.61,
+    "stop_loss": 633.02,
+    "timeframe": "2-3 trading days"
+  }
+}

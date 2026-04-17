@@ -1,0 +1,254 @@
+{
+  "AAPL": {
+    "consensus_signal": "bullish",
+    "confidence": 65,
+    "reasoning": "Market context: trending with clear momentum setup. Trend Follower and Pullback Trader both bullish with clean technical alignment. Momentum Ranker shows moderate strength (62 confidence). Sector Rotation bullish on tech inflow. However, Mean Reversion warns of RSI overbought, and Druckenmiller bearish on valuation (31.4x P/E with flat revenue growth). Breakout Trader bullish but catalysts absent. Balanced conviction: technical strength favors swing long, but fundamental weakness and overextension cap upside.",
+    "agent_agreement_pct": 0.56,
+    "key_conflicts": "Technical strength (bullish) vs. valuation weakness (bearish). RSI 62 moderate but approaching overbought. Hourly uptrend vs daily complexity. Catalyst gap—momentum is technical-driven, not event-driven.",
+    "recommended_action": "buy",
+    "entry_price": 262.50,
+    "target_price": 272.00,
+    "stop_loss": 256.50,
+    "risk_reward": 1.44,
+    "timeframe": "5-8 trading days",
+    "strategy_agreement": {
+      "bullish": ["swing_trend_follower", "swing_pullback_trader", "swing_breakout_trader", "swing_sector_rotation", "swing_momentum_ranker"],
+      "bearish": ["stanley_druckenmiller", "swing_mean_reversion"],
+      "neutral": ["swing_catalyst_trader", "news_sentiment"]
+    }
+  },
+  "MSFT": {
+    "consensus_signal": "bullish",
+    "confidence": 77,
+    "reasoning": "Market context: strong trending market—Trend Follower and Momentum Ranker carry peak weight. Trend Follower bullish (78 conf) with hourly uptrend perfectly aligned (10 > 21 > 50, ADX 58). Momentum Ranker strongest in cohort (78 conf, accelerating 12.6% 5d ROC). Breakout Trader bullish (78 conf) with 1.2x volume confirmation. Sector Rotation bullish (80 conf) on tech leadership. Pullback Trader bearish (35 conf) citing RSI 82 exhaustion. Catalyst absent (30 conf). Mean Reversion bearish (72 conf) on Z-score 1.79 overbought. Druckenmiller neutral (55 conf) on balanced risk-reward. Consensus: uptrend with momentum. Entry discipline needed due to overbought conditions.",
+    "agent_agreement_pct": 0.67,
+    "key_conflicts": "Overbought technicals (RSI 82, STC 98.9) vs. momentum acceleration (12.6% 5d ROC). Pullback Trader and Mean Reversion flag exhaustion; Trend Follower and Momentum argue momentum is structural.",
+    "recommended_action": "buy",
+    "entry_price": 420.26,
+    "target_price": 438.00,
+    "stop_loss": 410.00,
+    "risk_reward": 1.96,
+    "timeframe": "7-10 trading days",
+    "strategy_agreement": {
+      "bullish": ["swing_trend_follower", "swing_breakout_trader", "swing_momentum_ranker", "swing_sector_rotation"],
+      "bearish": ["swing_mean_reversion", "swing_pullback_trader"],
+      "neutral": ["swing_catalyst_trader", "stanley_druckenmiller", "news_sentiment"]
+    }
+  },
+  "TSLA": {
+    "consensus_signal": "neutral",
+    "confidence": 48,
+    "reasoning": "Market context: choppy/conflicted. Daily EMA downtrend (368 < 371 < 387) but hourly uptrend (398 > 391 > 377). Trend Follower bullish (72 conf) favoring hourly uptrend on pullback. Breakout Trader bullish (68 conf) on 4/15 volume (113M shares). Momentum Ranker neutral (45 conf)—strong 5d ROC (12.5%) but negative 21d (-2.6%), indicating momentum loss. Mean Reversion neutral (40 conf)—RSI 56 mid-range. Pullback Trader neutral (28 conf)—conflicting signals, lacks clean setup. Catalyst neutral (40 conf)—no event identified. Sector Rotation neutral (45 conf)—daily downtrend vs hourly uptrend split. Druckenmiller neutral (48 conf) on stretched 212x P/E. Conflicting timeframes prevent strong call.",
+    "agent_agreement_pct": 0.33,
+    "key_conflicts": "Daily downtrend vs hourly uptrend (multi-timeframe conflict). Short-term 5d momentum positive but 21d momentum negative (momentum divergence). EMA misalignment daily. Overbought STC (99.99) hourly but squeeze bearish daily. Valuation egregiously stretched (212x P/E, 420x P/FCF).",
+    "recommended_action": "hold",
+    "entry_price": 391.95,
+    "target_price": 408.00,
+    "stop_loss": 382.00,
+    "risk_reward": 1.64,
+    "timeframe": "5-7 trading days (cautious, await clarity)",
+    "strategy_agreement": {
+      "bullish": ["swing_trend_follower", "swing_breakout_trader"],
+      "bearish": [],
+      "neutral": ["swing_pullback_trader", "swing_momentum_ranker", "swing_mean_reversion", "swing_catalyst_trader", "swing_sector_rotation", "stanley_druckenmiller", "news_sentiment"]
+    }
+  },
+  "NVDA": {
+    "consensus_signal": "bullish",
+    "confidence": 80,
+    "reasoning": "Market context: strong trending market with multi-timeframe alignment. Trend Follower bullish (82 conf)—daily and hourly EMAs aligned (189 > 185 > 183, ADX 35 daily; 200 > 198 > 193, ADX 33 hourly). Momentum Ranker bullish (75 conf)—all ROC positive and accelerating (5d: 7.9%, 10d: 12.9%, 21d: 9.0%). Breakout Trader bullish (75 conf)—broke 198.87 resistance with RSI 83.6. Pullback Trader bullish (78 conf)—clean 38.2% fib at 194.00 with SuperTrend bullish. Sector Rotation bullish (82 conf)—semiconductor sector leading. Druckenmiller bullish (78 conf)—23.7% revenue growth, 19.2% EPS expansion, 95.5% price momentum create asymmetric upside. Mean Reversion bearish (78 conf)—Z-score 2.07 overbought, RSI 84 extreme suggests pullback. Catalyst neutral (25 conf)—no near-term catalyst visible. High consensus with overbought warning.",
+    "agent_agreement_pct": 0.78,
+    "key_conflicts": "Extreme overbought RSI (83.6) and Z-score 2.07 suggest pullback risk within uptrend (Mean Reversion conflict). But momentum acceleration and multi-timeframe alignment argue continuation. Catalyst absence is gap.",
+    "recommended_action": "buy",
+    "entry_price": 199.50,
+    "target_price": 207.50,
+    "stop_loss": 194.00,
+    "risk_reward": 1.68,
+    "timeframe": "6-10 trading days",
+    "strategy_agreement": {
+      "bullish": ["swing_trend_follower", "swing_pullback_trader", "swing_breakout_trader", "swing_momentum_ranker", "swing_sector_rotation", "stanley_druckenmiller"],
+      "bearish": ["swing_mean_reversion"],
+      "neutral": ["swing_catalyst_trader", "news_sentiment"]
+    }
+  },
+  "META": {
+    "consensus_signal": "bullish",
+    "confidence": 78,
+    "reasoning": "Market context: trending with momentum breakout. Trend Follower bullish (80 conf)—hourly EMAs perfectly aligned (682 > 675 > 654, ADX 66), daily tangled but hourly drives signal. Momentum Ranker bullish (80 conf)—accelerating ROC (5d: 7.7%, 10d: 16.9%, 21d: 8.7%), RSI 84.8. Breakout Trader bullish (76 conf)—explosive breakout above 676.87 with 1.75x volume, measured move to 728. Pullback Trader bullish (81 conf)—38.2% fib at 659.68 with SuperTrend bullish. Sector Rotation bullish (78 conf)—tech/AI rotation with massive institutional buying. Druckenmiller bearish (68 conf)—EPS turned negative (-4.5%), valuation indefensible at 27.9x. Mean Reversion bearish (75 conf)—Z-score 1.26 overbought, 7.6% extension suggests pullback to 629. Catalyst neutral (35 conf)—no event visible. Strong technical consensus but fundamental deterioration warns caution.",
+    "agent_agreement_pct": 0.67,
+    "key_conflicts": "Technical momentum (bullish) vs. negative earnings growth (bearish). RSI 84.8 and Stochastic 99 extreme overbought. Recent gains priced in fast moves; reversion risk present.",
+    "recommended_action": "buy",
+    "entry_price": 676.87,
+    "target_price": 705.00,
+    "stop_loss": 661.00,
+    "risk_reward": 1.63,
+    "timeframe": "8-12 trading days",
+    "strategy_agreement": {
+      "bullish": ["swing_trend_follower", "swing_pullback_trader", "swing_breakout_trader", "swing_momentum_ranker", "swing_sector_rotation"],
+      "bearish": ["swing_mean_reversion", "stanley_druckenmiller"],
+      "neutral": ["swing_catalyst_trader", "news_sentiment"]
+    }
+  },
+  "GOOGL": {
+    "consensus_signal": "bullish",
+    "confidence": 82,
+    "reasoning": "Market context: strong trending market with clean multi-timeframe alignment. Trend Follower bullish (85 conf)—daily EMAs aligned (320 > 312 > 309, ADX 43), hourly even stronger (339 > 336 > 328, ADX 72.54), RSI 85.4 overbought in healthy uptrend. Momentum Ranker bullish (82 conf)—strongest ROC acceleration (5d: 5.5%, 10d: 12.9%, 21d: 8.1%), all positive and expanding. Breakout Trader bullish (77 conf)—above 337.12 resistance, hourly ADX 72 confirms trend. Pullback Trader bullish (80 conf)—38.2% fib at 330.19 aligns with support. Sector Rotation bullish (79 conf)—tech sector leading. Druckenmiller neutral (52 conf)—13.6% revenue growth positive but EPS declined (-15.5%) signals margin deterioration. Mean Reversion bearish (76 conf)—Z-score 2.05 extreme, 9.2% extension suggests pullback to 307.6. Catalyst neutral (30 conf). Strongest technical consensus; earnings concern is secondary.",
+    "agent_agreement_pct": 0.78,
+    "key_conflicts": "Technical strength (bullish) vs. negative EPS growth (bearish). Extreme overbought (RSI 85.4, Z-score 2.05) suggests pullback risk. But hourly ADX 72 and daily ADX 43 both strong; trend is intact.",
+    "recommended_action": "buy",
+    "entry_price": 337.12,
+    "target_price": 350.00,
+    "stop_loss": 325.00,
+    "risk_reward": 2.17,
+    "timeframe": "8-14 trading days",
+    "strategy_agreement": {
+      "bullish": ["swing_trend_follower", "swing_pullback_trader", "swing_breakout_trader", "swing_momentum_ranker", "swing_sector_rotation"],
+      "bearish": ["swing_mean_reversion"],
+      "neutral": ["swing_catalyst_trader", "stanley_druckenmiller", "news_sentiment"]
+    }
+  },
+  "AMZN": {
+    "consensus_signal": "bullish",
+    "confidence": 76,
+    "reasoning": "Market context: trending with strong momentum. Trend Follower bullish (76 conf)—daily EMAs aligned (235 > 225 > 221, ADX 43.97), hourly EMAs uptrend (251 > 249 > 242). Momentum Ranker bullish (77 conf)—excellent ROC acceleration (5d: 6.9%, 10d: 18.6%, 21d: 16.0%), Z-score 2.8 extreme. Breakout Trader bullish (74 conf)—above 249.7 with strong momentum (ROC 10d: 18.58%). Pullback Trader bullish (75 conf)—38.2% fib at 241.76 with support confluence. Sector Rotation bullish (76 conf)—cloud/tech rotation. Druckenmiller neutral (54 conf)—weak revenue (3.8%) but margin expansion drives 24.3% EPS growth. Mean Reversion bearish (74 conf)—Z-score 2.84 extreme, 16.7% extension suggests sharp reversion to 213.89. Catalyst neutral (35 conf). Strong technicals but extreme extension warns pullback risk within trend.",
+    "agent_agreement_pct": 0.67,
+    "key_conflicts": "Momentum strength (bullish) vs. extreme overbought (Z-score 2.84, RSI 84.4, 16.7% extension). Mean Reversion flags significant pullback risk. But ADX 43 daily confirms trend strength.",
+    "recommended_action": "buy",
+    "entry_price": 249.70,
+    "target_price": 260.00,
+    "stop_loss": 240.00,
+    "risk_reward": 1.57,
+    "timeframe": "8-14 trading days",
+    "strategy_agreement": {
+      "bullish": ["swing_trend_follower", "swing_pullback_trader", "swing_breakout_trader", "swing_momentum_ranker", "swing_sector_rotation"],
+      "bearish": ["swing_mean_reversion"],
+      "neutral": ["swing_catalyst_trader", "stanley_druckenmiller", "news_sentiment"]
+    }
+  },
+  "AMD": {
+    "consensus_signal": "bullish",
+    "confidence": 83,
+    "reasoning": "Market context: explosive trending with extreme momentum—Trend Follower and Momentum Ranker carry maximum weight. Trend Follower bullish (88 conf)—daily and hourly EMAs both aligned (244 > 230 > 219, ADX 49.92; 276 > 270 > 257, ADX 52.02), RSI 91.4 extreme but SuperTrend bullish. Momentum Ranker bullish (85 conf)—strongest in entire universe (5d: 17.6%, 10d: 32.4%, 21d: 41.7%, Z-score 3.66). Breakout Trader bullish (82 conf)—1.82x volume surge on 4/16, measured move to 300+. Pullback Trader bullish (74 conf)—38.2% fib at 260.77. Sector Rotation bullish (85 conf)—semiconductor sector extreme rotation, volume 1.82x. Druckenmiller bullish (75 conf)—7.4% revenue growth with explosive 38.7% EPS, structural gains in AI/datacenter. Mean Reversion bearish (82 conf)—Z-score 3.66 extreme, RSI 91.4 highest in basket, hourly STC crossed below 75 (momentum divergence). Catalyst neutral (40 conf). Extreme consensus but momentum fatigue warning on hourly STC.",
+    "agent_agreement_pct": 0.78,
+    "key_conflicts": "Extreme overbought (RSI 91.4, Z-score 3.66, 32% extension from 50-day MA, hourly STC crossed below 75) signals imminent pullback within uptrend. But 41.7% 21d ROC and sector rotation are structural. Momentum divergence on hourly is notable risk.",
+    "recommended_action": "buy",
+    "entry_price": 278.26,
+    "target_price": 295.00,
+    "stop_loss": 260.00,
+    "risk_reward": 1.33,
+    "timeframe": "7-12 trading days",
+    "strategy_agreement": {
+      "bullish": ["swing_trend_follower", "swing_pullback_trader", "swing_breakout_trader", "swing_momentum_ranker", "swing_sector_rotation", "stanley_druckenmiller"],
+      "bearish": ["swing_mean_reversion"],
+      "neutral": ["swing_catalyst_trader", "news_sentiment"]
+    }
+  },
+  "JPM": {
+    "consensus_signal": "bullish",
+    "confidence": 68,
+    "reasoning": "Market context: choppy with moderate momentum. Trend Follower bullish (70 conf)—daily and hourly EMAs both aligned uptrend (305 > 300 > 299, ADX 31.79; 310 > 310 > 308, ADX 38.59), RSI 67.9 moderate. Momentum Ranker neutral (52 conf)—moderate but deteriorating, 5d ROC weak (-0.12%). Breakout Trader bullish (70 conf)—forming above 313.68 with 1.66x volume. Pullback Trader bullish (68 conf)—38.2% fib at 305.72 aligns with support. Sector Rotation bullish (70 conf)—financial sector rotation from tech profit-taking. Druckenmiller bearish (70 conf)—negative revenue (-0.6%), minimal EPS (3.3%), high leverage (1.17 D/E), momentum disconnected from fundamentals. Mean Reversion neutral (45 conf)—Z-score 1.06 mid-range. Catalyst neutral (28 conf). Technical setup constructive but fundamentals deteriorating; moderate conviction on swing.",
+    "agent_agreement_pct": 0.56,
+    "key_conflicts": "Technical uptrend vs. deteriorating fundamentals (negative revenue, minimal EPS growth, high leverage). Momentum ranker neutral on deterioration. Sector rotation is tactical, not structural.",
+    "recommended_action": "buy",
+    "entry_price": 309.95,
+    "target_price": 318.00,
+    "stop_loss": 300.00,
+    "risk_reward": 1.78,
+    "timeframe": "5-8 trading days",
+    "strategy_agreement": {
+      "bullish": ["swing_trend_follower", "swing_pullback_trader", "swing_breakout_trader", "swing_sector_rotation"],
+      "bearish": ["stanley_druckenmiller"],
+      "neutral": ["swing_momentum_ranker", "swing_mean_reversion", "swing_catalyst_trader", "news_sentiment"]
+    }
+  },
+  "GS": {
+    "consensus_signal": "neutral",
+    "confidence": 62,
+    "reasoning": "Market context: choppy with momentum deterioration. Trend Follower bullish (68 conf)—daily EMAs aligned (888 > 871 > 868, ADX weak at 20.66), hourly EMAs uptrend (919 > 913 > 902, ADX 45.93), but daily ADX weak. Momentum Ranker neutral (48 conf)—deceleration pattern (5d: -0.4%, 10d: 4.6%, 21d: 11.5%), momentum decreasing (70.2). Breakout Trader bullish (68 conf)—consolidation 802-909 with price at top. Pullback Trader bullish (70 conf)—38.2% fib at 906.81. Sector Rotation bullish (68 conf)—financial sector rotation. Druckenmiller bearish (65 conf)—weak valuation, no clear growth, weak FCF. Mean Reversion neutral (50 conf)—Z-score 0.70 near mean. Catalyst neutral (32 conf). Momentum deceleration and weak daily ADX (20.66) warn caution despite hourly strength.",
+    "agent_agreement_pct": 0.56,
+    "key_conflicts": "Daily ADX weak (20.66) vs. hourly ADX strong (45.93). Momentum deceleration (70.2) and daily ROC negative 5d (-0.4%). Weak fundamentals (valuation, growth, FCF) vs. hourly uptrend.",
+    "recommended_action": "hold",
+    "entry_price": 909.63,
+    "target_price": 925.00,
+    "stop_loss": 890.00,
+    "risk_reward": 1.43,
+    "timeframe": "5-7 trading days (await daily confirmation)",
+    "strategy_agreement": {
+      "bullish": ["swing_trend_follower", "swing_pullback_trader", "swing_breakout_trader", "swing_sector_rotation"],
+      "bearish": ["stanley_druckenmiller"],
+      "neutral": ["swing_momentum_ranker", "swing_mean_reversion", "swing_catalyst_trader", "news_sentiment"]
+    }
+  },
+  "NKE": {
+    "consensus_signal": "bearish",
+    "confidence": 74,
+    "reasoning": "Market context: strong downtrend—downtrend agents carry maximum weight. Trend Follower bearish (75 conf)—daily EMAs downtrend (45 < 48 < 53, ADX 48.13 strong), SuperTrend bearish, hourly trying to bounce but daily trend down. Momentum Ranker bearish (70 conf)—strong downtrend all daily ROC negative (5d: 3.9%, 10d: 2.4%, 21d: -17.1%), RSI 32.6 oversold, supertrend bearish. Pullback Trader bearish (45 conf)—downtrend setup, no clean pullback entry. Breakout Trader neutral (35 conf)—no breakout confirmation yet. Sector Rotation bearish (72 conf)—consumer/apparel sector rotating out. Druckenmiller bearish (72 conf)—flat revenue (-0.1%), collapsing EPS (-8.8%), negative momentum (-16% YoY), secular decline. Mean Reversion bullish (68 conf)—Z-score -1.30 oversold, RSI 33 low, 17.3% below 50-SMA suggests bounce. Catalyst bearish (45 conf)—selloff -17% in 21 days. Consensus downtrend; oversold bounce possible but within downtrend.",
+    "agent_agreement_pct": 0.67,
+    "key_conflicts": "Mean Reversion flags oversold bounce (68 conf) vs. strong downtrend consensus. But bounce would be within downtrend structure; breakout above 53.49 needed to reverse.",
+    "recommended_action": "short",
+    "entry_price": 45.54,
+    "target_price": 42.62,
+    "stop_loss": 47.82,
+    "risk_reward": 1.27,
+    "timeframe": "5-10 trading days",
+    "strategy_agreement": {
+      "bullish": ["swing_mean_reversion"],
+      "bearish": ["swing_trend_follower", "swing_momentum_ranker", "swing_sector_rotation", "stanley_druckenmiller", "swing_catalyst_trader"],
+      "neutral": ["swing_pullback_trader", "swing_breakout_trader", "news_sentiment"]
+    }
+  },
+  "XOM": {
+    "consensus_signal": "bearish",
+    "confidence": 75,
+    "reasoning": "Market context: downtrend with momentum deterioration—downtrend agents dominant. Trend Follower bearish (72 conf)—daily EMAs tangled but hourly downtrend (147 < 148 < 151, ADX 38.62), both RSI low (32.4 daily, 42 hourly), MACD negative. Momentum Ranker bearish (75 conf)—clear downtrend all daily ROC negative (5d: -1.97%, 10d: -5.47%, 21d: -4.30%), RSI 32.4 oversold, bearish momentum -10.9. Pullback Trader bearish (38 conf)—downtrend continuation, no pullback buyers setup. Breakout Trader neutral (25 conf)—bearish structure, no consolidation to break. Sector Rotation bearish (75 conf)—energy sector rotation outflow, volume weak (0.59x). Druckenmiller bearish (68 conf)—minimal 2.6% revenue growth, sharply negative -10.3% EPS, momentum deteriorating (-47% from earlier), late-cycle unwind. Mean Reversion neutral (42 conf)—Z-score -0.39 near mean, RSI 32 oversold but no reversal candle. Catalyst bearish (50 conf). Strong downtrend consensus with negative earnings.",
+    "agent_agreement_pct": 0.67,
+    "key_conflicts": "Oversold RSI (32.4) suggests bounce but Mean Reversion notes lack of reversal candle; momentum agents argue continuation down.",
+    "recommended_action": "short",
+    "entry_price": 151.97,
+    "target_price": 145.00,
+    "stop_loss": 155.00,
+    "risk_reward": 1.40,
+    "timeframe": "5-10 trading days",
+    "strategy_agreement": {
+      "bullish": [],
+      "bearish": ["swing_trend_follower", "swing_momentum_ranker", "swing_sector_rotation", "stanley_druckenmiller", "swing_catalyst_trader"],
+      "neutral": ["swing_pullback_trader", "swing_breakout_trader", "swing_mean_reversion", "news_sentiment"]
+    }
+  },
+  "SPY": {
+    "consensus_signal": "bullish",
+    "confidence": 78,
+    "reasoning": "Market context: strong broad market uptrend—Trend Follower and Momentum Ranker carry peak weight. Trend Follower bullish (82 conf)—daily and hourly EMAs both aligned (682 > 673 > 672, ADX 36.23; 707 > 703 > 692, ADX 65.48), RSI 83.79 daily and 74.84 hourly strong. Momentum Ranker bullish (75 conf)—all daily ROC positive (5d: 3.2%, 10d: 7.1%, 21d: 4.9%), RSI 83.8 overbought. Breakout Trader bullish (75 conf)—above 701.66 with RSI 83.79, measured move to 731.35. Pullback Trader bullish (76 conf)—50% fib at 666.82 above support. Sector Rotation bullish (77 conf)—tech rotation broad-based through SPY. Druckenmiller bearish (62 conf)—insufficient growth data, negative YoY momentum (-16%), macro deterioration. Mean Reversion bearish (70 conf)—Z-score 1.73, RSI 84 extreme, Stochastic >98, 4.2% above 50-SMA. Catalyst neutral (38 conf). Strong technical consensus on broad market uptrend; fundamental weakness secondary.",
+    "agent_agreement_pct": 0.67,
+    "key_conflicts": "Technical uptrend strength vs. negative macro momentum (-16% YoY). Extreme overbought (RSI 84, Z-score 1.73, Stochastic >98) suggests pullback risk. But broad market trend is intact.",
+    "recommended_action": "buy",
+    "entry_price": 701.66,
+    "target_price": 720.00,
+    "stop_loss": 690.00,
+    "risk_reward": 1.76,
+    "timeframe": "7-10 trading days",
+    "strategy_agreement": {
+      "bullish": ["swing_trend_follower", "swing_pullback_trader", "swing_breakout_trader", "swing_momentum_ranker", "swing_sector_rotation"],
+      "bearish": ["swing_mean_reversion", "stanley_druckenmiller"],
+      "neutral": ["swing_catalyst_trader", "news_sentiment"]
+    }
+  },
+  "QQQ": {
+    "consensus_signal": "bullish",
+    "confidence": 79,
+    "reasoning": "Market context: strong tech uptrend—Trend Follower and Momentum Ranker carry peak weight. Trend Follower bullish (84 conf)—daily and hourly EMAs both aligned (615 > 605 > 603, ADX 36.75; 645 > 640 > 627, ADX 63.77), RSI 84.12 daily and 74.61 hourly strong. Momentum Ranker bullish (79 conf)—all daily ROC positive and mostly accelerating (5d: 5.0%, 10d: 9.6%, 21d: 6.3%). Breakout Trader bullish (77 conf)—above 640.47 near Bollinger upper, measured move to 682.66. Pullback Trader bullish (77 conf)—38.2% fib at 631.85 aligns with support. Sector Rotation bullish (83 conf)—tech-heavy index strongest sector rotation (9.61% ROC 10d). Druckenmiller bearish (60 conf)—no positive net income for valuation, negative momentum, tech weakness warning. Mean Reversion bearish (73 conf)—Z-score 2.54 extreme, RSI 84, Stochastic 98, 6.6% extension above 50-SMA. Catalyst neutral (35 conf). Strong technical consensus on tech uptrend; macro caution secondary.",
+    "agent_agreement_pct": 0.67,
+    "key_conflicts": "Technical uptrend strength vs. negative macro momentum warning. Extreme overbought (RSI 84, Z-score 2.54, Stochastic 98) suggests pullback risk. But hourly ADX 63.8 and sector rotation strong.",
+    "recommended_action": "buy",
+    "entry_price": 640.47,
+    "target_price": 665.00,
+    "stop_loss": 630.00,
+    "risk_reward": 1.61,
+    "timeframe": "8-12 trading days",
+    "strategy_agreement": {
+      "bullish": ["swing_trend_follower", "swing_pullback_trader", "swing_breakout_trader", "swing_momentum_ranker", "swing_sector_rotation"],
+      "bearish": ["swing_mean_reversion", "stanley_druckenmiller"],
+      "neutral": ["swing_catalyst_trader", "news_sentiment"]
+    }
+  }
+}

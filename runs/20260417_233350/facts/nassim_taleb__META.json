@@ -1,0 +1,41 @@
+{
+  "ticker": "META",
+  "score": 32,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 5,
+    "max_score": 8,
+    "details": "Moderate fat tails (kurtosis 3.3); Positive skew (0.77) favors long convexity; Asymmetric upside (tail ratio 1.33); Severe drawdown (-33.3%) \u2014 fragile"
+  },
+  "antifragility_analysis": {
+    "score": 7,
+    "max_score": 10,
+    "details": "Net debt but manageable relative to assets; Taleb-approved low leverage (D/E 0.16); Reasonable margin stability (avg 34.5%, CV 0.20); Consistent FCF generation (10/10 periods positive)"
+  },
+  "convexity_analysis": {
+    "score": 4,
+    "max_score": 10,
+    "details": "Significant embedded optionality via R&D (26.7% of revenue); Slight positive asymmetry (up/down ratio 1.11); Low cash relative to market cap (1%); Low FCF yield (3.1%)"
+  },
+  "fragility_analysis": {
+    "score": 7,
+    "max_score": 8,
+    "details": "Low leverage (D/E 0.16) \u2014 not fragile; Interest coverage 155.6x \u2014 debt is irrelevant; Moderate earnings volatility (growth std 0.47); Fat margins (37.9%) buffer shocks"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 5,
+    "max_score": 6,
+    "details": "Elevated vol (regime 1.34) \u2014 opportunity for the antifragile; Elevated vol-of-vol (0.1032 vs median 0.0732)"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 1741725368320.0
+}

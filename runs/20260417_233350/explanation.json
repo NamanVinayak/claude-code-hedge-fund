@@ -1,0 +1,204 @@
+{
+  "tldr": "The swing trading system identified 10 bullish setups across large-cap tech (AAPL, MSFT, NVDA, META, GOOGL, AMZN, AMD) and select financials/consumer (JPM), plus 2 shorts (NKE, XOM) on strong downtrends, with 2 holds (TSLA, GS) due to conflicting signals. The portfolio targets 5-14 day holds on positions sized for 2-4:1 risk-reward, emphasizing trend-following and momentum strategies while managing extreme overbought conditions through position sizing.",
+  "narrative": "Over the past year, the market has entered a pronounced tech rally, with semiconductor and cloud leaders accelerating while traditional energy and consumer segments lag. This swing analysis ran 9 strategy agents (trend-followers, momentum rankers, breakout hunters, mean-reversion traders, and more) on 14 major tickers, synthesized by the Head Swing Trader.\n\nThe core finding: multi-timeframe alignment (daily EMAs in bullish order, hourly uptrends confirmed, ADX above 35) is the strongest signal. Seven tickers show textbook bullish setups—MSFT, NVDA, GOOGL, AMD, META, AMZN, and SPY/QQQ indices—with trend followers and momentum rankers in agreement (72-85% confidence). The technical consensus is overwhelming: these markets are in structural uptrends with accelerating rates-of-change. Stanley Druckenmiller's fundamental lens (which weighs revenue and earnings growth) agrees on NVDA and AMD but questions META, GOOGL, and AMZN on negative or slowing earnings.\n\nA critical tension runs through the analysis: extreme overbought conditions (RSI 82-91, Z-scores 1.7-3.7) sit alongside strong momentum. Mean Reversion agents flag pullback risk, but the Head Trader sized positions modestly (AMD 15 shares despite 83% agent conviction; SPY/QQQ trimmed to avoid double-counting tech exposure with single-name longs) to harvest upside while respecting drawdown limits. AMD's 41.7% 21-day ROC and hourly STC momentum divergence exemplify this: confidence is high, but RSI 91 and an hourly STC drop below 75 suggest caution—so position size was cut in half.\n\nOn the short side, consensus is clearer. NKE faces a -17% 21-day downtrend with collapsing EPS (-8.8%), and XOM shows negative momentum across all timeframes with -10.3% EPS. Both trades enforce tight 2:1 risk-reward minimums to hedge against oversold bounces (Mean Reversion noted XOM and NKE as technically oversold, but the absence of bullish reversal candles kept the short lean intact).\n\nTwo holds stand out for clarity: TSLA's multi-timeframe conflict (daily downtrend vs. hourly uptrend, 5d ROC +12.5% vs. 21d ROC -2.6%, RSI bouncing between 56 and trending lower) makes it untradeble until one timeframe takes control. Similarly, GS weakened on momentum deceleration and weak daily ADX (20.66), making it not worth the risk.\n\nThe final portfolio spreads 10 longs, 2 shorts, and 2 holds across 14 tickers, targeting 5-14 day holds at 2-4:1 risk-reward ratios. Sector concentration (tech longs inter-correlated 0.67-0.96) was actively managed: large positions in NVDA (50 shares), GOOGL (45), and AMZN (35) are offset by much smaller SPY (15) and QQQ (12) to avoid redundancy. XOM's -0.04 correlation to the book serves as a genuine hedge.",
+  "per_ticker": {
+    "AAPL": {
+      "verdict": "Buy 40 shares at 262.50 (60% confidence, 5-8 trading days).",
+      "bull_case": "Daily and hourly trends aligned; Trend Follower and Pullback Trader both bullish; Momentum Ranker shows 62% confidence. Sector Rotation bullish on tech inflows. Breakout Trader sees clean technical setup.",
+      "bear_case": "Valuation weak (31.4x P/E) with flat revenue growth. Mean Reversion flags RSI 62 approaching overbought. Druckenmiller bearish on fundamentals. Momentum is technical-driven, not event-driven (Catalyst Trader neutral).",
+      "key_numbers": {
+        "trend_alignment": "Daily EMAs in bullish order (long > mid > short); hourly uptrend confirmed",
+        "rsi": "62 (moderate, not yet overbought; above 70 is exhaustion)",
+        "z_score": "Not extreme; room for bounce",
+        "pe_ratio": "31.4x (expensive vs. market avg ~20x, but justified in growth leaders)"
+      },
+      "risk_summary": "Fundamental overhang from weak earnings growth caps upside. If technical breakdown occurs (close below 256.50), stop-loss triggers. Mean Reversion argues for a pullback within the uptrend. Position sized modestly (40 shares) to reflect 60% conviction."
+    },
+    "MSFT": {
+      "verdict": "Buy 25 shares at 420.26 (72% confidence, 7-10 trading days).",
+      "bull_case": "Strongest in cohort: Trend Follower 78% bullish with hourly EMAs perfectly aligned (10 > 21 > 50, ADX 58). Momentum Ranker 78% bullish with accelerating ROC (12.6% over 5 days). Breakout Trader bullish on 1.2x volume. Sector Rotation 80% bullish on tech leadership.",
+      "bear_case": "RSI 82 signals overbought exhaustion. Pullback Trader bearish (35% confidence). Mean Reversion bearish (72% confidence) on Z-score 1.79 overbought. A pullback is likely within trend. Druckenmiller neutral on balanced risk-reward.",
+      "key_numbers": {
+        "trend_strength": "ADX 58 hourly (44+ is strong trend); daily EMAs aligned",
+        "rsi": "82 (overbought; above 70-80 suggests pullback within uptrend)",
+        "momentum_acceleration": "5d ROC 12.6% (accelerating); 21d ROC positive",
+        "volume_confirmation": "1.2x average volume on breakout (strength)"
+      },
+      "risk_summary": "Overbought technicals (RSI 82, STC 98.9) mean a pullback to 412 could occur before the 442 target. Entry discipline required; size cut to 25 shares to reflect overbought caution despite 72% conviction."
+    },
+    "TSLA": {
+      "verdict": "Hold (48% confidence, await clarity).",
+      "bull_case": "Hourly uptrend (398 > 391 > 377); Trend Follower 72% bullish on hourly pullback setup. Breakout Trader 68% bullish on 113M share volume 4/15. Short-term 5d ROC +12.5% shows momentum.",
+      "bear_case": "Daily downtrend (368 < 371 < 387) contradicts hourly uptrend—multi-timeframe conflict. 21d ROC -2.6% vs. 5d ROC +12.5% means momentum divergence (5-day bounce within larger downtrend). Valuation egregious (212x P/E, 420x P/FCF). Druckenmiller bearish. Momentum Ranker neutral (45%).",
+      "key_numbers": {
+        "multi_timeframe_conflict": "Daily downtrend vs. hourly uptrend; EMAs misaligned daily",
+        "momentum_divergence": "5d ROC +12.5% but 21d ROC -2.6% (strength fading)",
+        "pe_ratio": "212x (indefensible; for context, MSFT 32x, NVDA 44x)",
+        "rsI": "56 mid-range (not extreme either way)"
+      },
+      "risk_summary": "Conflicting timeframes prevent a high-conviction trade. If daily breaks above 387, hourly uptrend could take control and justify a buy. If hourly breaks below 377, daily downtrend reasserts. R:R only 1.64:1 falls below system's 2.0:1 minimum. Stand aside until one timeframe wins."
+    },
+    "NVDA": {
+      "verdict": "Buy 50 shares at 199.50 (78% confidence, 6-10 trading days).",
+      "bull_case": "Multi-timeframe bullish: daily EMAs aligned (189 > 185 > 183, ADX 35); hourly EMAs aligned (200 > 198 > 193, ADX 33). All ROC positive and accelerating (5d: 7.9%, 10d: 12.9%, 21d: 9.0%). Druckenmiller bullish (78%) on 23.7% revenue growth + 19.2% EPS expansion. Sector leading (semiconductors rallying). All trend agents aligned.",
+      "bear_case": "Mean Reversion bearish (78%) on extreme overbought: RSI 83.6, Z-score 2.07. Pullback to 194 (38.2% Fibonacci support) likely within the uptrend. No near-term catalysts (Catalyst Trader 25% neutral).",
+      "key_numbers": {
+        "trend_alignment": "Daily and hourly EMAs both in bullish order; ADX 35-33 (strong)",
+        "earnings_growth": "Revenue +23.7%, EPS +19.2% (structural growth, not just tech rally)",
+        "rsi": "83.6 (extreme overbought; mean reversion expects pullback to 38.2 fib ~194)",
+        "z_score": "2.07 (2+ standard deviations above 50-day MA; pullback typical)"
+      },
+      "risk_summary": "Extreme overbought (RSI 83.6, Z-score 2.07) means pullback within uptrend is likely. Stop-loss at 195 aligns with 38.2% Fibonacci support. High conviction (78%) on structural growth justifies 50-share position despite technical overbought."
+    },
+    "META": {
+      "verdict": "Buy 15 shares at 676.87 (74% confidence, 8-12 trading days).",
+      "bull_case": "Explosive breakout above 676.87 with 1.75x volume. Hourly EMAs perfectly aligned (682 > 675 > 654, ADX 66). Momentum Ranker bullish (80%) on accelerating ROC (5d: 7.7%, 10d: 16.9%, 21d: 8.7%). Sector Rotation bullish (78%) on tech/AI rotation. Breakout Trader bullish (76%) with measured move to 728.",
+      "bear_case": "Fundamental deterioration: EPS turned negative (-4.5%). Druckenmiller bearish (68%) on indefensible 27.9x valuation. Mean Reversion bearish (75%) on Z-score 1.26 overbought and Z-score warns of pullback to 629. Technical gains priced in fast (7.6% extension above 50-day MA).",
+      "key_numbers": {
+        "breakout_confirmation": "1.75x volume on breakout above 676.87 (institutional buying)",
+        "hourly_trend": "ADX 66 (very strong); EMAs perfectly aligned",
+        "eps_growth": "-4.5% (negative earnings—dangerous in overbought market)",
+        "valuation": "27.9x P/E on negative earnings (indefensible)"
+      },
+      "risk_summary": "Fundamental earnings decline conflicts with technical momentum. 1.75x volume breakout is powerful, but negative EPS + overbought RSI 84.8 means pullback risk. Size cut to 15 shares (smallest long) to reflect fundamental concern. Stop-loss at 665 protects against breakdown."
+    },
+    "GOOGL": {
+      "verdict": "Buy 45 shares at 337.12 (82% confidence, 8-14 trading days).",
+      "bull_case": "Strongest conviction in entire cohort (82%). Multi-timeframe bullish: daily EMAs aligned (320 > 312 > 309, ADX 43), hourly even stronger (339 > 336 > 328, ADX 72.54). Momentum Ranker bullish (82%) on strongest ROC acceleration (5d: 5.5%, 10d: 12.9%, 21d: 8.1%). Breakout Trader bullish (77%) above 337.12. Sector Rotation bullish (79%).",
+      "bear_case": "EPS growth negative (-15.5%), signaling margin deterioration despite revenue growth (13.6%). Mean Reversion bearish (76%) on extreme overbought (Z-score 2.05, 9.2% above 50-day MA). RSI 85.4 extreme. Pullback to 307.6 expected within uptrend. Druckenmiller neutral (52%) on earnings concern.",
+      "key_numbers": {
+        "trend_strength": "Hourly ADX 72.54 (strongest in basket), daily ADX 43 (strong)",
+        "momentum_acceleration": "All ROC positive; 10d ROC (12.9%) highest in timeframe set",
+        "eps_growth": "-15.5% (negative, but Revenue +13.6% shows growth intact—margin issue, not demand)",
+        "rsi": "85.4 (extreme overbought; mean reversion flags pullback)"
+      },
+      "risk_summary": "Negative EPS amid overbought technicals (Z-score 2.05, RSI 85.4) means pullback to 307.6 support likely. Hourly ADX 72.54 is very strong and supports continuation. High conviction (82%) on multi-TF alignment justifies 45-share position (2nd largest long). Stops at 325 offer room for pullback."
+    },
+    "AMZN": {
+      "verdict": "Buy 35 shares at 249.70 (72% confidence, 8-14 trading days).",
+      "bull_case": "Momentum Ranker bullish (77%) on excellent ROC acceleration (5d: 6.9%, 10d: 18.6%, 21d: 16.0%). Trend Follower bullish (76%) with daily EMAs aligned (235 > 225 > 221, ADX 43.97). Breakout Trader bullish (74%) above 249.7 on momentum. Sector Rotation bullish (76%) on cloud/tech rotation. Druckenmiller neutral (54%) on margin expansion driving 24.3% EPS.",
+      "bear_case": "Mean Reversion bearish (74%) on extreme overbought: Z-score 2.84 (highest in batch), 16.7% above 50-day MA. Pullback to 213.89 expected. Revenue growth weak (3.8%—margin expansion, not top-line strength). RSI 84.4 extreme.",
+      "key_numbers": {
+        "momentum_acceleration": "5d: 6.9%, 10d: 18.6%, 21d: 16.0% (accelerating)",
+        "z_score": "2.84 (extreme; 2.84 std dev above mean—pullback typical in mean-reverting markets)",
+        "eps_growth": "24.3% (strong, driven by margin expansion not revenue growth)",
+        "revenue_growth": "3.8% (weak top-line growth)"
+      },
+      "risk_summary": "Extreme Z-score (2.84) and 16.7% extension above 50-day MA warn of sharp pullback. Weak revenue growth (3.8%) suggests gains are margin-driven, vulnerable to expense surprises. Position sized at 35 shares to manage overbought risk. ADX 43 daily supports trend continuation despite technicals."
+    },
+    "AMD": {
+      "verdict": "Buy 15 shares at 278.26 (70% confidence, 7-12 trading days).",
+      "bull_case": "Highest momentum in universe: 21d ROC 41.7%, Z-score 3.66 extreme, daily ADX 49.92 and hourly ADX 52.02 both very strong. Trend Follower bullish (88%), Momentum Ranker bullish (85%), Druckenmiller bullish (75%) on 7.4% revenue + explosive 38.7% EPS growth. Sector Rotation bullish (85%) on semiconductor rotation (1.82x volume). Breakout Trader bullish (82%).",
+      "bear_case": "Extreme overbought and momentum divergence: RSI 91.4 (highest in entire basket), hourly STC crossed below 75 (momentum divergence in uptrend = warning). Z-score 3.66 extreme means sharp pullback to 260.77 likely. 32% extension from 50-day MA suggests mean-reversion pullback imminent.",
+      "key_numbers": {
+        "momentum_rank": "41.7% 21d ROC (highest in universe)",
+        "rsi": "91.4 (absolute extreme; above 80 is rare exhaustion level)",
+        "hourly_stc_divergence": "STC crossed below 75 (momentum fading on intraday despite uptrend)",
+        "z_score": "3.66 (3.66 standard deviations above mean—extreme; pullback to 260.77 expected)"
+      },
+      "risk_summary": "Extreme overbought (RSI 91.4, Z-score 3.66, hourly STC divergence) despite strongest momentum in universe signals imminent pullback. Position sized to just 15 shares (~$4,200) despite 70% conviction to respect extreme technical exhaustion. Stop-loss at 270 is tight, protecting against gap-down on pullback. R:R 3.24:1 compensates for pullback risk."
+    },
+    "JPM": {
+      "verdict": "Buy 30 shares at 309.95 (62% confidence, 5-8 trading days).",
+      "bull_case": "Trend Follower bullish (70%) on daily and hourly uptrends (daily EMAs aligned, ADX 31.79; hourly EMAs aligned, ADX 38.59). Breakout Trader bullish (70%) above 313.68 with 1.66x volume. Sector Rotation bullish (70%) on financial sector rotation from tech profit-taking. Pullback Trader bullish (68%) on 38.2% Fibonacci support at 305.72.",
+      "bear_case": "Druckenmiller bearish (70%) on deteriorating fundamentals: negative revenue (-0.6%), minimal EPS (3.3%), high leverage (1.17 D/E). Momentum Ranker neutral (52%) on weak deteriorating 5d ROC (-0.12%). Momentum fundamentally disconnected from technicals. Catalyst neutral (28%).",
+      "key_numbers": {
+        "trend_setup": "Daily EMAs aligned (305 > 300 > 299); hourly aligned (310 > 310 > 308)",
+        "revenue_growth": "-0.6% (negative; sector in decline)",
+        "eps_growth": "3.3% (minimal)",
+        "debt_equity_ratio": "1.17 (elevated; >1.0 is leveraged)"
+      },
+      "risk_summary": "Technical setup is constructive (EMAs aligned, breakout forming), but fundamentals deteriorating (negative revenue, minimal EPS, high leverage). Sector rotation is tactical, not structural. Confidence only 62%—size modest at 30 shares. If momentum ranker weakens further or profit-taking reverses, position vulnerable. Stop at 304 near support."
+    },
+    "GS": {
+      "verdict": "Hold (62% confidence, await daily confirmation).",
+      "bull_case": "Trend Follower bullish (68%) on daily EMAs aligned (888 > 871 > 868) and hourly strong uptrend (919 > 913 > 902, ADX 45.93). Breakout Trader bullish (68%) on consolidation breakout near top (909). Pullback Trader bullish (70%) on 38.2% Fibonacci support at 906.81. Sector Rotation bullish (68%) on financial rotation.",
+      "bear_case": "Daily ADX weak (20.66)—below 25 is non-trending. Momentum Ranker neutral (48%) on deceleration (5d: -0.4%, 10d: 4.6%, 21d: 11.5%)—momentum decreasing. Druckenmiller bearish (65%) on weak valuation, no growth, weak free cash flow. Mean Reversion neutral (50%). Momentum deceleration + weak daily ADX = no confirmation.",
+      "key_numbers": {
+        "daily_adx": "20.66 (weak; below 25 is non-trending, below 40 is choppy)",
+        "momentum_deceleration": "5d ROC -0.4% (negative in weekly timeframe)",
+        "hourly_vs_daily": "Hourly ADX 45.93 strong vs. daily ADX 20.66 weak (multi-TF conflict)",
+        "fundamental_growth": "Minimal; valuation weak; FCF weak"
+      },
+      "risk_summary": "Weak daily ADX (20.66) and momentum deceleration (70.2) signal loss of trend control, despite strong hourly uptrend. Multi-timeframe conflict: hourly strong but daily weakening. R:R only 1.43:1 (below 2.0 minimum). Await daily confirmation above 915 or continue holding cash."
+    },
+    "NKE": {
+      "verdict": "Short 180 shares at 45.54 (70% confidence, 5-10 trading days).",
+      "bull_case": "Mean Reversion bullish (68%) on oversold conditions: Z-score -1.30 (below mean), RSI 33 (below 30 = oversold), 17.3% below 50-day MA suggests bounce. Oversold bounces are mean-reverting predictable events.",
+      "bear_case": "Strong downtrend consensus: Trend Follower bearish (75%) with daily EMAs in downtrend order (45 < 48 < 53, ADX 48.13 strong), SuperTrend bearish. Momentum Ranker bearish (70%) on all daily ROC negative (5d: 3.9%, 10d: 2.4%, 21d: -17.1%). Druckenmiller bearish (72%) on flat revenue (-0.1%), collapsing EPS (-8.8%), -16% YoY momentum. Sector Rotation bearish (72%) on consumer/apparel outflow. Catalyst bearish (45%) on -17% selloff.",
+      "key_numbers": {
+        "downtrend_strength": "ADX 48.13 (very strong downtrend); daily EMAs in downtrend order",
+        "21d_momentum": "-17.1% (strong downtrend)",
+        "eps_growth": "-8.8% (collapsing earnings)",
+        "oversold_z_score": "-1.30 (1.3 std dev below mean; bounce likely)"
+      },
+      "risk_summary": "Strong structural downtrend (ADX 48, EPS -8.8%, -17% 21d) with an oversold bounce building (RSI 33, Z-score -1.30). Trade is short-term bounce within downtrend. Breakout above 53.49 would reverse downtrend structure. Stop-loss at 47.50 limits risk if bounce extends. Size at 180 shares reflects balanced caution on bounce vs. downtrend conviction."
+    },
+    "XOM": {
+      "verdict": "Short 70 shares at 151.97 (72% confidence, 5-10 trading days).",
+      "bull_case": "Mean Reversion neutral (42%) on Z-score -0.39 (near mean), but RSI 32 oversold. No bullish reversal candle noted. Bounce possible but lacks conviction.",
+      "bear_case": "Strong downtrend consensus: Trend Follower bearish (72%) with hourly downtrend (147 < 148 < 151, ADX 38.62), RSI low (32.4 daily, 42 hourly), MACD negative. Momentum Ranker bearish (75%) on all daily ROC negative (5d: -1.97%, 10d: -5.47%, 21d: -4.30%). Druckenmiller bearish (68%) on minimal revenue growth (2.6%), sharply negative -10.3% EPS, momentum deteriorating (-47% from earlier levels). Sector Rotation bearish (75%) on energy sector outflows, weak volume (0.59x). Catalyst bearish (50%) on sector headwinds.",
+      "key_numbers": {
+        "momentum_all_negative": "5d: -1.97%, 10d: -5.47%, 21d: -4.30% (all timeframes down)",
+        "eps_growth": "-10.3% (sharp deterioration)",
+        "sector_momentum": "-47% from earlier levels (momentum divergence: initial selling accelerating)",
+        "volume": "0.59x average (weak; declining interest)"
+      },
+      "risk_summary": "Downtrend structural (ADX 38.62, all ROC negative, EPS -10.3%) with weak volume (0.59x) and sector outflows. Z-score -0.39 near mean suggests bounce less imminent than NKE. Lack of bullish reversal candle supports continuation. Stop-loss at 154 offers 2:1 R:R (tight) for protection against bounce extension. Uncorrelated (-0.04) to long portfolio—genuine hedge."
+    },
+    "SPY": {
+      "verdict": "Buy 15 shares at 701.66 (72% confidence, 7-10 trading days).",
+      "bull_case": "Broad market uptrend with strong consensus: Trend Follower bullish (82%) on daily and hourly EMAs aligned (daily 682 > 673 > 672, ADX 36.23; hourly 707 > 703 > 692, ADX 65.48). Momentum Ranker bullish (75%) on all ROC positive (5d: 3.2%, 10d: 7.1%, 21d: 4.9%). Breakout Trader bullish (75%) above 701.66 with measured move to 731.35. Sector Rotation bullish (77%) on broad-based tech rotation through SPY.",
+      "bear_case": "Druckenmiller bearish (62%) on insufficient growth data and negative YoY momentum (-16%). Mean Reversion bearish (70%) on extreme overbought (Z-score 1.73, RSI 84, Stochastic >98, 4.2% above 50-day MA). Macro deterioration concern.",
+      "key_numbers": {
+        "multi_tf_alignment": "Daily ADX 36.23 and hourly ADX 65.48 (both strong); EMAs aligned both timeframes",
+        "rsi": "83.79 (overbought; pullback within trend likely)",
+        "z_score": "1.73 (1.73 std dev above mean; mean reversion expects pullback to 687)",
+        "yoy_momentum": "-16% (negative YoY, macro concern)"
+      },
+      "risk_summary": "Broad market uptrend intact but overbought (RSI 84, Z-score 1.73, Stochastic 98). Pullback to support (~690) likely within trend. Macro momentum negative YoY. Size cut to 15 shares (smallest long) to avoid double-counting tech exposure with NVDA, GOOGL, AMZN, META longs (correlation 0.96 with QQQ). Stop at 695 captures pullback risk. R:R 3.05:1 compensates for concentration risk."
+    },
+    "QQQ": {
+      "verdict": "Buy 12 shares at 640.47 (72% confidence, 8-12 trading days).",
+      "bull_case": "Tech-heavy uptrend with strong multi-timeframe alignment: Trend Follower bullish (84%) on daily and hourly EMAs aligned (daily 615 > 605 > 603, ADX 36.75; hourly 645 > 640 > 627, ADX 63.77). Momentum Ranker bullish (79%) on all ROC positive and mostly accelerating (5d: 5.0%, 10d: 9.6%, 21d: 6.3%). Breakout Trader bullish (77%) above 640.47 with measured move to 682.66. Sector Rotation bullish (83%) on tech-heavy sector rotation (9.61% ROC 10d).",
+      "bear_case": "Druckenmiller bearish (60%) on no positive net income for valuation, negative momentum warning, tech weakness. Mean Reversion bearish (73%) on extreme overbought (Z-score 2.54, RSI 84, Stochastic 98, 6.6% above 50-day MA). Macro caution secondary.",
+      "key_numbers": {
+        "hourly_trend_strength": "Hourly ADX 63.77 (very strong); daily ADX 36.75 (strong)",
+        "momentum_acceleration": "5d: 5.0%, 10d: 9.6%, 21d: 6.3% (all positive)",
+        "z_score": "2.54 (2.54 std dev above mean; pullback to 627 expected)",
+        "sector_concentration": "Tech-heavy; overlaps with NVDA, MSFT, GOOGL, META longs"
+      },
+      "risk_summary": "Tech-heavy index in strong uptrend but extreme overbought (Z-score 2.54, RSI 84, Stochastic 98, 6.6% extension). Pullback to 627-631 support likely within trend. Highly correlated (0.96) with SPY and overlaps with six individual tech longs. Sized tiny (12 shares, ~$7,700) to avoid double-counting exposure—this is a portfolio hedge to tech rotation, not a primary position. Stop at 634 is tight."
+    }
+  },
+  "key_themes": [
+    "Tech rally with extreme overbought technicals: RSI 82-91, Z-scores 1.7-3.7 signal pullbacks within uptrends—sized positions modestly to capture upside while respecting mean reversion",
+    "Multi-timeframe alignment wins: Daily + hourly EMAs in bullish order with ADX 35+ (trend strong) = highest-conviction setups (GOOGL 82%, NVDA 78%, AMD 83%)",
+    "Fundamental-technical split: Tech longs (NVDA, AMD) show structural earnings growth (19-39% EPS) despite overbought, while others (META, GOOGL, AMZN) rely on margin expansion with earnings weakness—Druckenmiller caution noted but overruled by trend strength in short-term swing window",
+    "Shorts on structural decline: NKE (-17% 21d, -8.8% EPS) and XOM (-10.3% EPS, sector outflow) are downtrends with fundamental deterioration—mean reversion bounces expected but within downtrend structure",
+    "Correlation management: Tech long book (0.67-0.96 inter-correlation) concentrated in NVDA, GOOGL, AMZN (50, 45, 35 shares); SPY/QQQ index positions reduced (15/12 shares) to avoid double-counting; XOM short (-0.04 correlation) = genuine portfolio hedge",
+    "Risk-reward enforcement: All trades target R:R ≥ 2.0:1 per mandate—tight stops adjusted or targets extended to meet minimum; TSLA/GS holds on low R:R and conflicting signals",
+    "Position sizing discipline: Overbought severity inversely proportional to size (AMD 15 shares despite 83% conviction due to RSI 91 + Z-score 3.66; SPY/QQQ 15/12 shares to avoid tech double-count; JPM 30 modest due to 62% and deteriorating momentum)"
+  ],
+  "glossary": {
+    "EMA": "Exponential Moving Average—a trend line that reacts quickly to recent price moves. EMAs in bullish order (short > mid > long) mean the stock is trending up; downtrend order (short < mid < long) means down.",
+    "ADX": "Average Directional Index (0-100)—measures trend strength, not direction. Below 25 = no trend (choppy); 25-40 = moderate trend; above 40 = strong trend. Helps confirm whether EMAs are actually controlling price.",
+    "RSI": "Relative Strength Index (0-100)—measures momentum. Below 30 = oversold (bounce possible); above 70 = overbought (pullback likely); 30-70 = balanced. RSI 82-91 is extreme exhaustion.",
+    "Z-Score": "Number of standard deviations away from the 50-day moving average. 0 = at average; 1 = 1 standard deviation above (moderately high); 2+ = extreme (pullback likely). High Z-scores signal mean reversion, not continuation.",
+    "ROC": "Rate of Change—the % gain/loss over a timeframe (5d, 10d, 21d). Positive ROC = uptrend; negative ROC = downtrend. Accelerating ROC (5d > 10d > 21d) signals strengthening momentum.",
+    "Fibonacci Support/Resistance": "Price levels (50%, 38.2%, 23.6% retracements) where bounces often occur in pullbacks. Used to set stops and targets in trends.",
+    "Sector Rotation": "Money flowing from one sector to another (e.g., tech outperforming energy). Measured by relative strength and volume. Indicates institutional conviction.",
+    "Overbought/Oversold": "When a stock's technicals (RSI, Stochastic, Z-score) suggest it has moved too far up or down too fast, making a pullback likely (not guaranteed). Overbought stocks often bounce down; oversold stocks bounce up.",
+    "Risk-Reward Ratio": "The amount risked (from entry to stop-loss) vs. amount gained (from entry to target). A 3:1 ratio means risking $1 to make $3—favorable odds. Trades with <2:1 R:R are typically rejected.",
+    "Breakout": "When price breaks above a prior resistance level (e.g., previous high) on strong volume. Suggests institutional buying and potential for continued uptrend.",
+    "Pullback": "A temporary reversal within a larger trend (e.g., 5-10% downmove in an uptrend). Used by traders to enter at better prices within uptrends.",
+    "STC": "Schaff Trend Cycle—an oscillator (0-100) that detects overbought (>75) and oversold (<25) conditions. Useful on intraday timeframes. Crossing below 75 in an uptrend signals momentum divergence (fade).",
+    "Momentum Divergence": "When price makes a new high but momentum (ROC, RSI, STC) fails to confirm—signals momentum fading and reversal risk.",
+    "Volume": "Number of shares traded. 1.5x average volume on breakout = institutional buying (bullish); 0.6x volume on downtrend = weak selling (vulnerable to bounce).",
+    "Correlation": "How two assets move together. +0.9 = move in lockstep (redundant if you own both); 0 = independent; -0.1 = uncorrelated (good for hedging portfolio risk).",
+    "Holding Period": "Expected duration the system expects to hold the trade (5-14 trading days in swing mode). Longer-dated targets allow for pullbacks and second entries.",
+    "Timeframe": "Time horizon of analysis (daily = 24H bars; hourly = 1H bars; 5-minute = intraday candles). Multi-timeframe analysis (daily + hourly) provides confirmation and detects conflicts.",
+    "Druckenmiller": "Stanley Druckenmiller—legendary macro trader in this system; focuses on earnings growth, revenue, and macro momentum. Often bearish on valuations and momentum divergence.",
+    "Head Swing Trader": "The synthesizing agent that reads all 9 strategy signals and makes final buy/hold/short decisions with position sizing."
+  }
+}

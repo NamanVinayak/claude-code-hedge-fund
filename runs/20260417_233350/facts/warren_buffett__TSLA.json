@@ -1,0 +1,102 @@
+{
+  "ticker": "TSLA",
+  "score": 6,
+  "max_score": 27,
+  "fundamental_analysis": {
+    "score": 3,
+    "details": "Weak ROE of 9.7%; Conservative debt levels; Weak operating margin of 7.2%; Good liquidity position",
+    "metrics": {
+      "ticker": "TSLA",
+      "report_period": "2025-09-30",
+      "period": "ttm",
+      "currency": "USD",
+      "market_cap": 1503299239936.0,
+      "enterprise_value": 1492746080936.0,
+      "price_to_earnings_ratio": 367.54126,
+      "price_to_book_ratio": 20.61771206692908,
+      "price_to_sales_ratio": 15.38846596310779,
+      "enterprise_value_to_ebitda_ratio": 190.27265763399743,
+      "enterprise_value_to_revenue_ratio": 15.280438949083837,
+      "free_cash_flow_yield": 0.002382093933708404,
+      "peg_ratio": 5.6942,
+      "gross_margin": 0.17862626676220697,
+      "operating_margin": 0.07243320708363189,
+      "net_margin": 0.07258675401781145,
+      "return_on_equity": 0.09725289043106168,
+      "return_on_assets": 0.05808962070942902,
+      "return_on_invested_capital": 0.07604371092451394,
+      "asset_turnover": 0.8002785287130335,
+      "inventory_turnover": 6.677207289672963,
+      "receivables_turnover": 22.111815301041194,
+      "days_sales_outstanding": 16.507011976660866,
+      "operating_cycle": 71.17058376130693,
+      "working_capital_turnover": 3.3071532550187888,
+      "current_ratio": 2.024912390270983,
+      "quick_ratio": 1.6079594739946568,
+      "cash_ratio": 0.559973630338989,
+      "operating_cash_flow_ratio": 0.5177821727212796,
+      "debt_to_equity": 0.07660967180063911,
+      "debt_to_assets": 0.04575932661587614,
+      "interest_coverage": 45.35897435897436,
+      "revenue_growth": 0.009475783534663594,
+      "earnings_growth": 2.272265805260729,
+      "book_value_growth": 0.16411214356419837,
+      "earnings_per_share_growth": 2.279411764705882,
+      "free_cash_flow_growth": -0.17810420013770945,
+      "operating_income_growth": -0.20413901698346643,
+      "ebitda_growth": -3.539570616712271,
+      "payout_ratio": null,
+      "earnings_per_share": 2.23,
+      "book_value_per_share": 22.671952736318406,
+      "free_cash_flow_per_share": 1.113495024875622
+    }
+  },
+  "consistency_analysis": {
+    "score": 0,
+    "details": "Inconsistent earnings growth pattern; Total earnings growth of 28.5% over past 10 periods"
+  },
+  "moat_analysis": {
+    "score": 0,
+    "max_score": 5,
+    "details": "Inconsistent ROE: only 4/10 periods >15%; Low operating margins (avg: 11.2%) suggest limited pricing power"
+  },
+  "pricing_power_analysis": {
+    "score": 0,
+    "details": "Declining gross margins may indicate pricing pressure"
+  },
+  "book_value_analysis": {
+    "score": 3,
+    "details": "Consistent book value per share growth (Buffett's favorite metric); Book value CAGR: 7.4%"
+  },
+  "management_analysis": {
+    "score": 0,
+    "max_score": 2,
+    "details": "No significant new stock issuance detected; No or minimal dividends paid"
+  },
+  "intrinsic_value_analysis": {
+    "intrinsic_value": -61551520367.19142,
+    "raw_intrinsic_value": -72413553373.16638,
+    "owner_earnings": -4018400000.0,
+    "assumptions": {
+      "stage1_growth": 0.08,
+      "stage2_growth": 0.04,
+      "terminal_growth": 0.025,
+      "discount_rate": 0.1,
+      "stage1_years": 5,
+      "stage2_years": 5,
+      "historical_growth": 0.105
+    },
+    "details": [
+      "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+      "Stage 1 PV: $-19,022,280,998",
+      "Stage 2 PV: $-15,540,531,075",
+      "Terminal PV: $-37,850,741,300",
+      "Total IV: $-72,413,553,373",
+      "Conservative IV (15% haircut): $-61,551,520,367",
+      "Owner earnings: $-4,018,400,000",
+      "Discount rate: 10.0%"
+    ]
+  },
+  "market_cap": 1503299239936.0,
+  "margin_of_safety": -1.0409442902198314
+}

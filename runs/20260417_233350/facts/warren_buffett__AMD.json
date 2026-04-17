@@ -1,0 +1,102 @@
+{
+  "ticker": "AMD",
+  "score": 11,
+  "max_score": 27,
+  "fundamental_analysis": {
+    "score": 3,
+    "details": "Weak ROE of 6.2%; Conservative debt levels; Weak operating margin of 8.5%; Good liquidity position",
+    "metrics": {
+      "ticker": "AMD",
+      "report_period": "2025-09-27",
+      "period": "ttm",
+      "currency": "USD",
+      "market_cap": 453890113536.0,
+      "enterprise_value": 450104113536.0,
+      "price_to_earnings_ratio": 106.25574,
+      "price_to_book_ratio": 7.88441692495831,
+      "price_to_sales_ratio": 14.553357494420931,
+      "enterprise_value_to_ebitda_ratio": 157.48919297970608,
+      "enterprise_value_to_revenue_ratio": 14.431964651019623,
+      "free_cash_flow_yield": 0.005195090022186564,
+      "peg_ratio": 0.8257,
+      "gross_margin": 0.4807618314736437,
+      "operating_margin": 0.08548159548544312,
+      "net_margin": 0.11526869308708478,
+      "return_on_equity": 0.06244788771539744,
+      "return_on_assets": 0.0519313552711409,
+      "return_on_invested_capital": 0.05803535394301396,
+      "asset_turnover": 0.45052436945656255,
+      "inventory_turnover": 2.824206487617719,
+      "receivables_turnover": 5.036821705426356,
+      "days_sales_outstanding": 72.46633320507888,
+      "operating_cycle": 201.70617512183819,
+      "working_capital_turnover": 2.650237933378654,
+      "current_ratio": 2.6162615025408598,
+      "quick_ratio": 1.8287323169894245,
+      "cash_ratio": 0.5201208625188848,
+      "operating_cash_flow_ratio": 0.403928031863755,
+      "debt_to_equity": 1.7370761534185658e-05,
+      "debt_to_assets": 1.4445439574726258e-05,
+      "interest_coverage": 22.593220338983052,
+      "revenue_growth": 0.13690476190476192,
+      "earnings_growth": 0.9215456674473068,
+      "book_value_growth": 0.02998640234738424,
+      "earnings_per_share_growth": 0.9056603773584905,
+      "free_cash_flow_growth": 1.1454058876003568,
+      "operating_income_growth": 3.7381546134663344,
+      "ebitda_growth": null,
+      "payout_ratio": null,
+      "earnings_per_share": 1.01,
+      "book_value_per_share": 35.49198520345253,
+      "free_cash_flow_per_share": 1.4537607891491986
+    }
+  },
+  "consistency_analysis": {
+    "score": 0,
+    "details": "Inconsistent earnings growth pattern; Total earnings growth of 13.7% over past 10 periods"
+  },
+  "moat_analysis": {
+    "score": 1,
+    "max_score": 5,
+    "details": "Inconsistent ROE: only 1/10 periods >15%; Low operating margins (avg: 6.8%) suggest limited pricing power; Efficient asset utilization suggests operational moat"
+  },
+  "pricing_power_analysis": {
+    "score": 3,
+    "details": "Improving gross margins suggest good pricing power; Good gross margins (46.6%) suggest decent pricing power"
+  },
+  "book_value_analysis": {
+    "score": 3,
+    "details": "Consistent book value per share growth (Buffett's favorite metric); Book value CAGR: 1.1%"
+  },
+  "management_analysis": {
+    "score": 1,
+    "max_score": 2,
+    "details": "Company has been repurchasing shares (shareholder-friendly); No significant new stock issuance detected; No or minimal dividends paid"
+  },
+  "intrinsic_value_analysis": {
+    "intrinsic_value": 40858451872.253815,
+    "raw_intrinsic_value": 48068766908.533905,
+    "owner_earnings": 2667450000.0,
+    "assumptions": {
+      "stage1_growth": 0.08,
+      "stage2_growth": 0.04,
+      "terminal_growth": 0.025,
+      "discount_rate": 0.1,
+      "stage1_years": 5,
+      "stage2_years": 5,
+      "historical_growth": 0.105
+    },
+    "details": [
+      "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+      "Stage 1 PV: $12,627,160,922",
+      "Stage 2 PV: $10,315,944,061",
+      "Terminal PV: $25,125,661,925",
+      "Total IV: $48,068,766,909",
+      "Conservative IV (15% haircut): $40,858,451,872",
+      "Owner earnings: $2,667,450,000",
+      "Discount rate: 10.0%"
+    ]
+  },
+  "market_cap": 453890113536.0,
+  "margin_of_safety": -0.9099816218644887
+}

@@ -1,0 +1,102 @@
+{
+  "ticker": "XOM",
+  "score": 6,
+  "max_score": 27,
+  "fundamental_analysis": {
+    "score": 0,
+    "details": "Weak ROE of 12.8%; Debt to equity data not available; Operating margin data not available; Weak liquidity with current ratio of 1.3",
+    "metrics": {
+      "ticker": "XOM",
+      "report_period": "2025-09-30",
+      "period": "ttm",
+      "currency": "USD",
+      "market_cap": 608686571520.0,
+      "enterprise_value": 585657571520.0,
+      "price_to_earnings_ratio": 21.856718,
+      "price_to_book_ratio": 2.3082102027644527,
+      "price_to_sales_ratio": 1.741169019036858,
+      "enterprise_value_to_ebitda_ratio": null,
+      "enterprise_value_to_revenue_ratio": 1.6752937669522434,
+      "free_cash_flow_yield": 0.05046275281430411,
+      "peg_ratio": 1.39,
+      "gross_margin": null,
+      "operating_margin": null,
+      "net_margin": 0.09634280647052934,
+      "return_on_equity": 0.12771847329402172,
+      "return_on_assets": 0.07427090798831247,
+      "return_on_invested_capital": 0.08789878069149824,
+      "asset_turnover": 0.7709024753294007,
+      "inventory_turnover": null,
+      "receivables_turnover": 9.908310186497364,
+      "days_sales_outstanding": 36.83776477823705,
+      "operating_cycle": null,
+      "working_capital_turnover": 16.122538394133652,
+      "current_ratio": 1.3084045685351386,
+      "quick_ratio": 1.0947131864536959,
+      "cash_ratio": 0.32754917718008164,
+      "operating_cash_flow_ratio": 0.7825963275349539,
+      "debt_to_equity": null,
+      "debt_to_assets": null,
+      "interest_coverage": null,
+      "revenue_growth": 0.5494528878784145,
+      "earnings_growth": -0.06470424881977228,
+      "book_value_growth": 0.2876094960010156,
+      "earnings_per_share_growth": -0.11811023622047251,
+      "free_cash_flow_growth": -0.0817339312406577,
+      "operating_income_growth": null,
+      "ebitda_growth": null,
+      "payout_ratio": null,
+      "earnings_per_share": 7.84,
+      "book_value_per_share": 60.580059728922585,
+      "free_cash_flow_per_share": 7.056283023202389
+    }
+  },
+  "consistency_analysis": {
+    "score": 0,
+    "details": "Inconsistent earnings growth pattern; Total earnings growth of 46.2% over past 10 periods"
+  },
+  "moat_analysis": {
+    "score": 2,
+    "max_score": 5,
+    "details": "Good ROE performance: 6/10 periods >15%; Efficient asset utilization suggests operational moat"
+  },
+  "pricing_power_analysis": {
+    "score": 0,
+    "details": "Limited pricing power analysis available"
+  },
+  "book_value_analysis": {
+    "score": 3,
+    "details": "Consistent book value per share growth (Buffett's favorite metric); Book value CAGR: 3.5%"
+  },
+  "management_analysis": {
+    "score": 1,
+    "max_score": 2,
+    "details": "Company has been repurchasing shares (shareholder-friendly); No significant new stock issuance detected; No or minimal dividends paid"
+  },
+  "intrinsic_value_analysis": {
+    "intrinsic_value": 362897714301.14435,
+    "raw_intrinsic_value": 426938487413.111,
+    "owner_earnings": 39972000000.0,
+    "assumptions": {
+      "stage1_growth": -0.011608846823262464,
+      "stage2_growth": -0.005804423411631232,
+      "terminal_growth": 0.025,
+      "discount_rate": 0.1,
+      "stage1_years": 5,
+      "stage2_years": 5,
+      "historical_growth": -0.011608846823262464
+    },
+    "details": [
+      "Using three-stage DCF: Stage 1 (-1.2%, 5y), Stage 2 (-0.6%, 5y), Terminal (2.5%)",
+      "Stage 1 PV: $146,653,734,636",
+      "Stage 2 PV: $87,312,436,728",
+      "Terminal PV: $192,972,316,049",
+      "Total IV: $426,938,487,413",
+      "Conservative IV (15% haircut): $362,897,714,301",
+      "Owner earnings: $39,972,000,000",
+      "Discount rate: 10.0%"
+    ]
+  },
+  "market_cap": 608686571520.0,
+  "margin_of_safety": -0.40380200372266567
+}

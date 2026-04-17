@@ -1,0 +1,4299 @@
+{
+  "mode": "swing",
+  "analyst_signals": {
+    "swing_momentum_ranker": {
+      "AAPL": {
+        "signal": "bullish",
+        "confidence": 62,
+        "reasoning": "Mixed ROC signals: strong 10/21-day ROC (3.0%, 3.6%) but weak 5-day ROC (1.1%). Daily RSI 62 shows moderate momentum with squeeze off and expanding momentum. Hourly shows overbought STC (98.9) but hourly ROC deceleration (-0.6% at 5d) contradicts bullish setup. Near upper Bollinger Band.",
+        "entry_price": 262.5,
+        "target_price": 269.0,
+        "stop_loss": 255.5,
+        "timeframe": "5-8 trading days"
+      },
+      "MSFT": {
+        "signal": "bullish",
+        "confidence": 78,
+        "reasoning": "Strongest momentum in cohort: accelerating ROC (5d: 12.6%, 10d: 13.8%, 21d: 5.2%). RSI 82 near overbought with uptrend direction. Hourly ROC deceleration (-1.8% at 5d) is a minor concern but 10/21-day hourly ROC turning positive (0.8%, 7.5%) shows recovery. Squeeze off, bullish breakout signal. Price 8.8% above supertrend.",
+        "entry_price": 420.0,
+        "target_price": 440.0,
+        "stop_loss": 410.0,
+        "timeframe": "7-12 trading days"
+      },
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 45,
+        "reasoning": "Conflicting momentum signals. Daily shows strong recent 5-day ROC (12.5%) but 21-day ROC is negative (-2.6%), indicating momentum loss over longer horizon. EMA alignment is downtrend on daily. Daily squeeze shows bearish breakout. Hourly STC overbought (99.9) but hourly ROC is mixed (negative 5d, positive 10/21d). Price still in recovery from weekly breakdown.",
+        "entry_price": 392.0,
+        "target_price": 410.0,
+        "stop_loss": 380.0,
+        "timeframe": "5-10 trading days"
+      },
+      "NVDA": {
+        "signal": "bullish",
+        "confidence": 75,
+        "reasoning": "Excellent momentum acceleration: all ROC positive and expanding (5d: 7.9%, 10d: 12.9%, 21d: 9.0%). RSI 83.6 overbought with sustained uptrend. Daily EMA aligned bullish (10 > 21 > 50). Squeeze off with bullish momentum. Hourly ROC weak (0.5%, 1.6%, 2.6%) but accelerating across timeframes. Price 8.8% above supertrend.",
+        "entry_price": 199.5,
+        "target_price": 210.0,
+        "stop_loss": 194.0,
+        "timeframe": "6-10 trading days"
+      },
+      "META": {
+        "signal": "bullish",
+        "confidence": 80,
+        "reasoning": "Very strong momentum: accelerating ROC (5d: 7.7%, 10d: 16.9%, 21d: 8.7%). RSI 84.8 overbought with uptrend. Daily EMA slightly misaligned but price well above all MAs. Squeeze off with strong bullish momentum (61.2). Hourly ROC deceleration (-0.7% MACD histogram) but 5d ROC positive (0.7%). Massive squeeze momentum and ADX 39 confirm strength.",
+        "entry_price": 675.0,
+        "target_price": 715.0,
+        "stop_loss": 660.0,
+        "timeframe": "8-12 trading days"
+      },
+      "GOOGL": {
+        "signal": "bullish",
+        "confidence": 82,
+        "reasoning": "Strongest ROC acceleration: all three timeframes positive and accelerating (5d: 5.5%, 10d: 12.9%, 21d: 8.1%). RSI 85.4 overbought with strong uptrend. Daily EMA aligned (10 > 21 > 50). Squeeze off, bullish momentum 28.8. Price 9.2% above 50-SMA, hourly ADX 72 shows very strong trend. Momentum expanding across both timeframes.",
+        "entry_price": 337.0,
+        "target_price": 355.0,
+        "stop_loss": 325.0,
+        "timeframe": "8-14 trading days"
+      },
+      "AMZN": {
+        "signal": "bullish",
+        "confidence": 77,
+        "reasoning": "Excellent momentum acceleration: ROC all positive and expanding (5d: 6.9%, 10d: 18.6%, 21d: 16.0%). RSI 84.4 overbought. Daily EMA aligned bullish. Squeeze off, bullish momentum 25.2. Z-score 2.8 shows extreme positioning. Hourly ROC weak (negative 5d) but accelerating (0.5% 10d, 0.6% 21d). ADX 43 confirms trend strength.",
+        "entry_price": 248.0,
+        "target_price": 265.0,
+        "stop_loss": 237.0,
+        "timeframe": "8-14 trading days"
+      },
+      "AMD": {
+        "signal": "bullish",
+        "confidence": 85,
+        "reasoning": "Strongest momentum in entire universe: explosive ROC acceleration (5d: 17.6%, 10d: 32.4%, 21d: 41.7%). RSI 91.4 extreme overbought. Daily EMA perfectly aligned (10 > 21 > 50). Squeeze off, massive bullish momentum 35.9. Z-score 3.66 extreme. Hourly momentum decelerating (-0.35 MACD histogram) but still positive ROC. Volume surge 1.8x average. ADX 49 strong trend.",
+        "entry_price": 275.0,
+        "target_price": 300.0,
+        "stop_loss": 255.0,
+        "timeframe": "7-12 trading days"
+      },
+      "JPM": {
+        "signal": "neutral",
+        "confidence": 52,
+        "reasoning": "Moderate but deteriorating momentum. Daily ROC shows strength at 10d (5.5%), 21d (8.6%) but weak 5-day (-0.12%). Daily RSI 67.8 moderate. Daily EMA aligned but weakly. Hourly ROC all negative (5d: -0.8%, 10d: 0.87% small recovery). Squeeze off, bullish momentum 17.9. Recent consolidation suggests momentum pullback. Price near 50-SMA support.",
+        "entry_price": 309.0,
+        "target_price": 320.0,
+        "stop_loss": 300.0,
+        "timeframe": "5-8 trading days"
+      },
+      "GS": {
+        "signal": "neutral",
+        "confidence": 48,
+        "reasoning": "Deceleration pattern: daily ROC shows weakness (5d: -0.4%, 10d: 4.6%, 21d: 11.5%). Daily RSI 71.6 still elevated but direction unclear. Squeeze off but momentum decreasing (70.2). Hourly ROC weak across all timeframes (0.2%, 2.5%, 1.7%). MACD histogram positive but volume weak (0.8x average). Price near resistance, squeeze momentum decelerating.",
+        "entry_price": 905.0,
+        "target_price": 925.0,
+        "stop_loss": 885.0,
+        "timeframe": "4-7 trading days"
+      },
+      "NKE": {
+        "signal": "bearish",
+        "confidence": 70,
+        "reasoning": "Strong downtrend: all daily ROC negative (5d: 3.9%, 10d: 2.4%, 21d: -17.1%). RSI 32.6 oversold. Daily EMA misaligned downtrend (10 < 21 < 50). Squeeze off, bearish momentum -5.3. Supertrend bearish direction. Hourly squeeze on (building volatility), hourly EMA aligned up but momentum weak. Price 17.3% below 50-SMA. Clear downtrend structure.",
+        "entry_price": 44.5,
+        "target_price": 40.0,
+        "stop_loss": 47.5,
+        "timeframe": "5-10 trading days"
+      },
+      "XOM": {
+        "signal": "bearish",
+        "confidence": 75,
+        "reasoning": "Clear downtrend momentum: all daily ROC negative (5d: -1.97%, 10d: -5.47%, 21d: -4.30%). RSI 32.4 oversold. Daily EMA misaligned downtrend. Squeeze off, strong bearish momentum -10.9. Supertrend bearish. Hourly EMA in downtrend too (10 < 21, 50). Hourly ROC mixed but MACD histogram negative. Volume weak (0.6x average). Strong sell signal.",
+        "entry_price": 149.0,
+        "target_price": 140.0,
+        "stop_loss": 155.0,
+        "timeframe": "5-10 trading days"
+      },
+      "SPY": {
+        "signal": "bullish",
+        "confidence": 75,
+        "reasoning": "Solid broad market momentum: all daily ROC positive (5d: 3.2%, 10d: 7.1%, 21d: 4.9%). RSI 83.8 overbought. Daily EMA aligned bullish (10 > 21 > 50). Squeeze off, bullish momentum 34.9. Hourly ROC deceleration (-0.08% 5d) but positive 10/21d (1.3%, 2.3%). ADX 36 moderate trend. Price at 96% of BB position, near resistance.",
+        "entry_price": 700.0,
+        "target_price": 720.0,
+        "stop_loss": 685.0,
+        "timeframe": "7-10 trading days"
+      },
+      "QQQ": {
+        "signal": "bullish",
+        "confidence": 79,
+        "reasoning": "Strong tech momentum: all daily ROC positive and mostly accelerating (5d: 5.0%, 10d: 9.6%, 21d: 6.3%). RSI 84.1 overbought. Daily EMA aligned bullish. Squeeze off, massive bullish momentum 36.6. Hourly ROC deceleration (-0.04% 5d) but accelerating (1.4% 10d, 3.2% 21d). ADX 63 very strong trend. Price near all-time highs, broad market strength.",
+        "entry_price": 638.0,
+        "target_price": 665.0,
+        "stop_loss": 620.0,
+        "timeframe": "8-12 trading days"
+      }
+    },
+    "swing_trend_follower": {
+      "AAPL": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "Daily EMAs not aligned (10 > 21 > 50 is tangled at 259.88/258.06/259.05). Hourly shows uptrend (10 > 21 > 50), but daily ADX is weak at 14.5, below the 25 threshold needed for trend strength. Price action is choppy.",
+        "entry_price": 260.48,
+        "target_price": 268.43,
+        "stop_loss": 255.32,
+        "timeframe": "wait for clarity"
+      },
+      "MSFT": {
+        "signal": "bullish",
+        "confidence": 78,
+        "reasoning": "Hourly EMAs perfectly aligned uptrend (421.91 > 415.71 > 401.56) with strong hourly ADX 58.37. Daily EMAs tangled but hourly shows clean uptrend. RSI 66.7 on hourly. Squeeze off, bullish breakout confirmed. Price pulled back to hourly 21 EMA, entry zone triggered.",
+        "entry_price": 420.26,
+        "target_price": 437.89,
+        "stop_loss": 414.37,
+        "timeframe": "3-5 trading days"
+      },
+      "TSLA": {
+        "signal": "bullish",
+        "confidence": 72,
+        "reasoning": "Daily shows downtrend alignment (EMA 368 < 371 < 387). But hourly EMAs show uptrend (398.26 > 390.80 > 377.39) with ADX 42.33. Hourly RSI 59.3, STC overbought 99.99. Recent price action jumped to 400.62 with high volume on 4/15. Hourly momentum still building. Follow hourly uptrend on pullback.",
+        "entry_price": 391.95,
+        "target_price": 408.13,
+        "stop_loss": 385.74,
+        "timeframe": "2-4 trading days"
+      },
+      "NVDA": {
+        "signal": "bullish",
+        "confidence": 82,
+        "reasoning": "Daily EMAs aligned uptrend (189.12 > 184.56 > 183.13) with ADX 35.02. Hourly EMAs also uptrend (200.16 > 198.47 > 193.45) with ADX 33.78. RSI 83.6 daily (overbought but in strong uptrend). Squeeze off, bullish breakout. Price 201.68 above both moving averages. Clean multi-timeframe alignment.",
+        "entry_price": 198.87,
+        "target_price": 204.82,
+        "stop_loss": 196.25,
+        "timeframe": "3-5 trading days"
+      },
+      "META": {
+        "signal": "bullish",
+        "confidence": 80,
+        "reasoning": "Daily EMAs tangled (634.66 > 620.16 > 625.90). Hourly EMAs perfectly aligned uptrend (681.96 > 674.83 > 653.77) with very strong ADX 66.02. Hourly RSI 79.3, momentum strong. Squeeze off, bullish breakout signal. Recent spike from 671.58 to 688.55 shows strong momentum. Follow hourly uptrend.",
+        "entry_price": 676.87,
+        "target_price": 691.47,
+        "stop_loss": 670.02,
+        "timeframe": "2-3 trading days"
+      },
+      "GOOGL": {
+        "signal": "bullish",
+        "confidence": 85,
+        "reasoning": "Daily EMAs aligned uptrend (320.61 > 311.98 > 309.01) with strong ADX 43.31. Hourly EMAs also uptrend (339.09 > 336.29 > 328.13) with very strong ADX 72.54. RSI 85.4 daily (overbought in healthy uptrend). Squeeze off, bullish breakout confirmed. Multi-timeframe alignment is clean.",
+        "entry_price": 337.12,
+        "target_price": 345.88,
+        "stop_loss": 332.87,
+        "timeframe": "2-4 trading days"
+      },
+      "AMZN": {
+        "signal": "bullish",
+        "confidence": 76,
+        "reasoning": "Daily EMAs aligned uptrend (235.10 > 225.37 > 220.61) with ADX 43.97. Hourly EMAs also uptrend (251.19 > 249.42 > 242.23) though hourly ADX is lower at 28.77. Daily RSI 84.4, momentum strong. Squeeze off, bullish breakout. Price 250.56 extended but hourly still shows uptrend structure.",
+        "entry_price": 249.7,
+        "target_price": 254.43,
+        "stop_loss": 245.56,
+        "timeframe": "2-3 trading days"
+      },
+      "AMD": {
+        "signal": "bullish",
+        "confidence": 88,
+        "reasoning": "Daily EMAs aligned uptrend (244.87 > 229.78 > 219.44) with ADX 49.92 (strong trend). Hourly EMAs also uptrend (276.34 > 270.41 > 256.72) with ADX 52.02. Daily RSI 91.4 (extremely overbought) but SuperTrend bullish. Momentum 32.37 ROC 10d shows strong rally. Recent candle 264.99 to 278.26 was massive. Trend is strong.",
+        "entry_price": 278.26,
+        "target_price": 290.33,
+        "stop_loss": 269.08,
+        "timeframe": "2-4 trading days"
+      },
+      "JPM": {
+        "signal": "bullish",
+        "confidence": 70,
+        "reasoning": "Daily EMAs aligned uptrend (305.36 > 300.43 > 299.39) with ADX 31.79. Hourly EMAs also uptrend (310.80 > 310.07 > 308.01) with ADX 38.59. Daily RSI 67.9, hourly STC overbought at 95.2. Recent consolidation near 309.95 after pullback from 313.68. Squeeze off, bullish. Setup is solid on pullbacks.",
+        "entry_price": 309.95,
+        "target_price": 313.68,
+        "stop_loss": 305.02,
+        "timeframe": "2-3 trading days"
+      },
+      "GS": {
+        "signal": "bullish",
+        "confidence": 68,
+        "reasoning": "Daily EMAs aligned uptrend (888.02 > 871.43 > 867.62) with ADX 20.66 (weak). Hourly EMAs uptrend (919.12 > 913.03 > 901.79) with ADX 45.93. Hourly RSI 76, STC overbought 99.2. Daily momentum turning (ROC 4.6 is slowing). Price 925.95 is extended. Hourly shows strength but daily ADX is weak - wait for daily confirmation.",
+        "entry_price": 909.63,
+        "target_price": 925.91,
+        "stop_loss": 899.47,
+        "timeframe": "2-3 trading days"
+      },
+      "NKE": {
+        "signal": "bearish",
+        "confidence": 75,
+        "reasoning": "Daily EMAs show downtrend (45.22 < 47.82 < 53.05) with ADX 48.13 (strong downtrend). Hourly EMAs uptrend (45.92 > 45.57 > 45.10) but daily SuperTrend bearish. Daily RSI 32.6 (oversold), MACD negative. Squeeze on hourly (rare). Divergence: hourly trying to bounce but daily trend is down. Stay with downtrend; short NKE on bounces.",
+        "entry_price": 45.54,
+        "target_price": 42.62,
+        "stop_loss": 47.82,
+        "timeframe": "3-5 trading days"
+      },
+      "XOM": {
+        "signal": "bearish",
+        "confidence": 72,
+        "reasoning": "Daily EMAs tangled (154.61 < 156.49 but > 152.13) with ADX 27.35 (weak). Hourly EMAs show downtrend (147.07 < 148.33 < 151.19) with ADX 38.62. Both daily and hourly RSI low (32.4 daily, 42.0 hourly). MACD negative on both timeframes. Squeeze off, bearish breakout signal. Volume is low. Risk-reward favors staying in cash or shorting on bounces.",
+        "entry_price": 151.97,
+        "target_price": 149.01,
+        "stop_loss": 153.97,
+        "timeframe": "2-4 trading days"
+      },
+      "SPY": {
+        "signal": "bullish",
+        "confidence": 82,
+        "reasoning": "Daily EMAs aligned uptrend (682.62 > 673.73 > 672.84) with ADX 36.23. Hourly EMAs also uptrend (707.49 > 702.97 > 692.16) with strong ADX 65.48. Daily RSI 83.79, hourly RSI 74.84 (both strong). Squeeze off, bullish breakout. Multi-timeframe alignment is solid. Price 710.14 above all EMAs on both timeframes.",
+        "entry_price": 701.66,
+        "target_price": 713.84,
+        "stop_loss": 697.36,
+        "timeframe": "2-3 trading days"
+      },
+      "QQQ": {
+        "signal": "bullish",
+        "confidence": 84,
+        "reasoning": "Daily EMAs aligned uptrend (615.95 > 605.31 > 603.21) with ADX 36.75. Hourly EMAs also uptrend (645.54 > 640.14 > 627.03) with strong ADX 63.77. Daily RSI 84.12, hourly RSI 74.61. Momentum strong (ROC 10d = 9.61). Squeeze off, bullish breakout confirmed. Price 648.85 above all EMAs. Clean multi-timeframe structure.",
+        "entry_price": 640.47,
+        "target_price": 652.61,
+        "stop_loss": 633.02,
+        "timeframe": "2-3 trading days"
+      }
+    },
+    "swing_breakout_trader": {
+      "AAPL": {
+        "signal": "bullish",
+        "confidence": 72,
+        "reasoning": "Squeeze released with bullish momentum. Daily near Fib 236 (270.49) with Bollinger bands upper at 266.13. Hourly shows EMA aligned uptrend and overbought STC (98.88). Consolidation broke above 266 resistance on high volume momentum.",
+        "entry_price": 267.5,
+        "target_price": 281.25,
+        "stop_loss": 263.5,
+        "timeframe": "5-8 trading days"
+      },
+      "MSFT": {
+        "signal": "bullish",
+        "confidence": 78,
+        "reasoning": "Strong breakout above 420 resistance with 1.2x volume confirmation. RSI at 82.5 shows strength. Price reached hourly Bollinger upper (431) while maintaining bullish SuperTrend. Momentum accelerating with MACD histogram positive.",
+        "entry_price": 420.5,
+        "target_price": 450.0,
+        "stop_loss": 412.0,
+        "timeframe": "5-10 trading days"
+      },
+      "TSLA": {
+        "signal": "bullish",
+        "confidence": 68,
+        "reasoning": "Bounced off 388 support with 5-day ROC at 12.5%. Hourly shows strong EMA alignment and breakout signal confirmed. Daily squeeze off with momentum positive. Large volume candle on 4/15 (113M shares) confirms breakout intent through 391 resistance.",
+        "entry_price": 391.95,
+        "target_price": 428.27,
+        "stop_loss": 381.79,
+        "timeframe": "6-10 trading days"
+      },
+      "NVDA": {
+        "signal": "bullish",
+        "confidence": 75,
+        "reasoning": "Broke above 198.87 resistance with RSI at 83.6. Hourly Bollinger upper at 201.98 acting as resistance. Daily momentum strong (ROC 5 at 7.85%, ROC 10 at 12.86%). Squeeze off with positive momentum indicates continuation setup.",
+        "entry_price": 199.5,
+        "target_price": 213.73,
+        "stop_loss": 195.8,
+        "timeframe": "5-8 trading days"
+      },
+      "META": {
+        "signal": "bullish",
+        "confidence": 76,
+        "reasoning": "Explosive breakout above 676.87 resistance with RSI at 84.88. Daily Bollinger width at 0.28 shows expansion post-breakout. Hourly volume surge (1.75x avg) confirms breakout. Measured move suggests target near 728.02.",
+        "entry_price": 677.5,
+        "target_price": 728.02,
+        "stop_loss": 667.75,
+        "timeframe": "5-9 trading days"
+      },
+      "GOOGL": {
+        "signal": "bullish",
+        "confidence": 77,
+        "reasoning": "Clear breakout above 337.12 resistance with RSI at 85.37. Hourly ADX at 72.5 shows strong trend. Daily squeeze off with increasing momentum (61.2). Price above all major moving averages. Volume ratio still modest at 0.7x but direction is strong.",
+        "entry_price": 338.0,
+        "target_price": 363.62,
+        "stop_loss": 334.52,
+        "timeframe": "6-10 trading days"
+      },
+      "AMZN": {
+        "signal": "bullish",
+        "confidence": 74,
+        "reasoning": "Breakout above 249.7 resistance with strong momentum (ROC 10 at 18.58%, ROC 21 at 16.03%). RSI at 84.4 confirms strength. Hourly momentum cooled but SuperTrend bullish. Daily Bollinger width expanded (0.31) indicating volatility breakout.",
+        "entry_price": 250.0,
+        "target_price": 270.2,
+        "stop_loss": 244.2,
+        "timeframe": "5-8 trading days"
+      },
+      "AMD": {
+        "signal": "bullish",
+        "confidence": 82,
+        "reasoning": "Exceptional breakout with 1.82x volume surge on 4/16. RSI at 91.4 (extreme). Broke above 278.26 resistance with measured move to 300+ likely. Hourly shows EMA aligned uptrend with ADX at 52. Daily momentum explosive (ROC 5: 17.59%, ROC 10: 32.37%).",
+        "entry_price": 279.0,
+        "target_price": 320.5,
+        "stop_loss": 261.51,
+        "timeframe": "6-12 trading days"
+      },
+      "JPM": {
+        "signal": "bullish",
+        "confidence": 70,
+        "reasoning": "Breakout forming above 313.68 resistance with squeeze off signal. Hourly volume surge (1.66x avg) supports move. Daily RSI at 67.8 moderate but MACD histogram positive. Consolidation 3-4 days, now breaking upward on moderate momentum.",
+        "entry_price": 314.0,
+        "target_price": 328.52,
+        "stop_loss": 305.2,
+        "timeframe": "5-7 trading days"
+      },
+      "GS": {
+        "signal": "bullish",
+        "confidence": 68,
+        "reasoning": "Consolidation range 802-909 with price at top, RSI at 71.6. Hourly volume surge (1.52x) and overbought STC (99.2). Momentum positive but volume on daily side below average (0.8x). Break above 909.63 would target 957.26 via measured move.",
+        "entry_price": 910.0,
+        "target_price": 957.26,
+        "stop_loss": 895.85,
+        "timeframe": "5-8 trading days"
+      },
+      "NKE": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "Daily downtrend with RSI at 32.6 and bearish SuperTrend below price. Hourly squeeze building with momentum near neutral. While hourly shows upside setup, daily structure bearish aligned downtrend. No clear breakout confirmation yet; awaiting daily reversal above 53.49.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "N/A"
+      },
+      "XOM": {
+        "signal": "neutral",
+        "confidence": 25,
+        "reasoning": "Bearish structure with RSI at 32.4 and negative momentum (ROC 10: -5.47%). Bearish SuperTrend and bearish squeeze momentum. Daily price below support level. Hourly also bearish with downtrend aligned. No consolidation range to break; needs reversal first.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "N/A"
+      },
+      "SPY": {
+        "signal": "bullish",
+        "confidence": 75,
+        "reasoning": "Breakout above 701.66 resistance with RSI at 83.79. Squeeze released with strong momentum (34.86). Hourly ADX at 65.5 confirms trend strength. Daily Bollinger upper at 704.89 being tested. High probability continuation target via measured move: 731.35.",
+        "entry_price": 702.0,
+        "target_price": 731.35,
+        "stop_loss": 698.53,
+        "timeframe": "5-8 trading days"
+      },
+      "QQQ": {
+        "signal": "bullish",
+        "confidence": 77,
+        "reasoning": "Breakout above 640.47 resistance near Bollinger upper (640.99). RSI at 84.12 shows strength. Daily momentum strong (ROC 5: 4.96%, ROC 10: 9.61%). Hourly ADX at 63.8 confirms trend. Measured move suggests target around 682.66.",
+        "entry_price": 641.0,
+        "target_price": 682.66,
+        "stop_loss": 635.26,
+        "timeframe": "5-9 trading days"
+      }
+    },
+    "swing_sector_rotation": {
+      "AAPL": {
+        "signal": "bullish",
+        "confidence": 75,
+        "reasoning": "Technology sector showing strong rotation inflows. Daily RSI 62 with bullish squeeze momentum breakout. Hourly uptrend aligned (EMA 10 > 21 > 50) despite daily divergence signals sector strength continuation over 2-3 weeks.",
+        "entry_price": 263.4,
+        "target_price": 277.86,
+        "stop_loss": 255.32,
+        "timeframe": "10-15 trading days"
+      },
+      "MSFT": {
+        "signal": "bullish",
+        "confidence": 80,
+        "reasoning": "Tech sector leader showing extreme momentum. Daily RSI 82.5 with strong MACD histogram (6.62) and squeeze breakout momentum 13.5. Hourly uptrend solid, volume surge 1.2x confirms institutional accumulation in tech rotation.",
+        "entry_price": 420.26,
+        "target_price": 430.32,
+        "stop_loss": 386.14,
+        "timeframe": "10-12 trading days"
+      },
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 45,
+        "reasoning": "Mixed sector signals. Daily shows downtrend aligned (EMA 10 < 21 < 50) but hourly uptrend aligned. RSI 56 neutral territory. Recent squeeze momentum negative (-5.93) but rebounding. Lacks clear sector rotation conviction.",
+        "entry_price": 388.9,
+        "target_price": 408.13,
+        "stop_loss": 375.76,
+        "timeframe": "5-8 trading days"
+      },
+      "NVDA": {
+        "signal": "bullish",
+        "confidence": 82,
+        "reasoning": "Semiconductor sector leading edge. Daily RSI 83.6, extreme overbought but uptrend aligned (10>21>50). Hourly RSI 63 less extended. Strong momentum (12.86% ROC 10-day) with squeeze breakout. Sector rotation into AI/chips favoring NVDA.",
+        "entry_price": 198.87,
+        "target_price": 205.0,
+        "stop_loss": 182.37,
+        "timeframe": "8-10 trading days"
+      },
+      "META": {
+        "signal": "bullish",
+        "confidence": 78,
+        "reasoning": "Tech/AI mega-cap showing exceptional rotation signal. Daily RSI 84.9, strongest MACD histogram (13.81), uptrend aligned. Hourly RSI 79 overbought but volume spike (1.75x) + momentum 61.2 indicates heavy institutional buying into AI narrative sector rotation.",
+        "entry_price": 676.87,
+        "target_price": 688.73,
+        "stop_loss": 611.61,
+        "timeframe": "10-14 trading days"
+      },
+      "GOOGL": {
+        "signal": "bullish",
+        "confidence": 79,
+        "reasoning": "Tech sector rotation confirmed. Daily RSI 85.4 (highest in basket), uptrend aligned, MACD positive histogram (5.25). Hourly uptrend strong (ADX 72.5 trending), momentum (12.99% ROC 10-day) + hourly squeeze breakout indicates sector strength through GOOGL.",
+        "entry_price": 336.02,
+        "target_price": 341.61,
+        "stop_loss": 312.4,
+        "timeframe": "8-12 trading days"
+      },
+      "AMZN": {
+        "signal": "bullish",
+        "confidence": 76,
+        "reasoning": "Tech/Cloud sector rotation. Daily RSI 84.4, uptrend aligned (10>21>50), exceptional momentum (18.58% ROC 10-day). Hourly uptrend aligned but RSI 55 suggests room. Squeeze off, momentum breakout +25.2 shows sector inflow accumulation over 2-3 weeks.",
+        "entry_price": 249.7,
+        "target_price": 254.43,
+        "stop_loss": 228.28,
+        "timeframe": "10-14 trading days"
+      },
+      "AMD": {
+        "signal": "bullish",
+        "confidence": 85,
+        "reasoning": "Semiconductor sector extreme rotation. Daily RSI 91.4 (most overbought), explosive momentum (32.37% ROC 10-day, 41.75% ROC 21-day). Hourly RSI 80 still strong. Volume surge 1.82x confirms massive sector rotation into semis. Entry timing critical due to extreme overbought.",
+        "entry_price": 278.26,
+        "target_price": 290.0,
+        "stop_loss": 238.59,
+        "timeframe": "5-8 trading days"
+      },
+      "JPM": {
+        "signal": "bullish",
+        "confidence": 70,
+        "reasoning": "Financial sector rotation from tech. Daily RSI 67.9, uptrend aligned, momentum positive (5.47% ROC 10-day). Hourly uptrend with squeeze breakout momentum 17.9 + volume 1.66x shows institutional rotation toward financials on rate stability.",
+        "entry_price": 309.95,
+        "target_price": 313.41,
+        "stop_loss": 291.17,
+        "timeframe": "8-12 trading days"
+      },
+      "GS": {
+        "signal": "bullish",
+        "confidence": 68,
+        "reasoning": "Financial sector rotation play. Daily RSI 71.6, uptrend aligned, positive MACD histogram (7.44). Hourly overbought (STC 99.2) but momentum 70.2 + uptrend aligned suggests financials getting rotation inflows from tech profit-taking cycle.",
+        "entry_price": 900.0,
+        "target_price": 925.91,
+        "stop_loss": 829.49,
+        "timeframe": "10-14 trading days"
+      },
+      "NKE": {
+        "signal": "bearish",
+        "confidence": 72,
+        "reasoning": "Consumer/Apparel sector rotating out. Daily downtrend aligned (10<21<50), RSI 32.6 deeply oversold. Hourly shows squeeze building (no squeeze-off), contradicting signal. Volume weak (0.76x). Sector rotation away from discretionary, bearish 2-3 week outlook.",
+        "entry_price": 45.44,
+        "target_price": 42.62,
+        "stop_loss": 47.83,
+        "timeframe": "10-14 trading days"
+      },
+      "XOM": {
+        "signal": "bearish",
+        "confidence": 75,
+        "reasoning": "Energy sector in sustained rotation outflow. Daily RSI 32.4, downtrend aligned (10<21<50), negative momentum (-5.47% ROC 10-day). Hourly also downtrend, bearish supertrend. Squeeze momentum -10.9, volume weak (0.59x). Clear sector abandonment over 2-4 weeks.",
+        "entry_price": 151.97,
+        "target_price": 145.11,
+        "stop_loss": 164.43,
+        "timeframe": "12-16 trading days"
+      },
+      "SPY": {
+        "signal": "bullish",
+        "confidence": 77,
+        "reasoning": "Broad market index confirming tech rotation. Daily RSI 83.8, uptrend aligned, momentum positive (7.08% ROC 10-day). Hourly overbought (STC 96.5) but ADX 65 strong trending. Squeeze breakout momentum 34.9 confirms sector rotation into growth/tech is broad-based through 2-3 weeks.",
+        "entry_price": 701.66,
+        "target_price": 711.51,
+        "stop_loss": 674.1,
+        "timeframe": "10-14 trading days"
+      },
+      "QQQ": {
+        "signal": "bullish",
+        "confidence": 83,
+        "reasoning": "Tech-heavy index showing strongest sector rotation. Daily RSI 84.1, uptrend aligned, highest momentum (9.61% ROC 10-day) among indices. Hourly uptrend solid, squeeze breakout momentum 36.6. Clear rotation into Nasdaq-heavy sectors (tech/AI) over 2-3 week swing window.",
+        "entry_price": 640.47,
+        "target_price": 649.35,
+        "stop_loss": 605.66,
+        "timeframe": "8-12 trading days"
+      }
+    },
+    "stanley_druckenmiller": {
+      "AAPL": {
+        "signal": "bearish",
+        "confidence": 72,
+        "reasoning": "Apple shows deteriorating fundamentals with revenue growth near zero (0.9% YoY) despite strong 34% stock momentum. Valuation is extremely stretched at 31.4x P/E with 27.1x P/FCF, leaving no room for error. The debt-equity ratio of 1.14 adds downside risk. Capital preservation demands avoiding this overvalued trap\u2014momentum alone cannot justify the valuation multiple when earnings growth is stalling. Better risk-reward exists elsewhere.",
+        "holding_period": "avoid"
+      },
+      "MSFT": {
+        "signal": "neutral",
+        "confidence": 55,
+        "reasoning": "Microsoft presents a classic Goldilocks scenario: modest 4.3% revenue growth paired with solid 10% EPS expansion and conservative 0.12 debt-to-equity. However, valuation remains challenged at 27x P/E and 54x P/FCF, which leaves limited upside potential. The 15% recent price momentum is muted relative to growth. Wait for a better entry point or a catalyst that drives margin expansion faster\u2014currently the risk-reward is balanced, not asymmetric.",
+        "holding_period": "2-4 weeks"
+      },
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 48,
+        "reasoning": "Tesla presents a paradox: EPS collapsed (-9.4% YoY) yet the stock surged 61% on momentum and 6.8% revenue growth. Valuation is egregiously stretched at 212x P/E and 420x P/FCF\u2014historically unsustainable. While the strong revenue growth and low debt (0.07 D/E) are positives, the 3.1% daily volatility and negative earnings trajectory suggest the momentum is driven by sentiment, not fundamentals. The risk-reward is unfavorable; I'm waiting for a meaningful pullback.",
+        "holding_period": "1-2 weeks"
+      },
+      "NVDA": {
+        "signal": "bullish",
+        "confidence": 78,
+        "reasoning": "NVIDIA displays the ideal Druckenmiller setup: exceptional 23.7% revenue growth accelerating with 19.2% EPS expansion and the strongest price momentum I see (95.5% YoY). The stock has demonstrated true leadership, not speculation. While valuation is high at 50.8x P/E, the growth justifies a premium multiple relative to peers. Low leverage (0.08 D/E), strong momentum, and earnings acceleration create asymmetric risk-reward. This is a conviction position\u2014growth is accelerating, not decelerating.",
+        "holding_period": "3-6 months"
+      },
+      "META": {
+        "signal": "bearish",
+        "confidence": 68,
+        "reasoning": "Meta's macro setup is deteriorating sharply: EPS turned negative (-4.5% YoY) while revenue growth slowed to just 3.8%. Despite 35% price momentum, fundamentals are weakening\u2014this is exactly when I cut positions. Valuation at 27.9x P/E is indefensible when earnings are contracting. The high volatility (2.24% daily) combined with negative earnings growth signals risk without return potential. The momentum is fading fast relative to the macro picture.",
+        "holding_period": "avoid"
+      },
+      "GOOGL": {
+        "signal": "neutral",
+        "confidence": 52,
+        "reasoning": "Alphabet offers strong revenue momentum (13.6% YoY) and exceptional 123% stock price appreciation, suggesting powerful market conviction. However, EPS declined sharply (-15.5%), indicating margin deterioration that contradicts the revenue strength. Valuation at 41.3x P/E appears stretched given the earnings weakness. The low debt (0.04 D/E) is positive, but earnings need to stabilize for true upside. The momentum is bullish but fundamentals lag\u2014cautious setup.",
+        "holding_period": "2-4 weeks"
+      },
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 54,
+        "reasoning": "Amazon shows the opposite problem: weak revenue growth (3.8% YoY) paired with very strong 24.3% EPS growth, driven by margin expansion and operational efficiency. The 45% stock momentum reflects confidence in this margin trajectory. However, valuation at 37.5x P/E is elevated, and modest revenue growth limits long-term runway. The 1.98% volatility is benign. Decent asymmetric profile if margins continue expanding, but watch for revenue reacceleration.",
+        "holding_period": "4-8 weeks"
+      },
+      "AMD": {
+        "signal": "bullish",
+        "confidence": 75,
+        "reasoning": "AMD is my second-strongest conviction: 7.4% revenue growth with explosive 38.7% EPS expansion and 218% stock momentum shows capital is flooding into this narrative. The EPS growth is real and structural (not one-time), driven by competitive gains in AI/datacenter. Valuation is punchy at 126x P/E, but growth justifies the multiple. Ultra-low debt (0.02 D/E) and execution track record create asymmetric upside. This momentum is earned, not speculative.",
+        "holding_period": "2-6 months"
+      },
+      "JPM": {
+        "signal": "bearish",
+        "confidence": 70,
+        "reasoning": "JPMorgan shows deteriorating fundamentals that concern me: negative revenue growth (-0.6% YoY), minimal EPS expansion (3.3%), and a heavily leveraged balance sheet (1.17 D/E). Despite 36% price momentum, the macro setup is weakening. Banking stocks are sensitive to interest rate expectations, and this momentum looks disconnected from fundamentals. Valuation at 46.8x P/E is elevated for a non-growth bank. The risk-reward has turned unfavorable\u2014I'm reducing exposure.",
+        "holding_period": "avoid"
+      },
+      "GS": {
+        "signal": "bearish",
+        "confidence": 65,
+        "reasoning": "Goldman Sachs presents insufficient financial data, but the available signal is poor: no clear growth profile, weak valuation metrics (17.7x P/E with negative FCF), and leverage concerns (0.58 D/E). The banking sector macro is uncertain given rate environment flux. Without clear growth or momentum to justify holding, and with execution questions hanging over the firm, the risk-reward is unfavorable. I avoid positions with unclear macro pictures.",
+        "holding_period": "avoid"
+      },
+      "NKE": {
+        "signal": "bearish",
+        "confidence": 72,
+        "reasoning": "Nike is in secular decline: flat revenue (-0.1% YoY), collapsing EPS (-8.8% YoY), and negative price momentum (-16% YoY). This is exactly the setup I cut without hesitation. The stock is down, earnings are deteriorating, and the macro is weakening. Fair valuation at 21.2x P/E cannot compensate for negative momentum across all dimensions. Capital preservation demands exiting before further deterioration. The setup has broken down completely.",
+        "holding_period": "avoid"
+      },
+      "XOM": {
+        "signal": "bearish",
+        "confidence": 68,
+        "reasoning": "ExxonMobil shows slowing fundamentals: minimal 2.6% revenue growth, sharply negative -10.3% EPS, and deteriorating 47% price momentum despite earlier gains. Energy is cyclical and this is the late-cycle unwind phase. Fair valuation at 18.1x P/E looks deceptive when earnings are collapsing. Debt levels (insufficient data) and sector headwinds make this a value trap. I'm avoiding legacy energy plays in a macro slowdown.",
+        "holding_period": "avoid"
+      },
+      "SPY": {
+        "signal": "bearish",
+        "confidence": 62,
+        "reasoning": "The broad market index shows insufficient growth data and negative price momentum (-16% YoY) mixed with fair valuation. This indicates macro deterioration across the index. With growth stocks leading and laggards dragging, the overall market is in a corrective phase. Individual stock selection is critical; broad index exposure offers neither growth nor safety. Tactical barbell: long the best growth (NVDA, AMD) and avoid the weakness.",
+        "holding_period": "avoid"
+      },
+      "QQQ": {
+        "signal": "bearish",
+        "confidence": 60,
+        "reasoning": "The Nasdaq-100 index shows similarly weak fundamentals with no positive net income for valuation and negative price momentum. This tech-heavy index is showing fatigue despite the rallies in mega-cap AI plays (NVDA, AMD). The divergence between these two winners and broader tech weakness is a warning sign. Macro momentum is rolling over. Selective tech positioning outperforms broad tech indexing at this juncture.",
+        "holding_period": "avoid"
+      }
+    },
+    "growth_analyst_agent": {
+      "AAPL": {
+        "signal": "bearish",
+        "confidence": 50,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.35,
+            "revenue_growth": 0.0642551178283274,
+            "revenue_trend": 0.004067190356891542,
+            "eps_growth": 0.22585924713584285,
+            "eps_trend": -0.0007777221267337676,
+            "fcf_growth": -0.09227347505215656,
+            "fcf_trend": 0.019995545667734933
+          },
+          "growth_valuation": {
+            "score": 0,
+            "peg_ratio": 2.37,
+            "price_to_sales_ratio": 8.682504906956154
+          },
+          "margin_expansion": {
+            "score": 0.2,
+            "gross_margin": 0.47238064841917493,
+            "gross_margin_trend": -0.004722737948011262,
+            "operating_margin": 0.33112836128896866,
+            "operating_margin_trend": -0.0028546472609568326,
+            "net_margin": 0.2768405796467818,
+            "net_margin_trend": -0.002407043661700279
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 0.30000000000000004,
+            "debt_to_equity": 1.3973119227482946,
+            "current_ratio": 0.8932929222186667
+          },
+          "final_analysis": {
+            "signal": "bearish",
+            "confidence": 50,
+            "weighted_score": 0.25
+          }
+        }
+      },
+      "MSFT": {
+        "signal": "bearish",
+        "confidence": 38,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.30000000000000004,
+            "revenue_growth": 0.1493215623240672,
+            "revenue_trend": -0.0018611370763950545,
+            "eps_growth": 0.1551433389544688,
+            "eps_trend": -0.008072228552189167,
+            "fcf_growth": -0.0332113782721983,
+            "fcf_trend": 0.0006889808021800332
+          },
+          "growth_valuation": {
+            "score": 0,
+            "peg_ratio": null,
+            "price_to_sales_ratio": 10.522009717951809
+          },
+          "margin_expansion": {
+            "score": 0.4,
+            "gross_margin": 0.6861179196635458,
+            "gross_margin_trend": -0.0006248675624037374,
+            "operating_margin": 0.46841389748329115,
+            "operating_margin_trend": -0.006469231650040063,
+            "net_margin": 0.38888107579593095,
+            "net_margin_trend": -0.004147100488614245
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 0.8,
+            "debt_to_equity": 0.12562922332951942,
+            "current_ratio": 1.3534464445042416
+          },
+          "final_analysis": {
+            "signal": "bearish",
+            "confidence": 38,
+            "weighted_score": 0.31
+          }
+        }
+      },
+      "TSLA": {
+        "signal": "bearish",
+        "confidence": 24,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.35,
+            "revenue_growth": 0.009475783534663594,
+            "revenue_trend": 0.12430980834119096,
+            "eps_growth": 2.279411764705882,
+            "eps_trend": -0.11804979552258442,
+            "fcf_growth": -0.17810420013770945,
+            "fcf_trend": 0.12026270797779869
+          },
+          "growth_valuation": {
+            "score": 0,
+            "peg_ratio": 5.6942,
+            "price_to_sales_ratio": 15.38846596310779
+          },
+          "margin_expansion": {
+            "score": 0.6000000000000001,
+            "gross_margin": 0.17862626676220697,
+            "gross_margin_trend": 0.011007705720489987,
+            "operating_margin": 0.07243320708363189,
+            "operating_margin_trend": 0.010961010835260824,
+            "net_margin": 0.07258675401781145,
+            "net_margin_trend": 0.009937881510389412
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": 0.07660967180063911,
+            "current_ratio": 2.024912390270983
+          },
+          "final_analysis": {
+            "signal": "bearish",
+            "confidence": 24,
+            "weighted_score": 0.38
+          }
+        }
+      },
+      "NVDA": {
+        "signal": "bullish",
+        "confidence": 27,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.75,
+            "revenue_growth": 0.6140329835082459,
+            "revenue_trend": 6.890111377067638e-17,
+            "eps_growth": 1.4545454545454548,
+            "eps_trend": -0.3092561572479034,
+            "fcf_growth": null,
+            "fcf_trend": 0.0
+          },
+          "growth_valuation": {
+            "score": 0.5,
+            "peg_ratio": 0.7054,
+            "price_to_sales_ratio": 26.801639367630255
+          },
+          "margin_expansion": {
+            "score": 0.4,
+            "gross_margin": 0.7027387598213163,
+            "gross_margin_trend": -0.016158974070427767,
+            "operating_margin": 0.5902740946892445,
+            "operating_margin_trend": -0.051517922206572024,
+            "net_margin": 0.5271716249391721,
+            "net_margin_trend": -0.042130695338496546
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": 0.10668498745698186,
+            "current_ratio": 4.439851498864077
+          },
+          "final_analysis": {
+            "signal": "bullish",
+            "confidence": 27,
+            "weighted_score": 0.64
+          }
+        }
+      },
+      "META": {
+        "signal": "neutral",
+        "confidence": 9,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.75,
+            "revenue_growth": 0.21941112807816043,
+            "revenue_trend": -0.01151347689069881,
+            "eps_growth": 0.6201448321263989,
+            "eps_trend": -0.1074573325992314,
+            "fcf_growth": 0.2270127984024689,
+            "fcf_trend": -0.06254936430756713
+          },
+          "growth_valuation": {
+            "score": 0.25,
+            "peg_ratio": 1.11,
+            "price_to_sales_ratio": 10.587931795672974
+          },
+          "margin_expansion": {
+            "score": 0.2,
+            "gross_margin": null,
+            "gross_margin_trend": 0.0,
+            "operating_margin": 0.42176035404040096,
+            "operating_margin_trend": -0.01579010816957903,
+            "net_margin": 0.3790858414234564,
+            "net_margin_trend": -0.0172202519283309
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": 0.157832202675252,
+            "current_ratio": 2.9778842719371355
+          },
+          "final_analysis": {
+            "signal": "neutral",
+            "confidence": 9,
+            "weighted_score": 0.54
+          }
+        }
+      },
+      "GOOGL": {
+        "signal": "neutral",
+        "confidence": 20,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.55,
+            "revenue_growth": 0.13866243322901553,
+            "revenue_trend": 0.013590277688911962,
+            "eps_growth": 0.39212328767123306,
+            "eps_trend": -0.0044390480663590096,
+            "fcf_growth": 0.04703935534930571,
+            "fcf_trend": -0.0008958125324739175
+          },
+          "growth_valuation": {
+            "score": 0,
+            "peg_ratio": 2.3,
+            "price_to_sales_ratio": 11.808830092166689
+          },
+          "margin_expansion": {
+            "score": 0.2,
+            "gross_margin": null,
+            "gross_margin_trend": 0.0,
+            "operating_margin": 0.32109777211457696,
+            "operating_margin_trend": -0.012762926496930291,
+            "net_margin": 0.28603671811164,
+            "net_margin_trend": -0.01332817461375512
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": 0.039986588081849614,
+            "current_ratio": 1.8369313974102914
+          },
+          "final_analysis": {
+            "signal": "neutral",
+            "confidence": 20,
+            "weighted_score": 0.4
+          }
+        }
+      },
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 1,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.55,
+            "revenue_growth": 0.10990892246666145,
+            "revenue_trend": 0.141967322453122,
+            "eps_growth": 0.9186440677966101,
+            "eps_trend": -0.4741285294625728,
+            "fcf_growth": null,
+            "fcf_trend": 0.0
+          },
+          "growth_valuation": {
+            "score": 0.5,
+            "peg_ratio": 1.81,
+            "price_to_sales_ratio": 4.067820405467871
+          },
+          "margin_expansion": {
+            "score": 0.2,
+            "gross_margin": 0.006600092087286671,
+            "gross_margin_trend": 0.0002822508211159733,
+            "operating_margin": 0.10931062853347222,
+            "operating_margin_trend": -0.010967534935042057,
+            "net_margin": 0.10840032306031717,
+            "net_margin_trend": -0.013203574213299778
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 0.8,
+            "debt_to_equity": 0.20334650487813408,
+            "current_ratio": 1.063734806137178
+          },
+          "final_analysis": {
+            "signal": "neutral",
+            "confidence": 1,
+            "weighted_score": 0.51
+          }
+        }
+      },
+      "AMD": {
+        "signal": "neutral",
+        "confidence": 19,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.65,
+            "revenue_growth": 0.13690476190476192,
+            "revenue_trend": 0.24471153822687766,
+            "eps_growth": 0.9056603773584905,
+            "eps_trend": -0.1280774367693117,
+            "fcf_growth": 1.1454058876003568,
+            "fcf_trend": 0.034394111852436224
+          },
+          "growth_valuation": {
+            "score": 0.5,
+            "peg_ratio": 0.8257,
+            "price_to_sales_ratio": 14.553357494420931
+          },
+          "margin_expansion": {
+            "score": 0.4,
+            "gross_margin": 0.4807618314736437,
+            "gross_margin_trend": -0.0028327239914209246,
+            "operating_margin": 0.08548159548544312,
+            "operating_margin_trend": 0.006532804961681149,
+            "net_margin": 0.11526869308708478,
+            "net_margin_trend": 0.0018657696247296595
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": 1.7370761534185658e-05,
+            "current_ratio": 2.6162615025408598
+          },
+          "final_analysis": {
+            "signal": "neutral",
+            "confidence": 19,
+            "weighted_score": 0.59
+          }
+        }
+      },
+      "JPM": {
+        "signal": "bearish",
+        "confidence": 62,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0,
+            "revenue_growth": null,
+            "revenue_trend": 0.0,
+            "eps_growth": null,
+            "eps_trend": 0.0,
+            "fcf_growth": null,
+            "fcf_trend": 0.0
+          },
+          "growth_valuation": {
+            "score": 0.25,
+            "peg_ratio": 1.67,
+            "price_to_sales_ratio": 8.594926557704357
+          },
+          "margin_expansion": {
+            "score": 0,
+            "gross_margin": null,
+            "gross_margin_trend": 0.0,
+            "operating_margin": null,
+            "operating_margin_trend": 0.0,
+            "net_margin": 0.18369673503343023,
+            "net_margin_trend": -0.0004001731231337682
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 0.8,
+            "debt_to_equity": 1.2685459659623635,
+            "current_ratio": null
+          },
+          "final_analysis": {
+            "signal": "bearish",
+            "confidence": 62,
+            "weighted_score": 0.19
+          }
+        }
+      },
+      "GS": {
+        "signal": "bearish",
+        "confidence": 38,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.25,
+            "revenue_growth": null,
+            "revenue_trend": 0.0,
+            "eps_growth": 0.26491356221085954,
+            "eps_trend": 0.0,
+            "fcf_growth": -2.0855387832451155,
+            "fcf_trend": 0.0
+          },
+          "growth_valuation": {
+            "score": 0.25,
+            "peg_ratio": 1.39,
+            "price_to_sales_ratio": null
+          },
+          "margin_expansion": {
+            "score": 0,
+            "gross_margin": null,
+            "gross_margin_trend": 0.0,
+            "operating_margin": null,
+            "operating_margin_trend": 0.0,
+            "net_margin": null,
+            "net_margin_trend": 0.0
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": 0.5577969465160196,
+            "current_ratio": null
+          },
+          "final_analysis": {
+            "signal": "bearish",
+            "confidence": 38,
+            "weighted_score": 0.31
+          }
+        }
+      },
+      "NKE": {
+        "signal": "neutral",
+        "confidence": 8,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.15000000000000002,
+            "revenue_growth": -0.09838012538452552,
+            "revenue_trend": 0.02390139442343084,
+            "eps_growth": -0.4228723404255319,
+            "eps_trend": 0.04065058543067919,
+            "fcf_growth": -0.506120598458516,
+            "fcf_trend": 0.05295752976436568
+          },
+          "growth_valuation": {
+            "score": 0.75,
+            "peg_ratio": 1.41,
+            "price_to_sales_ratio": 1.4719650735710121
+          },
+          "margin_expansion": {
+            "score": 0.4,
+            "gross_margin": 0.42734673605562634,
+            "gross_margin_trend": 0.002158426747311344,
+            "operating_margin": null,
+            "operating_margin_trend": 0.0,
+            "net_margin": 0.06951132609212032,
+            "net_margin_trend": 0.005194680588578156
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": 0.602891092106259,
+            "current_ratio": 2.2110543251940187
+          },
+          "final_analysis": {
+            "signal": "neutral",
+            "confidence": 8,
+            "weighted_score": 0.46
+          }
+        }
+      },
+      "XOM": {
+        "signal": "neutral",
+        "confidence": 6,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.45,
+            "revenue_growth": 0.5494528878784145,
+            "revenue_trend": 0.0,
+            "eps_growth": -0.11811023622047251,
+            "eps_trend": 0.26430710607423014,
+            "fcf_growth": -0.0817339312406577,
+            "fcf_trend": 0.8813433281903299
+          },
+          "growth_valuation": {
+            "score": 0.75,
+            "peg_ratio": 1.39,
+            "price_to_sales_ratio": 1.741169019036858
+          },
+          "margin_expansion": {
+            "score": 0.2,
+            "gross_margin": null,
+            "gross_margin_trend": 0.0,
+            "operating_margin": null,
+            "operating_margin_trend": 0.0,
+            "net_margin": 0.09634280647052934,
+            "net_margin_trend": 0.0074809625731631964
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 0.8,
+            "debt_to_equity": null,
+            "current_ratio": 1.3084045685351386
+          },
+          "final_analysis": {
+            "signal": "neutral",
+            "confidence": 6,
+            "weighted_score": 0.53
+          }
+        }
+      },
+      "SPY": {
+        "signal": "bearish",
+        "confidence": 70,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0,
+            "revenue_growth": null,
+            "revenue_trend": 0.0,
+            "eps_growth": null,
+            "eps_trend": 0.0,
+            "fcf_growth": null,
+            "fcf_trend": 0.0
+          },
+          "growth_valuation": {
+            "score": 0,
+            "peg_ratio": null,
+            "price_to_sales_ratio": null
+          },
+          "margin_expansion": {
+            "score": 0,
+            "gross_margin": null,
+            "gross_margin_trend": 0.0,
+            "operating_margin": null,
+            "operating_margin_trend": 0.0,
+            "net_margin": null,
+            "net_margin_trend": 0.0
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": null,
+            "current_ratio": null
+          },
+          "final_analysis": {
+            "signal": "bearish",
+            "confidence": 70,
+            "weighted_score": 0.15
+          }
+        }
+      },
+      "QQQ": {
+        "signal": "bearish",
+        "confidence": 70,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0,
+            "revenue_growth": null,
+            "revenue_trend": 0.0,
+            "eps_growth": null,
+            "eps_trend": 0.0,
+            "fcf_growth": null,
+            "fcf_trend": 0.0
+          },
+          "growth_valuation": {
+            "score": 0,
+            "peg_ratio": null,
+            "price_to_sales_ratio": null
+          },
+          "margin_expansion": {
+            "score": 0,
+            "gross_margin": null,
+            "gross_margin_trend": 0.0,
+            "operating_margin": null,
+            "operating_margin_trend": 0.0,
+            "net_margin": null,
+            "net_margin_trend": 0.0
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": null,
+            "current_ratio": null
+          },
+          "final_analysis": {
+            "signal": "bearish",
+            "confidence": 70,
+            "weighted_score": 0.15
+          }
+        }
+      }
+    },
+    "news_sentiment": {
+      "AAPL": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "No news headlines available for sentiment analysis. Unable to assess directional bias without company news data.",
+        "holding_period": "N/A"
+      },
+      "MSFT": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "No news headlines available for sentiment analysis. Unable to assess directional bias without company news data.",
+        "holding_period": "N/A"
+      },
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "No news headlines available for sentiment analysis. Unable to assess directional bias without company news data.",
+        "holding_period": "N/A"
+      },
+      "NVDA": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "No news headlines available for sentiment analysis. Unable to assess directional bias without company news data.",
+        "holding_period": "N/A"
+      },
+      "META": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "No news headlines available for sentiment analysis. Unable to assess directional bias without company news data.",
+        "holding_period": "N/A"
+      },
+      "GOOGL": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "No news headlines available for sentiment analysis. Unable to assess directional bias without company news data.",
+        "holding_period": "N/A"
+      },
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "No news headlines available for sentiment analysis. Unable to assess directional bias without company news data.",
+        "holding_period": "N/A"
+      },
+      "AMD": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "No news headlines available for sentiment analysis. Unable to assess directional bias without company news data.",
+        "holding_period": "N/A"
+      },
+      "JPM": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "No news headlines available for sentiment analysis. Unable to assess directional bias without company news data.",
+        "holding_period": "N/A"
+      },
+      "GS": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "No news headlines available for sentiment analysis. Unable to assess directional bias without company news data.",
+        "holding_period": "N/A"
+      },
+      "NKE": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "No news headlines available for sentiment analysis. Unable to assess directional bias without company news data.",
+        "holding_period": "N/A"
+      },
+      "XOM": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "No news headlines available for sentiment analysis. Unable to assess directional bias without company news data.",
+        "holding_period": "N/A"
+      },
+      "SPY": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "No news headlines available for sentiment analysis. Unable to assess directional bias without company news data.",
+        "holding_period": "N/A"
+      },
+      "QQQ": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "No news headlines available for sentiment analysis. Unable to assess directional bias without company news data.",
+        "holding_period": "N/A"
+      }
+    },
+    "swing_catalyst_trader": {
+      "AAPL": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "No identifiable upcoming catalysts in news data. Technical setup is mixed: hourly EMA aligned uptrend but daily EMA not aligned. Squeeze off with bullish breakout signal, but STC oversold on daily suggests limited catalyst context.",
+        "entry_price": 260.48,
+        "target_price": 267.12,
+        "stop_loss": 246.63,
+        "timeframe": "5-10 trading days"
+      },
+      "MSFT": {
+        "signal": "neutral",
+        "confidence": 30,
+        "reasoning": "No visible catalysts in recent news or insider trades. Despite very overbought RSI (82.5) and strong momentum, lack of catalyst event prevents aggressive positioning. Hourly trend is strong but absence of near-term event to drive move.",
+        "entry_price": 420.26,
+        "target_price": 435.87,
+        "stop_loss": 386.14,
+        "timeframe": "5-10 trading days"
+      },
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 40,
+        "reasoning": "Daily downtrend alignment but hourly uptrend + strong recent bounce (Apr 15 +11%). No identified catalyst in data. Mixed signals: bearish squeeze on daily, bullish on hourly. Needs catalyst event to confirm swing direction.",
+        "entry_price": 388.9,
+        "target_price": 408.13,
+        "stop_loss": 343.25,
+        "timeframe": "5-10 trading days"
+      },
+      "NVDA": {
+        "signal": "neutral",
+        "confidence": 25,
+        "reasoning": "Overbought on daily (RSI 83.6) with no upcoming catalysts visible. Bullish technicals (EMA aligned, squeeze off) but lack of near-term event or news prevents catalyst play. Volume declining suggests consolidation before catalyst.",
+        "entry_price": 198.87,
+        "target_price": 210.36,
+        "stop_loss": 165.17,
+        "timeframe": "5-10 trading days"
+      },
+      "META": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "Extremely overbought (RSI 84.9, Stochastic 98.97) with strong momentum but zero identified catalysts. Technical setup is bullish (EMA aligned, squeeze off, strong recent gains Apr 15-16) but without catalyst event, momentum alone insufficient.",
+        "entry_price": 676.87,
+        "target_price": 708.6,
+        "stop_loss": 611.61,
+        "timeframe": "5-10 trading days"
+      },
+      "GOOGL": {
+        "signal": "neutral",
+        "confidence": 30,
+        "reasoning": "Overbought technicals (RSI 85.4, Stochastic 94.3) with bullish setup (EMA aligned, breakout signal) but no catalysts identified. Strong 3-day rally (Apr 14-16, +4.8%) suggests catalyst may be priced in already or momentum-driven only.",
+        "entry_price": 337.12,
+        "target_price": 353.73,
+        "stop_loss": 273.5,
+        "timeframe": "5-10 trading days"
+      },
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "Highly overbought (RSI 84.4) with strong bullish setup (EMA aligned, 16.7% above 50-SMA). Squeeze off, momentum increasing, but no identified catalysts or news. Recent surge suggests institutional interest but catalyst event unclear.",
+        "entry_price": 249.7,
+        "target_price": 262.88,
+        "stop_loss": 199.34,
+        "timeframe": "5-10 trading days"
+      },
+      "AMD": {
+        "signal": "neutral",
+        "confidence": 40,
+        "reasoning": "Extremely extended (RSI 91.4, +32% in 21 days, +41.7% in 21-day ROC). Strong technical setup but critically overbought with no identified catalyst. Hourly STC crossed below 75 (momentum divergence) warns of exhaustion. High volatility suggests catalyst-responsive but event absent.",
+        "entry_price": 278.26,
+        "target_price": 293.2,
+        "stop_loss": 196.04,
+        "timeframe": "5-10 trading days"
+      },
+      "JPM": {
+        "signal": "neutral",
+        "confidence": 28,
+        "reasoning": "Mild overbought (RSI 67.9) with bullish setup but no identified catalysts or earnings dates visible. Technical setup is constructive (EMA aligned, squeeze off) but without catalyst timing or news, holding risky into potential pullback.",
+        "entry_price": 313.68,
+        "target_price": 328.36,
+        "stop_loss": 281.4,
+        "timeframe": "5-10 trading days"
+      },
+      "GS": {
+        "signal": "neutral",
+        "confidence": 32,
+        "reasoning": "Moderate overbought (RSI 71.6) with bullish daily setup but hourly STC overbought (99.2) signals momentum exhaustion. No catalysts identified in data. Recent gain +11.5% in 21 days but momentum divergence on hourly warns caution.",
+        "entry_price": 909.63,
+        "target_price": 954.47,
+        "stop_loss": 802.89,
+        "timeframe": "5-10 trading days"
+      },
+      "NKE": {
+        "signal": "bearish",
+        "confidence": 45,
+        "reasoning": "Downtrend alignment (daily EMA declining) with RSI 32.6 and SuperTrend bearish. No catalysts visible but hourly squeeze building (low volatility compression) could precede downside breakout. Recent selloff -17% in 21 days and bearish squeeze signal warrant caution.",
+        "entry_price": 45.49,
+        "target_price": 42.62,
+        "stop_loss": 46.33,
+        "timeframe": "5-10 trading days"
+      },
+      "XOM": {
+        "signal": "bearish",
+        "confidence": 50,
+        "reasoning": "Clear downtrend (daily EMA declining, SuperTrend bearish) with oversold RSI 32.4 and negative momentum (-5.5% ROC 10-day). Bearish squeeze signal and CCI -99.8 suggest extreme weakness. No catalysts but bearish structure intact until reversal catalyst emerges.",
+        "entry_price": 149.01,
+        "target_price": 142.23,
+        "stop_loss": 152.665,
+        "timeframe": "5-10 trading days"
+      },
+      "SPY": {
+        "signal": "neutral",
+        "confidence": 38,
+        "reasoning": "Overbought technicals (RSI 83.8, Stochastic 98.5) with bullish setup (EMA aligned, squeeze off, strong recent gain +4.2%). Broad market index lacks specific catalysts but hourly STC overbought warns momentum may be exhausted. No new catalyst timing visible.",
+        "entry_price": 701.66,
+        "target_price": 728.24,
+        "stop_loss": 631.97,
+        "timeframe": "5-10 trading days"
+      },
+      "QQQ": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "Overbought (RSI 84.1, Stochastic 98.0) with bullish setup (EMA aligned, squeeze off, +6.6% above 50-SMA). Tech index rally +6.3% in 21 days is strong but no identified catalyst events. Hourly STC overbought (80.4) signals momentum risk without new catalyst support.",
+        "entry_price": 640.47,
+        "target_price": 665.83,
+        "stop_loss": 558.28,
+        "timeframe": "5-10 trading days"
+      }
+    },
+    "swing_mean_reversion": {
+      "AAPL": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "Daily Z-score 0.33 is near mean (not extreme), RSI 62 is mid-range. Hourly shows overbought STC at 99 but daily STC is broken. Price within normal bands without strong reversion signal.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": null
+      },
+      "MSFT": {
+        "signal": "bearish",
+        "confidence": 72,
+        "reasoning": "Daily Z-score 1.79 with 7.2% extension above SMA, RSI 82 overbought, Stochastic >99. While MACD bullish, the extreme overbought conditions combined with 7% extension suggest short-term pullback. Entry on weakness toward 50-SMA.",
+        "entry_price": 420.0,
+        "target_price": 391.9,
+        "stop_loss": 430.0,
+        "timeframe": "3-7 trading days"
+      },
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 40,
+        "reasoning": "Daily Z-score near 0, RSI 56 mid-range, price near 50-SMA. Despite hourly overbought STC, daily indicators lack extremes for reliable mean-reversion entry. Squeeze off but no clear reversal setup.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": null
+      },
+      "NVDA": {
+        "signal": "bearish",
+        "confidence": 78,
+        "reasoning": "Daily Z-score 2.07 (overbought), RSI 84 extreme, Stochastic >94, distance 8.5% from 50-SMA. Hourly also overbought (RSI 63, Stochastic >99). Multiple extremes suggest pullback toward 182.74 support/SMA.",
+        "entry_price": 198.5,
+        "target_price": 182.74,
+        "stop_loss": 202.5,
+        "timeframe": "3-6 trading days"
+      },
+      "META": {
+        "signal": "bearish",
+        "confidence": 75,
+        "reasoning": "Daily Z-score 1.26, RSI 85 extreme, Stochastic 99, 7.6% extension from SMA, overbought across multiple oscillators. Hourly RSI 79 also elevated. Mean-reversion target is 629.16 (50-SMA), risk-reward favorable.",
+        "entry_price": 676.0,
+        "target_price": 629.2,
+        "stop_loss": 688.5,
+        "timeframe": "3-7 trading days"
+      },
+      "GOOGL": {
+        "signal": "bearish",
+        "confidence": 76,
+        "reasoning": "Daily Z-score 2.05 (extreme overbought), RSI 85, Stochastic 94, 9.2% extension above 50-SMA. Hourly also elevated (RSI 68, Stochastic 91). Clear overbought extremes across timeframes suggest pullback to 307.6.",
+        "entry_price": 336.0,
+        "target_price": 307.6,
+        "stop_loss": 342.0,
+        "timeframe": "3-6 trading days"
+      },
+      "AMZN": {
+        "signal": "bearish",
+        "confidence": 74,
+        "reasoning": "Daily Z-score 2.84 (extreme), RSI 84, Stochastic 95, 16.7% extension from SMA. Largest extension in basket signals strong reversion. Hourly RSI 56 neutral but daily extremes dominate. Target 213.89.",
+        "entry_price": 249.0,
+        "target_price": 213.9,
+        "stop_loss": 254.6,
+        "timeframe": "5-10 trading days"
+      },
+      "AMD": {
+        "signal": "bearish",
+        "confidence": 82,
+        "reasoning": "Daily Z-score 3.66 (extreme), RSI 91 (highest in basket), Stochastic 99, 32% extension from 50-SMA. Hourly STC crossed below 75, indicating momentum fade. Strongest mean-reversion candidate. Target 210.57.",
+        "entry_price": 275.0,
+        "target_price": 210.6,
+        "stop_loss": 290.0,
+        "timeframe": "7-15 trading days"
+      },
+      "JPM": {
+        "signal": "neutral",
+        "confidence": 45,
+        "reasoning": "Daily Z-score 1.06 (mid-range), RSI 68 moderately elevated, 3.9% extension from SMA. While Stochastic 87 is high, extension is not extreme enough for reliable mean-reversion. No clear setup.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": null
+      },
+      "GS": {
+        "signal": "neutral",
+        "confidence": 50,
+        "reasoning": "Daily Z-score 0.70 near mean, RSI 72 moderately high, 3.7% extension. While hourly overbought (RSI 76, STC 99), daily indicators lack extremes. Momentum improving but not enough for strong short entry.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": null
+      },
+      "NKE": {
+        "signal": "bullish",
+        "confidence": 68,
+        "reasoning": "Daily Z-score -1.30 (oversold), RSI 33 (low), 17.3% below 50-SMA, Stochastic <33. Hourly squeeze building (positive divergence). Price near lower Bollinger Band suggests bounce setup. Target 53.5.",
+        "entry_price": 45.8,
+        "target_price": 53.5,
+        "stop_loss": 42.6,
+        "timeframe": "5-10 trading days"
+      },
+      "XOM": {
+        "signal": "neutral",
+        "confidence": 42,
+        "reasoning": "Daily Z-score -0.39 near mean, RSI 32 (oversold), but hourly RSI 42 less extreme. Negative momentum (ROC -5.5%) and bearish SuperTrend suggest continuation down rather than bounce. No reversal candle present.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": null
+      },
+      "SPY": {
+        "signal": "bearish",
+        "confidence": 70,
+        "reasoning": "Daily Z-score 1.73, RSI 84 extreme, Stochastic >98, 4.2% above 50-SMA. Hourly overbought (RSI 75, STC 97). Multiple overbought extremes across timeframes suggest pullback toward 673.36 (50-SMA) over 5-10 days.",
+        "entry_price": 701.0,
+        "target_price": 673.4,
+        "stop_loss": 712.0,
+        "timeframe": "5-10 trading days"
+      },
+      "QQQ": {
+        "signal": "bearish",
+        "confidence": 73,
+        "reasoning": "Daily Z-score 2.54 (extreme overbought), RSI 84, Stochastic 98, 6.6% extension from 50-SMA. Hourly RSI 75, STC overbought. Bullish momentum but price stretched; mean-reversion target 600.75 (50-SMA).",
+        "entry_price": 640.0,
+        "target_price": 600.8,
+        "stop_loss": 652.0,
+        "timeframe": "5-10 trading days"
+      }
+    },
+    "swing_pullback_trader": {
+      "AAPL": {
+        "signal": "bullish",
+        "confidence": 72,
+        "reasoning": "Strong uptrend confirmed by daily SuperTrend (246.46 support) and hourly EMA alignment. RSI at 62 shows room for pullback before oversold. Price recently pulled back to 262.25 (50% fib) and is consolidating. Hourly RSI at 60 provides entry confirmation at the 38.2% level (266.36).",
+        "entry_price": 262.5,
+        "target_price": 270.23,
+        "stop_loss": 258.56,
+        "timeframe": "5-8 trading days"
+      },
+      "MSFT": {
+        "signal": "bearish",
+        "confidence": 35,
+        "reasoning": "Daily RSI at 82.4 indicates exhaustion after strong rally. Price is well above hourly support (407.91) and daily support (356.77). While daily trend is bullish, RSI overbought condition suggests risk of pullback below 406 fib level before reversal. Setup is less clean for pullback buyers at this time.",
+        "entry_price": 406.35,
+        "target_price": 420.26,
+        "stop_loss": 396.01,
+        "timeframe": "Not recommended"
+      },
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 28,
+        "reasoning": "Conflicting signals: daily trend shows downtrend alignment (EMA descending) but hourly shows uptrend (aligned EMA). Daily squeeze momentum is bearish while hourly STC is overbought (99.99). Price action unclear; lacks clean pullback-to-support setup for reliable entry. Risk/reward insufficient.",
+        "entry_price": 382.04,
+        "target_price": 391.95,
+        "stop_loss": 375.73,
+        "timeframe": "Avoid - conflicting signals"
+      },
+      "NVDA": {
+        "signal": "bullish",
+        "confidence": 78,
+        "reasoning": "Strong daily uptrend with EMA alignment and RSI at 83.6 showing overbought momentum. Price consolidated near recent highs. Hourly pullback visible with RSI at 63 confirming entry opportunity. 38.2% fibonacci (194.00) provides clean support confluence. SuperTrend direction bullish on both timeframes.",
+        "entry_price": 194.0,
+        "target_price": 201.65,
+        "stop_loss": 189.27,
+        "timeframe": "5-7 trading days"
+      },
+      "META": {
+        "signal": "bullish",
+        "confidence": 81,
+        "reasoning": "Dominant uptrend confirmed by daily SuperTrend (611.61 support) with RSI at 84.8. Price pulled back from 688.73 swing high to current 688.55. Daily squeeze off with bullish breakout signal. Hourly RSI at 79 and stochastic at 88+ confirm strong momentum. Entry at 659.68 (38.2% fib) with target at swing high.",
+        "entry_price": 659.68,
+        "target_price": 688.73,
+        "stop_loss": 641.74,
+        "timeframe": "4-6 trading days"
+      },
+      "GOOGL": {
+        "signal": "bullish",
+        "confidence": 80,
+        "reasoning": "Clean uptrend with daily EMA alignment and RSI at 85.3. Hourly pullback occurred with RSI at 68 and stochastic at 90+. Fibonacci 38.2% (330.19) provides support confluence at near resistance. SuperTrend bullish on both timeframes with strong ADX (43.3 daily, 72.5 hourly) confirming trend strength.",
+        "entry_price": 330.19,
+        "target_price": 339.88,
+        "stop_loss": 323.14,
+        "timeframe": "5-7 trading days"
+      },
+      "AMZN": {
+        "signal": "bullish",
+        "confidence": 75,
+        "reasoning": "Strong daily uptrend with EMA alignment and RSI at 84.4 near overbought. Price at 250.56 is extended from 50-day support. Hourly RSI at 55.8 suggests pullback opportunity to 241.76 (38.2% fib) aligns with support. Daily squeeze off with bullish breakout confirms momentum. SuperTrend bullish direction intact.",
+        "entry_price": 241.76,
+        "target_price": 254.43,
+        "stop_loss": 233.92,
+        "timeframe": "5-8 trading days"
+      },
+      "AMD": {
+        "signal": "bullish",
+        "confidence": 74,
+        "reasoning": "Explosive uptrend with highest RSI at 91.4 showing extreme momentum. Price extended 32% from 50-day MA. Hourly RSI at 80 with STC crossing below 75 suggests imminent pullback. Entry at 260.77 (38.2% fib) with support from hourly level. Squeeze off on both timeframes with bullish momentum.",
+        "entry_price": 260.77,
+        "target_price": 278.63,
+        "stop_loss": 249.74,
+        "timeframe": "5-8 trading days"
+      },
+      "JPM": {
+        "signal": "bullish",
+        "confidence": 68,
+        "reasoning": "Moderate uptrend with daily EMA alignment and RSI at 67.8. Hourly consolidation near 310 level with stochastic at 52 (neutral zone). Fibonacci 38.2% at 305.72 provides clean support. Hourly STC overbought at 95.2 but ADX strong at 38.6. Setup less aggressive but still tradeable for pullback buyers.",
+        "entry_price": 305.72,
+        "target_price": 313.41,
+        "stop_loss": 296.43,
+        "timeframe": "4-6 trading days"
+      },
+      "GS": {
+        "signal": "bullish",
+        "confidence": 70,
+        "reasoning": "Daily uptrend with RSI at 71.6 and strong ADX of 20.6 building. Hourly STC overbought at 99.2 indicates pullback opportunity. Fibonacci 38.2% at 906.81 aligns with hourly support (899.47). Squeeze off on both timeframes with bullish signals. Price extended from moving averages but momentum increasing.",
+        "entry_price": 906.81,
+        "target_price": 925.91,
+        "stop_loss": 895.01,
+        "timeframe": "5-7 trading days"
+      },
+      "NKE": {
+        "signal": "bearish",
+        "confidence": 45,
+        "reasoning": "Daily downtrend confirmed by EMA descending alignment and RSI at 32.6 (oversold). Price at 46.03 is near support (42.62). Hourly shows early oversold bounce with RSI at 59.9 and squeeze building (volatility compression). Better setup for short pullback to resistance at 46.33, not for pullback buyers in downtrend.",
+        "entry_price": 46.33,
+        "target_price": 45.46,
+        "stop_loss": 47.24,
+        "timeframe": "Not ideal - downtrend setup"
+      },
+      "XOM": {
+        "signal": "bearish",
+        "confidence": 38,
+        "reasoning": "Daily downtrend with RSI at 32.3 deeply oversold. Price touched support at 149.01 but SuperTrend bearish and MACD histogram negative. Hourly shows continuation of downtrend with RSI at 42 and STC oversold. No clean pullback setup for buyers; more suited for short sellers on any bounce.",
+        "entry_price": 152.79,
+        "target_price": 146.89,
+        "stop_loss": 155.18,
+        "timeframe": "Downtrend - avoid pullback long"
+      },
+      "SPY": {
+        "signal": "bullish",
+        "confidence": 76,
+        "reasoning": "Strong daily uptrend with EMA alignment and RSI at 83.8 (overbought). Hourly pullback visible with RSI at 74.8 and stochastic at 83. Fibonacci 50% at 666.82 provides clean entry level above hourly support. Squeeze off on both timeframes with bullish momentum. SuperTrend bullish on both, ADX strong at 36.2.",
+        "entry_price": 675.04,
+        "target_price": 701.66,
+        "stop_loss": 658.59,
+        "timeframe": "5-8 trading days"
+      },
+      "QQQ": {
+        "signal": "bullish",
+        "confidence": 77,
+        "reasoning": "Dominant uptrend with daily EMA alignment and RSI at 84.1. Hourly pullback setup with RSI at 74.6 and stochastic at 91.7. Fibonacci 38.2% at 631.85 aligns with hourly support (633.02). Squeeze off on both timeframes with bullish breakout signal. Strong ADX (36.8 daily, 63.8 hourly) confirms trend integrity.",
+        "entry_price": 631.85,
+        "target_price": 649.35,
+        "stop_loss": 621.04,
+        "timeframe": "5-8 trading days"
+      }
+    },
+    "fundamentals_analyst_agent": {
+      "AAPL": {
+        "signal": "bullish",
+        "confidence": 50.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bullish",
+            "details": "ROE: 171.76%, Net Margin: 27.68%, Op Margin: 33.11%"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 6.43%, Earnings Growth: 19.50%"
+          },
+          "financial_health_signal": {
+            "signal": "neutral",
+            "details": "Current Ratio: 0.89, D/E: 1.40"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 34.21, P/B: 53.87, P/S: 8.68"
+          }
+        }
+      },
+      "MSFT": {
+        "signal": "bullish",
+        "confidence": 50.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bullish",
+            "details": "ROE: 33.81%, Net Margin: 38.89%, Op Margin: 46.84%"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 14.93%, Earnings Growth: 15.54%"
+          },
+          "financial_health_signal": {
+            "signal": "neutral",
+            "details": "Current Ratio: 1.35, D/E: 0.13"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 26.47, P/B: 9.15, P/S: 10.52"
+          }
+        }
+      },
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 50.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: 9.73%, Net Margin: 7.26%, Op Margin: 7.24%"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 0.95%, Earnings Growth: 227.23%"
+          },
+          "financial_health_signal": {
+            "signal": "bullish",
+            "details": "Current Ratio: 2.02, D/E: 0.08"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 367.54, P/B: 20.62, P/S: 15.39"
+          }
+        }
+      },
+      "NVDA": {
+        "signal": "bullish",
+        "confidence": 75.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bullish",
+            "details": "ROE: 121.54%, Net Margin: 52.72%, Op Margin: 59.03%"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 61.40%, Earnings Growth: 144.89%"
+          },
+          "financial_health_signal": {
+            "signal": "bullish",
+            "details": "Current Ratio: 4.44, D/E: 0.11"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 41.16, P/B: 61.79, P/S: 26.80"
+          }
+        }
+      },
+      "META": {
+        "signal": "bullish",
+        "confidence": 75.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bullish",
+            "details": "ROE: 34.14%, Net Margin: 37.91%, Op Margin: 42.18%"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 21.94%, Earnings Growth: 59.50%"
+          },
+          "financial_health_signal": {
+            "signal": "bullish",
+            "details": "Current Ratio: 2.98, D/E: 0.16"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 29.31, P/B: N/A, P/S: 10.59"
+          }
+        }
+      },
+      "GOOGL": {
+        "signal": "bullish",
+        "confidence": 75.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bullish",
+            "details": "ROE: 30.80%, Net Margin: 28.60%, Op Margin: 32.11%"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 13.87%, Earnings Growth: 35.67%"
+          },
+          "financial_health_signal": {
+            "signal": "bullish",
+            "details": "Current Ratio: 1.84, D/E: 0.04"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 31.58, P/B: 12.71, P/S: 11.81"
+          }
+        }
+      },
+      "AMZN": {
+        "signal": "bullish",
+        "confidence": 50.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "neutral",
+            "details": "ROE: 25.11%, Net Margin: 10.84%, Op Margin: 10.93%"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 10.99%, Earnings Growth: 94.73%"
+          },
+          "financial_health_signal": {
+            "signal": "bullish",
+            "details": "Current Ratio: 1.06, D/E: 0.20"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 34.95, P/B: 9.42, P/S: 4.07"
+          }
+        }
+      },
+      "AMD": {
+        "signal": "neutral",
+        "confidence": 50.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: 6.24%, Net Margin: 11.53%, Op Margin: 8.55%"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 13.69%, Earnings Growth: 92.15%"
+          },
+          "financial_health_signal": {
+            "signal": "bullish",
+            "details": "Current Ratio: 2.62, D/E: 0.00"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 106.26, P/B: 7.88, P/S: 14.55"
+          }
+        }
+      },
+      "JPM": {
+        "signal": "bearish",
+        "confidence": 100.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: 8.47%, Net Margin: 18.37%, Op Margin: N/A"
+          },
+          "growth_signal": {
+            "signal": "bearish",
+            "details": "Revenue Growth: N/A, Earnings Growth: N/A"
+          },
+          "financial_health_signal": {
+            "signal": "bearish",
+            "details": "Current Ratio: N/A, D/E: 1.27"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 14.85, P/B: 3.96, P/S: 8.59"
+          }
+        }
+      },
+      "GS": {
+        "signal": "bearish",
+        "confidence": 50.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: 12.44%, Net Margin: N/A, Op Margin: N/A"
+          },
+          "growth_signal": {
+            "signal": "neutral",
+            "details": "Revenue Growth: N/A, Earnings Growth: 20.31%"
+          },
+          "financial_health_signal": {
+            "signal": "bearish",
+            "details": "Current Ratio: N/A, D/E: 0.56"
+          },
+          "price_ratios_signal": {
+            "signal": "bullish",
+            "details": "P/E: 16.92, P/B: 2.20, P/S: N/A"
+          }
+        }
+      },
+      "NKE": {
+        "signal": "bearish",
+        "confidence": 25.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "neutral",
+            "details": "ROE: 24.36%, Net Margin: 6.95%, Op Margin: N/A"
+          },
+          "growth_signal": {
+            "signal": "bearish",
+            "details": "Revenue Growth: -9.84%, Earnings Growth: -43.53%"
+          },
+          "financial_health_signal": {
+            "signal": "neutral",
+            "details": "Current Ratio: 2.21, D/E: 0.60"
+          },
+          "price_ratios_signal": {
+            "signal": "neutral",
+            "details": "P/E: 30.28, P/B: N/A, P/S: 1.47"
+          }
+        }
+      },
+      "XOM": {
+        "signal": "bullish",
+        "confidence": 50.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: 12.77%, Net Margin: 9.63%, Op Margin: N/A"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 54.95%, Earnings Growth: -6.47%"
+          },
+          "financial_health_signal": {
+            "signal": "neutral",
+            "details": "Current Ratio: 1.31, D/E: N/A"
+          },
+          "price_ratios_signal": {
+            "signal": "bullish",
+            "details": "P/E: 21.86, P/B: 2.31, P/S: 1.74"
+          }
+        }
+      },
+      "SPY": {
+        "signal": "bearish",
+        "confidence": 75.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: N/A, Net Margin: N/A, Op Margin: N/A"
+          },
+          "growth_signal": {
+            "signal": "bearish",
+            "details": "Revenue Growth: N/A, Earnings Growth: N/A"
+          },
+          "financial_health_signal": {
+            "signal": "bearish",
+            "details": "Current Ratio: N/A, D/E: N/A"
+          },
+          "price_ratios_signal": {
+            "signal": "bullish",
+            "details": "P/E: N/A, P/B: N/A, P/S: N/A"
+          }
+        }
+      },
+      "QQQ": {
+        "signal": "bearish",
+        "confidence": 75.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: N/A, Net Margin: N/A, Op Margin: N/A"
+          },
+          "growth_signal": {
+            "signal": "bearish",
+            "details": "Revenue Growth: N/A, Earnings Growth: N/A"
+          },
+          "financial_health_signal": {
+            "signal": "bearish",
+            "details": "Current Ratio: N/A, D/E: N/A"
+          },
+          "price_ratios_signal": {
+            "signal": "bullish",
+            "details": "P/E: N/A, P/B: N/A, P/S: N/A"
+          }
+        }
+      }
+    },
+    "technical_analyst_agent": {
+      "AAPL": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "trend_following": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "adx": 14.531522927086375,
+              "trend_strength": 0.14531522927086374
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 0.32535988282347744,
+              "price_vs_bb": 0.8737977900671259,
+              "rsi_14": 62.18409978189074,
+              "rsi_28": 54.09881875885236
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.03733788486587275,
+              "momentum_3m": 0.022284427543466823,
+              "momentum_6m": 0.0745741534729325,
+              "volume_momentum": 1.0188147870095738
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.21791990823621812,
+              "volatility_regime": 0.9161049553371136,
+              "volatility_z_score": -0.33152534008279966,
+              "atr_ratio": 0.02360071612863641
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -0.18515461065292554,
+              "kurtosis": 1.162118186311288
+            }
+          }
+        }
+      },
+      "MSFT": {
+        "signal": "bearish",
+        "confidence": 42,
+        "reasoning": {
+          "trend_following": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "adx": 38.545719770916904,
+              "trend_strength": 0.38545719770916903
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 1.7869839070488076,
+              "price_vs_bb": 1.171053228364316,
+              "rsi_14": 82.48952522256278,
+              "rsi_28": 54.07942629635171
+            }
+          },
+          "momentum": {
+            "signal": "bearish",
+            "confidence": 26,
+            "metrics": {
+              "momentum_1m": 0.054830868348984096,
+              "momentum_3m": -0.07139422733994227,
+              "momentum_6m": -0.17631409512347507,
+              "volume_momentum": 1.2266141584948769
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.31436674812026283,
+              "volatility_regime": 1.0283562407486107,
+              "volatility_z_score": 0.07800740859369727,
+              "atr_ratio": 0.023733614211812
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "bearish",
+            "confidence": 100,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -1.3311258460319948,
+              "kurtosis": 5.778763694495391
+            }
+          }
+        }
+      },
+      "TSLA": {
+        "signal": "bearish",
+        "confidence": 42,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bearish",
+            "confidence": 29,
+            "metrics": {
+              "adx": 28.62713527923953,
+              "trend_strength": 0.2862713527923953
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": -0.06675226716980276,
+              "price_vs_bb": 0.8505551088982363,
+              "rsi_14": 56.3325049982102,
+              "rsi_28": 48.30877892010853
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": -0.01648294122866345,
+              "momentum_3m": -0.10205687529374385,
+              "momentum_6m": -0.05647390934974528,
+              "volume_momentum": 0.9362779029244305
+            }
+          },
+          "volatility": {
+            "signal": "bearish",
+            "confidence": 100,
+            "metrics": {
+              "historical_volatility": 0.49999012325064607,
+              "volatility_regime": 1.3792796089971475,
+              "volatility_z_score": 3.073605962113525,
+              "atr_ratio": 0.041802883436425305
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.45762479032039294,
+              "kurtosis": 0.2860159410004795
+            }
+          }
+        }
+      },
+      "NVDA": {
+        "signal": "neutral",
+        "confidence": 3,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 35,
+            "metrics": {
+              "adx": 35.01588454045697,
+              "trend_strength": 0.3501588454045697
+            }
+          },
+          "mean_reversion": {
+            "signal": "bearish",
+            "confidence": 52,
+            "metrics": {
+              "z_score": 2.069990673491236,
+              "price_vs_bb": 0.9691039367905234,
+              "rsi_14": 83.64359037965191,
+              "rsi_28": 62.51201626124779
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.09161120905194609,
+              "momentum_3m": 0.09713628598844115,
+              "momentum_6m": 0.12832612071978744,
+              "volume_momentum": 0.8165457977022339
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.35661776489624797,
+              "volatility_regime": 0.9951724937806928,
+              "volatility_z_score": -0.02857382952228437,
+              "atr_ratio": 0.025596882993637497
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.18609699679056646,
+              "kurtosis": 1.2367673928497804
+            }
+          }
+        }
+      },
+      "META": {
+        "signal": "neutral",
+        "confidence": 12,
+        "reasoning": {
+          "trend_following": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "adx": 39.36946364104721,
+              "trend_strength": 0.3936946364104721
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 1.2603650329790101,
+              "price_vs_bb": 0.9588194406034,
+              "rsi_14": 84.88053547918322,
+              "rsi_28": 54.580838940350944
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.09428113594667908,
+              "momentum_3m": 0.11933217949844477,
+              "momentum_6m": -0.007008891727431021,
+              "volume_momentum": 0.5314196223075514
+            }
+          },
+          "volatility": {
+            "signal": "bearish",
+            "confidence": 37,
+            "metrics": {
+              "historical_volatility": 0.5169359962514026,
+              "volatility_regime": 1.3355460561854358,
+              "volatility_z_score": 1.1162759849524233,
+              "atr_ratio": 0.03187253823854647
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.7701251326346739,
+              "kurtosis": 3.3022435257464973
+            }
+          }
+        }
+      },
+      "GOOGL": {
+        "signal": "neutral",
+        "confidence": 20,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 43,
+            "metrics": {
+              "adx": 43.30589503110983,
+              "trend_strength": 0.43305895031109826
+            }
+          },
+          "mean_reversion": {
+            "signal": "bearish",
+            "confidence": 51,
+            "metrics": {
+              "z_score": 2.0521750956404987,
+              "price_vs_bb": 0.9144037875721689,
+              "rsi_14": 85.37489018305045,
+              "rsi_28": 63.82026246935214
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.08323011728056418,
+              "momentum_3m": 0.011098332123098742,
+              "momentum_6m": 0.3360910624323372,
+              "volume_momentum": 0.7105697897618808
+            }
+          },
+          "volatility": {
+            "signal": "bearish",
+            "confidence": 72,
+            "metrics": {
+              "historical_volatility": 0.3717615044335393,
+              "volatility_regime": 1.5227129024850832,
+              "volatility_z_score": 2.165280321592985,
+              "atr_ratio": 0.025967843677711974
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.5636761951515264,
+              "kurtosis": 0.6143817399556744
+            }
+          }
+        }
+      },
+      "AMZN": {
+        "signal": "bearish",
+        "confidence": 22,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 44,
+            "metrics": {
+              "adx": 43.96832906887418,
+              "trend_strength": 0.43968329068874185
+            }
+          },
+          "mean_reversion": {
+            "signal": "bearish",
+            "confidence": 71,
+            "metrics": {
+              "z_score": 2.8355942681071555,
+              "price_vs_bb": 0.9468564607714244,
+              "rsi_14": 84.44444056603115,
+              "rsi_28": 67.77398029988976
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.15465696980940147,
+              "momentum_3m": 0.0673752745498013,
+              "momentum_6m": 0.16993812762750593,
+              "volume_momentum": 0.9104844680182144
+            }
+          },
+          "volatility": {
+            "signal": "bearish",
+            "confidence": 58,
+            "metrics": {
+              "historical_volatility": 0.3715935172258634,
+              "volatility_regime": 1.2173640538759105,
+              "volatility_z_score": 1.747233541596985,
+              "atr_ratio": 0.028714463461415353
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -0.0990265489009718,
+              "kurtosis": 0.43180410008149867
+            }
+          }
+        }
+      },
+      "AMD": {
+        "signal": "neutral",
+        "confidence": 5,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 50,
+            "metrics": {
+              "adx": 49.91755499284851,
+              "trend_strength": 0.49917554992848506
+            }
+          },
+          "mean_reversion": {
+            "signal": "bearish",
+            "confidence": 91,
+            "metrics": {
+              "z_score": 3.6571965531266484,
+              "price_vs_bb": 1.0933995815499842,
+              "rsi_14": 91.40632726402956,
+              "rsi_28": 75.91641625453482
+            }
+          },
+          "momentum": {
+            "signal": "bullish",
+            "confidence": 100,
+            "metrics": {
+              "momentum_1m": 0.36297745157542083,
+              "momentum_3m": 0.2729252272259072,
+              "momentum_6m": 0.33553206998906404,
+              "volume_momentum": 1.8372930060689212
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.5314192858694583,
+              "volatility_regime": 0.8628102890033218,
+              "volatility_z_score": -0.536650092968617,
+              "atr_ratio": 0.037708828140834025
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "bearish",
+            "confidence": 100,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -1.0054749453354437,
+              "kurtosis": 4.711683761348977
+            }
+          }
+        }
+      },
+      "JPM": {
+        "signal": "neutral",
+        "confidence": 17,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 32,
+            "metrics": {
+              "adx": 31.793609196763363,
+              "trend_strength": 0.3179360919676336
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 1.0588743969964676,
+              "price_vs_bb": 0.8069431525507111,
+              "rsi_14": 67.88067866053782,
+              "rsi_28": 63.42268737112757
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.08484693561183376,
+              "momentum_3m": 0.01937633293015084,
+              "momentum_6m": 0.05013010276182783,
+              "volume_momentum": 0.8041336374208663
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.23971166297597235,
+              "volatility_regime": 0.9612077009808249,
+              "volatility_z_score": -0.2648670743887899,
+              "atr_ratio": 0.022803731508547632
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -0.12347482397817285,
+              "kurtosis": 0.8336379833421217
+            }
+          }
+        }
+      },
+      "GS": {
+        "signal": "neutral",
+        "confidence": 12,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 21,
+            "metrics": {
+              "adx": 20.664869728702147,
+              "trend_strength": 0.20664869728702148
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 0.703302597776148,
+              "price_vs_bb": 0.7715736587065966,
+              "rsi_14": 71.6065179621038,
+              "rsi_28": 62.09072066970377
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.11274306863792094,
+              "momentum_3m": -0.015113668635491573,
+              "momentum_6m": 0.18894939177884373,
+              "volume_momentum": 0.8180775319993917
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.29640613900940216,
+              "volatility_regime": 0.8693641856288468,
+              "volatility_z_score": -1.058482257905937,
+              "atr_ratio": 0.029033338758680555
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -0.49481381157101345,
+              "kurtosis": 1.6435667068676427
+            }
+          }
+        }
+      },
+      "NKE": {
+        "signal": "bearish",
+        "confidence": 62,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bearish",
+            "confidence": 48,
+            "metrics": {
+              "adx": 48.132363282799766,
+              "trend_strength": 0.48132363282799767
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": -1.299582961453902,
+              "price_vs_bb": 0.3821127079481688,
+              "rsi_14": 32.605138028070414,
+              "rsi_28": 29.636305692236263
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": -0.1702876542318753,
+              "momentum_3m": -0.32979800605531573,
+              "momentum_6m": -0.337250117260696,
+              "volume_momentum": 0.7749405009953516
+            }
+          },
+          "volatility": {
+            "signal": "bearish",
+            "confidence": 69,
+            "metrics": {
+              "historical_volatility": 0.6152949089146127,
+              "volatility_regime": 1.700718496091138,
+              "volatility_z_score": 2.0701837554791864,
+              "atr_ratio": 0.0404501357007876
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "bearish",
+            "confidence": 100,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -2.5588953687561093,
+              "kurtosis": 14.98454953995025
+            }
+          }
+        }
+      },
+      "XOM": {
+        "signal": "neutral",
+        "confidence": 16,
+        "reasoning": {
+          "trend_following": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "adx": 27.346805383653084,
+              "trend_strength": 0.27346805383653083
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": -0.39192088973964745,
+              "price_vs_bb": 0.20724980340346957,
+              "rsi_14": 32.38146864035377,
+              "rsi_28": 50.59021042752653
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": -0.039400214409545775,
+              "momentum_3m": 0.17171106559626736,
+              "momentum_6m": 0.33430751439220663,
+              "volume_momentum": 0.6016192239945385
+            }
+          },
+          "volatility": {
+            "signal": "bearish",
+            "confidence": 55,
+            "metrics": {
+              "historical_volatility": 0.3350309426637601,
+              "volatility_regime": 1.2156482253598366,
+              "volatility_z_score": 1.6485664564939322,
+              "atr_ratio": 0.03938488401083936
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -0.5900700364632817,
+              "kurtosis": 0.8144667237264877
+            }
+          }
+        }
+      },
+      "SPY": {
+        "signal": "neutral",
+        "confidence": 1,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 36,
+            "metrics": {
+              "adx": 36.22646386184938,
+              "trend_strength": 0.36226463861849384
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 1.727790859014827,
+              "price_vs_bb": 0.960543955075171,
+              "rsi_14": 83.78925617424375,
+              "rsi_28": 59.797569900814715
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.04926026231620417,
+              "momentum_3m": 0.021859142065276616,
+              "momentum_6m": 0.06795598370544831,
+              "volume_momentum": 0.5750312099327779
+            }
+          },
+          "volatility": {
+            "signal": "bearish",
+            "confidence": 64,
+            "metrics": {
+              "historical_volatility": 0.19390146575208939,
+              "volatility_regime": 1.440332834908726,
+              "volatility_z_score": 1.9304152736997036,
+              "atr_ratio": 0.013643158943562207
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.25278592201862254,
+              "kurtosis": 0.8730167642234388
+            }
+          }
+        }
+      },
+      "QQQ": {
+        "signal": "bearish",
+        "confidence": 25,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 37,
+            "metrics": {
+              "adx": 36.75003127998534,
+              "trend_strength": 0.36750031279985346
+            }
+          },
+          "mean_reversion": {
+            "signal": "bearish",
+            "confidence": 63,
+            "metrics": {
+              "z_score": 2.5394323785552126,
+              "price_vs_bb": 0.994248931855326,
+              "rsi_14": 84.12490668232634,
+              "rsi_28": 61.578384729701774
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.06336644954121484,
+              "momentum_3m": 0.03919665865631483,
+              "momentum_6m": 0.07911356468221198,
+              "volume_momentum": 0.6898815546240862
+            }
+          },
+          "volatility": {
+            "signal": "bearish",
+            "confidence": 62,
+            "metrics": {
+              "historical_volatility": 0.23838455863215274,
+              "volatility_regime": 1.3537296608790836,
+              "volatility_z_score": 1.867752014078215,
+              "atr_ratio": 0.018455175209810954
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.10673047401682789,
+              "kurtosis": -0.028424455679150116
+            }
+          }
+        }
+      }
+    },
+    "valuation_analyst_agent": {
+      "AAPL": {
+        "signal": "bearish",
+        "confidence": 100,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $2,196,668,008,443.27, Market Cap: $3,971,820,552,192.00, Gap: -44.7%, Weight: 35%\n  WACC: 10.6%, Bear: $1,429,737,445,007.09, Bull: $2,929,578,269,511.05, Range: $1,499,840,824,503.96"
+          },
+          "owner_earnings_analysis": {
+            "signal": "bearish",
+            "details": "Value: $1,355,365,720,604.60, Market Cap: $3,971,820,552,192.00, Gap: -65.9%, Weight: 35%"
+          },
+          "ev_ebitda_analysis": {
+            "signal": "neutral",
+            "details": "Value: $3,930,041,526,868.60, Market Cap: $3,971,820,552,192.00, Gap: -1.1%, Weight: 20%"
+          },
+          "residual_income_analysis": {
+            "signal": "bullish",
+            "details": "Value: $4,843,887,616,898.06, Market Cap: $3,971,820,552,192.00, Gap: 22.0%, Weight: 10%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$1,429,737,445,007.09",
+            "base_case": "$2,208,008,109,232.73",
+            "bull_case": "$2,929,578,269,511.05",
+            "wacc_used": "10.6%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      },
+      "MSFT": {
+        "signal": "bearish",
+        "confidence": 100,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $958,765,050,083.14, Market Cap: $3,142,335,070,208.00, Gap: -69.5%, Weight: 35%\n  WACC: 10.5%, Bear: $690,313,775,719.67, Bull: $1,151,669,288,861.12, Range: $461,355,513,141.46"
+          },
+          "residual_income_analysis": {
+            "signal": "neutral",
+            "details": "Value: $3,346,275,350,589.80, Market Cap: $3,142,335,070,208.00, Gap: 6.5%, Weight: 10%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$690,313,775,719.67",
+            "base_case": "$983,947,395,278.31",
+            "bull_case": "$1,151,669,288,861.12",
+            "wacc_used": "10.5%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      },
+      "TSLA": {
+        "signal": "bearish",
+        "confidence": 100,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $30,972,872,265.40, Market Cap: $1,503,299,239,936.00, Gap: -97.9%, Weight: 35%\n  WACC: 10.5%, Bear: $24,911,951,622.43, Bull: $36,350,755,124.91, Range: $11,438,803,502.49"
+          },
+          "ev_ebitda_analysis": {
+            "signal": "bearish",
+            "details": "Value: $596,798,889,675.42, Market Cap: $1,503,299,239,936.00, Gap: -60.3%, Weight: 20%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$24,911,951,622.43",
+            "base_case": "$31,200,551,526.56",
+            "bull_case": "$36,350,755,124.91",
+            "wacc_used": "10.5%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      },
+      "NVDA": {
+        "signal": "bullish",
+        "confidence": 100,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $585,110,967,175.85, Market Cap: $4,901,832,228,864.00, Gap: -88.1%, Weight: 35%\n  WACC: 10.5%, Bear: $456,679,804,336.66, Bull: $693,045,829,350.56, Range: $236,366,025,013.91"
+          },
+          "owner_earnings_analysis": {
+            "signal": "bullish",
+            "details": "Value: $29,189,078,686,923.05, Market Cap: $4,901,832,228,864.00, Gap: 495.5%, Weight: 35%"
+          },
+          "ev_ebitda_analysis": {
+            "signal": "neutral",
+            "details": "Value: $4,973,297,996,766.02, Market Cap: $4,901,832,228,864.00, Gap: 1.5%, Weight: 20%"
+          },
+          "residual_income_analysis": {
+            "signal": "bullish",
+            "details": "Value: $27,046,540,917,856.73, Market Cap: $4,901,832,228,864.00, Gap: 451.8%, Weight: 10%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$456,679,804,336.66",
+            "base_case": "$591,943,067,397.34",
+            "bull_case": "$693,045,829,350.56",
+            "wacc_used": "10.5%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      },
+      "META": {
+        "signal": "neutral",
+        "confidence": 32,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $797,286,348,422.97, Market Cap: $1,741,725,368,320.00, Gap: -54.2%, Weight: 35%\n  WACC: 10.5%, Bear: $622,160,014,138.38, Bull: $944,493,908,148.97, Range: $322,333,894,010.60"
+          },
+          "owner_earnings_analysis": {
+            "signal": "neutral",
+            "details": "Value: $1,798,850,095,280.66, Market Cap: $1,741,725,368,320.00, Gap: 3.3%, Weight: 35%"
+          },
+          "ev_ebitda_analysis": {
+            "signal": "bullish",
+            "details": "Value: $2,532,653,239,884.43, Market Cap: $1,741,725,368,320.00, Gap: 45.4%, Weight: 20%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$622,160,014,138.38",
+            "base_case": "$806,592,606,609.17",
+            "bull_case": "$944,493,908,148.97",
+            "wacc_used": "10.5%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      },
+      "GOOGL": {
+        "signal": "bearish",
+        "confidence": 100,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $1,050,978,059,003.45, Market Cap: $4,133,303,091,200.00, Gap: -74.6%, Weight: 35%\n  WACC: 10.5%, Bear: $743,341,905,966.47, Bull: $1,266,451,219,684.15, Range: $523,109,313,717.68"
+          },
+          "residual_income_analysis": {
+            "signal": "bearish",
+            "details": "Value: $1,660,814,829,961.84, Market Cap: $4,133,303,091,200.00, Gap: -59.8%, Weight: 10%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$743,341,905,966.47",
+            "base_case": "$1,081,699,056,455.53",
+            "bull_case": "$1,266,451,219,684.15",
+            "wacc_used": "10.5%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      },
+      "AMZN": {
+        "signal": "bullish",
+        "confidence": 100,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $1,510,758,044,871.35, Market Cap: $2,694,585,253,888.00, Gap: -43.9%, Weight: 35%\n  WACC: 10.5%, Bear: $1,019,310,881,941.10, Bull: $1,834,314,656,424.30, Range: $815,003,774,483.19"
+          },
+          "owner_earnings_analysis": {
+            "signal": "bullish",
+            "details": "Value: $14,476,191,372,295.71, Market Cap: $2,694,585,253,888.00, Gap: 437.2%, Weight: 35%"
+          },
+          "ev_ebitda_analysis": {
+            "signal": "neutral",
+            "details": "Value: $2,589,326,515,464.76, Market Cap: $2,694,585,253,888.00, Gap: -3.9%, Weight: 20%"
+          },
+          "residual_income_analysis": {
+            "signal": "bullish",
+            "details": "Value: $3,099,538,432,465.14, Market Cap: $2,694,585,253,888.00, Gap: 15.0%, Weight: 10%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$1,019,310,881,941.10",
+            "base_case": "$1,566,721,561,997.12",
+            "bull_case": "$1,834,314,656,424.30",
+            "wacc_used": "10.5%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      },
+      "AMD": {
+        "signal": "bearish",
+        "confidence": 100,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $32,771,300,616.72, Market Cap: $453,890,113,536.00, Gap: -92.8%, Weight: 35%\n  WACC: 10.5%, Bear: $23,112,362,022.21, Bull: $39,508,739,292.96, Range: $16,396,377,270.76"
+          },
+          "owner_earnings_analysis": {
+            "signal": "bearish",
+            "details": "Value: $274,270,594,209.15, Market Cap: $453,890,113,536.00, Gap: -39.6%, Weight: 35%"
+          },
+          "ev_ebitda_analysis": {
+            "signal": "neutral",
+            "details": "Value: $405,422,915,745.50, Market Cap: $453,890,113,536.00, Gap: -10.7%, Weight: 20%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$23,112,362,022.21",
+            "base_case": "$33,745,133,922.81",
+            "bull_case": "$39,508,739,292.96",
+            "wacc_used": "10.5%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      },
+      "NKE": {
+        "signal": "bearish",
+        "confidence": 100,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $15,068,059,977.81, Market Cap: $68,165,230,592.00, Gap: -77.9%, Weight: 35%\n  WACC: 10.4%, Bear: $17,201,032,713.42, Bull: $12,599,814,383.84, Range: $-4,601,218,329.58"
+          },
+          "owner_earnings_analysis": {
+            "signal": "bearish",
+            "details": "Value: $2,600,239,883.09, Market Cap: $68,165,230,592.00, Gap: -96.2%, Weight: 35%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$17,201,032,713.42",
+            "base_case": "$15,179,817,597.27",
+            "bull_case": "$12,599,814,383.84",
+            "wacc_used": "10.4%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      },
+      "XOM": {
+        "signal": "bearish",
+        "confidence": 100,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $460,297,899,403.25, Market Cap: $608,686,571,520.00, Gap: -24.4%, Weight: 35%\n  WACC: 10.5%, Bear: $359,263,056,802.13, Bull: $545,208,613,983.08, Range: $185,945,557,180.95"
+          },
+          "owner_earnings_analysis": {
+            "signal": "bearish",
+            "details": "Value: $127,771,852,809.93, Market Cap: $608,686,571,520.00, Gap: -79.0%, Weight: 35%"
+          },
+          "residual_income_analysis": {
+            "signal": "bearish",
+            "details": "Value: $495,415,369,417.33, Market Cap: $608,686,571,520.00, Gap: -18.6%, Weight: 10%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$359,263,056,802.13",
+            "base_case": "$465,672,608,743.67",
+            "bull_case": "$545,208,613,983.08",
+            "wacc_used": "10.5%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      }
+    },
+    "sentiment_analyst_agent": {
+      "AAPL": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "MSFT": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "NVDA": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "META": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "GOOGL": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "AMD": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "JPM": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "GS": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "NKE": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "XOM": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "SPY": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "QQQ": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      }
+    },
+    "risk_management_agent": {
+      "AAPL": {
+        "remaining_position_limit": 19922.66162360348,
+        "current_price": 270.2300109863281,
+        "volatility_metrics": {
+          "daily_volatility": 0.015912534550426384,
+          "annualized_volatility": 0.2526036548949072,
+          "volatility_percentile": 60.0,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.3043466314530463,
+          "max_correlation_with_active": 0.558584392064382,
+          "top_correlated_tickers": [
+            {
+              "ticker": "SPY",
+              "correlation": 0.558584392064382
+            },
+            {
+              "ticker": "QQQ",
+              "correlation": 0.5263813947963089
+            },
+            {
+              "ticker": "AMZN",
+              "correlation": 0.3727375901794184
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.1897396345105093,
+          "correlation_multiplier": 1.05,
+          "combined_position_limit_pct": 0.19922661623603477,
+          "position_limit": 19922.66162360348,
+          "remaining_limit": 19922.66162360348,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 19.9% (base 19.0%)"
+        }
+      },
+      "MSFT": {
+        "remaining_position_limit": 15161.31288890861,
+        "current_price": 422.7900085449219,
+        "volatility_metrics": {
+          "daily_volatility": 0.02243001434428648,
+          "annualized_volatility": 0.3560654391515612,
+          "volatility_percentile": 87.72727272727273,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.28289436338287505,
+          "max_correlation_with_active": 0.5480867199054554,
+          "top_correlated_tickers": [
+            {
+              "ticker": "QQQ",
+              "correlation": 0.5480867199054554
+            },
+            {
+              "ticker": "SPY",
+              "correlation": 0.5153241514083584
+            },
+            {
+              "ticker": "NVDA",
+              "correlation": 0.4188286354867581
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.14439345608484389,
+          "correlation_multiplier": 1.05,
+          "combined_position_limit_pct": 0.1516131288890861,
+          "position_limit": 15161.31288890861,
+          "remaining_limit": 15161.31288890861,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 15.2% (base 14.4%)"
+        }
+      },
+      "TSLA": {
+        "remaining_position_limit": 14699.05925755764,
+        "current_price": 400.6199951171875,
+        "volatility_metrics": {
+          "daily_volatility": 0.0252032754580987,
+          "annualized_volatility": 0.40008959451831994,
+          "volatility_percentile": 34.54545454545455,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.33719247921890994,
+          "max_correlation_with_active": 0.5844941914185101,
+          "top_correlated_tickers": [
+            {
+              "ticker": "QQQ",
+              "correlation": 0.5844941914185101
+            },
+            {
+              "ticker": "SPY",
+              "correlation": 0.5627541167548162
+            },
+            {
+              "ticker": "NVDA",
+              "correlation": 0.424468532848803
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.139991040548168,
+          "correlation_multiplier": 1.05,
+          "combined_position_limit_pct": 0.1469905925755764,
+          "position_limit": 14699.05925755764,
+          "remaining_limit": 14699.05925755764,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 14.7% (base 14.0%)"
+        }
+      },
+      "NVDA": {
+        "remaining_position_limit": 15011.155053874514,
+        "current_price": 201.67999267578125,
+        "volatility_metrics": {
+          "daily_volatility": 0.023330876677411374,
+          "annualized_volatility": 0.37036618534528454,
+          "volatility_percentile": 74.0909090909091,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.3888751279305713,
+          "max_correlation_with_active": 0.7417043134706486,
+          "top_correlated_tickers": [
+            {
+              "ticker": "QQQ",
+              "correlation": 0.7417043134706486
+            },
+            {
+              "ticker": "SPY",
+              "correlation": 0.6742725038868481
+            },
+            {
+              "ticker": "AMD",
+              "correlation": 0.519754442570149
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.14296338146547155,
+          "correlation_multiplier": 1.05,
+          "combined_position_limit_pct": 0.15011155053874514,
+          "position_limit": 15011.155053874514,
+          "remaining_limit": 15011.155053874514,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 15.0% (base 14.3%)"
+        }
+      },
+      "META": {
+        "remaining_position_limit": 14216.145162164501,
+        "current_price": 688.5499877929688,
+        "volatility_metrics": {
+          "daily_volatility": 0.028100487705304985,
+          "annualized_volatility": 0.44608141312719046,
+          "volatility_percentile": 96.81818181818181,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.3496890596044779,
+          "max_correlation_with_active": 0.6174126864851152,
+          "top_correlated_tickers": [
+            {
+              "ticker": "QQQ",
+              "correlation": 0.6174126864851152
+            },
+            {
+              "ticker": "SPY",
+              "correlation": 0.6022616747685325
+            },
+            {
+              "ticker": "AMZN",
+              "correlation": 0.517422593068761
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.13539185868728096,
+          "correlation_multiplier": 1.05,
+          "combined_position_limit_pct": 0.142161451621645,
+          "position_limit": 14216.145162164501,
+          "remaining_limit": 14216.145162164501,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 14.2% (base 13.5%)"
+        }
+      },
+      "GOOGL": {
+        "remaining_position_limit": 19579.418215602393,
+        "current_price": 341.67999267578125,
+        "volatility_metrics": {
+          "daily_volatility": 0.01797180143644259,
+          "annualized_volatility": 0.28529350327596287,
+          "volatility_percentile": 57.27272727272727,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.30198004124682276,
+          "max_correlation_with_active": 0.5765176189097233,
+          "top_correlated_tickers": [
+            {
+              "ticker": "QQQ",
+              "correlation": 0.5765176189097233
+            },
+            {
+              "ticker": "SPY",
+              "correlation": 0.537565132601453
+            },
+            {
+              "ticker": "AMZN",
+              "correlation": 0.4141445559226802
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.18647064967240373,
+          "correlation_multiplier": 1.05,
+          "combined_position_limit_pct": 0.19579418215602393,
+          "position_limit": 19579.418215602393,
+          "remaining_limit": 19579.418215602393,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 19.6% (base 18.6%)"
+        }
+      },
+      "AMZN": {
+        "remaining_position_limit": 15397.680889120582,
+        "current_price": 250.55999755859375,
+        "volatility_metrics": {
+          "daily_volatility": 0.02101193963577277,
+          "annualized_volatility": 0.3335542010361351,
+          "volatility_percentile": 79.0909090909091,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.37547809795651893,
+          "max_correlation_with_active": 0.6656741787580556,
+          "top_correlated_tickers": [
+            {
+              "ticker": "QQQ",
+              "correlation": 0.6656741787580556
+            },
+            {
+              "ticker": "SPY",
+              "correlation": 0.6373846134935478
+            },
+            {
+              "ticker": "META",
+              "correlation": 0.517422593068761
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.1466445798963865,
+          "correlation_multiplier": 1.05,
+          "combined_position_limit_pct": 0.15397680889120582,
+          "position_limit": 15397.680889120582,
+          "remaining_limit": 15397.680889120582,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 15.4% (base 14.7%)"
+        }
+      },
+      "AMD": {
+        "remaining_position_limit": 10500.000000000002,
+        "current_price": 278.3900146484375,
+        "volatility_metrics": {
+          "daily_volatility": 0.042046928684355875,
+          "annualized_volatility": 0.6674743001572434,
+          "volatility_percentile": 70.45454545454545,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.2882161352181895,
+          "max_correlation_with_active": 0.5614902168256596,
+          "top_correlated_tickers": [
+            {
+              "ticker": "QQQ",
+              "correlation": 0.5614902168256596
+            },
+            {
+              "ticker": "NVDA",
+              "correlation": 0.519754442570149
+            },
+            {
+              "ticker": "SPY",
+              "correlation": 0.4800439290307138
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.1,
+          "correlation_multiplier": 1.05,
+          "combined_position_limit_pct": 0.10500000000000001,
+          "position_limit": 10500.000000000002,
+          "remaining_limit": 10500.000000000002,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 10.5% (base 10.0%)"
+        }
+      },
+      "JPM": {
+        "remaining_position_limit": 20012.764279293664,
+        "current_price": 310.2900085449219,
+        "volatility_metrics": {
+          "daily_volatility": 0.015371969427018859,
+          "annualized_volatility": 0.24402244959107972,
+          "volatility_percentile": 73.63636363636363,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.34635418520661754,
+          "max_correlation_with_active": 0.7182834618132652,
+          "top_correlated_tickers": [
+            {
+              "ticker": "GS",
+              "correlation": 0.7182834618132652
+            },
+            {
+              "ticker": "SPY",
+              "correlation": 0.6238758168005711
+            },
+            {
+              "ticker": "QQQ",
+              "correlation": 0.5191054984075146
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.19059775504089205,
+          "correlation_multiplier": 1.05,
+          "combined_position_limit_pct": 0.20012764279293666,
+          "position_limit": 20012.764279293664,
+          "remaining_limit": 20012.764279293664,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 20.0% (base 19.1%)"
+        }
+      },
+      "GS": {
+        "remaining_position_limit": 15295.417091761494,
+        "current_price": 925.9500122070312,
+        "volatility_metrics": {
+          "daily_volatility": 0.021625464751276753,
+          "annualized_volatility": 0.34329361030842936,
+          "volatility_percentile": 85.45454545454545,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.3914239301603434,
+          "max_correlation_with_active": 0.7182834618132652,
+          "top_correlated_tickers": [
+            {
+              "ticker": "JPM",
+              "correlation": 0.7182834618132652
+            },
+            {
+              "ticker": "SPY",
+              "correlation": 0.6913911744131016
+            },
+            {
+              "ticker": "QQQ",
+              "correlation": 0.6334784945078978
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.14567063896915708,
+          "correlation_multiplier": 1.05,
+          "combined_position_limit_pct": 0.15295417091761493,
+          "position_limit": 15295.417091761494,
+          "remaining_limit": 15295.417091761494,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 15.3% (base 14.6%)"
+        }
+      },
+      "NKE": {
+        "remaining_position_limit": 15001.831396581269,
+        "current_price": 46.029998779296875,
+        "volatility_metrics": {
+          "daily_volatility": 0.027477837387887588,
+          "annualized_volatility": 0.4361971457653393,
+          "volatility_percentile": 71.81818181818181,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.1909633790276678,
+          "max_correlation_with_active": 0.3592267817522012,
+          "top_correlated_tickers": [
+            {
+              "ticker": "SPY",
+              "correlation": 0.3592267817522012
+            },
+            {
+              "ticker": "QQQ",
+              "correlation": 0.2670283875306399
+            },
+            {
+              "ticker": "AAPL",
+              "correlation": 0.2614990892181063
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.13638028542346609,
+          "correlation_multiplier": 1.1,
+          "combined_position_limit_pct": 0.1500183139658127,
+          "position_limit": 15001.831396581269,
+          "remaining_limit": 15001.831396581269,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 15.0% (base 13.6%)"
+        }
+      },
+      "XOM": {
+        "remaining_position_limit": 20423.7368671202,
+        "current_price": 146.44000244140625,
+        "volatility_metrics": {
+          "daily_volatility": 0.018475952194060802,
+          "annualized_volatility": 0.2932966484436184,
+          "volatility_percentile": 95.0,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": -0.043158844204024396,
+          "max_correlation_with_active": 0.14854829375031484,
+          "top_correlated_tickers": [
+            {
+              "ticker": "NKE",
+              "correlation": 0.14854829375031484
+            },
+            {
+              "ticker": "TSLA",
+              "correlation": 0.03072512793700465
+            },
+            {
+              "ticker": "AAPL",
+              "correlation": 0.017805211798927943
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.18567033515563816,
+          "correlation_multiplier": 1.1,
+          "combined_position_limit_pct": 0.20423736867120199,
+          "position_limit": 20423.7368671202,
+          "remaining_limit": 20423.7368671202,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 20.4% (base 18.6%)"
+        }
+      },
+      "SPY": {
+        "remaining_position_limit": 19987.676142352495,
+        "current_price": 710.1400146484375,
+        "volatility_metrics": {
+          "daily_volatility": 0.009526744831250345,
+          "annualized_volatility": 0.15123238576475048,
+          "volatility_percentile": 91.81818181818183,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.5520584143824879,
+          "max_correlation_with_active": 0.9591465669159664,
+          "top_correlated_tickers": [
+            {
+              "ticker": "QQQ",
+              "correlation": 0.9591465669159664
+            },
+            {
+              "ticker": "GS",
+              "correlation": 0.6913911744131016
+            },
+            {
+              "ticker": "NVDA",
+              "correlation": 0.6742725038868481
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.19987676142352495,
+          "correlation_multiplier": 1.0,
+          "combined_position_limit_pct": 0.19987676142352495,
+          "position_limit": 19987.676142352495,
+          "remaining_limit": 19987.676142352495,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 20.0% (base 20.0%)"
+        }
+      },
+      "QQQ": {
+        "remaining_position_limit": 19544.54049784499,
+        "current_price": 648.8499755859375,
+        "volatility_metrics": {
+          "daily_volatility": 0.012318237003715067,
+          "annualized_volatility": 0.19554595021550097,
+          "volatility_percentile": 86.36363636363636,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.5458647021399592,
+          "max_correlation_with_active": 0.9591465669159664,
+          "top_correlated_tickers": [
+            {
+              "ticker": "SPY",
+              "correlation": 0.9591465669159664
+            },
+            {
+              "ticker": "NVDA",
+              "correlation": 0.7417043134706486
+            },
+            {
+              "ticker": "AMZN",
+              "correlation": 0.6656741787580556
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.19544540497844992,
+          "correlation_multiplier": 1.0,
+          "combined_position_limit_pct": 0.19544540497844992,
+          "position_limit": 19544.54049784499,
+          "remaining_limit": 19544.54049784499,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 19.5% (base 19.5%)"
+        }
+      }
+    }
+  },
+  "allowed_actions": {
+    "AAPL": {
+      "hold": 0,
+      "buy": 73,
+      "short": 73
+    },
+    "MSFT": {
+      "hold": 0,
+      "buy": 35,
+      "short": 35
+    },
+    "TSLA": {
+      "hold": 0,
+      "buy": 36,
+      "short": 36
+    },
+    "NVDA": {
+      "hold": 0,
+      "buy": 74,
+      "short": 74
+    },
+    "META": {
+      "hold": 0,
+      "buy": 20,
+      "short": 20
+    },
+    "GOOGL": {
+      "hold": 0,
+      "buy": 57,
+      "short": 57
+    },
+    "AMZN": {
+      "hold": 0,
+      "buy": 61,
+      "short": 61
+    },
+    "AMD": {
+      "hold": 0,
+      "buy": 37,
+      "short": 37
+    },
+    "JPM": {
+      "hold": 0,
+      "buy": 64,
+      "short": 64
+    },
+    "GS": {
+      "hold": 0,
+      "buy": 16,
+      "short": 16
+    },
+    "NKE": {
+      "hold": 0,
+      "buy": 325,
+      "short": 325
+    },
+    "XOM": {
+      "hold": 0,
+      "buy": 139,
+      "short": 139
+    },
+    "SPY": {
+      "hold": 0,
+      "buy": 28,
+      "short": 28
+    },
+    "QQQ": {
+      "hold": 0,
+      "buy": 30,
+      "short": 30
+    }
+  },
+  "portfolio": {
+    "cash": 100000.0,
+    "margin_requirement": 0.0,
+    "margin_used": 0.0,
+    "positions": {
+      "AAPL": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "MSFT": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "TSLA": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "NVDA": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "META": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "GOOGL": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "AMZN": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "AMD": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "JPM": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "GS": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "NKE": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "XOM": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "SPY": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "QQQ": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      }
+    },
+    "realized_gains": {
+      "AAPL": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "MSFT": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "TSLA": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "NVDA": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "META": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "GOOGL": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "AMZN": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "AMD": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "JPM": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "GS": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "NKE": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "XOM": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "SPY": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "QQQ": {
+        "long": 0.0,
+        "short": 0.0
+      }
+    }
+  },
+  "tickers": [
+    "AAPL",
+    "MSFT",
+    "TSLA",
+    "NVDA",
+    "META",
+    "GOOGL",
+    "AMZN",
+    "AMD",
+    "JPM",
+    "GS",
+    "NKE",
+    "XOM",
+    "SPY",
+    "QQQ"
+  ],
+  "end_date": "2026-04-17"
+}

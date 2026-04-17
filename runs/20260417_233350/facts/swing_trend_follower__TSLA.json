@@ -1,0 +1,205 @@
+{
+  "ticker": "TSLA",
+  "daily_indicators": {
+    "moving_averages": {
+      "ema_10": 368.3199,
+      "ema_21": 371.3606,
+      "ema_50": 387.7607,
+      "sma_50": 390.4404,
+      "sma_200": 398.3679,
+      "ema_aligned_uptrend": "False",
+      "ema_aligned_downtrend": "True"
+    },
+    "rsi": 56.3325,
+    "macd": {
+      "macd_line": -6.2819,
+      "signal_line": -10.9279,
+      "histogram": 4.646
+    },
+    "bollinger_bands": {
+      "upper": 398.3285,
+      "middle": 366.7835,
+      "lower": 335.2385,
+      "width": 0.172,
+      "position": 0.8506
+    },
+    "atr": 16.2571,
+    "adx": 28.6271,
+    "volume": {
+      "current": 63515100,
+      "avg_20": 68687110.0,
+      "ratio_vs_avg": 0.9247
+    },
+    "support_resistance": {
+      "support": 343.25,
+      "resistance": 391.95
+    },
+    "fibonacci": {
+      "swing_high": 428.27,
+      "swing_low": 343.25,
+      "fib_236": 408.2053,
+      "fib_382": 395.7924,
+      "fib_500": 385.76,
+      "fib_618": 375.7276,
+      "fib_786": 361.4443
+    },
+    "momentum": {
+      "roc_5": 12.5224,
+      "roc_10": 2.0039,
+      "roc_21": -2.5972
+    },
+    "z_score": -0.0668,
+    "dist_from_50sma_pct": -0.3945,
+    "stochastic": {
+      "k": 89.9843,
+      "d": 76.9947
+    },
+    "williams_r": -10.0157,
+    "cci": 109.3604,
+    "mfi": 57.3885,
+    "stc": {
+      "value": 0.0,
+      "signal": "oversold",
+      "prev_value": 0.0,
+      "crossed_above_25": false,
+      "crossed_below_75": false
+    },
+    "squeeze": {
+      "squeeze_on": false,
+      "squeeze_off": true,
+      "momentum": -5.9285,
+      "momentum_increasing": true,
+      "signal": "bearish_breakout"
+    },
+    "supertrend": {
+      "value": 340.7936,
+      "direction": "bullish",
+      "trend_changed": false,
+      "distance_pct": 14.116
+    }
+  },
+  "hourly_indicators": {
+    "moving_averages": {
+      "ema_10": 398.2641,
+      "ema_21": 390.8042,
+      "ema_50": 377.3881,
+      "sma_50": 368.913,
+      "sma_200": null,
+      "ema_aligned_uptrend": "True",
+      "ema_aligned_downtrend": "False"
+    },
+    "rsi": 59.343,
+    "macd": {
+      "macd_line": 9.3555,
+      "signal_line": 9.5662,
+      "histogram": -0.2108
+    },
+    "bollinger_bands": {
+      "upper": 407.981,
+      "middle": 393.6941,
+      "lower": 379.4072,
+      "width": 0.0726,
+      "position": 0.7438
+    },
+    "atr": 5.4764,
+    "adx": 42.3275,
+    "volume": {
+      "current": 5311579,
+      "avg_20": 11422066.55,
+      "ratio_vs_avg": 0.465
+    },
+    "support_resistance": {
+      "support": 385.74,
+      "resistance": 408.13
+    },
+    "fibonacci": {
+      "swing_high": 408.13,
+      "swing_low": 339.84,
+      "fib_236": 392.0136,
+      "fib_382": 382.0432,
+      "fib_500": 373.985,
+      "fib_618": 365.9268,
+      "fib_786": 354.4541
+    },
+    "momentum": {
+      "roc_5": -1.8303,
+      "roc_10": 3.1154,
+      "roc_21": 10.0231
+    },
+    "z_score": 1.4358,
+    "dist_from_50sma_pct": 8.6056,
+    "stochastic": {
+      "k": 68.6318,
+      "d": 70.0146
+    },
+    "williams_r": -31.3682,
+    "cci": 83.8053,
+    "mfi": 55.4034,
+    "stc": {
+      "value": 99.9969,
+      "signal": "overbought",
+      "prev_value": 99.9939,
+      "crossed_above_25": false,
+      "crossed_below_75": false
+    },
+    "squeeze": {
+      "squeeze_on": false,
+      "squeeze_off": true,
+      "momentum": 10.2813,
+      "momentum_increasing": false,
+      "signal": "bullish_breakout"
+    },
+    "supertrend": {
+      "value": 389.5558,
+      "direction": "bullish",
+      "trend_changed": false,
+      "distance_pct": 2.8505
+    }
+  },
+  "recent_prices": [
+    {
+      "open": 346.2900085449219,
+      "close": 348.95001220703125,
+      "high": 350.3599853515625,
+      "low": 342.739990234375,
+      "volume": 51336000,
+      "time": "2026-04-10"
+    },
+    {
+      "open": 350.07000732421875,
+      "close": 352.4200134277344,
+      "high": 356.3500061035156,
+      "low": 348.57000732421875,
+      "volume": 53617500,
+      "time": "2026-04-13"
+    },
+    {
+      "open": 357.6700134277344,
+      "close": 364.20001220703125,
+      "high": 367.6300048828125,
+      "low": 354.7699890136719,
+      "volume": 59979600,
+      "time": "2026-04-14"
+    },
+    {
+      "open": 366.8299865722656,
+      "close": 391.95001220703125,
+      "high": 394.6499938964844,
+      "low": 362.5,
+      "volume": 113810400,
+      "time": "2026-04-15"
+    },
+    {
+      "open": 393.80999755859375,
+      "close": 388.8999938964844,
+      "high": 394.05999755859375,
+      "low": 381.79998779296875,
+      "volume": 63515100,
+      "time": "2026-04-16"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 400.6199951171875,
+  "market_cap": 1503299239936.0
+}

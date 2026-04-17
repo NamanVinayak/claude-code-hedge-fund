@@ -1,0 +1,41 @@
+{
+  "ticker": "GOOGL",
+  "score": 33,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 5,
+    "max_score": 8,
+    "details": "Near-Gaussian tails (kurtosis 0.6) \u2014 suspiciously thin; Positive skew (0.56) favors long convexity; Asymmetric upside (tail ratio 1.41); Moderate drawdown (-20.4%)"
+  },
+  "antifragility_analysis": {
+    "score": 8,
+    "max_score": 10,
+    "details": "Net cash positive ($9,095,000,000); Taleb-approved low leverage (D/E 0.04); Reasonable margin stability (avg 25.0%, CV 0.17); Consistent FCF generation (10/10 periods positive)"
+  },
+  "convexity_analysis": {
+    "score": 4,
+    "max_score": 10,
+    "details": "Meaningful R&D investment (14.1% of revenue); Convex return profile (up/down ratio 1.36); Low cash relative to market cap (1%); Low FCF yield (1.8%)"
+  },
+  "fragility_analysis": {
+    "score": 7,
+    "max_score": 8,
+    "details": "Low leverage (D/E 0.04) \u2014 not fragile; Interest coverage 364.9x \u2014 debt is irrelevant; Moderate earnings volatility (growth std 0.42); Fat margins (28.6%) buffer shocks"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 5,
+    "max_score": 6,
+    "details": "Elevated vol (regime 1.52) \u2014 opportunity for the antifragile; Elevated vol-of-vol (0.0609 vs median 0.0314)"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 4133303091200.0
+}
