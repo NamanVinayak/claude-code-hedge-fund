@@ -184,3 +184,19 @@ python -m ai_hedge.runner.finalize --run-id $RUN_ID
 ```
 
 This displays: entry/target/stop/risk-reward/timeframe, Head Trader synthesis, strategy breakdown.
+
+## Step 9 — Commit and push results to GitHub
+
+Write a plain-English summary of the run to `runs/$RUN_ID/summary.md` — top 3 setups, key themes, overall market context (1-2 paragraphs). Then commit the full run and push to a new branch:
+
+```bash
+BRANCH="claude/crypto-swing-${RUN_ID}"
+git checkout -b $BRANCH
+git add -f runs/$RUN_ID/
+git commit -m "crypto swing ${RUN_ID}: ${TICKERS}
+
+$(cat runs/$RUN_ID/summary.md | head -5)"
+git push origin $BRANCH
+```
+
+Print the branch URL: `https://github.com/NamanVinayak/claude-code-hedge-fund/tree/$BRANCH`
