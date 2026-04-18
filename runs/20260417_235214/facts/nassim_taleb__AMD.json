@@ -1,0 +1,41 @@
+{
+  "ticker": "AMD",
+  "score": 24,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 4,
+    "max_score": 8,
+    "details": "Moderate fat tails (kurtosis 4.7); Negative skew (-1.01) \u2014 crash-prone; Asymmetric upside (tail ratio 1.21); Moderate drawdown (-27.8%)"
+  },
+  "antifragility_analysis": {
+    "score": 6,
+    "max_score": 10,
+    "details": "Net cash positive ($3,860,000,000); Taleb-approved low leverage (D/E 0.00); Volatile margins (CV 0.82) \u2014 fragile pricing power; Consistent FCF generation (10/10 periods positive)"
+  },
+  "convexity_analysis": {
+    "score": 4,
+    "max_score": 10,
+    "details": "Significant embedded optionality via R&D (23.7% of revenue); Slight positive asymmetry (up/down ratio 1.23); Low cash relative to market cap (1%); Low FCF yield (0.5%)"
+  },
+  "fragility_analysis": {
+    "score": 5,
+    "max_score": 8,
+    "details": "Low leverage (D/E 0.00) \u2014 not fragile; Interest coverage 22.6x \u2014 debt is irrelevant; Highly volatile earnings (growth std 0.67) \u2014 fragile; Moderate margins (11.5%)"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 1,
+    "max_score": 6,
+    "details": "Below-average vol (regime 0.86) \u2014 approaching complacency; Stable vol-of-vol (0.0249)"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 453890113536.0
+}

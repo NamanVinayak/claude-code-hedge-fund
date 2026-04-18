@@ -1,0 +1,114 @@
+{
+  "AAPL": {
+    "consensus_signal": "neutral",
+    "confidence": 42,
+    "reasoning": "Mixed and mostly non-directional picture. Of 9 swing agents, only breakout_trader is bullish (72) on a breakout above 266.43. Druckenmiller is bearish (72) on fundamentals. The other 7 (trend_follower, pullback, momentum, mean_reversion, catalyst, sector_rotation, news_sentiment) are neutral, citing tangled EMAs (10/21/50 within ~2 points), weak ADX (14.5), RSI 62 not overbought, z-score 0.33, and no catalyst. Daily trend is not confirmed, so trend-weighted strategies should not get extra weight here; in a choppy tape mean-reversion/breakout should dominate, and those two disagree (mean_reversion is neutral-to-slightly-negative, breakout is bullish but price has not yet sustained above 266.43). Setup quality is low.",
+    "agent_agreement_pct": 77.8,
+    "key_conflicts": "Breakout trader sees bullish range break (entry 266.43, target 286.23) while Druckenmiller sees a bearish fundamentally-weak setup. Most agents simply say 'no trade.'",
+    "recommended_action": "hold"
+  },
+  "MSFT": {
+    "consensus_signal": "bullish",
+    "confidence": 62,
+    "reasoning": "4 bullish (trend_follower 82, breakout 85, momentum 82, sector_rotation 82) vs 2 bearish (pullback 72, mean_reversion 75) vs 3 neutral (catalyst, Druckenmiller, news). Trend/momentum agents cite strong EMA uptrend, ADX 58 on hourly, clear breakout above 420.26 on 1.31x volume. Bears cite extreme overbought daily (RSI 82.5, Stoch 99.1, z-score 1.79, +7.2% above 50-SMA). This is a classic strong-trend-but-overextended tape. Trend is confirmed, so trend/momentum agents carry more weight (market context = trending), tilting the synthesis bullish, but overbought warning warrants conservative sizing and waiting for a pullback near 415-420 rather than chasing. Entry cluster: 415-420 range; target cluster: 430-484 with median ~438.",
+    "agent_agreement_pct": 44.4,
+    "key_conflicts": "Trend/momentum bulls target 430-484 while mean_reversion targets a snap-back to 391.91. Pullback trader actually shorts despite uptrend due to RSI 82.5 extreme. Resolution: respect the trend but enter on pullback, not at highs.",
+    "recommended_action": "buy"
+  },
+  "TSLA": {
+    "consensus_signal": "neutral",
+    "confidence": 45,
+    "reasoning": "Deeply split: 3 bullish (pullback 68, breakout 68, sector_rotation 75), 2 bearish (trend_follower 72, Druckenmiller 68), 4 neutral (momentum, mean_reversion, catalyst, news). Core conflict is multi-timeframe divergence: daily EMAs show downtrend alignment (10<21<50) and ADX 28.6 confirming daily down, but hourly shows uptrend alignment with strong ADX 42 and a 1.66x volume breakout on 4/15. Druckenmiller flags deteriorating fundamentals behind a 61% rally. With daily and hourly giving opposite trend readings, trend-context weighting cancels. Mean reversion at z-score -0.07 is a non-signal. Best to stand aside until daily trend resolves.",
+    "agent_agreement_pct": 44.4,
+    "key_conflicts": "Daily downtrend (trend_follower, Druckenmiller) vs hourly uptrend breakout (breakout, pullback, sector_rotation). Classic timeframe conflict — no high-conviction synthesis possible.",
+    "recommended_action": "hold"
+  },
+  "NVDA": {
+    "consensus_signal": "bullish",
+    "confidence": 72,
+    "reasoning": "5 bullish (trend_follower 88, breakout 79, momentum 85, sector_rotation 85, Druckenmiller 78), 1 bearish (mean_reversion 78), 3 neutral (pullback, catalyst, news). Textbook trending tape: EMAs perfectly aligned (10>21>50), ADX 35, daily ROC 7.8%/12.9%/9.0% sustained, 1.66x volume. In a trending market, trend_follower and momentum_ranker get extra weight — strongly bullish. Mean_reversion's bear call (RSI 83.6, z-score 2.07, +8.5% above 50-SMA) is a real warning but trend is confirmed and Druckenmiller (rarely bullish) concurs. Entry cluster: 198.47-199.54 (median ~198.9); target cluster: 201.65 (short-term) through 232.57 (breakout) with momentum median ~208.",
+    "agent_agreement_pct": 55.6,
+    "key_conflicts": "Mean reversion expects snap-back to 182.74 from extreme overbought, vs. trend/momentum/breakout all targeting 208-232. Resolution: respect trend, but the overbought condition means partial entry on pullback (~199) with tight risk management.",
+    "recommended_action": "buy"
+  },
+  "META": {
+    "consensus_signal": "bullish",
+    "confidence": 55,
+    "reasoning": "3 bullish (breakout 81, momentum 84, sector_rotation 88), 2 bearish (mean_reversion 80, Druckenmiller 70), 4 neutral (trend_follower, pullback, catalyst, news). Notably, trend_follower went neutral because EMAs are tangled despite price strength (EMA 21 < EMA 50). This tempers the bullish reading: trend not cleanly confirmed on EMA structure even with RSI 84.9 extreme. Bears have a strong case — z-score 1.26, Stoch 98.97, +7.6% above 50-SMA. But momentum/breakout/sector-rotation all see powerful acceleration with 10-day ROC 16.86%. Net slightly bullish but lower confidence than MSFT/NVDA because trend_follower didn't confirm.",
+    "agent_agreement_pct": 33.3,
+    "key_conflicts": "Momentum/breakout see powerful acceleration to 709-828 targets vs. mean_reversion targeting reversion to 629. Druckenmiller says fundamentals deteriorating under the rally. Trend follower withholds confirmation because EMA structure not clean.",
+    "recommended_action": "buy"
+  },
+  "GOOGL": {
+    "consensus_signal": "bullish",
+    "confidence": 68,
+    "reasoning": "4 bullish (trend_follower 85, breakout 82, momentum 87, sector_rotation 84), 1 bearish (mean_reversion 82), 4 neutral (pullback, catalyst, Druckenmiller, news). Strongly trending tape: EMAs aligned (10>21>50), ADX 43.3 (very strong), 10-day ROC 12.99%, MACD histogram positive. In a trending regime, trend_follower and momentum carry extra weight. Main caveat: mean_reversion flags z-score 2.05 and +9.2% above 50-SMA extension. Entry cluster 336-337 (median 336.7); near-term target 341.6 (resistance), intermediate 358.8, breakout 400.7.",
+    "agent_agreement_pct": 44.4,
+    "key_conflicts": "Mean reversion targets 307.60 snap-back vs. trend/momentum/breakout targeting 342-400. Druckenmiller neutral citing EPS -15.5% despite 13.6% revenue growth. Overbought warrants partial entry rather than full size.",
+    "recommended_action": "buy"
+  },
+  "AMZN": {
+    "consensus_signal": "bullish",
+    "confidence": 62,
+    "reasoning": "4 bullish (trend_follower 86, breakout 76, momentum 86, sector_rotation 86), 2 bearish (pullback 70, mean_reversion 85), 3 neutral (catalyst, Druckenmiller, news). Strong trend: EMAs aligned, ADX 43.97, 10-day ROC 18.58%, 21-day ROC 16.03%. Trending market → trend/momentum get extra weight. But the bearish case is the strongest in this basket: z-score 2.84 (>2 threshold breached), +16.7% above 50-SMA — very extreme extension. Two separate agents (pullback and mean_reversion with conf 85) both want a correction. Bullish bias but confidence tempered by the severity of the stretch.",
+    "agent_agreement_pct": 44.4,
+    "key_conflicts": "Mean_reversion targets aggressive -14% snapback to 213.89 (from 250.56); pullback trader wants to sell into strength. Trend/momentum targets run 254-300. The z-score 2.84 extension is notable — do not chase.",
+    "recommended_action": "buy"
+  },
+  "AMD": {
+    "consensus_signal": "bullish",
+    "confidence": 70,
+    "reasoning": "5 bullish (trend_follower 90, breakout 88, momentum 92, sector_rotation 92, Druckenmiller 75), 1 bearish (mean_reversion 88), 3 neutral (pullback, catalyst, news). Highest-conviction trending setup in the basket: EMAs strongly aligned (10: 244.87 > 21: 229.78 > 50: 219.44), ADX 49.92 (very strong), 21-day ROC 41.75%, 1.82x volume on breakout. Trend/momentum agents at 90-92 confidence. Druckenmiller — a skeptic elsewhere — is bullish (75) citing EPS growth 38.7%. Mean_reversion bear case is real: z-score 3.66 (most extreme in dataset), RSI 91.4, +26.8% above 50-SMA. Net bullish with strong conviction, but position-size for high volatility and size risk appropriately.",
+    "agent_agreement_pct": 55.6,
+    "key_conflicts": "Extreme z-score 3.66 and RSI 91.4 vs. equally extreme momentum (41.75% 21-day ROC). Mean_reversion targets -24% reversion to 210.57 while momentum targets +9% to 304.24. Asymmetric risk in both directions.",
+    "recommended_action": "buy"
+  },
+  "JPM": {
+    "consensus_signal": "neutral",
+    "confidence": 45,
+    "reasoning": "1 bullish (trend_follower 68), 1 bearish (Druckenmiller 65), 7 neutral. Overwhelming neutral consensus. Daily EMAs aligned but ADX only 31.8 (moderate), RSI 67.9 below overbought, z-score 1.06. Momentum stalling (5-day ROC -0.12% vs 21-day +8.59%). Breakout trader explicitly says 'no clear consolidation or volume.' In a choppy tape, breakout and mean_reversion should dominate and both are neutral — clear signal to stand aside.",
+    "agent_agreement_pct": 77.8,
+    "key_conflicts": "Weak trend vs. flat fundamentals. Trend_follower sees mild uptrend worth a small long; Druckenmiller sees value trap with flat revenue. No agent has strong conviction.",
+    "recommended_action": "hold"
+  },
+  "GS": {
+    "consensus_signal": "neutral",
+    "confidence": 40,
+    "reasoning": "1 bullish (trend_follower 72), 1 bearish (Druckenmiller 72), 7 neutral. Trend present but weak — ADX 20.66 (below 25 threshold for trend confirmation), volume 0.81x average, 5-day ROC -0.41% showing deceleration. Breakout trader explicitly awaits confirmation. In this weak-trend/consolidating context, no strategy agent has a high-conviction directional edge. Mean_reversion neutral (z-score 0.70), momentum neutral with deceleration. Clear stand-aside setup.",
+    "agent_agreement_pct": 77.8,
+    "key_conflicts": "Trend_follower long vs. Druckenmiller fundamental bear. Neither dominates given weak ADX and volume.",
+    "recommended_action": "hold"
+  },
+  "NKE": {
+    "consensus_signal": "bearish",
+    "confidence": 62,
+    "reasoning": "4 bearish (trend_follower 78, breakout 73, momentum 72, sector_rotation 78, Druckenmiller 68), 2 bullish (pullback 75, mean_reversion 72), 2 neutral (catalyst, news). Actually 5 bearish if we include Druckenmiller. Clear daily downtrend: EMAs reverse-aligned (10<21, 10<50), ADX 48.13 (very strong), 21-day ROC -17.09%. Fundamentals deteriorating (EPS -8.8%). In a strong trending (down) regime, trend_follower and momentum carry extra weight. The bullish pullback/mean_reversion views are valid oversold bounce plays (RSI 32.6, z-score -1.30) but counter-trend in a strong downtrend is lower-probability. Entry for short cluster ~45.5-45.9; target cluster 41-43.",
+    "agent_agreement_pct": 55.6,
+    "key_conflicts": "Directional: 5 bears vs 2 oversold-bounce bulls. Bulls target a reversal to 53-55; bears target continuation to 41-43. Given ADX 48 and fundamentals deteriorating, bears have a stronger edge, but oversold bounces can be sharp — stops tight.",
+    "recommended_action": "short"
+  },
+  "XOM": {
+    "consensus_signal": "bearish",
+    "confidence": 58,
+    "reasoning": "4 bearish (breakout 62, momentum 78, sector_rotation 75, Druckenmiller 70), 2 bullish (pullback 72, mean_reversion 68), 3 neutral (trend_follower, catalyst, news). Note: trend_follower is neutral due to tangled EMAs (10<21>50) — trend NOT cleanly confirmed, so we shouldn't over-weight trend agents. But momentum_ranker is strongly bearish with all three ROC windows negative (-1.97%/-5.47%/-4.30% accelerating decline), and sector_rotation shows energy weakness. Bullish side has an oversold case (RSI 32.4, Stoch 17.7 deeply oversold) — legitimate mean-reversion bounce risk. Net bearish but confidence moderate because this looks more like a falling channel than a confirmed strong downtrend, and oversold can snap back.",
+    "agent_agreement_pct": 44.4,
+    "key_conflicts": "Mean reversion and pullback see oversold bounce setup to 154-165; momentum and sector rotation see continuation to 138-145. Trend_follower's neutral on tangled EMAs prevents high-confidence bear call.",
+    "recommended_action": "short"
+  },
+  "SPY": {
+    "consensus_signal": "bullish",
+    "confidence": 58,
+    "reasoning": "4 bullish (trend_follower 84, breakout 79, momentum 80, sector_rotation 80), 2 bearish (mean_reversion 77, Druckenmiller 63), 3 neutral (pullback, catalyst, news). Strong uptrend: EMAs aligned, ADX 36.2, hourly ADX 65.5. Breakout above 701.66 confirmed. Trending regime → trend_follower/momentum get more weight. Bear case is real: RSI 83.8, Stoch 98.5, z-score 1.73 (overbought). For a broad index, mean reversion moves tend to be smaller in percentage terms than in individual stocks. Net bullish on the index, but overbought warns against aggressive adds at these levels — partial entry on any pullback to ~700-702.",
+    "agent_agreement_pct": 44.4,
+    "key_conflicts": "Trend/momentum/breakout target 711-771 vs mean_reversion targeting 673.36. Druckenmiller bearish on broad market fundamentals. Overbought reading is the main risk.",
+    "recommended_action": "buy"
+  },
+  "QQQ": {
+    "consensus_signal": "bullish",
+    "confidence": 60,
+    "reasoning": "4 bullish (trend_follower 87, breakout 80, momentum 83, sector_rotation 87), 2 bearish (mean_reversion 79, Druckenmiller 68), 3 neutral (pullback, catalyst, news). Strong tech-heavy trend: EMAs aligned, ADX 36.8, hourly ADX 63.8, MACD histogram 7.09 surging. Trending regime favors trend/momentum weighting. But z-score 2.54, RSI 84.1, Stoch 98.0, +6.6% above 50-SMA — severe overextension. Similar setup to SPY but more extended. Bullish but with the same 'buy pullbacks, not highs' discipline. Entry cluster ~640-640.5; target cluster 649-672 short/medium term, 722 on breakout extension.",
+    "agent_agreement_pct": 44.4,
+    "key_conflicts": "Mean reversion targets -6% snap-back to 600.75 vs. trend/momentum targeting 649-722. QQQ is more extended than SPY (z-score 2.54 vs 1.73) so pullback risk is higher, but trend is also stronger.",
+    "recommended_action": "buy"
+  }
+}

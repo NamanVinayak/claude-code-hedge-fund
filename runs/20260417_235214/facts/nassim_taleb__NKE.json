@@ -1,0 +1,41 @@
+{
+  "ticker": "NKE",
+  "score": 22,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 3,
+    "max_score": 8,
+    "details": "Extremely fat tails (kurtosis 15.0); Negative skew (-2.56) \u2014 crash-prone; Balanced tails (tail ratio 1.20); Severe drawdown (-45.2%) \u2014 fragile"
+  },
+  "antifragility_analysis": {
+    "score": 4,
+    "max_score": 10,
+    "details": "Net debt but manageable relative to assets; Moderate leverage (D/E 0.60); Insufficient margin history for stability analysis; Consistent FCF generation (10/10 periods positive)"
+  },
+  "convexity_analysis": {
+    "score": 2,
+    "max_score": 10,
+    "details": "R&D data not available \u2014 no penalty for non-R&D sectors; Slight positive asymmetry (up/down ratio 1.07); Moderate cash buffer (10% of market cap); Low FCF yield (4.8%)"
+  },
+  "fragility_analysis": {
+    "score": 3,
+    "max_score": 8,
+    "details": "Moderate leverage (D/E 0.60); Interest coverage data not available; Moderate earnings volatility (growth std 0.23); Moderate margins (7.0%)"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 6,
+    "max_score": 6,
+    "details": "Elevated vol (regime 1.70) \u2014 opportunity for the antifragile; Highly unstable vol (vol-of-vol 0.1855 vs median 0.0519) \u2014 regime change likely"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 68165230592.0
+}

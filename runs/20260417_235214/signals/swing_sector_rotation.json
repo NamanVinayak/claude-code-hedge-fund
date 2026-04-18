@@ -1,0 +1,128 @@
+{
+  "AAPL": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "AAPL shows conflicting signals. Daily RSI (62.18) is neutral, MACD histogram positive but signal line below. Hourly shows EMA uptrend alignment with stronger RSI (60.26) and ADX (48.35). However, daily price is consolidating between 246-266 range with weak momentum. Volume ratio near 1.0x suggests lack of institutional conviction. No clear sector rotation entry trigger.",
+    "entry_price": 262.50,
+    "target_price": 273.00,
+    "stop_loss": 255.00,
+    "timeframe": "8-15 trading days"
+  },
+  "MSFT": {
+    "signal": "bullish",
+    "confidence": 82,
+    "reasoning": "Strong sector rotation signal. Daily RSI extremely overbought at 82.49 but MACD histogram surging (+6.62), signal line crossing upward. Hourly confirms with EMA uptrend, RSI 66.73, ADX 58.37 (strong trend). Volume elevated 1.21x. Stock outperforming SPY/QQQ momentum. 5-10 day ROC at 12.65-13.78% shows strong institutional sector rotation into tech leadership. Price above all key moving averages.",
+    "entry_price": 420.00,
+    "target_price": 455.00,
+    "stop_loss": 405.00,
+    "timeframe": "10-20 trading days"
+  },
+  "TSLA": {
+    "signal": "bullish",
+    "confidence": 75,
+    "reasoning": "Daily shows downtrend alignment (EMA_10 < EMA_21 < EMA_50) but hourly paints different picture with EMA uptrend, RSI 59.34, ADX 42.33. Divergence pattern suggests sector rotation opportunity - daily weakness masking hourly strength buildup. MACD on daily negative but MACD histogram positive (4.646) indicates emerging momentum. Recent volume spike 113.8M on April 15. Momentum turning positive (5 and 10-day ROC positive).",
+    "entry_price": 388.00,
+    "target_price": 420.00,
+    "stop_loss": 368.00,
+    "timeframe": "10-18 trading days"
+  },
+  "NVDA": {
+    "signal": "bullish",
+    "confidence": 85,
+    "reasoning": "Exceptional sector rotation setup. Daily shows EMA uptrend alignment with RSI 83.64 (overbought but confirming strong demand). MACD histogram 2.95 and signal line crossing positive. Hourly RSI 63.34 not overbought, ADX 33.78, showing sustained trend. Stochastic K 94.33 reflecting strong momentum. Price at Bollinger upper band (0.9691), all moving averages aligned upward. 10-21 day ROC 12.86-9.03% shows sustained sector strength in chip/AI complex. Volume declined but from extreme levels.",
+    "entry_price": 198.50,
+    "target_price": 218.00,
+    "stop_loss": 188.00,
+    "timeframe": "12-20 trading days"
+  },
+  "META": {
+    "signal": "bullish",
+    "confidence": 88,
+    "reasoning": "Strongest sector rotation signal in dataset. Daily RSI 84.88 overbought, MACD histogram 13.81 surging with signal line crossing. Hourly EMA uptrend, RSI 79.35, ADX 66.02 (very strong). Volume collapsed 0.52x of average (profit-taking pause) but momentum metrics extreme. Stochastic K 98.97, Williams -1.03 - near-term pullback risk but structural uptrend intact. 5-10 day ROC 7.72-16.86% shows sector leadership in mega-cap tech. Price 7.58% above 50-SMA.",
+    "entry_price": 675.00,
+    "target_price": 720.00,
+    "stop_loss": 650.00,
+    "timeframe": "10-18 trading days"
+  },
+  "GOOGL": {
+    "signal": "bullish",
+    "confidence": 84,
+    "reasoning": "Strong sector rotation uptrend. Daily EMA uptrend alignment, RSI 85.37 (overbought), MACD histogram 5.25 positive with signal line crossing. Hourly confirms with EMA uptrend, RSI 68.31, ADX 72.54 (very strong). Volume declined 0.70x but momentum intact. Stochastic K 94.30, MFI 71.27 show institutional accumulation. Price 9.24% above 50-SMA, 2.05 Z-score. Sector rotation clearly favoring large-cap tech core holding strength.",
+    "entry_price": 335.00,
+    "target_price": 365.00,
+    "stop_loss": 320.00,
+    "timeframe": "12-20 trading days"
+  },
+  "AMZN": {
+    "signal": "bullish",
+    "confidence": 86,
+    "reasoning": "Exceptional momentum-driven sector rotation. Daily RSI 84.44, MACD histogram 4.61 positive. Hourly EMA uptrend, RSI 55.80 (not overbought yet), ADX 28.77 moderate trend. Distance from 50-SMA 16.74% (highest in list) signals strong institutional rotation inflows. 5-10-21 day ROC 6.87-18.58% shows leading edge of sector rotation. Volume slightly below average but momentum metrics confirm conviction. Price at Bollinger bands upper edge (0.9469).",
+    "entry_price": 248.00,
+    "target_price": 285.00,
+    "stop_loss": 230.00,
+    "timeframe": "14-22 trading days"
+  },
+  "AMD": {
+    "signal": "bullish",
+    "confidence": 92,
+    "reasoning": "Highest confidence sector rotation signal. Daily RSI 91.41 (extreme overbought), MACD histogram 6.36 strong, EMA uptrend. Hourly EMA uptrend, RSI 80.45, ADX 52.02 (very strong). Volume spike 1.82x above average on April 16 shows institutional momentum. Z-score 3.66 (extreme), distance from 50-SMA 32.15% signals massive rotation inflows. 5-10-21 day ROC 17.59-41.75% is exceptional. Stochastic K 98.75 - pullback likely imminent but uptrend confirmed.",
+    "entry_price": 275.00,
+    "target_price": 315.00,
+    "stop_loss": 250.00,
+    "timeframe": "10-16 trading days"
+  },
+  "JPM": {
+    "signal": "neutral",
+    "confidence": 52,
+    "reasoning": "Mixed financial sector signals. Daily EMA uptrend, RSI 67.88, MACD histogram 2.12 positive. Hourly EMA uptrend, RSI 62.94, ADX 38.59. Price 3.92% above 50-SMA suggests mild accumulation. However, 5-day ROC negative (-0.12), volume below average 0.80x. Momentum turning point but not yet confirmed sector rotation entry. Waiting for volume confirmation and 10-day momentum breakout.",
+    "entry_price": 309.00,
+    "target_price": 328.00,
+    "stop_loss": 298.00,
+    "timeframe": "10-18 trading days"
+  },
+  "GS": {
+    "signal": "neutral",
+    "confidence": 48,
+    "reasoning": "Financial sector momentum stalling. Daily RSI 71.61 elevated, MACD histogram 7.44 positive but signal line still below. Hourly EMA uptrend, RSI 76.04, ADX 45.93 show some strength. However, 5-day ROC negative (-0.41), volume below average 0.81x, recent price action consolidating. MACD on daily may roll over soon. Sector rotation into finance not confirmed; waiting for breakout above 909.63 resistance with volume.",
+    "entry_price": 905.00,
+    "target_price": 950.00,
+    "stop_loss": 875.00,
+    "timeframe": "12-20 trading days"
+  },
+  "NKE": {
+    "signal": "bearish",
+    "confidence": 78,
+    "reasoning": "Clear sector rotation OUT of consumer discretionary. Daily in downtrend (EMA_10 < EMA_21 < EMA_50 < SMA_200), RSI 32.61 (oversold), MACD histogram 0.25 weak. Williams -67.24 extreme. 21-day ROC -17.09% shows sustained outflow. Price 17.32% below 50-SMA, CCI -30.62. Hourly shows EMA uptrend but cannot sustain against daily weakness. Volume below average. Multiple sectors rotating away from consumer names.",
+    "entry_price": 45.50,
+    "target_price": 41.00,
+    "stop_loss": 49.00,
+    "timeframe": "8-15 trading days"
+  },
+  "XOM": {
+    "signal": "bearish",
+    "confidence": 75,
+    "reasoning": "Energy sector rotation weakness. Daily RSI 32.38, MACD histogram -2.12 negative, EMA misaligned. Hourly shows downtrend (EMA_10 < EMA_21 < EMA_50), RSI 42.01, ADX 38.62. Williams -82.28 extreme bearish. CCI -99.82 shows severe oversold sentiment. 5-10-21 day ROC all negative (-1.97 to -5.47%). Volume collapsed 0.59x. No institutional sector rotation into energy; structural weakness confirmed.",
+    "entry_price": 149.00,
+    "target_price": 140.00,
+    "stop_loss": 160.00,
+    "timeframe": "8-14 trading days"
+  },
+  "SPY": {
+    "signal": "bullish",
+    "confidence": 80,
+    "reasoning": "Broad market sector rotation upward. Daily EMA uptrend alignment, RSI 83.79, MACD histogram 6.26 surging. Hourly EMA uptrend, RSI 74.84, ADX 65.48 (very strong). All moving averages aligned upward. Price 4.20% above 50-SMA, Z-score 1.73. Stochastic K 98.48 reflects overbought but ADX confirms trend strength. Volume 0.57x average shows profit-taking but momentum metrics intact. Leading indicator of broad institutional rotation into equities.",
+    "entry_price": 700.00,
+    "target_price": 735.00,
+    "stop_loss": 680.00,
+    "timeframe": "12-20 trading days"
+  },
+  "QQQ": {
+    "signal": "bullish",
+    "confidence": 87,
+    "reasoning": "Tech-heavy index showing strongest sector rotation uptrend. Daily EMA uptrend, RSI 84.12, MACD histogram 7.09 surging, signal line crossing positive. Hourly EMA uptrend, RSI 74.61, ADX 63.77 (very strong). Price at extreme Bollinger bands upper edge (0.9942), 6.61% above 50-SMA. All momentum indicators aligned. Volume below average 0.69x but trend conviction high (Z-score 2.54, CCI 165.72). Confirms mega-cap tech sector rotation leadership.",
+    "entry_price": 640.00,
+    "target_price": 680.00,
+    "stop_loss": 620.00,
+    "timeframe": "12-20 trading days"
+  }
+}

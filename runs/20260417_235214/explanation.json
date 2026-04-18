@@ -1,0 +1,203 @@
+{
+  "tldr": "This swing trading analysis found 8 bullish setups and 2 bearish shorts, with the strongest conviction in AMD (70% confidence), NVDA (72%), and GOOGL (68%). The key theme: trending tech stocks are overextended but momentum remains strong, so the system favors buying pullbacks rather than chasing highs; banks and defensive stocks show weak trends and warrant standing aside.",
+  "narrative": "The analysis ran 9 swing strategy agents on 14 tickers, looking for multi-day trade setups (2-20 day holds). The agents look at trend strength, momentum, overbought/oversold readings, and entry/target levels.\n\nAcross the basket, there is broad bullish agreement on the mega-cap tech names (MSFT, NVDA, AMD, GOOGL, AMZN, META) and broad indices (SPY, QQQ). All show strong uptrends (ADX above 35-50, which signals a confirmed trend), but most are overbought by RSI and standard deviation measures (z-score above 1.7). The Head Trader synthesized this as: respect the trend, but enter on pullbacks near support, not at new highs. This is classic trend-trading discipline — you don't chase a parabolic move; you wait for the market to pause, then join in.\n\nTwo stocks showed conflicting timeframes: AAPL (daily choppy, hourly weak) and TSLA (daily downtrend vs hourly uptrend breakout). Both were rated hold. Similarly, banks (JPM, GS) showed weak ADX and stalling momentum — no edge, so stand aside. Finally, NKE and XOM produced bearish signals. NKE has a confirmed daily downtrend with deteriorating fundamentals (EPS -8.8%); XOM shows accelerating downside momentum, though oversold levels suggest a bounce risk. The shorts are lower conviction (58-62%) than the tech longs (68-72%) because oversold bounces can be sharp.",
+  "per_ticker": {
+    "AAPL": {
+      "verdict": "Hold — no edge (42% confidence). Mixed signals with weak trend.",
+      "bull_case": "The breakout trader saw a bullish breakout above $266.43. One agent bullish on the setup.",
+      "bear_case": "Druckenmiller bearish on fundamentals. 7 of 9 agents neutral. EMAs tangled within 2 points, ADX only 14.5 (weak trend), RSI 62 not yet overbought.",
+      "key_numbers": {
+        "ADX_14.5": "Trend strength of 14.5 is below the 25 threshold for a confirmed trend. This stock is choppy, not trending.",
+        "RSI_62": "Momentum reading of 62 is neutral — not overbought (>80) or oversold (<20).",
+        "EMA_tangle": "The 10-day, 21-day, and 50-day moving averages are within 2 points. This is a sign of consolidation, not directional momentum."
+      },
+      "risk_summary": "With tangled EMAs and weak ADX, this is a choppy-market setup where sharp whipsaws occur. No high-probability edge means capital is better deployed elsewhere."
+    },
+    "MSFT": {
+      "verdict": "Buy at $418 (pullback), target $438, stop $409 — 62% confidence. Strong uptrend but overbought, so discipline matters.",
+      "bull_case": "4 of 9 agents bullish: trend_follower (82), breakout (85), momentum (82), sector_rotation (82). Hourly ADX 58 confirms strong trend. Clear breakout above $420.26 on 1.31x volume.",
+      "bear_case": "Pullback (72) and mean_reversion (75) expect a snap-back. RSI 82.5 and Stochastic 99.1 are extreme overbought. Stock is 7.2% above its 50-day moving average — a lot.",
+      "key_numbers": {
+        "entry_418": "Buy on a pullback to $418 — not at new highs. This gives the trend a chance to reset slightly.",
+        "target_438": "Intermediate target is $438 (20 points up from entry). This represents natural resistance and a 2.2:1 risk-reward.",
+        "stop_409": "Tight stop at $409 (9 points below entry) because overbought conditions mean sharp reversals are possible.",
+        "risk_reward_2.2_to_1": "For every $1 risked, the target offers $2.20 of potential profit — attractive.",
+        "ADX_58_hourly": "Hourly ADX of 58 is very strong trend confirmation. This validates the bullish case despite the overbought warning."
+      },
+      "risk_summary": "The overbought RSI and z-score mean this could gap down on bad news. The tight stop ($409) protects, but the 5-15 day timeframe means you must monitor daily."
+    },
+    "TSLA": {
+      "verdict": "Hold — timeframe conflict (45% confidence). Daily downtrend vs hourly uptrend breakout — no consensus.",
+      "bull_case": "Pullback (68), breakout (68), and sector_rotation (75) see hourly uptrend alignment and a 1.66x volume breakout on April 15.",
+      "bear_case": "Trend_follower (72) and Druckenmiller (68) see daily downtrend (EMAs aligned 10<21<50) and fundamental deterioration (61% rally on worse earnings).",
+      "key_numbers": {
+        "daily_ADX_28.6": "Daily ADX of 28.6 confirms a downtrend. Normally we weight trends heavily.",
+        "hourly_ADX_42": "Hourly ADX of 42 shows uptrend. The two timeframes disagree — a red flag.",
+        "z_score_-0.07": "Mean reversion signal is zero; no overbought or oversold condition to exploit."
+      },
+      "risk_summary": "Timeframe conflicts like this produce whipsaws — you go long on hourly strength only to get stopped out by daily weakness. Wait for clarity."
+    },
+    "NVDA": {
+      "verdict": "Buy at $199 (pullback), target $215, stop $191 — 72% confidence. Textbook trend with strong fundamentals backing it.",
+      "bull_case": "5 of 9 bullish, including trend_follower (88), momentum (85), sector_rotation (85), and Druckenmiller (78 — rarely bullish). EMAs perfectly aligned (10>21>50), ADX 35, sustained 10-day ROC of 7.8%.",
+      "bear_case": "Mean_reversion (78) flags RSI 83.6, z-score 2.07, and +8.5% above 50-SMA. Oversold bounce risk.",
+      "key_numbers": {
+        "entry_199": "Buy on pullback to $199. The trend is confirmed, so you wait for a minor dip to enter with better odds.",
+        "target_215": "Target $215 is 16 points higher — a 2.0:1 risk-reward setup.",
+        "stop_191": "Tight stop at $191 (8 points) because mean_reversion warned of overbought extremes. Quick exit if it breaks.",
+        "ADX_35": "ADX of 35 is strong trend confirmation (above 25 threshold). Trend traders get high weight here.",
+        "ROC_7.8_percent": "10-day rate of change of 7.8% is sustained momentum — not a one-day spike."
+      },
+      "risk_summary": "Overbought RSI means profit-taking reversals are possible. The tight stop protects, but 5-15 day holds require watching."
+    },
+    "META": {
+      "verdict": "Buy at $672, target $715, stop $651 — 55% confidence. Strong momentum but missing clean trend, so reduce position size.",
+      "bull_case": "Breakout (81), momentum (84), and sector_rotation (88) see powerful 10-day ROC of 16.86% and Stochastic 98.97. Price breaking to new highs on volume.",
+      "bear_case": "Trend_follower neutral because EMAs are tangled (EMA21 < EMA50 despite price strength). Mean_reversion (80) and Druckenmiller (70) expect pullback. z-score 1.26, +7.6% above 50-SMA.",
+      "key_numbers": {
+        "entry_672": "Entry $672 on any dip. Lower confidence (55%) means smaller position size — maybe half or one-third the size of NVDA.",
+        "target_715": "Target $715 is 43 points up — a 2.05:1 reward.",
+        "stop_651": "Stop $651 (21 points) is wider than the high-conviction setups, reflecting the lower agreement.",
+        "ROC_10day_16.86_percent": "10-day momentum of 16.86% is very strong, but not confirmed by trend_follower — unusual.",
+        "EMA_tangle": "EMAs not cleanly aligned despite price strength — a caution flag. Trend may be momentum-driven rather than structural."
+      },
+      "risk_summary": "This is a momentum trade, not a trend trade. Momentum can evaporate fast on profit-taking or bad news. Wider stop and smaller size are warranted."
+    },
+    "GOOGL": {
+      "verdict": "Buy at $336.70, target $358.80, stop $326 — 68% confidence. Strong, clean trend with good momentum.",
+      "bull_case": "4 of 9 bullish: trend_follower (85), breakout (82), momentum (87), sector_rotation (84). EMAs aligned, ADX 43.3, 10-day ROC 12.99%, MACD histogram positive.",
+      "bear_case": "Mean_reversion (82) flags z-score 2.05 and +9.2% above 50-SMA. Fundamental warning: EPS -15.5% despite 13.6% revenue growth.",
+      "key_numbers": {
+        "entry_336.7": "Entry $336.70 on any pullback. Well-defined trend means lower crash risk.",
+        "target_358.8": "Intermediate target $358.80 (22.1 points) — a 2.07:1 reward.",
+        "stop_326": "Stop $326 (10.7 points below entry, near EMA21).",
+        "ADX_43.3": "ADX of 43.3 is a strong, confirmed trend — one of the strongest in the basket.",
+        "ROC_12.99_percent": "10-day momentum of 12.99% is solid and sustained."
+      },
+      "risk_summary": "EPS declining while revenue grows is a red flag — profitability under pressure. The tight stop protects if fundamentals deteriorate further."
+    },
+    "AMZN": {
+      "verdict": "Buy at $248, target $265, stop $240 — 58% confidence. Strong trend but extremely stretched, so buy pullbacks only.",
+      "bull_case": "4 bullish: trend_follower (86), breakout (76), momentum (86), sector_rotation (86). EMAs aligned, ADX 43.97, 10-day ROC 18.58%.",
+      "bear_case": "Pullback (70) and mean_reversion (85) demand a correction. z-score 2.84 breaches the 2.0 threshold — extremely stretched. +16.7% above 50-SMA.",
+      "key_numbers": {
+        "entry_248": "Buy only on pullback to $248 — do not chase. At current levels, the extension is too severe.",
+        "target_265": "Target $265 is 17 points — a 2.13:1 reward.",
+        "stop_240": "Stop $240 (8 points below entry).",
+        "z_score_2.84": "z-score of 2.84 means the stock is 2.84 standard deviations above normal — the most stretched in the basket. High reversal risk.",
+        "ROC_18.58_percent": "10-day momentum of 18.58% is the strongest trend momentum, but coupled with extreme extension = bubble risk."
+      },
+      "risk_summary": "Extreme extension (z-score 2.84) means sharp reversals can occur. Mean_reversion traders expect a -14% snap-back to $213.89. The pullback discipline is critical here."
+    },
+    "AMD": {
+      "verdict": "Buy at $246, target $270, stop $234 — 70% confidence. Highest-conviction trend, but most extreme extension. Position size accordingly.",
+      "bull_case": "5 of 9 bullish: trend_follower (90), breakout (88), momentum (92), sector_rotation (92), Druckenmiller (75). All bullish agents at 88-92 confidence. EMAs strongly aligned, ADX 49.92, 21-day ROC 41.75%, 1.82x volume.",
+      "bear_case": "Mean_reversion (88) sees z-score 3.66 (most extreme in basket), RSI 91.4, +26.8% above 50-SMA. Targeting a -24% reversion to $210.57.",
+      "key_numbers": {
+        "entry_246": "Buy at $246 on pullback. The 21-day momentum of 41.75% is extraordinary, but so is the extension.",
+        "target_270": "Target $270 is 24 points — a 2.0:1 reward.",
+        "stop_234": "Stop $234 (12 points) is tight due to extreme RSI.",
+        "z_score_3.66": "z-score of 3.66 is off the charts — furthest extended stock in the entire run. Volatility will be extreme.",
+        "RSI_91.4": "RSI of 91.4 is maxed out. Any profit-taking will be violent.",
+        "ROC_21day_41.75_percent": "21-day ROC of 41.75% is a runaway move. But runaway moves can reverse just as fast."
+      },
+      "risk_summary": "This is the highest-conviction trade (70% confidence) but with the most extreme risk (z-score 3.66 and RSI 91.4). Use position sizing discipline — a half-size position makes sense. Stop must be tight and honored."
+    },
+    "JPM": {
+      "verdict": "Hold — no edge (45% confidence). Weak trend with mixed signals.",
+      "bull_case": "Trend_follower (68) sees mild uptrend alignment and 8.59% 21-day momentum.",
+      "bear_case": "Druckenmiller (65) cites value-trap fundamentals. 7 of 9 agents neutral. ADX only 31.8 (moderate), momentum stalling (5-day ROC -0.12%).",
+      "key_numbers": {
+        "ADX_31.8": "ADX of 31.8 is moderate — above the 25 threshold but not strong (>50).",
+        "momentum_deceleration": "5-day ROC of -0.12% vs 21-day ROC of +8.59% shows momentum rolling over.",
+        "RSI_67.9": "RSI of 67.9 is neutral — not overbought or oversold."
+      },
+      "risk_summary": "No agent has high conviction. In a choppy environment, both breakout and mean_reversion strategies are neutral — a clear signal to sit tight."
+    },
+    "GS": {
+      "verdict": "Hold — no edge (40% confidence). Weak trend, deceleration, and no clear setup.",
+      "bull_case": "Trend_follower (72) sees mild uptrend.",
+      "bear_case": "Druckenmiller (72) sees fundamental weakness. ADX 20.66 is below trend threshold, volume 0.81x average, 5-day ROC -0.41% shows deceleration.",
+      "key_numbers": {
+        "ADX_20.66": "ADX of 20.66 is below the 25 threshold for trend confirmation. This is choppy.",
+        "volume_0.81x": "Volume of 0.81x average signals weak commitment. Breakout trader needs confirmation volume.",
+        "ROC_5day_negative": "5-day ROC turning negative while 21-day is positive (if bullish) = loss of momentum."
+      },
+      "risk_summary": "Weak trend, low volume, and momentum loss mean no reliable edge. Stand aside until ADX breaks above 25 with volume confirmation."
+    },
+    "NKE": {
+      "verdict": "Short at $45.70, target $42, stop $47.50 — 62% confidence. Clear downtrend with fundamental weakness.",
+      "bull_case": "Pullback (75) and mean_reversion (72) cite RSI 32.6 and z-score -1.30 (oversold). A bounce to $53-55 is possible.",
+      "bear_case": "5 bearish: trend_follower (78), breakout (73), momentum (72), sector_rotation (78), Druckenmiller (68). Daily downtrend confirmed (EMAs 10<21<50), ADX 48.13 very strong, 21-day ROC -17.09%, EPS -8.8%.",
+      "key_numbers": {
+        "entry_45.7": "Short entry at $45.70. In a strong downtrend, shorting on bounces is lower-risk than shorting breakdowns.",
+        "target_42": "Target $42 is 3.70 points down — a 2.06:1 reward.",
+        "stop_47.5": "Tight stop at $47.50 (1.8 points above entry) because oversold bounces can be sharp and fast.",
+        "ADX_48.13": "ADX of 48.13 is a very strong downtrend. Trend-weighted agents heavily favor the short.",
+        "EPS_-8.8_percent": "EPS declining 8.8% is fundamental weakness backing the downtrend."
+      },
+      "risk_summary": "Oversold condition (RSI 32.6) means a sharp bounce is likely before the downtrend resumes. Tight stop is essential — this is a directional trade against short-term mean reversion."
+    },
+    "XOM": {
+      "verdict": "Short at $149, target $140, stop $153.50 — 58% confidence. Momentum accelerating down, but oversold conditions warrant caution.",
+      "bull_case": "Pullback (72) and mean_reversion (68) cite RSI 32.4 deeply oversold and Stochastic 17.7. Bounce risk to $154-165.",
+      "bear_case": "4 bearish: breakout (62), momentum (78), sector_rotation (75), Druckenmiller (70). Momentum accelerating down (-1.97%/-5.47%/-4.30%), sector weakness. Trend_follower neutral due to tangled EMAs.",
+      "key_numbers": {
+        "entry_149": "Short entry at $149. Not the cleanest downtrend (tangled EMAs), so lower confidence (58%).",
+        "target_140": "Target $140 is 9 points down — a 2.0:1 reward.",
+        "stop_153.5": "Stop $153.50 (4.5 points above entry) — tight because oversold bounces can be violent.",
+        "ROC_accelerating_down": "5-day, 10-day, and 21-day ROC all negative and worsening (-1.97% → -5.47%) = accelerating decline.",
+        "RSI_32.4": "RSI of 32.4 is deeply oversold — a classic setup for a sharp bounce before continuation down."
+      },
+      "risk_summary": "Oversold condition means a 3-5% bounce is likely before downtrend resumes. The tight stop is hit easily on the bounce. This is a lower-conviction trade (58%) — position size conservatively."
+    },
+    "SPY": {
+      "verdict": "Buy at $701, target $720, stop $692 — 58% confidence. Strong index uptrend, but broad overbought.",
+      "bull_case": "4 bullish: trend_follower (84), breakout (79), momentum (80), sector_rotation (80). EMAs aligned, ADX 36.2, hourly ADX 65.5, breakout above $701.66 confirmed.",
+      "bear_case": "Mean_reversion (77) and Druckenmiller (63) expect pullback. RSI 83.8, Stochastic 98.5, z-score 1.73 overbought.",
+      "key_numbers": {
+        "entry_701": "Buy on pullback to $701. Broad index overbought means patience for a dip pays off.",
+        "target_720": "Target $720 is 19 points — a 2.11:1 reward.",
+        "stop_692": "Stop $692 (9 points below entry).",
+        "ADX_36.2": "ADX of 36.2 confirms a strong uptrend in the broad market.",
+        "z_score_1.73": "z-score of 1.73 (overbought but not extreme like single stocks) means a pullback is normal and expected."
+      },
+      "risk_summary": "Broad index overbought is a timing issue, not a trend break. Expected pullback could be sharp (1-2%) before uptrend resumes. Partial entry on dips is wiser than full size at highs."
+    },
+    "QQQ": {
+      "verdict": "Buy at $640, target $660, stop $630 — 60% confidence. Strong tech trend, more extended than SPY.",
+      "bull_case": "4 bullish: trend_follower (87), breakout (80), momentum (83), sector_rotation (87). EMAs aligned, ADX 36.8, hourly ADX 63.8, MACD histogram 7.09 surging.",
+      "bear_case": "Mean_reversion (79) and Druckenmiller (68) expect pullback. z-score 2.54 (more extreme than SPY's 1.73), RSI 84.1, Stochastic 98.0, +6.6% above 50-SMA.",
+      "key_numbers": {
+        "entry_640": "Buy on pullback to $640. QQQ is more extended than SPY — pullback discipline is even more critical.",
+        "target_660": "Target $660 is 20 points — a 2.0:1 reward.",
+        "stop_630": "Stop $630 (10 points below entry).",
+        "z_score_2.54": "z-score of 2.54 is more extreme than SPY (1.73). Tech more stretched than broad market.",
+        "ADX_36.8": "ADX of 36.8 (slightly higher than SPY's 36.2) = tech uptrend is confirmed."
+      },
+      "risk_summary": "QQQ is more extended than SPY, so pullback risk is higher. Any weakness in mega-cap tech (NVDA, AMD, MSFT) ripples through QQQ. Pullback entry is mandatory — do not chase this index."
+    }
+  },
+  "concepts": {
+    "Swing Trade": "A trade that lasts 2-20 days, capturing short-term momentum moves within an intermediate trend. Longer than day trading (which expires same-day), shorter than long-term investing (months/years). The system uses 9 different strategies to find these setups.",
+    "Entry Price": "The price level where the system recommends you buy (for longs) or sell/short (for shorts). Not a limit order — more like 'a good price to enter if the stock reaches this level.' For overbought stocks, the system often waits for a pullback to the entry price rather than chasing highs.",
+    "Target Price": "The price the system expects the stock to reach within the 5-15 trading day hold window. If you buy at entry and the stock reaches target, that's a win. It's based on technical support/resistance levels and momentum projections.",
+    "Stop Loss": "A safety level where you sell immediately if the trade goes against you. If you buy at entry but the stock falls to the stop price, you exit and cut your loss. Tight stops (close to entry) are used in overbought setups; wider stops in less certain trades.",
+    "Risk-Reward Ratio": "A simple math: (potential profit) / (potential loss). A 2.0:1 ratio means for every $1 you risk losing, the target offers $2 of potential profit. The system targets 2.0:1 or better — anything worse is not worth the risk. Higher ratios (3:1, 4:1) are better; this hedges against win-rate.",
+    "ADX": "Average Directional Index — a number from 0-100 measuring trend strength. Above 25 = confirmed trend, above 50 = very strong trend. Below 25 = choppy/sideways (no clear direction). The system uses this to decide whether to weight trend strategies heavy or skip the setup entirely.",
+    "EMAs (10/21/50)": "Exponential Moving Averages at 10-day, 21-day, and 50-day periods. If aligned (10 > 21 > 50 in an uptrend), the trend is 'textbook' and strong. If tangled or reversed, the trend is weak or conflicted. A quick way to see trend direction without charts.",
+    "RSI": "Relative Strength Index — a number from 0-100. Above 70 = overbought (risky, may reverse down). Below 30 = oversold (risky, may bounce up). 30-70 = neutral. The system uses this to warn: 'This stock may pull back; wait for entry on the dip.'",
+    "z-score": "A measure of how far above/below normal a stock is priced. 0 = average, 1.0 = 1 standard deviation above, 2.0+ = extremely extended, -2.0 = extremely depressed. Above 2.0 means a mean-reversion bounce is likely; below -2.0 means a bounce up is likely. Used to size risk.",
+    "Confidence": "A percentage (0-100) representing how certain the system is about the recommendation. 70%+ = fairly sure, 55-65% = moderate conviction, below 50% = uncertain. Used to size positions: high confidence gets bigger bets; low confidence gets smaller bets or skipped.",
+    "Overbought": "When a stock has risen so far and so fast that it's at risk of a sharp pullback. Measured by RSI >70, z-score >2.0, or extreme percentage gains above 50-SMA. Not a sell signal, but a 'be careful' signal — reduce size, wait for pullback entry, use tight stops.",
+    "Oversold": "The opposite: a stock has fallen sharply and is at risk of a bounce up. Measured by RSI <30 or z-score <-2.0. A short setup becomes riskier because a bounce can hit your stop fast — tight stops are essential.",
+    "ROC (Rate of Change)": "A percentage showing how much the stock has moved in 5-day, 10-day, or 21-day windows. Positive ROC = uptrend momentum, negative ROC = downtrend momentum. Accelerating ROC (getting more positive or more negative) = trend strengthening.",
+    "Volume": "Share count traded. 1.31x average volume = 31% more volume than normal, signaling conviction. 0.81x = 19% below average, signaling weak conviction. Used to confirm breakouts (breakouts on high volume are more reliable).",
+    "Breakout": "When a stock breaks above (or below, for shorts) a previous resistance level on volume. A bullish breakout above $420 with 1.31x volume is a strong buy signal. Breakouts are one of the 9 strategy agents.",
+    "Mean Reversion": "The idea that extremely overbought or oversold conditions tend to snap back toward the average. If z-score 2.84, mean reversion expects a reversal down to z-score 0. One of the 9 agents; often bullish on shorts, bearish on overextended longs.",
+    "Trend Following": "Riding the direction of the trend rather than fighting it. If ADX >25 and EMAs aligned, trend_follower goes with the direction (buy on strength, short on weakness). The strongest agent in confirmed trends.",
+    "Fundamentals": "The company's business health: earnings growth, revenue growth, profit margins, management quality. The system (via Druckenmiller) sometimes flags 'momentum-but-fundamentals-weak' setups as risky (e.g., 61% rally on worse earnings).",
+    "Timeframe Conflict": "When daily charts and hourly charts give opposite signals (e.g., daily downtrend but hourly breakout). A red flag. The system stands aside because you'd get whipsawed — no consensus.",
+    "Consensus Signal": "When most of the 9 agents agree on direction. If 5/9 are bullish, the consensus is bullish. If 3 bullish, 2 bearish, 4 neutral, consensus is mixed/hold. The Head Trader weighs agreement level when setting confidence."
+  }
+}

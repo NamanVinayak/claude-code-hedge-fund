@@ -1,0 +1,128 @@
+{
+  "AAPL": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "Mixed momentum signals. Daily ROC shows acceleration (1.12%->3.04%->3.61%) but recent 5-day ROC has decelerated to 1.12%. Hourly ROC shows weakness with negative 5-day momentum (-0.65%). RSI at 62.18 is bullish but not extreme. Price above 10/21 EMA but below 50 EMA on daily suggests conflicting timeframes. MACD histogram positive but signal line negative. Hourly alignment is strong (EMA uptrend True) but volume declining on hourly. Entry signals mixed.",
+    "entry_price": 260.48,
+    "target_price": 268.43,
+    "stop_loss": 256.66,
+    "timeframe": "5-10 trading days"
+  },
+  "MSFT": {
+    "signal": "bullish",
+    "confidence": 82,
+    "reasoning": "Strong momentum acceleration across all timeframes. Daily ROC: 5-day=12.65%, 10-day=13.78%, 21-day=5.22% shows acceleration into current period. RSI at 82.49 indicates strong upward momentum (not yet overbought-diverging). Price well above all EMAs (10/21/50). MACD histogram expanding at 6.62. Hourly shows EMA uptrend alignment (True), RSI at 66.73 (room to run), and positive ROCs. Stochastic at 99.13 confirms momentum strength. High-volume breakout setup. ADX at 38.5 shows strong trend.",
+    "entry_price": 420.26,
+    "target_price": 437.92,
+    "stop_loss": 407.91,
+    "timeframe": "5-15 trading days"
+  },
+  "TSLA": {
+    "signal": "neutral",
+    "confidence": 50,
+    "reasoning": "Momentum divergence across timeframes. Daily ROC shows acceleration intraweek (5-day=12.52%, 10-day=2.00%, 21-day=-2.60%) - the positive 5-day is isolated momentum pop but 21-day negative. Daily is in downtrend (EMA downtrend True). Price below 50/200 SMAs on daily. However, hourly shows uptrend alignment with positive ROCs (10-day=3.12%, 21-day=10.02%). MACD on daily is negative (histogram 4.646 but line/signal both negative). This is a potential reversal setup but unclear direction - hourly bullish vs daily bearish.",
+    "entry_price": 391.95,
+    "target_price": 408.13,
+    "stop_loss": 381.79,
+    "timeframe": "3-8 trading days"
+  },
+  "NVDA": {
+    "signal": "bullish",
+    "confidence": 85,
+    "reasoning": "Exceptional momentum strength. Daily ROC shows strong acceleration: 5-day=7.85%, 10-day=12.86%, 21-day=9.03% - all positive with 10-day peak suggesting near-term momentum peak. RSI at 83.64 is overbought but price structure still strong above all EMAs. Daily EMA uptrend confirmed (True). MACD histogram at 2.95 and expanding. Hourly EMA uptrend also confirmed, RSI at 63.34 (room to run), and small positive ROCs. Stochastic at 94.33 on daily confirms strength. Price 8.5% above 50 SMA. Strong technical setup with momentum leaders showing this strength.",
+    "entry_price": 198.87,
+    "target_price": 208.45,
+    "stop_loss": 195.80,
+    "timeframe": "5-12 trading days"
+  },
+  "META": {
+    "signal": "bullish",
+    "confidence": 84,
+    "reasoning": "Powerful momentum acceleration. Daily ROC: 5-day=7.72%, 10-day=16.86%, 21-day=8.71% shows 10-day peak momentum. RSI at 84.88 near overbought but momentum still intact. Daily EMA not aligned but hourly EMA uptrend confirmed (True). Price 7.6% above 50 SMA. MACD histogram large at 13.81 expanding. Hourly RSI at 79.35 with positive momentum across timeframes. Volume on hourly surging (1.75x average). This is a strong momentum rally with extreme positioning - watch for momentum exhaustion.",
+    "entry_price": 676.87,
+    "target_price": 709.02,
+    "stop_loss": 667.75,
+    "timeframe": "5-12 trading days"
+  },
+  "GOOGL": {
+    "signal": "bullish",
+    "confidence": 87,
+    "reasoning": "Outstanding momentum acceleration. Daily ROC: 5-day=5.50%, 10-day=12.99%, 21-day=8.07% shows strong peak at 10-day. RSI at 85.37 overbought but sustained. Daily EMA uptrend confirmed (True), price 9.2% above 50 SMA. MACD histogram at 5.25 expanding. Hourly EMA uptrend confirmed, RSI at 68.31, positive ROCs. Stochastic at 94.30 on daily. ADX at 43.3 shows strong trend. Price structure intact with support at 334.52. This is a tier-1 momentum leader.",
+    "entry_price": 337.12,
+    "target_price": 358.79,
+    "stop_loss": 334.52,
+    "timeframe": "5-15 trading days"
+  },
+  "AMZN": {
+    "signal": "bullish",
+    "confidence": 86,
+    "reasoning": "Exceptional momentum across all timeframes. Daily ROC: 5-day=6.87%, 10-day=18.58%, 21-day=16.03% shows sustained strong momentum. RSI at 84.44 overbought but price structure remains strong. Daily EMA uptrend confirmed (True), price 16.7% above 50 SMA - highest in portfolio. MACD histogram at 4.61 positive. Hourly EMA uptrend confirmed (True), RSI at 55.80 (significant room), ADX at 28.8. Volume on daily declining slightly but structure intact. This is strongest momentum in group by distance from MA.",
+    "entry_price": 249.70,
+    "target_price": 264.54,
+    "stop_loss": 244.20,
+    "timeframe": "5-15 trading days"
+  },
+  "AMD": {
+    "signal": "bullish",
+    "confidence": 92,
+    "reasoning": "Exceptional momentum acceleration with extreme conviction signals. Daily ROC: 5-day=17.59%, 10-day=32.37%, 21-day=41.75% shows peak momentum at 10-day with sustained strength across all periods. RSI at 91.41 is extremely overbought - this is the strongest RSI in portfolio. Daily EMA uptrend confirmed (True), price 32.1% above 50 SMA (highest). MACD histogram at 6.36 expanding. Hourly EMA uptrend confirmed, RSI at 80.45. Volume spike 1.82x average on daily - demand confirmation. This is momentum leader with extreme positioning. Watch for exhaustion.",
+    "entry_price": 278.26,
+    "target_price": 304.24,
+    "stop_loss": 261.51,
+    "timeframe": "5-15 trading days"
+  },
+  "JPM": {
+    "signal": "neutral",
+    "confidence": 55,
+    "reasoning": "Conflicting momentum signals. Daily ROC: 5-day=-0.12%, 10-day=5.47%, 21-day=8.59% shows positive 10/21-day but negative 5-day momentum - recent stall. RSI at 67.88 is strong but not extreme. Daily EMA uptrend confirmed (True). Hourly ROC shows concerning pattern: 5-day=-0.79%, 10-day=0.87%, 21-day=-0.31% - all near zero. Hourly EMA uptrend but momentum has stalled on smaller timeframe. Price above 50 SMA but volume declining. This looks like momentum pause/consolidation, not continuation.",
+    "entry_price": 313.68,
+    "target_price": 324.02,
+    "stop_loss": 305.20,
+    "timeframe": "3-8 trading days"
+  },
+  "GS": {
+    "signal": "neutral",
+    "confidence": 58,
+    "reasoning": "Mixed momentum signals with recent weakness. Daily ROC: 5-day=-0.41%, 10-day=4.63%, 21-day=11.52% shows deceleration into current period (5-day negative). RSI at 71.61 is elevated but not extreme. Daily EMA uptrend confirmed (True). Hourly ROC: 5-day=0.24%, 10-day=2.45%, 21-day=1.74% shows positive but weak intraday momentum. MACD histogram on daily at 7.44 is positive but not expanding. Hourly RSI at 76.04 suggests overbought on hourly. Price 3.7% above 50 SMA. This appears to be momentum peaking.",
+    "entry_price": 909.63,
+    "target_price": 948.42,
+    "stop_loss": 895.85,
+    "timeframe": "3-8 trading days"
+  },
+  "NKE": {
+    "signal": "bearish",
+    "confidence": 72,
+    "reasoning": "Clear negative momentum with downtrend. Daily ROC: 5-day=3.86%, 10-day=2.40%, 21-day=-17.09% shows deceleration and negative 21-day momentum. Daily is in downtrend (EMA downtrend True). RSI at 32.61 is oversold. Price 17.3% below 50 SMA (worst in portfolio). MACD line negative at -3.32. ADX at 48.1 shows strong downtrend structure. However, hourly shows uptrend alignment (EMA uptrend True) with RSI at 59.93 and positive ROCs - this is intraday bounce on downtrend. Avoid long entry; consider short on strength or wait for daily reversal confirmation.",
+    "entry_price": 45.90,
+    "target_price": 42.62,
+    "stop_loss": 46.49,
+    "timeframe": "3-10 trading days"
+  },
+  "XOM": {
+    "signal": "bearish",
+    "confidence": 78,
+    "reasoning": "Clear negative momentum across all timeframes. Daily ROC: 5-day=-1.97%, 10-day=-5.47%, 21-day=-4.30% - all negative with acceleration of decline. RSI at 32.38 oversold. Daily not in uptrend (EMA aligned False/False). Price 1.7% below 50 SMA. MACD line negative at -0.92, histogram negative at -2.12. Hourly shows downtrend (EMA downtrend True). CCI at -99.82 signals extreme weakness. Williams R at -82.28 confirms oversold. ADX at 27.3 shows moderate trend. Avoid long setup; short risk remains unless oversold bounce confirmed.",
+    "entry_price": 151.47,
+    "target_price": 145.11,
+    "stop_loss": 152.77,
+    "timeframe": "5-12 trading days"
+  },
+  "SPY": {
+    "signal": "bullish",
+    "confidence": 80,
+    "reasoning": "Strong broad-market momentum. Daily ROC: 5-day=3.20%, 10-day=7.08%, 21-day=4.89% shows acceleration through 10-day then slight deceleration. RSI at 83.79 overbought but structure intact. Daily EMA uptrend confirmed (True), price 4.2% above 50 SMA. MACD histogram at 6.26 expanding. Hourly EMA uptrend confirmed, RSI at 74.84 (room to run), positive ROCs. Stochastic at 98.48 confirms momentum. ADX at 36.2 shows trend. This is the broad market confirmation of momentum - good co-signal for long setups in momentum leaders.",
+    "entry_price": 701.66,
+    "target_price": 728.48,
+    "stop_loss": 698.53,
+    "timeframe": "5-15 trading days"
+  },
+  "QQQ": {
+    "signal": "bullish",
+    "confidence": 83,
+    "reasoning": "Strong tech-heavy momentum. Daily ROC: 5-day=4.96%, 10-day=9.61%, 21-day=6.29% shows acceleration through 10-day. RSI at 84.12 overbought. Daily EMA uptrend confirmed (True), price 6.6% above 50 SMA. MACD histogram at 7.09 expanding. Hourly EMA uptrend confirmed, RSI at 74.61 (room to run), positive ROCs. Stochastic at 98.03 confirms strength. ADX at 36.75 shows trend. This tracks the Nasdaq momentum leadership (MSFT, NVDA, GOOGL, AMZN, META all bullish). Strong co-signal with SPY for broad market confirmation.",
+    "entry_price": 640.47,
+    "target_price": 671.70,
+    "stop_loss": 635.26,
+    "timeframe": "5-15 trading days"
+  }
+}

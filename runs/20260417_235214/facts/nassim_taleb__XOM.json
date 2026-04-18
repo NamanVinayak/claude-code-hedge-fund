@@ -1,0 +1,41 @@
+{
+  "ticker": "XOM",
+  "score": 15,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 3,
+    "max_score": 8,
+    "details": "Near-Gaussian tails (kurtosis 0.8) \u2014 suspiciously thin; Negative skew (-0.59) \u2014 crash-prone; Balanced tails (tail ratio 0.91); Resilient (max drawdown -13.1%)"
+  },
+  "antifragility_analysis": {
+    "score": 2,
+    "max_score": 10,
+    "details": "Cash/debt data not available; Debt-to-equity data not available; Insufficient margin history for stability analysis; Consistent FCF generation (10/10 periods positive)"
+  },
+  "convexity_analysis": {
+    "score": 1,
+    "max_score": 10,
+    "details": "Minimal R&D (0.3% of revenue); Concave returns (up/down ratio 1.00) \u2014 unfavorable; Low cash relative to market cap (2%); Decent FCF yield (5.0%)"
+  },
+  "fragility_analysis": {
+    "score": 0,
+    "max_score": 8,
+    "details": "Debt-to-equity data not available; Interest coverage data not available; Highly volatile earnings (growth std 0.90) \u2014 fragile; Moderate margins (9.6%)"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 5,
+    "max_score": 6,
+    "details": "Normal vol regime (1.22) \u2014 fair pricing; Highly unstable vol (vol-of-vol 0.0532 vs median 0.0186) \u2014 regime change likely"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 608686571520.0
+}

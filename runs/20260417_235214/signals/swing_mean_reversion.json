@@ -1,0 +1,128 @@
+{
+  "AAPL": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "Z-score of 0.33 is well within normal range (-1 to +1). Daily RSI at 62, Stochastic K at 82.6 shows some overbought momentum on daily but hourly RSI is 60 with normal bands position. No extreme extension from 50-SMA (only 1.05% above). Price is consolidating near mean with mixed signals; no clear mean reversion setup yet.",
+    "entry_price": 260.68,
+    "target_price": 260.23,
+    "stop_loss": 265.50,
+    "timeframe": "2-5 trading days"
+  },
+  "MSFT": {
+    "signal": "bearish",
+    "confidence": 75,
+    "reasoning": "Clear overextension: daily Z-score of 1.79 with RSI at 82.5 (extremely overbought). Daily price is 7.23% above 50-SMA with Stochastic K at 99.1 and Williams %R at -0.87 - both at extreme overbought. Price tested upper Bollinger Band (position 1.17). Hourly shows mild divergence - RSI only 66.7, suggesting daily extension stronger than intraday. High volume spike (1.21x avg) confirms fast move. Mean reversion target is 50-SMA at 391.91.",
+    "entry_price": 420.26,
+    "target_price": 391.91,
+    "stop_loss": 435.00,
+    "timeframe": "3-8 trading days"
+  },
+  "TSLA": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "Z-score of -0.07 is nearly at mean; daily price near 50-SMA (only -0.39% extension). Daily RSI 56 is mid-range. Stochastic K at 89.9 and hourly indicators (Z-score 1.44, RSI 59) show some momentum but not at extreme levels. Daily downtrend EMA alignment but 5-day ROC shows recent strength (12.5%). Missing the clear oversold/overbought setup needed for mean reversion trade.",
+    "entry_price": 388.89,
+    "target_price": 390.44,
+    "stop_loss": 380.00,
+    "timeframe": "3-6 trading days"
+  },
+  "NVDA": {
+    "signal": "bearish",
+    "confidence": 78,
+    "reasoning": "Extreme overbought on daily: Z-score 2.07, RSI 83.6, Stochastic K at 94.3 and D at 96.7 - near all-time highs. Daily price 8.54% above 50-SMA, upper Bollinger Band at position 0.97. Despite daily strength, hourly shows divergence: hourly RSI only 63.3 and Z-score 1.38 - much weaker than daily. CCI 166 and MFI 65 confirm overbought. Clear setup for fade to mean at 50-SMA (182.74).",
+    "entry_price": 199.54,
+    "target_price": 182.74,
+    "stop_loss": 205.00,
+    "timeframe": "4-10 trading days"
+  },
+  "META": {
+    "signal": "bearish",
+    "confidence": 80,
+    "reasoning": "Extreme overbought setup: daily Z-score 1.26, RSI 84.9 (very overbought), Stochastic K 98.97 near 100. Daily price 7.58% above 50-SMA. Williams %R at -1.03 and MFI at 80.97 both extreme. Daily Bollinger Band position at 0.96 shows price near upper band. Hourly shows similar strength (RSI 79.3, Z-score 1.50) confirming the overbought condition across timeframes. Target: 50-SMA at 629.16.",
+    "entry_price": 676.87,
+    "target_price": 629.16,
+    "stop_loss": 695.00,
+    "timeframe": "4-10 trading days"
+  },
+  "GOOGL": {
+    "signal": "bearish",
+    "confidence": 82,
+    "reasoning": "Strong overbought setup: daily Z-score 2.05, RSI 85.4 (extreme), Stochastic K 94.3. Daily price 9.24% above 50-SMA - significant extension. Williams %R -5.70 and CCI 147 both confirm extremes. Daily Bollinger Band position 0.91 shows price near upper band. Momentum strong with 5-day ROC at 5.5% and 10-day ROC at 12.9%. Hourly also overbought (RSI 68.3, Z-score 1.48). Clear mean reversion candidate targeting 50-SMA at 307.60.",
+    "entry_price": 337.12,
+    "target_price": 307.60,
+    "stop_loss": 348.00,
+    "timeframe": "4-10 trading days"
+  },
+  "AMZN": {
+    "signal": "bearish",
+    "confidence": 85,
+    "reasoning": "Extreme overbought: daily Z-score 2.84 (>2 threshold), RSI 84.4, Stochastic K 95.3. Daily price is 16.74% above 50-SMA - very extended. Williams %R -4.68, MFI 74.87, and CCI 137.6 all show extremes. Daily Bollinger Band position 0.95 near upper band. Momentum strong (5-day ROC 6.87%, 10-day ROC 18.58%). Hourly divergence: RSI only 55.8 vs daily 84.4 - suggests daily move is overextended. Clear setup for reversion to 50-SMA at 213.89.",
+    "entry_price": 249.70,
+    "target_price": 213.89,
+    "stop_loss": 260.00,
+    "timeframe": "5-12 trading days"
+  },
+  "AMD": {
+    "signal": "bearish",
+    "confidence": 88,
+    "reasoning": "Extreme overbought with strong momentum: daily Z-score 3.66 (well above +2 threshold), RSI 91.4 (extremely overbought), Stochastic K 98.8 near 100. Daily price 32.15% above 50-SMA - extreme extension. CCI 186, Williams %R -1.25, MFI 82.2 all at extremes. High volume spike (1.82x avg) confirms fast move. Hourly also hot (RSI 80.4, Z-score 1.54) but weaker divergence. This is the strongest mean reversion candidate - targeting 50-SMA at 210.57.",
+    "entry_price": 278.26,
+    "target_price": 210.57,
+    "stop_loss": 295.00,
+    "timeframe": "6-15 trading days"
+  },
+  "JPM": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "Z-score 1.06 near upper bound but not extreme. Daily RSI 67.9 shows strength but not overbought (>75). Stochastic K at 87.1 and D at 84.4 are elevated. Daily price 3.92% above 50-SMA is moderate. Hourly shows weakness (RSI 62.9, Z-score 0.24) compared to daily. Mixed signals - RSI in upper range but not at extreme, and hourly divergence suggests momentum weakening. Not enough extension for clear mean reversion setup.",
+    "entry_price": 313.68,
+    "target_price": 298.27,
+    "stop_loss": 320.00,
+    "timeframe": "3-7 trading days"
+  },
+  "GS": {
+    "signal": "neutral",
+    "confidence": 42,
+    "reasoning": "Z-score 0.70 is well within normal bounds. Daily RSI 71.6 is elevated but not overbought (>75 threshold). Daily price 3.72% above 50-SMA is modest extension. Stochastic K at 78.6 and Williams %R -21.4 show some strength. Hourly indicators (RSI 76, Z-score 1.92) are stronger than daily, suggesting hourly is overbought while daily is merely elevated. No clear extreme extension to warrant mean reversion entry. Momentum remains positive.",
+    "entry_price": 909.63,
+    "target_price": 867.75,
+    "stop_loss": 930.00,
+    "timeframe": "3-7 trading days"
+  },
+  "NKE": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "Oversold setup: daily Z-score -1.30 is approaching -2 threshold. Daily RSI 32.6 (oversold <25 is ideal, 32.6 is approaching). Daily price is -17.32% below 50-SMA - significant downside extension. Stochastic K at 32.8 and D at 26.4 show oversold. Williams %R -67.2 extremely oversold. CCI -30.6 confirms weakness. Hourly divergence: RSI 59.9 is much stronger, Z-score 1.24 positive - suggests oversold condition mainly on daily. Daily downtrend EMA alignment confirms. Target: 50-SMA at 55.27.",
+    "entry_price": 42.62,
+    "target_price": 55.27,
+    "stop_loss": 40.00,
+    "timeframe": "4-10 trading days"
+  },
+  "XOM": {
+    "signal": "bullish",
+    "confidence": 68,
+    "reasoning": "Oversold setup: daily Z-score -0.39 is mild but trending down. Daily RSI 32.4 is in oversold territory. Stochastic K 17.7 and D 11.3 are very low (oversold <20). Williams %R -82.3 extremely oversold. CCI -99.8 strongly confirms oversold condition. Daily price -1.70% below 50-SMA is mild extension but momentum declining (5-day ROC -1.97%, 10-day ROC -5.47%). Hourly divergence: RSI 42 and Z-score -1.32 oversold confirm. Setup for reversion to 50-SMA at 154.61.",
+    "entry_price": 149.01,
+    "target_price": 154.61,
+    "stop_loss": 145.00,
+    "timeframe": "3-8 trading days"
+  },
+  "SPY": {
+    "signal": "bearish",
+    "confidence": 77,
+    "reasoning": "Overbought on daily: Z-score 1.73, RSI 83.8 (very overbought), Stochastic K 98.5, Williams %R -1.5. Daily price 4.20% above 50-SMA with momentum strong (5-day ROC 3.2%, 10-day ROC 7.08%). Daily upper Bollinger Band position 0.96 shows price near top. Hourly shows milder overbought (RSI 74.8, Z-score 1.62) - reasonable divergence for pullback. CCI 153.6 and MFI 68.4 confirm extremes. Target: mean reversion to 50-SMA at 673.36.",
+    "entry_price": 701.66,
+    "target_price": 673.36,
+    "stop_loss": 718.00,
+    "timeframe": "4-10 trading days"
+  },
+  "QQQ": {
+    "signal": "bearish",
+    "confidence": 79,
+    "reasoning": "Strong overbought setup: daily Z-score 2.54, RSI 84.1 (very overbought), Stochastic K 98.0, Williams %R -1.98. Daily price 6.61% above 50-SMA. Daily upper Bollinger Band position 0.99 near extreme. CCI 165.7 and MFI 68.4 confirm overbought. Momentum strong (5-day ROC 4.96%, 10-day ROC 9.61%). Hourly shows divergence: RSI 74.6 and Z-score 1.59 are overbought but less extreme than daily, suggesting daily move is stretched. Clear mean reversion candidate targeting 50-SMA at 600.75.",
+    "entry_price": 640.47,
+    "target_price": 600.75,
+    "stop_loss": 655.00,
+    "timeframe": "5-12 trading days"
+  }
+}

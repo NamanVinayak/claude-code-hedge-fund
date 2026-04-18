@@ -1,0 +1,102 @@
+{
+  "ticker": "AAPL",
+  "score": 16,
+  "max_score": 27,
+  "fundamental_analysis": {
+    "score": 4,
+    "details": "Strong ROE of 171.8%; High debt to equity ratio of 1.4; Strong operating margins; Weak liquidity with current ratio of 0.9",
+    "metrics": {
+      "ticker": "AAPL",
+      "report_period": "2025-12-27",
+      "period": "ttm",
+      "currency": "USD",
+      "market_cap": 3971820552192.0,
+      "enterprise_value": 4038914552192.0,
+      "price_to_earnings_ratio": 34.20633,
+      "price_to_book_ratio": 53.867610868837566,
+      "price_to_sales_ratio": 8.682504906956154,
+      "enterprise_value_to_ebitda_ratio": 24.697856409360803,
+      "enterprise_value_to_revenue_ratio": 8.82917416770758,
+      "free_cash_flow_yield": 0.036826437166018605,
+      "peg_ratio": 2.37,
+      "gross_margin": 0.47238064841917493,
+      "operating_margin": 0.33112836128896866,
+      "net_margin": 0.2768405796467818,
+      "return_on_equity": 1.7175620142948205,
+      "return_on_assets": 0.35252379321959354,
+      "return_on_invested_capital": 0.6541036103507051,
+      "asset_turnover": 1.2733819358035414,
+      "inventory_turnover": 42.21056313396292,
+      "receivables_turnover": 11.500389672423763,
+      "days_sales_outstanding": 31.738055004798326,
+      "operating_cycle": 40.385179631911356,
+      "working_capital_turnover": -25.882709064162047,
+      "current_ratio": 0.8932929222186667,
+      "quick_ratio": 0.858770399261008,
+      "cash_ratio": 0.21695214060169896,
+      "operating_cash_flow_ratio": 0.9524787026583188,
+      "debt_to_equity": 1.3973119227482946,
+      "debt_to_assets": 0.28679354528018797,
+      "interest_coverage": 41.5,
+      "revenue_growth": 0.0642551178283274,
+      "earnings_growth": 0.19495177946573355,
+      "book_value_growth": 0.2946971027216857,
+      "earnings_per_share_growth": 0.22585924713584285,
+      "free_cash_flow_growth": -0.09227347505215656,
+      "operating_income_growth": 0.07981106349824699,
+      "ebitda_growth": 0.07490661735766109,
+      "payout_ratio": 0.121366697988803,
+      "earnings_per_share": 7.49,
+      "book_value_per_share": 4.990976940770013,
+      "free_cash_flow_per_share": 9.900861421243517
+    }
+  },
+  "consistency_analysis": {
+    "score": 0,
+    "details": "Inconsistent earnings growth pattern; Total earnings growth of 16.1% over past 10 periods"
+  },
+  "moat_analysis": {
+    "score": 5,
+    "max_score": 5,
+    "details": "Excellent ROE consistency: 10/10 periods >15% (avg: 183.8%) - indicates durable competitive advantage; Strong and stable operating margins (avg: 31.2%) indicate pricing power moat; Efficient asset utilization suggests operational moat; High performance stability (93.8%) suggests strong competitive moat"
+  },
+  "pricing_power_analysis": {
+    "score": 4,
+    "details": "Expanding gross margins indicate strong pricing power; Good gross margins (45.3%) suggest decent pricing power"
+  },
+  "book_value_analysis": {
+    "score": 2,
+    "details": "Good book value per share growth pattern; Book value CAGR: 5.9%"
+  },
+  "management_analysis": {
+    "score": 1,
+    "max_score": 2,
+    "details": "Company has been repurchasing shares (shareholder-friendly); No significant new stock issuance detected; No or minimal dividends paid"
+  },
+  "intrinsic_value_analysis": {
+    "intrinsic_value": 1406052997161.2012,
+    "raw_intrinsic_value": 1654179996660.2368,
+    "owner_earnings": 112275000000.0,
+    "assumptions": {
+      "stage1_growth": 0.04466923229785784,
+      "stage2_growth": 0.02233461614892892,
+      "terminal_growth": 0.025,
+      "discount_rate": 0.1,
+      "stage1_years": 5,
+      "stage2_years": 5,
+      "historical_growth": 0.04466923229785784
+    },
+    "details": [
+      "Using three-stage DCF: Stage 1 (4.5%, 5y), Stage 2 (2.2%, 5y), Terminal (2.5%)",
+      "Stage 1 PV: $482,133,751,633",
+      "Stage 2 PV: $350,034,230,453",
+      "Terminal PV: $822,012,014,575",
+      "Total IV: $1,654,179,996,660",
+      "Conservative IV (15% haircut): $1,406,052,997,161",
+      "Owner earnings: $112,275,000,000",
+      "Discount rate: 10.0%"
+    ]
+  },
+  "market_cap": 3971820552192.0,
+  "margin_of_safety": -0.6459928189894638
+}

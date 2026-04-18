@@ -1,0 +1,41 @@
+{
+  "ticker": "TSLA",
+  "score": 25,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 3,
+    "max_score": 8,
+    "details": "Near-Gaussian tails (kurtosis 0.3) \u2014 suspiciously thin; Symmetric distribution (skew 0.46); Balanced tails (tail ratio 1.20); Moderate drawdown (-29.9%)"
+  },
+  "antifragility_analysis": {
+    "score": 6,
+    "max_score": 10,
+    "details": "Net cash positive ($12,629,159,000); Taleb-approved low leverage (D/E 0.08); Volatile margins (CV 0.35) \u2014 fragile pricing power; Consistent FCF generation (10/10 periods positive)"
+  },
+  "convexity_analysis": {
+    "score": 2,
+    "max_score": 10,
+    "details": "Modest R&D (4.6% of revenue); Slight positive asymmetry (up/down ratio 1.07); Low cash relative to market cap (1%); Low FCF yield (0.2%)"
+  },
+  "fragility_analysis": {
+    "score": 5,
+    "max_score": 8,
+    "details": "Low leverage (D/E 0.08) \u2014 not fragile; Interest coverage 45.4x \u2014 debt is irrelevant; Highly volatile earnings (growth std 5.57) \u2014 fragile; Moderate margins (7.3%)"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 5,
+    "max_score": 6,
+    "details": "Elevated vol (regime 1.38) \u2014 opportunity for the antifragile; Elevated vol-of-vol (0.0550 vs median 0.0391)"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 1503299239936.0
+}

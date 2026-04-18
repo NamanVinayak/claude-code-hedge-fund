@@ -1,0 +1,128 @@
+{
+  "AAPL": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "Daily EMAs are not aligned (uptrend/downtrend unclear). RSI at 62 is approaching overbought but not in strong pullback zone (<35). Price is at 270.23, well above 50% Fibonacci (262.25) with Bollinger Band position at 0.87 showing extended move. Pullback not yet formed—momentum is still strong upward. Wait for consolidation.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "N/A"
+  },
+  "MSFT": {
+    "signal": "bearish",
+    "confidence": 72,
+    "reasoning": "Strong uptrend on hourly (EMA aligned, ADX 58.3), but daily is overbought (RSI 82.5, Stoch K=99.1, Williams R=-0.87). Current price 422.79 is above resistance at 420.26 and Fibonacci swing high. This exhaustion in daily momentum with strong hourly uptrend suggests a pullback is imminent. Enter on a dip to 50% Fib (388.52) or 61.8% Fib (381.02) with hourly RSI confluence.",
+    "entry_price": 388.50,
+    "target_price": 420.26,
+    "stop_loss": 370.00,
+    "timeframe": "5-10 trading days"
+  },
+  "TSLA": {
+    "signal": "bullish",
+    "confidence": 68,
+    "reasoning": "Daily is in downtrend (EMA aligned downtrend=True) but hourly shows uptrend alignment. Current price 400.62 sits between hourly 50% Fib (373.99) and recent swing high (408.13). RSI on hourly is 59.3 (neutral), not oversold. Recent price action shows recovery from 381.79 to 400.62. Entry at 385.74 (hourly support) or 373.99 (50% Fib) with target retest of 408.13 (hourly swing high). Risk/reward favorable.",
+    "entry_price": 385.74,
+    "target_price": 408.13,
+    "stop_loss": 365.93,
+    "timeframe": "5-8 trading days"
+  },
+  "NVDA": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "Strong daily uptrend (EMA aligned, RSI 83.6, Stoch 94.3, very overbought). Hourly also trending up with RSI 63.3. Price 201.68 is above both daily and hourly resistance levels. Bollinger position 0.97 (extended). While technical setup is strong uptrend, severe overbought conditions on daily suggest pullback risk is high. Wait for RSI to cool below 70 or price to test hourly support at 196.97.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "N/A"
+  },
+  "META": {
+    "signal": "neutral",
+    "confidence": 38,
+    "reasoning": "Strong daily uptrend (EMA not fully aligned but RSI 84.9 extremely overbought, Stoch 98.97, Williams R=-1.03). Hourly shows uptrend with RSI 79.4 also elevated. Current price 688.55 is at/above daily resistance (676.87). BB position 0.96 (extended). No pullback zone identified yet—price needs to consolidate or pull back to 61.8% Fib (583.46) for a clean entry, but that's too deep. Wait for smaller pullback confirmation.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "N/A"
+  },
+  "GOOGL": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "Strong daily uptrend (EMA aligned=True, RSI 85.4, Stoch 94.3 overbought). Hourly also trending up (EMA aligned, RSI 68.3). Current price 341.68 is at/above daily resistance (337.12) and hourly resistance (341.61). BB position 0.91 (daily) shows extended move. Price has already rallied significantly. Wait for pullback to 38.2% Fib (312.82) or hourly support at 332.87 before entering. Current setup lacks pullback confluence.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "N/A"
+  },
+  "AMZN": {
+    "signal": "bearish",
+    "confidence": 70,
+    "reasoning": "Strong daily uptrend (EMA aligned=True, RSI 84.4, Stoch 95.3 extremely overbought). Hourly also aligned uptrend with RSI 55.8 (neutral). Current price 250.56 is at resistance (249.7) and above 50% Fib (224.25). BB position 0.95 (extended). Daily momentum is exhausted (ROC 5: 6.87 vs ROC 21: 16.03 declining). Entry pullback to 50% Fib (224.25) or hourly support (245.56) with target retest of highs around 250-254.",
+    "entry_price": 237.84,
+    "target_price": 250.70,
+    "stop_loss": 218.24,
+    "timeframe": "5-7 trading days"
+  },
+  "AMD": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "Extremely strong daily uptrend (EMA aligned=True, RSI 91.4 maximum overbought, Stoch 98.75, MFI 82.2). Hourly also trending (EMA aligned, RSI 80.4). Current price 278.39 is above daily resistance (278.26) and at swing high. Volume spike (1.82x avg) confirms strong move but also signals potential exhaustion. Price is too extended—pullback risk is extreme. Wait for RSI to fall below 60 or Bollinger squeeze to form before entering.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "N/A"
+  },
+  "JPM": {
+    "signal": "neutral",
+    "confidence": 42,
+    "reasoning": "Daily uptrend aligned (EMA=True, RSI 67.9, Stoch 87.1 approaching overbought). Hourly uptrend aligned (EMA=True, RSI 62.9). Current price 310.29 is between daily support (281.40) and resistance (313.68), near hourly resistance (313.41). Both timeframes show healthy uptrend but not extended beyond BB. Pullback signals are unclear—momentum is positive but not yet overextended. Needs clearer setup (pullback below hourly support or RSI divergence) before entering.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "N/A"
+  },
+  "GS": {
+    "signal": "neutral",
+    "confidence": 48,
+    "reasoning": "Daily uptrend (EMA aligned=True, RSI 71.6, Stoch 78.6, MACD histogram positive). Hourly also uptrend (EMA aligned=True, RSI 76.0). Current price 925.95 is above daily resistance (909.63) and at hourly resistance (925.91). Momentum is positive but RSI approaching overbought territory. BB position 0.77 (daily) is extended but not extreme. ADX 20.7 (daily) is weak trend strength. Setup lacks clear pullback confluence. Wait for consolidation or hourly support test.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "N/A"
+  },
+  "NKE": {
+    "signal": "bullish",
+    "confidence": 75,
+    "reasoning": "Daily is in downtrend (EMA aligned downtrend=True, RSI 32.6 oversold, Stoch 32.8 oversold, Williams R=-67.2). Hourly shows uptrend alignment (EMA aligned=True, RSI 59.9). Current price 46.03 is near hourly support (45.46) and above recent low. Pullback of ~17% from swing high (65.18) to current price offers excellent risk/reward. Entry at hourly support 45.46 or hourly 38.2% Fib (44.81) with target at daily resistance 53.49. Strong contrarian setup.",
+    "entry_price": 45.46,
+    "target_price": 53.49,
+    "stop_loss": 43.87,
+    "timeframe": "7-12 trading days"
+  },
+  "XOM": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "Daily is in downtrend (EMAs not aligned, RSI 32.4 oversold, Stoch 17.7 deeply oversold, Williams R=-82.3). Hourly shows downtrend alignment. Current price 146.44 has pulled back significantly from swing high (171.47) and is near 50% Fib (158.29). Hourly RSI 42.0 is approaching neutral. Volume declining on pullback is healthy. Entry at hourly support (143.5) or daily 50% Fib (158.29) with target of recent resistance 171.47. Deep pullback in downtrend offers good entry.",
+    "entry_price": 150.10,
+    "target_price": 165.25,
+    "stop_loss": 143.50,
+    "timeframe": "6-10 trading days"
+  },
+  "SPY": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "Strong daily uptrend (EMA aligned=True, RSI 83.8 overbought, Stoch 98.5, BB position 0.96). Hourly also trending up (EMA aligned, RSI 74.8). Current price 710.14 is at/above daily resistance (701.66) and hourly resistance (711.51). Momentum is extremely extended (RSI 83.8, Stoch 98.5). ADX 36.2 shows strong trend but price has run far. Pullback to 50% Fib (666.82) would be ideal entry but is 6.1% away. Current position lacks near-term pullback setup.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "N/A"
+  },
+  "QQQ": {
+    "signal": "neutral",
+    "confidence": 38,
+    "reasoning": "Very strong daily uptrend (EMA aligned=True, RSI 84.1 overbought, Stoch 98.0, BB position 0.99 extremely extended). Hourly also trending up (EMA aligned, RSI 74.6). Current price 648.85 is above daily resistance (640.47) and approaching hourly resistance (649.35). Momentum exhausted on daily (Stoch 98.0, RSI 84.1). Pullback target would be 50% Fib (599.38) or 61.8% Fib (589.68), but that requires 7-10% pullback. Too extended currently for pullback trade entry.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "N/A"
+  }
+}

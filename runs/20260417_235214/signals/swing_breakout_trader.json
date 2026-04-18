@@ -1,0 +1,128 @@
+{
+  "AAPL": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "AAPL shows consolidation range from 246.63-266.43 with recent breakout above upper Bollinger Band (266.13). Price closed at 263.40 yesterday above resistance, now at 270.23 currently. Volume on 4/15 (49.9M) exceeded 20-day average (42.86M) by 1.16x. Hourly indicators show EMA uptrend aligned, strong momentum (ROC 4.38%), and volume ratio 0.81. Measured move: add range height (19.8) to resistance breakout (266.43) = target 286.23. Stop below support at 246.63.",
+    "entry_price": 266.43,
+    "target_price": 286.23,
+    "stop_loss": 246.63,
+    "timeframe": "5-10 trading days"
+  },
+  "MSFT": {
+    "signal": "bullish",
+    "confidence": 85,
+    "reasoning": "MSFT displays clear breakout above 420.26 resistance with current price at 422.79. Volume on breakout day 4/15 was 45.06M vs 34.35M average = 1.31x volume confirmation. Stochastic extremely overbought (K:99.13, D:96.53), RSI 82.49. Bollinger position 1.17 (above upper band), MACD histogram +6.62 bullish cross. Hourly shows strong uptrend, ADX 58.37 (strong trend), tight squeeze. Measured move: range (420.26-356.77=63.49) + breakout 420.26 = target 483.75. Stop below 356.77.",
+    "entry_price": 420.26,
+    "target_price": 483.75,
+    "stop_loss": 356.77,
+    "timeframe": "7-12 trading days"
+  },
+  "TSLA": {
+    "signal": "bullish",
+    "confidence": 68,
+    "reasoning": "TSLA shows powerful breakout on 4/15 with massive volume (113.8M vs 68.69M average = 1.66x). Price broke through resistance 391.95 and currently trades at 400.62. Daily stochastic overbought (K:89.98), hourly uptrend aligned with strong ADX 42.33. However, daily MACD negative (-6.28) suggests conflicting signals at daily level, though histogram positive (+4.65). Bollinger position 0.85, ATR expanding (16.26). Measured move: range (391.95-343.25=48.7) + breakout 391.95 = target 440.65. Stop at 343.25.",
+    "entry_price": 391.95,
+    "target_price": 440.65,
+    "stop_loss": 343.25,
+    "timeframe": "6-12 trading days"
+  },
+  "NVDA": {
+    "signal": "bullish",
+    "confidence": 79,
+    "reasoning": "NVDA exhibits textbook breakout setup. Consolidated 165.17-198.87 range, now breaks above 198.87 resistance at 201.68 current price. Daily volume 134M vs 164.5M average (0.81x) - slightly weak volume confirmation but approaching threshold. Stochastic deeply overbought (K:94.33, D:96.70), RSI 83.64 extreme. Daily EMA uptrend aligned, hourly strong uptrend. Bollinger position 0.97 (near upper edge). Measured move: range (33.7) + 198.87 = target 232.57. Stop below 165.17.",
+    "entry_price": 198.87,
+    "target_price": 232.57,
+    "stop_loss": 165.17,
+    "timeframe": "7-14 trading days"
+  },
+  "META": {
+    "signal": "bullish",
+    "confidence": 81,
+    "reasoning": "META shows strong breakout above 676.87 resistance now at 688.55 current. Daily RSI 84.88, stochastic extreme (K:98.97, D:97.34). Volume on 4/15 (14.95M) below 20-day average (18.27M) = 0.82x - weak volume confirmation is concern. However, hourly volume surge (1.75x average) confirms intraday strength, hourly uptrend aligned. MACD histogram large +13.81, price well above Bollinger upper. Measured move: range (676.87-525.72=151.15) + breakout 676.87 = target 828.02. Stop at 525.72.",
+    "entry_price": 676.87,
+    "target_price": 828.02,
+    "stop_loss": 525.72,
+    "timeframe": "8-15 trading days"
+  },
+  "GOOGL": {
+    "signal": "bullish",
+    "confidence": 82,
+    "reasoning": "GOOGL breaks above 337.12 resistance, currently at 341.68. Daily RSI 85.37, stochastic overbought (K:94.30, D:97.71). Daily volume 20.54M vs 29.35M average (0.70x) - weak confirmation. Hourly shows strong uptrend alignment, hourly ADX 72.54 (strong trend), volume ratio 1.13x. EMA alignment bullish daily, momentum positive (ROC 5.50%, 12.99%, 8.07%). Bollinger position 0.91. Measured move: range (337.12-273.5=63.62) + breakout 337.12 = target 400.74. Stop at 273.5.",
+    "entry_price": 337.12,
+    "target_price": 400.74,
+    "stop_loss": 273.5,
+    "timeframe": "7-14 trading days"
+  },
+  "AMZN": {
+    "signal": "bullish",
+    "confidence": 76,
+    "reasoning": "AMZN breaks above 249.70 resistance, now at 250.56 current. Daily RSI 84.44 extreme, stochastic (K:95.32, D:94.14) overbought. Daily volume 41.9M vs 46.42M average (0.90x) - below threshold. However, momentum strong (ROC 6.87%, 18.58%, 16.03%), daily EMA uptrend aligned. Bollinger position 0.95 near upper band. Measured move: range (249.7-199.34=50.36) + 249.7 = target 300.06. Stop at 199.34.",
+    "entry_price": 249.70,
+    "target_price": 300.06,
+    "stop_loss": 199.34,
+    "timeframe": "6-12 trading days"
+  },
+  "AMD": {
+    "signal": "bullish",
+    "confidence": 88,
+    "reasoning": "AMD displays explosive breakout with exceptional setup. Daily volume 64.85M vs 35.63M average = 1.82x volume confirmation (strong). Price breaks above 278.26 resistance at 278.39 current. RSI extreme 91.41, stochastic extreme (K:98.75, D:99.35). Daily MACD positive (+6.36 histogram), daily EMA uptrend aligned. Hourly strong uptrend, momentum exceptional (ROC 17.59%, 32.37%, 41.75% - trending hard). Bollinger position 1.09 above upper. Measured move: range (278.26-190.95=87.31) + 278.26 = target 365.57. Stop at 190.95.",
+    "entry_price": 278.26,
+    "target_price": 365.57,
+    "stop_loss": 190.95,
+    "timeframe": "5-10 trading days"
+  },
+  "JPM": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "JPM shows mixed signals. While daily EMA uptrend aligned, the setup lacks clear consolidation range and decisive volume confirmation. Daily volume 8.21M vs 10.22M average (0.80x) below threshold. Price oscillates between 281.40-313.68 but no recent strong breakout with volume. Daily stochastic elevated (K:87.15, D:84.36) but not extreme. Hourly shows uptrend but momentum weak (ROC -0.79%, 0.87%, -0.31%). No clear Bollinger breakout setup forming. Wait for volume surge confirming breakout before entry.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "Requires formation"
+  },
+  "GS": {
+    "signal": "neutral",
+    "confidence": 48,
+    "reasoning": "GS consolidates in range but lacks decisive breakout setup. Daily ADX 20.66 (weak trend). Volume 1.74M vs 2.16M average (0.81x) insufficient. Stochastic (K:78.62, D:83.27) elevated but not overbought. Price near resistance 909.63 but hasn't closed above with confirmation. Hourly shows some uptrend alignment and volume surge (1.52x), but daily timeframe weak. MACD positive histogram (+7.44) is supportive. Needs close above 909.63 on high volume before confirming breakout.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "Awaiting confirmation"
+  },
+  "NKE": {
+    "signal": "bearish",
+    "confidence": 73,
+    "reasoning": "NKE shows bearish breakdown below support 53.49. Daily EMA downtrend aligned, RSI 32.61 oversold. Daily stochastic (K:32.76, D:26.40) very low, MACD negative (-3.32 line), Williams R -67.24 extreme bearish. Price at 46.03 has broken below support. However, daily volume 21.77M vs 28.65M average (0.76x) weak confirmation. Hourly shows uptrend aligned (short-term bounce support), but daily downtrend is primary concern. Measured move: range (53.49-42.62=10.87) below support = target 42.62. Stop above 53.49.",
+    "entry_price": 53.49,
+    "target_price": 42.62,
+    "stop_loss": 53.49,
+    "timeframe": "5-12 trading days"
+  },
+  "XOM": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": "XOM shows bearish consolidation breakdown. Daily stochastic very low (K:17.72, D:11.31), RSI 32.38 oversold. MACD negative (-0.92), Williams R -82.28 extreme. Daily volume 15.19M vs 25.57M average (0.59x) - weak. Hourly shows downtrend alignment, RSI 42 neutral. Price oscillating 149.01-171.47 support-resistance with recent pressure toward lower support. However, daily ADX 27.35 (moderate trend strength). Confidence moderate due to low volume. If breaks below 149.01, target 138.14 (range height subtracted). Stop above 171.47.",
+    "entry_price": 149.01,
+    "target_price": 138.14,
+    "stop_loss": 171.47,
+    "timeframe": "7-14 trading days"
+  },
+  "SPY": {
+    "signal": "bullish",
+    "confidence": 79,
+    "reasoning": "SPY shows strong breakout above 701.66 resistance, currently 710.14. Daily RSI 83.79, stochastic extreme (K:98.48, D:99.27). Daily volume 49.97M vs 87.15M average (0.57x) - weak volume confirmation, significant concern. However, Bollinger position 0.96 (near upper), MACD histogram +6.26, momentum positive (ROC 3.20%, 7.08%, 4.89%). Hourly strong uptrend, ADX 65.48. Despite low volume, technical setup is textbook bullish. Measured move: range (701.66-631.97=69.69) + 701.66 = target 771.35. Stop at 631.97.",
+    "entry_price": 701.66,
+    "target_price": 771.35,
+    "stop_loss": 631.97,
+    "timeframe": "7-12 trading days"
+  },
+  "QQQ": {
+    "signal": "bullish",
+    "confidence": 80,
+    "reasoning": "QQQ displays strong breakout above 640.47 resistance at current 648.85. Daily RSI 84.12, stochastic extreme (K:98.02, D:99.17). Daily volume 42.32M vs 61.61M average (0.69x) - weak confirmation. Hourly uptrend aligned, ADX 63.77 (strong), momentum building (ROC 4.96%, 9.61%, 6.29%). Bollinger position 0.99 near upper band, MACD histogram +7.09 bullish. Z-score 2.54 elevated, price well extended. Measured move: range (640.47-558.28=82.19) + 640.47 = target 722.66. Stop at 558.28.",
+    "entry_price": 640.47,
+    "target_price": 722.66,
+    "stop_loss": 558.28,
+    "timeframe": "7-14 trading days"
+  }
+}

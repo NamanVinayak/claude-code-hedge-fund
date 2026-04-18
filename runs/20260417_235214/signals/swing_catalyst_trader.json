@@ -1,0 +1,128 @@
+{
+  "AAPL": {
+    "signal": "neutral",
+    "confidence": 55,
+    "reasoning": "No identifiable upcoming catalyst in news data. Daily indicators show mixed signals (EMA not aligned, RSI at 62 neutral zone). Hourly shows stronger uptrend alignment with ADX 48 and EMA aligned long. Without a clear near-term catalyst (earnings, product launch, FDA decision), catalyst trading strategy is not applicable. Wait for catalyst announcement.",
+    "entry_price": 268.5,
+    "target_price": 275.0,
+    "stop_loss": 260.0,
+    "timeframe": "No trade"
+  },
+  "MSFT": {
+    "signal": "neutral",
+    "confidence": 48,
+    "reasoning": "No catalyst information available. Despite strong daily technicals (RSI 82.5, overbought, Stochastic 99+), the lack of any news or insider activity within the data makes catalyst-based entry impossible. Strong momentum suggests either a completed move or waiting period before next catalyst. Hold position if long, avoid entry.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "TSLA": {
+    "signal": "neutral",
+    "confidence": 50,
+    "reasoning": "Daily downtrend alignment (EMA_aligned_downtrend=True) conflicts with strong hourly uptrend (EMA_aligned_uptrend=True). No catalyst events in data. While hourly shows strength (RSI 59, ADX 42), the absence of identifiable catalysts and mixed daily/hourly signals warrant a neutral stance. Monitor for catalyst announcements before entry.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "NVDA": {
+    "signal": "neutral",
+    "confidence": 50,
+    "reasoning": "Extreme overbought conditions (daily RSI 83.6, Stochastic 94+) with no catalyst to justify continuation. EMA aligned uptrend and strong hourly ADX (33.8) suggest momentum, but lack of any news/catalyst makes this a pullback risk. Catalyst-based traders should wait for consolidation and event announcement.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "META": {
+    "signal": "neutral",
+    "confidence": 50,
+    "reasoning": "Daily RSI at 84.8 (severely overbought) with Stochastic 98.9, despite strong recent price action (7.7% 5-day momentum). No catalyst data available. While hourly shows alignment and strong ADX (66), the extreme overbought state without a catalyst catalyst to hang on to suggests risk of reversal. Neutral until catalyst identified.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "GOOGL": {
+    "signal": "neutral",
+    "confidence": 50,
+    "reasoning": "Daily uptrend alignment with RSI at 85.4 (overbought) and Stochastic 94.3. Hourly shows even stronger momentum (ADX 72.5, EMA aligned). However, no catalyst information in dataset. Recent 12.9% 10-day momentum without an announced event is risky. Catalyst traders wait for news before committing capital.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "AMZN": {
+    "signal": "neutral",
+    "confidence": 50,
+    "reasoning": "Strongest setup: daily uptrend alignment, RSI 84.4, Stochastic 95.3, z-score 2.8 (far above mean), 18.6% 10-day momentum. However, no catalyst events identified in data. Hourly shows consolidation (RSI 55.8, Stochastic 52). Without catalyst confirmation, this strong run lacks a defined news trigger. Await catalyst announcement.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "AMD": {
+    "signal": "neutral",
+    "confidence": 50,
+    "reasoning": "Extreme conditions: daily RSI 91.4, highest in dataset, with z-score 3.66, volume surge (1.8x average), 32.3% 10-day momentum. Hourly RSI 80.4, ADX 52 (strong trend). Classic parabolic move without catalyst foundation suggests reversal risk. Catalyst framework requires news confirmation—none available. Avoid entry.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "JPM": {
+    "signal": "neutral",
+    "confidence": 52,
+    "reasoning": "Modest uptrend alignment with daily RSI 67.8, Stochastic 87.1. Hourly less impressive (RSI 62.9, Stochastic 51.9), showing consolidation. No catalyst data. Recent 8.6% 21-day return with flat 5-day momentum suggests end of move. Without catalyst timing, entry is speculative. Neutral stance warranted.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "GS": {
+    "signal": "neutral",
+    "confidence": 50,
+    "reasoning": "Daily uptrend with RSI 71.6 (approaching overbought), Stochastic 78.6. Hourly stronger (RSI 76, ADX 45.9). However, no catalyst signals available. Recent 11.5% 21-day gain without announced event lacks conviction. Low daily volume (80% of average) suggests waning participation. Catalyst traders need event confirmation.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "NKE": {
+    "signal": "neutral",
+    "confidence": 55,
+    "reasoning": "Daily downtrend aligned (EMA_aligned_downtrend=True) with RSI 32.6 (oversold), Stochastic 32.7. Hourly shows early reversal signs (RSI 59.9, uptrend alignment). Potential for bounce, but no catalyst (earnings, product, strategic news) identified. Await catalyst announcement or support bounce. -17% 21-day momentum suggests selling pressure.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "XOM": {
+    "signal": "neutral",
+    "confidence": 50,
+    "reasoning": "Daily downtrend with RSI 32.4 (oversold), MACD negative histogram, Williams %R -82.3 (extreme bearish). Hourly also downtrend aligned (EMA_aligned_downtrend=True) with RSI 42, MACD negative. No catalyst data. -5.5% 10-day momentum and low volume (59% of average) reflect sustained selling. No catalyst trigger visible.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "SPY": {
+    "signal": "neutral",
+    "confidence": 50,
+    "reasoning": "Strong daily uptrend (EMA aligned) with RSI 83.8, Stochastic 98.5, momentum positive (7% 10-day). Hourly also strong (EMA aligned, RSI 74.8, ADX 65.5). However, no catalyst events in dataset to justify entry timing. Broad market strength without specific catalyst is prone to reversal. Neutral: wait for macro catalyst confirmation.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "QQQ": {
+    "signal": "neutral",
+    "confidence": 50,
+    "reasoning": "Daily uptrend with RSI 84.1, Stochastic 98, z-score 2.54 (elevated). Hourly aligned (RSI 74.6, ADX 63.8). Strong 9.6% 10-day momentum. However, zero catalyst data makes this a momentum-only trade. Tech-heavy index lacking identified event catalyst suggests waiting for pullback and news confirmation before entry.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  }
+}

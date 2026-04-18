@@ -1,0 +1,144 @@
+{
+  "decisions": {
+    "AAPL": {
+      "action": "hold",
+      "entry_price": 0.0,
+      "target_price": 0.0,
+      "stop_loss": 0.0,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "0 trading days",
+      "confidence": 42,
+      "reasoning": "Head Trader neutral (42). 7/9 agents neutral on tangled EMAs, weak ADX 14.5. No edge; stand aside."
+    },
+    "MSFT": {
+      "action": "buy",
+      "entry_price": 418.0,
+      "target_price": 438.0,
+      "stop_loss": 409.0,
+      "risk_reward_ratio": "2.2:1",
+      "timeframe": "5-15 trading days",
+      "confidence": 62,
+      "reasoning": "Strong uptrend (ADX 58 hourly, breakout 420.26). Buy pullback 418, target 438 median; overbought caps size."
+    },
+    "TSLA": {
+      "action": "hold",
+      "entry_price": 0.0,
+      "target_price": 0.0,
+      "stop_loss": 0.0,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "0 trading days",
+      "confidence": 45,
+      "reasoning": "Multi-timeframe conflict: daily downtrend vs hourly uptrend. No high-conviction synthesis. Stand aside."
+    },
+    "NVDA": {
+      "action": "buy",
+      "entry_price": 199.0,
+      "target_price": 215.0,
+      "stop_loss": 191.0,
+      "risk_reward_ratio": "2.0:1",
+      "timeframe": "5-15 trading days",
+      "confidence": 72,
+      "reasoning": "Textbook trend (EMAs aligned, ADX 35, ROC 7.8%). Druckenmiller concurs. Buy pullback; overbought warrants tight stop."
+    },
+    "META": {
+      "action": "buy",
+      "entry_price": 672.0,
+      "target_price": 715.0,
+      "stop_loss": 651.0,
+      "risk_reward_ratio": "2.05:1",
+      "timeframe": "5-15 trading days",
+      "confidence": 55,
+      "reasoning": "Momentum/breakout bullish to 709+ but trend_follower neutral on tangled EMAs. Partial entry on dip; smaller size."
+    },
+    "GOOGL": {
+      "action": "buy",
+      "entry_price": 336.7,
+      "target_price": 358.8,
+      "stop_loss": 326.0,
+      "risk_reward_ratio": "2.07:1",
+      "timeframe": "5-15 trading days",
+      "confidence": 68,
+      "reasoning": "Strong trend (ADX 43.3, ROC 13%, EMAs aligned). Target intermediate resistance 358.8; stop below EMA21."
+    },
+    "AMZN": {
+      "action": "buy",
+      "entry_price": 248.0,
+      "target_price": 265.0,
+      "stop_loss": 240.0,
+      "risk_reward_ratio": "2.13:1",
+      "timeframe": "5-15 trading days",
+      "confidence": 58,
+      "reasoning": "Trend strong (ADX 44, ROC 18.6%) but z-score 2.84 extreme. Buy pullback only; size conservatively."
+    },
+    "AMD": {
+      "action": "buy",
+      "entry_price": 246.0,
+      "target_price": 270.0,
+      "stop_loss": 234.0,
+      "risk_reward_ratio": "2.0:1",
+      "timeframe": "5-15 trading days",
+      "confidence": 70,
+      "reasoning": "Highest-conviction trend (ADX 50, ROC 41.75%, all trend agents 88-92). Extreme stretch; tight stop, reduced size."
+    },
+    "JPM": {
+      "action": "hold",
+      "entry_price": 0.0,
+      "target_price": 0.0,
+      "stop_loss": 0.0,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "0 trading days",
+      "confidence": 45,
+      "reasoning": "7/9 neutral, weak ADX 31.8, momentum stalling. No clear edge; stand aside."
+    },
+    "GS": {
+      "action": "hold",
+      "entry_price": 0.0,
+      "target_price": 0.0,
+      "stop_loss": 0.0,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "0 trading days",
+      "confidence": 40,
+      "reasoning": "ADX 20.7 below threshold, volume 0.81x, momentum decelerating. Stand aside until confirmation."
+    },
+    "NKE": {
+      "action": "short",
+      "entry_price": 45.7,
+      "target_price": 42.0,
+      "stop_loss": 47.5,
+      "risk_reward_ratio": "2.06:1",
+      "timeframe": "5-15 trading days",
+      "confidence": 62,
+      "reasoning": "Strong downtrend (ADX 48, ROC -17%, EMAs reversed, EPS -8.8%). Oversold bounce risk; tight stop above EMA10."
+    },
+    "XOM": {
+      "action": "short",
+      "entry_price": 149.0,
+      "target_price": 140.0,
+      "stop_loss": 153.5,
+      "risk_reward_ratio": "2.0:1",
+      "timeframe": "5-15 trading days",
+      "confidence": 58,
+      "reasoning": "Momentum accelerating down (-5.5%/-4.3% ROC), sector weakness. Oversold (RSI 32.4) caps conviction; smaller size."
+    },
+    "SPY": {
+      "action": "buy",
+      "entry_price": 701.0,
+      "target_price": 720.0,
+      "stop_loss": 692.0,
+      "risk_reward_ratio": "2.11:1",
+      "timeframe": "5-15 trading days",
+      "confidence": 58,
+      "reasoning": "Index uptrend confirmed (ADX 36, hourly 65). Overbought warns; partial entry on pullback near breakout level."
+    },
+    "QQQ": {
+      "action": "buy",
+      "entry_price": 640.0,
+      "target_price": 660.0,
+      "stop_loss": 630.0,
+      "risk_reward_ratio": "2.0:1",
+      "timeframe": "5-15 trading days",
+      "confidence": 60,
+      "reasoning": "Strong tech trend (ADX 37, hourly 64, MACD surging). z-score 2.54 extreme; buy only on pullback, not highs."
+    }
+  }
+}
