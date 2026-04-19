@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 68,
+    "reasoning": "Daily EMA alignment is cleanly bullish (10 EMA $73,710 > 21 EMA $71,988 > 50 EMA $71,524) with ADX at 33.3, confirming a trend with real strength. Daily momentum is robust: ROC-21 at +16.3%, MACD histogram positive and expanding ($721), and volume running 47% above 20-day average. Price surged to $77,126 on April 17 and has since pulled back to $75,591, creating an intraday pullback toward the 10 EMA zone. The hourly picture shows a sharp corrective move: hourly EMAs are in downtrend alignment with ADX=58.7 and RSI=28.9, indicating the intraday pullback has been significant and may be nearing exhaustion. The hourly volume spike (3.4x average) suggests institutional distribution/profit-taking, but the daily uptrend remains structurally intact. RSI at 79.5 on the daily is overbought — ideal entry is a further pullback to the daily 10 EMA (~$73,700) rather than chasing at current price. Resistance is at $77,126 (recent swing high) and Bollinger upper band at $77,510. Stop below the 21 EMA ($71,988). Risk-reward is acceptable on the pullback entry but current price is between 10 EMA and recent high, requiring patience.",
+    "entry_price": 73800.0,
+    "target_price": 77500.0,
+    "stop_loss": 71700.0,
+    "timeframe": "5-12 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 65,
+    "reasoning": "Daily EMA structure is bullish with 10 EMA ($2,301) > 21 EMA ($2,229) > 50 EMA ($2,198), and ADX at 38.2 confirms a strong trending environment. Daily MACD histogram is positive and expanding, ROC-21 is +21.6% — the strongest momentum reading in this basket. Volume on April 17's rally was 50% above average, showing demand. Current price at $2,343 has pulled back from the April 17 close of $2,421, and the hourly timeframe is in a confirmed downtrend (hourly EMA downtrend, ADX=48.9, RSI=39.5) — this pullback has been measured and may be creating a re-entry opportunity near the daily 10 EMA. Daily RSI at 73.6 is elevated but less extreme than BTC. The key risk is that price is still 14% above the 50-day SMA, indicating the daily trend is stretched. Entry near the daily 10 EMA at ~$2,300 offers reasonable risk-reward. Stop below the 21 EMA ($2,229) with target at the prior swing high resistance (~$2,421 and upper Bollinger at $2,449).",
+    "entry_price": 2305.0,
+    "target_price": 2445.0,
+    "stop_loss": 2210.0,
+    "timeframe": "5-12 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "Daily EMA alignment is tangled and does not meet the uptrend criteria: 10 EMA ($85.60) is above 21 EMA ($84.96) but the 50 EMA ($87.46) sits above both — the 50 EMA is acting as overhead resistance, not a trend support level. ADX at 19.2 is below the 25 threshold required to confirm a tradeable trend; the trend is weak and directionless. While daily RSI (63.8) and momentum (ROC-5: +9%) suggest recent strength, the price structure shows lower highs (recent swing high $96.22 from Fibonacci data vs current ~$88.9 resistance) and the 200-day SMA at $127.61 is far above — the long-term trend remains bearish. Hourly EMAs are in downtrend alignment with a very strong ADX of 76.2, meaning the intraday momentum is bearish. CCI at 203.9 is extremely overbought. No clean trend-following setup exists. Waiting for either a clean EMA alignment (50 EMA needs to roll below 21 EMA) or an ADX breakout above 25 on a defined trend direction before entering.",
+    "entry_price": 0.0,
+    "target_price": 0.0,
+    "stop_loss": 0.0,
+    "timeframe": "no trade"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 25,
+    "reasoning": "Daily EMA structure is tangled: 10 EMA ($619.8) and 21 EMA ($617.1) are close together and BELOW the 50 EMA ($634.6). This is not a clean uptrend — the 50 EMA acting as overhead supply disqualifies a bullish trend-following entry. ADX at 21.0 is below the 25 threshold required for trend confirmation, indicating a choppy, trendless environment. While recent price action has been positive (5 consecutive up closes, ROC-5 +8.7%), the Bollinger band position at 1.09 (above the upper band) signals short-term overextension, and the stochastic at 96.2 is extremely overbought. Hourly indicators confirm near-term weakness: EMA downtrend alignment, ADX=59.7, RSI=20.5 (oversold). Price closed at $643.45 on April 17 and has since retraced to $624.87 (current). The daily structure needs the 10 and 21 EMAs to reclaim position above the 50 EMA and ADX to clear 25 before a trend-following long can be considered. No trade setup at this time.",
+    "entry_price": 0.0,
+    "target_price": 0.0,
+    "stop_loss": 0.0,
+    "timeframe": "no trade"
+  },
+  "XRP-USD": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "Daily EMA alignment is mixed and does not satisfy clean uptrend criteria: 10 EMA ($1.3943) > 21 EMA ($1.3782) is bullish, but the 50 EMA ($1.4105) sits above both, creating overhead resistance rather than trend support. ADX at 26.1 is marginally above the 25 threshold, but the EMA tangle disqualifies this as a high-conviction trend-following setup. Daily momentum is strong (ROC-5: +11.5%, ROC-21: +11.5%), volume on April 17 was nearly 90% above 20-day average, and MACD histogram is positive and expanding — these are encouraging signs but the structure is not yet confirmed. The current price ($1.432) is sitting between the 50 EMA ($1.4105) and resistance ($1.477), which represents a middle-zone entry with no clear EMA support below. Hourly EMAs are in downtrend (ADX=36.9), adding timing risk. If the 50 EMA rolls down and aligns below the 10/21 EMAs on the daily, a strong breakout trade could develop above $1.477 resistance. Monitoring for trend clarification before committing capital.",
+    "entry_price": 0.0,
+    "target_price": 0.0,
+    "stop_loss": 0.0,
+    "timeframe": "no trade"
+  }
+}

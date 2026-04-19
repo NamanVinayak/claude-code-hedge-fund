@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bearish",
+    "confidence": 78,
+    "reasoning": "BTC is in a genuine mean-reversion setup. Daily Z-score is 2.48 (above the +2 threshold), RSI is 79.5 (above 75), Bollinger Band position is 0.97 (pinned near upper band), MFI is 87.2, and price is extended 10.15% above the 50-day SMA — all hallmarks of an overbought extreme. Critically, the hourly timeframe confirms a momentum shift: hourly RSI has collapsed to 28.9, Stochastic K is 20.0 (near oversold), EMAs are bearishly aligned, and hourly MFI has gone to 0 (buying exhaustion). Hourly volume spiked to 3.4x average on the downturn. The Apr 17 daily candle printed a high at $78,321 but closed at $77,127, and the current price at $75,592 shows follow-through selling — a reversal candle confirmation. The reversion target is the middle Bollinger Band / 50-day SMA zone near $70,500. Stop is placed above the swing high at $78,500.",
+    "entry": 75591.69,
+    "target": 70500.0,
+    "stop": 78500.0,
+    "timeframe": "5-10 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bearish",
+    "confidence": 72,
+    "reasoning": "ETH meets the mean-reversion short criteria. Daily Z-score is 2.35 (above +2), RSI is 73.6 (approaching 75), Bollinger Band position is 0.95 (near upper band), Stochastic K is 90.1, and price is a substantial 14.13% above the 50-day SMA — the largest extension in this basket. The hourly picture confirms momentum is rolling over: hourly RSI is 39.5, Stoch K is 22.8 (near oversold), EMAs are bearishly aligned, MACD histogram is negative, MFI is 0 (buying power exhausted), and Z-score hourly is -0.94. The Apr 17 candle made a high at $2,464 but the current price at $2,343 is already well below that — a clear reversal signal with hourly follow-through selling. Target is the middle Bollinger Band near $2,190 (50 SMA at $2,121 is the stretch target). Stop placed above the swing high at $2,470.",
+    "entry": 2343.51,
+    "target": 2190.0,
+    "stop": 2470.0,
+    "timeframe": "5-12 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "SOL does not present a clean mean-reversion setup. The daily Z-score is 0.78, which falls between -1 and +1 — the neutral zone where no mean-reversion trade exists per strategy rules. Price is only 3.57% above the 50-day SMA, well within normal variance. While CCI has spiked to 203.96 (above +200) and Williams %R shows overbought conditions, the primary mean-reversion trigger (Z-score) is not at an extreme. The Bollinger Band position of 1.0 shows price is just touching the upper band, not decisively extended beyond it. The hourly indicators show oversold conditions (RSI 28.0, Stoch 25.3), but this reflects short-term intraday noise rather than a daily-timeframe reversion opportunity. No actionable mean-reversion setup exists at current levels.",
+    "entry": 85.75,
+    "target": 85.81,
+    "stop": 90.67,
+    "timeframe": "neutral"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 25,
+    "reasoning": "BNB does not qualify for a mean-reversion signal under the primary criteria. The daily Z-score is 0.73, squarely within the -1 to +1 neutral zone, and price is only 2.66% above the 50-day SMA. While Stochastic K is extreme at 96.2, CCI is above +200 at 221.8, and Bollinger Band position is marginally above 1.0 (just outside the upper band), the Z-score anchor indicates price is not statistically extended from its mean. The RSI at 71.4 is approaching overbought but has not crossed the 75 threshold. The hourly timeframe shows significant selling (RSI 20.5, CCI -212, Z-score -1.73), suggesting an intraday pullback is underway, but this does not constitute a multi-day mean-reversion opportunity from a daily extreme. No trade signal.",
+    "entry": 624.87,
+    "target": 626.75,
+    "stop": 645.68,
+    "timeframe": "neutral"
+  },
+  "XRP-USD": {
+    "signal": "bearish",
+    "confidence": 55,
+    "reasoning": "XRP is approaching but not quite at a textbook mean-reversion extreme, yet multiple secondary indicators argue for a low-confidence bearish fade. Daily Z-score is 1.81 (below the +2 threshold but trending there), RSI is 73.2 (just under 75), but the Bollinger Band position is 1.20 — price is clearly above the upper band, a genuine overextension. CCI is a standout at 291.1, far above the +200 extreme threshold. Price is 6.89% above the 50-day SMA. The Apr 17 candle reached $1.507 but the current price at $1.432 is already pulling back meaningfully from the high, with volume 1.9x the 20-day average (distribution). The hourly timeframe is more mixed (RSI 43, Stoch neutral at 51) but EMAs are bearishly aligned and hourly Z-score is -0.92. The Bollinger Band above-upper-band condition, extreme CCI, and reversal price action warrant a low-confidence bearish signal with the target at the middle Bollinger Band / 50 SMA zone near $1.355. Stop is above the recent swing high at $1.510.",
+    "entry": 1.432,
+    "target": 1.355,
+    "stop": 1.51,
+    "timeframe": "4-8 trading days"
+  }
+}

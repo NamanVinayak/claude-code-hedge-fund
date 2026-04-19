@@ -1,0 +1,74 @@
+{
+  "decisions": {
+    "XRP-USD": {
+      "action": "buy",
+      "entry_price": 1.435,
+      "target_price": 1.68,
+      "stop_loss": 1.365,
+      "risk_reward_ratio": "3.5:1",
+      "timeframe": "10-21 trading days",
+      "quantity": 8360.0,
+      "position_value": 11996.60,
+      "confidence": 76,
+      "reasoning": "Highest-conviction setup across all 5 tickers. 7/9 strategies bullish (76% Head Trader confidence). Three compounding catalysts create exceptional asymmetry: (1) XRP commodity status confirmed by SEC/CFTC March 2026 — eliminates legal overhang permanently; (2) CLARITY Act passage expected end of May 2026 providing federal commodity framework and unlocking further institutional demand; (3) Rakuten Wallet integration for 44M users at 5M+ merchants in Japan is the largest real-world crypto adoption catalyst in XRP's history. Institutional flows confirm: $120M ETP global inflows, highest of any crypto asset this week; XRP spot ETF AUM at $1.08B. Sentiment agent (68% bullish) and crypto sentiment both confirm. 10M+ XRP/day whale accumulation at 10-month high. Spot-driven rally (healthy funding structure). Entry at $1.435 is breakout-retest of the $1.477 resistance level with 1.89x volume confirmation. Risk: 89.8M XRP moved to Coinbase Apr 13 creates near-term $119M sell pressure headwind — managed by the stop at $1.365. R:R 3.5:1 is best in basket. Position sized to risk manager limit ($11,999 cap)."
+    },
+    "ETH-USD": {
+      "action": "buy",
+      "entry_price": 2335.0,
+      "target_price": 2620.0,
+      "stop_loss": 2210.0,
+      "risk_reward_ratio": "2.28:1",
+      "timeframe": "8-15 trading days",
+      "quantity": 2.99,
+      "position_value": 6981.65,
+      "confidence": 74,
+      "reasoning": "Strongest multi-strategy consensus: 8/9 strategies bullish (74% Head Trader confidence), highest quality setup in basket by vote tally. ADX 38.2 confirms the strongest trend in the group. Three stacked institutional catalysts: (1) strongest ETH ETF inflows of 2026 (+$187M week ending Apr 10), (2) Glamsterdam network upgrade H1 2026 with known timeline as narrative catalyst, (3) ETH/BTC ratio recovery from 2026 lows signaling capital rotation. Crypto sentiment confirms (75% bullish): 7.6M ETH accumulated by 10K-100K ETH wallets since April, exchange supply at multi-year lows, BlackRock ETHB staked ETF $254M first week. Pullback from $2,421 swing high to $2,335 entry is a mean-reversion-resolved setup — buying after the correction, not chasing. ROC-21 +21.6% is the strongest momentum reading in the basket. R:R 2.28:1 clears the 2:1 minimum. Risk manager limit $7,000. Key risk: 200 SMA at $2,875 is 23% overhead structural resistance; macro fear environment (F&G 27) could slow recovery pace."
+    },
+    "BTC-USD": {
+      "action": "buy",
+      "entry_price": 75200.0,
+      "target_price": 81000.0,
+      "stop_loss": 72800.0,
+      "risk_reward_ratio": "2.35:1",
+      "timeframe": "7-14 trading days",
+      "quantity": 0.131,
+      "position_value": 9851.20,
+      "confidence": 68,
+      "reasoning": "7/9 strategies bullish (68% Head Trader confidence). Classic contrarian setup: 46 consecutive days of negative funding rates (longest since Nov 2022 post-FTX) means crowded shorts are trapped, historically preceding sharp squeezes above $76-78K. Supply-demand fundamentals are exceptional: 270K BTC accumulated by whales in 30 days (largest since 2013), exchange reserves at 2017 lows (2.21M BTC) — supply shock building. Institutional demand structurally intact: Q1 2026 record $18.7B ETF inflows, Goldman Sachs Bitcoin ETF filed, BlackRock IBIT $54B AUM, MicroStrategy buying ~$1B/week, Tether added $70M BTC. US Strategic Bitcoin Reserve (328K BTC) provides sovereign validation. Entry at $75,200 aligns with hourly RSI 28.9 (deeply oversold) providing timing entry within the daily uptrend (EMA stack aligned, ADX 33.3, MACD +721). R:R 2.35:1 clears the 2:1 minimum. Position sized to risk manager limit ($9,850 cap). Key risk: ETF April inflows cooled sharply ($69.6M vs $1.32B March); near-term whale distribution at $74-76K resistance zone; mean reversion agent flags daily RSI 79.5 overbought (managed via pullback entry)."
+    },
+    "SOL-USD": {
+      "action": "hold",
+      "entry_price": null,
+      "target_price": null,
+      "stop_loss": null,
+      "risk_reward_ratio": null,
+      "timeframe": "SKIP — no trade",
+      "quantity": 0,
+      "position_value": 0,
+      "confidence": 35,
+      "reasoning": "Clear avoid. Head Trader confidence 35% is below the 40% threshold required for a trade when R:R is not exceptional (no valid R:R computed — entry/target/stop are null from Head Trader). Near-unanimous neutral/avoid signal: 0 bullish, 7 neutral, 2 bearish across strategies. Active real headwinds dominate: (1) $270M Drift Protocol exploit (North Korean state actor) damaged DeFi TVL narrative and created ecosystem credibility risk; (2) FTX/Alameda estate moved $16M SOL Apr 13 — active distribution overhang; (3) whale accumulation collapsed 80% since March peak; (4) ADX 19.2 confirms trendless market — daily EMAs tangled (50 EMA above shorter EMAs). Hourly ADX 76.2 with 4.1x volume on flush signals active distribution, not a healthy consolidation. Crypto sentiment neutral (42% confidence). Fundamental upgrades (Firedancer H2 2026, Alpenglow) are too distant for a 2-3 week swing trade. Wait for cleaner trend structure and resolution of Drift exploit contagion fears before engaging."
+    },
+    "BNB-USD": {
+      "action": "hold",
+      "entry_price": null,
+      "target_price": null,
+      "stop_loss": null,
+      "risk_reward_ratio": null,
+      "timeframe": "SKIP — no trade (monitor for post-hardfork setup Apr 28+)",
+      "quantity": 0,
+      "position_value": 0,
+      "confidence": 38,
+      "reasoning": "Skip. Head Trader confidence 38% is below the 40% threshold and conflicting signals prevent high-conviction sizing. Vote tally: 2 bullish, 3 bearish, 4 neutral — no directional consensus. Primary blocker: DOJ probe + Democratic senator flagging alleged $1.7B Iran-linked Binance flows introduces binary regulatory headline risk that could trigger sharp selloff at any moment. Even with the Osaka/Mendel hardfork Apr 28 as a near-term catalyst and 35th quarterly burn (-2.14M BNB deflationary), the regulatory wildcard caps position sizing. Technical picture contradictory: daily overbought (stochastic 96.2, CCI 221.8, above Bollinger upper band at 1.086) while hourly deeply oversold (RSI 20.5, ADX 59.7 active downtrend). Crypto sentiment neutral (38% confidence). Weakest ROC-21 of basket (+4.9%) indicates lagging relative strength. Monitor for: (a) regulatory clarity on DOJ probe, (b) post-hardfork technical reset creating a cleaner entry below $610-615 support zone."
+    }
+  },
+  "portfolio_summary": {
+    "total_capital": 100000.0,
+    "deployed_capital": 28829.45,
+    "cash_reserved": 71170.55,
+    "deployment_rate_pct": 28.83,
+    "positions_taken": 3,
+    "positions_skipped": 2,
+    "skipped_tickers": ["SOL-USD", "BNB-USD"],
+    "overall_reasoning": "Conservative 29% deployment is appropriate for the current Fear environment (Fear & Greed 27) with elevated macro uncertainty. The three active positions represent the highest-conviction asymmetric setups: XRP for regulatory catalyst (3.5:1 R:R), ETH for institutional momentum (2.28:1 R:R), BTC for contrarian short-squeeze setup (2.35:1 R:R). All three clear the 2:1 minimum R:R requirement. SOL and BNB skipped due to sub-40% Head Trader confidence and active headwinds (Drift exploit and DOJ probe respectively). High cash reserve ($71K) provides optionality to add as macro fear resolves or to manage stops if BTC fails to clear $78K resistance. Portfolio is diversified: L1 blue chip (BTC) + L1 smart contract (ETH) + payments/XRP — distinct catalysts and sectors. High cross-correlation risk acknowledged (BTC-ETH 0.84, BTC-XRP 0.80) — positions sized conservatively within risk manager limits rather than near the 25% max cap."
+  }
+}

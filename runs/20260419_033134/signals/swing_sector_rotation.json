@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "BTC is the dominant crypto regime with 57% market dominance — capital is actively rotating INTO BTC, not out. Daily indicators are powerfully bullish: EMA aligned uptrend, RSI 79.5 (overbought but reflecting strong inflows), MACD histogram +721, ROC-21 +16.3%, volume 47% above average. The hourly pullback (RSI 29 oversold, EMA downtrend, volume 3.4x avg) represents a short-term retracement within the dominant daily uptrend. This is a classic sector rotation entry signal: dominant asset pulling back intraday while daily trend remains intact. Resistance at $77,127 was tagged on 4/17; a pullback to the $74,000-$75,500 zone offers re-entry. Target is the $78,000-$79,000 breakout zone above daily resistance. Stop below the $73,350 swing low (4/16 low).",
+    "entry": 75000.0,
+    "target": 79500.0,
+    "stop": 72800.0,
+    "timeframe": "5-12 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 58,
+    "reasoning": "ETH shows the strongest 21-day momentum of the group (+21.6% ROC-21 vs BTC's +16.3%), which is an early signal of capital beginning to rotate from BTC into ETH — consistent with ETH/BTC ratio bouncing from 2026 lows. Daily EMA aligned uptrend, RSI 73.6, MACD positive, volume 50% above average. Hourly pullback is moderate (RSI 39.5, approaching oversold) with the least extreme hourly conditions among altcoins, suggesting the intraday correction may be near exhaustion. Current price ($2,343) is 3.2% below the recent daily close high of $2,421, offering a measured pullback entry. However, BTC dominance at 57% limits altcoin upside — this is an early-rotation play with moderate confidence. Stop below the $2,285 hourly support (4/16 low).",
+    "entry": 2343.0,
+    "target": 2490.0,
+    "stop": 2260.0,
+    "timeframe": "7-14 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "SOL underperforms peers significantly on 21-day momentum (+7.1% vs ETH +21.6%, BTC +16.3%), indicating capital has NOT rotated into the high-performance L1 segment yet. Daily ADX is weak at 19.2 (no established trend), and the daily EMAs are not aligned in uptrend (EMA-50 above EMA-10/21). The hourly picture is more concerning: ADX 76.2 (strong downtrend), RSI 28 (oversold), volume 4.1x average (heavy liquidation), ROC-21 hourly -3.2%. BB position at 100% on daily (at upper band) limits upside. With BTC dominance elevated, capital tends to rotate into high-beta assets last. SOL needs BTC dominance to decline and ETH/BTC to confirm recovery before its rotation begins. No clear sector rotation entry signal at this time.",
+    "entry": 85.75,
+    "target": 92.0,
+    "stop": 82.5,
+    "timeframe": "10-15 trading days"
+  },
+  "BNB-USD": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": "BNB shows the weakest relative rotation signal of the group. On 21-day momentum, BNB is dead last (+4.9% ROC-21 vs peers at +7-22%). Exchange tokens (BNB/BSC) historically lag pure crypto plays during market-wide rallies — capital rotates INTO them only during DeFi-specific cycles. Daily technicals are mixed: MACD line is barely negative (-0.07) despite positive histogram — a bearish divergence. ADX weak at 21. Bollinger Band position at 108.6% (above upper band) on the daily indicates overbought extension without trend strength. Hourly conditions are the most extreme: RSI 20.5, stochastic 25/14, BB position -0.03 (below lower band), ADX 60 (strong downtrend in force), volume 3.2x avg. The daily close at $643.45 (resistance) while hourly is already breaking below support ($624.87) signals rotation OUT of BNB. Bearish signal with target back toward the $610-$615 support zone.",
+    "entry": 624.87,
+    "target": 610.0,
+    "stop": 647.0,
+    "timeframe": "5-10 trading days"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 65,
+    "reasoning": "XRP presents the strongest volume signal of any altcoin: daily volume 89% above 20-day average, indicating substantial institutional inflows into the payments crypto segment. Daily RSI 73.2, ROC-21 +11.5%, MACD positive. Crucially, the hourly RSI (43.3) is the healthiest of all altcoins — not oversold, not overbought — suggesting controlled consolidation rather than panic selling. Hourly stochastic at 51/47 (neutral) and MACD near zero (turning) support a near-term bottom. Current price ($1.432) has pulled back 3% from the $1.477 recent close, approaching the hourly support at $1.426. XRP regulatory clarity represents a sector-specific catalyst that differentiates it from other altcoins. However, daily BB at 119.6% (most extended) is a caution flag — mean reversion risk is real. Risk-reward is favorable at current levels with tight stop below $1.38 hourly support.",
+    "entry": 1.432,
+    "target": 1.55,
+    "stop": 1.375,
+    "timeframe": "6-12 trading days"
+  }
+}

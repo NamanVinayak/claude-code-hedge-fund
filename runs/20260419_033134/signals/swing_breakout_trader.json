@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "BTC tested resistance at $77,127 on 4/17 with an intraday high of $78,321 but failed to close above it decisively — the daily close was at $77,127 (exactly the resistance), which is a marginal case. More critically, daily volume was 1.47x the 20-day average, just below the required 1.5x confirmation threshold. The hourly picture is bearish: EMAs are aligned downtrend, hourly RSI at 28.9 (oversold), and current price has already pulled back to $75,592 — well inside the prior range. This looks like a failed breakout or a shake-out before a true breakout. The daily RSI at 79.5 and stochastic at 89.8 suggest overbought conditions that reduce breakout follow-through probability. No actionable breakout setup at current levels; the price must retest and close above $77,127 with volume >1.5x to re-trigger an entry.",
+    "entry": 77200.0,
+    "target": 88600.0,
+    "stop": 74900.0,
+    "timeframe": "7-15 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 52,
+    "reasoning": "ETH closed at $2,421 on 4/17 — precisely at the identified resistance level — with daily volume at 1.50x the 20-day average, narrowly meeting the breakout volume confirmation threshold. Daily EMAs are aligned in uptrend (10>21>50), RSI is 73.6, and MACD histogram is expanding positively. The measured move (range: $1,931 to $2,421, height $490) projects a target near $2,911, but given current price of $2,344 (a pullback from the breakout), the immediate target using the resistance level is more conservatively set. Hourly indicators are bearish (EMAs downtrend, RSI 39.5, negative MACD), indicating the pullback is ongoing. The breakout signal is marginal — volume barely cleared the threshold and price has pulled back below the breakout level. A re-test close above $2,421 with stronger volume would significantly increase confidence. Entry on reclaim of $2,421 is preferred over chasing.",
+    "entry": 2425.0,
+    "target": 2911.0,
+    "stop": 2290.0,
+    "timeframe": "8-15 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "SOL's daily Bollinger Band position is 1.0007 — the price is sitting exactly at the upper band — and closed at $88.87 on 4/17 after hitting $90.67 intraday, which tested resistance at $88.99 and slightly exceeded it. However, daily volume was only 1.25x the 20-day average, significantly below the required 1.5x breakout confirmation threshold. The ADX at 19.2 confirms a weak trend environment. Hourly picture is sharply bearish: EMAs aligned downtrend with high ADX (76.2), RSI at 28 (oversold), hourly volume at 4.1x but accompanying a downward move. Current price has pulled back to $85.75, well below the $88.99 resistance. The daily EMA structure is not aligned (ema_10 < ema_50), removing a key breakout prerequisite. No valid breakout setup — requires volume expansion above 1.5x and a clean close above $89+ to reconsider.",
+    "entry": 89.5,
+    "target": 106.7,
+    "stop": 86.5,
+    "timeframe": "8-14 trading days"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 28,
+    "reasoning": "BNB closed at $643.45 on 4/17 at the identified resistance level with an intraday high of $645.68, but daily volume was only 1.18x the 20-day average — well below the 1.5x volume confirmation requirement. The Bollinger Band position of 1.086 (above upper band) shows price extended but without momentum follow-through. Daily EMAs are not aligned uptrend (ema_10 < ema_50, indicating range-bound conditions). The hourly picture deteriorates further: RSI at 20.5 (deeply oversold), EMAs in downtrend with ADX 59.7 (strong trend but downward), and hourly volume at 3.2x the average accompanying selling pressure. Current price of $624.87 represents a sharp -2.9% pullback from the breakout attempt high, suggesting this was a false breakout. The failed breakout with poor volume and subsequent reversal argues for neutrality until a proper base is built.",
+    "entry": 644.0,
+    "target": 739.6,
+    "stop": 620.0,
+    "timeframe": "8-15 trading days"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 68,
+    "reasoning": "XRP presents the strongest breakout setup in this crypto basket. On 4/17, XRP closed at $1.477 — exactly at the identified resistance — with volume at 1.89x the 20-day average, comfortably exceeding the 1.5x confirmation threshold. The breakout is backed by strong multi-timeframe momentum: daily RSI 73.2, ROC-5 of +11.5%, ROC-21 of +11.5%, and a sharply positive MACD histogram (0.017). The Bollinger Band position at 1.196 shows the price has decisively broken above the upper band — a classic breakout confirmation signal when accompanied by volume. Measured move calculation: resistance $1.477 minus support $1.316 = range $0.161; target = $1.477 + $0.161 = $1.638. Current price is $1.432, having pulled back toward the breakout level — this is a healthy retest offering a lower-risk entry. Hourly EMAs show bearish short-term structure (downtrend alignment), and the pullback has brought hourly RSI to 43, providing a better risk/reward entry than chasing at the highs. Risk: a close back below $1.40 would invalidate the breakout. The volume confirmation and clean measured move make this the highest-conviction setup.",
+    "entry": 1.435,
+    "target": 1.638,
+    "stop": 1.395,
+    "timeframe": "5-12 trading days"
+  }
+}

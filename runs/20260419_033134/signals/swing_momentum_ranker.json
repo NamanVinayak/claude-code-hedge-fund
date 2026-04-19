@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "BTC shows strong daily momentum with all ROC timeframes positive (5d +9.0%, 10d +7.2%, 21d +16.3%) and daily EMAs fully aligned in uptrend. RSI at 79.5 is elevated but still momentum-confirming; MACD histogram +721 is expanding. Volume at 1.47x average confirms demand. The current price (~$75,591) is pulling back from the recent $77,127 swing high, and hourly indicators show oversold conditions (RSI 28.9, stochastic K 20) with high hourly volume (3.42x avg), suggesting the intraday selloff is exhausting. This daily-strong, hourly-oversold divergence presents a favorable risk/reward entry. Key risk: daily RSI near overbought and Bollinger position at 0.97 leaves limited upside to resistance at $77,127. Stop below the 10-day EMA at $73,710.",
+    "entry": 75600.0,
+    "target": 79500.0,
+    "stop": 73200.0,
+    "timeframe": "5-10 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 76,
+    "reasoning": "ETH ranks #1 on 21-day momentum (ROC +21.6%) and shows recent acceleration with 5d ROC (+10.4%) outpacing 10d (+8.0%), exactly the accelerating pattern we seek. Daily EMAs are fully aligned in uptrend, RSI at 73.6 is strong without being extreme, and MACD histogram is positive (+24.9). Volume at 1.50x average is the highest relative volume among the large-caps on a daily basis. Hourly indicators show a clean intraday pullback (hourly RSI 39.5, EMAs down) with price consolidating near $2,343-$2,350, well below the last daily close of $2,421. This pullback into the 10-EMA/21-EMA support zone (~$2,300-$2,229 daily) offers an entry. The combination of highest 21d momentum, accelerating near-term ROC, and strong volume sets ETH as the top-ranked momentum name.",
+    "entry": 2345.0,
+    "target": 2580.0,
+    "stop": 2195.0,
+    "timeframe": "5-12 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "SOL presents mixed momentum signals. Daily ROC is positive (5d +9.0%, 10d +3.8%, 21d +7.1%) but the pattern shows deceleration — the 10d and 21d ROC are weaker than the 5d spike, suggesting recent acceleration is not sustained on longer timeframes. EMAs are NOT aligned uptrend (ema_50 at 87.46 sits above ema_10 at 85.60), and ADX at 19.2 indicates a weak trend — below our 25 threshold for momentum confirmation. Price is exactly at the Bollinger upper band (position 1.0007) and at resistance (~$88.99), making the entry risk/reward unfavorable at current levels. Hourly indicators are bearish (RSI 28, EMAs aligned down, all hourly ROC negative, very high hourly volume at 4.1x suggesting distribution). MACD histogram is only just turned positive (+0.877), a fresh but fragile crossover. Momentum is emerging but not confirmed — wait for EMA alignment and ADX strength.",
+    "entry": 84.5,
+    "target": 93.0,
+    "stop": 81.5,
+    "timeframe": "7-15 trading days"
+  },
+  "BNB-USD": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": "BNB has concerning overextension signals that outweigh the positive daily momentum. Bollinger Band position at 1.086 means price has closed ABOVE the upper band — a statistically rare event (>2 standard deviations) that historically precedes mean reversion in the short term. Stochastic K at 96.2 and Williams %R at -3.8 are at extreme overbought readings. CCI at 221.8 is severely overbought. Daily ROC is positive (5d +8.7%, 10d +3.6%, 21d +4.9%) but the 21d ROC is the weakest in the group and EMAs are NOT aligned uptrend (ema_50 at 634.6 > ema_10 at 619.8). Hourly RSI at 20.5 (nearly lowest of the group) and hourly MACD deeply negative suggest the daily overbought condition is already triggering distribution on shorter timeframes. ADX at 21.0 shows a weak trend. Risk/reward favors avoiding or fading BNB at current elevated levels; momentum is decelerating from an overextended position.",
+    "entry": 630.0,
+    "target": 600.0,
+    "stop": 648.0,
+    "timeframe": "3-8 trading days"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 70,
+    "reasoning": "XRP ranks #1 on 5-day ROC (+11.5%), tied for top on pure short-term momentum acceleration. The 10d (+6.9%) and 21d (+11.5%) are also positive, and the 5d matching the 21d ROC shows sustained rather than fleeting momentum. Volume at 1.89x average is the highest relative daily volume in this group — demand is clearly present. The MACD histogram just turned positive (+0.017) — a fresh bullish crossover, which is an early entry signal before momentum fully accelerates. Hourly indicators are notably more constructive than peers: hourly RSI at 43.3 (neutral, not oversold-imploding), hourly MACD histogram is micro-positive (+0.0004, essentially zero), and hourly stochastic K at 50.9 is mid-range. This hourly neutrality vs. the bullish daily setup suggests the intraday consolidation is orderly, not a breakdown. Price is pulling back from the $1.477 daily close to $1.432, offering a clean entry. Resistance at $1.477-$1.507 (recent swing high), with Bollinger upper at $1.443 acting as near-term test.",
+    "entry": 1.435,
+    "target": 1.54,
+    "stop": 1.365,
+    "timeframe": "5-10 trading days"
+  }
+}
