@@ -1,0 +1,80 @@
+{
+  "synthesis_notes": "9-strategy vote tally + crypto sentiment. Fear & Greed: 27 (Fear). BTC dominance 57%.",
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 68,
+    "vote_tally": "7 bullish, 1 neutral (breakout), 1 bearish (mean_reversion)",
+    "entry": 75200,
+    "target": 81000,
+    "stop": 72800,
+    "timeframe": "7-14 days",
+    "risk_reward": 2.35,
+    "key_conflict": "Mean reversion flags daily Z-score 2.48 and RSI 79.5 as overbought. Resolved: BTC is in daily uptrend with hourly deeply oversold (RSI 28.9, MFI 0) — this is a pullback entry within a trend, not a distribution top. Negative funding 46 days (shorts trapped) is the decisive contrarian signal.",
+    "primary_catalysts": ["Goldman Sachs ETF filing pending approval", "46-day negative funding = short squeeze coiled above $78K", "270K BTC whale accumulation in 30 days (largest since 2013)", "Exchange reserves at 2017 lows (2.21M BTC)"],
+    "primary_risks": ["Near-term whale distribution at $74-76K resistance", "ETF April inflows cooled sharply ($69.6M vs $1.32B March)", "Failed breakout pattern — volume below threshold on recent push"],
+    "reasoning": "Broad bullish consensus (7/9 strategies) anchored by macro: historic whale accumulation, record-low exchange reserves, and 46 consecutive days of negative funding create a textbook contrarian squeeze setup. Hourly RSI at 28.9 provides the entry trigger. Mean reversion concern is a valuation note, not a timing signal — the hourly pullback IS the mean-reversion opportunity within the daily uptrend."
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 74,
+    "vote_tally": "8 bullish, 0 neutral, 1 bearish (mean_reversion)",
+    "entry": 2335,
+    "target": 2620,
+    "stop": 2210,
+    "timeframe": "8-15 days",
+    "risk_reward": 2.28,
+    "key_conflict": "Mean reversion flags Z-score 2.35 and 14.1% above 50 SMA. Resolved: ETH has the strongest trend in the basket (ADX 38.2), and the pullback from $2,421 to $2,344 IS the mean reversion. Buying here is buying after the correction, not chasing.",
+    "primary_catalysts": ["Strongest ETH ETF inflows of 2026 (+$187M week)", "Glamsterdam upgrade H1 2026 (parallel execution, blob expansion)", "ETH/BTC ratio bouncing from 2026 lows — capital rotation underway", "BlackRock ETHB staked ETF: $254M in first week"],
+    "primary_risks": ["200 SMA at $2,875 is 23% overhead — structural resistance", "Macro fear environment could slow recovery pace", "Borderline breakout volume (exactly 1.50x threshold)"],
+    "reasoning": "Highest-quality multi-strategy consensus: 8/9 bullish, led by strongest trend (ADX 38.2), #1 ROC-21 (+21.6%), and most powerful institutional catalyst (record 2026 ETF inflows + ETH/BTC rotation). The mean reversion conflict resolves as the pullback from $2,421 creates the entry point. Best risk-adjusted setup in the basket."
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 35,
+    "vote_tally": "0 bullish, 7 neutral, 2 bearish (catalyst_trader, news_sentiment)",
+    "entry": null,
+    "target": null,
+    "stop": null,
+    "timeframe": "SKIP — no trade",
+    "risk_reward": null,
+    "key_conflict": "No conflict — near-unanimous neutral/avoid with bearish skew from catalyst analysis.",
+    "primary_catalysts": ["Firedancer full validator launch H2 2026 (1M TPS)", "Alpenglow consensus mainnet (150ms finality)", "SOL ETF AUM crossed $1B with partial recovery flows"],
+    "primary_risks": ["$270M Drift Protocol exploit (North Korean actor) — DeFi TVL flight risk", "FTX/Alameda estate $16M SOL moved April 13 — distribution overhang", "Whale accumulation collapsed 80% since March peak", "ADX 19.2 — trendless, EMAs tangled", "Hourly ADX 76.2 — active strong downtrend"],
+    "reasoning": "Clear avoid: trendless daily structure (ADX 19.2, no EMA alignment), active hourly downtrend (ADX 76.2, 4.1x volume on flush), and real negative catalysts (Drift exploit + FTX distribution). Fundamental upgrades (Firedancer, Alpenglow) are H2 2026 — too distant for a 2-3 week swing trade. Wait for trend structure to develop before engaging."
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 38,
+    "vote_tally": "2 bullish (pullback, catalyst), 3 bearish (momentum, sector_rotation, druckenmiller), 4 neutral",
+    "entry": null,
+    "target": null,
+    "stop": null,
+    "timeframe": "SKIP — no trade (monitor for hardfork play)",
+    "risk_reward": null,
+    "key_conflict": "Catalyst trader bullish on Osaka hardfork (Apr 28) + burn. Resolved: regulatory risk (DOJ probe, Iran-linked flows) introduces binary headline risk that caps position sizing. Daily technicals (stoch 96.2, CCI 221.8, overbought above BB) favor caution.",
+    "primary_catalysts": ["Osaka/Mendel hardfork April 28 (9 days)", "35th quarterly burn: -2.14M BNB (~$1.32B removed)", "YZi Labs $1B ecosystem fund deploying"],
+    "primary_risks": ["DOJ probe + Democratic senator flagging $1.7B Iran-linked Binance flows", "Worst ROC-21 of basket (+4.9%) — lagging peers", "Daily Stochastic 96.2, CCI 221.8 — extreme overbought", "Hourly RSI 20.5 — active distribution after spike"],
+    "reasoning": "Too many conflicting signals and a regulatory wildcard to trade with conviction. The hardfork catalyst is real but 9 days out; if regulatory headline drops before then, the trade fails. Monitor for cleaner setup after hardfork resolves. Small speculative position only with tight stop ($610) for aggressive traders."
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 76,
+    "vote_tally": "7 bullish, 1 neutral (trend_follower), 1 bearish (mean_reversion, low confidence 55%)",
+    "entry": 1.435,
+    "target": 1.68,
+    "stop": 1.365,
+    "timeframe": "10-21 days",
+    "risk_reward": 3.50,
+    "key_conflict": "Trend follower neutral (ADX 26.1 marginal, 50 EMA above shorter EMAs). Resolved: breakout trader identifies clean breakout with 1.89x volume above $1.477 resistance — this is a valid breakout-retest entry even without full EMA alignment. Mean reversion (Z-score 1.81) is approaching but not confirmed threshold.",
+    "primary_catalysts": ["CLARITY Act passage expected end of May 2026 (federal commodity framework)", "XRP commodity status confirmed by SEC/CFTC March 2026 — legal overhang cleared", "Rakuten Wallet integration: XRP payments at 5M+ merchants for 44M users (Japan)", "XRP ETPs: $120M global inflows — most of any crypto asset this week", "Kyobo Life (Korea) tokenized government bond pilot on Ripple Custody"],
+    "primary_risks": ["89.8M XRP moved to Coinbase on April 13 — potential $119M sell pressure near-term", "Mean reversion approaching (Z-score 1.81)", "BTC dominance 57% — broad altcoin rally needs BTC stabilization first"],
+    "reasoning": "Highest-conviction setup across all 5 tickers: 7/9 strategies bullish, best cross-strategy average confidence, cleanest regulatory catalyst timeline (CLARITY Act by end of May), commodity status removes SEC risk entirely. Healthy breakout-retest structure at $1.435 with 1.89x volume confirmation. Real consumer adoption catalyst (Rakuten 44M users) distinguishes XRP from speculative altcoins. Risk-reward 3.5:1 is the best in the basket."
+  },
+  "market_context": {
+    "fear_greed": 27,
+    "fear_greed_label": "Fear",
+    "btc_dominance": 57,
+    "macro_theme": "Recovering from extreme fear. Institutional ETF flows dominant. Negative funding environment = contrarian bullish for BTC. Regulatory clarity accelerating (CLARITY Act, GENIUS Act). Wait for BTC to clear $78K for broad altcoin acceleration.",
+    "conviction_ranking": ["XRP-USD (76%)", "ETH-USD (74%)", "BTC-USD (68%)", "BNB-USD (38%, no trade)", "SOL-USD (35%, no trade)"]
+  }
+}
