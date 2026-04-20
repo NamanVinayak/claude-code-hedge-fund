@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 74,
+    "reasoning": "BTC presents the cleanest trend-following setup in this basket. Daily EMAs are perfectly aligned (10 EMA 74,077 > 21 EMA 72,328 > 50 EMA 71,689) confirming a healthy uptrend structure. ADX at 35.76 confirms strong trend momentum well above the 25 threshold. Price has pulled back from the $77,127 swing high to $74,557 — currently sitting right at the 10 EMA (74,077), which is the ideal pullback entry zone per strategy rules. The hourly timeframe shows a bearish EMA alignment and RSI at 31.2 (oversold), confirming the short-term pullback is in play and nearing exhaustion — this divergence between daily (bullish) and hourly (short-term correction) is the classic entry signal for trend followers. Daily RSI 73 is elevated but acceptable in a strong trend. MACD histogram expanding positively (634 pts). Bollinger position 0.83 shows price running along the upper band — typical of strong trends. Supporting macro context: BTC dominance rising to 57-59%, institutional accumulation at 9-year low exchange reserves, whale wallets adding 270,000 BTC (largest since 2013), ETF net inflows of $921M over 5 days, and MicroStrategy adding 13,927 BTC. Regulatory clarity advancing (Regulation Crypto imminent, Strategic Bitcoin Reserve design due). Primary risk: further macro deterioration or breakdown below $73,500 support invalidates setup.",
+    "entry_price": 74200.0,
+    "target_price": 77500.0,
+    "stop_loss": 72100.0,
+    "timeframe": "5-12 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 60,
+    "reasoning": "ETH daily EMAs are aligned in uptrend formation (10 EMA 2,310 > 21 EMA 2,240 > 50 EMA 2,204) and ADX at 40.38 is the strongest in the basket — indicating a very powerful trend. However, price at $2,281 has already broken below the 10 EMA (2,310) and is approaching the 21 EMA (2,240), which is the next logical support/entry level. The hourly timeframe shows a strongly bearish EMA alignment (10 < 21 < 50) with RSI at 25.7 (deeply oversold) and ADX 41 — the short-term downtrend has momentum. This creates a mixed setup: daily trend intact but price decelerating toward the 21 EMA rather than bouncing at the 10 EMA. Entry should wait for stabilization at or near the 21 EMA (2,240). Bullish fundamentals support the thesis: 6 consecutive days of ETH ETF net inflows (record $11.82B cumulative), ETH derivatives market seeing first sustained net inflows since 2023, Glamsterdam hard fork (parallel execution, ~78% fee reduction) targeting H1 2026 is a major catalyst, and the Ethereum Foundation has completed its staking pivot removing sell pressure. Negatives: $292M Kelp DeFi exploit and $5.4B Aave rsETH outflows creating DeFi risk overhang; price 10.4% above 50 SMA suggests mean-reversion risk. Confidence reduced from ideal due to price already below 10 EMA and strong hourly downtrend.",
+    "entry_price": 2250.0,
+    "target_price": 2420.0,
+    "stop_loss": 2185.0,
+    "timeframe": "5-10 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "SOL fails the primary trend-following criteria and strategy rules mandate staying neutral. The daily EMAs are tangled and not aligned in a clean uptrend: 10 EMA (85.71) and 21 EMA (85.07) are very close together and both sit BELOW the 50 EMA (87.41), meaning the bullish alignment (10 > 21 > 50) is broken. Most critically, daily ADX at 19.5 is below the required 20 threshold (and well below the 25 minimum for meaningful trend trading). The strategy rule is explicit: 'If EMAs are tangled or ADX < 20, stay neutral.' Current price $84.47 is below all three daily EMAs, confirming no established trend direction. The hourly picture reinforces caution: bearish EMA alignment, RSI 31.2, very low volume (22% of average). Price is being pulled lower from the $90.37 high toward the $83.48 support zone. Fundamental picture has conflicting signals: SOL ETF AUM crossing $1B is positive, Firedancer development active, and Mastercard/Western Union partnerships are notable. However, the $270M Drift exploit security overhaul, 80% collapse in spot buying pressure since March 22, and technical analysts warning of breakdown at $78-82 support all argue for patience. No tradeable trend setup exists until ADX > 25 and EMAs re-align. Wait for a confirmed breakout above 50 EMA (~87.41) with volume.",
+    "entry_price": 84.47,
+    "target_price": 84.47,
+    "stop_loss": 84.47,
+    "timeframe": "no trade — wait for trend confirmation"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 22,
+    "reasoning": "BNB does not meet the trend-following entry criteria. The daily EMAs are in a tangled, non-trending arrangement: 10 EMA (621.7) and 21 EMA (618.3) are close together but both sit well BELOW the 50 EMA (634.4). This is not a clean bullish alignment — the 50 EMA acting as resistance above the shorter-term EMAs indicates a recovery attempting to form, not an established uptrend. Daily ADX at 24.3 is below the 25 minimum threshold required for a confirmed trend worth trading. The hourly picture confirms the neutral stance: bearish EMA alignment (10 < 21 < 50), ADX only 22.1, and volume at a mere 8.25% of the 20-bar average — institutional absence is glaring. Bollinger bands are narrow (0.0166 width) indicating compression, a possible precursor to a directional move but not yet confirming direction. Price at $621.46 is sandwiched between 10 EMA and 21 EMA at the daily level, with no clean pullback structure. Positive catalysts include: the 35th quarterly BNB burn removing 2.14M BNB (~$1.32B) on April 15 (deflationary milestone), $1B YZi Labs ecosystem fund, Osaka/Mendel hard fork on April 28, and Kyrgyzstan CBDC selection on BNB Chain. However, fundamental positives are offset by: ongoing DOJ probe overhang, 48% decline in centralized exchange volumes in Q1 2026 weighing on BNB utility, and whale distribution signals near $650 resistance. No actionable trend setup — wait for ADX > 25 and clean EMA alignment.",
+    "entry_price": 621.46,
+    "target_price": 621.46,
+    "stop_loss": 621.46,
+    "timeframe": "no trade — wait for trend confirmation"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 48,
+    "reasoning": "XRP presents a borderline setup that does not fully meet the clean trend-following criteria but merits a cautious bullish stance given strong catalysts and ADX confirmation. Daily ADX at 31.04 confirms a meaningful trend with strengthening momentum (MACD histogram positive 0.016, ROC-5 at +4.2%, ROC-10 at +6.9%). However, the daily EMAs are not cleanly aligned for a pure uptrend: 10 EMA (1.4017) and 21 EMA (1.3834) are stacked positively, but 50 EMA (1.4115) sits above the 10 EMA — meaning the full bullish EMA alignment (10 > 21 > 50) is violated. Current price $1.41 is sitting right in the 50 EMA / 10 EMA zone — the 50 EMA is acting as mild resistance overhead. The hourly timeframe shows bearish EMA alignment with RSI 29.4 (oversold), ADX 24.3, and volume 116% of average — the short-term pullback has some momentum but may be near exhaustion given oversold hourly readings. Confidence is kept low (48) because EMA alignment is impure. The bullish catalyst stack is exceptional: XRP was reclassified as a digital commodity (SEC/CFTC joint framework March 2026), 7 spot XRP ETFs in final SEC review for Q2 2026 decision, CLARITY Act Senate floor vote expected May 2026, Japan's Rakuten Wallet integration for 44M users, Ripple-Convera cross-border settlement partnership, and XRP ETF April inflows tracking for record monthly high. Whale accumulation at 10-month high (11M+ XRP/day). Entry target is a slight dip to below the 50 EMA cluster, with stop below the 21 EMA and target toward resistance at 1.477.",
+    "entry_price": 1.40,
+    "target_price": 1.477,
+    "stop_loss": 1.365,
+    "timeframe": "5-10 trading days"
+  }
+}

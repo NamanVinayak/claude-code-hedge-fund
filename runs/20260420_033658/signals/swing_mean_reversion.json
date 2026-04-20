@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": "BTC shows a developing mean reversion sell setup. Daily Z-score is +1.889 (approaching the +2 extreme threshold), price extended +7.8% above the 50-SMA, MFI at 82.5 (overbought), and stochastic D at 86.1. Daily RSI at 73.0 is approaching the >75 overbought trigger. Critically, a reversal candle has already formed: price surged to $77,127 on Apr 17 then rejected sharply to $75,726, and is now trading at $74,557 — confirming the reversal trigger. Hourly indicators confirm the turn: hourly RSI at 31.2 (near oversold), hourly Z-score -1.34, and hourly EMAs in full downtrend alignment. Volume on the reversal bar was elevated (54M vs 26M avg on the down day), supporting distribution at highs. The daily Z-score has not quite reached +2.0 and daily RSI stopped short of 75, so this is a moderate-confidence setup rather than maximum extreme. On-chain context is mixed: whale accumulation is constructive medium-term but a spike in exchange inflows near $75K resistance is a short-term distribution signal. Target is reversion to the 50-SMA ($70,219) / middle Bollinger Band ($71,253). Stop above the recent swing high at $78,321.",
+    "entry": 74557.0,
+    "target": 70800.0,
+    "stop": 78500.0,
+    "timeframe": "5-10 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bearish",
+    "confidence": 68,
+    "reasoning": "ETH presents the strongest mean reversion bearish case in this basket. The 50-SMA distance is +10.4% — an extreme extension that historically reverts. Daily stochastic D is 82.5 (overbought), BB position at 0.786 (well into upper range), and momentum peaked with a 21-day ROC of +18.0%. While daily RSI at 67.1 and Z-score at +1.72 are below the strict thresholds, the 10%+ SMA distance is the dominant signal. Most importantly, the reversal is already confirmed: price peaked at $2,421 on Apr 17, printed a bearish engulfing-style candle on Apr 18 (open $2,421, close $2,351), and has since dropped further to $2,281. Hourly RSI hit 25.7 (at the oversold extreme), hourly Z-score at -1.45, and hourly EMAs aligned downward — the intraday structure is bearish. MFI at 74.2 signals money outflow pressure. Web context: the $292M Kelp DeFi exploit and Aave rsETH turmoil add negative sentiment pressure. A whale moved $225M USDC to exchanges then withdrew ETH — mixed but the exchange inflow is a distribution signal. Target is reversion to the middle Bollinger Band / 50-SMA ($2,209 / $2,130). Stop above the Apr 17 high at $2,465.",
+    "entry": 2281.0,
+    "target": 2160.0,
+    "stop": 2465.0,
+    "timeframe": "5-12 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "SOL is near its mean with no meaningful extension in either direction. Daily Z-score is +0.08 (essentially zero), price is only +0.36% above the 50-SMA ($85.89), and RSI at 58.1 is in neutral territory. While the hourly RSI (31.2) and hourly Z-score (-1.22) show short-term oversold conditions, this does not constitute a daily-timeframe mean reversion setup. The daily Bollinger Band position at 0.74 is in the upper range but the Z-score and SMA distance confirm no extreme. CCI at 121.8 is moderately elevated but below the +200 extreme threshold. SOL's 21-day ROC of +5.1% is moderate. The 50-SMA ($85.89) and current price ($84.47) are essentially the same — the price IS the mean. No mean reversion trade is warranted here.",
+    "entry": 84.47,
+    "target": 84.47,
+    "stop": 84.47,
+    "timeframe": "N/A"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 15,
+    "reasoning": "BNB is essentially trading at its mean with no significant extension. Daily Z-score is +0.14 (within the neutral -1 to +1 band), price is +0.52% above the 50-SMA ($627.08), and RSI at 63.5 is elevated but not extreme. The stochastic D at 88.0 and CCI at 165.3 show some moderate overbought pressure, but these are not accompanied by a meaningful Z-score extreme. The BB position at 0.83 is in the upper range, but with a narrow band width of 0.103, this is within normal range. Hourly indicators show no extreme: Z-score -0.90, RSI 42.3, all near midpoints. BNB is consolidating around $620-630 after a run from $583 support, having already mean-reverted from the $645 resistance. With the BSC Osaka/Mendel hard fork on April 28 as a near-term catalyst, there is no clean extreme to fade. No mean reversion setup.",
+    "entry": 621.46,
+    "target": 621.46,
+    "stop": 621.46,
+    "timeframe": "N/A"
+  },
+  "XRP-USD": {
+    "signal": "bearish",
+    "confidence": 52,
+    "reasoning": "XRP is developing a marginal mean reversion bearish setup. The daily Z-score at +0.968 is just below the +1 neutral cutoff, but other indicators are more stretched: BB position at 0.897 (near upper band — the most extended of all five tickers on this metric), CCI at 189.2 (approaching the +200 extreme), stochastic D at 82.6 (overbought), and a 5-day ROC of +4.2%. Distance from 50-SMA is +3.7% (moderate). The reversal signal is developing: price hit $1.477 on Apr 17, printed a down candle on Apr 18, and is now at $1.41. Hourly RSI at 29.4 is near oversold, hourly Z-score -1.14, suggesting short-term momentum is already turning. Volume on the Apr 17 spike was 4.23B (highest of the week), classic exhaustion-volume at a top. However, the daily Z-score being below +1 means this is a lower-conviction setup. Web context: XRP ETF inflows ($65M+ in April) and CLARITY Act/ETF catalysts provide fundamental support, making a deep mean reversion less likely than for ETH or BTC. This is a cautious bearish fade rather than a high-conviction reversion. Target is mid-Bollinger ($1.36) / 50-SMA ($1.38). Stop above recent high.",
+    "entry": 1.41,
+    "target": 1.37,
+    "stop": 1.52,
+    "timeframe": "4-8 trading days"
+  }
+}

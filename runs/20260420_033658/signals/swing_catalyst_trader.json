@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 68,
+    "reasoning": "BTC presents a catalyst-rich setup with a healthy intraday pullback into a constructive daily structure. Daily EMA stack is fully aligned uptrend with RSI at 73 (momentum intact), MACD histogram strongly positive (+634), and price holding above the Fib 23.6% retrace at $74,439. The hourly timeframe shows RSI at 31 and MFI at 39.7 (approaching oversold), hourly volume 46% above 20-period average — suggesting active buyers stepping in on the pullback. Near-term catalyst density is high: (1) Strategic Bitcoin Reserve design due July 22 creates a narrative overhang that is front-runnable; (2) $921M ETF net inflows over 5 days confirms institutional accumulation thesis, led by BlackRock IBIT's $284M single-day; (3) Bitcoin Core v31.0 release is a minor but incremental positive; (4) Strategy's addition of 13,927 BTC at ~$71,902 avg sets an implicit bid floor. On-chain: whale addresses grew by 58 in the past month (270,000 BTC accumulated), exchange reserves at 9-year lows. Key risk is the April 15 hourly inflow spike of 11,000 BTC at resistance — a distribution signal that warrants a tighter stop. CLARITY Act Senate markup (late April) and SEC Regulation Crypto publication are secondary positive catalysts. Entry is just above current price with a stop below the recent daily swing low. Target at resistance level near the recent highs.",
+    "entry": 74700.0,
+    "target": 77500.0,
+    "stop": 72800.0,
+    "timeframe": "5-10 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 58,
+    "reasoning": "ETH has a compelling catalyst lineup but carries meaningful near-term risk, resulting in a lower-conviction bullish stance. Catalysts: (1) Glamsterdam hard fork (H1 2026, targeting June) is a high-impact L1 scaling event — parallel execution, ePBS, ~78% gas fee reduction — and testnets are in active preparation; (2) Ethereum Foundation completed its 70K ETH staking pivot, eliminating regular ETH sell pressure from foundation operations; (3) Six consecutive days of net ETF inflows through April 16, with cumulative ETH ETF record at $11.82B; (4) Stablecoin supply on Ethereum at ATH $180B (60% global share) is a structural fundamental tailwind. Technical setup is mixed-to-constructive on the daily (RSI 67, EMA uptrend, MACD positive, ADX 40 = strong trend), but the hourly is deeply oversold (RSI 25.7, MFI 23.3, stochastic 30/30, hourly EMA downtrend). Current price at $2,281 is below all hourly EMAs. The hourly RSI at 25.7 — the lowest oversold reading in this dataset — combined with subdued volume (hourly at 59% of average) points to exhaustion selling, a typical pre-bounce setup. Risk: $5.4B Aave rsETH exploit fallout creates DeFi confidence overhang; BTC dominance at 57.5% is a headwind for altcoin outperformance. Entry targets the current oversold hourly zone; stop below key daily support.",
+    "entry": 2285.0,
+    "target": 2420.0,
+    "stop": 2180.0,
+    "timeframe": "5-12 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "SOL's catalyst profile is real but the timing is not near-term enough to support a catalyst-trade entry. Technical setup is the weakest of the five assets: daily EMA stack is NOT aligned (EMA 10 at $85.7, EMA 50 at $87.4, EMA 21 at $85.1 — mixed), ADX at 19.5 (no trending conviction), and the daily Z-score is effectively flat (0.08). The hourly is in a soft downtrend (EMAs aligned down) with RSI 31 and MFI 27. Catalysts: (1) Firedancer mainnet launch and Alpenglow consensus upgrade are both H2 2026 — too far out for a 2-20 day swing; (2) SOL ETF AUM crossing $1B and Goldman Sachs holding $108M are notable but already priced in structurally; (3) Mastercard/Western Union/Worldpay enterprise partnership is a positive signal but lacks a specific event date. Negative catalysts: (1) $270M Drift exploit and the security overhaul response create headline risk for SOL specifically; (2) On-chain buying demand collapsed ~80% since March 22; (3) Analysts warn of breakdown if $78-82 support fails. The risk/reward is not asymmetric enough near a support zone that is under increasing pressure. Waiting for either a confirmed bounce off $79 support or a clean breakout above $89 resistance before re-engaging.",
+    "entry": 84.47,
+    "target": 89.5,
+    "stop": 81.5,
+    "timeframe": "neutral — no active setup"
+  },
+  "BNB-USD": {
+    "signal": "bullish",
+    "confidence": 65,
+    "reasoning": "BNB has the clearest near-term dated catalyst in the basket: the BSC Osaka/Mendel hard fork is scheduled for April 28, 2026 (8 trading days away), making this a textbook 'trade into the catalyst' setup. Historical pattern on BNB: hard fork announcements and execution consistently drive 3-7% pre-event price appreciation as node operators, validators, and traders position ahead of the upgrade. The $1.32B quarterly burn on April 15 already demonstrated that supply-reduction events cause measurable price bounces (+~2% bounce to $625 before retreating). Additional catalysts: (1) YZi Labs $1B ecosystem fund creates ongoing developer demand; (2) Kyrgyzstan CBDC on BNB Chain signals real-world utility expansion. Technical setup: daily RSI at 63.5 (room to run), MACD crossing positive (+5.4 histogram vs negative signal), Bollinger position at 0.83 (upper range), daily momentum strong (ROC-21: +3.2%). Hourly: price coiling tightly (hourly Bollinger width 0.0166 = very low volatility compression), hourly EMAs declining but MACD histogram turning positive (+0.38) — early accumulation signs. Price at $621 is below the Fib 61.8% at $627 and daily 50-EMA at $634. Entry at current levels with target near the resistance at $643, with extension to $657 on hard fork follow-through. Stop below daily support at $612. Risk: DOJ probe overhang and CEX volume decline are structural headwinds. Hourly volume at only 8% of 20-period average — confirms the coiling / low-liquidity pre-catalyst setup.",
+    "entry": 622.0,
+    "target": 648.0,
+    "stop": 610.0,
+    "timeframe": "4-8 trading days"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "XRP carries the strongest catalyst profile in this entire analysis and is the highest-conviction trade. Catalysts stack: (1) Seven spot XRP ETF applications (Grayscale, Bitwise, 21Shares, Canary, WisdomTree, Franklin Templeton, and one more) are in FINAL SEC review with Q2 2026 decisions — any approval announcement would be a binary upward catalyst of 15-30%+ magnitude; (2) XRP was reclassified as a digital commodity by the SEC/CFTC joint framework in March 2026 — the legal overhang that suppressed XRP for years is structurally resolved; (3) CLARITY Act Senate floor vote expected May 2026 per Ripple CEO, which would codify XRP's commodity status into federal law; (4) Rakuten Wallet XRP integration is live for 44 million users across 5M+ merchant locations — real demand driver; (5) Ripple-Convera partnership for $190B cross-border payment flows. On-chain: whale accumulation at 10-month high (11M+ tokens/day), exchange outflows positive. Technical setup: daily RSI 65.5, CCI at 189 (very high momentum), volume on April 17 surge was 4.23B (well above average), daily MACD strongly positive. However, daily Z-score at 0.97 and price at upper Bollinger (0.897 position) require careful entry. Hourly is deeply oversold (RSI 29.4, MFI 20.9, hourly stochastic 35/31) and hourly volume is running 16% above average — suggesting price dip is being bought. The pullback from $1.477 to $1.41 represents the Fib 61.8% retrace of the recent swing ($1.395-$1.477), making this an actionable entry with strong catalyst-driven upside. Stop placed below the hourly support at $1.39 and the weekly low. Target at prior swing high $1.477 initially, with extension to $1.55-$1.60 if ETF approval news breaks. Biggest risk: any ETF rejection would be a sharp negative catalyst; CLARITY Act failure would be secondary headwind.",
+    "entry": 1.415,
+    "target": 1.54,
+    "stop": 1.37,
+    "timeframe": "5-15 trading days"
+  }
+}

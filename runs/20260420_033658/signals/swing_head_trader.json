@@ -1,0 +1,62 @@
+{
+  "BTC-USD": {
+    "consensus": "bullish",
+    "confidence": 78,
+    "vote_tally": {"bullish": 8, "bearish": 1, "neutral": 1},
+    "avg_confidence": 69.2,
+    "entry": 74500.0,
+    "target": 79500.0,
+    "stop": 71800.0,
+    "timeframe": "5-12 trading days",
+    "key_risk": "April 15 exchange inflow spike (11,000 BTC/hr at $75K resistance) + BTC dominance already at 58% limits further rotation tailwind; daily RSI 73 approaching overbought",
+    "head_trader_note": "Near-unanimous bullish consensus (8/10) anchored by institutional conviction: $921M ETF inflows, 270K BTC whale accumulation (largest since 2013), exchange reserves at 9-year lows, and Strategic Bitcoin Reserve catalyst due July 2026. Only mean-reversion (bearish, Z-score +1.89) and breakout (neutral, failed $77.5K confirmation) dissent — both valid concerns but outweighed by structural tailwinds. Enter at current support cluster $74,200-$74,600 targeting $77,127 initial / $79,500 extension; stop below 38.2% Fib at $71,800."
+  },
+  "ETH-USD": {
+    "consensus": "bullish",
+    "confidence": 58,
+    "vote_tally": {"bullish": 5, "bearish": 1, "neutral": 4},
+    "avg_confidence": 57.5,
+    "entry": 2260.0,
+    "target": 2450.0,
+    "stop": 2170.0,
+    "timeframe": "5-12 trading days",
+    "key_risk": "$292M Kelp DeFi exploit + $5.4B Aave rsETH outflows create DeFi confidence overhang; BTC dominance at 57.5% historically suppresses altcoin performance; mean-reversion signal warns 10.4% above 50-SMA",
+    "head_trader_note": "Moderate bullish consensus (5/10) with a meaningful neutral bloc — the split reflects genuine uncertainty between strong ETF inflow catalysts and DeFi security headwinds. Glamsterdam hard fork (78% fee reduction, H1 2026), record $11.82B ETF AUM, and hourly RSI 25.7 (deeply oversold) support a bounce trade, but this is lower conviction than BTC. Size smaller; wait for hourly EMA reclaim above 2,300 as additional entry confirmation. Stop below Kelp-overhang support at $2,170."
+  },
+  "SOL-USD": {
+    "consensus": "neutral",
+    "confidence": 25,
+    "vote_tally": {"bullish": 0, "bearish": 2, "neutral": 8},
+    "avg_confidence": 38.4,
+    "entry": null,
+    "target": null,
+    "stop": null,
+    "timeframe": "no trade — monitor",
+    "key_risk": "$270M Drift exploit security overhang; spot buying demand collapsed 80% since March 22; daily ADX 19.5 (trendless); price below 50-EMA with 200-SMA at $127 (50% above current)",
+    "head_trader_note": "No trade. The technical picture is disqualifying: ADX 19.5 (below threshold for any strategy), EMAs not aligned, and price below the 50-EMA in a structurally weak environment. Two outright bearish calls (momentum_ranker, sector_rotation) with zero bullish votes — this consensus is decisive. Firedancer/Alpenglow catalysts are H2 2026, too distant. Wait for clean reclaim above $89 resistance on above-average volume before re-evaluating."
+  },
+  "BNB-USD": {
+    "consensus": "neutral",
+    "confidence": 42,
+    "vote_tally": {"bullish": 2, "bearish": 0, "neutral": 8},
+    "avg_confidence": 40.8,
+    "entry": 622.0,
+    "target": 648.0,
+    "stop": 610.0,
+    "timeframe": "4-8 trading days (event-driven)",
+    "key_risk": "DOJ probe overhang caps institutional demand; 48% decline in CEX volumes is a structural headwind for BNB utility; hard fork catalyst could disappoint if broader crypto risk-off continues post-FOMC (April 28-29 overlap)",
+    "head_trader_note": "Weak consensus — 8/10 neutral, only breakout and catalyst traders bullish — but the April 28 Osaka/Mendel hard fork provides a tight, time-bound binary catalyst that warrants a small speculative position. This is purely an event trade, not a trend trade: hourly Bollinger compression (0.0166 width) signals coiling energy, and the BNB burn ($1.32B on April 15) removed supply. If entering, keep size minimal (half-unit), place stop tight at $610, and exit by April 28 regardless of outcome."
+  },
+  "XRP-USD": {
+    "consensus": "bullish",
+    "confidence": 82,
+    "vote_tally": {"bullish": 7, "bearish": 1, "neutral": 2},
+    "avg_confidence": 61.8,
+    "entry": 1.41,
+    "target": 1.58,
+    "stop": 1.355,
+    "timeframe": "5-15 trading days",
+    "key_risk": "Binary ETF risk — 7 Q2 2026 approvals pending; any rejection triggers sharp reversal. Large Coinbase XRP transfer ($119M on April 13) ambiguous but warrants monitoring. CLARITY Act could miss May window.",
+    "head_trader_note": "Strongest consensus in the basket (7/10 bullish) driven by the most compelling regulatory catalyst stack: SEC/CFTC commodity reclassification achieved, 7 spot ETF decisions due Q2 2026, CLARITY Act Senate floor vote expected May, Rakuten 44M-user integration live, whale accumulation at 10-month highs. Mean-reversion (bearish) correctly notes CCI 189 and Bollinger 0.897 overextension — respect this with a disciplined stop. The hourly RSI 29.4 pullback to $1.41 offers the entry; position sizing should reflect the binary ETF event risk. This is the highest-priority long in the portfolio."
+  }
+}

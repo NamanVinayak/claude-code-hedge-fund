@@ -1,0 +1,165 @@
+{
+  "ticker": "ETH-USD",
+  "daily_indicators": {
+    "moving_averages": {
+      "ema_10": 2310.4983,
+      "ema_21": 2240.4803,
+      "ema_50": 2204.4176,
+      "sma_50": 2129.7024,
+      "sma_200": 2866.6959,
+      "ema_aligned_uptrend": "True",
+      "ema_aligned_downtrend": "False"
+    },
+    "rsi": 67.085,
+    "macd": {
+      "macd_line": 73.1544,
+      "signal_line": 53.3044,
+      "histogram": 19.85
+    },
+    "bollinger_bands": {
+      "upper": 2457.7637,
+      "middle": 2208.8805,
+      "lower": 1959.9974,
+      "width": 0.2253,
+      "position": 0.7857
+    },
+    "atr": 112.3264,
+    "adx": 40.3772,
+    "volume": {
+      "current": 14400085617,
+      "avg_20": 17838927303.05,
+      "ratio_vs_avg": 0.8072
+    },
+    "support_resistance": {
+      "support": 2023.5149,
+      "resistance": 2421.0718
+    },
+    "fibonacci": {
+      "swing_high": 2421.0718,
+      "swing_low": 1936.6047,
+      "fib_236": 2306.7376,
+      "fib_382": 2236.0054,
+      "fib_500": 2178.8383,
+      "fib_618": 2121.6711,
+      "fib_786": 2040.2807
+    },
+    "momentum": {
+      "roc_5": -0.8274,
+      "roc_10": 7.3397,
+      "roc_21": 17.986
+    },
+    "z_score": 1.7201,
+    "dist_from_50sma_pct": 10.3957,
+    "stochastic": {
+      "k": 74.2879,
+      "d": 82.4593
+    },
+    "williams_r": -25.7121,
+    "cci": 110.5281,
+    "mfi": 74.1836
+  },
+  "hourly_indicators": {
+    "moving_averages": {
+      "ema_10": 2286.0767,
+      "ema_21": 2301.043,
+      "ema_50": 2326.8187,
+      "sma_50": 2339.2246,
+      "sma_200": 2317.3483,
+      "ema_aligned_uptrend": "False",
+      "ema_aligned_downtrend": "True"
+    },
+    "rsi": 25.6803,
+    "macd": {
+      "macd_line": -18.3013,
+      "signal_line": -18.0083,
+      "histogram": -0.2931
+    },
+    "bollinger_bands": {
+      "upper": 2351.5091,
+      "middle": 2302.555,
+      "lower": 2253.6008,
+      "width": 0.0425,
+      "position": 0.287
+    },
+    "atr": 17.8915,
+    "adx": 41.092,
+    "volume": {
+      "current": 149014528,
+      "avg_20": 251375001.6,
+      "ratio_vs_avg": 0.5928
+    },
+    "support_resistance": {
+      "support": 2263.25,
+      "resistance": 2339.79
+    },
+    "fibonacci": {
+      "swing_high": 2420.3799,
+      "swing_low": 2263.25,
+      "fib_236": 2383.2972,
+      "fib_382": 2360.3563,
+      "fib_500": 2341.8149,
+      "fib_618": 2323.2736,
+      "fib_786": 2296.8758
+    },
+    "momentum": {
+      "roc_5": 0.449,
+      "roc_10": -0.6531,
+      "roc_21": -1.9973
+    },
+    "z_score": -1.4468,
+    "dist_from_50sma_pct": -2.4591,
+    "stochastic": {
+      "k": 30.8161,
+      "d": 30.2838
+    },
+    "williams_r": -69.1839,
+    "cci": -69.3884,
+    "mfi": 23.3409
+  },
+  "recent_prices": [
+    {
+      "open": 2370.314453125,
+      "close": 2323.30859375,
+      "high": 2415.52734375,
+      "low": 2304.412353515625,
+      "volume": 25185167270,
+      "time": "2026-04-14"
+    },
+    {
+      "open": 2323.34326171875,
+      "close": 2359.43701171875,
+      "high": 2384.999267578125,
+      "low": 2310.70703125,
+      "volume": 17004367348,
+      "time": "2026-04-15"
+    },
+    {
+      "open": 2359.70458984375,
+      "close": 2348.64501953125,
+      "high": 2369.17236328125,
+      "low": 2285.7099609375,
+      "volume": 20602833116,
+      "time": "2026-04-16"
+    },
+    {
+      "open": 2348.85498046875,
+      "close": 2421.07177734375,
+      "high": 2464.783447265625,
+      "low": 2318.141845703125,
+      "volume": 26467618336,
+      "time": "2026-04-17"
+    },
+    {
+      "open": 2421.102294921875,
+      "close": 2351.1005859375,
+      "high": 2427.278076171875,
+      "low": 2341.125732421875,
+      "volume": 14400085617,
+      "time": "2026-04-18"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 2281.699951171875,
+  "market_cap": 275224952832.0
+}

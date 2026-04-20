@@ -1,0 +1,47 @@
+{
+  "mode": "swing",
+  "asset_type": "crypto",
+  "date": "2026-04-20",
+  "market_context": "Fear & Greed Index at 29 (Fear). BTC dominance at 57.5% signals capital rotating to safety. Total crypto market cap ~$2.63T. FOMC April 28-29 is the key macro binary event. Three consecutive BTC tests of $75K support suggest either a base forming or breakdown risk.",
+  "why_these_trades": "In a Fear environment with rising BTC dominance, the model favors (1) BTC as the flight-to-safety trade with structural accumulation, (2) XRP as a regulatory catalyst play independent of the BTC dominance cycle, (3) ETH as a lower-conviction bounce on hard fork and ETF inflow momentum.",
+  "tickers": {
+    "BTC-USD": {
+      "decision": "BUY",
+      "entry": 74500, "target": 79500, "stop": 71800,
+      "plain_english": "Bitcoin is testing $75K support for the third time while whales have accumulated 270,000 BTC in 30 days — the most since 2013. Exchange reserves hit a 9-year low, meaning less BTC is available to sell. Eight of nine swing strategies are bullish. The mean-reversion strategy warns price is 7.8% above its 50-day average, but institutional demand appears to be absorbing the supply.",
+      "what_could_go_wrong": "A clean break below $71,800 would invalidate the support thesis and signal a deeper correction toward $68K."
+    },
+    "ETH-USD": {
+      "decision": "BUY",
+      "entry": 2260, "target": 2450, "stop": 2170,
+      "plain_english": "Ethereum has a June 2026 'Glamsterdam' hard fork that will cut transaction fees by 78% — a major adoption catalyst. ETF inflows have been positive for 6 straight days. However, a $5.4B exploit in the Aave/rsETH ecosystem last week created uncertainty in DeFi. Five of nine strategies are bullish but confidence is lower than BTC or XRP.",
+      "what_could_go_wrong": "BTC dominance continuing to rise would pressure ETH as capital stays in Bitcoin. DeFi exploit contagion could trigger additional selling."
+    },
+    "SOL-USD": {
+      "decision": "HOLD",
+      "entry": null, "target": null, "stop": null,
+      "plain_english": "Solana has excellent fundamentals (highest DEX volume in crypto, $1B ETF AUM, Firedancer validator client) but the technicals show zero directional conviction. The ADX trend indicator is 19.5 — below the 20 threshold every strategy requires. Spot buying demand collapsed 80% since March 22. Zero of nine strategies gave a bullish signal. Wait for a trend to re-establish.",
+      "what_could_go_wrong": "N/A — no position taken."
+    },
+    "BNB-USD": {
+      "decision": "BUY",
+      "entry": 622, "target": 648, "stop": 610,
+      "plain_english": "BNB Chain has an Osaka/Mendel hard fork on April 28 — same day as the Fed meeting. A $1.32B token burn was completed April 15, reducing supply. The position is sized at half the normal allocation given the DOJ probe overhang and that FOMC and the fork on the same day creates binary risk. Exit before the event.",
+      "what_could_go_wrong": "DOJ enforcement action against Binance, hard fork delay, or an adverse FOMC reaction could all move BNB sharply lower."
+    },
+    "XRP-USD": {
+      "decision": "BUY",
+      "entry": 1.41, "target": 1.58, "stop": 1.355,
+      "plain_english": "XRP has the clearest near-term catalyst: seven spot XRP ETF applications are in final SEC review with a Q2 2026 decision deadline. The SEC/CFTC already reclassified XRP as a digital commodity in March 2026, removing the main legal risk. Whale accumulation hit a 10-month high. Seven of nine strategies are bullish — the broadest consensus in this basket. Risk-reward is 3.1:1.",
+      "what_could_go_wrong": "ETF rejections would be a significant negative catalyst. XRP is also correlated to the broader crypto market — a BTC breakdown below $71,800 would likely drag XRP lower."
+    }
+  },
+  "portfolio_summary": "34% of capital deployed across 4 positions. 66% held in cash deliberately — FOMC April 28-29 creates macro uncertainty that could whipsaw all positions simultaneously. The cash reserve allows averaging into positions if the market provides better entries post-FOMC.",
+  "signal_grid": {
+    "BTC-USD": {"trend_follower": "bullish", "pullback_trader": "bullish", "breakout_trader": "neutral", "momentum_ranker": "bullish", "mean_reversion": "bearish", "catalyst_trader": "bullish", "sector_rotation": "bullish", "druckenmiller": "bullish", "news_sentiment": "bullish", "crypto_sentiment": "bullish"},
+    "ETH-USD": {"trend_follower": "bullish", "pullback_trader": "bullish", "breakout_trader": "neutral", "momentum_ranker": "neutral", "mean_reversion": "bearish", "catalyst_trader": "bullish", "sector_rotation": "neutral", "druckenmiller": "bullish", "news_sentiment": "bullish", "crypto_sentiment": "neutral"},
+    "SOL-USD": {"trend_follower": "neutral", "pullback_trader": "neutral", "breakout_trader": "neutral", "momentum_ranker": "bearish", "mean_reversion": "neutral", "catalyst_trader": "neutral", "sector_rotation": "bearish", "druckenmiller": "neutral", "news_sentiment": "neutral", "crypto_sentiment": "neutral"},
+    "BNB-USD": {"trend_follower": "neutral", "pullback_trader": "neutral", "breakout_trader": "bullish", "momentum_ranker": "neutral", "mean_reversion": "neutral", "catalyst_trader": "bullish", "sector_rotation": "neutral", "druckenmiller": "neutral", "news_sentiment": "neutral", "crypto_sentiment": "neutral"},
+    "XRP-USD": {"trend_follower": "bullish", "pullback_trader": "bullish", "breakout_trader": "bullish", "momentum_ranker": "bullish", "mean_reversion": "bearish", "catalyst_trader": "bullish", "sector_rotation": "bullish", "druckenmiller": "bullish", "news_sentiment": "bullish", "crypto_sentiment": "bullish"}
+  }
+}

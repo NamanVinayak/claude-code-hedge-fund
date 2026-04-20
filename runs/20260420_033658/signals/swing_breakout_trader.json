@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "neutral",
+    "confidence": 38,
+    "reasoning": "BTC made a strong push to $77,127-$78,321 on April 17 (daily resistance at $77,127) but failed to hold above and pulled back to $74,557. This is a failed/unconfirmed breakout attempt. Daily RSI is elevated at 73 with stochastic %K crossing below %D (77.8 vs 86.1), signaling near-term exhaustion. Volume on the breakout day (Apr 17: 54B) was slightly elevated but current volume is only 0.70x the 20-day average — well below the 1.5x confirmation threshold. Hourly indicators show downtrend alignment (EMA 10 < 21 < 50), RSI at 31 (oversold), and hourly momentum negative. The consolidation base of ~$73,500-$77,500 is relatively narrow (5.5%) and only ~5 days long — insufficient base-building for a high-conviction breakout. Macro headwinds include Fear & Greed at 27, ETF outflows on some days, and BTC testing $75K support for the third time. Whale accumulation (270K BTC in 30 days, lowest exchange reserves since 2017) is structurally positive, but the near-term technical setup does not show a confirmed breakout. Wait for a decisive close above $77,500 with 1.5x+ volume before re-entering.",
+    "entry": 77600.0,
+    "target": 83700.0,
+    "stop": 75200.0,
+    "timeframe": "5-12 trading days"
+  },
+  "ETH-USD": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "ETH briefly pierced resistance at $2,421 on April 17 (high $2,465) but closed at $2,421 — a marginal close right at resistance rather than a decisive break above it. By April 18 it fell back to $2,351 and is now at $2,281, well below resistance. Volume on April 17 was 26.5B — only ~1.49x the 20-day average of 17.8B, just barely missing the 1.5x requirement. Hourly indicators are deeply weak: RSI at 25.7 (oversold), EMA aligned downtrend, MFI at 23 (outflows), ADX 41 on the hourly (strong downtrend). Daily ADX of 40 confirms trend strength, but the trend has now reversed below the breakout level. The Bollinger position is 0.786 on the daily — still elevated. Resistance at $2,421; current price is $140 (6%) below that level. DeFi security concerns ($292M Kelp exploit, $5.4B Aave rsETH outflows) are near-term headwinds. Structurally bullish catalysts (Glamsterdam hard fork, staking ETF, record $11.82B ETF cumulative inflows) exist but are longer-term. No active breakout setup; awaiting stabilization and re-base above $2,300 before new breakout attempt.",
+    "entry": 2430.0,
+    "target": 2680.0,
+    "stop": 2310.0,
+    "timeframe": "5-12 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 22,
+    "reasoning": "SOL is the weakest breakout candidate in this group. ADX is only 19.5 (below 25 = no clear trend — range-bound). EMAs are not aligned in either direction (ema_aligned_uptrend False, ema_aligned_downtrend False). Price pushed to $90.38 on April 16 and $90.67 on April 17 but could not sustain above resistance at $89. It has since pulled back to $84.47 — a failed breakout above the $89-$91 resistance zone. Volume on those breakout days (6.2B and 6.5B) was roughly 1.2-1.4x the 20-day average of 5.2B, not reaching the required 1.5x confirmation. Hourly picture is deeply bearish: EMA aligned downtrend, RSI 31, ADX 33 (strong hourly downtrend), MFI 27.8, volume only 0.22x average on hourly. SMA 200 on daily at $127 is far above current price, confirming the overall downtrend context. Exchange buying pressure collapsed ~80% since March 22 per web research. Key support at $83.48 hourly and $78.95 daily. Macro: BTC dominance rising at 57.5%, fear environment, and $270M Drift exploit overhang suppress altcoin momentum. No valid breakout setup; watch for volume expansion and reclaim of $89-$91 resistance.",
+    "entry": 91.0,
+    "target": 101.5,
+    "stop": 86.5,
+    "timeframe": "5-10 trading days"
+  },
+  "BNB-USD": {
+    "signal": "bullish",
+    "confidence": 45,
+    "reasoning": "BNB is the most interesting near-term breakout candidate from a compression standpoint. The hourly Bollinger Band width is extremely narrow at 0.0166 (tight squeeze), hourly MACD histogram is turning positive (+0.38), and hourly stochastic is near 46 (neutral, not overbought). The daily BB width of 0.1029 is also relatively tight. BNB traded up to $643.45-$648.50 on April 17, testing the identified resistance at $643.45. The April 15 quarterly BNB burn (2.14M BNB, ~$1.32B) acted as a near-term positive catalyst. Daily RSI at 63.5, MACD histogram positive (+5.37), and ADX 24.3 show modest upward momentum. The daily Bollinger position of 0.829 indicates price is elevated within the band. However, volume on the breakout day was only 1.99B vs 1.70B average = ~1.17x — below the 1.5x requirement. Current price at $621.46 is below the recent $643 resistance after a pullback. The BSC Osaka/Mendel hard fork on April 28 is a near-term catalyst. The hourly compression (very narrow BB width, near-neutral indicators) suggests a directional move is building. Entry on reclaim of $643.45 with volume confirmation. Measured move target: $643.45 + (643.45 - 583.14) = ~$703. Risk below the consolidation low at $628.",
+    "entry": 645.0,
+    "target": 703.0,
+    "stop": 614.0,
+    "timeframe": "5-12 trading days"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 55,
+    "reasoning": "XRP presents the strongest breakout setup in this group. Daily Bollinger Band position is 0.897 — the highest among all tickers, indicating price is pressing against the upper band. Daily RSI 65.5 (elevated but not overbought), ADX 31 (meaningful trend strength), and a positive MACD histogram (0.016) confirm bullish momentum. The 5-day ROC is +4.2% and 21-day ROC is +7.6% — strongest momentum of the group. Price hit $1.477 on April 17 (matching daily resistance at $1.477) and the swing high is $1.544. Volume on April 16-17 was 4.06B and 4.23B vs 20-day average of 2.30B — that's 1.76x and 1.84x average volume, exceeding the 1.5x breakout volume requirement. This is the only ticker in the group where a recent breakout move occurred with legitimate volume confirmation. Current pullback to $1.41 is a retest of the breakout zone. Hourly MFI at 21 and RSI 29 signal the hourly retest is near exhaustion. Hourly support at $1.3946. Measured move: $1.477 + ($1.477 - $1.316) = $1.638 target. Key catalysts: 7 XRP spot ETFs in final SEC Q2 2026 review, CLARITY Act codifying XRP commodity status, Rakuten Wallet integration for 44M users, Ripple-Convera cross-border settlement, and record $65M+ ETF inflows in April. The combination of volume-confirmed breakout candles + powerful fundamental catalysts + near-completion of pullback to support makes XRP the top breakout candidate. Risk: large April 13 Coinbase transfer ($119M XRP) may represent distribution; daily stochastic %K below %D (67.9 vs 82.6) suggests short-term cooling.",
+    "entry": 1.43,
+    "target": 1.64,
+    "stop": 1.36,
+    "timeframe": "4-10 trading days"
+  }
+}

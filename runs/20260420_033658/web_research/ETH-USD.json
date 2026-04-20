@@ -1,0 +1,54 @@
+{
+  "ticker": "ETH-USD",
+  "research_date": "2026-04-20",
+  "macro_context": {
+    "market_sentiment": "Fear dominates the crypto market as BTC oscillates near the $75-77K range, with the Fear & Greed Index in the 27-29 range (Fear). BTC dominance ticking up to ~57.5% signals capital rotating toward perceived safety rather than broad-based risk appetite, leaving altcoins struggling for momentum. The $292M Kelp DeFi exploit and RaveDAO collapse (90% single-day drop) have added to negative sentiment.",
+    "btc_dominance": "BTC dominance at ~57.5%, up ~0.3% on the week. Above the 50% threshold, this historically suppresses altcoin outperformance; altcoin season index stalled at ~34. No imminent broad altcoin rotation apparent.",
+    "total_market_cap": "Total crypto market cap approximately $2.49-2.63 trillion (sources vary), down ~2.3% in the last 24 hours. Some aggregators report a broader $3.5T figure using a wider asset universe. The market has pulled back significantly from early-2026 highs.",
+    "fear_greed_index": "27-29 (Fear) as of April 19-20, 2026 — lowest reading in three weeks. Marks a steep deterioration from the 45 reading in mid-April and a recovery from the extreme-fear reading of 5 seen in early 2026 when BTC briefly dropped below $61K.",
+    "fed_outlook": "The Fed is expected to hold rates steady through Q1-Q2 2026, with a single 25bp cut penciled in for the full year. Jerome Powell's term ends May 2026; President Trump has nominated Kevin Warsh as successor, a perceived growth-friendly pick that could front-run a more dovish stance. Rate-hold environment removes a near-term liquidity catalyst for crypto.",
+    "institutional_flows": "U.S. spot Bitcoin ETFs have accumulated over $53B total inflows; BlackRock IBIT drew $284M in a single day on April 17. Q1 2026 saw $18.7B in global crypto ETP inflows. Ethereum ETFs saw six consecutive days of net inflows through April 16, with cumulative ETH ETF inflows reaching a record $11.82B. Capital is rotating into ETH ETFs even as some BTC ETF outflows occur. Morgan Stanley launched its own BTC ETF (MSBT) in April 2026.",
+    "regulatory": "SEC Chairman Atkins announced Regulation Crypto is advancing to final publication stage. The CLARITY Act stablecoin yield compromise passed Senate Banking Committee markup (late April), allowing staking/payment-linked yields but prohibiting passive holding yields. The SEC/CFTC issued a joint token taxonomy clarification in March 2026. Seven XRP spot ETFs are in final SEC review, potentially opening the door for broader altcoin ETF approvals. New SEC guidance treats certain stablecoins with only a 2% capital haircut.",
+    "key_events": [
+      "Jerome Powell's Fed chairmanship ends May 2026; Kevin Warsh confirmation hearings could spark crypto volatility",
+      "CLARITY Act stablecoin bill Senate markup in late April 2026",
+      "SEC's Regulation Crypto publication expected Q2 2026",
+      "XRP spot ETF Q2 2026 SEC decision deadline",
+      "Ongoing DeFi security concerns after $292M Kelp exploit and $5.4B Aave rsETH outflows"
+    ]
+  },
+  "ticker_news": [
+    {
+      "headline": "Ethereum Foundation completes 70,000 ETH staking target with $93M April deposit, shifting from ETH sales to staking yield for operations",
+      "sentiment": "positive",
+      "source": "CoinDesk, April 3 2026 (coindesk.com)"
+    },
+    {
+      "headline": "Ether outpaces Bitcoin as ETF flows split and Ethereum on-chain activity jumps 41% week-over-week",
+      "sentiment": "positive",
+      "source": "CoinDesk, April 14 2026 (coindesk.com)"
+    },
+    {
+      "headline": "Ethereum derivatives market sees first net capital inflow since 2023 — $6.64B returned over 60 days",
+      "sentiment": "positive",
+      "source": "smallworldfs.com, April 6 2026"
+    },
+    {
+      "headline": "Aave hit by $5.4B ETH outflows after rsETH exploit sparks whale panic, raising DeFi structural risk concerns",
+      "sentiment": "negative",
+      "source": "LiveBitcoinNews, April 2026 (livebitcoinnews.com)"
+    },
+    {
+      "headline": "Ethereum whale transfers $225M USDC to exchanges then withdraws 32,007 ETH (~$77.5M) from Binance in large single-session move",
+      "sentiment": "neutral",
+      "source": "ReelFinancial, April 18-19 2026 (reelfinancial.com)"
+    }
+  ],
+  "on_chain_signals": {
+    "whale_activity": "Mixed signals: Large accumulation observed — whales holding 10K-100K ETH collectively accumulated 7.6M ETH in April; a dormant wallet returned after a year to buy 50,706 ETH (~$111M) via USDT. Concurrent bearish signal: a large whale moved $225M USDC to exchanges then withdrew 32,007 ETH from Binance in a single session, suggesting potential distribution. Altcoin Season Index stalled at 34, consistent with ETH underperformance vs. BTC. ETH whale balances have declined overall in 2026 per MEXC data.",
+    "funding_rates": "Real-time ETH perpetual funding rate data was not directly available from search results. Context suggests rates are likely near-neutral to mildly positive given recent ETH price recovery from $2,100-$2,200 toward $2,340-$2,430. One source noted a whale opening a ~$19.9M ETH long position on April 15, suggesting some leveraged long positioning. Neutral-to-low positive funding rates imply the market is not dangerously overleveraged in either direction.",
+    "exchange_flows": "Ethereum ETF spot inflows were strongly positive — six consecutive days of net inflows through April 16, cumulative record of $11.82B total ETF net assets at $13.69B. On-chain exchange netflow data (CryptoQuant) was not directly scraped; the large whale USDC-to-exchange transfer followed by ETH withdrawal is ambiguous (could be OTC exit or repositioning). Derivatives market returned $5.74B in net inflows over the past 30 days, its first sustained positive run since 2023. Net exchange flow bias appears slightly outflow (accumulation) among larger wallets, offset by some distribution activity."
+  },
+  "development_activity": "Ethereum development activity has declined broadly: weekly active developer count fell 34% over three months to 2,811 (Artemis data), consistent with a 75% drop in crypto code commits and 56% drop in active developers industry-wide as AI absorbs GitHub talent. However, core protocol development remains active: the Glamsterdam hard fork (H1 2026) is in active testnet preparation, bundling ePBS (Enshrined Proposer-Builder Separation), Block-Level Access Lists, parallel execution EIPs targeting 78% fee reduction, and gas limit increases toward 100M+. Go-Ethereum (geth) continues active releases on GitHub.",
+  "upcoming_catalysts": "1) Glamsterdam hard fork (H1 2026, tentative June): major L1 scaling upgrade — parallel execution, ePBS, ~78% fee reduction, gas limit to 100M+; high impact catalyst if testnets go smoothly. 2) Hegota hard fork (H2 2026): Verkle Trees / statelessness — reduces node hardware requirements significantly. 3) Ethereum Foundation staking pivot completed (70K ETH staked), removing regular sell pressure from foundation operations. 4) Grayscale's Ethereum Staking ETF live on NYSE Arca (April 6) — first ETF with formalized staked-asset redemption mechanics. 5) ETH staking ETF broadly going live positions ETH as yield-bearing institutional asset. 6) Stablecoin supply on Ethereum at all-time high $180B (60% global share) — long-term fundamental tailwind. 7) rsETH/Aave exploit fallout — ongoing DeFi risk overhang that could suppress ETH price if confidence in L1 DeFi erodes further."
+}

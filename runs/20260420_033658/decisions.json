@@ -1,0 +1,81 @@
+{
+  "decisions": {
+    "XRP-USD": {
+      "action": "buy",
+      "entry_price": 1.41,
+      "target_price": 1.58,
+      "stop_loss": 1.355,
+      "risk_reward_ratio": "3.09:1",
+      "timeframe": "5-15 trading days",
+      "quantity": 8478.0,
+      "position_size_usd": 11954.0,
+      "confidence": 82,
+      "reasoning": "Top pick across the entire basket. Strongest consensus (7/10 bullish, 82% Head Trader confidence). Regulatory catalyst stack is unmatched: SEC/CFTC commodity reclassification achieved March 2026, 7 spot XRP ETFs in final SEC review (Q2 2026 binary event), CLARITY Act Senate floor vote expected May 2026, Rakuten Wallet live for 44M users. Sentiment confirms: whale accumulation at 10-month highs (11M+ XRP/day), 6-day consecutive ETF inflow streak, $65M+ April inflows on record pace. Technicals: volume-confirmed breakout (1.76-1.84x average on April 16-17), hourly RSI 29.4 at pullback exhaustion zone providing entry, daily Bollinger 0.897 shows momentum. At $1.41 this is a 61.8% Fib retrace of the swing from $1.316 to $1.544. Position sized at risk manager limit ($11,964). Stop below hourly support cluster and pullback invalidation at $1.355. Risk: binary ETF event could reject sharply; ambiguous $119M Coinbase transfer warrants monitoring."
+    },
+    "BTC-USD": {
+      "action": "buy",
+      "entry_price": 74500.0,
+      "target_price": 79500.0,
+      "stop_loss": 71800.0,
+      "risk_reward_ratio": "1.85:1",
+      "timeframe": "5-12 trading days",
+      "quantity": 0.1208,
+      "position_size_usd": 9002.0,
+      "confidence": 72,
+      "reasoning": "Near-unanimous bullish consensus (8/10 bullish, 78% Head Trader confidence). Structural case is compelling: $921M ETF inflows over 5 days, 270K BTC whale accumulation (largest monthly haul since 2013), exchange reserves at 9-year lows (5.88% supply), Strategy adding 13,927 BTC. BTC dominance rising to 57.5% confirms capital rotation into BTC as safe-haven in fear environment. Daily EMAs aligned uptrend, ADX 35.8, MACD histogram +634. Fear & Greed 29 is a contrarian entry signal. Hourly RSI 31 signals pullback near exhaustion at $74,200-$74,600 support cluster. Risk-reward is 1.85:1 — slightly below the 2:1 rule; position sized conservatively at $9,000 (below $9,853 limit) to respect this. Position respects risk manager cap. Key risks: April 15 exchange inflow spike (11K BTC/hr at $75K resistance) signals some distribution; FOMC April 28-29 macro event risk."
+    },
+    "ETH-USD": {
+      "action": "buy",
+      "entry_price": 2260.0,
+      "target_price": 2450.0,
+      "stop_loss": 2170.0,
+      "risk_reward_ratio": "2.11:1",
+      "timeframe": "5-12 trading days",
+      "quantity": 3.06,
+      "position_size_usd": 6912.0,
+      "confidence": 58,
+      "reasoning": "Moderate conviction buy (5/10 bullish, 58% Head Trader confidence). Lower conviction than BTC/XRP due to competing signals. Bullish case: record $11.82B ETH ETF cumulative inflows, 6 consecutive inflow days, Glamsterdam hard fork (H1 2026, 78% fee reduction, parallel execution), Grayscale Staking ETF live, Ethereum Foundation staking pivot removing sell pressure. Hourly RSI 25.7 (deeply oversold) and 4 simultaneous oversold indicators signal pullback exhaustion — classic bounce setup. Daily EMAs still aligned bullish, ADX 40 confirms strong trend. ETH classified as commodity by SEC/CFTC. Bearish risks restrain sizing: $292M Kelp DeFi exploit + $5.4B Aave rsETH outflow overhang, BTC dominance at 57.5% suppresses altcoin performance, net whale balance trend downward in 2026. Position sized at risk manager limit ($7,000, 3.06 ETH max allowed). Wait for hourly EMA reclaim above $2,300 as entry confirmation if possible."
+    },
+    "BNB-USD": {
+      "action": "buy",
+      "entry_price": 622.0,
+      "target_price": 648.0,
+      "stop_loss": 610.0,
+      "risk_reward_ratio": "2.17:1",
+      "timeframe": "4-8 trading days",
+      "quantity": 9.95,
+      "position_size_usd": 6189.0,
+      "confidence": 42,
+      "reasoning": "Small, event-driven half-size position only. Head Trader confidence only 42% (weak consensus: 8/10 neutral, 2/10 bullish). Pure catalyst trade tied to the April 28 Osaka/Mendel BSC hard fork — a time-bound binary event 8 trading days away. Hourly Bollinger width 0.0166 (extreme compression) signals coiled energy pre-event. $1.32B quarterly burn on April 15 demonstrated supply-reduction catalysts cause measurable price bounces. MACD histogram turning positive (+5.37). Risk-reward 2.17:1 clears the 2:1 rule. Position is deliberately half the risk manager limit ($6,189 vs $12,378 cap) per Head Trader directive. Exit by April 28 regardless of outcome — do not hold through FOMC overlap (April 28-29). Key risks: DOJ probe overhang caps institutional demand, 48% structural decline in CEX volumes is a persistent headwind for BNB utility, BNB below both 50-day ($634) and 200-day ($833) MAs."
+    },
+    "SOL-USD": {
+      "action": "hold",
+      "entry_price": null,
+      "target_price": null,
+      "stop_loss": null,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "no trade — monitor",
+      "quantity": 0,
+      "position_size_usd": 0,
+      "confidence": 0,
+      "reasoning": "No trade. Decisive no-trade consensus: 0/10 bullish, 2/10 bearish, 8/10 neutral from strategy agents; Head Trader confidence 25%. ADX 19.5 (below 20 threshold — trendless by definition), daily EMAs tangled and not aligned (price below 50-EMA at $87.41), 200-SMA at $127 is 50% above current price confirming structural downtrend. Spot buying demand collapsed ~80% since March 22. Hourly volume at 22% of average — near-total institutional disengagement. Dual exploit headwinds: $270M Drift security overhaul creates headline risk. SOL leading altcoin losses (-3% April 19) in a BTC-dominance-rising environment. Longer-term catalysts (Firedancer mainnet, Alpenglow consensus) are H2 2026 — too distant for swing. Re-evaluate only on confirmed reclaim above $89 resistance with 1.5x+ volume expansion."
+    }
+  },
+  "portfolio_synthesis": {
+    "total_capital": 100000.0,
+    "total_deployed": 34057.0,
+    "cash_reserved": 65943.0,
+    "deployment_pct": 34.1,
+    "active_positions": 4,
+    "macro_context": "Fear & Greed 29 (Fear), BTC dominance 57.5%, FOMC April 28-29 creates elevated uncertainty. Operating in a capital-rotation environment where BTC is the primary safe-haven beneficiary and higher-beta altcoins are under pressure. Macro caution warrants elevated cash reserve and disciplined position sizing.",
+    "portfolio_rationale": "Concentrated in the three highest-conviction opportunities while maintaining 66% cash buffer against FOMC volatility. XRP is the top conviction trade driven by the most compelling regulatory catalyst stack in crypto (commodity reclassification done, 7 ETF decisions pending, CLARITY Act imminent). BTC is the structural safe-haven play in a fear environment with institutional accumulation at historic levels. ETH is a lower-conviction bounce trade on Glamsterdam catalyst + record ETF inflows but sized small due to DeFi exploit overhang. BNB is a pure time-limited event trade on the April 28 hard fork — exit by event date. SOL is a firm no-trade given trendless technicals and deteriorating momentum. The portfolio avoids heavy sector concentration: BTC (store of value/L1), XRP (payments), ETH (smart contract L1), BNB (exchange/L1) are four distinct crypto sectors.",
+    "key_risks": [
+      "FOMC April 28-29 macro volatility could trigger broad crypto risk-off — BNB exit pre-FOMC is mandatory",
+      "BTC breakdown below $71,800 stop would invalidate the support thesis and trigger cascading altcoin losses",
+      "XRP ETF rejection (any of 7 pending decisions) is binary downside risk — monitor SEC news flow daily",
+      "CLARITY Act missing April Senate Banking committee window sharply reduces May passage odds",
+      "High cross-asset correlation (BTC-ETH 0.84, BTC-XRP 0.80) means portfolio is not truly diversified in a broad crypto sell-off"
+    ],
+    "exit_discipline": "BNB: hard exit April 28 pre-FOMC regardless of P&L. XRP: trail stop to $1.41 (entry) on any close above $1.50. BTC: scale out 50% at $77,127 prior swing high. ETH: exit full position if $2,170 stop tagged or if BTC breaks $71,800."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "News flow is overwhelmingly positive for BTC. Strategy added 13,927 BTC (~$1B) on April 13, bringing their treasury to ~781K BTC and signaling continued corporate accumulation. Spot BTC ETFs logged $921M in net inflows over a 5-day window with BlackRock IBIT pulling $284M in a single day — the largest institutional demand signal in weeks. Deutsche Boerse's $200M stake in Kraken marks a watershed moment for institutional crypto infrastructure acceptance. Bitcoin Core v31.0 launched with cluster mempool redesign and default Tor/I2P privacy enhancements. Regulatory clarity is advancing rapidly: SEC 'Regulation Crypto' is at final OIRA review, the CLARITY Act stablecoin bill is nearing Senate markup, and the U.S. Strategic Bitcoin Reserve design is due by July 22. On-chain, whale addresses added 270,000 BTC this month (largest accumulation since 2013) and exchange reserves hit a 9-year low at 5.88% of supply — structural supply reduction. Near-term caution: Fear & Greed Index at 27 (Fear), an April 15 inflow spike to 11,000 BTC/hour at the $75K resistance is a short-term distribution warning, and macro tightening suppresses speculative flows. The divergence between bearish short-term sentiment (hourly RSI 31, hourly downtrend) and bullish daily technicals (daily EMAs aligned up, MACD expanding, ADX 35.8) supports a swing entry on this pullback to support.",
+    "entry": 74200.0,
+    "target": 79500.0,
+    "stop": 71800.0,
+    "timeframe": "7-14 days"
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 60,
+    "reasoning": "Ethereum's news backdrop is net positive but tempered by serious DeFi exploit risks. On the bullish side: Ethereum ETFs logged six consecutive days of net inflows through April 16 with cumulative net assets hitting a record $11.82B; the Ethereum Foundation completed its 70,000 ETH staking pivot ($93M deposit), ending regular ETH sales and reducing structural sell pressure; Grayscale's Ethereum Staking ETF launched live on NYSE Arca, positioning ETH as a yield-bearing institutional asset; and the Glamsterdam hard fork (H1 2026, targeting ~78% fee reduction and parallel execution) is in active testnet preparation — a major catalytic upgrade. Derivatives market returned $6.64B in net inflows over 60 days, its first sustained positive run since 2023. On-chain, whales holding 10K-100K ETH accumulated 7.6M ETH in April, and a dormant whale returned to buy 50,706 ETH (~$111M). Bearish factors: The $292M Kelp DeFi exploit triggered $5.4B in Aave rsETH outflows and raised structural DeFi confidence concerns; a large whale moved $225M USDC to exchanges then withdrew 32,007 ETH in a single session (potential distribution); BTC dominance at 57.5% suppresses altcoin outperformance; hourly RSI is 25.7 (short-term oversold, potential snap-back). The daily trend remains intact (EMAs aligned up, ADX 40.4), but the DeFi security overhang and current price at $2,281 below resistance $2,421 limits upside conviction.",
+    "entry": 2270.0,
+    "target": 2480.0,
+    "stop": 2180.0,
+    "timeframe": "7-14 days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "Solana presents a genuinely mixed picture where strong fundamental catalysts are offset by technical weakness and security concerns. Positive news: SOL ETF AUM crossed $1 billion with Goldman Sachs holding a $108M position and Bitwise BSOL recording $15.5M single-day inflows on April 17; Solana overtook Ethereum in 24-hour DEX volume ($920M vs $563M) and processed $1.1 trillion in Q1 2026 transactions; the Solana Foundation partnered with Mastercard, Western Union, and Worldpay for enterprise financial applications — a major institutional adoption signal; Firedancer (high-performance validator client) now runs 20.9% of staked SOL with full mainnet launch on H2 2026 schedule; and the Alpenglow consensus upgrade targeting 150ms finality is a significant upcoming catalyst. Negative news: The $270M Drift exploit forced the Solana Foundation to launch a 24/7 security overhaul, raising ecosystem trust concerns; SOL dropped 3% on April 19 leading altcoin losses; technical analysts warn of breakdown risk with $78-82 support under pressure; and spot buying demand collapsed ~80% since March 22. On-chain, exchange outflows are constructive but contradicted by the dramatic demand collapse. Technically, EMAs are NOT aligned in any direction (neutral), ADX is only 19.5 (weak trend), and while hourly RSI is oversold at 31, the hourly trend is bearish aligned. The BTC dominance environment (57.5%) further suppresses altcoin momentum. Current price at $84.47 sits near multiple supports ($83.48 hourly, $78.95 daily) with no clear directional catalyst to break the range in the next 1-2 weeks.",
+    "entry": 84.0,
+    "target": 91.0,
+    "stop": 79.5,
+    "timeframe": "10-14 days"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 48,
+    "reasoning": "BNB has a cluster of strong near-term catalysts but faces persistent structural and regulatory headwinds that prevent a strong directional call. On the bullish side: the 35th quarterly BNB burn on April 15 removed 2.14M BNB (~$1.32B) from circulation — a direct deflationary event; YZi Labs (Binance-affiliated) announced a $1 billion ecosystem fund for DeFi, AI, RWA, and DeSci builders on BNB Chain; Kyrgyzstan selected BNB Chain to host its national stablecoin and CBDC rollout with CZ as strategic advisor — expanding real-world utility; and the BSC Osaka/Mendel hard fork is scheduled for April 28, which coincides with the FOMC meeting (a dual macro catalyst moment). Bearish factors: BNB is trading below both its 50-day and 200-day moving averages; the ongoing DOJ probe into Binance's sanctions compliance remains an open legal overhang that caps institutional demand; centralized exchange volumes fell 48% in Q1 2026 from October 2025 peak — structural headwind for an exchange utility token; and whale patterns show distribution near the $643-650 resistance zone with every push higher rejected. Hourly ADX is only 22 with RSI at 42 — no strong directional momentum. The daily stochastic shows k=70 < d=88 (bearish cross) suggesting momentum is fading at current levels. The competing forces of strong tokenomics (burn + ecosystem fund) vs. technical weakness and legal risk create a neutral standoff. Worth monitoring for a breakout above $643 resistance as a trigger.",
+    "entry": 618.0,
+    "target": 648.0,
+    "stop": 598.0,
+    "timeframe": "7-10 days"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 68,
+    "reasoning": "XRP has the most concentrated set of near-term regulatory and institutional catalysts of any asset in this basket. The most important: seven spot XRP ETF applications (Grayscale, Bitwise, 21Shares, Canary, WisdomTree, Franklin Templeton) are in final SEC review with a Q2 2026 decision deadline — approval would trigger a major repricing event. The CLARITY Act, which would codify XRP's commodity status into federal law, is advancing toward Senate floor vote in May per Ripple CEO Brad Garlinghouse. Combined spot XRP ETF inflows hit $65M+ in April (six consecutive inflow days) on pace for a monthly record, and combined AUM has already crossed $1 billion. Rakuten Wallet integrated XRP as a listed asset and payment method for 44 million users across 5M+ merchant locations in Japan — a direct real-world adoption catalyst. Ripple partnered with Convera ($190B payments giant) for cross-border stablecoin settlements across 200 countries. The XRPL native lending protocol is code-complete and entering validator voting. On-chain, whale accumulation surged to a 10-month high at 11M+ XRP/day purchased. The $119M Coinbase-linked transfer on April 13 is ambiguous but ETF inflow momentum suggests net accumulation is dominant. Technically: RSI 65, MACD positive histogram, ADX 31 (solid trend), volume 10% above 20-day average — daily momentum is constructive. Hourly RSI at 29 signals short-term oversold after the pullback from $1.477 to $1.41, potentially offering a swing entry. The YTD decline (-42%) reflects macro headwinds already priced in; the next leg will likely be driven by the ETF decision binary event. Risk: current price is near Bollinger upper band (position 0.897) on the daily — limited room before overbought conditions develop.",
+    "entry": 1.40,
+    "target": 1.62,
+    "stop": 1.28,
+    "timeframe": "10-20 days"
+  }
+}

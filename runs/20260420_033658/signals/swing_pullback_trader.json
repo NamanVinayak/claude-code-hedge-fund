@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "BTC is in a clear daily uptrend (EMA-10 > EMA-21 > EMA-50 aligned bullish) following a strong advance from $65,738 to $77,127. Price has pulled back to $74,557, sitting right at the daily 23.6% Fibonacci retracement ($74,439) — a shallow but technically valid pullback level. More importantly, the hourly timeframe shows an extreme oversold setup: hourly RSI at 31.2, Stochastic 32.6/31.3, Williams %R -67.4, and CCI -61, all pointing to near-term exhaustion of the pullback. The daily pullback volume is declining (0.703x 20-day avg), a healthy sign the selloff lacks conviction. The price structure remains intact with higher highs and higher lows on the daily chart. On-chain context is strongly supportive: whale accumulation at a decade-high pace (270K BTC added by whales in 30 days), exchange reserves at 9-year lows, spot BTC ETF inflows of $921M over the past 5 days, and Strategy adding another 13,927 BTC near these levels. The daily RSI at 73 is elevated, but the hourly RSI at 31 provides the entry timing signal. The 38.2% daily Fibonacci level at $72,776 aligns with the daily EMA-21 ($72,328) and EMA-50 ($71,689), forming a confluence support zone if the pullback deepens. Entry is staged: immediate entry near current price at the 23.6% fib, with the daily 38.2% fib zone ($72,776) as backup. Target is a retest of the $77,127 swing high. Stop below the 50% fib at $71,432. Fear & Greed at 27 (Fear) is a contrarian bullish signal for a disciplined pullback entry. Key risk: macro deterioration or BTC ETF outflow reversal could accelerate the pullback toward the 50-61.8% fib zone ($70,088-$71,432).",
+    "entry_price": 74200.0,
+    "target_price": 77127.0,
+    "stop_loss": 71200.0,
+    "timeframe": "5-12 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 68,
+    "reasoning": "ETH is in a daily uptrend (EMA-10 $2,310 > EMA-21 $2,240 > EMA-50 $2,204, all aligned bullish) after recovering from $1,937 to a swing high of $2,421. Price is now pulling back to $2,281, positioned between the 23.6% ($2,307) and 38.2% ($2,236) daily Fibonacci retracement levels. This is a legitimate pullback within an uptrend. The hourly timeframe is deeply oversold: hourly RSI at 25.7 (below 30 threshold), Stochastic 30.8/30.3, Williams %R -69.2, and MFI 23.3 — four simultaneous oversold readings on the hourly chart signal the pullback is likely exhausted at the short-term timeframe. Daily volume on the pullback (0.807x 20-day avg) is below average — confirming healthy, low-conviction selling. The daily ADX at 40.4 confirms a strong trend. The 38.2% fib at $2,236 aligns with the daily EMA-21 ($2,240), creating a high-conviction support zone for a deeper entry. Bullish catalysts reinforce the thesis: ETH ETF inflows on a 6-day consecutive streak with cumulative $11.82B record AUM, derivatives market returning $5.74B net inflows over 30 days (first sustained positive run since 2023), Ethereum Foundation completing staking of 70K ETH (removing sale pressure), and the Glamsterdam hard fork (H1 2026) as a near-term upgrade catalyst. Whale accumulation of 7.6M ETH in April by 10K-100K ETH cohort is strongly bullish. Negative risk: $5.4B Aave rsETH exploit overhang and large whale $225M USDC-to-exchange transfer could signal distribution. Entry target is the 38.2% fib / EMA-21 confluence. Stop below the 61.8% level at $2,122. Target is a retest of the $2,421 swing high.",
+    "entry_price": 2236.0,
+    "target_price": 2421.0,
+    "stop_loss": 2100.0,
+    "timeframe": "5-10 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "SOL does not present a clean pullback setup for the pullback trading strategy. The key disqualifying factors are: (1) Trend structure is ambiguous — daily EMAs are NOT aligned in either direction (EMA-10 $85.71 < EMA-50 $87.41), and the SMA-200 at $126.99 is far above current price ($84.47), signaling a deep downtrend from the longer-term perspective. Higher highs/higher lows price structure is absent. (2) The pullback has overshot the 61.8% daily Fibonacci retracement level — the 61.8% fib is at $85.55 and current price at $84.47 has already broken below this level, which per this strategy's risk management rules disqualifies the setup. (3) Daily ADX at only 19.5 indicates a weak, directionless trend — insufficient trend strength to trade pullbacks with confidence. On the positive side, hourly RSI (31.2) and MFI (27.8) are oversold, and there is genuine fundamental support from Firedancer development, $1B+ ETF AUM, and Mastercard/Western Union/Worldpay partnerships. However, the technical setup does not meet the pullback trader's entry criteria with the 61.8% level breached and trend structure unclear. The $78.95 support level is the next meaningful zone, but entering here would be catching a falling knife without a confirmed uptrend to pull back within.",
+    "entry_price": 84.47,
+    "target_price": 88.99,
+    "stop_loss": 82.50,
+    "timeframe": "neutral — no trade"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "BNB presents a mixed picture that does not clearly meet the pullback trader's criteria. The daily EMA structure is NOT aligned bullish (EMA-10 $621.7 < EMA-50 $634.4), and the SMA-200 at $833.7 is far above current price ($621.46), reflecting a longer-term downtrend. However, the daily MACD histogram has turned positive ($5.37) and RSI is at 63.5, suggesting near-term bullish momentum. Current price at $621.46 is sitting right at the daily 61.8% Fibonacci retracement ($619.89) of the swing from $583.14 to $679.35 — technically a valid deep pullback entry zone. The hourly indicators are neutral (RSI 42.3, Stochastic 46.2) with no clear oversold reading, suggesting the pullback may not be fully exhausted on the intraday timeframe. Hourly volume is extremely thin (0.0825x average), limiting confidence in any directional read. Positive catalysts include the 35th quarterly BNB burn removing $1.32B from supply on April 15, the $1B YZi Labs ecosystem fund, and the upcoming Osaka/Mendel hard fork on April 28. Negative headwinds include the ongoing DOJ probe overhang and the 48% decline in centralized exchange volumes in Q1 2026 — a structural headwind for exchange-native tokens. Without a clear daily EMA uptrend to define the broader trend, and with mixed hourly momentum signals, the pullback setup lacks the conviction needed for a high-probability entry. Monitoring for a potential bullish resolution above EMA-50 ($634) before committing.",
+    "entry_price": 620.0,
+    "target_price": 643.45,
+    "stop_loss": 606.0,
+    "timeframe": "neutral — no trade"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 62,
+    "reasoning": "XRP has rallied strongly from the $1.3156 swing low to $1.5436 swing high, establishing a potential uptrend structure. Price is now pulling back to $1.41, sitting right at the daily 61.8% Fibonacci retracement ($1.4027) — the deepest standard pullback zone that still respects the trend structure. The daily EMAs show EMA-10 ($1.40) and EMA-21 ($1.38) slightly above EMA-50 ($1.41), with a mixed picture but the price finding support near the 61.8% fib and EMA cluster. Daily RSI at 65.5 is elevated but the pullback from $1.54 to $1.41 represents a 9% correction giving room for a resumption. Critically, the hourly timeframe shows oversold conditions: hourly RSI 29.4 (below 30), Stochastic 35.4/31.1 (approaching oversold), Williams %R -64.6, MFI 20.9 — deeply oversold on shorter timeframe, signaling pullback exhaustion. The 61.8% daily fib at $1.4027 also coincides with the hourly 78.6% retracement at $1.4121 and the hourly support at $1.3946, creating a confluence support cluster around $1.40-$1.41. XRP-specific catalysts are exceptionally strong: SEC/CFTC classified XRP as a commodity in March 2026 (removes regulatory overhang), 7 spot XRP ETF applications in final SEC review with Q2 2026 decision deadline, ETF inflows tracking for monthly record ($65M+ in April), Japan's Rakuten Wallet integration for 44M users, Ripple/Convera partnership for $190B cross-border payments, and the CLARITY Act advancing toward Senate floor vote. Whale accumulation at 10-month highs (11M tokens/day) supports the bullish thesis. Main risk: the volume on this daily pullback is elevated vs. average (1.098x), which is a cautionary signal — could indicate distribution rather than consolidation. The April 13 Coinbase transfer of $119M XRP adds uncertainty. Stop placed below the 78.6% fib ($1.3644) and near the swing low support. Target is a retest of the $1.5436 swing high.",
+    "entry_price": 1.41,
+    "target_price": 1.5436,
+    "stop_loss": 1.355,
+    "timeframe": "5-12 trading days"
+  }
+}
