@@ -1,0 +1,99 @@
+{
+  "mode": "swing (crypto)",
+  "date": "2026-04-21",
+  "tickers": ["BTC-USD", "ETH-USD", "SOL-USD", "BNB-USD", "XRP-USD"],
+  "market_context": {
+    "headline": "Bitcoin Season with selective bullish setups — XRP leading on regulatory clarity",
+    "fear_greed": 33,
+    "fear_greed_label": "Fear (recovering from 11 Extreme Fear earlier in April)",
+    "btc_dominance": "58.5%",
+    "regime": "Bitcoin Season — capital concentrated in BTC; altcoin rotation has not commenced",
+    "macro_tailwinds": [
+      "Fed holding at 3.50-3.75% with no near-term hike — crypto-friendly rate pause",
+      "Record US spot BTC ETF inflows: $996M/week (BlackRock IBIT $906M alone)",
+      "XRP ETP global inflows: $120M/week — highest of any crypto asset",
+      "Deeply negative perpetual funding rates across BTC/ETH/XRP = short-squeeze potential",
+      "CLARITY Act Senate markup imminent — regulatory clarity catalyst for entire space"
+    ],
+    "macro_headwinds": [
+      "KelpDAO DeFi exploit: $292M stolen, $195M Aave bad debt, $5.1B stablecoins frozen (Apr 20)",
+      "Bitcoin Conference 2026 imminent — historical sell-the-news risk",
+      "US-Iran geopolitical tension — macro wildcard affecting risk assets",
+      "FOMC April 28-29 — hawkish surprise could pressure all risk assets"
+    ]
+  },
+  "what_is_a_swing_trade": "A swing trade holds a position for 2-20 days, aiming to capture a single directional price 'swing' rather than long-term appreciation. Unlike day trades (minutes to hours) or investments (months to years), swing trades target specific technical or catalyst-driven price moves with defined entry, target, and stop-loss levels.",
+  "key_concepts_explained": {
+    "funding_rates": "In crypto perpetual futures, traders pay each other a periodic funding rate. Negative funding means shorts pay longs — it signals too many people are betting the price will fall. When negative funding persists while spot prices rise, the shorts are fighting an uptrend and can be forced to buy (close their short) rapidly, causing a 'short squeeze' that accelerates price higher.",
+    "fear_greed_index": "Alternative.me's Fear & Greed Index measures market sentiment (0=Extreme Fear, 100=Extreme Greed). At 33 (Fear), the market has overcorrected to the downside. Historically, Fear readings below 40 mark medium-term buying opportunities, as the crowd is pessimistic just when institutional players accumulate.",
+    "btc_dominance": "BTC Dominance is Bitcoin's share of total crypto market cap. At 58.5%, we're firmly in 'Bitcoin Season' — capital flows into BTC first. Altcoins typically outperform only when dominance drops below ~50% ('Altcoin Season'). XRP is the exception here because it has its own idiosyncratic catalyst.",
+    "etf_flows": "Spot crypto ETFs (like BlackRock's IBIT) let institutions buy crypto through traditional brokerage accounts. Weekly net inflows show whether institutional money is entering or exiting. $996M/week in BTC ETF inflows represents sustained, structural institutional demand — not speculative retail buying.",
+    "exchange_supply": "When crypto moves from exchanges to private wallets, it means owners are less likely to sell in the near term — reducing available supply. XRP exchange supply hitting a 7-year low (down 50% in 6 months) is a structural supply shock: same or growing demand, shrinking available supply = price pressure upward.",
+    "regulatory_clarity_xrp": "Ripple (XRP's creator) spent years in an SEC lawsuit. In March 2026, the SEC and CFTC jointly classified XRP as a digital commodity (not a security). This matters enormously: institutional investors who were legally prohibited from holding XRP can now do so. The pending CLARITY Act would codify this permanently, reportedly unlocking institutional partners currently under confidentiality agreements."
+  },
+  "decisions_explained": {
+    "XRP-USD": {
+      "action": "BUY",
+      "entry": 1.42,
+      "target": 1.65,
+      "stop": 1.31,
+      "capital": "$25,000 (25% of portfolio)",
+      "quantity": "17,605 XRP",
+      "confidence": 74,
+      "risk_reward": "2.09:1",
+      "timeframe": "7-12 days",
+      "why_highest_conviction": "XRP is our top pick because 9 of 10 analysis frameworks agree it's bullish — the strongest consensus in this portfolio. The thesis layers three independent drivers: (1) REGULATORY: The SEC/CFTC commodity classification (March 17) removed a legal cloud that suppressed institutional demand for years. The CLARITY Act (Senate vote expected late April) would unlock institutional partners currently under NDAs — meaning a wave of publicly announced partnerships is pending. (2) SUPPLY SHOCK: Exchange-held XRP fell 50% in 6 months to a 7-year low — structural scarcity as coins move off exchanges into cold storage and DeFi. (3) INSTITUTIONAL DEMAND: XRP ETP products attracted $120M globally for the week of April 14-19 — the highest weekly inflow of any crypto asset, beating both Bitcoin and Ethereum ETFs on a relative basis.",
+      "what_could_go_wrong": "A $119M whale moved XRP toward a Coinbase-linked address on April 13 — potential near-term sell pressure. Monthly Ripple escrow unlocks ($1B XRP) are a routine headwind. The CLARITY Act failing or being delayed removes the primary near-term catalyst."
+    },
+    "BTC-USD": {
+      "action": "BUY",
+      "entry": 75200,
+      "target": 82000,
+      "stop": 72000,
+      "capital": "$21,900 (22% of portfolio)",
+      "quantity": "0.291 BTC",
+      "confidence": 71,
+      "risk_reward": "2.13:1",
+      "timeframe": "8-14 days",
+      "why_second_conviction": "BTC is the safest expression of crypto exposure in a Bitcoin Season environment. Six of ten strategies see a bullish setup; zero are bearish. The most compelling signal: perpetual futures funding at -0.005% (7-day average) — the most negative since 2023. This means professional traders have built massive short positions even as spot prices held $74K-$76K. With BlackRock adding $906M in a single week through IBIT ETF, institutional buyers are absorbing every dip. This creates a squeeze setup: shorts must eventually buy back. We sized at 22% rather than 25% because the Bitcoin Conference 2026 (imminent) historically causes a 'sell the news' dip after the event.",
+      "what_could_go_wrong": "Large holders distributed 188,000 BTC near the $76K-$78K resistance zone — supply pressure overhead. A Satoshi-era wallet (dormant for years) moved 1,000 BTC to Binance — headline sell pressure risk. US-Iran tensions could trigger a broad risk-off move."
+    },
+    "ETH-USD": {
+      "action": "BUY (conditional)",
+      "entry": 2280,
+      "target": 2560,
+      "stop": 2145,
+      "capital": "$11,856 (12% of portfolio)",
+      "quantity": "5.2 ETH",
+      "confidence": 52,
+      "risk_reward": "2.07:1",
+      "timeframe": "8-14 days",
+      "why_conditional": "ETH has a compelling fundamental case — record institutional ETF inflows, Bitmine buying $230M of ETH this week, massive whale accumulation, and a textbook short-squeeze setup. However, the KelpDAO DeFi hack (April 20) creates a live tail risk: $292M stolen, $195M in Aave bad debt, $5.1B stablecoins frozen. As Ethereum is the base layer for DeFi, any DeFi crisis disproportionately hits ETH. We enter ONLY if KelpDAO contagion appears contained (no further protocol insolvencies, no stablecoin depegs). We sized at 12% — half our typical swing allocation — reflecting this uncertainty.",
+      "what_could_go_wrong": "If KelpDAO contagion spreads to additional DeFi protocols, ETH faces a narrative crisis as 'the DeFi platform with systemic risk.' The momentum ranker flagged that short-term price action (-2.51% 5-day ROC) shows distribution from recent highs."
+    },
+    "BNB-USD": {
+      "action": "NO TRADE",
+      "rationale": "The Osaka/Mendel hard fork (April 28) is a real near-term catalyst, and the $1.32B deflationary burn (April 15) is structurally supportive. However, the risk/reward doesn't meet our 2:1 minimum: entry $626, target $645 ($19 upside) vs stop $614 ($12 downside) = 1.58:1 — insufficient. Additionally, US Senate scrutiny of Binance's Iran-linked compliance (resurfaced April 17) is a unique regulatory risk to BNB that other assets don't carry — a potential binary negative event."
+    },
+    "SOL-USD": {
+      "action": "NO TRADE",
+      "rationale": "Zero bullish signals, two bearish, eight neutral — the clearest no-trade in the portfolio. Technical structure is broken (EMAs inverted, price below 50-day MA, ADX 17.5 — no trend). SOL is down 31% year-to-date in a Bitcoin Season environment and underperforming BTC by nearly 10% on 21-day momentum. Most critically, the $83 support is only $2 below current price — a break there triggers a documented liquidation cascade. The Alpenglow consensus upgrade (150ms finality) is transformational but has no confirmed mainnet date, making it unactionable as a swing catalyst. Watch: if Alpenglow mainnet date is announced, reassess bullish."
+    }
+  },
+  "portfolio_snapshot": {
+    "total_capital": 100000,
+    "deployed": 58756,
+    "cash_reserved": 41244,
+    "cash_pct": "41.2%",
+    "positions": 3,
+    "stance": "Selective bullish — concentrate in regulatory clarity plays and Bitcoin Season leader. Large cash reserve reflects KelpDAO uncertainty and conference event risk.",
+    "conviction_ranking": ["XRP-USD #1", "BTC-USD #2", "ETH-USD #3 (conditional)", "BNB-USD (excluded — R/R)", "SOL-USD (excluded — no signal)"]
+  },
+  "key_signals_grid": {
+    "XRP-USD": {"trend": "bullish", "momentum": "bullish", "catalyst": "bullish (CLARITY Act)", "sentiment": "bullish", "institutional_flow": "bullish ($120M/week ETP)", "regulatory": "resolved"},
+    "BTC-USD": {"trend": "bullish", "momentum": "neutral (stalling)", "catalyst": "bullish (short squeeze + ETF)", "sentiment": "bullish", "institutional_flow": "bullish ($996M/week ETF)", "regulatory": "favorable"},
+    "ETH-USD": {"trend": "bullish", "momentum": "bearish short-term", "catalyst": "mixed (short squeeze vs DeFi hack)", "sentiment": "bullish", "institutional_flow": "bullish (record ETF)", "regulatory": "favorable"},
+    "BNB-USD": {"trend": "neutral", "momentum": "bullish (mild)", "catalyst": "neutral (Osaka fork)", "sentiment": "neutral", "institutional_flow": "no ETF", "regulatory": "negative risk (Iran scrutiny)"},
+    "SOL-USD": {"trend": "bearish", "momentum": "neutral/bearish", "catalyst": "neutral (Alpenglow unscheduled)", "sentiment": "neutral", "institutional_flow": "mixed ETF flows", "regulatory": "favorable"}
+  }
+}

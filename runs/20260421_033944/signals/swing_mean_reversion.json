@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "BTC is not at a genuine mean reversion extreme. Daily Z-score of 1.20 is above the neutral band (-1 to +1) but far short of the ±2 threshold required for a mean reversion setup. Distance from 50-SMA is 4.97% — noteworthy but not extreme enough to trigger a fade. RSI at 63.2 is elevated but not in overbought territory (>75). Bollinger Band position at 0.675 shows price in the upper half of the band but not outside it. MFI at 77.1 is close to overbought. Recent price action shows a sharp rejection from the Apr 17 high of $77,127 down to $73,856 on Apr 19, then a partial recovery to $75,569 — suggesting the overbought condition may already be resolving. Hourly Z-score of 0.45 confirms no hourly extreme. No clear reversal candle pattern with confirmation. Waiting for either a push to Z-score ≥2 (overbought) or a deeper pullback below -1 Z-score before engaging. Currently in no-trade zone.",
+    "entry": 75569.0,
+    "target": 71610.76,
+    "stop": 78500.0,
+    "timeframe": "no setup — neutral"
+  },
+  "ETH-USD": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "ETH daily Z-score of 1.01 is barely above the neutral zone threshold and well below the ±2 mean reversion trigger. Distance from 50-SMA is 6.05% — the most elevated among the five tickers and approaching the 'noteworthy' threshold, but without a Z-score extreme it does not qualify for a fade. RSI at 58.9 and BB position at 0.594 are both in mid-range. Stochastic K (50.4) has already crossed below D (71.6) — a mild bearish signal but not sufficient alone. Recent price action shows ETH peaked at $2,421 on Apr 17 and has pulled back sharply to $2,264 on Apr 19 then bounced to $2,307 — the pullback from the short-term high may have already occurred. Hourly Z-score of -0.12 confirms the hourly timeframe has already reverted. Without a sustained extreme (Z ≥ 2 or ≤ -2) there is no edge for a mean reversion swing trade. Neutral stance.",
+    "entry": 2307.08,
+    "target": 2220.95,
+    "stop": 2470.0,
+    "timeframe": "no setup — neutral"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "SOL is squarely in the middle of its range. Daily Z-score of -0.589 is well within the neutral band. Distance from 50-SMA is only -2.67%. RSI of 52.5 and BB position of 0.497 (essentially price at the Bollinger midline) confirm a balanced, mean-hugging state. Stochastic K (42.1) is in neutral territory. Hourly indicators also show no extreme: Z-score -0.12, RSI 47.5. SOL is consolidating between $83 and $89 support/resistance without a directional impulse. With ADX at only 17.5 (weak trend), the asset is range-bound but not at an extreme requiring a fade. No mean reversion setup exists.",
+    "entry": 85.12,
+    "target": 85.88,
+    "stop": 83.0,
+    "timeframe": "no setup — neutral"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "BNB daily Z-score of -0.465 is solidly neutral. Distance from 50-SMA is only -1.68%. RSI at 55.2, BB position at 0.602, Williams %R at -54.3, CCI at 65.8 — all mid-range readings with no meaningful extreme. Stochastic K (45.7) crossed below D (70.7) suggesting mild softening but not an oscillator extreme. Recent price action shows a 3-day rally from $610 to $643 followed by a 2-day pullback to $616 — a normal range oscillation, not an overextension requiring a mean reversion trade. Hourly Z-score of 1.15 and RSI of 57.2 show modest short-term elevation but nothing extreme. No mean reversion setup present.",
+    "entry": 629.13,
+    "target": 627.07,
+    "stop": 615.0,
+    "timeframe": "no setup — neutral"
+  },
+  "XRP-USD": {
+    "signal": "neutral",
+    "confidence": 15,
+    "reasoning": "XRP has the most neutral profile of all five assets. Daily Z-score of 0.205 is almost exactly at the mean. Distance from 50-SMA is just +0.78%. RSI at 58.4, BB position at 0.665, Williams %R at -53.4 — all solidly mid-range. Volume ratio of 1.21 shows slightly elevated volume on the recent 5-day rally from $1.36 to $1.48, but the subsequent pullback to $1.39 brought it back near the mean. Hourly Z-score of 0.24 confirms zero short-term deviation. CCI at 95.1 is the only slightly elevated indicator but far from the ±200 extreme level. The daily stochastic K (46.6) crossed below D (67.0) suggesting mild rollover but this is consistent with normal range reversion already underway. No mean reversion edge here; the asset is already trading at its mean.",
+    "entry": 1.4236,
+    "target": 1.3838,
+    "stop": 1.485,
+    "timeframe": "no setup — neutral"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "BTC shows textbook trend-following conditions on the daily timeframe. EMAs are cleanly aligned uptrend (10 EMA 74,037 > 21 EMA 72,467 > 50 EMA 71,774) and ADX is 33.65, well above the 25 threshold, confirming a strong tradeable trend. RSI at 63.2 is bullish without being overbought. MACD histogram expanding positively (417.6). Price peaked at 77,127 on Apr 17 and pulled back to 73,856 on Apr 19, now recovering at ~75,569 — forming a healthy pullback toward the 10 EMA support zone. Hourly EMAs are also aligned uptrend, though hourly ADX (23.6) shows the short-term momentum is consolidating. Hourly MACD histogram slightly negative (-27) and BB position at 0.46 suggest price is in mid-range on the hourly — typical of a healthy pause. MFI at 77.1 confirms money flow remains bullish. Support at 66,888 and resistance at 77,127. Entry near current price on the pullback to 10 EMA zone; stop below the 21 EMA with ATR buffer. Target: prior resistance at 77,127 and measured extension to ~79,000.",
+    "entry": 74500.0,
+    "target": 79200.0,
+    "stop": 71200.0,
+    "timeframe": "5-10 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 58,
+    "reasoning": "ETH has a valid daily trend-following setup: EMAs cleanly aligned uptrend (10 EMA 2,302 > 21 EMA 2,243 > 50 EMA 2,207) and daily ADX at 37.1 — the strongest ADX reading in this group, confirming a well-established trend. RSI 58.9 and positive MACD histogram (9.6) add confirmation. However, price pulled back sharply from the Apr 17 high of 2,421 to the current 2,307, which is now slightly below the 10 EMA (2,302). The hourly timeframe shows tangled EMAs and ADX only 18.7 — the short-term structure lacks clarity and momentum is fading on the hourly MACD. This pullback may continue toward the 21 EMA (2,243) before finding strong trend support. Confidence is moderate due to the hourly weakness. Preferred entry is closer to the 21 EMA zone (2,240-2,260) rather than current price, which has not yet found support. Stop below the 21 EMA with ATR buffer. Target: retest of swing high at 2,421 and extension toward 2,500.",
+    "entry": 2250.0,
+    "target": 2500.0,
+    "stop": 2170.0,
+    "timeframe": "7-14 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "SOL does not meet trend-following entry criteria. Daily ADX is only 17.5, well below the 25 minimum required to confirm a tradeable trend. EMA alignment is broken: 10 EMA (85.32) and 21 EMA (84.94) are above current price but the 50 EMA (87.26) sits above both, creating a tangled structure with no clean directional bias. Price at 85.12 is sandwiched between the EMAs. Hourly EMAs are also tightly bunched and tangled (10: 85.46, 21: 85.39, 50: 85.53) with hourly ADX at 18.8 — no trend on any timeframe. RSI neutral at 52.5, MACD barely positive. Recent price action shows a failed rally to ~90 on Apr 16-17 followed by a pullback back to the 83-85 range, suggesting a range-bound market. No trade setup per trend-following rules.",
+    "entry": null,
+    "target": null,
+    "stop": null,
+    "timeframe": "no trade"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 25,
+    "reasoning": "BNB fails the EMA alignment requirement for trend-following. Daily EMAs are tangled: 10 EMA (620.8) > 21 EMA (618.1) but the 50 EMA (633.7) sits above both, meaning price is below its medium-term trend line. Daily ADX at 22.8 also falls short of the 25 threshold, indicating insufficient trend strength. Price at 629 recently peaked at 643 on Apr 17 and has pulled back, trading near the daily 10-21 EMA cluster. Hourly EMAs are cleanly aligned (10 > 21 > 50) and hourly ADX is 20.6, but this is insufficient on its own given the broken daily structure. The daily 50 EMA resistance at ~634 would cap upside momentum in the near term. With tangled daily EMAs and ADX below 25, there is no clean trend-following signal. Waiting for price to clear above the 50 EMA (633.7) with ADX > 25 before considering a bullish entry.",
+    "entry": null,
+    "target": null,
+    "stop": null,
+    "timeframe": "no trade"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 52,
+    "reasoning": "XRP offers a borderline trend-following setup. Daily ADX at 31.4 is above the 25 threshold, confirming meaningful trend strength. Momentum is positive across all ROC periods (5d: +2.4%, 10d: +3.8%, 21d: +5.1%). Volume was 1.21x average on the Apr 17 rally to 1.477 — above-average volume on the up-leg. MACD has turned positive. However, EMA alignment is not perfectly clean: daily 10 EMA (1.400) > 21 EMA (1.384) but 50 EMA (1.411) sits above both, breaking the ideal 10>21>50 structure. Price at 1.42 is below the 50 EMA, which poses resistance. Hourly EMAs are tightly bunched near 1.424-1.425 with ADX at 20.7 — no clear short-term directional conviction. The pullback from 1.477 to 1.395 on Apr 19 brings price near the 0.618 Fibonacci retracement (1.403) and the daily 21 EMA (1.384) support zone, which is a valid trend-following entry area. Confidence is below 60 due to the imperfect EMA stack. Stop below 21 EMA with ATR buffer. Target: retest of swing high at 1.477 and measured extension toward 1.54.",
+    "entry": 1.40,
+    "target": 1.54,
+    "stop": 1.33,
+    "timeframe": "5-12 trading days"
+  }
+}

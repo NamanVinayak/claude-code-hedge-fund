@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "BTC is in a well-defined daily uptrend with EMAs fully aligned (10 > 21 > 50) and ADX at 33.6 confirming trend strength. Price pulled back from the swing high of $77,127 (Apr 17) to $73,856 (Apr 19 low) on declining volume (ratio 0.84 vs avg), which is a textbook healthy pullback. Current price $75,569 has bounced and sits between the 23.6% Fib ($74,439) and the swing high, with the hourly Fib 50% at $75,135 acting as near-term support. Daily RSI at 63.2 is elevated but not overbought, and MACD histogram is expanding positively. Hourly EMAs are also aligned uptrend with RSI neutral (53.4), suggesting the bounce has early legs. The confluence of hourly support at $74,758, hourly Fib 50% ($75,135), and the daily 23.6% Fib zone creates a valid pullback entry. MFI at 77.1 shows money flow still strong. Stop placed below the hourly Fib 61.8% ($74,824) which also sits near hourly support. Target is a retest of the swing high at $77,127.",
+    "entry_price": 75200.0,
+    "target_price": 77127.0,
+    "stop_loss": 74200.0,
+    "timeframe": "4-8 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 62,
+    "reasoning": "ETH daily EMAs are aligned uptrend (10 > 21 > 50) with ADX at 37.1 indicating a strong trend. Price pulled back sharply from swing high $2,421 (Apr 17) to $2,255 low (Apr 19), a 6.8% decline, before stabilizing near $2,307. Current price sits right at the daily 23.6% Fib retracement ($2,306), with the 38.2% level at $2,236 providing a deeper support zone. Volume on the pullback was mixed — slightly below average on day 1 of pullback but near average on the sharp selloff day. Hourly RSI at 48.4 and CCI at -64.8 signal short-term oversold conditions, and the hourly Bollinger Band position (0.35) indicates price near the lower band. MACD daily histogram is positive. However, the two-day sharp decline and hourly EMAs not aligned creates uncertainty. Entry at the 23.6%-38.2% Fib confluence zone with stop below the 50% Fib.",
+    "entry_price": 2300.0,
+    "target_price": 2421.0,
+    "stop_loss": 2175.0,
+    "timeframe": "5-10 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "reasoning": "SOL lacks a clear dominant trend for pullback trading. Daily EMAs are not aligned — EMA-10 ($85.32) is below EMA-50 ($87.26), and EMA-21 ($84.94) is also below EMA-50. ADX at 17.5 confirms a very weak, trendless environment. The daily price structure shows a sharp rally from $83 to $90 (Apr 15-17) followed by a two-day reversal back to $83.6, suggesting distribution rather than a healthy pullback in an uptrend. Price is now below the EMA-50, sitting near the 61.8% Fib retracement ($85.5) from the larger swing ($96.22 high to $78.95 low), but without trend confirmation this is not a valid pullback entry. Hourly indicators also show no directional alignment. RSI is neutral at 52.5 daily and 47.5 hourly. No clean setup exists.",
+    "confidence": 30,
+    "entry_price": 0.0,
+    "target_price": 0.0,
+    "stop_loss": 0.0,
+    "timeframe": "N/A"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "reasoning": "BNB's daily trend is ambiguous — while EMA-10 ($620.8) is above EMA-21 ($618.1), both are below EMA-50 ($633.7), signaling no clear uptrend on the daily timeframe. ADX at 22.8 shows weak trend momentum. Price pulled back from the $643.45 high (Apr 17) to $615.6 low (Apr 19) and current is $629. The daily Fib structure shows current price is between the 50% ($631.25) and 61.8% ($619.9) levels of the larger swing from $583 to $679 — which is a plausible entry zone, but without a confirmed uptrend the risk of a deeper breakdown to prior lows is elevated. The hourly EMAs are aligned uptrend and RSI at 57.2 is constructive, but the daily structure weakness means this is not a clean pullback-in-uptrend setup. The pullback has also overshot to below EMA-50. No confident entry.",
+    "confidence": 35,
+    "entry_price": 0.0,
+    "target_price": 0.0,
+    "stop_loss": 0.0,
+    "timeframe": "N/A"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 55,
+    "reasoning": "XRP shows a potential pullback setup but with notable caveats. Daily MACD just turned positive (histogram +0.012) and ADX at 31.4 suggests moderate trend strength. The 5-day price structure showed a run from $1.39 to $1.477 (swing high Apr 18) followed by a pullback to $1.395, with current price $1.42 bouncing near the daily 61.8% Fib retracement ($1.4027) — a deep but valid Fibonacci zone. RSI at 58.4 has room to run. The key concern is volume: the pullback on Apr 19 occurred on above-average volume (1.21x), and hourly volume is 2.41x average, suggesting selling pressure rather than a dry pullback. Additionally, the daily EMAs are not cleanly aligned (EMA-10 and EMA-21 below EMA-50 at $1.41), weakening the trend thesis. The 61.8% Fib at $1.4027 aligning with daily support at $1.3156 provides confluence, but elevated pullback volume limits confidence. Entry near 61.8% Fib with tight stop below the 78.6% level.",
+    "entry_price": 1.41,
+    "target_price": 1.477,
+    "stop_loss": 1.365,
+    "timeframe": "4-8 trading days"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "synthesis": {
+    "market_regime": "Bitcoin Season (BTC dominance 58.5%, Fear & Greed 33). Risk-off environment with selective institutional accumulation. Capital concentrated in BTC and regulatory-clarity plays. Altcoin rotation has NOT commenced — SOL/BNB face structural headwinds. XRP is the lone exception, driven by idiosyncratic regulatory catalyst.",
+    "top_conviction": ["XRP-USD", "BTC-USD", "ETH-USD", "BNB-USD", "SOL-USD"],
+    "key_themes": [
+      "Short-squeeze fuel: BTC/ETH/XRP all showing deeply negative funding rates — crowded shorts vs rising spot prices",
+      "Regulatory clarity as differentiator: XRP (SEC/CFTC commodity classification done, CLARITY Act NDA-unlock imminent) is the primary beneficiary",
+      "Institutional demand floor: BTC ETF $996M weekly inflows; XRP ETP $120M weekly (highest of any crypto); ETH ETF record $11.68B cumulative",
+      "KelpDAO exploit ($292M, Apr 20) is the key risk tail — ETH absorbs DeFi contagion disproportionately",
+      "Bitcoin Conference 2026 imminent: historical sell-the-news risk caps BTC upside timing",
+      "BNB unique regulatory risk: US Senate Iran-linked sanctions scrutiny — not priced in"
+    ]
+  },
+  "XRP-USD": {
+    "consensus_signal": "bullish",
+    "consensus_confidence": 66,
+    "bull_count": 9,
+    "bear_count": 0,
+    "neutral_count": 1,
+    "signal_breakdown": {
+      "trend_follower": "bullish/52",
+      "pullback_trader": "bullish/55",
+      "breakout_trader": "bullish/62",
+      "momentum_ranker": "bullish/68",
+      "mean_reversion": "neutral/15",
+      "catalyst_trader": "bullish/75",
+      "sector_rotation": "bullish/58",
+      "stanley_druckenmiller": "bullish/62",
+      "news_sentiment": "bullish/80",
+      "crypto_sentiment": "bullish/78"
+    },
+    "entry": 1.42,
+    "target": 1.65,
+    "stop": 1.31,
+    "timeframe": "7-12 days",
+    "risk_reward": 2.09,
+    "position_size_pct": 25.0,
+    "conviction_rank": 1,
+    "key_risks": [
+      "89.8M XRP ($119M) moved to Coinbase-linked address April 13 — near-term sell overhang",
+      "Monthly Ripple escrow unlock (~$1B XRP) recurring headwind",
+      "CLARITY Act markup failure or delay would remove primary catalyst",
+      "Macro risk (US-Iran, hawkish FOMC April 28-29)"
+    ],
+    "reasoning": "XRP is the highest-conviction trade in this book. 9 of 10 strategies signal bullish — the broadest consensus across the entire analysis. The convergence is exceptional: (1) SEC/CFTC commodity classification (Mar 17) resolved the multi-year regulatory overhang; (2) CLARITY Act Senate markup in late April could unlock NDA-constrained institutional partnerships; (3) global XRP ETP inflows of $120M/week — highest of any crypto asset, outperforming BTC and ETH in a fear environment; (4) exchange-held supply at 7-year low (down 50% from Oct 2025 peak) is a structural supply shock; (5) negative funding rates mean shorts are fighting an uptrend; (6) only top-5 asset with positive price momentum (+10% last week) during the Fear regime. The sole neutral signal (mean reversion) reflects that XRP is near its mean — not a bearish signal, just not a reversion play. Entry at $1.42, target $1.65 (breakout measured move), stop $1.31 (below daily support). Full position 25% of capital."
+  },
+  "BTC-USD": {
+    "consensus_signal": "bullish",
+    "consensus_confidence": 71,
+    "bull_count": 6,
+    "bear_count": 0,
+    "neutral_count": 4,
+    "signal_breakdown": {
+      "trend_follower": "bullish/72",
+      "pullback_trader": "bullish/72",
+      "breakout_trader": "neutral/42",
+      "momentum_ranker": "neutral/45",
+      "mean_reversion": "neutral/30",
+      "catalyst_trader": "bullish/62",
+      "sector_rotation": "bullish/72",
+      "stanley_druckenmiller": "bullish/78",
+      "news_sentiment": "bullish/70",
+      "crypto_sentiment": "bullish/72"
+    },
+    "entry": 75000.0,
+    "target": 82000.0,
+    "stop": 72000.0,
+    "timeframe": "8-14 days",
+    "risk_reward": 2.33,
+    "position_size_pct": 22.0,
+    "conviction_rank": 2,
+    "key_risks": [
+      "Bitcoin Conference 2026 imminent — historical sell-the-news risk post-event",
+      "Large holders distributing 188,000 BTC near $76K-$78K resistance zone",
+      "Satoshi-era wallet moved 1,000 BTC to exchanges — headline sell pressure risk",
+      "US-Iran geopolitical tension as macro wildcard"
+    ],
+    "reasoning": "BTC shows clean 6/10 bullish consensus with zero bearish signals. The 4 neutral signals reflect technical hesitation at resistance ($77,127) and 5d ROC deceleration — not reversals. Core thesis: $996M weekly ETF inflows (BlackRock leading with $906M alone), deeply negative perpetual funding rates (-0.005% 7DMA, most negative since 2023) creating short-squeeze fuel, exchange reserves at 7-year lows, and daily EMA stack fully bullish (ADX 33.6). Druckenmiller framework gives highest conviction here (78%) — macro regime with Fed hold, institutional smart money accumulating, crowded shorts. The 4 neutral strategies correctly note the pullback from $77,127 hasn't yet confirmed continuation — entry around $74,800-$75,200 on any pullback. Target $82,000 is the next significant resistance level after clearing the $78,320 swing high. Bitcoin Conference timing adds uncertainty; size at 22% (below max) to account for event risk."
+  },
+  "ETH-USD": {
+    "consensus_signal": "bullish",
+    "consensus_confidence": 56,
+    "bull_count": 5,
+    "bear_count": 1,
+    "neutral_count": 4,
+    "signal_breakdown": {
+      "trend_follower": "bullish/58",
+      "pullback_trader": "bullish/62",
+      "breakout_trader": "neutral/35",
+      "momentum_ranker": "bearish/55",
+      "mean_reversion": "neutral/35",
+      "catalyst_trader": "bullish/68",
+      "sector_rotation": "neutral/45",
+      "stanley_druckenmiller": "neutral/42",
+      "news_sentiment": "bullish/62",
+      "crypto_sentiment": "bullish/68"
+    },
+    "entry": 2285.0,
+    "target": 2500.0,
+    "stop": 2150.0,
+    "timeframe": "8-14 days",
+    "risk_reward": 1.59,
+    "position_size_pct": 15.0,
+    "conviction_rank": 3,
+    "key_risks": [
+      "KelpDAO exploit (Apr 20): $292M stolen, $195M Aave bad debt, $5.1B stablecoins frozen — DeFi contagion risk",
+      "Momentum ranker bearish: 5d ROC -2.51%, most negative of all five tickers — short-term distribution signal",
+      "BTC dominance suppressing altcoin rotation (Druckenmiller/sector rotation neutral)",
+      "Failed breakout at $2,421 on below-threshold volume"
+    ],
+    "reasoning": "ETH has the most conflicted signal set: 5 bullish vs 1 bearish vs 4 neutral. The bearish signal (momentum ranker) is the most technically credible concern — 5d ROC turned negative at -2.51% after the $2,421 rejection, indicating short-term distribution. The KelpDAO DeFi hack ($292M, Apr 20) is the dominant risk overhang; Druckenmiller and sector rotation both pass due to BTC dominance. However, the institutional case is compelling: record ETF inflows ($276M/week, 7-day streak), extraordinary whale accumulation (Bitmine $230M, dormant wallet $111M, 20x leveraged $90M whale), and a textbook short-squeeze setup (negative funding + high OI). Trade is conditional: position only if KelpDAO contagion appears contained. Enter on a dip to $2,250-$2,285 for better risk/reward. Smaller position (15%) reflecting lower conviction."
+  },
+  "BNB-USD": {
+    "consensus_signal": "neutral",
+    "consensus_confidence": 41,
+    "bull_count": 2,
+    "bear_count": 0,
+    "neutral_count": 8,
+    "signal_breakdown": {
+      "trend_follower": "neutral/25",
+      "pullback_trader": "neutral/35",
+      "breakout_trader": "neutral/33",
+      "momentum_ranker": "bullish/58",
+      "mean_reversion": "neutral/20",
+      "catalyst_trader": "bullish/60",
+      "sector_rotation": "neutral/40",
+      "stanley_druckenmiller": "neutral/38",
+      "news_sentiment": "neutral/48",
+      "crypto_sentiment": "neutral/52"
+    },
+    "entry": 626.0,
+    "target": 645.0,
+    "stop": 614.0,
+    "timeframe": "4-8 days (Osaka fork play only)",
+    "risk_reward": 1.58,
+    "position_size_pct": 8.0,
+    "conviction_rank": 4,
+    "key_risks": [
+      "US Senate Iran-linked sanctions scrutiny (unique BNB-specific risk, resurfaced Apr 17) — binary headline downside",
+      "Daily EMA structure bearish: EMA50 ($633.7) above EMA10/EMA21",
+      "No institutional ETF vehicle — lacks demand channel that BTC/ETH/XRP/SOL have",
+      "XRP already overtook BNB for #3 market cap — capital rotation away signal"
+    ],
+    "reasoning": "BNB is the weakest setup in this portfolio: 2/10 bullish, 8/10 neutral. The only trade thesis is the Osaka/Mendel hard fork (April 28, ~7 days). Catalyst trader identifies this as the most precisely timed near-term catalyst in the group — pre-fork accumulation behavior evident (15 wallets withdrew $30.78M BNB from Binance). Momentum ranker also bullish (only asset with positive 5d ROC). However, daily technical structure is broken (EMA50 above shorter EMAs), and the Iran-linked compliance risk is a unique BNB downside that other assets don't carry. If entering, treat strictly as a short-duration catalyst trade (4-8 days through fork date), small size (8% of capital), and exit on fork day regardless."
+  },
+  "SOL-USD": {
+    "consensus_signal": "neutral",
+    "consensus_confidence": 38,
+    "bull_count": 0,
+    "bear_count": 2,
+    "neutral_count": 8,
+    "signal_breakdown": {
+      "trend_follower": "neutral/20",
+      "pullback_trader": "neutral/30",
+      "breakout_trader": "neutral/30",
+      "momentum_ranker": "neutral/40",
+      "mean_reversion": "neutral/20",
+      "catalyst_trader": "neutral/45",
+      "sector_rotation": "bearish/62",
+      "stanley_druckenmiller": "bearish/55",
+      "news_sentiment": "neutral/52",
+      "crypto_sentiment": "neutral/55"
+    },
+    "entry": null,
+    "target": null,
+    "stop": null,
+    "timeframe": "no trade",
+    "risk_reward": null,
+    "position_size_pct": 0.0,
+    "conviction_rank": 5,
+    "key_risks": [
+      "$83 support: liquidation cascade threshold — only $2.12 below current price",
+      "Weakest relative performance: ROC-21 only +2.65% vs BTC +12% (massive underperformance in Bitcoin Season)",
+      "Daily EMA stack inverted: EMA50 ($87.26) above EMA10/EMA21 — bearish structure",
+      "Drift Protocol exploit ($147.5M Tether bailout) — ecosystem credibility overhang",
+      "ADX only 17.5 — trendless, choppy market"
+    ],
+    "reasoning": "SOL is a no-trade. Zero bullish signals, two bearish (Druckenmiller and sector rotation), eight neutral — the most cautious distribution across the analysis. The technical structure is outright broken: EMAs inverted, price below EMA50, ADX 17.5 (lowest in group, no directional trend). In Bitcoin Season with 58.5% BTC dominance, SOL is the weakest relative performer (+2.65% vs BTC's +12% on 21-day basis). The $83 liquidation cascade floor is dangerously close. The Alpenglow consensus upgrade IS a transformational catalyst — but it lacks a confirmed mainnet date, making it unactionable as a 7-day swing catalyst. Watch for: (1) Alpenglow mainnet date announcement → flip to bullish watch, (2) break below $83 → bearish confirmation. Do not enter until either signal fires."
+  }
+}

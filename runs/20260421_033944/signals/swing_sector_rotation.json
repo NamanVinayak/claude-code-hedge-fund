@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "BTC is the primary beneficiary of the current Bitcoin Season (dominance ~58.5%). Daily indicators confirm a strong uptrend: EMAs fully aligned (10 > 21 > 50), RSI 63.2 in bullish territory, MACD histogram strongly positive (+417), ADX 33.6 (strong directional trend), and ROC-21 at +12% showing sustained momentum. MFI 77 signals institutional accumulation. From a crypto sector rotation standpoint, BTC is the 'sector in favor' — capital is flowing INTO Bitcoin, not away. Bollinger position at 0.67 with moderate band width (0.18) leaves room for continuation. Hourly shows mild consolidation (RSI 53.4, slight MACD cooling) after the April 17 peak at $77,127, suggesting a healthy digestion before continuation. Volume slightly below 20-day average on the recent dip, consistent with low-conviction selling. Risk: BTC dominance at 58.5% is elevated — if it starts rolling over, altcoin rotation accelerates and BTC momentum fades. Target at the daily resistance of $77,127 and the next Fib extension. Stop below hourly support at $74,758.",
+    "entry": 75569.0,
+    "target": 78500.0,
+    "stop": 73800.0,
+    "timeframe": "5-10 trading days"
+  },
+  "ETH-USD": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "ETH shows mixed sector rotation signals in the current Bitcoin Season. On the daily timeframe, EMAs are aligned in uptrend and RSI 58.9 is constructive, with MACD histogram positive (+9.7) and ROC-21 at +14.2% (marginally outperforming BTC on 21-day basis). However, the critical sector rotation signal is negative: ETH is a Layer-1 smart contract platform, and capital is NOT rotating into this 'sector' yet — BTC dominance remains elevated at 58.5%, suggesting the alt rotation cycle has not commenced. Hourly indicators confirm caution: EMAs not aligned (flat), RSI 48.4 (neutral-to-weak), MACD slightly negative, Bollinger position at 0.35 (below midband), and CCI at -64.8 (bearish short-term). Stochastic k/d declining on both daily and hourly. The recent 5-day price action shows a rejection from the April 17 high of $2,421 back to $2,265 — a -6.4% rejection. Current price $2,307 is recovering but lacks conviction. Elevated hourly volume (1.77x) is a potential early rotation signal to watch, but insufficient alone to confirm sector inflow. No clear sector rotation entry until BTC dominance shows signs of declining.",
+    "entry": 2307.0,
+    "target": 2421.0,
+    "stop": 2200.0,
+    "timeframe": "7-14 trading days"
+  },
+  "SOL-USD": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": "SOL is underperforming in the current Bitcoin Season and shows negative sector rotation dynamics. Key bearish signals: (1) ROC-21 only +2.65% vs BTC's +12% — SOL is drastically underperforming the market leader, indicating capital is NOT rotating into the Solana ecosystem; (2) EMAs NOT aligned in uptrend — ema_50 ($87.26) is above ema_21 ($84.94) and ema_10 ($85.32), a classic sign of a weakening intermediate trend; (3) SOL is trading 2.67% BELOW its 50-day SMA, the only asset in this set to trade below its 50 SMA; (4) ADX at 17.5 is weak, confirming no strong directional trend; (5) Hourly indicators compound the bearish picture — RSI 47.5 below midpoint, stochastic k=36 (oversold leaning), CCI -48.3 (bearish), Williams %R -63.8, all negative. Bollinger band position at 0.30 (lower third) on hourly. Recent price action: SOL peaked at $89-90 on April 16-17, has since fallen to $83-85 range with declining volume. In Bitcoin Season, Layer-1 alternatives like SOL typically see capital outflows relative to BTC. The risk-reward favors waiting for BTC dominance to peak before entering SOL. A short/avoid setup is preferred.",
+    "entry": 85.12,
+    "target": 79.0,
+    "stop": 89.5,
+    "timeframe": "5-12 trading days"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "BNB presents a mixed sector rotation picture. Daily shows EMAs not aligned in uptrend (ema_50 at $633.7 > ema_21 at $618.1), and ROC-21 at only +1.8% significantly underperforms BTC (+12%), indicating weak relative strength in Bitcoin Season. However, there are early rotation signals worth monitoring: (1) MACD histogram has turned positive (+4.0) from a negative signal line, suggesting a potential trend reversal building; (2) Hourly indicators are actually bullish — EMAs ARE aligned uptrend (10 > 21 > 50), RSI 57.2, stochastic 68.7 (elevated), Bollinger position 0.58 (above midband), hourly z-score +1.15; (3) Hourly volume slightly above average (1.14x) on recent moves. BNB as an exchange token (Binance ecosystem) sometimes decouples from pure alt-season dynamics as it benefits from trading volume increases. The divergence between bullish hourly internals and weak daily structure suggests BNB may be attempting early rotation but has not confirmed yet. ADX 22.8 on daily shows a developing trend. Best to wait for daily EMAs to align and ROC to show outperformance vs BTC before entering long.",
+    "entry": 629.0,
+    "target": 643.0,
+    "stop": 615.0,
+    "timeframe": "5-10 trading days"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 58,
+    "reasoning": "XRP shows the strongest relative strength among altcoins in the current Bitcoin Season, making it the best candidate for a rotational long in the payments/RWA layer. Key bullish rotation signals: (1) Daily volume consistently above average (1.21x ratio) — highest volume ratio of all altcoins analyzed, indicating genuine capital inflows; (2) Hourly volume elevated at 2.41x average — very significant, suggests active accumulation; (3) Positive momentum across ALL timeframes — ROC-5 (+2.4%), ROC-10 (+3.8%), ROC-21 (+5.1%) — the only altcoin with positive momentum on all three lookback periods; (4) ADX 31.4 on daily shows a strong directional move; (5) MACD crossing above zero (histogram +0.012, signal line at zero) — early bullish crossover; (6) CCI at 95 on daily shows strong price momentum relative to its average. Counterbalancing: daily EMAs are NOT aligned in uptrend (ema_50 at $1.41 is above ema_21 at $1.38, flat structure), suggesting this is a recovery rally rather than established uptrend. Hourly shows neutral-to-mild momentum (RSI 48.7, MACD slightly negative). XRP's payments/RWA narrative provides a sector-specific catalyst that can drive outperformance even in Bitcoin Season. The elevated volume signatures at both daily and hourly timeframes are the primary bullish differentiator vs other alts. Target at daily resistance $1.477 (swing high), stop at support $1.315.",
+    "entry": 1.42,
+    "target": 1.54,
+    "stop": 1.31,
+    "timeframe": "7-14 trading days"
+  }
+}

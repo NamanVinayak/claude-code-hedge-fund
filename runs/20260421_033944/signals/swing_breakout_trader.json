@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "neutral",
+    "confidence": 42,
+    "reasoning": "BTC made a high-volume push to resistance ($77,127) on Apr 17 with 54B volume vs 20-day avg 36.7B (1.48x — just below the 1.5x threshold). However, price failed to close above resistance and has since pulled back to ~$75,569. The daily trend remains constructive: EMAs aligned uptrend, MACD bullish (histogram +417), RSI 63.2, ADX 33.6. The hourly Bollinger Bands are very tight (width 0.026) indicating energy compression that could precede the next directional move. However, no confirmed breakout has occurred — price is mid-range between support ($66,889) and resistance ($77,127). The setup is a 'watching for breakout' posture: a volume-confirmed daily close above $77,127 would be the trigger. Currently no actionable entry.",
+    "entry_price": 77300.0,
+    "target_price": 87365.0,
+    "stop_loss": 75400.0,
+    "timeframe": "3-10 trading days"
+  },
+  "ETH-USD": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "ETH tagged resistance at $2,421 on Apr 17 with volume 26.5B vs 20-day avg 17.8B (1.49x — marginally below the 1.5x confirmation threshold). Price closed exactly at resistance — not a decisive close above it. Subsequent price action was negative: Apr 18 and 19 saw heavy selling, with Apr 19 closing at $2,265, well below the breakout level. Current price $2,307 represents a partial recovery but ETH remains below resistance. Daily ADX 37.1 signals an established trend, and MACD is positive, but the failed breakout attempt and bearish follow-through after the resistance touch are disqualifying. The breakout was not confirmed. ETH needs to reclaim and close decisively above $2,421 with 1.5x+ volume on the breakout candle before a bullish signal is warranted.",
+    "entry_price": 2435.0,
+    "target_price": 2789.0,
+    "stop_loss": 2280.0,
+    "timeframe": "5-12 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "SOL rallied to resistance at $88.99-90.37 on Apr 16-17 but volume was insufficient: Apr 16 at 6.2B vs avg 5.24B (1.18x) and Apr 17 at 6.45B (1.23x) — both well below the required 1.5x threshold. Price has since retreated to $85.12, now trading below the EMA50 ($87.26) with EMAs not in uptrend alignment. Daily ADX is only 17.5 — no significant directional trend. The Bollinger Band width is moderate (0.134) without a meaningful squeeze. Hourly EMAs are flat/mixed and BB is very tight (0.019 width), suggesting an impending move but direction unclear. ROC indicators are flat to slightly negative across timeframes. Without volume confirmation on the resistance test and with price now below key moving averages, this is not a breakout setup — it is a range-bound consolidation requiring patience.",
+    "entry_price": 89.50,
+    "target_price": 106.25,
+    "stop_loss": 82.00,
+    "timeframe": "5-15 trading days"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 33,
+    "reasoning": "BNB tested resistance at $643.45 on Apr 17 with volume 1.99B vs 20-day avg 1.69B (1.18x) — significantly below the 1.5x volume confirmation requirement. Price has pulled back to $629.13, now below the EMA50 ($633.70) with daily EMAs not in uptrend alignment. Daily ADX at 22.8 indicates a moderate trend with no strong directional bias. MACD recently crossed to positive (histogram +4.01) which is an early bullish sign, and the hourly EMAs are aligned in an uptrend suggesting near-term strength. The hourly Bollinger Band is tight (width 0.016), and price is consolidating in a tight range between hourly support ($623.76) and resistance ($631.69). A setup is forming but the lack of volume on the resistance test and the failed breakout above $643.45 mean no actionable signal yet. Watch for a high-volume retest above $643.45 with 1.5x+ daily volume.",
+    "entry_price": 645.0,
+    "target_price": 703.75,
+    "stop_loss": 620.0,
+    "timeframe": "5-12 trading days"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 62,
+    "reasoning": "XRP is the strongest breakout candidate in this group. On Apr 16, volume surged to 4.06B vs 20-day avg 2.35B (1.73x — exceeds the 1.5x threshold), and Apr 17 saw 4.23B (1.80x), as price drove to close at $1.477 — exactly at daily resistance. This represents two consecutive days of 1.5x+ volume into resistance, a hallmark of accumulation pressure building. Daily MACD crossed bullish (histogram +0.012, a fresh positive cross from near-zero — early in the move), ADX 31.4 (solid trend strength), RSI 58.4 (room to run before overbought). The subsequent pullback to $1.394 on Apr 19 and recovery to $1.4236 is a constructive consolidation above the Fib 618 level ($1.4027). Critically, hourly volume is running at 2.41x the 20-hour average — indicating sustained institutional-level buying interest in this consolidation zone. The hourly Bollinger squeeze (width 0.018) adds to the coiled spring setup. A daily close above $1.477 with continued elevated volume triggers the measured move to $1.638 (range $0.161 added to breakout level). Entry on pullback to current levels or on breakout confirmation. Stop below $1.38 (below the Apr 15 low and Fib 786 on daily).",
+    "entry_price": 1.43,
+    "target_price": 1.638,
+    "stop_loss": 1.375,
+    "timeframe": "4-10 trading days"
+  }
+}

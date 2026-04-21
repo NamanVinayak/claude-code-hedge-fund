@@ -1,0 +1,78 @@
+{
+  "portfolio_summary": {
+    "total_capital": 100000,
+    "deployed_capital": 59300,
+    "cash_reserved": 40700,
+    "num_positions": 3,
+    "overall_stance": "Selective bullish — concentrate in highest-conviction regulatory-clarity plays (XRP) and BTC blue-chip. ETH conditional on KelpDAO containment. SOL and BNB excluded on technical/risk grounds.",
+    "market_context": "Bitcoin Season confirmed (BTC dominance 58.5%, Fear & Greed 33 trending up from 29). Deeply negative funding rates across BTC/ETH/XRP signal crowded short positioning — short-squeeze fuel present. Record institutional ETF inflows (BTC $996M/week, XRP ETP $120M/week — highest of any crypto). KelpDAO DeFi exploit ($292M, Apr 20) is the primary risk tail. CLARITY Act Senate markup imminent — XRP NDA-unlock catalyst pending. Bitcoin Conference sell-the-news risk limits BTC upside timing. Altcoin rotation has not commenced — BTC-first allocation appropriate. Capital allocation: XRP (25%) as highest-conviction regulatory play → BTC (22%) as Bitcoin Season leader → ETH (12%) conditional on KelpDAO containment → SOL/BNB excluded.",
+    "portfolio_duration": "swing (7-14 days)"
+  },
+  "decisions": {
+    "BTC-USD": {
+      "action": "buy",
+      "quantity": 0.291,
+      "entry_price": 75200.0,
+      "target_price": 82000.0,
+      "stop_loss": 72000.0,
+      "capital_allocated": 21900.0,
+      "position_pct": 21.9,
+      "timeframe": "8-14 trading days",
+      "risk_reward": 2.125,
+      "confidence": 71,
+      "rationale": "BTC is the Bitcoin Season leader with 6/10 bullish consensus and zero bearish signals. Entry near $75,200 captures the healthy pullback from the $77,127 swing high (Apr 17) within the daily uptrend (EMAs fully aligned, ADX 33.6). Core thesis: (1) deepest negative funding rates since 2023 (-0.005% 7DMA) = short-squeeze fuel on top of rising spot, (2) BlackRock IBIT + institutional ETF inflows of $996M for the week ending Apr 17 — third consecutive positive week — absorbing exchange sell pressure, (3) exchange reserves at 7-year lows (2.21M BTC, 5.88% of supply), (4) Druckenmiller framework gives 78% conviction — macro regime favorable with Fed on hold and institutional accumulation dominant. Target $82,000 = next major resistance above the $78,320 swing high. Stop $72,000 = below the Apr 2026 swing lows and key support. R/R: ($82K-$75.2K)/($75.2K-$72K) = $6,800/$3,200 = 2.13:1. Sized at 22% (below 25% max) to account for Bitcoin Conference 2026 sell-the-news risk — historical precedent shows BTC often underperforms in the week following the conference. Key risks: large-holder distribution of 188,000 BTC near $76K-$78K resistance, Satoshi-era wallet moved 1,000 BTC to Binance, US-Iran geopolitical overhang."
+    },
+    "ETH-USD": {
+      "action": "buy",
+      "quantity": 5.2,
+      "entry_price": 2280.0,
+      "target_price": 2560.0,
+      "stop_loss": 2145.0,
+      "capital_allocated": 11856.0,
+      "position_pct": 11.9,
+      "timeframe": "8-14 trading days",
+      "risk_reward": 2.07,
+      "confidence": 52,
+      "rationale": "ETH is a conditional position — enter ONLY if KelpDAO exploit ($292M stolen, $195M Aave bad debt, $5.1B stablecoins frozen) shows containment with no further DeFi contagion spreading (no major protocol insolvencies, USDT/USDC depegs, or cascade liquidations). Head Trader confidence 56 with 5/10 bullish vs 1 bearish vs 4 neutral. Entry at $2,280 (below current $2,307 — limit order to capture further weakness) improves risk/reward above the mandatory 2:1 threshold. Stop $2,145 sits below the daily 50% Fib retracement support and below the Apr 19 low of $2,255 with buffer. Target $2,560 = above the failed $2,421 resistance (breakout measured move of the $166 base = $2,421 + $139 continuation), validated by: Bitmine corporate accumulation of 101,627 ETH ($230M), dormant whale deployed $111M, 20x leveraged $90.9M long (Apr 20), record ETH ETF cumulative inflows $11.68B, and classic short-squeeze setup (negative funding + 63.8% long OI). R/R: ($2,560-$2,280)/($2,280-$2,145) = $280/$135 = 2.07:1 — meets 2:1 minimum. Sized at 12% (well below 25% max) reflecting lower confidence, KelpDAO overhang, momentum ranker bearish signal (5d ROC -2.51%), and BTC dominance suppressing alt rotation. The KelpDAO risk is ETH-specific — if contagion spreads, exit immediately regardless of stop level."
+    },
+    "SOL-USD": {
+      "action": "hold",
+      "quantity": 0.0,
+      "entry_price": null,
+      "target_price": null,
+      "stop_loss": null,
+      "capital_allocated": 0.0,
+      "position_pct": 0.0,
+      "timeframe": "no trade",
+      "risk_reward": null,
+      "confidence": 25,
+      "rationale": "SOL is a clear no-trade. Head Trader conviction rank #5 (lowest), 0 bullish signals, 2 bearish (sector rotation 62%, Druckenmiller 55%), 8 neutral — the most cautious signal distribution in the analysis. Technical structure is broken: EMA50 ($87.26) above EMA10 ($85.32) and EMA21 ($84.94), ADX at 17.5 (lowest in group, no directional trend), price below the 50-day SMA. SOL is the weakest relative performer: ROC-21 only +2.65% vs BTC's +12% during Bitcoin Season — capital is flowing out of this sector, not into it. The $83 liquidation cascade floor is only $2.12 below current price ($85.12) — a break triggers cascading liquidations. Drift Protocol exploit ($147.5M Tether bailout) adds ecosystem credibility risk. The Alpenglow consensus upgrade is a transformational catalyst but lacks a confirmed mainnet date — unactionable as a swing catalyst without a specific timeline. Watch: (1) Alpenglow mainnet date announcement → reassess bullish entry; (2) confirmed break below $83 → bearish confirmation. No position until either trigger fires."
+    },
+    "BNB-USD": {
+      "action": "hold",
+      "quantity": 0.0,
+      "entry_price": null,
+      "target_price": null,
+      "stop_loss": null,
+      "capital_allocated": 0.0,
+      "position_pct": 0.0,
+      "timeframe": "no trade",
+      "risk_reward": null,
+      "confidence": 30,
+      "rationale": "BNB fails the mandatory 2:1 risk-reward rule and is therefore excluded despite the Osaka/Mendel hard fork catalyst (April 28). Head Trader proposed entry $626, target $645, stop $614 — upside $19, downside $12, R/R = 1.58:1. This falls below the hard 2:1 minimum required by portfolio rules. Head Trader conviction rank #4 with only 2/10 bullish (momentum ranker, catalyst trader) vs 8/10 neutral. Even treating this as a fork-play-only position, the risk/reward structure does not justify entry: target needs to reach ~$650 for 2:1, but $643-$645 has been a firm rejection ceiling since February with no volume confirmation. Additional disqualifying factor: US Senate Iran-linked Binance sanctions scrutiny resurfaced April 17 — this is a unique binary regulatory risk not present in BTC/ETH/XRP that could trigger a sharp unwind. No ETF vehicle means no institutional demand floor. BNB loses #3 market cap to XRP — capital rotation signal. Watch for: (1) pre-fork volume breakout above $643 with 1.5x+ volume → reassess with new target; (2) Senate regulatory resolution → removes key risk; (3) any fork complications → confirms avoid."
+    },
+    "XRP-USD": {
+      "action": "buy",
+      "quantity": 17605.0,
+      "entry_price": 1.42,
+      "target_price": 1.65,
+      "stop_loss": 1.31,
+      "capital_allocated": 25000.0,
+      "position_pct": 25.0,
+      "timeframe": "7-12 trading days",
+      "risk_reward": 2.09,
+      "confidence": 74,
+      "rationale": "XRP is the highest-conviction trade in this book — the strongest multi-factor alignment across all five assets. Head Trader conviction rank #1 with 9/10 strategies bullish (only neutral: mean reversion, which reflects XRP trading near its mean — not a reversal signal). The convergence of catalysts is exceptional and idiosyncratic to XRP: (1) SEC/CFTC jointly classified XRP as a digital commodity (Mar 17, 2026) — resolves the multi-year Ripple legal overhang that has suppressed institutional demand; (2) CLARITY Act Senate Banking Committee markup expected late April — Ripple President Monica Long confirmed institutional partners under NDAs that expire on CLARITY Act passage, meaning a wave of institutional announcements is pending; (3) Global XRP ETP inflows of $120M/week (week ending Apr 19) — highest of ANY crypto asset, outperforming both BTC and ETH ETF inflows on a relative basis; (4) Exchange-held XRP supply at 7-year low (~1.6B tokens, down 50% from Oct 2025 peak of 3.76B) — structural supply shock as coins move to cold storage and DeFi; (5) Negative funding rates (shorts paying longs) while XRP posts +10% for the week = shorts fighting an established uptrend — squeeze risk elevated; (6) Price outperformance: +10% last week in a Fear-dominated market (F&G 33), best month since September 2025, gained #3 market cap from BNB. Technical: daily MACD fresh bullish cross, ADX 31.4 (strong trend), RSI 58.4 (room to run), two consecutive days of 1.73x-1.80x volume into resistance on Apr 16-17 (above 1.5x breakout threshold), hourly volume 2.41x average. Entry at $1.42 (current price, at the daily 61.8% Fib retracement $1.4027 — pullback entry). Target $1.65 = breakout measured move (prior range $0.161 added to $1.477 resistance level + momentum extension). Stop $1.31 = below daily support and Apr 15 swing low. R/R: ($1.65-$1.42)/($1.42-$1.31) = $0.23/$0.11 = 2.09:1. Full 25% position ($25,000) given the strongest signal alignment, maximum diversification within allowed limits. Key risks to monitor: 89.8M XRP Coinbase-bound whale movement ($119M near-term sell overhang), monthly Ripple escrow unlock (~$1B XRP routine), CLARITY Act markup delay or failure, FOMC April 28-29 hawkish surprise."
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "BTC shows mixed momentum across timeframes. The 21-day ROC is strongly positive at +11.98% and 10-day ROC is +2.91%, confirming a strong intermediate-term upswing from the April lows. However, the 5-day ROC has turned negative (-0.44%), signaling short-term deceleration. Price peaked at $77,127 on April 17 and has since pulled back to the $73,856-$75,569 range. Hourly indicators confirm the near-term stall: all three hourly ROC periods are negative (5h: -0.57%, 10h: -0.48%) and the hourly MACD histogram is negative at -27.14. Daily EMAs remain bullishly stacked and ADX at 33.65 confirms a trend, but momentum is clearly losing steam post the recent peak. MFI at 77 suggests money flow is elevated and possibly near exhaustion. The SMA200 at $86,560 indicates the broader trend remains bearish. Wait for 5-day ROC to re-accelerate positive before entering a momentum long.",
+    "entry": 75569.0,
+    "target": 78500.0,
+    "stop": 73200.0,
+    "timeframe": "5-10 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bearish",
+    "confidence": 55,
+    "reasoning": "ETH shows the worst short-term momentum deterioration in the group. The 5-day ROC is the most negative at -2.51%, sharply contradicting the positive 10-day (+3.46%) and 21-day (+14.24%) readings, indicating significant momentum deceleration. Price peaked at $2,421 on April 17 and fell to $2,265 by April 19 — a near 7% drop from the recent high in 2 days. Hourly indicators are uniformly weak: RSI at 48.4, MACD histogram -0.75, hourly CCI at -64.82, and EMAs not aligned in either direction (choppy). Elevated hourly volume at 1.77x average during the decline is concerning, suggesting distribution rather than accumulation. The SMA200 at $2,856 is far above current price confirming the long-term downtrend. With momentum decelerating sharply on the 5-day basis and price failing at resistance ($2,421), the risk/reward favors the bearish side over 5-10 days.",
+    "entry": 2307.0,
+    "target": 2150.0,
+    "stop": 2395.0,
+    "timeframe": "5-10 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "SOL has the weakest momentum profile of all five tickers. Daily ROC is barely positive at 5d = -0.23%, 10d = +0.34%, 21d = +2.65% — the lowest across all timeframes in the group. The daily EMAs are not aligned in any trend direction (EMA10 at $85.32 is below EMA50 at $87.26), and ADX at 17.54 is the lowest in the group confirming no directional trend. MACD histogram is modestly positive at +0.45 but tiny. Hourly indicators confirm weakness: all hourly ROC values are negative (5h: -0.71%, 10h: -0.71%), MACD histogram negative, and price trading in the lower half of Bollinger Bands at 30% position. The SMA200 at $126.30 is dramatically above current price (~$85), confirming SOL remains in a deep long-term downtrend. With no momentum acceleration, below-trend price action, and weak hourly structure, SOL offers no compelling swing entry in either direction — the range appears directionless.",
+    "entry": 85.12,
+    "target": 89.5,
+    "stop": 82.5,
+    "timeframe": "7-14 trading days"
+  },
+  "BNB-USD": {
+    "signal": "bullish",
+    "confidence": 58,
+    "reasoning": "BNB is the only ticker with a positive 5-day ROC (+0.41%) alongside positive 10-day (+2.27%) and 21-day (+1.79%) ROC, giving it the cleanest momentum profile in terms of all-positive readings (though not strongly accelerating). The hourly EMAs are aligned in an uptrend — the only crypto in this group with hourly EMA alignment confirmed bullish. The daily MACD histogram is strongly positive at +4.01 and rising. Hourly RSI at 57.2 has upside room. Volume on the hourly timeframe is 1.14x average, confirming modest demand. However, the 21-day ROC (1.79%) is actually lower than the 10-day (2.27%), suggesting slight deceleration on the longer view, which limits confidence. Price is currently below the daily EMA50 ($633.70), which represents a near-term headwind. Entry near $629 targets a return to recent resistance at $643, with a stop below $614 (recent swing low). BNB ranks highest in momentum consistency among the five tickers.",
+    "entry": 629.0,
+    "target": 648.0,
+    "stop": 614.0,
+    "timeframe": "5-10 trading days"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 68,
+    "reasoning": "XRP has the strongest and most consistent momentum profile in the group. All three daily ROC timeframes are positive AND accelerating: 5d = +2.41%, 10d = +3.76%, 21d = +5.08% — this is the only ticker where momentum is clearly building across all lookback periods. ADX at 31.38 confirms a trending environment. Volume is above average at 1.21x the 20-day average, confirming demand. RSI at 58.4 has meaningful upside before reaching overbought territory (>70). The MACD histogram is positive and the CCI at 95 is elevated but not yet signaling reversal. Hourly volume is 2.41x average — significantly elevated, suggesting active participation. While hourly short-term ROC shows slight consolidation (-0.18% 5h, -0.29% 10h), this is consistent with a healthy pause before continuation, and hourly RSI at 48.7 indicates room to run. The current price (~$1.42) is approaching the Fib 61.8% level ($1.40) on the daily, with resistance at $1.48. The primary caution is that EMA50 on the daily ($1.41) is slightly above current price — a clean break above $1.43 would be an ideal entry trigger.",
+    "entry": 1.42,
+    "target": 1.54,
+    "stop": 1.35,
+    "timeframe": "7-14 trading days"
+  }
+}
