@@ -1,0 +1,92 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 52,
+    "reasoning": "BTC has broken above daily resistance at $77,127 and is trading at $78,989, pushing through the upper Bollinger Band (upper: $78,902). Daily RSI at 62.4 is healthy with room to run, and MACD histogram is positive at 351. However, daily volume is only 1.0x average — critically, the 1.5x volume confirmation required for a high-confidence breakout is absent. Hourly RSI at 92 signals severe short-term overextension, increasing the risk of a pullback before continuation. Daily ADX at 31.6 confirms a moderate trend in force. The breakout is real but unconfirmed by volume; low-to-moderate confidence. Measured move target: resistance $77,127 + range height ($77,127 - $66,889 = $10,238) = ~$87,365.",
+    "entry_price": 79200.0,
+    "target_price": 87365.0,
+    "stop_loss": 76800.0,
+    "timeframe": "5-12 trading days"
+  },
+  "ETH-USD": {
+    "signal": "neutral",
+    "confidence": 38,
+    "reasoning": "ETH is consolidating just below key daily resistance at $2,421 (the recent swing high). Current price $2,400 is within striking distance, but daily volume at 0.92x average is below the 1.5x threshold required for breakout confirmation. The past 5 days show a rejection candle from $2,421 followed by pullback, then gradual recovery — classic re-test behavior. Hourly RSI at 76.9 is moderately overbought, suggesting the hourly push may be fading. Daily Bollinger Band position (0.689) and RSI (55.3) are mid-range, leaving room for a breakout. Setup is forming but not yet triggered; waiting for a confirmed daily close above $2,421 with expanded volume.",
+    "entry_price": 2425.0,
+    "target_price": 2905.0,
+    "stop_loss": 2300.0,
+    "timeframe": "5-10 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "SOL is trading at $88.47, right at daily resistance of $88.99, but the setup lacks conviction. Daily ADX at 13.8 is extremely weak — trend is essentially non-directional. EMAs are not aligned in either direction. Daily volume at 0.79x average is well below the 1.5x breakout threshold. The recent 5-day price action shows a high of $90.67 that was rejected, followed by multi-day selling before partial recovery. No tight consolidation base is forming — instead, price is choppy. Hourly ADX at 61.2 and RSI at 74.3 show short-term hourly momentum, but this divergence from weak daily trend is insufficient to call a breakout.",
+    "entry_price": 89.5,
+    "target_price": 96.5,
+    "stop_loss": 85.5,
+    "timeframe": "5-10 trading days"
+  },
+  "BNB-USD": {
+    "signal": "bullish",
+    "confidence": 48,
+    "reasoning": "BNB has broken above its daily resistance level of $643.45 and is trading at $649.53. The hourly EMAs are fully aligned uptrend, hourly ADX at 57.7 confirms strong intraday trend. Daily CCI at 108.5 is in bullish territory. However, daily volume is only 0.98x average — no volume surge to confirm the breakout. Hourly RSI at 87 is overbought and hourly Bollinger Band width is narrow (0.0423), suggesting consolidation in progress. EMAs on the daily are not yet aligned uptrend (EMA-10 624 < EMA-50 633), indicating the daily trend structure is still recovering. Measured move: resistance $643 + range height ($643 - $583 = $60) = ~$703.",
+    "entry_price": 651.0,
+    "target_price": 703.0,
+    "stop_loss": 637.0,
+    "timeframe": "4-10 trading days"
+  },
+  "XRP-USD": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "XRP is at $1.455, approaching daily resistance at $1.477. The daily ADX at 32.6 is the strongest among mid-cap alts reviewed, indicating a moderately trending market. MACD histogram is positive. Daily Bollinger Band position at 0.798 shows price in the upper portion of the range. However, volume at 1.0x average is insufficient for breakout confirmation (needs 1.5x+). The 5-day price history shows a sharp rejection from $1.54 swing high, then selling pressure — the current recovery is a re-test of resistance, not a fresh accumulation-based breakout. Hourly MFI at 96.6 signals money flow potentially peaked. Watch for a daily close above $1.477 with 1.5x+ volume to enter.",
+    "entry_price": 1.485,
+    "target_price": 1.705,
+    "stop_loss": 1.395,
+    "timeframe": "5-10 trading days"
+  },
+  "ADA-USD": {
+    "signal": "bearish",
+    "confidence": 45,
+    "reasoning": "ADA presents the clearest trend signal in the watchlist — daily EMAs are aligned in a full downtrend (ema_10 0.249 < ema_21 0.250 < ema_50 0.260). Price is below the 50 SMA and trading at a negative z-score vs 50 SMA (-2.5%). RSI at 42.9 is sub-50, and 5-day momentum (ROC-5) is -3.7%. Volume at 0.86x is below average. While the hourly frame shows a brief bounce (hourly RSI 75.9, EMAs aligned up), this appears to be a relief rally within a downtrend. Resistance at $0.264 is likely to cap any upside. No bullish breakout setup present; bearish lean on continued downtrend.",
+    "entry_price": 0.258,
+    "target_price": 0.222,
+    "stop_loss": 0.268,
+    "timeframe": "5-12 trading days"
+  },
+  "AVAX-USD": {
+    "signal": "neutral",
+    "confidence": 25,
+    "reasoning": "AVAX at $9.58 is approaching daily resistance at $9.74 and hourly resistance at $9.62. However, the daily ADX at 12.7 is critically weak — no directional trend. The 5-day price history shows a clean rejection from $9.99 followed by multi-day selling to $8.98, then partial recovery. This is choppy, non-trending behavior with no well-formed consolidation base. Volume at 0.93x is below average. Hourly ADX at 31.4 is more respectable but still moderate. EMAs on the daily are mixed (EMA-10 9.35 < EMA-50 9.43), not aligned. No breakout setup is forming here — too much noise, too little trend.",
+    "entry_price": 9.75,
+    "target_price": 10.73,
+    "stop_loss": 9.15,
+    "timeframe": "5-10 trading days"
+  },
+  "DOT-USD": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "DOT at $1.30 is in a confirmed daily downtrend — both daily EMA alignment flag and price being 6.4% below 50 SMA confirm this. Daily MACD is negative (-0.022 vs signal -0.032) though showing some convergence. RSI at 46.5 is sub-50. Resistance at $1.336 (daily) and $1.312 (hourly) are both above current price. Volume at 0.83x is below average. Price is recovering off recent lows but has not formed a recognizable base or consolidation pattern to launch a breakout from. The 5-day history shows selling pressure with closes below the opens. No breakout setup present.",
+    "entry_price": 1.34,
+    "target_price": 1.51,
+    "stop_loss": 1.25,
+    "timeframe": "5-10 trading days"
+  },
+  "MATIC-USD": {
+    "signal": "neutral",
+    "confidence": 5,
+    "reasoning": "MATIC-USD has been delisted and price data is completely unavailable. No price, volume, or indicator data exists to evaluate any breakout setup. Returning neutral with minimum confidence.",
+    "entry_price": 0.0,
+    "target_price": 0.0,
+    "stop_loss": 0.0,
+    "timeframe": "N/A"
+  },
+  "LINK-USD": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "LINK at $9.49 is consolidating in the upper portion of its daily range (Bollinger position 0.765, resistance $9.625). Daily MACD histogram positive at 0.033 and ADX at 22.4 show a modest uptrend beginning to form. Volume at 1.02x is essentially at average — marginally above but well below the 1.5x breakout confirmation threshold. The 5-day price history shows a rejection from the $9.63 recent high, pullback to $9.07, then recovery — still below the prior peak. Hourly MACD histogram is slightly negative (-0.003), suggesting short-term momentum may be stalling near hourly resistance of $9.529. A consolidation base appears to be forming between $8.63 and $9.63 but the breakout trigger has not been reached.",
+    "entry_price": 9.65,
+    "target_price": 10.87,
+    "stop_loss": 9.10,
+    "timeframe": "5-12 trading days"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "ticker": "ETH-USD",
+  "research_date": "2026-04-22",
+  "macro_context": {
+    "market_sentiment": "Crypto markets are in cautious recovery mode after a volatile week. Bitcoin rebounded above $76,000 following a 5% weekend drop triggered by the $292M KelpDAO DeFi exploit and ongoing U.S.-Iran geopolitical tensions. The broad CoinDesk 20 is up ~1.7% on the day, but sentiment remains fearful. The DeFi hack drained $14B in TVL and created $6.6B in bad debt on Aave, keeping altcoin risk elevated. BTC is outperforming as a relative safe haven within crypto.",
+    "btc_dominance": "BTC dominance is approximately 57-61% in April 2026 (sources vary by methodology and date). Dominance is elevated vs late 2025 and approaching a historically significant resistance zone (~59.9% on weekly charts). If dominance peaks here, capital rotation into altcoins may begin — a signal to watch.",
+    "total_market_cap": "Total crypto market cap is approximately $2.6-2.7 trillion as of late April 2026 (sources: CoinGecko $2.63T, CoinMarketCap $2.62T), down from a ~$4 trillion peak in mid-2025, representing roughly a 35% drawdown from cycle highs. Total market cap fell over 20% in Q1 2026.",
+    "fear_greed_index": "29-33 = Fear. The index dropped to 27 on April 19 (3-week low) before recovering slightly. Historically, Fear and Greed readings below 30 have marked medium-term accumulation windows. Current reading reflects macro headwinds but is far from Extreme Fear.",
+    "fed_outlook": "The Fed paused its rate-cutting cycle in January 2026 at 3.5-3.75% and projects only one 25bps cut for 2026. Jerome Powell's term ends May 2026. Front-runner Kevin Warsh disclosed holdings in 20+ crypto-linked entities and testified (April 21) that he would maintain Fed independence from political pressure — a mild positive for rate expectations. The OCC conditionally approved Coinbase's national trust company charter in April 2026.",
+    "institutional_flows": "Strong institutional demand throughout April: U.S. spot Bitcoin ETFs saw ~$663M inflows on April 18 (largest single-day since Jan 15), and April 2026 marks the first monthly gain after four consecutive months of net outflows. Total ETF AUM surged above $96.5B. Strategy (formerly MicroStrategy) purchased 34,164 BTC for $2.54B (April 13-19, average $74,395/BTC), surpassing BlackRock IBIT to become the world's largest institutional BTC holder at 815,061 BTC. Crypto fund inflows hit $1.4B for the week of April 21 (source: The Coin Republic).",
+    "regulatory": "The CLARITY Act (Digital Asset Market Clarity Act) is heading toward a Senate Banking Committee markup in late April 2026 but risks slipping to May due to bank lobbying over stablecoin yield provisions. The GENIUS Act (stablecoin framework) has already passed, with implementing regulations due July 18, 2026. The OCC conditionally approved Coinbase's national trust company charter in April. The White House is expected to announce architecture for a U.S. Strategic Bitcoin Reserve 'in short order' within ~2 months (as of April 19), with Congress holding 328,372 BTC (~$25B). Venezuela's opposition also proposed an oil-for-BTC national reserve on April 21.",
+    "key_events": [
+      "U.S. Strategic Bitcoin Reserve architecture announcement — expected within ~2 months, major crypto market catalyst",
+      "CLARITY Act Senate Banking Committee markup — late April or May 2026, would provide market structure clarity",
+      "Fed Chair transition — Jerome Powell's term ends May 2026; successor (likely Warsh) may signal easier monetary policy",
+      "Iran ceasefire expiry ~April 23 — geopolitical resolution could lift crypto market broadly",
+      "GENIUS Act stablecoin regulations implementation — July 18, 2026 deadline",
+      "Ethereum Glamsterdam upgrade — expected H1 2026, parallel execution and higher gas limits"
+    ]
+  },
+  "ticker_news": [
+    {
+      "headline": "KelpDAO $292M hack causes $14B DeFi TVL exodus, $195M bad debt on Aave, freezing $5.1B in stablecoin liquidity — attributed to DPRK Lazarus Group",
+      "sentiment": "negative",
+      "source": "CoinDesk / LayerZero statement, April 20, 2026"
+    },
+    {
+      "headline": "Ethereum ETFs record 8 consecutive days of inflows totaling $493.7M — longest streak since October 2025",
+      "sentiment": "positive",
+      "source": "Sherwood News, April 2026"
+    },
+    {
+      "headline": "Bitmine acquires 101,627 ETH (~$230M), bringing total holdings to 4.98M ETH (~4.12% of total supply)",
+      "sentiment": "positive",
+      "source": "Crypto.com / OpenPR, April 2026"
+    },
+    {
+      "headline": "Ethereum Foundation stakes additional 22,517 ETH (~$50M) — largest single-day staking deposit in organization history",
+      "sentiment": "positive",
+      "source": "Crypto Integrated, April 21, 2026"
+    },
+    {
+      "headline": "Ethereum nears $2,400 breakout as institutional whales lead massive accumulation; ETH needs to clear $2,400 to confirm further upside",
+      "sentiment": "positive",
+      "source": "FX Leaders, April 22, 2026"
+    }
+  ],
+  "on_chain_signals": {
+    "whale_activity": "Significant institutional and whale accumulation: Bitmine acquired 101,627 ETH (~$230M), nearing 5M ETH total. A whale moved 80,000 ETH ($184.7M) from Binance to a private wallet (bullish — exchange withdrawal). Another large wallet moved $225M USDC to exchanges (Binance, Bybit, Deribit) and then withdrew 32,007 ETH ($77.5M) from Binance — rotating stablecoins into ETH. Ethereum Foundation made its largest-ever single-day staking deposit (22,517 ETH, ~$50M). An unidentified whale placed a $90.9M long on ETH with 20x leverage (April 20). Over April 15-22, larger addresses (10K+ ETH) added ~25,000 ETH net (~$85M). Exchange reserves are at record lows, suggesting holders prefer accumulation over selling.",
+    "funding_rates": "ETH perpetual futures funding rates are slightly negative to neutral in late April 2026, consistent with the bearish market mood (Fear and Greed 29-33). Slightly negative funding indicates short positioning is marginally dominant, meaning longs do not have to pay premiums — this setup can rapidly reverse to a short squeeze if price breaks above $2,400 resistance. No evidence of dangerous long overcrowding; leverage positioning appears healthy.",
+    "exchange_flows": "Ethereum ETF flows are strongly positive: 8 consecutive days of inflows totaling $493.7M (longest streak since October 2025), with ETH ETFs posting $127M inflows on April 17 alone. Weekly ETH fund inflows of $328M marked the best week in months. On-chain, exchange reserves are declining (bullish), and large outflows from exchanges to private wallets indicate accumulation. The KelpDAO hack-related forced selling of ETH-related DeFi tokens created temporary selling pressure but Bitcoin and ETH itself appear relatively insulated."
+  },
+  "development_activity": "Ethereum's core repositories (including go-ethereum, execution-specs, EIPs) were updated April 21, 2026. The 2026 upgrade roadmap includes two major hardforks: Glamsterdam (H1 2026) — targeting parallel execution, higher gas limits, block-level access lists, and enshrined Proposer-Builder Separation for lower fees and better decentralization; and Hegota (H2 2026) — Verkle Trees for stateless clients to dramatically reduce node hardware requirements, plus censorship resistance improvements. Broader crypto developer activity has declined industry-wide (~75% drop in weekly commits as AI absorbs talent per CoinDesk March 2026), with Ethereum's weekly active developer count down 34% over three months to ~2,811. However, Ethereum remains the #1 ecosystem for new developer talent as of late 2025.",
+  "upcoming_catalysts": "1) Ethereum Glamsterdam upgrade (H1 2026) — parallel execution and higher gas limits could significantly lower fees and boost DeFi activity. 2) ETF staking feature approval — if SEC approves staking yield in ETH ETFs, would create massive new institutional demand. 3) $2,400 technical breakout level — clearing this opens path to $2,800-$3,000 per analyst targets. 4) ETH/BTC ratio recovery — if BTC dominance peaks (~60%) and altcoin season begins, ETH typically leads the recovery. 5) Hegota upgrade (H2 2026) — Verkle Trees reduce node requirements, improving decentralization. 6) CLARITY Act passage — would classify ETH as commodity, opening institutional doors. 7) DeFi TVL recovery — after the $14B KelpDAO shock, a stabilization and recovery in DeFi TVL would be bullish for ETH fee revenue."
+}

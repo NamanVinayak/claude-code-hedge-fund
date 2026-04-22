@@ -1,0 +1,163 @@
+{
+  "mode": "swing",
+  "asset_type": "crypto",
+  "tickers": ["BTC-USD", "ETH-USD", "SOL-USD", "BNB-USD", "XRP-USD", "ADA-USD", "AVAX-USD", "DOT-USD", "MATIC-USD", "LINK-USD"],
+  "layer1_tldr": "The AI system analyzed 10 major cryptocurrencies and decided to buy 4 of them — Bitcoin, Ethereum, XRP, and Chainlink — while skipping the other 6. The market is in a 'Fear' zone right now (like a sale at the store), and these 4 assets have the best combination of strong institutional buying, positive regulatory news, and technical setups for a 7-15 day trade. About $72,000 of $100,000 is being put to work.",
+
+  "layer2_story": "Imagine the crypto market as a neighborhood. Right now, it's a little nervous — the Fear & Greed Index (a sentiment gauge that runs from 0=panic to 100=euphoria) is at 32, meaning people are cautious but not panicking. Historically, readings below 30-35 have been good buying opportunities, like shopping during a modest sale rather than full-price season.\n\nThe big story in April 2026 is Bitcoin acting as the 'safe haven' of crypto. A company called Strategy just bought $2.54 billion worth of Bitcoin, Bitcoin ETFs (investment funds anyone can buy on a stock exchange) are pulling in $663 million per day, and the amount of Bitcoin sitting on exchanges — available for quick selling — is at its lowest in 7 years. That last number matters a lot: when supply is scarce and demand is rising, prices tend to go up.\n\nNine different AI strategies all voted on each crypto. For Bitcoin, 8 out of 9 said 'bullish' (optimistic). The one holdout was the mean-reversion strategy, which noticed Bitcoin's hourly momentum indicator (RSI) hit 92 — basically saying it moved up too fast too soon and might dip before the next leg higher. The Portfolio Manager resolved this conflict by setting the entry price at $76,500 instead of the current $78,989 — essentially telling you: 'Wait for a small pullback before buying.'\n\nThe surprise pick is Chainlink (LINK), an infrastructure project that connects real-world data to blockchain networks. Despite its price being 80% below its all-time high, it just had 1.2 million tokens withdrawn from exchanges in 48 hours (meaning people are accumulating), signed a $68 trillion tokenization partnership, and its CCIP bridge product has a zero-hack record — which matters a LOT right now because a $292 million DeFi hack just happened elsewhere (KelpDAO). When everyone else is scared of bridge hacks, Chainlink's clean record is its competitive advantage.\n\nSix cryptos were skipped: Solana has record activity but no price trend (ADX = 12-14, meaning aimless drift). BNB and ADA are technically overbought or in downtrends. AVAX is completely trendless. DOT faces a credibility issue from a bridge exploit. MATIC is literally unavailable to trade (the token rebranded to POL).",
+
+  "layer3_tickers": {
+    "BTC-USD": {
+      "verdict": "BUY at $76,500 — highest conviction pick (78% confidence), targeting $86,000 with stop at $74,000.",
+      "bull_case": "8 of 9 strategies bullish. Strategy bought $2.54B in one week. ETF inflows at $663M/day (record). Exchange supply at 7-year lows. US Strategic Bitcoin Reserve announcement expected in ~2 months. CLARITY Act regulatory clarity imminent. Daily trend intact with EMAs (moving averages) fully stacked upward.",
+      "bear_case": "Hourly RSI (momentum indicator) hit 92 — overbought short-term. Large spike in Bitcoin flowing to exchanges (11,000 BTC/hour) could signal distribution by early sellers. FOMC meeting April 28-29 could surprise with hawkish (no rate cuts) stance, hurting all risk assets.",
+      "key_metrics": {
+        "ADX_daily": "31.6 — above 25 means a real trend exists (healthy)",
+        "RSI_hourly": "92 — above 70 is overbought (warning: wait for pullback)",
+        "exchange_reserves": "2.21M BTC (7-year low) — less supply available = bullish pressure",
+        "ETF_inflows": "$663M/day — record institutional demand",
+        "risk_reward": "3.8x — for every $1 risked, potential gain is $3.80"
+      },
+      "risk_check": "FOMC on April 28-29 could spike volatility. Entry is a limit order at $76,500 — if BTC doesn't pull back, you don't enter. Stop loss at $74,000 means maximum loss is ~3.3% of entry price."
+    },
+    "ETH-USD": {
+      "verdict": "BUY at $2,370 — moderate conviction (62% confidence), targeting $2,700 with stop at $2,240.",
+      "bull_case": "8 consecutive days of ETH ETF inflows ($493M total). Bitmine accumulated $230M worth of ETH (institutional accumulation). Ethereum Foundation made its largest-ever staking deposit. Exchange reserves at all-time lows. Pectra upgrade live; Glamsterdam upgrade (parallel execution) coming H1 2026.",
+      "bear_case": "ETH/BTC ratio at multi-year lows — ETH underperforming BTC. $2,400 is resistance (a price ceiling) — failed breakout could send price back to $2,240. KelpDAO DeFi hack hurt Ethereum's DeFi ecosystem narrative.",
+      "key_metrics": {
+        "consecutive_ETF_inflow_days": "8 days ($493M total) — strongest streak since October 2025",
+        "exchange_reserves": "All-time low — supply squeeze setup",
+        "ADX": "31.8 — strong trend",
+        "funding_rates": "Slightly negative — shorts are slightly dominant, short squeeze potential",
+        "risk_reward": "2.5x — solid"
+      },
+      "risk_check": "ETH is less likely to outperform BTC in high-dominance environments. The entry at $2,370 is below current price, so wait for a dip. Stop at $2,240 = ~5.5% max loss from entry."
+    },
+    "XRP-USD": {
+      "verdict": "BUY at $1.445 — strong conviction (68% confidence), targeting $1.62 with stop at $1.365.",
+      "bull_case": "7 of 9 strategies bullish — second strongest consensus after BTC. SEC and CFTC issued a March 2026 joint ruling declaring XRP a 'digital commodity' (not a security) — resolving years of legal uncertainty. 7 live XRP spot ETFs with $55.4M/week in inflows. 62% of circulating supply held by whale wallets at exchange-balance 5-year lows (very little supply available to sell). CBDC partnerships with 300+ banks.",
+      "bear_case": "Funding rates at 0.008% — longs are accumulating, creating leveraged risk. Ripple releases 1 billion XRP from escrow each month, providing potential selling pressure. $119M Coinbase inflow on April 13 is a sell-pressure signal to monitor.",
+      "key_metrics": {
+        "ADX": "32.6 — strongest trend of all altcoins analyzed",
+        "ETF_inflows_weekly": "$55.4M — strong institutional demand",
+        "exchange_balance": "5-year lows — supply squeeze active",
+        "regulatory_status": "SEC-CFTC digital commodity — most favorable of all altcoins",
+        "risk_reward": "2.2x — adequate"
+      },
+      "risk_check": "Escrow releases (1B XRP/month) can create selling headwinds. Elevated funding rates mean if price drops, leveraged longs liquidate and accelerate the move down. Stop at $1.365 = ~5.5% max loss."
+    },
+    "LINK-USD": {
+      "verdict": "BUY at $9.45 — moderate-high conviction (67% confidence), targeting $11.00 with stop at $8.85.",
+      "bull_case": "1.2 million LINK withdrawn from exchanges in 48 hours — the strongest accumulation signal in the portfolio. $68 trillion tokenization partnership with OpenAssets. CCIP (Cross-Chain Interoperability Protocol) has zero hacks — critical differentiator after the KelpDAO $292M hack. SWIFT + 100+ banks using Chainlink infrastructure. Data Streams expanded to US equity markets April 12. 5 of 9 strategies bullish on catalyst/fundamental basis.",
+      "bear_case": "Technical trend is weak (ADX 22.4 — below the 25 threshold for a confirmed trend). Price has underperformed despite great fundamental news — 'fundamental-to-price divergence' is a risk. 5 of 9 technical strategies say 'neutral' because the price hasn't moved yet to confirm the thesis.",
+      "key_metrics": {
+        "exchange_withdrawals_48h": "1.2M LINK — very strong accumulation signal",
+        "tokenization_partnership": "$68T pipeline (OpenAssets) — transformative if executed",
+        "CCIP_hack_record": "Zero hacks — security premium in post-KelpDAO environment",
+        "ADX": "22.4 — below 25, trend not yet confirmed",
+        "risk_reward": "2.6x — good"
+      },
+      "risk_check": "Weak technical trend means you're betting on fundamentals to eventually drive price — this can take time. Stop at $8.85 = ~6.3% max loss from entry. If accumulation reverses, the thesis breaks."
+    },
+    "SOL-USD": {
+      "verdict": "SKIP — neutral (38% confidence), no position taken.",
+      "bull_case": "Record Q1 2026 activity: $1.1 trillion volume, 25.3 billion transactions. Solana ETFs crossed $1B cumulative inflows. Alpenglow consensus upgrade (sub-150ms finality) coming. Firedancer (1 million TPS) nearing mainnet.",
+      "bear_case": "Price down 30% year-to-date despite the record activity. ADX at 13.8 — well below 25, meaning no trend exists (price is drifting aimlessly). Whale deposited 51,750 SOL to Binance (sell signal). $83 is critical support — if it breaks, cascading liquidations could follow.",
+      "key_metrics": {
+        "ADX": "13.8 — no trend, untradeable for trend-following",
+        "YTD_performance": "-30% despite record on-chain activity",
+        "critical_support": "$83 — break triggers liquidation risk",
+        "funding_rate": "2-year low — over-deleveraged, contrarian positive but not actionable yet",
+        "risk_reward": "1.8x — below the 2:1 minimum"
+      },
+      "risk_check": "The fundamental case is strong but the technical setup is missing. Revisit when price breaks above $95 or confirms $83 support with volume."
+    },
+    "BNB-USD": {
+      "verdict": "SKIP — neutral with bullish lean (48% confidence), no position taken due to overbought conditions.",
+      "bull_case": "35th quarterly auto-burn destroyed 1.569M BNB ($1.02B) — strong deflationary supply reduction. YZi Labs $1B ecosystem fund. Momentum rank #2 with ADX 57.6 (very strong trend). VanEck ETF filing pending.",
+      "bear_case": "Hourly RSI 87 and Z-score +2.30 — significantly overbought in the short term. 71.9% long ratio in perpetuals — if price drops, this group liquidates and amplifies the move. Wait for pullback to $635.",
+      "key_metrics": {
+        "quarterly_burn": "1.569M BNB ($1.02B) — consistent deflationary pressure",
+        "ADX": "57.6 — strongest trend in portfolio (very directional)",
+        "hourly_RSI": "87 — overbought, wait for cooldown",
+        "long_ratio": "71.9% — crowded longs are a risk",
+        "distance_from_ATH": "-57% from $1,369 ATH"
+      },
+      "risk_check": "Entry at $635 limit order would capture a better risk/reward. Current price $649 is overbought hourly. VanEck ETF filing is a key catalyst — watch for SEC updates."
+    },
+    "ADA-USD": {
+      "verdict": "SKIP — neutral (42% confidence), binary catalyst trade not actionable yet.",
+      "bull_case": "424 whale wallets accumulated 819M ADA ($214M) — smart-money conviction at current levels. Van Rossem hard fork imminent — protocol upgrades can be powerful price catalysts. Midnight privacy sidechain live. ETF applications from Grayscale, VanEck, 21Shares, Canary Capital.",
+      "bear_case": "Daily EMA downtrend confirmed — 5 of 9 strategies bearish on technicals. RSI below 50. Price at $0.245 after losing 17% from March peak. Cardano has historically been slow to deliver on upgrade timelines.",
+      "key_metrics": {
+        "whale_accumulation": "819M ADA ($214M) — strong smart-money signal",
+        "staking_ratio": "72-73% of supply staked — extremely limited exchange float",
+        "daily_EMA": "Downtrend confirmed — bearish technical structure",
+        "hard_fork": "Van Rossem imminent — binary event",
+        "risk_reward": "2.0x — marginal"
+      },
+      "risk_check": "Wait for Van Rossem hard fork deployment confirmation. If price breaks above $0.27 with volume after the fork, re-evaluate entry. Currently the technical downtrend overrides the catalyst thesis."
+    },
+    "AVAX-USD": {
+      "verdict": "SKIP — neutral (44% confidence), entry only on confirmed breakout above $10.50.",
+      "bull_case": "Bitwise staking ETF launched April 15 with 5.4% annual yield — institutional accessibility. Transaction volume at 2026 highs (3.5M/day). Avalanche9000 upgrade reduced subnet costs by 99%. Funding rates deeply negative (-0.03% to -0.05%) — heavily shorted, creating short-squeeze potential.",
+      "bear_case": "ADX at 12.7 — trendless (lowest in portfolio). 90%+ below all-time high. Solana competition in DeFi/gaming. No volume confirmation for any breakout.",
+      "key_metrics": {
+        "ADX": "12.7 — critically trendless (lowest in portfolio)",
+        "funding_rate": "-0.03% to -0.05% — heavy shorts, squeeze potential",
+        "Bitwise_ETF_APY": "5.4% — first staking yield ETF for AVAX",
+        "drawdown_from_ATH": "-90%+ — extreme value or justified devaluation",
+        "breakout_level": "$10.50 — watch for confirmed break with volume"
+      },
+      "risk_check": "Deep value or value trap — undecidable without trend confirmation. The negative funding rate is the most actionable signal: wait for $10.50 breakout, then the short squeeze could accelerate."
+    },
+    "DOT-USD": {
+      "verdict": "SKIP — bearish (62% confidence), no short position taken (R/R insufficient).",
+      "bull_case": "First US spot DOT ETF (TDOT) launched on Nasdaq. JAM upgrade testnet live. 53.6% issuance reduction + hard 2.1B supply cap introduced. Deeply oversold relative to BTC.",
+      "bear_case": "7 of 9 strategies bearish. Confirmed daily EMA downtrend. 6.4% below 50-day moving average. Hyperbridge exploit (fake 1B DOT minted on Ethereum April 13) caused security credibility damage. 28-day unstaking delay creates asymmetric sell pressure — holders who want to sell must wait, then flood the market.",
+      "key_metrics": {
+        "strategy_consensus": "7 of 9 bearish — strongest bearish consensus in portfolio",
+        "daily_EMA": "Full downtrend alignment",
+        "hyperbridge_exploit": "Fake 1B DOT minted — credibility damage",
+        "unstaking_delay": "28 days — creates sell waves when stakers exit",
+        "risk_reward_short": "1.9x — below 2:1 minimum, therefore no short taken"
+      },
+      "risk_check": "Not shorting because R/R is 1.9x (below our 2:1 minimum). TDOT ETF and JAM upgrade are genuine positive catalysts that could trigger a short squeeze — don't chase shorts at oversold levels."
+    },
+    "MATIC-USD": {
+      "verdict": "SKIP — no data available (5% confidence). Polygon rebranded token from MATIC to POL.",
+      "bull_case": "Polygon protocol itself is technically strong: AggLayer cross-chain aggregation, CDK for enterprise chains, zkEVM. JPMorgan, Deutsche Bank, SWIFT using Polygon infrastructure. sPOL liquid staking launched April 17.",
+      "bear_case": "MATIC-USD is effectively delisted on yfinance. The token migration from MATIC to POL completed March 26, 2026 (1:1 conversion). POL trading at ~$0.09. No price data available for technical analysis.",
+      "key_metrics": {
+        "ticker_status": "DELISTED on yfinance — use POL-USD instead",
+        "rebrand_date": "March 26, 2026 — MATIC to POL migration complete",
+        "POL_price": "~$0.09 (estimated)",
+        "protocol_adoption": "JPMorgan Onyx, Deutsche Bank, SWIFT integrations",
+        "data_confidence": "5% — no price data available"
+      },
+      "risk_check": "Cannot trade MATIC-USD on this platform. Investors interested in Polygon should look up POL-USD on their exchange of choice."
+    }
+  },
+
+  "layer4_glossary": {
+    "ADX (Average Directional Index)": "A number from 0-100 that measures how strong a trend is — NOT its direction. Above 25 = real trend. Below 25 = price is drifting without direction. Higher is stronger.",
+    "RSI (Relative Strength Index)": "A momentum speedometer from 0-100. Above 70 = overbought (moving up too fast, potential pullback). Below 30 = oversold (moving down too fast, potential bounce). 50 = neutral.",
+    "EMA (Exponential Moving Average)": "An average of recent prices that gives more weight to newer data. When shorter-term EMAs are above longer-term ones and all pointing up, that's a bullish signal.",
+    "Funding Rate": "In crypto perpetual futures (a type of leveraged contract), longs pay shorts when positive, shorts pay longs when negative. Deeply negative = too many shorts = short squeeze risk.",
+    "Short Squeeze": "When too many traders have bet a price will go DOWN, and then it goes UP — forcing them to buy to close their positions, which pushes prices up even faster.",
+    "Exchange Reserves": "The amount of a cryptocurrency sitting on exchanges, available for immediate sale. Low reserves = less sell pressure = bullish signal.",
+    "Fear & Greed Index": "A 0-100 market sentiment gauge. 0 = Extreme Fear (everyone is panicking), 100 = Extreme Greed (everyone is euphoric). Contrarian investors buy during fear, sell during greed.",
+    "BTC Dominance": "Bitcoin's market cap as a percentage of total crypto market cap. High dominance (57%+) means money is flowing INTO Bitcoin and OUT of altcoins.",
+    "ETF (Exchange-Traded Fund)": "A fund traded on a stock exchange that tracks an asset's price. Spot Bitcoin ETFs let traditional investors buy BTC exposure without actually holding crypto.",
+    "Stop Loss": "A pre-set price at which you automatically sell if the trade goes wrong, limiting your maximum loss. Like an emergency exit from a burning building.",
+    "Risk-Reward Ratio": "How much you could gain vs. how much you could lose. 3.8x means for every $1 at risk, potential profit is $3.80. The system requires at least 2x minimum.",
+    "Z-Score": "How many standard deviations a value is from its average. A Z-score of +2.0 on price means price is unusually high vs. recent history — mean reversion expects it to come back down.",
+    "CCIP (Cross-Chain Interoperability Protocol)": "Chainlink's product that lets blockchains communicate with each other securely. Used by SWIFT, Deutsche Bank, and others to move data and assets between different blockchain networks.",
+    "Swing Trading": "A trading style that holds positions for 2-20 days, capturing medium-term price moves. Faster than investing (months/years) but slower than day trading (hours).",
+    "Whale": "A crypto investor holding a very large amount of a cryptocurrency (e.g., 100+ BTC). Their moves can significantly impact markets.",
+    "Hard Fork": "A software upgrade to a blockchain that changes the rules. If accepted, the network upgrades; if not, it splits into two separate chains. Major forks can be bullish catalysts.",
+    "Liquidation Cascade": "When leveraged traders are automatically forced to sell (liquidated) because prices moved against them, which pushes prices down further, liquidating more traders — a chain reaction.",
+    "Mean Reversion": "The trading idea that extreme moves tend to reverse back toward average. If a price shoots up very fast, mean reversion traders bet it will pull back.",
+    "Tokenization": "The process of representing real-world assets (real estate, bonds, stocks) as digital tokens on a blockchain. The $68T figure represents global assets that could theoretically be tokenized."
+  }
+}

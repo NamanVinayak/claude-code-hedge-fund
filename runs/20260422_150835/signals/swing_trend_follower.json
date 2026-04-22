@@ -1,0 +1,92 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "BTC shows a clean EMA uptrend alignment on the daily timeframe (EMA10 74731 > EMA21 73102 > EMA50 72108), confirmed by ADX at 31.6 — well above the 25 threshold for trend strength. Daily RSI at 62.4 and MACD histogram positive (351) confirm bullish momentum. Current price at $78,989 is above all daily EMAs and near the upper Bollinger Band (position 0.80), indicating the trend is extended. Hourly EMAs also in full uptrend alignment, but hourly RSI is extremely overbought at 92.0 with hourly ADX at 66 — suggesting a short-term pullback is imminent before continuation. Price has been forming higher highs (77127 → recovery to 78989) after a mid-week pullback to 73775. Ideal entry is on a pullback to the daily 10-EMA zone (~$74,500-$75,000). Stop below the 21-EMA at ~$72,500. Target: next resistance at $84,000-$86,000 based on measured move from the swing low. The overall trend is intact and tradeable, but entering at current extended levels carries elevated risk — wait for a pullback.",
+    "entry": 75200.0,
+    "target": 84000.0,
+    "stop": 72500.0,
+    "timeframe": "7-14 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 60,
+    "reasoning": "ETH daily EMAs are in uptrend alignment (EMA10 2309 > EMA21 2256 > EMA50 2216), with ADX at 31.8 confirming trend strength above the 25 threshold. Daily RSI at 55.3 is neutral-to-bullish with room to run. MACD histogram is barely positive (2.86), suggesting the uptrend is still young and not overextended on the daily. Hourly timeframe shows bullish EMA alignment with hourly RSI at 76.9 (overbought), hourly ADX at 53.8 (strong), but stochastic K declining below D (76 vs 85) — signaling near-term cooling. Recent price action shows a pullback from 2421 to 2265 and partial recovery to ~2400. Current price ($2,400) is sitting near the daily resistance zone at 2421. The SMA200 at 2834 acts as a major overhead resistance and a long-term bearish overhang. However, the 50-day EMA at 2216 provides strong support. Entry on a pullback toward 10-EMA (~$2,310-$2,340). Stop below 21-EMA. Target: resistance at $2,421 then $2,500+.",
+    "entry": 2330.0,
+    "target": 2500.0,
+    "stop": 2200.0,
+    "timeframe": "5-12 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "SOL's daily EMAs are tangled and not in clean alignment: EMA10 (85.45) ≈ EMA21 (85.07) < EMA50 (87.14), with ema_aligned_uptrend = False and ema_aligned_downtrend = False. ADX at 13.8 is far below the 25 minimum threshold — the daily trend has no conviction and is essentially trendless/choppy. Daily RSI at 50.6 and stochastic at 50/49 confirm neutral momentum. The 50-EMA is sitting above the 10 and 21-EMAs, indicating the macro trend remains bearish (SMA200 at 124.82 is a stark reminder of the broader downtrend). Hourly EMAs are bullishly aligned and hourly ADX at 61 is strong, but this short-term hourly momentum conflicts with the lack of daily trend structure. Without a clean daily EMA fan and ADX > 25 on the primary timeframe, there is no valid trend-following setup. Staying neutral until daily EMAs fan into clear order.",
+    "entry": 88.47,
+    "target": 92.0,
+    "stop": 83.0,
+    "timeframe": "N/A - no trade"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "BNB daily EMAs are tangled: EMA10 (624.1) ≈ EMA21 (620.3) < EMA50 (633.5), with ema_aligned_uptrend = False. ADX at 22.8 is below the 25 threshold required for a tradeable trend — the daily trend is weak and directionless. The 50-EMA overhead acts as resistance. Recent price action (643 → 616 → 632) shows range-bound chop rather than trending behavior. MACD histogram has turned positive (3.64) and stochastic K (71.6) has crossed above D (61.5), suggesting potential momentum building, but it is not sufficient without ADX confirmation. Hourly picture is stronger (bullish EMA alignment, ADX 57.6, RSI 87) but at overbought extremes hourly momentum is unsustainable. SMA200 daily at 826 confirms macro bearish context. With ADX sub-25 on the daily and tangled EMAs, no trend-following trade is valid. Waiting for ADX to build momentum and EMA fan to form before entry.",
+    "entry": 629.0,
+    "target": 660.0,
+    "stop": 612.0,
+    "timeframe": "N/A - no trade"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 58,
+    "reasoning": "XRP daily EMAs are near-neutral but slightly tangled: EMA10 (1.410) > EMA21 (1.392), but EMA50 (1.412) sits just above both — ema_aligned_uptrend = False. However, ADX at 32.6 is solidly above 25, confirming trend strength. Daily RSI at 56.5 and MACD histogram positive (0.0099) show building bullish momentum. The daily Bollinger Band position at 0.80 and CCI at 100 indicate bullish pressure. Hourly EMAs are in clean bullish alignment (EMA10 1.453 > EMA21 1.447 > EMA50 1.439), hourly ADX at 42.6 confirms trend strength. Recent price action: 1.477 high → pullback to 1.395 → recovery to 1.454, forming a higher low pattern. Fib support at the 61.8% retracement (1.403) held well. Current price at $1.45 is near the hourly EMA10, providing a reasonable entry zone. The daily EMA50 near-parity with EMA10/21 is a slight concern, but the ADX and higher-low structure justify a cautious bullish lean. Target: daily resistance at 1.477 then measured move to 1.54.",
+    "entry": 1.45,
+    "target": 1.54,
+    "stop": 1.38,
+    "timeframe": "5-10 trading days"
+  },
+  "ADA-USD": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": "ADA daily EMAs are in confirmed downtrend alignment: EMA10 (0.2491) < EMA21 (0.2503) < EMA50 (0.2602), with ema_aligned_downtrend = True. This is the primary signal — a clean bearish EMA fan. However, ADX at 16.4 is below 25, meaning the downtrend lacks strong momentum conviction — reducing confidence in a short trade. Daily RSI at 42.9 is in bearish territory. Price is below the 50-SMA (dist_from_50sma_pct = -2.52%). Recent price action shows a sequence of lower highs: 0.259 → 0.249 → 0.243, with only a modest bounce to 0.250. Hourly EMAs have flipped bullish (short-term bounce context), with hourly ADX at 35.8 and RSI at 75.9 — confirming the hourly bounce may hit resistance soon. SMA200 daily at 0.3954 is a massive headwind overhead. The trend-following setup here is bearish, but with ADX barely touching tradeable levels, sizing should be conservative. Entry on a rally toward the declining 10-EMA. Target: support zone at 0.2363 then new lows.",
+    "entry": 0.255,
+    "target": 0.236,
+    "stop": 0.268,
+    "timeframe": "5-10 trading days"
+  },
+  "AVAX-USD": {
+    "signal": "neutral",
+    "confidence": 25,
+    "reasoning": "AVAX daily EMAs are tangled: EMA10 (9.347) > EMA21 (9.309) but EMA50 (9.430) is above both — ema_aligned_uptrend = False and ema_aligned_downtrend = False. ADX at 12.7 is extremely weak, well below the 25 threshold. The daily trend is completely directionless with no tradeable trend structure. RSI at 48.8 and stochastic at 43/43 confirm neutral momentum. Recent price action shows volatility without trend: 9.74 → 9.01 → 9.39 — a choppy range. Hourly EMAs are bullishly aligned with hourly ADX at 31.4 above 25, but the hourly MACD histogram has turned slightly negative (-0.003), and this short-term structure cannot override the complete lack of daily trend. SMA200 daily at 13.18 represents massive overhead resistance. No valid trend-following setup on the daily timeframe. Neutral until ADX builds above 25 and EMAs fan clearly in one direction.",
+    "entry": 9.58,
+    "target": 9.95,
+    "stop": 9.18,
+    "timeframe": "N/A - no trade"
+  },
+  "DOT-USD": {
+    "signal": "bearish",
+    "confidence": 55,
+    "reasoning": "DOT daily EMAs are in confirmed downtrend alignment: EMA10 (1.269) < EMA21 (1.281) < EMA50 (1.354), with ema_aligned_downtrend = True. This is a bearish EMA fan. ADX at 23.9 is close to but just below the 25 threshold — a marginal setup. Daily RSI at 46.6 and negative MACD histogram direction support the bearish case, though the histogram recently turned positive (0.0106), suggesting a short-term bounce may be underway. Price is significantly below the 50-SMA (dist_from_50sma_pct = -6.38%) and the SMA200 at 2.03 is deeply overhead. Recent price action: 1.336 → 1.240 → 1.280, forming a lower high pattern. Hourly EMAs are bullishly aligned (bounce mode), hourly RSI at 67.1 and ADX at 43.2 indicate this hourly bounce has momentum — suggesting wait for this bounce to exhaust near the 21-EMA before entering short. The overall macro trend is clearly bearish, but ADX just below 25 warrants reduced confidence. Entry on a bounce to the declining 21-EMA.",
+    "entry": 1.30,
+    "target": 1.17,
+    "stop": 1.36,
+    "timeframe": "7-14 trading days"
+  },
+  "MATIC-USD": {
+    "signal": "neutral",
+    "confidence": 5,
+    "reasoning": "MATIC-USD price data is unavailable — this ticker appears to have been delisted or migrated (POL migration). No price data, no indicators, no market cap. Cannot perform any technical analysis. Returning neutral with minimal confidence.",
+    "entry": 0.0,
+    "target": 0.0,
+    "stop": 0.0,
+    "timeframe": "N/A - no data"
+  },
+  "LINK-USD": {
+    "signal": "neutral",
+    "confidence": 38,
+    "reasoning": "LINK daily EMAs are mixed and not in clean alignment: EMA10 (9.256) > EMA21 (9.145), but EMA50 (9.193) sits between EMA21 and EMA10 — ema_aligned_uptrend = False. ADX at 22.4 is below the 25 threshold required for a tradeable trend. Daily RSI at 51.5 and stochastic at 60/51 (K crossing above D) show mild positive momentum. MACD histogram is positive (0.033) and turning up. Recent price action shows a recovery from a low of 9.07 on April 19 back to 9.40 on April 21, but this bounce is occurring within a broader choppy range (9.07–9.63 over 5 days). Hourly EMAs are bullishly aligned with hourly ADX at 24.6 (just below 25). The daily EMA structure is too tangled and ADX too weak to qualify as a trend-following entry. The 50-EMA shuffling between 10 and 21 EMAs signals indecision. Staying neutral. If daily ADX breaks above 25 with EMA fan establishing, would reassess for a long entry.",
+    "entry": 9.49,
+    "target": 9.93,
+    "stop": 8.90,
+    "timeframe": "N/A - no trade"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "ticker": "BTC-USD",
+  "research_date": "2026-04-22",
+  "macro_context": {
+    "market_sentiment": "Crypto markets are in cautious recovery mode after a volatile week. Bitcoin rebounded above $76,000 following a 5% weekend drop triggered by the $292M KelpDAO DeFi exploit and ongoing U.S.-Iran geopolitical tensions. The broad CoinDesk 20 is up ~1.7% on the day, but sentiment remains fearful. The DeFi hack drained $14B in TVL and created $6.6B in bad debt on Aave, keeping altcoin risk elevated. BTC is outperforming as a relative safe haven within crypto.",
+    "btc_dominance": "BTC dominance is approximately 57-61% in April 2026 (sources vary by methodology and date). Dominance is elevated vs late 2025 and approaching a historically significant resistance zone (~59.9% on weekly charts). If dominance peaks here, capital rotation into altcoins may begin — a signal to watch.",
+    "total_market_cap": "Total crypto market cap is approximately $2.6-2.7 trillion as of late April 2026 (sources: CoinGecko $2.63T, CoinMarketCap $2.62T), down from a ~$4 trillion peak in mid-2025, representing roughly a 35% drawdown from cycle highs. Total market cap fell over 20% in Q1 2026.",
+    "fear_greed_index": "29-33 = Fear. The index dropped to 27 on April 19 (3-week low) before recovering slightly. Historically, Fear and Greed readings below 30 have marked medium-term accumulation windows. Current reading reflects macro headwinds but is far from Extreme Fear.",
+    "fed_outlook": "The Fed paused its rate-cutting cycle in January 2026 at 3.5-3.75% and projects only one 25bps cut for 2026. Jerome Powell's term ends May 2026. Front-runner Kevin Warsh disclosed holdings in 20+ crypto-linked entities and testified (April 21) that he would maintain Fed independence from political pressure — a mild positive for rate expectations. The OCC conditionally approved Coinbase's national trust company charter in April 2026.",
+    "institutional_flows": "Strong institutional demand throughout April: U.S. spot Bitcoin ETFs saw ~$663M inflows on April 18 (largest single-day since Jan 15), and April 2026 marks the first monthly gain after four consecutive months of net outflows. Total ETF AUM surged above $96.5B. Strategy (formerly MicroStrategy) purchased 34,164 BTC for $2.54B (April 13-19, average $74,395/BTC), surpassing BlackRock IBIT to become the world's largest institutional BTC holder at 815,061 BTC. Crypto fund inflows hit $1.4B for the week of April 21 (source: The Coin Republic).",
+    "regulatory": "The CLARITY Act (Digital Asset Market Clarity Act) is heading toward a Senate Banking Committee markup in late April 2026 but risks slipping to May due to bank lobbying over stablecoin yield provisions. The GENIUS Act (stablecoin framework) has already passed, with implementing regulations due July 18, 2026. The OCC conditionally approved Coinbase's national trust company charter in April. The White House is expected to announce architecture for a U.S. Strategic Bitcoin Reserve 'in short order' within ~2 months (as of April 19), with Congress holding 328,372 BTC (~$25B). Venezuela's opposition also proposed an oil-for-BTC national reserve on April 21.",
+    "key_events": [
+      "U.S. Strategic Bitcoin Reserve architecture announcement — expected within ~2 months, major BTC price catalyst",
+      "CLARITY Act Senate Banking Committee markup — late April or May 2026, would provide market structure clarity",
+      "Fed Chair transition — Jerome Powell's term ends May 2026; successor (likely Warsh) may signal easier monetary policy",
+      "Iran ceasefire expiry ~April 23 — geopolitical resolution could release suppressed price pressure toward $80K",
+      "GENIUS Act stablecoin regulations implementation — July 18, 2026 deadline",
+      "Bitcoin Core v31.0 broader node adoption — cluster mempool and Tor/I2P privacy by default"
+    ]
+  },
+  "ticker_news": [
+    {
+      "headline": "Strategy buys 34,164 BTC for $2.54 billion (April 13-19), surpasses BlackRock IBIT as world's largest institutional Bitcoin holder at 815,061 BTC",
+      "sentiment": "positive",
+      "source": "CoinDesk, April 20, 2026"
+    },
+    {
+      "headline": "Bitcoin bounces above $76,000 as DeFi suffers $14 billion TVL exodus after $292M KelpDAO hack",
+      "sentiment": "neutral",
+      "source": "CoinDesk, April 20, 2026"
+    },
+    {
+      "headline": "Bitcoin ETFs record nearly $1 billion in inflows in a single week; April 2026 is first monthly net inflow after four months of outflows",
+      "sentiment": "positive",
+      "source": "CoinDesk / Farside Investors, April 20, 2026"
+    },
+    {
+      "headline": "White House expected to unveil U.S. Strategic Bitcoin Reserve architecture within 2 months following executive order",
+      "sentiment": "positive",
+      "source": "Multiple sources including Phemex, April 19, 2026"
+    },
+    {
+      "headline": "Bitcoin Core v31.0 released: cluster mempool redesign improves block construction and fee estimation; Tor/I2P privacy broadcasting now default",
+      "sentiment": "positive",
+      "source": "Bitcoin Core GitHub / community, April 2026"
+    }
+  ],
+  "on_chain_signals": {
+    "whale_activity": "Bifurcated whale behavior: a cohort of large wallets (whales and sharks) accumulated ~270,000 BTC over the past 30 days — the largest monthly accumulation since 2013 (source: Spoted Crypto). Simultaneously, wallets holding 1,000-10,000 BTC have been the most aggressive sellers on record per CryptoQuant, distributing ~188,000 BTC. A Satoshi-era whale moved 1,000 BTC ($74M) to exchanges on April 15, but Strategy absorbed 17x that volume in 48 hours. Bitcoin exchange reserves hit a 7-year low at 2.21M BTC (5.88% of circulating supply) — indicating strong holder conviction and preference for self-custody.",
+    "funding_rates": "Perpetual futures funding rates are near neutral to slightly negative across major exchanges in late April 2026, consistent with Fear and Greed at 29-33. This indicates the market has largely deleveraged from prior long overcrowding. Neutral/negative funding means the market is not paying a premium for long exposure, which reduces liquidation cascade risk and supports a more stable price floor — a healthier setup than overleveraged tops.",
+    "exchange_flows": "Hourly Bitcoin exchange inflows spiked to 11,000 BTC on April 15 — highest since late December 2025 — creating short-term sell pressure near the $76K resistance zone. Average exchange deposit jumped to 2.25 BTC (highest daily reading since July 2024), with large individual transfers exceeding 1,000 BTC to Binance driving the increase. Net exchange reserves remain near 7-year lows overall (bullish structural backdrop), but the recent inflow spike warrants monitoring for continued distribution pressure at resistance."
+  },
+  "development_activity": "Bitcoin Core (github.com/bitcoin/bitcoin) was last updated April 16, 2026, with active pull requests across build systems and validation improvements. Bitcoin Core v31.0 is a landmark upgrade featuring a redesigned cluster mempool (improves block construction and fee estimation) and mandatory Tor/I2P privacy broadcasting by default. The Bitcoin Improvement Proposals (BIPs) repository was updated April 15, 2026. Broader crypto developer activity has declined industry-wide (~75% drop in weekly commits per CoinDesk March 2026, with AI absorbing talent), but Bitcoin's core development remains focused and conservatively managed — consistent with Bitcoin's deliberately conservative upgrade philosophy.",
+  "upcoming_catalysts": "1) U.S. Strategic Bitcoin Reserve formal announcement — likely within 2 months, potentially the largest macro catalyst of 2026. 2) CLARITY Act Senate vote — late April/May 2026; passage would unlock institutional participation. 3) Fed Chair transition (May 2026) — a crypto-exposed successor could signal policy shift. 4) Iran geopolitical resolution — ceasefire expired ~April 23; de-escalation could release $5-10K of suppressed price. 5) Technical breakout — BTC needs to clear $77,500 resistance to target $85,000-$90,000 range. 6) Bitcoin Core v31.0 node adoption — privacy and efficiency improvements strengthen network. 7) No halving event in 2026 (last halving April 2024); post-halving supply shock dynamics are already in play."
+}

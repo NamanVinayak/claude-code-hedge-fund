@@ -1,0 +1,112 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 72,
+    "fear_greed_index": {"value": 32, "classification": "Fear"},
+    "whale_activity": "Bifurcated: one cohort accumulated ~270,000 BTC in 30 days (largest since 2013), another cohort distributing ~188,000 BTC. Net: accumulation > distribution. Exchange reserves at 7-year low (2.21M BTC = 5.88% of supply). Strategy purchased 34,164 BTC ($2.54B) April 13-19, now world's largest institutional holder at 815,061 BTC.",
+    "funding_rates": "Near neutral to slightly negative — healthy, not overleveraged. No long-crowding risk. Set up for squeeze upward if catalysts materialize.",
+    "social_sentiment": "Cautiously bullish. Strategic Reserve narrative dominant. ETF inflows story positive. KelpDAO hack FUD somewhat contained to DeFi sphere, not spilling into BTC narrative strongly.",
+    "institutional_flows": "Very bullish: BTC ETFs saw $663M inflows in single day (April 18), first monthly net inflow after 4 months of outflows. Total ETF AUM $96.5B+. Crypto fund inflows $1.4B week of April 21.",
+    "regulatory_risk": "Favorable. CLARITY Act Senate markup imminent. GENIUS Act passed. US Strategic Bitcoin Reserve announcement expected within ~2 months. OCC approved Coinbase national trust charter.",
+    "reasoning": "BTC is the standout sentiment winner despite Fear environment. Institutional flows are record-strong. Exchange reserves at multi-year lows. Strategic accumulation ongoing at $74K-79K. Macro headwinds (tariffs, Fed hold) are offset by institutional demand and regulatory tailwinds. Fear & Greed 32 in historically good accumulation territory for BTC. Bullish with 72% confidence."
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 63,
+    "fear_greed_index": {"value": 32, "classification": "Fear"},
+    "whale_activity": "Strongly bullish: Bitmine accumulated 101,627 ETH (~$230M, nearing 5M ETH total). 80,000 ETH moved from Binance to private wallet. ETH Foundation made largest-ever single staking deposit (22,517 ETH). Exchange reserves at record lows.",
+    "funding_rates": "Slightly negative to neutral — short bias dominant but not extreme. Potential for short squeeze if $2,400 resistance breaks. Healthy positioning.",
+    "social_sentiment": "Constructive with caveats. ETH/BTC ratio at lows is a negative narrative. But ETH ETF streak (8 consecutive days of inflows) creating positive buzz. Pectra upgrade generating developer excitement.",
+    "institutional_flows": "Positive: 8 consecutive days of ETH ETF inflows ($493.7M total, longest streak since Oct 2025). $127M single-day on April 17. Bitmine becoming a major ETH corporate treasury holder.",
+    "regulatory_risk": "Low risk: ETH well-positioned as commodity. Staking ETF approval pending (positive catalyst if granted). CLARITY Act passage would confirm ETH status.",
+    "reasoning": "ETH at ~$2,400 with strong institutional accumulation, record-low exchange reserves, and whale buying. ETH ETF inflow streak is the strongest positive signal. Short/slightly negative funding means squeezable setup. KelpDAO hack hurt DeFi TVL but ETH itself is relatively insulated. Bullish with 63% confidence — below BTC due to ETH/BTC ratio headwinds and stiff competition from Solana."
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 52,
+    "fear_greed_index": {"value": 32, "classification": "Fear"},
+    "whale_activity": "Deteriorating: dormant whale deposited 51,750 SOL to Binance (sell signal). Rotation from SOL and XRP into RWA tokens observed. Earlier Q1 accumulation giving way to distribution. FTX estate distributions largely complete.",
+    "funding_rates": "2-year lows on weighted funding — very low leverage. Contrarian positive (no long crowding), but also signals weak demand. Could snap back hard with catalyst.",
+    "social_sentiment": "Mixed. Record Q1 activity (25.3B txs, $1.1T volume) is bullish narrative. But price down 30%+ YTD creates credibility issues. Drift exploit aftermath + Foundation security overhaul drawing attention to risk.",
+    "institutional_flows": "Positive: spot SOL ETFs crossed $1B cumulative inflows. BSOL staking ETF at $808M. But recent week showed outflows ($1.27M net weekly outflow). ETF inflows showing inconsistency.",
+    "regulatory_risk": "Moderate. SOL ETF applications pending. CLARITY Act passage key for classification. $270M Drift exploit raises security concerns for institutional sentiment.",
+    "reasoning": "SOL presents a contradiction: record on-chain activity but weak price. Whale distribution and exchange deposits are bearish near-term. $83 support critical — break would trigger liquidations. However, low funding rates and deep drawdown (70%+ from ATH) create contrarian setup. SOL ETF and Alpenglow upgrade are medium-term catalysts. Neutral at 52% — requires confirmation above $95 before turning bullish."
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 58,
+    "fear_greed_index": {"value": 32, "classification": "Fear"},
+    "whale_activity": "Volume clustering at $612-615 resembles accumulation (score 78/100) but may be distribution. No confirmed large exchange deposits. Binance team wallets stable. Cautious institutional wait-and-see.",
+    "funding_rates": "+0.0006% (near zero, slight long bias). Long/short ratio 71.9:28.1 — mild concern if support breaks. Not dangerous but skewed.",
+    "social_sentiment": "Cautiously positive. Quarterly burn narrative is consistently bullish. Kyrgyzstan CBDC headline generated buzz. YZi Labs $1B fund positive for ecosystem.",
+    "institutional_flows": "Limited specific BNB institutional flow. VanEck spot BNB ETF filing pending — major potential catalyst. Binance exchange volumes remain strong supporting token utility.",
+    "regulatory_risk": "Moderate-positive. Binance under DOJ monitorship but operating normally. CLARITY Act positive for BNB Chain classification. Hyperbridge exploit ($2.5M on BNB Chain) minor negative.",
+    "reasoning": "BNB has defensive qualities: consistent quarterly burns (1.569M BNB destroyed April 15-16), BNB Chain utility, and Binance exchange dominance. Down 57% from ATH creates value. But VanEck ETF filing is the real catalyst watch item. 71.9% long ratio with near-zero funding is a modest concern. Neutral — needs ETF catalyst or broader alt rotation to break higher."
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 68,
+    "fear_greed_index": {"value": 32, "classification": "Fear"},
+    "whale_activity": "Whale accumulation: 62% of circulating supply held by top wallets at 5-year lows for exchange balances (supply squeeze setup). $119M Coinbase inflow on April 13 is a monitoring flag for potential distribution.",
+    "funding_rates": "Funding risen to 0.008% — longs re-entering but leverage elevated. Not dangerously overcrowded but warrants monitoring. Caution: elevated leverage = squeeze risk both ways.",
+    "social_sentiment": "Very positive. Regulatory clarity story strongest in alts after BTC. ETF momentum building (7 live spot XRP ETFs). CBDC partnerships generating positive mainstream coverage. Ripple IPO narrative adds excitement.",
+    "institutional_flows": "Bullish: 7 spot XRP ETFs live with $55.39M weekly inflow streak. SEC-CFTC March 2026 ruling cleared XRP as digital commodity. 300+ bank CBDC partnerships. Strong institutional adoption story.",
+    "regulatory_risk": "Very low — most favorable regulatory position of any altcoin. SEC vs Ripple resolved. XRP formally classified as digital commodity. CBDC partnerships with global banks validates institutional trust.",
+    "reasoning": "XRP has the strongest regulatory tailwind of all altcoins in this portfolio. 62% whale concentration at exchange-balance lows is a bullish supply squeeze setup. 7 live ETFs with inflows confirm institutional demand. The $1.40-1.50 range represents support after breaking above $1.50 recently. Risks: Ripple escrow monthly releases (1B XRP), elevated funding rates (0.008%). Bullish at 68% confidence."
+  },
+  "ADA-USD": {
+    "signal": "bullish",
+    "confidence": 60,
+    "fear_greed_index": {"value": 32, "classification": "Fear"},
+    "whale_activity": "424 whale wallets (4-month high) accumulated 819M ADA ($214M) — strong smart-money accumulation signal. 72-73% ADA staked (highest among major L1s) — severely limits exchange float.",
+    "funding_rates": "No specific data available from research. Assume near neutral given fear environment.",
+    "social_sentiment": "Quietly positive among Cardano community. Van Rossem hard fork imminent creating developer excitement. Leios TPS upgrade and Midnight privacy sidechain generating technical credibility.",
+    "institutional_flows": "Positive: Spot ADA ETF applications from Grayscale, VanEck, 21Shares, Canary Capital all pending at SEC. ADA formally classified as digital commodity (March 2026 SEC-CFTC ruling). $71M treasury commitment to Hydra + Leios scaling.",
+    "regulatory_risk": "Low: ADA named digital commodity in March 2026. ETF applications progressing. CLARITY Act passage would be additional tailwind.",
+    "reasoning": "ADA at ~$0.245 with strong whale accumulation (819M ADA bought by smart money), 72%+ supply staked (severe float restriction), and Van Rossem hard fork imminent. Multiple ETF applications pending. The $0.23-0.24 support level is critical. Bullish at 60% confidence — lower than XRP/BTC due to ADA's historically slow delivery cadence and $0.245 being a recovery play rather than a momentum play."
+  },
+  "AVAX-USD": {
+    "signal": "neutral",
+    "confidence": 48,
+    "fear_greed_index": {"value": 32, "classification": "Fear"},
+    "whale_activity": "Whale accumulation noted below $10. Large wallets buying dips. But AVAX has been in a severe multi-month downtrend. Uncertain whether this is bottom-fishing or capitulation.",
+    "funding_rates": "Deeply negative (-0.03% to -0.05%) — heavy short crowding. Significant short squeeze potential with catalyst. Dangerous to chase shorts at this level.",
+    "social_sentiment": "Depressed. $9 range is 90%+ below ATH. Narrative of Solana stealing AVAX's DeFi/gaming market share. Avalanche9000 cost reduction is positive but not yet driving price.",
+    "institutional_flows": "Bitwise staking AVAX ETF launched April 15 (5.4% APY) — meaningful catalyst for institutional interest. AVAX classified as digital commodity by SEC/CFTC.",
+    "regulatory_risk": "Low: AVAX classified as digital commodity. CLARITY Act passage positive. AWS enterprise partnership provides legitimacy.",
+    "reasoning": "AVAX at $9.58 is deeply washed out — 90%+ below ATH creates potential deep-value entry but also means the market has decisively rejected prior valuations. Short crowding (-0.04% avg funding) creates high short-squeeze potential. Bitwise staking ETF launch is the freshest catalyst. But lack of price momentum and Solana competition limit conviction. Neutral at 48% — wait for breakout above $10.50 or confirmation of short squeeze."
+  },
+  "DOT-USD": {
+    "signal": "bearish",
+    "confidence": 55,
+    "fear_greed_index": {"value": 32, "classification": "Fear"},
+    "whale_activity": "Hyperbridge exploit (fake 1B DOT minted on Ethereum, April 13) damaged trust even though native network unaffected. 28-day unstaking period means selling waves lag price moves. TDOT ETF launch on Nasdaq is a positive.",
+    "funding_rates": "Negative (-0.03%) — short crowding. Similar to AVAX, high squeeze potential but needs catalyst.",
+    "social_sentiment": "Bearish-leaning. DOT at all-time BTC-relative lows. Hyperbridge exploit headline damage. JAM upgrade narrative not yet generating mainstream excitement.",
+    "institutional_flows": "First US spot DOT ETF (TDOT) launched on Nasdaq — significant institutional milestone. 53.6% issuance reduction + 2.1B hard supply cap enacted improves tokenomics. But overall interest minimal.",
+    "regulatory_risk": "Moderate: DOT's regulatory classification less clear than BTC/ETH/XRP/ADA. Hyperbridge exploit raised security questions. CLARITY Act passage needed.",
+    "reasoning": "DOT faces multiple headwinds: Hyperbridge exploit headline risk, all-time BTC-relative lows, complex architecture adoption challenges, and developer mindshare loss to Solana/ETH L2s. The 28-day unstaking delay creates asymmetric sell pressure. TDOT ETF launch and 53.6% issuance reduction are genuine positives but insufficient to overcome bearish technical setup. Bearish at 55% confidence — avoid until JAM upgrade delivers or clear reversal above $1.50."
+  },
+  "MATIC-USD": {
+    "signal": "neutral",
+    "confidence": 25,
+    "fear_greed_index": {"value": 32, "classification": "Fear"},
+    "whale_activity": "NO PRICE DATA — MATIC-USD is delisted on yfinance due to Polygon 2.0 rebrand. All MATIC auto-converted to POL 1:1 by March 26, 2026. Current token is POL-USD, not MATIC-USD. sPOL liquid staking launched April 17 (freed $330M capital).",
+    "funding_rates": "No reliable data — MATIC perpetuals still exist on some exchanges but very low volume. Token migration to POL creates tracking confusion.",
+    "social_sentiment": "Mixed. Polygon 2.0 architecture (AggLayer, Gigagas) is technically impressive. But MATIC/POL at ~$0.09 represents extreme devaluation. JPMorgan, SWIFT partnerships provide credibility.",
+    "institutional_flows": "Institutional interest primarily in Polygon CDK for enterprise use (JPMorgan Onyx, Deutsche Bank) — not token-level buying. zkEVM and AggLayer driving developer interest.",
+    "regulatory_risk": "Moderate: POL classification unclear after rebrand. Institutional enterprise use is favorable but secondary to token price dynamics.",
+    "reasoning": "MATIC-USD effectively delisted — no tradeable instrument on yfinance. The underlying Polygon protocol is technically strong (AggLayer, CDK, zkEVM) but the POL token at ~$0.09 reflects massive value destruction. Without price data, reliable technical analysis is impossible. Neutral at 25% confidence — very low confidence due to data unavailability. SKIP this ticker or substitute POL-USD for actual analysis."
+  },
+  "LINK-USD": {
+    "signal": "bullish",
+    "confidence": 70,
+    "fear_greed_index": {"value": 32, "classification": "Fear"},
+    "whale_activity": "Whale addresses at 8-month high. 1.2M LINK withdrawn from exchanges in 48 hours (strong accumulation signal). Coinbase DataLink integration catalyzing institutional interest. Supply on exchanges declining sharply.",
+    "funding_rates": "Slightly negative to neutral (-0.01% to -0.02%) — mild short bias. No dangerous long overcrowding. Clean setup for breakout.",
+    "social_sentiment": "Quietly bullish among institutional/enterprise audience. CCIP zero-hack record post-KelpDAO is a strong differentiator — 'Chainlink is what DeFi should be' narrative gaining traction. OpenAssets $68T tokenization partnership generating TradFi buzz.",
+    "institutional_flows": "Very bullish: SWIFT + 100+ banks using CCIP. Deutsche Bank bond settlement pilot. OpenAssets $68T tokenization partnership. Data Streams expanded to US equities (April 12). LINK ETF applications pending.",
+    "regulatory_risk": "Very low: pure infrastructure play, no issuer entity for SEC to target. CCIP is institutional-grade. CLARITY Act passage would solidify regulatory position.",
+    "reasoning": "LINK has the strongest fundamental-to-price divergence in this portfolio. $9.49 vs $68T tokenization partnership news represents extreme value. CCIP's zero-hack record post-KelpDAO is a critical differentiator when DeFi security is the #1 concern. 1.2M LINK withdrawn from exchanges in 48 hours is a very strong accumulation signal. Enterprise adoption (SWIFT, Deutsche Bank, OpenAssets) accelerating. Bullish at 70% confidence — highest conviction call alongside BTC."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "BTC-USD": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "BTC has rallied sharply and current price $78,989 has exceeded the daily Fibonacci swing high ($77,127) and daily resistance ($77,127). Daily EMAs are in uptrend alignment and daily RSI at 62 is constructive, but hourly RSI is extremely overbought at 92, hourly stochastic at 93.6, and Williams %R at -6.4 — all signaling near-term exhaustion. Hourly Bollinger position is at 0.83 (extended). Volume on the hourly is only 2% of the 20-period average, suggesting thin participation into this push. A pullback trader cannot enter here; the pullback setup requires a retracement back to the hourly 38.2% Fib (~$77,530) or ideally the daily 23.6% Fib (~$74,490) before considering a long entry. No clean low-risk entry at current levels.",
+    "entry_price": 76500.0,
+    "target_price": 80000.0,
+    "stop_loss": 74800.0,
+    "timeframe": "5-10 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 52,
+    "reasoning": "ETH pulled back from the daily swing high of $2,421 to a low of ~$2,255 (near the 61.8% daily Fib at $2,122 was not reached — actual low was around the 50% Fib $2,179 zone). Price is now recovering and sits at $2,400, near the prior swing high resistance. Daily EMAs are in uptrend alignment (ema_10 > ema_21 > ema_50), daily RSI 55.4 is neutral (not overbought). MACD histogram is positive. The pullback from the swing high was orderly. However, hourly RSI is elevated at 76.9 and hourly stochastic shows bearish crossover (k 76.4 < d 85.0), suggesting a short-term pause or minor dip may be ahead. The best pullback entry is on a dip toward the hourly 38.2% Fib ($2,370) or daily 23.6% Fib ($2,307). Entry set slightly below current with a target at the swing high retest. Confidence capped at moderate due to proximity to daily resistance and elevated hourly RSI.",
+    "entry_price": 2370.0,
+    "target_price": 2460.0,
+    "stop_loss": 2290.0,
+    "timeframe": "5-10 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "SOL's daily trend is unclear — EMAs are not aligned in either direction (ema_10 85.5, ema_21 85.1, ema_50 87.1 — ema_50 is above shorter EMAs, indicating medium-term weakness). Daily ADX is very low at 13.8, confirming a choppy, trendless environment. Daily RSI at 50.6 is right at neutral. Price has pulled back from the swing high $96.22 down to $83.17 and is recovering. Current price $88.47 is between the 50% Fib ($87.59) and 38.2% Fib ($89.63) — technically within the pullback zone, but without a clear trend the entry lacks conviction. Hourly RSI is elevated at 74.3 and hourly volume is only 9.7% of average. The SMA-200 daily at $124.82 confirms the larger downtrend from highs. No clean pullback setup in a confirmed uptrend.",
+    "entry_price": 86.0,
+    "target_price": 93.0,
+    "stop_loss": 83.0,
+    "timeframe": "5-8 trading days"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 28,
+    "reasoning": "BNB shows hourly uptrend (EMAs aligned) but daily EMAs are not aligned in either direction, with ema_50 ($633.45) above ema_10 ($624.06) indicating medium-term softness. Current price $649.53 has pushed above the daily resistance at $643.45 and is near the swing high of $679.35. Hourly RSI is severely overbought at 86.96, hourly stochastic k 80.6 with d 85.3 (bearish), hourly MFI at 88.7. Daily z-score only 0.20 and dist from 50 SMA modest at 0.7%. This is a momentum push, not a clean pullback entry — price just bounced from the 61.8% daily Fib zone ($619.89) and has run nearly to the 38.2% Fib ($642.60), overshooting slightly. The hourly overbought conditions suggest a minor pullback is imminent before any clean entry. A pullback to $635-640 (daily 38.2% Fib confluence) would be needed for a valid setup.",
+    "entry_price": 637.0,
+    "target_price": 670.0,
+    "stop_loss": 618.0,
+    "timeframe": "5-10 trading days"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 55,
+    "reasoning": "XRP pulled back from the swing high of $1.544 to a low of $1.394, representing a ~9.7% retracement. Current price $1.45 sits in the 50%-61.8% daily Fibonacci retracement zone (50% at $1.430, 61.8% at $1.403), which coincides with the prior support/resistance region. Daily RSI at 56.5 is moderate and not overbought. MACD histogram is positive (0.0099). Stochastic k 59.1 > d 55.6, showing bullish momentum. Hourly EMAs are aligned uptrend and hourly RSI at 68.9 is approaching overbought but not extreme. Daily ADX at 32.6 confirms a moderate trend. Hourly MFI is extremely high at 96.6, suggesting strong buying pressure in the recovery. The pullback was on declining volume (recent days 2.4-2.9B vs 4.2B on the high day), which is healthy. Entry at current levels with stop below the 78.6% Fib ($1.364) offers a reasonable risk/reward.",
+    "entry_price": 1.445,
+    "target_price": 1.54,
+    "stop_loss": 1.375,
+    "timeframe": "5-10 trading days"
+  },
+  "ADA-USD": {
+    "signal": "bearish",
+    "confidence": 55,
+    "reasoning": "ADA's daily EMAs are in full downtrend alignment (ema_10 < ema_21 < ema_50), and SMA-200 at $0.395 is far above current price $0.255, confirming the long-term downtrend. Daily RSI at 42.9 is below 50. Price is below the 50 SMA ($0.256). z-score is negative at -0.54. In the context of pullback trading within a downtrend, this suggests any rallies are selling opportunities. The daily Fibonacci levels from swing high $0.290 to swing low $0.236: current price $0.255 is near the 61.8% retracement at $0.257 — a logical resistance level in a downtrend rally. Hourly RSI at 75.9 is overbought, providing potential short entry on this rally exhaustion. A short/bearish setup targets a retest of the swing low zone.",
+    "entry_price": 0.256,
+    "target_price": 0.237,
+    "stop_loss": 0.268,
+    "timeframe": "5-8 trading days"
+  },
+  "AVAX-USD": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "AVAX daily EMAs are not aligned (ema_50 at $9.43 is above ema_10 $9.35 and ema_21 $9.31), indicating a mixed/trendless environment. Daily ADX is very low at 12.67 — one of the weakest trend readings in this analysis, confirming a choppy range. Daily RSI at 48.8 is neutral. Price pulled back from swing high $10.49 to $8.98 (a ~14% decline) and is recovering to $9.58. Current price is between the 61.8% daily Fib ($9.32) and 50% Fib ($9.54). While the Fibonacci zone is technically valid, the extremely weak ADX and non-aligned EMAs mean there is no confirmed trend to trade the pullback within. Hourly EMAs are aligned uptrend and hourly RSI 67.3 is elevated but not extreme. Without a confirmed daily uptrend, this is a coin flip. Neutral.",
+    "entry_price": 9.32,
+    "target_price": 10.0,
+    "stop_loss": 8.95,
+    "timeframe": "5-10 trading days"
+  },
+  "DOT-USD": {
+    "signal": "bearish",
+    "confidence": 58,
+    "reasoning": "DOT's daily EMAs are in downtrend alignment (ema_10 $1.269 < ema_21 $1.281 < ema_50 $1.354), and SMA-200 at $2.031 is massively above current price ($1.30), confirming entrenched long-term downtrend. Daily RSI at 46.6 is below 50, consistent with bearish momentum. Price is 6.4% below the 50 SMA. The daily Fibonacci from swing high $1.641 to swing low $1.165: current price $1.30 is near the 61.8% Fib at $1.347 — a natural resistance zone for a downtrend rally. Hourly RSI at 67.1 is elevated (approaching overbought) which may signal the hourly bounce is near exhaustion. MACD histogram on hourly is slightly negative (-0.0004), showing early weakness. Daily volume has been declining (150K vs 272K on the high day), and pullback volumes were moderate — not a clean capitulation. This is a rallying-into-resistance scenario in a downtrend. Bearish.",
+    "entry_price": 1.30,
+    "target_price": 1.195,
+    "stop_loss": 1.355,
+    "timeframe": "5-8 trading days"
+  },
+  "MATIC-USD": {
+    "signal": "neutral",
+    "confidence": 5,
+    "reasoning": "MATIC-USD appears to be delisted or unavailable — no price data, no indicators, and no market cap data returned. Cannot perform any technical analysis. Returning neutral with minimal confidence.",
+    "entry_price": 0.0,
+    "target_price": 0.0,
+    "stop_loss": 0.0,
+    "timeframe": "N/A"
+  },
+  "LINK-USD": {
+    "signal": "bullish",
+    "confidence": 50,
+    "reasoning": "LINK pulled back from the swing high of $9.927 to a low of $9.021 (a 9.1% retracement), and is now recovering at $9.49. Current price sits near the 38.2% daily Fibonacci level ($9.346) to 50% Fib ($9.166) zone — the pullback has found support at this level and is bouncing. Daily RSI at 51.5 is neutral (not overbought). MACD histogram is positive (0.033) and crossed above signal line. Stochastic k 60.2 > d 51.4 (bullish cross). Daily volume on the current bar (587K) is slightly above the 20-day average (575K), showing healthy participation on the recovery — not on the decline, which peaked at 706K on the swing high day. Hourly EMAs are aligned uptrend. However, daily EMAs are mixed (not cleanly aligned) and SMA-200 at $12.34 reflects the broader downtrend. Moderate bullish setup with entry at current pullback zone targeting swing high retest.",
+    "entry_price": 9.45,
+    "target_price": 9.93,
+    "stop_loss": 9.0,
+    "timeframe": "5-10 trading days"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "portfolio_summary": {
+    "total_capital": 100000,
+    "allocated_capital": 71900,
+    "cash_reserved": 28100,
+    "num_positions": 5,
+    "overall_market_view": "Selective risk-on in a Fear environment (F&G=32). BTC leads with record institutional inflows and exchange reserves at 7-year lows. XRP and LINK offer the best alt risk-reward backed by regulatory clarity and real enterprise adoption. ETH coiled for short-squeeze above $2,400. DOT, MATIC, SOL, and AVAX are either bearish/trendless/no-data and are skipped or held flat. Maintain elevated cash given macro uncertainty (FOMC April 28-29, tariff risks).",
+    "timeframe": "7-15 days"
+  },
+  "decisions": {
+    "BTC-USD": {
+      "action": "buy",
+      "quantity": 0.26,
+      "entry_price": 76500.0,
+      "target_price": 86000.0,
+      "stop_loss": 74000.0,
+      "position_size_usd": 19890.0,
+      "risk_reward": 3.8,
+      "timeframe": "10-15 days",
+      "confidence": 78,
+      "reasoning": "Highest-conviction long in the portfolio. Institutional demand is structurally overwhelming: Strategy $2.54B single-week purchase, ETF inflows $663M/day (first monthly net inflow after 4 months of outflows), exchange reserves at 7-year lows (2.21M BTC). US Strategic Bitcoin Reserve announcement within ~2 months and CLARITY Act markup imminent are catalysts. Fear & Greed at 32 is historically prime accumulation territory. Daily trend intact (EMAs aligned, ADX 31.6). Funding rates neutral-to-negative — not an overcrowded trade. Hourly RSI was 92 at ~$78,989, so entering on the pullback to $76,500 rather than chasing. 8/9 strategies bullish. Stop below $74,000 (prior support). R/R 3.8x meets criteria. Position sized at ~20% of capital (blue-chip allocation)."
+    },
+    "ETH-USD": {
+      "action": "buy",
+      "quantity": 7.0,
+      "entry_price": 2370.0,
+      "target_price": 2700.0,
+      "stop_loss": 2240.0,
+      "position_size_usd": 16590.0,
+      "risk_reward": 2.5,
+      "timeframe": "8-14 days",
+      "confidence": 62,
+      "reasoning": "Bullish with moderate conviction. Institutional accumulation is substantial: Bitmine 101,627 ETH (~$230M), ETH Foundation largest-ever staking deposit (22,517 ETH), 8 consecutive days of ETH ETF inflows ($493.7M total). Exchange reserves at record lows. Funding slightly negative = short-squeeze setup if $2,400 breaks. Pectra upgrade live. Price at $2,370 entry gives a defined risk structure: 5.5% stop, 13.9% target, 2.5x R/R (meets minimum). 5/9 strategies bullish. Key risks: ETH/BTC ratio at multi-year lows, KelpDAO DeFi hack overhang. Sized at ~16.5% of capital — smaller than BTC reflecting lower conviction and ETH/BTC headwinds."
+    },
+    "SOL-USD": {
+      "action": "skip",
+      "quantity": 0.0,
+      "entry_price": 0.0,
+      "target_price": 0.0,
+      "stop_loss": 0.0,
+      "position_size_usd": 0.0,
+      "risk_reward": 0.0,
+      "timeframe": "N/A",
+      "confidence": 38,
+      "reasoning": "Head Trader neutral at 38% confidence (below 40% threshold). R/R 1.8x on the Head Trader's setup fails the 2:1 minimum rule. Daily ADX only 13.8 — no trend. EMAs not aligned. Whale depositing 51,750 SOL to Binance is a bearish near-term signal. $270M Drift exploit weighs on sentiment. Record on-chain metrics are disconnected from price. Wait for confirmed break above $95 with volume before entering. Skipping."
+    },
+    "BNB-USD": {
+      "action": "skip",
+      "quantity": 0.0,
+      "entry_price": 0.0,
+      "target_price": 0.0,
+      "stop_loss": 0.0,
+      "position_size_usd": 0.0,
+      "risk_reward": 0.0,
+      "timeframe": "N/A",
+      "confidence": 48,
+      "reasoning": "Head Trader neutral at 48% confidence with R/R exactly 2.0x — borderline. Daily EMAs not aligned for uptrend (EMA10 < EMA50). ADX 22.8 below 25 threshold. Hourly RSI 87 and Z-score +2.30 signal near-term overbought requiring a pullback to $635 entry. 71.9% long ratio in perpetuals creates amplified downside risk if support breaks. Waiting for confirmed daily EMA fan and pullback to $635 before entering. Skipping this cycle."
+    },
+    "XRP-USD": {
+      "action": "buy",
+      "quantity": 12000.0,
+      "entry_price": 1.445,
+      "target_price": 1.62,
+      "stop_loss": 1.365,
+      "position_size_usd": 17340.0,
+      "risk_reward": 2.2,
+      "timeframe": "7-12 days",
+      "confidence": 68,
+      "reasoning": "Strongest regulatory story among alts: SEC-CFTC March 2026 ruling formally classified XRP as digital commodity, removing the primary multi-year overhang. 7 live spot XRP ETFs with $55.39M weekly inflow streak confirm institutional demand. 62% supply held by whale wallets at 5-year exchange-balance lows = supply squeeze setup. ADX 32.6 confirms real trend. 7/9 strategies bullish — widest consensus in the alt space. R/R 2.2x meets criteria. Key risks: Ripple escrow releases 1B XRP monthly (dilution), funding rates rising to 0.008% (longs building). Sized at ~17% of capital — second largest allocation given strong regulatory tailwinds and diversification benefit (payments sector vs BTC/ETH store-of-value and smart contracts)."
+    },
+    "ADA-USD": {
+      "action": "skip",
+      "quantity": 0.0,
+      "entry_price": 0.0,
+      "target_price": 0.0,
+      "stop_loss": 0.0,
+      "position_size_usd": 0.0,
+      "risk_reward": 0.0,
+      "timeframe": "N/A",
+      "confidence": 42,
+      "reasoning": "Head Trader neutral at 42% confidence. Daily EMA downtrend confirmed. 5 of 9 strategies bearish on technicals vs. 3 bullish on fundamentals/catalyst. Van Rossem hard fork is a binary catalyst — could be 'sell the news'. Momentum ranker rates ADA as weakest (rank 8/9). Entering against a confirmed downtrend requires breakout confirmation above $0.27 resistance. Skipping until technical structure improves."
+    },
+    "AVAX-USD": {
+      "action": "skip",
+      "quantity": 0.0,
+      "entry_price": 0.0,
+      "target_price": 0.0,
+      "stop_loss": 0.0,
+      "position_size_usd": 0.0,
+      "risk_reward": 0.0,
+      "timeframe": "N/A",
+      "confidence": 44,
+      "reasoning": "Head Trader neutral at 44% confidence. R/R on Head Trader's setup is 1.6x — fails the 2:1 minimum. Daily ADX 12.7 confirms no trend. 9/9 strategies neutral (no bullish, no bearish consensus). Although deeply negative funding (-0.03% to -0.05%) creates squeeze potential, a catalyst is required and none is imminent. Bitwise staking ETF is a positive but insufficient standalone trigger. Enter only on confirmed breakout above $10.50 with volume. Skipping."
+    },
+    "DOT-USD": {
+      "action": "skip",
+      "quantity": 0.0,
+      "entry_price": 0.0,
+      "target_price": 0.0,
+      "stop_loss": 0.0,
+      "position_size_usd": 0.0,
+      "risk_reward": 0.0,
+      "timeframe": "N/A",
+      "confidence": 62,
+      "reasoning": "Clear skip — bearish signal from Head Trader (62% confidence bearish), 7/9 strategies bearish. Head Trader's short setup (entry $1.30, target $1.15, stop $1.38) has R/R of 1.9x which fails the 2:1 minimum for opening a new short position. Daily EMA downtrend confirmed, 6.4% below 50-SMA, all-time BTC-relative lows. Hyperbridge exploit (fake 1B DOT minted on Ethereum April 13) is reputational damage. Crypto short positions also carry squeeze risk given negative funding. No trade in either direction."
+    },
+    "MATIC-USD": {
+      "action": "skip",
+      "quantity": 0.0,
+      "entry_price": 0.0,
+      "target_price": 0.0,
+      "stop_loss": 0.0,
+      "position_size_usd": 0.0,
+      "risk_reward": 0.0,
+      "timeframe": "N/A",
+      "confidence": 5,
+      "reasoning": "Delisted — MATIC-USD migrated to POL-USD (Polygon 2.0 rebrand) by March 26, 2026. No price data available on yfinance. Cannot establish entry, target, or stop levels. Skip as instructed."
+    },
+    "LINK-USD": {
+      "action": "buy",
+      "quantity": 1910.0,
+      "entry_price": 9.45,
+      "target_price": 11.0,
+      "stop_loss": 8.85,
+      "position_size_usd": 18049.5,
+      "risk_reward": 2.6,
+      "timeframe": "8-14 days",
+      "confidence": 67,
+      "reasoning": "Highest fundamental-to-price divergence in the portfolio. 1.2M LINK withdrawn from exchanges in 48 hours is a very strong on-chain accumulation signal. $68T OpenAssets tokenization partnership represents LINK's core use case scaling to institutional magnitude. CCIP zero-hack record is a critical trust differentiator post-KelpDAO — 'Chainlink is what DeFi should be' narrative. SWIFT + 100 banks + Deutsche Bank bond settlement live usage accelerating. Data Streams expanded to US equities April 12. Crypto sentiment bullish at 70% confidence (highest of all alts). 5/9 strategies bullish driven by fundamental/catalyst signals. R/R 2.6x meets criteria. Stop at $8.85 (prior swing low support). ADX 22.4 is the main risk (weak trend). Sized at ~18% of capital — infrastructure sector diversification complements L1 positions."
+    }
+  }
+}

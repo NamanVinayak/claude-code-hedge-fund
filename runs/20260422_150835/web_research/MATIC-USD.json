@@ -1,0 +1,29 @@
+{
+  "ticker": "MATIC-USD",
+  "research_date": "2026-04-22",
+  "macro_context": {
+    "market_sentiment": "MATIC-USD is effectively delisted/unavailable on yfinance — Polygon has rebranded its token from MATIC to POL as part of its 2.0 architecture upgrade. The migration from MATIC to POL token completed in late 2024/early 2025. Current ticker on exchanges may be POL-USD or MATIC-USD depending on the exchange. No price data available for MATIC-USD on yfinance.",
+    "btc_dominance": "~57-59% BTC dominance",
+    "total_market_cap": "Total crypto ~$2.60T. POL (formerly MATIC) market cap estimated ~$1-2B at current depressed levels.",
+    "fear_greed_index": "29/100 = Fear",
+    "fed_outlook": "Higher rates hurt Polygon/POL's DeFi ecosystem",
+    "institutional_flows": "Polygon partnered with major TradFi (JPMorgan Onyx, Deutsche Bank) for institutional blockchain. RWA tokenization platform active.",
+    "regulatory": "POL/MATIC viewed as utility token. Polygon network hosting institutional RWA tokenization platforms.",
+    "key_events": ["MATIC to POL rebrand/migration complete", "Polygon CDK (Chain Development Kit) adoption", "AggLayer cross-chain aggregation", "RWA tokenization partnerships", "Polygon PoS to zkEVM migration"]
+  },
+  "ticker_news": [
+    {"headline": "WARNING: MATIC-USD delisted on yfinance — token rebranded to POL in 2024/2025", "sentiment": "negative", "source": "yfinance data"},
+    {"headline": "Polygon 2.0 architecture with AggLayer unifying all ZK chains launches", "sentiment": "positive", "source": "Polygon Labs"},
+    {"headline": "JPMorgan's Onyx deploys on Polygon CDK for institutional settlements", "sentiment": "positive", "source": "JPMorgan"},
+    {"headline": "Polygon zkEVM now one of largest Ethereum L2s by TVL", "sentiment": "positive", "source": "DeFi Llama"},
+    {"headline": "POL staking live — token holders can stake for network rewards", "sentiment": "positive", "source": "Polygon blog"},
+    {"headline": "MATIC migration to POL completed — legacy MATIC still tradeable on some exchanges", "sentiment": "neutral", "source": "Polygon announcement"}
+  ],
+  "on_chain_signals": {
+    "whale_activity": "No reliable price data for MATIC-USD on yfinance. Token migration to POL creates uncertainty in tracking.",
+    "funding_rates": "MATIC perpetual futures still traded on some exchanges. Funding near neutral. Very low volume compared to peak.",
+    "exchange_flows": "MATIC/POL migration ongoing. Some exchanges using MATIC ticker, others POL. Confusing situation for on-chain tracking."
+  },
+  "development_activity": "Polygon Labs extremely active: AggLayer (ZK chain aggregation), CDK for building new chains, zkEVM Type 1 prover, Miden ZK virtual machine. One of the most active blockchain development teams. Institutional use cases (JPMorgan, SWIFT experiments) continue.",
+  "upcoming_catalysts": "AggLayer mainnet expansion. Institutional RWA tokenization growth. MATIC to POL migration completion cleanup. zkEVM performance improvements. NOTE: Investors should consider using POL-USD ticker instead of MATIC-USD for current price data."
+}

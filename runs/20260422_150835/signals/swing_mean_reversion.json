@@ -1,0 +1,92 @@
+{
+  "BTC-USD": {
+    "signal": "bearish",
+    "confidence": 68,
+    "reasoning": "BTC shows a compelling cross-timeframe overbought setup. On the hourly, Z-score has spiked to +2.20 (beyond the -2/+2 threshold), RSI is at an extreme 92.0, stochastic K at 93.6, MFI at 93.2, and Williams %R at -6.4 — every momentum oscillator is screaming overbought at the short-term level. Current price of $78,989 is pressing against hourly resistance at $79,081 and is near the daily Bollinger upper band ($78,902). On the daily timeframe, Z-score is 1.85 (approaching extreme) and price is +7.98% above the 50-SMA, which is a notable extension. The daily RSI (62.4) and stochastic (74.9) have not yet reached overbought extremes, which limits the daily conviction, but the hourly extreme with price at resistance suggests a near-term pullback toward the daily Bollinger middle/50-SMA is likely. Strategy: fade the hourly extreme with a target return to the daily 50-SMA ($70,711). Stop placed above hourly resistance/swing high at $79,200.",
+    "entry": 78989.0,
+    "target": 72406.0,
+    "stop": 80200.0,
+    "timeframe": "5-10 days"
+  },
+  "ETH-USD": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "ETH does not present a clean mean reversion setup. Daily Z-score is 1.39 — below the +2.0 threshold required for a strong overbought signal — and daily RSI at 55.3 is mid-range. Price is +8.3% above the 50-SMA, which is an extension worth watching, but the daily Bollinger position at 0.69 shows price is within the upper-middle band range, not pressing the upper band. On the hourly, RSI has just crossed 75 (76.9) and Z-score is 1.75 — mild overbought signals but no extreme. Recent price action shows a pullback from the Apr 17 high of $2,421 and a tepid recovery to $2,328 — no clear reversal candle at a defined extreme. No strong mean reversion setup; waiting for a more defined extreme.",
+    "entry": 2400.0,
+    "target": 2240.94,
+    "stop": 2480.0,
+    "timeframe": "7-12 days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 85,
+    "reasoning": "SOL is essentially at its mean across all key metrics. Daily Z-score is a near-perfect 0.03 — price is trading right at the 50-day statistical mean. Distance from 50-SMA is only +0.15%. Daily RSI is 50.6, stochastic K is 49.9, Williams %R is -50.1 — all perfectly centered. Bollinger Band position at 0.68 confirms price is in the middle-to-upper range of a normal band. The hourly shows some short-term upward momentum (RSI 74.3, Z-score 1.76) but no daily extreme exists. This is the definition of a mean reversion 'no-trade' zone — the strategy calls for waiting for Z-score < -2 or > +2. No setup available.",
+    "entry": 88.47,
+    "target": 86.0,
+    "stop": 90.5,
+    "timeframe": "3-7 days"
+  },
+  "BNB-USD": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": "BNB shows a strong hourly overbought condition with the hourly Z-score at +2.30 (above threshold), hourly RSI at 87.0 (extreme overbought), MFI at 88.7, and stochastic K at 80.6. Hourly Bollinger Band position is 0.85 — price is near the upper hourly band. However, the daily picture is more mixed: daily Z-score is only 0.20 (near mean), price is just +0.74% above the 50-SMA, and daily RSI at 54.0 shows no daily extreme. The discrepancy between hourly extreme overbought and daily near-mean creates a partial signal — the hourly extension may revert back to the daily mean (50-SMA at ~$627). The current price of $649.53 vs hourly 50-SMA at $634.66 shows a ~2.3% intraday extension. Entry at current price with target at daily 50-SMA; stop beyond hourly resistance at $655.",
+    "entry": 649.53,
+    "target": 627.18,
+    "stop": 655.0,
+    "timeframe": "3-7 days"
+  },
+  "XRP-USD": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "XRP lacks a clear mean reversion extreme. Daily Z-score is 0.86 — well within the -1 to +1 neutral zone by some measures and only slightly above at 0.86. Dist from 50-SMA is +3.3%, moderate. Daily RSI at 56.5 and Bollinger position at 0.80 show some upward bias but no extreme. The hourly MFI is extraordinarily high at 96.6, suggesting extreme buying pressure in recent hours, and hourly stochastic K is 76.9. However, the daily picture does not confirm an extreme, and the hourly overbought may reflect a short-term momentum spike rather than a sustainable reversion target. Without a daily Z-score extreme, the mean reversion thesis lacks foundation. Neutral — monitoring for daily Z-score to approach +2.",
+    "entry": 1.45,
+    "target": 1.386,
+    "stop": 1.51,
+    "timeframe": "5-8 days"
+  },
+  "ADA-USD": {
+    "signal": "neutral",
+    "confidence": 70,
+    "reasoning": "ADA is trading in a no-man's land for mean reversion. Daily Z-score is -0.54 — below the mean but nowhere near the -2.0 oversold extreme. Price is -2.5% below the 50-SMA, a mild under-extension that does not qualify as a mean reversion opportunity. Daily RSI at 42.9, stochastic K at 43.9, and Williams %R at -56.1 all show mild bearish bias but no oversold extreme. The daily EMA structure is in downtrend alignment, which means any reversion toward the mean faces structural resistance. On the hourly, a short-term bounce appears to be forming (RSI 75.9, MFI 83.2) but this is counter to the daily trend. No clean mean reversion setup — daily Z-score needs to reach -2.0 or below for an oversold entry.",
+    "entry": 0.255,
+    "target": 0.2561,
+    "stop": 0.236,
+    "timeframe": "5-10 days"
+  },
+  "AVAX-USD": {
+    "signal": "neutral",
+    "confidence": 80,
+    "reasoning": "AVAX is at its statistical mean. Daily Z-score is +0.18 and price is only +0.74% above the 50-SMA — no extension exists. Daily RSI is 48.8, stochastic K is 42.9, and Williams %R is -57.1, all centered in neutral territory. Bollinger Band position at 0.61 is mid-band. ADX at 12.7 is low, confirming a ranging environment with no directional momentum. On the hourly, Z-score is 1.46 and RSI is 67.3 — mild upward pressure but nothing extreme. This asset is in a tight consolidation range with no mean reversion opportunity in either direction. Waiting for an extreme.",
+    "entry": 9.58,
+    "target": 9.32,
+    "stop": 9.99,
+    "timeframe": "5-8 days"
+  },
+  "DOT-USD": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "DOT is below its 50-SMA by -6.38%, which is a notable extension below the mean, and the daily Z-score is -0.69. While price is extended to the downside in absolute terms, the Z-score at -0.69 does not yet meet the -2.0 threshold for a strong oversold mean reversion signal. The daily EMA structure is in downtrend alignment (bearish), which argues against a mean reversion long — further deterioration is possible. Daily RSI at 46.6 and stochastic K at 63.9 (surprisingly elevated given the downtrend, suggesting recent bounce from lows). On the hourly, a bounce is in progress with RSI 67.1 and Z-score 1.16. The recent price action shows a bounce from $1.24 lows back to $1.28-1.30, but the daily structure remains weak. Not yet at a statistical extreme warranting a mean reversion long — below mean but not extreme.",
+    "entry": 1.30,
+    "target": 1.367,
+    "stop": 1.235,
+    "timeframe": "7-12 days"
+  },
+  "MATIC-USD": {
+    "signal": "neutral",
+    "confidence": 5,
+    "reasoning": "MATIC-USD appears to be delisted or have no available price data. All indicator fields are empty, current price is null, and market cap is zero. Cannot perform any mean reversion analysis without price data. Returning neutral with minimal confidence.",
+    "entry": 0.0,
+    "target": 0.0,
+    "stop": 0.0,
+    "timeframe": "N/A"
+  },
+  "LINK-USD": {
+    "signal": "neutral",
+    "confidence": 65,
+    "reasoning": "LINK is within normal statistical range with no mean reversion extreme. Daily Z-score is 1.08 — within the -1 to +1 zone that the strategy defines as neutral, and only slightly above at 1.08. Price is +4.09% above the 50-SMA, a moderate extension that falls short of the >10% extreme threshold. Daily RSI at 51.5 is mid-range, Bollinger position at 0.77 is upper-middle band but not at the extreme. Hourly Z-score is 1.07 and RSI is 65.2 — mild momentum but nothing extreme. Recent price action shows a pullback from the Apr 17 high of $9.63 to a low of $9.02 on Apr 19, with recovery to $9.49 — a normal correction and recovery cycle. No statistical extreme on daily or hourly timeframes. Strategy calls for waiting.",
+    "entry": 9.49,
+    "target": 9.03,
+    "stop": 9.93,
+    "timeframe": "5-8 days"
+  }
+}

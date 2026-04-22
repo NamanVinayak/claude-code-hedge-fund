@@ -1,0 +1,102 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 78,
+    "reasoning": "BTC dominance at 57-59% confirms capital concentration in the store-of-value sector — the dominant rotation theme of this cycle. Daily indicators show strong momentum: RSI 62.4, MACD histogram positive and expanding (351), ADX 31.6 confirming trend strength. Price holds well above all short-term EMAs (EMA10 $74,731 vs EMA50 $72,108). ROC-21 at +11.9% leads all crypto sectors. The key divergence: hourly RSI is extremely overbought at 92.0 with hourly ADX 66.1 showing intense short-term momentum — this suggests a brief consolidation or shallow pullback before continuation. Bollinger position at 0.80 on daily, 0.83 on hourly — approaching upper band but not extended enough to reverse a strong macro rotation trend. Volume in line with 20-day average, confirming steady institutional flow rather than speculative frenzy. With BTC dominance elevated and alts underperforming, sector rotation capital continues flowing to store-of-value. Target: resistance zone $77,127; stop below 21-day EMA support ~$73,102. Near-term entry risk: hourly RSI at 92 warrants waiting for intraday pullback to ~$76,500-77,000 before adding.",
+    "entry": 77000.0,
+    "target": 82000.0,
+    "stop": 73000.0,
+    "timeframe": "7-14 days",
+    "sector": "store_of_value"
+  },
+  "ETH-USD": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "ETH is the largest smart contract L1 but is clearly underperforming BTC in this rotation cycle (BTC dominance rising). Daily RSI at 55.3 is moderate — neither a sector inflow nor outflow signal. Price is below its SMA-200 ($2,834) by a wide margin, reflecting persistent underperformance vs. the prior cycle. Recent price action shows a 5-day decline (peak $2,421 on Apr 17 to close $2,328 on Apr 21) with negative 5-day ROC (-0.88%). MACD histogram is barely positive (2.86) — momentum recovering but fragile. The DeFi sector overhang from the KelpDAO $292M exploit weighs on smart contract L1 sentiment broadly. Hourly RSI at 76.9 and hourly EMAs in uptrend suggest some short-term recovery, but daily timeframe lacks conviction for a rotation entry. ETH is tracking its sector (smart contract L1) normally — no clear divergence that signals a rotation entry or exit. Volume declining (0.92x 20-day avg). Neutral: hold existing positions, no new swing entry warranted until BTC dominance shows signs of peaking and capital begins rotating to L1s.",
+    "entry": 2320.0,
+    "target": 2550.0,
+    "stop": 2150.0,
+    "timeframe": "10-15 days",
+    "sector": "smart_contract_l1"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "SOL is the weakest smart contract L1 in relative performance (BTC>ETH>>SOL per macro context). Daily EMAs are NOT aligned in uptrend (EMA10 $85.45 < EMA50 $87.14) — a bearish EMA structure. Price sits at $86 vs SMA-200 of $124.82, reflecting severe underperformance vs prior cycle highs. Daily RSI at 50.6 is exactly neutral. MACD histogram is barely positive at 0.34, just crossing from negative — a weak recovery signal, not a rotation entry. ADX at 13.8 is very low, indicating no trending behavior — the sector is range-bound and directionless. 5-day ROC of -3.33% shows recent weakness; 10-day ROC only +1.27%. Volume is 21% below 20-day average, indicating declining participation. Hourly indicators show some short-term recovery (hourly RSI 74.3, hourly EMAs uptrend) but this is a bounce within a broader range, not a sector rotation inflow signal. The DeFi sector headwinds from KelpDAO exploit further suppress Solana ecosystem sentiment. No rotation signal — SOL is neither an outperformer to buy nor a clear short candidate given its prior deep decline.",
+    "entry": 85.5,
+    "target": 93.0,
+    "stop": 81.0,
+    "timeframe": "8-12 days",
+    "sector": "smart_contract_l1"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 52,
+    "reasoning": "Exchange tokens (BNB) show defensive characteristics in this rotation — moderate performance, not a leadership sector but not breaking down. Daily RSI at 54.0 is mildly positive. EMAs are NOT in uptrend alignment (EMA10 $624 < EMA50 $633) — flat/mixed structure. However MACD histogram just turned positive (3.64) after being negative, suggesting a potential rotation inflection. 5-day ROC is slightly negative (-0.60%) but 10-day ROC is +4.0% — medium-term momentum is constructive. Bollinger position at 0.80 shows relative strength within its range. Hourly picture is notably stronger: hourly RSI 87.0 (overbought near-term), hourly EMAs fully aligned uptrend, hourly ADX 57.6 confirming strong short-term momentum — but this is likely a near-term overextension. MFI at 64.9 daily shows moderate money flow. BNB tends to be defensive in risk-off crypto environments and is holding its range better than the weaker L1s. However, as an exchange token correlated to broader exchange volumes and trading activity, it cannot lead a rally without broader market rotation. Current price ~$632 near daily resistance $643. Slight positive lean but insufficient for a clear rotation buy signal — wait for daily MACD cross confirmation.",
+    "entry": 625.0,
+    "target": 665.0,
+    "stop": 605.0,
+    "timeframe": "8-12 days",
+    "sector": "exchange_token"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 65,
+    "reasoning": "Payments sector (XRP) is showing notable relative strength driven by regulatory catalysts — the key rotation theme in April 2026. Daily RSI at 56.5 is constructive but not overbought. ADX at 32.6 confirms a trend is established. MACD histogram positive at 0.0099 and turning up. ROC-10 at +5.63% and ROC-21 at +6.83% outperform most other sectors in the short-to-medium term. Price is holding above key support $1.3156 and the 50 EMA ($1.4122). The 21-day ROC of +6.8% compares favorably to ETH (+10.6%), BNB (+2.4%), SOL (+3.5%), ADA (+3.3%), and AVAX (+5.4%) — suggesting XRP is in the leading group of the non-BTC rotation. Hourly indicators confirm: hourly EMAs fully aligned uptrend, hourly RSI at 68.9 (elevated but not overbought), hourly ADX 42.6, and MFI 96.6 (very high — institutional buying pressure on hourly timeframe). The payments sector regulatory tailwinds are a sector-specific catalyst that can drive rotation independent of the broader altcoin cycle. Entry near current price with target at prior swing high $1.54; stop below recent lows ~$1.32.",
+    "entry": 1.44,
+    "target": 1.60,
+    "stop": 1.32,
+    "timeframe": "7-12 days",
+    "sector": "payments"
+  },
+  "ADA-USD": {
+    "signal": "bearish",
+    "confidence": 58,
+    "reasoning": "ADA (research-driven L1) is in clear sector outflow — daily EMAs are aligned in DOWNTREND (EMA10 < EMA21 < EMA50), the only asset in this portfolio with a confirmed EMA downtrend. Price below SMA-50 by -2.52% and trading far below SMA-200 ($0.395 vs $0.255 current). Daily RSI at 42.9 is sub-50 and trending lower, indicating sector outflows. 5-day ROC of -3.70% is the worst performer in this set over the short term. Z-score of -0.54 shows price is below its historical mean. MACD is negative (histogram barely ticked up to 0.0007 — insufficient for a reversal signal). Volume declining to 86% of 20-day average. MFI at 52.8 does not show accumulation. The hourly bounce (hourly RSI 75.9, hourly EMAs uptrend) is a short-term technical bounce after an oversold flush — typical before resumption of the downtrend. Sector context: ADA has been underperforming its research-driven L1 peers for multiple cycles; BTC dominance regime suppresses all alternative L1 rotation. No regulatory catalyst or macro theme supports ADA outperformance. Bearish for swing — target retest of support $0.236, stop above recent consolidation high $0.264.",
+    "entry": 0.252,
+    "target": 0.220,
+    "stop": 0.264,
+    "timeframe": "8-14 days",
+    "sector": "smart_contract_l1"
+  },
+  "AVAX-USD": {
+    "signal": "neutral",
+    "confidence": 38,
+    "reasoning": "AVAX (smart contract L1) shows weak and directionless sector positioning. Daily EMAs are NOT in uptrend or downtrend — completely flat (EMA10 $9.35, EMA21 $9.31, EMA50 $9.43 — all clustered together). ADX at 12.7 is the lowest in the portfolio, confirming no trend strength whatsoever. Daily RSI at 48.8 is nearly exactly neutral. 5-day ROC of -3.50% is weak. Z-score of 0.18 is almost perfectly mean-reverting. Price is hovering right at the 50 SMA ($9.32 vs SMA-50 $9.32). Bollinger bands show moderate width with price in the middle — a classic no-signal zone. The SMA-200 at $13.18 shows just how far AVAX has lagged from its prior cycle peaks. Hourly indicators show a small recovery (hourly RSI 67.3, hourly EMAs uptrend) but hourly MACD histogram is turning negative (-0.0033), suggesting the hourly bounce may be fading. DeFi sector headwinds from KelpDAO exploit weigh on the Avalanche ecosystem specifically. No rotation signal in either direction — AVAX is tracking the sideways smart contract L1 sector with no leadership.",
+    "entry": 9.30,
+    "target": 10.20,
+    "stop": 8.75,
+    "timeframe": "10-15 days",
+    "sector": "smart_contract_l1"
+  },
+  "DOT-USD": {
+    "signal": "bearish",
+    "confidence": 55,
+    "reasoning": "DOT (smart contract L1 / interoperability) is in sector outflow mode alongside ADA. Daily EMAs are aligned in DOWNTREND (EMA10 $1.269 < EMA21 $1.281 < EMA50 $1.354) — confirmed downtrend structure. Price is below SMA-50 by -6.4%, the largest negative deviation vs SMA-50 in this portfolio. Daily RSI at 46.6 is sub-50. 5-day ROC of -3.85% is the second worst performer short-term. Negative MACD line (-0.022) though histogram just ticked positive (0.011) — early sign of potential base-building but not confirmed rotation inflow. Z-score of -0.69 shows price below historical mean. Volume declining (83% of 20-day avg). SMA-200 at $2.03 highlights the long-term underperformance relative to prior cycle. Hourly shows some recovery (hourly RSI 67.1, hourly EMAs aligned uptrend) but hourly MACD histogram is slightly negative (-0.0004), stalling the hourly bounce. MFI daily at 50.2 (neutral — no accumulation). The Polkadot ecosystem has struggled to attract the next wave of developer activity vs newer L1 alternatives. With BTC dominance elevated and smart contract L1 rotation still early, DOT is one of the weaker relative performers. Bearish swing setup targeting support retest $1.165.",
+    "entry": 1.275,
+    "target": 1.165,
+    "stop": 1.345,
+    "timeframe": "8-14 days",
+    "sector": "smart_contract_l1"
+  },
+  "MATIC-USD": {
+    "signal": "neutral",
+    "confidence": 5,
+    "reasoning": "MATIC-USD has empty price data — ticker is delisted or no longer trading under this symbol (likely migrated to POL-USD). Cannot perform sector rotation analysis without price data. Returning neutral with minimum confidence.",
+    "entry": 0.0,
+    "target": 0.0,
+    "stop": 0.0,
+    "timeframe": "N/A",
+    "sector": "l2_scaling"
+  },
+  "LINK-USD": {
+    "signal": "bullish",
+    "confidence": 60,
+    "reasoning": "LINK (infrastructure/oracle) presents a compelling sector rotation opportunity despite recent price weakness. The macro context notes whale accumulation in LINK despite price weakness — a classic divergence signal where smart money is rotating in before price confirms. Daily RSI at 51.5 is neutral-to-positive, holding above 50 even after the 5-day price decline. Price is above SMA-50 by +4.1% — relative strength vs DOT (-6.4%) and ADA (-2.5%) is notable. MACD histogram is positive (0.033) and the MACD line just crossed above the signal line — an early rotation entry signal. ROC-21 of +7.1% is among the better performers in this set. Volume on Apr 21 was above 20-day average (1.02x) — the only asset showing above-average volume on recent close, suggesting accumulation. Bollinger position at 0.77 shows price in upper half of range. The oracle/infrastructure sector (LINK) tends to lead recoveries as DeFi rebuilds post-exploit — the KelpDAO aftermath may actually drive demand for better oracle security, benefiting LINK ecosystem. Hourly MACD histogram slightly negative (-0.0034) suggesting a brief pause, but hourly RSI 65.2 and all EMAs in uptrend confirm the underlying hourly trend is positive. Entry near support ~$9.30, target prior resistance $9.93 (swing high), stop below $8.63 (support level).",
+    "entry": 9.35,
+    "target": 10.20,
+    "stop": 8.63,
+    "timeframe": "8-15 days",
+    "sector": "infrastructure"
+  }
+}

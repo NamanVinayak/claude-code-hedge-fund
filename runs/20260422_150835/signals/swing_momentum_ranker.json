@@ -1,0 +1,102 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 82,
+    "reasoning": "BTC shows the strongest momentum profile across the board. All three ROC timeframes are positive and accelerating: 5-day +1.60%, 10-day +4.52%, 21-day +11.90% — a classic momentum stack. Daily EMAs are fully aligned in uptrend (10>21>50). RSI 62.4 on daily is healthy momentum without being overbought. MACD histogram expanding positive (+351). Hourly EMAs also fully aligned with ADX 66 confirming a powerful short-term trend. Price at 0.804 BB position (near upper band but not extended). ADX 31.6 daily confirms trend strength. MFI 77 shows institutional money flow support. Only caution: hourly RSI 92 signals short-term extension — a minor pullback to $77,000-$77,500 range would be an ideal entry. Price is above all EMAs including 50-day SMA. Relative to the peer group, BTC's multi-timeframe momentum convergence is clearly the strongest.",
+    "entry": 78000.0,
+    "target": 84500.0,
+    "stop": 75500.0,
+    "timeframe": "5-10 days",
+    "momentum_rank": 1
+  },
+  "BNB-USD": {
+    "signal": "bullish",
+    "confidence": 68,
+    "reasoning": "BNB shows strong medium-term momentum with 10-day ROC +4.02% and 21-day +2.39%, though the 5-day ROC is slightly negative (-0.60%) which tempers full acceleration. Hourly EMAs fully aligned uptrend with ADX 57.6 — very strong short-term trend. Hourly ROC all positive across 5/10/21-hour. MACD histogram is strongly positive on daily (+3.64) and positive on hourly (+0.94). Hourly RSI 87 and MFI 88.7 indicate overbought short-term conditions — near-term pullback likely before continuation. Daily stochastic K>D crossup (71.6 vs 61.5) is bullish. CCI 108 daily confirms positive momentum. The 5-day negative ROC is the main drag on confidence — momentum decelerated slightly in the most recent week even as the trend remained intact on longer timeframes.",
+    "entry": 640.0,
+    "target": 680.0,
+    "stop": 620.0,
+    "timeframe": "5-10 days",
+    "momentum_rank": 2
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 62,
+    "reasoning": "XRP has solid medium-term momentum: 10-day ROC +5.63% and 21-day +6.83% are above most peers. However the 5-day ROC is negative (-1.43%), signaling recent deceleration. Hourly EMAs are fully aligned uptrend with ADX 42.6 confirming trend. Hourly RSI 69 is approaching overbought. Daily ADX 32.6 shows a decent trend in place. Price is above 50-day EMA (+3.3%). MACD histogram positive on both daily and hourly. MFI 96.6 on hourly suggests strong buying pressure short-term. The 5-day pullback to ~$1.39-1.43 zone may represent a consolidation before the next leg up consistent with the longer 21-day uptrend. Risk is that negative 5-day momentum continues and the 10-day ROC rolls over.",
+    "entry": 1.44,
+    "target": 1.58,
+    "stop": 1.36,
+    "timeframe": "5-12 days",
+    "momentum_rank": 3
+  },
+  "ETH-USD": {
+    "signal": "neutral",
+    "confidence": 52,
+    "reasoning": "ETH presents mixed momentum signals. 21-day ROC is strong at +10.61% but 10-day is modest (+1.86%) and 5-day is negative (-0.88%). This indicates medium-term momentum has stalled in the near term. Daily EMAs are aligned uptrend (all three in order), which is positive. However MACD histogram on daily is barely positive (+2.86) and very small relative to price. Hourly EMAs are aligned up with RSI 76.9 (near overbought) and ADX 53.8. The hourly stochastic K is below D (76.4 vs 85.0) suggesting momentum may be rolling over on the hourly. Price is above 50-day EMA (+8.3%) which is extended. Volume slightly below average (0.92x). The divergence between strong 21-day and weak 5-day creates a mixed picture — waiting for renewed 5-day positive ROC to confirm re-acceleration.",
+    "entry": 2350.0,
+    "target": 2480.0,
+    "stop": 2240.0,
+    "timeframe": "7-14 days",
+    "momentum_rank": 4
+  },
+  "LINK-USD": {
+    "signal": "neutral",
+    "confidence": 50,
+    "reasoning": "LINK has decent 21-day momentum (+7.07%) and 10-day (+3.63%) but the 5-day ROC has turned negative (-1.91%), pointing to recent deceleration. Hourly EMAs are fully aligned uptrend, but both hourly 5-day and 10-day ROC are negative (-0.28%, -0.37%) — momentum is decelerating across short-term timeframes. The hourly MACD histogram is slightly negative (-0.003) and stochastic K is below D (59.5 vs 72.0), indicating a potential short-term rollover. Volume is on-par with average (1.02x), which is neutral. Daily CCI 94.8 and daily MACD histogram positive are positives. The divergence between good longer-term ROC and negative short-term ROC on both daily and hourly timeframes warrants caution. Awaiting momentum re-acceleration on 5-day timeframe before entering bullish.",
+    "entry": 9.45,
+    "target": 10.20,
+    "stop": 8.95,
+    "timeframe": "7-14 days",
+    "momentum_rank": 5
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "SOL shows conflicting signals across timeframes. The 5-day ROC is negative (-3.33%) — the sharpest short-term pullback after a moderate 21-day gain (+3.52%). Crucially, daily EMAs are NOT aligned in an uptrend (ema_50 > ema_21, price at 50-EMA, dist_from_50sma only 0.15%) — price is stalling at the 50-day moving average, a key technical decision point. Daily ADX is only 13.8, extremely weak, indicating no established trend. Daily RSI 50.6 is neutral with no directional conviction. Hourly EMAs are aligned uptrend and hourly RSI 74.3 shows short-term buying, but hourly MFI 86.3 is overbought suggesting the bounce may be exhausting. MACD histogram on daily is barely positive (0.337). Volume declining (0.79x average). SOL needs to clear and hold above the 50-day EMA with expanding volume to confirm bullish momentum.",
+    "entry": 87.0,
+    "target": 96.0,
+    "stop": 83.0,
+    "timeframe": "7-14 days",
+    "momentum_rank": 6
+  },
+  "AVAX-USD": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "AVAX has the weakest daily trend confirmation: ADX only 12.7 indicates virtually no trend in place. The 5-day ROC is -3.50%, 10-day is barely positive (+0.11%), and 21-day is +5.36% — the momentum profile is deteriorating across shorter timeframes. Daily RSI 48.8 is below neutral. Daily stochastic K 42.9 and D 43.5 are both below 50, pointing to bearish bias. Price is roughly at the 50-day EMA (dist_from_50sma_pct only +0.74%). Hourly MACD histogram is slightly negative (-0.003) suggesting momentum turning down on the hourly. Hourly EMAs are aligned uptrend but ROC momentum is flat-to-negative (5H: 0.00%, 10H: -0.42%). Volume trending below average (0.93x). Only the 21-day ROC offers any positive signal. Insufficient momentum to establish a swing position.",
+    "entry": 9.40,
+    "target": 10.20,
+    "stop": 8.85,
+    "timeframe": "8-15 days",
+    "momentum_rank": 7
+  },
+  "ADA-USD": {
+    "signal": "bearish",
+    "confidence": 60,
+    "reasoning": "ADA is the clearest bearish momentum case. Daily EMAs are aligned in DOWNTREND (ema_10 < ema_21 < ema_50), which is the primary bearish signal. ROC across 5-day (-3.70%) and 10-day (-0.005%) are both negative or flat, with 21-day barely positive (+3.35%) — the short-term trend is clearly down. RSI 42.9 is below the neutral 50 level, confirming bearish momentum. Price is below the 50-day EMA by -2.5%. Daily ADX 16.4 is weak but hourly ADX 35.8 shows active trend on short-term. Hourly ROC is negative on both 5H (-0.20%) and 10H (-0.27%), confirming momentum deteriorating across all short timeframes. Volume below average (0.86x — no buying demand). MFI 52.8 is neutral but price action is distinctly bearish. Z-score -0.54 is below mean. ADA is the weakest fundamental momentum candidate in the group.",
+    "entry": 0.255,
+    "target": 0.225,
+    "stop": 0.270,
+    "timeframe": "5-10 days",
+    "momentum_rank": 8
+  },
+  "DOT-USD": {
+    "signal": "bearish",
+    "confidence": 65,
+    "reasoning": "DOT is the weakest momentum asset in the group. Daily EMAs are aligned in DOWNTREND (ema_10 < ema_21 < ema_50), the strongest bearish signal. ROC is negative on 5-day (-3.85%) and 10-day (-0.60%) — the only asset besides ADA to show negative 10-day momentum. Price is significantly below its 50-day EMA (-6.38%), the largest negative deviation in the peer group. Z-score -0.69 is below mean. RSI 46.6 below neutral. Hourly MACD histogram is slightly negative (-0.0004) and hourly ROC is negative on both 5H and 10H (-0.84% each). Daily ADX 23.9 confirms moderate downtrend with conviction. Volume declining (0.83x average — no buying demand). The only mild positive is the daily MACD histogram recently turning positive (0.0106), suggesting very early potential bottoming, but this is insufficient to overcome the overwhelmingly bearish momentum picture. DOT ranks last among assets with data.",
+    "entry": 1.30,
+    "target": 1.14,
+    "stop": 1.37,
+    "timeframe": "5-10 days",
+    "momentum_rank": 9
+  },
+  "MATIC-USD": {
+    "signal": "neutral",
+    "confidence": 10,
+    "reasoning": "MATIC-USD price data is unavailable — the asset appears to have been delisted or migrated (Polygon transitioned to POL). No price history, indicators, or market cap data are available to perform any momentum analysis. Assigning neutral signal with minimum confidence.",
+    "entry": null,
+    "target": null,
+    "stop": null,
+    "timeframe": "N/A",
+    "momentum_rank": 10
+  }
+}
