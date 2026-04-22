@@ -1,0 +1,94 @@
+{
+  "mode": "swing",
+  "asset_type": "crypto",
+  "run_date": "2026-04-22",
+  "tickers": ["BTC-USD", "ETH-USD", "SOL-USD", "BNB-USD", "XRP-USD"],
+
+  "market_context": {
+    "headline": "Crypto in Fear but Structural Bids Hold Firm",
+    "plain_english": "The crypto market is in 'Fear' territory today — the Fear & Greed Index reads 29 out of 100 — following a $292 million hack of the KelpDAO bridge on April 20 that triggered $14 billion in withdrawals from DeFi protocols. Bitcoin dropped 5% over the weekend but has recovered to $77,464. Despite the fear, the underlying institutional data is strongly bullish: nearly $1 billion in Bitcoin ETF inflows last week, whale wallets accumulating 270,000 BTC in 30 days (the most since 2013), and exchange reserves at 7-year lows. This is the classic 'Fear & Greed bottom' setup — retail is scared while institutions are buying.",
+    "key_macro_risks": [
+      "Iran ceasefire deadline April 23 — if talks collapse, geopolitical risk-off selling likely across all risk assets",
+      "FOMC meeting April 28-29 — Fed expected to hold rates; any hawkish surprise = headwind, dovish surprise = sharp rally",
+      "KelpDAO/Aave bad debt — DeFi contagion not fully resolved, could pressure ETH restaking tokens"
+    ]
+  },
+
+  "decisions_explained": {
+    "BTC-USD": {
+      "action": "BUY",
+      "entry": 76500,
+      "target": 82500,
+      "stop": 73500,
+      "quantity": 0.326,
+      "allocation_pct": 25,
+      "risk_reward": "2.0:1",
+      "timeframe": "7-14 days",
+      "why_we_bought": "Bitcoin is the anchor of this portfolio for a simple reason: it has the strongest combination of trend, momentum, and institutional demand of any asset in our five-ticker basket. Six out of nine strategy signals were bullish. The trend-following system sees clean EMA alignment (short averages above long averages) with ADX at 32 — that's a confirmed, strong trend. The momentum system shows price return accelerating across all timeframes. Most importantly, 270,000 BTC were bought by whale wallets in 30 days while exchange reserves hit 7-year lows — supply is shrinking as demand grows.",
+      "why_not_higher_allocation": "Short-term technicals show overbought conditions on the hourly chart (Stochastic at 90, Money Flow Index collapsing to 13 while price is at highs — a bearish divergence). The mean-reversion strategy flagged this as a 'fade' setup. We respect that by not chasing: entry is at $76,500, slightly below current price, to catch any minor pullback.",
+      "what_could_go_wrong": "Iran talks collapse on April 23 = immediate risk-off selldown. FOMC hawkish hold on April 28 = liquidity headwind. Stop at $73,500 limits loss to $975 per BTC (1.27% of portfolio on this position)."
+    },
+    "ETH-USD": {
+      "action": "BUY",
+      "entry": 2310,
+      "target": 2550,
+      "stop": 2210,
+      "quantity": 10.82,
+      "allocation_pct": 25,
+      "risk_reward": "2.4:1",
+      "timeframe": "7-14 days",
+      "why_we_bought": "Ethereum is the highest-conviction setup in this basket when you look at institutional flows. The Ethereum Foundation — which had been selling ETH for years to fund operations — just completed staking 70,000 ETH and stopped selling. Corporate buyers stepped in: Bitmine purchased 101,627 ETH ($230M) this week, the largest single-week corporate ETH purchase of 2026. Spot ETH ETF cumulative inflows hit a record $11.8 billion. And there's a hard technical catalyst: the Glamsterdam upgrade (targeted May-June 2026) promises 78.6% gas fee reduction and 10,000 TPS — Ethereum's biggest upgrade since The Merge.",
+      "why_not_higher_allocation": "The momentum strategy flagged that ETH's 5-day return has turned slightly negative (-1.87%) even though the 21-day return is strong (+14.4%). This suggests a short-term digestion period. The mean-reversion system also sees ETH as extended on the hourly chart. Entry at $2,310 (slightly below current $2,360) exploits this short-term weakness.",
+      "what_could_go_wrong": "KelpDAO hack contagion spreading to EigenLayer restaking ecosystem = ETH staking products face redemption pressure. ETH failed its last breakout attempt at $2,421 — a second failure would be technically damaging. Stop at $2,210 protects capital."
+    },
+    "XRP-USD": {
+      "action": "BUY",
+      "entry": 1.43,
+      "target": 1.56,
+      "stop": 1.375,
+      "quantity": 10489,
+      "allocation_pct": 15,
+      "risk_reward": "2.36:1",
+      "timeframe": "5-12 days",
+      "why_we_bought": "XRP has the best risk-to-reward setup in this basket (2.36:1) and is sitting on top of two imminent binary catalysts. First: the CLARITY Act is heading to a Senate Banking Committee vote late April — this would permanently classify XRP as a digital commodity under U.S. federal law, removing the regulatory uncertainty that has capped XRP's institutional adoption for years. Second: GraniteShares is launching 3x leveraged XRP ETFs on April 23, which increases price sensitivity. Meanwhile, whale wallets now hold a record 62% of circulating XRP supply (up from 54% in early 2025), and weekly ETF inflows of $55.4M are the strongest of 2026.",
+      "why_not_higher_allocation": "Position is sized at 15% (not the full 25%) because CLARITY Act is a binary event — if the vote is delayed or fails, the regulatory premium in XRP's price could evaporate. Half-size now, with the plan to add if the vote passes.",
+      "what_could_go_wrong": "CLARITY Act delay or defeat = sharp reversal. 89.8 million XRP moved to Coinbase on April 13 remains an unresolved potential sell overhang. Leveraged ETF launch is two-edged — amplifies downside if market weakens."
+    },
+    "SOL-USD": {
+      "action": "HOLD",
+      "entry": null,
+      "target": null,
+      "stop": null,
+      "quantity": 0,
+      "allocation_pct": 0,
+      "why_no_trade": "SOL is in a different part of the market cycle than BTC and ETH. The trend-following system requires EMA alignment (short averages above long averages) — SOL fails this test with the 50-day EMA still above the 10-day EMA. The ADX reading of 15.8 confirms the market is non-trending and choppy. Most telling: the sector rotation system is actually bearish on SOL, meaning capital is actively flowing OUT of Solana and INTO BTC/ETH. The longer-term catalysts (Firedancer upgrade H2 2026, Goldman Sachs $108M institutional position, Standard Chartered $250 price target) are real and exciting, but they are 3-6 month stories, not 2-20 day swing trades.",
+      "when_to_reconsider": "Watch for: daily EMA re-alignment (10-day crosses above 50-day), ADX rising above 25, and Firedancer launch news. That combination would signal a tradeable trend resumption."
+    },
+    "BNB-USD": {
+      "action": "HOLD",
+      "entry": null,
+      "target": null,
+      "stop": null,
+      "quantity": 0,
+      "allocation_pct": 0,
+      "why_no_trade": "BNB faces a sentiment headwind: it just lost its #3 market cap ranking to XRP on April 19. Margin pair delistings on April 24 add near-term volatility. While the AI agent growth story (150,000+ deployments on BNB Chain, 43,750% growth since January) is genuinely impressive, it hasn't yet translated into sustained price momentum — daily EMAs remain misaligned and only one of nine strategy signals was bullish. The quarterly burn of 1.57 million BNB ($1B) completed April 15 is a positive but appears already priced in.",
+      "when_to_reconsider": "A daily close above $643 on volume 1.5x+ average would signal a confirmed breakout. Also watch for BNB-specific ETF approval news."
+    }
+  },
+
+  "portfolio_summary": {
+    "total_deployed": 65000,
+    "cash_reserve": 35000,
+    "cash_reserve_reason": "FOMC April 28-29 and Iran deadline April 23 are binary macro gates. A 10-15% crypto selldown on bad news from either would create better entry points for all three active positions. The cash buffer allows us to average down or add new positions after clarity on both events.",
+    "active_positions": 3,
+    "combined_conviction": "moderate-high — 6-7 of 9 strategies bullish on the three active names",
+    "portfolio_max_loss_if_all_stops_hit": "$3,955 (4.0% of total $100,000 capital)"
+  },
+
+  "educational_concepts": {
+    "what_is_adx": "ADX (Average Directional Index) measures trend strength on a 0-100 scale. Below 20 = no trend (choppy). 20-25 = weak trend forming. 25-40 = confirmed trend. Above 40 = very strong trend. SOL at 15.8 and BNB at 21.8 are below the 25 threshold — there's no clean trend to ride. BTC at 32.3 and ETH at 34.2 are in confirmed trend territory.",
+    "what_is_mean_reversion": "Mean reversion is the idea that prices tend to return to their average over time. When a price gets too far above its 50-day moving average (measured by 'Z-score'), mean reversion traders bet on a pullback. BTC's Z-score of 1.80 and ETH's hourly Z-score of 2.64 flagged both as overextended. We don't ignore this signal — we use it to adjust entry points lower rather than chasing the current price.",
+    "what_is_fear_greed": "The Crypto Fear & Greed Index (0-100) measures market sentiment: 0-25 = Extreme Fear, 26-45 = Fear, 46-55 = Neutral, 56-75 = Greed, 76-100 = Extreme Greed. Today's reading of 29 (Fear) historically marks medium-term accumulation windows — not a signal to panic sell, but a signal that retail sentiment is depressed while institutional buyers are quietly accumulating.",
+    "why_not_all_in": "Diversifying across 3 of 5 tickers and holding 35% cash reflects uncertainty about near-term macro events. The FOMC and Iran deadline could cause sharp moves in either direction within the next 7 days. Swing trading is about capturing multi-day moves with defined risk — not betting the portfolio on any single outcome."
+  }
+}

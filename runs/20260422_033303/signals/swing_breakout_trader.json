@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 58,
+    "reasoning": "BTC has broken above its key daily resistance at $77,126 (swing high) with current price at $77,464. The hourly Bollinger Band position at 1.02 confirms price is trading above the upper band — a classic breakout signal. The daily MACD histogram is expanding at 377 (bullish), RSI at 67.2 is in bullish territory without being overbought, and EMAs are aligned uptrend on both daily and hourly timeframes. The measured move from the consolidation range ($77,126 - $65,955 = $11,171 range height) projects a target near $88,300. However, the key weakness is volume: daily volume ratio was only 1.087x the 20-day average on the breakout attempt, well below the 1.5x requirement. The April 17 breakout candle saw 54B vs avg 36.5B (1.48x — just shy of threshold). Hourly volume is suppressed at 0.357x avg, failing to confirm the breakout intraday. This is a low-confidence bullish setup — the structure is right but volume is not confirming. A high-volume close above $77,500 would upgrade this significantly.",
+    "entry": 77500.0,
+    "target": 88300.0,
+    "stop": 75200.0,
+    "timeframe": "7-14 trading days"
+  },
+  "ETH-USD": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "ETH is recovering from a pullback but has not yet broken above the key daily resistance at $2,421 (swing high). Current price is $2,360, roughly 2.5% below resistance. The daily Bollinger Band position at 0.681 shows price is in the middle of the daily range — no breakout on the daily timeframe. Daily RSI at 61.2 and MACD barely positive (histogram 5.5) show mild bullish momentum, but nothing decisive. Daily volume ratio is only 1.079x average — no volume surge. On the hourly timeframe, ETH shows more promise: price is above the upper Bollinger Band (position 1.069) with RSI 67.2 and a notable volume surge at 2.73x the 20-hour average. However, the hourly breakout is above a relatively minor intraday resistance ($2,370) rather than the major daily resistance ($2,421). Until ETH can close above $2,421 on the daily chart with volume 1.5x+ the 20-day average, no confirmed breakout trade exists. Watch for a breakout above $2,421 with volume for a trade entry.",
+    "entry": 2425.0,
+    "target": 2900.0,
+    "stop": 2290.0,
+    "timeframe": "8-15 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 32,
+    "reasoning": "SOL lacks the structural prerequisites for a clean breakout trade. Daily EMAs are NOT aligned uptrend (ema_aligned_uptrend: False) — EMA 50 at $87.18 is actually above EMA 10 ($85.33) and EMA 21 ($84.97), indicating recent bearish pressure. The ADX at 15.8 is very weak, confirming there is no established trend. Daily volume is below average at 0.83x — the opposite of what a breakout requires. The key daily resistance is $88.99, and SOL hit $90.67 on April 17 but failed to hold above it, creating a failed breakout pattern. Current price $87.19 is below that resistance. MACD histogram just turned slightly positive (0.37) and RSI at 57.5 is neutral. Hourly indicators are more constructive (EMA aligned, volume 2.58x) but this appears to be a modest intraday recovery within a bearish daily structure. SOL is in a wide consolidation range ($78.95 - $88.99) with no clear catalyst. Neutral — wait for a decisive daily close above $89 with strong volume before considering a long.",
+    "entry": 89.5,
+    "target": 97.0,
+    "stop": 83.0,
+    "timeframe": "6-12 trading days"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 38,
+    "reasoning": "BNB is approaching its daily resistance zone ($643.45) from below after a pullback, but has not broken out. Daily EMAs are NOT aligned uptrend (EMA 50 at $633.5 > EMA 10 at $622.3), suggesting the recent recovery is still within a bearish daily structure. ADX at 21.8 shows a weak-to-moderate trend. Daily volume ratio is 0.916x — below average, which is the opposite of what a breakout setup demands. The daily MACD histogram has just turned positive (3.79) after being negative, and RSI at 59.3 is modestly bullish. Current price $639.75 is near but below resistance $643.45. The April 17 candle that previously hit $643-$648 saw volume of 1.995B vs avg 1.679B (1.19x) — also below the 1.5x threshold. Hourly volume is elevated at 2.34x, showing intraday buying interest, but without daily volume confirmation. The range ($643 - $583 = $60) would project a target of ~$703 on a confirmed breakout. Wait for a daily close above $643.45 with volume above 2.5B (1.5x avg) before entry.",
+    "entry": 644.0,
+    "target": 703.0,
+    "stop": 613.0,
+    "timeframe": "7-12 trading days"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 52,
+    "reasoning": "XRP shows the most constructive setup among the group for an emerging breakout. Daily RSI at 61.8 is bullish, ADX at 31.7 shows a meaningful trend, MACD histogram is positive and rising (0.011), and the 21-day ROC of 7.73% shows sustained momentum. Daily volume at 1.204x average is above average but still short of the 1.5x confirmation threshold. Current price $1.444 is approaching key resistance at $1.477 (daily S/R) and $1.49 (Fib 23.6%). The Bollinger Band position of 0.795 shows price in the upper portion of the daily range without being overextended. On the hourly timeframe, EMAs are aligned uptrend, the Bollinger position is 0.808, and importantly, hourly volume is surging at 1.666x the 20-hour average — above the 1.5x confirmation threshold. This hourly volume surge is the key positive signal. The Bollinger Band width of 0.14 on daily shows enough room for expansion. A close above $1.477 with daily volume approaching 3.6M+ would confirm the breakout. The measured move from the range ($1.544 high - $1.316 low = $0.228) projects a target near $1.705 from the breakout level. Entry at current price with a stop just below $1.39 (below the recent consolidation).",
+    "entry": 1.445,
+    "target": 1.705,
+    "stop": 1.385,
+    "timeframe": "6-12 trading days"
+  }
+}

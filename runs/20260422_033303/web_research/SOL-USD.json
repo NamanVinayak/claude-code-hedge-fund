@@ -1,0 +1,54 @@
+{
+  "ticker": "SOL-USD",
+  "research_date": "2026-04-22",
+  "macro_context": {
+    "market_sentiment": "Overall crypto sentiment is deeply fearful following a $292M Kelp DAO exploit that triggered $14B in DeFi exodus. BTC is trading around $75,900-76,000, recovering modestly from a $74,525 low. Capital is concentrating in larger-cap assets while altcoins lag. BTC funding rates have been negative on Binance for 46 consecutive days, historically a precursor to a short squeeze.",
+    "btc_dominance": "BTC dominance is at approximately 57.1% as of mid-April 2026, down from a June 2025 peak of 65%. The market is in a transition zone between BTC-dominated cycle and broader altcoin rotation — altseason conditions have not yet emerged.",
+    "total_market_cap": "Total crypto market cap stands at approximately $2.52 trillion, down significantly from earlier highs. Bitcoin's market cap is roughly $1.53 trillion. The market has been under pressure from geopolitical tensions (US-Iran) and DeFi security incidents.",
+    "fear_greed_index": "27-29 (Fear) — the index dropped to 27 on April 19 (lowest in three weeks) and recovered slightly to 29 on April 20. Historically, readings below 30 have marked medium-term accumulation windows for long-term investors.",
+    "fed_outlook": "The Fed policy backdrop remains a headwind; Kevin Warsh (Trump's Fed chair nominee) had to disclose and divest crypto holdings including SOL, highlighting regulatory scrutiny of institutional crypto exposure. Markets are watching macro closely as US-Iran tensions pushed oil prices higher, creating risk-off sentiment.",
+    "institutional_flows": "Bitcoin spot ETFs saw $411.5M in a single-day net inflow (second-largest daily intake in April), with BlackRock IBIT attracting $214M in one day alone. Cumulative BTC ETF inflows have surpassed $53B total — more than triple pre-launch analyst predictions. Institutional buyers are accumulating during retail fear episodes. Solana ETFs recorded $35M in institutional inflows this week, with Goldman Sachs disclosing $108M in SOL ETF positions — the largest traditional-bank institutional Solana bet in 2026.",
+    "regulatory": "SEC is advancing 'Regulation Crypto' — Chairman Atkins confirmed the proposal is at the OIRA review stage (last step before publication), with a startup fundraising exemption included. Stablecoin legislation (GENIUS Act) may slip to May as banking lobbyists push back on yield-bearing stablecoin provisions. The White House released a stablecoin yield report concluding yield prohibitions would harm consumers without protecting bank lending. SEC also issued new guidance pushing stablecoins closer to cash status, easing capital rules.",
+    "key_events": [
+      "Senate Banking Committee potential GENIUS Act stablecoin markup week of April 27",
+      "Kevin Warsh Fed chair nomination hearing competing with crypto legislation calendar",
+      "SEC Regulation Crypto publication pending OIRA clearance",
+      "Ongoing Kelp DAO hack fallout — Aave bad debt, $6.6B capital outflows from DeFi",
+      "Drift Protocol recovery plan: Tether committed $147.5M to lead recovery"
+    ]
+  },
+  "ticker_news": [
+    {
+      "headline": "Goldman Sachs discloses $108M in SOL ETF positions, largest traditional bank institutional Solana bet in 2026",
+      "sentiment": "positive",
+      "source": "247wallst.com / cryptointegrat.com, April 2026"
+    },
+    {
+      "headline": "Standard Chartered sets $250 SOL price target ahead of Firedancer H2 2026 launch",
+      "sentiment": "positive",
+      "source": "openpr.com, April 2026"
+    },
+    {
+      "headline": "Solana Foundation launches security overhaul days after $270M Drift Protocol exploit in early April",
+      "sentiment": "negative",
+      "source": "coindesk.com, April 7, 2026"
+    },
+    {
+      "headline": "Wrapped XRP (wXRP) goes live on Solana via Hex Trust and LayerZero, pulling $100M into Solana DeFi on day one",
+      "sentiment": "positive",
+      "source": "coincentral.com, April 18, 2026"
+    },
+    {
+      "headline": "Solana Foundation declares itself a leader in 'agentic payments', signaling strategic pivot toward AI-driven financial transactions on-chain",
+      "sentiment": "positive",
+      "source": "cryptointegrat.com, April 18, 2026"
+    }
+  ],
+  "on_chain_signals": {
+    "whale_activity": "Sustained whale accumulation continues through April 2026 — large wallets have been purchasing SOL in batches of 10+, concentrated in high-liquidity assets. Santiment behavioral heuristic score is ~70%, indicating conviction-driven accumulation rather than momentum chasing. A notable $56M whale transfer was flagged on AMBCrypto. Whales appear to be quietly positioning for a longer-term recovery rather than chasing short-term price moves.",
+    "funding_rates": "SOL perpetual funding rates were at -0.014% (negative) as of late February 2026, indicating a market bias toward shorts. With BTC funding rates also negative for 46 consecutive days on Binance, the broader market is net short, historically a setup for short squeeze. Negative funding for SOL suggests longs are not paying premiums — either a contrarian accumulation signal or continued bearish positioning by futures traders.",
+    "exchange_flows": "Approximately 1.40 million SOL (~$110M) moved to exchanges within a 72-hour window in April, signaling potential selling pressure. Solana-linked ETFs recorded net weekly outflows of $1.27M in mid-April, with AUM at $817.61M (down from $1.1B peak). Daily transactions dropped to 79.8M, the lowest since January 2026. Mixed signals: ETF outflows and exchange inflows suggest near-term selling pressure, but whale accumulation on-chain is occurring simultaneously."
+  },
+  "development_activity": "Solana's 2026 technical roadmap is focused on institutional-grade hardening. Key milestones: (1) P-Token standard (SIMD-0266) approved in early March, live on testnet mid-March — reduces token transfer compute costs by 95-98%, mainnet deployment targeted for later in 2026. (2) Firedancer validator client and Alpenglow consensus protocol upgrades in H2 2026 — Alpenglow targets 150ms finality, removing Proof of History and on-chain vote transactions. (3) ZK-compression primitive live, enabling token creation at a fraction of previous costs. (4) Over 10,000 all-time unique developers on the network as of late March 2026. (5) Mobile stack expansion ongoing. Developer activity is high and accelerating with 83% YoY growth in active developers through 2024-2025.",
+  "upcoming_catalysts": "1) Firedancer + Alpenglow consensus upgrade launch targeted for H2 2026 — Standard Chartered's $250 SOL price target is predicated on this launch. 2) P-Token (SIMD-0266) mainnet deployment later in 2026 — could drive transaction volume and fee revenue growth as token transfer costs drop 95-98%. 3) Solana ETF approval progress — ETFs already live with $817M AUM; further institutional adoption (e.g., more banks following Goldman Sachs) could be a catalyst. 4) Drift Protocol recovery (Tether's $147.5M commitment) — successful resolution would restore DeFi TVL and confidence on-chain. 5) wXRP on Solana via LayerZero — cross-chain capital inflows to Solana DeFi ecosystem. 6) Solana 'agentic payments' initiative — potential first-mover advantage in AI-native financial transactions. 7) Solana Bootcamp 2026 (GitHub: solana-foundation/solana-bootcamp-2026) driving developer ecosystem growth."
+}

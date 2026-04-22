@@ -1,0 +1,87 @@
+{
+  "decisions": {
+    "BTC-USD": {
+      "action": "buy",
+      "entry_price": 76500,
+      "target_price": 82500,
+      "stop_loss": 73500,
+      "risk_reward_ratio": "2.0:1",
+      "timeframe": "7-14 trading days",
+      "quantity": 0.326,
+      "confidence": 70,
+      "reasoning": "BTC is the anchor position in this portfolio. 6/9 swing strategies voted bullish with consensus overriding the lone mean reversion bearish signal. Technical foundation is the strongest in the cohort: daily EMAs fully aligned (EMA-10 74,370 > EMA-21 72,776 > EMA-50 71,935), ADX 32.3, 21-day ROC +13.8%, MACD histogram positive and expanding. Structural bid is exceptional: 270,000 BTC whale accumulation in 30 days (largest since 2013), 7-year exchange reserve lows, $996M weekly ETF inflows (5 consecutive inflow days), BlackRock IBIT at 788,927 BTC, and MicroStrategy's $2.54B purchase. Negative funding rates for 46 consecutive days creates a compressed short-squeeze setup on a break above $78K resistance. Fear & Greed at 29 is historically an accumulation window. Entry at $76,500 reflects the pullback zone recommended by the catalyst and mean-reversion strategies (adjusting for short-term hourly extension). Stop placed below the April 19 swing low support zone at $73,500 (3.9% risk). Target $82,500 is the measured move toward prior ATH range and institutional targets. Risk-reward of 2.0:1 meets the minimum threshold. Position sized at 25% of capital ($25,000) as befits the primary anchor role. Key risks: FOMC April 28-29 (hawkish = risk-off selloff), Iran deadline April 23 geopolitical shock, and KelpDAO/Aave bad debt expansion temporarily dragging BTC."
+    },
+    "ETH-USD": {
+      "action": "buy",
+      "entry_price": 2310,
+      "target_price": 2550,
+      "stop_loss": 2210,
+      "risk_reward_ratio": "2.4:1",
+      "timeframe": "7-14 trading days",
+      "quantity": 10.82,
+      "confidence": 65,
+      "reasoning": "ETH is the co-primary position, carrying the strongest institutional accumulation signal in the entire basket. 6/9 strategies bullish; the lone bearish mean reversion signal is overridden by the institutional volume and on-chain evidence. Technical: ADX 34.2 (highest in the group), daily EMAs aligned uptrend (EMA-10 2,304 > EMA-21 2,249 > EMA-50 2,211), and the April 19 low at $2,254 held near the 38.2% Fibonacci retracement — a textbook healthy pullback in an uptrend. Institutional conviction is record-breaking: $11.80B cumulative spot ETH ETF inflows, $127M single-day inflow April 17, $230M Bitmine corporate purchase this week, 50,706 ETH dormant wallet reactivation, 80,000 ETH moved off Binance to cold storage. Ethereum Foundation has stopped being a net seller (completed 70,000 ETH staking target). Glamsterdam upgrade (May-June) is the nearest hard technical catalyst in the basket — 78.6% gas reduction and 10,000 TPS target driving protocol narrative. Entry at $2,310 (pullback zone per swing_pullback_trader Fibonacci 61.8% confluence and swing_trend_follower 10-EMA zone) rather than the $2,330 head trader level improves risk-reward to 2.4:1 with the same stop at $2,210 (below April 19 swing low) and target $2,550. Quantity 10.82 ETH (~$25,000 = 25% of capital), matching BTC as co-primary. Key risks: KelpDAO/EigenLayer restaking contagion, Glamsterdam delay, macro correlation to BTC on FOMC shock."
+    },
+    "SOL-USD": {
+      "action": "hold",
+      "entry_price": null,
+      "target_price": null,
+      "stop_loss": null,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "no trade — reassess in 2-3 weeks",
+      "quantity": 0,
+      "confidence": 35,
+      "reasoning": "SOL is the consensus avoid. 0/9 swing strategies voted bullish; sector rotation is outright bearish (capital rotating OUT to BTC/ETH). Technical disqualifiers are multiple: daily EMAs not aligned for uptrend (EMA-50 at $87.18 sits above EMA-10 at $85.33), ADX 15.8 well below the 25 threshold confirming a non-trending choppy environment, and 21-day ROC of only +3.5% massively underperforming BTC (+13.8%) and ETH (+14.4%). Exchange inflows of 1.4M SOL in 72 hours signal near-term selling pressure; SOL ETF AUM declined from $1.1B to $817M (net outflows). The $182→$87 drawdown is structural weakness, not just market-wide fear. Long-term catalysts (Firedancer H2 2026, Goldman $108M position, Standard Chartered $250 target) are genuine but 3-6 months out — not a 2-20 day swing trade. Drift Protocol exploit overhang adds further near-term risk. Trigger to reconsider: daily EMA realignment with EMA-10 above EMA-50 plus ADX >25 on confirmed volume."
+    },
+    "BNB-USD": {
+      "action": "hold",
+      "entry_price": null,
+      "target_price": null,
+      "stop_loss": null,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "no trade — watch for breakout above $643",
+      "quantity": 0,
+      "confidence": 40,
+      "reasoning": "BNB has the weakest near-term swing setup in the basket. 1/9 strategies voted bullish (momentum ranker only) with 9/9 neutral or avoiding. Daily EMAs misaligned (EMA-50 $633.5 above EMA-10 $622.3), ADX 21.8 below the 25 confirmation threshold, and 21-day ROC of only +3.4% trails BTC/ETH dramatically. Sentiment headwinds compound the technical weakness: BNB lost its #3 market cap rank to XRP on April 19 (major psychological negative), Binance margin pair delistings on April 24 create near-term volatility risk, and no dedicated ETF limits institutional buying. Whale activity is defensive (holding support) rather than aggressive accumulation. The 35th quarterly burn ($1B, April 15) is already priced in. No position taken. Reassess on a daily close above $643 resistance on 1.5x+ average volume, which would confirm the early MACD positive crossover with price structure."
+    },
+    "XRP-USD": {
+      "action": "buy",
+      "entry_price": 1.43,
+      "target_price": 1.56,
+      "stop_loss": 1.375,
+      "risk_reward_ratio": "2.36:1",
+      "timeframe": "5-12 trading days",
+      "quantity": 10489,
+      "confidence": 62,
+      "reasoning": "XRP offers the best risk-adjusted setup in the basket at 2.36:1 risk-reward with two imminent binary catalysts converging this week. (1) CLARITY Act Senate vote late April: permanent commodity classification codification endorsed by SEC Chair Atkins and Treasury Secretary Bessent — passage would remove remaining regulatory uncertainty premium and could drive a sharp move toward $2+. (2) GraniteShares 3x leveraged XRP ETFs launching April 23: increases price sensitivity and adds speculative fuel. 7/9 strategies voted bullish (highest count in the basket); only momentum ranker stayed neutral due to decelerating short-term ROC pattern — correctly identified as a healthy pullback, not breakdown, given ADX 31.7 underlying trend strength. Technical structure: 61.8% Fibonacci hold at ~$1.40 confirmed (swing low $1.3946), ADX 31.7 (strong trend), MACD histogram turned positive, daily volume at 1.20x average with hourly volume 1.67x average confirming accumulation. Whale accumulation is record-level — 62% of circulating supply held by large wallets (up from 54% in early 2025), 11M XRP/day added for weeks. ETF inflows at $55.4M last week (strongest week of 2026). Stop at $1.375 is below the confirmed Fibonacci support level. Entry at $1.43 per Head Trader consensus. Position sized at 15% of capital ($15,000) rather than full 25% secondary allocation, reflecting the binary catalyst nature of the trade — half position preserves flexibility to add if CLARITY Act passes. Key risks: CLARITY Act delay/failure reverses regulatory premium sharply; 89.8M XRP Coinbase deposit (April 13) remains a potential sell overhang; leveraged ETF launch is a two-edged volatility amplifier."
+    }
+  },
+  "portfolio_summary": {
+    "total_capital": 100000,
+    "deployed_capital": 65000,
+    "cash_reserve": 35000,
+    "cash_reserve_rationale": "35% cash reserved as macro risk buffer. FOMC April 28-29 and Iran deadline April 23 are binary macro gates. Hawkish FOMC or Iran escalation could trigger 10-15% crypto selloff. Cash position allows averaging into BTC/ETH on such a dip without margin or forced liquidation.",
+    "position_breakdown": {
+      "BTC-USD": {"allocation_pct": 25, "dollar_value": 25000, "qty": 0.326, "role": "primary anchor"},
+      "ETH-USD": {"allocation_pct": 25, "dollar_value": 25000, "qty": 10.82, "role": "co-primary"},
+      "XRP-USD": {"allocation_pct": 15, "dollar_value": 15000, "qty": 10489, "role": "secondary — binary catalyst"},
+      "SOL-USD": {"allocation_pct": 0, "dollar_value": 0, "qty": 0, "role": "no position"},
+      "BNB-USD": {"allocation_pct": 0, "dollar_value": 0, "qty": 0, "role": "no position"}
+    },
+    "sector_diversification": {
+      "BTC (Store of Value)": "25%",
+      "ETH (Smart Contract L1)": "25%",
+      "XRP (Payment Network)": "15%",
+      "Cash": "35%"
+    },
+    "market_context": "Fear & Greed Index at 29 (Fear zone). BTC dominance 57-60% — capital concentrated in large caps, no altseason. Portfolio deliberately quality-biased: BTC + ETH as macro trend anchors, XRP as regulatory binary catalyst trade. Two macro risk gates this week: Iran deadline April 23 and FOMC April 28-29. Cash buffer sized to survive a binary adverse outcome and buy the dip.",
+    "synthesis": "Three-position portfolio optimized for the current Fear & Greed = 29 environment with exceptional institutional tailwinds. BTC anchors the portfolio with the clearest trend structure, whale accumulation, and ETF flow momentum. ETH is the institutional accumulation story with Glamsterdam as the forward catalyst — record ETF inflows and corporate whale buying provide structural support. XRP is the highest risk-reward trade, sizing deliberately reduced to 15% to account for binary CLARITY Act outcome. SOL and BNB are both avoided — SOL lacks trend (ADX 15.8) and faces exchange inflow selling pressure; BNB has weak relative performance and margin delisting headwinds. The 35% cash reserve is not idle capital — it is dry powder for the macro binary risk event (FOMC April 28-29) and a planned add-on if positions pull back to better entry zones.",
+    "key_risk_events": [
+      {"date": "2026-04-23", "event": "Iran ceasefire deadline", "impact": "geopolitical risk-off if collapse"},
+      {"date": "2026-04-23", "event": "GraniteShares 3x leveraged XRP ETF launch", "impact": "XRP volatility amplifier, two-edged"},
+      {"date": "2026-04-24", "event": "Binance margin pair delistings (19 pairs)", "impact": "BNB volatility — confirms no-trade decision"},
+      {"date": "2026-04-late", "event": "U.S. Senate CLARITY Act vote", "impact": "XRP primary catalyst — pass = rally, fail = reversal"},
+      {"date": "2026-04-28/29", "event": "FOMC meeting", "impact": "macro risk gate — hawkish = risk-off selloff across all positions"}
+    ]
+  }
+}

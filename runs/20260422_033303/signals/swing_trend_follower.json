@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 78,
+    "reasoning": "BTC shows a textbook trend-following setup on the daily timeframe. EMA alignment is clean uptrend (EMA10 74,370 > EMA21 72,776 > EMA50 71,935) with ADX at 32.3, confirming a strong and established trend. RSI at 67 is healthy — not overbought. MACD histogram is expanding (377 points positive). Price pulled back from the Apr 17 high of 77,126 to 73,856 on Apr 19 before bouncing to 75,872 (last close), and current price at 77,464 suggests momentum continuation. Hourly timeframe also confirms uptrend alignment (EMA10 > EMA21 > EMA50) with ADX 31.6. Volume on the Apr 17 trend day (54B) was significantly higher than counter-trend pullback days (26-30B), confirming institutional trend participation. Bollinger position at 0.80 on the daily shows strength without extreme overextension. The pullback to the 21 EMA zone (around 72,776-74,370) was the ideal entry, but with current price breaking above recent resistance at 77,126, a long continuation trade on any minor intraday pullback is valid. Stop placed below the Apr 19 swing low. Target at measured move extension toward 82,000 area.",
+    "entry": 76500.0,
+    "target": 82000.0,
+    "stop": 73200.0,
+    "timeframe": "5-12 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "ETH has a confirmed daily uptrend with EMA alignment intact (EMA10 2,304 > EMA21 2,249 > EMA50 2,211) and ADX at 34.2, the strongest ADX reading among all assets analyzed. RSI at 61.2 is bullish but not overbought. MACD is positive with expanding histogram. Price pulled back from the Apr 17 swing high of 2,421 to a low of 2,254 on Apr 19, then closed at 2,315 — a healthy pullback of ~6.9% that tested the 21 EMA zone (2,249). Current price at 2,360 is recovering above the 10 EMA (2,304). The pullback depth touched near Fib 0.618 (2,121) region and bounced — showing trend resilience. Hourly EMAs are aligned upward (EMA10 2,331 > EMA21 2,323 > EMA50 2,320), confirming short-term momentum is with the uptrend. Daily volume was higher on up days (26.4B on Apr 17) versus down days (14.4B on Apr 18, 17B on Apr 19), a bullish sign. Confidence tempered slightly by SMA200 at 2,845 being far above, indicating ETH is in a longer-term recovery mode rather than a clean primary uptrend. Entry on a pullback to the 10 EMA with stop below the 21 EMA.",
+    "entry": 2310.0,
+    "target": 2500.0,
+    "stop": 2210.0,
+    "timeframe": "5-10 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "SOL fails both key trend-following criteria. First, the daily EMAs are tangled with no clean alignment: EMA10 (85.33) > EMA21 (84.97) but EMA50 (87.18) is above both, meaning EMAs are not fanning in the required uptrend order. Second, ADX is only 15.8 on the daily timeframe — well below the 25 threshold required to confirm a tradeable trend. This combination (tangled EMAs + ADX < 20) means there is no established trend to follow, only chop. Price action over the past 5 days shows a range between 83.17 and 90.37 with no clear directional conviction. ROC-5 is only 0.49%, confirming near-flat price momentum. While the hourly indicators show a better-aligned uptrend with ADX at 32.9, this is insufficient for a multi-day swing trade — the daily timeframe must confirm. The SMA200 at 125.56 reveals SOL is in a long-term downtrend context, making any bullish swing trade higher risk. No trade setup until daily EMAs clarify and ADX rises above 25.",
+    "entry": 85.33,
+    "target": 90.0,
+    "stop": 82.5,
+    "timeframe": "N/A - no trade"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "BNB daily EMAs are in a tangled configuration: EMA10 (622.3) and EMA21 (619.2) are close together but EMA50 (633.5) is above both, indicating no clean uptrend alignment. While ADX at 21.8 is marginally above 20, it does not meet the 25 threshold required for trend confirmation, and the EMAs are not fanning properly. Price has ranged between 615 and 648 over the past 5 days — a 5% range without directional conviction. The MACD histogram is positive (3.79) and turning, suggesting early momentum emergence, but this is not yet a confirmed trend. Hourly timeframe is more promising with clean EMA uptrend alignment and ADX 29.2, and volume is elevated at 2.3x average on the hourly — but this does not override the lack of daily trend confirmation. The SMA200 at 829 highlights BNB is also in a longer-term downtrend recovery. Risk-reward is insufficient without a clean daily trend structure. Monitor for daily EMA alignment to clarify before committing to a swing trade.",
+    "entry": 629.0,
+    "target": 655.0,
+    "stop": 613.0,
+    "timeframe": "N/A - no trade"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 58,
+    "reasoning": "XRP presents a mixed but leaning-bullish picture. The daily EMAs are technically tangled (EMA50 at 1.4114 sits between EMA10 at 1.4048 and EMA21 at 1.3881), failing the strict uptrend EMA alignment criterion. However, several factors support a cautious bullish trade: ADX is 31.7 on the daily (strong trend strength confirmed), MACD histogram is clearly positive and expanding (+0.0108), momentum is building (ROC-5 +2.4%, ROC-10 +5.0%, ROC-21 +7.7%), and volume on up days was significantly higher (4.0B Apr 16, 4.2B Apr 17) than on down days (2.5B Apr 18, 2.9B Apr 19). Current price at 1.4444 is above the daily resistance of 1.4114 (EMA50). Hourly timeframe confirms a clean uptrend (EMA10 1.4337 > EMA21 1.4315 > EMA50 1.4295) with ADX 27.7 — both criteria met on hourly. The price pulled back from the Apr 17 high of 1.477 to 1.394 on Apr 19 (the hourly swing low), then recovered. Confidence is reduced from full-bullish because the daily EMA alignment is imperfect and the SMA200 at 1.878 shows XRP is still in longer-term downtrend context. Entry on the current pullback with tight stop below Apr 19 low.",
+    "entry": 1.4250,
+    "target": 1.5200,
+    "stop": 1.3900,
+    "timeframe": "5-8 trading days"
+  }
+}

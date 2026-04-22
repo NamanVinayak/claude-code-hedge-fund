@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 80,
+    "reasoning": "BTC exhibits the strongest momentum profile of all five assets. Daily ROC is positive and accelerating across all timeframes: 5d=+1.43%, 10d=+3.96%, 21d=+13.77%, forming a classic momentum ramp. Both daily and hourly EMAs are aligned in uptrend. MACD histogram is strongly positive on daily (+377) and expanding on hourly (+171), confirming momentum acceleration across timeframes. RSI at 67 has room before overbought territory. Volume running 8.7% above 20-day average confirms institutional demand. ADX of 32 confirms a strong trending environment. The only caveat is the hourly Bollinger position above 1.0 (slightly extended short-term) and hourly MFI at 13 (money flow diverging short-term), suggesting a brief consolidation possible before continuation. Entry near current levels with stop below 10-day EMA.",
+    "entry": 77464.0,
+    "target": 83000.0,
+    "stop": 74000.0,
+    "timeframe": "7-14 trading days"
+  },
+  "ETH-USD": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "ETH presents conflicting momentum signals. The 21-day ROC (+14.42%) is strong, but the 5-day ROC has turned negative (-1.87%), the critical early warning of momentum exhaustion per our strategy. This deceleration on the shortest timeframe is a disqualifying factor for a high-conviction long. Daily MACD histogram is barely positive (+5.48), indicating very thin bullish momentum. However, hourly ROC is recovering (all positive: 5h=+2.04%, 10h=+2.24%, 21h=+1.97%) and hourly volume is running 2.73x the 20-period average, suggesting intraday buyers are active. EMAs are aligned uptrend on daily, and RSI at 61 is moderate. Wait for 5-day daily ROC to turn positive again before initiating a momentum long. The conflicting daily vs. intraday momentum signals warrant a neutral stance.",
+    "entry": 2315.0,
+    "target": 2500.0,
+    "stop": 2220.0,
+    "timeframe": "5-10 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "SOL has the weakest daily momentum profile of the group. Daily ROC is negligible across all timeframes: 5d=+0.49%, 10d=+0.59%, 21d=+3.50%. These low readings indicate SOL is barely keeping up — not a momentum buy candidate. Critically, daily EMAs are not in uptrend alignment, and price sits below the 50-day EMA (dist_from_50sma=-0.67%), a prerequisite fail for our strategy. ADX of 15.8 confirms a non-trending, choppy environment. Volume is running below the 20-day average (0.83x), showing lack of demand conviction. SMA 200 at $125.57 vs current ~$87 reflects a sustained longer-term downtrend. Hourly indicators are more constructive (EMAs aligned, RSI 63, volume 2.6x avg) but insufficient to overcome weak daily structure. Not a momentum buy.",
+    "entry": 86.0,
+    "target": 92.0,
+    "stop": 82.5,
+    "timeframe": "5-10 trading days"
+  },
+  "BNB-USD": {
+    "signal": "bullish",
+    "confidence": 58,
+    "reasoning": "BNB shows moderate momentum recovery with all three daily ROC readings positive: 5d=+1.06%, 10d=+3.84%, 21d=+3.40%. The 10-day outperforming the 21-day suggests mid-term momentum is re-accelerating relative to the trend. Daily MACD histogram is positive (+3.79) and recovering from negative territory (signal line at -2.53), an early-stage bullish crossover. RSI at 59 has meaningful room before overbought. Hourly structure is clean: EMAs fully aligned in uptrend, RSI 63, MACD histogram positive, and volume running 2.34x the hourly average — strong intraday accumulation. The main concern is daily EMA misalignment (EMA-10 < EMA-50) and volume running slightly below daily average (0.92x), meaning the daily trend is not yet fully confirmed. Resistance sits at $643.45, very close to current price — a breakout above this level would sharply increase conviction. Entry on pullback or confirmed breakout.",
+    "entry": 635.0,
+    "target": 665.0,
+    "stop": 615.0,
+    "timeframe": "5-12 trading days"
+  },
+  "XRP-USD": {
+    "signal": "neutral",
+    "confidence": 42,
+    "reasoning": "XRP's daily ROC shows a decelerating momentum pattern: 21d=+7.73%, 10d=+5.03%, 5d=+2.39%. While all timeframes are positive, the shrinking magnitude from longer to shorter timeframes is a textbook momentum deceleration signal — the opposite of the accelerating pattern we require. Recent price action confirms this: XRP peaked at $1.477 on Apr 17 and pulled back to $1.394 before partial recovery to $1.425, a lower-high structure forming. Daily EMAs are not in uptrend alignment (EMA-50 at 1.4114 is above EMA-10 at 1.4048), a structural negative. MACD histogram is barely positive (+0.011). On the positive side, volume is above average (1.20x daily avg), ADX at 31.67 shows trend strength, and hourly EMAs are aligned uptrend. However, the decelerating short-term momentum disqualifies XRP as a top-ranked momentum buy. Hold off until 5-day ROC re-accelerates.",
+    "entry": 1.43,
+    "target": 1.55,
+    "stop": 1.36,
+    "timeframe": "5-10 trading days"
+  }
+}

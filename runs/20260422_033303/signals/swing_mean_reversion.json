@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": "BTC presents the strongest mean reversion setup of the group. Daily Z-score is 1.80 (approaching but not quite at extreme +2), with price extended 7.53% above the 50-SMA. However, the hourly timeframe is clearly overbought: Z-score at 2.47 (above extreme threshold), Bollinger Band position at 1.02 (price above upper band), stochastic K at 90.3 (overbought), and CCI at 207 (extreme). Most importantly, hourly MFI has collapsed to 13.4 — a strong bearish divergence where price is at highs but money flow is extremely weak. Current price at $77,464 is above the daily resistance of $77,127 and near the hourly resistance of $77,626. The April 17 high of $78,320 formed a rejection and price failed to reclaim it. The setup warrants a moderate bearish bias, targeting reversion to the daily 50-SMA at $70,559 (Bollinger midline at $71,993 is a more conservative target). Stop above the hourly swing high at $77,626. Confidence is moderated because the daily Z-score has not yet breached +2, so the signal is hourly-led with daily trend still intact.",
+    "entry": 77464.49,
+    "target": 71992.73,
+    "stop": 78500.0,
+    "timeframe": "5-10 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bearish",
+    "confidence": 58,
+    "reasoning": "ETH shows a developing mean reversion setup primarily on the hourly timeframe. Daily Z-score of 1.35 is elevated but not at extreme (+2 threshold). Price is extended 8.02% above the 50-SMA (daily), which is noteworthy. The hourly picture is more extreme: Z-score at 2.64 (well above +2), Bollinger Band position at 1.07 (clearly above upper band), CCI at 267 (very extreme), and stochastic D (84.2) crossing above K (79.1) — a bearish cross in overbought territory. Hourly MFI at 80 is overbought but not diverging (unlike BTC). Price at $2,360 is near the daily resistance of $2,421 (also the April 17 swing high). The April 17-19 sequence shows a failed breakout attempt (high at $2,464, rejection down to $2,254 on Apr 19). The bounce from $2,262 lows on Apr 20 is now running into resistance. Target is the daily Bollinger midline at $2,231. Stop above the hourly resistance at $2,370. Confidence is lower than BTC because daily Z-score is still in the moderate zone and the Apr 20 bounce could continue.",
+    "entry": 2360.48,
+    "target": 2231.48,
+    "stop": 2420.0,
+    "timeframe": "5-8 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 0,
+    "reasoning": "SOL presents no valid mean reversion setup. The daily Z-score is -0.15 — essentially at the mean. Price is only 0.67% below the 50-SMA, well within the neutral zone. Daily RSI at 57.5, stochastic at 56.4, CCI at 42.2, and MFI at 62.5 are all in mid-range. While the hourly Z-score has spiked to 2.52 with CCI at 223 and stochastic showing a bearish cross (D 83.8 > K 79.8), mean reversion signals require confirmation on the primary (daily) timeframe. An hourly-only extreme in a daily neutral context is not a sufficient setup — the hourly move merely reflects normal intraday volatility within a range-bound day. No trade signal.",
+    "entry": null,
+    "target": null,
+    "stop": null,
+    "timeframe": "no setup"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 0,
+    "reasoning": "BNB is firmly at its mean on the daily timeframe. Daily Z-score of 0.09 is almost exactly zero — the textbook case for no mean reversion setup. Price is essentially at the 50-SMA (0.31% above). Daily RSI at 59.3, stochastic at 67.3, CCI at 85.3 — all mid-range. While the hourly shows some extension (Z-score 2.17, stochastic K 88.9, near upper Bollinger band), the daily picture is completely neutral. BNB has been in a consolidation range after declining from the $679 swing high, and the current price at ~$640 is mid-range within that structure. No extreme exists at the primary timeframe to fade. No trade signal.",
+    "entry": null,
+    "target": null,
+    "stop": null,
+    "timeframe": "no setup"
+  },
+  "XRP-USD": {
+    "signal": "neutral",
+    "confidence": 0,
+    "reasoning": "XRP falls squarely in the neutral zone. Daily Z-score of 0.75 is within the -1 to +1 range where no mean reversion setup exists by strategy rules. Price is only 2.86% above the 50-SMA — well below the 5% extension threshold that would be noteworthy. Daily RSI at 61.8, stochastic at 60.9, CCI at 93.7, MFI at 67.5 — all in the middle of their ranges. The hourly Z-score of 1.69 is elevated but not extreme, and the hourly stochastic (K 84.0) shows mild overbought conditions. XRP has been recovering from a broad downtrend (SMA 200 at $1.88 vs current $1.44) but the daily structure is range-bound without a clear extreme to fade. No trade signal.",
+    "entry": null,
+    "target": null,
+    "stop": null,
+    "timeframe": "no setup"
+  }
+}

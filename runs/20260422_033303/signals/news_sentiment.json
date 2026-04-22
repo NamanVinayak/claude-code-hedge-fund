@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "BTC shows strong multi-timeframe momentum with daily EMAs fully aligned in uptrend, RSI at 67.2 (bullish but not yet overbought), and MACD histogram positive and expanding. The 21-day ROC of +13.8% reflects meaningful price-driven buying interest consistent with positive macro sentiment. Volume is running 1.09x the 20-day average, confirming steady accumulation. Price at $77,464 is holding well above the Fib 23.6% level at $74,490 which now acts as near-term support. The one caution is the hourly MFI at 13.4 (extremely low) which diverges from the bullish price action — suggesting short-term money flow hasn't confirmed the intraday move above $77k, potentially indicating a brief consolidation before continuation. Overall the structural trend and momentum signals point to continued upside on a swing timeframe of 1-2 weeks.",
+    "entry": 76500.0,
+    "target": 82000.0,
+    "stop": 73500.0,
+    "timeframe": "1-2 weeks"
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 68,
+    "reasoning": "ETH is showing a classic sentiment-driven recovery pattern: a strong 21-day momentum surge (+14.4% ROC) followed by a healthy 2-day pullback (Apr 17 high $2,421 down to Apr 19 low $2,254), now bouncing with strong hourly volume at 2.73x the 20-day average. This volume surge during recovery is a strong positive sentiment signal — buyers are stepping in aggressively. Daily MFI at 68.8 and hourly MFI at 80.2 both confirm active money inflow. Daily RSI at 61.2 leaves significant headroom before overbought conditions. Both daily and hourly EMAs are aligned in uptrend. The pullback found support near the Fib 50% level (~$2,179) and is recovering, which is consistent with sentiment-driven dip-buying. Primary risk is the broader crypto market correlation with BTC and recent 5-day ROC briefly negative (-1.87).",
+    "entry": 2330.0,
+    "target": 2500.0,
+    "stop": 2220.0,
+    "timeframe": "1-2 weeks"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "SOL presents a mixed sentiment picture. While hourly EMAs are aligned uptrend and the asset bounced from $83.17 lows, the daily EMA structure is not aligned (ema_10 85.3 < ema_50 87.2), indicating no sustained directional momentum. ADX of 15.8 on the daily timeframe signals a non-trending, choppy market — poor environment for swing entries. Daily volume is running below the 20-day average at 0.83x, suggesting a lack of broad participation or catalysts. The 21-day ROC of only +3.5% significantly underperforms BTC (+13.8%) and ETH (+14.4%), indicating relative weakness and less positive sentiment. SOL remains far below its SMA200 ($125.6), a structural bearish overhang. Hourly indicators show some intraday energy (volume 2.58x avg, RSI 63.1) but this does not override the weak daily backdrop. Without a clear catalyst signal, the risk/reward for a swing setup is unfavorable.",
+    "entry": 85.5,
+    "target": 90.0,
+    "stop": 82.5,
+    "timeframe": "1 week"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 50,
+    "reasoning": "BNB shows modest positive price action — a recovery from $616 lows on Apr 19 to current $639.75 — but the sentiment signals lack the strength needed for a high-conviction swing setup. Daily EMAs are not aligned (ema_10 622 below ema_50 634), reflecting the medium-term trend is still uncertain. ADX at 21.8 is marginal, indicating a weak trend. Volume at 0.92x the 20-day average is slightly below normal, not indicative of a sentiment-driven surge. The 21-day ROC of +3.4% is underwhelming. Hourly indicators are more constructive: EMAs aligned uptrend, volume 2.34x average, RSI 63.2, MACD positive — but the hourly stochastic at 88.9 flags near-term overbought conditions. BNB's large distance below SMA200 ($829) acts as a long-term sentiment headwind. The overall picture is a range-bound recovery without strong catalysts — neutral with a slight bullish lean on intraday but insufficient for a confident swing position.",
+    "entry": 630.0,
+    "target": 655.0,
+    "stop": 612.0,
+    "timeframe": "1 week"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 65,
+    "reasoning": "XRP exhibits the most consistent multi-timeframe momentum buildup of the group. The 21-day ROC of +7.7% combined with a 10-day ROC of +5.0% shows a steady, sustained acceleration — characteristic of positive sentiment accumulation rather than a one-day spike. Daily ADX at 31.7 confirms a genuine trend, not noise. Volume is running 1.20x the 20-day average with hourly volume also elevated at 1.67x, suggesting active participation at multiple timeframes. The RSI at 61.8 daily and 57.0 hourly both have room before overbought levels. Critically, XRP's price action shows a bullish retrace pattern: the Apr 16-17 breakout run to $1.477 was followed by a pullback that held the Fib 61.8% retrace level ($1.403), and price is now recovering. Both hourly EMAs are fully aligned uptrend with a well-stacked structure from SMA200 upward. The primary risk is resistance at $1.477-$1.49 (daily resistance and Fib 23.6%), which may cause a pause before any continuation toward $1.54 swing high.",
+    "entry": 1.43,
+    "target": 1.52,
+    "stop": 1.37,
+    "timeframe": "1-2 weeks"
+  }
+}

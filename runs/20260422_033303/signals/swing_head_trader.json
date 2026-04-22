@@ -1,0 +1,90 @@
+{
+  "synthesis_date": "2026-04-22",
+  "mode": "crypto_swing",
+  "head_trader_notes": "9-strategy vote synthesis. Key conflict resolved: mean reversion bearish on BTC/ETH (extended vs 50-SMA) is overridden by 6/9 bullish votes + crypto sentiment bullish + macro tailwinds (whale accumulation, ETF inflows). Mean reversion signal respected only to adjust entry level — wait for minor pullback rather than chasing highs. SOL/BNB consensus neutral confirmed — no position. XRP is the highest-conviction risk-adjusted setup given CLARITY Act binary catalyst and clean technical structure.",
+
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 70,
+    "vote_tally": {"bullish": 6, "neutral": 2, "bearish": 1},
+    "key_conflict": "Mean reversion (bearish, Z-score 1.80) and catalyst_trader (neutral, wants pullback) vs 6 bullish strategies. Resolution: trend + momentum + rotation + Druckenmiller all agree — trend overrides mean reversion in a strong uptrend. Entry adjusted to reflect short-term extension risk.",
+    "entry": 76500,
+    "target": 82500,
+    "stop": 73500,
+    "risk_reward": 2.0,
+    "timeframe": "7-14 days",
+    "reasoning": "BTC has the cleanest trend structure in the cohort: EMA alignment (10>21>50), ADX 32.3, 21-day ROC +13.8%, above-average volume, and the strongest momentum score. 270,000 BTC whale accumulation + 7-year exchange reserve lows + $996M weekly ETF inflows = structural bid. Short-term extension acknowledged (hourly Z-score 2.47, stochastic 90) — prefer entry at pullback toward $75,500-$76,500. Catalysts: FOMC April 28-29 (dovish surprise = sharp rally), Iran ceasefire resolution. Stop below the April 19 low support zone.",
+    "crypto_risk_factors": ["FOMC April 28-29 hold/hawkish = risk-off selloff", "Iran deadline April 23 collapse = geopolitical risk-off", "KelpDAO/Aave bad debt expansion could temporarily drag BTC"],
+    "position_sizing": "primary position — highest conviction in cohort"
+  },
+
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 65,
+    "vote_tally": {"bullish": 6, "neutral": 2, "bearish": 1},
+    "key_conflict": "Mean reversion bearish (Z-score 2.64 hourly, failed breakout at $2,421) vs trend/rotation/Druckenmiller bullish. Momentum ranker neutral (5-day ROC negative). Resolution: the 2.73x volume surge on the pullback is institutional accumulation, not distribution — confirmed by $230M Bitmine purchase and record ETF inflows. Volume divergence overrides short-term mean reversion.",
+    "entry": 2330,
+    "target": 2550,
+    "stop": 2210,
+    "risk_reward": 1.83,
+    "timeframe": "7-14 days",
+    "reasoning": "ETH shows the strongest ADX (34.2) and deepest institutional commitment. Glamsterdam upgrade (May-June) is the nearest hard catalyst in this basket. ETH Foundation stopped selling. 38.2% Fib pullback to $2,265-$2,310 is a textbook buy zone in an uptrend. Primary risk: KelpDAO/EigenLayer restaking contagion could temporarily weigh on ETH. Entry at current levels or on further weakness toward $2,290. This is a slightly reduced confidence vs BTC due to the failed $2,421 breakout and 5-day negative ROC.",
+    "crypto_risk_factors": ["KelpDAO restaking contagion to EigenLayer/ETH staking derivatives", "Glamsterdam delay beyond June 2026", "Mean reversion to daily BB midline ($2,231) if macro risk-off"],
+    "position_sizing": "co-primary position with BTC"
+  },
+
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 35,
+    "vote_tally": {"bullish": 0, "neutral": 8, "bearish": 1},
+    "key_conflict": "None — unanimous signal. Sector rotation is technically bearish (capital rotating OUT to BTC/ETH).",
+    "entry": null,
+    "target": null,
+    "stop": null,
+    "risk_reward": null,
+    "timeframe": "no trade",
+    "reasoning": "SOL is the consensus avoid. Daily ADX 15.8 (non-trending), EMAs not aligned uptrend (EMA-50 above EMA-10/21), 21-day ROC only +3.5% vs BTC/ETH at +13-14%, and exchange inflows of 1.4M SOL suggest near-term selling pressure. The $182→$87 drawdown reflects genuine weakness, not just market-wide fear. Long-term catalysts (Firedancer H2 2026, Goldman $108M position, Standard Chartered $250 target) are real but 3-6 months out — not a 2-20 day swing trade. Revisit on confirmed EMA re-alignment + ADX >25.",
+    "crypto_risk_factors": ["Drift Protocol exploit overhang", "ETF AUM declining ($1.1B→$817M)", "Exchange inflows = near-term sell pressure"],
+    "position_sizing": "no position"
+  },
+
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 40,
+    "vote_tally": {"bullish": 1, "neutral": 9, "bearish": 0},
+    "key_conflict": "Momentum ranker lone bullish (ROC re-acceleration signal) vs all other strategies neutral. Resolution: one strategy is insufficient without EMA alignment or volume confirmation above $643.",
+    "entry": null,
+    "target": null,
+    "stop": null,
+    "risk_reward": null,
+    "timeframe": "no trade — watch for breakout above $643",
+    "reasoning": "BNB's sole bullish signal (momentum ROC re-acceleration) is not confirmed by price structure. Daily EMAs misaligned, ADX 21.8 (below 25 threshold), lost #3 market cap to XRP, and margin pair delistings April 24 create near-term volatility. The 35th quarterly burn ($1B) is already priced in. AI agent growth (150K deployments) is a structural narrative but not a swing catalyst. Pass in favor of cleaner setups. Trigger to reconsider: daily close above $643 on 1.5x+ volume.",
+    "crypto_risk_factors": ["April 24 margin pair delistings — volatility risk", "XRP overtaking market cap = sentiment headwind", "No dedicated ETF = limited institutional buying"],
+    "position_sizing": "no position"
+  },
+
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 62,
+    "vote_tally": {"bullish": 7, "neutral": 2, "bearish": 0},
+    "key_conflict": "Momentum ranker neutral (decelerating 21d>10d>5d pattern) vs 7 bullish strategies. Resolution: decelerating momentum is partially explained by the recent pullback from $1.50 high to $1.42 — this is a healthy retracement, not momentum breakdown. ADX 31.7 confirms underlying trend strength.",
+    "entry": 1.43,
+    "target": 1.56,
+    "stop": 1.375,
+    "risk_reward": 2.36,
+    "timeframe": "5-12 days",
+    "reasoning": "XRP has the best risk-adjusted setup heading into two near-term binary catalysts: (1) CLARITY Act Senate vote late April — permanent commodity status codification, (2) GraniteShares 3x leveraged XRP ETFs launching April 23 — increases price sensitivity to upside. 62% of supply now held by whale addresses (record), ETF inflows at strongest week of 2026 ($55.4M), wXRP on Solana pulling $100M DeFi. 61.8% Fib hold at ~$1.40 confirmed. Best risk/reward in the basket at 2.36:1. Entry at current levels, stop below Fib support.",
+    "crypto_risk_factors": ["CLARITY Act delay/failure = regulatory premium reversal", "Large Coinbase deposit (89.8M XRP April 13) = potential sell overhang", "Leveraged ETF launch = two-edged volatility amplifier"],
+    "position_sizing": "secondary position — best risk/reward but binary catalyst risk"
+  },
+
+  "overall_market_context": "Fear & Greed at 29. BTC dominance 57-60% — capital concentrated in large caps, no altseason. Market resilient despite KelpDAO $14B DeFi shock. The setup favors quality-biased crypto exposure: long BTC + ETH (macro trend + institutional), long XRP (regulatory binary catalyst), avoid SOL + BNB (weak relative performance). The FOMC April 28-29 and Iran deadline April 23 are the two macro risk gates — positions should be sized for binary outcomes.",
+  "highest_conviction_setup": "XRP-USD — best risk/reward (2.36:1) with imminent binary catalyst (CLARITY Act). BTC-USD is the safest anchor position with strongest macro support.",
+  "signal_counts_summary": {
+    "BTC-USD": "6B/2N/1MR-bearish",
+    "ETH-USD": "6B/2N/1MR-bearish",
+    "SOL-USD": "0B/8N/1SR-bearish",
+    "BNB-USD": "1B(momentum)/9N/0bearish",
+    "XRP-USD": "7B/2N/0bearish"
+  }
+}

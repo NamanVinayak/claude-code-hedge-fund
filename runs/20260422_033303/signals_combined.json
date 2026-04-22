@@ -1,0 +1,1182 @@
+{
+  "mode": "swing",
+  "analyst_signals": {
+    "swing_momentum_ranker": {
+      "BTC-USD": {
+        "signal": "bullish",
+        "confidence": 80,
+        "reasoning": "BTC exhibits the strongest momentum profile of all five assets. Daily ROC is positive and accelerating across all timeframes: 5d=+1.43%, 10d=+3.96%, 21d=+13.77%, forming a classic momentum ramp. Both daily and hourly EMAs are aligned in uptrend. MACD histogram is strongly positive on daily (+377) and expanding on hourly (+171), confirming momentum acceleration across timeframes. RSI at 67 has room before overbought territory. Volume running 8.7% above 20-day average confirms institutional demand. ADX of 32 confirms a strong trending environment. The only caveat is the hourly Bollinger position above 1.0 (slightly extended short-term) and hourly MFI at 13 (money flow diverging short-term), suggesting a brief consolidation possible before continuation. Entry near current levels with stop below 10-day EMA.",
+        "entry": 77464.0,
+        "target": 83000.0,
+        "stop": 74000.0,
+        "timeframe": "7-14 trading days"
+      },
+      "ETH-USD": {
+        "signal": "neutral",
+        "confidence": 45,
+        "reasoning": "ETH presents conflicting momentum signals. The 21-day ROC (+14.42%) is strong, but the 5-day ROC has turned negative (-1.87%), the critical early warning of momentum exhaustion per our strategy. This deceleration on the shortest timeframe is a disqualifying factor for a high-conviction long. Daily MACD histogram is barely positive (+5.48), indicating very thin bullish momentum. However, hourly ROC is recovering (all positive: 5h=+2.04%, 10h=+2.24%, 21h=+1.97%) and hourly volume is running 2.73x the 20-period average, suggesting intraday buyers are active. EMAs are aligned uptrend on daily, and RSI at 61 is moderate. Wait for 5-day daily ROC to turn positive again before initiating a momentum long. The conflicting daily vs. intraday momentum signals warrant a neutral stance.",
+        "entry": 2315.0,
+        "target": 2500.0,
+        "stop": 2220.0,
+        "timeframe": "5-10 trading days"
+      },
+      "SOL-USD": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "SOL has the weakest daily momentum profile of the group. Daily ROC is negligible across all timeframes: 5d=+0.49%, 10d=+0.59%, 21d=+3.50%. These low readings indicate SOL is barely keeping up \u2014 not a momentum buy candidate. Critically, daily EMAs are not in uptrend alignment, and price sits below the 50-day EMA (dist_from_50sma=-0.67%), a prerequisite fail for our strategy. ADX of 15.8 confirms a non-trending, choppy environment. Volume is running below the 20-day average (0.83x), showing lack of demand conviction. SMA 200 at $125.57 vs current ~$87 reflects a sustained longer-term downtrend. Hourly indicators are more constructive (EMAs aligned, RSI 63, volume 2.6x avg) but insufficient to overcome weak daily structure. Not a momentum buy.",
+        "entry": 86.0,
+        "target": 92.0,
+        "stop": 82.5,
+        "timeframe": "5-10 trading days"
+      },
+      "BNB-USD": {
+        "signal": "bullish",
+        "confidence": 58,
+        "reasoning": "BNB shows moderate momentum recovery with all three daily ROC readings positive: 5d=+1.06%, 10d=+3.84%, 21d=+3.40%. The 10-day outperforming the 21-day suggests mid-term momentum is re-accelerating relative to the trend. Daily MACD histogram is positive (+3.79) and recovering from negative territory (signal line at -2.53), an early-stage bullish crossover. RSI at 59 has meaningful room before overbought. Hourly structure is clean: EMAs fully aligned in uptrend, RSI 63, MACD histogram positive, and volume running 2.34x the hourly average \u2014 strong intraday accumulation. The main concern is daily EMA misalignment (EMA-10 < EMA-50) and volume running slightly below daily average (0.92x), meaning the daily trend is not yet fully confirmed. Resistance sits at $643.45, very close to current price \u2014 a breakout above this level would sharply increase conviction. Entry on pullback or confirmed breakout.",
+        "entry": 635.0,
+        "target": 665.0,
+        "stop": 615.0,
+        "timeframe": "5-12 trading days"
+      },
+      "XRP-USD": {
+        "signal": "neutral",
+        "confidence": 42,
+        "reasoning": "XRP's daily ROC shows a decelerating momentum pattern: 21d=+7.73%, 10d=+5.03%, 5d=+2.39%. While all timeframes are positive, the shrinking magnitude from longer to shorter timeframes is a textbook momentum deceleration signal \u2014 the opposite of the accelerating pattern we require. Recent price action confirms this: XRP peaked at $1.477 on Apr 17 and pulled back to $1.394 before partial recovery to $1.425, a lower-high structure forming. Daily EMAs are not in uptrend alignment (EMA-50 at 1.4114 is above EMA-10 at 1.4048), a structural negative. MACD histogram is barely positive (+0.011). On the positive side, volume is above average (1.20x daily avg), ADX at 31.67 shows trend strength, and hourly EMAs are aligned uptrend. However, the decelerating short-term momentum disqualifies XRP as a top-ranked momentum buy. Hold off until 5-day ROC re-accelerates.",
+        "entry": 1.43,
+        "target": 1.55,
+        "stop": 1.36,
+        "timeframe": "5-10 trading days"
+      }
+    },
+    "swing_sector_rotation": {
+      "BTC-USD": {
+        "signal": "bullish",
+        "confidence": 78,
+        "reasoning": "BTC is the clear sector rotation leader in this crypto basket. Daily indicators show strong institutional inflows: RSI 67.2 (rising but not overbought), ADX 32.3 (strong trend), MACD histogram expanding (1683 vs signal 1307), volume 1.09x 20-day avg, and ROC-21 +13.8% \u2014 the highest absolute momentum of any asset here excluding ETH. All daily EMAs are aligned in uptrend. The store-of-value 'sector' is clearly receiving capital first in this rotation cycle. Hourly stochastic at 90.3 and MFI at 13.4 warn of very short-term exhaustion (price pushed above upper Bollinger Band on hourly), suggesting a minor pause before continuation. Price trading at $77,464 near daily resistance of $77,127 \u2014 a brief consolidation or shallow pullback to the $74,800-75,500 zone would offer a cleaner entry. The 21-day ROC dominance and ADX strength confirm BTC is the rotation anchor; other assets follow its lead.",
+        "entry": 75500.0,
+        "target": 81500.0,
+        "stop": 72800.0,
+        "timeframe": "8-15 trading days"
+      },
+      "ETH-USD": {
+        "signal": "bullish",
+        "confidence": 68,
+        "reasoning": "ETH exhibits the classic sector rotation catch-up pattern: strongest 21-day ROC (+14.4%) but weakest 5-day ROC (-1.87%), indicating a brief pullback within a larger inflow cycle. ADX 34.2 is the highest of the group, confirming a strong underlying trend. The smart contract platform 'sector' is being driven by fundamentals chasing BTC's store-of-value rally. Critically, hourly volume spiked to 2.73x the 20-period average with MFI 80.2 \u2014 institutional buying resuming after the multi-day pullback from $2,421. Daily MACD remains positive (histogram 5.48, expanding from very low base). Price ($2,360) is sitting above all daily EMAs and at the Fib 23.6% retracement ($2,307) of the recent swing. ETH is still 17% below its SMA-200, meaning significant upside room before overbought conditions emerge at the macro level. Entry near current levels targets the prior swing high at $2,421 and extension toward $2,550.",
+        "entry": 2320.0,
+        "target": 2560.0,
+        "stop": 2190.0,
+        "timeframe": "8-15 trading days"
+      },
+      "SOL-USD": {
+        "signal": "bearish",
+        "confidence": 58,
+        "reasoning": "SOL is the weakest relative performer in this crypto basket and shows classic sector rotation outflow signals. The high-throughput L1 'sector' is losing capital to BTC and ETH: 21-day ROC only +3.5% vs BTC's +13.8% \u2014 a massive divergence in a basket where all assets should benefit equally if purely market-driven. Daily EMAs are NOT aligned in an uptrend (ema_10 85.3 < ema_50 87.2), ADX only 15.8 indicating a choppy, directionless trend, and volume is running 0.83x the 20-day average. The z-score of -0.15 means price is at its statistical mean \u2014 no trend extension at all. SOL is priced below its 50-EMA on a daily basis, which is bearish relative to peers. While hourly indicators show a short-term bounce (volume 2.58x, RSI 63), these represent relief rallies in a weakening structure. Resistance at $87.45-89 on hourly and $89 on daily. The rotation money is NOT flowing into SOL in this cycle; it is flowing to BTC and ETH. Bearish signal is a relative 'avoid/underweight' vs the group \u2014 not a short given overall crypto market strength.",
+        "entry": 87.5,
+        "target": 79.5,
+        "stop": 90.5,
+        "timeframe": "10-18 trading days"
+      },
+      "BNB-USD": {
+        "signal": "neutral",
+        "confidence": 45,
+        "reasoning": "BNB (exchange token 'sector') is showing mixed rotation signals that do not yet confirm a clear directional trade. Daily EMAs are not aligned uptrend (ema_10 622 < ema_50 634), ADX 21.8 is moderate, and 21-day ROC of only +3.4% significantly underperforms BTC/ETH. However, the MACD just crossed positive (histogram +3.79, first positive reading in a while), and hourly EMAs are fully aligned uptrend with volume 2.34x average. The exchange token thesis is that BNB benefits from increased exchange volume as crypto markets heat up \u2014 a lagged rotation play. But the evidence is mixed: daily volume slightly below average (0.92x), price struggling at the 50-EMA level ($634), and the 21-day underperformance is pronounced. Price at $639 is near the Fib 61.8% retracement of the prior swing ($619.9), and daily resistance sits at $643. Without a clear break above $643-650 on volume, the rotation into exchange tokens is unconfirmed. Watch for a volume breakout above resistance before committing.",
+        "entry": 640.0,
+        "target": 670.0,
+        "stop": 615.0,
+        "timeframe": "7-12 trading days"
+      },
+      "XRP-USD": {
+        "signal": "bullish",
+        "confidence": 60,
+        "reasoning": "XRP (payment network 'sector') shows moderate but consistent rotation inflows. The 21-day ROC of +7.7% is solidly middle of the pack, and critically the 5-day ROC of +2.4% remains positive (unlike ETH's -1.87% pullback or SOL's near-flat), indicating sustained buying pressure. Daily volume at 1.20x the 20-period average confirms above-average capital flow. ADX 31.7 (strong) and daily RSI 61.8 (rising, room to run) support the bullish lean. MACD histogram turned positive (+0.0108) for the first time after the recent base formation. Hourly structure is constructive: EMAs aligned up, volume 1.67x avg, RSI 57 (not overbought \u2014 room to run on hourly), Bollinger position 0.81 (not extended). XRP benefits from the broader crypto rotation without being as extended as BTC or as weak as SOL. Payment network narrative (cross-border, institutional adoption) provides independent catalyst. Price ($1.444) needs to clear the $1.477-1.490 resistance zone (Fib 23.6% of swing + prior high) to confirm the rotation trade. Risk-reward is attractive from near-term support.",
+        "entry": 1.43,
+        "target": 1.58,
+        "stop": 1.32,
+        "timeframe": "8-14 trading days"
+      }
+    },
+    "swing_mean_reversion": {
+      "BTC-USD": {
+        "signal": "bearish",
+        "confidence": 62,
+        "reasoning": "BTC presents the strongest mean reversion setup of the group. Daily Z-score is 1.80 (approaching but not quite at extreme +2), with price extended 7.53% above the 50-SMA. However, the hourly timeframe is clearly overbought: Z-score at 2.47 (above extreme threshold), Bollinger Band position at 1.02 (price above upper band), stochastic K at 90.3 (overbought), and CCI at 207 (extreme). Most importantly, hourly MFI has collapsed to 13.4 \u2014 a strong bearish divergence where price is at highs but money flow is extremely weak. Current price at $77,464 is above the daily resistance of $77,127 and near the hourly resistance of $77,626. The April 17 high of $78,320 formed a rejection and price failed to reclaim it. The setup warrants a moderate bearish bias, targeting reversion to the daily 50-SMA at $70,559 (Bollinger midline at $71,993 is a more conservative target). Stop above the hourly swing high at $77,626. Confidence is moderated because the daily Z-score has not yet breached +2, so the signal is hourly-led with daily trend still intact.",
+        "entry": 77464.49,
+        "target": 71992.73,
+        "stop": 78500.0,
+        "timeframe": "5-10 trading days"
+      },
+      "ETH-USD": {
+        "signal": "bearish",
+        "confidence": 58,
+        "reasoning": "ETH shows a developing mean reversion setup primarily on the hourly timeframe. Daily Z-score of 1.35 is elevated but not at extreme (+2 threshold). Price is extended 8.02% above the 50-SMA (daily), which is noteworthy. The hourly picture is more extreme: Z-score at 2.64 (well above +2), Bollinger Band position at 1.07 (clearly above upper band), CCI at 267 (very extreme), and stochastic D (84.2) crossing above K (79.1) \u2014 a bearish cross in overbought territory. Hourly MFI at 80 is overbought but not diverging (unlike BTC). Price at $2,360 is near the daily resistance of $2,421 (also the April 17 swing high). The April 17-19 sequence shows a failed breakout attempt (high at $2,464, rejection down to $2,254 on Apr 19). The bounce from $2,262 lows on Apr 20 is now running into resistance. Target is the daily Bollinger midline at $2,231. Stop above the hourly resistance at $2,370. Confidence is lower than BTC because daily Z-score is still in the moderate zone and the Apr 20 bounce could continue.",
+        "entry": 2360.48,
+        "target": 2231.48,
+        "stop": 2420.0,
+        "timeframe": "5-8 trading days"
+      },
+      "SOL-USD": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "SOL presents no valid mean reversion setup. The daily Z-score is -0.15 \u2014 essentially at the mean. Price is only 0.67% below the 50-SMA, well within the neutral zone. Daily RSI at 57.5, stochastic at 56.4, CCI at 42.2, and MFI at 62.5 are all in mid-range. While the hourly Z-score has spiked to 2.52 with CCI at 223 and stochastic showing a bearish cross (D 83.8 > K 79.8), mean reversion signals require confirmation on the primary (daily) timeframe. An hourly-only extreme in a daily neutral context is not a sufficient setup \u2014 the hourly move merely reflects normal intraday volatility within a range-bound day. No trade signal.",
+        "entry": null,
+        "target": null,
+        "stop": null,
+        "timeframe": "no setup"
+      },
+      "BNB-USD": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "BNB is firmly at its mean on the daily timeframe. Daily Z-score of 0.09 is almost exactly zero \u2014 the textbook case for no mean reversion setup. Price is essentially at the 50-SMA (0.31% above). Daily RSI at 59.3, stochastic at 67.3, CCI at 85.3 \u2014 all mid-range. While the hourly shows some extension (Z-score 2.17, stochastic K 88.9, near upper Bollinger band), the daily picture is completely neutral. BNB has been in a consolidation range after declining from the $679 swing high, and the current price at ~$640 is mid-range within that structure. No extreme exists at the primary timeframe to fade. No trade signal.",
+        "entry": null,
+        "target": null,
+        "stop": null,
+        "timeframe": "no setup"
+      },
+      "XRP-USD": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": "XRP falls squarely in the neutral zone. Daily Z-score of 0.75 is within the -1 to +1 range where no mean reversion setup exists by strategy rules. Price is only 2.86% above the 50-SMA \u2014 well below the 5% extension threshold that would be noteworthy. Daily RSI at 61.8, stochastic at 60.9, CCI at 93.7, MFI at 67.5 \u2014 all in the middle of their ranges. The hourly Z-score of 1.69 is elevated but not extreme, and the hourly stochastic (K 84.0) shows mild overbought conditions. XRP has been recovering from a broad downtrend (SMA 200 at $1.88 vs current $1.44) but the daily structure is range-bound without a clear extreme to fade. No trade signal.",
+        "entry": null,
+        "target": null,
+        "stop": null,
+        "timeframe": "no setup"
+      }
+    },
+    "news_sentiment": {
+      "BTC-USD": {
+        "signal": "bullish",
+        "confidence": 72,
+        "reasoning": "BTC shows strong multi-timeframe momentum with daily EMAs fully aligned in uptrend, RSI at 67.2 (bullish but not yet overbought), and MACD histogram positive and expanding. The 21-day ROC of +13.8% reflects meaningful price-driven buying interest consistent with positive macro sentiment. Volume is running 1.09x the 20-day average, confirming steady accumulation. Price at $77,464 is holding well above the Fib 23.6% level at $74,490 which now acts as near-term support. The one caution is the hourly MFI at 13.4 (extremely low) which diverges from the bullish price action \u2014 suggesting short-term money flow hasn't confirmed the intraday move above $77k, potentially indicating a brief consolidation before continuation. Overall the structural trend and momentum signals point to continued upside on a swing timeframe of 1-2 weeks.",
+        "entry": 76500.0,
+        "target": 82000.0,
+        "stop": 73500.0,
+        "timeframe": "1-2 weeks"
+      },
+      "ETH-USD": {
+        "signal": "bullish",
+        "confidence": 68,
+        "reasoning": "ETH is showing a classic sentiment-driven recovery pattern: a strong 21-day momentum surge (+14.4% ROC) followed by a healthy 2-day pullback (Apr 17 high $2,421 down to Apr 19 low $2,254), now bouncing with strong hourly volume at 2.73x the 20-day average. This volume surge during recovery is a strong positive sentiment signal \u2014 buyers are stepping in aggressively. Daily MFI at 68.8 and hourly MFI at 80.2 both confirm active money inflow. Daily RSI at 61.2 leaves significant headroom before overbought conditions. Both daily and hourly EMAs are aligned in uptrend. The pullback found support near the Fib 50% level (~$2,179) and is recovering, which is consistent with sentiment-driven dip-buying. Primary risk is the broader crypto market correlation with BTC and recent 5-day ROC briefly negative (-1.87).",
+        "entry": 2330.0,
+        "target": 2500.0,
+        "stop": 2220.0,
+        "timeframe": "1-2 weeks"
+      },
+      "SOL-USD": {
+        "signal": "neutral",
+        "confidence": 45,
+        "reasoning": "SOL presents a mixed sentiment picture. While hourly EMAs are aligned uptrend and the asset bounced from $83.17 lows, the daily EMA structure is not aligned (ema_10 85.3 < ema_50 87.2), indicating no sustained directional momentum. ADX of 15.8 on the daily timeframe signals a non-trending, choppy market \u2014 poor environment for swing entries. Daily volume is running below the 20-day average at 0.83x, suggesting a lack of broad participation or catalysts. The 21-day ROC of only +3.5% significantly underperforms BTC (+13.8%) and ETH (+14.4%), indicating relative weakness and less positive sentiment. SOL remains far below its SMA200 ($125.6), a structural bearish overhang. Hourly indicators show some intraday energy (volume 2.58x avg, RSI 63.1) but this does not override the weak daily backdrop. Without a clear catalyst signal, the risk/reward for a swing setup is unfavorable.",
+        "entry": 85.5,
+        "target": 90.0,
+        "stop": 82.5,
+        "timeframe": "1 week"
+      },
+      "BNB-USD": {
+        "signal": "neutral",
+        "confidence": 50,
+        "reasoning": "BNB shows modest positive price action \u2014 a recovery from $616 lows on Apr 19 to current $639.75 \u2014 but the sentiment signals lack the strength needed for a high-conviction swing setup. Daily EMAs are not aligned (ema_10 622 below ema_50 634), reflecting the medium-term trend is still uncertain. ADX at 21.8 is marginal, indicating a weak trend. Volume at 0.92x the 20-day average is slightly below normal, not indicative of a sentiment-driven surge. The 21-day ROC of +3.4% is underwhelming. Hourly indicators are more constructive: EMAs aligned uptrend, volume 2.34x average, RSI 63.2, MACD positive \u2014 but the hourly stochastic at 88.9 flags near-term overbought conditions. BNB's large distance below SMA200 ($829) acts as a long-term sentiment headwind. The overall picture is a range-bound recovery without strong catalysts \u2014 neutral with a slight bullish lean on intraday but insufficient for a confident swing position.",
+        "entry": 630.0,
+        "target": 655.0,
+        "stop": 612.0,
+        "timeframe": "1 week"
+      },
+      "XRP-USD": {
+        "signal": "bullish",
+        "confidence": 65,
+        "reasoning": "XRP exhibits the most consistent multi-timeframe momentum buildup of the group. The 21-day ROC of +7.7% combined with a 10-day ROC of +5.0% shows a steady, sustained acceleration \u2014 characteristic of positive sentiment accumulation rather than a one-day spike. Daily ADX at 31.7 confirms a genuine trend, not noise. Volume is running 1.20x the 20-day average with hourly volume also elevated at 1.67x, suggesting active participation at multiple timeframes. The RSI at 61.8 daily and 57.0 hourly both have room before overbought levels. Critically, XRP's price action shows a bullish retrace pattern: the Apr 16-17 breakout run to $1.477 was followed by a pullback that held the Fib 61.8% retrace level ($1.403), and price is now recovering. Both hourly EMAs are fully aligned uptrend with a well-stacked structure from SMA200 upward. The primary risk is resistance at $1.477-$1.49 (daily resistance and Fib 23.6%), which may cause a pause before any continuation toward $1.54 swing high.",
+        "entry": 1.43,
+        "target": 1.52,
+        "stop": 1.37,
+        "timeframe": "1-2 weeks"
+      }
+    },
+    "swing_pullback_trader": {
+      "BTC-USD": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "BTC has broken above its daily swing high ($77,127) and is now trading at $77,464 \u2014 there is no clean pullback to Fibonacci retracement levels. The 38.2% Fib sits at $72,859 and the 50% at $71,541, both well below current price. Hourly indicators show extreme overbought conditions: Stochastic K=90.3, Williams %R=-9.7, CCI=207, and price is trading above the hourly Bollinger Band upper (position 1.02). Hourly volume is only 35.7% of 20-bar average, suggesting thin conviction on this breakout. Daily RSI at 67.2 is approaching overbought. The pullback trade setup requires a retracement to Fib confluence, which has not occurred \u2014 entering here would be chasing. Wait for a pullback to the $72,859\u2013$71,541 zone (38.2%\u201350% retracement) before considering a bullish entry.",
+        "entry_price": 72859.0,
+        "target_price": 77127.0,
+        "stop_loss": 70222.0,
+        "timeframe": "7-14 trading days"
+      },
+      "ETH-USD": {
+        "signal": "bullish",
+        "confidence": 62,
+        "reasoning": "ETH pulled back from swing high $2,421 down to $2,265 (Apr 19), touching near the 38.2% Fib retracement zone ($2,236). Price has since bounced to $2,315\u2013$2,360 range, with current price at $2,360. The pullback low was close to but slightly above the 38.2% Fib ($2,236), showing the level held. Daily EMAs are aligned in uptrend (EMA 10 > EMA 21 > EMA 50), ADX=34.2 indicating a solid trend. Daily RSI 61.2 is not overbought, leaving room to run. MACD histogram is positive. The 50% Fib ($2,179) provided a backstop. Hourly EMAs are also aligned bullish. However, hourly RSI at 67.2 and price slightly above the hourly BB upper suggest a minor short-term pullback is possible \u2014 a dip to the hourly 50% Fib ($2,321) or $2,308 would be the ideal tight entry for swing purposes. Entry near the hourly 61.8% Fib ($2,309) confluences with daily 23.6% Fib support. Target is retest of swing high $2,421.",
+        "entry_price": 2310.0,
+        "target_price": 2421.0,
+        "stop_loss": 2236.0,
+        "timeframe": "5-10 trading days"
+      },
+      "SOL-USD": {
+        "signal": "neutral",
+        "confidence": 40,
+        "reasoning": "SOL's daily trend structure is not clearly defined \u2014 EMAs are not aligned for uptrend (EMA_10=85.33 < EMA_50=87.18), and ADX is weak at 15.8, indicating no strong directional trend. The daily Z-score of -0.149 places price near its mean with no momentum. While the current price $87.19 is near the daily 50% Fib retracement ($87.59), the lack of a clean uptrend disqualifies this as a high-probability pullback-in-uptrend setup. The sma_200 at $125.56 shows SOL is in a longer-term downtrend from much higher levels. Hourly EMAs are aligned bullish and hourly RSI 63.1 is reasonable, but the daily structural conflict reduces conviction. Hourly CCI=223 and Stochastic K=80 warn of short-term overbought on the bounce. No clean pullback setup within a defined uptrend \u2014 classify as neutral until daily trend structure clarifies.",
+        "entry_price": 85.55,
+        "target_price": 92.15,
+        "stop_loss": 82.65,
+        "timeframe": "8-15 trading days"
+      },
+      "BNB-USD": {
+        "signal": "neutral",
+        "confidence": 38,
+        "reasoning": "BNB's daily EMAs are not aligned for uptrend (EMA_10=622.3 < EMA_50=633.5), and the SMA_200 at $829.34 shows the longer-term trend remains down. ADX=21.8 signals a weak, non-directional trend. Current price $639.75 is just below the 38.2% Fib retracement ($642.60) from swing high $679.35. While this is near a Fib level, price has not pulled back deeply into the zone \u2014 it is approaching from below after a mini-bounce from $615.6 lows. The hourly Stochastic K=88.9 and Williams %R=-11.1 signal overbought conditions on the hourly timeframe, and the hourly CCI=180 further confirms short-term exhaustion. Price has run up sharply from $616 to $640 in one day without a proper consolidation. Without a clear daily uptrend, a pullback into the 38.2%\u201350% Fib zone would more likely represent a short (bearish) setup in the broader downtrend. No clean bullish pullback setup exists.",
+        "entry_price": 619.89,
+        "target_price": 656.65,
+        "stop_loss": 603.73,
+        "timeframe": "7-12 trading days"
+      },
+      "XRP-USD": {
+        "signal": "bullish",
+        "confidence": 58,
+        "reasoning": "XRP pulled back from its swing high of $1.5074 (Apr 17 intraday) down to $1.3946 (Apr 19\u201320 lows), representing a decline to near the 61.8% daily Fib retracement ($1.4027). The 61.8% level held as support, with price now recovering to $1.4444. Daily RSI 61.8 is moderate, leaving upside room. MACD histogram is positive and turning up. Short-term momentum is positive: ROC_5=2.39%, ROC_10=5.03%. The daily support/resistance zone has $1.3156 as support and $1.4770 as resistance. Hourly EMAs are all aligned bullish (EMA_10 > EMA_21 > EMA_50 > SMA_200), confirming the recovery. Hourly RSI 57 is not overbought. Volume picked up on Apr 17 ($4.23B) and is above the 20-day average today ($2.88B vs $2.39B avg), showing buying interest. Entry at current levels near the 50% Fib ($1.4296) with tight stop below the 61.8% low, targeting retest of swing high $1.5074. The 61.8% Fib bounce is a classic deep pullback entry in an uptrend.",
+        "entry_price": 1.43,
+        "target_price": 1.51,
+        "stop_loss": 1.388,
+        "timeframe": "5-10 trading days"
+      }
+    },
+    "swing_trend_follower": {
+      "BTC-USD": {
+        "signal": "bullish",
+        "confidence": 78,
+        "reasoning": "BTC shows a textbook trend-following setup on the daily timeframe. EMA alignment is clean uptrend (EMA10 74,370 > EMA21 72,776 > EMA50 71,935) with ADX at 32.3, confirming a strong and established trend. RSI at 67 is healthy \u2014 not overbought. MACD histogram is expanding (377 points positive). Price pulled back from the Apr 17 high of 77,126 to 73,856 on Apr 19 before bouncing to 75,872 (last close), and current price at 77,464 suggests momentum continuation. Hourly timeframe also confirms uptrend alignment (EMA10 > EMA21 > EMA50) with ADX 31.6. Volume on the Apr 17 trend day (54B) was significantly higher than counter-trend pullback days (26-30B), confirming institutional trend participation. Bollinger position at 0.80 on the daily shows strength without extreme overextension. The pullback to the 21 EMA zone (around 72,776-74,370) was the ideal entry, but with current price breaking above recent resistance at 77,126, a long continuation trade on any minor intraday pullback is valid. Stop placed below the Apr 19 swing low. Target at measured move extension toward 82,000 area.",
+        "entry": 76500.0,
+        "target": 82000.0,
+        "stop": 73200.0,
+        "timeframe": "5-12 trading days"
+      },
+      "ETH-USD": {
+        "signal": "bullish",
+        "confidence": 72,
+        "reasoning": "ETH has a confirmed daily uptrend with EMA alignment intact (EMA10 2,304 > EMA21 2,249 > EMA50 2,211) and ADX at 34.2, the strongest ADX reading among all assets analyzed. RSI at 61.2 is bullish but not overbought. MACD is positive with expanding histogram. Price pulled back from the Apr 17 swing high of 2,421 to a low of 2,254 on Apr 19, then closed at 2,315 \u2014 a healthy pullback of ~6.9% that tested the 21 EMA zone (2,249). Current price at 2,360 is recovering above the 10 EMA (2,304). The pullback depth touched near Fib 0.618 (2,121) region and bounced \u2014 showing trend resilience. Hourly EMAs are aligned upward (EMA10 2,331 > EMA21 2,323 > EMA50 2,320), confirming short-term momentum is with the uptrend. Daily volume was higher on up days (26.4B on Apr 17) versus down days (14.4B on Apr 18, 17B on Apr 19), a bullish sign. Confidence tempered slightly by SMA200 at 2,845 being far above, indicating ETH is in a longer-term recovery mode rather than a clean primary uptrend. Entry on a pullback to the 10 EMA with stop below the 21 EMA.",
+        "entry": 2310.0,
+        "target": 2500.0,
+        "stop": 2210.0,
+        "timeframe": "5-10 trading days"
+      },
+      "SOL-USD": {
+        "signal": "neutral",
+        "confidence": 30,
+        "reasoning": "SOL fails both key trend-following criteria. First, the daily EMAs are tangled with no clean alignment: EMA10 (85.33) > EMA21 (84.97) but EMA50 (87.18) is above both, meaning EMAs are not fanning in the required uptrend order. Second, ADX is only 15.8 on the daily timeframe \u2014 well below the 25 threshold required to confirm a tradeable trend. This combination (tangled EMAs + ADX < 20) means there is no established trend to follow, only chop. Price action over the past 5 days shows a range between 83.17 and 90.37 with no clear directional conviction. ROC-5 is only 0.49%, confirming near-flat price momentum. While the hourly indicators show a better-aligned uptrend with ADX at 32.9, this is insufficient for a multi-day swing trade \u2014 the daily timeframe must confirm. The SMA200 at 125.56 reveals SOL is in a long-term downtrend context, making any bullish swing trade higher risk. No trade setup until daily EMAs clarify and ADX rises above 25.",
+        "entry": 85.33,
+        "target": 90.0,
+        "stop": 82.5,
+        "timeframe": "N/A - no trade"
+      },
+      "BNB-USD": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "BNB daily EMAs are in a tangled configuration: EMA10 (622.3) and EMA21 (619.2) are close together but EMA50 (633.5) is above both, indicating no clean uptrend alignment. While ADX at 21.8 is marginally above 20, it does not meet the 25 threshold required for trend confirmation, and the EMAs are not fanning properly. Price has ranged between 615 and 648 over the past 5 days \u2014 a 5% range without directional conviction. The MACD histogram is positive (3.79) and turning, suggesting early momentum emergence, but this is not yet a confirmed trend. Hourly timeframe is more promising with clean EMA uptrend alignment and ADX 29.2, and volume is elevated at 2.3x average on the hourly \u2014 but this does not override the lack of daily trend confirmation. The SMA200 at 829 highlights BNB is also in a longer-term downtrend recovery. Risk-reward is insufficient without a clean daily trend structure. Monitor for daily EMA alignment to clarify before committing to a swing trade.",
+        "entry": 629.0,
+        "target": 655.0,
+        "stop": 613.0,
+        "timeframe": "N/A - no trade"
+      },
+      "XRP-USD": {
+        "signal": "bullish",
+        "confidence": 58,
+        "reasoning": "XRP presents a mixed but leaning-bullish picture. The daily EMAs are technically tangled (EMA50 at 1.4114 sits between EMA10 at 1.4048 and EMA21 at 1.3881), failing the strict uptrend EMA alignment criterion. However, several factors support a cautious bullish trade: ADX is 31.7 on the daily (strong trend strength confirmed), MACD histogram is clearly positive and expanding (+0.0108), momentum is building (ROC-5 +2.4%, ROC-10 +5.0%, ROC-21 +7.7%), and volume on up days was significantly higher (4.0B Apr 16, 4.2B Apr 17) than on down days (2.5B Apr 18, 2.9B Apr 19). Current price at 1.4444 is above the daily resistance of 1.4114 (EMA50). Hourly timeframe confirms a clean uptrend (EMA10 1.4337 > EMA21 1.4315 > EMA50 1.4295) with ADX 27.7 \u2014 both criteria met on hourly. The price pulled back from the Apr 17 high of 1.477 to 1.394 on Apr 19 (the hourly swing low), then recovered. Confidence is reduced from full-bullish because the daily EMA alignment is imperfect and the SMA200 at 1.878 shows XRP is still in longer-term downtrend context. Entry on the current pullback with tight stop below Apr 19 low.",
+        "entry": 1.425,
+        "target": 1.52,
+        "stop": 1.39,
+        "timeframe": "5-8 trading days"
+      }
+    },
+    "swing_breakout_trader": {
+      "BTC-USD": {
+        "signal": "bullish",
+        "confidence": 58,
+        "reasoning": "BTC has broken above its key daily resistance at $77,126 (swing high) with current price at $77,464. The hourly Bollinger Band position at 1.02 confirms price is trading above the upper band \u2014 a classic breakout signal. The daily MACD histogram is expanding at 377 (bullish), RSI at 67.2 is in bullish territory without being overbought, and EMAs are aligned uptrend on both daily and hourly timeframes. The measured move from the consolidation range ($77,126 - $65,955 = $11,171 range height) projects a target near $88,300. However, the key weakness is volume: daily volume ratio was only 1.087x the 20-day average on the breakout attempt, well below the 1.5x requirement. The April 17 breakout candle saw 54B vs avg 36.5B (1.48x \u2014 just shy of threshold). Hourly volume is suppressed at 0.357x avg, failing to confirm the breakout intraday. This is a low-confidence bullish setup \u2014 the structure is right but volume is not confirming. A high-volume close above $77,500 would upgrade this significantly.",
+        "entry": 77500.0,
+        "target": 88300.0,
+        "stop": 75200.0,
+        "timeframe": "7-14 trading days"
+      },
+      "ETH-USD": {
+        "signal": "neutral",
+        "confidence": 40,
+        "reasoning": "ETH is recovering from a pullback but has not yet broken above the key daily resistance at $2,421 (swing high). Current price is $2,360, roughly 2.5% below resistance. The daily Bollinger Band position at 0.681 shows price is in the middle of the daily range \u2014 no breakout on the daily timeframe. Daily RSI at 61.2 and MACD barely positive (histogram 5.5) show mild bullish momentum, but nothing decisive. Daily volume ratio is only 1.079x average \u2014 no volume surge. On the hourly timeframe, ETH shows more promise: price is above the upper Bollinger Band (position 1.069) with RSI 67.2 and a notable volume surge at 2.73x the 20-hour average. However, the hourly breakout is above a relatively minor intraday resistance ($2,370) rather than the major daily resistance ($2,421). Until ETH can close above $2,421 on the daily chart with volume 1.5x+ the 20-day average, no confirmed breakout trade exists. Watch for a breakout above $2,421 with volume for a trade entry.",
+        "entry": 2425.0,
+        "target": 2900.0,
+        "stop": 2290.0,
+        "timeframe": "8-15 trading days"
+      },
+      "SOL-USD": {
+        "signal": "neutral",
+        "confidence": 32,
+        "reasoning": "SOL lacks the structural prerequisites for a clean breakout trade. Daily EMAs are NOT aligned uptrend (ema_aligned_uptrend: False) \u2014 EMA 50 at $87.18 is actually above EMA 10 ($85.33) and EMA 21 ($84.97), indicating recent bearish pressure. The ADX at 15.8 is very weak, confirming there is no established trend. Daily volume is below average at 0.83x \u2014 the opposite of what a breakout requires. The key daily resistance is $88.99, and SOL hit $90.67 on April 17 but failed to hold above it, creating a failed breakout pattern. Current price $87.19 is below that resistance. MACD histogram just turned slightly positive (0.37) and RSI at 57.5 is neutral. Hourly indicators are more constructive (EMA aligned, volume 2.58x) but this appears to be a modest intraday recovery within a bearish daily structure. SOL is in a wide consolidation range ($78.95 - $88.99) with no clear catalyst. Neutral \u2014 wait for a decisive daily close above $89 with strong volume before considering a long.",
+        "entry": 89.5,
+        "target": 97.0,
+        "stop": 83.0,
+        "timeframe": "6-12 trading days"
+      },
+      "BNB-USD": {
+        "signal": "neutral",
+        "confidence": 38,
+        "reasoning": "BNB is approaching its daily resistance zone ($643.45) from below after a pullback, but has not broken out. Daily EMAs are NOT aligned uptrend (EMA 50 at $633.5 > EMA 10 at $622.3), suggesting the recent recovery is still within a bearish daily structure. ADX at 21.8 shows a weak-to-moderate trend. Daily volume ratio is 0.916x \u2014 below average, which is the opposite of what a breakout setup demands. The daily MACD histogram has just turned positive (3.79) after being negative, and RSI at 59.3 is modestly bullish. Current price $639.75 is near but below resistance $643.45. The April 17 candle that previously hit $643-$648 saw volume of 1.995B vs avg 1.679B (1.19x) \u2014 also below the 1.5x threshold. Hourly volume is elevated at 2.34x, showing intraday buying interest, but without daily volume confirmation. The range ($643 - $583 = $60) would project a target of ~$703 on a confirmed breakout. Wait for a daily close above $643.45 with volume above 2.5B (1.5x avg) before entry.",
+        "entry": 644.0,
+        "target": 703.0,
+        "stop": 613.0,
+        "timeframe": "7-12 trading days"
+      },
+      "XRP-USD": {
+        "signal": "bullish",
+        "confidence": 52,
+        "reasoning": "XRP shows the most constructive setup among the group for an emerging breakout. Daily RSI at 61.8 is bullish, ADX at 31.7 shows a meaningful trend, MACD histogram is positive and rising (0.011), and the 21-day ROC of 7.73% shows sustained momentum. Daily volume at 1.204x average is above average but still short of the 1.5x confirmation threshold. Current price $1.444 is approaching key resistance at $1.477 (daily S/R) and $1.49 (Fib 23.6%). The Bollinger Band position of 0.795 shows price in the upper portion of the daily range without being overextended. On the hourly timeframe, EMAs are aligned uptrend, the Bollinger position is 0.808, and importantly, hourly volume is surging at 1.666x the 20-hour average \u2014 above the 1.5x confirmation threshold. This hourly volume surge is the key positive signal. The Bollinger Band width of 0.14 on daily shows enough room for expansion. A close above $1.477 with daily volume approaching 3.6M+ would confirm the breakout. The measured move from the range ($1.544 high - $1.316 low = $0.228) projects a target near $1.705 from the breakout level. Entry at current price with a stop just below $1.39 (below the recent consolidation).",
+        "entry": 1.445,
+        "target": 1.705,
+        "stop": 1.385,
+        "timeframe": "6-12 trading days"
+      }
+    },
+    "swing_catalyst_trader": {
+      "BTC-USD": {
+        "signal": "neutral",
+        "confidence": 45,
+        "reasoning": "BTC is technically extended at $77,464 \u2014 daily RSI at 67.2 and hourly RSI at 65.3 with price above the hourly upper Bollinger Band (position 1.02). Stochastic on hourly is 90/88, deeply overbought near-term. The hourly MFI at a dangerously low 13.4 while price is at highs signals a money-flow divergence (smart money not chasing). Hourly volume is only 0.36x its 20-period average \u2014 conviction is absent at these highs. Price is pressing directly into the swing high resistance zone of $77,127-$77,626. No specific catalyst is identifiable in the news data. While the daily trend remains intact (ADX 32.3, EMAs aligned uptrend, positive MACD histogram of $377), the absence of a near-term identifiable catalyst combined with overbought short-term conditions and resistance overhead argues for patience. A pullback to $73,800-$74,500 (hourly support / fib 50%) would set up a more favorable risk-reward entry for an ETF-flow or macro catalyst-driven swing trade.",
+        "entry": 74200.0,
+        "target": 80500.0,
+        "stop": 72800.0,
+        "timeframe": "5-10 trading days"
+      },
+      "ETH-USD": {
+        "signal": "bullish",
+        "confidence": 62,
+        "reasoning": "ETH presents the most constructive catalyst setup among the five assets. After spiking to $2,421 swing high, ETH pulled back to $2,265 (fib 23.6% zone at $2,307) and is now recovering with current price at $2,360. Critically, the hourly volume registered 2.73x its 20-period average \u2014 a strong early accumulation signal suggesting institutional re-entry. The daily RSI at 61.2 has room to run toward overbought, and the MACD histogram, while small (+5.48), is positive and constructive. Hourly EMAs are fully aligned in uptrend. For crypto, ETH catalysts commonly include protocol upgrades, staking yield changes, and ETF flow events. The volume surge without a clear news driver often precedes a catalyst announcement. Price is near the fib 23.6% retracement ($2,307) which held as support \u2014 this is an ideal catalyst-trade entry zone. Target set at the swing high retest ($2,420) and potential breakout toward $2,550 (measured move). Stop below the recent swing low structure.",
+        "entry": 2330.0,
+        "target": 2520.0,
+        "stop": 2220.0,
+        "timeframe": "5-12 trading days"
+      },
+      "SOL-USD": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "SOL lacks both a clear catalyst and a constructive technical setup on the daily timeframe. Daily EMAs are not aligned in either direction, ADX is a weak 15.8 indicating a trendless range environment, and the SMA200 sits far above at $125.57 \u2014 SOL is a significant underperformer versus its own historical baseline. While the hourly timeframe shows some short-term momentum (RSI 63.1, volume 2.58x avg, EMAs aligned uptrend), this is insufficient for a catalyst-driven swing trade. Price bounced from $83.48 to $87.19 but faces resistance at $88.99 (recent swing high and fib 61.8% zone). The daily MACD is barely positive (histogram +0.37) and the trend is fragile. No news or specific catalyst is identified. Without a network upgrade, ETF listing, or ecosystem catalyst announcement, there is no edge for a 2-20 day swing trade.",
+        "entry": 85.0,
+        "target": 93.0,
+        "stop": 81.5,
+        "timeframe": "7-14 trading days"
+      },
+      "BNB-USD": {
+        "signal": "neutral",
+        "confidence": 40,
+        "reasoning": "BNB shows mixed signals without an identifiable catalyst. The daily EMAs are not in a clean uptrend alignment (EMA10 $622 < EMA50 $633), and price at $639.75 is pressing against daily resistance at $643.45 \u2014 a breakout test with no news-driven catalyst behind it. The daily RSI at 59.3 has moderate room, and MACD histogram is turning positive (+3.79), suggesting early momentum. Hourly picture is more constructive: EMAs aligned, ADX 29.2, volume 2.34x average, and price near the upper Bollinger Band. However, BNB's catalysts (Binance regulatory events, BNB Chain upgrades, token burns) are absent from the data. The price bounce from $616 to $639 suggests some recovery, but without a catalyst to drive a sustained move above $643 resistance, the risk-reward is insufficient for a catalyst swing trade. A confirmed breakout above $645 with a known catalyst would change this assessment.",
+        "entry": 625.0,
+        "target": 665.0,
+        "stop": 610.0,
+        "timeframe": "5-10 trading days"
+      },
+      "XRP-USD": {
+        "signal": "bullish",
+        "confidence": 58,
+        "reasoning": "XRP shows the most catalyst-consistent setup among the altcoins. The daily ADX at 31.7 indicates a meaningful trend in development, MACD histogram is positive and growing (+0.0108), and daily RSI at 61.8 has room before overbought. Volume is 1.20x its 20-day average \u2014 above normal, suggesting sustained buying interest. The hourly EMAs are fully aligned uptrend, hourly volume is 1.67x average, and price structure shows a clean bounce from $1.3946 support (fib 78.6% zone at $1.3644 held) back toward $1.4444. XRP is a high-beta regulatory catalyst asset: SEC settlement clarity, RLUSD stablecoin adoption, and cross-border payment partnership announcements are recurring catalysts. The current technical setup \u2014 recovering from a retracement, building above the 50-day SMA ($1.3853), MACD turning positive \u2014 is the constructive pre-catalyst coiling pattern this strategy seeks. The swing high at $1.5436 is the natural target. Entry on current momentum with stop below recent swing low support.",
+        "entry": 1.42,
+        "target": 1.54,
+        "stop": 1.36,
+        "timeframe": "5-10 trading days"
+      }
+    },
+    "swing_head_trader": {
+      "synthesis_date": "2026-04-22",
+      "mode": "crypto_swing",
+      "head_trader_notes": "9-strategy vote synthesis. Key conflict resolved: mean reversion bearish on BTC/ETH (extended vs 50-SMA) is overridden by 6/9 bullish votes + crypto sentiment bullish + macro tailwinds (whale accumulation, ETF inflows). Mean reversion signal respected only to adjust entry level \u2014 wait for minor pullback rather than chasing highs. SOL/BNB consensus neutral confirmed \u2014 no position. XRP is the highest-conviction risk-adjusted setup given CLARITY Act binary catalyst and clean technical structure.",
+      "BTC-USD": {
+        "signal": "bullish",
+        "confidence": 70,
+        "vote_tally": {
+          "bullish": 6,
+          "neutral": 2,
+          "bearish": 1
+        },
+        "key_conflict": "Mean reversion (bearish, Z-score 1.80) and catalyst_trader (neutral, wants pullback) vs 6 bullish strategies. Resolution: trend + momentum + rotation + Druckenmiller all agree \u2014 trend overrides mean reversion in a strong uptrend. Entry adjusted to reflect short-term extension risk.",
+        "entry": 76500,
+        "target": 82500,
+        "stop": 73500,
+        "risk_reward": 2.0,
+        "timeframe": "7-14 days",
+        "reasoning": "BTC has the cleanest trend structure in the cohort: EMA alignment (10>21>50), ADX 32.3, 21-day ROC +13.8%, above-average volume, and the strongest momentum score. 270,000 BTC whale accumulation + 7-year exchange reserve lows + $996M weekly ETF inflows = structural bid. Short-term extension acknowledged (hourly Z-score 2.47, stochastic 90) \u2014 prefer entry at pullback toward $75,500-$76,500. Catalysts: FOMC April 28-29 (dovish surprise = sharp rally), Iran ceasefire resolution. Stop below the April 19 low support zone.",
+        "crypto_risk_factors": [
+          "FOMC April 28-29 hold/hawkish = risk-off selloff",
+          "Iran deadline April 23 collapse = geopolitical risk-off",
+          "KelpDAO/Aave bad debt expansion could temporarily drag BTC"
+        ],
+        "position_sizing": "primary position \u2014 highest conviction in cohort"
+      },
+      "ETH-USD": {
+        "signal": "bullish",
+        "confidence": 65,
+        "vote_tally": {
+          "bullish": 6,
+          "neutral": 2,
+          "bearish": 1
+        },
+        "key_conflict": "Mean reversion bearish (Z-score 2.64 hourly, failed breakout at $2,421) vs trend/rotation/Druckenmiller bullish. Momentum ranker neutral (5-day ROC negative). Resolution: the 2.73x volume surge on the pullback is institutional accumulation, not distribution \u2014 confirmed by $230M Bitmine purchase and record ETF inflows. Volume divergence overrides short-term mean reversion.",
+        "entry": 2330,
+        "target": 2550,
+        "stop": 2210,
+        "risk_reward": 1.83,
+        "timeframe": "7-14 days",
+        "reasoning": "ETH shows the strongest ADX (34.2) and deepest institutional commitment. Glamsterdam upgrade (May-June) is the nearest hard catalyst in this basket. ETH Foundation stopped selling. 38.2% Fib pullback to $2,265-$2,310 is a textbook buy zone in an uptrend. Primary risk: KelpDAO/EigenLayer restaking contagion could temporarily weigh on ETH. Entry at current levels or on further weakness toward $2,290. This is a slightly reduced confidence vs BTC due to the failed $2,421 breakout and 5-day negative ROC.",
+        "crypto_risk_factors": [
+          "KelpDAO restaking contagion to EigenLayer/ETH staking derivatives",
+          "Glamsterdam delay beyond June 2026",
+          "Mean reversion to daily BB midline ($2,231) if macro risk-off"
+        ],
+        "position_sizing": "co-primary position with BTC"
+      },
+      "SOL-USD": {
+        "signal": "neutral",
+        "confidence": 35,
+        "vote_tally": {
+          "bullish": 0,
+          "neutral": 8,
+          "bearish": 1
+        },
+        "key_conflict": "None \u2014 unanimous signal. Sector rotation is technically bearish (capital rotating OUT to BTC/ETH).",
+        "entry": null,
+        "target": null,
+        "stop": null,
+        "risk_reward": null,
+        "timeframe": "no trade",
+        "reasoning": "SOL is the consensus avoid. Daily ADX 15.8 (non-trending), EMAs not aligned uptrend (EMA-50 above EMA-10/21), 21-day ROC only +3.5% vs BTC/ETH at +13-14%, and exchange inflows of 1.4M SOL suggest near-term selling pressure. The $182\u2192$87 drawdown reflects genuine weakness, not just market-wide fear. Long-term catalysts (Firedancer H2 2026, Goldman $108M position, Standard Chartered $250 target) are real but 3-6 months out \u2014 not a 2-20 day swing trade. Revisit on confirmed EMA re-alignment + ADX >25.",
+        "crypto_risk_factors": [
+          "Drift Protocol exploit overhang",
+          "ETF AUM declining ($1.1B\u2192$817M)",
+          "Exchange inflows = near-term sell pressure"
+        ],
+        "position_sizing": "no position"
+      },
+      "BNB-USD": {
+        "signal": "neutral",
+        "confidence": 40,
+        "vote_tally": {
+          "bullish": 1,
+          "neutral": 9,
+          "bearish": 0
+        },
+        "key_conflict": "Momentum ranker lone bullish (ROC re-acceleration signal) vs all other strategies neutral. Resolution: one strategy is insufficient without EMA alignment or volume confirmation above $643.",
+        "entry": null,
+        "target": null,
+        "stop": null,
+        "risk_reward": null,
+        "timeframe": "no trade \u2014 watch for breakout above $643",
+        "reasoning": "BNB's sole bullish signal (momentum ROC re-acceleration) is not confirmed by price structure. Daily EMAs misaligned, ADX 21.8 (below 25 threshold), lost #3 market cap to XRP, and margin pair delistings April 24 create near-term volatility. The 35th quarterly burn ($1B) is already priced in. AI agent growth (150K deployments) is a structural narrative but not a swing catalyst. Pass in favor of cleaner setups. Trigger to reconsider: daily close above $643 on 1.5x+ volume.",
+        "crypto_risk_factors": [
+          "April 24 margin pair delistings \u2014 volatility risk",
+          "XRP overtaking market cap = sentiment headwind",
+          "No dedicated ETF = limited institutional buying"
+        ],
+        "position_sizing": "no position"
+      },
+      "XRP-USD": {
+        "signal": "bullish",
+        "confidence": 62,
+        "vote_tally": {
+          "bullish": 7,
+          "neutral": 2,
+          "bearish": 0
+        },
+        "key_conflict": "Momentum ranker neutral (decelerating 21d>10d>5d pattern) vs 7 bullish strategies. Resolution: decelerating momentum is partially explained by the recent pullback from $1.50 high to $1.42 \u2014 this is a healthy retracement, not momentum breakdown. ADX 31.7 confirms underlying trend strength.",
+        "entry": 1.43,
+        "target": 1.56,
+        "stop": 1.375,
+        "risk_reward": 2.36,
+        "timeframe": "5-12 days",
+        "reasoning": "XRP has the best risk-adjusted setup heading into two near-term binary catalysts: (1) CLARITY Act Senate vote late April \u2014 permanent commodity status codification, (2) GraniteShares 3x leveraged XRP ETFs launching April 23 \u2014 increases price sensitivity to upside. 62% of supply now held by whale addresses (record), ETF inflows at strongest week of 2026 ($55.4M), wXRP on Solana pulling $100M DeFi. 61.8% Fib hold at ~$1.40 confirmed. Best risk/reward in the basket at 2.36:1. Entry at current levels, stop below Fib support.",
+        "crypto_risk_factors": [
+          "CLARITY Act delay/failure = regulatory premium reversal",
+          "Large Coinbase deposit (89.8M XRP April 13) = potential sell overhang",
+          "Leveraged ETF launch = two-edged volatility amplifier"
+        ],
+        "position_sizing": "secondary position \u2014 best risk/reward but binary catalyst risk"
+      },
+      "overall_market_context": "Fear & Greed at 29. BTC dominance 57-60% \u2014 capital concentrated in large caps, no altseason. Market resilient despite KelpDAO $14B DeFi shock. The setup favors quality-biased crypto exposure: long BTC + ETH (macro trend + institutional), long XRP (regulatory binary catalyst), avoid SOL + BNB (weak relative performance). The FOMC April 28-29 and Iran deadline April 23 are the two macro risk gates \u2014 positions should be sized for binary outcomes.",
+      "highest_conviction_setup": "XRP-USD \u2014 best risk/reward (2.36:1) with imminent binary catalyst (CLARITY Act). BTC-USD is the safest anchor position with strongest macro support.",
+      "signal_counts_summary": {
+        "BTC-USD": "6B/2N/1MR-bearish",
+        "ETH-USD": "6B/2N/1MR-bearish",
+        "SOL-USD": "0B/8N/1SR-bearish",
+        "BNB-USD": "1B(momentum)/9N/0bearish",
+        "XRP-USD": "7B/2N/0bearish"
+      }
+    },
+    "stanley_druckenmiller": {
+      "BTC-USD": {
+        "signal": "bullish",
+        "confidence": 78,
+        "reasoning": "BTC is showing the cleanest Druckenmiller setup in this crypto basket. The macro trend is unambiguous: daily EMAs fully aligned in uptrend (EMA10 74,370 > EMA21 72,777 > EMA50 71,935), ADX at 32.3 confirms a genuine trend rather than noise. The 21-day rate-of-change is a commanding +13.8%, with volume 1.09x the 20-day average \u2014 buyers are in control. MACD histogram at +377 and expanding, RSI 67.2 \u2014 strong but not yet exhausted. On the hourly, the structure is equally decisive: EMA stack fully bullish, RSI 65, and price pressing above the upper Bollinger Band \u2014 the kind of breakout extension Druckenmiller calls 'train leaving the station.' Key risk: price at $77,464 is now at prior daily resistance ($77,127), and the hourly MFI is a concerning 13.4 (suggesting short-term exhaustion). SMA-200 at $86,336 represents a natural institutional target \u2014 roughly 11% upside from current. Entry on any intraday pullback toward hourly support ($75,020), stop below the swing low at $73,800 (ATR-based, ~4.7% risk), targeting $86,000 for ~2.3:1 risk-reward. This is a high-conviction asymmetric trade \u2014 add aggressively if it holds the $75,000 level.",
+        "entry": 77464.49,
+        "target": 86000.0,
+        "stop": 73800.0,
+        "timeframe": "2-4 weeks"
+      },
+      "ETH-USD": {
+        "signal": "bullish",
+        "confidence": 65,
+        "reasoning": "ETH presents an interesting secondary setup behind BTC. The daily ADX at 34.2 is actually the highest in this group \u2014 the trend, once it finds footing, has institutional conviction behind it. EMAs are aligned upward (10>21>50), 21-day ROC is +14.4%, and volume is running 1.08x average. However, the recent 5-day ROC has slipped to -1.87%, indicating a short-term consolidation after the push to $2,421 on April 17. This is precisely the kind of controlled pullback I want to buy. The critical overlay: SMA-200 sits at $2,845 \u2014 that's a 20% reversion-to-trend move that large macro players are targeting in a risk-on environment. Hourly picture is constructive: EMA stack fully aligned, RSI 67, and volume surging at 2.73x average in the latest hourly bar \u2014 the smart money is re-entering the dip. Bollinger Band position at 1.07 (above upper band) signals momentum breakout. Entry at current levels with a tight stop below the April 19 swing low of $2,253. At $2,845 target that's 20.5% upside against 4.9% downside \u2014 better than 4:1. Risk-reward is highly asymmetric. I'll take the bet, but at lower conviction than BTC given ETH's tendency to lag and its weaker recent 5-day momentum.",
+        "entry": 2360.48,
+        "target": 2700.0,
+        "stop": 2200.0,
+        "timeframe": "2-3 weeks"
+      },
+      "SOL-USD": {
+        "signal": "neutral",
+        "confidence": 45,
+        "reasoning": "SOL is the clear underperformer in this basket and I see no edge here. The daily EMA structure is the tell: EMA10 (85.3) < EMA50 (87.2) \u2014 the short-term moving average is below the medium-term, meaning the trend has not yet resumed after what was clearly a large drawdown from the SMA-200 at $125.56. ADX at a weak 15.8 says there is no trend \u2014 we are in a choppy, directionless range. The 21-day ROC of only +3.5% is anemic compared to BTC (+13.8%) and ETH (+14.4%). Z-score of -0.15 signals the price is essentially at its historical mean \u2014 no momentum whatsoever on a statistical basis. Yes, the hourly looks slightly better: EMA stack is aligned, volume is 2.58x average, and ADX 32.9 suggests short-term trend. But I am a macro trend investor \u2014 I care about the daily structure, not hourly squiggles. SOL is showing relative weakness and a failed rally pattern (high of $90.67 on April 17 was rejected hard, then two consecutive down days to $83.58). Capital should be deployed where the trend is clearest and the risk-reward most asymmetric. SOL offers neither right now. I pass.",
+        "entry": 87.19,
+        "target": 92.0,
+        "stop": 82.5,
+        "timeframe": "no trade \u2014 neutral"
+      },
+      "BNB-USD": {
+        "signal": "neutral",
+        "confidence": 40,
+        "reasoning": "BNB is a muddled setup that I would not touch with conviction. The daily EMA structure is mixed: EMA50 (633.5) > EMA21 (619.2) > EMA10 (622.3) \u2014 the trend is indeterminate, with the medium-term EMA above the short-term. This is a consolidation zone, not a trending market. ADX at 21.8 confirms no strong directional trend. The 21-day ROC is only +3.4% \u2014 flat in a market where BTC is up 13.8%. Z-score of 0.09 puts it exactly at its mean: no statistical edge either way. The MACD histogram is positive (+3.79) and turning higher after being in negative territory, which is a mild constructive signal, and the stochastic is rising at 67 \u2014 these are faint green shoots. Hourly is constructive: full EMA uptrend, RSI 63, stoch 89, volume 2.34x average. But I trade what I see on the daily, and the daily shows an asset that has dramatically underperformed relative to BTC this cycle (SMA-200 at $829 vs current $640 \u2014 30% underwater on the 200-day). Relative weakness to BTC and ETH is a red flag. Not a trade I want to make when better setups exist.",
+        "entry": 639.75,
+        "target": 660.0,
+        "stop": 615.0,
+        "timeframe": "no trade \u2014 neutral"
+      },
+      "XRP-USD": {
+        "signal": "bullish",
+        "confidence": 58,
+        "reasoning": "XRP offers a moderate Druckenmiller setup with acceptable but not exceptional risk-reward. The daily ADX at 31.7 signals a real trend is in play \u2014 one of the stronger readings in this basket. Volume is running 1.2x the 20-day average, confirming participation. MACD histogram at +0.011 and just crossed positive \u2014 the early stage of a new momentum leg. The 21-day ROC of +7.7% and 10-day ROC of +5.0% show building momentum. The hourly EMAs are fully aligned upward, and volume at 1.67x average confirms institutional accumulation on the hourly timeframe. The Bollinger Band position (daily: 0.79, hourly: 0.81) shows price in the upper band but not yet extended. The fly in the ointment: daily EMAs are NOT fully aligned (EMA50 at 1.4114 sits above EMA10 and EMA21), which tells me we are earlier in the recovery phase and the trend's durability is uncertain. Resistance at $1.477 is nearby \u2014 a break of this level with volume confirmation would upgrade this to high conviction. Entry at current price, stop below the swing low at $1.30 (-9.7%), target the measured move at $1.65 (+14.6%). Risk-reward of approximately 1.5:1 is acceptable but thinner than I prefer. I'll take a partial position \u2014 this could accelerate if BTC leads a broader crypto rally.",
+        "entry": 1.4444,
+        "target": 1.65,
+        "stop": 1.3,
+        "timeframe": "2-3 weeks"
+      }
+    },
+    "crypto_sentiment": {
+      "BTC-USD": {
+        "signal": "bullish",
+        "confidence": 72,
+        "fear_greed_index": {
+          "value": 29,
+          "classification": "Fear"
+        },
+        "whale_activity": "Strongly bullish: 270,000 BTC accumulated in 30 days \u2014 largest monthly buying since 2013. Exchange reserves at 7-year lows. Whale outflows from exchanges accelerating at fastest pace in 6 months. Large holders have pivoted decisively from distribution to accumulation.",
+        "funding_rates": "Negative for 46 consecutive days \u2014 longest sustained negative streak since post-FTX November 2022. Crowded short positioning in perpetuals combined with record spot accumulation creates a classic short-squeeze setup if price breaks $78K resistance.",
+        "social_sentiment": "Narrative split: DeFi fear from $292M KelpDAO hack vs BTC-as-safe-haven relative to altcoins. Iran ceasefire speculation providing short-term optimism. Schwab Crypto launch adding retail institutional buzz.",
+        "institutional_flows": "Strongly positive: ~$996M ETF net inflows last week (5 consecutive inflow days). BlackRock IBIT holds 788,927 BTC. Strategy (MicroStrategy) bought 34,164 BTC (~$2.54B). Tether added 951 BTC. YTD ETF flows turned positive at $2.3B. Charles Schwab Crypto launching for 37M clients.",
+        "regulatory_risk": "Constructive: SEC-CFTC joint token taxonomy issued March 17. SEC cleared decentralized UI providers (April 13). U.S. Strategic Bitcoin Reserve (~328K BTC) formally established. FOMC April 28-29 is the key near-term macro risk \u2014 any dovish surprise bullish, hold/hawkish is headwind. Iran ceasefire deadline April 23 is geopolitical risk.",
+        "reasoning": "BTC shows the strongest confluence of bullish on-chain signals in this cohort: record whale accumulation, 7-year exchange reserve lows, massive ETF inflows, and the most crowded short positioning in years creates a potential compressed-spring setup. Fear & Greed at 29 is historically a medium-term accumulation window. The only near-term risks are macro (FOMC, Iran deadline April 23). Overall sentiment: bullish with high conviction, tempered slightly by macro uncertainty in the next 7 days."
+      },
+      "ETH-USD": {
+        "signal": "bullish",
+        "confidence": 75,
+        "fear_greed_index": {
+          "value": 29,
+          "classification": "Fear"
+        },
+        "whale_activity": "Aggressive accumulation: Bitmine purchased 101,627 ETH (~$230M) this week. A dormant wallet reactivated to buy 50,706 ETH using $111.62M USDT. 80,000 ETH moved off Binance to private custody. Whales holding 10,000-100,000 ETH accumulated 7.6M ETH collectively since April. Ethereum Foundation completed 70,000 ETH staking target \u2014 has stopped being a net seller.",
+        "funding_rates": "Likely mildly negative tracking BTC's 46-day negative streak. A $90.9M 20x leveraged long opened April 20 signals some speculative long interest. No extreme overleveraging \u2014 market balanced, with slight short bias that becomes a squeeze catalyst if Glamsterdam upgrade news accelerates.",
+        "social_sentiment": "Very positive Glamsterdam narrative dominating: 78.6% gas reduction, 10,000 TPS target. Record Q1 2026 on-chain activity (200.4M transactions). Dampened by KelpDAO hack's EigenLayer/restaking contagion risk, which directly affects ETH-staked derivatives.",
+        "institutional_flows": "Record-breaking: $11.80B cumulative spot ETH ETF inflows. $127M single-day inflow April 17 (7th consecutive positive day). $67.8M on April 20 despite DeFi hack. VanEck staked ETH ETF targeting mid-2026 \u2014 first staked ETH product in U.S. ETH outpacing BTC in mid-April ETF rotation.",
+        "regulatory_risk": "Positive: SEC-CFTC taxonomy covers ETH as digital commodity. 'Regulation Crypto' proposal at OIRA review stage. KelpDAO hack contagion risk to restaking protocols (EigenLayer) is the primary near-term downside risk \u2014 if Aave bad debt expands, restaking protocols could face pressure.",
+        "reasoning": "ETH has the strongest institutional buying signal in the cohort: record ETF inflows, institutional corporate buying ($230M Bitmine), Foundation no longer selling, and a major technical catalyst (Glamsterdam May-June) on the horizon. Whale addresses moving supply off-exchange aggressively. The primary risk is KelpDAO restaking contagion to EigenLayer-linked products. Overall: the data strongly favors ETH bulls heading into Glamsterdam. Sentiment is bullish with the highest confidence in this run."
+      },
+      "SOL-USD": {
+        "signal": "neutral",
+        "confidence": 52,
+        "fear_greed_index": {
+          "value": 29,
+          "classification": "Fear"
+        },
+        "whale_activity": "Mixed: Sustained conviction-driven whale accumulation ongoing (Santiment score ~70%), with a $56M whale transfer noted. However, 1.4M SOL (~$110M) moved to exchanges in a 72-hour window \u2014 a near-term sell pressure signal. Larger whales accumulating while smaller holders may be rotating out.",
+        "funding_rates": "Negative at approximately -0.014% \u2014 mirrors broader market bearish futures positioning. Contrarian long setup if BTC triggers a market-wide short squeeze, but negative SOL-specific funding suggests futures traders remain skeptical.",
+        "social_sentiment": "Divided: Standard Chartered $250 price target generating positive long-term buzz, but $270M Drift Protocol exploit still fresh. Solana security overhaul seen as necessary but also admission of vulnerability. 'Agentic payments' narrative and AI-native positioning gaining traction.",
+        "institutional_flows": "Moderate positive: Goldman Sachs disclosed $108M in SOL ETF positions (largest traditional bank SOL bet). SOL ETF weekly inflows $35M. However, ETF AUM declined from $1.1B to $817M (net outflows in mid-April). Near-term institutional sentiment mixed \u2014 accumulating but not yet at BTC/ETH conviction levels.",
+        "regulatory_risk": "Neutral. SOL not specifically addressed in SEC-CFTC taxonomy but benefits from broader constructive crypto regulatory environment. Kevin Warsh (Trump Fed pick) had to divest SOL holdings \u2014 minor regulatory optics concern. Drift Protocol exploit creates residual DeFi safety concerns for Solana ecosystem.",
+        "reasoning": "SOL presents contradictory signals: strong long-term catalysts (Firedancer/Alpenglow H2 2026, P-Token, Goldman institutional positioning, Standard Chartered $250 target) vs near-term headwinds (exchange inflows suggest selling pressure, ETF AUM declining, Drift exploit overhang). The price has fallen sharply from $182 April peak to ~$87 \u2014 oversold potentially, but without a near-term catalyst in the next 2-3 weeks (Firedancer is H2), the bounce timing is uncertain. Neutral signal with swing opportunity on a confirmed BTC-led rally reversal."
+      },
+      "BNB-USD": {
+        "signal": "neutral",
+        "confidence": 45,
+        "fear_greed_index": {
+          "value": 29,
+          "classification": "Fear"
+        },
+        "whale_activity": "Defensively positioned: whale wallets defending $580-$605 support but not aggressively accumulating. Accumulation clusters observed at $612-$615. Some whale capital noted rotating toward XRP. BNB is in wait-and-see mode at support rather than in active accumulation phase.",
+        "funding_rates": "Not directly retrieved; likely neutral-to-negative tracking broader market (BTC -0.0046%, ETH -0.0009%). No extreme overleveraging signals. BNB futures market quiet relative to peers.",
+        "social_sentiment": "Weakened by loss of #3 market cap spot to XRP on April 19 \u2014 sentiment negative on ranking. AI agent narrative (150K deployments, 43,750% growth) is a genuine structural positive but not yet driving price. Zero-fee stablecoin carnival extended through April is a minor positive.",
+        "institutional_flows": "Thin: no specific institutional BNB purchases reported in April 2026. BNB benefits from general crypto ETF inflows but has no dedicated ETF product. 35th quarterly burn ($1B, 1.57M BNB) completed April 15 \u2014 deflationary catalyst, though likely already priced in at announcement.",
+        "regulatory_risk": "Moderate: Binance margin pair delistings April 24 creates near-term volatility risk (19 pairs removed). IRS 1099-DA reporting burden increases compliance cost for BNB trading. No direct regulatory threat but Binance as an exchange remains under ongoing global scrutiny. CLARITY Act passage would benefit BNB indirectly as broad altcoin tailwind.",
+        "reasoning": "BNB faces the weakest near-term setup of the 5 tickers. Losing #3 market cap rank to XRP is a sentiment headwind; margin delistings April 24 add volatility risk; whale accumulation is defensive not aggressive. The AI agent growth story is genuinely exciting but is a multi-quarter narrative not a swing catalyst. 35th quarterly burn is already priced. Without a dedicated ETF and with key-support defensiveness rather than breakout buying, BNB sentiment is neutral-to-cautious for a 2-20 day swing timeframe."
+      },
+      "XRP-USD": {
+        "signal": "bullish",
+        "confidence": 68,
+        "fear_greed_index": {
+          "value": 29,
+          "classification": "Fear"
+        },
+        "whale_activity": "Record accumulation: whale addresses now hold 62% of circulating supply, up from 54% in early 2025. 'Millionaire' wallets rising for first time since September 2025. ~11M XRP/day added by large wallets for several weeks. Counter-signal: 89.8M XRP (~$120M) moved to Coinbase on April 13 \u2014 potential liquidation or institutional rebalancing.",
+        "funding_rates": "Neutral-to-slightly-positive given bullish ETF narrative; broader market mildly negative (-0.0046% BTC, -0.0009% ETH). Rising open interest on derivatives platforms. No dangerous overleverage signal \u2014 room for leveraged buying to add if CLARITY Act passes.",
+        "social_sentiment": "Very positive: XRP reclaimed #3 market cap from BNB on April 19. Quantum-resistant XRPL roadmap (ahead of BTC and ETH on timeline) generating strong developer and institutional interest. wXRP on Solana pulling $100M DeFi day one. Japan Rakuten Wallet live. Korea tokenized bond pilot active.",
+        "institutional_flows": "Strongest week of 2026: $55.4M ETF inflows, on track for $65M monthly record. 7 spot XRP ETFs with ~$1B cumulative AUM. GraniteShares 3x leveraged XRP ETFs launching April 23 \u2014 adds speculative leverage access and increases price sensitivity. JPMorgan $4-8.4B first-year ETF inflow forecast still largely unrealized \u2014 significant upside if institutional adoption accelerates.",
+        "regulatory_risk": "Most favorable of all 5 tickers: SEC-CFTC jointly classified XRP as digital commodity on March 17. CLARITY Act vote late April could permanently codify this status. SEC Chair Atkins and Treasury Secretary Bessent both publicly endorsed passage. Primary risk: CLARITY Act delay or failure would remove regulatory premium from price. Leveraged ETF launch April 23 adds two-edged volatility risk.",
+        "reasoning": "XRP carries the strongest regulatory tailwind in the cohort following the March 17 commodity classification and the imminent CLARITY Act Senate vote. Record whale accumulation (62% supply held by large wallets), record weekly ETF inflows, leveraged ETF launch April 23, and #3 market cap reclaimed all point to bullish momentum. The large Coinbase deposit April 13 is a risk to monitor. For a swing trade, the CLARITY Act vote late April is the key binary event \u2014 passage could drive a sharp move toward $2+. Sentiment: bullish with moderate-high conviction."
+      }
+    },
+    "technical_analyst_agent": {
+      "BTC-USD": {
+        "signal": "bullish",
+        "confidence": 39,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 32,
+            "metrics": {
+              "adx": 32.30842017531187,
+              "trend_strength": 0.32308420175311875
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 1.8033360185975527,
+              "price_vs_bb": 0.7988500872887766,
+              "rsi_14": 67.19115859742745,
+              "rsi_28": 57.5623158969025
+            }
+          },
+          "momentum": {
+            "signal": "bullish",
+            "confidence": 32,
+            "metrics": {
+              "momentum_1m": 0.13403076437048833,
+              "momentum_3m": 0.11606105644385645,
+              "momentum_6m": -0.08034777727551168,
+              "volume_momentum": 1.0781625588369133
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.34432846008813583,
+              "volatility_regime": 0.7665844798583953,
+              "volatility_z_score": -0.7707550027078269,
+              "atr_ratio": 0.034836863129549374
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.510476549791,
+              "kurtosis": 0.02846679888264263
+            }
+          }
+        }
+      },
+      "ETH-USD": {
+        "signal": "bullish",
+        "confidence": 40,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 34,
+            "metrics": {
+              "adx": 34.231058668102605,
+              "trend_strength": 0.34231058668102604
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 1.3529246506175496,
+              "price_vs_bb": 0.6813242042697483,
+              "rsi_14": 61.17899810946674,
+              "rsi_28": 55.69996338956321
+            }
+          },
+          "momentum": {
+            "signal": "bullish",
+            "confidence": 33,
+            "metrics": {
+              "momentum_1m": 0.1454151731765826,
+              "momentum_3m": 0.18233497925837483,
+              "momentum_6m": -0.15895694500398472,
+              "volume_momentum": 1.0684440317084283
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.5136701860177214,
+              "volatility_regime": 0.8584264503777772,
+              "volatility_z_score": -0.6398353273329492,
+              "atr_ratio": 0.04862673140532408
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.8064839201198134,
+              "kurtosis": 0.9576517740109552
+            }
+          }
+        }
+      },
+      "SOL-USD": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "trend_following": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "adx": 15.832199254471442,
+              "trend_strength": 0.15832199254471443
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": -0.14913082377424391,
+              "price_vs_bb": 0.642584886209756,
+              "rsi_14": 57.45920105862412,
+              "rsi_28": 44.65222044017086
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.04436595697715906,
+              "momentum_3m": 0.021653694370476262,
+              "momentum_6m": -0.31481449447195387,
+              "volume_momentum": 0.832538793675945
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.5025016958311369,
+              "volatility_regime": 0.8471222071039692,
+              "volatility_z_score": -0.6030321872038173,
+              "atr_ratio": 0.04665821009241311
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.6765174774870467,
+              "kurtosis": 0.8954756038945011
+            }
+          }
+        }
+      },
+      "BNB-USD": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "trend_following": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "adx": 21.816444667639537,
+              "trend_strength": 0.21816444667639537
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 0.08677901619036492,
+              "price_vs_bb": 0.78492371742276,
+              "rsi_14": 59.339449889090865,
+              "rsi_28": 48.28373504038137
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.03802085991194837,
+              "momentum_3m": 0.018538923146850683,
+              "momentum_6m": -0.2671017778635848,
+              "volume_momentum": 0.9131378631285142
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.3375372166092932,
+              "volatility_regime": 0.8641578676356688,
+              "volatility_z_score": -0.40003375725347395,
+              "atr_ratio": 0.028107900536940053
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.6954288291998914,
+              "kurtosis": 1.3948259369612543
+            }
+          }
+        }
+      },
+      "XRP-USD": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "trend_following": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "adx": 31.671480674415804,
+              "trend_strength": 0.31671480674415803
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 0.7462713831449401,
+              "price_vs_bb": 0.7947691115953792,
+              "rsi_14": 61.789932632365705,
+              "rsi_28": 49.44914267035211
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.07974452958818345,
+              "momentum_3m": -0.023965668254602113,
+              "momentum_6m": -0.19416387945125624,
+              "volume_momentum": 1.2127864608610883
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.3603955503410939,
+              "volatility_regime": 0.7102171562359769,
+              "volatility_z_score": -0.5543039329196677,
+              "atr_ratio": 0.03681140929159868
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.7462157640299515,
+              "kurtosis": 0.25600529053382665
+            }
+          }
+        }
+      }
+    },
+    "risk_management_agent": {
+      "BTC-USD": {
+        "remaining_position_limit": 9815.518362849374,
+        "current_price": 77619.296875,
+        "volatility_metrics": {
+          "daily_volatility": 0.025057979394988245,
+          "annualized_volatility": 0.3977830910215179,
+          "volatility_percentile": 80.23952095808383,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.8050357058520355,
+          "max_correlation_with_active": 0.8355312793570723,
+          "top_correlated_tickers": [
+            {
+              "ticker": "ETH-USD",
+              "correlation": 0.8355312793570723
+            },
+            {
+              "ticker": "SOL-USD",
+              "correlation": 0.8247906591005585
+            },
+            {
+              "ticker": "XRP-USD",
+              "correlation": 0.8031967059946955
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.14022169089784822,
+          "correlation_multiplier": 0.7,
+          "combined_position_limit_pct": 0.09815518362849375,
+          "position_limit": 9815.518362849374,
+          "remaining_limit": 9815.518362849374,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 9.8% (base 14.0%)"
+        }
+      },
+      "ETH-USD": {
+        "remaining_position_limit": 6999.999999999999,
+        "current_price": 2366.47998046875,
+        "volatility_metrics": {
+          "daily_volatility": 0.03451354518704415,
+          "annualized_volatility": 0.5478855445686543,
+          "volatility_percentile": 47.00598802395209,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.81172670911698,
+          "max_correlation_with_active": 0.8679473396232167,
+          "top_correlated_tickers": [
+            {
+              "ticker": "SOL-USD",
+              "correlation": 0.8679473396232167
+            },
+            {
+              "ticker": "BTC-USD",
+              "correlation": 0.8355312793570723
+            },
+            {
+              "ticker": "XRP-USD",
+              "correlation": 0.7771627959092962
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.1,
+          "correlation_multiplier": 0.7,
+          "combined_position_limit_pct": 0.06999999999999999,
+          "position_limit": 6999.999999999999,
+          "remaining_limit": 6999.999999999999,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 7.0% (base 10.0%)"
+        }
+      },
+      "SOL-USD": {
+        "remaining_position_limit": 6999.999999999999,
+        "current_price": 87.33000183105469,
+        "volatility_metrics": {
+          "daily_volatility": 0.033839003425005405,
+          "annualized_volatility": 0.5371775260609634,
+          "volatility_percentile": 32.33532934131736,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.8175894175009735,
+          "max_correlation_with_active": 0.8679473396232167,
+          "top_correlated_tickers": [
+            {
+              "ticker": "ETH-USD",
+              "correlation": 0.8679473396232167
+            },
+            {
+              "ticker": "BTC-USD",
+              "correlation": 0.8247906591005585
+            },
+            {
+              "ticker": "XRP-USD",
+              "correlation": 0.7977481042805493
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.1,
+          "correlation_multiplier": 0.7,
+          "combined_position_limit_pct": 0.06999999999999999,
+          "position_limit": 6999.999999999999,
+          "remaining_limit": 6999.999999999999,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 7.0% (base 10.0%)"
+        }
+      },
+      "BNB-USD": {
+        "remaining_position_limit": 12356.13973195399,
+        "current_price": 639.9000244140625,
+        "volatility_metrics": {
+          "daily_volatility": 0.021817148918133578,
+          "annualized_volatility": 0.34633650212306,
+          "volatility_percentile": 43.11377245508982,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.7504163837775697,
+          "max_correlation_with_active": 0.7798715669995698,
+          "top_correlated_tickers": [
+            {
+              "ticker": "SOL-USD",
+              "correlation": 0.7798715669995698
+            },
+            {
+              "ticker": "ETH-USD",
+              "correlation": 0.766265421578335
+            },
+            {
+              "ticker": "BTC-USD",
+              "correlation": 0.7566241789558159
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.145366349787694,
+          "correlation_multiplier": 0.85,
+          "combined_position_limit_pct": 0.1235613973195399,
+          "position_limit": 12356.13973195399,
+          "remaining_limit": 12356.13973195399,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 12.4% (base 14.5%)"
+        }
+      },
+      "XRP-USD": {
+        "remaining_position_limit": 11971.864748973794,
+        "current_price": 1.4443000555038452,
+        "volatility_metrics": {
+          "daily_volatility": 0.02466503698544221,
+          "annualized_volatility": 0.39154532365014205,
+          "volatility_percentile": 14.071856287425149,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.7692529934402748,
+          "max_correlation_with_active": 0.8031967059946955,
+          "top_correlated_tickers": [
+            {
+              "ticker": "BTC-USD",
+              "correlation": 0.8031967059946955
+            },
+            {
+              "ticker": "SOL-USD",
+              "correlation": 0.7977481042805493
+            },
+            {
+              "ticker": "ETH-USD",
+              "correlation": 0.7771627959092962
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.14084546763498582,
+          "correlation_multiplier": 0.85,
+          "combined_position_limit_pct": 0.11971864748973794,
+          "position_limit": 11971.864748973794,
+          "remaining_limit": 11971.864748973794,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 12.0% (base 14.1%)"
+        }
+      }
+    }
+  },
+  "allowed_actions": {
+    "BTC-USD": {
+      "hold": 0,
+      "buy": 0.12645719,
+      "short": 0.12645719
+    },
+    "ETH-USD": {
+      "hold": 0,
+      "buy": 2.95797981,
+      "short": 2.95797981
+    },
+    "SOL-USD": {
+      "hold": 0,
+      "buy": 80.15572945,
+      "short": 80.15572945
+    },
+    "BNB-USD": {
+      "hold": 0,
+      "buy": 19.3094847,
+      "short": 19.3094847
+    },
+    "XRP-USD": {
+      "hold": 0,
+      "buy": 8289.04264273,
+      "short": 8289.04264273
+    }
+  },
+  "portfolio": {
+    "cash": 100000.0,
+    "margin_requirement": 0.0,
+    "margin_used": 0.0,
+    "positions": {
+      "BTC-USD": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "ETH-USD": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "SOL-USD": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "BNB-USD": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "XRP-USD": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      }
+    },
+    "realized_gains": {
+      "BTC-USD": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "ETH-USD": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "SOL-USD": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "BNB-USD": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "XRP-USD": {
+        "long": 0.0,
+        "short": 0.0
+      }
+    }
+  },
+  "tickers": [
+    "BTC-USD",
+    "ETH-USD",
+    "SOL-USD",
+    "BNB-USD",
+    "XRP-USD"
+  ],
+  "end_date": "2026-04-22"
+}

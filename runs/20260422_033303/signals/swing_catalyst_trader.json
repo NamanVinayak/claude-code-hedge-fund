@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "BTC is technically extended at $77,464 — daily RSI at 67.2 and hourly RSI at 65.3 with price above the hourly upper Bollinger Band (position 1.02). Stochastic on hourly is 90/88, deeply overbought near-term. The hourly MFI at a dangerously low 13.4 while price is at highs signals a money-flow divergence (smart money not chasing). Hourly volume is only 0.36x its 20-period average — conviction is absent at these highs. Price is pressing directly into the swing high resistance zone of $77,127-$77,626. No specific catalyst is identifiable in the news data. While the daily trend remains intact (ADX 32.3, EMAs aligned uptrend, positive MACD histogram of $377), the absence of a near-term identifiable catalyst combined with overbought short-term conditions and resistance overhead argues for patience. A pullback to $73,800-$74,500 (hourly support / fib 50%) would set up a more favorable risk-reward entry for an ETF-flow or macro catalyst-driven swing trade.",
+    "entry": 74200.0,
+    "target": 80500.0,
+    "stop": 72800.0,
+    "timeframe": "5-10 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 62,
+    "reasoning": "ETH presents the most constructive catalyst setup among the five assets. After spiking to $2,421 swing high, ETH pulled back to $2,265 (fib 23.6% zone at $2,307) and is now recovering with current price at $2,360. Critically, the hourly volume registered 2.73x its 20-period average — a strong early accumulation signal suggesting institutional re-entry. The daily RSI at 61.2 has room to run toward overbought, and the MACD histogram, while small (+5.48), is positive and constructive. Hourly EMAs are fully aligned in uptrend. For crypto, ETH catalysts commonly include protocol upgrades, staking yield changes, and ETF flow events. The volume surge without a clear news driver often precedes a catalyst announcement. Price is near the fib 23.6% retracement ($2,307) which held as support — this is an ideal catalyst-trade entry zone. Target set at the swing high retest ($2,420) and potential breakout toward $2,550 (measured move). Stop below the recent swing low structure.",
+    "entry": 2330.0,
+    "target": 2520.0,
+    "stop": 2220.0,
+    "timeframe": "5-12 trading days"
+  },
+  "SOL-USD": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "SOL lacks both a clear catalyst and a constructive technical setup on the daily timeframe. Daily EMAs are not aligned in either direction, ADX is a weak 15.8 indicating a trendless range environment, and the SMA200 sits far above at $125.57 — SOL is a significant underperformer versus its own historical baseline. While the hourly timeframe shows some short-term momentum (RSI 63.1, volume 2.58x avg, EMAs aligned uptrend), this is insufficient for a catalyst-driven swing trade. Price bounced from $83.48 to $87.19 but faces resistance at $88.99 (recent swing high and fib 61.8% zone). The daily MACD is barely positive (histogram +0.37) and the trend is fragile. No news or specific catalyst is identified. Without a network upgrade, ETF listing, or ecosystem catalyst announcement, there is no edge for a 2-20 day swing trade.",
+    "entry": 85.0,
+    "target": 93.0,
+    "stop": 81.5,
+    "timeframe": "7-14 trading days"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "BNB shows mixed signals without an identifiable catalyst. The daily EMAs are not in a clean uptrend alignment (EMA10 $622 < EMA50 $633), and price at $639.75 is pressing against daily resistance at $643.45 — a breakout test with no news-driven catalyst behind it. The daily RSI at 59.3 has moderate room, and MACD histogram is turning positive (+3.79), suggesting early momentum. Hourly picture is more constructive: EMAs aligned, ADX 29.2, volume 2.34x average, and price near the upper Bollinger Band. However, BNB's catalysts (Binance regulatory events, BNB Chain upgrades, token burns) are absent from the data. The price bounce from $616 to $639 suggests some recovery, but without a catalyst to drive a sustained move above $643 resistance, the risk-reward is insufficient for a catalyst swing trade. A confirmed breakout above $645 with a known catalyst would change this assessment.",
+    "entry": 625.0,
+    "target": 665.0,
+    "stop": 610.0,
+    "timeframe": "5-10 trading days"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 58,
+    "reasoning": "XRP shows the most catalyst-consistent setup among the altcoins. The daily ADX at 31.7 indicates a meaningful trend in development, MACD histogram is positive and growing (+0.0108), and daily RSI at 61.8 has room before overbought. Volume is 1.20x its 20-day average — above normal, suggesting sustained buying interest. The hourly EMAs are fully aligned uptrend, hourly volume is 1.67x average, and price structure shows a clean bounce from $1.3946 support (fib 78.6% zone at $1.3644 held) back toward $1.4444. XRP is a high-beta regulatory catalyst asset: SEC settlement clarity, RLUSD stablecoin adoption, and cross-border payment partnership announcements are recurring catalysts. The current technical setup — recovering from a retracement, building above the 50-day SMA ($1.3853), MACD turning positive — is the constructive pre-catalyst coiling pattern this strategy seeks. The swing high at $1.5436 is the natural target. Entry on current momentum with stop below recent swing low support.",
+    "entry": 1.42,
+    "target": 1.54,
+    "stop": 1.36,
+    "timeframe": "5-10 trading days"
+  }
+}

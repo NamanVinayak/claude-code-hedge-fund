@@ -1,0 +1,47 @@
+{
+  "BTC-USD": {
+    "signal": "bullish",
+    "confidence": 78,
+    "reasoning": "BTC is the clear sector rotation leader in this crypto basket. Daily indicators show strong institutional inflows: RSI 67.2 (rising but not overbought), ADX 32.3 (strong trend), MACD histogram expanding (1683 vs signal 1307), volume 1.09x 20-day avg, and ROC-21 +13.8% — the highest absolute momentum of any asset here excluding ETH. All daily EMAs are aligned in uptrend. The store-of-value 'sector' is clearly receiving capital first in this rotation cycle. Hourly stochastic at 90.3 and MFI at 13.4 warn of very short-term exhaustion (price pushed above upper Bollinger Band on hourly), suggesting a minor pause before continuation. Price trading at $77,464 near daily resistance of $77,127 — a brief consolidation or shallow pullback to the $74,800-75,500 zone would offer a cleaner entry. The 21-day ROC dominance and ADX strength confirm BTC is the rotation anchor; other assets follow its lead.",
+    "entry": 75500.0,
+    "target": 81500.0,
+    "stop": 72800.0,
+    "timeframe": "8-15 trading days"
+  },
+  "ETH-USD": {
+    "signal": "bullish",
+    "confidence": 68,
+    "reasoning": "ETH exhibits the classic sector rotation catch-up pattern: strongest 21-day ROC (+14.4%) but weakest 5-day ROC (-1.87%), indicating a brief pullback within a larger inflow cycle. ADX 34.2 is the highest of the group, confirming a strong underlying trend. The smart contract platform 'sector' is being driven by fundamentals chasing BTC's store-of-value rally. Critically, hourly volume spiked to 2.73x the 20-period average with MFI 80.2 — institutional buying resuming after the multi-day pullback from $2,421. Daily MACD remains positive (histogram 5.48, expanding from very low base). Price ($2,360) is sitting above all daily EMAs and at the Fib 23.6% retracement ($2,307) of the recent swing. ETH is still 17% below its SMA-200, meaning significant upside room before overbought conditions emerge at the macro level. Entry near current levels targets the prior swing high at $2,421 and extension toward $2,550.",
+    "entry": 2320.0,
+    "target": 2560.0,
+    "stop": 2190.0,
+    "timeframe": "8-15 trading days"
+  },
+  "SOL-USD": {
+    "signal": "bearish",
+    "confidence": 58,
+    "reasoning": "SOL is the weakest relative performer in this crypto basket and shows classic sector rotation outflow signals. The high-throughput L1 'sector' is losing capital to BTC and ETH: 21-day ROC only +3.5% vs BTC's +13.8% — a massive divergence in a basket where all assets should benefit equally if purely market-driven. Daily EMAs are NOT aligned in an uptrend (ema_10 85.3 < ema_50 87.2), ADX only 15.8 indicating a choppy, directionless trend, and volume is running 0.83x the 20-day average. The z-score of -0.15 means price is at its statistical mean — no trend extension at all. SOL is priced below its 50-EMA on a daily basis, which is bearish relative to peers. While hourly indicators show a short-term bounce (volume 2.58x, RSI 63), these represent relief rallies in a weakening structure. Resistance at $87.45-89 on hourly and $89 on daily. The rotation money is NOT flowing into SOL in this cycle; it is flowing to BTC and ETH. Bearish signal is a relative 'avoid/underweight' vs the group — not a short given overall crypto market strength.",
+    "entry": 87.5,
+    "target": 79.5,
+    "stop": 90.5,
+    "timeframe": "10-18 trading days"
+  },
+  "BNB-USD": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "BNB (exchange token 'sector') is showing mixed rotation signals that do not yet confirm a clear directional trade. Daily EMAs are not aligned uptrend (ema_10 622 < ema_50 634), ADX 21.8 is moderate, and 21-day ROC of only +3.4% significantly underperforms BTC/ETH. However, the MACD just crossed positive (histogram +3.79, first positive reading in a while), and hourly EMAs are fully aligned uptrend with volume 2.34x average. The exchange token thesis is that BNB benefits from increased exchange volume as crypto markets heat up — a lagged rotation play. But the evidence is mixed: daily volume slightly below average (0.92x), price struggling at the 50-EMA level ($634), and the 21-day underperformance is pronounced. Price at $639 is near the Fib 61.8% retracement of the prior swing ($619.9), and daily resistance sits at $643. Without a clear break above $643-650 on volume, the rotation into exchange tokens is unconfirmed. Watch for a volume breakout above resistance before committing.",
+    "entry": 640.0,
+    "target": 670.0,
+    "stop": 615.0,
+    "timeframe": "7-12 trading days"
+  },
+  "XRP-USD": {
+    "signal": "bullish",
+    "confidence": 60,
+    "reasoning": "XRP (payment network 'sector') shows moderate but consistent rotation inflows. The 21-day ROC of +7.7% is solidly middle of the pack, and critically the 5-day ROC of +2.4% remains positive (unlike ETH's -1.87% pullback or SOL's near-flat), indicating sustained buying pressure. Daily volume at 1.20x the 20-period average confirms above-average capital flow. ADX 31.7 (strong) and daily RSI 61.8 (rising, room to run) support the bullish lean. MACD histogram turned positive (+0.0108) for the first time after the recent base formation. Hourly structure is constructive: EMAs aligned up, volume 1.67x avg, RSI 57 (not overbought — room to run on hourly), Bollinger position 0.81 (not extended). XRP benefits from the broader crypto rotation without being as extended as BTC or as weak as SOL. Payment network narrative (cross-border, institutional adoption) provides independent catalyst. Price ($1.444) needs to clear the $1.477-1.490 resistance zone (Fib 23.6% of swing + prior high) to confirm the rotation trade. Risk-reward is attractive from near-term support.",
+    "entry": 1.43,
+    "target": 1.58,
+    "stop": 1.32,
+    "timeframe": "8-14 trading days"
+  }
+}
