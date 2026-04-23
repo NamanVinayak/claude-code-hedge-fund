@@ -1,0 +1,65 @@
+{
+  "TSLA": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "EMAs are tangled (10 EMA 380.66 < 21 EMA 377.66 > 50 EMA 388.32). Daily ADX is 34.7 (above 25 threshold), but the EMA disorder indicates lack of clean trend structure. RSI at 52.7 is neutral. Recent price action shows consolidation between $386-388, with failure at higher levels. Hourly EMAs also tangled (10:377.98 < 21:382.29 < 50:382.09). Avoid trading without clear EMA alignment.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "JPM": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "Strong daily EMA alignment: 10 EMA 309.80 > 21 EMA 304.53 > 50 EMA 301.46, confirming uptrend. ADX 38.9 is strong and rising. Price 311.69 trading above all key EMAs. RSI 71.2 shows strength but slight overbought. Recent price action shows higher highs/lows (320.24 high on 4/21). MACD positive (5.43 line > 4.11 signal). Pullback to 21 EMA around 304.5 would be ideal entry zone for continuation.",
+    "entry_price": 304.50,
+    "target_price": 320.24,
+    "stop_loss": 300.00,
+    "timeframe": "5-10 trading days"
+  },
+  "GS": {
+    "signal": "bullish",
+    "confidence": 78,
+    "reasoning": "Perfect daily EMA alignment: 10 EMA 912.58 > 21 EMA 890.75 > 50 EMA 877.19, strong uptrend structure. ADX 32.0 confirms trend strength. Price 931.30 is above all EMAs with recent high of 952.01 on 4/21. Momentum positive (ROC-5: 3.93%). RSI 72.3 shows strength. Hourly also bullish with aligned EMAs (10:933.86 > 21:932.67 > 50:923.57). Pullback to 21 EMA around 890-892 would offer quality entry on minor dips.",
+    "entry_price": 890.50,
+    "target_price": 952.00,
+    "stop_loss": 877.00,
+    "timeframe": "7-15 trading days"
+  },
+  "NKE": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": "Clear daily downtrend: EMA alignment bearish (10 EMA 45.71 < 21 EMA 47.28 < 50 EMA 52.03). ADX 28.6 confirms trend strength. Price 44.78 trading below all key EMAs with lower lows forming (swing low 42.62). RSI 55.7 is neutral. MACD negative. Hourly confirms downtrend (10:45.03 < 21:45.38 < 50:45.45, all below 50 SMA 45.79). This is a downtrend worthy of shorting on rallies.",
+    "entry_price": 46.50,
+    "target_price": 42.62,
+    "stop_loss": 48.00,
+    "timeframe": "5-10 trading days"
+  },
+  "XOM": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "EMAs tangled and trend unclear: 10 EMA 151.09 > 21 EMA 153.83 but < 50 EMA 151.53. Mixed signals. Daily ADX 28.5 (borderline) with weak RSI 31.2 suggests lack of momentum. MACD negative. Recent price action shows consolidation around 150 range. Hourly EMAs also muddled. However, hourly RSI 66.4 and positive hourly momentum suggest intraday strength may emerge. Wait for clearer EMA alignment.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "SPY": {
+    "signal": "bullish",
+    "confidence": 85,
+    "reasoning": "Excellent daily EMA alignment: 10 EMA 696.93 > 21 EMA 684.76 > 50 EMA 678.11, strong uptrend. ADX 43.3 is very strong. Price 708.45 well above all EMAs. RSI 90.6 shows extreme strength/extension. MACD strongly positive (11.67 line > 6.71 signal). Recent price action displays higher lows. Hourly EMAs also aligned (10:708.96 > 21:708.49 > 50:703.30). Pullback to 21 EMA around 684-685 would be prime entry for trend continuation.",
+    "entry_price": 685.00,
+    "target_price": 711.21,
+    "stop_loss": 678.00,
+    "timeframe": "5-12 trading days"
+  },
+  "QQQ": {
+    "signal": "bullish",
+    "confidence": 89,
+    "reasoning": "Perfect daily EMA alignment: 10 EMA 634.32 > 21 EMA 619.15 > 50 EMA 609.96, strong and clean uptrend. ADX 46.4 is very strong and rising. Price 651.42 trading well above all EMAs with recent high 655.33 on 4/22. RSI 94.3 shows extreme strength/parabolic move. MACD strongly positive (14.73 line > 8.61 signal). Hourly EMAs aligned (10:652.12 > 21:650.65 > 50:642.81). Pullback to 21 EMA around 619-620 would provide ideal swing entry on pullback.",
+    "entry_price": 619.50,
+    "target_price": 655.11,
+    "stop_loss": 609.50,
+    "timeframe": "5-12 trading days"
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "TSLA": {
+    "signal": "bearish",
+    "confidence": 70,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0,
+        "revenue_growth": null,
+        "revenue_trend": 0.0,
+        "eps_growth": null,
+        "eps_trend": 0.0,
+        "fcf_growth": null,
+        "fcf_trend": 0.0
+      },
+      "growth_valuation": {
+        "score": 0,
+        "peg_ratio": 5.67,
+        "price_to_sales_ratio": null
+      },
+      "margin_expansion": {
+        "score": 0,
+        "gross_margin": null,
+        "gross_margin_trend": 0.0,
+        "operating_margin": null,
+        "operating_margin_trend": 0.0,
+        "net_margin": null,
+        "net_margin_trend": 0.0
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 1.0,
+        "debt_to_equity": null,
+        "current_ratio": null
+      },
+      "final_analysis": {
+        "signal": "bearish",
+        "confidence": 70,
+        "weighted_score": 0.15
+      }
+    }
+  },
+  "JPM": {
+    "signal": "bearish",
+    "confidence": 57,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0,
+        "revenue_growth": null,
+        "revenue_trend": 0.0,
+        "eps_growth": null,
+        "eps_trend": 0.0,
+        "fcf_growth": null,
+        "fcf_trend": 0.0
+      },
+      "growth_valuation": {
+        "score": 0.25,
+        "peg_ratio": 1.68,
+        "price_to_sales_ratio": null
+      },
+      "margin_expansion": {
+        "score": 0,
+        "gross_margin": null,
+        "gross_margin_trend": 0.0,
+        "operating_margin": null,
+        "operating_margin_trend": 0.0,
+        "net_margin": null,
+        "net_margin_trend": 0.0
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 1.0,
+        "debt_to_equity": null,
+        "current_ratio": null
+      },
+      "final_analysis": {
+        "signal": "bearish",
+        "confidence": 57,
+        "weighted_score": 0.21
+      }
+    }
+  },
+  "GS": {
+    "signal": "bearish",
+    "confidence": 38,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0.25,
+        "revenue_growth": null,
+        "revenue_trend": 0.0,
+        "eps_growth": 0.26491356221085954,
+        "eps_trend": 0.0,
+        "fcf_growth": -2.0855387832451155,
+        "fcf_trend": 0.0
+      },
+      "growth_valuation": {
+        "score": 0.25,
+        "peg_ratio": 1.44,
+        "price_to_sales_ratio": null
+      },
+      "margin_expansion": {
+        "score": 0,
+        "gross_margin": null,
+        "gross_margin_trend": 0.0,
+        "operating_margin": null,
+        "operating_margin_trend": 0.0,
+        "net_margin": null,
+        "net_margin_trend": 0.0
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 1.0,
+        "debt_to_equity": 0.5577969465160196,
+        "current_ratio": null
+      },
+      "final_analysis": {
+        "signal": "bearish",
+        "confidence": 38,
+        "weighted_score": 0.31
+      }
+    }
+  },
+  "NKE": {
+    "signal": "neutral",
+    "confidence": 8,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0.15000000000000002,
+        "revenue_growth": -0.09838012538452552,
+        "revenue_trend": 0.02390139442343084,
+        "eps_growth": -0.4228723404255319,
+        "eps_trend": 0.040650585430679204,
+        "fcf_growth": -0.506120598458516,
+        "fcf_trend": 0.05295752976436569
+      },
+      "growth_valuation": {
+        "score": 0.75,
+        "peg_ratio": 1.41,
+        "price_to_sales_ratio": 1.4319920796389471
+      },
+      "margin_expansion": {
+        "score": 0.4,
+        "gross_margin": 0.42734673605562634,
+        "gross_margin_trend": 0.002158426747311275,
+        "operating_margin": null,
+        "operating_margin_trend": 0.0,
+        "net_margin": 0.06951132609212032,
+        "net_margin_trend": 0.005194680588578173
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 1.0,
+        "debt_to_equity": 0.602891092106259,
+        "current_ratio": 2.2110543251940187
+      },
+      "final_analysis": {
+        "signal": "neutral",
+        "confidence": 8,
+        "weighted_score": 0.46
+      }
+    }
+  },
+  "XOM": {
+    "signal": "neutral",
+    "confidence": 6,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0.45,
+        "revenue_growth": 0.5494528878784145,
+        "revenue_trend": -3.445055688533819e-17,
+        "eps_growth": -0.11811023622047251,
+        "eps_trend": 0.2643071060742302,
+        "fcf_growth": -0.0817339312406577,
+        "fcf_trend": 0.8813433281903299
+      },
+      "growth_valuation": {
+        "score": 0.75,
+        "peg_ratio": 1.37,
+        "price_to_sales_ratio": 1.7897989675300714
+      },
+      "margin_expansion": {
+        "score": 0.2,
+        "gross_margin": null,
+        "gross_margin_trend": 0.0,
+        "operating_margin": null,
+        "operating_margin_trend": 0.0,
+        "net_margin": 0.09634280647052934,
+        "net_margin_trend": 0.0074809625731631964
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 0.8,
+        "debt_to_equity": null,
+        "current_ratio": 1.3084045685351386
+      },
+      "final_analysis": {
+        "signal": "neutral",
+        "confidence": 6,
+        "weighted_score": 0.53
+      }
+    }
+  },
+  "SPY": {
+    "signal": "bearish",
+    "confidence": 70,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0,
+        "revenue_growth": null,
+        "revenue_trend": 0.0,
+        "eps_growth": null,
+        "eps_trend": 0.0,
+        "fcf_growth": null,
+        "fcf_trend": 0.0
+      },
+      "growth_valuation": {
+        "score": 0,
+        "peg_ratio": null,
+        "price_to_sales_ratio": null
+      },
+      "margin_expansion": {
+        "score": 0,
+        "gross_margin": null,
+        "gross_margin_trend": 0.0,
+        "operating_margin": null,
+        "operating_margin_trend": 0.0,
+        "net_margin": null,
+        "net_margin_trend": 0.0
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 1.0,
+        "debt_to_equity": null,
+        "current_ratio": null
+      },
+      "final_analysis": {
+        "signal": "bearish",
+        "confidence": 70,
+        "weighted_score": 0.15
+      }
+    }
+  },
+  "QQQ": {
+    "signal": "bearish",
+    "confidence": 70,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0,
+        "revenue_growth": null,
+        "revenue_trend": 0.0,
+        "eps_growth": null,
+        "eps_trend": 0.0,
+        "fcf_growth": null,
+        "fcf_trend": 0.0
+      },
+      "growth_valuation": {
+        "score": 0,
+        "peg_ratio": null,
+        "price_to_sales_ratio": null
+      },
+      "margin_expansion": {
+        "score": 0,
+        "gross_margin": null,
+        "gross_margin_trend": 0.0,
+        "operating_margin": null,
+        "operating_margin_trend": 0.0,
+        "net_margin": null,
+        "net_margin_trend": 0.0
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 1.0,
+        "debt_to_equity": null,
+        "current_ratio": null
+      },
+      "final_analysis": {
+        "signal": "bearish",
+        "confidence": 70,
+        "weighted_score": 0.15
+      }
+    }
+  }
+}

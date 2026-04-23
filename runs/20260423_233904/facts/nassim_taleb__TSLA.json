@@ -1,0 +1,41 @@
+{
+  "ticker": "TSLA",
+  "score": 14,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 5,
+    "max_score": 8,
+    "details": "Near-Gaussian tails (kurtosis 0.3) \u2014 suspiciously thin; Positive skew (0.51) favors long convexity; Asymmetric upside (tail ratio 1.24); Moderate drawdown (-29.9%)"
+  },
+  "antifragility_analysis": {
+    "score": 0,
+    "max_score": 10,
+    "details": "Cash/debt data not available; Debt-to-equity data not available; Insufficient margin history for stability analysis; FCF data not available"
+  },
+  "convexity_analysis": {
+    "score": 1,
+    "max_score": 10,
+    "details": "R&D data not available \u2014 no penalty for non-R&D sectors; Slight positive asymmetry (up/down ratio 1.06); Cash/market cap data not available; FCF yield data not available"
+  },
+  "fragility_analysis": {
+    "score": 0,
+    "max_score": 8,
+    "details": "Debt-to-equity data not available; Interest coverage data not available; Insufficient earnings history for volatility analysis; Net margin data not available"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 4,
+    "max_score": 6,
+    "details": "Normal vol regime (1.27) \u2014 fair pricing; Elevated vol-of-vol (0.0583 vs median 0.0398)"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 1402358857728.0
+}

@@ -1,0 +1,29 @@
+{
+  "signal": "bearish",
+  "score": 2.25,
+  "max_score": 10,
+  "growth_quality": {
+    "score": 0,
+    "details": "Insufficient financial data for growth/quality analysis"
+  },
+  "margins_stability": {
+    "score": 0,
+    "details": "Insufficient data for margin stability analysis"
+  },
+  "management_efficiency": {
+    "score": 5.0,
+    "details": "Moderate ROE: 12.4%; Manageable debt-to-equity: 0.58; Insufficient or no FCF data to check consistency"
+  },
+  "valuation_analysis": {
+    "score": 5.0,
+    "details": "Reasonably attractive P/E: 17.77; No positive free cash flow for P/FCF calculation"
+  },
+  "insider_activity": {
+    "score": 5,
+    "details": "No insider trades data; defaulting to neutral"
+  },
+  "sentiment_analysis": {
+    "score": 5,
+    "details": "No news data; defaulting to neutral sentiment"
+  }
+}

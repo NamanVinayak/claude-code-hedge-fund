@@ -1,0 +1,41 @@
+{
+  "ticker": "GS",
+  "score": 20,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 2,
+    "max_score": 8,
+    "details": "Near-Gaussian tails (kurtosis 1.8) \u2014 suspiciously thin; Negative skew (-0.67) \u2014 crash-prone; Balanced tails (tail ratio 1.01); Moderate drawdown (-19.4%)"
+  },
+  "antifragility_analysis": {
+    "score": 4,
+    "max_score": 10,
+    "details": "War chest: net cash $91,874,000,000, cash is 59% of market cap; Moderate leverage (D/E 0.56); Insufficient margin history for stability analysis; Inconsistent FCF (0/1 periods positive)"
+  },
+  "convexity_analysis": {
+    "score": 4,
+    "max_score": 10,
+    "details": "R&D data not available \u2014 no penalty for non-R&D sectors; Slight positive asymmetry (up/down ratio 1.02); Cash is a call option on future opportunities (59% of market cap); Low FCF yield (-29.4%)"
+  },
+  "fragility_analysis": {
+    "score": 2,
+    "max_score": 8,
+    "details": "Moderate leverage (D/E 0.56); Interest coverage data not available; Insufficient earnings history for volatility analysis; Net margin data not available"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 4,
+    "max_score": 6,
+    "details": "Normal vol regime (0.92) \u2014 fair pricing; Elevated vol-of-vol (0.0293 vs median 0.0224)"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 276366000128.0
+}

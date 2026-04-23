@@ -1,0 +1,84 @@
+{
+  "market_context": "Markets are showing a split personality: financials (JPM, GS) are in strong uptrends with broad institutional backing, while consumer discretionary (NKE) is structurally deteriorating. Broad indices (SPY, QQQ) have surged to extreme overbought levels with RSI readings above 90, making new longs risky without a pullback.",
+  "mode_explanation": "Swing trading aims to capture price moves over 1-4 weeks by riding short-to-medium-term momentum. Unlike day trading (in/out same day) or long-term investing (hold for years), swing traders enter at a planned price, set a target where they'll take profit, and a stop-loss to limit losses if wrong. The risk-reward ratio tells you how much you could gain for every dollar you risk — a 2:1 ratio means risking $5 to potentially make $10.",
+  "ticker_explanations": {
+    "TSLA": {
+      "decision": "hold",
+      "plain_english": "Tesla has no clear direction — 8 of 9 strategy agents are neutral. Moving averages are tangled (no clean up or down trend), daily and hourly signals point in opposite directions, and there's no identifiable catalyst to tip the balance. The system is stepping aside and waiting for a cleaner setup.",
+      "key_signals": [
+        "8/9 strategy agents returned neutral — no consensus",
+        "EMAs disordered: EMA10 < EMA21 < EMA50, no clean alignment",
+        "Daily/hourly RSI divergence: mixed timeframe signals",
+        "Head Trader confidence only 25 — well below the 55+ threshold to trade"
+      ],
+      "risk_note": "Forcing a trade in a directionless stock is how you get whipsawed — stopped out in both directions. Best risk management here is no trade."
+    },
+    "JPM": {
+      "decision": "buy",
+      "plain_english": "JPMorgan is in a textbook uptrend with all key moving averages stacked in bullish order (shortest on top, longest on bottom) and strong momentum across 5, 10, and 21-day lookbacks. Four of 9 agents are bullish. The system plans to buy on a pullback to $312, target $322 (prior breakout zone), with a stop at $307 if the trade goes wrong — a clean 2:1 reward-to-risk.",
+      "key_signals": [
+        "Perfect EMA alignment: EMA10 > EMA21 > EMA50 (stacked uptrend)",
+        "ADX at 38.9 — strong trend strength indicator",
+        "21-day Rate of Change +8.5% — sustained momentum over 3+ weeks",
+        "4/9 swing agents bullish; sector rotation model shows institutional inflows (MFI 76.2)"
+      ],
+      "risk_note": "JPM correlates 0.71 with GS (they tend to move together), so holding both amplifies financial sector exposure. A macro shock or rate surprise could hit both positions simultaneously."
+    },
+    "GS": {
+      "decision": "buy",
+      "plain_english": "Goldman Sachs shows the strongest sector rotation signal in the basket, with all moving averages aligned bullishly and the strongest 21-day momentum (+12.5%). The position size was deliberately reduced (12 shares vs. a possible larger allocation) to manage the high correlation with JPM. Entry near current consolidation at $935, target $968, stop at $918.",
+      "key_signals": [
+        "Perfect EMA alignment on daily chart — all timeframes in uptrend",
+        "ADX 32 and 21d ROC +12.5% — accelerating momentum",
+        "Sector rotation model highest-conviction signal in basket (confidence 78)",
+        "Position capped at 12 shares to control JPM/GS correlation risk (0.71)"
+      ],
+      "risk_note": "One dissenting agent (Druckenmiller strategy) is actually bearish on GS, citing negative free cash flow and a failed attempt to reclaim the 50-day moving average. Volume also declined on the most recent day — the breakout needs volume confirmation."
+    },
+    "NKE": {
+      "decision": "short",
+      "plain_english": "Nike is the clearest bearish trade in the basket. Revenue fell 9.8%, EPS collapsed 42.3%, and free cash flow dropped 50.6% — this is structural deterioration, not a temporary blip. Technically, all moving averages are stacked downward (bearish). The plan is to short on a brief bounce to $47 (selling into strength), target $42, stop at $49.50 — a 2:1 reward-to-risk on the downside.",
+      "key_signals": [
+        "EMA fully aligned downtrend: EMA10 < EMA21 < EMA50 < SMA200",
+        "21-day ROC -13.3% — sustained three-week selling pressure",
+        "Revenue -9.8%, EPS -42.3%, FCF -50.6% YoY — fundamental breakdown",
+        "5/9 strategy agents bearish; Head Trader confidence 72 (high)"
+      ],
+      "risk_note": "Nike's hourly RSI was deeply oversold at 20, meaning a sharp short-term bounce is possible before the downtrend resumes. The short entry at $47 is deliberately placed on a bounce to avoid chasing the stock down into oversold conditions."
+    },
+    "XOM": {
+      "decision": "hold",
+      "plain_english": "ExxonMobil has a confusing signal picture: the daily chart shows an oversold stock (RSI 31) in a weak downtrend, while the hourly chart shows an overbought stock (RSI 66) with intraday buying. These opposite readings make it impossible to confidently call direction. Only 2 of 9 agents were bullish. The system waits for the daily RSI to either recover above 40 (bullish confirmation) or drop below 25 (deeper breakdown) before committing.",
+      "key_signals": [
+        "Daily RSI 31 (oversold) vs. hourly RSI 66 (overbought) — contradictory timeframes",
+        "Only 2/9 agents bullish, 5 neutral — no consensus",
+        "Tangled EMAs with no clean directional alignment",
+        "21d ROC -7.2% — recent energy sector weakness"
+      ],
+      "risk_note": "Energy stocks are highly sensitive to oil prices, which can gap sharply on geopolitical news. Without a clear trend established, any position here would be a coin flip."
+    },
+    "SPY": {
+      "decision": "hold",
+      "plain_english": "The S&P 500 ETF (SPY) is dangerously overbought — RSI hit 90.6 and the stochastic indicator is at 98 out of 100. When nearly every buyer has already bought, there are few people left to push prices higher. The breakout to new highs happened on only 59% of average volume, meaning weak conviction behind the move. The system sees better risk-reward waiting for a pullback to the 21-day average near $685 before re-entering.",
+      "key_signals": [
+        "RSI 90.6 — extreme overbought (above 70 is typically considered overbought)",
+        "Stochastic 98/94 — nearly the highest possible reading",
+        "Volume only 0.59x average on the breakout — weak participation",
+        "Z-score +1.92 — price stretched far above statistical norms"
+      ],
+      "risk_note": "Extreme overbought readings don't mean a crash is coming — strong trends can stay overbought for weeks. But the risk-reward for new longs is poor: small potential upside, large potential downside if the trend reverses."
+    },
+    "QQQ": {
+      "decision": "buy",
+      "plain_english": "The Nasdaq-100 ETF (QQQ) has the strongest momentum in the entire basket — ADX of 46 (very strong trend) and 21-day ROC of +11.4%. Despite extreme overbought readings, the system made a calculated decision to buy a small position (25 shares) because the trend is undeniably powerful and it adds sector diversification from the financial longs. The tight stop at $642 (just below hourly support) limits downside if the trade fails.",
+      "key_signals": [
+        "ADX 46.4 — strongest trend strength reading in the basket",
+        "21d ROC +11.4% — sustained tech momentum",
+        "Perfect EMA alignment on daily chart",
+        "4/9 agents bullish; tight stop at $642 to manage Z-score 2.50 risk"
+      ],
+      "risk_note": "The Z-score of 2.50 means QQQ's price is 2.5 standard deviations above its mean — statistically rare and prone to 'snap-back' corrections. One dissenting agent (Druckenmiller strategy) is outright bearish, citing AI sentiment exhaustion and mega-cap tech valuation risk."
+    }
+  },
+  "portfolio_takeaway": "The portfolio takes a moderately bullish stance with selective positioning: long financials (JPM + GS) and tech momentum (QQQ) totaling ~$43,100, offset by one short in a fundamentally broken name (NKE at ~$9,400), while holding three tickers with unclear signals (TSLA, XOM, SPY). The theme is conviction-based selectivity — only entering trades where multiple signals agree, avoiding tickers where the data is contradictory. The biggest portfolio risk is that JPM, GS, and QQQ would all suffer in a broad market selloff, and SPY's extreme overbought reading (RSI 90.6) is a warning sign that such a pullback could be near."
+}

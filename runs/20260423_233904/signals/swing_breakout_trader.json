@@ -1,0 +1,65 @@
+{
+  "TSLA": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "Price declining below 50-SMA (389.15) with no consolidated base. Daily volume 0.92x average, hourly volume severely depressed (0.51x). Hourly RSI only 37.50 and Bollinger bands squeezed on hourly (width 0.079) but momentum is downward (hourly MACD negative). No clear consolidation range or resistance breakout setup. ADX hourly elevated at 60.61 but the trend is downward, not upward. Price must first establish support and consolidate before qualifying for breakout trade.",
+    "entry_price": 400.62,
+    "target_price": 428.27,
+    "stop_loss": 385.29,
+    "timeframe": "Awaiting consolidation"
+  },
+  "JPM": {
+    "signal": "bullish",
+    "confidence": 62,
+    "reasoning": "Breakout setup in progress: price recently broke above daily resistance at 316.99 (confirmed 4/20 close), with daily RSI at 71.23 (overbought but in strong trend). Hourly volume burst at 1.40x average on the push to new highs. EMA aligned uptrend daily. However, most recent day (4/22) volume dropped to 0.60x average, which is concerning for breakout follow-through. Measured move from support (281.40) to resistance (316.99) = 35.59 points suggests target near 352.58. Still in early-stage breakout but volume confirmation weakening. Recommend entry on any pullback to 310 area with strong volume confirmation.",
+    "entry_price": 315.50,
+    "target_price": 352.58,
+    "stop_loss": 311.94,
+    "timeframe": "5-10 trading days"
+  },
+  "GS": {
+    "signal": "bullish",
+    "confidence": 65,
+    "reasoning": "Strong breakout momentum: price broke above daily resistance at 941.74 on 4/20 with high volume (2,374k), followed by continued uptrend (4/21 high 952.01, 4/22 close 934.84). Daily RSI at 72.32 (overbought but not extreme), EMA aligned uptrend. ADX at 32.02 indicates developing trend. Measured move from swing low (802.89) to resistance (941.74) = 138.85 points, suggesting target near 1080.59. Hourly indicators show consolidation (RSI 54.73, BB middle), volume on hourly 1.03x average. Primary concern: latest day volume declined to 0.66x average on both timeframes, and price retraced slightly from 952 high. Breakout is valid but needs volume confirmation on next push. Entry on close above 940 with volume surge.",
+    "entry_price": 940.00,
+    "target_price": 1080.59,
+    "stop_loss": 931.15,
+    "timeframe": "8-15 trading days"
+  },
+  "NKE": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "Price in downtrend below 50-SMA (53.93), not a breakout setup. Current price 44.78 near daily support (42.62). Hourly RSI deeply oversold at 20.37 with hourly Bollinger bands squeezed (width 0.0628, position 0.20), suggesting potential bounce/reversal rather than breakout. Daily volume 0.60x average, hourly volume 0.98x average - both inadequate for breakout confirmation. EMA aligned downtrend on daily. Price would need to first consolidate above 52-53 resistance before qualifying for bullish breakout. Current setup favors a mean reversion bounce from hourly oversold conditions, not a sustained breakout trade.",
+    "entry_price": 52.98,
+    "target_price": 65.18,
+    "stop_loss": 45.50,
+    "timeframe": "Downtrend dominant"
+  },
+  "XOM": {
+    "signal": "neutral",
+    "confidence": 50,
+    "reasoning": "Price consolidating between support (146.44) and resistance (171.47) with range of 25.28 points. Daily RSI 31.23 (oversold), hourly RSI 66.37 (overbought on intraday). Mixed signals: daily Bollinger position 0.26 (lower), hourly 0.96 (upper), indicating potential squeeze on daily. Volume weak on daily (0.60x average), moderate on hourly (1.20x average). Current price 150.53 in mid-range with no clear directional momentum on daily (MACD negative, ROC negative on longer timeframes). Hourly volume surge (1.20x) suggests intraday interest but daily volume insufficient for breakout confirmation. Awaiting either consolidation above 160 or breakdown below 148 to establish clear breakout direction.",
+    "entry_price": 171.47,
+    "target_price": 196.75,
+    "stop_loss": 148.18,
+    "timeframe": "Consolidation phase"
+  },
+  "SPY": {
+    "signal": "bullish",
+    "confidence": 58,
+    "reasoning": "Strong uptrend in place with extreme daily RSI of 90.56 and EMA aligned uptrend. ADX 43.26 indicates strong trend direction. Price near daily resistance (711.21) and elevated in Bollinger bands (position 0.85). Recent close 711.21 on 4/22 represents breakout attempt. However, CRITICAL volume issue: daily volume 0.59x average on the recent push higher - this fails the 1.5x volume confirmation requirement for a valid breakout signal. Hourly volume also 0.98x (below average). The uptrend is intact but recent breakout is NOT validated by volume, making it vulnerable to false breakout/pullback. Recommend waiting for volume surge confirmation or entry on pullback with strong volume. If volume confirms on next up day, target would be 724 (range height) above resistance.",
+    "entry_price": 711.21,
+    "target_price": 724.00,
+    "stop_loss": 708.22,
+    "timeframe": "5-8 trading days"
+  },
+  "QQQ": {
+    "signal": "bullish",
+    "confidence": 55,
+    "reasoning": "Powerful uptrend with extreme daily RSI 94.34 and EMA aligned uptrend. ADX 46.37 (very strong trend). Price elevated in Bollinger bands at 0.885 position, recently touched resistance at 655.11. However, multiple warning signs: (1) Volume failing - daily 0.69x average, hourly 0.75x average - both significantly below breakout confirmation threshold of 1.5x. (2) Extreme overbought conditions on daily timeframe (RSI 94.34, stochastic 99.74) despite only moderate overbought on hourly (RSI 63.75, stochastic 51.65). (3) Recent price action shows some momentum loss (ROC on hourly negative). The uptrend is real and strong, but current breakout to 655+ is NOT volume-confirmed and at extreme overbought risk. Recommend extreme caution, waiting for pullback + volume confirmation, or entry only on strength with tighter stop.",
+    "entry_price": 655.11,
+    "target_price": 675.00,
+    "stop_loss": 648.52,
+    "timeframe": "5-10 trading days"
+  }
+}

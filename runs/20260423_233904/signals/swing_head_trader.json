@@ -1,0 +1,58 @@
+{
+  "TSLA": {
+    "consensus_signal": "neutral",
+    "confidence": 25,
+    "reasoning": "8 out of 9 agents neutral with only momentum_ranker bearish (65). The stock exhibits misaligned EMAs and choppy price action with no clear trend structure. Trend follower explicitly avoids trade due to tangled EMA setup. Hourly weakness (RSI 37.5) conflicts with mixed daily signals. While momentum ranker suggests downside (37.5 hourly RSI, negative momentum), conviction across strategies is too low to justify entry. Technical setup lacks confluence required for high-conviction swing trade.",
+    "agent_agreement_pct": 11.1,
+    "key_conflicts": "All agents except momentum_ranker avoid this trade. Momentum ranker bearish (65 confidence) conflicts with neutral stance of trend follower, pullback trader, and breakout trader. No unified directional bias. News/catalyst signals absent.",
+    "recommended_action": "hold"
+  },
+  "JPM": {
+    "consensus_signal": "bullish",
+    "confidence": 68,
+    "reasoning": "Strong consensus: 4 agents bullish (trend 72, pullback 72, breakout 62, momentum 72), 3 neutral, 1 bearish (mean reversion 72). The financial sector shows structural strength with perfect daily EMA alignment (10>21>50). ADX 38.9 confirms strong trend. Mean reversion's overbought warning (Z-score +1.42, RSI 71.2) is offset by hourly RSI 43.8 showing no divergence yet—this is a healthy entry zone rather than top. Pullback trader identifies ideal consolidation entry at 304.50-310.50 zone. Four bullish strategies with convergent entry levels (304-315.50 range) and targets (317-320.50). Risk-reward favorable: 2-5% upside vs 1-2% downside to mean.",
+    "agent_agreement_pct": 55.6,
+    "key_conflicts": "Mean reversion flags overbought conditions on daily but hourly RSI divergence suggests safe entry into pullback. Catalyst trader neutral (no near-term catalysts) does not contradict bullish technicals. Stanley Druckenmiller neutral (40) suggests setup lacks macro conviction but technicals are solid.",
+    "recommended_action": "buy"
+  },
+  "GS": {
+    "consensus_signal": "bullish",
+    "confidence": 65,
+    "reasoning": "4 agents bullish (trend 78, pullback 65, breakout 65, momentum 78), 2 bearish (mean reversion 78, stanley_druckenmiller 55), 3 neutral. Perfect daily EMA alignment (10>21>50>200) with ADX 32 confirms trend strength. Price 931.30 well above all moving averages. Momentum is accelerating across timeframes (ROC 5d: 3.93%, 10d: 3.21%, 21d: 12.46%). However, mean reversion flags extreme overbought (Z-score +1.39, RSI 72.3, Stochastic 85.8/88.2 extreme). This is the key conflict: trend continuation agents want to follow uptrend while mean reversion anticipates pullback. Sector rotation agent strongly bullish (78) on sustained sector accumulation. Entry recommendation: wait for minor pullback to 926-930 for safer entry. Target 944-960 with stop below 916.",
+    "agent_agreement_pct": 44.4,
+    "key_conflicts": "Strong disagreement on entry timing: trend/momentum/sector agents suggest enter now at 931.30; mean reversion agent suggests wait for pullback from overbought extreme. Stanley Druckenmiller mildly bearish (55) on growth valuation concerns conflicts with strong technical consensus. Risk: early entry into overbought zone could face pullback.",
+    "recommended_action": "buy"
+  },
+  "NKE": {
+    "consensus_signal": "bearish",
+    "confidence": 72,
+    "reasoning": "5 agents bearish (trend 62, pullback 68, momentum 80, sector 68, stanley_druckenmiller 62), 1 bullish (mean reversion 68), 2 neutral. Clear structural downtrend: EMA aligned down (10<21<50<200), price 44.78 trading 15.3% below 50-day SMA. ADX 28.6 confirms trend strength. Momentum is deteriorating (21-day ROC -13.34%, hourly RSI 20.37 oversold). Mean reversion's bullish stance (oversold entry at 46.00 targeting 53.93) represents a bounce opportunity, not trend reversal. Sector rotation signals outflows from consumer discretionary. All short-biased agents converge on similar targets: 42.62 (trend follower) to 41.50 (momentum ranker). Pullback trader suggests 'sell-the-rip' entry at 51.50. This is one of the clearest downtrend setups in the basket.",
+    "agent_agreement_pct": 55.6,
+    "key_conflicts": "Mean reversion (68) bullish as tactical bounce play conflicts with strategic downtrend consensus. This is healthy divergence: mean reversion correctly identifies oversold bounce opportunity (46-51 bounce to 50 SMA), but broader trend consensus is short. Recommended approach: short into any bounce above 49-51 range rather than chasing down from current level.",
+    "recommended_action": "short"
+  },
+  "XOM": {
+    "consensus_signal": "neutral",
+    "confidence": 45,
+    "reasoning": "5 neutral agents, 2 bullish (mean reversion 75, stanley_druckenmiller 58), trend/pullback/breakout all neutral to conflict. This ticker shows the clearest daily/hourly divergence in the basket: daily weakness (RSI 31.2 oversold, MACD negative, ROC negative) contrasts sharply with hourly strength (RSI 66.4 overbought, MACD positive, CCI 138.7 extremely bullish). Trend follower avoids (EMAs tangled). Mean reversion identifies bullish divergence (daily oversold while hourly overbought) with target at 50-SMA 154.65. Stanley Druckenmiller cautiously bullish (58) on macro energy tailwinds and earnings growth. Energy sector macro context is constructive (geopolitical, OPEC). However, energy sector is not clearly rotating in or out (neutral 50 confidence). No consensus for high-conviction entry at this time.",
+    "agent_agreement_pct": 22.2,
+    "key_conflicts": "Fundamental disagreement between daily and hourly timeframes creates conflict across all agents. Some (trend, pullback, breakout, sector) stay neutral due to conflicted signals. Others (mean reversion, stanley_druckenmiller) see bullish divergence and macro tailwind. Without clear EMA alignment on daily, trend followers avoid. Recommended approach: wait for daily RSI to clarify direction above 40 or below 25 before entering.",
+    "recommended_action": "hold"
+  },
+  "SPY": {
+    "consensus_signal": "neutral",
+    "confidence": 52,
+    "reasoning": "Market showing extreme overbought conditions with fragmented strategy consensus. 3 agents bullish (trend 85, breakout 58, sector 85), 2 bearish (pullback 25, mean reversion 82), 2 neutral (momentum 60, catalyst 20). Trend follower, sector rotation agent, and breakout trader all strongly bullish (85, 58, 85 confidence) on strong EMA alignment, ADX 43.3, and sector rotation into equities. However, pullback trader warns of 'extreme overbought exhaustion, not a pullback setup' with daily RSI at 90.6 (>80 is overbought territory). Mean reversion flags EXTREME short setup (Z-score +1.92, RSI 90.6, Stochastic 98.2/93.7 extreme). Stanley Druckenmiller bearish (48) on macro risk-off potential. The fundamental conflict: uptrend is real and strong, BUT price is at extreme overbought levels with volume failing (0.59x average). This is a 'too extended' setup despite bullish technicals.",
+    "agent_agreement_pct": 33.3,
+    "key_conflicts": "Severe conflict between trend-continuation agents (bullish, want to follow strong uptrend) and mean-reversion/pullback agents (warn of exhaustion and overbought extremes). Volume failure on recent push higher is a red flag even for bullish agents. The correct interpretation: uptrend IS intact but current entry levels are too extended. Conservative traders should wait for pullback to 21-EMA around 684-685 with volume confirmation. Aggressive traders wait for hourly consolidation completion.",
+    "recommended_action": "hold"
+  },
+  "QQQ": {
+    "consensus_signal": "bullish",
+    "confidence": 62,
+    "reasoning": "4 agents bullish (trend 89, momentum 75, sector 88, breakout 55), 2 bearish (pullback 28, mean reversion 85), 2 neutral (catalyst 20, stanley_druckenmiller 51). Strongest absolute momentum in the basket with accelerating daily ROCs (2.78% → 8.09% → 11.41%). Trend follower very bullish (89) on perfect EMA alignment and ADX 46.4. Sector rotation agent most bullish overall (88 confidence) citing technology sector rotation into extreme 'risk-on' positioning (Z-score 2.495 = 2.5 std devs above mean, RSI 94.3 extreme). However, pullback trader neutral (28) warning of 'severely overbought with no clean pullback entry yet' and mean reversion bearish (85) flagging EXTREME short setup (Z-score +2.50 exceeds +2 threshold, Stochastic 99.7/96.2 extreme, RSI 94.3 extreme). Like SPY, this is strong trend at extreme overbought. Key difference from SPY: hourly momentum still positive here while daily momentum exhausting—suggests one more leg higher before correction.",
+    "agent_agreement_pct": 44.4,
+    "key_conflicts": "Classic 'too much too fast' conflict: momentum/trend/sector agents see continuation while mean reversion warns of parabolic extreme. Pullback trader correctly notes that extreme overbought may extend further rather than pull back cleanly. The tech sector is in full 'risk-on' rotation (institutional flows very strong per MFI 71.5), supporting further upside to 665-670 on continuation. However, risk of sudden reversal is extreme. Recommended approach: aggressive traders chase to 665-675 targets with very tight stops. Conservative traders wait for pullback.",
+    "recommended_action": "buy"
+  }
+}

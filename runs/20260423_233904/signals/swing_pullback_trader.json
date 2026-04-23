@@ -1,0 +1,65 @@
+{
+  "TSLA": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "Mixed signals: Daily trend alignment is false despite some upside momentum (ROC +12.8% 10d). Hourly RSI 37.5 is oversold but MACD histogram negative and Williams %R very bearish (-78.7). Price at 373.72 is below recent highs and daily EMAs are in disarray (10 at 380.66, 21 at 377.66, 50 at 388.32). Without clear trend confirmation, Fibonacci levels are ambiguous. Volume declining (0.92x avg). Not enough confluence for a high-confidence pullback trade.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "JPM": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "Textbook pullback setup in strong uptrend: Daily EMA aligned bullish (10: 309.80, 21: 304.53, 50: 301.46), price at 311.69 is 5% above 50-day SMA. Daily RSI 71.2 shows overbought (rally phase), while hourly RSI 43.8 indicates pullback into support. Fibonacci 38.2% retracement at 313.06 aligns with hourly support at 310.44. Volume declining (0.6x avg) shows healthy pullback. MACD positive daily. Daily Stochastic already elevated (78.1/85.3) suggests rally may continue on pullback buy.",
+    "entry_price": 310.50,
+    "target_price": 317.00,
+    "stop_loss": 308.20,
+    "timeframe": "5-10 trading days"
+  },
+  "GS": {
+    "signal": "bullish",
+    "confidence": 65,
+    "reasoning": "Strong daily uptrend (EMA 10: 912.58, 21: 890.75, 50: 877.19 all aligned). Price at 931.30 well above 50-day SMA (+7.6%). Daily RSI 72.3 indicates rally strength. Hourly shows consolidation with RSI 54.7 (neutral, not yet oversold) and MACD slightly negative. Fibonacci 50% at 921.455 and 38.2% at 926.64 provide support zones. Volume declining (0.66x) is healthy. ADX 32 confirms moderate trend. Setup is strong trend with minor consolidation; pullback to 926-927 would be excellent entry with target retest of recent high 944+.",
+    "entry_price": 926.50,
+    "target_price": 944.00,
+    "stop_loss": 916.27,
+    "timeframe": "5-12 trading days"
+  },
+  "NKE": {
+    "signal": "bearish",
+    "confidence": 68,
+    "reasoning": "Clear downtrend setup (EMA aligned down: 10: 45.71, 21: 47.28, 50: 52.03). Price at 44.78 is 15.3% below 50-day SMA. Daily RSI 55.6 is neutral, but hourly RSI 20.4 is severely oversold, suggesting pull-back rally is imminent. Fibonacci 61.8% retracement (51.24) from swing high 65.18 to low 42.62 is resistance for short entry on bounce. Volume well below average (0.59x) suggests weak conviction in downmove. This is a 'sell the rip' setup: wait for hourly RSI bounce above 35-40, then short into Fibonacci 50-61.8% zone (51.2-53.9) with target back to 42.62.",
+    "entry_price": 51.50,
+    "target_price": 42.62,
+    "stop_loss": 53.90,
+    "timeframe": "8-15 trading days"
+  },
+  "XOM": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "Conflicted setup: Daily EMA not aligned (10: 151.09, 21: 153.83, 50: 151.53 are tangled) and RSI oversold at 31.2, suggesting downtrend fatigue. Hourly RSI overbought at 66.4 creates a negative divergence (hour rallying while day weak). Price at 150.53 is 2.6% below 50-day MA. Fibonacci levels scattered due to trend confusion. MACD negative daily, positive hourly. Williams %R bearish daily (-69.8) but bullish hourly (-22.6). Volume light (0.6x avg). Too much internal conflict. Better to wait for clearer trend confirmation before entering.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "SPY": {
+    "signal": "neutral",
+    "confidence": 25,
+    "reasoning": "Extreme overbought exhaustion, not a pullback setup: Daily RSI 90.6 is at extremes (>80 is overbought territory). EMA aligned bullish (10: 696.93, 21: 684.76, 50: 678.11) and price at 708.45 is 5.3% above 50-day SMA. Stochastic near max (98.2/93.7). Williams %R barely negative (-1.75 is at top). Bollinger Band position 0.846 means price is near upper band, not at Fibonacci retracement. Hourly shows some weakness (RSI 59.9, MACD histogram negative) but entry levels are not yet established. Pullback would likely extend to daily Fib 50% (671.59) but that's a 5% drop from current levels—too far for a pullback trader. Wait for correction structure to form.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  },
+  "QQQ": {
+    "signal": "neutral",
+    "confidence": 28,
+    "reasoning": "Severely overbought with no clean pullback entry yet: Daily RSI 94.3 is at extremes (>90), Stochastic 99.7/96.2 near max. EMA aligned bullish (10: 634.32, 21: 619.15, 50: 609.96) but price at 651.42 is 8.4% above 50-day SMA, approaching upper Bollinger Band (669.3). Hourly RSI 63.7 shows some pullback fatigue but not oversold. Fibonacci 50% at 642.4 is where a pullback might find first support, but that level must be tested from above first. MACD histogram still positive. This is exhaustion, not a pullback setup. If SPY/QQQ pull back 3-5%, re-evaluate for Fibonacci confluence entries. For now, too extended.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "No trade"
+  }
+}

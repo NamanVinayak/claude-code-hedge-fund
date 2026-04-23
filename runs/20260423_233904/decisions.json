@@ -1,0 +1,82 @@
+{
+  "decisions": {
+    "TSLA": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 373.72,
+      "target_price": null,
+      "stop_loss": null,
+      "risk_reward": null,
+      "timeframe": "N/A",
+      "confidence": 20,
+      "reasoning": "Head Trader confidence only 25 — 8/9 strategy agents neutral with no unified directional bias. Tangled EMAs (10<21<50 disordered), mixed daily/hourly signals, and no catalyst. Skip until clean setup emerges."
+    },
+    "JPM": {
+      "action": "buy",
+      "quantity": 50,
+      "entry_price": 312.0,
+      "target_price": 322.0,
+      "stop_loss": 307.0,
+      "risk_reward": 2.0,
+      "timeframe": "7-12 trading days",
+      "confidence": 65,
+      "reasoning": "Head Trader bullish (68): 4/9 agents agree. Perfect daily EMA alignment (10>21>50), ADX 38.9 strong trend, 21d ROC +8.5%. Entry at pullback consolidation ~312; target prior breakout zone 322; stop below recent support 307. 50 shares = $15,600, within $20k risk limit. Diversified from tech longs."
+    },
+    "GS": {
+      "action": "buy",
+      "quantity": 12,
+      "entry_price": 935.0,
+      "target_price": 968.0,
+      "stop_loss": 918.0,
+      "risk_reward": 1.94,
+      "timeframe": "8-15 trading days",
+      "confidence": 60,
+      "reasoning": "Head Trader bullish (65): 4/9 agents agree. Perfect EMA alignment, ADX 32, 21d ROC +12.5%, momentum accelerating. Reduced to 12 shares ($11,220) to manage JPM correlation (0.71). Entry at current consolidation 935; target recent swing zone 968; stop below 918 key support."
+    },
+    "NKE": {
+      "action": "short",
+      "quantity": 200,
+      "entry_price": 47.0,
+      "target_price": 42.0,
+      "stop_loss": 49.5,
+      "risk_reward": 2.0,
+      "timeframe": "8-12 trading days",
+      "confidence": 68,
+      "reasoning": "Head Trader bearish (72): 5/9 agents bearish. EMA fully aligned downtrend (10<21<50<200), 21d ROC -13.3%, structural fundamental deterioration (rev -9.8%, EPS -42.3%). Entry on hourly oversold bounce to 47; target swing low area 42; stop 49.5 above recent resistance. 200 shares = $9,400 exposure, within $14,354 limit."
+    },
+    "XOM": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 150.53,
+      "target_price": null,
+      "stop_loss": null,
+      "risk_reward": null,
+      "timeframe": "N/A",
+      "confidence": 30,
+      "reasoning": "Head Trader neutral (45): only 2/9 agents bullish, 5 neutral. Sharp daily/hourly divergence (daily RSI 31 oversold, hourly RSI 66 overbought) creates conflicting signals. Tangled EMAs prevent clean trend read. Hold until daily RSI confirms direction above 40 or below 25."
+    },
+    "SPY": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 708.45,
+      "target_price": null,
+      "stop_loss": null,
+      "risk_reward": null,
+      "timeframe": "N/A",
+      "confidence": 35,
+      "reasoning": "Head Trader neutral (52): extreme overbought conditions — RSI 90.6, Z-score +1.92, Stochastic 98/94 — make new longs too risky. Volume only 0.59x average on recent breakout. Mean reversion flags short setup but uptrend ADX 43.3 is real. Wait for either volume-confirmed continuation or pullback to 21-EMA near 685."
+    },
+    "QQQ": {
+      "action": "buy",
+      "quantity": 25,
+      "entry_price": 652.0,
+      "target_price": 672.0,
+      "stop_loss": 642.0,
+      "risk_reward": 2.0,
+      "timeframe": "8-14 trading days",
+      "confidence": 58,
+      "reasoning": "Head Trader bullish (62): 4/9 agents bullish. Strongest momentum in basket — 21d ROC +11.4%, ADX 46.4, perfect EMA alignment. Z-score 2.50 extreme is key risk; tight stop at 642 (hourly support). Target 672 measured from EMA structure. 25 shares = $16,300, within $19,520 limit. Complements JPM/GS long with different sector exposure."
+    }
+  },
+  "portfolio_summary": "Moderately bullish portfolio with selective positioning across 4 of 7 tickers. Long financials (JPM + GS, both showing perfect EMA alignment and accelerating momentum) and long tech growth (QQQ, strongest momentum in basket). Short consumer discretionary via NKE (structural fundamental breakdown, clear downtrend across all timeframes). Holding TSLA (no consensus), XOM (conflicted signals), and SPY (extreme overbought, poor risk-reward). Total long exposure ~$43,100 across JPM/GS/QQQ; short exposure ~$9,400 in NKE. Net long bias reflecting the underlying uptrend, hedged by one short in a fundamentally deteriorating name. Risk concentrations managed: JPM/GS correlation reduced via smaller GS size; SPY/QQQ positions not doubled up. Market view: financial sector and tech momentum remain intact near-term, but extreme overbought readings on broad indices (SPY RSI 90.6, QQQ Z-score 2.50) warrant caution — active trades carry tight stops."
+}

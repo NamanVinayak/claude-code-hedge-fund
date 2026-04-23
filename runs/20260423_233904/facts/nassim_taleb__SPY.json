@@ -1,0 +1,41 @@
+{
+  "ticker": "SPY",
+  "score": 13,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 4,
+    "max_score": 8,
+    "details": "Near-Gaussian tails (kurtosis 0.9) \u2014 suspiciously thin; Symmetric distribution (skew 0.36); Balanced tails (tail ratio 0.93); Resilient (max drawdown -8.9%)"
+  },
+  "antifragility_analysis": {
+    "score": 0,
+    "max_score": 10,
+    "details": "Cash/debt data not available; Debt-to-equity data not available; Insufficient margin history for stability analysis; FCF data not available"
+  },
+  "convexity_analysis": {
+    "score": 1,
+    "max_score": 10,
+    "details": "R&D data not available \u2014 no penalty for non-R&D sectors; Slight positive asymmetry (up/down ratio 1.13); Cash/market cap data not available; FCF yield data not available"
+  },
+  "fragility_analysis": {
+    "score": 0,
+    "max_score": 8,
+    "details": "Debt-to-equity data not available; Interest coverage data not available; Insufficient earnings history for volatility analysis; Net margin data not available"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 4,
+    "max_score": 6,
+    "details": "Normal vol regime (1.28) \u2014 fair pricing; Elevated vol-of-vol (0.0230 vs median 0.0137)"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 650202710016.0
+}

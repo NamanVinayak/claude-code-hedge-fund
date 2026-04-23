@@ -1,0 +1,65 @@
+{
+  "TSLA": {
+    "signal": "neutral",
+    "confidence": 25,
+    "reasoning": "No identifiable catalysts (earnings, product launches, regulatory decisions) in recent news or insider trading data. While daily technicals show mixed signals (RSI 52.7, MACD positive histogram, EMA not aligned), hourly weakness (RSI 37.5, negative MACD) suggests recent pullback. Without catalyst timing, cannot establish high-conviction swing entry. ATR 16.1 provides volatility capacity for potential moves, but catalyst catalyst absence prevents trade.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "N/A"
+  },
+  "JPM": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "No identifiable catalysts in data (no earnings, earnings announcements, regulatory decisions, conference dates). Daily technicals are constructive: EMA aligned uptrend, RSI 71.2 (overbought but typical for financials in rallies), MACD positive, momentum strong (ROC_21: 8.5%). Hourly setup less decisive (RSI 43.8, narrow Bollinger bands, low ATR 1.5). While technical setup suggests upside bias, absence of near-term catalyst (1-10 trading days) disqualifies this as catalyst swing trade.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "N/A"
+  },
+  "GS": {
+    "signal": "neutral",
+    "confidence": 15,
+    "reasoning": "Technical setup is EXCELLENT: EMA aligned uptrend, RSI 72.3 (overbought but in context of strong trend), MACD positive with expanding histogram (6.8), strong momentum (ROC_21: 12.5%), price at 7.55% above 50-day SMA. Hourly also shows EMA aligned uptrend. However, no identifiable catalyst (earnings, announcements, regulatory decision, conference) visible in news or insider data. This is a momentum trade, not a catalyst trade. Without catalyst trigger, cannot establish timeframe or target based on expected catalyst magnitude.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "N/A"
+  },
+  "NKE": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "Structural downtrend evident: EMA aligned DOWNTREND on daily, price 15.3% below 50-day SMA, weak momentum (ROC_21: -13.3%), MACD negative. Hourly mirrors downtrend (EMA aligned down, RSI very oversold at 20.4, CCI -99.6 extreme). While oversold conditions could suggest bounce, no identifiable catalyst (earnings, product launch, strategic announcement) to trigger reversal swing. Recent_news and insider_trades arrays empty. Until catalyst emerges, downtrend structure argues against contrarian entry.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "N/A"
+  },
+  "XOM": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "Divergence present: Daily technicals weak (RSI 31.2 oversold, MACD negative, ROC all negative), BUT hourly technicals strong (RSI 66.4, MACD positive histogram 0.2, CCI 138.7 extremely bullish, Bollinger position 0.96 upper band). This intraday strength into daily weakness suggests potential morning bounce/reversal setup. However, no catalyst identified (no energy news, geopolitical events, earnings dates, refinery announcements visible). Without catalyst catalyst timing, unclear if bounce will extend to multi-day swing. Need catalyst confirmation to warrant entry.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "N/A"
+  },
+  "SPY": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "CRITICAL: Daily RSI at 90.6 - EXTREME overbought level. While this could itself be catalyst (profit-taking pullback, mean reversion), it reflects already-extended move, not an upcoming catalyst. EMA aligned uptrend, MACD positive, z-score 1.92 (2+ std devs above mean), momentum strong (ROC_21: 8.5%). Hourly RSI 59.9 less extended. No fundamental catalyst (Fed decision, earnings, macro event) identified in news. SPY's extreme overbought is a warning, not a catalyst to BUY into. For swing catalyst trader, better to wait for pullback completion before catalyst-driven entry.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "N/A"
+  },
+  "QQQ": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "CRITICAL: Daily RSI at 94.3 - EXTREME extreme overbought (technically >70 is overbought, >90 is parabolic). This is a warning signal, not a catalyst. EMA aligned uptrend, MACD positive, z-score 2.50 (>2 std devs), Bollinger position 0.885 (near upper band). Hourly RSI 63.7 more balanced, EMA aligned uptrend. While technicals are bullish structurally, no fundamental catalyst (earnings, product announcements, macro catalyst) identified. Extreme overbought conditions typically precede pullback, not continuation into swing setup. Catalyst trader should avoid parabolic extremes and wait for healthier setup.",
+    "entry_price": null,
+    "target_price": null,
+    "stop_loss": null,
+    "timeframe": "N/A"
+  }
+}

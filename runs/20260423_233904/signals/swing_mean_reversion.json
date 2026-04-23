@@ -1,0 +1,65 @@
+{
+  "TSLA": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "TSLA shows Z-score of -0.073 (within mean range). Daily RSI at 52.7 is neutral, not at extremes. Bollinger position at 0.74 suggests slight overbought but not extreme. Hourly shows weakness (RSI 37.5, Z-score -1.69) but this is not a clear mean reversion extreme—stock is trading near its 50-day SMA. Distance from mean is only -0.42%, well within normal range. No extreme detected.",
+    "entry_price": 385.0,
+    "target_price": 389.15,
+    "stop_loss": 380.0,
+    "timeframe": "5-10 trading days"
+  },
+  "JPM": {
+    "signal": "bearish",
+    "confidence": 72,
+    "reasoning": "JPM shows strong mean reversion SHORT setup. Daily Z-score is +1.42 (approaching +2), distance from 50-SMA is +5.03% (extended overbought). Daily RSI is 71.2 (overbought >70), Stochastic K is 78.1 and D is 85.3 (both overbought >80). Bollinger position at 0.75 shows price in upper band. Daily CCI at 76.7 confirms strength. However, hourly shows divergence: hourly RSI is only 43.8 (neutral), Z-score near zero, suggesting overbought condition is only on daily. WAIT for hourly reversal confirmation before shorting. Entry after pullback; target is mean at 50-SMA 298.02.",
+    "entry_price": 311.0,
+    "target_price": 299.0,
+    "stop_loss": 317.5,
+    "timeframe": "5-10 trading days"
+  },
+  "GS": {
+    "signal": "bearish",
+    "confidence": 78,
+    "reasoning": "GS exhibits extreme mean reversion SHORT setup. Daily Z-score is +1.39 (near +2 threshold), distance from 50-SMA is +7.55% (significantly extended). Daily RSI at 72.3 is overbought (>70), Stochastic K at 85.8 and D at 88.2 are both extreme overbought (>80). Williams %R at -14.2 and CCI at 103.6 both confirm strong overbought extremes. MFI at 58.2 is neutral but momentum (ROC) shows positive readings. Bollinger position at 0.82 shows price well into upper band. Hourly RSI at 54.7 is neutral—no divergence, suggesting daily overbought is real. Price structure shows recent swing high at 944.02; short below that with targets at mean 869.20.",
+    "entry_price": 932.0,
+    "target_price": 869.2,
+    "stop_loss": 945.0,
+    "timeframe": "5-10 trading days"
+  },
+  "NKE": {
+    "signal": "bullish",
+    "confidence": 68,
+    "reasoning": "NKE shows mean reversion LONG setup. Daily Z-score is -1.12 (approaching -2 threshold), distance from 50-SMA is -15.3% (significantly oversold). Daily RSI at 55.7 is neutral but approaching overbought on hourly (hourly RSI 20.4—VERY oversold <25). Hourly Z-score is -1.75 (approaching -2), Stochastic K at 19.6 and D at 19.1 are both EXTREME oversold (<20). Williams %R at -80.4 confirms extreme oversold. Daily Stochastic shows 73.6 K and 67.2 D (divergence—daily less oversold than hourly). Trend is downtrend (ema_aligned_downtrend=True). Recent price action shows multiple test of 45.5 support. Entry on reversal above 46.00; target is 50-SMA at 53.93.",
+    "entry_price": 46.0,
+    "target_price": 53.9,
+    "stop_loss": 44.7,
+    "timeframe": "7-14 trading days"
+  },
+  "XOM": {
+    "signal": "bullish",
+    "confidence": 75,
+    "reasoning": "XOM shows mean reversion LONG setup. Daily Z-score is -0.77 (moderate undersold), distance from 50-SMA is -3.33%. Daily RSI at 31.2 is OVERSOLD (<25 threshold is borderline). Stochastic K at 30.2 and D at 24.1 are both LOW, confirming oversold. Williams %R at -69.8 and CCI at -69.9 both show extreme negative readings. However, hourly tells different story: hourly RSI at 66.4 (neutral-bullish), hourly Stochastic K at 77.4 (overbought), hourly position at 0.96 in upper Bollinger band. Hourly momentum is positive. This is a BULLISH DIVERGENCE—daily oversold while hourly overbought. Entry on daily reversal; target is 50-SMA at 154.65.",
+    "entry_price": 150.0,
+    "target_price": 154.65,
+    "stop_loss": 147.0,
+    "timeframe": "5-10 trading days"
+  },
+  "SPY": {
+    "signal": "bearish",
+    "confidence": 82,
+    "reasoning": "SPY shows EXTREME mean reversion SHORT setup. Daily Z-score is +1.92 (very close to +2 extreme threshold), distance from 50-SMA is +5.33% (extended overbought). Daily RSI is EXTREME at 90.6 (well above 75 overbought). Stochastic K at 98.2 and D at 93.7 are EXTREME overbought (>80). Williams %R at -1.75 is extreme. CCI at 107.2 confirms overbought. MFI at 70.7 shows strong buying pressure. Bollinger position at 0.85 shows price far above middle band. ADX at 43.3 shows strong trend strength. Hourly shows RSI at 59.9 (neutral), Stochastic at 61.1 (neutral), and Z-score at +0.51—hourly RSI NOT confirming daily extreme. This is CLASSIC mean reversion setup: daily extreme overbought with hourly not confirming. SHORT target is 50-SMA at 675.23.",
+    "entry_price": 708.0,
+    "target_price": 675.2,
+    "stop_loss": 715.0,
+    "timeframe": "5-10 trading days"
+  },
+  "QQQ": {
+    "signal": "bearish",
+    "confidence": 85,
+    "reasoning": "QQQ shows EXTREME mean reversion SHORT setup—strongest setup in basket. Daily Z-score is +2.50 (EXCEEDS +2 extreme threshold), distance from 50-SMA is +8.43% (very extended overbought). Daily RSI is EXTREME at 94.3 (extreme extreme >75). Stochastic K at 99.7 and D at 96.2 are EXTREME overbought (near 100). Williams %R at -0.26 is at extreme. CCI at 118.3 confirms extreme overbought. Bollinger position at 0.88 shows price deep in upper band. ADX at 46.4 shows strong trending. EMA aligned uptrend confirms rally. However, hourly RSI at 63.7 is only neutral-bullish (not confirming daily extreme), hourly Z-score at +0.86 is mild. TEXTBOOK mean reversion: daily at extreme, hourly neutral divergence. SHORT target is 50-SMA at 604.18. WAIT for hourly reversal candle before entering.",
+    "entry_price": 650.0,
+    "target_price": 604.2,
+    "stop_loss": 658.0,
+    "timeframe": "5-10 trading days"
+  }
+}

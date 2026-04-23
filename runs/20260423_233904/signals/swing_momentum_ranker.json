@@ -1,0 +1,65 @@
+{
+  "TSLA": {
+    "signal": "bearish",
+    "confidence": 65,
+    "reasoning": "Mixed daily momentum (5-day ROC negative while 10-day positive) with deteriorating hourly momentum (all timeframes negative: -1.02%, -4.31%, -4.80%). Hourly RSI at 37.5 confirms weakness. Daily MACD histogram is expanding but hourly MACD histogram is contracting and negative. Price action shows weakness below 50 SMA. Momentum is decelerating rather than accelerating across timeframes.",
+    "entry_price": 373.72,
+    "target_price": 360.0,
+    "stop_loss": 388.00,
+    "timeframe": "5-8 trading days"
+  },
+  "JPM": {
+    "signal": "bullish",
+    "confidence": 72,
+    "reasoning": "Strong daily momentum with all ROCs positive (5: 2.32%, 10: 1.64%, 21: 8.52%). Daily RSI at 71.23 is overbought but confirming uptrend with Stochastic K=78.11. EMAs perfectly aligned in uptrend (price above 10>21>50>200). MACD histogram positive and expanding. However, hourly momentum is decelerating (all ROCs negative and MACD histogram negative), suggesting some intraday pullback but within the larger uptrend. Volume is light (603k vs 9.2M avg) suggesting move may face resistance.",
+    "entry_price": 311.69,
+    "target_price": 320.50,
+    "stop_loss": 305.00,
+    "timeframe": "7-12 trading days"
+  },
+  "GS": {
+    "signal": "bullish",
+    "confidence": 78,
+    "reasoning": "Exceptional daily momentum with all positive and accelerating ROCs (5: 3.93%, 10: 3.21%, 21: 12.46%). Daily RSI at 72.32 overbought but strong. MACD histogram is expanding (6.75). EMAs in perfect uptrend alignment. Price is 7.55% above 50 SMA and 14% above 200 SMA, showing sustained momentum. Hourly momentum is reversing (negative ROCs) but from elevated levels, suggesting consolidation before next leg higher. CCI at 103 confirms strength. This is a strong momentum acceleration candidate.",
+    "entry_price": 931.30,
+    "target_price": 960.00,
+    "stop_loss": 915.00,
+    "timeframe": "8-15 trading days"
+  },
+  "NKE": {
+    "signal": "bearish",
+    "confidence": 80,
+    "reasoning": "Clear momentum deterioration with negative 21-day ROC (-13.34%) despite positive 5-day ROC (0.53%) and 10-day ROC (5.91%). This shows momentum rolling over after recent bounce. Daily RSI at 55.65 is neutral. EMAs in downtrend alignment (price below all moving averages). Price is 15.3% below 50 SMA, 28.7% below 200 SMA. Hourly momentum is uniformly negative across all timeframes (-0.36%, -2.44%, -3.73%), and hourly RSI at 20.37 is oversold. Stochastic showing weakness (K=19.59). This is a momentum reversal setup - avoid long exposure.",
+    "entry_price": 44.78,
+    "target_price": 41.50,
+    "stop_loss": 46.50,
+    "timeframe": "5-10 trading days"
+  },
+  "XOM": {
+    "signal": "neutral",
+    "confidence": 55,
+    "reasoning": "Conflicting timeframe signals indicate a reversal setup but not yet clear direction. Daily momentum is clearly negative across all timeframes with deteriorating ROCs (0.33% → -4.30% → -7.22%). Daily RSI at 31.23 is oversold, and MACD histogram is negative (-1.52). However, hourly momentum shows unexpected strength with all positive ROCs (1.14%, 1.16%, 1.94%), hourly RSI at 66.37, and positive MACD histogram. This hourly bounce within daily downtrend could be a reversal setup. Volume is light across both timeframes (603k vs 22.8M daily average). Recommend waiting for clearer directional confirmation before entering.",
+    "entry_price": 150.53,
+    "target_price": 155.00,
+    "stop_loss": 148.00,
+    "timeframe": "7-12 trading days"
+  },
+  "SPY": {
+    "signal": "neutral",
+    "confidence": 60,
+    "reasoning": "Extreme overbought conditions with daily RSI at 90.56 and Stochastic K=98.25 - both suggesting imminent momentum exhaustion. Daily ROCs are strong and positive (1.61%, 5.21%, 8.52%) and accelerating, but at such extreme levels this indicates stretched valuations. Daily MACD histogram at 4.96 is expanding but MACD line and signal line have both expanded significantly, indicating potential divergence. Hourly momentum is rolling over (negative ROCs: -0.50%, -0.23%, -0.04%), and hourly RSI at 59.93 is declining from overbought. Price is at 84.6% of Bollinger Band width near upper band. This is a momentum exhaustion setup - expect pullback or consolidation. Volume is only 59% of average.",
+    "entry_price": 708.45,
+    "target_price": 720.00,
+    "stop_loss": 700.00,
+    "timeframe": "3-7 trading days"
+  },
+  "QQQ": {
+    "signal": "bullish",
+    "confidence": 75,
+    "reasoning": "Strongest absolute momentum with accelerating daily ROCs (2.78% → 8.09% → 11.41%) - the most positive across all tickers. Daily RSI at 94.34 is extremely overbought but this is consistent with strong trending momentum, not a reversal signal. Daily MACD histogram at 6.125 is positive and expanding, confirming momentum acceleration. EMAs in perfect uptrend alignment (10 > 21 > 50 > 200). Price is 8.43% above 50 SMA. However, hourly momentum is turning negative (ROCs: -0.75%, -0.35%, +0.72%) and hourly MACD histogram is negative, suggesting hourly correction or consolidation within the larger uptrend. This is still the strongest momentum name but entry should be timed around hourly support.",
+    "entry_price": 651.42,
+    "target_price": 670.00,
+    "stop_loss": 640.00,
+    "timeframe": "8-14 trading days"
+  }
+}

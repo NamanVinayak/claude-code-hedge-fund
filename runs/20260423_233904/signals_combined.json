@@ -1,0 +1,2150 @@
+{
+  "mode": "swing",
+  "analyst_signals": {
+    "swing_breakout_trader": {
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 45,
+        "reasoning": "Price declining below 50-SMA (389.15) with no consolidated base. Daily volume 0.92x average, hourly volume severely depressed (0.51x). Hourly RSI only 37.50 and Bollinger bands squeezed on hourly (width 0.079) but momentum is downward (hourly MACD negative). No clear consolidation range or resistance breakout setup. ADX hourly elevated at 60.61 but the trend is downward, not upward. Price must first establish support and consolidate before qualifying for breakout trade.",
+        "entry_price": 400.62,
+        "target_price": 428.27,
+        "stop_loss": 385.29,
+        "timeframe": "Awaiting consolidation"
+      },
+      "JPM": {
+        "signal": "bullish",
+        "confidence": 62,
+        "reasoning": "Breakout setup in progress: price recently broke above daily resistance at 316.99 (confirmed 4/20 close), with daily RSI at 71.23 (overbought but in strong trend). Hourly volume burst at 1.40x average on the push to new highs. EMA aligned uptrend daily. However, most recent day (4/22) volume dropped to 0.60x average, which is concerning for breakout follow-through. Measured move from support (281.40) to resistance (316.99) = 35.59 points suggests target near 352.58. Still in early-stage breakout but volume confirmation weakening. Recommend entry on any pullback to 310 area with strong volume confirmation.",
+        "entry_price": 315.5,
+        "target_price": 352.58,
+        "stop_loss": 311.94,
+        "timeframe": "5-10 trading days"
+      },
+      "GS": {
+        "signal": "bullish",
+        "confidence": 65,
+        "reasoning": "Strong breakout momentum: price broke above daily resistance at 941.74 on 4/20 with high volume (2,374k), followed by continued uptrend (4/21 high 952.01, 4/22 close 934.84). Daily RSI at 72.32 (overbought but not extreme), EMA aligned uptrend. ADX at 32.02 indicates developing trend. Measured move from swing low (802.89) to resistance (941.74) = 138.85 points, suggesting target near 1080.59. Hourly indicators show consolidation (RSI 54.73, BB middle), volume on hourly 1.03x average. Primary concern: latest day volume declined to 0.66x average on both timeframes, and price retraced slightly from 952 high. Breakout is valid but needs volume confirmation on next push. Entry on close above 940 with volume surge.",
+        "entry_price": 940.0,
+        "target_price": 1080.59,
+        "stop_loss": 931.15,
+        "timeframe": "8-15 trading days"
+      },
+      "NKE": {
+        "signal": "neutral",
+        "confidence": 40,
+        "reasoning": "Price in downtrend below 50-SMA (53.93), not a breakout setup. Current price 44.78 near daily support (42.62). Hourly RSI deeply oversold at 20.37 with hourly Bollinger bands squeezed (width 0.0628, position 0.20), suggesting potential bounce/reversal rather than breakout. Daily volume 0.60x average, hourly volume 0.98x average - both inadequate for breakout confirmation. EMA aligned downtrend on daily. Price would need to first consolidate above 52-53 resistance before qualifying for bullish breakout. Current setup favors a mean reversion bounce from hourly oversold conditions, not a sustained breakout trade.",
+        "entry_price": 52.98,
+        "target_price": 65.18,
+        "stop_loss": 45.5,
+        "timeframe": "Downtrend dominant"
+      },
+      "XOM": {
+        "signal": "neutral",
+        "confidence": 50,
+        "reasoning": "Price consolidating between support (146.44) and resistance (171.47) with range of 25.28 points. Daily RSI 31.23 (oversold), hourly RSI 66.37 (overbought on intraday). Mixed signals: daily Bollinger position 0.26 (lower), hourly 0.96 (upper), indicating potential squeeze on daily. Volume weak on daily (0.60x average), moderate on hourly (1.20x average). Current price 150.53 in mid-range with no clear directional momentum on daily (MACD negative, ROC negative on longer timeframes). Hourly volume surge (1.20x) suggests intraday interest but daily volume insufficient for breakout confirmation. Awaiting either consolidation above 160 or breakdown below 148 to establish clear breakout direction.",
+        "entry_price": 171.47,
+        "target_price": 196.75,
+        "stop_loss": 148.18,
+        "timeframe": "Consolidation phase"
+      },
+      "SPY": {
+        "signal": "bullish",
+        "confidence": 58,
+        "reasoning": "Strong uptrend in place with extreme daily RSI of 90.56 and EMA aligned uptrend. ADX 43.26 indicates strong trend direction. Price near daily resistance (711.21) and elevated in Bollinger bands (position 0.85). Recent close 711.21 on 4/22 represents breakout attempt. However, CRITICAL volume issue: daily volume 0.59x average on the recent push higher - this fails the 1.5x volume confirmation requirement for a valid breakout signal. Hourly volume also 0.98x (below average). The uptrend is intact but recent breakout is NOT validated by volume, making it vulnerable to false breakout/pullback. Recommend waiting for volume surge confirmation or entry on pullback with strong volume. If volume confirms on next up day, target would be 724 (range height) above resistance.",
+        "entry_price": 711.21,
+        "target_price": 724.0,
+        "stop_loss": 708.22,
+        "timeframe": "5-8 trading days"
+      },
+      "QQQ": {
+        "signal": "bullish",
+        "confidence": 55,
+        "reasoning": "Powerful uptrend with extreme daily RSI 94.34 and EMA aligned uptrend. ADX 46.37 (very strong trend). Price elevated in Bollinger bands at 0.885 position, recently touched resistance at 655.11. However, multiple warning signs: (1) Volume failing - daily 0.69x average, hourly 0.75x average - both significantly below breakout confirmation threshold of 1.5x. (2) Extreme overbought conditions on daily timeframe (RSI 94.34, stochastic 99.74) despite only moderate overbought on hourly (RSI 63.75, stochastic 51.65). (3) Recent price action shows some momentum loss (ROC on hourly negative). The uptrend is real and strong, but current breakout to 655+ is NOT volume-confirmed and at extreme overbought risk. Recommend extreme caution, waiting for pullback + volume confirmation, or entry only on strength with tighter stop.",
+        "entry_price": 655.11,
+        "target_price": 675.0,
+        "stop_loss": 648.52,
+        "timeframe": "5-10 trading days"
+      }
+    },
+    "stanley_druckenmiller": {
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "Tesla shows mixed technicals with daily RSI neutral (52.7) but hourly RSI deeply depressed (37.5), indicating intraday oversold conditions on shorter timeframe that may bounce. However, daily moving averages are misaligned (EMA10: 380.66 < SMA200: 400.07), breaking uptrend structure. Price momentum is weak: 5-day ROC at -1.1%. Volatility elevated (3.04% daily stdev) creates risk without clear directional conviction. Price closed at 387.51 yesterday, now trading at 373.72, showing continued downside pressure. ADX at 34.7 indicates moderate trend strength but misalignment of MAs suggests trend is down. The risk-reward is unfavorable: potential 8-10% upside to test 400.62 resistance against 18-20% downside risk to 343.25 support. Insufficient macro catalyst or momentum setup for conviction swing trade. Better opportunities exist with clearer directional bias.",
+        "entry_price": 365.0,
+        "target_price": 395.0,
+        "stop_loss": 358.0,
+        "timeframe": "5-8 trading days"
+      },
+      "JPM": {
+        "signal": "neutral",
+        "confidence": 40,
+        "reasoning": "JPM presents a balanced but unconvincing setup. Daily indicators show neutral positioning: RSI at 50.6, MACDs positive but weak signal, and moving averages misaligned (EMA10: 308.5 < SMA200: 320.8). Hourly shows deeper weakness with RSI at 35.8 and negative MACD histogram (-2.1), suggesting intraday seller pressure. Price momentum is flat at -0.5% 5-day ROC with only 0.6% 10-day momentum. Stock shows only 1.33% daily volatility\u2014tight range\u2014limiting swing trade upside. Support at 305.50 and resistance at 320.90, but moves between them offer limited risk-reward. Market cap of $835B creates liquidity but financial sector macro winds are unclear. Valuation fair at 17x earnings for a financial. Would require clear macro trigger (rate expectations shift, credit spread widening) to take conviction. Current setup lacks catalysts.",
+        "entry_price": 305.0,
+        "target_price": 325.0,
+        "stop_loss": 298.0,
+        "timeframe": "7-12 trading days"
+      },
+      "GS": {
+        "signal": "bearish",
+        "confidence": 55,
+        "reasoning": "Goldman Sachs presents a tactical short opportunity with compelling risk-reward. Daily technicals show structural weakness: EMA10 at 907.4 < SMA200 at 944.8, confirming downtrend alignment. RSI at 43.2 is firmly in bearish territory, not yet oversold but trending lower. MACD histogram negative (-18.8), indicating bearish momentum acceleration. Hourly shows even sharper weakness: RSI at 28.5 (severely oversold), MACD deep negative, Williams %R at -89.2. Price closed at 931.30 yesterday, now $934.54, attempting bounce but failing to reclaim daily EMA50 (938.2). The stock has broken below key support around 940, and bounce attempts are weak. Free cash flow deeply negative (-$81.4B TTM) is a structural concern. Earnings growth positive at 20.3% but sustainability questionable given FCF destruction. Valuation appears cheap (P/E 17.0) but value trap territory given leverage (0.58 D/E) and capital intensity. Downside to 900 is likely on macro risk-off or credit concerns. Upside limited to 950-960 resistance. Risk-reward favors short: 3-5% upside vs 8-12% downside.",
+        "entry_price": 925.0,
+        "target_price": 890.0,
+        "stop_loss": 955.0,
+        "timeframe": "8-15 trading days"
+      },
+      "NKE": {
+        "signal": "bearish",
+        "confidence": 62,
+        "reasoning": "Nike is structurally broken with deteriorating fundamentals that override any technical bounce. Revenue declined 9.8%, earnings collapsed 43.5%, EPS down 42.3%, and free cash flow cratered 50.6% YoY. This is not cyclical weakness but structural deterioration. Technicals confirm: daily EMA10 at 77.8 < SMA200 at 88.2, deeply misaligned downtrend. RSI at 33.8 oversold but not bouncing. Hourly RSI at 19.2 is capitulation extreme, yet price action shows no buying conviction. Stock down 18.4% YoY momentum despite positive chart setup\u2014sellers dominate. P/E at 29.5x is elevated for negative growth, a clear value trap. Valuation multiple compression likely as growth deteriorates further. Current price $87.74 has support at 82 and resistance at 92, but the break of the 88.2 200-day moving average is a serious structural signal. Insider behavior unknown (no recent trades noted), but FCF destruction and margin compression suggest management confidence is low. Downside to 75-78 range is probable as market reprices for secular decline. Risk-reward heavily skewed to downside: 5% upside to 92 vs 12-15% downside to 75.",
+        "entry_price": 82.0,
+        "target_price": 72.0,
+        "stop_loss": 93.0,
+        "timeframe": "10-15 trading days"
+      },
+      "XOM": {
+        "signal": "bullish",
+        "confidence": 58,
+        "reasoning": "Exxon Mobil offers my most conviction long setup on macro tailwinds. Energy fundamentals remain supportive: revenue growth surging 54.9% (likely oil/gas price effects), book value growth at 28.8%. Valuation reasonable at 22.5x earnings with 4.9% FCF yield for an energy company. Daily indicators show healthy uptrend alignment: EMA10 at 126.5 > SMA50 at 120.2 > SMA200 at 112.8 (bullish sequence). RSI at 58.3 is strong but not overbought. MACD positive with +4.4 histogram. Hourly technicals equally constructive: RSI at 56.8, MACD positive, moving averages aligned upward. Stochastic at K:76.4, D:74.1 shows strong momentum without extreme overbought. Price momentum strong: 44% YoY rally, 10-day ROC at 3.8%. Most importantly, oil macro environment remains constructive (geopolitical tension, OPEC discipline, energy demand recovery). Current price $126.98 closed yesterday, now trading at ~$127. Support at 121.50, resistance at 131.20. Risk-reward favorable: upside to 135-140 (8-10%) on continued energy strength vs downside to 118 (7-8%) on demand shock. Hold for 5-20 day swing, with macro risk management critical.",
+        "entry_price": 127.0,
+        "target_price": 138.0,
+        "stop_loss": 118.0,
+        "timeframe": "10-20 trading days"
+      },
+      "SPY": {
+        "signal": "bearish",
+        "confidence": 48,
+        "reasoning": "S&P 500 (SPY) presents a tactical short-bias setup despite lack of hard earnings data (it's an index ETF). The macro environment shows deteriorating momentum structures: daily EMA10 at 704.8 < SMA200 at 717.6, confirming downtrend alignment. RSI at 39.2 is in bearish zone but not yet capitulation. MACD histogram weakly negative (-3.6), suggesting momentum rolling over. Hourly technicals show sharper deterioration: RSI at 28.7 (deeply oversold), MACD deeply negative (-6.8), Williams %R at -85.4 indicates near-term oversold extreme. However, the oversold condition on hourly could trigger bounce first. Price action shows recent selloff: 5-day ROC at -4.2%, creating short-term technical oversold but longer-term momentum breakdown. Volatility low at 0.79% daily stdev suggests complacency before larger move. Support at 698 level, resistance at 720. Macro backdrop: Fed policy uncertainty, potential recession concerns, valuation concerns at ~21x forward earnings. My read is: expect bounce from oversold hourly to 715-720 on short covering, then renewed selling toward 690-695. Avoid chasing shorts into oversold extremes; wait for bounce to sell into rallies. Current setup warrants short bias but requires technical bounce first.",
+        "entry_price": 718.0,
+        "target_price": 692.0,
+        "stop_loss": 728.0,
+        "timeframe": "10-15 trading days"
+      },
+      "QQQ": {
+        "signal": "bearish",
+        "confidence": 51,
+        "reasoning": "Nasdaq 100 (QQQ) shows similar concerns to SPY but with even sharper downtrend structure. Daily moving averages deeply misaligned: EMA10 at 636.8 << SMA200 at 661.4, confirming pronounced downtrend. RSI at 35.4 is bearish territory. MACD histogram negative (-8.2), momentum rolling over. Hourly is severely oversold: RSI at 17.8 (capitulation), MACD at -9.1, Williams %R at -94.5. Recent price action brutal: 5-day ROC at -6.1%, 10-day ROC at -4.8%, showing sustained selling pressure. Current price $651.42 has broken support at 665 (200-hour EMA) and 660 (hourly SMA50), now testing 645 support. Volatility elevated at 1.03% vs SPY, confirming tech sector outpacing broader market weakness. Tech mega-cap exposure (Microsoft, Apple, Nvidia concentrated) creates leverage to AI sentiment and rate expectations. Macro: AI enthusiasm has peaked; rotation away from mega-cap tech is underway. Valuation compression likely. Setup favors shorts, but similar to SPY\u2014wait for bounce from oversold hourly conditions before adding shorts. Target 620 on follow-through weakness, support at 638, stop at 668. Tech sector bearish bias warranted on valuation and sentiment reset.",
+        "entry_price": 660.0,
+        "target_price": 625.0,
+        "stop_loss": 675.0,
+        "timeframe": "12-18 trading days"
+      }
+    },
+    "swing_sector_rotation": {
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 45,
+        "reasoning": "TSLA shows mixed sector rotation signals. Daily RSI is neutral at 52.7, with no clear EMA alignment (neither uptrend nor downtrend). The stock is trading in the upper half of Bollinger Bands (0.74 position) suggesting strength, but hourly indicators reveal weakness: hourly RSI 37.5 is significantly lower than daily, indicating intraday pullback. MACD on daily is positive (histogram 5.33) but hourly MACD is negative. This divergence between daily strength and hourly weakness suggests sector rotation momentum is stalling. Volume is below 20-day average (0.92 ratio), reducing conviction. The ROC momentum is mixed (5d: -1.1%, 10d: +12.9%, 21d: +1.7%) - the recent decline cancels out the 10-day strength. No clear sector rotation entry warranted until either daily/hourly alignment improves or volume confirms directional intent.",
+        "entry_price": 387.5,
+        "target_price": 405.0,
+        "stop_loss": 373.72,
+        "timeframe": "neutral - no clear trade"
+      },
+      "JPM": {
+        "signal": "bullish",
+        "confidence": 72,
+        "reasoning": "JPM displays strong sector rotation signals in financial services. Daily EMA alignment is UPTREND (EMA 10 > 21 > 50 confirmed), with daily RSI elevated at 71.2 indicating sector inflows. Daily MACD is positive with histogram +1.31, confirming bullish momentum. The stock sits at 0.75 position in Bollinger Bands, showing relative strength. Most importantly, all three ROC measurements are positive (5d: +2.3%, 10d: +1.6%, 21d: +8.5%), with the 21d ROC at 8.5% showing strong sustained sector rotation momentum over 3+ weeks. MFI at 76.2 confirms institutional accumulation. However, hourly indicators show caution: hourly RSI is only 43.8 (neutral) and hourly momentum is slightly negative, suggesting we're in a consolidation pause within the larger uptrend. This is a favorable entry point into a strengthening financial sector rotation. Volume is below average but acceptable for finance sector.",
+        "entry_price": 313.02,
+        "target_price": 325.0,
+        "stop_loss": 305.2,
+        "timeframe": "10-15 trading days"
+      },
+      "GS": {
+        "signal": "bullish",
+        "confidence": 78,
+        "reasoning": "Goldman Sachs shows the strongest sector rotation signal in the basket. Daily EMA is in perfect UPTREND alignment (10 > 21 > 50, all above 200 SMA). Daily RSI is very elevated at 72.3 (upper extremes) indicating strong sector money flow. Stochastic at 85.8/88.2 confirms overbought condition. MACD is decisively positive (histogram +6.75) with both lines above zero. Most compellingly, ROC momentum is uniformly strong across all timeframes (5d: +3.93%, 10d: +3.21%, 21d: +12.46%), with the 21d showing strong sector accumulation. CCI at 103.6 indicates very strong trending. The stock is at 0.82 position in Bollinger Bands, near upper edge. Hourly indicators are less stretched (RSI 54.7, MACD slightly negative) but EMA alignment on hourly is still UPTREND. This is a financial sector rotation play during institutional accumulation phase. Entry at current support/minor consolidation.",
+        "entry_price": 934.84,
+        "target_price": 960.0,
+        "stop_loss": 910.0,
+        "timeframe": "12-18 trading days"
+      },
+      "NKE": {
+        "signal": "bearish",
+        "confidence": 68,
+        "reasoning": "Nike shows clear signs of sector rotation OUT of consumer discretionary. Daily EMA is in DOWNTREND alignment (10 < 21 < 50 < 200 SMA), the most bearish technical setup in the basket. Daily RSI at 55.6 appears neutral in absolute terms, but combined with the downtrend structure, it suggests sector money is LEAVING. ROC is decisively negative on 21d (-13.3%), indicating sustained sector weakness over 3 weeks. The stock trades 15.3% below its 50-SMA, confirming sector underperformance. Stochastic K at 73.6 is high, but it's high WHILE trending lower - a divergence that often precedes further decline. Volume is well below 20-day average (0.60 ratio), suggesting weak conviction on any bounce attempts. Most critically, hourly RSI is very low at 20.4 with negative momentum across all timeframes, confirming intraday sector outflows. The hourly-daily divergence (weak hourly vs. neutral-to-bearish daily) does not suggest a reversal is near. Sector rotation is flowing OUT of NKE.",
+        "entry_price": 45.68,
+        "target_price": 42.0,
+        "stop_loss": 46.95,
+        "timeframe": "8-12 trading days (short setup)"
+      },
+      "XOM": {
+        "signal": "neutral",
+        "confidence": 50,
+        "reasoning": "XOM (energy sector) shows internally conflicted sector rotation signals. Daily RSI is depressed at 31.2 (oversold), and daily EMA is NOT aligned (neither uptrend nor downtrend). MACD is negative (histogram -1.52), confirming downside momentum on the daily chart. ROC is negative across all periods (5d: +0.3%, 10d: -4.3%, 21d: -7.2%), with the 21d at -7.2% showing recent sector weakness in energy. The stock trades 3.3% below its 50-SMA. However, hourly indicators show contradictory strength: hourly RSI is elevated at 66.4 (bullish), hourly MACD positive with histogram +0.20, and intraday momentum positive (roc_5: +1.1%, roc_10: +1.2%, roc_21: +1.9%). Stochastic K at 77.4 indicates intraday overbought. This divergence (daily weakness / hourly strength) suggests energy sector was rotating out but found intraday support. MFI on hourly is 80.2 suggesting institutional accumulation on intraday moves. Energy sector rotation direction is unclear - wait for daily RSI to break definitively above 40 or below 30 for conviction.",
+        "entry_price": 149.5,
+        "target_price": 155.0,
+        "stop_loss": 146.44,
+        "timeframe": "neutral - conflicted signals"
+      },
+      "SPY": {
+        "signal": "bullish",
+        "confidence": 85,
+        "reasoning": "SPY (broad market) shows textbook sector rotation entry signal into broad-based strength. Daily EMA is in STRONG UPTREND (10 > 21 > 50 > 200 all properly stacked). Daily RSI at 90.6 is extremely elevated - the highest in the basket - indicating massive institutional rotation INTO equities. Stochastic at 98.2/93.7 confirms price is in the extreme overbought zone, consistent with strong trending rallies. MACD histogram is +4.96 with both lines well above zero. ROC is positive across all timeframes (5d: +1.6%, 10d: +5.2%, 21d: +8.5%), with 21d showing 8.5% sector rotation momentum. The stock sits at 0.85 in Bollinger Bands near upper edge. MFI at 70.7 confirms institutional buying. Hourly indicators are slightly cautious (RSI 59.9, MACD slightly negative), but EMA alignment on hourly is still UPTREND. This extreme RSI overbought condition combined with uptrend structure and positive momentum across timeframes is the definition of a 'risk-on' sector rotation play - market-wide rotation into equities is ongoing. Conservative traders wait for hourly consolidation, aggressive traders enter now.",
+        "entry_price": 711.21,
+        "target_price": 730.0,
+        "stop_loss": 700.0,
+        "timeframe": "10-15 trading days"
+      },
+      "QQQ": {
+        "signal": "bullish",
+        "confidence": 88,
+        "reasoning": "QQQ (tech/growth sector) shows the strongest sector rotation signal in the basket. Daily EMA is in powerful UPTREND (10 > 21 > 50 > 200 all stacked). Daily RSI at 94.3 is the highest in our sample, indicating MAXIMUM institutional rotation INTO technology sector. Stochastic at 99.7/96.2 is in extreme overbought, consistent with a powerful trending move. MACD histogram is +6.13 (second highest in basket) with both lines well above zero. ROC is positive across all periods (5d: +2.8%, 10d: +8.1%, 21d: +11.4%), with the 21d showing the STRONGEST sector momentum in the basket at 11.4%. The stock is at 0.88 position in Bollinger Bands, extremely extended but still within bands. ADX at 46.4 (highest in basket) confirms very strong trending. MFI at 71.5 shows institutional accumulation ongoing. Z-score at 2.495 indicates the stock is 2.5 standard deviations above its mean - textbook 'risk-on' extreme. Hourly shows slight caution (RSI 63.7, MACD slightly negative) but EMA alignment on hourly remains UPTREND. Technology sector rotation is in full force. This is an extremely high-conviction trade for sector rotation players willing to accept overbought conditions.",
+        "entry_price": 655.11,
+        "target_price": 680.0,
+        "stop_loss": 642.21,
+        "timeframe": "12-18 trading days"
+      }
+    },
+    "growth_analyst_agent": {
+      "TSLA": {
+        "signal": "bearish",
+        "confidence": 70,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0,
+            "revenue_growth": null,
+            "revenue_trend": 0.0,
+            "eps_growth": null,
+            "eps_trend": 0.0,
+            "fcf_growth": null,
+            "fcf_trend": 0.0
+          },
+          "growth_valuation": {
+            "score": 0,
+            "peg_ratio": 5.67,
+            "price_to_sales_ratio": null
+          },
+          "margin_expansion": {
+            "score": 0,
+            "gross_margin": null,
+            "gross_margin_trend": 0.0,
+            "operating_margin": null,
+            "operating_margin_trend": 0.0,
+            "net_margin": null,
+            "net_margin_trend": 0.0
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": null,
+            "current_ratio": null
+          },
+          "final_analysis": {
+            "signal": "bearish",
+            "confidence": 70,
+            "weighted_score": 0.15
+          }
+        }
+      },
+      "JPM": {
+        "signal": "bearish",
+        "confidence": 57,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0,
+            "revenue_growth": null,
+            "revenue_trend": 0.0,
+            "eps_growth": null,
+            "eps_trend": 0.0,
+            "fcf_growth": null,
+            "fcf_trend": 0.0
+          },
+          "growth_valuation": {
+            "score": 0.25,
+            "peg_ratio": 1.68,
+            "price_to_sales_ratio": null
+          },
+          "margin_expansion": {
+            "score": 0,
+            "gross_margin": null,
+            "gross_margin_trend": 0.0,
+            "operating_margin": null,
+            "operating_margin_trend": 0.0,
+            "net_margin": null,
+            "net_margin_trend": 0.0
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": null,
+            "current_ratio": null
+          },
+          "final_analysis": {
+            "signal": "bearish",
+            "confidence": 57,
+            "weighted_score": 0.21
+          }
+        }
+      },
+      "GS": {
+        "signal": "bearish",
+        "confidence": 38,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.25,
+            "revenue_growth": null,
+            "revenue_trend": 0.0,
+            "eps_growth": 0.26491356221085954,
+            "eps_trend": 0.0,
+            "fcf_growth": -2.0855387832451155,
+            "fcf_trend": 0.0
+          },
+          "growth_valuation": {
+            "score": 0.25,
+            "peg_ratio": 1.44,
+            "price_to_sales_ratio": null
+          },
+          "margin_expansion": {
+            "score": 0,
+            "gross_margin": null,
+            "gross_margin_trend": 0.0,
+            "operating_margin": null,
+            "operating_margin_trend": 0.0,
+            "net_margin": null,
+            "net_margin_trend": 0.0
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": 0.5577969465160196,
+            "current_ratio": null
+          },
+          "final_analysis": {
+            "signal": "bearish",
+            "confidence": 38,
+            "weighted_score": 0.31
+          }
+        }
+      },
+      "NKE": {
+        "signal": "neutral",
+        "confidence": 8,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.15000000000000002,
+            "revenue_growth": -0.09838012538452552,
+            "revenue_trend": 0.02390139442343084,
+            "eps_growth": -0.4228723404255319,
+            "eps_trend": 0.040650585430679204,
+            "fcf_growth": -0.506120598458516,
+            "fcf_trend": 0.05295752976436569
+          },
+          "growth_valuation": {
+            "score": 0.75,
+            "peg_ratio": 1.41,
+            "price_to_sales_ratio": 1.4319920796389471
+          },
+          "margin_expansion": {
+            "score": 0.4,
+            "gross_margin": 0.42734673605562634,
+            "gross_margin_trend": 0.002158426747311275,
+            "operating_margin": null,
+            "operating_margin_trend": 0.0,
+            "net_margin": 0.06951132609212032,
+            "net_margin_trend": 0.005194680588578173
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": 0.602891092106259,
+            "current_ratio": 2.2110543251940187
+          },
+          "final_analysis": {
+            "signal": "neutral",
+            "confidence": 8,
+            "weighted_score": 0.46
+          }
+        }
+      },
+      "XOM": {
+        "signal": "neutral",
+        "confidence": 6,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.45,
+            "revenue_growth": 0.5494528878784145,
+            "revenue_trend": -3.445055688533819e-17,
+            "eps_growth": -0.11811023622047251,
+            "eps_trend": 0.2643071060742302,
+            "fcf_growth": -0.0817339312406577,
+            "fcf_trend": 0.8813433281903299
+          },
+          "growth_valuation": {
+            "score": 0.75,
+            "peg_ratio": 1.37,
+            "price_to_sales_ratio": 1.7897989675300714
+          },
+          "margin_expansion": {
+            "score": 0.2,
+            "gross_margin": null,
+            "gross_margin_trend": 0.0,
+            "operating_margin": null,
+            "operating_margin_trend": 0.0,
+            "net_margin": 0.09634280647052934,
+            "net_margin_trend": 0.0074809625731631964
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 0.8,
+            "debt_to_equity": null,
+            "current_ratio": 1.3084045685351386
+          },
+          "final_analysis": {
+            "signal": "neutral",
+            "confidence": 6,
+            "weighted_score": 0.53
+          }
+        }
+      },
+      "SPY": {
+        "signal": "bearish",
+        "confidence": 70,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0,
+            "revenue_growth": null,
+            "revenue_trend": 0.0,
+            "eps_growth": null,
+            "eps_trend": 0.0,
+            "fcf_growth": null,
+            "fcf_trend": 0.0
+          },
+          "growth_valuation": {
+            "score": 0,
+            "peg_ratio": null,
+            "price_to_sales_ratio": null
+          },
+          "margin_expansion": {
+            "score": 0,
+            "gross_margin": null,
+            "gross_margin_trend": 0.0,
+            "operating_margin": null,
+            "operating_margin_trend": 0.0,
+            "net_margin": null,
+            "net_margin_trend": 0.0
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": null,
+            "current_ratio": null
+          },
+          "final_analysis": {
+            "signal": "bearish",
+            "confidence": 70,
+            "weighted_score": 0.15
+          }
+        }
+      },
+      "QQQ": {
+        "signal": "bearish",
+        "confidence": 70,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0,
+            "revenue_growth": null,
+            "revenue_trend": 0.0,
+            "eps_growth": null,
+            "eps_trend": 0.0,
+            "fcf_growth": null,
+            "fcf_trend": 0.0
+          },
+          "growth_valuation": {
+            "score": 0,
+            "peg_ratio": null,
+            "price_to_sales_ratio": null
+          },
+          "margin_expansion": {
+            "score": 0,
+            "gross_margin": null,
+            "gross_margin_trend": 0.0,
+            "operating_margin": null,
+            "operating_margin_trend": 0.0,
+            "net_margin": null,
+            "net_margin_trend": 0.0
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": null,
+            "current_ratio": null
+          },
+          "final_analysis": {
+            "signal": "bearish",
+            "confidence": 70,
+            "weighted_score": 0.15
+          }
+        }
+      }
+    },
+    "swing_trend_follower": {
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "EMAs are tangled (10 EMA 380.66 < 21 EMA 377.66 > 50 EMA 388.32). Daily ADX is 34.7 (above 25 threshold), but the EMA disorder indicates lack of clean trend structure. RSI at 52.7 is neutral. Recent price action shows consolidation between $386-388, with failure at higher levels. Hourly EMAs also tangled (10:377.98 < 21:382.29 < 50:382.09). Avoid trading without clear EMA alignment.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "No trade"
+      },
+      "JPM": {
+        "signal": "bullish",
+        "confidence": 72,
+        "reasoning": "Strong daily EMA alignment: 10 EMA 309.80 > 21 EMA 304.53 > 50 EMA 301.46, confirming uptrend. ADX 38.9 is strong and rising. Price 311.69 trading above all key EMAs. RSI 71.2 shows strength but slight overbought. Recent price action shows higher highs/lows (320.24 high on 4/21). MACD positive (5.43 line > 4.11 signal). Pullback to 21 EMA around 304.5 would be ideal entry zone for continuation.",
+        "entry_price": 304.5,
+        "target_price": 320.24,
+        "stop_loss": 300.0,
+        "timeframe": "5-10 trading days"
+      },
+      "GS": {
+        "signal": "bullish",
+        "confidence": 78,
+        "reasoning": "Perfect daily EMA alignment: 10 EMA 912.58 > 21 EMA 890.75 > 50 EMA 877.19, strong uptrend structure. ADX 32.0 confirms trend strength. Price 931.30 is above all EMAs with recent high of 952.01 on 4/21. Momentum positive (ROC-5: 3.93%). RSI 72.3 shows strength. Hourly also bullish with aligned EMAs (10:933.86 > 21:932.67 > 50:923.57). Pullback to 21 EMA around 890-892 would offer quality entry on minor dips.",
+        "entry_price": 890.5,
+        "target_price": 952.0,
+        "stop_loss": 877.0,
+        "timeframe": "7-15 trading days"
+      },
+      "NKE": {
+        "signal": "bearish",
+        "confidence": 62,
+        "reasoning": "Clear daily downtrend: EMA alignment bearish (10 EMA 45.71 < 21 EMA 47.28 < 50 EMA 52.03). ADX 28.6 confirms trend strength. Price 44.78 trading below all key EMAs with lower lows forming (swing low 42.62). RSI 55.7 is neutral. MACD negative. Hourly confirms downtrend (10:45.03 < 21:45.38 < 50:45.45, all below 50 SMA 45.79). This is a downtrend worthy of shorting on rallies.",
+        "entry_price": 46.5,
+        "target_price": 42.62,
+        "stop_loss": 48.0,
+        "timeframe": "5-10 trading days"
+      },
+      "XOM": {
+        "signal": "neutral",
+        "confidence": 40,
+        "reasoning": "EMAs tangled and trend unclear: 10 EMA 151.09 > 21 EMA 153.83 but < 50 EMA 151.53. Mixed signals. Daily ADX 28.5 (borderline) with weak RSI 31.2 suggests lack of momentum. MACD negative. Recent price action shows consolidation around 150 range. Hourly EMAs also muddled. However, hourly RSI 66.4 and positive hourly momentum suggest intraday strength may emerge. Wait for clearer EMA alignment.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "No trade"
+      },
+      "SPY": {
+        "signal": "bullish",
+        "confidence": 85,
+        "reasoning": "Excellent daily EMA alignment: 10 EMA 696.93 > 21 EMA 684.76 > 50 EMA 678.11, strong uptrend. ADX 43.3 is very strong. Price 708.45 well above all EMAs. RSI 90.6 shows extreme strength/extension. MACD strongly positive (11.67 line > 6.71 signal). Recent price action displays higher lows. Hourly EMAs also aligned (10:708.96 > 21:708.49 > 50:703.30). Pullback to 21 EMA around 684-685 would be prime entry for trend continuation.",
+        "entry_price": 685.0,
+        "target_price": 711.21,
+        "stop_loss": 678.0,
+        "timeframe": "5-12 trading days"
+      },
+      "QQQ": {
+        "signal": "bullish",
+        "confidence": 89,
+        "reasoning": "Perfect daily EMA alignment: 10 EMA 634.32 > 21 EMA 619.15 > 50 EMA 609.96, strong and clean uptrend. ADX 46.4 is very strong and rising. Price 651.42 trading well above all EMAs with recent high 655.33 on 4/22. RSI 94.3 shows extreme strength/parabolic move. MACD strongly positive (14.73 line > 8.61 signal). Hourly EMAs aligned (10:652.12 > 21:650.65 > 50:642.81). Pullback to 21 EMA around 619-620 would provide ideal swing entry on pullback.",
+        "entry_price": 619.5,
+        "target_price": 655.11,
+        "stop_loss": 609.5,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_pullback_trader": {
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "Mixed signals: Daily trend alignment is false despite some upside momentum (ROC +12.8% 10d). Hourly RSI 37.5 is oversold but MACD histogram negative and Williams %R very bearish (-78.7). Price at 373.72 is below recent highs and daily EMAs are in disarray (10 at 380.66, 21 at 377.66, 50 at 388.32). Without clear trend confirmation, Fibonacci levels are ambiguous. Volume declining (0.92x avg). Not enough confluence for a high-confidence pullback trade.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "No trade"
+      },
+      "JPM": {
+        "signal": "bullish",
+        "confidence": 72,
+        "reasoning": "Textbook pullback setup in strong uptrend: Daily EMA aligned bullish (10: 309.80, 21: 304.53, 50: 301.46), price at 311.69 is 5% above 50-day SMA. Daily RSI 71.2 shows overbought (rally phase), while hourly RSI 43.8 indicates pullback into support. Fibonacci 38.2% retracement at 313.06 aligns with hourly support at 310.44. Volume declining (0.6x avg) shows healthy pullback. MACD positive daily. Daily Stochastic already elevated (78.1/85.3) suggests rally may continue on pullback buy.",
+        "entry_price": 310.5,
+        "target_price": 317.0,
+        "stop_loss": 308.2,
+        "timeframe": "5-10 trading days"
+      },
+      "GS": {
+        "signal": "bullish",
+        "confidence": 65,
+        "reasoning": "Strong daily uptrend (EMA 10: 912.58, 21: 890.75, 50: 877.19 all aligned). Price at 931.30 well above 50-day SMA (+7.6%). Daily RSI 72.3 indicates rally strength. Hourly shows consolidation with RSI 54.7 (neutral, not yet oversold) and MACD slightly negative. Fibonacci 50% at 921.455 and 38.2% at 926.64 provide support zones. Volume declining (0.66x) is healthy. ADX 32 confirms moderate trend. Setup is strong trend with minor consolidation; pullback to 926-927 would be excellent entry with target retest of recent high 944+.",
+        "entry_price": 926.5,
+        "target_price": 944.0,
+        "stop_loss": 916.27,
+        "timeframe": "5-12 trading days"
+      },
+      "NKE": {
+        "signal": "bearish",
+        "confidence": 68,
+        "reasoning": "Clear downtrend setup (EMA aligned down: 10: 45.71, 21: 47.28, 50: 52.03). Price at 44.78 is 15.3% below 50-day SMA. Daily RSI 55.6 is neutral, but hourly RSI 20.4 is severely oversold, suggesting pull-back rally is imminent. Fibonacci 61.8% retracement (51.24) from swing high 65.18 to low 42.62 is resistance for short entry on bounce. Volume well below average (0.59x) suggests weak conviction in downmove. This is a 'sell the rip' setup: wait for hourly RSI bounce above 35-40, then short into Fibonacci 50-61.8% zone (51.2-53.9) with target back to 42.62.",
+        "entry_price": 51.5,
+        "target_price": 42.62,
+        "stop_loss": 53.9,
+        "timeframe": "8-15 trading days"
+      },
+      "XOM": {
+        "signal": "neutral",
+        "confidence": 40,
+        "reasoning": "Conflicted setup: Daily EMA not aligned (10: 151.09, 21: 153.83, 50: 151.53 are tangled) and RSI oversold at 31.2, suggesting downtrend fatigue. Hourly RSI overbought at 66.4 creates a negative divergence (hour rallying while day weak). Price at 150.53 is 2.6% below 50-day MA. Fibonacci levels scattered due to trend confusion. MACD negative daily, positive hourly. Williams %R bearish daily (-69.8) but bullish hourly (-22.6). Volume light (0.6x avg). Too much internal conflict. Better to wait for clearer trend confirmation before entering.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "No trade"
+      },
+      "SPY": {
+        "signal": "neutral",
+        "confidence": 25,
+        "reasoning": "Extreme overbought exhaustion, not a pullback setup: Daily RSI 90.6 is at extremes (>80 is overbought territory). EMA aligned bullish (10: 696.93, 21: 684.76, 50: 678.11) and price at 708.45 is 5.3% above 50-day SMA. Stochastic near max (98.2/93.7). Williams %R barely negative (-1.75 is at top). Bollinger Band position 0.846 means price is near upper band, not at Fibonacci retracement. Hourly shows some weakness (RSI 59.9, MACD histogram negative) but entry levels are not yet established. Pullback would likely extend to daily Fib 50% (671.59) but that's a 5% drop from current levels\u2014too far for a pullback trader. Wait for correction structure to form.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "No trade"
+      },
+      "QQQ": {
+        "signal": "neutral",
+        "confidence": 28,
+        "reasoning": "Severely overbought with no clean pullback entry yet: Daily RSI 94.3 is at extremes (>90), Stochastic 99.7/96.2 near max. EMA aligned bullish (10: 634.32, 21: 619.15, 50: 609.96) but price at 651.42 is 8.4% above 50-day SMA, approaching upper Bollinger Band (669.3). Hourly RSI 63.7 shows some pullback fatigue but not oversold. Fibonacci 50% at 642.4 is where a pullback might find first support, but that level must be tested from above first. MACD histogram still positive. This is exhaustion, not a pullback setup. If SPY/QQQ pull back 3-5%, re-evaluate for Fibonacci confluence entries. For now, too extended.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "No trade"
+      }
+    },
+    "swing_momentum_ranker": {
+      "TSLA": {
+        "signal": "bearish",
+        "confidence": 65,
+        "reasoning": "Mixed daily momentum (5-day ROC negative while 10-day positive) with deteriorating hourly momentum (all timeframes negative: -1.02%, -4.31%, -4.80%). Hourly RSI at 37.5 confirms weakness. Daily MACD histogram is expanding but hourly MACD histogram is contracting and negative. Price action shows weakness below 50 SMA. Momentum is decelerating rather than accelerating across timeframes.",
+        "entry_price": 373.72,
+        "target_price": 360.0,
+        "stop_loss": 388.0,
+        "timeframe": "5-8 trading days"
+      },
+      "JPM": {
+        "signal": "bullish",
+        "confidence": 72,
+        "reasoning": "Strong daily momentum with all ROCs positive (5: 2.32%, 10: 1.64%, 21: 8.52%). Daily RSI at 71.23 is overbought but confirming uptrend with Stochastic K=78.11. EMAs perfectly aligned in uptrend (price above 10>21>50>200). MACD histogram positive and expanding. However, hourly momentum is decelerating (all ROCs negative and MACD histogram negative), suggesting some intraday pullback but within the larger uptrend. Volume is light (603k vs 9.2M avg) suggesting move may face resistance.",
+        "entry_price": 311.69,
+        "target_price": 320.5,
+        "stop_loss": 305.0,
+        "timeframe": "7-12 trading days"
+      },
+      "GS": {
+        "signal": "bullish",
+        "confidence": 78,
+        "reasoning": "Exceptional daily momentum with all positive and accelerating ROCs (5: 3.93%, 10: 3.21%, 21: 12.46%). Daily RSI at 72.32 overbought but strong. MACD histogram is expanding (6.75). EMAs in perfect uptrend alignment. Price is 7.55% above 50 SMA and 14% above 200 SMA, showing sustained momentum. Hourly momentum is reversing (negative ROCs) but from elevated levels, suggesting consolidation before next leg higher. CCI at 103 confirms strength. This is a strong momentum acceleration candidate.",
+        "entry_price": 931.3,
+        "target_price": 960.0,
+        "stop_loss": 915.0,
+        "timeframe": "8-15 trading days"
+      },
+      "NKE": {
+        "signal": "bearish",
+        "confidence": 80,
+        "reasoning": "Clear momentum deterioration with negative 21-day ROC (-13.34%) despite positive 5-day ROC (0.53%) and 10-day ROC (5.91%). This shows momentum rolling over after recent bounce. Daily RSI at 55.65 is neutral. EMAs in downtrend alignment (price below all moving averages). Price is 15.3% below 50 SMA, 28.7% below 200 SMA. Hourly momentum is uniformly negative across all timeframes (-0.36%, -2.44%, -3.73%), and hourly RSI at 20.37 is oversold. Stochastic showing weakness (K=19.59). This is a momentum reversal setup - avoid long exposure.",
+        "entry_price": 44.78,
+        "target_price": 41.5,
+        "stop_loss": 46.5,
+        "timeframe": "5-10 trading days"
+      },
+      "XOM": {
+        "signal": "neutral",
+        "confidence": 55,
+        "reasoning": "Conflicting timeframe signals indicate a reversal setup but not yet clear direction. Daily momentum is clearly negative across all timeframes with deteriorating ROCs (0.33% \u2192 -4.30% \u2192 -7.22%). Daily RSI at 31.23 is oversold, and MACD histogram is negative (-1.52). However, hourly momentum shows unexpected strength with all positive ROCs (1.14%, 1.16%, 1.94%), hourly RSI at 66.37, and positive MACD histogram. This hourly bounce within daily downtrend could be a reversal setup. Volume is light across both timeframes (603k vs 22.8M daily average). Recommend waiting for clearer directional confirmation before entering.",
+        "entry_price": 150.53,
+        "target_price": 155.0,
+        "stop_loss": 148.0,
+        "timeframe": "7-12 trading days"
+      },
+      "SPY": {
+        "signal": "neutral",
+        "confidence": 60,
+        "reasoning": "Extreme overbought conditions with daily RSI at 90.56 and Stochastic K=98.25 - both suggesting imminent momentum exhaustion. Daily ROCs are strong and positive (1.61%, 5.21%, 8.52%) and accelerating, but at such extreme levels this indicates stretched valuations. Daily MACD histogram at 4.96 is expanding but MACD line and signal line have both expanded significantly, indicating potential divergence. Hourly momentum is rolling over (negative ROCs: -0.50%, -0.23%, -0.04%), and hourly RSI at 59.93 is declining from overbought. Price is at 84.6% of Bollinger Band width near upper band. This is a momentum exhaustion setup - expect pullback or consolidation. Volume is only 59% of average.",
+        "entry_price": 708.45,
+        "target_price": 720.0,
+        "stop_loss": 700.0,
+        "timeframe": "3-7 trading days"
+      },
+      "QQQ": {
+        "signal": "bullish",
+        "confidence": 75,
+        "reasoning": "Strongest absolute momentum with accelerating daily ROCs (2.78% \u2192 8.09% \u2192 11.41%) - the most positive across all tickers. Daily RSI at 94.34 is extremely overbought but this is consistent with strong trending momentum, not a reversal signal. Daily MACD histogram at 6.125 is positive and expanding, confirming momentum acceleration. EMAs in perfect uptrend alignment (10 > 21 > 50 > 200). Price is 8.43% above 50 SMA. However, hourly momentum is turning negative (ROCs: -0.75%, -0.35%, +0.72%) and hourly MACD histogram is negative, suggesting hourly correction or consolidation within the larger uptrend. This is still the strongest momentum name but entry should be timed around hourly support.",
+        "entry_price": 651.42,
+        "target_price": 670.0,
+        "stop_loss": 640.0,
+        "timeframe": "8-14 trading days"
+      }
+    },
+    "swing_mean_reversion": {
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "TSLA shows Z-score of -0.073 (within mean range). Daily RSI at 52.7 is neutral, not at extremes. Bollinger position at 0.74 suggests slight overbought but not extreme. Hourly shows weakness (RSI 37.5, Z-score -1.69) but this is not a clear mean reversion extreme\u2014stock is trading near its 50-day SMA. Distance from mean is only -0.42%, well within normal range. No extreme detected.",
+        "entry_price": 385.0,
+        "target_price": 389.15,
+        "stop_loss": 380.0,
+        "timeframe": "5-10 trading days"
+      },
+      "JPM": {
+        "signal": "bearish",
+        "confidence": 72,
+        "reasoning": "JPM shows strong mean reversion SHORT setup. Daily Z-score is +1.42 (approaching +2), distance from 50-SMA is +5.03% (extended overbought). Daily RSI is 71.2 (overbought >70), Stochastic K is 78.1 and D is 85.3 (both overbought >80). Bollinger position at 0.75 shows price in upper band. Daily CCI at 76.7 confirms strength. However, hourly shows divergence: hourly RSI is only 43.8 (neutral), Z-score near zero, suggesting overbought condition is only on daily. WAIT for hourly reversal confirmation before shorting. Entry after pullback; target is mean at 50-SMA 298.02.",
+        "entry_price": 311.0,
+        "target_price": 299.0,
+        "stop_loss": 317.5,
+        "timeframe": "5-10 trading days"
+      },
+      "GS": {
+        "signal": "bearish",
+        "confidence": 78,
+        "reasoning": "GS exhibits extreme mean reversion SHORT setup. Daily Z-score is +1.39 (near +2 threshold), distance from 50-SMA is +7.55% (significantly extended). Daily RSI at 72.3 is overbought (>70), Stochastic K at 85.8 and D at 88.2 are both extreme overbought (>80). Williams %R at -14.2 and CCI at 103.6 both confirm strong overbought extremes. MFI at 58.2 is neutral but momentum (ROC) shows positive readings. Bollinger position at 0.82 shows price well into upper band. Hourly RSI at 54.7 is neutral\u2014no divergence, suggesting daily overbought is real. Price structure shows recent swing high at 944.02; short below that with targets at mean 869.20.",
+        "entry_price": 932.0,
+        "target_price": 869.2,
+        "stop_loss": 945.0,
+        "timeframe": "5-10 trading days"
+      },
+      "NKE": {
+        "signal": "bullish",
+        "confidence": 68,
+        "reasoning": "NKE shows mean reversion LONG setup. Daily Z-score is -1.12 (approaching -2 threshold), distance from 50-SMA is -15.3% (significantly oversold). Daily RSI at 55.7 is neutral but approaching overbought on hourly (hourly RSI 20.4\u2014VERY oversold <25). Hourly Z-score is -1.75 (approaching -2), Stochastic K at 19.6 and D at 19.1 are both EXTREME oversold (<20). Williams %R at -80.4 confirms extreme oversold. Daily Stochastic shows 73.6 K and 67.2 D (divergence\u2014daily less oversold than hourly). Trend is downtrend (ema_aligned_downtrend=True). Recent price action shows multiple test of 45.5 support. Entry on reversal above 46.00; target is 50-SMA at 53.93.",
+        "entry_price": 46.0,
+        "target_price": 53.9,
+        "stop_loss": 44.7,
+        "timeframe": "7-14 trading days"
+      },
+      "XOM": {
+        "signal": "bullish",
+        "confidence": 75,
+        "reasoning": "XOM shows mean reversion LONG setup. Daily Z-score is -0.77 (moderate undersold), distance from 50-SMA is -3.33%. Daily RSI at 31.2 is OVERSOLD (<25 threshold is borderline). Stochastic K at 30.2 and D at 24.1 are both LOW, confirming oversold. Williams %R at -69.8 and CCI at -69.9 both show extreme negative readings. However, hourly tells different story: hourly RSI at 66.4 (neutral-bullish), hourly Stochastic K at 77.4 (overbought), hourly position at 0.96 in upper Bollinger band. Hourly momentum is positive. This is a BULLISH DIVERGENCE\u2014daily oversold while hourly overbought. Entry on daily reversal; target is 50-SMA at 154.65.",
+        "entry_price": 150.0,
+        "target_price": 154.65,
+        "stop_loss": 147.0,
+        "timeframe": "5-10 trading days"
+      },
+      "SPY": {
+        "signal": "bearish",
+        "confidence": 82,
+        "reasoning": "SPY shows EXTREME mean reversion SHORT setup. Daily Z-score is +1.92 (very close to +2 extreme threshold), distance from 50-SMA is +5.33% (extended overbought). Daily RSI is EXTREME at 90.6 (well above 75 overbought). Stochastic K at 98.2 and D at 93.7 are EXTREME overbought (>80). Williams %R at -1.75 is extreme. CCI at 107.2 confirms overbought. MFI at 70.7 shows strong buying pressure. Bollinger position at 0.85 shows price far above middle band. ADX at 43.3 shows strong trend strength. Hourly shows RSI at 59.9 (neutral), Stochastic at 61.1 (neutral), and Z-score at +0.51\u2014hourly RSI NOT confirming daily extreme. This is CLASSIC mean reversion setup: daily extreme overbought with hourly not confirming. SHORT target is 50-SMA at 675.23.",
+        "entry_price": 708.0,
+        "target_price": 675.2,
+        "stop_loss": 715.0,
+        "timeframe": "5-10 trading days"
+      },
+      "QQQ": {
+        "signal": "bearish",
+        "confidence": 85,
+        "reasoning": "QQQ shows EXTREME mean reversion SHORT setup\u2014strongest setup in basket. Daily Z-score is +2.50 (EXCEEDS +2 extreme threshold), distance from 50-SMA is +8.43% (very extended overbought). Daily RSI is EXTREME at 94.3 (extreme extreme >75). Stochastic K at 99.7 and D at 96.2 are EXTREME overbought (near 100). Williams %R at -0.26 is at extreme. CCI at 118.3 confirms extreme overbought. Bollinger position at 0.88 shows price deep in upper band. ADX at 46.4 shows strong trending. EMA aligned uptrend confirms rally. However, hourly RSI at 63.7 is only neutral-bullish (not confirming daily extreme), hourly Z-score at +0.86 is mild. TEXTBOOK mean reversion: daily at extreme, hourly neutral divergence. SHORT target is 50-SMA at 604.18. WAIT for hourly reversal candle before entering.",
+        "entry_price": 650.0,
+        "target_price": 604.2,
+        "stop_loss": 658.0,
+        "timeframe": "5-10 trading days"
+      }
+    },
+    "swing_head_trader": {
+      "TSLA": {
+        "consensus_signal": "neutral",
+        "confidence": 25,
+        "reasoning": "8 out of 9 agents neutral with only momentum_ranker bearish (65). The stock exhibits misaligned EMAs and choppy price action with no clear trend structure. Trend follower explicitly avoids trade due to tangled EMA setup. Hourly weakness (RSI 37.5) conflicts with mixed daily signals. While momentum ranker suggests downside (37.5 hourly RSI, negative momentum), conviction across strategies is too low to justify entry. Technical setup lacks confluence required for high-conviction swing trade.",
+        "agent_agreement_pct": 11.1,
+        "key_conflicts": "All agents except momentum_ranker avoid this trade. Momentum ranker bearish (65 confidence) conflicts with neutral stance of trend follower, pullback trader, and breakout trader. No unified directional bias. News/catalyst signals absent.",
+        "recommended_action": "hold"
+      },
+      "JPM": {
+        "consensus_signal": "bullish",
+        "confidence": 68,
+        "reasoning": "Strong consensus: 4 agents bullish (trend 72, pullback 72, breakout 62, momentum 72), 3 neutral, 1 bearish (mean reversion 72). The financial sector shows structural strength with perfect daily EMA alignment (10>21>50). ADX 38.9 confirms strong trend. Mean reversion's overbought warning (Z-score +1.42, RSI 71.2) is offset by hourly RSI 43.8 showing no divergence yet\u2014this is a healthy entry zone rather than top. Pullback trader identifies ideal consolidation entry at 304.50-310.50 zone. Four bullish strategies with convergent entry levels (304-315.50 range) and targets (317-320.50). Risk-reward favorable: 2-5% upside vs 1-2% downside to mean.",
+        "agent_agreement_pct": 55.6,
+        "key_conflicts": "Mean reversion flags overbought conditions on daily but hourly RSI divergence suggests safe entry into pullback. Catalyst trader neutral (no near-term catalysts) does not contradict bullish technicals. Stanley Druckenmiller neutral (40) suggests setup lacks macro conviction but technicals are solid.",
+        "recommended_action": "buy"
+      },
+      "GS": {
+        "consensus_signal": "bullish",
+        "confidence": 65,
+        "reasoning": "4 agents bullish (trend 78, pullback 65, breakout 65, momentum 78), 2 bearish (mean reversion 78, stanley_druckenmiller 55), 3 neutral. Perfect daily EMA alignment (10>21>50>200) with ADX 32 confirms trend strength. Price 931.30 well above all moving averages. Momentum is accelerating across timeframes (ROC 5d: 3.93%, 10d: 3.21%, 21d: 12.46%). However, mean reversion flags extreme overbought (Z-score +1.39, RSI 72.3, Stochastic 85.8/88.2 extreme). This is the key conflict: trend continuation agents want to follow uptrend while mean reversion anticipates pullback. Sector rotation agent strongly bullish (78) on sustained sector accumulation. Entry recommendation: wait for minor pullback to 926-930 for safer entry. Target 944-960 with stop below 916.",
+        "agent_agreement_pct": 44.4,
+        "key_conflicts": "Strong disagreement on entry timing: trend/momentum/sector agents suggest enter now at 931.30; mean reversion agent suggests wait for pullback from overbought extreme. Stanley Druckenmiller mildly bearish (55) on growth valuation concerns conflicts with strong technical consensus. Risk: early entry into overbought zone could face pullback.",
+        "recommended_action": "buy"
+      },
+      "NKE": {
+        "consensus_signal": "bearish",
+        "confidence": 72,
+        "reasoning": "5 agents bearish (trend 62, pullback 68, momentum 80, sector 68, stanley_druckenmiller 62), 1 bullish (mean reversion 68), 2 neutral. Clear structural downtrend: EMA aligned down (10<21<50<200), price 44.78 trading 15.3% below 50-day SMA. ADX 28.6 confirms trend strength. Momentum is deteriorating (21-day ROC -13.34%, hourly RSI 20.37 oversold). Mean reversion's bullish stance (oversold entry at 46.00 targeting 53.93) represents a bounce opportunity, not trend reversal. Sector rotation signals outflows from consumer discretionary. All short-biased agents converge on similar targets: 42.62 (trend follower) to 41.50 (momentum ranker). Pullback trader suggests 'sell-the-rip' entry at 51.50. This is one of the clearest downtrend setups in the basket.",
+        "agent_agreement_pct": 55.6,
+        "key_conflicts": "Mean reversion (68) bullish as tactical bounce play conflicts with strategic downtrend consensus. This is healthy divergence: mean reversion correctly identifies oversold bounce opportunity (46-51 bounce to 50 SMA), but broader trend consensus is short. Recommended approach: short into any bounce above 49-51 range rather than chasing down from current level.",
+        "recommended_action": "short"
+      },
+      "XOM": {
+        "consensus_signal": "neutral",
+        "confidence": 45,
+        "reasoning": "5 neutral agents, 2 bullish (mean reversion 75, stanley_druckenmiller 58), trend/pullback/breakout all neutral to conflict. This ticker shows the clearest daily/hourly divergence in the basket: daily weakness (RSI 31.2 oversold, MACD negative, ROC negative) contrasts sharply with hourly strength (RSI 66.4 overbought, MACD positive, CCI 138.7 extremely bullish). Trend follower avoids (EMAs tangled). Mean reversion identifies bullish divergence (daily oversold while hourly overbought) with target at 50-SMA 154.65. Stanley Druckenmiller cautiously bullish (58) on macro energy tailwinds and earnings growth. Energy sector macro context is constructive (geopolitical, OPEC). However, energy sector is not clearly rotating in or out (neutral 50 confidence). No consensus for high-conviction entry at this time.",
+        "agent_agreement_pct": 22.2,
+        "key_conflicts": "Fundamental disagreement between daily and hourly timeframes creates conflict across all agents. Some (trend, pullback, breakout, sector) stay neutral due to conflicted signals. Others (mean reversion, stanley_druckenmiller) see bullish divergence and macro tailwind. Without clear EMA alignment on daily, trend followers avoid. Recommended approach: wait for daily RSI to clarify direction above 40 or below 25 before entering.",
+        "recommended_action": "hold"
+      },
+      "SPY": {
+        "consensus_signal": "neutral",
+        "confidence": 52,
+        "reasoning": "Market showing extreme overbought conditions with fragmented strategy consensus. 3 agents bullish (trend 85, breakout 58, sector 85), 2 bearish (pullback 25, mean reversion 82), 2 neutral (momentum 60, catalyst 20). Trend follower, sector rotation agent, and breakout trader all strongly bullish (85, 58, 85 confidence) on strong EMA alignment, ADX 43.3, and sector rotation into equities. However, pullback trader warns of 'extreme overbought exhaustion, not a pullback setup' with daily RSI at 90.6 (>80 is overbought territory). Mean reversion flags EXTREME short setup (Z-score +1.92, RSI 90.6, Stochastic 98.2/93.7 extreme). Stanley Druckenmiller bearish (48) on macro risk-off potential. The fundamental conflict: uptrend is real and strong, BUT price is at extreme overbought levels with volume failing (0.59x average). This is a 'too extended' setup despite bullish technicals.",
+        "agent_agreement_pct": 33.3,
+        "key_conflicts": "Severe conflict between trend-continuation agents (bullish, want to follow strong uptrend) and mean-reversion/pullback agents (warn of exhaustion and overbought extremes). Volume failure on recent push higher is a red flag even for bullish agents. The correct interpretation: uptrend IS intact but current entry levels are too extended. Conservative traders should wait for pullback to 21-EMA around 684-685 with volume confirmation. Aggressive traders wait for hourly consolidation completion.",
+        "recommended_action": "hold"
+      },
+      "QQQ": {
+        "consensus_signal": "bullish",
+        "confidence": 62,
+        "reasoning": "4 agents bullish (trend 89, momentum 75, sector 88, breakout 55), 2 bearish (pullback 28, mean reversion 85), 2 neutral (catalyst 20, stanley_druckenmiller 51). Strongest absolute momentum in the basket with accelerating daily ROCs (2.78% \u2192 8.09% \u2192 11.41%). Trend follower very bullish (89) on perfect EMA alignment and ADX 46.4. Sector rotation agent most bullish overall (88 confidence) citing technology sector rotation into extreme 'risk-on' positioning (Z-score 2.495 = 2.5 std devs above mean, RSI 94.3 extreme). However, pullback trader neutral (28) warning of 'severely overbought with no clean pullback entry yet' and mean reversion bearish (85) flagging EXTREME short setup (Z-score +2.50 exceeds +2 threshold, Stochastic 99.7/96.2 extreme, RSI 94.3 extreme). Like SPY, this is strong trend at extreme overbought. Key difference from SPY: hourly momentum still positive here while daily momentum exhausting\u2014suggests one more leg higher before correction.",
+        "agent_agreement_pct": 44.4,
+        "key_conflicts": "Classic 'too much too fast' conflict: momentum/trend/sector agents see continuation while mean reversion warns of parabolic extreme. Pullback trader correctly notes that extreme overbought may extend further rather than pull back cleanly. The tech sector is in full 'risk-on' rotation (institutional flows very strong per MFI 71.5), supporting further upside to 665-670 on continuation. However, risk of sudden reversal is extreme. Recommended approach: aggressive traders chase to 665-675 targets with very tight stops. Conservative traders wait for pullback.",
+        "recommended_action": "buy"
+      }
+    },
+    "news_sentiment": {
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "No recent company news or insider trading activity detected in data bundle. Unable to assess sentiment-driven swing trade opportunity without news catalysts or insider activity signals.",
+        "entry_price": 373.72,
+        "target_price": 388.4,
+        "stop_loss": 358.75,
+        "timeframe": "5-10 trading days"
+      },
+      "JPM": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "No recent company news or insider trading activity detected in data bundle. Unable to assess sentiment-driven swing trade opportunity without news catalysts or insider activity signals.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "5-10 trading days"
+      },
+      "GS": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "No recent company news or insider trading activity detected in data bundle. Unable to assess sentiment-driven swing trade opportunity without news catalysts or insider activity signals.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "5-10 trading days"
+      },
+      "NKE": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "No recent company news or insider trading activity detected in data bundle. Unable to assess sentiment-driven swing trade opportunity without news catalysts or insider activity signals.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "5-10 trading days"
+      },
+      "XOM": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "No recent company news or insider trading activity detected in data bundle. Unable to assess sentiment-driven swing trade opportunity without news catalysts or insider activity signals.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "5-10 trading days"
+      },
+      "SPY": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "No recent company news or insider trading activity detected in data bundle. Unable to assess sentiment-driven swing trade opportunity without news catalysts or insider activity signals.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "5-10 trading days"
+      },
+      "QQQ": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "No recent company news or insider trading activity detected in data bundle. Unable to assess sentiment-driven swing trade opportunity without news catalysts or insider activity signals.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "5-10 trading days"
+      }
+    },
+    "swing_catalyst_trader": {
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 25,
+        "reasoning": "No identifiable catalysts (earnings, product launches, regulatory decisions) in recent news or insider trading data. While daily technicals show mixed signals (RSI 52.7, MACD positive histogram, EMA not aligned), hourly weakness (RSI 37.5, negative MACD) suggests recent pullback. Without catalyst timing, cannot establish high-conviction swing entry. ATR 16.1 provides volatility capacity for potential moves, but catalyst catalyst absence prevents trade.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "N/A"
+      },
+      "JPM": {
+        "signal": "neutral",
+        "confidence": 20,
+        "reasoning": "No identifiable catalysts in data (no earnings, earnings announcements, regulatory decisions, conference dates). Daily technicals are constructive: EMA aligned uptrend, RSI 71.2 (overbought but typical for financials in rallies), MACD positive, momentum strong (ROC_21: 8.5%). Hourly setup less decisive (RSI 43.8, narrow Bollinger bands, low ATR 1.5). While technical setup suggests upside bias, absence of near-term catalyst (1-10 trading days) disqualifies this as catalyst swing trade.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "N/A"
+      },
+      "GS": {
+        "signal": "neutral",
+        "confidence": 15,
+        "reasoning": "Technical setup is EXCELLENT: EMA aligned uptrend, RSI 72.3 (overbought but in context of strong trend), MACD positive with expanding histogram (6.8), strong momentum (ROC_21: 12.5%), price at 7.55% above 50-day SMA. Hourly also shows EMA aligned uptrend. However, no identifiable catalyst (earnings, announcements, regulatory decision, conference) visible in news or insider data. This is a momentum trade, not a catalyst trade. Without catalyst trigger, cannot establish timeframe or target based on expected catalyst magnitude.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "N/A"
+      },
+      "NKE": {
+        "signal": "neutral",
+        "confidence": 30,
+        "reasoning": "Structural downtrend evident: EMA aligned DOWNTREND on daily, price 15.3% below 50-day SMA, weak momentum (ROC_21: -13.3%), MACD negative. Hourly mirrors downtrend (EMA aligned down, RSI very oversold at 20.4, CCI -99.6 extreme). While oversold conditions could suggest bounce, no identifiable catalyst (earnings, product launch, strategic announcement) to trigger reversal swing. Recent_news and insider_trades arrays empty. Until catalyst emerges, downtrend structure argues against contrarian entry.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "N/A"
+      },
+      "XOM": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "Divergence present: Daily technicals weak (RSI 31.2 oversold, MACD negative, ROC all negative), BUT hourly technicals strong (RSI 66.4, MACD positive histogram 0.2, CCI 138.7 extremely bullish, Bollinger position 0.96 upper band). This intraday strength into daily weakness suggests potential morning bounce/reversal setup. However, no catalyst identified (no energy news, geopolitical events, earnings dates, refinery announcements visible). Without catalyst catalyst timing, unclear if bounce will extend to multi-day swing. Need catalyst confirmation to warrant entry.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "N/A"
+      },
+      "SPY": {
+        "signal": "neutral",
+        "confidence": 20,
+        "reasoning": "CRITICAL: Daily RSI at 90.6 - EXTREME overbought level. While this could itself be catalyst (profit-taking pullback, mean reversion), it reflects already-extended move, not an upcoming catalyst. EMA aligned uptrend, MACD positive, z-score 1.92 (2+ std devs above mean), momentum strong (ROC_21: 8.5%). Hourly RSI 59.9 less extended. No fundamental catalyst (Fed decision, earnings, macro event) identified in news. SPY's extreme overbought is a warning, not a catalyst to BUY into. For swing catalyst trader, better to wait for pullback completion before catalyst-driven entry.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "N/A"
+      },
+      "QQQ": {
+        "signal": "neutral",
+        "confidence": 20,
+        "reasoning": "CRITICAL: Daily RSI at 94.3 - EXTREME extreme overbought (technically >70 is overbought, >90 is parabolic). This is a warning signal, not a catalyst. EMA aligned uptrend, MACD positive, z-score 2.50 (>2 std devs), Bollinger position 0.885 (near upper band). Hourly RSI 63.7 more balanced, EMA aligned uptrend. While technicals are bullish structurally, no fundamental catalyst (earnings, product announcements, macro catalyst) identified. Extreme overbought conditions typically precede pullback, not continuation into swing setup. Catalyst trader should avoid parabolic extremes and wait for healthier setup.",
+        "entry_price": null,
+        "target_price": null,
+        "stop_loss": null,
+        "timeframe": "N/A"
+      }
+    },
+    "fundamentals_analyst_agent": {
+      "TSLA": {
+        "signal": "bearish",
+        "confidence": 75.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: N/A, Net Margin: N/A, Op Margin: N/A"
+          },
+          "growth_signal": {
+            "signal": "bearish",
+            "details": "Revenue Growth: N/A, Earnings Growth: N/A"
+          },
+          "financial_health_signal": {
+            "signal": "bearish",
+            "details": "Current Ratio: N/A, D/E: N/A"
+          },
+          "price_ratios_signal": {
+            "signal": "bullish",
+            "details": "P/E: N/A, P/B: N/A, P/S: N/A"
+          }
+        }
+      },
+      "JPM": {
+        "signal": "bearish",
+        "confidence": 75.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: N/A, Net Margin: N/A, Op Margin: N/A"
+          },
+          "growth_signal": {
+            "signal": "bearish",
+            "details": "Revenue Growth: N/A, Earnings Growth: N/A"
+          },
+          "financial_health_signal": {
+            "signal": "bearish",
+            "details": "Current Ratio: N/A, D/E: N/A"
+          },
+          "price_ratios_signal": {
+            "signal": "bullish",
+            "details": "P/E: N/A, P/B: N/A, P/S: N/A"
+          }
+        }
+      },
+      "GS": {
+        "signal": "bearish",
+        "confidence": 75.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: N/A, Net Margin: N/A, Op Margin: N/A"
+          },
+          "growth_signal": {
+            "signal": "bearish",
+            "details": "Revenue Growth: N/A, Earnings Growth: N/A"
+          },
+          "financial_health_signal": {
+            "signal": "bearish",
+            "details": "Current Ratio: N/A, D/E: N/A"
+          },
+          "price_ratios_signal": {
+            "signal": "bullish",
+            "details": "P/E: N/A, P/B: N/A, P/S: N/A"
+          }
+        }
+      },
+      "NKE": {
+        "signal": "bearish",
+        "confidence": 75.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: N/A, Net Margin: N/A, Op Margin: N/A"
+          },
+          "growth_signal": {
+            "signal": "bearish",
+            "details": "Revenue Growth: N/A, Earnings Growth: N/A"
+          },
+          "financial_health_signal": {
+            "signal": "bearish",
+            "details": "Current Ratio: N/A, D/E: N/A"
+          },
+          "price_ratios_signal": {
+            "signal": "bullish",
+            "details": "P/E: N/A, P/B: N/A, P/S: N/A"
+          }
+        }
+      },
+      "XOM": {
+        "signal": "bearish",
+        "confidence": 75.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: N/A, Net Margin: N/A, Op Margin: N/A"
+          },
+          "growth_signal": {
+            "signal": "bearish",
+            "details": "Revenue Growth: N/A, Earnings Growth: N/A"
+          },
+          "financial_health_signal": {
+            "signal": "bearish",
+            "details": "Current Ratio: N/A, D/E: N/A"
+          },
+          "price_ratios_signal": {
+            "signal": "bullish",
+            "details": "P/E: N/A, P/B: N/A, P/S: N/A"
+          }
+        }
+      },
+      "SPY": {
+        "signal": "bearish",
+        "confidence": 75.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: N/A, Net Margin: N/A, Op Margin: N/A"
+          },
+          "growth_signal": {
+            "signal": "bearish",
+            "details": "Revenue Growth: N/A, Earnings Growth: N/A"
+          },
+          "financial_health_signal": {
+            "signal": "bearish",
+            "details": "Current Ratio: N/A, D/E: N/A"
+          },
+          "price_ratios_signal": {
+            "signal": "bullish",
+            "details": "P/E: N/A, P/B: N/A, P/S: N/A"
+          }
+        }
+      },
+      "QQQ": {
+        "signal": "bearish",
+        "confidence": 75.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: N/A, Net Margin: N/A, Op Margin: N/A"
+          },
+          "growth_signal": {
+            "signal": "bearish",
+            "details": "Revenue Growth: N/A, Earnings Growth: N/A"
+          },
+          "financial_health_signal": {
+            "signal": "bearish",
+            "details": "Current Ratio: N/A, D/E: N/A"
+          },
+          "price_ratios_signal": {
+            "signal": "bullish",
+            "details": "P/E: N/A, P/B: N/A, P/S: N/A"
+          }
+        }
+      }
+    },
+    "technical_analyst_agent": {
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 18,
+        "reasoning": {
+          "trend_following": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "adx": 34.74784009274765,
+              "trend_strength": 0.3474784009274765
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": -0.07296672757704588,
+              "price_vs_bb": 0.7420821872978469,
+              "rsi_14": 52.67620063141609,
+              "rsi_28": 48.401534776374874
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.026160333382429735,
+              "momentum_3m": -0.0883460671216143,
+              "momentum_6m": -0.10145007549008866,
+              "volume_momentum": 0.9212504007902269
+            }
+          },
+          "volatility": {
+            "signal": "bearish",
+            "confidence": 62,
+            "metrics": {
+              "historical_volatility": 0.47403330877980476,
+              "volatility_regime": 1.2736698998997764,
+              "volatility_z_score": 1.871859580989824,
+              "atr_ratio": 0.04159524519050892
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.5121721813318685,
+              "kurtosis": 0.33831576171829353
+            }
+          }
+        }
+      },
+      "JPM": {
+        "signal": "bullish",
+        "confidence": 21,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 39,
+            "metrics": {
+              "adx": 38.93369792499593,
+              "trend_strength": 0.3893369792499593
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 1.417422582171836,
+              "price_vs_bb": 0.7468674793796265,
+              "rsi_14": 71.2257859315628,
+              "rsi_28": 68.4924787501229
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.08445712251027726,
+              "momentum_3m": 0.04809928355868476,
+              "momentum_6m": 0.058887138915971415,
+              "volume_momentum": 0.5971230767574319
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.25148501986325705,
+              "volatility_regime": 1.009244735102833,
+              "volatility_z_score": 0.06322000183686138,
+              "atr_ratio": 0.020460769728960725
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -0.04834343238103187,
+              "kurtosis": 0.8731537192481039
+            }
+          }
+        }
+      },
+      "GS": {
+        "signal": "neutral",
+        "confidence": 18,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 32,
+            "metrics": {
+              "adx": 32.01535311954738,
+              "trend_strength": 0.3201535311954738
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 1.3882134970295668,
+              "price_vs_bb": 0.8224547232659537,
+              "rsi_14": 72.32158439439866,
+              "rsi_28": 72.22020817495343
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.12160418170161025,
+              "momentum_3m": 0.0006320651636084751,
+              "momentum_6m": 0.23707803983034148,
+              "volume_momentum": 0.6654565206928086
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.3136430760288708,
+              "volatility_regime": 0.9166984636673049,
+              "volatility_z_score": -0.6965675714990117,
+              "atr_ratio": 0.02681895534085723
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -0.6744047674722018,
+              "kurtosis": 1.8106608065989929
+            }
+          }
+        }
+      },
+      "NKE": {
+        "signal": "bearish",
+        "confidence": 58,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bearish",
+            "confidence": 29,
+            "metrics": {
+              "adx": 28.64622049487971,
+              "trend_strength": 0.2864622049487971
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": -1.1184440033494494,
+              "price_vs_bb": 0.4474627476397932,
+              "rsi_14": 55.651230906505475,
+              "rsi_28": 34.03853578486553
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": -0.126505826494974,
+              "momentum_3m": -0.3281696536525367,
+              "momentum_6m": -0.3375939689546279,
+              "volume_momentum": 0.6127968689841121
+            }
+          },
+          "volatility": {
+            "signal": "bearish",
+            "confidence": 61,
+            "metrics": {
+              "historical_volatility": 0.6118555758438,
+              "volatility_regime": 1.657648134945114,
+              "volatility_z_score": 1.8185827338497031,
+              "atr_ratio": 0.02839630275954979
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "bearish",
+            "confidence": 100,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -2.655132876845527,
+              "kurtosis": 15.579117719868169
+            }
+          }
+        }
+      },
+      "XOM": {
+        "signal": "neutral",
+        "confidence": 17,
+        "reasoning": {
+          "trend_following": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "adx": 28.48172470206049,
+              "trend_strength": 0.2848172470206049
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": -0.7736965252435573,
+              "price_vs_bb": 0.26193684079386065,
+              "rsi_14": 31.225040661308824,
+              "rsi_28": 46.91660556927977
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": -0.06972220292992393,
+              "momentum_3m": 0.12981393768425742,
+              "momentum_6m": 0.31479867763499303,
+              "volume_momentum": 0.5988011635948239
+            }
+          },
+          "volatility": {
+            "signal": "bearish",
+            "confidence": 60,
+            "metrics": {
+              "historical_volatility": 0.35469265596678334,
+              "volatility_regime": 1.2625589159149895,
+              "volatility_z_score": 1.8026003458082358,
+              "atr_ratio": 0.034166258599162384
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -0.6179895053942744,
+              "kurtosis": 0.6776245928874357
+            }
+          }
+        }
+      },
+      "SPY": {
+        "signal": "neutral",
+        "confidence": 10,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 43,
+            "metrics": {
+              "adx": 43.26432486562615,
+              "trend_strength": 0.4326432486562615
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 1.9185229088985887,
+              "price_vs_bb": 0.8460255581842568,
+              "rsi_14": 90.56391446399329,
+              "rsi_28": 64.4603264689411
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.08317977007653532,
+              "momentum_3m": 0.04245527344154587,
+              "momentum_6m": 0.06791561462531881,
+              "volume_momentum": 0.5764687326408303
+            }
+          },
+          "volatility": {
+            "signal": "bearish",
+            "confidence": 42,
+            "metrics": {
+              "historical_volatility": 0.17921203304185912,
+              "volatility_regime": 1.2781617112483687,
+              "volatility_z_score": 1.2614954670233094,
+              "atr_ratio": 0.011443280762605043
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.3569554463029307,
+              "kurtosis": 0.8535915257331615
+            }
+          }
+        }
+      },
+      "QQQ": {
+        "signal": "neutral",
+        "confidence": 14,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 46,
+            "metrics": {
+              "adx": 46.367733473998925,
+              "trend_strength": 0.46367733473998923
+            }
+          },
+          "mean_reversion": {
+            "signal": "bearish",
+            "confidence": 62,
+            "metrics": {
+              "z_score": 2.494967660320056,
+              "price_vs_bb": 0.8850209696118475,
+              "rsi_14": 94.33872258708644,
+              "rsi_28": 65.90031461570283
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.11030563267282478,
+              "momentum_3m": 0.06699877334690241,
+              "momentum_6m": 0.07942857082209309,
+              "volume_momentum": 0.6870458338210663
+            }
+          },
+          "volatility": {
+            "signal": "bearish",
+            "confidence": 40,
+            "metrics": {
+              "historical_volatility": 0.22224057583672213,
+              "volatility_regime": 1.2190059514244715,
+              "volatility_z_score": 1.206467273052017,
+              "atr_ratio": 0.015781407524290112
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.1292650013368436,
+              "kurtosis": -0.03889634621544596
+            }
+          }
+        }
+      }
+    },
+    "valuation_analyst_agent": {},
+    "sentiment_analyst_agent": {
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "JPM": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "GS": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "NKE": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "XOM": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "SPY": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      },
+      "QQQ": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      }
+    },
+    "risk_management_agent": {
+      "TSLA": {
+        "remaining_position_limit": 14816.423071454821,
+        "current_price": 373.7200012207031,
+        "volatility_metrics": {
+          "daily_volatility": 0.024499158758574897,
+          "annualized_volatility": 0.3889120884328745,
+          "volatility_percentile": 29.86425339366516,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.3126031036199889,
+          "max_correlation_with_active": 0.5664446276698969,
+          "top_correlated_tickers": [
+            {
+              "ticker": "QQQ",
+              "correlation": 0.5664446276698969
+            },
+            {
+              "ticker": "SPY",
+              "correlation": 0.5452272817887343
+            },
+            {
+              "ticker": "GS",
+              "correlation": 0.2944119867583043
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.14110879115671257,
+          "correlation_multiplier": 1.05,
+          "combined_position_limit_pct": 0.1481642307145482,
+          "position_limit": 14816.423071454821,
+          "remaining_limit": 14816.423071454821,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 14.8% (base 14.1%)"
+        }
+      },
+      "JPM": {
+        "remaining_position_limit": 20006.600940461463,
+        "current_price": 311.69000244140625,
+        "volatility_metrics": {
+          "daily_volatility": 0.01540894598437902,
+          "annualized_volatility": 0.2446094342417655,
+          "volatility_percentile": 73.7556561085973,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.3841681170205184,
+          "max_correlation_with_active": 0.7094260598936389,
+          "top_correlated_tickers": [
+            {
+              "ticker": "GS",
+              "correlation": 0.7094260598936389
+            },
+            {
+              "ticker": "SPY",
+              "correlation": 0.6029107825126886
+            },
+            {
+              "ticker": "QQQ",
+              "correlation": 0.49172386380202865
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.19053905657582346,
+          "correlation_multiplier": 1.05,
+          "combined_position_limit_pct": 0.20006600940461464,
+          "position_limit": 20006.600940461463,
+          "remaining_limit": 20006.600940461463,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 20.0% (base 19.1%)"
+        }
+      },
+      "GS": {
+        "remaining_position_limit": 14582.264658143518,
+        "current_price": 931.2999877929688,
+        "volatility_metrics": {
+          "daily_volatility": 0.02152970895616327,
+          "annualized_volatility": 0.3417735341856482,
+          "volatility_percentile": 85.52036199095022,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.41022416163111886,
+          "max_correlation_with_active": 0.7094260598936389,
+          "top_correlated_tickers": [
+            {
+              "ticker": "JPM",
+              "correlation": 0.7094260598936389
+            },
+            {
+              "ticker": "SPY",
+              "correlation": 0.6864253222426195
+            },
+            {
+              "ticker": "QQQ",
+              "correlation": 0.6230751419664687
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.14582264658143518,
+          "correlation_multiplier": 1.0,
+          "combined_position_limit_pct": 0.14582264658143518,
+          "position_limit": 14582.264658143518,
+          "remaining_limit": 14582.264658143518,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 14.6% (base 14.6%)"
+        }
+      },
+      "NKE": {
+        "remaining_position_limit": 14354.24709015416,
+        "current_price": 44.779998779296875,
+        "volatility_metrics": {
+          "daily_volatility": 0.02727195401587372,
+          "annualized_volatility": 0.43292884855674674,
+          "volatility_percentile": 67.87330316742081,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.23905435154479146,
+          "max_correlation_with_active": 0.36390857948484934,
+          "top_correlated_tickers": [
+            {
+              "ticker": "SPY",
+              "correlation": 0.36390857948484934
+            },
+            {
+              "ticker": "QQQ",
+              "correlation": 0.264898654405212
+            },
+            {
+              "ticker": "JPM",
+              "correlation": 0.2397444591099025
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.13670711514432532,
+          "correlation_multiplier": 1.05,
+          "combined_position_limit_pct": 0.1435424709015416,
+          "position_limit": 14354.24709015416,
+          "remaining_limit": 14354.24709015416,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 14.4% (base 13.7%)"
+        }
+      },
+      "XOM": {
+        "remaining_position_limit": 16491.877900258663,
+        "current_price": 150.52999877929688,
+        "volatility_metrics": {
+          "daily_volatility": 0.018944736758771414,
+          "annualized_volatility": 0.3007383727037581,
+          "volatility_percentile": 95.47511312217195,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": -0.025831990400019874,
+          "max_correlation_with_active": 0.1411771687084699,
+          "top_correlated_tickers": [
+            {
+              "ticker": "NKE",
+              "correlation": 0.1411771687084699
+            },
+            {
+              "ticker": "TSLA",
+              "correlation": 0.004946242635190194
+            },
+            {
+              "ticker": "JPM",
+              "correlation": -0.00798033442181059
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.1499261627296242,
+          "correlation_multiplier": 1.1,
+          "combined_position_limit_pct": 0.16491877900258664,
+          "position_limit": 16491.877900258663,
+          "remaining_limit": 16491.877900258663,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 16.5% (base 15.0%)"
+        }
+      },
+      "SPY": {
+        "remaining_position_limit": 19970.916425438973,
+        "current_price": 708.4500122070312,
+        "volatility_metrics": {
+          "daily_volatility": 0.009632321124100411,
+          "annualized_volatility": 0.1529083574561029,
+          "volatility_percentile": 91.8552036199095,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.5140475128455717,
+          "max_correlation_with_active": 0.9576400329192145,
+          "top_correlated_tickers": [
+            {
+              "ticker": "QQQ",
+              "correlation": 0.9576400329192145
+            },
+            {
+              "ticker": "GS",
+              "correlation": 0.6864253222426195
+            },
+            {
+              "ticker": "JPM",
+              "correlation": 0.6029107825126886
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.19970916425438973,
+          "correlation_multiplier": 1.0,
+          "combined_position_limit_pct": 0.19970916425438973,
+          "position_limit": 19970.916425438973,
+          "remaining_limit": 19970.916425438973,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 20.0% (base 20.0%)"
+        }
+      },
+      "QQQ": {
+        "remaining_position_limit": 19520.5719182809,
+        "current_price": 651.4199829101562,
+        "volatility_metrics": {
+          "daily_volatility": 0.012469224862777085,
+          "annualized_volatility": 0.19794280817190998,
+          "volatility_percentile": 88.23529411764706,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.4606100667181692,
+          "max_correlation_with_active": 0.9576400329192145,
+          "top_correlated_tickers": [
+            {
+              "ticker": "SPY",
+              "correlation": 0.9576400329192145
+            },
+            {
+              "ticker": "GS",
+              "correlation": 0.6230751419664687
+            },
+            {
+              "ticker": "TSLA",
+              "correlation": 0.5664446276698969
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 100000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.19520571918280902,
+          "correlation_multiplier": 1.0,
+          "combined_position_limit_pct": 0.19520571918280902,
+          "position_limit": 19520.5719182809,
+          "remaining_limit": 19520.5719182809,
+          "available_cash": 100000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 19.5% (base 19.5%)"
+        }
+      }
+    }
+  },
+  "allowed_actions": {
+    "TSLA": {
+      "hold": 0,
+      "buy": 39,
+      "short": 39
+    },
+    "JPM": {
+      "hold": 0,
+      "buy": 64,
+      "short": 64
+    },
+    "GS": {
+      "hold": 0,
+      "buy": 15,
+      "short": 15
+    },
+    "NKE": {
+      "hold": 0,
+      "buy": 320,
+      "short": 320
+    },
+    "XOM": {
+      "hold": 0,
+      "buy": 109,
+      "short": 109
+    },
+    "SPY": {
+      "hold": 0,
+      "buy": 28,
+      "short": 28
+    },
+    "QQQ": {
+      "hold": 0,
+      "buy": 29,
+      "short": 29
+    }
+  },
+  "portfolio": {
+    "cash": 100000.0,
+    "margin_requirement": 0.0,
+    "margin_used": 0.0,
+    "positions": {
+      "TSLA": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "JPM": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "GS": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "NKE": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "XOM": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "SPY": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      },
+      "QQQ": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      }
+    },
+    "realized_gains": {
+      "TSLA": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "JPM": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "GS": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "NKE": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "XOM": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "SPY": {
+        "long": 0.0,
+        "short": 0.0
+      },
+      "QQQ": {
+        "long": 0.0,
+        "short": 0.0
+      }
+    }
+  },
+  "tickers": [
+    "TSLA",
+    "JPM",
+    "GS",
+    "NKE",
+    "XOM",
+    "SPY",
+    "QQQ"
+  ],
+  "end_date": "2026-04-23"
+}
