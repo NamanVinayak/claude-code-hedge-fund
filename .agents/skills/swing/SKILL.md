@@ -39,11 +39,9 @@ This fetches all raw data, saves metadata.json, and builds swing strategy facts.
 
 ## Step 2.5 — Web Research Agent
 
-Dispatch one Agent tool call **per ticker** (all in parallel in a single message):
+Dispatch one Agent tool call **per ticker** (can be parallel if multiple tickers), using `model: sonnet`:
 
 ```
-IMPORTANT: Do NOT invoke any skills. Do NOT use memory tools. Just read files, use WebSearch, and write JSON files.
-
 You are the Web Research Agent.
 
 1. Read your system prompt from: ai_hedge/personas/prompts/web_researcher.md
@@ -65,11 +63,9 @@ python -m ai_hedge.personas.facts_builder --run-id $RUN_ID --tickers $TICKERS
 
 ## Step 2.8 — Web Verification Agent
 
-Dispatch **one** Agent tool call (covers all tickers):
+Dispatch **one** Agent tool call (covers all tickers), using `model: sonnet`:
 
 ```
-IMPORTANT: Do NOT invoke any skills. Do NOT use memory tools. Just read files, use WebSearch, and write JSON files.
-
 You are the Data Verification Agent.
 
 1. Read your system prompt from: ai_hedge/personas/prompts/web_verifier.md
@@ -83,7 +79,7 @@ You are the Data Verification Agent.
 
 ## Step 3 — Dispatch all 5 LLM subagents in ONE parallel batch
 
-Send ALL 5 Agent tool calls in a **single message** and wait for all to complete before proceeding.
+Dispatch all 5 agents in a **single message** using `model: sonnet`, wait for all 5 to complete, then proceed to Step 4.
 
 The 5 agents are:
 - `swing_trend_momentum` — with-the-trend continuation
@@ -95,8 +91,6 @@ The 5 agents are:
 For each agent, use this prompt template for `{AGENT}`:
 
 ```
-IMPORTANT: Do NOT invoke any skills. Do NOT use memory tools. Just read files and write a JSON file.
-
 You are the {AGENT} swing trade analyst.
 
 1. Read your system prompt from: ai_hedge/personas/prompts/{AGENT}.md
@@ -107,10 +101,10 @@ You are the {AGENT} swing trade analyst.
 Analyze each ticker for swing trade setups using ONLY the provided facts data.
 
 Return a JSON object mapping each ticker to your signal:
-{
-  "TICKER1": {"signal": "bullish|bearish|neutral", "confidence": 0-100, "reasoning": "...", "entry": float, "target": float, "stop": float, "timeframe": "..."},
+{{
+  "TICKER1": {{"signal": "bullish|bearish|neutral", "confidence": 0-100, "reasoning": "...", "entry": float, "target": float, "stop": float, "timeframe": "..."}},
   "TICKER2": ...
-}
+}}
 
 Write your output to: runs/{RUN_ID}/signals/{AGENT}.json
 ```
@@ -119,11 +113,9 @@ After all 5 agents complete, proceed to Step 4.
 
 ## Step 4 — Head Swing Trader synthesis
 
-Dispatch **one** Agent tool call:
+Dispatch **one** Agent tool call (model: sonnet):
 
 ```
-IMPORTANT: Do NOT invoke any skills. Do NOT use memory tools. Just read files and write a JSON file.
-
 You are the Head Swing Trader.
 
 1. Read your prompt from: ai_hedge/personas/prompts/swing_head_trader.md
@@ -149,11 +141,9 @@ This loads all signals, runs deterministic agents (fundamentals, technicals, val
 
 ## Step 6 — Dispatch Swing Portfolio Manager
 
-Dispatch **one** Agent tool call:
+Dispatch **one** Agent tool call (model: sonnet):
 
 ```
-IMPORTANT: Do NOT invoke any skills. Do NOT use memory tools. Just read files and write a JSON file.
-
 Read the following files:
 - runs/{RUN_ID}/signals_combined.json
 - ai_hedge/personas/prompts/swing_portfolio_manager.md
@@ -165,20 +155,14 @@ Consider the Head Swing Trader's synthesis in signals_combined along with all st
 
 Return JSON with per-ticker entry/target/stop/risk-reward/timeframe and an overall synthesis.
 
-CRITICAL: Your output JSON MUST be wrapped in a "decisions" key like this:
-{"decisions": {"TICKER1": {...}, "TICKER2": {...}}}
-Do NOT write a flat JSON object at the top level — the executor reads decisions_data["decisions"] and a flat object will result in zero trades being placed.
-
 Write the output to: runs/{RUN_ID}/decisions.json
 ```
 
 ## Step 7 — Explainer Agent
 
-Dispatch **one** Agent tool call to produce a plain-English educational explanation:
+Dispatch **one** Agent tool call (model: sonnet) to produce a plain-English educational explanation:
 
 ```
-IMPORTANT: Do NOT invoke any skills. Do NOT use memory tools. Just read files and write a JSON file.
-
 You are a Financial Explainer agent.
 
 1. Read your system prompt from: ai_hedge/personas/prompts/explainer.md
@@ -195,26 +179,62 @@ Return JSON matching the format in the prompt.
 Write the output to: runs/{RUN_ID}/explanation.json
 ```
 
+## Step 7.5 — Wiki Curator (feature-flagged)
+
+This step runs only if `tracker/watchlist.json:settings.wiki_enabled == true`. Check first:
+
+```bash
+python -c "from ai_hedge.wiki.inject import is_wiki_enabled; print('ON' if is_wiki_enabled() else 'OFF')"
+```
+
+If the output is `OFF`, **skip this step entirely** and go to Step 8.
+
+If `ON`, dispatch **one** Agent tool call (model: sonnet) to maintain the wiki:
+
+```
+You are the Wiki Curator.
+
+1. Read your system prompt from: ai_hedge/personas/prompts/wiki_curator.md
+2. Read the run artifacts:
+   - runs/{RUN_ID}/decisions.json
+   - runs/{RUN_ID}/signals_combined.json
+   - runs/{RUN_ID}/explanation.json
+   - runs/{RUN_ID}/web_research/<TICKER>.json for each ticker in [{TICKERS}]
+3. Read the current wiki pages for each ticker in [{TICKERS}]:
+   - wiki/tickers/<TICKER>/thesis.md
+   - wiki/tickers/<TICKER>/technicals.md
+   - wiki/tickers/<TICKER>/catalysts.md
+   - wiki/tickers/<TICKER>/trades.md
+   plus wiki/macro/regime.md and wiki/INDEX.md, wiki/LOG.md.
+
+run_id: {RUN_ID}
+mode: swing
+tickers in scope: [{TICKERS}]
+is_macro_dispatch: true
+pages_in_scope: thesis, technicals, catalysts, trades, regime, INDEX, LOG
+
+Update the wiki per the rules in your system prompt. Synthesize, do NOT
+append. Stay within each page's target_words ± 20%. Return a JSON manifest
+listing every page touched and its action.
+
+Write any errors to runs/{RUN_ID}/wiki_curator_error.txt instead of failing —
+trade decisions are final, the wiki must never block finalize.
+```
+
+After the curator returns, lint:
+
+```bash
+python -c "from ai_hedge.wiki import lint; import json; print(json.dumps(lint.lint_directory(), indent=2))"
+```
+
+If the linter reports issues, log them to `runs/{RUN_ID}/wiki_curator_error.txt` but **do not abort**.
+
+> **6+ tickers:** if the run has more than 6 tickers, split the curator into two dispatches per the plan §4.2 — first half tickers (per-ticker pages only, `is_macro_dispatch: false`), then second half + macro/index/log (`is_macro_dispatch: true`). The 1–3 ticker case stays one dispatch.
+
 ## Step 8 — Display results
 
 ```bash
 python -m ai_hedge.runner.finalize --run-id $RUN_ID
 ```
 
-This displays: entry/target/stop/risk-reward/timeframe, Head Trader synthesis, strategy breakdown.
-
-## Step 9 — Commit and push results to GitHub
-
-Write a plain-English summary of the run to `runs/$RUN_ID/summary.md` — top 3 setups, key themes, overall market context (1-2 paragraphs). Then commit the full run and push to a new branch:
-
-```bash
-BRANCH="claude/swing-results-${RUN_ID}"
-git checkout -b $BRANCH
-git add -f runs/$RUN_ID/
-git commit -m "swing run ${RUN_ID}: ${TICKERS}
-
-$(cat runs/$RUN_ID/summary.md | head -5)"
-git push origin $BRANCH
-```
-
-Print the branch URL: `https://github.com/NamanVinayak/claude-code-hedge-fund/tree/$BRANCH`
+This displays: entry/target/stop/risk-reward/timeframe, Head Trader synthesis, strategy breakdown. It also touches `wiki/INDEX.md` to keep its `last_updated` dates fresh (no-op if `wiki_enabled=false`).

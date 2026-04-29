@@ -8,19 +8,12 @@ argument-hint: [--force]
 
 # Autorun — Daily Paper Trading Routine
 
-## Step 1 — Sync positions and clean up stale orders
+## Step 1 — Check schedule and sync positions
 
-First, monitor existing positions. This syncs fills AND cleans up orders that Moomoo
-cancelled overnight (DAY-only orders expire at close each day):
+First, monitor existing positions to sync fills:
 ```bash
 python -m tracker monitor
 ```
-
-This will:
-- Detect filled entries and update status to 'entered'
-- Detect cancelled/expired entry orders and mark trades as 'cancelled' in our DB
-- Warn about stop/target orders on open positions that need re-placing
-- Show what's still active vs what got cleaned up
 
 Read the watchlist to check what's due today:
 ```bash
