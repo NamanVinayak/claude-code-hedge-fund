@@ -1,0 +1,103 @@
+---
+name: wiki index
+last_updated: 2026-04-29
+last_run_id: bootstrap
+---
+
+# Wiki Index
+
+Auto-regenerated after wiki bootstrap. Do not edit by hand.
+
+- [macro/regime.md](macro/regime.md) — last_updated 2026-04-29 — current macro regime
+- [tickers/AAPL/catalysts.md](tickers/AAPL/catalysts.md) — last_updated 2026-04-29 — Upcoming events and recent news as of April 2026 — earnings, tariffs, AI pivots, and insider selling
+- [tickers/AAPL/technicals.md](tickers/AAPL/technicals.md) — last_updated 2026-04-29 — Chart state as of mid-April 2026 — trendless coil awaiting resolution above $263 or breakdown below $253
+- [tickers/AAPL/thesis.md](tickers/AAPL/thesis.md) — last_updated 2026-04-29 — Durable bull/bear story for Apple — high-quality franchise with near-term tariff and AI overhang
+- [tickers/AAPL/trades.md](tickers/AAPL/trades.md) — last_updated 2026-04-29 — Full trade journal for AAPL — one abandoned long, three no-trade holds, lifetime stats
+- [tickers/AMD/catalysts.md](tickers/AMD/catalysts.md) — last_updated 2026-04-29 — Q1 earnings May 5 is the next binary event; Meta $60B deal and TSMC 2nm are structural bull catalysts
+- [tickers/AMD/technicals.md](tickers/AMD/technicals.md) — last_updated 2026-04-29 — parabolic momentum run — RSI 91, ADX 41, hourly STC diverging as of Apr 17
+- [tickers/AMD/thesis.md](tickers/AMD/thesis.md) — last_updated 2026-04-29 — AI infrastructure leader with dominant momentum but extreme valuation and tariff headwinds
+- [tickers/AMD/trades.md](tickers/AMD/trades.md) — last_updated 2026-04-29 — 1 lifetime trade (abandoned, no fill); no realized P&L
+- [tickers/AMZN/catalysts.md](tickers/AMZN/catalysts.md) — last_updated 2026-04-29 — Q1 2026 earnings (Apr 30), Globalstar acquisition, AWS Trainium3, and Andy Jassy AI disclosure are the key catalysts; 64/68 analysts rate Buy
+- [tickers/AMZN/technicals.md](tickers/AMZN/technicals.md) — last_updated 2026-04-29 — As of April 17 2026 — bullish trend with elevated ADX 44, z-score 2.84 flagging extension, entry zone 244-249, stop 244
+- [tickers/AMZN/thesis.md](tickers/AMZN/thesis.md) — last_updated 2026-04-29 — AWS cloud dominance and AI infrastructure build-out is the durable bull thesis; mean reversion risk and tariff pass-through are the structural bear risks
+- [tickers/AMZN/trades.md](tickers/AMZN/trades.md) — last_updated 2026-04-29 — 1 trade in history — abandoned long from run 20260417_233350; model recommended buys in 3 runs, only 1 was executed; no closed P&L
+- [tickers/BAC/catalysts.md](tickers/BAC/catalysts.md) — last_updated 2026-04-29 — Pending events and news synthesis for BAC from web research in runs 20260415_110848 and swing_20260411_211655
+- [tickers/BAC/technicals.md](tickers/BAC/technicals.md) — last_updated 2026-04-29 — Chart state for BAC as of the most recent swing run (20260415_110848, April 15 2026)
+- [tickers/BAC/thesis.md](tickers/BAC/thesis.md) — last_updated 2026-04-29 — Durable bull/bear investment thesis for Bank of America synthesized from two swing runs (Apr 11 and Apr 15)
+- [tickers/BAC/trades.md](tickers/BAC/trades.md) — last_updated 2026-04-29 — Full trade history and run decisions for BAC; no executed trades in tracker.db as of bootstrap
+- [tickers/CVX/catalysts.md](tickers/CVX/catalysts.md) — last_updated 2026-04-29 — Pending events and recent news for CVX as of the Apr 11 swing run
+- [tickers/CVX/technicals.md](tickers/CVX/technicals.md) — last_updated 2026-04-29 — Chart state as of Apr 11 swing run — bearish momentum, relief bounce entry setup
+- [tickers/CVX/thesis.md](tickers/CVX/thesis.md) — last_updated 2026-04-29 — Bull vs bear case for Chevron, synthesized from the Apr 11 swing run narrative
+- [tickers/CVX/trades.md](tickers/CVX/trades.md) — last_updated 2026-04-29 — Full trade journal for CVX — 2 short attempts, both cancelled/abandoned, zero fills
+- [tickers/DIS/catalysts.md](tickers/DIS/catalysts.md) — last_updated 2026-04-29 — Q2 FY2026 earnings (est. May 6-13) is the next binary event; restructuring job cuts and streaming bundle launch are the live catalysts; Paramount-WBD mega-merger is the key competitive risk event to monitor.
+- [tickers/DIS/technicals.md](tickers/DIS/technicals.md) — last_updated 2026-04-29 — DIS bounced from $92 support to $103 resistance in April 2026; daily MACD bullish crossover and ADX 31 confirm a developing trend, but BB position 0.98 and stochastic 95 flag near-term overextension.
+- [tickers/DIS/thesis.md](tickers/DIS/thesis.md) — last_updated 2026-04-29 — Disney is a cheap-valuation recovery story with streaming now profitable, offset by consumer-media headwinds and no near-term catalyst to close the gap to analyst targets.
+- [tickers/DIS/trades.md](tickers/DIS/trades.md) — last_updated 2026-04-29 — No trades ever executed on DIS in tracker.db; the model recommended hold (Apr 11) then cautious buy (Apr 15) — the buy was never placed, likely due to entry discipline (do not chase above $103).
+- [tickers/GOOG/catalysts.md](tickers/GOOG/catalysts.md) — last_updated 2026-04-29 — Q1 2026 earnings (April 28 post-market) is the dominant near-term catalyst; antitrust remedies and $175–185B capex are the persistent overhangs.
+- [tickers/GOOG/technicals.md](tickers/GOOG/technicals.md) — last_updated 2026-04-29 — As of April 15, 2026 — clean breakout above $330.58 resistance with powerful multi-timeframe trend confirmation; entry zone $327–332, target $344–355, stop $318–321.
+- [tickers/GOOG/thesis.md](tickers/GOOG/thesis.md) — last_updated 2026-04-29 — Alphabet is an AI-infrastructure compounder with a dominant search moat, but antitrust remedies and capex inflation are the key bear risks.
+- [tickers/GOOG/trades.md](tickers/GOOG/trades.md) — last_updated 2026-04-29 — 2 total GOOG trades in tracker.db — 1 filled and abandoned, 1 unfilled and abandoned. No closed P&L recorded. Net lifetime result: $0 realized.
+- [tickers/GOOGL/catalysts.md](tickers/GOOGL/catalysts.md) — last_updated 2026-04-29 — Q1 earnings (Apr 28), FOMC (Apr 29), antitrust cross-appeal, and Google Cloud AI momentum are the live catalysts
+- [tickers/GOOGL/technicals.md](tickers/GOOGL/technicals.md) — last_updated 2026-04-29 — Multi-TF aligned breakout above $330.58 with extreme overbought on both daily and hourly; ADX 37/80 confirms trend
+- [tickers/GOOGL/thesis.md](tickers/GOOGL/thesis.md) — last_updated 2026-04-29 — Alphabet is a dominant AI infrastructure and cloud play with a durable moat, facing a structural antitrust threat and elevated capex headwinds
+- [tickers/GOOGL/trades.md](tickers/GOOGL/trades.md) — last_updated 2026-04-29 — One swing trade placed on April 18, 2026; status abandoned; no fills, no realized P&L
+- [tickers/GS/catalysts.md](tickers/GS/catalysts.md) — last_updated 2026-04-29 — GS pending events and news synthesis from Apr 11 and Apr 15 web research runs
+- [tickers/GS/technicals.md](tickers/GS/technicals.md) — last_updated 2026-04-29 — GS chart state as of Apr 15 run — EMA uptrend, squeeze breakout, but ADX too weak to trigger entry
+- [tickers/GS/thesis.md](tickers/GS/thesis.md) — last_updated 2026-04-29 — Goldman Sachs durable bull and bear cases synthesized from three swing runs (Apr 11, Apr 15, Apr 17)
+- [tickers/GS/trades.md](tickers/GS/trades.md) — last_updated 2026-04-29 — GS has zero executed trades in tracker.db; model held GS on all three analyzed runs due to weak ADX and R:R constraints
+- [tickers/IWM/catalysts.md](tickers/IWM/catalysts.md) — last_updated 2026-04-29 — Macro drivers, pending events, and recent news as of April 15, 2026 for the iShares Russell 2000 ETF.
+- [tickers/IWM/technicals.md](tickers/IWM/technicals.md) — last_updated 2026-04-29 — Intraday and daily technical structure as of April 15, 2026 — bearish intraday, bullish but stretched daily, 8/9 strategies bearish.
+- [tickers/IWM/thesis.md](tickers/IWM/thesis.md) — last_updated 2026-04-29 — Durable bull/bear story for the iShares Russell 2000 ETF — small-cap benchmark sensitive to rates, domestic demand, and credit conditions.
+- [tickers/IWM/trades.md](tickers/IWM/trades.md) — last_updated 2026-04-29 — Full trade journal for IWM — 1 closed short trade from April 15, 2026 paper trading session.
+- [tickers/JNJ/catalysts.md](tickers/JNJ/catalysts.md) — last_updated 2026-04-29 — Q1 2026 earnings beat already digested; next catalyst is Q2 (mid-July); Icotyde launch and drug-pricing deal are positive longer-term
+- [tickers/JNJ/technicals.md](tickers/JNJ/technicals.md) — last_updated 2026-04-29 — Squeeze-ON, SuperTrend bearish, flat EMAs — direction unresolved as of Apr 15 close
+- [tickers/JNJ/thesis.md](tickers/JNJ/thesis.md) — last_updated 2026-04-29 — Dividend king in a technical squeeze — strong fundamentals blocked by chart indecision and pending direction resolution
+- [tickers/JNJ/trades.md](tickers/JNJ/trades.md) — last_updated 2026-04-29 — No trades executed to date — two consecutive holds; run history documented with reasoning
+- [tickers/JPM/catalysts.md](tickers/JPM/catalysts.md) — last_updated 2026-04-29 — Q1 2026 earnings record beat was the primary catalyst; NII guidance trim and macro risks are the counter-catalyst; Q2 earnings expected mid-July 2026
+- [tickers/JPM/technicals.md](tickers/JPM/technicals.md) — last_updated 2026-04-29 — Buy-the-dip in uptrend setup confirmed Apr 15; daily trend intact, hourly showed extreme oversold RSI 31 at entry zone ~$305
+- [tickers/JPM/thesis.md](tickers/JPM/thesis.md) — last_updated 2026-04-29 — World's most profitable bank — earnings machine with secular growth from investment banking and wealth management offset by rate-cycle sensitivity and macro tail risks
+- [tickers/JPM/trades.md](tickers/JPM/trades.md) — last_updated 2026-04-29 — 3 long trades initiated (Apr 14–18 2026); all abandoned by Apr 29; 1 partial fill recorded (trade #15, filled at $305.30, exited at $311.45); 2 never filled
+- [tickers/META/catalysts.md](tickers/META/catalysts.md) — last_updated 2026-04-29 — Q1 2026 earnings on Apr 29, Muse Spark AI launch, CoreWeave deal, and pending social media addiction litigation are the dominant catalyst stack.
+- [tickers/META/technicals.md](tickers/META/technicals.md) — last_updated 2026-04-29 — Explosive breakout in April 2026 after counter-trend bounce; model bought the breakout at $675–677 after earlier hold when EMA structure was still bearish.
+- [tickers/META/thesis.md](tickers/META/thesis.md) — last_updated 2026-04-29 — Meta is a dominant ad platform transitioning to frontier AI; bull case is monetization upside, bear case is capex-driven free cash flow compression and legal liability.
+- [tickers/META/trades.md](tickers/META/trades.md) — last_updated 2026-04-29 — Two paper trades placed; trade ID 16 filled at $673.72 and was abandoned (exit $671.34, small loss); trade ID 22 was abandoned before fill at $676.87.
+- [tickers/MSFT/catalysts.md](tickers/MSFT/catalysts.md) — last_updated 2026-04-29 — Q3 FY2026 earnings (Apr 29) is the primary near-term catalyst; Copilot expansion, Azure AI traction, and Bernstein/analyst coverage are supporting tailwinds
+- [tickers/MSFT/technicals.md](tickers/MSFT/technicals.md) — last_updated 2026-04-29 — evolved from confirmed downtrend (Apr 11) to SuperTrend bullish flip + price recovery to $420 (Apr 17); near-term overbought warns caution on size
+- [tickers/MSFT/thesis.md](tickers/MSFT/thesis.md) — last_updated 2026-04-29 — dominant cloud/AI platform trading at a multi-year valuation discount; bull case is Azure re-acceleration, bear case is AI capex destroying margins
+- [tickers/MSFT/trades.md](tickers/MSFT/trades.md) — last_updated 2026-04-29 — 1 trade in DB (trade_id=20, abandoned); 3 model runs covered — holds on Apr 11 and Apr 15 (poor R:R), buy executed Apr 17 at $420.26 (25 shares, confidence 72%)
+- [tickers/NKE/catalysts.md](tickers/NKE/catalysts.md) — last_updated 2026-04-29 — next earnings June 25 2026; wave of analyst downgrades April; insider buying at lows is the lone contrarian signal
+- [tickers/NKE/technicals.md](tickers/NKE/technicals.md) — last_updated 2026-04-29 — extreme downtrend — ADX 64.6, all EMAs aligned bearish, multi-oscillator oversold floor near $42
+- [tickers/NKE/thesis.md](tickers/NKE/thesis.md) — last_updated 2026-04-29 — NKE is a broken-trend short with insider-buying wildcard — structural decay vs. potential mean-reversion floor
+- [tickers/NKE/trades.md](tickers/NKE/trades.md) — last_updated 2026-04-29 — 3 DB records (1 closed loss, 1 cancelled, 1 abandoned); net realized P&L -$35.70; short thesis correct long-term but entries hit bounce zone
+- [tickers/NVDA/catalysts.md](tickers/NVDA/catalysts.md) — last_updated 2026-04-29 — Hyperscaler AI capex earnings are the near-term catalyst; NVDA own earnings May 20-27 are the hard exit deadline; China H20 ban is the structural headwind.
+- [tickers/NVDA/technicals.md](tickers/NVDA/technicals.md) — last_updated 2026-04-29 — Strong trend (ADX 49) with full EMA alignment, but deeply overbought daily; hourly shows early deceleration — wait for EMA-10 pullback.
+- [tickers/NVDA/thesis.md](tickers/NVDA/thesis.md) — last_updated 2026-04-29 — NVDA is an AI infrastructure monopoly with exceptional fundamentals, but late-cycle price extension demands pullback entries only.
+- [tickers/NVDA/trades.md](tickers/NVDA/trades.md) — last_updated 2026-04-29 — 4 paper trades total — 2 filled (trades 12+13, 6 shares at ~$197.22 avg cost), 2 unfilled (trades 6+21); all abandoned 2026-04-29; position was never formally closed — abandoned during session cleanup.
+- [tickers/PFE/catalysts.md](tickers/PFE/catalysts.md) — last_updated 2026-04-29 — Q1 earnings May 5, Section 232 pharma tariffs July 2026, Metsera GLP-1 acquisition, and $21.4B patent cliff are the four headline catalysts
+- [tickers/PFE/technicals.md](tickers/PFE/technicals.md) — last_updated 2026-04-29 — No actionable swing setup across two runs — RSI dead neutral, ADX borderline, volume sub-average, no trend conviction
+- [tickers/PFE/thesis.md](tickers/PFE/thesis.md) — last_updated 2026-04-29 — Pfizer is a deep-value contrarian play blocked by a $21B patent cliff, tariff headwinds, and post-COVID revenue normalization — no swing trigger present as of Apr 2026
+- [tickers/PFE/trades.md](tickers/PFE/trades.md) — last_updated 2026-04-29 — Zero trades placed across two model runs; both returned hold with 35% confidence; no entries ever triggered
+- [tickers/QQQ/catalysts.md](tickers/QQQ/catalysts.md) — last_updated 2026-04-29 — AI capex supercycle driving top-5 holdings; Fed on hold through 2026; MSFT April 29 earnings was key near-term catalyst; tariff and Iran geopolitical risks remain
+- [tickers/QQQ/technicals.md](tickers/QQQ/technicals.md) — last_updated 2026-04-29 — daily trend bullish with ADX 36/squeeze breakout; intraday was conflicted on Apr 15 with bearish SuperTrend and negative squeeze momentum
+- [tickers/QQQ/thesis.md](tickers/QQQ/thesis.md) — last_updated 2026-04-29 — QQQ is a high-correlation tech-beta play; strong daily trend but expensive valuation and macro headwinds limit swing conviction vs. single names
+- [tickers/QQQ/trades.md](tickers/QQQ/trades.md) — last_updated 2026-04-29 — 1 closed trade (swing long, abandoned before fill); 1 daytrade no-trade decision; lifetime record 0W/0L/1 abandoned
+- [tickers/SPY/catalysts.md](tickers/SPY/catalysts.md) — last_updated 2026-04-29 — Mid-April 2026 catalyst stack: S&P 7,000 break, bank earnings sweep, Iran de-escalation, Meta-Broadcom AI deal — all positive; ongoing risks are Iran reversal and Fed hawkishness
+- [tickers/SPY/technicals.md](tickers/SPY/technicals.md) — last_updated 2026-04-29 — Apr 15–17 chart showed triple-confluence breakout above OR high / VWAP / prior day high; extended daily RSI warns of mean-reversion risk
+- [tickers/SPY/thesis.md](tickers/SPY/thesis.md) — last_updated 2026-04-29 — SPY serves as a liquid broad-market vehicle; bullish structurally, capped near-term by tech correlation and Iran tail risk
+- [tickers/SPY/trades.md](tickers/SPY/trades.md) — last_updated 2026-04-29 — 2 trades on record — 1 closed daytrade (loss, -$1.05), 1 abandoned swing; net P&L -$1.05; 0% win rate; entry hit rate 50%
+- [tickers/TSLA/catalysts.md](tickers/TSLA/catalysts.md) — last_updated 2026-04-29 — April 22 Q1 earnings was the dominant near-term catalyst; robotaxi launch and Musk DOGE exit are the multi-month structural catalysts.
+- [tickers/TSLA/technicals.md](tickers/TSLA/technicals.md) — last_updated 2026-04-29 — Daily downtrend with ADX 29.5 confirmed; price oscillated 347-392 across three runs; key bear-rally resistance cluster 387-399.
+- [tickers/TSLA/thesis.md](tickers/TSLA/thesis.md) — last_updated 2026-04-29 — TSLA is a story-stock split between a beaten-down EV business and an optionality bet on robotaxi and Optimus; bears own near-term fundamentals, bulls own the 2027+ narrative.
+- [tickers/TSLA/trades.md](tickers/TSLA/trades.md) — last_updated 2026-04-29 — No fills recorded in tracker.db; one model-recommended short (Apr 15) at $391.86 target $343.80; three holds across three runs reflecting poor R:R and earnings risk.
+- [tickers/UNH/catalysts.md](tickers/UNH/catalysts.md) — last_updated 2026-04-29 — Dual catalyst setup — CMS Medicare Advantage rate hike already fired; Q1 2026 earnings April 21 was the binary follow-through event
+- [tickers/UNH/technicals.md](tickers/UNH/technicals.md) — last_updated 2026-04-29 — Post-catalyst chart state as of Apr 11, 2026 — strong ADX trend but overbought oscillators, EMAs not yet aligned, mean-reversion risk elevated above $300
+- [tickers/UNH/thesis.md](tickers/UNH/thesis.md) — last_updated 2026-04-29 — Contrarian value recovery play — Medicare Advantage rate hike catalyzes a potential bottom after a 54% drawdown, but declining EPS and a binary earnings event cloud the path
+- [tickers/UNH/trades.md](tickers/UNH/trades.md) — last_updated 2026-04-29 — Full trade journal for UNH — two cancelled/abandoned orders, zero fills, net P&L $0; system liked the setup but neither entry ever triggered
+- [tickers/WMT/catalysts.md](tickers/WMT/catalysts.md) — last_updated 2026-04-29 — Q1 FY2027 earnings May 21 is the key binary; Guggenheim raised target to $137; Walton selling and tariff exposure are the live headwinds.
+- [tickers/WMT/technicals.md](tickers/WMT/technicals.md) — last_updated 2026-04-29 — ADX below 25, failed breakout at $129, hourly EMAs in downtrend — no swing setup on either April run.
+- [tickers/WMT/thesis.md](tickers/WMT/thesis.md) — last_updated 2026-04-29 — WMT is a defensive compounder — consumer trade-down and e-commerce growth drive the bull; an absurdly rich valuation (52x P/E) and Walton insider selling cap the upside.
+- [tickers/WMT/trades.md](tickers/WMT/trades.md) — last_updated 2026-04-29 — No trades executed in WMT — both swing runs issued hold decisions due to weak trend (ADX < 25) and failed $129 breakout.
+- [tickers/XOM/catalysts.md](tickers/XOM/catalysts.md) — last_updated 2026-04-29 — Iran ceasefire is the dominant catalyst driving XOM lower; Q1 2026 earnings (May 1) is the next binary event
+- [tickers/XOM/technicals.md](tickers/XOM/technicals.md) — last_updated 2026-04-29 — Confirmed daily downtrend with all momentum indicators negative as of mid-April 2026; bearish across all three run dates
+- [tickers/XOM/thesis.md](tickers/XOM/thesis.md) — last_updated 2026-04-29 — XOM is an energy major caught between durable Guyana growth and a geopolitical oil-price premium that is unwinding via ceasefire — net bearish near-term, neutral long-term
+- [tickers/XOM/trades.md](tickers/XOM/trades.md) — last_updated 2026-04-29 — Two short entries recommended by model (Apr 11, Apr 15/17); both resulted in cancelled/abandoned paper orders — no fills, no P&L

@@ -1,0 +1,1639 @@
+[
+  {
+    "scope": "AAPL",
+    "recent_runs": [
+      {
+        "run_id": "wiki_phase1_on",
+        "started_at": "2026-04-29T10:01:23Z",
+        "ended_at": "2026-04-29T10:09:43Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AAPL"
+        ],
+        "status": "completed",
+        "decision_count": 0,
+        "notes": "Phase 1 verification run, completed successfully"
+      },
+      {
+        "run_id": "wiki_phase1_off",
+        "started_at": "2026-04-29T10:00:48Z",
+        "ended_at": "2026-04-29T10:09:43Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AAPL"
+        ],
+        "status": "completed",
+        "decision_count": 0,
+        "notes": "Phase 1 verification run, completed successfully"
+      },
+      {
+        "run_id": "20260417_233350",
+        "started_at": "2026-04-17T23:33:50Z",
+        "ended_at": "2026-04-18T02:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AAPL",
+          "MSFT",
+          "TSLA",
+          "NVDA",
+          "META",
+          "GOOGL",
+          "AMZN",
+          "AMD",
+          "JPM",
+          "GS",
+          "NKE",
+          "XOM",
+          "SPY",
+          "QQQ"
+        ],
+        "status": "completed",
+        "decision_count": 14,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "20260415_093758",
+        "started_at": "2026-04-15T09:37:58Z",
+        "ended_at": "2026-04-15T12:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "NVDA",
+          "GOOG",
+          "TSLA",
+          "JPM",
+          "AAPL",
+          "META"
+        ],
+        "status": "completed",
+        "decision_count": 6,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/AAPL/thesis.md",
+      "wiki/tickers/AAPL/technicals.md",
+      "wiki/tickers/AAPL/catalysts.md",
+      "wiki/tickers/AAPL/trades.md"
+    ]
+  },
+  {
+    "scope": "AMD",
+    "recent_runs": [
+      {
+        "run_id": "20260417_233350",
+        "started_at": "2026-04-17T23:33:50Z",
+        "ended_at": "2026-04-18T02:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AAPL",
+          "MSFT",
+          "TSLA",
+          "NVDA",
+          "META",
+          "GOOGL",
+          "AMZN",
+          "AMD",
+          "JPM",
+          "GS",
+          "NKE",
+          "XOM",
+          "SPY",
+          "QQQ"
+        ],
+        "status": "completed",
+        "decision_count": 14,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "20260415_110848",
+        "started_at": "2026-04-15T11:08:48Z",
+        "ended_at": "2026-04-15T14:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AMD",
+          "MSFT",
+          "AMZN",
+          "BAC",
+          "GS",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "WMT",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 10,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/AMD/thesis.md",
+      "wiki/tickers/AMD/technicals.md",
+      "wiki/tickers/AMD/catalysts.md",
+      "wiki/tickers/AMD/trades.md"
+    ]
+  },
+  {
+    "scope": "AMZN",
+    "recent_runs": [
+      {
+        "run_id": "20260417_233350",
+        "started_at": "2026-04-17T23:33:50Z",
+        "ended_at": "2026-04-18T02:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AAPL",
+          "MSFT",
+          "TSLA",
+          "NVDA",
+          "META",
+          "GOOGL",
+          "AMZN",
+          "AMD",
+          "JPM",
+          "GS",
+          "NKE",
+          "XOM",
+          "SPY",
+          "QQQ"
+        ],
+        "status": "completed",
+        "decision_count": 14,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "20260415_110848",
+        "started_at": "2026-04-15T11:08:48Z",
+        "ended_at": "2026-04-15T14:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AMD",
+          "MSFT",
+          "AMZN",
+          "BAC",
+          "GS",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "WMT",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 10,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/AMZN/thesis.md",
+      "wiki/tickers/AMZN/technicals.md",
+      "wiki/tickers/AMZN/catalysts.md",
+      "wiki/tickers/AMZN/trades.md"
+    ]
+  },
+  {
+    "scope": "BAC",
+    "recent_runs": [
+      {
+        "run_id": "20260415_110848",
+        "started_at": "2026-04-15T11:08:48Z",
+        "ended_at": "2026-04-15T14:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AMD",
+          "MSFT",
+          "AMZN",
+          "BAC",
+          "GS",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "WMT",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 10,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/BAC/thesis.md",
+      "wiki/tickers/BAC/technicals.md",
+      "wiki/tickers/BAC/catalysts.md",
+      "wiki/tickers/BAC/trades.md"
+    ]
+  },
+  {
+    "scope": "CVX",
+    "recent_runs": [
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/CVX/thesis.md",
+      "wiki/tickers/CVX/technicals.md",
+      "wiki/tickers/CVX/catalysts.md",
+      "wiki/tickers/CVX/trades.md"
+    ]
+  },
+  {
+    "scope": "DIS",
+    "recent_runs": [
+      {
+        "run_id": "20260415_110848",
+        "started_at": "2026-04-15T11:08:48Z",
+        "ended_at": "2026-04-15T14:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AMD",
+          "MSFT",
+          "AMZN",
+          "BAC",
+          "GS",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "WMT",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 10,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/DIS/thesis.md",
+      "wiki/tickers/DIS/technicals.md",
+      "wiki/tickers/DIS/catalysts.md",
+      "wiki/tickers/DIS/trades.md"
+    ]
+  },
+  {
+    "scope": "GOOG",
+    "recent_runs": [
+      {
+        "run_id": "20260415_093758",
+        "started_at": "2026-04-15T09:37:58Z",
+        "ended_at": "2026-04-15T12:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "NVDA",
+          "GOOG",
+          "TSLA",
+          "JPM",
+          "AAPL",
+          "META"
+        ],
+        "status": "completed",
+        "decision_count": 6,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/GOOG/thesis.md",
+      "wiki/tickers/GOOG/technicals.md",
+      "wiki/tickers/GOOG/catalysts.md",
+      "wiki/tickers/GOOG/trades.md"
+    ]
+  },
+  {
+    "scope": "GOOGL",
+    "recent_runs": [
+      {
+        "run_id": "20260417_233350",
+        "started_at": "2026-04-17T23:33:50Z",
+        "ended_at": "2026-04-18T02:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AAPL",
+          "MSFT",
+          "TSLA",
+          "NVDA",
+          "META",
+          "GOOGL",
+          "AMZN",
+          "AMD",
+          "JPM",
+          "GS",
+          "NKE",
+          "XOM",
+          "SPY",
+          "QQQ"
+        ],
+        "status": "completed",
+        "decision_count": 14,
+        "notes": "retroactively registered"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/GOOGL/thesis.md",
+      "wiki/tickers/GOOGL/technicals.md",
+      "wiki/tickers/GOOGL/catalysts.md",
+      "wiki/tickers/GOOGL/trades.md"
+    ]
+  },
+  {
+    "scope": "GS",
+    "recent_runs": [
+      {
+        "run_id": "20260417_233350",
+        "started_at": "2026-04-17T23:33:50Z",
+        "ended_at": "2026-04-18T02:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AAPL",
+          "MSFT",
+          "TSLA",
+          "NVDA",
+          "META",
+          "GOOGL",
+          "AMZN",
+          "AMD",
+          "JPM",
+          "GS",
+          "NKE",
+          "XOM",
+          "SPY",
+          "QQQ"
+        ],
+        "status": "completed",
+        "decision_count": 14,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "20260415_110848",
+        "started_at": "2026-04-15T11:08:48Z",
+        "ended_at": "2026-04-15T14:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AMD",
+          "MSFT",
+          "AMZN",
+          "BAC",
+          "GS",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "WMT",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 10,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/GS/thesis.md",
+      "wiki/tickers/GS/technicals.md",
+      "wiki/tickers/GS/catalysts.md",
+      "wiki/tickers/GS/trades.md"
+    ]
+  },
+  {
+    "scope": "IWM",
+    "recent_runs": [
+      {
+        "run_id": "20260415_104041",
+        "started_at": "2026-04-15T10:40:41Z",
+        "ended_at": "2026-04-15T12:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "SPY",
+          "QQQ",
+          "IWM"
+        ],
+        "status": "completed",
+        "decision_count": 3,
+        "notes": "retroactively registered"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/IWM/thesis.md",
+      "wiki/tickers/IWM/technicals.md",
+      "wiki/tickers/IWM/catalysts.md",
+      "wiki/tickers/IWM/trades.md"
+    ]
+  },
+  {
+    "scope": "JNJ",
+    "recent_runs": [
+      {
+        "run_id": "20260415_110848",
+        "started_at": "2026-04-15T11:08:48Z",
+        "ended_at": "2026-04-15T14:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AMD",
+          "MSFT",
+          "AMZN",
+          "BAC",
+          "GS",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "WMT",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 10,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/JNJ/thesis.md",
+      "wiki/tickers/JNJ/technicals.md",
+      "wiki/tickers/JNJ/catalysts.md",
+      "wiki/tickers/JNJ/trades.md"
+    ]
+  },
+  {
+    "scope": "JPM",
+    "recent_runs": [
+      {
+        "run_id": "20260417_233350",
+        "started_at": "2026-04-17T23:33:50Z",
+        "ended_at": "2026-04-18T02:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AAPL",
+          "MSFT",
+          "TSLA",
+          "NVDA",
+          "META",
+          "GOOGL",
+          "AMZN",
+          "AMD",
+          "JPM",
+          "GS",
+          "NKE",
+          "XOM",
+          "SPY",
+          "QQQ"
+        ],
+        "status": "completed",
+        "decision_count": 14,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "20260415_093758",
+        "started_at": "2026-04-15T09:37:58Z",
+        "ended_at": "2026-04-15T12:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "NVDA",
+          "GOOG",
+          "TSLA",
+          "JPM",
+          "AAPL",
+          "META"
+        ],
+        "status": "completed",
+        "decision_count": 6,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/JPM/thesis.md",
+      "wiki/tickers/JPM/technicals.md",
+      "wiki/tickers/JPM/catalysts.md",
+      "wiki/tickers/JPM/trades.md"
+    ]
+  },
+  {
+    "scope": "META",
+    "recent_runs": [
+      {
+        "run_id": "20260417_233350",
+        "started_at": "2026-04-17T23:33:50Z",
+        "ended_at": "2026-04-18T02:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AAPL",
+          "MSFT",
+          "TSLA",
+          "NVDA",
+          "META",
+          "GOOGL",
+          "AMZN",
+          "AMD",
+          "JPM",
+          "GS",
+          "NKE",
+          "XOM",
+          "SPY",
+          "QQQ"
+        ],
+        "status": "completed",
+        "decision_count": 14,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "20260415_093758",
+        "started_at": "2026-04-15T09:37:58Z",
+        "ended_at": "2026-04-15T12:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "NVDA",
+          "GOOG",
+          "TSLA",
+          "JPM",
+          "AAPL",
+          "META"
+        ],
+        "status": "completed",
+        "decision_count": 6,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/META/thesis.md",
+      "wiki/tickers/META/technicals.md",
+      "wiki/tickers/META/catalysts.md",
+      "wiki/tickers/META/trades.md"
+    ]
+  },
+  {
+    "scope": "MSFT",
+    "recent_runs": [
+      {
+        "run_id": "20260417_233350",
+        "started_at": "2026-04-17T23:33:50Z",
+        "ended_at": "2026-04-18T02:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AAPL",
+          "MSFT",
+          "TSLA",
+          "NVDA",
+          "META",
+          "GOOGL",
+          "AMZN",
+          "AMD",
+          "JPM",
+          "GS",
+          "NKE",
+          "XOM",
+          "SPY",
+          "QQQ"
+        ],
+        "status": "completed",
+        "decision_count": 14,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "20260415_110848",
+        "started_at": "2026-04-15T11:08:48Z",
+        "ended_at": "2026-04-15T14:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AMD",
+          "MSFT",
+          "AMZN",
+          "BAC",
+          "GS",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "WMT",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 10,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/MSFT/thesis.md",
+      "wiki/tickers/MSFT/technicals.md",
+      "wiki/tickers/MSFT/catalysts.md",
+      "wiki/tickers/MSFT/trades.md"
+    ]
+  },
+  {
+    "scope": "NKE",
+    "recent_runs": [
+      {
+        "run_id": "20260417_233350",
+        "started_at": "2026-04-17T23:33:50Z",
+        "ended_at": "2026-04-18T02:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AAPL",
+          "MSFT",
+          "TSLA",
+          "NVDA",
+          "META",
+          "GOOGL",
+          "AMZN",
+          "AMD",
+          "JPM",
+          "GS",
+          "NKE",
+          "XOM",
+          "SPY",
+          "QQQ"
+        ],
+        "status": "completed",
+        "decision_count": 14,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/NKE/thesis.md",
+      "wiki/tickers/NKE/technicals.md",
+      "wiki/tickers/NKE/catalysts.md",
+      "wiki/tickers/NKE/trades.md"
+    ]
+  },
+  {
+    "scope": "NVDA",
+    "recent_runs": [
+      {
+        "run_id": "sanity_20260429_031705",
+        "started_at": "2026-04-29T10:17:11Z",
+        "ended_at": "2026-04-29T11:24:19Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "NVDA"
+        ],
+        "status": "completed",
+        "decision_count": 0,
+        "notes": ""
+      },
+      {
+        "run_id": "validation_20260427_113014",
+        "started_at": "2026-04-27T18:30:14Z",
+        "ended_at": "2026-04-27T18:47:02Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "NVDA"
+        ],
+        "status": "completed",
+        "decision_count": 1,
+        "notes": ""
+      },
+      {
+        "run_id": "20260417_233350",
+        "started_at": "2026-04-17T23:33:50Z",
+        "ended_at": "2026-04-18T02:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AAPL",
+          "MSFT",
+          "TSLA",
+          "NVDA",
+          "META",
+          "GOOGL",
+          "AMZN",
+          "AMD",
+          "JPM",
+          "GS",
+          "NKE",
+          "XOM",
+          "SPY",
+          "QQQ"
+        ],
+        "status": "completed",
+        "decision_count": 14,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "20260415_093758",
+        "started_at": "2026-04-15T09:37:58Z",
+        "ended_at": "2026-04-15T12:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "NVDA",
+          "GOOG",
+          "TSLA",
+          "JPM",
+          "AAPL",
+          "META"
+        ],
+        "status": "completed",
+        "decision_count": 6,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/NVDA/thesis.md",
+      "wiki/tickers/NVDA/technicals.md",
+      "wiki/tickers/NVDA/catalysts.md",
+      "wiki/tickers/NVDA/trades.md"
+    ]
+  },
+  {
+    "scope": "PFE",
+    "recent_runs": [
+      {
+        "run_id": "20260415_110848",
+        "started_at": "2026-04-15T11:08:48Z",
+        "ended_at": "2026-04-15T14:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AMD",
+          "MSFT",
+          "AMZN",
+          "BAC",
+          "GS",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "WMT",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 10,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/PFE/thesis.md",
+      "wiki/tickers/PFE/technicals.md",
+      "wiki/tickers/PFE/catalysts.md",
+      "wiki/tickers/PFE/trades.md"
+    ]
+  },
+  {
+    "scope": "QQQ",
+    "recent_runs": [
+      {
+        "run_id": "20260417_233350",
+        "started_at": "2026-04-17T23:33:50Z",
+        "ended_at": "2026-04-18T02:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AAPL",
+          "MSFT",
+          "TSLA",
+          "NVDA",
+          "META",
+          "GOOGL",
+          "AMZN",
+          "AMD",
+          "JPM",
+          "GS",
+          "NKE",
+          "XOM",
+          "SPY",
+          "QQQ"
+        ],
+        "status": "completed",
+        "decision_count": 14,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "20260415_104041",
+        "started_at": "2026-04-15T10:40:41Z",
+        "ended_at": "2026-04-15T12:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "SPY",
+          "QQQ",
+          "IWM"
+        ],
+        "status": "completed",
+        "decision_count": 3,
+        "notes": "retroactively registered"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/QQQ/thesis.md",
+      "wiki/tickers/QQQ/technicals.md",
+      "wiki/tickers/QQQ/catalysts.md",
+      "wiki/tickers/QQQ/trades.md"
+    ]
+  },
+  {
+    "scope": "SPY",
+    "recent_runs": [
+      {
+        "run_id": "20260417_233350",
+        "started_at": "2026-04-17T23:33:50Z",
+        "ended_at": "2026-04-18T02:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AAPL",
+          "MSFT",
+          "TSLA",
+          "NVDA",
+          "META",
+          "GOOGL",
+          "AMZN",
+          "AMD",
+          "JPM",
+          "GS",
+          "NKE",
+          "XOM",
+          "SPY",
+          "QQQ"
+        ],
+        "status": "completed",
+        "decision_count": 14,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "20260415_104041",
+        "started_at": "2026-04-15T10:40:41Z",
+        "ended_at": "2026-04-15T12:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "SPY",
+          "QQQ",
+          "IWM"
+        ],
+        "status": "completed",
+        "decision_count": 3,
+        "notes": "retroactively registered"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/SPY/thesis.md",
+      "wiki/tickers/SPY/technicals.md",
+      "wiki/tickers/SPY/catalysts.md",
+      "wiki/tickers/SPY/trades.md"
+    ]
+  },
+  {
+    "scope": "TSLA",
+    "recent_runs": [
+      {
+        "run_id": "20260417_233350",
+        "started_at": "2026-04-17T23:33:50Z",
+        "ended_at": "2026-04-18T02:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AAPL",
+          "MSFT",
+          "TSLA",
+          "NVDA",
+          "META",
+          "GOOGL",
+          "AMZN",
+          "AMD",
+          "JPM",
+          "GS",
+          "NKE",
+          "XOM",
+          "SPY",
+          "QQQ"
+        ],
+        "status": "completed",
+        "decision_count": 14,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "20260415_093758",
+        "started_at": "2026-04-15T09:37:58Z",
+        "ended_at": "2026-04-15T12:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "NVDA",
+          "GOOG",
+          "TSLA",
+          "JPM",
+          "AAPL",
+          "META"
+        ],
+        "status": "completed",
+        "decision_count": 6,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/TSLA/thesis.md",
+      "wiki/tickers/TSLA/technicals.md",
+      "wiki/tickers/TSLA/catalysts.md",
+      "wiki/tickers/TSLA/trades.md"
+    ]
+  },
+  {
+    "scope": "UNH",
+    "recent_runs": [
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/UNH/thesis.md",
+      "wiki/tickers/UNH/technicals.md",
+      "wiki/tickers/UNH/catalysts.md",
+      "wiki/tickers/UNH/trades.md"
+    ]
+  },
+  {
+    "scope": "WMT",
+    "recent_runs": [
+      {
+        "run_id": "20260415_110848",
+        "started_at": "2026-04-15T11:08:48Z",
+        "ended_at": "2026-04-15T14:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AMD",
+          "MSFT",
+          "AMZN",
+          "BAC",
+          "GS",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "WMT",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 10,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/WMT/thesis.md",
+      "wiki/tickers/WMT/technicals.md",
+      "wiki/tickers/WMT/catalysts.md",
+      "wiki/tickers/WMT/trades.md"
+    ]
+  },
+  {
+    "scope": "XOM",
+    "recent_runs": [
+      {
+        "run_id": "20260417_233350",
+        "started_at": "2026-04-17T23:33:50Z",
+        "ended_at": "2026-04-18T02:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AAPL",
+          "MSFT",
+          "TSLA",
+          "NVDA",
+          "META",
+          "GOOGL",
+          "AMZN",
+          "AMD",
+          "JPM",
+          "GS",
+          "NKE",
+          "XOM",
+          "SPY",
+          "QQQ"
+        ],
+        "status": "completed",
+        "decision_count": 14,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "20260415_110848",
+        "started_at": "2026-04-15T11:08:48Z",
+        "ended_at": "2026-04-15T14:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "AMD",
+          "MSFT",
+          "AMZN",
+          "BAC",
+          "GS",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "WMT",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 10,
+        "notes": "retroactively registered"
+      },
+      {
+        "run_id": "swing_20260411_211655",
+        "started_at": "2026-04-11T21:16:55Z",
+        "ended_at": "2026-04-12T01:00:00Z",
+        "mode": "swing",
+        "asset_type": "stock",
+        "tickers": [
+          "TSLA",
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "META",
+          "MSFT",
+          "GOOG",
+          "AMZN",
+          "JPM",
+          "BAC",
+          "GS",
+          "UNH",
+          "JNJ",
+          "PFE",
+          "XOM",
+          "CVX",
+          "WMT",
+          "NKE",
+          "DIS"
+        ],
+        "status": "completed",
+        "decision_count": 19,
+        "notes": "retroactively registered \u2014 full watchlist run"
+      }
+    ],
+    "expected_pages": [
+      "wiki/tickers/XOM/thesis.md",
+      "wiki/tickers/XOM/technicals.md",
+      "wiki/tickers/XOM/catalysts.md",
+      "wiki/tickers/XOM/trades.md"
+    ]
+  },
+  {
+    "scope": "MACRO",
+    "expected_pages": [
+      "wiki/macro/regime.md"
+    ]
+  }
+]
