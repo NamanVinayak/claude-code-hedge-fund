@@ -1,20 +1,22 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.
 
 ## What this project is
 
 A zero-cost re-implementation of [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund).
 Instead of paid LLM APIs and a paid data API, it uses:
-- **Claude Code subagents** as the LLM (each investor persona = one Agent tool call)
+- **Codex subagents** as the LLM (each investor persona = one Agent tool call)
 - **yfinance** + **SEC EDGAR companyfacts** + **Finnhub free tier** for all financial data
 
 The reference upstream repo lives at `reference/ai-hedge-fund/` (read-only clone). All business logic is copied verbatim from there — never rewritten.
 
+> **Model policy (2026-04-27, Sin #20 fix):** All subagent Agent tool dispatches pin `model: sonnet`. Orchestrator model is set per-routine at claude.ai.
+
 ## Running the hedge fund
 
 When the user says "run the hedge fund on AAPL, MSFT", follow **RUN_PLAYBOOK.md** exactly.
-A Claude Code skill is also available: `/hedge-fund [--mode invest|swing|daytrade|research] AAPL,MSFT`
+A Codex skill is also available: `/hedge-fund [--mode invest|swing|daytrade|research] AAPL,MSFT`
 
 Quick reference:
 ```bash
@@ -60,12 +62,10 @@ All modes follow the same architecture: **multiple diverse opinions → synthesi
 - **Day-trade**: 9 intraday strategies (VWAP, opening range, momentum, etc.) → Head Day Trader synthesizes → DT PM decides
 - **Research**: All 30+ agents analyze → Research Report Writer compiles balanced report (no recommendation)
 
-> **Model policy (2026-04-27, Sin #20 fix):** All subagent dispatches pin `model: sonnet`. Orchestrator model is set per-routine at claude.ai. Do not use `model: haiku` in any Agent tool call in this project.
-
 ## Architecture
 
 ```
-Claude Code (orchestrator)
+Codex (orchestrator)
 ├── python -m ai_hedge.runner.prepare   → fetches data + runs facts_builder(s)
 ├── Agent × N (mode-dependent)          → each reads facts + prompt, writes signal JSON
 ├── [Agent × 1 Head Trader]             → swing/daytrade only: synthesizes strategy signals
@@ -98,7 +98,12 @@ Claude Code (orchestrator)
 | `ai_hedge/data/providers/` | yfinance (daily + intraday), SEC EDGAR, Finnhub providers |
 | `ai_hedge/data/providers/yfinance_intraday.py` | Intraday price data (1m/5m/15m/1h) via yfinance |
 | `ai_hedge/data/indicators.py` | pandas_ta technical indicators (RSI, MACD, Bollinger, VWAP, STC, Squeeze, SuperTrend, etc.) |
-| `ai_hedge/personas/helpers.py` | 79 deterministic helper functions (partially adapted from upstream virattt/ai-hedge-fund — NOT a verbatim copy; do not assume upstream improvements land automatically) |
+| `ai_hedge/personas/helpers.py` | 79 deterministic helper functions (partially adapted from upstream — NOT verbatim; see drift note below) |
+| `ai_hedge/data/earnings_calendar.py` | yfinance-backed earnings dates with 24h cache; powers risk_manager earnings blackout (Apr 2026) |
+| `ai_hedge/runner/run_index.py` | Append-only `runs/index.json` master list of every run (Apr 2026) |
+| `tracker/spy_benchmark.py` | "You vs SPY" benchmark used in audit + dashboard reports (Apr 2026) |
+| `scripts/architecture_audit.md` | 18-sin audit + solutions doc — read alongside this file (Apr 2026) |
+| `scripts/check_docs_drift.py` | CI check that fails if this doc disagrees with code (Apr 2026) |
 | `ai_hedge/personas/facts_builder.py` | Invest-mode facts: runs helpers for each persona × ticker |
 | `ai_hedge/personas/swing_facts_builder.py` | Swing-mode facts: daily + hourly indicators for swing strategies |
 | `ai_hedge/personas/dt_facts_builder.py` | Day-trade facts: intraday data (1mo of 5m bars) + indicators for DT strategies |
@@ -115,7 +120,7 @@ Claude Code (orchestrator)
 
 ### New agents (beyond upstream)
 
-**Swing strategies** (5): swing_trend_momentum, swing_mean_reversion, swing_breakout, swing_catalyst_news, swing_macro_context. Each owns a genuinely distinct angle — no overlap. Old 9-agent set archived at `ai_hedge/personas/prompts/_archive/` (Apr 2026, Sin #3 fix).
+**Swing strategies** (5): swing_trend_momentum, swing_mean_reversion, swing_breakout, swing_catalyst_news, swing_macro_context. Each owns a distinct non-overlapping angle (Apr 2026, Sin #3 fix). Old 9-agent set archived at `ai_hedge/personas/prompts/_archive/`.
 
 **Day-trade strategies** (9): dt_vwap_trader, dt_momentum_scalper, dt_mean_reversion, dt_breakout_hunter, dt_gap_analyst, dt_volume_profiler, dt_pattern_reader, dt_stat_arb, dt_news_catalyst.
 
@@ -128,51 +133,11 @@ Claude Code (orchestrator)
 - **Intraday prices**: `get_intraday_prices()` in api.py fetches 1m/5m/15m/1h candles via yfinance
 - **`intraday_to_df()`**: Converts intraday prices to pandas DataFrame
 - **`indicators.py`**: pandas_ta-based technical indicators (RSI, MACD, Bollinger Bands, VWAP, ATR, OBV, Stochastic, STC, Squeeze Momentum, SuperTrend, etc.)
-- **`earnings_calendar.py`** (Apr 2026): `days_until_next_earnings(ticker)` — yfinance-backed; cached 24h. Crypto tickers return None. Used by `risk_manager.py` to enforce a 3-trading-day blackout (`EARNINGS_BLACKOUT_DAYS`).
-- **`runner/run_index.py`** (Apr 2026): single source of truth for all runs at `runs/index.json`. `prepare.py` opens an entry on start, `finalize.py` closes it with status + decision count. Use this instead of walking `runs/*/metadata.json`.
-- **`tracker/spy_benchmark.py`** (Apr 2026): `compute_spy_benchmark()` + `format_headline()` — used by `swing_audit.py` and `tracker/backtest.py` to print "you vs SPY" comparison atop every report.
-
-### Architectural audit + Wave-1/2 fixes (Apr 2026)
-
-The codebase had 18 confirmed architectural issues, captured in **`scripts/architecture_audit.md`**. Anyone reading this file should also read that one — it explains *why* recent changes were made.
-
-Already shipped (Wave 1 + most of Wave 2):
-- **Cache TTL** (`ai_hedge/data/cache.py`) — per-entry expiry, no more stale prices.
-- **Run index** (`runs/index.json`) — see above.
-- **Silent-failure detection** (`aggregate.py`) — `_expected_agents()` enumerates required signal files per mode; missing ones log a warning AND get written into `signals_combined.json` as `degraded_inputs` so the head trader sees the gap honestly.
-- **Doc-drift CI** (`scripts/check_docs_drift.py`) — counts helpers + agents and fails if this file disagrees with code. Run before commit.
-- **PM portfolio state** — `aggregate.py` now reads open positions from `tracker.db` and `crypto_tracker.db` and injects them into `state["data"]["portfolio"]`. The PM sees `positions` (analyzed tickers, lot-aggregated, share-weighted cost basis), `other_positions` (open positions in tickers NOT analyzed), and `cash` already net of open exposure. `compute_allowed_actions()` blocks same-direction stacking via the new `current_positions` kwarg. All 5 PM prompts (`swing_portfolio_manager.md`, `portfolio_manager.md`, `dt_portfolio_manager.md`, `crypto_swing_pm.md`, `crypto_dt_pm.md`) have a "Current portfolio state" section instructing the PM to treat open positions as immutable for entry.
-- **Earnings blackout** — `risk_manager.py` rejects any candidate with earnings within 3 days; logs `[earnings blackout] AAPL skipped — earnings in 3 days`.
-- **Correlation cap** — `risk_manager.py` constants `MAX_CORRELATION_THRESHOLD = 0.7`, `MAX_CLUSTER_EXPOSURE_PCT = 0.30`. Per-candidate rejection (correlation_blocked field in output) AND single-linkage cluster cap. Existing positions never dropped; new candidates can be force-rejected when a cluster would exceed 30%.
-- **SPY benchmark** — every audit report now leads with "Performance vs SPY: ..."
-
-Pending (Wave 3, not yet shipped):
-- Sin #2: split routines smaller / drop weekday-2x cron → 1x
-- Sin #4: deterministic screener tier — most days no LLM cost
-- Sin #8: fact-bundle dedup (RE-SCOPED — was prompt caching, but project doesn't call Anthropic SDK directly; real cost win is shared common context per ticker)
-- Sin #11: confidence calibration (defer until 50+ closed trades)
-- Sin #15: per-run timeout/budget
-- Sin #16: stop management (trailing / breakeven / time-based exits)
-- Sin #19: Claude Routines reliability — 8 known Anthropic-side bugs cited in audit doc; hybrid "stay subscription, optionally migrate prod to Sonnet API" path being evaluated.
-
-### Live dashboard (planned, not built)
-
-A live web dashboard reading `tracker.db` + `crypto_tracker.db` + `runs/index.json` is the eventual UI for this project. The 18-sin remediation work is foundational for it: the dashboard reads structured data, so the data must be honest first. **Don't build the dashboard until Wave 3 lands** — building it on top of broken portfolio state would mean rebuilding it.
-
-Target shape: Flask single-file app, server-rendered HTMX polling, hosted free (GitHub Actions cron commits the DB; Vercel/Cloudflare Pages serves the read-only view). Public-share mode optional (Cloudflare tunnel). Open positions, pending orders, closed trades, P&L vs SPY, win rate per source. See architecture_audit.md "What this audit does NOT solve" for the full scope.
 
 ### Multi-timeframe analysis
 
 - **Swing mode**: Facts bundles include both `daily_indicators` and `hourly_indicators`. Hourly indicators are computed from 1 month of 1H bars using the same `compute_daily_indicators()` function (all indicators are bar-based). This enables divergence detection (e.g., daily RSI overbought but hourly RSI neutral) and finer-grained entry timing.
 - **Daytrade mode**: Intraday data extended from 5 days to ~22 trading days (`period="1mo"`) for deeper indicator history on 5-minute bars.
-
-### Wiki memory layer (Phase 1, feature-flagged OFF by default)
-
-- **Purpose:** persistent per-ticker thesis/catalyst/technicals/trades notes under `wiki/`, injected as `wiki_context` into swing facts bundles so the head trader sees prior history across runs (cross-run memory, not just in-run portfolio state).
-- **Gate:** `tracker/watchlist.json:settings.wiki_enabled` (currently `false`). When off, `prepare.py` logs `"Wiki memory disabled..."` and skips injection. When on, `inject_context()` writes wiki snippets into each swing facts bundle.
-- **Bootstrap:** `scripts/wiki_bootstrap.py` populated 96 pages across 23 tickers (committed in `83e4674`).
-- **Maintenance (Phase 2):** `scripts/wiki_compactor.py` is the curator/compactor invoked by the `wiki_maintenance` skill in `.agents/skills/wiki_maintenance/`.
-- **summary.json:** `finalize.py` now also writes `runs/<id>/summary.json` for the planned dashboard layer.
 
 ### holding_period and duration fields
 
@@ -189,6 +154,18 @@ The original intent was to copy upstream business logic letter-for-letter. In pr
 Going forward: when fixing a bug or behavioral difference, prefer reading the actual local code over re-copying from `reference/`. Use `reference/` as inspiration, not as ground truth.
 
 The `holding_period`/`duration` fields are additive extensions on top of the original upstream logic.
+
+### Architectural fixes shipped Apr 2026 (read scripts/architecture_audit.md)
+
+PM portfolio state (sins #1+#5), earnings blackout (#9), correlation cap (#10), cache TTL (#6), run index (#12), explicit expected_agents (#13), web research raw save (#7), SPY benchmark (#17), CLAUDE.md drift CI (#14/#18), swing 9→5 agent collapse (#3), and head-trader Pydantic guard + sonnet model pin (#20) all landed. Pending: routine split, deterministic screener tier, fact-bundle dedup. Full list and rationale: `scripts/architecture_audit.md`.
+
+### Wiki memory layer (Phase 1, feature-flagged OFF by default)
+
+Cross-run memory beyond in-run portfolio state. Per-ticker thesis/catalysts/technicals/trades pages live under `wiki/`. `prepare.py` calls `ai_hedge.wiki.inject.inject_context()` which is a no-op unless `tracker/watchlist.json:settings.wiki_enabled=true`. Bootstrap (96 pages across 23 tickers) committed in `83e4674`. Compactor at `scripts/wiki_compactor.py` runs via the `wiki_maintenance` skill.
+
+### Crypto code archive
+
+Crypto code (tracker, skills, prompts) is quarantined under `.archive/crypto/` — see `.archive/crypto/README.md` for restore instructions.
 
 ### Duplicate function rename map
 
@@ -262,8 +239,13 @@ open opend/OpenD.app
 
 ### Tracker module (`tracker/` at project root)
 
+> **IMPORTANT**: Before any trading-related conversation, read `tracker/TRADING_LOG.md` first.
+> It contains the full history of every trade, position, run, known bugs, and lessons learned.
+> This file is the single source of truth for trading context across conversations.
+
 ```
 tracker/
+├── TRADING_LOG.md     — ⭐ Persistent trading journal (READ THIS FIRST for any trade context)
 ├── db.py              — SQLAlchemy models (Trade, DailySummary), get_available_cash()
 ├── moomoo_client.py   — MoomooClient wrapper (place_entry/stop/target, cancel, positions)
 ├── executor.py        — reads decisions.json → places Moomoo paper orders
@@ -300,66 +282,11 @@ Reads `tracker/watchlist.json` for schedule. `--force` runs all schedules regard
 - Default $100,000 for regular users, $5,000 for our paper trading test
 - Max 25% of capital per position, max 8 concurrent trades
 
-## Crypto Code Archive
-
-**QUARANTINED** (Apr 2026) — crypto code has been moved to `.archive/crypto/`.
-
-To restore: see `.archive/crypto/README.md`
-
-## Stock Tracker
-
-### Slash commands
-
-| Command | Purpose |
-|---------|---------|
-| `/invest AAPL,MSFT` | Long-term portfolio decisions |
-| `/swing TSLA,NVDA` | Swing trade setups (2-20 days) |
-| `/daytrade SPY` | Intraday trade plan |
-| `/research NVDA` | Comprehensive research report |
-| `/autorun` | Daily stock routine |
-
-### Tracker module (`tracker/` at project root)
-
-> **IMPORTANT**: Before any trading-related conversation, read `tracker/TRADING_LOG.md` first.
-> It contains the full history of every trade, position, run, known bugs, and lessons learned.
-> This file is the single source of truth for trading context across conversations.
-
-```
-tracker/
-├── TRADING_LOG.md     — Persistent trading journal (READ THIS FIRST for any trade context)
-├── db.py              — SQLAlchemy models (Trade, DailySummary), get_available_cash()
-├── moomoo_client.py   — MoomooClient wrapper (place_entry/stop/target, cancel, positions)
-├── executor.py        — reads decisions.json → places Moomoo paper orders
-├── monitor.py         — syncs fills, manages stops/targets, handles expiry
-├── reporter.py        — accuracy dashboard (hit rate, P&L, per-mode, confidence calibration)
-├── cli.py             — unified CLI
-├── watchlist.json     — tickers, modes, schedule, budget config
-└── tracker.db         — SQLite trade history (in .gitignore)
-```
-
-### Commands
-
-```bash
-python -m tracker execute --run-id RUN_ID    # place orders from a model run
-python -m tracker monitor                     # sync fills, manage positions
-python -m tracker report [--last N] [--mode M]  # accuracy dashboard
-python -m tracker status                      # show open positions
-python -m tracker cash                        # show available capital
-```
-
-### Budget system
-
-- Budget tracked in our DB, not Moomoo (Moomoo has $2M, we enforce our own limit)
-- `available_cash = paper_account_size + realized_P&L - open_exposure`
-- `--cash` flag flows through SKILL.md → aggregate → PM prompt
-- Default $100,000 for regular users, $5,000 for our paper trading test
-- Max 25% of capital per position, max 8 concurrent trades
-
 ## Environment
 
 - Python 3.14, venv at `.venv/`
 - Package installed editable: `import ai_hedge` works from any directory
-- `.env` file holds `FINNHUB_API_KEY` (optional) and `COINGECKO_API_KEY` (for crypto sentiment)
+- `.env` file holds `FINNHUB_API_KEY` (optional — system works without it, just loses insider/news data)
 - SQLite cache at `ai_hedge/data/cache.py` (sqlalchemy) — speeds up repeated API calls
 
 ## Smoke tests
@@ -381,33 +308,3 @@ python -m tracker cash                        # show available capital
 .venv/bin/python -m ai_hedge.runner.prepare --help
 .venv/bin/python -m ai_hedge.runner.aggregate --help
 ```
-
-## graphify
-
-This project has a graphify knowledge graph at graphify-out/. The Python package is **`graphifyy`** (double-y) on PyPI — installed into the project's `.venv/` (Apr 2026). The CLI is also available at `~/.local/bin/graphify` via pipx.
-
-Rules:
-- Before answering architecture or codebase questions, read graphify-out/GRAPH_REPORT.md for god nodes and community structure
-- If graphify-out/wiki/index.md exists, navigate it instead of reading raw files
-- After modifying code files in this session, run **`.venv/bin/python -c "from graphify.watch import _rebuild_code; from pathlib import Path; _rebuild_code(Path('.'))"`** to keep the graph current. Use the venv path explicitly because `python3` may not have graphifyy installed.
-- The HTML viz step may print "Graph has N nodes — too large for HTML viz" and exit non-zero on the viz step only — that's fine, the graph.json + GRAPH_REPORT.md still get refreshed. Add `--no-viz` if calling the CLI directly.
-- If graphify is missing, reinstall with `.venv/bin/pip install graphifyy`.
-
-## Daily Accuracy Check (Session Start)
-
-When the user opens a new session, automatically run the swing trade backtest and report a plain-English portfolio summary:
-
-```bash
-.venv/bin/python tracker/backtest.py
-```
-
-Report in one short paragraph: how many trades are open, net P&L (realized + unrealized), entry hit rate, and win rate. Format like a Wealthsimple dashboard — "You're up $X / down $X across N open trades. Win rate Y%, entry hit rate Z%." Do this before anything else in the conversation.
-
-- Predictions file: `tracker/swing_predictions.json` — append new run predictions here after each swing run
-- Backtest script: `tracker/backtest.py`
-- Venv: `.venv/bin/python`
-- Focus mode: **swing** is the primary mode being tracked for accuracy
-
----
-
-_Doc cross-checked against code on **2026-04-27**. The CI script `scripts/check_docs_drift.py` fails the build when key counts here diverge from code. Re-run it (or wait for the pre-commit hook) after structural changes._

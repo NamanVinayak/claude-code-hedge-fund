@@ -32,9 +32,55 @@ This command:
 
 ---
 
+## STEP 2.5 — Web Research Agent
+
+Dispatch one Agent tool call **per ticker** (can be parallel if multiple tickers), using `model: sonnet`:
+
+```
+You are the Web Research Agent.
+
+1. Read your system prompt from: ai_hedge/personas/prompts/web_researcher.md
+2. For ticker {TICKER}, use WebSearch to research:
+   - Current macro market conditions (search: "stock market news today", "Federal Reserve latest decision", "geopolitical news affecting stock market")
+   - Ticker-specific news (search: "{TICKER} news this week", "{TICKER} analyst rating upgrade downgrade")
+   - Analyst consensus (search: "{TICKER} price target analyst consensus")
+   - Earnings info (search: "{TICKER} next earnings date estimate")
+   - Competitor activity (search: "{TICKER} competitors news")
+3. Write your research to: runs/{RUN_ID}/web_research/{TICKER}.json
+
+Follow the JSON format in your system prompt exactly.
+```
+
+After web research completes for all tickers, rebuild facts to include web context:
+```bash
+python -m ai_hedge.personas.facts_builder --run-id $RUN_ID --tickers $TICKERS
+```
+
+---
+
+## STEP 2.8 — Web Verification Agent
+
+Dispatch **one** Agent tool call (covers all tickers), using `model: sonnet`:
+
+```
+You are the Data Verification Agent.
+
+1. Read your system prompt from: ai_hedge/personas/prompts/web_verifier.md
+2. For each ticker in [{TICKERS}]:
+   - Read facts bundles from runs/{RUN_ID}/facts/ (check 2-3 persona files per ticker)
+   - Extract key metrics: net_margin, operating_margin, pe_ratio, revenue, market_cap
+   - Use WebSearch to verify each metric (search: "{TICKER} net margin TTM", "{TICKER} PE ratio")
+   - If any metric deviates >20% from web data, update ALL facts bundles for that ticker
+3. Write verification report to: runs/{RUN_ID}/verification/{TICKER}.json for each ticker
+```
+
+---
+
 ## STEP 3 — Dispatch LLM subagents in batches of 4
 
 Dispatch agents **in batches of 4**. Send 4 Agent tool calls in a SINGLE message, wait for all 4 to complete, then send the next batch. Which agents to dispatch depends on mode:
+
+> **Model:** Use `model: sonnet` for ALL persona/strategy agents in this step.
 
 ### Invest mode (14 agents, 4 batches)
 
@@ -74,16 +120,15 @@ Write your output to: runs/{RUN_ID}/signals/{PERSONA}.json
 Use exactly the schema from ai_hedge/schemas.py for this persona.
 ```
 
-### Swing mode (9 agents, 3 batches)
+### Swing mode (5 agents, 2 batches — Sin #3 collapse)
+
+The original 9 swing strategy agents were collapsed to 5 genuinely distinct viewpoints. Old prompts archived at `ai_hedge/personas/prompts/_archive/`. `stanley_druckenmiller` and `news_sentiment` remain in `invest` mode but are no longer dispatched in swing mode.
 
 **Batch 1** (send all 4 in one message, wait for completion):
-`swing_trend_follower`, `swing_pullback_trader`, `swing_breakout_trader`, `swing_momentum_ranker`
+`swing_trend_momentum`, `swing_mean_reversion`, `swing_breakout`, `swing_catalyst_news`
 
 **Batch 2**:
-`swing_mean_reversion`, `swing_catalyst_trader`, `swing_sector_rotation`, `stanley_druckenmiller`
-
-**Batch 3**:
-`news_sentiment`
+`swing_macro_context`
 
 Prompt template for each strategy:
 
@@ -136,20 +181,21 @@ Return a JSON object mapping each ticker to your signal:
 Write your output to: runs/{RUN_ID}/signals/{STRATEGY}.json
 ```
 
-### Research mode (30 agents, 9 batches)
+### Research mode (28 agents, 8 batches)
 
-Dispatch ALL agents from invest + swing + daytrade modes in batches of 4. All 14 invest personas + 7 swing-only strategies + 9 day-trade strategies (30 total). `stanley_druckenmiller` and `news_sentiment` appear in both invest and swing — dispatch each once only (in invest batches).
+Dispatch ALL agents from invest + swing + daytrade modes in batches of 4. All 14 invest personas + 5 swing strategies + 9 day-trade strategies (28 total).
 
 **Batches 1-4**: Same as invest mode batches above.
-**Batch 5**: `swing_trend_follower`, `swing_pullback_trader`, `swing_breakout_trader`, `swing_momentum_ranker`
-**Batch 6**: `swing_mean_reversion`, `swing_catalyst_trader`, `swing_sector_rotation`
-**Batch 7**: `dt_vwap_trader`, `dt_momentum_scalper`, `dt_mean_reversion`, `dt_breakout_hunter`
-**Batch 8**: `dt_gap_analyst`, `dt_volume_profiler`, `dt_pattern_reader`, `dt_stat_arb`
-**Batch 9**: `dt_news_catalyst`
+**Batch 5**: `swing_trend_momentum`, `swing_mean_reversion`, `swing_breakout`, `swing_catalyst_news`
+**Batch 6**: `swing_macro_context`, `dt_vwap_trader`, `dt_momentum_scalper`, `dt_mean_reversion`
+**Batch 7**: `dt_breakout_hunter`, `dt_gap_analyst`, `dt_volume_profiler`, `dt_pattern_reader`
+**Batch 8**: `dt_stat_arb`, `dt_news_catalyst`
 
 ---
 
 ## STEP 4 — Head Trader synthesis (swing and daytrade modes only)
+
+> **Model:** Use `model: sonnet` for the Head Trader agent — synthesis prompts require reliable structured JSON output; Haiku was the root cause of Sin #20 (malformed JSON).
 
 Skip this step for `invest` and `research` modes.
 
@@ -197,6 +243,8 @@ Optional flags:
 ---
 
 ## STEP 6 — Final agent
+
+> **Model:** Use the **default model** (whatever main session is using) for the final agent — this is the highest-stakes decision and benefits from the stronger model.
 
 Dispatch **one** Agent tool call based on mode:
 
@@ -292,11 +340,35 @@ This step runs for ALL modes. The explainer adapts its output based on the mode.
 
 ---
 
+## STEP 7.5 — Wiki Curator (optional, feature-flagged)
+
+**Gated on `tracker/watchlist.json:settings.wiki_enabled` (default `false`).** When the flag is off, skip this step entirely; the wiki is not updated and downstream behavior is unchanged. When on, dispatch **one** Agent tool call (`model: sonnet`) to refresh the per-ticker wiki memory based on this run's signals + decisions:
+
+```
+You are the Wiki Curator agent.
+
+1. Read your system prompt from: ai_hedge/personas/prompts/wiki_curator.md
+2. Read run inputs:
+   - runs/{RUN_ID}/decisions.json
+   - runs/{RUN_ID}/signals_combined.json
+   - runs/{RUN_ID}/explanation.json
+3. For each ticker, read the existing wiki pages from wiki/tickers/{TICKER}/ and update
+   thesis.md, catalysts.md, technicals.md, trades.md to reflect what changed in this run.
+
+Follow the curator prompt exactly — no full rewrites; only the deltas.
+```
+
+The wiki context is read by `prepare.py` on the *next* run via `ai_hedge.wiki.inject.inject_context()` and injected into swing facts bundles, giving the head trader cross-run memory.
+
+---
+
 ## STEP 8 — Display results
 
 ```bash
 python -m ai_hedge.runner.finalize --run-id $RUN_ID
 ```
+
+In addition to printing the explanation + mode-specific results, `finalize.py` writes a structured `runs/$RUN_ID/summary.json` for the (planned) live dashboard layer.
 
 Output varies by mode:
 - **invest**: Action/quantity/confidence per ticker, analyst breakdown, portfolio summary, holding periods
