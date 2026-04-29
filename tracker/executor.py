@@ -1,12 +1,52 @@
 import json
 import os
-from datetime import datetime
-from tracker.db import get_session, Trade, get_available_cash
+from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
+from tracker.db import get_session, Trade, get_available_cash, get_available_cash_for_mode
+
+# Major US market holidays (month, day) — static list, not exhaustive
+US_MARKET_HOLIDAYS_2026 = {
+    (1, 1), (1, 19), (2, 16), (4, 3), (5, 25), (7, 3),
+    (9, 7), (11, 26), (12, 25),
+}
+
+
+def is_market_open():
+    """Check if US stock market is currently open (9:30 AM - 4:00 PM ET, weekdays)."""
+    et = ZoneInfo('America/New_York')
+    now = datetime.now(et)
+
+    # Weekend check
+    if now.weekday() >= 5:
+        return False, f"Weekend ({now.strftime('%A')})"
+
+    # Holiday check (basic)
+    if (now.month, now.day) in US_MARKET_HOLIDAYS_2026:
+        return False, "Market holiday"
+
+    # Hours check
+    market_open = now.replace(hour=9, minute=30, second=0, microsecond=0)
+    market_close = now.replace(hour=16, minute=0, second=0, microsecond=0)
+
+    if now < market_open:
+        return False, f"Pre-market (opens {market_open.strftime('%I:%M %p ET')})"
+    if now >= market_close:
+        return False, "After hours (closed at 4:00 PM ET)"
+
+    return True, "Market is open"
 
 
 def execute_run(run_id):
     """Read decisions.json and place paper trades on Moomoo."""
     from tracker.moomoo_client import MoomooClient
+
+    # Market hours check
+    market_open, reason = is_market_open()
+    if not market_open:
+        print(f"\n⚠️  Market is CLOSED: {reason}")
+        print("   Orders placed now use TimeInForce.DAY and will be cancelled")
+        print("   by Moomoo before next open. Run during market hours (9:30 AM - 4:00 PM ET).")
+        print("   Continuing anyway...\n")
 
     # Load config
     watchlist_path = os.path.join(os.path.dirname(__file__), 'watchlist.json')
@@ -38,14 +78,14 @@ def execute_run(run_id):
         print("No decisions found.")
         return
 
-    # Check available budget
-    available = get_available_cash()
+    # Check available budget (per-mode)
+    available = get_available_cash_for_mode(mode)
     print(f"\n=== Executing {mode} run {run_id} ===")
-    print(f"Available cash: ${available:,.2f}")
+    print(f"Available cash ({mode}): ${available:,.2f}")
 
     # Check concurrent trade limit
     session = get_session()
-    open_count = session.query(Trade).filter(Trade.status.in_(['pending', 'entered'])).count()
+    open_count = session.query(Trade).filter(Trade.mode == mode, Trade.status.in_(['pending', 'entered'])).count()
     if open_count >= max_concurrent:
         print(f"Already at max concurrent trades ({max_concurrent}). Skipping.")
         session.close()

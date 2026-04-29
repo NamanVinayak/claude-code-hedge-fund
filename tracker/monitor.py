@@ -50,14 +50,35 @@ def monitor_positions():
 
         # Process pending trades (waiting for entry fill)
         pending = session.query(Trade).filter(Trade.status == 'pending').all()
+        cancelled_count = 0
         for trade in pending:
             entry_info = order_status.get(trade.entry_order_id, {})
-            if 'FILLED_ALL' in entry_info.get('status', ''):
+            entry_status = entry_info.get('status', '')
+
+            if 'FILLED_ALL' in entry_status:
                 trade.status = 'entered'
                 trade.entry_fill_price = entry_info.get('dealt_avg_price', trade.entry_price)
                 trade.entered_at = datetime.utcnow()
                 print(f"  FILLED: {trade.direction.upper()} {trade.quantity} {trade.ticker} @ ${trade.entry_fill_price:.2f}")
                 session.commit()
+
+            elif ('CANCELLED' in entry_status or 'DELETED' in entry_status
+                  or (trade.entry_order_id and trade.entry_order_id not in order_status)):
+                # Entry order was cancelled by Moomoo (DAY expiry) or no longer exists
+                reason = entry_status if entry_status else "order not found on Moomoo"
+                trade.status = 'cancelled'
+                trade.closed_at = datetime.utcnow()
+                # Cancel associated stop/target orders if they exist
+                if trade.stop_order_id:
+                    client.cancel_order(trade.stop_order_id)
+                if trade.target_order_id:
+                    client.cancel_order(trade.target_order_id)
+                cancelled_count += 1
+                print(f"  CANCELLED: Trade #{trade.id} {trade.ticker} — entry order {reason} (DAY expiry)")
+                session.commit()
+
+        if cancelled_count:
+            print(f"\n  Cleaned up {cancelled_count} stale pending trade(s)")
 
         # Process entered trades (waiting for target/stop/expiry)
         entered = session.query(Trade).filter(Trade.status == 'entered').all()
@@ -96,6 +117,22 @@ def monitor_positions():
                 print(f"  STOP HIT: {trade.ticker} P&L: ${trade.pnl:+.2f}")
                 session.commit()
                 continue
+
+            # Check for cancelled stop/target orders on open positions (DAY expiry)
+            # Position is still open — just warn that protection orders need re-placing
+            stale_orders = []
+            if trade.stop_order_id:
+                stop_status = stop_info.get('status', '')
+                if ('CANCELLED' in stop_status or 'DELETED' in stop_status
+                        or trade.stop_order_id not in order_status):
+                    stale_orders.append('stop')
+            if trade.target_order_id:
+                target_status = target_info.get('status', '')
+                if ('CANCELLED' in target_status or 'DELETED' in target_status
+                        or trade.target_order_id not in order_status):
+                    stale_orders.append('target')
+            if stale_orders:
+                print(f"  ⚠️  {trade.ticker}: {'/'.join(stale_orders)} order(s) cancelled (DAY expiry) — position still open, needs re-placed")
 
             # Expired?
             if trade.entered_at:

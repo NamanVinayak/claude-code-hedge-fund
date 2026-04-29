@@ -1,8 +1,25 @@
 from langchain_core.messages import HumanMessage
 from ai_hedge.data.api import get_prices, prices_to_df, get_current_price
+from ai_hedge.data.earnings_calendar import days_until_next_earnings
 import json
 import numpy as np
 import pandas as pd
+
+# Reject any candidate trade whose next earnings is within this many calendar
+# days. Earnings cause 5–15% overnight moves unrelated to technical analysis,
+# so the system skips trades inside the blackout window. Post-earnings is fine
+# (the move already happened).
+EARNINGS_BLACKOUT_DAYS = 3
+
+# Sin #10 hard correlation cap. The risk_manager already builds a correlation
+# matrix; before this fix it was used only as a soft sizing multiplier, so
+# the PM could go long JPM + BAC + GS + WFC and pretend that was four
+# diversified trades when it was really one bet on banks. Now: any candidate
+# whose absolute correlation with any existing position exceeds the
+# threshold is hard-rejected, and any single correlation cluster is capped
+# at this percent of total portfolio value.
+MAX_CORRELATION_THRESHOLD = 0.7
+MAX_CLUSTER_EXPOSURE_PCT = 0.30
 
 # Stub for compatibility - full AgentState not needed for deterministic agents
 AgentState = dict
@@ -28,7 +45,18 @@ def risk_management_agent(state: AgentState, agent_id: str = "risk_management_ag
     portfolio = state["data"]["portfolio"]
     data = state["data"]
     tickers = data["tickers"]
+    asset_type = data.get("asset_type", "stock")
     api_key = get_api_key_from_state(state, "FINANCIAL_DATASETS_API_KEY")
+
+    # Sin #9: pre-flight earnings blackout. Crypto tickers don't have earnings
+    # so the check is skipped wholesale for them.
+    earnings_blackout: dict[str, int] = {}
+    if asset_type != "crypto":
+        for ticker in tickers:
+            days = days_until_next_earnings(ticker)
+            if days is not None and 0 <= days <= EARNINGS_BLACKOUT_DAYS:
+                earnings_blackout[ticker] = days
+                print(f"[earnings blackout] {ticker} skipped — earnings in {days} days")
 
     # Initialize risk analysis for each ticker
     risk_analysis = {}
@@ -36,8 +64,15 @@ def risk_management_agent(state: AgentState, agent_id: str = "risk_management_ag
     volatility_data = {}  # Store volatility metrics
     returns_by_ticker: dict[str, pd.Series] = {}  # For correlation analysis
 
-    # First, fetch prices and calculate volatility for all relevant tickers
+    # First, fetch prices and calculate volatility for all relevant tickers.
+    # Include open-but-not-analyzed tickers (other_positions) so we can
+    # correlation-check against them — without this, BAC vs JPM would be
+    # invisible whenever JPM isn't in today's run.
     all_tickers = set(tickers) | set(portfolio.get("positions", {}).keys())
+    for _p in portfolio.get("other_positions", []) or []:
+        _tk = (_p.get("ticker") or "").upper()
+        if _tk:
+            all_tickers.add(_tk)
 
     for ticker in all_tickers:
         progress.update_status(agent_id, ticker, "Fetching price data and calculating volatility")
@@ -119,9 +154,110 @@ def risk_management_agent(state: AgentState, agent_id: str = "risk_management_ag
 
     progress.update_status(agent_id, None, f"Total portfolio value: {total_portfolio_value:.2f}")
 
+    # Sin #10: build a single map of every existing-position ticker → dollar
+    # exposure. Used by both the per-candidate correlation rejection and the
+    # cluster-cap pass. Combines analyzed-this-run positions (qty != 0) and
+    # other_positions (open positions in tickers NOT analyzed today).
+    existing_exposures: dict[str, float] = {}
+    for _tk, _pos in portfolio.get("positions", {}).items():
+        _net = float(_pos.get("long", 0) or 0) - float(_pos.get("short", 0) or 0)
+        if _net != 0 and _tk in current_prices and current_prices[_tk] > 0:
+            existing_exposures[_tk] = abs(_net) * current_prices[_tk]
+    for _p in portfolio.get("other_positions", []) or []:
+        _tk = (_p.get("ticker") or "").upper()
+        if not _tk:
+            continue
+        _qty = float(_p.get("quantity", 0) or 0)
+        _fill = float(_p.get("entry_fill_price") or _p.get("entry_price") or 0)
+        # Mark-to-market when we have a current price; fall back to fill price.
+        _px = current_prices.get(_tk) or _fill
+        if _qty > 0 and _px > 0:
+            existing_exposures[_tk] = existing_exposures.get(_tk, 0.0) + _qty * _px
+
+    # Sin #10 per-candidate correlation rejection: any candidate whose
+    # |correlation| with any existing position exceeds MAX_CORRELATION_THRESHOLD
+    # is hard-rejected. Computed up front so the loop just looks it up.
+    correlation_blocked: dict[str, dict] = {}
+    if correlation_matrix is not None:
+        for _t in tickers:
+            if _t in earnings_blackout:
+                continue
+            if _t not in correlation_matrix.columns:
+                continue
+            worst: tuple[str, float, float] | None = None  # (held, abs_corr, raw)
+            for _held in existing_exposures.keys():
+                if _held == _t or _held not in correlation_matrix.columns:
+                    continue
+                try:
+                    _c = correlation_matrix.loc[_t, _held]
+                except KeyError:
+                    continue
+                if pd.isna(_c):
+                    continue
+                _ac = abs(float(_c))
+                if _ac >= MAX_CORRELATION_THRESHOLD and (worst is None or _ac > worst[1]):
+                    worst = (_held, _ac, float(_c))
+            if worst is not None:
+                _held, _ac, _raw = worst
+                correlation_blocked[_t] = {
+                    "blocking_ticker": _held,
+                    "correlation": _raw,
+                    "abs_correlation": _ac,
+                    "threshold": MAX_CORRELATION_THRESHOLD,
+                }
+                print(
+                    f"[correlation cap] {_t} skipped — "
+                    f"{_ac:.2f} correlated with {_held} (already long)"
+                )
+
     # Calculate volatility- and correlation-adjusted risk limits for each ticker
     for ticker in tickers:
         progress.update_status(agent_id, ticker, "Calculating volatility- and correlation-adjusted limits")
+
+        # Sin #9: hard-reject candidates inside the earnings blackout window.
+        if ticker in earnings_blackout:
+            days = earnings_blackout[ticker]
+            risk_analysis[ticker] = {
+                "remaining_position_limit": 0.0,
+                "current_price": float(current_prices.get(ticker, 0.0)),
+                "earnings_blackout": {
+                    "days_to_next_earnings": int(days),
+                    "blackout_window_days": EARNINGS_BLACKOUT_DAYS,
+                },
+                "reasoning": {
+                    "rejected": f"earnings in {days} days",
+                    "earnings_blackout_window": EARNINGS_BLACKOUT_DAYS,
+                },
+            }
+            progress.update_status(agent_id, ticker, f"Rejected: earnings in {days} days")
+            continue
+
+        # Sin #10: hard-reject candidates correlated > threshold with any
+        # existing position. Runs AFTER earnings blackout, BEFORE sizing.
+        if ticker in correlation_blocked:
+            info = correlation_blocked[ticker]
+            risk_analysis[ticker] = {
+                "remaining_position_limit": 0.0,
+                "current_price": float(current_prices.get(ticker, 0.0)),
+                "correlation_blocked": True,
+                "correlation_block_reason": (
+                    f"{info['abs_correlation']*100:.0f}% correlated with "
+                    f"{info['blocking_ticker']}"
+                ),
+                "reasoning": {
+                    "rejected": "correlation cap",
+                    "blocking_ticker": info["blocking_ticker"],
+                    "correlation": info["correlation"],
+                    "abs_correlation": info["abs_correlation"],
+                    "threshold": MAX_CORRELATION_THRESHOLD,
+                },
+            }
+            progress.update_status(
+                agent_id,
+                ticker,
+                f"Rejected: correlated with {info['blocking_ticker']}",
+            )
+            continue
 
         if ticker not in current_prices or current_prices[ticker] <= 0:
             progress.update_status(agent_id, ticker, "Failed: No valid price data")
@@ -216,6 +352,59 @@ def risk_management_agent(state: AgentState, agent_id: str = "risk_management_ag
             ticker,
             f"Adj. limit: {combined_limit_pct:.1%}, Available: ${max_position_size:.0f}"
         )
+
+    # Sin #10 cluster cap: even if no single pair crosses the threshold, a
+    # basket of moderately-correlated tickers can still concentrate risk.
+    # Group existing + accepted candidates into clusters at the threshold;
+    # for any cluster whose total proposed exposure exceeds the cluster cap,
+    # drop the latest accepted candidates until it fits. We never drop
+    # already-filled (existing) positions — those are sunk capital.
+    if correlation_matrix is not None and total_portfolio_value > 0:
+        cluster_cap_dollars = MAX_CLUSTER_EXPOSURE_PCT * total_portfolio_value
+        clusters = _correlation_clusters(correlation_matrix, MAX_CORRELATION_THRESHOLD)
+        # Acceptance order = order of `tickers` argument
+        accepted_candidates = [
+            t for t in tickers
+            if t in risk_analysis
+            and float(risk_analysis[t].get("remaining_position_limit", 0.0)) > 0
+        ]
+        for cluster in clusters:
+            if len(cluster) <= 1:
+                continue
+            existing_in_cluster = sum(
+                existing_exposures.get(t, 0.0) for t in cluster
+            )
+            cluster_candidates = [t for t in accepted_candidates if t in cluster]
+            candidate_exposure = sum(
+                float(risk_analysis[t]["remaining_position_limit"])
+                for t in cluster_candidates
+            )
+            total_cluster_exposure = existing_in_cluster + candidate_exposure
+            if total_cluster_exposure <= cluster_cap_dollars:
+                continue
+            # Drop latest candidates first (LIFO) until cluster fits.
+            for t in reversed(cluster_candidates):
+                if total_cluster_exposure <= cluster_cap_dollars:
+                    break
+                dropped = float(risk_analysis[t]["remaining_position_limit"])
+                risk_analysis[t]["remaining_position_limit"] = 0.0
+                risk_analysis[t]["correlation_blocked"] = True
+                risk_analysis[t]["correlation_block_reason"] = (
+                    f"cluster cap: {sorted(cluster)} exposure "
+                    f"${total_cluster_exposure:,.0f} > "
+                    f"{MAX_CLUSTER_EXPOSURE_PCT*100:.0f}% of "
+                    f"${total_portfolio_value:,.0f}"
+                )
+                _reasoning = risk_analysis[t].setdefault("reasoning", {})
+                _reasoning["cluster_capped"] = True
+                _reasoning["cluster_members"] = sorted(cluster)
+                _reasoning["cluster_cap_pct"] = MAX_CLUSTER_EXPOSURE_PCT
+                _reasoning["cluster_exposure_before_drop"] = float(total_cluster_exposure)
+                total_cluster_exposure -= dropped
+                print(
+                    f"[correlation cap] {t} skipped — cluster cap "
+                    f"({sorted(cluster)}) > {MAX_CLUSTER_EXPOSURE_PCT*100:.0f}%"
+                )
 
     progress.update_status(agent_id, None, "Done")
 
@@ -332,5 +521,56 @@ def calculate_correlation_multiplier(avg_correlation: float) -> float:
     if avg_correlation >= 0.20:
         return 1.05
     return 1.10
+
+def _correlation_clusters(correlation_matrix, threshold: float) -> list[set[str]]:
+    """Group tickers into single-linkage clusters by absolute correlation.
+
+    Two tickers belong to the same cluster iff there exists a chain of
+    pairwise |correlation| >= threshold connections between them. Returns a
+    list of sets, one per connected component. Tickers that don't strongly
+    correlate with anyone come back as singleton clusters. Single-linkage
+    (rather than complete-linkage) is correct here: if A↔B and B↔C are both
+    above the threshold, A and C share a risk factor through B even if their
+    direct correlation is moderate. Concentration risk follows the chain.
+    """
+    if correlation_matrix is None:
+        return []
+    try:
+        empty = correlation_matrix.empty
+    except AttributeError:
+        empty = False
+    if empty:
+        return []
+
+    tickers = list(correlation_matrix.columns)
+    parent = {t: t for t in tickers}
+
+    def find(x: str) -> str:
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    def union(a: str, b: str) -> None:
+        ra, rb = find(a), find(b)
+        if ra != rb:
+            parent[ra] = rb
+
+    for i, a in enumerate(tickers):
+        for b in tickers[i + 1:]:
+            try:
+                c = correlation_matrix.loc[a, b]
+            except KeyError:
+                continue
+            if pd.isna(c):
+                continue
+            if abs(float(c)) >= threshold:
+                union(a, b)
+
+    groups: dict[str, set[str]] = {}
+    for t in tickers:
+        groups.setdefault(find(t), set()).add(t)
+    return list(groups.values())
+
 
 risk_manager_agent = risk_management_agent

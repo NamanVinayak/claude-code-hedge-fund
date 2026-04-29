@@ -53,3 +53,26 @@ Write a JSON file with this exact structure:
 5. For analyst_consensus, use the most recent data you can find
 6. The macro_context section should be the SAME for all tickers in a run (search once, reuse)
 7. Always include the source of key claims
+
+## Reproducibility — save raw search results before processing
+
+For every WebSearch call you make, save the raw, unprocessed result to disk
+BEFORE summarizing. This allows future audits to replay exactly what you saw.
+
+Use the Write tool with this path pattern:
+- Macro searches: `runs/{run_id}/web_research/raw/_macro_{slug}.json`
+- Ticker searches: `runs/{run_id}/web_research/raw/{TICKER}_{slug}.json`
+
+Where `slug` is a short kebab-case label of the query (e.g. `news-this-week`,
+`analyst-rating`, `fed-decision`). Each file contains:
+
+```json
+{
+  "query": "the exact query string you sent to WebSearch",
+  "fetched_at": "ISO-8601 timestamp",
+  "results": [ /* the raw WebSearch result list */ ]
+}
+```
+
+Do this for ALL searches, including macro ones. Only after the raw save
+should you summarize into the structured output above.

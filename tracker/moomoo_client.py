@@ -19,6 +19,19 @@ class MoomooClient:
             raise Exception(f"Entry order failed: {data}")
         return str(data['order_id'].iloc[0])
 
+    def place_market_entry(self, ticker, side, qty):
+        """Place market entry order for immediate fill. side='long' or 'short'."""
+        trd_side = TrdSide.BUY if side == 'long' else TrdSide.SELL
+        ret, data = self.ctx.place_order(
+            price=0, qty=qty, code=f'US.{ticker}',
+            trd_side=trd_side, order_type=OrderType.MARKET,
+            trd_env=TrdEnv.SIMULATE,
+            remark=f'watcher entry {side} {ticker}'
+        )
+        if ret != RET_OK:
+            raise Exception(f"Market entry order failed: {data}")
+        return str(data['order_id'].iloc[0])
+
     def place_stop(self, ticker, side, qty, price):
         """Place stop loss. side is the ENTRY side — stop goes opposite."""
         trd_side = TrdSide.SELL if side == 'long' else TrdSide.BUY
