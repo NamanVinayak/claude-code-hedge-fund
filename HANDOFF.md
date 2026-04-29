@@ -1,6 +1,6 @@
 # HANDOFF — Resume from here
 
-_Last updated: 2026-04-29 (wiki flag flipped ON)_
+_Last updated: 2026-04-29 (wiki flag ON + skill production-ready)_
 
 This file is for resuming work after a conversation compaction or session change. Read this first; it points at the right files for whatever you're picking up.
 
@@ -33,13 +33,16 @@ The swing-stock AI hedge fund is architecturally clean and shipped to GitHub at 
 
 ## Next steps queued (in order)
 
-### 1. Set up 15 routines on claude.ai/code (user, 30-60 min)
+### 1. Re-enable the 15 routines on claude.ai/code (user)
 
-Wiki flag is already ON in git (commit `ed5ebaa`). Routines clone this repo per run, so the flag travels with it.
+15 routines (14 swing + 1 wiki-maintenance) were created via Playwright on 2026-04-29 and PAUSED after the first AMZN routine revealed gaps in the swing skill. Those gaps are now fixed:
 
-On claude.ai/code, set up:
-- 14 swing routines (split watchlist tickers across them) firing weekday market mornings
-- 1 weekly maintenance routine pointing at `/wiki-maintenance`, Sunday afternoon UTC
+- ✅ Wiki curator step added (`Step 7.5` in `.claude/skills/swing/SKILL.md`) — dispatches `wiki_curator.md` agent to update `wiki/<ticker>/*.md` after each run, gated on `is_wiki_enabled()`.
+- ✅ Wiki updates persist to git — `Step 9` now stages `wiki/` separately and commits if curator changed anything.
+- ✅ Per-run feature branches replaced with direct-to-main commits (with `git pull --rebase` for safe concurrent routines).
+- ✅ Wiki maintenance skill (`/wiki-maintenance`) now has `Step 4` that commits + pushes compactor changes (was a no-op before, all weekly housekeeping was lost).
+
+Re-enable the routines in claude.ai/code Routines page. Schedule unchanged (45-min stagger across the trading day, 5:30 AM PDT to 3:00 PM PDT).
 
 ### 2. First-real-curator validation (user, monitor)
 

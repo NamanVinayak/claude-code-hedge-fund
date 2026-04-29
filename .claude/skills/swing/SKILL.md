@@ -195,6 +195,42 @@ Return JSON matching the format in the prompt.
 Write the output to: runs/{RUN_ID}/explanation.json
 ```
 
+## Step 7.5 — Wiki Curator Agent (skip if wiki disabled)
+
+Only run this step if the wiki feature flag is on:
+
+```bash
+.venv/bin/python -c "from ai_hedge.wiki.inject import is_wiki_enabled; import sys; sys.exit(0 if is_wiki_enabled() else 1)"
+```
+
+If exit 0 (enabled), dispatch **one** Agent tool call to update wiki pages with what this run learned:
+
+```
+IMPORTANT: Do NOT invoke any skills. Do NOT use memory tools. Read files and write files only.
+
+You are the Wiki Curator agent.
+
+1. Read your system prompt from: ai_hedge/personas/prompts/wiki_curator.md
+2. Read the run artifacts:
+   - runs/{RUN_ID}/decisions.json
+   - runs/{RUN_ID}/signals_combined.json
+   - runs/{RUN_ID}/explanation.json
+   - runs/{RUN_ID}/web_research/<TICKER>.json (one per ticker if present)
+3. For each ticker in [{TICKERS}], read existing wiki/<TICKER>/{thesis,technicals,catalysts,recent,trades}.md (if they exist) plus their YAML front-matter
+4. Decide per-page whether to rewrite, append, or leave untouched per the prompt rules
+
+The dispatch scope:
+- run_id: {RUN_ID}
+- mode: swing
+- tickers: [{TICKERS}]
+- is_macro_dispatch: true
+- pages_in_scope: thesis, technicals, catalysts, recent, trades, regime, LOG, INDEX
+
+Write any rewritten pages directly to disk under wiki/. Update YAML front-matter (last_updated, last_run_id, word_count) on every rewrite. Do not delete any files.
+
+Return the manifest JSON described in the system prompt at the end of your response.
+```
+
 ## Step 8 — Display results
 
 ```bash
@@ -205,16 +241,26 @@ This displays: entry/target/stop/risk-reward/timeframe, Head Trader synthesis, s
 
 ## Step 9 — Commit and push results to GitHub
 
-Write a plain-English summary of the run to `runs/$RUN_ID/summary.md` — top 3 setups, key themes, overall market context (1-2 paragraphs). Then commit the full run and push to a new branch:
+Write a plain-English summary of the run to `runs/$RUN_ID/summary.md` — top 3 setups, key themes, overall market context (1-2 paragraphs). Then commit run data + any wiki updates directly to the current branch (routines run on `main`, local runs commit on whatever branch the user is on):
 
 ```bash
-BRANCH="claude/swing-results-${RUN_ID}"
-git checkout -b $BRANCH
+BRANCH=$(git branch --show-current)
+
+# Commit 1: run artifacts (always)
 git add -f runs/$RUN_ID/
 git commit -m "swing run ${RUN_ID}: ${TICKERS}
 
 $(cat runs/$RUN_ID/summary.md | head -5)"
-git push origin $BRANCH
+
+# Commit 2: wiki updates (only if curator changed anything)
+if ! git diff --quiet wiki/ || ! git diff --cached --quiet wiki/; then
+  git add wiki/
+  git commit -m "wiki: curator updates from swing run ${RUN_ID}"
+fi
+
+# Rebase against remote in case a concurrent routine pushed first, then push
+git pull --rebase origin "$BRANCH" || { git rebase --abort; echo "Rebase conflict — manual resolution needed"; exit 1; }
+git push origin "$BRANCH"
 ```
 
-Print the branch URL: `https://github.com/NamanVinayak/claude-code-hedge-fund/tree/$BRANCH`
+Print the commit URL: `https://github.com/NamanVinayak/claude-code-hedge-fund/commits/$BRANCH`

@@ -45,6 +45,23 @@ If the report has items, print it to stdout so the cron log captures it.
 The message "Wiki review needed: N items at scripts/wiki_lint_report.md" is the
 signal for a human to review and either hand-edit or run the curator with a hint.
 
+## Step 4 — Commit and push wiki changes
+
+The compactor mutates files in `wiki/` (rolling tiers, archiving orphans, updating front-matter). Without this step, every change dies with the routine container. Push only if something changed:
+
+```bash
+BRANCH=$(git branch --show-current)
+if ! git diff --quiet wiki/ scripts/wiki_lint_report.md; then
+  git add wiki/ scripts/wiki_lint_report.md
+  git commit -m "wiki: weekly compactor sweep $(date -u +%Y-%m-%d)"
+  git pull --rebase origin "$BRANCH" || { git rebase --abort; echo "Rebase conflict — manual resolution needed"; exit 1; }
+  git push origin "$BRANCH"
+  echo "Pushed weekly compactor changes to $BRANCH."
+else
+  echo "No wiki changes — nothing to push."
+fi
+```
+
 ## Notes
 
 - Dry-run mode: `.venv/bin/python -m scripts.wiki_compactor --dry-run`
