@@ -3,6 +3,7 @@ Fetch all raw financial data for given tickers and save to disk.
 
 Usage:
     python -m ai_hedge.runner.prepare --tickers AAPL,MSFT --run-id 20240101_120000 --mode invest
+    python -m ai_hedge.runner.prepare --tickers BTC-USD,ETH-USD --run-id 20240101_120000 --mode swing --asset-type crypto
 """
 import argparse
 import json
@@ -74,8 +75,11 @@ def main():
     parser.add_argument("--run-id", required=True, help="Unique run identifier, e.g. 20240101_120000")
     parser.add_argument("--mode", choices=VALID_MODES, default="invest",
                         help="Analysis mode: invest (default), swing, daytrade, or research")
+    parser.add_argument("--asset-type", choices=("stock",), default="stock",
+                        help="Asset type: stock (default)")
     args = parser.parse_args()
     mode = args.mode
+    asset_type = args.asset_type
 
     tickers = [t.strip().upper() for t in args.tickers.split(",")]
 
@@ -88,7 +92,19 @@ def main():
     os.makedirs(raw_dir, exist_ok=True)
     os.makedirs(facts_dir, exist_ok=True)
 
+    # Open run-index entry so any future tool can list this run without
+    # walking the runs/ directory. finalize.py closes it.
+    from ai_hedge.runner.run_index import open_run
+    open_run(args.run_id, mode=mode, asset_type=asset_type, tickers=tickers)
+
     for ticker in tickers:
+        if asset_type == "crypto":
+            raise NotImplementedError(
+                "Crypto trading mode has been quarantined. "
+                "Crypto code is preserved at .archive/crypto/. "
+                "Stock swing/daytrade/invest/research modes are unaffected."
+            )
+
         print(f"Fetching data for {ticker}...")
 
         metrics = get_financial_metrics(ticker, end_date=end_date, period="ttm", limit=10)
@@ -103,6 +119,7 @@ def main():
 
         raw = {
             "ticker": ticker,
+            "asset_type": asset_type,
             "start_date": start_date,
             "end_date": end_date,
             "financial_metrics": _to_json_serializable(metrics),
@@ -130,6 +147,7 @@ def main():
     # Save run metadata
     metadata = {
         "mode": mode,
+        "asset_type": asset_type,
         "tickers": tickers,
         "start_date": start_date,
         "end_date": end_date,
@@ -137,18 +155,38 @@ def main():
     meta_path = os.path.join("runs", args.run_id, "metadata.json")
     with open(meta_path, "w") as f:
         json.dump(metadata, f, indent=2)
-    print(f"Saved metadata ({mode} mode) → runs/{args.run_id}/metadata.json")
+    print(f"Saved metadata ({mode} mode, {asset_type}) → runs/{args.run_id}/metadata.json")
 
-    # Always build invest-mode persona facts (all modes need this foundational data)
-    print("\nBuilding persona facts bundles...")
-    from ai_hedge.personas.facts_builder import build_all_facts
-    build_all_facts(args.run_id, tickers)
+    # Build invest-mode persona facts (skip for crypto — they need financial data)
+    if asset_type != "crypto":
+        print("\nBuilding persona facts bundles...")
+        from ai_hedge.personas.facts_builder import build_all_facts
+        build_all_facts(args.run_id, tickers)
+    else:
+        print("\nSkipping persona facts (crypto — no financial statements).")
 
     # Swing facts: needed for swing and research modes
     if mode in ("swing", "research"):
         print("\nBuilding swing strategy facts...")
         from ai_hedge.personas.swing_facts_builder import build_swing_facts
         build_swing_facts(args.run_id, tickers)
+
+        # Wiki memory injection (Phase 1, swing-only). Feature-flagged in
+        # tracker/watchlist.json:settings.wiki_enabled. No-op when off.
+        if mode == "swing":
+            try:
+                from ai_hedge.wiki.inject import inject_context, is_wiki_enabled
+                if is_wiki_enabled():
+                    print("\nInjecting wiki context into swing facts bundles...")
+                    report = inject_context(args.run_id, tickers, mode="swing")
+                    if report.get("skipped"):
+                        print(f"  wiki injection skipped: {report.get('reason')}")
+                    else:
+                        print(f"  wiki injection wrote {report.get('count', 0)} files")
+                else:
+                    print("\nWiki memory disabled (settings.wiki_enabled=false); skipping injection.")
+            except Exception as exc:  # never block the pipeline on wiki errors
+                print(f"  [WARN] wiki injection failed: {exc}")
 
     # Day-trade facts: needed for daytrade and research modes
     if mode in ("daytrade", "research"):

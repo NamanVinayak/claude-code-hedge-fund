@@ -1,0 +1,141 @@
+# Compactor Log
+
+## [DRY-RUN] 2026-04-29
+
+- Rolled entries: 0
+- Archived tickers: 0
+- Flagged items: 37
+
+### Flags
+
+- OVERSIZE wiki/tickers/AMD/catalysts.md: 501 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/AMZN/catalysts.md: 670 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/AMZN/technicals.md: 518 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/AMZN/thesis.md: 630 words (cap 600, target 500)
+- OVERSIZE wiki/tickers/AMZN/trades.md: 999 words (cap 960, target 800)
+- OVERSIZE wiki/tickers/CVX/catalysts.md: 485 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/DIS/catalysts.md: 563 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/DIS/technicals.md: 487 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/GOOG/catalysts.md: 546 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/GOOGL/catalysts.md: 523 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/GS/catalysts.md: 497 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/GS/thesis.md: 688 words (cap 600, target 500)
+- OVERSIZE wiki/tickers/IWM/catalysts.md: 558 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/JNJ/catalysts.md: 537 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/JNJ/technicals.md: 425 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/JPM/catalysts.md: 510 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/MSFT/catalysts.md: 487 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/NKE/catalysts.md: 549 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/NKE/technicals.md: 493 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/NKE/trades.md: 988 words (cap 960, target 800)
+- OVERSIZE wiki/tickers/NVDA/catalysts.md: 557 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/NVDA/technicals.md: 422 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/NVDA/trades.md: 997 words (cap 960, target 800)
+- OVERSIZE wiki/tickers/PFE/catalysts.md: 555 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/QQQ/catalysts.md: 555 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/QQQ/technicals.md: 471 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/QQQ/thesis.md: 603 words (cap 600, target 500)
+- OVERSIZE wiki/tickers/SPY/catalysts.md: 595 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/SPY/technicals.md: 456 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/SPY/thesis.md: 620 words (cap 600, target 500)
+- OVERSIZE wiki/tickers/TSLA/catalysts.md: 589 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/UNH/catalysts.md: 570 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/UNH/technicals.md: 482 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/UNH/trades.md: 1141 words (cap 960, target 800)
+- OVERSIZE wiki/tickers/WMT/catalysts.md: 536 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/WMT/thesis.md: 613 words (cap 600, target 500)
+- OVERSIZE wiki/tickers/XOM/catalysts.md: 545 words (cap 480, target 400)
+
+## 2026-04-29
+
+- Rolled entries: 0
+- Archived tickers: 0
+- Flagged items: 38
+
+### Flags
+
+- OVERSIZE wiki/tickers/AMD/catalysts.md: 501 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/AMZN/catalysts.md: 670 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/AMZN/technicals.md: 518 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/AMZN/thesis.md: 630 words (cap 600, target 500)
+- OVERSIZE wiki/tickers/AMZN/trades.md: 999 words (cap 960, target 800)
+- OVERSIZE wiki/tickers/CVX/catalysts.md: 485 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/DIS/catalysts.md: 563 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/DIS/technicals.md: 487 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/GOOG/catalysts.md: 546 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/GOOGL/catalysts.md: 523 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/GS/catalysts.md: 497 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/GS/thesis.md: 688 words (cap 600, target 500)
+- OVERSIZE wiki/tickers/IWM/catalysts.md: 558 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/JNJ/catalysts.md: 537 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/JNJ/technicals.md: 425 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/JPM/catalysts.md: 510 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/MSFT/catalysts.md: 487 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/NKE/catalysts.md: 549 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/NKE/technicals.md: 493 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/NKE/trades.md: 988 words (cap 960, target 800)
+- OVERSIZE wiki/tickers/NVDA/catalysts.md: 557 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/NVDA/technicals.md: 422 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/NVDA/trades.md: 997 words (cap 960, target 800)
+- OVERSIZE wiki/tickers/PFE/catalysts.md: 555 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/QQQ/catalysts.md: 555 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/QQQ/technicals.md: 471 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/QQQ/thesis.md: 603 words (cap 600, target 500)
+- OVERSIZE wiki/tickers/SPY/catalysts.md: 595 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/SPY/technicals.md: 456 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/SPY/thesis.md: 620 words (cap 600, target 500)
+- OVERSIZE wiki/tickers/TSLA/catalysts.md: 589 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/UNH/catalysts.md: 570 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/UNH/technicals.md: 482 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/UNH/trades.md: 1141 words (cap 960, target 800)
+- OVERSIZE wiki/tickers/WMT/catalysts.md: 536 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/WMT/thesis.md: 613 words (cap 600, target 500)
+- OVERSIZE wiki/tickers/XOM/catalysts.md: 545 words (cap 480, target 400)
+- FRONT_MATTER wiki/meta/compactor_log.md: missing keys ['name', 'last_updated', 'target_words', 'stale_after_days']
+
+## [DRY-RUN] 2026-04-29
+
+- Rolled entries: 0
+- Archived tickers: 0
+- Flagged items: 38
+
+### Flags
+
+- OVERSIZE wiki/tickers/AMD/catalysts.md: 501 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/AMZN/catalysts.md: 670 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/AMZN/technicals.md: 518 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/AMZN/thesis.md: 630 words (cap 600, target 500)
+- OVERSIZE wiki/tickers/AMZN/trades.md: 999 words (cap 960, target 800)
+- OVERSIZE wiki/tickers/CVX/catalysts.md: 485 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/DIS/catalysts.md: 563 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/DIS/technicals.md: 487 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/GOOG/catalysts.md: 546 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/GOOGL/catalysts.md: 523 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/GS/catalysts.md: 497 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/GS/thesis.md: 688 words (cap 600, target 500)
+- OVERSIZE wiki/tickers/IWM/catalysts.md: 558 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/JNJ/catalysts.md: 537 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/JNJ/technicals.md: 425 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/JPM/catalysts.md: 510 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/MSFT/catalysts.md: 487 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/NKE/catalysts.md: 549 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/NKE/technicals.md: 493 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/NKE/trades.md: 988 words (cap 960, target 800)
+- OVERSIZE wiki/tickers/NVDA/catalysts.md: 557 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/NVDA/technicals.md: 422 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/NVDA/trades.md: 997 words (cap 960, target 800)
+- OVERSIZE wiki/tickers/PFE/catalysts.md: 555 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/QQQ/catalysts.md: 555 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/QQQ/technicals.md: 471 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/QQQ/thesis.md: 603 words (cap 600, target 500)
+- OVERSIZE wiki/tickers/SPY/catalysts.md: 595 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/SPY/technicals.md: 456 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/SPY/thesis.md: 620 words (cap 600, target 500)
+- OVERSIZE wiki/tickers/TSLA/catalysts.md: 589 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/UNH/catalysts.md: 570 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/UNH/technicals.md: 482 words (cap 420, target 350)
+- OVERSIZE wiki/tickers/UNH/trades.md: 1141 words (cap 960, target 800)
+- OVERSIZE wiki/tickers/WMT/catalysts.md: 536 words (cap 480, target 400)
+- OVERSIZE wiki/tickers/WMT/thesis.md: 613 words (cap 600, target 500)
+- OVERSIZE wiki/tickers/XOM/catalysts.md: 545 words (cap 480, target 400)
+- FRONT_MATTER wiki/meta/compactor_log.md: missing keys ['name', 'last_updated', 'target_words', 'stale_after_days']

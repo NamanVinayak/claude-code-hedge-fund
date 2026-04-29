@@ -446,6 +446,152 @@ MODE_DISPLAY = {
 }
 
 
+# ---------------------------------------------------------------------------
+# summary.json writer (dashboard-ready structured output)
+# ---------------------------------------------------------------------------
+
+_SWING_STRATEGY_AGENTS = {
+    "swing_trend_momentum",
+    "swing_mean_reversion",
+    "swing_breakout",
+    "swing_catalyst_news",
+    "swing_macro_context",
+}
+
+
+def _reasoning_tldr(reasoning: object, max_chars: int = 200) -> str:
+    text = str(reasoning or "")
+    first = text.split(". ")[0]
+    return first[:max_chars] if len(first) > max_chars else first
+
+
+def write_summary(run_id: str, run_dir: str) -> None:
+    """Write runs/<id>/summary.json after the run closes.
+
+    Reads decisions.json + signals_combined.json + runs/index.json + watchlist.
+    Wrapped in try/except by caller — failures logged to summary_error.txt.
+    """
+    decisions_path = os.path.join(run_dir, "decisions.json")
+    combined_path = os.path.join(run_dir, "signals_combined.json")
+
+    if not os.path.exists(decisions_path):
+        raise FileNotFoundError(f"decisions.json missing at {decisions_path}")
+
+    with open(decisions_path) as f:
+        decisions_data = json.load(f)
+    combined: dict = {}
+    if os.path.exists(combined_path):
+        with open(combined_path) as f:
+            combined = json.load(f)
+
+    mode = _load_mode(run_dir)
+
+    # --- run index entry (started_at / ended_at / tickers) ---
+    from ai_hedge.runner.run_index import _load as _load_index
+    index_entries = _load_index()
+    index_entry = next((e for e in index_entries if e.get("run_id") == run_id), {})
+    started_at = index_entry.get("started_at")
+    ended_at = index_entry.get("ended_at")
+    tickers: list[str] = index_entry.get("tickers") or list(
+        (decisions_data.get("decisions") or decisions_data or {}).keys()
+    )
+    tickers = [t for t in tickers if t not in ("synthesis", "duration", "portfolio_summary")]
+
+    # --- decisions list ---
+    raw_decisions = decisions_data.get("decisions") or decisions_data
+    decision_rows = []
+    if isinstance(raw_decisions, dict):
+        for ticker, d in raw_decisions.items():
+            if not isinstance(d, dict) or ticker in ("synthesis", "duration", "portfolio_summary"):
+                continue
+            action = (d.get("action") or d.get("signal") or "no_action").lower()
+            reasoning_tldr = _reasoning_tldr(d.get("reasoning", ""))
+            decision_rows.append({
+                "ticker": ticker,
+                "action": action,
+                "confidence": d.get("confidence") or 0,
+                "entry": d.get("entry_price") or d.get("entry"),
+                "stop": d.get("stop_loss") or d.get("stop"),
+                "target": d.get("target_price") or d.get("target"),
+                "reasoning_tldr": reasoning_tldr,
+            })
+
+    # --- portfolio_state ---
+    portfolio = combined.get("portfolio", {})
+    portfolio_summary = decisions_data.get("portfolio_summary", {})
+    positions_held = len(portfolio.get("positions") or {})
+    cash = float(portfolio.get("cash") or portfolio_summary.get("cash_available") or 0)
+    exposure = float(
+        portfolio_summary.get("open_exposure_analyzed")
+        or portfolio.get("margin_used")
+        or 0
+    )
+
+    # --- agent_summary ---
+    analyst_signals = combined.get("analyst_signals", {})
+    strategy_received = sum(
+        1 for a in analyst_signals if a in _SWING_STRATEGY_AGENTS
+        and any(analyst_signals[a].values())
+    )
+    # head_trader synthesis label
+    ht_signals = analyst_signals.get("swing_head_trader", {})
+    ht_consensus_values = [
+        v.get("consensus_signal", "").lower()
+        for v in ht_signals.values()
+        if isinstance(v, dict)
+    ]
+    if ht_consensus_values:
+        unique = set(v for v in ht_consensus_values if v)
+        if len(unique) == 1:
+            ht_synthesis = unique.pop()
+        elif unique & {"bullish", "bearish"}:
+            ht_synthesis = "mixed"
+        else:
+            ht_synthesis = ht_consensus_values[0] or "neutral"
+    else:
+        ht_synthesis = "neutral"
+    degraded_inputs: list[str] = combined.get("degraded_inputs") or []
+
+    # --- wiki_state ---
+    wiki_enabled = False
+    try:
+        watchlist_path = os.path.join("tracker", "watchlist.json")
+        if os.path.exists(watchlist_path):
+            with open(watchlist_path) as f:
+                wl = json.load(f)
+            wiki_enabled = bool(wl.get("settings", {}).get("wiki_enabled", False))
+    except Exception:
+        pass
+
+    summary = {
+        "run_id": run_id,
+        "mode": mode,
+        "started_at": started_at,
+        "ended_at": ended_at,
+        "tickers": tickers,
+        "decisions": decision_rows,
+        "portfolio_state": {
+            "positions_held": positions_held,
+            "cash": cash,
+            "exposure": exposure,
+        },
+        "agent_summary": {
+            "strategy_signals_received": strategy_received,
+            "head_trader_synthesis": ht_synthesis,
+            "degraded_inputs": degraded_inputs,
+        },
+        "wiki_state": {
+            "wiki_enabled": wiki_enabled,
+            "wiki_pages_updated": 0,
+        },
+    }
+
+    summary_path = os.path.join(run_dir, "summary.json")
+    with open(summary_path, "w") as f:
+        json.dump(summary, f, indent=2, default=str)
+    print(f"[summary] wrote {summary_path}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Display hedge fund trading decisions.")
     parser.add_argument("--run-id", required=True, help="Run identifier")
@@ -482,6 +628,37 @@ def main():
     # Then display the raw data tables
     display_fn = MODE_DISPLAY.get(mode, _display_invest)
     display_fn(decisions_data, analyst_signals, combined)
+
+    # Close the run-index entry. Count actionable decisions so the index
+    # shows at-a-glance whether the run produced trades.
+    from ai_hedge.runner.run_index import close_run
+    decisions = decisions_data.get("decisions") or decisions_data
+    actionable = 0
+    if isinstance(decisions, dict):
+        for d in decisions.values():
+            if isinstance(d, dict):
+                action = (d.get("action") or d.get("direction") or "").lower()
+                if action in ("buy", "sell", "long", "short", "cover"):
+                    actionable += 1
+    close_run(args.run_id, status="completed", decision_count=actionable)
+
+    # Write a structured summary for future dashboard consumption.
+    try:
+        write_summary(args.run_id, run_dir)
+    except Exception as exc:
+        err_path = os.path.join(run_dir, "summary_error.txt")
+        with open(err_path, "w") as f:
+            f.write(str(exc))
+        print(f"[WARN] summary.json failed: {exc}")
+
+    # Refresh wiki/INDEX.md with the latest last_updated dates. Feature-
+    # flagged via tracker/watchlist.json:settings.wiki_enabled; no-op when
+    # off. Wrapped so wiki failures never break finalize output.
+    try:
+        from ai_hedge.wiki.inject import touch_index
+        touch_index(args.run_id)
+    except Exception as exc:
+        print(f"[WARN] wiki touch_index failed: {exc}")
 
 
 if __name__ == "__main__":
