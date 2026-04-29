@@ -14,7 +14,12 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CLAUDE_MD = ROOT / "CLAUDE.md"
+CLAUDE_MD_FILES = [
+    ROOT / "CLAUDE.md",
+    ROOT / "ai_hedge" / "CLAUDE.md",
+    ROOT / "ai_hedge" / "personas" / "CLAUDE.md",
+    ROOT / "tracker" / "CLAUDE.md",
+]
 
 
 def count_helper_defs() -> int:
@@ -45,7 +50,7 @@ def find_count_in_doc(pattern: str, text: str) -> int | None:
 
 
 def main() -> int:
-    text = CLAUDE_MD.read_text()
+    text = "\n".join(p.read_text() for p in CLAUDE_MD_FILES if p.exists())
     drift = []
 
     # 1. Helper count: "<N> deterministic helper functions"
@@ -79,7 +84,7 @@ def main() -> int:
         print("Update CLAUDE.md or update the code, then re-run.", file=sys.stderr)
         return 1
 
-    print(f"✓ CLAUDE.md matches code: helpers={real_helpers}, "
+    print(f"✓ CLAUDE.md (root + subsystem) matches code: helpers={real_helpers}, "
           f"swing={real_swing}, dt={real_dt}, invest={real_invest}")
     return 0
 
