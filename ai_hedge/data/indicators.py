@@ -10,40 +10,172 @@ except ImportError:
     HAS_PANDAS_TA = False
 
 
-def compute_daily_indicators(prices_df: pd.DataFrame) -> dict:
+def _find_swing_points(series: pd.Series, window: int = 5):
+    """Return indices of local highs and lows using a rolling window."""
+    highs, lows = [], []
+    for i in range(window, len(series) - window):
+        if series.iloc[i] == series.iloc[i - window:i + window + 1].max():
+            highs.append(i)
+        if series.iloc[i] == series.iloc[i - window:i + window + 1].min():
+            lows.append(i)
+    return highs, lows
+
+
+def _find_pivot_levels(prices_df: pd.DataFrame, window: int = 5,
+                       lookback: int = 60, touch_tolerance: float = 0.005) -> dict:
+    """Find pivot high/low levels with test counts and volume confirmation.
+
+    window: bars on each side to qualify as a local extreme
+    lookback: how many bars back to search
+    touch_tolerance: how close price must come to "test" a level (0.5% default)
+    """
+    recent = prices_df.tail(lookback).copy().reset_index(drop=True)
+    if len(recent) < window * 2 + 1:
+        return {}
+
+    avg_vol = recent["volume"].mean()
+    high = recent["high"]
+    low = recent["low"]
+
+    pivot_highs = []
+    pivot_lows = []
+
+    for i in range(window, len(recent) - window):
+        # Pivot high
+        if high.iloc[i] == high.iloc[i - window:i + window + 1].max():
+            vol_confirmed = recent["volume"].iloc[i] > 1.5 * avg_vol
+            level = float(high.iloc[i])
+            tests = int(((high >= level * (1 - touch_tolerance)) &
+                         (low <= level * (1 + touch_tolerance))).sum())
+            pivot_highs.append({
+                "price": round(level, 2),
+                "tests": tests,
+                "volume_confirmed": bool(vol_confirmed),
+            })
+
+        # Pivot low
+        if low.iloc[i] == low.iloc[i - window:i + window + 1].min():
+            vol_confirmed = recent["volume"].iloc[i] > 1.5 * avg_vol
+            level = float(low.iloc[i])
+            tests = int(((low <= level * (1 + touch_tolerance)) &
+                         (high >= level * (1 - touch_tolerance))).sum())
+            pivot_lows.append({
+                "price": round(level, 2),
+                "tests": tests,
+                "volume_confirmed": bool(vol_confirmed),
+            })
+
+    # Deduplicate levels within 1% of each other (keep the most-tested one)
+    def dedup(levels, pct=0.01):
+        if not levels:
+            return []
+        levels = sorted(levels, key=lambda x: -x["tests"])
+        kept = [levels[0]]
+        for lv in levels[1:]:
+            if all(abs(lv["price"] - k["price"]) / k["price"] > pct for k in kept):
+                kept.append(lv)
+        return sorted(kept, key=lambda x: x["price"])
+
+    pivot_highs = dedup(pivot_highs)
+    pivot_lows = dedup(pivot_lows)
+
+    current_price = float(prices_df["close"].iloc[-1])
+    nearest_res = min((p for p in pivot_highs if p["price"] > current_price),
+                      key=lambda x: x["price"], default=None)
+    nearest_sup = max((p for p in pivot_lows if p["price"] < current_price),
+                      key=lambda x: x["price"], default=None)
+
+    return {
+        "pivot_highs": pivot_highs[-5:],   # top 5 resistance levels
+        "pivot_lows": pivot_lows[:5],      # top 5 support levels
+        "nearest_resistance": nearest_res["price"] if nearest_res else None,
+        "nearest_support": nearest_sup["price"] if nearest_sup else None,
+    }
+
+
+def compute_daily_indicators(prices_df: pd.DataFrame, timeframe: str = "daily") -> dict:
     """Compute comprehensive daily technical indicators for swing trading.
 
     Args:
         prices_df: DataFrame with columns: open, close, high, low, volume (DatetimeIndex)
+        timeframe: bar timeframe ("daily" or "hourly"). Hourly uses scaled
+            indicator periods (RSI 21, MACD 24/52/18, BB 48, etc.) so that
+            signal depth on hourly bars matches what daily bars give.
 
     Returns dict with indicator categories and their values.
     """
     if prices_df.empty or len(prices_df) < 20:
-        return {"error": "Insufficient data", "data_points": len(prices_df)}
+        return {"error": "Insufficient data", "data_points": len(prices_df), "timeframe": timeframe}
 
-    result = {}
+    result: dict = {"timeframe": timeframe}
+    degraded: list[dict] = []
+
+    # Hourly timeframes need longer lookback windows to match daily signal depth
+    if timeframe == "hourly":
+        rsi_period = 21        # ~3 trading days on 1h bars
+        macd_fast, macd_slow, macd_signal_period = 24, 52, 18  # doubled from daily
+        bb_window = 48         # ~1 week of hourly bars
+        atr_period = 24        # ~3 trading days
+        ema_short = 24         # ~3 days
+        ema_medium = 48        # ~1 week
+        ema_long = 120         # ~3 weeks (replaces 50)
+        z_window = 120         # ~3 weeks
+        adx_period = 24
+    else:  # daily
+        rsi_period = 14
+        macd_fast, macd_slow, macd_signal_period = 12, 26, 9
+        bb_window = 20
+        atr_period = 14
+        ema_short = 10
+        ema_medium = 21
+        ema_long = 50
+        z_window = 50
+        adx_period = 14
 
     # --- Moving Averages ---
     result["moving_averages"] = {}
-    for period in [5, 10, 20, 50, 200]:
+    ma_periods = [5, 10, 20, 21, 50, 200] if timeframe == "daily" else [ema_short, ema_medium, ema_long, 200]
+    for period in ma_periods:
         if len(prices_df) >= period:
             ema = prices_df["close"].ewm(span=period, adjust=False).mean()
             sma = prices_df["close"].rolling(window=period).mean()
             result["moving_averages"][f"ema_{period}"] = float(ema.iloc[-1])
             result["moving_averages"][f"sma_{period}"] = float(sma.iloc[-1])
 
+    # EMA alignment (short > medium > long = uptrend; reversed = downtrend)
+    ma = result["moving_averages"]
+    short_key = f"ema_{ema_short}"
+    medium_key = f"ema_{ema_medium}"
+    long_key = f"ema_{ema_long}"
+    if short_key in ma and medium_key in ma and long_key in ma:
+        ma["ema_aligned_uptrend"] = ma[short_key] > ma[medium_key] > ma[long_key]
+        ma["ema_aligned_downtrend"] = ma[short_key] < ma[medium_key] < ma[long_key]
+    else:
+        ma["ema_aligned_uptrend"] = None
+        ma["ema_aligned_downtrend"] = None
+
     current_price = float(prices_df["close"].iloc[-1])
     result["current_price"] = current_price
+
+    # Distance from long-SMA (percent) — uses sma_50 on daily, sma_120 on hourly
+    long_sma_key = f"sma_{ema_long}"
+    if long_sma_key in ma and ma[long_sma_key]:
+        result["dist_from_50sma_pct"] = round((current_price - ma[long_sma_key]) / ma[long_sma_key] * 100, 2)
+    else:
+        result["dist_from_50sma_pct"] = None
 
     # Price vs MAs
     result["price_vs_ma"] = {}
     for key, val in result["moving_averages"].items():
+        if not isinstance(val, (int, float)) or val is None or not val:
+            continue
         result["price_vs_ma"][f"above_{key}"] = current_price > val
         result["price_vs_ma"][f"pct_from_{key}"] = round((current_price - val) / val * 100, 2)
 
     # --- RSI ---
     result["rsi"] = {}
-    for period in [7, 14, 21]:
+    rsi_periods = [7, 14, 21] if timeframe == "daily" else [rsi_period]
+    for period in rsi_periods:
         if len(prices_df) >= period + 1:
             delta = prices_df["close"].diff()
             gain = delta.where(delta > 0, 0.0).rolling(window=period).mean()
@@ -52,12 +184,49 @@ def compute_daily_indicators(prices_df: pd.DataFrame) -> dict:
             rsi = 100 - (100 / (1 + rs))
             result["rsi"][f"rsi_{period}"] = round(float(rsi.iloc[-1]), 2) if not pd.isna(rsi.iloc[-1]) else None
 
+    # --- RSI divergence detection ---
+    try:
+        close = prices_df["close"]
+        delta = close.diff()
+        gain = delta.where(delta > 0, 0.0).rolling(rsi_period).mean()
+        loss = (-delta.where(delta < 0, 0.0)).rolling(rsi_period).mean()
+        rs = gain / loss.replace(0, np.nan)
+        rsi_series = 100 - (100 / (1 + rs))
+
+        price_highs, price_lows = _find_swing_points(close, window=5)
+        rsi_highs, rsi_lows = _find_swing_points(rsi_series, window=5)
+
+        bearish_div = False
+        bullish_div = False
+
+        # Bearish: last 2 price highs go up, last 2 RSI highs go down
+        if len(price_highs) >= 2 and len(rsi_highs) >= 2:
+            ph1, ph2 = price_highs[-2], price_highs[-1]
+            rh1, rh2 = rsi_highs[-2], rsi_highs[-1]
+            if close.iloc[ph2] > close.iloc[ph1] and rsi_series.iloc[rh2] < rsi_series.iloc[rh1]:
+                bearish_div = True
+
+        # Bullish: last 2 price lows go down, last 2 RSI lows go up
+        if len(price_lows) >= 2 and len(rsi_lows) >= 2:
+            pl1, pl2 = price_lows[-2], price_lows[-1]
+            rl1, rl2 = rsi_lows[-2], rsi_lows[-1]
+            if close.iloc[pl2] < close.iloc[pl1] and rsi_series.iloc[rl2] > rsi_series.iloc[rl1]:
+                bullish_div = True
+
+        result["rsi_divergence"] = {
+            "bullish": bullish_div,
+            "bearish": bearish_div,
+            "lookback_bars": min(len(close), 60),
+        }
+    except Exception as e:
+        degraded.append({"indicator": "rsi_divergence", "error": str(e)[:100]})
+
     # --- MACD ---
-    if len(prices_df) >= 26:
-        ema12 = prices_df["close"].ewm(span=12, adjust=False).mean()
-        ema26 = prices_df["close"].ewm(span=26, adjust=False).mean()
-        macd_line = ema12 - ema26
-        signal_line = macd_line.ewm(span=9, adjust=False).mean()
+    if len(prices_df) >= macd_slow:
+        ema_fast = prices_df["close"].ewm(span=macd_fast, adjust=False).mean()
+        ema_slow = prices_df["close"].ewm(span=macd_slow, adjust=False).mean()
+        macd_line = ema_fast - ema_slow
+        signal_line = macd_line.ewm(span=macd_signal_period, adjust=False).mean()
         histogram = macd_line - signal_line
         result["macd"] = {
             "macd_line": round(float(macd_line.iloc[-1]), 4),
@@ -67,34 +236,34 @@ def compute_daily_indicators(prices_df: pd.DataFrame) -> dict:
         }
 
     # --- Bollinger Bands ---
-    if len(prices_df) >= 20:
-        sma20 = prices_df["close"].rolling(20).mean()
-        std20 = prices_df["close"].rolling(20).std()
-        upper = sma20 + 2 * std20
-        lower = sma20 - 2 * std20
-        bb_width = (upper - lower) / sma20
+    if len(prices_df) >= bb_window:
+        sma_bb = prices_df["close"].rolling(bb_window).mean()
+        std_bb = prices_df["close"].rolling(bb_window).std()
+        upper = sma_bb + 2 * std_bb
+        lower = sma_bb - 2 * std_bb
+        bb_width = (upper - lower) / sma_bb
         result["bollinger"] = {
             "upper": round(float(upper.iloc[-1]), 2),
-            "middle": round(float(sma20.iloc[-1]), 2),
+            "middle": round(float(sma_bb.iloc[-1]), 2),
             "lower": round(float(lower.iloc[-1]), 2),
             "width": round(float(bb_width.iloc[-1]), 4),
             "pct_b": round((current_price - float(lower.iloc[-1])) / (float(upper.iloc[-1]) - float(lower.iloc[-1])), 4) if float(upper.iloc[-1]) != float(lower.iloc[-1]) else 0.5,
         }
 
     # --- ATR (Average True Range) ---
-    if len(prices_df) >= 14:
+    if len(prices_df) >= atr_period:
         high_low = prices_df["high"] - prices_df["low"]
         high_close = (prices_df["high"] - prices_df["close"].shift()).abs()
         low_close = (prices_df["low"] - prices_df["close"].shift()).abs()
         true_range = pd.concat([high_low, high_close, low_close], axis=1).max(axis=1)
-        atr14 = true_range.rolling(14).mean()
+        atr_series = true_range.rolling(atr_period).mean()
         result["atr"] = {
-            "atr_14": round(float(atr14.iloc[-1]), 2),
-            "atr_pct": round(float(atr14.iloc[-1]) / current_price * 100, 2),
+            f"atr_{atr_period}": round(float(atr_series.iloc[-1]), 2),
+            "atr_pct": round(float(atr_series.iloc[-1]) / current_price * 100, 2),
         }
 
     # --- ADX (Average Directional Index) ---
-    if len(prices_df) >= 28:
+    if len(prices_df) >= adx_period * 2:
         try:
             plus_dm = prices_df["high"].diff()
             minus_dm = -prices_df["low"].diff()
@@ -106,19 +275,19 @@ def compute_daily_indicators(prices_df: pd.DataFrame) -> dict:
             low_close = (prices_df["low"] - prices_df["close"].shift()).abs()
             tr = pd.concat([high_low, high_close, low_close], axis=1).max(axis=1)
 
-            atr14 = tr.rolling(14).mean()
-            plus_di = 100 * (plus_dm.rolling(14).mean() / atr14)
-            minus_di = 100 * (minus_dm.rolling(14).mean() / atr14)
+            atr_adx = tr.rolling(adx_period).mean()
+            plus_di = 100 * (plus_dm.rolling(adx_period).mean() / atr_adx)
+            minus_di = 100 * (minus_dm.rolling(adx_period).mean() / atr_adx)
             dx = 100 * ((plus_di - minus_di).abs() / (plus_di + minus_di))
-            adx = dx.rolling(14).mean()
+            adx = dx.rolling(adx_period).mean()
             result["adx"] = {
-                "adx_14": round(float(adx.iloc[-1]), 2) if not pd.isna(adx.iloc[-1]) else None,
+                f"adx_{adx_period}": round(float(adx.iloc[-1]), 2) if not pd.isna(adx.iloc[-1]) else None,
                 "plus_di": round(float(plus_di.iloc[-1]), 2) if not pd.isna(plus_di.iloc[-1]) else None,
                 "minus_di": round(float(minus_di.iloc[-1]), 2) if not pd.isna(minus_di.iloc[-1]) else None,
                 "trend_strength": "strong" if adx.iloc[-1] > 25 else "weak" if adx.iloc[-1] < 20 else "moderate",
             }
-        except Exception:
-            pass
+        except Exception as e:
+            degraded.append({"indicator": "adx", "error": str(e)[:100]})
 
     # --- Volume Analysis ---
     if len(prices_df) >= 20:
@@ -127,21 +296,41 @@ def compute_daily_indicators(prices_df: pd.DataFrame) -> dict:
             "current_volume": int(prices_df["volume"].iloc[-1]),
             "avg_volume_20": int(avg_vol_20.iloc[-1]),
             "relative_volume": round(float(prices_df["volume"].iloc[-1] / avg_vol_20.iloc[-1]), 2) if avg_vol_20.iloc[-1] > 0 else 0,
-            "obv_trend": "up" if prices_df["volume"].where(prices_df["close"].diff() > 0, 0).rolling(10).sum().iloc[-1] > prices_df["volume"].where(prices_df["close"].diff() < 0, 0).rolling(10).sum().iloc[-1] else "down",
+            # Renamed from obv_trend: this is a 10-bar up-volume vs down-volume bias, NOT OBV.
+            "volume_bias_10d": "up" if prices_df["volume"].where(prices_df["close"].diff() > 0, 0).rolling(10).sum().iloc[-1] > prices_df["volume"].where(prices_df["close"].diff() < 0, 0).rolling(10).sum().iloc[-1] else "down",
         }
 
-    # --- Support/Resistance (recent pivots) ---
-    if len(prices_df) >= 20:
+        # Real On-Balance Volume: cumulative sum, +volume on up closes, -volume on down closes.
+        price_direction = prices_df["close"].diff()
+        obv_series = (prices_df["volume"] * price_direction.apply(
+            lambda x: 1 if x > 0 else (-1 if x < 0 else 0)
+        )).cumsum()
+        if len(obv_series) >= 10 and len(prices_df) >= 10:
+            obv_slope = float(obv_series.iloc[-1] - obv_series.iloc[-10])
+            price_slope = float(prices_df["close"].iloc[-1] - prices_df["close"].iloc[-10])
+            result["volume"]["obv"] = {
+                "trend": "up" if obv_slope > 0 else ("down" if obv_slope < 0 else "flat"),
+                "diverging_from_price": (obv_slope > 0) != (price_slope > 0),
+            }
+        else:
+            result["volume"]["obv"] = {"trend": "flat", "diverging_from_price": False}
+
+    # --- Support/Resistance (pivot points with test counts and volume confirmation) ---
+    try:
+        result["support_resistance"] = _find_pivot_levels(prices_df) or {}
         recent = prices_df.tail(20)
-        result["support_resistance"] = {
-            "recent_high": round(float(recent["high"].max()), 2),
-            "recent_low": round(float(recent["low"].min()), 2),
-            "prev_day_high": round(float(prices_df["high"].iloc[-2]), 2) if len(prices_df) >= 2 else None,
-            "prev_day_low": round(float(prices_df["low"].iloc[-2]), 2) if len(prices_df) >= 2 else None,
-            "prev_day_close": round(float(prices_df["close"].iloc[-2]), 2) if len(prices_df) >= 2 else None,
-        }
+        result["support_resistance"]["recent_high"] = round(float(recent["high"].max()), 2)
+        result["support_resistance"]["recent_low"] = round(float(recent["low"].min()), 2)
+        # Keep simple prev-day levels alongside (still useful for intraday reference)
+        if len(prices_df) >= 2:
+            result["support_resistance"]["prev_day_high"] = round(float(prices_df["high"].iloc[-2]), 2)
+            result["support_resistance"]["prev_day_low"] = round(float(prices_df["low"].iloc[-2]), 2)
+            result["support_resistance"]["prev_day_close"] = round(float(prices_df["close"].iloc[-2]), 2)
+    except Exception as e:
+        degraded.append({"indicator": "support_resistance", "error": str(e)[:100]})
+        result["support_resistance"] = {}
 
-    # --- Fibonacci Retracement (from recent swing high to low) ---
+    # --- Fibonacci Retracement + Extension (from recent swing high to low) ---
     if len(prices_df) >= 30:
         recent_30 = prices_df.tail(30)
         swing_high = float(recent_30["high"].max())
@@ -150,10 +339,19 @@ def compute_daily_indicators(prices_df: pd.DataFrame) -> dict:
         result["fibonacci"] = {
             "swing_high": round(swing_high, 2),
             "swing_low": round(swing_low, 2),
+            # Retracements (pullback support, below the swing high)
             "fib_236": round(swing_high - 0.236 * diff, 2),
             "fib_382": round(swing_high - 0.382 * diff, 2),
             "fib_500": round(swing_high - 0.500 * diff, 2),
             "fib_618": round(swing_high - 0.618 * diff, 2),
+            "fib_786": round(swing_high - 0.786 * diff, 2),
+            # Bullish extensions above the swing high (price targets on breakout)
+            "fib_ext_1272": round(swing_high + 0.272 * diff, 2),
+            "fib_ext_1618": round(swing_high + 0.618 * diff, 2),
+            "fib_ext_2000": round(swing_high + 1.000 * diff, 2),
+            # Bearish extensions below the swing low (downside targets on breakdown)
+            "fib_ext_low_1272": round(swing_low - 0.272 * diff, 2),
+            "fib_ext_low_1618": round(swing_low - 0.618 * diff, 2),
         }
 
     # --- Momentum / Rate of Change ---
@@ -164,40 +362,48 @@ def compute_daily_indicators(prices_df: pd.DataFrame) -> dict:
             result["momentum"][f"roc_{period}d"] = round(float(roc), 2)
 
     # --- Z-Score ---
-    if len(prices_df) >= 50:
-        mean_50 = prices_df["close"].rolling(50).mean().iloc[-1]
-        std_50 = prices_df["close"].rolling(50).std().iloc[-1]
-        if std_50 > 0:
-            result["z_score_50"] = round((current_price - mean_50) / std_50, 2)
+    if len(prices_df) >= z_window:
+        mean_z = prices_df["close"].rolling(z_window).mean().iloc[-1]
+        std_z = prices_df["close"].rolling(z_window).std().iloc[-1]
+        if std_z > 0:
+            result[f"z_score_{z_window}"] = round((current_price - mean_z) / std_z, 2)
 
     # --- pandas_ta extras (if available) ---
     if HAS_PANDAS_TA:
+        # Stochastic
         try:
-            # Stochastic
             stoch = ta.stoch(prices_df["high"], prices_df["low"], prices_df["close"])
             if stoch is not None and not stoch.empty:
                 result["stochastic"] = {
                     "k": round(float(stoch.iloc[-1, 0]), 2),
                     "d": round(float(stoch.iloc[-1, 1]), 2),
                 }
+        except Exception as e:
+            degraded.append({"indicator": "stochastic", "error": str(e)[:100]})
 
-            # Williams %R
+        # Williams %R
+        try:
             willr = ta.willr(prices_df["high"], prices_df["low"], prices_df["close"])
             if willr is not None and not willr.empty:
                 result["williams_r"] = round(float(willr.iloc[-1]), 2)
+        except Exception as e:
+            degraded.append({"indicator": "williams_r", "error": str(e)[:100]})
 
-            # CCI (Commodity Channel Index)
+        # CCI (Commodity Channel Index)
+        try:
             cci = ta.cci(prices_df["high"], prices_df["low"], prices_df["close"])
             if cci is not None and not cci.empty:
                 result["cci"] = round(float(cci.iloc[-1]), 2)
+        except Exception as e:
+            degraded.append({"indicator": "cci", "error": str(e)[:100]})
 
-            # MFI (Money Flow Index)
+        # MFI (Money Flow Index)
+        try:
             mfi = ta.mfi(prices_df["high"], prices_df["low"], prices_df["close"], prices_df["volume"])
             if mfi is not None and not mfi.empty:
                 result["mfi"] = round(float(mfi.iloc[-1]), 2)
-
-        except Exception:
-            pass
+        except Exception as e:
+            degraded.append({"indicator": "mfi", "error": str(e)[:100]})
 
         # Schaff Trend Cycle
         try:
@@ -210,8 +416,8 @@ def compute_daily_indicators(prices_df: pd.DataFrame) -> dict:
                     "crossed_above_25": float(stc_df.iloc[-1, 0]) > 25 and float(stc_df.iloc[-2, 0]) <= 25 if len(stc_df) > 1 else False,
                     "crossed_below_75": float(stc_df.iloc[-1, 0]) < 75 and float(stc_df.iloc[-2, 0]) >= 75 if len(stc_df) > 1 else False,
                 }
-        except Exception:
-            pass
+        except Exception as e:
+            degraded.append({"indicator": "stc", "error": str(e)[:100]})
 
         # Squeeze Momentum
         try:
@@ -236,8 +442,8 @@ def compute_daily_indicators(prices_df: pd.DataFrame) -> dict:
                               "bearish_breakout" if (is_off and mom_val < 0) else
                               "squeeze_building" if is_on else "no_squeeze",
                 }
-        except Exception:
-            pass
+        except Exception as e:
+            degraded.append({"indicator": "squeeze", "error": str(e)[:100]})
 
         # SuperTrend
         try:
@@ -257,9 +463,10 @@ def compute_daily_indicators(prices_df: pd.DataFrame) -> dict:
                     "trend_changed": direction != prev_direction,
                     "distance_pct": round((current_price - supertrend_value) / supertrend_value * 100, 2),
                 }
-        except Exception:
-            pass
+        except Exception as e:
+            degraded.append({"indicator": "supertrend", "error": str(e)[:100]})
 
+    result["degraded_indicators"] = degraded
     return result
 
 
@@ -274,7 +481,8 @@ def compute_intraday_indicators(intraday_df: pd.DataFrame) -> dict:
     if intraday_df.empty or len(intraday_df) < 10:
         return {"error": "Insufficient intraday data", "data_points": len(intraday_df)}
 
-    result = {}
+    result: dict = {}
+    degraded: list[dict] = []
     current_price = float(intraday_df["close"].iloc[-1])
     result["current_price"] = current_price
     result["last_bar_time"] = str(intraday_df.index[-1])
@@ -311,8 +519,8 @@ def compute_intraday_indicators(intraday_df: pd.DataFrame) -> dict:
                 "price_vs_vwap": round((current_price - vwap_val) / vwap_val * 100, 2),
                 "above_vwap": current_price > vwap_val,
             }
-    except Exception:
-        pass
+    except Exception as e:
+        degraded.append({"indicator": "vwap", "error": str(e)[:100]})
 
     # --- Opening Range (first 30 min) ---
     try:
@@ -332,8 +540,8 @@ def compute_intraday_indicators(intraday_df: pd.DataFrame) -> dict:
                 "below_or_low": current_price < or_low,
                 "within_range": or_low <= current_price <= or_high,
             }
-    except Exception:
-        pass
+    except Exception as e:
+        degraded.append({"indicator": "opening_range", "error": str(e)[:100]})
 
     # --- Gap Analysis ---
     try:
@@ -356,8 +564,8 @@ def compute_intraday_indicators(intraday_df: pd.DataFrame) -> dict:
                     "gap_direction": "up" if gap_pct > 0.1 else "down" if gap_pct < -0.1 else "flat",
                     "gap_filled": (current_price <= prev_close) if gap_pct > 0 else (current_price >= prev_close) if gap_pct < 0 else True,
                 }
-    except Exception:
-        pass
+    except Exception as e:
+        degraded.append({"indicator": "gap", "error": str(e)[:100]})
 
     # --- Intraday EMAs ---
     result["ema"] = {}
@@ -414,8 +622,8 @@ def compute_intraday_indicators(intraday_df: pd.DataFrame) -> dict:
                 "relative_bar_volume": round(float(intraday_df["volume"].iloc[-1] / avg_bar_vol), 2) if avg_bar_vol > 0 else 0,
                 "volume_trend": "increasing" if today_data["volume"].tail(5).mean() > avg_bar_vol else "decreasing",
             }
-    except Exception:
-        pass
+    except Exception as e:
+        degraded.append({"indicator": "volume_profile", "error": str(e)[:100]})
 
     # --- Bollinger Bands (intraday) ---
     if len(intraday_df) >= 20:
@@ -444,8 +652,8 @@ def compute_intraday_indicators(intraday_df: pd.DataFrame) -> dict:
                     "above_prev_high": current_price > float(prev_data["high"].max()),
                     "below_prev_low": current_price < float(prev_data["low"].min()),
                 }
-    except Exception:
-        pass
+    except Exception as e:
+        degraded.append({"indicator": "prev_day", "error": str(e)[:100]})
 
     # --- pandas_ta extras (if available) ---
     if HAS_PANDAS_TA:
@@ -464,8 +672,8 @@ def compute_intraday_indicators(intraday_df: pd.DataFrame) -> dict:
                     "crossed_above_25": float(stc_df.iloc[-1, 0]) > 25 and float(stc_df.iloc[-2, 0]) <= 25 if len(stc_df) > 1 else False,
                     "crossed_below_75": float(stc_df.iloc[-1, 0]) < 75 and float(stc_df.iloc[-2, 0]) >= 75 if len(stc_df) > 1 else False,
                 }
-        except Exception:
-            pass
+        except Exception as e:
+            degraded.append({"indicator": "stc", "error": str(e)[:100]})
 
         # Squeeze Momentum
         try:
@@ -490,8 +698,8 @@ def compute_intraday_indicators(intraday_df: pd.DataFrame) -> dict:
                               "bearish_breakout" if (is_off and mom_val < 0) else
                               "squeeze_building" if is_on else "no_squeeze",
                 }
-        except Exception:
-            pass
+        except Exception as e:
+            degraded.append({"indicator": "squeeze", "error": str(e)[:100]})
 
         # SuperTrend
         try:
@@ -511,7 +719,8 @@ def compute_intraday_indicators(intraday_df: pd.DataFrame) -> dict:
                     "trend_changed": direction != prev_direction,
                     "distance_pct": round((current_price - supertrend_value) / supertrend_value * 100, 2),
                 }
-        except Exception:
-            pass
+        except Exception as e:
+            degraded.append({"indicator": "supertrend", "error": str(e)[:100]})
 
+    result["degraded_indicators"] = degraded
     return result
