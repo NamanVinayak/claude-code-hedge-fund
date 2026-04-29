@@ -24,3 +24,36 @@ opend/
 # Tracker data (internal validation, not for users)
 tracker/tracker.db
 tracker/*.log
+tracker/trades.db
+crypto_tracker/crypto_tracker.db
+crypto_tracker/*.log
+
+# Test/debug artifacts
+.playwright-mcp/
+console-*.log
+page-*.yml
+*.tmp
+
+# Temp directories
+.claude/skills/temp_placeholder/
+
+# Stray scratch files
+/1.txt
+/2026-*.txt
+/betting main.txt
+/session-*.md
+/session_manifest.json
+/sessions_list.json
+/triggers.json
+/events_*.json
+/none_inspect.json
+/routine_raw_results*.json
+
+# Generated knowledge graph (rebuild locally with graphify)
+graphify-out/
+
+# Local Obsidian vault (not project content)
+artist/
+
+# Local plan/scratch docs
+docs/
