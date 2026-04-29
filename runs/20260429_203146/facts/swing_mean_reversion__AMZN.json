@@ -1,0 +1,356 @@
+{
+  "ticker": "AMZN",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 258.3470812916403,
+      "sma_5": 259.05,
+      "ema_10": 252.9956668741201,
+      "sma_10": 254.21999969482422,
+      "ema_20": 242.78492619907027,
+      "sma_20": 238.97800064086914,
+      "ema_21": 241.9751110489792,
+      "sma_21": 237.16714332217262,
+      "ema_50": 230.2807508993776,
+      "sma_50": 221.08959991455077,
+      "ema_200": 222.44447834299265,
+      "sma_200": 226.77180000305177,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 259.70001220703125,
+    "dist_from_50sma_pct": 17.46,
+    "price_vs_ma": {
+      "above_ema_5": true,
+      "pct_from_ema_5": 0.52,
+      "above_sma_5": true,
+      "pct_from_sma_5": 0.25,
+      "above_ema_10": true,
+      "pct_from_ema_10": 2.65,
+      "above_sma_10": true,
+      "pct_from_sma_10": 2.16,
+      "above_ema_20": true,
+      "pct_from_ema_20": 6.97,
+      "above_sma_20": true,
+      "pct_from_sma_20": 8.67,
+      "above_ema_21": true,
+      "pct_from_ema_21": 7.33,
+      "above_sma_21": true,
+      "pct_from_sma_21": 9.5,
+      "above_ema_50": true,
+      "pct_from_ema_50": 12.78,
+      "above_sma_50": true,
+      "pct_from_sma_50": 17.46,
+      "above_ema_200": true,
+      "pct_from_ema_200": 16.75,
+      "above_sma_200": true,
+      "pct_from_sma_200": 14.52,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 25870.0
+    },
+    "rsi": {
+      "rsi_7": 70.01,
+      "rsi_14": 86.14,
+      "rsi_21": 89.35
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 12.212,
+      "signal_line": 10.4052,
+      "histogram": 1.8068,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 277.33,
+      "middle": 238.98,
+      "lower": 200.62,
+      "width": 0.321,
+      "pct_b": 0.7701
+    },
+    "atr": {
+      "atr_14": 6.63,
+      "atr_pct": 2.55
+    },
+    "adx": {
+      "adx_14": 61.85,
+      "plus_di": 50.62,
+      "minus_di": 12.33,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 42204400,
+      "avg_volume_20": 45682015,
+      "relative_volume": 0.92,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 220.47,
+          "tests": 3,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 196.0,
+          "tests": 1,
+          "volume_confirmed": false
+        },
+        {
+          "price": 199.14,
+          "tests": 5,
+          "volume_confirmed": false
+        },
+        {
+          "price": 202.48,
+          "tests": 13,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": null,
+      "nearest_support": 202.48,
+      "recent_high": 264.5,
+      "recent_low": 204.14,
+      "prev_day_high": 264.15,
+      "prev_day_low": 260.34,
+      "prev_day_close": 261.12
+    },
+    "fibonacci": {
+      "swing_high": 264.5,
+      "swing_low": 199.14,
+      "fib_236": 249.08,
+      "fib_382": 239.53,
+      "fib_500": 231.82,
+      "fib_618": 224.11,
+      "fib_786": 213.13,
+      "fib_ext_1272": 282.28,
+      "fib_ext_1618": 304.89,
+      "fib_ext_2000": 329.86,
+      "fib_ext_low_1272": 181.36,
+      "fib_ext_low_1618": 158.75
+    },
+    "momentum": {
+      "roc_5d": 3.92,
+      "roc_10d": 4.29,
+      "roc_21d": 30.28
+    },
+    "z_score_50": 2.0,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 261.07075553117585,
+      "sma_24": 261.7919807434082,
+      "ema_48": 258.0828243950258,
+      "sma_48": 258.4480673472087,
+      "ema_120": 246.52328254656007,
+      "sma_120": 246.46833737691244,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 263.29998779296875,
+    "dist_from_50sma_pct": 6.83,
+    "price_vs_ma": {
+      "above_ema_24": true,
+      "pct_from_ema_24": 0.85,
+      "above_sma_24": true,
+      "pct_from_sma_24": 0.58,
+      "above_ema_48": true,
+      "pct_from_ema_48": 2.02,
+      "above_sma_48": true,
+      "pct_from_sma_48": 1.88,
+      "above_ema_120": true,
+      "pct_from_ema_120": 6.81,
+      "above_sma_120": true,
+      "pct_from_sma_120": 6.83,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 26230.0
+    },
+    "rsi": {
+      "rsi_21": 48.9
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": true,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 3.5798,
+      "signal_line": 4.0604,
+      "histogram": -0.4805,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 267.25,
+      "middle": 258.45,
+      "lower": 249.65,
+      "width": 0.0681,
+      "pct_b": 0.7758
+    },
+    "atr": {
+      "atr_24": 2.1,
+      "atr_pct": 0.8
+    },
+    "adx": {
+      "adx_24": 20.06,
+      "plus_di": 18.37,
+      "minus_di": 27.61,
+      "trend_strength": "moderate"
+    },
+    "volume": {
+      "current_volume": 7078032,
+      "avg_volume_20": 7311134,
+      "relative_volume": 0.97,
+      "volume_bias_10d": "down",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": true
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 255.0,
+          "tests": 13,
+          "volume_confirmed": true
+        },
+        {
+          "price": 258.79,
+          "tests": 12,
+          "volume_confirmed": false
+        },
+        {
+          "price": 264.38,
+          "tests": 13,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 245.37,
+          "tests": 2,
+          "volume_confirmed": false
+        },
+        {
+          "price": 249.1,
+          "tests": 7,
+          "volume_confirmed": false
+        },
+        {
+          "price": 253.07,
+          "tests": 16,
+          "volume_confirmed": false
+        },
+        {
+          "price": 256.65,
+          "tests": 12,
+          "volume_confirmed": true
+        },
+        {
+          "price": 260.34,
+          "tests": 19,
+          "volume_confirmed": true
+        }
+      ],
+      "nearest_resistance": 264.38,
+      "nearest_support": 260.34,
+      "recent_high": 265.91,
+      "recent_low": 256.65,
+      "prev_day_high": 264.01,
+      "prev_day_low": 262.57,
+      "prev_day_close": 262.6
+    },
+    "fibonacci": {
+      "swing_high": 265.91,
+      "swing_low": 254.49,
+      "fib_236": 263.21,
+      "fib_382": 261.55,
+      "fib_500": 260.2,
+      "fib_618": 258.85,
+      "fib_786": 256.93,
+      "fib_ext_1272": 269.02,
+      "fib_ext_1618": 272.97,
+      "fib_ext_2000": 277.33,
+      "fib_ext_low_1272": 251.38,
+      "fib_ext_low_1618": 247.43
+    },
+    "momentum": {
+      "roc_5d": -0.24,
+      "roc_10d": 2.05,
+      "roc_21d": -0.22
+    },
+    "z_score_120": 1.16,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 252.44000244140625,
+      "close": 255.36000061035156,
+      "high": 255.94000244140625,
+      "low": 250.3300018310547,
+      "volume": 36065100,
+      "time": "2026-04-22"
+    },
+    {
+      "open": 255.38999938964844,
+      "close": 255.0800018310547,
+      "high": 258.7900085449219,
+      "low": 253.07000732421875,
+      "volume": 39091400,
+      "time": "2026-04-23"
+    },
+    {
+      "open": 259.9800109863281,
+      "close": 263.989990234375,
+      "high": 264.5,
+      "low": 257.69000244140625,
+      "volume": 53777400,
+      "time": "2026-04-24"
+    },
+    {
+      "open": 263.4599914550781,
+      "close": 261.1199951171875,
+      "high": 264.1499938964844,
+      "low": 260.3399963378906,
+      "volume": 44906800,
+      "time": "2026-04-27"
+    },
+    {
+      "open": 258.3900146484375,
+      "close": 259.70001220703125,
+      "high": 261.0299987792969,
+      "low": 256.6300048828125,
+      "volume": 42204400,
+      "time": "2026-04-28"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 263.0400085449219,
+  "market_cap": 2828798525440.0,
+  "wiki_context": {
+    "slices": {
+      "technicals_tldr": {
+        "path": "wiki/tickers/AMZN/technicals.md",
+        "mode": "tldr",
+        "content": "As of the most recent run (20260417_233350, April 17 2026), AMZN is in a confirmed daily uptrend with ADX at 44 \u2014 strong enough to sustain a swing trade \u2014 but the z-score of 2.84 signals the stock is statistically extended. The PM sized down to 35 shares (vs a full position) specifically because of this extension. Entry zone is a tight pullback to $249.70 with stop at $244.00.\n\n---",
+        "last_updated": "2026-04-29",
+        "stale": false
+      },
+      "recent_tldr": {
+        "missing": true,
+        "mode": "tldr"
+      }
+    }
+  }
+}

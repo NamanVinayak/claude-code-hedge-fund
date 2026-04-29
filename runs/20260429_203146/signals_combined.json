@@ -1,0 +1,319 @@
+{
+  "mode": "swing",
+  "analyst_signals": {
+    "swing_breakout": {
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 30,
+        "reasoning": "The primary breakout setup for AMZN is already complete and in a mature phase. The original consolidation range was $199-$249, and the volume-confirmed breakout occurred around April 14 (1.57x volume per wiki). The measured move target of ~$299 is still in play, but the daily Bollinger Band width at 0.321 is WIDE \u2014 volatility has already expanded, which is a hard 'pass' signal under my strategy (move already done). Daily RSI-14 at 86.14 and RSI-21 at 89.35 indicate extreme overbought conditions inconsistent with a fresh breakout entry. ADX at 61.85 confirms a strong established trend, not a coiling pre-breakout base.\n\nA mini-consolidation is forming at the hourly level between $258-264, and hourly Bollinger width (0.0681) is compressed, suggesting potential coiling. However, there are three problems: (1) Volume is sub-average today at 0.92x \u2014 no surge to confirm a breakout above $264.38-$264.50 resistance. (2) Hourly OBV is diverging from price (trending down despite price holding), a bearish sign. (3) Hourly RSI shows bearish divergence and hourly ADX minus_di (27.61) exceeds plus_di (18.37), indicating near-term selling pressure. Price has tested the $264.38-$264.50 resistance zone twice and failed to close above it on volume. For a bullish breakout signal, I would need a daily close above $264.50 on volume 1.5x+ average (i.e., >68.5M). That has not occurred. For a bearish breakdown signal, a close below the $256-258 support zone on volume would be the trigger, but this would be counter-trend and lower conviction. The wiki's PM target of $262-263 has been essentially reached, removing the upside catalyst. Remain neutral \u2014 this is not a fresh breakout setup.",
+        "entry": 265.0,
+        "target": 282.28,
+        "stop": 257.5,
+        "timeframe": "7-12 trading days"
+      }
+    },
+    "swing_head_trader": {
+      "AMZN": {
+        "consensus_signal": "neutral",
+        "confidence": 58,
+        "reasoning": "Vote count: 1 bullish (swing_trend_momentum, 62), 1 bearish (swing_mean_reversion, 62), 3 neutral (swing_breakout 30, swing_catalyst_news 55, swing_macro_context 68). The trend is unambiguously real \u2014 daily EMA stack is clean, ADX at 61.85 is an exceptionally strong reading, and 21-day ROC of +30.28% confirms a major momentum leg. However, four of five agents are aligned on the same core message: this setup is NOT actionable today. The reasons stack: (1) Q1 2026 earnings are due April 30 after close \u2014 one trading day away \u2014 creating a binary event that invalidates standard swing entry math. A miss or guidance softness from AWS at RSI 86+ would gap through all technical support levels. (2) Daily RSI-14 at 86.14 and RSI-21 at 89.35 are at extreme historical overbought readings. Price is 17.46% above the 50-SMA with a z-score of 2.0 \u2014 the stock is running two standard deviations extended. (3) Hourly timeframe shows early distribution: OBV is diverging bearishly from price, hourly MACD histogram is negative (-0.48), hourly ADX minus_di (27.61) exceeds plus_di (18.37), and volume bias is down. Sellers are absorbing into strength on the intraday chart. (4) The swing_macro_context agent ran explicit R/R math: best-case upside to $282 vs stop at $253 yields only 1.9:1, below the 2:1 minimum bar \u2014 and the earnings binary compresses this further. (5) swing_breakout confirms the original $199-$249 consolidation breakout is fully mature with a measured target of $299 still in play, but Bollinger width at 0.321 signals the volatility expansion phase is already done \u2014 not a fresh coiling setup. MACRO VETO APPLIED: swing_macro_context explicitly flags Amazon earnings as a primary regime risk-off trigger this week. Per head trader rules, macro veto carries override weight when the regime read is strong. Even if trend_momentum and mean_reversion were to resolve bullishly, the binary event alone is sufficient to block a new swing entry. BEST FORWARD SETUP: Post-earnings re-entry. If Q1 beats and AWS guidance is strong, the stock may gap up then consolidate \u2014 a clean RSI reset toward 60-70 with a re-test of the $253-258 EMA zone would be the high-conviction entry for the continuation leg toward the $282-299 measured target range. If earnings disappoint, the swing_macro_context re-entry zone of $240-$248 becomes the target.",
+        "agent_agreement_pct": 60.0,
+        "key_conflicts": "The principal conflict is between swing_trend_momentum (bullish, 62) and swing_mean_reversion (bearish, 62) \u2014 but this disagreement is actually informative rather than paralyzing. Trend_momentum says 'the daily trend is genuinely strong and should be respected \u2014 this is a pullback-to-EMA continuation setup, not a top.' Mean_reversion says 'RSI 86+ with a z-score of 2.0 is a statistical extreme that historically precedes snapbacks, and the hourly chart is already confirming distribution.' Critically, both agents cite the SAME hourly evidence (OBV divergence, MACD histogram negative, minus_di > plus_di) and both acknowledge the extreme RSI \u2014 they simply weight it differently. Trend_momentum is waiting for a pullback to the 10 EMA (~$253) to enter long; mean_reversion is already short at current price targeting the middle Bollinger Band (~$239). This exact configuration \u2014 trend extended, reversal risk rising, both cases supported by same data \u2014 is precisely what the swing_breakout agent's neutrality and swing_macro_context's explicit R/R calculation resolve: the setup is not yet favorable in either direction given the imminent binary event. The earnings wildcard (April 30) makes both the trend-continuation entry and the mean-reversion fade higher-risk than they appear on the chart alone. Post-earnings, one of these two agents will be clearly right \u2014 and that is the moment to act.",
+        "recommended_action": "hold",
+        "synthesis_notes": {
+          "earnings_veto": "Q1 2026 earnings April 30 after close \u2014 binary event veto applied per macro and catalyst agents",
+          "re_entry_zone_bullish": "253.0-258.0 (EMA10/EMA21 confluence) post-earnings if fundamentals confirm",
+          "re_entry_zone_bearish": "240.0-248.0 if earnings disappoint and AWS growth decelerates",
+          "measured_move_target": 299.0,
+          "next_resistance": 264.5,
+          "key_support_daily": 253.0,
+          "rsi_reset_target": "60-70 before new swing entry",
+          "macro_regime": "transitional / risk-on but fragile \u2014 Fed hold, earnings season binary risk, Iran tail risk active"
+        }
+      }
+    },
+    "growth_analyst_agent": {
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 1,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.55,
+            "revenue_growth": 0.10990892246666145,
+            "revenue_trend": 0.14196732245312202,
+            "eps_growth": 0.9186440677966101,
+            "eps_trend": -0.47412852946257333,
+            "fcf_growth": null,
+            "fcf_trend": 0.0
+          },
+          "growth_valuation": {
+            "score": 0.5,
+            "peg_ratio": 1.88,
+            "price_to_sales_ratio": 4.270432471245368
+          },
+          "margin_expansion": {
+            "score": 0.2,
+            "gross_margin": 0.006600092087286671,
+            "gross_margin_trend": 0.0002822508211159733,
+            "operating_margin": 0.10931062853347222,
+            "operating_margin_trend": -0.010967534935042048,
+            "net_margin": 0.10840032306031717,
+            "net_margin_trend": -0.013203574213299783
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 0.8,
+            "debt_to_equity": 0.20334650487813408,
+            "current_ratio": 1.063734806137178
+          },
+          "final_analysis": {
+            "signal": "neutral",
+            "confidence": 1,
+            "weighted_score": 0.51
+          }
+        }
+      }
+    },
+    "swing_trend_momentum": {
+      "AMZN": {
+        "signal": "bullish",
+        "confidence": 62,
+        "reasoning": "TREND ASSESSMENT: Daily EMA alignment is unambiguously bullish \u2014 EMA10 (252.99) > EMA21 (241.97) > EMA50 (230.28) \u2014 fanning cleanly with price at 259.70 above all moving averages. ADX at 61.85 with Plus DI (50.62) dwarfing Minus DI (12.33) confirms an extremely strong established uptrend. Price has made higher highs (recent high 264.50) and is holding above all key EMAs. Wiki context corroborates: prior run (Apr 17) had ADX at 44 in confirmed uptrend, which has since strengthened further to 62. MOMENTUM ASSESSMENT: Daily ROC is all positive \u2014 5d (+3.92%), 10d (+4.29%), 21d (+30.28%) \u2014 a strong, broad-based momentum signature. Daily MACD line (12.21) is above signal (10.41) with a positive histogram (+1.81), supporting momentum continuation. However, MOMENTUM IS NOT CLEARLY ACCELERATING at the short-term level: daily RSI 14d at 86.14 and 21d at 89.35 are at extreme overbought readings that historically precede at least short-term pauses. HOURLY DIVERGENCE (WARNING): The hourly timeframe is flashing meaningful caution signs \u2014 hourly MACD histogram is negative (-0.48), hourly ADX at 20.06 is sub-25 with Minus DI (27.61) > Plus DI (18.37), hourly OBV is diverging bearishly from price, and a bearish RSI divergence is detected on the hourly. This confirms the stock is in an active short-term pullback/consolidation, currently sitting ~1.8% below the recent high of 264.50. The hourly conflict with the daily trend means the ideal entry has NOT yet arrived. ENTRY LOGIC: Per strategy rules, entry is on a pullback to the 10 or 21 EMA. Price is currently 2.65% above EMA10 (~253.00) \u2014 not yet at the EMA. The ongoing pullback from 264.50 needs to complete with price retesting the 10 EMA zone (252-255) and hourly momentum stabilizing. At that point the setup becomes high-quality. RISK: The z-score of 2.0 (daily, vs 2.84 in prior wiki run) signals statistical extension. Macro regime is described as transitional/fragile. Confidence is moderated to 62 to reflect the strong daily trend versus active short-term weakness and overextension. Signal is bullish (not neutral) because the trend and daily momentum are genuinely strong \u2014 this is a trend continuation setup, just not at the ideal entry yet.",
+        "entry": 253.5,
+        "target": 282.28,
+        "stop": 248.5,
+        "timeframe": "8-15 trading days"
+      }
+    },
+    "swing_macro_context": {
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 68,
+        "reasoning": "MACRO REGIME: Transitional, leaning risk-on but increasingly fragile. S&P 500 hit ATH of 7,173 on April 27 before pulling back. Fed held at 4.25-4.50% (third straight hold), Powell's final meeting \u2014 Warsh succession adds policy uncertainty. Iran/Strait of Hormuz remains the primary tail risk; core PCE at 2.7% keeps the Fed constrained. Critically, Amazon earnings are due THIS WEEK and are flagged in the macro regime as a primary risk-off trigger ('big-tech earnings miss on AI capex ROI'). This alone disqualifies a swing entry \u2014 binary event risk invalidates the setup math.\n\nRELATIVE STRENGTH: Strongly outperforming. Daily ROC: +3.92% (5d), +4.29% (10d), +30.28% (21d). All EMAs aligned uptrend on both daily and hourly. Price is 17.5% above 50-SMA and 16.75% above 200-EMA. Z-score vs 50-SMA = 2.0 \u2014 two standard deviations extended. AMZN is a sector leader but has already made the bulk of its move. Wiki thesis confirms system has been net bullish across all prior runs but consistently warned against chasing extensions.\n\nHOURLY DISTRIBUTION SIGNALS: Hourly RSI = 48.9 (neutral, not confirming daily strength). Hourly MACD histogram = -0.4805 (bearish). Hourly OBV trend = DOWN and diverging from price \u2014 this is an early distribution signal, suggesting institutional selling into strength. Hourly ADX: minus_di (27.61) > plus_di (18.37), volume bias 10d = DOWN. These hourly signals indicate the move is rolling over on shorter timeframes while daily still looks extended.\n\nASYMMETRIC R/R: Current price ~$263. Near resistance $264.38 (hourly, 13 tests). Next Fib extension 1.272 = $282.28 (+7.2% upside). Stop below hourly support $260.34 (volume-confirmed, 19 tests): 1.0% downside. If using daily support $253: 3.8% downside. Best-case R/R: $282/$253 stop = 7.2%/3.8% = 1.9:1 \u2014 below the 2:1 minimum bar. Earnings binary event compresses this further \u2014 a gap-down on miss could blow through all supports. R/R does NOT meet entry criteria.\n\nCAPITAL PRESERVATION: Daily RSI 14 = 86.14, RSI 21 = 89.35 \u2014 extreme overbought. Mean reversion risk is elevated. 30.28% 21-day ROC means we are late in this sector rotation cycle, not early. Sector cycle timing discipline says pass on late-cycle entries. AMZN balance sheet is strong (no leverage concern), but extreme valuation extension and earnings binary are sufficient flags.\n\nCONCLUSION: The macro tailwind (risk-on lean, AWS/AI monetization thesis intact) is real, but the entry conditions are not met: (1) overbought on daily RSI 86+, (2) hourly OBV divergence signals distribution, (3) earnings this week creates binary risk that invalidates swing setup math, (4) R/R below 2:1 threshold, (5) late in the move. Wait for post-earnings pullback and RSI reset toward 50-60 before establishing a swing long. A clean re-entry zone would be $240-$248 on earnings-driven weakness if the fundamental thesis is confirmed.",
+        "entry": 248.0,
+        "target": 275.0,
+        "stop": 238.0,
+        "timeframe": "7-15 trading days"
+      }
+    },
+    "swing_mean_reversion": {
+      "AMZN": {
+        "signal": "bearish",
+        "confidence": 62,
+        "reasoning": "Branch A (Fade the Extreme) fires. Daily RSI-14 at 86.14 and RSI-21 at 89.35 are severely overbought \u2014 well above the 75 threshold. Price is 17.46% above the 50-SMA, which is an extreme extension (>10% threshold). Daily z-score is exactly 2.0, at the trigger line. Bollinger Band pct_b of 0.77 keeps price inside the bands (upper at 277.33), so there is room for further upside, but the RSI readings are historically extreme. No daily RSI divergence is confirmed (bearish: false), which is a missing confirmation piece. However, the hourly timeframe provides strong corroboration: hourly RSI divergence is bearish (true), hourly OBV is diverging from price (true), hourly MACD histogram is negative (-0.48), and hourly ADX shows minus_di (27.61) exceeding plus_di (18.37) \u2014 sellers are gaining intraday momentum. Hourly volume bias is also 'down'. This multi-timeframe convergence (daily extreme RSI + hourly bearish divergence + hourly OBV/MACD weakness) suggests the reversion may already be starting on the intraday chart. Wiki context confirms AMZN was already extended on April 17 (z-score 2.84) and the PM had sized down \u2014 this is not a fresh first-time extension, which slightly lowers conviction on an immediate snap-back since the stock has continued higher. Key caution: ADX at 61.85 signals an extremely strong trend that can sustain overbought readings longer than expected. Confidence is capped at 62 given no daily RSI divergence and the strong trend. Branch B does not fire \u2014 price is far above all Fibonacci levels with no pullback in progress. Entry on any intraday weakness; target is the middle Bollinger Band (mean). Stop above recent swing high.",
+        "entry": 259.7,
+        "target": 238.98,
+        "stop": 266.0,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_catalyst_news": {
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 55,
+        "reasoning": "Catalyst window: Q1 2026 earnings on April 30 (after close) \u2014 1 trading day away. This is a high-impact binary event with consensus at $177.3B revenue and $1.67 EPS (near the high end of Amazon's own $173.5B-$178.5B guidance range, meaning the bar is already set for an upside beat). FOMC rate decision also falls today (April 29), adding additional event risk. Net news sentiment is strongly positive: AWS AI ARR at $15B disclosed in Jassy shareholder letter, $11.6B Globalstar acquisition closed, AWS Trainium3 launched (3x faster AI training chip), Amazon Pharmacy GLP-1 same-day delivery partnership with Eli Lilly, and 64/68 analyst Buy ratings with average price target $284-287. Insider activity: quiet \u2014 no insider trades in the last 30 days. Technical setup going in: POOR and overextended. Daily RSI-14 at 86.14, RSI-21 at 89.35 \u2014 extreme overbought territory. Price is 17.46% above the 50-SMA and 30.28% higher over the past 21 days (z-score 2.0). The stock is already pricing in a strong beat with no margin of safety. Hourly indicators are distinctly deteriorating: OBV is diverging bearishly from price (distribution signal), hourly RSI divergence is bearish, MACD histogram is negative (-0.48), and minus_di (27.61) exceeds plus_di (18.37) on the hourly ADX \u2014 intraday momentum has flipped bearish. The catalyst is real and imminent, but the risk/reward for a new long entry at these levels is unfavorable. The stock has already run 13-14% on the prior catalyst cluster (Globalstar, Jassy letter, Trainium3). Entering 1 day before earnings at RSI 86 means any miss or guidance soft-patch from AWS triggers severe reversion from extreme levels. The post-earnings setup (if results beat) would be more constructive. Output: neutral \u2014 catalyst exists but technical setup is exhausted, not constructive.",
+        "entry": 259.7,
+        "target": 275.0,
+        "stop": 252.0,
+        "timeframe": "1-3 trading days"
+      }
+    },
+    "fundamentals_analyst_agent": {
+      "AMZN": {
+        "signal": "bullish",
+        "confidence": 50.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "neutral",
+            "details": "ROE: 25.11%, Net Margin: 10.84%, Op Margin: 10.93%"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 10.99%, Earnings Growth: 94.73%"
+          },
+          "financial_health_signal": {
+            "signal": "bullish",
+            "details": "Current Ratio: 1.06, D/E: 0.20"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 36.69, P/B: 9.89, P/S: 4.27"
+          }
+        }
+      }
+    },
+    "technical_analyst_agent": {
+      "AMZN": {
+        "signal": "bullish",
+        "confidence": 26,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 52,
+            "metrics": {
+              "adx": 51.55942486623621,
+              "trend_strength": 0.5155942486623621
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 2.0009705774230477,
+              "price_vs_bb": 0.7701339188257318,
+              "rsi_14": 86.14404258578519,
+              "rsi_28": 73.56920873984708
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.26940591202733044,
+              "momentum_3m": 0.07299114418387709,
+              "momentum_6m": 0.17381182610946455,
+              "volume_momentum": 0.9232076903870474
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.28782435079714336,
+              "volatility_regime": 0.9124160533668256,
+              "volatility_z_score": -0.7996392206219194,
+              "atr_ratio": 0.025540453541652155
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.0008335557178835537,
+              "kurtosis": 0.5249651850111723
+            }
+          }
+        }
+      }
+    },
+    "valuation_analyst_agent": {
+      "AMZN": {
+        "signal": "bullish",
+        "confidence": 100,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $1,510,758,044,871.35, Market Cap: $2,828,798,525,440.00, Gap: -46.6%, Weight: 35%\n  WACC: 10.5%, Bear: $1,019,310,881,941.10, Bull: $1,834,314,656,424.30, Range: $815,003,774,483.19"
+          },
+          "owner_earnings_analysis": {
+            "signal": "bullish",
+            "details": "Value: $14,476,191,372,295.71, Market Cap: $2,828,798,525,440.00, Gap: 411.7%, Weight: 35%"
+          },
+          "ev_ebitda_analysis": {
+            "signal": "neutral",
+            "details": "Value: $2,639,120,285,924.44, Market Cap: $2,828,798,525,440.00, Gap: -6.7%, Weight: 20%"
+          },
+          "residual_income_analysis": {
+            "signal": "neutral",
+            "details": "Value: $3,099,538,432,465.14, Market Cap: $2,828,798,525,440.00, Gap: 9.6%, Weight: 10%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$1,019,310,881,941.10",
+            "base_case": "$1,566,721,561,997.12",
+            "bull_case": "$1,834,314,656,424.30",
+            "wacc_used": "10.5%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      }
+    },
+    "sentiment_analyst_agent": {
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      }
+    },
+    "risk_management_agent": {
+      "AMZN": {
+        "remaining_position_limit": 0.0,
+        "current_price": 263.0400085449219,
+        "earnings_blackout": {
+          "days_to_next_earnings": 0,
+          "blackout_window_days": 3
+        },
+        "reasoning": {
+          "rejected": "earnings in 0 days",
+          "earnings_blackout_window": 3
+        }
+      }
+    }
+  },
+  "allowed_actions": {
+    "AMZN": {
+      "hold": 0
+    }
+  },
+  "portfolio": {
+    "cash": 100000.0,
+    "margin_requirement": 0.0,
+    "margin_used": 0.0,
+    "positions": {
+      "AMZN": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      }
+    },
+    "other_positions": [],
+    "realized_gains": {
+      "AMZN": {
+        "long": 0.0,
+        "short": 0.0
+      }
+    }
+  },
+  "tickers": [
+    "AMZN"
+  ],
+  "end_date": "2026-04-29",
+  "degraded_inputs": []
+}

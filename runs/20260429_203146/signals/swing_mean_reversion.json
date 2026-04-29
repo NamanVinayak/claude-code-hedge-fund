@@ -1,0 +1,11 @@
+{
+  "AMZN": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": "Branch A (Fade the Extreme) fires. Daily RSI-14 at 86.14 and RSI-21 at 89.35 are severely overbought — well above the 75 threshold. Price is 17.46% above the 50-SMA, which is an extreme extension (>10% threshold). Daily z-score is exactly 2.0, at the trigger line. Bollinger Band pct_b of 0.77 keeps price inside the bands (upper at 277.33), so there is room for further upside, but the RSI readings are historically extreme. No daily RSI divergence is confirmed (bearish: false), which is a missing confirmation piece. However, the hourly timeframe provides strong corroboration: hourly RSI divergence is bearish (true), hourly OBV is diverging from price (true), hourly MACD histogram is negative (-0.48), and hourly ADX shows minus_di (27.61) exceeding plus_di (18.37) — sellers are gaining intraday momentum. Hourly volume bias is also 'down'. This multi-timeframe convergence (daily extreme RSI + hourly bearish divergence + hourly OBV/MACD weakness) suggests the reversion may already be starting on the intraday chart. Wiki context confirms AMZN was already extended on April 17 (z-score 2.84) and the PM had sized down — this is not a fresh first-time extension, which slightly lowers conviction on an immediate snap-back since the stock has continued higher. Key caution: ADX at 61.85 signals an extremely strong trend that can sustain overbought readings longer than expected. Confidence is capped at 62 given no daily RSI divergence and the strong trend. Branch B does not fire — price is far above all Fibonacci levels with no pullback in progress. Entry on any intraday weakness; target is the middle Bollinger Band (mean). Stop above recent swing high.",
+    "entry": 259.70,
+    "target": 238.98,
+    "stop": 266.00,
+    "timeframe": "5-12 trading days"
+  }
+}

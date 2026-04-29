@@ -1,0 +1,47 @@
+{
+  "AMZN": {
+    "signal": "neutral",
+    "confidence": 1,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0.55,
+        "revenue_growth": 0.10990892246666145,
+        "revenue_trend": 0.14196732245312202,
+        "eps_growth": 0.9186440677966101,
+        "eps_trend": -0.47412852946257333,
+        "fcf_growth": null,
+        "fcf_trend": 0.0
+      },
+      "growth_valuation": {
+        "score": 0.5,
+        "peg_ratio": 1.88,
+        "price_to_sales_ratio": 4.270432471245368
+      },
+      "margin_expansion": {
+        "score": 0.2,
+        "gross_margin": 0.006600092087286671,
+        "gross_margin_trend": 0.0002822508211159733,
+        "operating_margin": 0.10931062853347222,
+        "operating_margin_trend": -0.010967534935042048,
+        "net_margin": 0.10840032306031717,
+        "net_margin_trend": -0.013203574213299783
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 0.8,
+        "debt_to_equity": 0.20334650487813408,
+        "current_ratio": 1.063734806137178
+      },
+      "final_analysis": {
+        "signal": "neutral",
+        "confidence": 1,
+        "weighted_score": 0.51
+      }
+    }
+  }
+}
