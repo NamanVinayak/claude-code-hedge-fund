@@ -6,7 +6,7 @@ This file is for resuming work after a conversation compaction or session change
 
 ## Current state in one paragraph
 
-The swing-stock AI hedge fund is architecturally clean and shipped to GitHub at `claude-code-hedge-fund`. The wiki memory layer (Phase 1) is built, bootstrapped with 96 pages across 23 tickers, and **flag is now ON** (`tracker/watchlist.json:settings.wiki_enabled` = true, committed `ed5ebaa`, pushed to hedge-remote/main). The 5 swing strategy agents work end-to-end. Paper positions were wiped for a fresh start; closed-trade history is preserved. Next: set up 15 routines on claude.ai (which clone this repo per run), then validate the first real curator fire.
+The swing-stock AI hedge fund is architecturally clean and shipped to GitHub at `claude-code-hedge-fund`. The wiki memory layer (Phase 1) is built, bootstrapped with 96 pages across 23 tickers, and **flag is ON**. The 5 swing strategy agents work end-to-end. The swing skill is **production-ready as of commit `281b56f`** — wiki curator dispatched per run, wiki updates commit + push to main, no more per-run feature branches. 15 Anthropic Routines are set up on claude.ai (14 swing + 1 wiki-maintenance) but currently PAUSED. Next: user re-enables the routines, then validates the first real curator fire on `hedge-remote/main`.
 
 ## What just happened (Apr 29 session)
 
@@ -18,18 +18,29 @@ The swing-stock AI hedge fund is architecturally clean and shipped to GitHub at 
 6. Paper positions abandoned; tracker.db cleaned
 7. `summary.json` writer added to finalize.py (dashboard-ready)
 8. Repo published cleanly to `claude-code-hedge-fund`, main reconciled, 4 stale branches deleted, LICENSE added
+9. **Wiki flag flipped ON**, committed + pushed (`ed5ebaa`)
+10. **15 Anthropic Routines created via Playwright** — 14 swing + 1 wiki-maintenance, 45-min stagger across trading day
+11. **Production-ready skill fixes** (`281b56f`): wiki curator step + git push for `wiki/` + direct-to-main strategy + wiki-maintenance now actually persists
+12. **Context-budget cleanup**: 1.1 MB session transcript deleted, root `CLAUDE.md` slimmed 26 KB → 6 KB via per-folder split, GRAPH_REPORT auto-read softened, redundant hook removed
+13. Tracker-execute scope decision saved: routines stop at git push; placing paper orders is a Wave 4 dashboard responsibility
 
 ## Where the truth lives
 
 | If you need... | Read |
 |---|---|
-| Project overview, architecture, pipeline diagram | `CLAUDE.md` |
+| Project overview, commands, smoke tests | `CLAUDE.md` (slim root, ~6 KB) |
+| Pipeline internals, key modules, indicators, wiki | `ai_hedge/CLAUDE.md` |
+| Persona helpers + rename map | `ai_hedge/personas/CLAUDE.md` |
+| Paper trading + Moomoo + tracker CLI + budget | `tracker/CLAUDE.md` |
+| Architectural audit + Wave 3 roadmap + dashboard plan | `ARCHITECTURE.md` |
 | User context (style, focus, preferences) | `~/.claude/projects/-Users-naman-Downloads-artist/memory/MEMORY.md` and pointed files |
-| Most recent state of everything | `~/.claude/projects/-Users-naman-Downloads-artist/memory/project_apr29_session.md` |
+| Most recent project snapshot | `~/.claude/projects/-Users-naman-Downloads-artist/memory/project_apr29_session.md` |
+| Tracker-execute scope decision | `~/.claude/projects/-Users-naman-Downloads-artist/memory/project_executor_scope.md` |
 | Sin status (architectural audit) | `scripts/architecture_audit.md` |
 | Wiki memory layer design | `scripts/wiki_memory_plan.md` |
-| Pipeline run instructions | `RUN_PLAYBOOK.md` |
-| Skill orchestration | `.agents/skills/swing/SKILL.md` |
+| Pipeline run instructions (manual) | `RUN_PLAYBOOK.md` |
+| Production swing skill (used by routines) | `.claude/skills/swing/SKILL.md` |
+| Wiki maintenance skill (Sunday routine) | `.agents/skills/wiki_maintenance/SKILL.md` |
 
 ## Next steps queued (in order)
 

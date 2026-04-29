@@ -342,7 +342,7 @@ This step runs for ALL modes. The explainer adapts its output based on the mode.
 
 ## STEP 7.5 — Wiki Curator (optional, feature-flagged)
 
-**Gated on `tracker/watchlist.json:settings.wiki_enabled` (default `false`).** When the flag is off, skip this step entirely; the wiki is not updated and downstream behavior is unchanged. When on, dispatch **one** Agent tool call (`model: sonnet`) to refresh the per-ticker wiki memory based on this run's signals + decisions:
+**Gated on `tracker/watchlist.json:settings.wiki_enabled` (currently `true` since 2026-04-29).** When the flag is off, skip this step entirely; the wiki is not updated and downstream behavior is unchanged. When on, dispatch **one** Agent tool call (`model: sonnet`) to refresh the per-ticker wiki memory based on this run's signals + decisions:
 
 ```
 You are the Wiki Curator agent.
