@@ -1,0 +1,20 @@
+{
+  "CVX": {
+    "signal": "bearish",
+    "confidence": 72,
+    "reasoning": "Branch A — Fade the extreme (bearish). The hourly timeframe is the primary trigger: RSI-21 at 70.25 (overbought), price has broken above the hourly upper Bollinger Band (pct_b = 1.04), and crucially there is a confirmed hourly bearish RSI divergence — price making new highs while RSI is falling. The current hourly price ($192.21) has rallied exactly to the 61.8% Fibonacci retracement level ($191.86) from the daily swing ($214.71 high / $177.74 low), providing textbook Fib resistance coincidence. Wiki context confirms this is no coincidence: the April 11 analysis explicitly forecasted a bounce from ~$188.55 to ~$192 before resumption of the downtrend toward $178 — that bounce has now fully materialized. Daily backdrop is bearish: MACD deeply negative (-2.50 line vs -1.97 signal, histogram widening), ADX at 32.17 with -DI (28.59) > +DI (21.56) confirming bear directional pressure, OBV diverging bearishly from price, and 21-day RSI at 31 showing sustained selling pressure. The hourly extreme + daily bearish structure + wiki confluence = high-conviction fade. Stop is set just beyond the 61.8% Fib ($191.86) plus a buffer, targeting return to the daily 50-SMA ($192.41 area is near-term, deeper target is the 50-SMA at $192.41 then $185-$183 support zone). Primary target is the 50% Fib ($185.65) and key pivot support at $181.76.",
+    "entry": 192.21,
+    "target": 183.67,
+    "stop": 194.50,
+    "timeframe": "5-12 trading days"
+  },
+  "WMT": {
+    "signal": "bullish",
+    "confidence": 58,
+    "reasoning": "Branch B — Buy the dip in an uptrend. The daily EMA stack is aligned bullish (ema_aligned_uptrend = true), and WMT broke above the critical $129 resistance (recent high $132.46 on April 23, closing at $132.03) — the exact breakout condition the wiki memory flagged as the prerequisite for any long entry. Current data contradicts the wiki's prior 'no setup' verdict: the breakout occurred and the stock is now pulling back cleanly into the 38.2% Fibonacci retracement at $126.94 (swing $118.02-$132.46), which is in perfect confluence with the $126.93 horizontal pivot level tested 30 times — the heaviest S/R level on the chart. Price at $127.59 is testing this zone now. Hourly RSI-21 at 39.2 is approaching oversold within the broader uptrend, consistent with a healthy pullback. Daily RSI-14 at 50.87 and RSI-21 at 57.37 are neutral — not yet providing strong oversold confirmation (this caps confidence). Volume on the pullback is near average (relative volume 0.98), neither strongly declining (healthy) nor expanding (warning) — neutral read. ADX at 14.72 is weak, cautioning that trend conviction is low on the daily. The setup fires on Fib + horizontal S/R confluence and the post-breakout pullback pattern, but the weak ADX and absence of a reversal candle confirmation limit confidence to 58. Entry is near current levels in the Fib zone; stop is below the 50% Fib ($125.24) and below the $125.91 hourly support; target is a retest of the recent swing high.",
+    "entry": 127.33,
+    "target": 131.50,
+    "stop": 124.80,
+    "timeframe": "6-14 trading days"
+  }
+}

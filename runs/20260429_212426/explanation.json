@@ -1,0 +1,55 @@
+{
+  "mode": "swing",
+  "tickers": ["CVX", "WMT"],
+  "layer1_tldr": "The system says hold cash for both CVX and WMT — but not because these are bad stocks. CVX has a strong short setup brewing (the stock looks ready to fall), but earnings in 2 days make it too dangerous to act right now. WMT has a potential buy opportunity, but the current price doesn't offer enough upside buffer to make the trade worth taking yet. Both are 'wait and watch' situations.",
+  "layer2_story": "Think of this analysis like a team of five specialists debating in a room. For CVX (Chevron), three out of five analysts came in bearish — meaning they think the stock is about to drop. The oil giant has been quietly underperforming while the S&P 500 hit new highs, its price bounced exactly to the level ($192) where technicians expected a reversal, and macro headwinds from a potential Iran ceasefire are reducing the oil price premium that was propping it up. The two neutral agents didn't disagree — they just said 'not now' because of imminent earnings. So the team is largely aligned: the trade is compelling, but a company reporting earnings in 2 days is like catching a grenade — you don't know which way it'll go. The risk manager enforced a hard blackout.\n\nFor WMT (Walmart), the debate was more evenly split. Two agents see a genuine buy opportunity: Walmart has been in a confirmed uptrend, pulled back to a textbook support zone (around $126-127), and has a pre-earnings tailwind coming May 21. But three agents stayed neutral — primarily because at $128, the stock is only 37 cents from a ceiling it's failed to break through 22 times. That means if you buy here, you have almost no room before hitting resistance, but you could lose $1.50 or more if the trade goes against you. That's a losing coin flip on risk/reward. The portfolio manager's job is to only deploy capital when the odds are clearly in your favor, and right now they're not.",
+  "layer3_per_ticker": {
+    "CVX": {
+      "verdict": "HOLD — Earnings blackout prevents action; bearish thesis intact at $192, re-evaluate post-earnings.",
+      "bull_case": "Analyst consensus Buy with average price target ~$211 (11% upside). CVX has beaten earnings estimates 4 straight quarters. Venezuela asset expansion adds long-term production optionality. Singapore asset sale near $1B could support buybacks.",
+      "bear_case": "3 of 5 swing agents bearish. Stock down -10.79% over 21 days while S&P made new highs (severe underperformance). Price bounced to exactly the 61.8% Fibonacci resistance at $191.86. Hourly RSI at 70.25 with bearish divergence. OBV (volume flow indicator) diverging from price — smart money distributing. May 1 earnings expected to show -57.8% YoY EPS decline. $2.7-3.7B Middle East impairment pre-disclosed.",
+      "key_metrics": {
+        "ADX_32": "ADX (trend strength indicator) at 32 confirms a strong trend — and the trend is bearish (bearish DI 28.59 > bullish DI 21.56)",
+        "RSI_70": "RSI (momentum oscillator) at 70.25 on the hourly chart means the stock is overbought in the short term — historically a reversal signal",
+        "Fib_resistance": "The 61.8% Fibonacci retracement at $191.86 is where the previous decline is expected to exhaust a bounce — price hit this level today",
+        "earnings_in_2_days": "Q1 2026 earnings report May 1 creates binary binary event risk — a bad print could gap the stock down 5-10%; a beat could erase the entire short thesis",
+        "sector_lag": "-10.79% 21-day ROC while S&P hit highs signals sector rotation away from energy"
+      },
+      "risk_check": "Post-earnings spike if Q1 beats or guidance is raised could invalidate the entire bearish thesis. Iran port blockade escalation would spike oil and hurt any short position."
+    },
+    "WMT": {
+      "verdict": "HOLD — Wait for pullback to $126.00-$126.94 or confirmed break above $129 before entering long.",
+      "bull_case": "Daily EMA stack (20/50/200-day moving averages) all aligned upward — confirmed uptrend. Price pulled back to the 38.2% Fibonacci level ($126.94) confluent with a horizontal support level tested 30 times at $126.93. May 21 earnings could be a catalyst given record-low consumer sentiment benefiting Walmart's value positioning. eCommerce up 27% YoY, first profitable quarter. Analyst consensus Strong Buy, avg target $136.",
+      "bear_case": "Valuation deeply stretched: DCF (discounted cash flow, what the business is fundamentally worth) gap of -82.6% implies the stock trades at nearly 6x fair value. P/E ratio 46.89 vs market average ~20 — expensive for a grocery retailer. ADX at 14.72 (trend strength) is below the 20 threshold, meaning no strong trend in place. The April 23 spike to $132.46 reversed hard — failed breakout, not healthy consolidation.",
+      "key_metrics": {
+        "resistance_at_128.49": "$128.49 has rejected price 22 times — at current $128, you're 37 cents from the ceiling with $1.50+ of downside. That's 0.23:1 risk/reward (need 2:1 minimum)",
+        "fib_support_126.93": "38.2% Fibonacci retracement at $126.94 + 30-test horizontal pivot at $126.93 — if price reaches here, it becomes a high-conviction buy zone",
+        "PE_46.89": "Investors are paying $46.89 for every $1 of Walmart's earnings — more than double the market average of ~20. Premium is justified by consistency, but limits upside",
+        "ecommerce_27pct": "eCommerce growing 27% YoY gives Walmart a competitive moat against Amazon in a segment it was losing for years",
+        "ADX_14.72": "ADX below 20 means no strong trend — the stock is in a choppy, directionless phase, which makes trend-following strategies unreliable"
+      },
+      "risk_check": "Tariff escalation could raise Walmart's cost of goods (70%+ sourced from China/Mexico). Target struggling could temporarily lift WMT, but it won't override a macro downturn. Walton family has been selling $4.6B+ — structural, not crisis-driven, but a persistent headwind."
+    }
+  },
+  "layer4_glossary": {
+    "ADX": "Average Directional Index — measures how strong a trend is (not its direction). Below 20 = weak/choppy market; above 25 = strong trend in play.",
+    "RSI": "Relative Strength Index — oscillates 0-100. Above 70 = overbought (may reverse down); below 30 = oversold (may reverse up). Best used with other signals.",
+    "Fibonacci retracement": "A technical tool based on the sequence 23.6%, 38.2%, 50%, 61.8%. After a price move, these levels predict where a pullback will likely stop and reverse.",
+    "EMA": "Exponential Moving Average — a smoothed average of recent prices that weights newer data more heavily. When 20/50/200-day EMAs are stacked upward, it confirms an uptrend.",
+    "OBV": "On-Balance Volume — tracks cumulative volume to estimate whether institutional investors are buying (accumulating) or selling (distributing). Divergence from price is a warning sign.",
+    "MACD": "Moving Average Convergence Divergence — momentum indicator showing when short-term momentum differs from long-term. Negative histogram = bearish momentum.",
+    "RSI divergence": "When price makes a new high but RSI makes a lower high — a classic early warning that the rally is running out of buyers.",
+    "DCF": "Discounted Cash Flow — calculates what a business is truly worth based on future cash flows discounted to today's value. Large DCF gap = stock trades far from fundamental value.",
+    "R/R or risk-reward ratio": "How much you could gain vs. how much you could lose. 3:1 means if you risk $1, you stand to make $3. Good trades require at least 2:1.",
+    "Earnings blackout": "A risk management rule that prevents trading within 3 days of an earnings announcement, because the binary event risk (good or bad surprise) can instantly invalidate any technical setup.",
+    "Horizontal support/resistance": "Price levels where a stock has repeatedly bounced (support) or been rejected (resistance). More tests = stronger level.",
+    "Bollinger Bands": "Bands plotted 2 standard deviations above/below a moving average. Price above the upper band (pct_b > 1.0) signals overextension — a statistical anomaly likely to mean-revert."
+  },
+  "swing_specific": {
+    "setup_quality": "No active setups executed this run — both positions held due to risk management rules and poor entry asymmetry.",
+    "watch_levels": {
+      "CVX": "Re-enter short consideration post-May 1 earnings: look for $188-192 resistance test with confirmed bearish candle. Target $178-181.76, stop $195-196.",
+      "WMT": "Buy trigger #1: pullback to $126.00-$126.94 (Fib/pivot confluence) with reversal candle, stop $124.80, target $131.50-$134.24 (R/R ~2.8:1). Buy trigger #2: daily close above $129 on 1.5x+ average volume."
+    }
+  }
+}

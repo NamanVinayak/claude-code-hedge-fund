@@ -1,0 +1,318 @@
+{
+  "ticker": "CVX",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 186.5607932098275,
+      "sma_5": 186.45400390625,
+      "ema_10": 187.25157026819457,
+      "sma_10": 185.8550018310547,
+      "ema_20": 189.65059445276697,
+      "sma_20": 190.6415008544922,
+      "ema_21": 189.8041824926368,
+      "sma_21": 191.5971439906529,
+      "ema_50": 188.40115727794523,
+      "sma_50": 192.40579986572266,
+      "ema_200": 167.91434274726427,
+      "sma_200": 163.79827560424803,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 188.36000061035156,
+    "dist_from_50sma_pct": -2.1,
+    "price_vs_ma": {
+      "above_ema_5": true,
+      "pct_from_ema_5": 0.96,
+      "above_sma_5": true,
+      "pct_from_sma_5": 1.02,
+      "above_ema_10": true,
+      "pct_from_ema_10": 0.59,
+      "above_sma_10": true,
+      "pct_from_sma_10": 1.35,
+      "above_ema_20": false,
+      "pct_from_ema_20": -0.68,
+      "above_sma_20": false,
+      "pct_from_sma_20": -1.2,
+      "above_ema_21": false,
+      "pct_from_ema_21": -0.76,
+      "above_sma_21": false,
+      "pct_from_sma_21": -1.69,
+      "above_ema_50": false,
+      "pct_from_ema_50": -0.02,
+      "above_sma_50": false,
+      "pct_from_sma_50": -2.1,
+      "above_ema_200": true,
+      "pct_from_ema_200": 12.18,
+      "above_sma_200": true,
+      "pct_from_sma_200": 15.0
+    },
+    "rsi": {
+      "rsi_7": 69.02,
+      "rsi_14": 43.2,
+      "rsi_21": 31.03
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": -2.4988,
+      "signal_line": -1.9687,
+      "histogram": -0.53,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 203.99,
+      "middle": 190.64,
+      "lower": 177.29,
+      "width": 0.14,
+      "pct_b": 0.4145
+    },
+    "atr": {
+      "atr_14": 4.87,
+      "atr_pct": 2.59
+    },
+    "adx": {
+      "adx_14": 32.17,
+      "plus_di": 21.56,
+      "minus_di": 28.59,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 10754900,
+      "avg_volume_20": 11723040,
+      "relative_volume": 0.92,
+      "volume_bias_10d": "down",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": true
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 187.9,
+          "tests": 19,
+          "volume_confirmed": false
+        },
+        {
+          "price": 214.71,
+          "tests": 1,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 177.74,
+          "tests": 6,
+          "volume_confirmed": false
+        },
+        {
+          "price": 181.76,
+          "tests": 12,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 214.71,
+      "nearest_support": 181.76,
+      "recent_high": 213.1,
+      "recent_low": 177.74,
+      "prev_day_high": 188.37,
+      "prev_day_low": 183.67,
+      "prev_day_close": 184.78
+    },
+    "fibonacci": {
+      "swing_high": 214.71,
+      "swing_low": 177.74,
+      "fib_236": 205.99,
+      "fib_382": 200.59,
+      "fib_500": 196.23,
+      "fib_618": 191.86,
+      "fib_786": 185.65,
+      "fib_ext_1272": 224.77,
+      "fib_ext_1618": 237.56,
+      "fib_ext_2000": 251.68,
+      "fib_ext_low_1272": 167.68,
+      "fib_ext_low_1618": 154.89
+    },
+    "momentum": {
+      "roc_5d": 1.28,
+      "roc_10d": 0.72,
+      "roc_21d": -10.79
+    },
+    "z_score_50": -0.49,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 188.92367304421327,
+      "sma_24": 187.95187632242838,
+      "ema_48": 187.83900138532223,
+      "sma_48": 187.03981367746988,
+      "ema_120": 190.27043269354766,
+      "sma_120": 188.1840394337972,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 192.2100067138672,
+    "dist_from_50sma_pct": 2.14,
+    "price_vs_ma": {
+      "above_ema_24": true,
+      "pct_from_ema_24": 1.74,
+      "above_sma_24": true,
+      "pct_from_sma_24": 2.27,
+      "above_ema_48": true,
+      "pct_from_ema_48": 2.33,
+      "above_sma_48": true,
+      "pct_from_sma_48": 2.76,
+      "above_ema_120": true,
+      "pct_from_ema_120": 1.02,
+      "above_sma_120": true,
+      "pct_from_sma_120": 2.14
+    },
+    "rsi": {
+      "rsi_21": 70.25
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": true,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 1.1138,
+      "signal_line": 0.2304,
+      "histogram": 0.8834,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 191.82,
+      "middle": 187.04,
+      "lower": 182.26,
+      "width": 0.0511,
+      "pct_b": 1.0409
+    },
+    "atr": {
+      "atr_24": 1.31,
+      "atr_pct": 0.68
+    },
+    "adx": {
+      "adx_24": 23.93,
+      "plus_di": 48.95,
+      "minus_di": 12.84,
+      "trend_strength": "moderate"
+    },
+    "volume": {
+      "current_volume": 1042174,
+      "avg_volume_20": 1271357,
+      "relative_volume": 0.82,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 188.42,
+          "tests": 16,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 183.67,
+          "tests": 24,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": null,
+      "nearest_support": 183.67,
+      "recent_high": 192.62,
+      "recent_low": 183.67,
+      "prev_day_high": 191.84,
+      "prev_day_low": 190.98,
+      "prev_day_close": 191.84
+    },
+    "fibonacci": {
+      "swing_high": 192.62,
+      "swing_low": 183.2,
+      "fib_236": 190.4,
+      "fib_382": 189.02,
+      "fib_500": 187.91,
+      "fib_618": 186.8,
+      "fib_786": 185.22,
+      "fib_ext_1272": 195.18,
+      "fib_ext_1618": 198.44,
+      "fib_ext_2000": 202.04,
+      "fib_ext_low_1272": 180.64,
+      "fib_ext_low_1618": 177.38
+    },
+    "momentum": {
+      "roc_5d": 0.76,
+      "roc_10d": 1.71,
+      "roc_21d": 3.84
+    },
+    "z_score_120": 0.87,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 187.27000427246094,
+      "close": 186.32000732421875,
+      "high": 189.4199981689453,
+      "low": 186.1199951171875,
+      "volume": 8708300,
+      "time": "2026-04-22"
+    },
+    {
+      "open": 187.1199951171875,
+      "close": 187.60000610351562,
+      "high": 188.4199981689453,
+      "low": 185.5,
+      "volume": 6684700,
+      "time": "2026-04-23"
+    },
+    {
+      "open": 185.22999572753906,
+      "close": 185.2100067138672,
+      "high": 186.4199981689453,
+      "low": 183.1999969482422,
+      "volume": 9626700,
+      "time": "2026-04-24"
+    },
+    {
+      "open": 186.19000244140625,
+      "close": 184.77999877929688,
+      "high": 188.3699951171875,
+      "low": 183.6699981689453,
+      "volume": 10836600,
+      "time": "2026-04-27"
+    },
+    {
+      "open": 188.27999877929688,
+      "close": 188.36000061035156,
+      "high": 189.9600067138672,
+      "low": 186.5500030517578,
+      "volume": 10754900,
+      "time": "2026-04-28"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 192.22000122070312,
+  "market_cap": 382882775040.0,
+  "wiki_context": {
+    "slices": {
+      "technicals_full": {
+        "path": "wiki/tickers/CVX/technicals.md",
+        "mode": "full",
+        "content": "## TL;DR\n\nAs of April 11, CVX showed the worst momentum profile in a 19-stock universe: CCI at -170, ROC 10-day at -9.3%, and a 5-of-9 agent bearish signal. The setup was a short-on-bounce, not a break-below \u2014 the stock was expected to rally from its oversold levels (~$188.55) to around $192 before resuming the downtrend toward the $178 target. Source: run `swing_20260411_211655`.\n\n---\n\n## Key Levels\n\n| Level | Value | Notes |\n|---|---|---|\n| Short entry (on bounce) | $192.00 | Swing model recommended entry; above then-current price ~$188.55 |\n| Stop loss | $199.00 | Invalidation level; $7 above entry |\n| Target | $178.00 | First major support; $14 below entry |\n| Fibonacci 61.8% retracement | $185.43 | Bull case technical floor, identified by pullback trader agent |\n| Resistance zone | ~$199 | Coincides with stop loss; 10 EMA area |\n\n---\n\n## Momentum Indicators (as of Apr 11)\n\n| Indicator | Value | Interpretation |\n|---|---|---|\n| CCI | -170 | Worst in the 19-stock universe; strong bearish momentum |\n| ROC 10-day | -9.3% | Sharpest 10-day decline in the energy sector |\n| Stochastic | 7.37 | Deeply oversold; a bounce toward $192 was expected first |\n| ADX | Not reported directly (bearish trend confirmed) | Momentum ranker 78% bearish |\n\n---\n\n## Multi-Timeframe State\n\nThe daily timeframe showed a confirmed downtrend with price below key moving averages. The momentum ranker agent \u2014 which examines rate of change across 5, 10, and 21-day windows \u2014 gave CVX a 78% bearish rating, the second-highest bearish conviction for any strategy on this ticker. The sector rotation agent confirmed at 73% confidence that institutional capital was flowing out of energy broadly, meaning the headwind is systemic, not stock-specific.\n\nNo hourly indicator breakdown was included in the run's facts bundle for this ticker (swing mode provides both daily and hourly, but the explanation narrative did not surface hourly divergences for CVX specifically).\n\n---\n\n## Setup Type\n\n**Short on relief bounce.** Classic oversold bounce entry in a confirmed downtrend. The system did not recommend shorting at the then-current price because the stochastic at 7.37 signaled a bounce was statistically probable. The strategy was to wait for a rally to $192, then enter short with a tight $7 stop and a $14 target. Risk-reward: 2.0:1. (Source: `swing_20260411_211655/decisions.json`)\n\nThis page is stale after 7 days \u2014 technicals change fast.\n",
+        "last_updated": "2026-04-29",
+        "stale": false
+      }
+    }
+  }
+}

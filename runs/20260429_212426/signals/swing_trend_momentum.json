@@ -1,0 +1,20 @@
+{
+  "CVX": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "Trend assessment: ADX at 32.17 confirms strong trend strength, but the trend direction is bearish — minus_DI (28.59) exceeds plus_DI (21.56), and EMAs are tangled (10 EMA < 21 EMA, price below 21 EMA and 50 EMA). `ema_aligned_uptrend` and `ema_aligned_downtrend` are both false, disqualifying a clean trend continuation entry in either direction. Momentum assessment: ROC is severely mixed — 5d +1.28%, 10d +0.72%, but 21d -10.79%. The 21-day ROC collapse invalidates any bullish momentum claim. MACD histogram is -0.53 (negative, bearish). Volume bias over 10 days is down; OBV is diverging from price (bearish). Hourly context: Price is at ~$192.21 (hourly current), well above daily close of $188.36, with hourly RSI at 70.25 (overbought) and a confirmed bearish RSI divergence on the hourly timeframe. The hourly MACD histogram is positive (+0.88) but hourly ADX is only 23.93 — the hourly bounce is extended, not a new trend. Wiki confirmation: The April 11 wiki noted CVX as a 'short-on-bounce' setup, targeting a rally from ~$188.55 to ~$192 before resuming the downtrend toward $178. The hourly price has now reached $192+ — the bounce target has been achieved. This is not a trend-momentum continuation entry; entering bearish here would require a clean EMA re-alignment short signal, which is not present. Outputting neutral: tangled EMAs, mixed ROC, and no clean momentum acceleration in either direction.",
+    "entry": 188.36,
+    "target": 188.36,
+    "stop": 188.36,
+    "timeframe": "no setup"
+  },
+  "WMT": {
+    "signal": "neutral",
+    "confidence": 25,
+    "reasoning": "Trend assessment: Daily EMA alignment is confirmed bullish — `ema_aligned_uptrend: true` with 10 EMA (128.18) > 21 EMA (127.05) > 50 EMA (125.02). Price at $127.59 has pulled back near the 21 EMA ($127.05), which would ordinarily be a trend-momentum entry zone. However, ADX at 14.72 is critically below the 20 minimum (and well below the required 25 threshold), indicating the trend lacks sufficient strength to trade. This is a hard disqualifier per strategy rules. Momentum assessment: ROC is mixed — 5d -1.55% (negative), 10d +2.03%, 21d +3.82%. The negative 5-day ROC signals near-term momentum deceleration, not acceleration. MACD histogram is a slim +0.1456, barely positive and not expanding. Hourly context contradicts the daily bullish alignment: hourly EMAs are not aligned upward, hourly MACD histogram is -0.35 (negative, decelerating), and hourly ADX shows minus_DI (27.82) > plus_DI (18.24) — hourly momentum is actually bearish. This hourly divergence from the daily uptrend is an early warning of trend exhaustion, not confirmation. Wiki confirmation: Prior runs concluded 'no tradeable swing setup' — ADX too weak, needs a clean high-volume close above $129 resistance. Price failed to break $129 on the most recent test (high of $129.77 on Apr 28) and pulled back to close at $127.59. Outputting neutral: ADX below 20 disqualifies entry, hourly diverges from daily, and 5d ROC is negative — momentum is decelerating, not accelerating.",
+    "entry": 127.59,
+    "target": 127.59,
+    "stop": 127.59,
+    "timeframe": "no setup"
+  }
+}

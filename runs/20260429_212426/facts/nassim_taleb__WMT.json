@@ -1,0 +1,91 @@
+{
+  "ticker": "WMT",
+  "score": 22,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 5,
+    "max_score": 8,
+    "details": "Near-Gaussian tails (kurtosis 0.1) \u2014 suspiciously thin; Symmetric distribution (skew 0.10); Asymmetric upside (tail ratio 1.35); Resilient (max drawdown -10.9%)"
+  },
+  "antifragility_analysis": {
+    "score": 5,
+    "max_score": 10,
+    "details": "Net debt but manageable relative to assets; Moderate leverage (D/E 0.43); Margins somewhat stable (CV 0.11) but low (avg 4.0%); Consistent FCF generation (10/10 periods positive)"
+  },
+  "convexity_analysis": {
+    "score": 1,
+    "max_score": 10,
+    "details": "R&D data not available \u2014 no penalty for non-R&D sectors; Slight positive asymmetry (up/down ratio 1.17); Low cash relative to market cap (1%); Low FCF yield (1.2%)"
+  },
+  "fragility_analysis": {
+    "score": 4,
+    "max_score": 8,
+    "details": "Low leverage (D/E 0.43) \u2014 not fragile; Interest coverage data not available; Moderate earnings volatility (growth std 0.20); Paper-thin margins (2.9%) \u2014 one shock away from loss"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 3,
+    "max_score": 6,
+    "details": "Normal vol regime (0.97) \u2014 fair pricing; Stable vol-of-vol (0.0256)"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 1020366487552.0,
+  "web_context": {
+    "ticker": "WMT",
+    "research_date": "2026-04-29",
+    "macro_context": {
+      "market_sentiment": "Market is cautious-to-mixed on April 29: S&P 500 flat (-0.04%), Dow down 5th straight day (-0.57% to 48,861), Nasdaq barely positive (+0.04%). Investors bracing for Magnificent Seven earnings (GOOGL, MSFT, AMZN, META reporting after bell) and a historic Fed decision. Sentiment pulled between AI optimism and geopolitical/energy headwinds.",
+      "fed_outlook": "FOMC held benchmark rate at 3.5%-3.75% on April 29, 2026 \u2014 third consecutive hold. Unusually divisive 8-4 vote (most dissent since October 1992), with four officials opposing any easing-bias language. Inflation remains elevated partly from rising global energy prices. Jerome Powell's final FOMC meeting as chair; Kevin Warsh expected to succeed him May 15 but Powell will remain on the Board.",
+      "geopolitical": "U.S.-Iran conflict is the dominant geopolitical risk: Iran closed the Strait of Hormuz (March 4), restricting ~20M barrels/day (~27% global maritime oil trade). Trump scrapped envoy peace talks and is reportedly preparing an extended blockade. Iran offered a new Hormuz deal but nuclear talks deferred. Goldman Sachs raised Brent forecast to $90/bbl by late 2026. Higher energy costs feed into consumer inflation and Walmart's operating costs.",
+      "key_events": [
+        "Magnificent Seven earnings (GOOGL, MSFT, AMZN, META) reporting April 29 after bell \u2014 key AI/consumer sentiment read",
+        "Fed chair transition: Powell exits May 15, Warsh expected to take over \u2014 policy uncertainty elevated",
+        "U.S.-Iran Strait of Hormuz blockade \u2014 sustained oil price pressure",
+        "IMF downgraded global growth outlook citing war and trade conflicts",
+        "Walmart Q1 FY2027 earnings on May 14, 2026 \u2014 15 days away"
+      ]
+    },
+    "ticker_news": [
+      {
+        "headline": "Walmart releases 2026 Annual Report and Proxy Statement ahead of June 4 Annual Shareholders' Meeting; Tim Flynn retires from Board",
+        "sentiment": "neutral",
+        "source": "corporate.walmart.com / BusinessWire, April 23, 2026"
+      },
+      {
+        "headline": "Walmart redesigns leadership pipeline: eliminating 'store lead' role, expanding second-tier store managers with $85K-$276K compensation range",
+        "sentiment": "neutral",
+        "source": "Yahoo Finance, April 2026"
+      },
+      {
+        "headline": "Walmart announces major U.S. store investment program to drive speed, convenience and growth \u2014 creating local jobs",
+        "sentiment": "positive",
+        "source": "corporate.walmart.com, April 16, 2026"
+      },
+      {
+        "headline": "Walmart unveils modern redesign of Great Value, its flagship private brand \u2014 moves to strengthen value positioning",
+        "sentiment": "positive",
+        "source": "corporate.walmart.com, April 15, 2026"
+      },
+      {
+        "headline": "Walmart pilots third-party marketplace backroom storage in Dallas-area stores to enable same-day delivery \u2014 direct challenge to Amazon",
+        "sentiment": "positive",
+        "source": "GuruFocus / Walmart corporate, April 19, 2026"
+      }
+    ],
+    "analyst_consensus": {
+      "rating": "buy",
+      "avg_price_target": 136.0,
+      "recent_changes": "Consensus firmly bullish: 39 of 43 analysts rate Buy or Strong Buy (StockAnalysis, April 22, 2026). Average price target $133.86-$139.04 across sources (30-41 analysts, 3-month window); high $150, low $112. Notable downgrade: HSBC cut from Buy to Hold on February 20, 2026. Telsey Advisory maintained Outperform. FY2027 guidance ($2.75-$2.85 adj. EPS, +3.5-4.5% revenue) seen as conservatively set."
+    },
+    "competitor_activity": "Costco is the sharpest pricing threat: basket prices 21.4% below Walmart on groceries, 14% below on discretionary \u2014 gaining market share faster than any major rival as household budgets stay tight. Amazon is investing ~$200B CapEx in 2026 vs. Walmart's disciplined $25B; Walmart's U.S. eCommerce surged 27% YoY and now represents 23% of net sales, closing the gap. Target is struggling under new CEO Michael Fiddelke with shrinking sales and a beaten-down stock \u2014 ceding ground to both Walmart and Costco.",
+    "earnings_info": "Next earnings: May 14, 2026 before market open (Q1 FY2027). FY2027 annual guidance: revenue +3.5%-4.5%, adjusted EPS $2.75-$2.85. CFO John David Rainey called guidance 'prudently conservative' given macro instability. EPS and revenue beat expectations in the most recent quarter. Specific Q1 FY2027 analyst EPS/revenue estimates not retrieved but consensus is broadly in line with company guidance. Sources: MarketBeat, TipRanks, Nasdaq.com."
+  }
+}
