@@ -1,0 +1,20 @@
+{
+  "NKE": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "TREND: Daily EMAs are firmly aligned bearish (ema_10 45.29 < ema_21 46.53 < ema_50 50.98, ema_aligned_downtrend=true), with ADX at 39.35 — a strong, confirmed downtrend. Price sits 11.7% below the 50 EMA and 24% below the 200 EMA. Wiki memory from April 11 confirmed this as one of the deepest downtrends in the universe (ADX 64.6 at the time), and that structure remains intact at a reduced but still strong ADX 39. MOMENTUM ACCELERATION: This is where the setup fails for a bearish continuation trade. The daily MACD histogram is POSITIVE at +0.5217 — meaning bearish momentum is actively decelerating, not accelerating. The histogram moving from negative toward zero/positive signals the bearish thrust is waning. ROC is mixed: roc_21d = -12.34 (bearish) but roc_5d = -2.93 and roc_10d = +1.88, showing the short-term bounce underway. This is exactly the 'trend exists but momentum decelerating' scenario the strategy requires waiting out. Hourly confirms no fresh momentum: hourly MACD histogram = -0.088 (marginally negative, not expanding bearishly), hourly ADX 17.29 (weak). Daily OBV diverging from price (bullish divergence noted) further warns against fresh bearish entries. VERDICT: Downtrend confirmed, but bearish momentum deceleration disqualifies a with-trend bearish entry. Wait for bearish momentum re-acceleration — specifically MACD histogram turning more negative and ROC 5d/10d resuming negative expansion — before re-engaging. Neutral.",
+    "entry": 45.03,
+    "target": 42.09,
+    "stop": 46.97,
+    "timeframe": "wait — no active setup"
+  },
+  "DIS": {
+    "signal": "neutral",
+    "confidence": 25,
+    "reasoning": "TREND: Daily EMAs are tangled — ema_5 (102.65), ema_10 (102.71), ema_50 (102.22), and ema_21 (101.80) are all clustered within a 1-point range with no fan pattern. ema_aligned_uptrend=false, ema_aligned_downtrend=false. This is the primary disqualifier: strategy requires clean EMA fan alignment before any entry. Daily ADX is 34.88 with plus_di (27.64) > minus_di (19.14), suggesting the longer-term trend has some upside bias, but the structural EMA alignment required for a trend-momentum trade is absent. The stock peaked near $107 and has pulled back 5%+ over five consecutive down days to $101.47, sitting just above the 38.2% fib retracement ($101.41) and the heavily tested $101.02 support pivot (15 tests, volume confirmed). MOMENTUM ACCELERATION: ROC is deeply conflicted — roc_21d = +9.79 (prior rally momentum) but roc_5d = -2.70 and roc_10d = -1.09 (current selling pressure). Shorter-timeframe ROCs are negative and the 21d is not expanding — this is not momentum acceleration in either direction. Daily MACD histogram = +0.1182 (barely positive, shrinking from the prior run). Hourly paints a bearish short-term picture: hourly ADX 42.96 with minus_di (30.99) far exceeding plus_di (13.0), and a negative expanding MACD histogram (-0.2806) — strong near-term downside momentum. Hourly and daily are diverging, which the system prompt flags as 'early warning of trend exhaustion.' Wiki memory (April 15) noted 'good trend, poor timing at $103'; the pullback has now validated that concern. VERDICT: No EMA alignment, mixed ROC, and hourly strongly bearish while daily is range-bound. Classic tangled-EMA, no-clear-trend environment. Would need EMAs to re-fan upward with ROC 5/10/21 all positive and MACD histogram expanding before a bullish continuation entry is warranted. Neutral.",
+    "entry": 101.47,
+    "target": 107.11,
+    "stop": 98.45,
+    "timeframe": "wait — no active setup"
+  }
+}

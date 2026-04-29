@@ -1,0 +1,354 @@
+{
+  "ticker": "DIS",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 102.65472169071434,
+      "sma_5": 102.97799987792969,
+      "ema_10": 102.71321582966041,
+      "sma_10": 103.87100067138672,
+      "ema_20": 101.85220134355978,
+      "sma_20": 101.11149978637695,
+      "ema_21": 101.79716588566711,
+      "sma_21": 100.78809502011254,
+      "ema_50": 102.22199697675977,
+      "sma_50": 101.19060043334962,
+      "ema_200": 105.58149296152351,
+      "sma_200": 109.49600887298584,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 101.47000122070312,
+    "dist_from_50sma_pct": 0.28,
+    "price_vs_ma": {
+      "above_ema_5": false,
+      "pct_from_ema_5": -1.15,
+      "above_sma_5": false,
+      "pct_from_sma_5": -1.46,
+      "above_ema_10": false,
+      "pct_from_ema_10": -1.21,
+      "above_sma_10": false,
+      "pct_from_sma_10": -2.31,
+      "above_ema_20": false,
+      "pct_from_ema_20": -0.38,
+      "above_sma_20": true,
+      "pct_from_sma_20": 0.35,
+      "above_ema_21": false,
+      "pct_from_ema_21": -0.32,
+      "above_sma_21": true,
+      "pct_from_sma_21": 0.68,
+      "above_ema_50": false,
+      "pct_from_ema_50": -0.74,
+      "above_sma_50": true,
+      "pct_from_sma_50": 0.28,
+      "above_ema_200": false,
+      "pct_from_ema_200": -3.89,
+      "above_sma_200": false,
+      "pct_from_sma_200": -7.33
+    },
+    "rsi": {
+      "rsi_7": 9.15,
+      "rsi_14": 58.04,
+      "rsi_21": 69.96
+    },
+    "rsi_divergence": {
+      "bullish": true,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 0.9032,
+      "signal_line": 0.785,
+      "histogram": 0.1182,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 108.01,
+      "middle": 101.11,
+      "lower": 94.21,
+      "width": 0.1364,
+      "pct_b": 0.526
+    },
+    "atr": {
+      "atr_14": 2.11,
+      "atr_pct": 2.08
+    },
+    "adx": {
+      "adx_14": 34.88,
+      "plus_di": 27.64,
+      "minus_di": 19.14,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 6409300,
+      "avg_volume_20": 7729835,
+      "relative_volume": 0.83,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 107.11,
+          "tests": 15,
+          "volume_confirmed": false
+        },
+        {
+          "price": 111.11,
+          "tests": 1,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 92.19,
+          "tests": 1,
+          "volume_confirmed": false
+        },
+        {
+          "price": 98.45,
+          "tests": 11,
+          "volume_confirmed": false
+        },
+        {
+          "price": 101.02,
+          "tests": 15,
+          "volume_confirmed": true
+        }
+      ],
+      "nearest_resistance": 107.11,
+      "nearest_support": 101.02,
+      "recent_high": 107.11,
+      "recent_low": 94.19,
+      "prev_day_high": 103.81,
+      "prev_day_low": 102.06,
+      "prev_day_close": 102.35
+    },
+    "fibonacci": {
+      "swing_high": 107.11,
+      "swing_low": 92.19,
+      "fib_236": 103.59,
+      "fib_382": 101.41,
+      "fib_500": 99.65,
+      "fib_618": 97.89,
+      "fib_786": 95.38,
+      "fib_ext_1272": 111.17,
+      "fib_ext_1618": 116.33,
+      "fib_ext_2000": 122.03,
+      "fib_ext_low_1272": 88.13,
+      "fib_ext_low_1618": 82.97
+    },
+    "momentum": {
+      "roc_5d": -2.7,
+      "roc_10d": -1.09,
+      "roc_21d": 9.79
+    },
+    "z_score_50": 0.07,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 101.81573230699803,
+      "sma_24": 101.89406331380208,
+      "ema_48": 102.42747730356,
+      "sma_48": 102.96279033025105,
+      "ema_120": 101.60936970789267,
+      "sma_120": 102.07675215403239,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 101.30000305175781,
+    "dist_from_50sma_pct": -0.76,
+    "price_vs_ma": {
+      "above_ema_24": false,
+      "pct_from_ema_24": -0.51,
+      "above_sma_24": false,
+      "pct_from_sma_24": -0.58,
+      "above_ema_48": false,
+      "pct_from_ema_48": -1.1,
+      "above_sma_48": false,
+      "pct_from_sma_48": -1.61,
+      "above_ema_120": false,
+      "pct_from_ema_120": -0.3,
+      "above_sma_120": false,
+      "pct_from_sma_120": -0.76
+    },
+    "rsi": {
+      "rsi_21": 39.42
+    },
+    "rsi_divergence": {
+      "bullish": true,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": -0.6419,
+      "signal_line": -0.3613,
+      "histogram": -0.2806,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 105.75,
+      "middle": 102.96,
+      "lower": 100.18,
+      "width": 0.0541,
+      "pct_b": 0.2013
+    },
+    "atr": {
+      "atr_24": 0.54,
+      "atr_pct": 0.54
+    },
+    "adx": {
+      "adx_24": 42.96,
+      "plus_di": 13.0,
+      "minus_di": 30.99,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 720066,
+      "avg_volume_20": 706169,
+      "relative_volume": 1.02,
+      "volume_bias_10d": "down",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 103.81,
+          "tests": 15,
+          "volume_confirmed": false
+        },
+        {
+          "price": 105.2,
+          "tests": 16,
+          "volume_confirmed": false
+        },
+        {
+          "price": 106.28,
+          "tests": 14,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 100.61,
+          "tests": 8,
+          "volume_confirmed": true
+        },
+        {
+          "price": 101.97,
+          "tests": 18,
+          "volume_confirmed": false
+        },
+        {
+          "price": 103.96,
+          "tests": 19,
+          "volume_confirmed": true
+        }
+      ],
+      "nearest_resistance": 103.81,
+      "nearest_support": 100.61,
+      "recent_high": 103.81,
+      "recent_low": 100.6,
+      "prev_day_high": 101.23,
+      "prev_day_low": 100.69,
+      "prev_day_close": 101.18
+    },
+    "fibonacci": {
+      "swing_high": 103.81,
+      "swing_low": 100.6,
+      "fib_236": 103.05,
+      "fib_382": 102.58,
+      "fib_500": 102.2,
+      "fib_618": 101.83,
+      "fib_786": 101.29,
+      "fib_ext_1272": 104.68,
+      "fib_ext_1618": 105.79,
+      "fib_ext_2000": 107.02,
+      "fib_ext_low_1272": 99.73,
+      "fib_ext_low_1618": 98.62
+    },
+    "momentum": {
+      "roc_5d": 0.46,
+      "roc_10d": -0.49,
+      "roc_21d": -1.26
+    },
+    "z_score_120": -0.28,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 105.02999877929688,
+      "close": 104.81999969482422,
+      "high": 106.27999877929688,
+      "low": 104.2300033569336,
+      "volume": 6886600,
+      "time": "2026-04-22"
+    },
+    {
+      "open": 104.94000244140625,
+      "close": 103.6500015258789,
+      "high": 105.19999694824219,
+      "low": 102.55000305175781,
+      "volume": 6147000,
+      "time": "2026-04-23"
+    },
+    {
+      "open": 103.5999984741211,
+      "close": 102.5999984741211,
+      "high": 103.63999938964844,
+      "low": 101.97000122070312,
+      "volume": 5974500,
+      "time": "2026-04-24"
+    },
+    {
+      "open": 102.62000274658203,
+      "close": 102.3499984741211,
+      "high": 103.80999755859375,
+      "low": 102.05999755859375,
+      "volume": 6524300,
+      "time": "2026-04-27"
+    },
+    {
+      "open": 102.66000366210938,
+      "close": 101.47000122070312,
+      "high": 103.29000091552734,
+      "low": 100.61000061035156,
+      "volume": 6409300,
+      "time": "2026-04-28"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 101.30000305175781,
+  "market_cap": 179454967808.0,
+  "wiki_context": {
+    "slices": {
+      "regime_full": {
+        "path": "wiki/macro/regime.md",
+        "mode": "full",
+        "content": "# Macro Regime\n\n## TL;DR\n\n**Transitional \u2014 leaning risk-on near record highs, but increasingly fragile.** The S&P 500 touched an all-time high of 7,173.91 on April 27 before pulling back; markets are range-bound between AI-driven optimism and geopolitical/inflation headwinds that refuse to clear.\n\n## Fed posture\n\nThe Federal Reserve held the funds rate at **4.25%\u20134.50%** for the third straight meeting (April 30, 2026 decision). This is a meaningfully higher level than the 3.50%\u20133.75% range seen in mid-April, reflecting the inflation re-acceleration driven by the Iran energy shock. The dot plot projects two 25 bps cuts later in 2026, but the path is complicated by elevated energy-driven CPI. This is Powell's final meeting \u2014 Kevin Warsh is expected as successor, adding a layer of policy uncertainty. Markets expect no change on April 30 and are watching the press conference for any shift in the cutting timeline.\n\n## Rate trajectory & inflation\n\nCore PCE inflation is running at approximately 2.7%, well above the 2% target, with headline CPI pressured further by oil prices near $4.18/gallon \u2014 the highest level since August 2022. The Iran conflict and Strait of Hormuz disruption cut roughly 20M barrels/day of transit capacity at peak, sending Brent above $100 briefly in March before a ceasefire pause provided temporary relief. The Fed's prior inflation projection of \"2.75\u20133% in H1 2026, declining toward 2% by 2027\" now looks optimistic if geopolitical tension re-escalates. Small-caps with floating-rate debt (roughly 40% of Russell 2000) face a specific 150\u2013200 bps refinancing headwind versus prior coupons, threatening projected 18\u201322% earnings growth.\n\n## Geopolitical / regulatory\n\nThe dominant risk is **US-Iran conflict** and its energy-market knock-on effects. Iran closed the Strait of Hormuz on March 4; a two-week humanitarian ceasefire began April 8, but the Strait reopening remains uncertain and talks have stalled. Secondary risks include US-China tariff tensions (Section 232 measures still active, 50% tariff threats issued), Apple hardware exposure, US-Europe friction over Greenland, and Venezuela instability. The April 2025 \"Liberation Day\" tariff package is now a structural force reshaping supply chains, driving a reshoring narrative that has disproportionately benefited domestic-revenue-heavy small-caps even as geopolitical volatility weighs on their near-term multiple.\n\n## Risk-off triggers to watch\n\n- **Iran ceasefire collapses / Strait of Hormuz re-closes** \u2014 would spike oil above $100 again, reignite inflation fears, and hit risk assets broadly\n- **Big-tech earnings miss on AI capex ROI** \u2014 Alphabet, Microsoft, Amazon, Meta earnings this week are the primary NVDA and Nasdaq catalyst; any revenue miss or capex pullback signals would break the AI bull thesis\n- **Fed forced to hold into H2 2026** \u2014 if inflation re-accelerates from energy, the one remaining cut penciled in for 2026 evaporates, re-pricing growth and small-cap earnings expectations sharply lower\n\n## Last updated\n\n2026-04-29 \u2014 sourced from run `sanity_20260429_031705` (NVDA web_research, dated 2026-04-29) and cross-referenced against `20260415_104041` (SPY, QQQ, IWM) and `swing_20260411_211655` (XOM, JPM, NVDA).\n",
+        "last_updated": "2026-04-29",
+        "stale": false
+      },
+      "sectors_full": {
+        "missing": true,
+        "mode": "full"
+      },
+      "thesis_tldr": {
+        "path": "wiki/tickers/DIS/thesis.md",
+        "mode": "tldr",
+        "content": "Disney trades at a 30% discount to the S&P 500 on forward P/E (~14x) and has finally reached streaming profitability. That is the bull case in one sentence. The bear case is equally simple: the stock has been cheap for years and keeps getting cheaper, Netflix is winning the streaming war, and no catalyst with a hard date exists until Q2 FY2026 earnings in May 2026. Two runs over April 11\u201315 (run IDs: `swing_20260411_211655`, `20260415_110848`) produced a \"hold\" and then a cautious \"buy\" \u2014 a split verdict that captures the genuine ambiguity here.",
+        "last_updated": "2026-04-29",
+        "stale": false
+      }
+    }
+  }
+}

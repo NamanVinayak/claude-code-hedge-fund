@@ -1,0 +1,93 @@
+{
+  "ticker": "NKE",
+  "verified_at": "2026-04-29T22:30:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.06951,
+      "web_value": 0.0484,
+      "source": "Yahoo Finance / CNBC (April 27, 2026); GuruFocus reports 6.37%",
+      "status": "MISMATCH",
+      "deviation": "43.6%",
+      "action": "replaced with web value (0.0484) in warren_buffett__NKE.json and aswath_damodaran__NKE.json"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": 0.0484,
+      "source": "Macrotrends / GuruFocus (TTM as of Feb 2026); Q3 FY2026 operating income ~$780M / $11.3B revenue = ~6.9% quarterly",
+      "status": "unverified",
+      "deviation": "N/A",
+      "note": "Bundle value is null (data not available from yfinance). Web consensus ~4.84-6.9%. No correction applied to null field."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 29.203947,
+      "web_value": 28.27,
+      "source": "GuruFocus (April 2026); range 28.27-29.6 across sources",
+      "status": "ok",
+      "deviation": "3.3%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 65736572928.0,
+      "web_value": 66000000000.0,
+      "source": "StockAnalysis / CompaniesMarketCap (April 2026); range $63.1B-$66.2B",
+      "status": "ok",
+      "deviation": "0.4%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 46308000000.0,
+      "web_value": 46510000000.0,
+      "source": "StockAnalysis TTM revenue (April 2026)",
+      "status": "ok",
+      "deviation": "0.4%",
+      "note": "Our value implied from market_cap / price_to_sales_ratio = 65736572928 / 1.4195 = ~46.3B"
+    },
+    {
+      "metric": "return_on_equity",
+      "our_value": 0.24362,
+      "web_value": 0.1476,
+      "source": "GuruFocus (14.76% as of Feb 2026); 57% below 10-year median",
+      "status": "MISMATCH",
+      "deviation": "65.0%",
+      "action": "replaced with web value (0.1476) in warren_buffett__NKE.json and aswath_damodaran__NKE.json"
+    },
+    {
+      "metric": "return_on_assets",
+      "our_value": 0.08800,
+      "web_value": 0.0607,
+      "source": "Macrotrends / GuruFocus (6.07% as of Feb 2026)",
+      "status": "MISMATCH",
+      "deviation": "45.0%",
+      "action": "replaced with web value (0.0607) in warren_buffett__NKE.json and aswath_damodaran__NKE.json"
+    }
+  ],
+  "files_with_metrics": [
+    "warren_buffett__NKE.json",
+    "aswath_damodaran__NKE.json"
+  ],
+  "files_without_metrics": [
+    "ben_graham__NKE.json",
+    "bill_ackman__NKE.json",
+    "cathie_wood__NKE.json",
+    "charlie_munger__NKE.json",
+    "michael_burry__NKE.json",
+    "mohnish_pabrai__NKE.json",
+    "nassim_taleb__NKE.json",
+    "news_sentiment__NKE.json",
+    "peter_lynch__NKE.json",
+    "phil_fisher__NKE.json",
+    "rakesh_jhunjhunwala__NKE.json",
+    "stanley_druckenmiller__NKE.json",
+    "swing_breakout__NKE.json",
+    "swing_catalyst_news__NKE.json",
+    "swing_macro_context__NKE.json",
+    "swing_mean_reversion__NKE.json",
+    "swing_trend_momentum__NKE.json"
+  ],
+  "overall_status": "3 mismatches corrected (net_margin, return_on_equity, return_on_assets)",
+  "corrections_applied": true,
+  "notes": "NKE is under significant margin compression in FY2026 due to tariff headwinds, heavy discounting, and declining digital/DTC revenue. The bundle data appears to reflect an older TTM snapshot (possibly calendar 2025) rather than the most recent Feb 2026 report period. Q3 FY2026 results (March 31, 2026) showed EPS $0.35, revenue $11.28B, gross margin 40.2%."
+}

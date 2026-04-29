@@ -1,0 +1,33 @@
+{
+  "decisions": {
+    "NKE": {
+      "action": "hold",
+      "entry_price": null,
+      "target_price": null,
+      "stop_loss": null,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "monitor — no active setup",
+      "confidence": 20,
+      "quantity": 0,
+      "reasoning": "100% agent consensus neutral; Head Trader confidence 20 (<40 threshold). R/R fails both directions (<2:1). Macro headwinds (50% tariff threat vs Asia-manufactured goods), revenue -9.84%, EPS -43.53%. Bearish momentum decelerating but no reversal confirmed. Wait for close above $46.97 on 1.5x+ volume or MACD re-acceleration bearish before acting."
+    },
+    "DIS": {
+      "action": "buy",
+      "entry_price": 101.50,
+      "target_price": 107.11,
+      "stop_loss": 100.20,
+      "risk_reward_ratio": "4.3:1",
+      "timeframe": "5-12 trading days",
+      "confidence": 62,
+      "quantity": 192,
+      "reasoning": "3/5 strategy agents bullish; Head Trader confidence 62. 38.2% Fib ($101.41) + 15-test volume-confirmed support ($101.02) confluence. Q2 FY2026 earnings catalyst in 5-10 days, Q1 beat, streaming +72% YoY. R/R 4.3:1 ($5.61 upside / $1.30 downside). RSI-7 at 9.15 extreme oversold at support; daily MACD still positive. Wait for hourly stabilization before entry — abort if $100.50 breaks on volume. Position $19,488 within risk manager $19,499 limit."
+    }
+  },
+  "portfolio_summary": {
+    "total_capital": 100000.0,
+    "capital_deployed": 19488.0,
+    "capital_at_risk": 249.6,
+    "pct_deployed": 19.49,
+    "synthesis": "Two-ticker universe with clear asymmetry. NKE is a no-trade: universal neutral consensus, sub-2:1 R/R in both directions, bearish fundamentals, and tariff macro headwinds with no near-term catalyst. DIS is a high-conviction long: exceptional 4.3:1 R/R at a 15-test Fibonacci/horizontal support confluence ahead of an earnings catalyst. Position sized to the risk manager's $19,499 limit (19.5% of capital, 192 shares). Portfolio remains 80%+ cash, preserving capital for future setups."
+  }
+}

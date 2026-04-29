@@ -1,0 +1,347 @@
+{
+  "ticker": "DIS",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 102.65472169071434,
+      "sma_5": 102.97799987792969,
+      "ema_10": 102.71321582966041,
+      "sma_10": 103.87100067138672,
+      "ema_20": 101.85220134355978,
+      "sma_20": 101.11149978637695,
+      "ema_21": 101.79716588566711,
+      "sma_21": 100.78809502011254,
+      "ema_50": 102.22199697675977,
+      "sma_50": 101.19060043334962,
+      "ema_200": 105.58149296152351,
+      "sma_200": 109.49600887298584,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 101.47000122070312,
+    "dist_from_50sma_pct": 0.28,
+    "price_vs_ma": {
+      "above_ema_5": false,
+      "pct_from_ema_5": -1.15,
+      "above_sma_5": false,
+      "pct_from_sma_5": -1.46,
+      "above_ema_10": false,
+      "pct_from_ema_10": -1.21,
+      "above_sma_10": false,
+      "pct_from_sma_10": -2.31,
+      "above_ema_20": false,
+      "pct_from_ema_20": -0.38,
+      "above_sma_20": true,
+      "pct_from_sma_20": 0.35,
+      "above_ema_21": false,
+      "pct_from_ema_21": -0.32,
+      "above_sma_21": true,
+      "pct_from_sma_21": 0.68,
+      "above_ema_50": false,
+      "pct_from_ema_50": -0.74,
+      "above_sma_50": true,
+      "pct_from_sma_50": 0.28,
+      "above_ema_200": false,
+      "pct_from_ema_200": -3.89,
+      "above_sma_200": false,
+      "pct_from_sma_200": -7.33
+    },
+    "rsi": {
+      "rsi_7": 9.15,
+      "rsi_14": 58.04,
+      "rsi_21": 69.96
+    },
+    "rsi_divergence": {
+      "bullish": true,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 0.9032,
+      "signal_line": 0.785,
+      "histogram": 0.1182,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 108.01,
+      "middle": 101.11,
+      "lower": 94.21,
+      "width": 0.1364,
+      "pct_b": 0.526
+    },
+    "atr": {
+      "atr_14": 2.11,
+      "atr_pct": 2.08
+    },
+    "adx": {
+      "adx_14": 34.88,
+      "plus_di": 27.64,
+      "minus_di": 19.14,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 6409300,
+      "avg_volume_20": 7729835,
+      "relative_volume": 0.83,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 107.11,
+          "tests": 15,
+          "volume_confirmed": false
+        },
+        {
+          "price": 111.11,
+          "tests": 1,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 92.19,
+          "tests": 1,
+          "volume_confirmed": false
+        },
+        {
+          "price": 98.45,
+          "tests": 11,
+          "volume_confirmed": false
+        },
+        {
+          "price": 101.02,
+          "tests": 15,
+          "volume_confirmed": true
+        }
+      ],
+      "nearest_resistance": 107.11,
+      "nearest_support": 101.02,
+      "recent_high": 107.11,
+      "recent_low": 94.19,
+      "prev_day_high": 103.81,
+      "prev_day_low": 102.06,
+      "prev_day_close": 102.35
+    },
+    "fibonacci": {
+      "swing_high": 107.11,
+      "swing_low": 92.19,
+      "fib_236": 103.59,
+      "fib_382": 101.41,
+      "fib_500": 99.65,
+      "fib_618": 97.89,
+      "fib_786": 95.38,
+      "fib_ext_1272": 111.17,
+      "fib_ext_1618": 116.33,
+      "fib_ext_2000": 122.03,
+      "fib_ext_low_1272": 88.13,
+      "fib_ext_low_1618": 82.97
+    },
+    "momentum": {
+      "roc_5d": -2.7,
+      "roc_10d": -1.09,
+      "roc_21d": 9.79
+    },
+    "z_score_50": 0.07,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 101.81573230699803,
+      "sma_24": 101.89406331380208,
+      "ema_48": 102.42747730356,
+      "sma_48": 102.96279033025105,
+      "ema_120": 101.60936970789267,
+      "sma_120": 102.07675215403239,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 101.30000305175781,
+    "dist_from_50sma_pct": -0.76,
+    "price_vs_ma": {
+      "above_ema_24": false,
+      "pct_from_ema_24": -0.51,
+      "above_sma_24": false,
+      "pct_from_sma_24": -0.58,
+      "above_ema_48": false,
+      "pct_from_ema_48": -1.1,
+      "above_sma_48": false,
+      "pct_from_sma_48": -1.61,
+      "above_ema_120": false,
+      "pct_from_ema_120": -0.3,
+      "above_sma_120": false,
+      "pct_from_sma_120": -0.76
+    },
+    "rsi": {
+      "rsi_21": 39.42
+    },
+    "rsi_divergence": {
+      "bullish": true,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": -0.6419,
+      "signal_line": -0.3613,
+      "histogram": -0.2806,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 105.75,
+      "middle": 102.96,
+      "lower": 100.18,
+      "width": 0.0541,
+      "pct_b": 0.2013
+    },
+    "atr": {
+      "atr_24": 0.54,
+      "atr_pct": 0.54
+    },
+    "adx": {
+      "adx_24": 42.96,
+      "plus_di": 13.0,
+      "minus_di": 30.99,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 720066,
+      "avg_volume_20": 706169,
+      "relative_volume": 1.02,
+      "volume_bias_10d": "down",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 103.81,
+          "tests": 15,
+          "volume_confirmed": false
+        },
+        {
+          "price": 105.2,
+          "tests": 16,
+          "volume_confirmed": false
+        },
+        {
+          "price": 106.28,
+          "tests": 14,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 100.61,
+          "tests": 8,
+          "volume_confirmed": true
+        },
+        {
+          "price": 101.97,
+          "tests": 18,
+          "volume_confirmed": false
+        },
+        {
+          "price": 103.96,
+          "tests": 19,
+          "volume_confirmed": true
+        }
+      ],
+      "nearest_resistance": 103.81,
+      "nearest_support": 100.61,
+      "recent_high": 103.81,
+      "recent_low": 100.6,
+      "prev_day_high": 101.23,
+      "prev_day_low": 100.69,
+      "prev_day_close": 101.18
+    },
+    "fibonacci": {
+      "swing_high": 103.81,
+      "swing_low": 100.6,
+      "fib_236": 103.05,
+      "fib_382": 102.58,
+      "fib_500": 102.2,
+      "fib_618": 101.83,
+      "fib_786": 101.29,
+      "fib_ext_1272": 104.68,
+      "fib_ext_1618": 105.79,
+      "fib_ext_2000": 107.02,
+      "fib_ext_low_1272": 99.73,
+      "fib_ext_low_1618": 98.62
+    },
+    "momentum": {
+      "roc_5d": 0.46,
+      "roc_10d": -0.49,
+      "roc_21d": -1.26
+    },
+    "z_score_120": -0.28,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 105.02999877929688,
+      "close": 104.81999969482422,
+      "high": 106.27999877929688,
+      "low": 104.2300033569336,
+      "volume": 6886600,
+      "time": "2026-04-22"
+    },
+    {
+      "open": 104.94000244140625,
+      "close": 103.6500015258789,
+      "high": 105.19999694824219,
+      "low": 102.55000305175781,
+      "volume": 6147000,
+      "time": "2026-04-23"
+    },
+    {
+      "open": 103.5999984741211,
+      "close": 102.5999984741211,
+      "high": 103.63999938964844,
+      "low": 101.97000122070312,
+      "volume": 5974500,
+      "time": "2026-04-24"
+    },
+    {
+      "open": 102.62000274658203,
+      "close": 102.3499984741211,
+      "high": 103.80999755859375,
+      "low": 102.05999755859375,
+      "volume": 6524300,
+      "time": "2026-04-27"
+    },
+    {
+      "open": 102.66000366210938,
+      "close": 101.47000122070312,
+      "high": 103.29000091552734,
+      "low": 100.61000061035156,
+      "volume": 6409300,
+      "time": "2026-04-28"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 101.30000305175781,
+  "market_cap": 179454967808.0,
+  "wiki_context": {
+    "slices": {
+      "catalysts_full": {
+        "path": "wiki/tickers/DIS/catalysts.md",
+        "mode": "full",
+        "content": "# DIS \u2014 Catalysts\n\n## TL;DR\n\nThe only hard-date catalyst on the horizon is Q2 FY2026 earnings, expected around May 6\u201313, 2026. Between now and then, the stock is driven by narrative: restructuring progress, streaming profitability trajectory, and the macro read on consumer spending. The Paramount-WBD merger regulatory review is the biggest competitive risk event \u2014 if it clears, Disney faces a meaningfully stronger content rival.\n\n## Upcoming events\n\n| Event | Expected date | Direction | Notes |\n|---|---|---|---|\n| Q2 FY2026 earnings | ~May 6\u201313, 2026 | Binary | Analyst est. EPS $1.57, revenue $25.76B. Key focus: streaming margin vs. 10% FY2026 target, Parks momentum |\n| Paramount-WBD merger decision | Ongoing (CMA + FCC) | Bearish if cleared | $110.9B deal; creates massive combined content library competitor |\n| FY2026 streaming margin milestone | Q3/Q4 FY2026 | Bullish if hit | Disney guided for 10% streaming operating margin; Q1 was ~8.4% ($450M on $5.35B) |\n\n## Recent news synthesis (sources: `web_research/DIS.json` from both runs)\n\n**Restructuring (mixed sentiment).** Disney cut 1,000 jobs in April 2026, including roles at Marvel Studios. The cuts build on 8,000 cumulative headcount reductions since 2022 under new CEO D'Amaro. Markets initially read this as margin-positive (trend follower and momentum agents in run `20260415_110848` both cited this as a bullish catalyst). However, the news sentiment agent was 62% bearish, reading the Marvel cuts as a potential content quality risk.\n\n**Streaming bundle expansion (positive).** Disney and Warner Bros. Discovery launched a Disney+/Hulu/Max bundle in the US. Disney+ is also integrating Hulu fully into a single unified hub in 2026. The ad-supported tier is expanding internationally via a multi-year Sky deal.\n\n**Disney-Epic Games partnership (positive).** A gaming ecosystem collaboration was cited in the April 11 run (`swing_20260411_211655`) as a positive catalyst, diversifying Disney's entertainment revenue beyond film and parks.\n\n**Q1 FY2026 earnings (already reported, Feb 5, 2026).** Revenue $26.0B (+5% YoY), adjusted EPS $1.63 (beat $1.57 estimate). Streaming operating income $450M (+72% YoY). Parks first-ever $10B+ quarterly revenue. FY2026 guidance: double-digit EPS growth, $19B operating cash flow, $7B buybacks. These numbers established the bullish fundamental floor that makes the valuation case credible.\n\n## Analyst consensus (as of April 15, 2026)\n\n- **Consensus rating:** Buy (38 Buy / 21 Hold / 4 Sell across 63 analysts)\n- **Average price target:** $132\u2013$133; 12-month consensus ~$140\n- **Recent target changes:** Deutsche Bank cut to $132 (from $135); Wells Fargo cut to $148 (from $150); Barclays cut to $130 (from $140); Guggenheim cut to $115 (from $140). Raymond James upgraded to Outperform with $115 PT on April 1, citing historically cheap valuation.\n- **Implied upside from $100:** ~32\u201340% to consensus target range\n\n## Insider activity (as of April 2026)\n\n- **April 2026 net:** 88 buys vs. 71 sells \u2014 net positive; management signaling conviction at current levels\n- **Board-level RSU grants:** Multiple board members received grants at ~$96.96 in late March 2026, establishing institutional cost basis near current trading range\n- Source: `swing_head_trader` signal, run `20260415_110848`\n\n## Competitive landscape risk\n\nNetflix at 325M subscribers with ad revenue doubling to $1.5B+ is the dominant near-term threat. The Paramount-WBD merger, if approved, would combine Paramount+, Max, and Discovery+ into a single content house competing directly with Disney+ and Hulu. Netflix walked away from acquiring Warner Bros. Discovery in February 2026, which removed one consolidation scenario but left the two-player (Netflix vs. everyone else) dynamic intact.\n",
+        "last_updated": "2026-04-29",
+        "stale": false
+      },
+      "calendar_full": {
+        "missing": true,
+        "mode": "full"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "NKE": {
+    "signal": "neutral",
+    "confidence": 22,
+    "reasoning": "NKE is coiling in a tight hourly consolidation range ($44.15–$45.71, width $1.56) with the hourly Bollinger Band width at 0.0573 — a genuine squeeze is present on the hourly timeframe. However, the daily BB width (0.1932) is not in squeeze territory, and critically, volume is severely deficient: current daily volume of 12.4M vs the 20-day average of 30.3M yields a relative volume of just 0.41x — far below the required 1.5x threshold for a confirmed breakout. No close above the nearest daily resistance at $46.97 (4-test pivot) has occurred. Price sits at $45.03, roughly midrange between daily support $42.09 and resistance $46.97 (range height $4.88). The hourly OBV is trending down, and all EMAs are aligned bearish on both timeframes. Daily RSI divergence (bullish) suggests exhaustion of the downtrend from the $42.09 low, but does not constitute a breakout signal. Wiki context confirms the prior strong downtrend (ADX 64.6 on Apr 11) and identifies the $44–$46 zone as the 10 EMA bounce region targeted by prior short entries — price is in the exact zone where shorts would be entered on a failed bounce, not where a bullish breakout is confirmed. The hourly squeeze is coiled but not firing with volume. Range: $42.09 support / $46.97 resistance. Volume ratio: 0.41x (no confirmation). Squeeze status: ON (hourly), not in squeeze (daily). No actionable breakout signal.",
+    "entry": 47.1,
+    "target": 52.0,
+    "stop": 44.1,
+    "timeframe": "5-12 trading days"
+  },
+  "DIS": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "DIS has formed a well-defined short-term consolidation range on the hourly chart between $100.60 (volume-confirmed support, 8 tests) and $103.81 (15-test resistance), a range height of $3.21. The hourly Bollinger Band width is 0.0541 — a genuine squeeze is active. Price at $101.30 is sitting at the lower portion of this range (pct_b 0.2013), right at the Fib 78.6% retracement ($101.29) and at the upper edge of the wiki-identified support zone ($99.50–$101.00). Hourly RSI divergence is bullish, and the daily MACD histogram remains positive (+0.118). However, no bullish breakout has occurred: price is below all hourly MAs, hourly ADX shows a bearish intraday trend (minus_di 30.99 vs plus_di 13.0), and hourly OBV is trending down. Daily volume at 0.83x average and hourly at 1.02x both fall well short of the 1.5x requirement for breakout confirmation. The wiki notes that a reclaim of $103 with volume after clean consolidation would shift to breakout confirmation mode — that condition has not been met. A bearish breakdown below $100.61 is equally possible and would be a volume-confirmed bearish breakout toward $97.40 (measured move: $100.61 - $3.21 = $97.40). Currently the range is coiling but direction is unresolved. Monitoring for a decisive close above $103.81 on volume 1.5x+ for a bullish signal, or a close below $100.61 on volume for a bearish signal. Range: $100.60 support / $103.81 resistance. Volume ratio: 0.83x daily, 1.02x hourly (no confirmation). Squeeze status: ON (hourly). Awaiting breakout direction and volume confirmation.",
+    "entry": 104.0,
+    "target": 107.1,
+    "stop": 100.4,
+    "timeframe": "4-10 trading days"
+  }
+}

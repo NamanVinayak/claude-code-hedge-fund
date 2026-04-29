@@ -1,0 +1,44 @@
+{
+  "run_id": "20260429_220825",
+  "mode": "swing",
+  "started_at": "2026-04-29T22:09:14Z",
+  "ended_at": "2026-04-29T22:23:51Z",
+  "tickers": [
+    "NKE",
+    "DIS"
+  ],
+  "decisions": [
+    {
+      "ticker": "NKE",
+      "action": "hold",
+      "confidence": 20,
+      "entry": null,
+      "stop": null,
+      "target": null,
+      "reasoning_tldr": "100% agent consensus neutral; Head Trader confidence 20 (<40 threshold)"
+    },
+    {
+      "ticker": "DIS",
+      "action": "buy",
+      "confidence": 62,
+      "entry": 101.5,
+      "stop": 100.2,
+      "target": 107.11,
+      "reasoning_tldr": "3/5 strategy agents bullish; Head Trader confidence 62"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 2,
+    "cash": 100000.0,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "mixed",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

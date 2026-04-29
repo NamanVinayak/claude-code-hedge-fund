@@ -1,0 +1,24 @@
+{
+  "tickers": ["NKE", "DIS"],
+  "mode": "swing",
+  "run_id": "20260429_220825",
+  "summary": "Two-ticker swing scan with clear asymmetry. DIS offers a high-quality pre-earnings dip-buy at a well-tested Fibonacci/support confluence. NKE is a pass — deep downtrend with no valid R/R in either direction.",
+  "per_ticker": {
+    "NKE": {
+      "decision": "hold",
+      "plain_english": "Nike is in a confirmed deep downtrend (ADX 39, all moving averages bearish), but bearish momentum is decelerating — the MACD histogram has turned positive and RSI shows bullish divergence. This kills the short. The long fails on risk/reward: only 1.1:1 upside to resistance vs. 0.9:1 to support. Macro headwinds (50% tariff threat on Asian manufacturing) and deteriorating fundamentals (revenue -9.8%, EPS -43.5%) add to the caution. Board insiders bought $500K+ at $42-43 — a contrarian data point, but not yet tradeable. Watch for a volume-confirmed close above $46.97 for a reversal signal.",
+      "key_levels": {"resistance": 46.97, "support": 42.09, "current": 44.39}
+    },
+    "DIS": {
+      "decision": "buy",
+      "entry": 101.50,
+      "target": 107.11,
+      "stop": 100.20,
+      "rr": "4.3:1",
+      "timeframe": "5-12 trading days",
+      "shares": 192,
+      "capital": 19488,
+      "plain_english": "Disney has pulled back 5% from its recent $107 high into the 38.2% Fibonacci retracement level ($101.41), which coincides perfectly with a 15-test volume-confirmed horizontal support at $101.02. RSI-7 hit 9.15 — extreme short-term oversold — while the daily MACD remains positive (trend intact). Three of five strategy agents are bullish. The near-term catalyst: Q2 FY2026 earnings in 5-10 trading days, with Q1 already a beat ($1.63 EPS vs $1.57 estimate) and streaming income +72% YoY. The trade offers 4.3:1 risk/reward ($5.61 upside vs $1.30 downside). Wait for a hourly stabilization candle at the $100.61-$101.02 zone before entering; abandon if $100.50 breaks on volume."
+    }
+  }
+}
