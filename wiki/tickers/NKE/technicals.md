@@ -1,46 +1,40 @@
 ---
 name: NKE technicals
 last_updated: 2026-04-29
-last_run_id: bootstrap
+last_run_id: 20260429_220825
 target_words: 350
 stale_after_days: 7
-word_count: 362
-summary: extreme downtrend — ADX 64.6, all EMAs aligned bearish, multi-oscillator oversold floor near $42
+word_count: 348
+summary: downtrend intact but decelerating — ADX 39.35 (was 64.6 Apr 11), MACD histogram turned positive, price coiling $44–$46 with no breakout volume
 ---
 
 # NKE — Technicals
 
 ## TL;DR
 
-As of April 11, 2026 (`swing_20260411_211655`), NKE was in one of the strongest downtrends in the analyzed universe (ADX 64.6). All EMAs fanning bearish, price at $42.62 — 35% below the 200 SMA. Every momentum oscillator at or near statistical extremes. A bounce from this zone was likely; the trend direction was not in dispute.
+As of April 29, 2026 (run `20260429_220825`), NKE's downtrend persists but has materially weakened. ADX declined from 64.6 (Apr 11) to 39.35 — still strong but no longer extreme. Price ($45.03) has bounced ~6.6% off the Apr 11 swing low ($42.09), sitting in the 10 EMA bounce zone agents previously flagged as the short entry corridor. The critical read: daily MACD histogram has turned positive (+0.52), OBV is diverging bullishly from price, and RSI shows daily bullish divergence — all three signal bearish momentum exhaustion. No reversal is confirmed; no short entry is valid.
 
 ---
 
-## Multi-timeframe state
+## Daily chart state (as of 2026-04-29, run `20260429_220825`)
 
-All data from `swing_20260411_211655` unless noted.
-
-| Indicator | Value | Interpretation |
+| Indicator | Reading | Interpretation |
 |---|---|---|
-| Price (Apr 11) | $42.62 | Near 52-week low of $42.36 |
-| 10 EMA | $45.74 | Price well below — bearish |
-| 21 EMA | $49.27 | Fanning bearish |
-| 50 EMA | $54.51 | Further bearish fan |
-| 200 SMA | $65.34 | Price 35% below — extreme |
-| ADX | 64.64 | Very strong trend (>60 rare) |
-| RSI (14) | 22.6 | Deeply oversold (<30) |
-| RSI (28) | 17.95 | Longer-window confirms extreme |
-| Stochastic K | 2.19 | At floor — near 0 |
-| Williams %R | -97.8 | Extreme |
-| Z-score | -2.06 | Past -2 standard deviation |
-| MACD histogram | -0.56 | Still negative, no cross |
-| CCI | -107.0 | Bearish territory |
-| Bollinger position | 0.12 | Hugging lower band |
-| ROC (5d) | -3.6% | Accelerating |
-| ROC (10d) | -18.1% | Catastrophic |
-| ROC (21d) | -23.5% | Catastrophic |
-| Historical volatility | 59.1% | High — wide stops required |
-| ATR ratio | 4.6% | Daily range ~$1.97 on $42.62 |
+| Price | $45.03 | In $44–$46 bounce / resistance zone |
+| 10 EMA | $45.29 | Price just below — minimal bearish separation |
+| 21 EMA | $46.53 | Bearish fan intact but compressing |
+| 50 EMA | $50.98 | Price 11.7% below — deep downtrend |
+| 200 SMA | ~$64 (est.) | Price 29.4% below — extreme |
+| ADX | 39.35 | Strong trend, but fell from 64.6 (Apr 11) |
+| MACD histogram | +0.52 | Turned positive — bearish momentum decelerating |
+| RSI-7 | 32.14 | Approaching oversold; daily bullish divergence confirmed |
+| OBV (daily) | Diverging bullish from price | Possible accumulation |
+| Volume (daily) | 0.41× 20-day avg | Severely thin — no conviction moves |
+| Bollinger Band pct_b | 0.50 | At midband; no statistical extreme |
+| Z-score | -1.03 | Not at -2 threshold; no mean-reversion trigger |
+| Hourly ADX | 17.29 | Weak — no intraday trend |
+| Hourly MACD hist | -0.088 | Marginally negative, not expanding |
+| Historical volatility | 43.1% (annualized) | Still elevated — wide stops required |
 
 ---
 
@@ -48,24 +42,17 @@ All data from `swing_20260411_211655` unless noted.
 
 | Level | Value | Source |
 |---|---|---|
-| 52-week low | $42.36 | `swing_20260411_211655` web_research |
-| Apr 11 price | $42.62 | `swing_20260411_211655` signals |
-| 10 EMA (resistance) | $45.74 | Swing head trader bounce entry zone |
-| Apr 17 entry price | $45.54 | `20260417_233350` decision |
-| Apr 11 short entry | $44.00 | `swing_20260411_211655` decision |
-| Short stop (Apr 17) | $47.50 | `20260417_233350` decision |
-| Short stop (Apr 11) | $46.50 | `swing_20260411_211655` decision |
-| Bear target (Apr 17) | $41.50 | `20260417_233350` decision |
-| Bear target (Apr 11) | $38.00 | `swing_20260411_211655` decision |
+| Prior swing low (support) | $42.09 | `20260429_220825` signals |
+| 78.6% Fib retracement | $45.00 | `20260429_220825` swing_mean_reversion |
+| 10 EMA (overhead) | $45.29 | `20260429_220825` signals |
+| 4-test pivot resistance | $46.97 | `20260429_220825` swing_head_trader |
+| 21 EMA (upper resistance) | $46.53 | `20260429_220825` signals |
+| Breakout trigger (bullish) | Close above $46.97 on 1.5×+ vol | `20260429_220825` decision |
 
 ---
 
-## Setup type
+## Setup type (current)
 
-**Continuation short on oversold bounce.** Both runs targeted entry near the 10 EMA ($44–$46 zone) — not at the absolute low. The logic: ADX 64.6 trend continuation shorts have higher probability when entered on a relief bounce rather than into the capitulation low, where short-covering can produce violent reversals (which did happen in April, see trades.md).
+**No active setup. Indeterminate coil.** The prior "continuation short on oversold bounce" setup (Apr 11–17) has dissolved. Price is now sitting precisely on the 78.6% Fibonacci retracement from the swing high, which is historically a zone of failed rally in downtrends — but momentum is no longer accelerating to the downside. An hourly squeeze is active (BB width 0.0573) but volume at 0.41× average disqualifies any breakout confirmation. Wait conditions: (a) bearish re-acceleration — MACD histogram turns more negative + ROC 5d/10d both resume negative; or (b) reversal — close above $46.97 on 1.5×+ volume.
 
-The Hurst exponent near zero (stat-arb agent, `swing_20260411_211655`) indicates a near-random-walk price process at this scale — high volatility, not a smooth trend. Combined with skewness of -2.7 and kurtosis 16.3, this signals fat-tailed downside with occasional explosive reversals.
-
----
-
-*Data freshness: 7-day stale threshold. Re-run prepare.py to refresh.*
+*Prior setup type (Apr 11): "Continuation short on oversold bounce" — retired this run. See recent.md.*
