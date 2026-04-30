@@ -1,0 +1,47 @@
+{
+  "NVDA": {
+    "signal": "bullish",
+    "confidence": 27,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0.75,
+        "revenue_growth": 0.6140329835082459,
+        "revenue_trend": 6.890111377067638e-17,
+        "eps_growth": 1.4545454545454548,
+        "eps_trend": -0.30925615724790323,
+        "fcf_growth": null,
+        "fcf_trend": 0.0
+      },
+      "growth_valuation": {
+        "score": 0.5,
+        "peg_ratio": 0.76,
+        "price_to_sales_ratio": 27.807631462067985
+      },
+      "margin_expansion": {
+        "score": 0.4,
+        "gross_margin": 0.7027387598213163,
+        "gross_margin_trend": -0.016158974070427698,
+        "operating_margin": 0.5902740946892445,
+        "operating_margin_trend": -0.051517922206571955,
+        "net_margin": 0.5271716249391721,
+        "net_margin_trend": -0.04213069533849651
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 1.0,
+        "debt_to_equity": 0.10668498745698186,
+        "current_ratio": 4.439851498864077
+      },
+      "final_analysis": {
+        "signal": "bullish",
+        "confidence": 27,
+        "weighted_score": 0.64
+      }
+    }
+  }
+}
