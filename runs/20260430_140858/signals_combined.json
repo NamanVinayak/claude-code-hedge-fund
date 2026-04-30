@@ -1,0 +1,335 @@
+{
+  "mode": "swing",
+  "analyst_signals": {
+    "swing_breakout": {
+      "AMD": {
+        "signal": "bullish",
+        "confidence": 42,
+        "reasoning": "AMD is in a post-breakout consolidation rather than a pre-breakout squeeze, which is a marginal but viable setup for a continuation breakout. The consolidation range is bounded by support at $328.81 (hourly pivot, volume-confirmed, 6 tests) and resistance at $352.99 (hourly pivot high, volume-confirmed, 2 tests). The stock surged from ~$200 to $353 in the prior weeks, then pulled back to $310 and is now coiling in the $310-$353 range. A confirmed daily close above $352.99 with 1.5x+ daily volume would be a valid continuation breakout. RANGE BOUNDARIES: Support $328.81 / Resistance $352.99, range height ~$24. VOLUME RATIO: Daily relative volume is only 1.10x (below the 1.5x threshold required \u2014 NOT confirmed). Hourly relative volume is 1.91x (above threshold, suggesting intraday accumulation, which is an early signal but daily confirmation is still needed). SQUEEZE STATUS: Daily Bollinger width is 0.6396 \u2014 wide, meaning the big squeeze already fired and this is NOT a classic coiled setup at the daily level. Hourly BB width 0.2571 is more compressed, consistent with short-term consolidation. OVERBOUGHT RISK: Daily RSI-14 at 82.09 and RSI-21 at 85.78 are deeply overbought. Z-score 2.47 indicates statistical overextension. Wiki confirms this has been a persistent risk across multiple prior runs. ADX 73.57 confirms an extremely strong trend but also that the move is well-advanced. WIKI CONTEXT: Prior resistance levels at $268-$305 have been completely blown through. The prior entry zone ($241-$248) and stop ($270) are now deep historical levels \u2014 irrelevant to current action. The technicals wiki (last updated 2026-04-29, not stale) flags RSI overextension as the key risk. CONCLUSION: Setup is approaching but not yet confirmed. Entering NOW is premature \u2014 breakout requires a daily close above $352.99 with volume surge. Low confidence due to (1) no daily volume confirmation, (2) daily BB width already wide (squeeze done at daily level), (3) deeply overbought RSI. Signal is bullish lean only, pending confirmation.",
+        "entry": 354.5,
+        "target": 378.5,
+        "stop": 327.0,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_head_trader": {
+      "AMD": {
+        "consensus_signal": "neutral",
+        "confidence": 52,
+        "reasoning": "Three agents are directionally bullish (trend_momentum, breakout, catalyst_news), one is bearish (mean_reversion), and one is neutral (macro_context). On a raw vote count that looks like a 3-1-1 bullish tilt, but the vote count obscures critical structural disagreement about TIMING \u2014 not direction. The core split is: catalyst_news argues for entering NOW ahead of May 5 earnings (4 trading days away); trend_momentum and macro_context both explicitly state the entry is PREMATURE at current levels (~337-345) and want a pullback to the 308-315 zone before acting. That 2-agent consensus on 'wait for pullback' is more informative than the 3-1 directional vote. Breakout contributes the weakest signal (confidence 42, no daily volume confirmation, squeeze already fired at daily level) and is effectively a conditional/pending setup, not a live entry. Mean reversion fires its fade-the-extreme branch with moderate conviction (62) but acknowledges no confirmed daily reversal candle \u2014 it is a valid counterpoint, not a high-conviction short. The macro context applies its regime check and finds R/R asymmetry deeply unfavorable at current price: best-case immediate target (352.99) offers only ~2.3% upside vs ~4.7% downside to nearest hourly support (328.81), a 0.5:1 ratio far below the 2:1 minimum threshold. Even extending to Fib 1.272 at 366.67 yields only 1.3:1. Per the system mandate, macro_context carries veto weight on R/R grounds when the regime is not cleanly risk-on \u2014 and it explicitly finds the R/R inadequate. The catalyst_news bullish case is real: earnings May 5 with a lowered bar (soft pre-guidance post Q4 beat), Meta $60B infrastructure deal, TSMC 2nm first-mover, 39 Buy / 0 Sell analyst consensus, and Evercore $358 / Melius $380 targets. However, the stock is already trading near Evercore's bull target ($358), implying much of the good news is priced in. A beat-and-lower Q2 guidance scenario (tariff headwinds on MI325X, Nvidia 89% server GPU share) could trigger a sell-the-news collapse despite a headline earnings beat \u2014 a binary risk that inflates the denominator for any pre-earnings entry. Hourly internals across all agents agree: MACD histogram negative (-1.69), hourly -DI (33.53) > +DI (20.45), suggesting intraday distribution is building against an elevated daily price. This is not trend reversal \u2014 ADX 73.57 with +DI 56.62 on the daily confirms the macro trend is intact \u2014 but it confirms the near-term entry timing is wrong. The productive disagreement between trend_momentum (bullish thesis valid, entry wrong) and mean_reversion (short now on RSI 82 / Z-score 2.47) resolves as: AMD's trend is real and intact, but the stock is statistically overextended and the risk/reward at current price does not justify initiating a new swing position in either direction given the imminent binary earnings event. The correct stance is to wait: for a confirmed breakout above 352.99 with 1.5x+ daily volume (breakout agent's condition), OR for a pullback to the 308-315 zone with hourly MACD re-crossing bullish (trend_momentum and macro_context's condition). Initiating a short (mean_reversion) against ADX 73.57 with earnings 4 days away and no confirmed daily reversal candle is too aggressive. Result: hold/pass until setup clarifies post-earnings or at a lower-risk entry level.",
+        "agent_agreement_pct": 60.0,
+        "key_conflicts": "The sharpest conflict is between swing_catalyst_news (buy now at 338, earnings catalyst in 4 days, lowered bar = beat likely) and swing_mean_reversion (short now at 337, RSI 82 / Z-score 2.47 = extreme overbought, target reversion to daily EMA-20 at 281). Both agents are looking at the same price and reaching opposite conclusions because they are answering different questions: catalyst_news asks 'is there a fundamental event that justifies the entry?' (yes \u2014 earnings); mean_reversion asks 'is price statistically stretched to the point where a snapback outweighs continuation?' (yes \u2014 Z-score 2.47, RSI 82). Neither is wrong on its own terms. The second conflict is between the three broadly-bullish agents on entry TIMING: catalyst_news wants to enter pre-earnings at 338; trend_momentum says the trend is real but the entry is premature and wants 308-315; breakout says wait for a confirmed daily close above 352.99 with volume. These three agents are bullish on AMD but cannot agree on where or when to enter \u2014 a 3-way timing split that reduces actionability. Macro_context provides the tie-breaking regime check: sub-2:1 R/R at all near-term targets, late-cycle sector rotation (AMD +72% in 21 days vs S&P +9%), and a transitional macro regime (Fed on hold, US-Iran blockade left-tail risk, mega-cap earnings mixed) argue for a pass until the earnings binary resolves or price pulls back to asymmetric levels. The insider distribution signal (CEO Lisa Su $16M in March, 2:1 board sellers vs buyers) adds a modest bearish lean that no agent weighted heavily but that reinforces the 'don't chase' thesis.",
+        "recommended_action": "hold",
+        "entry": null,
+        "target": null,
+        "stop": null,
+        "watch_levels": {
+          "breakout_trigger": 352.99,
+          "breakout_volume_required": "1.5x+ daily average",
+          "pullback_entry_zone": "308-315",
+          "pullback_stop": 299.75,
+          "pullback_target": 366.67,
+          "key_support": 328.81,
+          "earnings_date": "2026-05-05"
+        },
+        "timeframe": "wait \u2014 re-evaluate post-earnings (May 5) or on pullback to 308-315",
+        "synthesis_notes": "3 bullish / 1 bearish / 1 neutral on direction. However, 2 of the 3 bullish agents (trend_momentum, macro_context which is neutral) explicitly flag premature entry at current levels. Catalyst_news is the only agent advocating immediate entry. Macro_context applies R/R veto (0.5:1 at immediate resistance). Net result: no actionable setup today. The AMD bull thesis remains intact for a lower-risk entry after the earnings binary resolves."
+      }
+    },
+    "growth_analyst_agent": {
+      "AMD": {
+        "signal": "neutral",
+        "confidence": 19,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.65,
+            "revenue_growth": 0.13690476190476192,
+            "revenue_trend": 0.24471153822687766,
+            "eps_growth": 0.9056603773584905,
+            "eps_trend": -0.1280774367693117,
+            "fcf_growth": 1.1454058876003568,
+            "fcf_trend": 0.03439411185243619
+          },
+          "growth_valuation": {
+            "score": 0.5,
+            "peg_ratio": 0.96,
+            "price_to_sales_ratio": 18.030813689367704
+          },
+          "margin_expansion": {
+            "score": 0.4,
+            "gross_margin": 0.4807618314736437,
+            "gross_margin_trend": -0.002832723991420993,
+            "operating_margin": 0.08548159548544312,
+            "operating_margin_trend": 0.006532804961681149,
+            "net_margin": 0.11526869308708478,
+            "net_margin_trend": 0.0018657696247296595
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": 1.7370761534185658e-05,
+            "current_ratio": 2.6162615025408598
+          },
+          "final_analysis": {
+            "signal": "neutral",
+            "confidence": 19,
+            "weighted_score": 0.59
+          }
+        }
+      }
+    },
+    "swing_trend_momentum": {
+      "AMD": {
+        "signal": "bullish",
+        "confidence": 58,
+        "reasoning": "TREND ASSESSMENT: AMD daily trend is unambiguously strong. EMA alignment is perfectly fanned (EMA5 325.6 > EMA10 308.0 > EMA21 279.0 > EMA50 247.5), ADX at 73.57 with +DI 56.62 vs -DI 10.51 confirms an extremely powerful uptrend. Recent price action shows higher lows intact (low 200.62 to current 337-345 range). Daily volume bias is up and OBV is not diverging from price. MOMENTUM ASSESSMENT: Daily ROC is strongly positive and accelerating across all windows (5d +11.09%, 10d +30.6%, 21d +71.96%) \u2014 the clearest momentum expansion signal possible. Daily MACD histogram +6.87 (MACD 31.34 > signal 24.47) confirms daily momentum is expanding. ENTRY ZONE CONCERN: This is a trend-continuation strategy requiring pullbacks to the 10 or 21 EMA. Current price (~345) is 9.4% above EMA10 (308) and 20.8% above EMA21 (279) \u2014 significantly overextended for a clean pullback entry. HOURLY DIVERGENCE WARNING: Hourly MACD histogram is -1.69 (signal line above MACD line), and critically, hourly -DI (33.53) exceeds +DI (20.45) \u2014 short-term intraday trend is actually bearish, diverging from the daily trend. This is an early warning of near-term exhaustion consistent with wiki context noting prior RSI 91 overbought readings and bearish hourly STC cross. RSI at 82 is deeply overbought. VERDICT: The macro regime (mixed-to-cautious with AI tailwind intact) and AMD's fundamental momentum support the bullish thesis, but the entry is premature at current levels. A pullback to the 10 EMA zone (~308-315) would provide the textbook trend-continuation entry with hourly re-alignment. Confidence is moderate \u2014 the trend is real but the setup is not yet at an actionable entry. Waiting for hourly momentum to re-align with daily before entry.",
+        "entry": 312.0,
+        "target": 366.67,
+        "stop": 299.0,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_macro_context": {
+      "AMD": {
+        "signal": "neutral",
+        "confidence": 62,
+        "reasoning": "MACRO REGIME: Mixed-to-cautious transitional regime. The Fed held at 3.5%-3.75% for the third consecutive time on April 29, cementing higher-for-longer. US-Iran military blockade of Iranian ports is the dominant left-tail risk \u2014 a Strait of Hormuz closure would spike oil, re-accelerate inflation, and force further Fed hawkishness. Mega-cap earnings split (Alphabet/Amazon beat on AI capex, Meta -9% capex shock) creates sector uncertainty. S&P April +9% is the strongest month since 2020, but the Dow logged a fifth consecutive losing session. AI hardware thematic remains intact as the primary risk-on engine, but the regime is not cleanly risk-on \u2014 it is transitional with amplifying headwinds. Critically, the wiki regime page flags AMD earnings (late April / early May) as the 'next binary read-through' for the entire AI hardware thesis. RELATIVE STRENGTH: AMD is massively outperforming the broad market \u2014 ROC 21d at +72% vs S&P approximately +9% for April. This is extreme late-cycle outperformance, not early-cycle entry. The system mandate is explicit: bullish setups should come early in a sector's relative-strength uptrend, not late. At 47% above SMA-50 and 61% above SMA-200, AMD is statistically stretched (Z-score 2.47 vs 50-period). The stock has already delivered the move; entering now is chasing, not front-running. ASYMMETRY R/R MATH: Current price ~345 (hourly). Nearest resistance: 352.99 (hourly pivot high, 2x tested, volume-confirmed) = approximately 2.3% upside. Nearest support: 328.81 (hourly pivot low, 6x tested, volume-confirmed) = approximately 4.7% downside. At immediate resistance target: 2.3% upside vs 4.7% downside = 0.5:1 \u2014 far below the 2:1 minimum. Extending to fib ext 1.272 at 366.67 requires breaking through 352.99 and assumes continued parabolic extension: 6.3% upside vs 4.7% downside = 1.3:1 \u2014 still below the 2:1 threshold. Even fib ext 1.618 at 384.07 (11.3% upside vs 4.7% to 328.81 stop) = 2.4:1, but this assumes blowout earnings and sustained AI capex narrative expansion \u2014 a binary bet, not a swing setup. CAPITAL PRESERVATION FLAGS: (1) Hourly MACD histogram turned negative (-1.69) while price is near highs \u2014 distribution signal forming on the hourly timeframe. (2) Hourly ADX: -DI (33.53) is now dominant over +DI (20.45), indicating sellers controlling short-term price action despite price still elevated. (3) Daily RSI-14 at 82.09 and RSI-21 at 85.78 \u2014 extreme overbought readings that historically precede mean-reversion pullbacks in individual names even within bull trends. (4) Bollinger %B at 0.885 \u2014 pressing the upper band on the daily. (5) Imminent earnings binary event: AMD earnings are flagged as the next macro read-through. A miss or guidance cut would collapse the setup, and options-implied volatility around earnings inflates the risk denominator. CONCLUSION: The daily trend is undeniably strong (ADX 73.57, EMA aligned uptrend, OBV rising). However, the entry timing is wrong: late-cycle sector rotation, sub-2:1 R/R at all realistic near-term targets, hourly distribution signals forming, extreme overbought daily RSI, and an imminent earnings binary all argue against initiating a new swing position here. This is a pass on R/R grounds and late-cycle timing, not a reversal call. A pullback to the 310-315 zone (prior gap-fill + 10-SMA area) with hourly MACD re-crossing bullish would create the asymmetric setup this framework requires.",
+        "entry": 313.0,
+        "target": 366.67,
+        "stop": 299.75,
+        "timeframe": "8-15 trading days"
+      }
+    },
+    "swing_mean_reversion": {
+      "AMD": {
+        "signal": "bearish",
+        "confidence": 62,
+        "reasoning": "Branch A (fade the extreme) fires, but without a confirmed reversal candle \u2014 conviction is moderate. Daily Z-score of 2.47 (above +2 threshold), RSI-14 at 82.09 and RSI-21 at 85.78 (well above 75 overbought threshold), and a staggering +47.12% distance from the 50-SMA (extreme vs. the >10% warning level) all confirm severe overbought extension. Wiki context corroborates: as of Apr 17 run, AMD already had RSI 91 with a bearish hourly STC cross \u2014 this overbought condition is persistent, not fresh, which slightly reduces fade conviction (repeat attempts at the same extreme). The hourly frame provides a meaningful divergence: hourly RSI-21 is only 58.85 while daily RSI is 82+, suggesting the hourly momentum has already started cooling. The hourly MACD histogram is negative (-1.69) and hourly ADX shows minus_di (33.53) > plus_di (20.45) \u2014 intraday selling pressure is building. The 5-day price action (305 \u2192 348 \u2192 335 \u2192 323 \u2192 337) shows AMD pulled back from its 352.99 high to 310, then bounced \u2014 it is now retesting the lower end of that recovery range. Branch B (buy the dip) does NOT fire: while the trend is intact, entering a long in a stock with RSI 82 and Z-score 2.47 is outside the Branch B parameters for a mean reversion strategy. No RSI divergence has been detected on daily timeframe yet. The system prompt requires a reversal candle or momentum shift before entering \u2014 the hourly signals (negative MACD histogram, minus_di dominance) serve as an early but not fully confirmed momentum shift. Entering near current price (337) targets a reversion toward the daily EMA-20 (~281) over 5-15 trading days. Stop is set above the recent high at 352.99, aligning with the upper Bollinger Band at 357.05. Risk/reward is approximately 1:2.7 (stop ~20 pts, target ~56 pts). Confidence held to 62 (not higher) due to: (1) no confirmed daily reversal candle, (2) ADX 73 showing an extremely strong trend that can persist, (3) this is at least the second overbought warning cycle (wiki), and (4) no RSI divergence on daily. Trade should be sized small.",
+        "entry": 337.0,
+        "target": 281.0,
+        "stop": 357.0,
+        "timeframe": "5-15 trading days"
+      }
+    },
+    "swing_catalyst_news": {
+      "AMD": {
+        "signal": "bullish",
+        "confidence": 62,
+        "reasoning": "CATALYST WINDOW: Q1 2026 earnings on May 5, 2026 \u2014 approximately 4 trading days away. This is the primary binary catalyst. Consensus EPS $1.18, revenue ~$9.8B (+32% YoY). Critically, AMD already pre-guided Q1 softly after the Q4 2025 beat ($1.53 EPS vs $1.24 est.), meaning the bar is set conservatively \u2014 a beat is more probable than a miss. NET NEWS SENTIMENT: Positive. The Meta $60B multi-year infrastructure deal (AMD GPUs + Venice CPUs + custom silicon co-engineering) provides Data Center revenue visibility that analysts call transformational. TSMC 2nm first-mover confirmed April 15 by CEO Lisa Su \u2014 ahead of both Nvidia and Intel on next process node. Goldman Sachs top pick heading into earnings; Evercore ISI $358 bull target, Melius Research $380; 39 Buy / 0 Sell among 51 covering analysts. Headwinds: 25% tariff on advanced AI chips (MI325X/H200) is an ongoing margin headwind; Nvidia retains ~89% server GPU share limiting AMD's TAM. On balance, news flow is clearly positive. INSIDER ACTIVITY: Net selling \u2014 CEO Lisa Su sold ~$16M in March 2026; board-level distribution is 188 sells vs 83 buys (2:1 sellers). This is a bearish lean but is not historically a short-term catalyst signal and does not override the bullish fundamental thesis. TECHNICAL SETUP GOING IN: Extended but trend is intact. RSI 14 at 82.09, RSI 21 at 85.78 \u2014 significantly overbought on daily. Daily ADX at 73.57 with Plus DI 56.62 vs Minus DI 10.51 = strong trending market. EMA fully aligned uptrend. Price is 47% above 50 SMA and up ~72% over 21 days (parabolic April run). Z-score 50 at 2.47. These readings normally warrant caution, but pre-earnings compression of uncertainty can push overbought names higher before the event. Hourly signals are slightly mixed: hourly MACD histogram turned negative (-1.69) and hourly minus_di (33.53) exceeds plus_di (20.45), suggesting short-term intraday consolidation / pullback \u2014 not trend reversal. Hourly support confirmed at $328.81 (6 tests, volume-confirmed). Nearest hourly resistance at $352.99 (prior session high). Entry rationale: current price (~$337-345) is constructive within the pre-earnings 4-day window. The lowered Q1 guidance already baked in, combined with strong Data Center demand signals from Meta deal, makes a positive surprise likely. Target sized at ~8% above entry (analyst day / earnings magnitude), stop at pre-catalyst hourly support. Risk: stock is already near Evercore's $358 bull target \u2014 much of the good news is priced in. A beat-and-lower for Q2 guidance (tariff headwinds, competitive pressure) could trigger a sell-the-news response despite a headline beat. Confidence capped at 62 due to extended valuation and insider distribution overhang.",
+        "entry": 338.0,
+        "target": 365.0,
+        "stop": 310.0,
+        "timeframe": "3-5 trading days"
+      }
+    },
+    "fundamentals_analyst_agent": {
+      "AMD": {
+        "signal": "neutral",
+        "confidence": 50.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: 6.24%, Net Margin: 11.53%, Op Margin: 8.55%"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 13.69%, Earnings Growth: 92.15%"
+          },
+          "financial_health_signal": {
+            "signal": "bullish",
+            "details": "Current Ratio: 2.62, D/E: 0.00"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 132.31, P/B: 9.74, P/S: 17.98"
+          }
+        }
+      }
+    },
+    "technical_analyst_agent": {
+      "AMD": {
+        "signal": "bullish",
+        "confidence": 43,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 67,
+            "metrics": {
+              "adx": 67.39188845187118,
+              "trend_strength": 0.6739188845187118
+            }
+          },
+          "mean_reversion": {
+            "signal": "bearish",
+            "confidence": 62,
+            "metrics": {
+              "z_score": 2.4689185688185904,
+              "price_vs_bb": 0.8847636465018406,
+              "rsi_14": 82.08878441500163,
+              "rsi_28": 76.98762948745379
+            }
+          },
+          "momentum": {
+            "signal": "bullish",
+            "confidence": 100,
+            "metrics": {
+              "momentum_1m": 0.5633310795118152,
+              "momentum_3m": 0.352096573371691,
+              "momentum_6m": 0.35802309420692924,
+              "volume_momentum": 1.1003720785577296
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.6118281503508006,
+              "volatility_regime": 0.9604955430587314,
+              "volatility_z_score": -0.17737195556162255,
+              "atr_ratio": 0.04948363684472306
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -0.4357687908530493,
+              "kurtosis": 3.8162891672243453
+            }
+          }
+        }
+      }
+    },
+    "valuation_analyst_agent": {
+      "AMD": {
+        "signal": "bearish",
+        "confidence": 100,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $32,771,300,616.72, Market Cap: $560,885,792,768.00, Gap: -94.2%, Weight: 35%\n  WACC: 10.5%, Bear: $23,112,362,022.21, Bull: $39,508,739,292.96, Range: $16,396,377,270.76"
+          },
+          "owner_earnings_analysis": {
+            "signal": "bearish",
+            "details": "Value: $274,270,594,209.15, Market Cap: $560,885,792,768.00, Gap: -51.1%, Weight: 35%"
+          },
+          "ev_ebitda_analysis": {
+            "signal": "bearish",
+            "details": "Value: $441,011,617,874.17, Market Cap: $560,885,792,768.00, Gap: -21.4%, Weight: 20%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$23,112,362,022.21",
+            "base_case": "$33,745,133,922.81",
+            "bull_case": "$39,508,739,292.96",
+            "wacc_used": "10.5%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      }
+    },
+    "sentiment_analyst_agent": {
+      "AMD": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      }
+    },
+    "risk_management_agent": {
+      "AMD": {
+        "remaining_position_limit": 500.0,
+        "current_price": 344.0150146484375,
+        "volatility_metrics": {
+          "daily_volatility": 0.04497824804752637,
+          "annualized_volatility": 0.7140075524467876,
+          "volatility_percentile": 72.85067873303167,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": null,
+          "max_correlation_with_active": null,
+          "top_correlated_tickers": []
+        },
+        "reasoning": {
+          "portfolio_value": 5000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.1,
+          "correlation_multiplier": 1.0,
+          "combined_position_limit_pct": 0.1,
+          "position_limit": 500.0,
+          "remaining_limit": 500.0,
+          "available_cash": 5000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 10.0% (base 10.0%)"
+        }
+      }
+    }
+  },
+  "allowed_actions": {
+    "AMD": {
+      "hold": 0,
+      "buy": 1,
+      "short": 1
+    }
+  },
+  "portfolio": {
+    "cash": 5000.0,
+    "margin_requirement": 0.0,
+    "margin_used": 0.0,
+    "positions": {
+      "AMD": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      }
+    },
+    "other_positions": [],
+    "realized_gains": {
+      "AMD": {
+        "long": 0.0,
+        "short": 0.0
+      }
+    }
+  },
+  "tickers": [
+    "AMD"
+  ],
+  "end_date": "2026-04-30",
+  "degraded_inputs": []
+}

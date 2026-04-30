@@ -1,0 +1,11 @@
+{
+  "AMD": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": "Branch A (fade the extreme) fires, but without a confirmed reversal candle — conviction is moderate. Daily Z-score of 2.47 (above +2 threshold), RSI-14 at 82.09 and RSI-21 at 85.78 (well above 75 overbought threshold), and a staggering +47.12% distance from the 50-SMA (extreme vs. the >10% warning level) all confirm severe overbought extension. Wiki context corroborates: as of Apr 17 run, AMD already had RSI 91 with a bearish hourly STC cross — this overbought condition is persistent, not fresh, which slightly reduces fade conviction (repeat attempts at the same extreme). The hourly frame provides a meaningful divergence: hourly RSI-21 is only 58.85 while daily RSI is 82+, suggesting the hourly momentum has already started cooling. The hourly MACD histogram is negative (-1.69) and hourly ADX shows minus_di (33.53) > plus_di (20.45) — intraday selling pressure is building. The 5-day price action (305 → 348 → 335 → 323 → 337) shows AMD pulled back from its 352.99 high to 310, then bounced — it is now retesting the lower end of that recovery range. Branch B (buy the dip) does NOT fire: while the trend is intact, entering a long in a stock with RSI 82 and Z-score 2.47 is outside the Branch B parameters for a mean reversion strategy. No RSI divergence has been detected on daily timeframe yet. The system prompt requires a reversal candle or momentum shift before entering — the hourly signals (negative MACD histogram, minus_di dominance) serve as an early but not fully confirmed momentum shift. Entering near current price (337) targets a reversion toward the daily EMA-20 (~281) over 5-15 trading days. Stop is set above the recent high at 352.99, aligning with the upper Bollinger Band at 357.05. Risk/reward is approximately 1:2.7 (stop ~20 pts, target ~56 pts). Confidence held to 62 (not higher) due to: (1) no confirmed daily reversal candle, (2) ADX 73 showing an extremely strong trend that can persist, (3) this is at least the second overbought warning cycle (wiki), and (4) no RSI divergence on daily. Trade should be sized small.",
+    "entry": 337.0,
+    "target": 281.0,
+    "stop": 357.0,
+    "timeframe": "5-15 trading days"
+  }
+}

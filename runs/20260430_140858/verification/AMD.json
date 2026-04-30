@@ -1,0 +1,77 @@
+{
+  "ticker": "AMD",
+  "verified_at": "2026-04-30T14:10:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.11527,
+      "web_value": 0.1225,
+      "source": "CNBC / Macrotrends (April 2026)",
+      "status": "ok",
+      "deviation": "6.3%",
+      "note": "Web sources range 12.25%-12.52% TTM; our value within acceptable band"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.1069,
+      "web_value": 0.1195,
+      "source": "CompaniesMarketCap / AMD Full Year 2025 press release (April 2026)",
+      "status": "ok",
+      "deviation": "11.8%",
+      "note": "Web value ~11.95% TTM; our value within 20% threshold"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 132.66,
+      "web_value": 128.9,
+      "source": "FinanceCharts / MacroTrends (April 2026)",
+      "status": "ok",
+      "deviation": "2.9%",
+      "note": "Web sources range 126-131 trailing P/E; April 27 close-based figure ~128.9; within threshold"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 31200000000,
+      "web_value": 34639000000,
+      "source": "YCharts / CompaniesMarketCap TTM (April 2026)",
+      "status": "ok",
+      "deviation": "11.0%",
+      "note": "Our value derived from market_cap / P/S ratio. Web shows $34.64B TTM; deviation 11%, within threshold. Difference likely due to P/S ratio calculation vs. reported TTM revenue."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 562345017344,
+      "web_value": 554000000000,
+      "source": "StockAnalysis / Public.com (April 2026)",
+      "status": "ok",
+      "deviation": "1.5%",
+      "note": "Web range $522B-$567B across April dates; our snapshot within normal intraday range"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.0624,
+      "web_value": 0.0708,
+      "source": "Yahoo Finance / FinanceCharts (April 28, 2026)",
+      "status": "ok",
+      "deviation": "11.9%",
+      "note": "Web value 7.08%; our value 6.24%; deviation 11.9%, within 20% threshold"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.0519,
+      "web_value": 0.045,
+      "source": "Investing.com / Yahoo Finance (April 28-29, 2026)",
+      "status": "MISMATCH",
+      "deviation": "15.3% vs Investing.com (4.5%); 62.2% vs Yahoo Finance (3.20%)",
+      "action": "replaced with web consensus value 0.045 (4.5%) in all facts bundles: warren_buffett__AMD.json, aswath_damodaran__AMD.json",
+      "note": "Web sources: Yahoo Finance 3.20%, Investing.com 4.5%. Used Investing.com value as consensus. Deviation from Yahoo Finance value is 62%, well above 20% threshold. Corrected in 2 files."
+    }
+  ],
+  "overall_status": "1 mismatch corrected (roa)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260430_140858/facts/warren_buffett__AMD.json",
+    "runs/20260430_140858/facts/aswath_damodaran__AMD.json"
+  ],
+  "notes": "Swing-mode facts bundles (swing_trend_momentum__AMD.json, swing_breakout__AMD.json, swing_catalyst_news__AMD.json, swing_mean_reversion__AMD.json, swing_macro_context__AMD.json) contain no fundamental financial metrics — only technical indicators and price data. Verification of fundamental metrics only applies to invest-mode persona files."
+}
