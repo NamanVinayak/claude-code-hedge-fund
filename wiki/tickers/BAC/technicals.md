@@ -1,53 +1,55 @@
 ---
 name: BAC technicals
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_190826
 target_words: 350
 stale_after_days: 7
-word_count: 356
-summary: Chart state for BAC as of the most recent swing run (20260415_110848, April 15 2026)
+word_count: 352
+summary: Confirmed dip-buy at EMA confluence — ADX 54.8 strongest trend in BAC run history; RSI-7 oversold (30.4); price at 10/21 EMA zone; BUY 15 shares entered at $52.75
 ---
 
 ## TL;DR
 
-As of April 15, BAC was in a strong but extended uptrend: ADX 40, RSI 78.6, squeeze fired bullish. The swing decision was to buy on a pullback to $53 (prior resistance, now support) with a target of $57 and stop at $51.50. The setup is valid but requires patience — chasing above $55 negates the risk-reward.
+**Dip-buy within an exceptional uptrend.** ADX has expanded from 40.0 (Apr 15) to 54.8 — now among the strongest readings in the run universe. Price pulled back from the $55.40 swing high to the 10/21 EMA confluence at $52.73–$52.88, hitting RSI-7 of 30.4 (short-term oversold). A BUY was placed at $52.75 with target $55.40 and stop $51.50 (2.12:1 R/R). [run `20260430_190826`]
 
 ---
 
-## Multi-Timeframe State (Most Recent Run: `20260415_110848`)
+## Multi-Timeframe State (run `20260430_190826`, April 30 2026)
+
+**Daily timeframe**
 
 | Indicator | Value | Interpretation |
 |---|---|---|
-| RSI (daily) | 78.6 | Overbought — stretched, pullback risk elevated |
-| ADX | 40 | Very strong trend; above 40 = powerful directional move |
-| Squeeze Momentum | Bullish breakout | Volatility expanded in bullish direction — confirms trend |
-| Daily SuperTrend | Bullish | Primary trend indicator aligned upward |
-| MACD | Positive | Momentum confirms uptrend |
+| ADX | 54.8 | Exceptional trend strength — above 50 confirms powerful directional move |
+| Plus DI / Minus DI | 28.31 / 19.11 | Bulls in control; directional bias firmly up |
+| EMA alignment | 10 EMA $52.73 > 21 EMA $52.09 > 50 EMA $51.42 | Full uptrend confirmed |
+| RSI-7 | 30.4 | Short-term oversold — pullback entry zone |
+| RSI-21 | 74.76 | Extended on longer look-back; trend is stretched |
+| MACD histogram | -0.11 | Slightly negative — pullback still resolving |
+| OBV | Diverging from price | Bearish divergence; institutions distributing into rally |
+| ROC 5d / 10d | -0.45% / -2.65% | Pullback in progress; 21d ROC +11.96% confirms trend |
 
-**April 11 run (`swing_20260411_211655`) context:** RSI was 79.0 at that point, confirming the stock entered the overbought zone before the April 15 earnings print and sustained it post-earnings.
+**Hourly timeframe**
+
+- Hourly MACD histogram: +0.126 (positive and recovering)
+- Hourly ROC 5d: +0.58; 10d: +2.17 — both positive, pullback finding floor
+- Hourly Bollinger squeeze: BB width 0.0338 — coiling at intraday level
+- Hourly support / resistance: $52.25 (22 tests) / $53.52 (22 tests)
 
 ---
 
 ## Key Levels
 
-| Level | Value | Source |
+| Level | Value | Notes |
 |---|---|---|
-| Entry zone | $53.00 | Prior resistance turned support (run `20260415_110848` decision) |
-| Target | $57.00 | Run `20260415_110848` decision; analyst average PT $59.54 |
-| Stop loss | $51.50 | Hourly SuperTrend support (run `20260415_110848`) |
-| Resistance / prior high | ~$55–56 | Extended print before April 15 earnings |
-| Invalidation level | Below $51.50 | Stop triggers; thesis loses technical backing |
+| Entry (placed) | $52.75 | EMA confluence zone; aligned with Fib 23.6% at $53.21 |
+| Target | $55.40 | Resistance tested 5 times; run `20260430_190826` decision |
+| Stop loss | $51.50 | Below 38.2% Fib; wiki stop zone |
+| Fib 38.2% | $51.86 | Deeper pullback invalidation |
+| Prior high / resistance | $55.40 | 5 tests — hard resistance |
 
 ---
 
 ## Setup Type
 
-**Earnings momentum continuation with overbought pullback entry.** The pattern is: (1) strong earnings catalyst confirms fundamental story, (2) RSI extends to 78–79 on the initial surge, (3) trade waits for price to pull back to $53 fib/prior resistance support, (4) enter with stop below $51.50 hourly SuperTrend, (5) target $57 over 6–10 trading days.
-
-This is classified as a **momentum continuation trade**, not a breakout or mean-reversion entry. The risk is that the pullback overshoots to $51.50 and triggers the stop before the next leg higher begins.
-
----
-
-## Staleness Warning
-
-Technicals are the most perishable page in the wiki. RSI, ADX, and price levels from April 15 are stale within 7 days. Re-run the swing skill before relying on any number above for a live trade decision.
+**EMA pullback dip-buy in a strong ADX uptrend.** Price retraced from swing high $55.40 to the 10/21 EMA zone with RSI-7 hitting 30.4 — a textbook Branch B mean-reversion entry within an established trend. The OBV divergence and Berkshire overhang reduce conviction; position sized defensively at 15 shares (maximum allowed by risk manager at $806 limit). Prior setup (Apr 15, overbought momentum continuation at RSI 79) is logged in `recent.md`.

@@ -1,59 +1,60 @@
 ---
 name: BAC catalysts
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_190826
 target_words: 400
 stale_after_days: 14
-word_count: 408
-summary: Pending events and news synthesis for BAC from web research in runs 20260415_110848 and swing_20260411_211655
+word_count: 398
+summary: FOMC fired (hold at 3.5-3.75%), Q1 beat in rearview; next binary Q2 earnings ~July 14; Daiwa raised PT to $61; Berkshire overhang persists
 ---
 
 ## TL;DR
 
-The dominant near-term catalyst — Q1 2026 earnings — has already fired and was a blowout (EPS $1.11 vs $1.02 estimate, +17% net income). Forward catalysts are macro: FOMC April 28–29 decision, Iran ceasefire durability for risk sentiment, and potential deregulation releasing up to $320B in bank capital. The Berkshire stake reduction is the single clearest ongoing negative catalyst.
+FOMC (April 29) fired as expected — rates held at 3.5%–3.75%, a mild NII tailwind already priced in. The Q1 2026 blowout (EPS $1.11, +17% net income) is also fully priced. No identifiable catalyst within the next 10 trading days. Forward catalysts are structural and medium-term: Q2 earnings ~July 14, deregulation capital relief, and SpaceX IPO fee potential. Berkshire stake reduction remains the single active negative catalyst. [run `20260430_190826`, `web_research/BAC.json`]
 
 ---
 
-## Upcoming Events (as of April 15, 2026)
+## Upcoming Events
 
-| Event | Date | Expected Impact |
+| Event | Expected Date | Impact |
 |---|---|---|
-| FOMC rate decision | April 28–29, 2026 | Neutral to slightly positive; rates expected unchanged. Higher-for-longer extends NII tailwind. |
-| Q2 2026 earnings | ~July 2026 | Next hard binary event. Watch for NII guidance update. |
-| SpaceX IPO bookrunner role | TBD | Fee income catalyst; headline positive for IB franchise |
-| Deregulation capital relief | TBD (regulatory rulemaking) | $320B potential release — structural tailwind if finalized |
+| Q2 2026 earnings | ~July 14, 2026 | Next binary event; watch NII guidance update |
+| SpaceX IPO bookrunner | TBD | IB fee catalyst; no confirmed date |
+| Deregulation capital relief | TBD (rulemaking) | $320B potential — structural tailwind if finalized |
+| Berkshire stake filings | Ongoing (13-F quarterly) | Overhang; no disclosed floor or endpoint |
 
 ---
 
-## Recent News Synthesis
+## Recent News Synthesis (as of April 30, 2026)
 
 **Positive:**
-- Q1 2026 earnings beat across every metric: EPS $1.11 (+25% vs estimate), NII $15.7B (+9%), equities trading $2.83B (+30%), net income $8.6B (+17%) (run `20260415_110848` web research, source: Reuters/Bloomberg/CNBC).
-- BAC named active bookrunner for potential SpaceX IPO — signals IB franchise credibility (run `20260415_110848`).
-- CashPro platform: $1.2T in 2025 payments processed, 20% usage jump YoY — recurring fee income growing (run `20260415_110848`).
-- BAC poached four senior tech bankers in March 2026 to expand technology dealmaking market share (run `swing_20260411_211655`, source: CNBC).
-- 200-day moving average breakout noted pre-earnings — technical accumulation signal (run `swing_20260411_211655`, source: MarketMinute).
-- Draft rules could free up to $320B in bank capital — BAC positioned as primary beneficiary given clean regulatory slate (run `swing_20260411_211655`).
+- Q1 2026: EPS $1.11 beat $1.01 estimate (+9.9%); NII $15.745B raised full-year guidance to 6%–8% growth; net income $8.584B; share repurchases $10.849B [web_research/BAC.json, newsroom.bankofamerica.com, April 15 2026]
+- BAC completed a $14B bond sale to finance Oracle's Michigan data center — marquee IB deal [web_research/BAC.json, gurufocus.com, April 26 2026]
+- Alaska Air Group co-branded credit card agreement extended multi-year — recurring fee income [web_research/BAC.json, stocktitan.net, April 20 2026]
+- Daiwa raised price target from $58 to $61 post-Q1 [web_research/BAC.json, April 28 2026]
+- Truist raised PT $57→$61; Piper Sandler raised $53→$59; Morningstar raised fair value to $65 from $58 post-Q1 [web_research/BAC.json, analyst_consensus]
+- Morningstar rates BAC its "best idea" among major US banks
 
-**Negative / Watch:**
-- Berkshire Hathaway continuing to reduce BAC stake — ongoing per SEC filings (run `20260415_110848`). No floor or timeline disclosed.
-- Multiple analysts cut price targets ahead of April 15 earnings: UBS $62, Goldman $57, Evercore $55, JPMorgan $57.50 (run `swing_20260411_211655`, source: Benzinga). While the earnings beat superseded these cuts, the reductions reflect genuine caution about NII sustainability.
+**Neutral / Negative:**
+- BAC redeemed $3B in Fixed/Floating Rate Senior Notes early — balance sheet management, neutral to slightly positive [web_research/BAC.json, April 23 2026]
+- UBS lowered PT $67→$62 (kept Buy) in early April [web_research/BAC.json]
+- No catalyst within next 10 trading days — catalyst_news agent stayed neutral on this basis [signals_combined.json, swing_catalyst_news]
 
 ---
 
 ## Insider Activity
 
-No insider buy or sell data recorded in either run's web research. The Berkshire Hathaway stake reduction is the most material "insider-equivalent" signal and is consistently negative. Monitor SEC Form 4 filings for any executive-level purchases as a potential re-entry signal.
+No BAC executive-level insider buy or sell data recorded in Form 4 filings per run `20260430_190826`. The Berkshire Hathaway stake reduction remains the material institutional-equivalent negative — no disclosed floor or timeline. Monitor SEC 13-F quarterly filings.
 
 ---
 
-## Analyst Consensus (as of April 15, 2026)
+## Analyst Consensus (April 30, 2026)
 
-| Metric | Value | Source |
-|---|---|---|
-| Rating | Buy | 31 Buy / 5 Hold / 0 Sell |
-| Avg price target | $59.54 | Run `20260415_110848` web research |
-| Median target | $60.00 | Run `20260415_110848` web research |
-| Pre-earnings avg target | $60.61 | Run `swing_20260411_211655` web research |
+| Metric | Value |
+|---|---|
+| Rating | Buy |
+| Avg price target | $60.61 |
+| Analyst breakdown | ~40% Strong Buy / 45% Buy / 15% Hold / 0% Sell |
+| Implied upside to consensus | ~28% from recent price ~$47–$53 range |
 
-The April 15 post-earnings consensus (31 Buy, 0 Sell) is more bullish than the pre-earnings April 11 picture, suggesting the beat drove net upgrades.
+Source: `web_research/BAC.json`, run `20260430_190826`.
