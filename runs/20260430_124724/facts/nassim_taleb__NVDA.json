@@ -1,0 +1,41 @@
+{
+  "ticker": "NVDA",
+  "score": 23,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 3,
+    "max_score": 8,
+    "details": "Near-Gaussian tails (kurtosis 1.1) \u2014 suspiciously thin; Symmetric distribution (skew 0.37); Balanced tails (tail ratio 1.07); Moderate drawdown (-20.2%)"
+  },
+  "antifragility_analysis": {
+    "score": 6,
+    "max_score": 10,
+    "details": "Net cash positive ($2,020,000,000); Taleb-approved low leverage (D/E 0.11); Volatile margins (CV 0.45) \u2014 fragile pricing power; Consistent FCF generation (10/10 periods positive)"
+  },
+  "convexity_analysis": {
+    "score": 3,
+    "max_score": 10,
+    "details": "Meaningful R&D investment (9.0% of revenue); Slight positive asymmetry (up/down ratio 1.15); Low cash relative to market cap (0%); Low FCF yield (0.9%)"
+  },
+  "fragility_analysis": {
+    "score": 6,
+    "max_score": 8,
+    "details": "Low leverage (D/E 0.11) \u2014 not fragile; Interest coverage 418.4x \u2014 debt is irrelevant; Highly volatile earnings (growth std 2.54) \u2014 fragile; Fat margins (52.7%) buffer shocks"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 1,
+    "max_score": 6,
+    "details": "Below-average vol (regime 0.87) \u2014 approaching complacency; Stable vol-of-vol (0.0149)"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 5085821140992.0
+}

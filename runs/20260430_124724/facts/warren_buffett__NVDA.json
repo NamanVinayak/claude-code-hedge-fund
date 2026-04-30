@@ -1,0 +1,102 @@
+{
+  "ticker": "NVDA",
+  "score": 20,
+  "max_score": 27,
+  "fundamental_analysis": {
+    "score": 7,
+    "details": "Strong ROE of 121.5%; Conservative debt levels; Strong operating margins; Good liquidity position",
+    "metrics": {
+      "ticker": "NVDA",
+      "report_period": "2025-10-26",
+      "period": "ttm",
+      "currency": "USD",
+      "market_cap": 5085821140992.0,
+      "enterprise_value": 5085695140992.0,
+      "price_to_earnings_ratio": 42.704082,
+      "price_to_book_ratio": 64.11210736561321,
+      "price_to_sales_ratio": 27.807631462067985,
+      "enterprise_value_to_ebitda_ratio": 46.36171912368728,
+      "enterprise_value_to_revenue_ratio": 27.806942534662344,
+      "free_cash_flow_yield": 0.009230761109865355,
+      "peg_ratio": 0.76,
+      "gross_margin": 0.7027387598213163,
+      "operating_margin": 0.5902740946892445,
+      "net_margin": 0.5271716249391721,
+      "return_on_equity": 1.215424760800232,
+      "return_on_assets": 0.8639349109775002,
+      "return_on_invested_capital": 1.0305919575859932,
+      "asset_turnover": 1.6388114801838694,
+      "inventory_turnover": 5.393551587301587,
+      "receivables_turnover": 7.929460221114242,
+      "days_sales_outstanding": 46.03087597666395,
+      "operating_cycle": 113.70428079944247,
+      "working_capital_turnover": 2.946133152918056,
+      "current_ratio": 4.439851498864077,
+      "quick_ratio": 3.8813099130049316,
+      "cash_ratio": 0.47592397628414695,
+      "operating_cash_flow_ratio": 2.6265307253283092,
+      "debt_to_equity": 0.10668498745698186,
+      "debt_to_assets": 0.07583265382926677,
+      "interest_coverage": 418.43798449612405,
+      "revenue_growth": 0.6140329835082459,
+      "earnings_growth": 1.4489247311827957,
+      "book_value_growth": 0.845758294941598,
+      "earnings_per_share_growth": 1.4545454545454548,
+      "free_cash_flow_growth": null,
+      "operating_income_growth": 1.470368797767803,
+      "ebitda_growth": 1.4163863109048724,
+      "payout_ratio": 0.010153916362429473,
+      "earnings_per_share": 2.97,
+      "book_value_per_share": 3.240879192711525,
+      "free_cash_flow_per_share": 1.9179638027536055
+    }
+  },
+  "consistency_analysis": {
+    "score": 0,
+    "details": "Inconsistent earnings growth pattern; Total earnings growth of 888.7% over past 10 periods"
+  },
+  "moat_analysis": {
+    "score": 4,
+    "max_score": 5,
+    "details": "Excellent ROE consistency: 10/10 periods >15% (avg: 73.2%) - indicates durable competitive advantage; Strong and stable operating margins (avg: 43.8%) indicate pricing power moat; Efficient asset utilization suggests operational moat"
+  },
+  "pricing_power_analysis": {
+    "score": 5,
+    "details": "Expanding gross margins indicate strong pricing power; Consistently high gross margins (67.1%) indicate strong pricing power"
+  },
+  "book_value_analysis": {
+    "score": 3,
+    "details": "Consistent book value per share growth (Buffett's favorite metric); Book value CAGR: -6.1%"
+  },
+  "management_analysis": {
+    "score": 1,
+    "max_score": 2,
+    "details": "Company has been repurchasing shares (shareholder-friendly); No significant new stock issuance detected; No or minimal dividends paid"
+  },
+  "intrinsic_value_analysis": {
+    "intrinsic_value": 1302549659932.1917,
+    "raw_intrinsic_value": 1532411364626.108,
+    "owner_earnings": 85037144854.3693,
+    "assumptions": {
+      "stage1_growth": 0.08,
+      "stage2_growth": 0.04,
+      "terminal_growth": 0.025,
+      "discount_rate": 0.1,
+      "stage1_years": 5,
+      "stage2_years": 5,
+      "historical_growth": 0.105
+    },
+    "details": [
+      "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+      "Stage 1 PV: $402,548,393,562",
+      "Stage 2 PV: $328,867,806,132",
+      "Terminal PV: $800,995,164,932",
+      "Total IV: $1,532,411,364,626",
+      "Conservative IV (15% haircut): $1,302,549,659,932",
+      "Owner earnings: $85,037,144,854",
+      "Discount rate: 10.0%"
+    ]
+  },
+  "market_cap": 5085821140992.0,
+  "margin_of_safety": -0.7438860660211644
+}

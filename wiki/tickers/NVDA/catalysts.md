@@ -1,52 +1,54 @@
 ---
 name: NVDA catalysts
 last_updated: 2026-04-30
-last_run_id: 20260430_124034
+last_run_id: 20260430_124724
 target_words: 400
 stale_after_days: 14
-word_count: 403
-summary: Hyperscaler AI capex confirmed positive (Meta $125-145B CapEx); NVDA earnings May 20 is the hard exit deadline; FOMC held at 3.5%-3.75%.
+word_count: 402
+summary: Hyperscaler capex catalyst week in-window and confirmed; NVDA earnings ~May 20 is the hard exit deadline; Meta -9% post-earnings capex shock is the near-term risk; China H20 ban remains structural headwind.
 ---
 
 # NVDA — Catalysts
 
 ## TL;DR
 
-Hyperscaler AI capex disclosures (week of Apr 28) landed broadly positive — Meta raised 2026 CapEx to $125–145B, a direct GPU demand signal for NVDA (~81% AI chip share). NVDA Q1 FY2027 earnings on May 20, 2026 (AMC) is the hard exit deadline — risk manager enforces a 3-day pre-earnings blackout (~May 17). China H20 export ban ($4.5B charge) is fully priced. FOMC held at 3.5%–3.75% in a historic 8–4 vote; zero cuts through 2026.
+The primary near-term catalyst is live: hyperscaler AI capex disclosures from Alphabet, Microsoft, Amazon, and Meta (earnings week of Apr 28–30, 2026). Meta fell 9% post-earnings on AI capex shock, injecting near-term sector uncertainty — but Alphabet (+7%) and Amazon (+2%) confirmed incremental GPU spend. Each confirmed capex increment is a direct revenue signal for NVDA as the ~81% AI chip market share leader. NVDA's own Q1 FY2027 earnings (~May 20, 2026) are the hard exit deadline — risk manager enforces a 3-day pre-earnings blackout, requiring all positions closed by approximately May 17. The China H20 export ban remains the structural negative but is fully priced ($4.5B charge already booked).
 
 ## Upcoming events
 
 | Event | Date | Impact | Source |
 |---|---|---|---|
-| NVDA Q1 FY2027 earnings | May 20, 2026 (AMC) | HIGH — binary; exit by ~May 17 | web_research/NVDA.json, 20260430_124034 |
-| AMD earnings | Late Apr / early May 2026 | Medium — data center read-through | web_research/NVDA.json |
-| Fed rate decision | June 2026 | Low — no cuts priced 2026–2027 | web_research/NVDA.json |
+| NVDA Q1 FY2027 earnings | ~May 20, 2026 AMC (some sources May 27) | HIGH — binary event; positions must exit by ~May 17 | web_research/NVDA.json, 20260430_124724 |
+| Fed next meeting | June 2026 (est.) | Low — no cuts priced | web_research/NVDA.json, 20260430_124724 |
+| Hyperscaler AI capex disclosures | Week of Apr 28 (in-window, partial results in) | HIGH — mixed: Alphabet +7%, Amazon +2%, Meta -9% post-earnings | swing_catalyst_news signal, 20260430_124724; web_research/NVDA.json |
+| AMD earnings | Imminent (late April / early May) | Medium — AI data center read-through | web_research/NVDA.json, 20260430_124724 |
+| Rubin GPU architecture launch | Late 2026 | Medium-long — next leg of product roadmap | web_research/NVDA.json, 20260430_124724 |
 
 ## Recent news synthesis
 
 **Positive:**
-- NVDA hit new 52-week high $216.83 on 2026-04-28 — first record since Oct 2025, +27% in 21 trading days. (web_research/NVDA.json)
-- Meta raised 2026 CapEx to $125–145B — NVDA primary GPU beneficiary. (web_research/NVDA.json)
-- NVIDIA replaced Intel in the Dow Jones Industrial Average (2026-04-24). (web_research/NVDA.json)
-- Intel Q1 2026 blowout ($13.58B vs $12.42B est., +24.89%) confirmed AI data center demand. (web_research/NVDA.json)
-- NVDA Q4 FY2026: EPS $1.62 vs $1.50 est. (+8% beat); full-year revenue +65% YoY. (NVDA IR / web_research)
-- Analyst consensus: 94% Buy (~42 analysts), avg PT $266, implied ~27% upside from $209. (web_research/NVDA.json)
-- Blackwell Ultra leads market "by two generations"; Rubin (TSMC 3nm) targets late 2026. (20260415_093758 web_research; confirmed)
+- NVDA hit a new 52-week high of $216.83 on 2026-04-27, up 27% in 21 trading days and 92% year-over-year. (web_research/NVDA.json, 20260430_124724)
+- Alphabet Q1 2026 earnings: stock +7%, confirmed AI infrastructure capex acceleration — direct NVDA GPU demand signal. Amazon gained +2% post-print with strong AWS AI commentary. (web_research/NVDA.json, 20260430_124724)
+- Intel Q1 2026 blowout (+24.89% stock gap) confirmed AI data center demand acceleration — positive sector read-through. (web_research/NVDA.json, 20260430_124724)
+- 94% of ~42 analysts rate NVDA Buy/Strong Buy; avg consensus price target $260–$275 (range $220–$380). Implied upside ~28% from $209. (web_research/NVDA.json, 20260430_124724)
+- Blackwell Ultra shipping now; Rubin Ultra (TSMC 3nm, HBM4) targeted late 2026, projecting 10x inference cost improvement. NVDA self-projects ~$1T in Blackwell+Rubin chip sales 2026–2027. (web_research/NVDA.json, 20260430_124724)
 
 **Negative:**
-- Meta stock fell ~9% on Apr 29 on CapEx sticker shock — sentiment headwind for the sector. (web_research/NVDA.json)
-- US H20 export ban to China: $4.5B charge, zero China H200 revenue; Huawei gaining share. Priced in. (confirmed current)
-- Google TPUs potential 20% AI chip market capture if sold externally (DA Davidson). Near-term risk low. (web_research/NVDA.json)
-- FOMC 3.5%–3.75% hold; higher-for-longer constrains multiple expansion. (web_research/NVDA.json)
+- Meta fell 9% post-earnings on AI capex shock — raised concern that hyperscaler GPU spending is outpacing revenue returns, creating near-term sector sentiment headwind. (web_research/NVDA.json, macro_context, 20260430_124724)
+- US H20 chip export ban to China: $4.5B charge in Q1 FY2026, zero China H200 revenue; Huawei chips gaining share with Chinese tech firms. Structural but fully priced. (20260415_093758 web_research; confirmed current)
+- Custom ASIC silicon (Google TPUs, AWS Trainium, Azure Maia) is the real long-term competitive threat — Anthropic committed to 1M Google TPUs. Near-term risk low. (web_research/NVDA.json, 20260430_124724)
+- US-Iran conflict elevating Brent toward $90/bbl — macro headwind for risk-on sectors if it escalates. (web_research/NVDA.json macro_context, 20260430_124724)
 
 ## Insider activity
 
-706 bearish (sells) vs 29 bullish transactions. CFO Kress and board director Stevens sold Mar 2026 at $171–177. No new insider trades in current 30-day window. 10b5-1 scheduled sales — not acute, but persistent. (swing_catalyst_news, 20260430_124034)
+Consistently bearish background signal. CFO Colette Kress and board director Mark Stevens sold in March 2026 at $171–177/share (well below current $209). Insider transaction count: 735 total — 706 bearish, 29 bullish. No new insider trades in the current 30-day window per sentiment_analyst_agent (0 trades). Likely 10b5-1 scheduled sales; not an acute near-term signal. (sentiment_analyst_agent signal, 20260430_124724; swing_catalyst_news signal)
 
 ## Analyst consensus
 
-94% Buy; avg PT $266 ($155–$380 range); ~27% upside. (web_research/NVDA.json, 20260430_124034)
+- **Rating:** Buy (94% of ~42 analysts)
+- **Avg price target:** $267 (web_research/NVDA.json, 20260430_124724)
+- **Implied upside:** ~28% from current $209
 
 ## Last updated
 
-2026-04-30 — run 20260430_124034 (web_research/NVDA.json, swing_catalyst_news). Supersedes 20260430_060402 entry.
+2026-04-30 — synthesized from 20260430_124724 (web_research/NVDA.json, swing_catalyst_news signal, sentiment_analyst_agent). Supersedes 20260430_060402 entry.
