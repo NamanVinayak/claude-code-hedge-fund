@@ -1,46 +1,39 @@
 ---
 name: META catalysts
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_141238
 target_words: 400
 stale_after_days: 14
-word_count: 462
-summary: Q1 2026 earnings on Apr 29, Muse Spark AI launch, CoreWeave deal, and pending social media addiction litigation are the dominant catalyst stack.
+word_count: 397
+summary: Q1 2026 earnings beat but capex shock ($125-145B raised guidance) drove -10% post-earnings selloff; layoffs, DAP miss, and litigation overhang are the live negatives; Muse Spark is the lone positive catalyst.
 ---
 
 # META — Catalysts
 
 ## TL;DR
 
-The April 2026 catalyst stack for META was exceptionally dense: a proprietary AI model launch (Muse Spark, Apr 8), a $21B cloud infrastructure deal with CoreWeave, a projection that META would surpass Google in global digital ad revenue for the first time, and a high-stakes Q1 2026 earnings report on April 29. The negative overhang is the social media addiction litigation wave, which moved materially toward trial and settlement during this same period.
+Q1 2026 earnings fired April 29 AH with a massive EPS beat ($10.44 vs $6.65 est, +57%) and revenue beat ($56.31B, +33% YoY). However, META raised full-year capex guidance to **$125–145B** (up from prior $115–135B), triggering a ~10% single-session selloff. The capex shock is the thesis-changing event — the prior bear case thesis (capex is value-destructive) has now materialized. DAP growth slowed (3.56B, +4% YoY but down >5% QoQ). Layoffs of ~8,000 employees (10% of workforce) were announced alongside the earnings. No new binary catalyst is expected until Q2 2026 earnings (late July 2026) (source: web_research/META.json, run 20260430_141238).
 
-## Upcoming events (as of Apr 17, 2026)
+## Live catalysts
 
-| Date | Event | Significance |
+| Event | Date | Significance |
 |---|---|---|
-| April 29, 2026 | Q1 2026 Earnings | HIGH — first report since Muse Spark launch and $300B selloff; consensus revenue $53.5–56.5B; history of 2–8% beats |
-| April 29, 2026 | FOMC Rate Decision | MEDIUM — same day as earnings; market watching for any cut signal |
-| Ongoing | Muse Spark broader app rollout | MEDIUM — deployment into Facebook/Instagram/WhatsApp; engagement signals being watched |
-| Ongoing | Social media addiction litigation | HIGH — any large settlement or adverse ruling; conversely a settlement framework removes overhang |
+| Q1 2026 earnings reaction | Apr 29–May 5 | HIGH (just fired) — post-earnings multiple compression window; institutions re-rating capex narrative |
+| Muse Spark AI model rollout | Ongoing (from Apr 8) | MEDIUM positive — integrating into Facebook/Instagram/WhatsApp/Messenger/Ray-Ban glasses |
+| Layoff restructuring | Apr 2026 ongoing | MEDIUM — 8,000 jobs cut (10% workforce) to offset capex; signals cost discipline but also uncertainty |
+| Social media addiction litigation | Ongoing | HIGH NEGATIVE — California 70% liability verdict; 10,000+ lawsuits; $375M New Mexico award; Massachusetts AG cleared to proceed |
+| Q2 2026 earnings | ~late July 2026 | MEDIUM — next binary event; no official date yet |
 
-(source: web_research/META.json, run 20260415_093758)
+## Recent news synthesis (Apr 8–30, 2026)
 
-## Recent news synthesis (Apr 8–17, 2026)
+**Q1 2026 earnings (Apr 29, HIGH NEGATIVE catalyst):** EPS $10.44 beat $6.65 estimate by 57%; Revenue $56.31B beat $55.45B estimate. Despite beat, shares fell ~7–10% AH on capex guidance raise to $125–145B. DAP growth slowed to +4% YoY / down >5% QoQ with Iran internet disruption cited. Post-earnings, some analysts issued Hold ratings citing capex overhang (source: web_research/META.json, run 20260430_141238).
 
-**Muse Spark (Apr 8, HIGH):** First closed/proprietary LLM from Meta Superintelligence Labs, led by Alexandr Wang after the $14.3B Scale AI deal. Scores 4th on AI Index v4.0. Integrates into all Meta surfaces. Stock +6.4% on launch day (source: run swing_20260411_211655).
+**Capex shock (HIGH):** Full-year 2026 capex raised to $125–145B (from prior guidance $115–135B). Nearly double FY2025's $72B. Market reaction confirms bear case thesis — free cash flow compression concern is live (source: web_research/META.json, run 20260430_141238).
 
-**Llama 5 (Apr 8, MEDIUM):** 600B+ parameter open-source model with Recursive Self-Improvement; maintains Meta's open-source ecosystem leadership.
+**Layoffs (MEDIUM):** ~8,000 employees (10% of workforce) cut alongside 6,000 open roles frozen to offset rising capex. Signals cost pressure is real (source: web_research/META.json, run 20260430_141238).
 
-**CoreWeave deal (MEDIUM):** $21B AI cloud deal (total $35.2B through 2032); drove a 4.41% single-day gain (source: run swing_20260411_211655).
+**Muse Spark / Alexandr Wang (MEDIUM positive):** First proprietary LLM from Meta Superintelligence Labs, 4th on AI Index v4.0. Launched Apr 8. Competitor context: Alphabet surged on Google Cloud AI strength same earnings week — Meta's Muse Spark narrative is losing ground to Alphabet on AI monetization (source: web_research/META.json, run 20260430_141238).
 
-**Advertising leadership (HIGH):** eMarketer projected META surpasses Google in global digital ad revenue for the first time in 2026 — 24.1% growth vs. Google's 11.9%, 26.8% worldwide share. Advantage+ AI tools are the structural driver (source: run 20260415_093758).
+## Analyst consensus (as of Apr 30, 2026)
 
-**California addiction verdict (HIGH NEGATIVE, March 2026):** Jury found Meta 70% liable; 10,000+ similar lawsuits and 100,000+ arbitration claims pending. New Mexico: $375M awarded. Massachusetts AG lawsuit cleared April 10 (source: run 20260415_093758).
-
-## Insider activity
-
-Worst ratio in the April 15 basket: 668 sells vs. 240 buys. No large insider buys flagged. The model explicitly called this a momentum-and-catalyst trade, not an insider-conviction trade (source: explanation.json, run 20260415_093758).
-
-## Analyst consensus (as of Apr 15, 2026)
-
-61 Buy / 6 Hold / 0 Sell; consensus target ~$860 (47% upside from ~$585). BofA $810 maintained; KeyBanc cut to $760; Erste downgraded; Rothschild raised to $900 (source: run 20260415_093758, run swing_20260411_211655).
+Majority remain Buy (28 buy / 5 hold / 0 sell per one source); avg price target ~$840. Post-Q1, some analysts moved to Hold in $700 range citing capex. Source: web_research/META.json, run 20260430_141238. Note: consensus was formed before full capex guidance absorption — watch for downgrades.
