@@ -16,11 +16,13 @@ Reference upstream lives at `reference/ai-hedge-fund/` (read-only). Do NOT assum
 |---|---|
 | Pipeline internals (data flow, key modules, indicators, wiki, web research) | `ai_hedge/CLAUDE.md` |
 | Persona helpers + prompt rename map | `ai_hedge/personas/CLAUDE.md` |
-| Paper trading + Moomoo + tracker CLI + budget | `tracker/CLAUDE.md` |
-| Architectural audit + roadmap + dashboard plan | `ARCHITECTURE.md` |
+| Cloud DB (Turso) + simulator + ingester + dashboard | `tracker/CLAUDE.md` |
+| Architectural audit + dashboard ship notes | `ARCHITECTURE.md` |
 | Resume-from-here after compaction | `HANDOFF.md` |
 | Run instructions step-by-step | `RUN_PLAYBOOK.md` |
 | Trading journal (every trade, position, lesson) | `tracker/TRADING_LOG.md` |
+
+**Live dashboard (autonomous)**: https://namanvinayak.github.io/claude-code-hedge-fund/ — rebuilds every 5 min via GitHub Actions cron, reads Turso cloud DB. No Mac dependency.
 
 ## Running the hedge fund
 
@@ -99,17 +101,6 @@ Crypto code is **QUARANTINED** at `.archive/crypto/` (Apr 2026). Swing-stock onl
 .venv/bin/python scripts/check_docs_drift.py
 ```
 
-## graphify (optional)
-
-A graphify knowledge graph at `graphify-out/` (gitignored). The Python package is `graphifyy` in `.venv/`. CLI also at `~/.local/bin/graphify` via pipx.
-
-**Reading rule (changed Apr 2026):** `graphify-out/GRAPH_REPORT.md` is 200+ KB. Do NOT read it reflexively. Only consult it when you need cross-module dependency context that direct file reading can't answer (e.g., "which functions transitively call X across the whole codebase?"). For everyday work — reading specific files, editing known modules — skip it.
-
-After modifying code:
-```bash
-.venv/bin/python -c "from graphify.watch import _rebuild_code; from pathlib import Path; _rebuild_code(Path('.'))"
-```
-
 ## Daily Accuracy Check (session start)
 
 When the user opens a new session, run the swing backtest and report a plain-English portfolio summary:
@@ -123,10 +114,13 @@ One short paragraph: open trades, net P&L, entry hit rate, win rate. Wealthsimpl
 ## Conventions
 
 - **`.agents/` is for OpenCode** — Claude Code does NOT auto-load it. Treat it as out-of-scope; do not read or modify files there unless the user explicitly requests it.
+- **graphify is no longer used** — do not run rebuild scripts, do not read `graphify-out/`. The dir is gitignored and will be deleted in a later cleanup.
 - All Agent dispatches: `model: sonnet`
 - Run `.venv/bin/python scripts/check_docs_drift.py` after structural changes
 - Wiki feature flag is currently ON. Routines clone the repo per run, so config changes must be pushed to `hedge-remote/main`.
+- **After every Playwright worker**: delete `.playwright-mcp/storageState*.json` to prevent session tokens from leaking into next session's context.
+- **Routine push flow**: routines push to `claude/*` feature branches; the `auto-merge-routine-branches.yml` workflow fast-forwards them to `main` automatically.
 
 ---
 
-_Last slimmed: 2026-04-29. Subsystem detail moved to per-folder `CLAUDE.md` + `ARCHITECTURE.md`._
+_Last updated: 2026-04-30. Autonomous dashboard system shipped (Wave 4)._

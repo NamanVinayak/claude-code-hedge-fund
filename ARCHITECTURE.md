@@ -32,18 +32,41 @@ The codebase had 18 confirmed architectural issues, captured in `scripts/archite
 - **Sin #16** — stop management (trailing / breakeven / time-based exits)
 - **Sin #19** — Claude Routines reliability — 8 known Anthropic-side bugs cited in audit doc; partly mitigated by smaller routines + Sonnet pin
 
-## Live dashboard (planned, not built)
+## Live dashboard (Wave 4 — SHIPPED 2026-04-30)
 
-A live web dashboard reading `tracker.db` + `runs/index.json` + `wiki/` is the eventual UI. The 18-sin remediation work is foundational — the dashboard reads structured data, so the data must be honest first. **Don't build the dashboard until Wave 3 lands.**
+The original "Flask + HTMX with human-execute step" plan was scrapped during the Apr 30 session. Final architecture is **fully autonomous**, no Mac dependency, no human review step:
 
-Target shape:
-- Flask single-file app
-- Server-rendered HTMX polling
-- Hosted free (GitHub Actions cron commits the data; Vercel/Cloudflare Pages serves the read-only view)
-- Public-share mode optional (Cloudflare tunnel)
-- Open positions, pending orders, closed trades, P&L vs SPY, win rate per source
+```
+Anthropic Routine                    Auto-merge workflow             Dashboard cron (every 5 min)
+  /swing TICKER          push        claude/* → main fast-fwd         ingest_decisions.py
+  decisions.json + wiki/     ─►      auto-merge.yml                ─► simulator.py (yfinance 1-min bars)
+                                                                      dashboard/build.py (Jinja2)
+                                                                      push to gh-pages
+                                                                      │
+       Turso (cloud SQLite) ◄──── reads/writes ──┘                    │
+                                                                      ▼
+                                                           https://namanvinayak.github.io/
+                                                           claude-code-hedge-fund/
+```
 
-Phase 2 telemetry (`wiki_used: bool` column on Trade table, `tracker/backtest.py --split-on wiki_used`) must land before the dashboard so it can show wiki-on vs wiki-off comparisons.
+What shipped:
+- `tracker/turso_client.py` — HTTP-based Turso client, 4 tables (`trades`, `daily_summary`, `fills`, `pending_decisions`)
+- `tracker/simulator.py` — autonomous fill engine, intra-bar detection from 1-min yfinance bars, trailing stop on `target_price_2`, idempotent via `last_checked_at`, full audit log to `fills` table
+- `tracker/ingest_decisions.py` — reads `runs/*/decisions.json`, inserts pending trades into Turso (skips `hold`)
+- `dashboard/build.py` + 5 Jinja2 templates — 4 page types (live positions, today's decisions, closed trades, per-ticker)
+- `.github/workflows/dashboard.yml` — 5-min cron, no market-hours skip (public repo = unlimited free Actions minutes)
+- `.github/workflows/auto-merge-routine-branches.yml` — fast-forwards routine `claude/*` pushes into `main` and deletes the feature branch
+
+**Why no human-execute step?** Earlier in the session a `project_executor_scope.md` decision said the dashboard would have a "review run → click execute" button. That decision was reversed: the user explicitly preferred a fully autonomous loop. The simulator IS the executor now. If a kill-switch is ever needed it'll be a feature flag, not a foundational design.
+
+**Why our own simulator instead of Alpaca/IBKR/Moomoo?**
+- Alpaca: blocked in Canada
+- IBKR: requires the user's local Gateway daemon (same problem as Moomoo)
+- Moomoo: was on the user's Mac; retired with the rest of the Mac dependency
+
+Owning the simulator means owning the bugs, but also owning the rules and audit trail. ~200 lines of Python, 3 trade states (pending → entered → closed), every state change logged.
+
+## Wiki Phase 2 (pending)
 
 ## Wiki Phase 2 (pending)
 
