@@ -4,7 +4,7 @@ last_updated: 2026-04-30
 last_run_id: 20260430_140858
 target_words: 350
 stale_after_days: 7
-word_count: 362
+word_count: 355
 summary: post-squeeze consolidation at $337-345 — ADX 73.57 confirms extreme trend, RSI 82 overbought, Z-score 2.47; hold pending earnings binary May 5 or pullback to 308-315
 ---
 
@@ -12,7 +12,7 @@ summary: post-squeeze consolidation at $337-345 — ADX 73.57 confirms extreme t
 
 ## TL;DR
 
-As of run 20260430_140858, AMD completed a parabolic squeeze run from ~$200 to $353 (ATH), then pulled back to $310 and is now consolidating between $328.81–$352.99. ADX 73.57 confirms one of the strongest trends in the watchlist, but RSI 82 and Z-score 2.47 indicate statistical overextension. No actionable entry — wait for breakout above $352.99 with 1.5x volume, or pullback to $308–$315.
+As of run 20260430_140858, AMD completed a parabolic squeeze run from ~$200 to $353 (ATH), pulled back to $310, and is now consolidating between $328.81–$352.99. ADX 73.57 confirms one of the strongest trends in the watchlist. RSI 82 and Z-score 2.47 indicate statistical overextension. No actionable entry — wait for a confirmed breakout above $352.99 with 1.5x+ daily volume, or a pullback to $308–$315 post-earnings binary (May 5).
 
 Prior setup type (Apr 17, run 20260417_233350): parabolic momentum with RSI 91, Z-score 3.66 — logged to recent.md.
 
@@ -31,7 +31,7 @@ Sources: swing_breakout, swing_trend_momentum, swing_mean_reversion, swing_macro
 | Level | Value | Source |
 |---|---|---|
 | Breakout trigger | $352.99 | Hourly pivot high, 2x tested, volume-confirmed (run 20260430_140858) |
-| Required volume for breakout | 1.5x+ daily average | swing_breakout agent |
+| Required volume for breakout | 1.5x+ daily average | swing_breakout agent (run 20260430_140858) |
 | Key hourly support | $328.81 | Hourly pivot low, 6x tested, volume-confirmed |
 | Pullback entry zone | $308–$315 | Trend_momentum + macro_context consensus (2-agent agreement) |
 | Pullback stop | $299.75 | swing_macro_context agent |
@@ -40,14 +40,15 @@ Sources: swing_breakout, swing_trend_momentum, swing_mean_reversion, swing_macro
 
 ## Indicator snapshot (run 20260430_140858)
 
-- **RSI-14:** 82.09; **RSI-21:** 85.78 — deeply overbought on daily; improvement from RSI 91 (Apr 17) but still extreme
+- **RSI-14:** 82.09; **RSI-21:** 85.78 — deeply overbought on daily; down from RSI 91 (Apr 17 run) but still extreme
 - **ADX:** 73.57 (+DI 56.62 / –DI 10.51) — extremely strong trend; highest ever recorded for AMD in this system
 - **Hourly ADX:** –DI 33.53 > +DI 20.45 — intraday sellers dominant despite elevated daily price
 - **MACD:** Daily histogram +6.87 (expanding); hourly histogram –1.69 (distribution forming)
-- **Z-score (50-period):** 2.47 — statistically overextended but below Apr 17's 3.66 peak
-- **Bollinger BB width:** 0.6396 (daily) — wide, squeeze already fired; post-squeeze consolidation phase
+- **Z-score (50-period):** 2.47 — statistically overextended; below Apr 17 peak of 3.66
+- **Bollinger BB width:** 0.6396 (daily) — wide; squeeze already fired, post-squeeze consolidation phase
 - **Historical volatility:** 71.4% annualized — expect 3–5% daily swings
+- **EMA alignment:** EMA5 325.6 > EMA10 308.0 > EMA21 279.0 > EMA50 247.5 — perfectly fanned bullish
 
 ## Setup type
 
-Post-squeeze consolidation in a parabolic trend. The April squeeze fired the big move ($200 → $353). Now in a defined range ($310–$353) with earnings binary May 5 as the resolution event. No entry justified at current price ($337–$345) given sub-2:1 R/R and earnings binary risk. Constructive again above $352.99 with volume, or at $308–$315 post-earnings with hourly momentum re-aligned.
+Post-squeeze consolidation in a parabolic trend. The April squeeze fired the big move ($200 → $353 ATH). Now in a defined consolidation range ($310–$353) with earnings binary May 5 as the primary resolution event. No entry justified at current price ($337–$345) given sub-2:1 R/R and earnings binary risk. Constructive again above $352.99 with 1.5x+ daily volume, or at $308–$315 post-earnings with hourly momentum re-aligned bullish.
