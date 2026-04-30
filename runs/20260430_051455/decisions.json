@@ -1,0 +1,14 @@
+{
+  "decisions": {
+    "JPM": {
+      "action": "hold",
+      "entry_price": null,
+      "target_price": 319.0,
+      "stop_loss": 303.0,
+      "risk_reward_ratio": "N/A (no entry at current price)",
+      "timeframe": "8-12 trading days if entry triggers at $307.00-$307.50",
+      "confidence": 42,
+      "reasoning": "Head Trader neutral (42 conf), 2B/1Br/2N split. R/R at $309.25 is ~1.55:1, failing the 2:1 minimum. Wait for $307.00-$307.50 entry zone where R/R improves to ~2.7:1 (target $319, stop $303). Hourly OBV trending down and MACD negative both timeframes — short-term structure does not confirm a turn. Bull thesis intact (ADX 43.42, EMA stack bullish, Q1 record earnings) but entry quality insufficient today. No short warranted given strong intermediate uptrend. Re-evaluate on touch of $307-$307.50 with reversal candle or volume dry-up, or on reclaim of $311.94 on volume."
+    }
+  }
+}

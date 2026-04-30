@@ -1,0 +1,80 @@
+{
+  "ticker": "JPM",
+  "verified_at": "2026-04-30T05:20:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.1837,
+      "web_value": 0.2035,
+      "source": "Macrotrends / FinanceCharts (JPMorgan Chase net profit margin as of March 31, 2026: 20.35%)",
+      "status": "ok",
+      "deviation": "10.8%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": 0.4285,
+      "source": "Investing.com (JPM operating margin TTM: 42.85%)",
+      "status": "unverified",
+      "note": "operating_margin is null in all facts bundles — data not available from our source; web value noted for context"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 14.79,
+      "web_value": 14.92,
+      "source": "GuruFocus (JPM PE Ratio TTM: 14.92 as of April 29, 2026)",
+      "status": "ok",
+      "deviation": "0.9%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": null,
+      "web_value": 182430000000.0,
+      "source": "StockAnalysis / CompaniesMarketCap (JPM TTM revenue ~$182.43B as of April 2026)",
+      "status": "unverified",
+      "note": "revenue not stored as a direct field in facts bundles; price_to_sales_ratio implies revenue ~$97.4B but this is likely calculated on a different revenue base. TTM managed revenue per web is ~$182.4B. Cannot safely update without revenue field."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 828635414528.0,
+      "web_value": 854000000000.0,
+      "source": "Capital.com / CompaniesMarketCap (JPM market cap ~$854B in April 2026)",
+      "status": "ok",
+      "deviation": "3.0%",
+      "note": "Variation across sources ($831B-$873B) reflects different dates in April 2026; our value of $828.6B is close to April 22 readings and within acceptable range"
+    },
+    {
+      "metric": "return_on_equity",
+      "our_value": 0.08469632253359725,
+      "web_value": 0.17,
+      "source": "GuruFocus (ROE 14.42% TTM) and Macrotrends / Wisesheets (ROE 17.0% latest twelve months as of April 21, 2026)",
+      "status": "MISMATCH",
+      "deviation": "101%",
+      "action": "replaced with web value (0.17) in all facts bundles containing raw metrics: warren_buffett__JPM.json, aswath_damodaran__JPM.json",
+      "note": "Original value appears to come from a stale SEC EDGAR period (report_period: 2014-09-30). Web consensus for TTM ROE is ~17% per Macrotrends/Wisesheets. GuruFocus reports 14.42% — used 17% as the more recent consensus from multiple sources."
+    },
+    {
+      "metric": "return_on_assets",
+      "our_value": 0.007406582275964965,
+      "web_value": 0.013,
+      "source": "Macrotrends / Finbox (JPM ROA latest twelve months: 1.3% as of April 19, 2026)",
+      "status": "MISMATCH",
+      "deviation": "75.5%",
+      "action": "replaced with web value (0.013) in all facts bundles containing raw metrics: warren_buffett__JPM.json, aswath_damodaran__JPM.json",
+      "note": "Original value (0.74%) was significantly below actual TTM ROA of ~1.3%. Consistent with the stale report_period (2014-09-30) issue."
+    }
+  ],
+  "overall_status": "2 mismatches corrected (return_on_equity, return_on_assets)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260430_051455/facts/warren_buffett__JPM.json",
+    "runs/20260430_051455/facts/aswath_damodaran__JPM.json"
+  ],
+  "notes": [
+    "Only files with a structured 'metrics' dict containing raw ROE/ROA fields were updated, per rule #7 (do not change signal/score values).",
+    "Other persona files reference ROE in free-text 'details' strings (e.g., 'Low ROE: 7.7%', 'ROE of 8.5%') — these are computed analysis output and were not modified to avoid changing scored outputs.",
+    "The stale report_period '2014-09-30' in the metrics block is the likely root cause of the ROE/ROA mismatch — this field comes from SEC EDGAR and may be a labeling artifact for TTM data.",
+    "market_cap is within 3% of web consensus ($828.6B vs ~$831-873B range across sources) — no correction needed.",
+    "net_margin deviation of 10.8% is below the 20% threshold — no correction applied."
+  ]
+}

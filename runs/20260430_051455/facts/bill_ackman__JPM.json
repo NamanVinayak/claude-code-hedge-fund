@@ -1,0 +1,72 @@
+{
+  "signal": "bearish",
+  "score": 1,
+  "max_score": 20,
+  "quality_analysis": {
+    "score": 0,
+    "details": "Revenue did not grow significantly or data insufficient.; No operating margin data across periods.; No free cash flow data across periods.; ROE of 8.5% is moderate."
+  },
+  "balance_sheet_analysis": {
+    "score": 1,
+    "details": "Debt-to-equity >= 1.0 in many periods (could be high leverage).; Dividends not consistently paid or no data on distributions.; Outstanding shares have decreased over time (possible buybacks)."
+  },
+  "activism_analysis": {
+    "score": 0,
+    "details": "Not enough data to assess activism potential (need multi-year revenue + margins)."
+  },
+  "valuation_analysis": {
+    "score": 0,
+    "details": "No positive FCF for valuation; FCF = 0",
+    "intrinsic_value": null
+  },
+  "web_context": {
+    "ticker": "JPM",
+    "research_date": "2026-04-30",
+    "macro_context": {
+      "market_sentiment": "Mixed but leaning risk-on: S&P 500 on track for its best month since 2020 (+9.3% in April) driven by strong mega-cap tech earnings (Alphabet +7%, Amazon +4%), yet intraday the Dow slipped -0.57% as oil surged on U.S.-Iran tensions and Meta fell -6% on high capex. Overall mood is cautiously optimistic \u2014 AI tailwind vs. geopolitical left-tail risk.",
+      "fed_outlook": "Fed held rates at 3.5%\u20133.75% on April 29 (third consecutive hold); historic 8-4 dissent split (most divided since Oct 1992). Inflation remains above the 2% target due to Trump tariffs and energy price spikes. Chair Powell likely in his final meeting; markets now price zero cuts through 2026 and into 2027. Higher-for-longer regime intact.",
+      "geopolitical": "U.S. blockade of Iranian ports is the dominant risk \u2014 disrupting global oil supply and raising Goldman's Brent forecast to $90/bbl by late 2026. Iran offered Strait of Hormuz deal but talks stalled. Trump tariffs continue to keep inflation elevated. IMF cut 2026 global growth forecast to 3.1%, headline inflation 4.4%. Markets balancing AI commercialization upside against geopolitical left tails.",
+      "key_events": [
+        "Fed rate decision already delivered April 29 \u2014 no cut, hawkish hold maintained",
+        "S&P 500 monthly close on April 30 likely best since 2020",
+        "U.S.-Iran negotiations ongoing \u2014 any Hormuz closure escalation would spike oil and hurt financials",
+        "Big tech earnings season winding down (MSFT, META, AMZN, GOOGL all reported)",
+        "Q2 2026 earnings season begins mid-July \u2014 JPM reports July 14"
+      ]
+    },
+    "ticker_news": [
+      {
+        "headline": "JPMorgan Q1 2026 EPS $5.94 vs. $5.49 estimate \u2014 record Markets revenue, NII beat; shares rally post-print",
+        "sentiment": "positive",
+        "source": "CNBC, April 14, 2026 (https://www.cnbc.com/2026/04/14/jpmorgan-chase-jpm-earnings-1q-2026.html)"
+      },
+      {
+        "headline": "Jamie Dimon warns of stagflation risk and potential bond market crisis at investment conference",
+        "sentiment": "negative",
+        "source": "GuruFocus, April 28-29, 2026 (https://www.gurufocus.com/news/8827020/jpm-jamie-dimon-warns-of-stagflation-risks-amid-inflation-concerns)"
+      },
+      {
+        "headline": "JPMorgan raises S&P 500 year-end target to 7,600 from 7,200, citing AI momentum and stronger earnings",
+        "sentiment": "positive",
+        "source": "TheStreet, April 2026 (https://www.thestreet.com/investing/jpmorgan-resets-sp-500-price-target-for-the-rest-of-2026-stock-market)"
+      },
+      {
+        "headline": "JPMorgan acquires Apple Card $20 billion portfolio from Goldman Sachs \u2014 major fintech/retail win",
+        "sentiment": "positive",
+        "source": "Hudson Labs / Financial Content, 2026 (https://www.hudson-labs.com/research/jpmorgan-chase-competitors-jpm-top-peers-2026)"
+      },
+      {
+        "headline": "JPMorgan tech budget rises 10% to $19.8 billion for 2026; AI and infrastructure investment at the core",
+        "sentiment": "positive",
+        "source": "Fortune, April 29, 2026 (https://fortune.com/2026/04/29/capcom-virgin-voyages-bet-on-ai-to-reshape-gaming-and-cruise-travel/)"
+      }
+    ],
+    "analyst_consensus": {
+      "rating": "buy",
+      "avg_price_target": 339.46,
+      "recent_changes": "Evercore ISI maintained Outperform with $340 PT on April 17, 2026. TD Cowen raised PT to $375 from $370 (Buy). Wolfe Research downgraded to Peerperform in January 2026 citing slower EPS growth vs. peers. Of 33 analysts: 14 Buy, 12 Hold, 0 Sell. Price target range $257.89\u2013$420; median $345."
+    },
+    "competitor_activity": "Goldman Sachs posted record Q1 equities trading revenue, directly competing with JPM in capital markets. Wells Fargo (81 AI venture deals) and Citi (77 deals) are outpacing JPM (37 deals) in AI venture investment, though JPM's $19.8B tech budget and efficiency ratio leadership offset this. JPM dealt a competitive blow by acquiring Goldman's $20B Apple Card portfolio. Goldman and JPM are both exploring prediction markets. Bank of America Q1 was roughly in-line with its +12.2% EPS growth estimate, maintaining competitive pressure in retail banking.",
+    "earnings_info": "Next earnings: July 14, 2026 (Q2 2026). Consensus Q2 EPS estimate: $5.36\u2013$5.41. Most recent Q1 2026: EPS $5.94 vs. $5.49 estimate (beat by ~8.2%), revenue $50.54B. Full-year 2026 technology spend guided to $19.8B (+10% YoY)."
+  }
+}

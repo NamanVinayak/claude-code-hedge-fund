@@ -1,0 +1,34 @@
+{
+  "run_id": "20260430_051455",
+  "mode": "swing",
+  "started_at": "2026-04-30T05:15:55Z",
+  "ended_at": "2026-04-30T05:31:05Z",
+  "tickers": [
+    "JPM"
+  ],
+  "decisions": [
+    {
+      "ticker": "JPM",
+      "action": "hold",
+      "confidence": 42,
+      "entry": null,
+      "stop": 303.0,
+      "target": 319.0,
+      "reasoning_tldr": "Head Trader neutral (42 conf), 2B/1Br/2N split"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 1,
+    "cash": 100000.0,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "neutral",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}
