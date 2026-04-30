@@ -1,0 +1,20 @@
+{
+  "CVX": {
+    "signal": "bearish",
+    "confidence": 58,
+    "reasoning": "Branch A fires at the hourly level — partial fade-the-extreme setup. Daily indicators are mixed: Z-score (50) is -0.05 (essentially at the mean), RSI-14 at 52.68 (neutral), and Bollinger %B at 0.605 (mid-range). However, the hourly picture is notably stretched: RSI-21 at 76.18 (above 75 threshold), Bollinger %B at 0.92 (near upper band at 194.32), and Z-score (120) at 1.63. Crucially, a confirmed bearish RSI divergence exists on the hourly timeframe — price made a new hourly high while RSI rolled over — which is the reversal signal required before entering a fade. Supplementary bearish evidence: daily OBV is in a downtrend and diverging from price (bearish distribution), daily ADX shows -DI (29.97) > +DI (21.31) confirming the underlying trend direction is still bearish, and the 21-day ROC is -8.78% showing significant medium-term momentum deterioration. Daily MACD bullish crossover is only barely positive (histogram 0.0069) — not convincing. Wiki context strongly corroborates: as of April 11 the prior run identified a short-on-bounce setup targeting a rally from ~$188.55 to ~$192 before resuming the downtrend toward $178. Price has now fulfilled that $192 rally target exactly (currently $193.31). The current data confirms the wiki scenario — no contradiction. Confidence is capped at 58 because the daily Z-score is not at the >2 threshold and the daily RSI-14 is mid-range, so this is an hourly-only extreme rather than a dual-timeframe statistical blow-off.",
+    "entry": 193.31,
+    "target": 188.16,
+    "stop": 195.50,
+    "timeframe": "3-7 trading days"
+  },
+  "WMT": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "Neither branch fires. Branch A check: daily Z-score (50) is 1.0 (below the +2 threshold), RSI-14 at 46.79 (neutral), Bollinger %B at 0.596 (mid-range) — no statistical extreme at the daily level. Hourly RSI-21 is 70.29 (approaching but below the 75 threshold) and hourly Z-score (120) is 1.76 (approaching but below 2.0). No RSI divergence detected on either timeframe. Branch A does not trigger. Branch B check: the daily EMAs are aligned in an uptrend (confirmed), and there was a clean pullback from the recent swing high of $132.46 down to $125.91 (a 5.7% move over four days), which touched near the 50% daily Fibonacci retracement at $125.24. However, that Fibonacci entry opportunity has already passed — price has already snapped back sharply to $131.93 (hourly current price) and is now near the prior swing high, not at a Fib confluence entry. Entering Branch B at the current price near $131-132 would put the stop below the 61.8% Fib ($123.54), representing a 6%+ downside risk with minimal room to the resistance at $132.46, yielding a poor risk-reward. Volume on the pullback was not declining (16-17M shares on down days vs 16.5M avg) — a warning flag for Branch B per strategy rules. Wiki context noted WMT needed a clean close above $129 resistance; current data shows price has cleared $129 (contradicting the wiki's caution), but the entry window for a fresh Fib pullback buy has closed. ADX daily remains weak at 12.89, which further undermines any Branch B conviction. Output is neutral: the pullback-to-Fib entry was a valid setup that has already played out, and no current extreme exists to fade.",
+    "entry": null,
+    "target": null,
+    "stop": null,
+    "timeframe": "no setup"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "ticker": "CVX",
+  "verified_at": "2026-04-30T21:35:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.0677,
+      "web_value": 0.0677,
+      "source": "CNBC / Yahoo Finance (April 28, 2026)",
+      "status": "ok",
+      "deviation": "0.0%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": 0.0955,
+      "source": "GuruFocus / StockAnalysis TTM (April 2026)",
+      "status": "unverified",
+      "deviation": "N/A",
+      "note": "operating_margin is null in all CVX facts bundles. Web shows ~9.55% TTM. Cannot calculate deviation from null - no correction applied (null is a data gap, not a wrong value)."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 29.16,
+      "web_value": 28.41,
+      "source": "Yahoo Finance (April 28, 2026)",
+      "status": "ok",
+      "deviation": "2.6%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 385053949952.0,
+      "web_value": 369000000000.0,
+      "source": "StockAnalysis / CompaniesMarketCap (April 2026)",
+      "status": "ok",
+      "deviation": "4.4%",
+      "note": "Data bundle reflects an earlier market cap snapshot; within normal daily fluctuation range."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 193400000000.0,
+      "web_value": 184430000000.0,
+      "source": "CompaniesMarketCap / StockAnalysis TTM (April 2026)",
+      "status": "ok",
+      "deviation": "4.9%",
+      "note": "Revenue derived from market_cap / P/S ratio in facts bundle (~$193.4B). Web TTM revenue ~$184.43B. Within 20% threshold."
+    },
+    {
+      "metric": "return_on_equity",
+      "our_value": 0.11594821360574588,
+      "web_value": 0.0723,
+      "source": "StockAnalysis / Macrotrends TTM (April 2026)",
+      "status": "MISMATCH",
+      "deviation": "60.4%",
+      "action": "replaced with web value (0.0723) in all facts bundles containing this metric: warren_buffett__CVX.json, aswath_damodaran__CVX.json"
+    },
+    {
+      "metric": "return_on_assets",
+      "our_value": 0.06873642668659365,
+      "web_value": null,
+      "source": "unverified",
+      "status": "unverified",
+      "deviation": "N/A",
+      "note": "No clear TTM ROA figure found in web search results for CVX. Value retained as-is."
+    }
+  ],
+  "overall_status": "1 mismatch corrected (return_on_equity: 11.6% -> 7.2%)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260430_212526/facts/warren_buffett__CVX.json",
+    "runs/20260430_212526/facts/aswath_damodaran__CVX.json"
+  ]
+}

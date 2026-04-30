@@ -1,0 +1,69 @@
+{
+  "ticker": "WMT",
+  "verified_at": "2026-04-30T21:35:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.02881,
+      "web_value": 0.0312,
+      "source": "CNBC / MacroTrends FY2026 (January 31, 2026): 3.07%; SimplyWallSt: 3.3%",
+      "status": "ok",
+      "deviation": "7.6%",
+      "note": "Our value 2.88% vs web TTM 3.07-3.3%. Within 20% threshold. No correction needed."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.04351,
+      "web_value": 0.0418,
+      "source": "MarketBeat / Walmart Annual Report FY2026 (ended Jan 31, 2026)",
+      "status": "ok",
+      "deviation": "4.1%",
+      "note": "Our 4.35% vs FY2026 full-year 4.13-4.22%. Within acceptable range."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 48.326,
+      "web_value": 46.74,
+      "source": "Yahoo Finance / GuruFocus (April 28, 2026)",
+      "status": "ok",
+      "deviation": "3.4%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 1051612741632.0,
+      "web_value": 1030000000000.0,
+      "source": "CNBC / Public.com (April 29, 2026)",
+      "status": "ok",
+      "deviation": "2.1%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 674500000000.0,
+      "web_value": 713163000000.0,
+      "source": "Walmart FY2026 Annual Report; StockAnalysis.com",
+      "status": "ok",
+      "deviation": "5.4%",
+      "note": "Revenue derived from market_cap / P/S in facts bundle gives ~$674.5B. Web reports FY2026 revenue $713.16B (already present in web_context block). The deviation in the P/S-derived estimate is within 20% threshold. No correction needed."
+    },
+    {
+      "metric": "return_on_equity",
+      "our_value": 0.21355,
+      "web_value": 0.2198,
+      "source": "MarketBeat / stock-analysis-on.net (FY2026)",
+      "status": "ok",
+      "deviation": "2.9%"
+    },
+    {
+      "metric": "return_on_assets",
+      "our_value": 0.07452,
+      "web_value": null,
+      "source": "unverified",
+      "status": "unverified",
+      "deviation": "N/A",
+      "note": "No clear TTM ROA figure retrieved from web search results for WMT. Value retained as-is."
+    }
+  ],
+  "overall_status": "no mismatches — all checked metrics within acceptable range",
+  "corrections_applied": false,
+  "files_updated": []
+}

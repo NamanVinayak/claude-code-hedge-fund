@@ -1,0 +1,20 @@
+{
+  "CVX": {
+    "signal": "bearish",
+    "confidence": 42,
+    "reasoning": "CVX has bounced to exactly the wiki-identified short-entry zone (~$192), but the breakout strategy requires conditions that are not met. Consolidation range: stock has been ranging between $181.76 (support, 12 tests) and the $192 area (wiki short-entry), with a recent high of $205.48 and low of $177.74. Today's daily close of $192.22 is at the top of this bounce zone, but volume ratio is only 0.77x the 20-day average — well below the 1.5x required for breakout confirmation. No bullish breakout signal is valid without volume. Daily Bollinger Band width of 0.1157 is not compressed; BB is not in a squeeze, meaning no coiled-spring energy. Daily OBV is trending DOWN and diverging from price — a bearish warning confirming distribution. ADX daily is strong (32.24) but minus_di (29.97) exceeds plus_di (21.31), confirming the underlying trend is bearish. Hourly RSI shows bearish divergence at 76.18 (overbought) while price pushed to hourly upper BB (pct_b 0.92). The wiki context (Apr 11) specifically flagged $192 as the short-entry target on a bounce in a confirmed downtrend, with $199 stop and $178 target. Current data corroborates this: price has arrived at $192 zone on weak volume, OBV diverging, hourly RSI bearish divergence firing. This is a failed-breakout-watch scenario. Confidence is moderate-low (42) because the squeeze is not fired (BB width not compressed), and the bearish signal is more of a trend continuation than a pure breakout trade — this is at the edge of my mandate. If price closes back below $188.50 (hourly support, 16 tests) on elevated volume, the bearish breakdown becomes more clearly in my wheelhouse.",
+    "entry": 192.22,
+    "target": 181.76,
+    "stop": 196.0,
+    "timeframe": "5-10 trading days"
+  },
+  "WMT": {
+    "signal": "bullish",
+    "confidence": 38,
+    "reasoning": "WMT has been the key breakout watch per the wiki: multiple prior runs (Apr 11, Apr 15) flagged the $129 resistance as the critical trigger, explicitly stating the setup condition is 'a close above $129 on 1.5x+ volume.' The consolidation range is well-defined: support at $121.37 (13 tests), resistance at $128.49 (23 tests) and $129, forming a base approximately $7-$8 wide. Range height measured-move target: $129 + $8 = ~$137. Today's hourly price at $131.93 shows price has pushed through the $129 and $128.49 resistance on the hourly timeframe, with hourly ADX strong (30.25, plus_di 36.33 vs minus_di 14.64) and hourly volume at 1.4x average — close to but not at the 1.5x requirement. However, the DAILY close of $128.01 has NOT confirmed a close above $128.49 resistance. Daily volume is only 1.0x average — far short of the 1.5x requirement. Daily ADX remains weak at 12.89 (well below 25), consistent with prior runs' concern about trend strength. The daily EMA stack is aligned bullish (ema_aligned_uptrend: true), and OBV is trending up without divergence. Daily BB width of 0.0733 is moderate — not a full squeeze. Hourly BB pct_b at 0.83 shows price pressing toward the upper band without a close beyond it yet. The bullish setup is tantalizingly close: the hourly is acting well, but daily close confirmation is still needed. Calling bullish at low confidence (38) because: (1) hourly breakout is in progress without daily confirmation; (2) volume on both timeframes is below the mandatory 1.5x threshold; (3) daily ADX too weak for a strong trend. Wait for a daily close above $129 on volume 1.5x+ to increase conviction. Stop placed below the $125.91 hourly support (recent low, 2 tests).",
+    "entry": 129.5,
+    "target": 137.0,
+    "stop": 125.5,
+    "timeframe": "7-14 trading days"
+  }
+}

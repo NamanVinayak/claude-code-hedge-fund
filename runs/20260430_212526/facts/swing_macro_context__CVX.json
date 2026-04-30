@@ -1,0 +1,334 @@
+{
+  "ticker": "CVX",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 188.44719588011938,
+      "sma_5": 187.63400268554688,
+      "ema_10": 188.15492135046884,
+      "sma_10": 186.58600158691405,
+      "ema_20": 189.89529985919893,
+      "sma_20": 189.90750122070312,
+      "ema_21": 190.02380237688,
+      "sma_21": 190.71666753859748,
+      "ema_50": 188.5507808033711,
+      "sma_50": 192.63919982910156,
+      "ema_200": 167.9042261263229,
+      "sma_200": 164.02494094848632,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 192.22000122070312,
+    "dist_from_50sma_pct": -0.22,
+    "price_vs_ma": {
+      "above_ema_5": true,
+      "pct_from_ema_5": 2.0,
+      "above_sma_5": true,
+      "pct_from_sma_5": 2.44,
+      "above_ema_10": true,
+      "pct_from_ema_10": 2.16,
+      "above_sma_10": true,
+      "pct_from_sma_10": 3.02,
+      "above_ema_20": true,
+      "pct_from_ema_20": 1.22,
+      "above_sma_20": true,
+      "pct_from_sma_20": 1.22,
+      "above_ema_21": true,
+      "pct_from_ema_21": 1.16,
+      "above_sma_21": true,
+      "pct_from_sma_21": 0.79,
+      "above_ema_50": true,
+      "pct_from_ema_50": 1.95,
+      "above_sma_50": false,
+      "pct_from_sma_50": -0.22,
+      "above_ema_200": true,
+      "pct_from_ema_200": 14.48,
+      "above_sma_200": true,
+      "pct_from_sma_200": 17.19
+    },
+    "rsi": {
+      "rsi_7": 80.7,
+      "rsi_14": 52.68,
+      "rsi_21": 35.44
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": -1.9601,
+      "signal_line": -1.967,
+      "histogram": 0.0069,
+      "bullish_crossover": true
+    },
+    "bollinger": {
+      "upper": 200.9,
+      "middle": 189.91,
+      "lower": 178.92,
+      "width": 0.1157,
+      "pct_b": 0.6052
+    },
+    "atr": {
+      "atr_14": 4.64,
+      "atr_pct": 2.42
+    },
+    "adx": {
+      "adx_14": 32.24,
+      "plus_di": 21.31,
+      "minus_di": 29.97,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 8644600,
+      "avg_volume_20": 11285075,
+      "relative_volume": 0.77,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": true
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 187.9,
+          "tests": 19,
+          "volume_confirmed": false
+        },
+        {
+          "price": 214.71,
+          "tests": 1,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 177.74,
+          "tests": 6,
+          "volume_confirmed": false
+        },
+        {
+          "price": 181.76,
+          "tests": 12,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 214.71,
+      "nearest_support": 181.76,
+      "recent_high": 205.48,
+      "recent_low": 177.74,
+      "prev_day_high": 189.96,
+      "prev_day_low": 186.55,
+      "prev_day_close": 188.36
+    },
+    "fibonacci": {
+      "swing_high": 214.71,
+      "swing_low": 177.74,
+      "fib_236": 205.99,
+      "fib_382": 200.59,
+      "fib_500": 196.23,
+      "fib_618": 191.86,
+      "fib_786": 185.65,
+      "fib_ext_1272": 224.77,
+      "fib_ext_1618": 237.56,
+      "fib_ext_2000": 251.68,
+      "fib_ext_low_1272": 167.68,
+      "fib_ext_low_1618": 154.89
+    },
+    "momentum": {
+      "roc_5d": 3.17,
+      "roc_10d": 3.95,
+      "roc_21d": -8.78
+    },
+    "z_score_50": -0.05,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 190.79552265383106,
+      "sma_24": 190.3625005086263,
+      "ema_48": 189.15163534811566,
+      "sma_48": 188.15616734822592,
+      "ema_120": 189.39079018916507,
+      "sma_120": 187.69670588175455,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 193.33999633789062,
+    "dist_from_50sma_pct": 3.01,
+    "price_vs_ma": {
+      "above_ema_24": true,
+      "pct_from_ema_24": 1.33,
+      "above_sma_24": true,
+      "pct_from_sma_24": 1.56,
+      "above_ema_48": true,
+      "pct_from_ema_48": 2.21,
+      "above_sma_48": true,
+      "pct_from_sma_48": 2.76,
+      "above_ema_120": true,
+      "pct_from_ema_120": 2.09,
+      "above_sma_120": true,
+      "pct_from_sma_120": 3.01
+    },
+    "rsi": {
+      "rsi_21": 76.18
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": true,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 1.7738,
+      "signal_line": 1.0097,
+      "histogram": 0.7641,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 194.32,
+      "middle": 188.16,
+      "lower": 181.99,
+      "width": 0.0655,
+      "pct_b": 0.9205
+    },
+    "atr": {
+      "atr_24": 1.35,
+      "atr_pct": 0.7
+    },
+    "adx": {
+      "adx_24": 29.57,
+      "plus_di": 42.33,
+      "minus_di": 17.8,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 1375594,
+      "avg_volume_20": 1648039,
+      "relative_volume": 0.83,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 188.42,
+          "tests": 17,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 183.67,
+          "tests": 18,
+          "volume_confirmed": false
+        },
+        {
+          "price": 188.5,
+          "tests": 16,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": null,
+      "nearest_support": 188.5,
+      "recent_high": 194.13,
+      "recent_low": 187.8,
+      "prev_day_high": 193.51,
+      "prev_day_low": 192.55,
+      "prev_day_close": 193.05
+    },
+    "fibonacci": {
+      "swing_high": 194.13,
+      "swing_low": 183.67,
+      "fib_236": 191.66,
+      "fib_382": 190.13,
+      "fib_500": 188.9,
+      "fib_618": 187.67,
+      "fib_786": 185.91,
+      "fib_ext_1272": 196.98,
+      "fib_ext_1618": 200.59,
+      "fib_ext_2000": 204.59,
+      "fib_ext_low_1272": 180.82,
+      "fib_ext_low_1618": 177.21
+    },
+    "momentum": {
+      "roc_5d": -0.06,
+      "roc_10d": 0.77,
+      "roc_21d": 4.58
+    },
+    "z_score_120": 1.63,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 187.1199951171875,
+      "close": 187.60000610351562,
+      "high": 188.4199981689453,
+      "low": 185.5,
+      "volume": 6684700,
+      "time": "2026-04-23"
+    },
+    {
+      "open": 185.22999572753906,
+      "close": 185.2100067138672,
+      "high": 186.4199981689453,
+      "low": 183.1999969482422,
+      "volume": 9626700,
+      "time": "2026-04-24"
+    },
+    {
+      "open": 186.19000244140625,
+      "close": 184.77999877929688,
+      "high": 188.3699951171875,
+      "low": 183.6699981689453,
+      "volume": 10836600,
+      "time": "2026-04-27"
+    },
+    {
+      "open": 188.27999877929688,
+      "close": 188.36000061035156,
+      "high": 189.9600067138672,
+      "low": 186.5500030517578,
+      "volume": 10754900,
+      "time": "2026-04-28"
+    },
+    {
+      "open": 190.1300048828125,
+      "close": 192.22000122070312,
+      "high": 192.6199951171875,
+      "low": 189.5,
+      "volume": 8644600,
+      "time": "2026-04-29"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 193.30999755859375,
+  "market_cap": 385053949952.0,
+  "wiki_context": {
+    "slices": {
+      "regime_full": {
+        "path": "wiki/macro/regime.md",
+        "mode": "full",
+        "content": "# Macro Regime\n\n## TL;DR\n\n**Risk-on recovery on April 30, with Iran geopolitical tail intact.** S&P 500 hit a new all-time high (+0.8%) and Dow surged +1.5% on strong Caterpillar earnings; Qualcomm +16% on results. April tracks as the best month for the S&P since 2020 (+9% MTD). Fed held at 3.5%\u20133.75% on April 29 (third consecutive hold, unusual 8-4 dissent split). US military blockade of Iranian ports remains the dominant left-tail risk \u2014 IMF projects 3.1% global growth and 4.4% headline inflation under conflict baseline. AI capex cycle intact (Alphabet and Amazon confirmed expansion) despite Meta's -9% capex shock from the prior session.\n\n## Fed posture\n\nThe Federal Reserve voted 8-4 on April 29 to hold the federal funds rate at **3.5%\u20133.75%** \u2014 third consecutive hold following three cuts in 2025. Unusual dissent split (last seen October 1992) signals internal disagreement. Inflation remains above the 2% target driven by tariff pass-through and Iran-driven energy prices. Powell will remain on the Board of Governors after his chair term expires; Kevin Warsh awaits Senate confirmation as next Chair. No cuts are priced through 2026. Easing bias retained in statement but contested [web_research/JPM.json, 2026-04-30].\n\n## Rate trajectory and inflation\n\nHigher-for-longer is the structural baseline. Tariff pass-through and Iran-driven oil prices are the two inflation engines. IMF cut 2026 global growth forecast to 3.1% and raised headline inflation to 4.4% assuming ~19% energy price spike from a short-lived conflict. US-China trade tariffs add a secondary structural layer. JPM's own NII guidance trim from $104.5B to ~$103B reflects the rate-flat environment [web_research/JPM.json, 2026-04-30].\n\n## Market context (April 30)\n\nS&P 500 hit a new all-time high (+0.8%). Dow Jones surged +1.5% powered by Caterpillar's 10% earnings beat and Qualcomm +16%. JPMorgan raised its own S&P 500 year-end target to 7,600 from 7,200, citing AI momentum and stronger earnings. April remains on track as the best month for the S&P since 2020 (+9% MTD). AI capex thematic intact: Alphabet and Amazon confirmed expansion in Q1 results. Meta's -9% capex shock from April 29 is the primary risk sentiment headwind but has not derailed the broader market [web_research/JPM.json, 2026-04-30].\n\n## Geopolitical and regulatory\n\n**US military blockade of Iranian ports is the dominant left-tail risk.** Goldman raised Brent forecast to $90/bbl by late 2026 on blockade risk. A Strait of Hormuz closure would spike oil, reignite inflation, force the Fed further out on its hold, and directly pressure large-cap banks via credit quality and consumer demand. Secondary flashpoints: NATO-Greenland strategic competition, US-China tariffs and export controls, Kevin Warsh policy transition uncertainty [web_research/JPM.json, 2026-04-30].\n\n## Risk-off triggers to watch\n\n- **Iran escalation / Strait of Hormuz closure** \u2014 oil above $100, inflation re-accelerates, broad de-risking; immediate exit signal for JPM positions below $304.26\n- **Meta capex shock contagion** \u2014 if Amazon or MSFT revise AI capex lower, NVDA demand thesis directly impacted\n- **Fed dissent crystallizing hawkish** \u2014 any hint of rate hike scenarios would reset financials pricing\n\n## Last updated\n\n2026-04-30. Sourced from `web_research/JPM.json` macro_context (run `20260430_182725`). Supersedes prior entry sourced from `20260430_124724`.\n",
+        "last_updated": "2026-04-30",
+        "stale": false
+      },
+      "sectors_full": {
+        "missing": true,
+        "mode": "full"
+      },
+      "thesis_tldr": {
+        "path": "wiki/tickers/CVX/thesis.md",
+        "mode": "tldr",
+        "content": "CVX is an integrated energy major caught between two competing forces: a strong structural bull case built on new discoveries, analyst upgrades, and resilient global demand, and an immediate bear case driven by a ceasefire-triggered oil price collapse, a self-reported $2.7-3.7B Middle East earnings hit, and heavy insider selling. The swing model chose the bear side for a short entry at $192 with a 2.0:1 risk-reward, targeting $178 over 5-10 days. Source: run `swing_20260411_211655`.\n\n---",
+        "last_updated": "2026-04-29",
+        "stale": false
+      }
+    }
+  }
+}

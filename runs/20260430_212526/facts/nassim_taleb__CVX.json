@@ -1,0 +1,91 @@
+{
+  "ticker": "CVX",
+  "score": 19,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 3,
+    "max_score": 8,
+    "details": "Near-Gaussian tails (kurtosis 0.9) \u2014 suspiciously thin; Negative skew (-0.67) \u2014 crash-prone; Balanced tails (tail ratio 1.00); Resilient (max drawdown -13.2%)"
+  },
+  "antifragility_analysis": {
+    "score": 3,
+    "max_score": 10,
+    "details": "Net debt but manageable relative to assets; Taleb-approved low leverage (D/E 0.20); Insufficient margin history for stability analysis; FCF data not available"
+  },
+  "convexity_analysis": {
+    "score": 1,
+    "max_score": 10,
+    "details": "Minimal R&D (0.2% of revenue); Slight positive asymmetry (up/down ratio 1.09); Low cash relative to market cap (1%); FCF yield data not available"
+  },
+  "fragility_analysis": {
+    "score": 3,
+    "max_score": 8,
+    "details": "Low leverage (D/E 0.20) \u2014 not fragile; Interest coverage data not available; Highly volatile earnings (growth std 1.28) \u2014 fragile; Moderate margins (9.1%)"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 5,
+    "max_score": 6,
+    "details": "Elevated vol (regime 1.30) \u2014 opportunity for the antifragile; Elevated vol-of-vol (0.0223 vs median 0.0157)"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 385053949952.0,
+  "web_context": {
+    "ticker": "CVX",
+    "research_date": "2026-04-30",
+    "macro_context": {
+      "market_sentiment": "Risk-on with fresh all-time highs: S&P 500 +1.02% to 7,209 and Nasdaq +0.89% driven by strong earnings from Caterpillar and Alphabet, though Meta's AI capex surge spooked tech investors. Broad sentiment is cautiously bullish as Big Tech earnings season continues.",
+      "fed_outlook": "FOMC voted 8-4 on April 29 to hold rates at 3.5%-3.75% for the third consecutive meeting. Powell's final press conference as chair (term ends May 15). Markets pricing zero cuts for remainder of 2026 and into 2027; committee flagged elevated inflation partly tied to global energy prices.",
+      "geopolitical": "US blockade of Iranian ports driving oil above $100/barrel; potential Strait of Hormuz closure risks a major energy crisis. Additional flashpoints include Venezuela unrest and NATO/Greenland tensions. IMF baseline: global growth 3.1%, inflation 4.4% \u2014 downside scenario puts growth at 2.5%. Energy and defense sectors are outperforming.",
+      "key_events": [
+        "CVX Q1 2026 earnings: May 1, 2026 (before market open)",
+        "Powell's Fed chairmanship ends May 15, 2026 \u2014 leadership transition adds policy uncertainty",
+        "Ongoing US-Iran tensions and port blockade \u2014 key tail risk for oil supply and CVX operations",
+        "US midterm elections 2026 \u2014 potential policy shifts for energy regulation",
+        "FOMC next meeting: June 2026"
+      ]
+    },
+    "ticker_news": [
+      {
+        "headline": "Chevron Q1 2026 earnings due May 1: Large non-cash downstream timing charges ($2.7B-$3.7B after-tax) expected to suppress EPS to ~$0.92-$0.97 despite strong production growth YoY",
+        "sentiment": "neutral",
+        "source": "Madres Travels / Meyka, April 30, 2026"
+      },
+      {
+        "headline": "Trump personally consulted Chevron CEO on oil market turbulence amid ongoing US-Iran tensions, signaling Chevron's strategic importance in current energy geopolitics",
+        "sentiment": "positive",
+        "source": "GuruFocus, April 2026"
+      },
+      {
+        "headline": "Chevron CEO highlights need for further reforms in Venezuela's oil sector \u2014 a key upstream growth market for CVX",
+        "sentiment": "neutral",
+        "source": "GuruFocus, April 2026"
+      },
+      {
+        "headline": "CVX stock fell over 6% on April 1, 2026 amid broad market selloff \u2014 stock has since recovered to ~$192",
+        "sentiment": "negative",
+        "source": "Disruption Banking, April 1, 2026"
+      },
+      {
+        "headline": "Trefis analysis flags near-term downside risk for Chevron stock tied to downstream timing charges and oil price volatility",
+        "sentiment": "negative",
+        "source": "Trefis, April 20, 2026"
+      }
+    ],
+    "analyst_consensus": {
+      "rating": "buy",
+      "avg_price_target": 209.0,
+      "recent_changes": "TD Cowen cut PT from $214 to $204 (Hold) on April 16. JPMorgan raised PT to $216 from $181; Wells Fargo raised PT to $222 from $204. BMO reissued Outperform at $190 in February. Scotiabank upgraded to Hold on March 27. Overall: 17-18 Buy, 6-7 Hold, 1-2 Sell out of 23-42 analysts. Median PT $209, range $165-$242. Stock at ~$192.22 implies ~9% upside to median target."
+    },
+    "competitor_activity": "BofA prefers CVX (Buy) over ExxonMobil (Neutral) and Shell (Neutral) based on CVX's 2026 FCF inflection and capital discipline; BP rated Underperform. Oil price spike from Iran tensions is lifting all majors. XOM's 2025 earnings ($28.8B) dwarf CVX's ($12.29B) in scale, but CVX's tighter breakeven and 38-year dividend growth streak (vs BP/Shell cutting in 2020) give it a quality edge. XOM and CVX both viewed as better positioned than European peers for a sustained higher-for-longer oil environment.",
+    "earnings_info": "Next earnings: May 1, 2026 (before market open, Q1 2026). Consensus EPS: $0.92-$0.97 (Zacks $0.92; Nasdaq/Meyka $0.97), down sharply from prior-year $2.68 adjusted EPS. The decline is driven by non-cash downstream timing charges of $2.7B-$3.7B after-tax (spinoff mark-to-market losses and LIFO inventory accounting) \u2014 expected to reverse in subsequent quarters. Production grew YoY; underlying operational performance is solid. Revenue estimate not reported in sources."
+  }
+}
