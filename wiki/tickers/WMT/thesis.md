@@ -1,42 +1,43 @@
 ---
 name: WMT thesis
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_212526
 target_words: 500
 stale_after_days: 30
-word_count: 512
-summary: WMT is a defensive compounder — consumer trade-down and e-commerce growth drive the bull; an absurdly rich valuation (52x P/E) and Walton insider selling cap the upside.
+word_count: 491
+summary: Hourly breakout above $129 in progress — the exact trigger the prior thesis demanded — but daily ADX (12.89) and R/R (<1:1 at current price) keep the model in watch mode; watch entry $129.50 with $136 target if daily confirms.
 ---
-
-# WMT — Thesis
 
 ## TL;DR
 
-Walmart is the clearest beneficiary of consumer stress in 2026: when household budgets shrink, shoppers migrate from Target and specialty retail toward WMT's everyday-low-price model. That trade-down tailwind, combined with an accelerating e-commerce flywheel and a $1 trillion market cap milestone, makes the bull case real. But the stock is priced as though the growth story is already guaranteed — at 52x earnings on roughly 2% annual revenue growth, any stumble on tariff costs or consumer confidence is a meaningful de-rating risk. The two runs analyzed (Apr 11 and Apr 15, 2026) both concluded **hold** with low confidence (~40%), reflecting this tug of war.
+**What falsified the prior thesis:** The prior thesis (bootstrap, Apr 29) stated "Both runs noted a technical failure at the $129 resistance." That is no longer accurate — this run (Apr 30) shows price has pushed through $129 and $128.49 on the hourly timeframe to $131.93, with hourly ADX at 30.25 and +DI (36.33) well above -DI (14.64). The hourly breakout is live. However, the daily close ($128.01 at time of analysis) has not confirmed above $128.49 resistance, and daily ADX remains critically weak at 12.89. The model remains on hold — not because the direction is wrong, but because the daily confirmation and R/R requirements are not yet satisfied. (Source: `20260430_212526/signals_combined.json`, swing_breakout, swing_head_trader)
 
-## Bull case
+---
 
-- **Consumer trade-down is structural.** University of Michigan Consumer Sentiment hit a record-low 47.6 in April 2026 — the lowest in the survey's 74-year history. [web_research 2026-04-15] Walmart and Costco are the primary beneficiaries as shoppers cut discretionary spend. WMT was up ~12-14% YTD as of mid-April 2026 while the broader market was flat-to-negative.
-- **E-commerce is finally profitable.** Q1 FY2026 (May 2025) was Walmart's first-ever quarter of globally profitable e-commerce operations. Global digital sales jumped 24% in Q4 FY2026. [web_research 2026-04-11] Twelve consecutive quarters of double-digit e-commerce growth show this is not a flash in the pan.
-- **Market leadership is unmatched.** Walmart topped the NRF Global Retail Ranking 2026 with $568.7B in US retail sales — more than double Amazon's $273.7B in the same category. [web_research 2026-04-15] The company crossed $1 trillion market cap in 2026, the first traditional retailer to do so.
-- **Analyst consensus is solidly bullish.** 32 of 39 analyst recommendations are Strong Buy. Average price target ~$136, with Guggenheim raising their target to $137 on April 13, 2026. [web_research 2026-04-15]
-- **Private label reset is margin-positive.** The redesign of the Great Value private brand (~10,000 items) drives higher gross margin per unit and improves shelf economics. [web_research 2026-04-15]
+## Bull Case
 
-## Bear case
+**Hourly breakout is leading.** Price cleared the $129 resistance zone that two prior runs (Apr 11, Apr 15) flagged as the key trigger. Hourly ADX at 30.25 with +DI 36.33 vs. -DI 14.64 is a strong bullish intraday trend signal. OBV is trending up on the hourly with no divergence. (Source: `20260430_212526/signals_combined.json`)
 
-- **Valuation is disconnected from growth.** The swing model's Druckenmiller persona flagged WMT at a 52x P/E vs approximately 1.9% revenue growth — an absurd premium for a low-growth retailer. [decisions swing_20260411] Even in a soft-landing scenario, that multiple is hard to defend if growth disappoints.
-- **Walton family is selling heavily.** The Apr 15 run cited $4.6B in Walton family insider selling as a "structural headwind." [decisions 20260415_110848] Insider selling at this scale is rarely noise.
-- **Tariff exposure on China supply chain.** ~80% of Walmart's supplier base is in China. US-China cumulative tariff rates exceeded 100-145% on many categories as of April 2026. Walmart is pressuring suppliers to absorb the cost — a strategy that works until it doesn't. Plans to shift 15-20% of sourcing to India and Vietnam are a multi-year project, not a near-term fix. [web_research 2026-04-15]
-- **Failed breakout at $129.** Both runs noted a technical failure at the $129 resistance level with ADX readings of 17-18 — well below the 25 threshold needed to confirm a tradeable trend. [decisions both runs]
+**Consumer trade-down tailwind remains structural.** In a tariff environment with US-China tensions at 145%, consumers trade down to Walmart's everyday-low-price model. FY2026 revenue $713.16B (+4.73% YoY), earnings $21.89B (+12.64% YoY). First-ever profitable e-commerce quarter globally; US comps +4.5%. (Source: `20260430_212526/web_research/WMT.json`)
 
-## What would change my mind
+**Analyst consensus solidly bullish.** 28 Buy, 2 Hold, 0 Sell out of 27-48 analysts. Morgan Stanley raised PT to $140; Guggenheim raised to $137. Average PT $137.60, implying ~4.5% upside from current intraday $131.93. (Source: `20260430_212526/web_research/WMT.json`)
 
-**Turn bullish on a swing setup:** Clean close above $129 on 1.5x+ average volume, ADX crossing above 25, and hourly EMAs realigning upward. That would signal the breakout is real. [decisions 20260415_110848]
+**E-commerce flywheel accelerating.** US e-commerce sales grew 27% YoY and now represent 23% of net sales. Walmart narrowing Amazon's lead. Great Value private-label redesign (~650+ store remodels) supports margin improvement. (Source: `20260430_212526/web_research/WMT.json`)
 
-**Turn bearish on a short setup:** Confirmed breakdown below $122 support with heavy volume, tariff-driven gross margin compression in Q1 FY2027 earnings (May 21, 2026), or Walton selling accelerating above $500M in a single quarter.
+---
 
-**Valuation re-rate:** If the market re-rates consumer staples broadly (P/E compression from 52x toward 35x), WMT could underperform even if fundamentals hold.
+## Bear Case
 
-## Last updated
+**Daily confirmation absent.** Daily ADX at 12.89 is critically below the 20 disqualification floor, let alone the 25 threshold. Daily close at $128.01 has not cleared $128.49 resistance. R/R at intraday price ($131.93 entry, $136 target, $125.50 stop) computes to 0.63:1 — fails the 2:1 minimum. (Source: `20260430_212526/signals_combined.json`, swing_head_trader)
 
-Bootstrap — sourced from runs `20260415_110848` and `swing_20260411_211655`. Next scheduled refresh after May 21, 2026 Q1 FY2027 earnings.
+**Insider distribution at scale.** Walton family sold $4.6B — the founding family treating the current price as a distribution opportunity. (Source: `20260430_212526/signals_combined.json`, swing_catalyst_news)
+
+**Valuation stretched.** DCF fair value $177B vs. market cap $1.05T — an 83% premium. PEG ratio 4.78, P/E ~48x on ~5% revenue growth. Any miss on tariff cost pass-through is a meaningful de-rating risk. (Source: `20260430_212526/signals_combined.json`, valuation_analyst_agent, growth_analyst_agent)
+
+---
+
+## What Would Change the Bear Thesis
+
+**Turn bullish (long entry):** Daily close above $129-130 on volume ≥1.5x 20-day average AND daily ADX inflecting above 20. If triggered: entry ~$129.50, target $136.00, stop $125.50 (R/R ~2.1:1, ~8 shares within $1,036 position limit). (Source: `20260430_212526/decisions.json`)
+
+**Turn bearish (short):** Confirmed daily close below $122 support on elevated volume, or Q1 FY2027 earnings miss on May 14, 2026, or tariff cost surprise compressing gross margin.

@@ -1,52 +1,50 @@
 ---
 name: WMT technicals
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_212526
 target_words: 350
 stale_after_days: 7
-word_count: 371
-summary: ADX below 25, failed breakout at $129, hourly EMAs in downtrend — no swing setup on either April run.
+word_count: 338
+summary: Hourly breakout above $129 confirmed (ADX 30.25, +DI 36.33); daily ADX remains critically weak at 12.89 — wait mode; prior hourly-bearish setup is replaced by bullish hourly with daily lagging.
 ---
-
-# WMT — Technicals
 
 ## TL;DR
 
-Both April runs reached the same conclusion: WMT has no tradeable swing setup. The stock failed to break $129 resistance, ADX is too weak to confirm any trend (17-18 on both dates), and the hourly EMA structure is bearish. The model needs a clean high-volume close above $129 before any entry is warranted.
+The prior setup (bootstrap, Apr 29) described "no swing setup — ADX 17-18, failed breakout at $129, hourly EMAs in downtrend." That is now stale. As of Apr 30: hourly chart has broken above $129 resistance with strong intraday momentum, but the daily ADX (12.89) remains critically below the 20-threshold disqualification floor. Decision: HOLD/watch — daily confirmation is the remaining gate. Source: run `20260430_212526`.
 
-## Multi-timeframe state
+**Prior setup type archived to recent.md:** "failed-breakout / no-man's-land — hourly EMAs bearish, ADX 17-18" (Apr 11–Apr 29).
 
-| Timeframe | Signal | Notes |
+---
+
+## Key Levels
+
+| Level | Value | Notes |
 |---|---|---|
-| Daily trend | No trend | ADX 17-18, well below 25 threshold — choppy, non-directional [decisions both runs] |
-| Daily EMAs | Mixed | Failed breakout at $129.13 resistance; price pulled back toward $124-$127 zone |
-| Hourly EMAs | Bearish | Downtrend on hourly chart as of Apr 15 run [decisions 20260415_110848] |
-| Hourly momentum | Negative | Head Trader noted negative hourly momentum on Apr 15; no reversal signal |
-| Risk-reward | Unacceptable | Apr 11 run: R:R 0.9:1 (entry $126.77, target $131, stop $122) — fails the 2:1 minimum |
+| Watch entry (bull trigger) | ~$129.50 | Requires daily close above $129-130 on ≥1.5x volume AND daily ADX > 20 |
+| Target (if triggered) | $136.00 | Measured-move ($129+$7 range) / analyst consensus cluster |
+| Stop (if triggered) | $125.50 | Below hourly support at $125.91 (2 tests) |
+| Resistance (23 tests) | $128.49 | Prior consolidation ceiling; hourly has broken above, daily has not |
+| Support (13 tests) | $121.37 | Major base floor |
+| Current price (intraday Apr 30) | $131.93 | Hourly breakout in progress |
+| Daily close (Apr 30) | $128.01 | Daily has not confirmed the breakout |
 
-## Key levels
+---
 
-| Level | Value | Source |
-|---|---|---|
-| Resistance (prior breakout attempt) | $129.00–$129.13 | Apr 11 + Apr 15 decisions |
-| Entry zone (bull setup trigger) | Close above $129 on 1.5x+ volume | Apr 15 decision reasoning |
-| Support / stop zone | ~$122.00 | Apr 11 implied stop level |
-| Price on Apr 11 run | $126.77 | decisions swing_20260411 |
-| Price on Apr 15 run | ~$124.56 (Yahoo Finance cited) | web_research 2026-04-15 |
+## Momentum Indicators (as of Apr 30)
 
-## Setup type
+| Indicator | Timeframe | Value | Interpretation |
+|---|---|---|---|
+| ADX | Daily | 12.89 | Critically weak — below 20 disqualification floor |
+| +DI / -DI | Daily | 20.82 / 24.94 | Daily directional bias slightly bearish despite EMA alignment |
+| EMA stack | Daily | Aligned uptrend (10 > 21 > 50) | Bullish structure but trend strength absent |
+| ADX | Hourly | 30.25 | Strong trend — +DI 36.33 vs -DI 14.64 |
+| RSI-21 | Hourly | 70.29 | Elevated, no bearish divergence |
+| Volume ratio | Hourly | 1.4x | Near but below 1.5x threshold |
+| 5-day ROC | Daily | -1.52% | Short-term momentum slightly negative |
+| 21-day ROC | Daily | +3.65% | Positive medium-term participation in April rally |
 
-**No setup — wait mode.** The stock is in a failed-breakout pattern: it tested $129 resistance and rejected, with insufficient trend strength (ADX < 25) to support a directional trade. This is a textbook "no-man's-land" condition. The Squeeze Momentum indicator likely shows compression without a confirmed directional break.
+---
 
-The system's rule is clear: do not swing-trade when ADX < 25. [decisions 20260415_110848, reasoning: "ADX 18 below 25 threshold"]
+## Setup Type
 
-## When to revisit
-
-Re-evaluate after:
-1. A daily close above $129 on 1.5x average volume — potential breakout long
-2. A daily close below $122 on elevated volume — potential breakdown short
-3. May 21, 2026 Q1 FY2027 earnings — binary event that could resolve the squeeze
-
-## Last updated
-
-Bootstrap — sourced from runs `20260415_110848` (Apr 15) and `swing_20260411_211655` (Apr 11). Technicals are stale after 7 days; re-run the swing pipeline before using these levels.
+**Watch mode — hourly leading, daily lagging.** Hourly breakout above $129 is live (ADX 30.25, +DI 36.33, OBV trending up). Daily remains in no-trend territory (ADX 12.89). The strategy's process rule is clear: daily ADX < 20 disqualifies any directional trade regardless of hourly strength. The watch condition is a daily close above $129-130 on ≥1.5x volume with daily ADX inflecting above 20. R/R at the watch entry ($129.50) computes to ~2.1:1 — acceptable if triggered. At current intraday price ($131.93) R/R is 0.63:1 — fails minimum. Do not chase.
