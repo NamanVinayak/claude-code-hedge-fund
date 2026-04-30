@@ -201,11 +201,20 @@ def _load_asset_type(run_dir: str) -> str:
     return "stock"
 
 
+def _load_default_cash() -> float:
+    try:
+        with open("tracker/watchlist.json") as f:
+            return float(json.load(f).get("paper_account_size", 5000.0))
+    except (FileNotFoundError, json.JSONDecodeError, ValueError):
+        return 5000.0
+
+
 def main():
     parser = argparse.ArgumentParser(description="Aggregate signals for hedge fund run.")
     parser.add_argument("--run-id", required=True, help="Run identifier")
     parser.add_argument("--tickers", required=True, help="Comma-separated ticker symbols")
-    parser.add_argument("--cash", type=float, default=100000.0, help="Starting cash (default: 100000)")
+    parser.add_argument("--cash", type=float, default=_load_default_cash(),
+                        help="Starting cash (default: paper_account_size from tracker/watchlist.json)")
     parser.add_argument("--margin-requirement", type=float, default=0.0, help="Margin requirement (default: 0.0)")
     parser.add_argument("--mode", choices=VALID_MODES, default=None,
                         help="Analysis mode override (default: read from metadata.json)")

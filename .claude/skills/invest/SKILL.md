@@ -132,10 +132,10 @@ After ALL 14 agents complete, proceed to Step 4.
 
 ## Step 4 — Aggregate signals
 
-Parse `$ARGUMENTS` for an optional `--cash` flag. If present, use that value. Otherwise default to 100000.
+Parse `$ARGUMENTS` for an optional `--cash` flag. If present, pass it. Otherwise omit it — `aggregate.py` reads `paper_account_size` from `tracker/watchlist.json` as the default ($25,000 currently).
 
 ```bash
-python -m ai_hedge.runner.aggregate --run-id $RUN_ID --tickers $TICKERS --cash $CASH
+python -m ai_hedge.runner.aggregate --run-id $RUN_ID --tickers $TICKERS  # add --cash N to override
 ```
 
 This loads all signals, runs deterministic agents (fundamentals, technicals, valuation, sentiment, risk_manager), computes allowed actions, and writes `signals_combined.json`.
