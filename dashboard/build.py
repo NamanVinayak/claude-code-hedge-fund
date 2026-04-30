@@ -232,6 +232,70 @@ def main():
     with open(os.path.join(args.output, "closed.html"), "w") as f:
         f.write(closed_html)
 
+    # All runs page
+    all_run_folders = sorted(glob.glob("runs/*"), reverse=True)
+    all_runs_list = []
+    for folder in all_run_folders:
+        run_id = os.path.basename(folder)
+        # Parse timestamp from folder name (YYYYMMDD_HHMMSS)
+        formatted_date = run_id
+        try:
+            dt = datetime.strptime(run_id, "%Y%m%d_%H%M%S")
+            formatted_date = dt.strftime("%b %-d, %Y · %-I:%M %p")
+        except ValueError:
+            pass
+
+        meta_path = os.path.join(folder, "metadata.json")
+        dec_path = os.path.join(folder, "decisions.json")
+
+        mode = "unknown"
+        tickers = []
+        if os.path.exists(meta_path):
+            with open(meta_path) as f:
+                try:
+                    meta = json.load(f)
+                    mode = meta.get("mode", "unknown")
+                    tickers = meta.get("tickers", [])
+                except Exception:
+                    pass
+
+        decisions = []
+        if os.path.exists(dec_path):
+            with open(dec_path) as f:
+                try:
+                    dec_data = json.load(f)
+                    decs = dec_data.get("decisions", {})
+                    for t, d in decs.items():
+                        decisions.append({
+                            "ticker": t,
+                            "action": d.get("action", ""),
+                            "confidence": d.get("confidence", ""),
+                            "entry_price": d.get("entry_price"),
+                            "target_price": d.get("target_price"),
+                            "stop_loss": d.get("stop_loss"),
+                        })
+                except Exception:
+                    pass
+
+        all_runs_list.append({
+            "run_id": run_id,
+            "formatted_date": formatted_date,
+            "mode": mode,
+            "tickers": tickers,
+            "decisions": decisions,
+        })
+
+    runs_template = env.get_template("runs.html")
+    runs_html = runs_template.render(
+        **base_context,
+        title="All Runs",
+        runs=all_runs_list,
+        open_tickers=open_tickers,
+        pending_tickers=pending_tickers,
+    )
+    with open(os.path.join(args.output, "runs.html"), "w") as f:
+        f.write(runs_html)
+
     # Per-ticker pages
     all_tickers = set()
     try:
@@ -260,7 +324,7 @@ def main():
                 except:
                     pass
 
-    pages_built = 3
+    pages_built = 4  # index, today, closed, runs
     for ticker in all_tickers:
         # Open position
         pos = next((p for p in positions if p["ticker"] == ticker), None)
