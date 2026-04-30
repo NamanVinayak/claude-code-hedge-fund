@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMD | AI Hedge Fund</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        nav {
+            background-color: #1e1e1e;
+            padding: 1rem;
+            border-bottom: 1px solid #333;
+        }
+        nav a {
+            color: #90caf9;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #1e1e1e;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        th {
+            background-color: #2c2c2c;
+            font-weight: 600;
+        }
+        .profit { color: #81c784; }
+        .loss { color: #e57373; }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #888;
+            border-top: 1px solid #333;
+            margin-top: 40px;
+        }
+        .card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container" style="padding: 0;">
+            <a href="index.html">Live Positions</a>
+            <a href="today.html">Today's Decisions</a>
+            <a href="closed.html">Closed Trades</a>
+        </div>
+    </nav>
+    <div class="container">
+        
+<h1>AMD</h1>
+<div class="card">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div id="tradingview_AMD"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+      <script type="text/javascript">
+      new TradingView.widget(
+      {
+      "width": "100%",
+      "height": 400,
+      "symbol": "AMD",
+      "interval": "D",
+      "timezone": "Etc/UTC",
+      "theme": "dark",
+      "style": "1",
+      "locale": "en",
+      "enable_publishing": false,
+      "hide_top_toolbar": true,
+      "save_image": false,
+      "container_id": "tradingview_AMD"
+    }
+      );
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+</div>
+
+
+
+
+<div class="card">
+    <h2>Thesis (from Wiki)</h2>
+    <p>AMD is a genuine AI infrastructure winner riding the second wave of GPU/CPU demand. Three consecutive runs (20260411, 20260415, 20260417) produced the highest momentum readings in the entire watchlist universe. The bull case is real but the stock consistently trades at extreme valuations that create binary risk around catalysts. The system rated it bullish on trend and catalyst grounds in all three runs; entry timing and overbought management were the primary debate.</p><p>**AI infrastructure tailwinds are durable.** Data Center revenue hit $5.38B in Q4 2025 (+39% YoY), and Q1 2026 guidance projects ~$9.8B total revenue (+32% YoY) with full-year EPS growth consensus near 72% (source: web_research/AMD.json, run 20260415_110848). Hyperscaler demand is structural — not cyclical.</p><p>**The Meta deal is transformational.** Meta committed a $60B infrastructure deal covering AMD GPUs, Venice-architecture CPUs, and custom silicon co-engineering (source: web_research/AMD.json, run 20260415_110848). This is a multi-year revenue lock-in at a time when AMD is gaining CPU server share at Intel's expense. AMD server CPU market share crossed 40% in early 2026 (source: web_research/AMD.json, run swing_20260411_211655).</p>
+</div>
+
+
+<div class="card">
+    <h2>Recent Decisions</h2>
+    
+    <p>No recent decisions.</p>
+    
+</div>
+
+
+
+    </div>
+    <footer>
+        Last updated: 12:05 AM ET &middot; Built by AI Hedge Fund &middot; Next update ~5 min
+    </footer>
+</body>
+</html>

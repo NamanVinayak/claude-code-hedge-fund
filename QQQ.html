@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQQ | AI Hedge Fund</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        nav {
+            background-color: #1e1e1e;
+            padding: 1rem;
+            border-bottom: 1px solid #333;
+        }
+        nav a {
+            color: #90caf9;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #1e1e1e;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        th {
+            background-color: #2c2c2c;
+            font-weight: 600;
+        }
+        .profit { color: #81c784; }
+        .loss { color: #e57373; }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #888;
+            border-top: 1px solid #333;
+            margin-top: 40px;
+        }
+        .card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container" style="padding: 0;">
+            <a href="index.html">Live Positions</a>
+            <a href="today.html">Today's Decisions</a>
+            <a href="closed.html">Closed Trades</a>
+        </div>
+    </nav>
+    <div class="container">
+        
+<h1>QQQ</h1>
+<div class="card">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div id="tradingview_QQQ"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+      <script type="text/javascript">
+      new TradingView.widget(
+      {
+      "width": "100%",
+      "height": 400,
+      "symbol": "QQQ",
+      "interval": "D",
+      "timezone": "Etc/UTC",
+      "theme": "dark",
+      "style": "1",
+      "locale": "en",
+      "enable_publishing": false,
+      "hide_top_toolbar": true,
+      "save_image": false,
+      "container_id": "tradingview_QQQ"
+    }
+      );
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+</div>
+
+
+
+
+<div class="card">
+    <h2>Thesis (from Wiki)</h2>
+    <p>QQQ is the Nasdaq-100 ETF — a concentrated bet on the top 100 non-financial Nasdaq companies (Apple, Microsoft, Nvidia, Meta, Alphabet, Amazon are the top six). It is the cleanest expression of large-cap tech momentum in the US market. Our two runs (daytrade on 2026-04-15 and swing on 2026-04-17) converge on the same structural view: the daily trend is unambiguously bullish but QQQ's extreme correlation with everything else we hold (0.96 vs SPY, 0.74 vs NVDA, 0.67 vs AMZN) means adding a full-size QQQ position on top of single-name tech longs is de facto leveraging the same bet twice.</p><p>- **Daily trend is intact.** As of April 17, 2026, ADX reads 36.08 on the daily with the squeeze momentum in bullish-breakout mode — both confirm a mature but still-running uptrend. [Source: signals_combined.json, dt_breakout_hunter QQQ, 20260415_104041]
+- **Sector rotation into tech.** On April 15, QQQ outperformed SPY by an estimated 0.4–0.6% intraday as Nasdaq-100 megacaps (MSFT +2.1%, META +2.2%, AVGO +2.5%) carried the load while the Dow pared gains. [Source: web_research/QQQ.json, 20260415_104041]
+- **AI capex supercycle.** Meta-Broadcom 1 GW custom AI chip deal, Microsoft Azure 39% growth trajectory, and Nvidia's 10-day winning streak (+18%) entering April 15 all signal that AI spending by the top QQQ components remains at cycle highs.
+- **Options flow constructive.** WhaleStream showed net bullish QQQ flow on April 15; call-side open interest dominated at current strikes with a balanced 5-call/5-put unusual activity reading, net constructive. [Source: web_research/QQQ.json analyst_consensus]
+- **Swing decision: buy at $640.47.** On April 17 the swing PM rated QQQ a Buy with 72% confidence, 8–12 trading day timeframe, target $668, stop $634, for a 4.25:1 risk-reward — the highest R:R in the 14-ticker cohort. [Source: decisions.json, 20260417_233350]</p><p>- **Valuation — ETF fundamentals not available.** The fundamentals agent and growth agent both returned bearish/zero signals for QQQ because standard financial ratios (P/E, ROE, net margin) are not applicable to an ETF wrapper. The bearish flag is a data artifact but the underlying warning is real: the Nasdaq-100 index trades at elevated forward P/E vs historical norms.
+- **Extreme correlation kills diversification.** Correlation of 0.96 vs SPY and 0.74 vs NVDA means QQQ adds almost no independent alpha to a portfolio already long large-cap tech single names. The swing PM explicitly cut QQQ size to 12 shares to avoid double-counting. [Source: portfolio_notes, decisions.json, 20260417_233350]
+- **Intraday structure was bearish on April 15.** The 5-minute SuperTrend had flipped bearish (value $633.70, overhead resistance), squeeze momentum was negative (-0.42), and all 9 DT agents voted neutral — the day-trade call was a firm no-trade sit-out. [Source: decisions.json, 20260415_104041]
+- **Fed on hold with only one cut expected all of 2026.** Core PCE still at 2.7%. Rate-driven multiple expansion for high-growth tech is off the table near-term. [Source: web_research/QQQ.json macro_context]
+- **Tariff overhang.** Apple (~7% QQQ weight) faces lingering tariff pressure on hardware manufactured overseas. The $500B US investment pledge provides political cover but does not eliminate cost risk.</p>
+</div>
+
+
+<div class="card">
+    <h2>Recent Decisions</h2>
+    
+    <p>No recent decisions.</p>
+    
+</div>
+
+
+
+    </div>
+    <footer>
+        Last updated: 12:05 AM ET &middot; Built by AI Hedge Fund &middot; Next update ~5 min
+    </footer>
+</body>
+</html>

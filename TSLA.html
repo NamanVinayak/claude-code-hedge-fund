@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSLA | AI Hedge Fund</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        nav {
+            background-color: #1e1e1e;
+            padding: 1rem;
+            border-bottom: 1px solid #333;
+        }
+        nav a {
+            color: #90caf9;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #1e1e1e;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        th {
+            background-color: #2c2c2c;
+            font-weight: 600;
+        }
+        .profit { color: #81c784; }
+        .loss { color: #e57373; }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #888;
+            border-top: 1px solid #333;
+            margin-top: 40px;
+        }
+        .card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container" style="padding: 0;">
+            <a href="index.html">Live Positions</a>
+            <a href="today.html">Today's Decisions</a>
+            <a href="closed.html">Closed Trades</a>
+        </div>
+    </nav>
+    <div class="container">
+        
+<h1>TSLA</h1>
+<div class="card">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div id="tradingview_TSLA"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+      <script type="text/javascript">
+      new TradingView.widget(
+      {
+      "width": "100%",
+      "height": 400,
+      "symbol": "TSLA",
+      "interval": "D",
+      "timezone": "Etc/UTC",
+      "theme": "dark",
+      "style": "1",
+      "locale": "en",
+      "enable_publishing": false,
+      "hide_top_toolbar": true,
+      "save_image": false,
+      "container_id": "tradingview_TSLA"
+    }
+      );
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+</div>
+
+
+
+
+<div class="card">
+    <h2>Thesis (from Wiki)</h2>
+    <p>Tesla in April 2026 is not one stock — it is two bets duct-taped together. The EV manufacturing business is visibly deteriorating (delivery misses, inventory build, margin compression). The autonomy / robotics business has no revenue yet but commands a price-to-perfection multiple. Until Q1 earnings on April 22 resolved margin ambiguity, the stock was un-tradeable for swing purposes. Post-earnings the setup clarifies, but the thesis split remains.</p><p>- **Robotaxi is real and first-mover.** Unsupervised robotaxi rides launched in Austin, Texas in January 2026 using modified Model Y vehicles. First Cybercab rolled off Giga Texas production in February 2026. No other OEM has unsupervised paid robotaxi operating anywhere in the U.S. at commercial scale. (Source: runs/20260415_093758/web_research/TSLA.json — GearMusk / Phemex)
+- **FSD expansion is accelerating.** FSD Supervised received Netherlands approval April 2026 and is rolling out in Europe. Each new jurisdiction adds a royalty-style revenue stream on the installed base. (Source: runs/swing_20260411_211655/web_research/TSLA.json — Motley Fool)
+- **Musk DOGE exit is a catalyst.** Musk signaling he is stepping back from DOGE added $158 billion to Tesla's market cap in a single session, confirming market has been assigning a "distraction discount." (Source: runs/20260415_093758/web_research/TSLA.json — Fortune)
+- **China volume is holding.** China-made EV sales grew for the second straight quarter despite BYD and Xiaomi competition. The tariff wall (100%+ on Chinese EVs) structurally protects the U.S. market. (Source: runs/swing_20260411_211655/web_research/TSLA.json — Yahoo Finance)
+- **Analyst floor is wide.** Wedbush maintains a $600 target; Canaccord maintains Buy at $420. The consensus average is $400.56. Even the median analyst does not see the stock as structurally broken. (Source: both web_research files)</p><p>- **Delivery miss is not a one-quarter blip.** Q1 2026 deliveries came in at 358,023 vs. 408,386 produced — the widest production-delivery gap ever recorded. JPMorgan flagged 164,000 unsold vehicles in inventory and reiterated Underweight with a $145 target (60% downside from ~$347). (Source: runs/swing_20260411_211655/web_research/TSLA.json — Electrek / GuruFocus)
+- **Margin trajectory is unknown.** Q1 2026 EPS consensus was $0.39 as of April 11 but had compressed to $0.24 by April 15 — a 38% consensus cut in four days. Wide estimate range ($0.22–$0.54) signals analysts have no edge on margins. (Source: both web_research files)
+- **Rivian is eating the domestically important segment.** Rivian Q1 2026 deliveries rose 20% YoY to 10,365 and it is now outselling Ford, Kia, Toyota, and BMW in U.S. EVs. Its R2 SUV at ~$45k targets exactly the price-sensitive buyer Tesla needs. (Source: runs/20260415_093758/web_research/TSLA.json)
+- **Downtrend is technically established.** All three runs (April 11, 15, 17) recorded a daily downtrend: EMAs bearish-aligned, ADX 29.5 confirming trend strength. The stock was down roughly 20% YTD in 2026 as of April 11. (Source: runs/swing_20260411_211655/decisions.json)
+- **Earnings binary makes swing trades dangerous.** Every swing run held TSLA or sized minimal specifically because of the April 22 earnings binary event. Our April 15 short was sized to just 1 share ($392 notional) vs. multi-hundred-share positions for other tickers.</p>
+</div>
+
+
+<div class="card">
+    <h2>Recent Decisions</h2>
+    
+    <p>No recent decisions.</p>
+    
+</div>
+
+
+
+    </div>
+    <footer>
+        Last updated: 12:05 AM ET &middot; Built by AI Hedge Fund &middot; Next update ~5 min
+    </footer>
+</body>
+</html>

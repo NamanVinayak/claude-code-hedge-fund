@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIS | AI Hedge Fund</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        nav {
+            background-color: #1e1e1e;
+            padding: 1rem;
+            border-bottom: 1px solid #333;
+        }
+        nav a {
+            color: #90caf9;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #1e1e1e;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        th {
+            background-color: #2c2c2c;
+            font-weight: 600;
+        }
+        .profit { color: #81c784; }
+        .loss { color: #e57373; }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #888;
+            border-top: 1px solid #333;
+            margin-top: 40px;
+        }
+        .card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container" style="padding: 0;">
+            <a href="index.html">Live Positions</a>
+            <a href="today.html">Today's Decisions</a>
+            <a href="closed.html">Closed Trades</a>
+        </div>
+    </nav>
+    <div class="container">
+        
+<h1>DIS</h1>
+<div class="card">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div id="tradingview_DIS"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+      <script type="text/javascript">
+      new TradingView.widget(
+      {
+      "width": "100%",
+      "height": 400,
+      "symbol": "DIS",
+      "interval": "D",
+      "timezone": "Etc/UTC",
+      "theme": "dark",
+      "style": "1",
+      "locale": "en",
+      "enable_publishing": false,
+      "hide_top_toolbar": true,
+      "save_image": false,
+      "container_id": "tradingview_DIS"
+    }
+      );
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+</div>
+
+
+
+
+<div class="card">
+    <h2>Thesis (from Wiki)</h2>
+    <p>Disney trades at a 30% discount to the S&P 500 on forward P/E (~14x) and has finally reached streaming profitability. That is the bull case in one sentence. The bear case is equally simple: the stock has been cheap for years and keeps getting cheaper, Netflix is winning the streaming war, and no catalyst with a hard date exists until Q2 FY2026 earnings in May 2026. Two runs over April 11–15 (run IDs: `swing_20260411_211655`, `20260415_110848`) produced a "hold" and then a cautious "buy" — a split verdict that captures the genuine ambiguity here.</p><p>**Streaming profitability inflection.** Q1 FY2026 (quarter ended Dec 27, 2025) delivered $450M in DTC operating income, up 72% YoY. That is the inflection point bears said would never come. Streaming revenue grew 11% to $5.35B in the same quarter (source: `web_research/DIS.json`, run `20260415_110848`).</p><p>**Valuation is historically cheap.** Forward P/E of ~14.4x is roughly 30% below the S&P 500 average. EV/EBIT 13.12, P/FCF 18.17 — all confirmed cheap by the valuation agent (100% bullish, run `20260415_110848`). Stanley Druckenmiller persona called it "the most interesting risk/reward in the portfolio" at these levels. Analyst consensus of 38 Buys, 21 Holds, 4 Sells across 63 analysts targets $132–140 — implying 30–35% upside from the April 2026 trading range near $100.</p>
+</div>
+
+
+<div class="card">
+    <h2>Recent Decisions</h2>
+    
+    <p>No recent decisions.</p>
+    
+</div>
+
+
+
+    </div>
+    <footer>
+        Last updated: 12:05 AM ET &middot; Built by AI Hedge Fund &middot; Next update ~5 min
+    </footer>
+</body>
+</html>

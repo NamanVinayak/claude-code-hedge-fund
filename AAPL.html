@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAPL | AI Hedge Fund</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        nav {
+            background-color: #1e1e1e;
+            padding: 1rem;
+            border-bottom: 1px solid #333;
+        }
+        nav a {
+            color: #90caf9;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #1e1e1e;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        th {
+            background-color: #2c2c2c;
+            font-weight: 600;
+        }
+        .profit { color: #81c784; }
+        .loss { color: #e57373; }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #888;
+            border-top: 1px solid #333;
+            margin-top: 40px;
+        }
+        .card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container" style="padding: 0;">
+            <a href="index.html">Live Positions</a>
+            <a href="today.html">Today's Decisions</a>
+            <a href="closed.html">Closed Trades</a>
+        </div>
+    </nav>
+    <div class="container">
+        
+<h1>AAPL</h1>
+<div class="card">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div id="tradingview_AAPL"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+      <script type="text/javascript">
+      new TradingView.widget(
+      {
+      "width": "100%",
+      "height": 400,
+      "symbol": "AAPL",
+      "interval": "D",
+      "timezone": "Etc/UTC",
+      "theme": "dark",
+      "style": "1",
+      "locale": "en",
+      "enable_publishing": false,
+      "hide_top_toolbar": true,
+      "save_image": false,
+      "container_id": "tradingview_AAPL"
+    }
+      );
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+</div>
+
+
+
+
+<div class="card">
+    <h2>Thesis (from Wiki)</h2>
+    <p>Apple is a high-quality franchise with dominant brand loyalty, a compounding Services engine, and strong free cash flow — but the stock has traded sideways because the market is waiting on two things: proof that iPhone margins can survive a tariff regime, and a credible AI story. Until one of those resolves, the stock is a "wait and watch" rather than a "buy and hold now." Three consecutive swing runs (swing_20260411_211655, 20260415_093758, 20260417_233350) rated AAPL neutral-to-weak-buy, and the one buy signal (Apr 17) was placed as a moderate-conviction, data-driven position that was later abandoned.</p><p>**Services compounding.** Apple's Services segment generates high-margin recurring revenue decoupled from hardware volumes. Full FY2026 EPS is forecast to grow ~14%. Q1 FY2026 beat with $2.84 EPS vs $2.66 estimate. (Source: web_research/AAPL.json, run 20260415_093758.)</p><p>**Tariff mitigation in progress.** Apple airlifted 1.5M+ iPhones from India and is ramping India manufacturing to reduce China dependence. Management guided Q2 revenue growth of 13–16% YoY despite a 145% China tariff backdrop. (Source: web_research/AAPL.json, run 20260415_093758.)</p>
+</div>
+
+
+<div class="card">
+    <h2>Recent Decisions</h2>
+    
+    <p>No recent decisions.</p>
+    
+</div>
+
+
+
+    </div>
+    <footer>
+        Last updated: 12:05 AM ET &middot; Built by AI Hedge Fund &middot; Next update ~5 min
+    </footer>
+</body>
+</html>
