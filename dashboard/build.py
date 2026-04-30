@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from tracker.turso_client import get_all_trades, get_open_positions
+from tracker.turso_client import get_all_trades, get_open_positions, get_pending_trades
 
 def get_current_prices(tickers):
     if not tickers:
@@ -162,7 +162,9 @@ def main():
                             "ticker": t,
                             "action": d.get("action", ""),
                             "confidence": d.get("confidence", ""),
-                            "reason": d.get("reasoning", "")
+                            "entry_price": d.get("entry_price"),
+                            "target_price": d.get("target_price"),
+                            "stop_loss": d.get("stop_loss"),
                         })
                 except:
                     pass
@@ -175,8 +177,19 @@ def main():
             "decisions": decisions
         })
 
+    # Build ticker status sets for the today page
+    open_tickers = set(p['ticker'] for p in positions)
+    pending_data = get_pending_trades()
+    pending_tickers = set(t['ticker'] for t in pending_data)
+
     today_template = env.get_template("today.html")
-    today_html = today_template.render(**base_context, title="Today's Decisions", runs=runs)
+    today_html = today_template.render(
+        **base_context,
+        title="Today's Decisions",
+        runs=runs,
+        open_tickers=open_tickers,
+        pending_tickers=pending_tickers,
+    )
     with open(os.path.join(args.output, "today.html"), "w") as f:
         f.write(today_html)
 
