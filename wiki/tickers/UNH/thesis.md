@@ -1,41 +1,37 @@
 ---
 name: UNH thesis
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_194522
 target_words: 500
 stale_after_days: 30
-word_count: 511
-summary: Contrarian value recovery play — Medicare Advantage rate hike catalyzes a potential bottom after a 54% drawdown, but declining EPS and a binary earnings event cloud the path
+word_count: 498
+summary: Prior contrarian recovery thesis falsified by earnings beat and parabolic +41.6% surge — UNH is now an extended momentum leader awaiting a pullback entry, not a beaten-down value play
 ---
 
 # UNH — Thesis
 
 ## TL;DR
 
-UnitedHealth Group entered the Apr 11 swing run as a beaten-down healthcare giant, down 54% from all-time highs and 17% YTD, that received a genuine fundamental catalyst: the Trump administration finalized a 2.48% Medicare Advantage payment rate hike for 2027, triggering a 10% gap-up on 2.4x average volume. The system gave a buy signal (58% confidence, 1 share at $296 limit entry) with a 3:1 risk-reward, target $320, stop $288. The order was later abandoned without a fill. The thesis is a contrarian recovery play: a dominant franchise at a discounted valuation boosted by a policy tailwind — but clouded by declining EPS, an upcoming binary earnings event, and a stock that may still be retracing the gap.
+**Prior thesis falsified.** The bootstrap thesis described UNH as a "beaten-down healthcare giant down 54% from all-time highs" with a contrarian recovery setup. That framing is now obsolete: Q1 2026 earnings (April 21) crushed estimates ($7.23 adj. EPS vs $6.57 est.) and the stock surged +41.6% in 21 trading days to $370.74. UNH is no longer a recovery play — it is an extended momentum leader at statistical extremes (RSI 94.3, z-score 2.54, ADX 81.64). The correct posture is wait for a pullback to the $348–355 EMA zone before re-entering long. (Source: decisions.json, explanation.json, web_research/UNH.json, run 20260430_194522.)
+
+**What falsified the prior thesis:** The April 21 Q1 2026 earnings beat — adj. EPS $7.23 vs $6.57 consensus, revenue $111.72B vs $109.57B, medical cost ratio improved to 84%, full-year guidance raised to >$18.25 — confirmed the recovery thesis was correct in direction but rendered the "discounted valuation" framing stale. Price is now extended, not discounted. (Source: web_research/UNH.json, run 20260430_194522.)
 
 ## Bull case
 
-**Policy tailwind is real and signed.** CMS finalized a 2.48% Medicare Advantage payment rate increase for 2027, injecting $13B+ into private insurers. This is a regulatory decision, not speculation, that directly lifts UNH's largest revenue segment. (Source: web_research/UNH.json, run swing_20260411_211655.)
-
-**Strongest insider buying signal in the universe.** The sentiment agent recorded 122 insider buys versus 29 sells across 151 transactions — an 81% bullish insider score, the highest conviction insider signal across all 19 tickers analyzed in this run. (Source: sentiment_analyst_agent, signals_combined.json, run swing_20260411_211655.)
-
-**Institutional confirmation via volume.** The Apr 7 gap-up printed 22.1 million shares versus a 9.2 million daily average — a 2.4x volume surge confirming large institutional buyers acted on the news, not just retail momentum. Berkshire Hathaway was reported to have accumulated 5 million shares. (Source: swing_sector_rotation signal, signals_combined.json; web_research/UNH.json.)
-
-**Reasonable valuation after the drawdown.** UNH traded at 19.2x P/E and 13.3x P/FCF at the time of analysis — discounted relative to its historical range for a dominant managed-care operator. The valuation agent's DCF base case implied 15.5% upside. OptumRx secured 800+ new PBM contracts, providing a durable earnings floor. (Source: valuation_analyst_agent, stanley_druckenmiller signal, signals_combined.json.)
-
-**Analyst consensus firmly bullish.** 79% of 24–49 covering analysts rate Buy or Strong Buy. Average price target $361–363. Raymond James upgraded to Outperform at $330 on April 1 citing underestimated earnings power. (Source: web_research/UNH.json.)
+- **One of the strongest trends in the S&P.** ADX 81.64 is among the highest readings possible; +DI at 49.41 crushes -DI at 2.75. EMA alignment is textbook bullish: 10 EMA ($348) > 21 EMA ($329) > 50 EMA ($311). This is a confirmed institutional trend. (Source: swing_trend_momentum signal, signals_combined.json, run 20260430_194522.)
+- **Earnings beat + guidance raise.** Q1 adj. EPS $7.23 (beat by $0.66, +10%); revenue $111.72B (+$2.15B above consensus); 2026 full-year guidance raised to >$18.25. Wall Street responded with multiple PT upgrades: JPMorgan $420, Oppenheimer $405, Argus Buy at $400. (Source: web_research/UNH.json, run 20260430_194522.)
+- **Medicare Advantage structural tailwind.** CMS finalized a 2.48% payment rate increase for 2027, directly lifting UNH's largest segment. UNH was the most profitable payer in 2025 ($12.05B net income) and benefits most from the MA rate hike versus Humana and Cigna. (Source: web_research/UNH.json; competitor_activity section, run 20260430_194522.)
+- **Pullback entry zone defined.** Trend momentum agent targets a re-entry at 10-EMA (~$348–355) with a $402 Fibonacci 1.272 extension target and $325 stop — 2.3:1 R/R once price corrects. (Source: swing_trend_momentum signal, signals_combined.json, run 20260430_194522.)
 
 ## Bear case
 
-**EPS is declining, not growing.** The fundamentals agent flagged earnings growth at -35.64% YoY and FCF growth at -19.4%. Revenue is growing at only 7.7%. Current ratio is 0.83 — below 1.0, signaling limited short-term liquidity buffer. (Source: fundamentals_analyst_agent, growth_analyst_agent signals, signals_combined.json.)
-
-**Overbought after the catalyst pop.** Z-score of 2.11, RSI at 68.9, and price 7.9% above the 50-day SMA all signal short-term overextension at time of analysis. The mean reversion agent (60% bearish confidence) flagged gap-fill reversion risk targeting the $282 area. The technical agent also scored bearish at 44% confidence, driven by a near-zero Hurst exponent (highly mean-reverting price series). (Source: swing_mean_reversion, technical_analyst_agent signals, signals_combined.json.)
-
-**April 21 earnings was a binary event.** Q1 2026 consensus was $6.58–$6.69 EPS, down ~8% YoY. The report was widely framed as a "turning point or trap" — a miss could have erased the entire Medicare catalyst rally. (Source: web_research/UNH.json.)
+- **Statistically extreme overbought.** RSI-14 at 94.3, RSI-7 at 99.52, z-score 2.54, BB pct-b 0.905. Historically, readings at these extremes precede pullbacks. Mean-reversion agent (72% confidence) targets a fade toward $348. (Source: swing_mean_reversion signal, signals_combined.json, run 20260430_194522.)
+- **Sub-1:1 risk-reward at current price.** From $370.74: upside to Bollinger upper ($382) = +3%; downside to 10-EMA mean-reversion target ($348) = -6.1%. R/R is 0.5:1 — fails the 2:1 minimum decisively. Three agents independently declined entry. (Source: swing_macro_context signal; decisions.json, run 20260430_194522.)
+- **EPS and FCF growth still declining structurally.** Fundamentals agent: earnings growth -35.64%, FCF growth -19.4%. The Q1 adj. EPS beat masks continued GAAP pressures. Current ratio 0.83 — below 1.0. (Source: fundamentals_analyst_agent signal, signals_combined.json, run 20260430_194522.)
+- **RICO legal overhang.** New Haven filed RICO allegations against UNH for insulin pricing scheme alongside Cigna and CVS Health. New legal risk layer on top of existing regulatory scrutiny. (Source: web_research/UNH.json, run 20260430_194522.)
 
 ## What would change my mind
 
-**Bullish flip:** A clean Q1 earnings beat with maintained or raised full-year guidance, plus a daily close above the $312 gap high on volume above 1.5x average — that combination would confirm the gap is holding as support and the trend reversal is genuine.
+**Long entry triggers:** A pullback to the 10-EMA zone ($348–355) with the hourly MACD histogram turning positive and volume confirming buyers absorbing the dip. Alternatively, a reversal candle at $348–355 with daily RSI pulling back below 70. Target $402, stop $325 (below 21-EMA). (Source: swing_head_trader signal, decisions.json, run 20260430_194522.)
 
-**Bearish flip:** A Q1 miss or guidance cut sending price below the gap origin at $281 would invalidate the thesis entirely. A daily close below $288 (the stop used in the Apr 11 decision) confirms gap-fill is underway and the catalyst bounce was not a durable reversal.
+**Bearish flip:** A daily close below $325 (21-EMA) on elevated volume would confirm the trend has broken. A RICO lawsuit escalation or adverse MA rate reversal would change the fundamental picture.

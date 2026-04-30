@@ -1,46 +1,42 @@
 ---
 name: UNH technicals
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_194522
 target_words: 350
 stale_after_days: 7
-word_count: 358
-summary: Post-catalyst chart state as of Apr 11, 2026 — strong ADX trend but overbought oscillators, EMAs not yet aligned, mean-reversion risk elevated above $300
+word_count: 342
+summary: Parabolic trend at statistical extremes — ADX 81.64, RSI 94.3, z-score 2.54; no-trade zone until pullback to $348-355 EMA cluster
 ---
 
 # UNH — Technicals
 
 ## TL;DR
 
-As of the Apr 11 run, UNH had just gapped 10% higher on the Medicare Advantage rate hike, printing ADX at 44.1 — a very strong trend reading. But the gap created a split-picture chart: momentum agents were bullish, while mean-reversion and trend-following agents were neutral-to-bearish because the stock was overextended (z-score 2.11, price 7.9% above 50-SMA) and the EMAs were not yet cleanly aligned in a new uptrend. The system's chosen entry — a limit order at $296 rather than chasing the $304 close — was an attempt to buy the retracement to the 23.6% Fibonacci level rather than the extended top.
+As of the April 30, 2026 run, UNH is in a runaway uptrend with ADX 81.64 — one of the strongest trend readings in the healthcare sector — but is severely overextended: RSI-14 at 94.3, RSI-7 at 99.52, z-score 2.54, and price 25% above the 50-SMA. No actionable entry exists at current price. Wait for pullback to the $348–355 10-EMA zone. Prior setup (Apr 11 post-catalyst consolidation near $304) has been completely superseded by the +41.6% surge. (Source: swing_head_trader signal, signals_combined.json, run 20260430_194522.)
 
 ## Multi-timeframe state
 
-| timeframe | trend | momentum | note |
+| Timeframe | Trend | Momentum | Note |
 |---|---|---|---|
-| Daily | Dislocated — strong ADX but EMAs tangled | Overbought (RSI 68.9, stochastic 84.8) | 50 EMA between 10 and 21 EMA, no clean bullish stack |
-| Intraday (context) | Post-gap consolidation | Declining from $312.43 intraday high | Apr 9–10 candles showed pullback from gap high |
+| Daily | Extreme uptrend — ADX 81.64, +DI 49.41 vs -DI 2.75 | Severely overbought — RSI 94.3, pct-b 0.905 | Textbook parabolic extension; mean-reversion risk elevated |
+| Hourly | Uptrend intact (24h EMA 365.6 > 48h EMA 358.3 > 120h EMA 336.6) | MACD histogram -0.63 (turning negative) | Early intraday momentum exhaustion signal |
 
-The 10 EMA was at 291.63, the 50 EMA at 289.40, and the 21 EMA at 285.86 — the 50 was sandwiched between the other two rather than below them, which is the structure needed to confirm a bullish trend resumption. ADX at 44.1 reflects the *prior* downtrend's momentum being absorbed, not a confirmed new uptrend. (Source: swing_trend_follower signal, signals_combined.json, run swing_20260411_211655.)
+EMA stack (daily): 10 EMA $348.1 > 21 EMA $328.6 > 50 EMA $310.7 — textbook bullish alignment. However, price at $370.74 is 6.5% above the 10-EMA and 12.8% above the 21-EMA. (Source: swing_trend_momentum signal, signals_combined.json, run 20260430_194522.)
 
 ## Key levels
 
-| level | value | source |
+| Level | Value | Source |
 |---|---|---|
-| Gap-up origin (hard support) | $281.36 | swing_breakout_trader signal |
-| 50% Fibonacci retracement | $283.38 | swing_pullback_trader signal |
-| 38.2% Fibonacci retracement | $289.12 | swing_pullback_trader signal |
-| 23.6% Fibonacci / PM entry | $296.23 | swing_pullback_trader signal; decisions.json |
-| Stop loss (PM decision) | $288.00 | decisions.json |
-| Price at analysis | $304.33 | signals_combined.json |
-| Intraday gap high | $312.43 | swing_breakout_trader signal |
-| Target (PM decision) | $320.00 | decisions.json |
-| Measured-move breakout target | ~$331 | swing_breakout_trader signal |
+| Wait-to-buy zone (10-EMA) | $348–355 | swing_head_trader; swing_trend_momentum, run 20260430_194522 |
+| Upside target (if trend resumes) | $402 (Fib 1.272 extension) | swing_trend_momentum, run 20260430_194522 |
+| Mean-reversion fade entry | $368–370 on confirmed reversal candle | swing_mean_reversion, run 20260430_194522 |
+| Mean-reversion target | $348 | swing_mean_reversion, run 20260430_194522 |
+| Stop loss (pullback entry) | $325 (below 21-EMA) | decisions.json, run 20260430_194522 |
+| Bollinger upper | $381.87 | swing_macro_context, run 20260430_194522 |
+| Price at analysis (Apr 30) | $370.74 | signals_combined.json, run 20260430_194522 |
 
 ## Setup type
 
-**Volume-confirmed gap breakout with post-gap consolidation entry.** The gap printed on 2.4x average volume, meeting the breakout trader's institutional confirmation threshold. The measured move from the prior range ($259–$283, height ~$24) projects to approximately $331. (Source: swing_breakout_trader signal, signals_combined.json.)
+**No setup — no-trade zone.** This is a parabolic extension, not a consolidation or breakout pattern. The breakout that generated the prior measured-move target (~$331) fired weeks ago at ~$281–283 and has been surpassed. The current structure is: too extended to chase long (R/R 0.5:1), too strong a trend to short with confidence (ADX 81.64). Three agents independently declined entry: breakout (no consolidation range), catalyst_news (all catalysts priced), macro_context (sub-1:1 R/R veto). (Source: swing_head_trader signal, decisions.json, run 20260430_194522.)
 
-However, the setup has conflicting signals. Mean reversion (60% bearish) interprets the same data as a gap-fill setup targeting $282. The MACD histogram at +4.89 and ROC readings (+9.8% five-day, +13.5% ten-day) support continuation, but the stochastic K at 84.8 rolling below D at 87.3 was an early sign of short-term momentum exhaustion. (Source: swing_momentum_ranker, swing_mean_reversion signals, signals_combined.json.)
-
-**Volatility context.** Daily volatility at 3.36%, annualized at 53.3%, at the 68th percentile of its 60-day range. ATR ratio of 3.0% means moves of $9 per day are typical — the $8 stop distance in the decision is within one ATR. (Source: risk_management_agent, signals_combined.json.)
+**Prior setup archived.** The Apr 11 volume-confirmed gap breakout near $304 with target ~$331 is now historical. That measured-move target was achieved and exceeded by 12%. (Source: technicals.md bootstrap 2026-04-29.)

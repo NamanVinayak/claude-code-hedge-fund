@@ -1,45 +1,42 @@
 ---
 name: UNH catalysts
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_194522
 target_words: 400
 stale_after_days: 14
-word_count: 407
-summary: Dual catalyst setup — CMS Medicare Advantage rate hike already fired; Q1 2026 earnings April 21 was the binary follow-through event
+word_count: 397
+summary: Q1 2026 beat already fired and fully priced; next catalyst Q2 earnings est. July 10-28; RICO lawsuit and Fed leadership transition are the live risk events
 ---
 
 # UNH — Catalysts
 
 ## TL;DR
 
-The Apr 11 run identified two stacked catalysts for UNH: the CMS Medicare Advantage 2.48% rate hike for 2027 (already fired, drove the 10% gap), and Q1 2026 earnings on April 21 (8 trading days away at time of analysis), which the market framed as a potential turning point after a prolonged selloff. The sector rotation agent gave 72% confidence, the catalyst trader 68%, and the news sentiment agent 73% — the highest sentiment cluster for any ticker in the run. The macro backdrop (FOMC hold, post-ceasefire market relief) provided a constructive tailwind.
+The two prior catalysts — CMS Medicare Advantage rate hike and Q1 2026 earnings — have both fired and are fully priced into the +41.6% move. No actionable catalyst exists within the next 10 trading days. The next binary event is Q2 2026 earnings, expected approximately July 10–28. Live risk: a RICO insulin-pricing lawsuit filed by the City of New Haven is a new legal overhang. FOMC rate hold on April 29 was absorbed without incident. (Source: web_research/UNH.json; swing_catalyst_news signal, signals_combined.json, run 20260430_194522.)
 
-## Upcoming events (as of Apr 11, 2026)
+## Upcoming events
 
-| event | date | expected impact |
+| Event | Date | Expected impact |
 |---|---|---|
-| Q1 2026 earnings | April 21, 2026 (pre-market) | Binary — beat could confirm recovery; miss could fill the gap |
-| FOMC rate decision | April 29, 2026 | Macro; rate hold expected (Fed at 3.50–3.75%) |
-| US-Iran ceasefire renewal | ~April 22, 2026 | Macro headwind risk if ceasefire collapses (oil spike would hurt growth stocks) |
+| Q2 2026 earnings | ~July 10–28, 2026 | Next binary — consensus Q2 EPS ~$4.83; guidance cadence is the market's focus |
+| RICO insulin pricing lawsuit | Unscheduled | City of New Haven suit against UNH, Cigna, CVS Health — new legal risk layer |
+| Kevin Warsh Senate confirmation (Fed Chair) | TBD 2026 | Macro event — policy transition uncertainty |
+| US-Iran peace talks | Stalled as of Apr 27 | Tail risk — oil spike would hit growth stocks but limited direct healthcare impact |
 
 ## Recent news synthesis
 
-**CMS rate decision — primary catalyst.** The Trump administration finalized a 2.48% Medicare Advantage payment rate increase for 2027, injecting an estimated $13B+ into private insurers including UNH, Humana, and Aetna. UNH stock surged approximately 10% on this news, with the gap-up confirmed by 2.4x average volume on April 7. (Source: web_research/UNH.json, run swing_20260411_211655.)
+**Q1 2026 earnings beat (April 21, 2026) — fully priced.** Adj. EPS $7.23 beat $6.57 consensus by $0.66 (+10%). Revenue $111.72B beat $109.57B consensus. Medical cost ratio improved to 84% from 85%. Full-year 2026 adj. EPS guidance raised to >$18.25. Wall Street responded immediately: Argus upgraded to Buy ($400 PT), JPMorgan raised to $420, Oppenheimer to $405. Average analyst price target now $394.91 from 25 analysts. (Source: web_research/UNH.json, run 20260430_194522.)
 
-**Raymond James upgrade.** Raymond James upgraded UNH to Outperform from Market Perform on April 1, 2026, with a $330 price target, citing "underestimated earnings power." This was the first major analyst upgrade after the prolonged selloff. (Source: web_research/UNH.json.)
+**CMS Medicare Advantage rate hike — structural tailwind, absorbed.** The 2.48% payment rate increase for 2027 was finalized — a regulatory decision injecting $13B+ into private insurers. UNH benefits most given its MA market leadership over Humana and Cigna. This catalyst drove the original gap-up in early April; it is now a fundamental support, not a near-term price catalyst. (Source: web_research/UNH.json, run 20260430_194522.)
 
-**Counterpoint — skepticism on the rate hike.** A Seeking Alpha article titled "Don't Drink the CMS Kool-Aid" argued the market was overreacting to the rate increase. The catalyst trader incorporated this skepticism to moderate its confidence to 68% rather than higher. (Source: swing_catalyst_trader signal, signals_combined.json.)
+**UNH outperformance April 2026.** UNH +36% from end-March, +12% YTD — significantly outperforming Humana (-9% YTD). Competitive gap widening: UNH $12.05B net income in 2025 vs Cigna $6B vs Humana $1.2B. Cigna exited Medicare Advantage entirely (sold to HCSC for $3.7B, March 2025). (Source: competitor_activity, web_research/UNH.json, run 20260430_194522.)
 
-**OptumRx stability.** UNH's pharmacy benefit manager subsidiary secured 800+ new PBM contracts for 2026, providing earnings predictability independent of the Medicare Advantage enrollment cycle. (Source: web_research/UNH.json.)
-
-**Long-term context.** UNH remains down 54% from its all-time high and 17% YTD as of the run date, pressured by weaker guidance and Medicare Advantage strain in prior quarters. The Apr 21 earnings report was widely described as a "turning point or trap" moment — analysts expected EPS of $6.58–$6.69, down approximately 8% YoY, with revenue around $109.58 billion. (Source: web_research/UNH.json.)
-
-## Insider activity
-
-**Strongly bullish — the standout signal of the run.** The sentiment agent recorded 122 insider buys versus 29 sells across 151 total insider transactions, producing an 81% bullish insider confidence score. This was the highest insider conviction reading of all 19 tickers analyzed. Berkshire Hathaway was separately reported to have accumulated 5 million shares. (Source: sentiment_analyst_agent signal, signals_combined.json; news_sentiment signal; web_research/UNH.json.)
-
-Note: the growth analyst agent flagged that many individual board-level transactions showed a $0 price (stock grants rather than open-market purchases), which moderates the interpretation slightly. The net flow ratio of 0.91 nonetheless indicates very heavy buying versus selling in dollar-weighted terms.
+**RICO lawsuit — new legal overhang.** New Haven filed RICO allegations against UNH, Cigna, and CVS Health for an alleged insulin pricing scheme. Not yet a priced risk. (Source: web_research/UNH.json, run 20260430_194522.)
 
 ## Analyst consensus
 
-As of April 11, 2026: Buy consensus from 79% of covering analysts. Average price target $361–363, range $255–$440. Deutsche Bank had downgraded to Hold in late 2025 despite a Q3 beat. BofA price target $337. Raymond James $330 (Outperform). Median analyst target implies approximately 19–20% upside from the $304 price at time of analysis. (Source: web_research/UNH.json.)
+As of April 30, 2026: Buy consensus from 25 covering analysts. Average price target $394.91. Street-high $440, street-low $300. JPMorgan $420, Argus $400, Oppenheimer $405. Current price ($370.74) already above several older targets, limiting near-term upside from analyst upgrades. (Source: analyst_consensus, web_research/UNH.json, run 20260430_194522.)
+
+## Insider activity
+
+No insider activity recorded in the current run. The strong 122-buy vs 29-sell signal from the April 11 run predated the earnings catalyst and appears absorbed into current price. (Source: sentiment_analyst_agent signal, signals_combined.json, run 20260430_194522.)
