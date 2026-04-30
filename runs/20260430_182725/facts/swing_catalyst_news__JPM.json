@@ -1,0 +1,331 @@
+{
+  "ticker": "JPM",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 310.57982913337,
+      "sma_5": 310.4600036621094,
+      "ema_10": 310.1690515489101,
+      "sma_10": 311.5550018310547,
+      "ema_20": 307.0577744713634,
+      "sma_20": 307.713801574707,
+      "ema_21": 306.7653061073999,
+      "sma_21": 306.99706013997394,
+      "ema_50": 303.0862935145491,
+      "sma_50": 298.3991143798828,
+      "ema_200": 295.91836150333097,
+      "sma_200": 301.94466567993163,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 309.25,
+    "dist_from_50sma_pct": 3.64,
+    "price_vs_ma": {
+      "above_ema_5": false,
+      "pct_from_ema_5": -0.43,
+      "above_sma_5": false,
+      "pct_from_sma_5": -0.39,
+      "above_ema_10": false,
+      "pct_from_ema_10": -0.3,
+      "above_sma_10": false,
+      "pct_from_sma_10": -0.74,
+      "above_ema_20": true,
+      "pct_from_ema_20": 0.71,
+      "above_sma_20": true,
+      "pct_from_sma_20": 0.5,
+      "above_ema_21": true,
+      "pct_from_ema_21": 0.81,
+      "above_sma_21": true,
+      "pct_from_sma_21": 0.73,
+      "above_ema_50": true,
+      "pct_from_ema_50": 2.03,
+      "above_sma_50": true,
+      "pct_from_sma_50": 3.64,
+      "above_ema_200": true,
+      "pct_from_ema_200": 4.51,
+      "above_sma_200": true,
+      "pct_from_sma_200": 2.42,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 30825.0
+    },
+    "rsi": {
+      "rsi_7": 23.27,
+      "rsi_14": 48.56,
+      "rsi_21": 70.06
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 4.1213,
+      "signal_line": 4.4134,
+      "histogram": -0.2921,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 321.67,
+      "middle": 307.71,
+      "lower": 293.76,
+      "width": 0.0907,
+      "pct_b": 0.555
+    },
+    "atr": {
+      "atr_14": 5.66,
+      "atr_pct": 1.83
+    },
+    "adx": {
+      "adx_14": 43.42,
+      "plus_di": 23.43,
+      "minus_di": 16.85,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 8025100,
+      "avg_volume_20": 8203070,
+      "relative_volume": 0.98,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": true
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 320.24,
+          "tests": 5,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 280.32,
+          "tests": 5,
+          "volume_confirmed": false
+        },
+        {
+          "price": 304.26,
+          "tests": 13,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 320.24,
+      "nearest_support": 304.26,
+      "recent_high": 320.24,
+      "recent_low": 287.25,
+      "prev_day_high": 315.45,
+      "prev_day_low": 311.17,
+      "prev_day_close": 311.45
+    },
+    "fibonacci": {
+      "swing_high": 320.24,
+      "swing_low": 280.32,
+      "fib_236": 310.82,
+      "fib_382": 304.99,
+      "fib_500": 300.28,
+      "fib_618": 295.57,
+      "fib_786": 288.86,
+      "fib_ext_1272": 331.1,
+      "fib_ext_1618": 344.91,
+      "fib_ext_2000": 360.16,
+      "fib_ext_low_1272": 269.46,
+      "fib_ext_low_1618": 255.64
+    },
+    "momentum": {
+      "roc_5d": -1.2,
+      "roc_10d": 1.09,
+      "roc_21d": 9.54
+    },
+    "z_score_50": 1.0,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 311.35876232142886,
+      "sma_24": 311.2608388264974,
+      "ema_48": 311.2012654835971,
+      "sma_48": 311.31727663675946,
+      "ema_120": 308.07921720009074,
+      "sma_120": 310.5289525349935,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 313.5799865722656,
+    "dist_from_50sma_pct": 0.98,
+    "price_vs_ma": {
+      "above_ema_24": true,
+      "pct_from_ema_24": 0.71,
+      "above_sma_24": true,
+      "pct_from_sma_24": 0.75,
+      "above_ema_48": true,
+      "pct_from_ema_48": 0.76,
+      "above_sma_48": true,
+      "pct_from_sma_48": 0.73,
+      "above_ema_120": true,
+      "pct_from_ema_120": 1.79,
+      "above_sma_120": true,
+      "pct_from_sma_120": 0.98,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 31258.0
+    },
+    "rsi": {
+      "rsi_21": 58.07
+    },
+    "rsi_divergence": {
+      "bullish": true,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 0.2243,
+      "signal_line": 0.0843,
+      "histogram": 0.14,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 315.1,
+      "middle": 311.32,
+      "lower": 307.54,
+      "width": 0.0243,
+      "pct_b": 0.7994
+    },
+    "atr": {
+      "atr_24": 1.54,
+      "atr_pct": 0.49
+    },
+    "adx": {
+      "adx_24": 11.63,
+      "plus_di": 27.8,
+      "minus_di": 19.42,
+      "trend_strength": "weak"
+    },
+    "volume": {
+      "current_volume": 3344644,
+      "avg_volume_20": 797056,
+      "relative_volume": 4.2,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 314.99,
+          "tests": 24,
+          "volume_confirmed": false
+        },
+        {
+          "price": 320.23,
+          "tests": 1,
+          "volume_confirmed": true
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 307.29,
+          "tests": 14,
+          "volume_confirmed": true
+        },
+        {
+          "price": 311.94,
+          "tests": 38,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 314.99,
+      "nearest_support": 311.94,
+      "recent_high": 315.45,
+      "recent_low": 306.81,
+      "prev_day_high": 313.82,
+      "prev_day_low": 312.88,
+      "prev_day_close": 313.1
+    },
+    "fibonacci": {
+      "swing_high": 315.45,
+      "swing_low": 306.81,
+      "fib_236": 313.41,
+      "fib_382": 312.15,
+      "fib_500": 311.13,
+      "fib_618": 310.11,
+      "fib_786": 308.66,
+      "fib_ext_1272": 317.8,
+      "fib_ext_1618": 320.79,
+      "fib_ext_2000": 324.09,
+      "fib_ext_low_1272": 304.46,
+      "fib_ext_low_1618": 301.47
+    },
+    "momentum": {
+      "roc_5d": 1.4,
+      "roc_10d": 1.53,
+      "roc_21d": 0.9
+    },
+    "z_score_120": 0.89,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 313.5199890136719,
+      "close": 311.69000244140625,
+      "high": 314.989990234375,
+      "low": 308.8900146484375,
+      "volume": 6969700,
+      "time": "2026-04-23"
+    },
+    {
+      "open": 311.1499938964844,
+      "close": 308.2799987792969,
+      "high": 311.1499938964844,
+      "low": 307.8900146484375,
+      "volume": 5215300,
+      "time": "2026-04-24"
+    },
+    {
+      "open": 306.8800048828125,
+      "close": 311.6300048828125,
+      "high": 312.5799865722656,
+      "low": 306.8800048828125,
+      "volume": 7925300,
+      "time": "2026-04-27"
+    },
+    {
+      "open": 315.20001220703125,
+      "close": 311.45001220703125,
+      "high": 315.45001220703125,
+      "low": 311.1700134277344,
+      "volume": 7398600,
+      "time": "2026-04-28"
+    },
+    {
+      "open": 310.57000732421875,
+      "close": 309.25,
+      "high": 312.04998779296875,
+      "low": 307.2900085449219,
+      "volume": 8025100,
+      "time": "2026-04-29"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 313.5799865722656,
+  "market_cap": 840237580288.0,
+  "wiki_context": {
+    "slices": {
+      "catalysts_full": {
+        "path": "wiki/tickers/JPM/catalysts.md",
+        "mode": "full",
+        "content": "# JPM \u2014 Catalysts\n\n## TL;DR\n\nQ1 2026 earnings (April 14) are fully priced \u2014 the record $16.5B profit (+13% YoY, EPS $5.94 vs $5.49 estimate) has been absorbed [run: 20260430_051455]. FOMC delivered a no-change hold at 3.50%\u20133.75% on April 29 \u2014 third consecutive hold, no surprise, neutral for NII stability [run: 20260430_051455]. The next scheduled binary event is **Q2 2026 earnings on July 14, 2026** with consensus EPS estimate $5.36\u2013$5.41 [run: 20260430_051455]. No actionable catalyst within the 10-trading-day swing window.\n\n## Upcoming events\n\n- **Q2 2026 earnings: July 14, 2026.** Consensus Q2 EPS $5.36\u2013$5.41. Full-year 2026 technology spend guided to $19.8B (+10% YoY). This is the next binary catalyst \u2014 55+ trading days away [run: 20260430_051455].\n- **Iran/Strait of Hormuz:** Ongoing negotiations with no resolution. A ceasefire breakdown would spike oil, widen credit spreads, and pressure bank multiples. Goldman raised Brent forecast to $90/bbl by late 2026 on blockade risk [web_research/JPM.json, 2026-04-30].\n- **NII guidance watch:** Guidance already trimmed from $104.5B to ~$103B in Q1. Any further reduction is a negative catalyst. Next formal read: Q2 earnings July 14 [run: 20260430_051455].\n- **Kevin Warsh Fed transition:** Powell's likely final meeting was April 29. Warsh succession adds policy uncertainty \u2014 especially relevant if inflation re-accelerates [run: 20260430_051455].\n\n## Recent news synthesis\n\n- **Q1 2026 record earnings (Apr 14, already priced):** Net income +13% YoY, EPS $5.94 beat $5.49 estimate (+8.2%), revenue $50.54B, IB fees +18% YoY, record equities trading, AWM AUM $4.8T [run: 20260430_051455].\n- **NII guidance trim:** Full-year 2026 NII reduced from $104.5B to ~$103B. Morgan Stanley cut target on this; Goldman raised target to $365 despite it [run: 20260415_093758].\n- **Dimon stagflation warning (Apr 28\u201329):** At investment conference, Dimon warned of stagflation risk and potential bond market crisis [web_research/JPM.json, 2026-04-30]. This reinforces the existing cautious tone from his shareholder letter.\n- **Apple Card acquisition:** JPM acquired Goldman's $20B Apple Card portfolio \u2014 strategic win adding tech-savvy consumer accounts to Chase ecosystem [web_research/JPM.json, 2026-04-30].\n- **Technology investment:** $19.8B tech budget in 2026 (+10% YoY) \u2014 AI and infrastructure at the core [web_research/JPM.json, 2026-04-30].\n- **JPM raised S&P 500 target:** JPMorgan raised its own year-end S&P 500 target to 7,600 from 7,200, citing AI momentum [web_research/JPM.json, 2026-04-30].\n- **Competitor activity:** Goldman posted record Q1 equities trading (direct JPM competition). Wells Fargo and Citi outpacing JPM on AI venture deals (77\u201381 vs. 37), though JPM's $19.8B tech budget and efficiency ratio offset this [web_research/JPM.json, 2026-04-30].\n\n## Insider activity\n\nNo recent insider trades in the Apr 30 data bundle [run: 20260430_051455]. Previously, multiple board directors bought shares in March 2026 \u2014 still a positive historical signal but activity has gone quiet since [run: 20260415_093758].\n\n## Analyst consensus\n\n| Metric | Value | Source |\n|---|---|---|\n| Consensus rating | Buy | 14 Buy, 12 Hold, 0 Sell (33 analysts) [web_research/JPM.json, 2026-04-30] |\n| Average target (Apr 30) | $339.46 | Updated consensus [web_research/JPM.json, 2026-04-30] |\n| TD Cowen | $375 (raised from $370) | Buy rating [web_research/JPM.json, 2026-04-30] |\n| Evercore ISI | $340 | Outperform maintained Apr 17 [web_research/JPM.json, 2026-04-30] |\n| Wolfe Research | Peerperform (downgraded Jan 2026) | Slower EPS growth vs. peers [web_research/JPM.json, 2026-04-30] |\n| Target range | $257.89\u2013$420 | Median $345 [web_research/JPM.json, 2026-04-30] |\n\n## Last updated\n\n2026-04-30. Catalyst data from web_research/JPM.json and run 20260430_051455. Previous catalyst data from runs 20260415_093758 and swing_20260411_211655.\n",
+        "last_updated": "2026-04-30",
+        "stale": false
+      },
+      "calendar_full": {
+        "missing": true,
+        "mode": "full"
+      }
+    }
+  }
+}

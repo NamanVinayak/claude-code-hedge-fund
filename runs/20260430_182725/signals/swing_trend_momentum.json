@@ -1,0 +1,11 @@
+{
+  "JPM": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "TREND ASSESSMENT: Daily EMA alignment is unambiguously bullish — EMA-10 (310.17) > EMA-21 (306.77) > EMA-50 (303.09), ADX 43.42 (strong, well above the 25 threshold), and hourly EMAs are also bullishly stacked. The intermediate trend is intact and strong. MOMENTUM ASSESSMENT: Daily momentum is decelerating, not accelerating — 5-day ROC is -1.2% (negative), MACD histogram is -0.2921 (negative, signal line above MACD line), and OBV is diverging from price (bearish). Short-term pullback is underway. Hourly momentum is modestly positive (5d ROC +1.4%, 10d +1.53%, MACD histogram +0.14), but hourly ADX is only 11.63 (weak), so hourly momentum is insufficient to override the daily deceleration signal. RSI-7 at 23.27 reflects extreme short-term oversold conditions, consistent with a pullback rather than trend continuation. Per strategy rules, 'trend exists but momentum is decelerating — wait for re-acceleration.' ENTRY GATE: Current price ($309.25 daily close; $313.58 hourly) is above the 21 EMA ($306.77) but has not pulled back deep enough to establish a clean entry with 2:1 R/R. Wiki context confirms this read from the Apr 30 run: entry only valid at $307.00–$307.50. No actionable setup at current levels. WIKI CONFIRMATION: Prior wiki read matches today's data exactly — 'strong intermediate trend, deteriorating short-term structure.' No contradiction to flag.",
+    "entry": 307.25,
+    "target": 319.75,
+    "stop": 303.5,
+    "timeframe": "5-12 trading days"
+  }
+}

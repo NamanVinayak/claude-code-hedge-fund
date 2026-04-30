@@ -1,0 +1,86 @@
+{
+  "ticker": "JPM",
+  "verified_at": "2026-04-30T18:30:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.18370,
+      "web_value": 0.2844,
+      "source": "GuruFocus (28.44%) — corroborated by MacroTrends (20.35%), Simply Wall St (33.1%). Used GuruFocus TTM as primary consensus.",
+      "status": "MISMATCH",
+      "deviation": "35.4%",
+      "action": "replaced with web value 0.2844 in all facts bundles (warren_buffett__JPM.json, aswath_damodaran__JPM.json)",
+      "note": "Original data had report_period 2014-09-30 — stale historical data. Current TTM figure substantially higher reflecting recent strong earnings."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": "~28% (MacroTrends, companiesmarketcap.com)",
+      "source": "MacroTrends JPMorgan Operating Margin 2012-2026",
+      "status": "unverified",
+      "deviation": "N/A — our value was null",
+      "action": "none — cannot correct null, no operating_margin field present in metrics block"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 14.997,
+      "web_value": 14.92,
+      "source": "GuruFocus PE Ratio TTM: 14.92 (April 29, 2026); Yahoo Finance/MacroTrends: 15.24-15.53",
+      "status": "ok",
+      "deviation": "0.5%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 840237580288.0,
+      "web_value": 854400000000.0,
+      "source": "Capital.com April 2026 ($854.4B mid-range consensus); range seen: $831B–$882B across sources and dates",
+      "status": "ok",
+      "deviation": "1.7%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": null,
+      "web_value": 182430000000.0,
+      "source": "stockanalysis.com TTM $173.56B; MacroTrends TTM ending March 2026 $182.43B (net interest income basis). Q1 2026 quarterly revenue $50.54B (CNBC earnings report).",
+      "status": "unverified",
+      "deviation": "N/A — no revenue field in metrics block to compare",
+      "action": "none"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.08470,
+      "web_value": 0.1703,
+      "source": "CNBC 17.03% TTM; Investing.com 17.0%; GuruFocus 14.42%; ValueInvesting.io 15.74% (April 21, 2026). Used CNBC/Investing.com consensus of 17.03%.",
+      "status": "MISMATCH",
+      "deviation": "50.3%",
+      "action": "replaced with web value 0.1703 in all facts bundles (warren_buffett__JPM.json, aswath_damodaran__JPM.json)"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.007407,
+      "web_value": 0.0129,
+      "source": "GuruFocus 1.16%; YCharts/Finbox April 2026 ~1.29%; MacroTrends historical trend confirms ~1.2-1.3% range. Used 1.29% as current consensus.",
+      "status": "MISMATCH",
+      "deviation": "42.6%",
+      "action": "replaced with web value 0.0129 in all facts bundles (warren_buffett__JPM.json, aswath_damodaran__JPM.json)"
+    }
+  ],
+  "overall_status": "3 mismatches corrected (net_margin, roe, roa)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260430_182725/facts/warren_buffett__JPM.json",
+    "runs/20260430_182725/facts/aswath_damodaran__JPM.json"
+  ],
+  "root_cause": "Facts bundle metrics block had report_period '2014-09-30' — data appears to be from a stale historical API response. ROE (8.47% vs 17.03%), ROA (0.74% vs 1.29%), and net_margin (18.37% vs 28.44%) all reflected pre-2024 JPMorgan profitability levels, not current TTM performance. PE ratio and market_cap were current and required no correction.",
+  "web_sources": [
+    "https://www.gurufocus.com/term/net-margin/JPM",
+    "https://www.macrotrends.net/stocks/charts/JPM/jpmorgan-chase/profit-margins",
+    "https://www.macrotrends.net/stocks/charts/JPM/jpmorgan-chase/pe-ratio",
+    "https://www.gurufocus.com/term/pettm/JPM",
+    "https://www.gurufocus.com/term/roe/JPM",
+    "https://valueinvesting.io/JPM/metric/roe",
+    "https://www.gurufocus.com/term/roa/JPM",
+    "https://capital.com/en-int/markets/shares/jpmorgan-chase-co-share-price/market-cap",
+    "https://stockanalysis.com/stocks/jpm/revenue/"
+  ]
+}
