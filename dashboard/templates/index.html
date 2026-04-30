@@ -1,45 +1,198 @@
 {% extends "base.html" %}
+
+{% block extra_styles %}
+.position-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.pos-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    transition: border-color .15s, transform .15s;
+    position: relative;
+    overflow: hidden;
+}
+.pos-card:hover {
+    border-color: var(--border2);
+    transform: translateY(-1px);
+}
+.pos-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+}
+.pos-card.is-profit::before { background: var(--green); }
+.pos-card.is-loss::before   { background: var(--red); }
+.pos-card.is-flat::before   { background: var(--border2); }
+
+.pos-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.pos-ticker {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    text-decoration: none;
+}
+.pos-ticker:hover { color: var(--blue); }
+
+.pnl-big {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: var(--mono);
+    line-height: 1;
+}
+.pnl-pct {
+    font-size: 13px;
+    font-family: var(--mono);
+    margin-top: 2px;
+}
+
+.pos-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-top: 1px solid var(--border);
+}
+.pos-row:first-of-type { margin-top: 12px; }
+.pos-key { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.pos-val { font-size: 13px; font-family: var(--mono); font-weight: 500; }
+
+.rr-badge {
+    display: inline-block;
+    padding: 2px 7px;
+    background: var(--blue-dim);
+    color: var(--blue);
+    border-radius: 4px;
+    font-size: 11px;
+    font-family: var(--mono);
+    font-weight: 600;
+}
+
+.progress-track {
+    margin-top: 12px;
+}
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: var(--muted);
+    font-family: var(--mono);
+    margin-bottom: 4px;
+}
+.progress-outer {
+    background: var(--border);
+    border-radius: 4px;
+    height: 6px;
+    position: relative;
+    overflow: hidden;
+}
+.progress-fill-green { background: var(--green); height: 6px; border-radius: 4px; transition: width .3s; }
+.progress-fill-red   { background: var(--red);   height: 6px; border-radius: 4px; transition: width .3s; }
+.progress-marker {
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 2px;
+    background: var(--muted);
+    border-radius: 2px;
+}
+{% endblock %}
+
 {% block content %}
-<h1>AI Hedge Fund &middot; Live Positions</h1>
-{% if positions %}
-<div style="overflow-x: auto;">
-    <table>
-        <thead>
-            <tr>
-                <th>Ticker</th>
-                <th>Direction</th>
-                <th>Entry Price</th>
-                <th>Current Price</th>
-                <th>P&L ($)</th>
-                <th>P&L (%)</th>
-                <th>Stop</th>
-                <th>Target</th>
-                <th>R:R</th>
-                <th>Days Held</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for p in positions %}
-            <tr class="{{ 'profit' if p.pnl_dollar > 0 else 'loss' if p.pnl_dollar < 0 else '' }}">
-                <td><a href="{{ p.ticker }}.html" style="color: inherit;">{{ p.ticker }}</a></td>
-                <td>{{ p.direction }}</td>
-                <td>${{ "%.2f"|format(p.entry_fill_price|float) }}</td>
-                <td>${{ "%.2f"|format(p.current_price|float) }}</td>
-                <td>${{ "%.2f"|format(p.pnl_dollar) }}</td>
-                <td>{{ "%.2f"|format(p.pnl_percent) }}%</td>
-                <td>{{ p.stop_loss }}</td>
-                <td>{{ p.target_price }}</td>
-                <td>{{ p.rr }}</td>
-                <td>{{ p.days_held }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+<div class="page-header">
+    <h1>Live Positions</h1>
+    <p>Open swing trades · updated {{ last_updated }} ET</p>
 </div>
+
+{% if positions %}
+<div class="position-grid">
+{% for p in positions %}
+{% set is_profit = p.pnl_dollar > 0 %}
+{% set is_loss   = p.pnl_dollar < 0 %}
+<div class="pos-card {{ 'is-profit' if is_profit else 'is-loss' if is_loss else 'is-flat' }}">
+    <div class="pos-header">
+        <div>
+            <a class="pos-ticker" href="{{ p.ticker }}.html">{{ p.ticker }}</a>
+            <div style="margin-top:4px;">
+                <span class="badge badge-{{ p.direction|lower }}">{{ p.direction }}</span>
+                {% if p.days_held is defined %}
+                <span class="tag" style="margin-left:4px;">{{ p.days_held }}d held</span>
+                {% endif %}
+            </div>
+        </div>
+        <div style="text-align:right;">
+            <div class="pnl-big {{ 'profit' if is_profit else 'loss' if is_loss else 'neutral' }}">
+                {{ '+' if is_profit else '' }}${{ "%.2f"|format(p.pnl_dollar) }}
+            </div>
+            <div class="pnl-pct {{ 'profit' if is_profit else 'loss' if is_loss else 'neutral' }}">
+                {{ '+' if is_profit else '' }}{{ "%.2f"|format(p.pnl_percent) }}%
+            </div>
+        </div>
+    </div>
+
+    <div class="pos-row">
+        <span class="pos-key">Entry</span>
+        <span class="pos-val">${{ "%.2f"|format(p.entry_fill_price|float) }}</span>
+    </div>
+    <div class="pos-row">
+        <span class="pos-key">Now</span>
+        <span class="pos-val">${{ "%.2f"|format(p.current_price|float) }}</span>
+    </div>
+    <div class="pos-row">
+        <span class="pos-key">Stop / Target</span>
+        <span class="pos-val">
+            <span class="loss">${{ "%.2f"|format(p.stop_loss|float) if p.stop_loss != '-' else '-' }}</span>
+            &nbsp;/&nbsp;
+            <span class="profit">${{ "%.2f"|format(p.target_price|float) if p.target_price != '-' else '-' }}</span>
+        </span>
+    </div>
+    <div class="pos-row">
+        <span class="pos-key">R:R</span>
+        <span class="rr-badge">{{ p.rr }}</span>
+    </div>
+
+    {% if p.stop_loss != '-' and p.target_price != '-' %}
+    {% set stop  = p.stop_loss|float %}
+    {% set tgt   = p.target_price|float %}
+    {% set entry = p.entry_fill_price|float %}
+    {% set curr  = p.current_price|float %}
+    {% set span  = tgt - stop %}
+    {% if span > 0 %}
+    {% set pct = [(curr - stop) / span * 100, 0]|max %}
+    {% set pct = [pct, 100]|min %}
+    <div class="progress-track">
+        <div class="progress-labels">
+            <span>Stop ${{ "%.0f"|format(stop) }}</span>
+            <span>Target ${{ "%.0f"|format(tgt) }}</span>
+        </div>
+        <div class="progress-outer">
+            {% set entry_pct = [(entry - stop) / span * 100, 0]|max %}
+            {% set entry_pct = [entry_pct, 100]|min %}
+            <div class="{{ 'progress-fill-green' if pct > entry_pct else 'progress-fill-red' }}" style="width:{{ pct }}%"></div>
+            <div class="progress-marker" style="left:{{ entry_pct }}%"></div>
+        </div>
+    </div>
+    {% endif %}
+    {% endif %}
+</div>
+{% endfor %}
+</div>
+
 {% else %}
-<div class="card" style="text-align: center; padding: 40px 20px;">
-    <h2>No open positions right now</h2>
-    <p>Waiting for the next routine run.</p>
+<div class="empty">
+    <div class="empty-icon">📊</div>
+    <h2>No open positions</h2>
+    <p>The AI is watching the market. New swing setups appear after each routine run — check back soon or see <a href="today.html" style="color:var(--blue)">Today's Decisions</a>.</p>
 </div>
 {% endif %}
 {% endblock %}

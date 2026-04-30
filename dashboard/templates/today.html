@@ -1,40 +1,134 @@
 {% extends "base.html" %}
+
+{% block extra_styles %}
+.run-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.run-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.run-meta { font-size: 12px; color: var(--muted); font-family: var(--mono); }
+.run-tickers { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+
+.summary-box {
+    padding: 16px 20px;
+    font-size: 13px;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.decision-row {
+    display: grid;
+    grid-template-columns: 70px 80px 120px 1fr;
+    gap: 12px;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    align-items: start;
+    transition: background .1s;
+}
+.decision-row:last-child { border-bottom: none; }
+.decision-row:hover { background: var(--surface2); }
+
+.dec-ticker {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    text-decoration: none;
+}
+.dec-ticker:hover { color: var(--blue); }
+
+.dec-reason {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+    .decision-row {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    .dec-reason { grid-column: 1 / -1; }
+}
+{% endblock %}
+
 {% block content %}
-<h1>Today's Decisions</h1>
+<div class="page-header">
+    <h1>Today's Decisions</h1>
+    <p>What the AI decided this session and why</p>
+</div>
+
 {% if runs %}
-    {% for run in runs %}
-    <div class="card">
-        <h3>Run: {{ run.run_id }} (Mode: {{ run.mode }})</h3>
-        <p><strong>Tickers analyzed:</strong> {{ run.tickers|join(', ') }}</p>
-        <p><strong>Summary:</strong> {{ run.summary }}</p>
-        {% if run.decisions %}
-        <table>
-            <thead>
-                <tr>
-                    <th>Ticker</th>
-                    <th>Action</th>
-                    <th>Confidence</th>
-                    <th>Reason</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for d in run.decisions %}
-                <tr>
-                    <td>{{ d.ticker }}</td>
-                    <td>{{ d.action }}</td>
-                    <td>{{ d.confidence }}</td>
-                    <td>{{ d.reason }}</td>
-                </tr>
+{% for run in runs %}
+<div class="run-card">
+    <div class="run-header">
+        <div>
+            <div style="font-size:13px; font-weight:600;">
+                <span class="tag">{{ run.mode|upper }}</span>
+                &nbsp;Run
+            </div>
+            <div class="run-meta">{{ run.run_id }}</div>
+            {% if run.tickers %}
+            <div class="run-tickers">
+                {% for t in run.tickers %}
+                <a href="{{ t }}.html" class="tag" style="color:var(--blue);text-decoration:none;">{{ t }}</a>
                 {% endfor %}
-            </tbody>
-        </table>
-        {% endif %}
+            </div>
+            {% endif %}
+        </div>
+        <div style="text-align:right;">
+            <div style="font-size:12px;color:var(--muted);">{{ run.decisions|length }} ticker{{ 's' if run.decisions|length != 1 }}</div>
+        </div>
+    </div>
+
+    {% if run.summary %}
+    <div class="summary-box">"{{ run.summary }}"</div>
+    {% endif %}
+
+    {% for d in run.decisions %}
+    <div class="decision-row">
+        <div>
+            <a class="dec-ticker" href="{{ d.ticker }}.html">{{ d.ticker }}</a>
+        </div>
+        <div>
+            <span class="badge badge-{{ d.action|lower }}">{{ d.action|upper }}</span>
+        </div>
+        <div>
+            {% if d.confidence %}
+            <div class="conf-wrap" style="flex-direction:column;align-items:flex-start;gap:4px;">
+                <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;">Confidence</div>
+                <div class="conf-wrap" style="width:100%;">
+                    <div class="conf-bar-bg">
+                        <div class="conf-bar" style="width:{{ d.confidence }}%"></div>
+                    </div>
+                    <span class="conf-label">{{ d.confidence }}%</span>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+        <div class="dec-reason">{{ d.reason }}</div>
     </div>
     {% endfor %}
+</div>
+{% endfor %}
+
 {% else %}
-<div class="card" style="text-align: center; padding: 40px 20px;">
-    <h2>No runs today yet</h2>
-    <p>Routines fire between 5:30 AM and 3:00 PM PT.</p>
+<div class="empty">
+    <div class="empty-icon">🤖</div>
+    <h2>No runs yet today</h2>
+    <p>Routines fire Monday–Friday. The AI will analyze the watchlist and post decisions here as runs complete.</p>
 </div>
 {% endif %}
 {% endblock %}

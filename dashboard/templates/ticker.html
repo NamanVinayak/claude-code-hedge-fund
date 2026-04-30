@@ -1,83 +1,201 @@
 {% extends "base.html" %}
+
+{% block extra_styles %}
+.ticker-hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+.ticker-name {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1;
+}
+.ticker-sub { font-size: 13px; color: var(--muted); margin-top: 6px; }
+
+.pos-pill {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    min-width: 200px;
+}
+.pos-pill-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.pos-pill-pnl { font-size: 28px; font-weight: 700; font-family: var(--mono); line-height: 1.1; margin-top: 4px; }
+.pos-pill-pct { font-size: 13px; font-family: var(--mono); }
+
+.chart-frame {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.thesis-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--blue);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.thesis-card h2 { font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 12px; }
+.thesis-card p { font-size: 13px; color: var(--muted); line-height: 1.75; margin-bottom: 10px; }
+.thesis-card p:last-child { margin-bottom: 0; }
+
+.dec-timeline { }
+.dec-item {
+    display: grid;
+    grid-template-columns: 80px 80px 120px 1fr;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: start;
+}
+.dec-item:last-child { border-bottom: none; }
+.dec-date { font-size: 12px; font-family: var(--mono); color: var(--muted); }
+
+@media (max-width: 640px) {
+    .ticker-name { font-size: 28px; }
+    .dec-item { grid-template-columns: 1fr 1fr; }
+    .dec-item .dec-reason { grid-column: 1/-1; }
+}
+{% endblock %}
+
 {% block content %}
-<h1>{{ ticker }}</h1>
-<div class="card">
-    <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container">
-      <div id="tradingview_{{ ticker }}"></div>
-      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-      <script type="text/javascript">
-      new TradingView.widget(
-      {
-      "width": "100%",
-      "height": 400,
-      "symbol": "{{ ticker }}",
-      "interval": "D",
-      "timezone": "Etc/UTC",
-      "theme": "dark",
-      "style": "1",
-      "locale": "en",
-      "enable_publishing": false,
-      "hide_top_toolbar": true,
-      "save_image": false,
-      "container_id": "tradingview_{{ ticker }}"
-    }
-      );
-      </script>
+<div class="ticker-hero">
+    <div>
+        <div class="ticker-name">{{ ticker }}</div>
+        <div class="ticker-sub">
+            <a href="index.html" style="color:var(--muted);text-decoration:none;">← All Positions</a>
+        </div>
     </div>
-    <!-- TradingView Widget END -->
+
+    {% if open_position %}
+    {% set p = open_position %}
+    {% set is_profit = p.pnl_dollar > 0 %}
+    {% set is_loss   = p.pnl_dollar < 0 %}
+    <div class="pos-pill">
+        <div class="pos-pill-label">Open Position · {{ p.direction|upper }}</div>
+        <div class="pos-pill-pnl {{ 'profit' if is_profit else 'loss' if is_loss else 'neutral' }}">
+            {{ '+' if is_profit else '' }}${{ "%.2f"|format(p.pnl_dollar) }}
+        </div>
+        <div class="pos-pill-pct {{ 'profit' if is_profit else 'loss' if is_loss else 'neutral' }}">
+            {{ '+' if is_profit else '' }}{{ "%.2f"|format(p.pnl_percent) }}% since entry ${{ "%.2f"|format(p.entry_fill_price|float) }}
+        </div>
+        <div style="margin-top:10px;display:flex;gap:8px;font-size:12px;color:var(--muted);font-family:var(--mono);">
+            <span class="loss">Stop ${{ "%.2f"|format(p.stop_loss|float) if p.stop_loss != '-' else '—' }}</span>
+            <span>·</span>
+            <span class="profit">Tgt ${{ "%.2f"|format(p.target_price|float) if p.target_price != '-' else '—' }}</span>
+            <span>·</span>
+            <span>{{ p.rr }}</span>
+        </div>
+    </div>
+    {% endif %}
 </div>
 
-{% if open_position %}
-<div class="card">
-    <h2>Current Open Position</h2>
-    <p>Direction: {{ open_position.direction }}</p>
-    <p>Entry: ${{ "%.2f"|format(open_position.entry_fill_price|float) }}</p>
-    <p>Current P&L: <span class="{{ 'profit' if open_position.pnl_dollar > 0 else 'loss' }}">${{ "%.2f"|format(open_position.pnl_dollar) }} ({{ "%.2f"|format(open_position.pnl_percent) }}%)</span></p>
+<!-- TradingView Chart -->
+<div class="chart-frame">
+    <div class="tradingview-widget-container" style="height:420px;">
+        <div id="tv_{{ ticker }}" style="height:420px;"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script>
+        new TradingView.widget({
+            "width": "100%",
+            "height": 420,
+            "symbol": "{{ ticker }}",
+            "interval": "D",
+            "timezone": "America/New_York",
+            "theme": "dark",
+            "style": "1",
+            "locale": "en",
+            "enable_publishing": false,
+            "hide_top_toolbar": false,
+            "hide_side_toolbar": true,
+            "save_image": false,
+            "backgroundColor": "rgba(22,27,34,1)",
+            "gridColor": "rgba(33,38,45,1)",
+            "container_id": "tv_{{ ticker }}"
+        });
+        </script>
+    </div>
 </div>
-{% endif %}
 
 {% if wiki_thesis %}
-<div class="card">
-    <h2>Thesis (from Wiki)</h2>
+<div class="thesis-card">
+    <h2>AI Thesis (from Wiki)</h2>
     {{ wiki_thesis | safe }}
 </div>
 {% endif %}
 
 <div class="card">
-    <h2>Recent Decisions</h2>
+    <h2 style="font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;">Recent AI Decisions</h2>
     {% if decisions %}
-    <ul>
-        {% for d in decisions %}
-        <li><strong>{{ d.date }}</strong>: {{ d.action }} (Confidence: {{ d.confidence }}) - <em>{{ d.reason }}</em></li>
-        {% endfor %}
-    </ul>
+    <div class="dec-timeline">
+    {% for d in decisions %}
+    <div class="dec-item">
+        <span class="dec-date">{{ d.date }}</span>
+        <span><span class="badge badge-{{ d.action|lower }}">{{ d.action|upper }}</span></span>
+        <span>
+            {% if d.confidence %}
+            <div class="conf-wrap">
+                <div class="conf-bar-bg"><div class="conf-bar" style="width:{{ d.confidence }}%"></div></div>
+                <span class="conf-label">{{ d.confidence }}%</span>
+            </div>
+            {% endif %}
+        </span>
+        <span class="dec-reason" style="font-size:12px;color:var(--muted);line-height:1.6;">{{ d.reason }}</span>
+    </div>
+    {% endfor %}
+    </div>
     {% else %}
-    <p>No recent decisions.</p>
+    <p style="color:var(--muted);font-size:13px;">No recent decisions for {{ ticker }}.</p>
     {% endif %}
 </div>
 
 {% if closed_trades %}
 <div class="card">
-    <h2>Recent Closed Trades</h2>
+    <h2 style="font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;">Trade History</h2>
+    <div class="table-wrap" style="border:none;border-radius:0;">
     <table>
         <thead>
             <tr>
-                <th>Date</th>
+                <th>Closed</th>
                 <th>Result</th>
+                <th>Entry</th>
+                <th>Exit</th>
                 <th>P&L</th>
             </tr>
         </thead>
         <tbody>
-            {% for t in closed_trades %}
-            <tr>
-                <td>{{ t.closed_at }}</td>
-                <td>{{ t.status }}</td>
-                <td class="{{ 'profit' if t.pnl_dollar > 0 else 'loss' }}">${{ "%.2f"|format(t.pnl_dollar) }}</td>
-            </tr>
-            {% endfor %}
+        {% for t in closed_trades %}
+        <tr>
+            <td style="color:var(--muted);font-size:12px;">{{ t.closed_at or '—' }}</td>
+            <td>
+                {% if t.pnl_dollar > 0 %}
+                <span class="profit" style="font-size:12px;font-weight:600;">WIN</span>
+                {% elif t.status == 'expired' %}
+                <span style="color:var(--yellow);font-size:12px;font-weight:600;">EXPIRED</span>
+                {% else %}
+                <span class="loss" style="font-size:12px;font-weight:600;">STOP</span>
+                {% endif %}
+            </td>
+            <td class="mono">${{ "%.2f"|format(t.entry_fill_price|float) }}</td>
+            <td class="mono">{{ '$' + "%.2f"|format(t.exit_fill_price|float) if t.exit_fill_price else '—' }}</td>
+            <td class="mono {{ 'profit' if t.pnl_dollar > 0 else 'loss' if t.pnl_dollar < 0 else '' }}">
+                {{ '+' if t.pnl_dollar > 0 else '' }}${{ "%.2f"|format(t.pnl_dollar) }}
+            </td>
+        </tr>
+        {% endfor %}
         </tbody>
     </table>
+    </div>
 </div>
 {% endif %}
+
 {% endblock %}

@@ -1,41 +1,99 @@
 {% extends "base.html" %}
+
+{% block extra_styles %}
+.result-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 4px;
+}
+.dot-win  { background: var(--green); }
+.dot-loss { background: var(--red); }
+.dot-exp  { background: var(--yellow); }
+{% endblock %}
+
 {% block content %}
-<h1>Closed Trades History</h1>
-<div class="card">
-    <p><strong>Total Trades:</strong> {{ total_trades }} | <strong>Win Rate:</strong> {{ "%.1f"|format(win_rate) }}% | <strong>Total P&L:</strong> <span class="{{ 'profit' if total_pnl > 0 else 'loss' }}">${{ "%.2f"|format(total_pnl) }}</span></p>
+<div class="page-header">
+    <h1>Closed Trades</h1>
+    <p>Full trade history — every win, loss, and expiry</p>
 </div>
+
+<div class="stat-grid">
+    <div class="stat-block">
+        <div class="stat-label">Total Trades</div>
+        <div class="stat-value">{{ total_trades }}</div>
+    </div>
+    <div class="stat-block">
+        <div class="stat-label">Win Rate</div>
+        <div class="stat-value {{ 'profit' if win_rate >= 50 else 'loss' }}">{{ "%.0f"|format(win_rate) }}%</div>
+        <div class="stat-sub">{{ "%.1f"|format(win_rate) }}% of closed trades profitable</div>
+    </div>
+    <div class="stat-block">
+        <div class="stat-label">Total P&L</div>
+        <div class="stat-value {{ 'profit' if total_pnl > 0 else 'loss' if total_pnl < 0 else '' }}">
+            {{ '+' if total_pnl > 0 else '' }}${{ "%.2f"|format(total_pnl) }}
+        </div>
+    </div>
+    {% if total_trades > 0 %}
+    <div class="stat-block">
+        <div class="stat-label">Avg P&L / Trade</div>
+        {% set avg = total_pnl / total_trades %}
+        <div class="stat-value {{ 'profit' if avg > 0 else 'loss' if avg < 0 else '' }}">
+            {{ '+' if avg > 0 else '' }}${{ "%.2f"|format(avg) }}
+        </div>
+    </div>
+    {% endif %}
+</div>
+
 {% if trades %}
-<div style="overflow-x: auto;">
-    <table>
-        <thead>
-            <tr>
-                <th>Ticker</th>
-                <th>Result</th>
-                <th>Entry</th>
-                <th>Exit</th>
-                <th>P&L ($)</th>
-                <th>P&L (%)</th>
-                <th>Entry Date</th>
-                <th>Exit Date</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for t in trades %}
-            <tr class="{{ 'profit' if t.pnl_dollar > 0 else 'loss' if t.pnl_dollar < 0 else '' }}">
-                <td><a href="{{ t.ticker }}.html" style="color: inherit;">{{ t.ticker }}</a></td>
-                <td>{{ t.status }}</td>
-                <td>${{ "%.2f"|format(t.entry_fill_price|float) }}</td>
-                <td>${{ "%.2f"|format(t.exit_fill_price|float) if t.exit_fill_price else '-' }}</td>
-                <td>${{ "%.2f"|format(t.pnl_dollar) }}</td>
-                <td>{{ "%.2f"|format(t.pnl_percent) }}%</td>
-                <td>{{ t.entered_at }}</td>
-                <td>{{ t.closed_at }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+<div class="table-wrap">
+<table>
+    <thead>
+        <tr>
+            <th>Ticker</th>
+            <th>Result</th>
+            <th>Entry</th>
+            <th>Exit</th>
+            <th>P&L $</th>
+            <th>P&L %</th>
+            <th class="hide-mobile">Entered</th>
+            <th class="hide-mobile">Closed</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for t in trades %}
+    <tr>
+        <td><a href="{{ t.ticker }}.html">{{ t.ticker }}</a></td>
+        <td>
+            {% if t.pnl_dollar > 0 %}
+                <span class="result-dot dot-win"></span><span class="profit" style="font-size:12px;font-weight:600;">WIN</span>
+            {% elif t.status == 'expired' %}
+                <span class="result-dot dot-exp"></span><span class="neutral" style="font-size:12px;font-weight:600;">EXPIRED</span>
+            {% else %}
+                <span class="result-dot dot-loss"></span><span class="loss" style="font-size:12px;font-weight:600;">STOP</span>
+            {% endif %}
+        </td>
+        <td class="mono">${{ "%.2f"|format(t.entry_fill_price|float) }}</td>
+        <td class="mono">{{ '$' + "%.2f"|format(t.exit_fill_price|float) if t.exit_fill_price else '—' }}</td>
+        <td class="mono {{ 'profit' if t.pnl_dollar > 0 else 'loss' if t.pnl_dollar < 0 else '' }}">
+            {{ '+' if t.pnl_dollar > 0 else '' }}${{ "%.2f"|format(t.pnl_dollar) }}
+        </td>
+        <td class="mono {{ 'profit' if t.pnl_percent > 0 else 'loss' if t.pnl_percent < 0 else '' }}">
+            {{ '+' if t.pnl_percent > 0 else '' }}{{ "%.2f"|format(t.pnl_percent) }}%
+        </td>
+        <td class="hide-mobile" style="color:var(--muted);font-size:12px;">{{ t.entered_at or '—' }}</td>
+        <td class="hide-mobile" style="color:var(--muted);font-size:12px;">{{ t.closed_at or '—' }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
 </div>
+
 {% else %}
-<p>No closed trades yet.</p>
+<div class="empty">
+    <div class="empty-icon">📈</div>
+    <h2>No closed trades yet</h2>
+    <p>Trades appear here once they hit their target, stop, or expiry. The AI is working on it.</p>
+</div>
 {% endif %}
 {% endblock %}
