@@ -13,3 +13,4 @@ Compactor rolls entries >60 days old into weekly summaries, and entries
 
 ## [2026-04-29] bootstrap | 23 tickers + MACRO | run bootstrap | fresh-start cleanup + wiki seeded | wiki touched: 93 pages (4×23 ticker pages + macro/regime.md)
 ## [2026-04-29] swing | NVDA | run sanity_20260429_031705 | HOLD existing 6 shares at $197.20 cost, target $231, stop $207, conf 55; no new entry (above $211 no-chase zone); hard exit by May 17 earnings blackout | wiki touched: LOG.md
+## [2026-04-30] swing | JPM | run 20260430_051455 | HOLD at $309.25 (42 conf); 2B/1Br/2N split; R/R 1.55:1 fails 2:1 minimum; watch zone $307.00–$307.50 (R/R ~2.7:1); signal flip Buy→Hold vs Apr 17 run | wiki touched: tickers/JPM/recent.md (created), macro/regime.md, LOG.md, INDEX.md

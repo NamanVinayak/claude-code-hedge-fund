@@ -1,37 +1,41 @@
 ---
 name: macro regime
-last_updated: 2026-04-29
-last_run_id: sanity_20260429_031705
+last_updated: 2026-04-30
+last_run_id: 20260430_051455
 target_words: 400
 stale_after_days: 14
-word_count: 478
-summary: current macro regime
+word_count: 412
+summary: Transitional — leaning risk-on with S&P on pace for best month since 2020, but Iran/oil and Fed uncertainty are the active left-tail risks
 ---
 
 # Macro Regime
 
 ## TL;DR
 
-**Transitional — leaning risk-on near record highs, but increasingly fragile.** The S&P 500 touched an all-time high of 7,173.91 on April 27 before pulling back; markets are range-bound between AI-driven optimism and geopolitical/inflation headwinds that refuse to clear.
+**Transitional — leaning risk-on, with S&P 500 on pace for its best month since 2020 (+9.3% in April), but geopolitical and policy uncertainty make the backdrop fragile.** AI-driven mega-cap earnings are the near-term bull engine; Iran/Strait of Hormuz and Warsh succession are the active tail risks. Higher-for-longer regime intact — markets now price zero cuts through 2026 and into 2027.
 
 ## Fed posture
 
-The Federal Reserve held the funds rate at **4.25%–4.50%** for the third straight meeting (April 30, 2026 decision). This is a meaningfully higher level than the 3.50%–3.75% range seen in mid-April, reflecting the inflation re-acceleration driven by the Iran energy shock. The dot plot projects two 25 bps cuts later in 2026, but the path is complicated by elevated energy-driven CPI. This is Powell's final meeting — Kevin Warsh is expected as successor, adding a layer of policy uncertainty. Markets expect no change on April 30 and are watching the press conference for any shift in the cutting timeline.
+The Federal Reserve held the funds rate at **4.25%–4.50%** on April 29 (third consecutive hold) — the most divided vote since October 1992 (historic 8–4 dissent). Chair Powell's likely final meeting; Kevin Warsh is expected as successor, adding policy uncertainty at a sensitive inflation juncture. Inflation remains above the 2% target driven by Trump tariffs and energy price spikes from the Iran disruption. Markets have fully repriced: zero cuts priced through 2026 and into 2027 — the prior "two cuts in H2 2026" assumption is off the table [web_research/JPM.json, 2026-04-30].
 
-## Rate trajectory & inflation
+## Rate trajectory and inflation
 
-Core PCE inflation is running at approximately 2.7%, well above the 2% target, with headline CPI pressured further by oil prices near $4.18/gallon — the highest level since August 2022. The Iran conflict and Strait of Hormuz disruption cut roughly 20M barrels/day of transit capacity at peak, sending Brent above $100 briefly in March before a ceasefire pause provided temporary relief. The Fed's prior inflation projection of "2.75–3% in H1 2026, declining toward 2% by 2027" now looks optimistic if geopolitical tension re-escalates. Small-caps with floating-rate debt (roughly 40% of Russell 2000) face a specific 150–200 bps refinancing headwind versus prior coupons, threatening projected 18–22% earnings growth.
+Core PCE running approximately 2.7% above the 2% target; headline CPI pressured by oil prices elevated by the Iran/Strait of Hormuz blockade. Goldman raised its Brent forecast to $90/bbl by late 2026 on sustained blockade risk. IMF cut 2026 global growth forecast to 3.1%, headline inflation 4.4%. Higher-for-longer is the base case — any Hormuz re-escalation would spike oil above $100 again, reignite inflation fears, and force the Fed even further out on the hold [web_research/JPM.json, 2026-04-30; signals_combined swing_macro_context, run 20260430_051455].
 
-## Geopolitical / regulatory
+## Market context
 
-The dominant risk is **US-Iran conflict** and its energy-market knock-on effects. Iran closed the Strait of Hormuz on March 4; a two-week humanitarian ceasefire began April 8, but the Strait reopening remains uncertain and talks have stalled. Secondary risks include US-China tariff tensions (Section 232 measures still active, 50% tariff threats issued), Apple hardware exposure, US-Europe friction over Greenland, and Venezuela instability. The April 2025 "Liberation Day" tariff package is now a structural force reshaping supply chains, driving a reshoring narrative that has disproportionately benefited domestic-revenue-heavy small-caps even as geopolitical volatility weighs on their near-term multiple.
+S&P 500 is on track for its best monthly performance since 2020 (+9.3% in April), powered by strong mega-cap tech earnings (Alphabet +7%, Amazon +4% post-print) and AI momentum. Intraday noise remains — Dow slipped -0.57% on April 30 as oil surged on US-Iran tensions and Meta fell -6% on high capex. Overall mood: cautiously optimistic with an AI tailwind holding up the trend against geopolitical left-tail risk [web_research/JPM.json, 2026-04-30].
+
+## Geopolitical and regulatory
+
+**US-Iran conflict and energy market knock-on effects are the dominant risk.** US blockade of Iranian ports disrupts global oil supply. Goldman's $90/bbl Brent forecast by late 2026. Iran negotiations ongoing; Strait of Hormuz deal offered but talks stalled. Trump tariffs remain a structural inflation force. IMF flagged 3.1% global growth and 4.4% headline inflation as the baseline [web_research/JPM.json, 2026-04-30].
 
 ## Risk-off triggers to watch
 
-- **Iran ceasefire collapses / Strait of Hormuz re-closes** — would spike oil above $100 again, reignite inflation fears, and hit risk assets broadly
-- **Big-tech earnings miss on AI capex ROI** — Alphabet, Microsoft, Amazon, Meta earnings this week are the primary NVDA and Nasdaq catalyst; any revenue miss or capex pullback signals would break the AI bull thesis
-- **Fed forced to hold into H2 2026** — if inflation re-accelerates from energy, the one remaining cut penciled in for 2026 evaporates, re-pricing growth and small-cap earnings expectations sharply lower
+- **Iran ceasefire collapses / Strait re-closes** — oil above $100, inflation re-accelerates, bank multiples compress
+- **Fed Warsh succession surprises** — any hawkish signals from the incoming chair reset rate expectations sharply
+- **Economic slowdown overtakes earnings** — Q2 earnings season begins mid-July; credit cycle risk is the hidden variable for financials
 
 ## Last updated
 
-2026-04-29 — sourced from run `sanity_20260429_031705` (NVDA web_research, dated 2026-04-29) and cross-referenced against `20260415_104041` (SPY, QQQ, IWM) and `swing_20260411_211655` (XOM, JPM, NVDA).
+2026-04-30. Sourced from `web_research/JPM.json` (dated 2026-04-30) and `signals_combined.json` swing_macro_context signal from run `20260430_051455`. Supersedes prior entry sourced from `sanity_20260429_031705`.

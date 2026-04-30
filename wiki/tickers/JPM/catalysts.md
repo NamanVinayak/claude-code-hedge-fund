@@ -1,50 +1,51 @@
 ---
 name: JPM catalysts
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_051455
 target_words: 400
 stale_after_days: 14
-word_count: 414
-summary: Q1 2026 earnings record beat was the primary catalyst; NII guidance trim and macro risks are the counter-catalyst; Q2 earnings expected mid-July 2026
+word_count: 398
+summary: Q1 2026 earnings fully priced; FOMC delivered no change (Apr 29); next binary event is Q2 earnings July 14; Dimon stagflation warning and Iran/oil risk are the live bear catalysts
 ---
 
 # JPM — Catalysts
 
 ## TL;DR
 
-The dominant catalyst was JPM's Q1 2026 earnings report (April 14, 2026): record $16.5B net income, EPS $5.94 vs $5.45 estimate (+9% beat), revenue $50.54B vs $49.17B estimate [run: 20260415_093758]. The counter-catalyst hit the same day — full-year 2026 NII guidance was trimmed from $104.5B to ~$103B, and CEO Jamie Dimon's shareholder letter was more cautious than the headline numbers [run: 20260415_093758]. Next scheduled binary event is Q2 2026 earnings, expected mid-July 2026.
+Q1 2026 earnings (April 14) are fully priced — the record $16.5B profit (+13% YoY, EPS $5.94 vs $5.49 estimate) has been absorbed [run: 20260430_051455]. FOMC delivered a no-change hold at 3.50%–3.75% on April 29 — third consecutive hold, no surprise, neutral for NII stability [run: 20260430_051455]. The next scheduled binary event is **Q2 2026 earnings on July 14, 2026** with consensus EPS estimate $5.36–$5.41 [run: 20260430_051455]. No actionable catalyst within the 10-trading-day swing window.
 
 ## Upcoming events
 
-- **Q2 2026 earnings:** Expected mid-July 2026. Full-year EPS consensus was approximately $19–$20 per share based on pre-Q1 analyst models; Q1 beat likely pushed consensus higher [run: 20260415_093758].
-- **FOMC April 28–29, 2026:** Consensus expects no rate change (funds rate held at 3.50%–3.75%). Only one cut projected for all of 2026. Rate holds are neutral-to-marginally-positive for NII stability [run: 20260415_093758].
-- **NII watch:** Management trimmed guidance once; any further reduction would be a negative catalyst. Market watching whether $103B holds [run: 20260415_093758].
+- **Q2 2026 earnings: July 14, 2026.** Consensus Q2 EPS $5.36–$5.41. Full-year 2026 technology spend guided to $19.8B (+10% YoY). This is the next binary catalyst — 55+ trading days away [run: 20260430_051455].
+- **Iran/Strait of Hormuz:** Ongoing negotiations with no resolution. A ceasefire breakdown would spike oil, widen credit spreads, and pressure bank multiples. Goldman raised Brent forecast to $90/bbl by late 2026 on blockade risk [web_research/JPM.json, 2026-04-30].
+- **NII guidance watch:** Guidance already trimmed from $104.5B to ~$103B in Q1. Any further reduction is a negative catalyst. Next formal read: Q2 earnings July 14 [run: 20260430_051455].
+- **Kevin Warsh Fed transition:** Powell's likely final meeting was April 29. Warsh succession adds policy uncertainty — especially relevant if inflation re-accelerates [run: 20260430_051455].
 
 ## Recent news synthesis
 
-- **Q1 2026 record earnings (Apr 14):** Net income +13% YoY, EPS +9% beat, investment banking fees +18% YoY, equities trading record, Asset and Wealth Management AUM $4.8T [run: 20260415_093758].
-- **NII guidance trim:** Full-year 2026 NII trimmed to ~$103B from $104.5B — Morgan Stanley lowered target on this; Goldman raised to $365 despite it [run: 20260415_093758].
-- **Dimon shareholder letter:** Named geopolitics (Russia-Ukraine, US-China, Middle East), large fiscal deficits, elevated asset prices, and AI risks as top concerns [run: 20260415_093758]. "Increasingly complex set of risks" quote widely circulated.
-- **Apple Card takeover:** JPM took over $20B Apple Card portfolio from Goldman Sachs, integrating millions of tech-savvy users into Chase ecosystem [run: swing_20260411_211655].
-- **Prediction markets entry:** Jamie Dimon signaled JPMorgan entry into prediction markets as competition surges [run: swing_20260411_211655].
-- **New CDS index:** JPMorgan partnered with S&P Global, Bank of America, and Goldman Sachs to launch a new credit-default swap index [run: swing_20260411_211655].
-- **Technology investment:** $20 billion planned technology spend in 2026 [run: 20260415_093758].
-- **Macro context Apr 15:** Market down ~5% from Q1 peak amid tariff uncertainty, AI disruption fears, sticky inflation. Banking sector Q1 broadly strong, partial offset to wider market weakness [run: 20260415_093758].
+- **Q1 2026 record earnings (Apr 14, already priced):** Net income +13% YoY, EPS $5.94 beat $5.49 estimate (+8.2%), revenue $50.54B, IB fees +18% YoY, record equities trading, AWM AUM $4.8T [run: 20260430_051455].
+- **NII guidance trim:** Full-year 2026 NII reduced from $104.5B to ~$103B. Morgan Stanley cut target on this; Goldman raised target to $365 despite it [run: 20260415_093758].
+- **Dimon stagflation warning (Apr 28–29):** At investment conference, Dimon warned of stagflation risk and potential bond market crisis [web_research/JPM.json, 2026-04-30]. This reinforces the existing cautious tone from his shareholder letter.
+- **Apple Card acquisition:** JPM acquired Goldman's $20B Apple Card portfolio — strategic win adding tech-savvy consumer accounts to Chase ecosystem [web_research/JPM.json, 2026-04-30].
+- **Technology investment:** $19.8B tech budget in 2026 (+10% YoY) — AI and infrastructure at the core [web_research/JPM.json, 2026-04-30].
+- **JPM raised S&P 500 target:** JPMorgan raised its own year-end S&P 500 target to 7,600 from 7,200, citing AI momentum [web_research/JPM.json, 2026-04-30].
+- **Competitor activity:** Goldman posted record Q1 equities trading (direct JPM competition). Wells Fargo and Citi outpacing JPM on AI venture deals (77–81 vs. 37), though JPM's $19.8B tech budget and efficiency ratio offset this [web_research/JPM.json, 2026-04-30].
 
 ## Insider activity
 
-Multiple board directors bought shares in March 2026 — cited as a positive corroborating signal by strategy models in the Apr 15 run [run: 20260415_093758]. No insider sell flags noted in any run.
+No recent insider trades in the Apr 30 data bundle [run: 20260430_051455]. Previously, multiple board directors bought shares in March 2026 — still a positive historical signal but activity has gone quiet since [run: 20260415_093758].
 
 ## Analyst consensus
 
 | Metric | Value | Source |
 |---|---|---|
-| Consensus rating | Moderate Buy | 14 Buy, 12 Hold, 0 Sell (33 analysts) [run: 20260415_093758] |
-| Average target (Apr 15) | $337 | Post-Q1 consensus [run: 20260415_093758] |
-| Goldman Sachs | $365 (raised from $352) | Post-Q1 raise, maintained Buy [run: 20260415_093758] |
-| Morgan Stanley | $334 (cut from $365) | Equal Weight, cited NII trim [run: 20260415_093758] |
-| Pre-earnings avg target | $334.53 | Consensus Apr 11 [run: swing_20260411_211655] |
+| Consensus rating | Buy | 14 Buy, 12 Hold, 0 Sell (33 analysts) [web_research/JPM.json, 2026-04-30] |
+| Average target (Apr 30) | $339.46 | Updated consensus [web_research/JPM.json, 2026-04-30] |
+| TD Cowen | $375 (raised from $370) | Buy rating [web_research/JPM.json, 2026-04-30] |
+| Evercore ISI | $340 | Outperform maintained Apr 17 [web_research/JPM.json, 2026-04-30] |
+| Wolfe Research | Peerperform (downgraded Jan 2026) | Slower EPS growth vs. peers [web_research/JPM.json, 2026-04-30] |
+| Target range | $257.89–$420 | Median $345 [web_research/JPM.json, 2026-04-30] |
 
 ## Last updated
 
-2026-04-29. Catalyst data from web_research/JPM.json in runs swing_20260411_211655 and 20260415_093758. Q2 earnings date approximate from management guidance.
+2026-04-30. Catalyst data from web_research/JPM.json and run 20260430_051455. Previous catalyst data from runs 20260415_093758 and swing_20260411_211655.
