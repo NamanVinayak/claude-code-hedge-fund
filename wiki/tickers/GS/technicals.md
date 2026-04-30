@@ -1,55 +1,61 @@
 ---
 name: GS technicals
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_190826
 target_words: 350
 stale_after_days: 7
-word_count: 355
-summary: GS chart state as of Apr 15 run — EMA uptrend, squeeze breakout, but ADX too weak to trigger entry
+word_count: 349
+summary: Sharp April 29 sell-off broke hourly support at $924.23 (29 tests); ADX now 32.67 (cleared threshold) but hourly in active downtrend; HOLD pending daily stabilization
 ---
 
 ## TL;DR
 
-Daily EMA structure is bullish and squeeze momentum has broken out, but ADX of 19.4 is well below the 25 threshold that the model requires to confirm a trend trade. Hourly momentum turned negative post-earnings. The chart is constructive but not yet actionable for a swing entry.
+**Post-earnings breakdown inside a daily uptrend.** ADX has crossed above 25 for the first time in GS run history (32.67 vs. 19.4 in the prior Apr 15 read), but the move came with a bearish signal: April 29 fell -2.4% on volume, breaking the critical hourly support at $924.23 (29 tests). Hourly trend is actively bearish. Daily EMA structure technically intact but price clinging above EMA-21 ($903.58). HOLD — wait for daily stabilization. [run `20260430_190826`]
 
 ---
 
-## Multi-Timeframe State (as of run `20260415_110848`, Apr 15 2026)
+## Multi-Timeframe State (run `20260430_190826`, April 30 2026)
 
 **Daily timeframe**
-- EMA alignment: ema_10 > ema_21 > ema_50 — confirmed daily uptrend structure
-- ADX: 19.4 (run `20260415_110848`); was 22.75 on Apr 11 (run `swing_20260411_211655`) — declining, not strengthening
-- RSI-14: 69.1 — elevated but not technically overbought; pulled back from 76.2 on Apr 11 as price digested the Q1 earnings gap-fill
-- MACD histogram: +10.3 (strongly positive), indicating continued bullish momentum on the daily
-- Squeeze Momentum: bullish breakout confirmed with increasing momentum value of 72.1
-- SuperTrend: bullish on daily
-- Bollinger Band position: 0.89 (near upper band; z-score 0.85 — not stretched enough to trigger mean reversion)
-- 1-month ROC: +15.5%; 3-month ROC: -2.2% (medium-term drift is slightly negative)
+
+| Indicator | Value | Interpretation |
+|---|---|---|
+| ADX | 32.67 | Trend confirmed for first time — above 25 threshold |
+| Plus DI / Minus DI | 27.25 / 21.30 | Bulls nominally in control on daily |
+| EMA alignment | 10 EMA $919.40 > 21 EMA $903.60 > 50 EMA $885.90 | Daily uptrend technically intact |
+| RSI-7 | 25.75 | Short-term oversold — bounce possible, not confirmed |
+| RSI-14 | ~50 (est.) | Neutral daily momentum |
+| MACD histogram | -0.36 | Negative and decelerating |
+| OBV | Diverging downward from price | Institutional distribution signal |
+| ROC 5d / 10d / 21d | -3.13% / +0.68% / +12.13% | Short-term deceleration severe |
 
 **Hourly timeframe**
-- Hourly RSI: 67.8 — elevated
-- Hourly MACD histogram: negative (turned bearish post-earnings)
-- Hourly ROC: -0.73 (negative momentum short-term)
-- Hourly stochastic: 38 — pulling back
-- Reading: hourly has already rolled over; the pullback is in progress
+
+- Hourly EMA alignment: tangled / NOT aligned uptrend (ema_aligned_uptrend = false)
+- Hourly MACD histogram: -1.42 (expanding bearishly — explicit downtrend warning)
+- Hourly ADX: 15.12 (weak); Minus DI 30.18 > Plus DI 21.22 (hourly in active downtrend)
+- Hourly RSI-21: 39.93 — approaching oversold; no reversal candle confirmed
+- April 29 session: open $927.50, close $905.60, range $28 — sharp break below $924 support
 
 ---
 
 ## Key Levels
 
-| Level | Value | Source |
-|-------|-------|--------|
-| Price (Apr 15) | ~$903–$909 | run `20260415_110848` |
-| Fib 23.6 support | ~$905 | swing_pullback_trader, run `20260415_110848` |
-| EMA-50 (daily) | ~$869 | swing_trend_follower, run `20260415_110848` |
-| Fib 50% pullback | ~$863 | swing_head_trader, run `swing_20260411_211655` |
-| Resistance / prior swing high | ~$940 | swing_head_trader target, run `20260415_110848` |
-| Hard stop zone | ~$874 | swing_head_trader stop, run `20260415_110848` |
+| Level | Value | Notes |
+|---|---|---|
+| Hourly resistance (broken support) | $924.23 | Tested 29 times; now resistance |
+| EMA-21 daily | $903.58 | Must hold for daily uptrend to remain intact |
+| EMA-50 daily | $885.90 | Deeper support if EMA-21 breaks |
+| Fib 23.6% | $913.91 | Mean-reversion agent's dip-buy level |
+| Fib 38.2% | ~$890 | Stop reference for bullish entry |
+| Hourly support | $899.16 | 4 tests; key intraday floor |
+| Prior swing high / resistance | $952.01 | Bull target on full recovery |
+| Hard stop zone | ~$874 | Prior wiki stop; EMA-50 vicinity |
 
 ---
 
 ## Setup Type
 
-The current pattern is a **post-earnings consolidation inside an EMA uptrend**. The squeeze breakout and bullish MACD histogram say the longer-term bias is up, but ADX at 19.4 means there is not enough directional conviction to sustain a multi-day trend trade. Volume was 1.33x average on Apr 14 — notable but not the 1.5x+ breakout threshold the model uses.
+**Post-earnings sell-the-news breakdown in a daily uptrend with broken hourly support.** The chart has transitioned from "not actionable (ADX sub-25)" to "actionable trend but bearish hourly momentum." ADX crossing 25 fired the trend-confirmation gate, but FICC miss and insider distribution (3.3:1 ratio) converted the expected continuation into a distribution pattern.
 
-**Entry trigger to watch:** Daily ADX crossing above 25, combined with hourly MACD histogram turning positive and volume above 1.5x average. That combination would shift the model from hold to buy.
+**Entry trigger to watch:** Daily close above $924.23 (reclaims broken support) with volume > 1.5x average AND hourly MACD histogram turning positive. That combination shifts the model to a potential buy near $924 targeting $952. A bearish entry (short) requires daily RSI-14 to stabilize above 30 before initiating to avoid short-squeeze risk.

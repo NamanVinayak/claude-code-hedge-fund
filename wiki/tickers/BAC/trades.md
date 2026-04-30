@@ -1,28 +1,67 @@
 ---
 name: BAC trades
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_190826
 target_words: 800
 stale_after_days: 60
-word_count: 612
-summary: Full trade history and run decisions for BAC; no executed trades in tracker.db as of bootstrap
+word_count: 648
+summary: Full trade journal for BAC — 1 open position (15 shares at $52.75, Apr 30 2026); prior model decisions documented
 ---
 
 ## TL;DR
 
-No BAC trades have been executed and recorded in tracker.db. The system has analyzed BAC twice in swing mode — April 11 (hold, overbought) and April 15 (buy signal generated). The April 15 buy decision was placed by the model but execution status in the paper trading system is unconfirmed in this bootstrap. Lifetime P&L: $0 realized, 0 closed trades.
+BAC has one open position: 15 shares entered at $52.75 on April 30, 2026 (run `20260430_190826`). This is the first confirmed executed trade in the paper trading system. Target $55.40 (+$2.65/share), stop $51.50 (-$1.25/share), R/R 2.12:1. Capital deployed: $791.25. Timeframe: 5–10 trading days.
 
 ---
 
 ## Open Positions
 
-**None recorded in tracker.db as of 2026-04-29.**
+### Trade: BUY 15 shares BAC — run `20260430_190826`
+
+| Field | Value |
+|---|---|
+| Action | **BUY** |
+| Quantity | 15 shares |
+| Entry price | $52.75 |
+| Target price | $55.40 |
+| Stop loss | $51.50 |
+| Risk-reward | 2.12:1 |
+| Timeframe | 5–10 trading days |
+| Confidence | 55% |
+| Capital deployed | $791.25 |
+| Date entered | 2026-04-30 |
+| Run | `20260430_190826` |
+
+**Setup:** EMA pullback dip-buy. Price retraced from $55.40 swing high to the 10/21 EMA confluence at $52.73–$52.88 with RSI-7 hitting 30.4 (short-term oversold). ADX 54.8 — exceptional trend strength. Head Trader bullish (55 conf); 3/5 swing agents agree (trend_momentum 58, mean_reversion 60, breakout 38). Risk manager limit $806; 15 shares fits within limit.
+
+**Key risks:** OBV divergence (institutions distributing into the rally), Berkshire Hathaway ongoing stake reduction, negative 5d/10d ROC still confirming pullback.
+
+**Expected outcomes:**
+- If target hit: 15 × ($55.40 − $52.75) = **+$39.75**
+- If stop hit: 15 × ($52.75 − $51.50) = **−$18.75**
+
+**Exit instructions:** Hard exit if daily close below $51.50. Target exit at $55.40. Review on any Berkshire 13-F filing or material OBV re-convergence.
 
 ---
 
-## Model Decisions (Run Archive)
+## Model Decision Log
 
-These are the raw model outputs. They become executed trades only when `tracker execute` is run against the run ID. Execution status is unverified in this bootstrap.
+### Run `20260430_190826` — Swing, April 30, 2026
+
+| Field | Value |
+|---|---|
+| Action | **BUY** |
+| Quantity | 15 shares |
+| Entry | $52.75 |
+| Target | $55.40 |
+| Stop | $51.50 |
+| R/R | 2.12:1 |
+| Confidence | 55% |
+| Agent vote | 3/5 bullish (trend_momentum, mean_reversion, breakout); 2 neutral (catalyst_news, macro_context) |
+
+Decision: "Head Trader bullish (55 conf), 3/5 swing agents agree. Pullback to 10/21 EMA confluence at $52.73-52.88 in ADX-54.8 uptrend. R/R 2.12:1 meets threshold. Risk mgr limit $806; 15 shares @ $52.75 = $791 within limit." [decisions.json, run `20260430_190826`]
+
+---
 
 ### Run `20260415_110848` — Swing, April 15, 2026
 
@@ -30,19 +69,13 @@ These are the raw model outputs. They become executed trades only when `tracker 
 |---|---|
 | Action | **BUY** |
 | Quantity | 18 shares |
-| Entry price | $53.00 |
-| Target price | $57.00 |
-| Stop loss | $51.50 |
-| Risk-reward | 2.67:1 |
-| Timeframe | 6–10 trading days |
+| Entry | $53.00 |
+| Target | $57.00 |
+| Stop | $51.50 |
+| R/R | 2.67:1 |
 | Confidence | 65% |
-| Agent vote | 5 of 9 bullish |
 
-**Decision reasoning (from `decisions.json`):** "Cleanest earnings catalyst: best Q1 in nearly 2 decades, zero trading loss days, profit +17%. 5/9 agents bullish. RSI 78.6, ADX 40, squeeze bullish breakout. Entry on pullback to $53 (prior resistance-turned-support). Iran peace talks tailwind for financials."
-
-**Expected P&L if target hit:** 18 shares × ($57.00 − $53.00) = **+$72.00**
-**Maximum loss if stop hit:** 18 shares × ($53.00 − $51.50) = **−$27.00**
-**Position notional at entry:** 18 × $53 = **$954** (19.1% of $5,000 paper portfolio)
+Decision: "Cleanest earnings catalyst: best Q1 in nearly 2 decades, zero trading loss days, profit +17%. 5/9 agents bullish. RSI 78.6, ADX 40. Entry on pullback to $53 (prior resistance-turned-support)." Execution status unconfirmed in paper system (bootstrap note).
 
 ---
 
@@ -53,21 +86,16 @@ These are the raw model outputs. They become executed trades only when `tracker 
 | Action | **HOLD** |
 | Quantity | 0 |
 | Entry reference | $52.54 |
-| Target reference | $55.00 |
-| Stop reference | $50.00 |
-| Risk-reward | 1.0:1 |
+| R/R | 1.0:1 |
 | Confidence | 40% |
-| Agent vote | 4 bull vs 4 neutral/bear |
 
-**Decision reasoning (from `decisions.json`):** "Head Trader neutral at 45% with near-even agent split (4 bull vs 4 neutral/bear). RSI at 79.0 — most overbought of all financials. Volume only 0.66x. Multiple analysts cut price targets. R:R at 1.0:1 fails the 2:1 minimum. Clear hold."
-
-**Key difference between the two runs:** The April 11 run identified that BAC was already overbought (RSI 79.0) pre-earnings and the 1.0:1 risk-reward ratio didn't qualify for a trade. Four days later, after the earnings beat confirmed the fundamental catalyst, the system upgraded to a buy with a 2.67:1 risk-reward at the same general price area ($52–53), justified by the now-confirmed earnings story providing a new risk framework.
+Decision: RSI 79.0 — overbought. Volume 0.66x. R:R 1.0:1 fails 2:1 minimum. Agent split 4 bull / 4 neutral-bear. Clear hold. [run `swing_20260411_211655`, decisions.json]
 
 ---
 
 ## Closed Trades
 
-**None.** tracker.db query returned 0 rows for BAC as of bootstrap date 2026-04-29.
+None. No BAC trades have been closed in the paper trading system.
 
 ---
 
@@ -75,24 +103,14 @@ These are the raw model outputs. They become executed trades only when `tracker 
 
 | Metric | Value |
 |---|---|
-| Total trades executed | 0 |
-| Open positions | 0 |
+| Total confirmed open positions | 1 |
 | Closed trades | 0 |
 | Realized P&L | $0.00 |
 | Win rate | N/A |
 | Average hold time | N/A |
-| Entry hit rate | N/A |
-| Runs analyzed | 2 (Apr 11, Apr 15) |
-| Model buy signals | 1 (Apr 15 run) |
-| Model hold signals | 1 (Apr 11 run) |
+| Runs analyzed | 3 (Apr 11, Apr 15, Apr 30) |
+| Model buy signals | 2 (Apr 15, Apr 30) |
+| Model hold signals | 1 (Apr 11) |
 | Model short signals | 0 |
 
----
-
-## Notes for Next Run
-
-1. If a BAC position was opened from the April 15 run, the entry target was $53.00. Verify fill status by checking Moomoo paper account or running `python -m tracker status`.
-2. The April 15 stop at $51.50 defines the invalidation level for the swing thesis. A close below $51.50 means exit and re-evaluate.
-3. The target is $57.00. If the stock reaches $57 within 10 trading days of a fill, that is a win to close out.
-4. After any close, update this file with: fill price, exit price, hold days, realized P&L, and whether the stop or target was hit.
-5. The model has never shorted BAC. Both runs generated either hold or buy signals, consistent with the broadly bullish analyst consensus and NII tailwind thesis.
+Source: `tracker.db` + decisions.json run `20260430_190826`. Update when position is closed.
