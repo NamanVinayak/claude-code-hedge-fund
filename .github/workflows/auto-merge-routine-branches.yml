@@ -38,7 +38,7 @@ jobs:
           if git merge --ff-only "origin/$BRANCH"; then
             echo "Fast-forward merge succeeded."
           else
-            git merge "origin/$BRANCH" -m "auto-merge: $BRANCH (routine output)"
+            git merge -X theirs "origin/$BRANCH" -m "auto-merge: $BRANCH (routine output)"
           fi
           git push origin main
 
