@@ -1,41 +1,38 @@
 ---
 name: macro regime
 last_updated: 2026-04-30
-last_run_id: 20260430_051455
+last_run_id: 20260430_124034
 target_words: 400
 stale_after_days: 14
-word_count: 412
-summary: Transitional — leaning risk-on with S&P on pace for best month since 2020, but Iran/oil and Fed uncertainty are the active left-tail risks
+word_count: 362
+summary: Transitional — cautiously risk-on; AI capex supercycle intact but Meta CapEx sticker shock and Iran/oil are active tail risks; Fed held at 3.5%-3.75% in historic 8-4 vote.
 ---
 
 # Macro Regime
 
 ## TL;DR
 
-**Transitional — leaning risk-on, with S&P 500 on pace for its best month since 2020 (+9.3% in April), but geopolitical and policy uncertainty make the backdrop fragile.** AI-driven mega-cap earnings are the near-term bull engine; Iran/Strait of Hormuz and Warsh succession are the active tail risks. Higher-for-longer regime intact — markets now price zero cuts through 2026 and into 2027.
+**Transitional — cautiously risk-on, but fragile.** S&P 500 near flat (-0.04%) and Dow in fifth consecutive losing session on Apr 29 as Mag7 earnings created mixed reactions (Meta fell ~9% on CapEx sticker shock). AI capex supercycle is nonetheless intact — Meta raised full-year CapEx to $125–145B, a strong forward signal for AI infrastructure. The Fed held at **3.5%–3.75%** on April 29 in a historically divided 8–4 vote. Markets price zero cuts through 2026 and into 2027. WTI near $94–$100/bbl from Iran/Hormuz is the dominant geopolitical risk.
 
 ## Fed posture
 
-The Federal Reserve held the funds rate at **4.25%–4.50%** on April 29 (third consecutive hold) — the most divided vote since October 1992 (historic 8–4 dissent). Chair Powell's likely final meeting; Kevin Warsh is expected as successor, adding policy uncertainty at a sensitive inflation juncture. Inflation remains above the 2% target driven by Trump tariffs and energy price spikes from the Iran disruption. Markets have fully repriced: zero cuts priced through 2026 and into 2027 — the prior "two cuts in H2 2026" assumption is off the table [web_research/JPM.json, 2026-04-30].
-
-## Rate trajectory and inflation
-
-Core PCE running approximately 2.7% above the 2% target; headline CPI pressured by oil prices elevated by the Iran/Strait of Hormuz blockade. Goldman raised its Brent forecast to $90/bbl by late 2026 on sustained blockade risk. IMF cut 2026 global growth forecast to 3.1%, headline inflation 4.4%. Higher-for-longer is the base case — any Hormuz re-escalation would spike oil above $100 again, reignite inflation fears, and force the Fed even further out on the hold [web_research/JPM.json, 2026-04-30; signals_combined swing_macro_context, run 20260430_051455].
+Held at **3.5%–3.75%** on April 29 — historic 8–4 dissent. Chair Powell stays on the Board of Governors. PCE forecast raised to 2.7%; zero cuts priced through 2026 and into 2027. Inflation pressured by Trump tariffs and Iran energy spike. Any Hormuz re-escalation spikes oil and forces the Fed further out. [web_research/NVDA.json, 20260430_124034]
 
 ## Market context
 
-S&P 500 is on track for its best monthly performance since 2020 (+9.3% in April), powered by strong mega-cap tech earnings (Alphabet +7%, Amazon +4% post-print) and AI momentum. Intraday noise remains — Dow slipped -0.57% on April 30 as oil surged on US-Iran tensions and Meta fell -6% on high capex. Overall mood: cautiously optimistic with an AI tailwind holding up the trend against geopolitical left-tail risk [web_research/JPM.json, 2026-04-30].
+S&P 500 tracked toward best April since 2020 (+9.3% MTD) but Apr 29–30 saw near-flat action as Mag7 earnings introduced volatility. Meta fell ~9% on CapEx sticker shock despite EPS beat. Alphabet +7% and Amazon +4% post-print show AI narrative broadly intact even when individual stocks react negatively to spending commitments. Dow in fifth straight losing session. Mood: cautiously optimistic with AI tailwind against geopolitical left-tail risk. [web_research/NVDA.json, 20260430_124034; swing_macro_context, 20260430_124034]
 
 ## Geopolitical and regulatory
 
-**US-Iran conflict and energy market knock-on effects are the dominant risk.** US blockade of Iranian ports disrupts global oil supply. Goldman's $90/bbl Brent forecast by late 2026. Iran negotiations ongoing; Strait of Hormuz deal offered but talks stalled. Trump tariffs remain a structural inflation force. IMF flagged 3.1% global growth and 4.4% headline inflation as the baseline [web_research/JPM.json, 2026-04-30].
+US-Iran conflict is the dominant risk. Iran closed the Strait of Hormuz in early March; US-Iran peace talks collapsed late April; Trump blocked envoy trip to Tehran. WTI crude $94–$100/bbl — highest since 2022. Energy sector +40% YTD. IMF cut 2026 global growth to 3.1%, headline inflation 4.4%. [web_research/NVDA.json, 20260430_124034]
 
 ## Risk-off triggers to watch
 
-- **Iran ceasefire collapses / Strait re-closes** — oil above $100, inflation re-accelerates, bank multiples compress
-- **Fed Warsh succession surprises** — any hawkish signals from the incoming chair reset rate expectations sharply
-- **Economic slowdown overtakes earnings** — Q2 earnings season begins mid-July; credit cycle risk is the hidden variable for financials
+- **Iran Strait re-closes** — oil above $100 re-accelerates inflation, multiples compress
+- **Fed internal fracture** — historic 8-4 vote signals fragmentation; hawkish surprise resets rate path
+- **AI capex fatigue** — Meta's market reaction shows investors watch spending discipline; hyperscaler guidance cut → NVDA multiple compression
+- **Economic slowdown** — Q2 season mid-July; credit cycle risk is the hidden variable
 
 ## Last updated
 
-2026-04-30. Sourced from `web_research/JPM.json` (dated 2026-04-30) and `signals_combined.json` swing_macro_context signal from run `20260430_051455`. Supersedes prior entry sourced from `sanity_20260429_031705`.
+2026-04-30. Source: `web_research/NVDA.json` and `signals_combined.json` swing_macro_context, run `20260430_124034`. Supersedes `20260430_051455` entry (corrects Fed rate: 4.25%–4.50% → 3.5%–3.75%).
