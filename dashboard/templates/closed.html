@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Closed Trades History</h1>
+<div class="card">
+    <p><strong>Total Trades:</strong> {{ total_trades }} | <strong>Win Rate:</strong> {{ "%.1f"|format(win_rate) }}% | <strong>Total P&L:</strong> <span class="{{ 'profit' if total_pnl > 0 else 'loss' }}">${{ "%.2f"|format(total_pnl) }}</span></p>
+</div>
+{% if trades %}
+<div style="overflow-x: auto;">
+    <table>
+        <thead>
+            <tr>
+                <th>Ticker</th>
+                <th>Result</th>
+                <th>Entry</th>
+                <th>Exit</th>
+                <th>P&L ($)</th>
+                <th>P&L (%)</th>
+                <th>Entry Date</th>
+                <th>Exit Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for t in trades %}
+            <tr class="{{ 'profit' if t.pnl_dollar > 0 else 'loss' if t.pnl_dollar < 0 else '' }}">
+                <td><a href="{{ t.ticker }}.html" style="color: inherit;">{{ t.ticker }}</a></td>
+                <td>{{ t.status }}</td>
+                <td>${{ "%.2f"|format(t.entry_fill_price|float) }}</td>
+                <td>${{ "%.2f"|format(t.exit_fill_price|float) if t.exit_fill_price else '-' }}</td>
+                <td>${{ "%.2f"|format(t.pnl_dollar) }}</td>
+                <td>{{ "%.2f"|format(t.pnl_percent) }}%</td>
+                <td>{{ t.entered_at }}</td>
+                <td>{{ t.closed_at }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+<p>No closed trades yet.</p>
+{% endif %}
+{% endblock %}

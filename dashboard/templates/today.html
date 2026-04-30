@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Today's Decisions</h1>
+{% if runs %}
+    {% for run in runs %}
+    <div class="card">
+        <h3>Run: {{ run.run_id }} (Mode: {{ run.mode }})</h3>
+        <p><strong>Tickers analyzed:</strong> {{ run.tickers|join(', ') }}</p>
+        <p><strong>Summary:</strong> {{ run.summary }}</p>
+        {% if run.decisions %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticker</th>
+                    <th>Action</th>
+                    <th>Confidence</th>
+                    <th>Reason</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for d in run.decisions %}
+                <tr>
+                    <td>{{ d.ticker }}</td>
+                    <td>{{ d.action }}</td>
+                    <td>{{ d.confidence }}</td>
+                    <td>{{ d.reason }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    </div>
+    {% endfor %}
+{% else %}
+<div class="card" style="text-align: center; padding: 40px 20px;">
+    <h2>No runs today yet</h2>
+    <p>Routines fire between 5:30 AM and 3:00 PM PT.</p>
+</div>
+{% endif %}
+{% endblock %}

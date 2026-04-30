@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>AI Hedge Fund &middot; Live Positions</h1>
+{% if positions %}
+<div style="overflow-x: auto;">
+    <table>
+        <thead>
+            <tr>
+                <th>Ticker</th>
+                <th>Direction</th>
+                <th>Entry Price</th>
+                <th>Current Price</th>
+                <th>P&L ($)</th>
+                <th>P&L (%)</th>
+                <th>Stop</th>
+                <th>Target</th>
+                <th>R:R</th>
+                <th>Days Held</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in positions %}
+            <tr class="{{ 'profit' if p.pnl_dollar > 0 else 'loss' if p.pnl_dollar < 0 else '' }}">
+                <td><a href="{{ p.ticker }}.html" style="color: inherit;">{{ p.ticker }}</a></td>
+                <td>{{ p.direction }}</td>
+                <td>${{ "%.2f"|format(p.entry_fill_price|float) }}</td>
+                <td>${{ "%.2f"|format(p.current_price|float) }}</td>
+                <td>${{ "%.2f"|format(p.pnl_dollar) }}</td>
+                <td>{{ "%.2f"|format(p.pnl_percent) }}%</td>
+                <td>{{ p.stop_loss }}</td>
+                <td>{{ p.target_price }}</td>
+                <td>{{ p.rr }}</td>
+                <td>{{ p.days_held }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+<div class="card" style="text-align: center; padding: 40px 20px;">
+    <h2>No open positions right now</h2>
+    <p>Waiting for the next routine run.</p>
+</div>
+{% endif %}
+{% endblock %}
