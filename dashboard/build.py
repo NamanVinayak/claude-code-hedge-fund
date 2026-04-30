@@ -35,6 +35,19 @@ def get_current_prices(tickers):
         print(f"Error fetching prices: {e}")
         return {}
 
+def extract_summary(exp: dict) -> str:
+    # Format 1: flat keys
+    s = exp.get("tldr") or exp.get("summary") or exp.get("short_explanation") or ""
+    if s:
+        return s
+    # Format 2: nested explanations per ticker (NVDA-style)
+    nested = exp.get("explanations", {})
+    if nested:
+        first = next(iter(nested.values()), {})
+        return first.get("decision_summary", "")
+    # Format 3: top-level explanation blob
+    return exp.get("explanation", "")[:300] if exp.get("explanation") else ""
+
 def calculate_next_update():
     now = datetime.now(ZoneInfo("America/Vancouver"))
     minutes = now.minute
@@ -147,7 +160,7 @@ def main():
             with open(exp_path) as f:
                 try:
                     exp = json.load(f)
-                    summary = exp.get("tldr", exp.get("summary", exp.get("short_explanation", "")))
+                    summary = extract_summary(exp)
                 except:
                     pass
                 
