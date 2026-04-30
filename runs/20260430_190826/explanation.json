@@ -1,0 +1,48 @@
+{
+  "mode": "swing",
+  "tickers": ["BAC", "GS"],
+  "layer1_tldr": "The system recommends buying Bank of America (BAC) on a short-term pullback — it's been in a strong uptrend and dipped to a level where multiple strategies agree it's a good entry. Goldman Sachs (GS) gets a pass for now: a messy earnings reaction, heavy insider selling, and conflicting signals make it too risky to enter from either direction this week.",
+  "layer2_story": "Both BAC and GS are major US banks analyzed in the context of a broadly bullish market (best April since 2020) and a Fed that just held rates steady at 3.5-3.75%. That macro backdrop generally favors financials — higher-for-longer rates boost net interest income. So why the split verdict?\n\nBAC just reported a strong Q1 beat (EPS $1.11 vs $1.01 expected) and raised its full-year net interest income guidance. The stock pulled back from recent highs, creating what technicians call a 'dip within an uptrend' — like a wave that recedes before the next surge. Three of five swing strategy agents flagged this as a buy: the trend is intact (ADX of 54.8 is very high, meaning momentum is strong), RSI-7 hit 30.4 (oversold territory for a short-term trader), and the pullback landed right at the 10/21 EMA zone (a well-watched support level). The only dissenters were the catalyst and macro agents who noted no fresh catalyst within 10 days and flagged Berkshire Hathaway's ongoing stake reduction as an overhang.\n\nGS told a different story. On the surface the Q1 numbers looked good — EPS beat estimates. But the bond-trading desk (FICC) missed by nearly $900M while rivals JPMorgan (+21%) and Morgan Stanley (+29%) surged. The market noticed: GS sold off sharply on April 29 while the rest of the market rallied. That kind of divergence — falling on good news in a rising market — is a red flag. Add 173 insider sells vs. 52 buys and broken hourly support, and the catalyst agent rated it bearish at 68 confidence. But the stock is also short-term oversold (RSI-7 at 25.75), making a short risky in a risk-on tape. No clean trade either way — the system waits.",
+  "layer3_per_ticker": {
+    "BAC": {
+      "verdict": "BUY 15 shares at $52.75 — moderate conviction (55%) dip-buy within a strong uptrend, targeting $55.40 over 5-10 trading days.",
+      "bull_case": "Strong Q1 earnings beat with raised NII guidance. ADX 54.8 confirms a powerful uptrend. Price pulled back to the 10/21 EMA confluence — a textbook dip-buy zone. Three swing agents (trend, mean-reversion, breakout) agree on the setup. Morningstar named BAC its 'best idea' in major banks. Analyst consensus is Buy with average target ~$60.",
+      "bear_case": "On-balance volume (OBV) is diverging from price — institutions may be quietly distributing. Berkshire Hathaway has been reducing its stake. Catalyst agent sees no fresh trigger within 10 days. Macro agent notes the risk-reward only barely clears 2:1 at current price.",
+      "numbers_that_matter": [
+        "Entry $52.75: The price where the system buys — right at the EMA pullback zone where trend historically resumes.",
+        "Target $55.40: Resistance tested 5 times before — that's where sellers tend to appear and the system plans to exit.",
+        "Stop $51.50: The exit if wrong — below the 38.2% Fibonacci retracement level. Losing $1.25/share to make $2.65/share.",
+        "R/R 2.12:1: For every $1 risked, the system expects to gain $2.12 — above the minimum 2:1 threshold.",
+        "ADX 54.8: Trend strength indicator. Above 25 = trending; above 50 = very strong trend. This is a clear uptrend, not noise.",
+        "RSI-7: 30.4 — at 30 the stock is considered short-term oversold (like a stretched rubber band that wants to snap back)."
+      ],
+      "risk_check": "The biggest risk is that OBV divergence signals real distribution — meaning big players are quietly selling into the rally. If Berkshire continues reducing its stake, that could cap the upside. A broader market selloff would also hurt. The stop at $51.50 limits downside to $18.75 per this 15-share position ($791 deployed)."
+    },
+    "GS": {
+      "verdict": "HOLD — no position taken. Signals are too conflicted and no clean entry exists from either the long or short side.",
+      "bull_case": "Strong Q1 EPS headline beat. Daily EMA uptrend still intact. Mean-reversion agent saw a buyable Fibonacci dip at $913.91. Short-term RSI-7 at 25.75 is oversold, suggesting a potential bounce.",
+      "bear_case": "FICC revenue missed whisper by $910M while peers JPMorgan (+21%) and Morgan Stanley (+29%) surged — a market share concern in Goldman's core franchise. Sharp April 29 selloff broke key hourly support at $924. Insider distribution is extreme: 173 sells vs. 52 buys ($109.9M sold). Analyst consensus is Hold with average target ~$904 — essentially at current price, no upside.",
+      "numbers_that_matter": [
+        "FICC miss: $910M below whisper estimates — Goldman's bond trading desk underperformed while rivals gained share.",
+        "Insider ratio 3.3:1 sells: 173 insider sells vs. 52 buys signals that executives and directors are reducing exposure.",
+        "Broken support $924.23: A level tested 29 times before April 29 — once broken, support becomes resistance.",
+        "Head Trader confidence 38: Below the 40 threshold required to act. The system requires at least moderate conviction.",
+        "Bullish R/R ~0.31:1: At current price, the upside to target is only one-third the downside to stop — terrible odds."
+      ],
+      "risk_check": "The risk of doing nothing is missing a bounce (short-term oversold). The risk of going long is that the FICC narrative worsens into Q2. The risk of going short is getting squeezed in a broadly risk-on market. The system's response: sit out and re-evaluate when daily momentum stabilizes."
+    }
+  },
+  "layer4_glossary": {
+    "ADX (Average Directional Index)": "Measures trend strength from 0-100. Below 25 = sideways/choppy. Above 25 = trending. Above 50 = very strong trend. Higher is better for trend-following strategies.",
+    "EMA (Exponential Moving Average)": "A smoothed average of recent prices that reacts faster to new data than a simple average. The 10/21 EMA zone means the 10-day and 21-day averages — a common support level in uptrends.",
+    "RSI (Relative Strength Index)": "Momentum oscillator from 0-100. Below 30 = oversold (potentially cheap/bounce candidate). Above 70 = overbought (potentially expensive/pullback candidate). RSI-7 uses 7 days for a more sensitive short-term view.",
+    "OBV (On-Balance Volume)": "Tracks whether volume is flowing into or out of a stock. Rising OBV = buying pressure. If OBV falls while price rises, big players may be secretly distributing — a warning sign.",
+    "Fibonacci Retracement": "Based on the mathematical Fibonacci sequence, traders watch 23.6%, 38.2%, 50%, and 61.8% pullback levels as potential support/resistance in a trend.",
+    "FICC (Fixed Income, Currencies and Commodities)": "Goldman Sachs's bond and derivatives trading division — their largest revenue source and competitive moat.",
+    "NII (Net Interest Income)": "The difference between what a bank earns on loans/investments and what it pays on deposits. Higher rates = higher NII for banks like BAC.",
+    "Risk-Reward Ratio": "How much you stand to gain vs. lose on a trade. A 2:1 ratio means for every $1 risked you aim to gain $2. Most professional traders require at least 2:1.",
+    "Support/Resistance": "Price levels where buying (support) or selling (resistance) historically concentrates. The more times a level is tested, the more significant it becomes.",
+    "Swing Trading": "Holding stocks for 2-20 days to capture a 'swing' in price. Not as fast as day trading, not as long as investing — capturing medium-term momentum or mean reversion moves.",
+    "Insider Selling": "When company executives, directors, or major shareholders sell stock. Some selling is routine (diversification, taxes). Heavy selling relative to buying can signal lack of confidence in near-term prospects."
+  }
+}

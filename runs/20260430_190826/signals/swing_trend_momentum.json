@@ -1,0 +1,20 @@
+{
+  "BAC": {
+    "signal": "bullish",
+    "confidence": 58,
+    "reasoning": "TREND: Daily EMA alignment is fully bullish (10 EMA 52.73 > 21 EMA 52.09 > 50 EMA 51.42), confirmed by ema_aligned_uptrend=true. ADX at 54.8 is exceptionally strong and well above the 25 threshold, with Plus DI (28.31) dominating Minus DI (19.11). The macro regime (risk-on April 30, S&P at ATH) further supports the bullish trend context. MOMENTUM: Mixed and a concern. ROC 21d is strongly positive (+11.96) confirming the trend's momentum over the cycle, but ROC 5d (-0.45) and ROC 10d (-2.65) are both negative, indicating short-term deceleration during this pullback. Daily MACD histogram is -0.11 (slightly negative, momentum fading on daily). This is technically below the 'all ROC positive' threshold required for a clean setup. MITIGATING FACTOR: The negative 5d/10d ROC directly reflects the current pullback to the 10/21 EMA zone — it is the pullback itself, not trend reversal. Crucially, hourly momentum is RECOVERING: hourly MACD histogram is +0.126 (positive and expanding), hourly ROC 5d (+0.58) and 10d (+2.17) are both positive, and hourly EMA alignment is bullish. This hourly recovery suggests the pullback is finding a floor. Wiki memory (April 15) identified $53 as the target pullback entry; current price near $52.88 daily (intraday $53.56) is right in that zone. OBV divergence on daily is a mild negative flag. SETUP: Pullback to 10/21 EMA with recovering hourly momentum in a strong ADX trend. Entry near 21 EMA (~$52.08-52.73 zone), targeting resistance at $55.40 (recent pivot high), stop below 21 EMA. Confidence held to 58 given the mixed short-term ROC and negative daily MACD histogram — this is a watch-for-entry rather than aggressive entry.",
+    "entry": 52.73,
+    "target": 55.4,
+    "stop": 51.5,
+    "timeframe": "5-12 trading days"
+  },
+  "GS": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "TREND: Daily EMA alignment is technically bullish (10 EMA 919.4 > 21 EMA 903.6 > 50 EMA 885.9, ema_aligned_uptrend=true), and ADX at 32.67 confirms trend strength above the 25 threshold with Plus DI (27.25) above Minus DI (21.3). However, the Apr 29 session produced a sharp selloff from open $927 to close $905.60 (low $899.16), wiping out the prior session's gains and closing just barely above the 21 EMA. MOMENTUM — DECELERATING: ROC 5d is -3.13 (negative), ROC 10d is +0.68 (barely positive), ROC 21d is +12.13. The mixed short-term ROC with a strongly negative 5d print is a disqualifier under the strategy rules. Daily MACD histogram is -0.36 (negative, decelerating). HOURLY DIVERGENCE — WARNING: Hourly EMA alignment is NOT confirmed (ema_aligned_uptrend=false, tangled). Hourly MACD histogram is -1.42, expanding bearishly — an explicit warning signal per the multi-timeframe rules (hourly diverging from daily = early warning of trend exhaustion). Hourly ADX is only 15.12 (weak), and hourly Minus DI (30.18) is dominating Plus DI (21.22), indicating near-term bearish pressure. Hourly RSI at 39.93 is weak. OBV on daily is trending down and diverging from price — additional bearish confirmation. Wiki prior read noted ADX was below 25 (not actionable); ADX has improved but the momentum picture has since deteriorated sharply. CONCLUSION: Mixed ROC, decelerating MACD histogram, tangled hourly EMAs, and expanding hourly bearish MACD histogram all trigger the neutral rule. The setup requires evidence of momentum re-acceleration — specifically, daily MACD histogram turning positive, hourly EMA re-aligning bullish, and price reclaiming the 10 EMA (~$919) — before a swing entry is warranted.",
+    "entry": 919.4,
+    "target": 933.48,
+    "stop": 899.16,
+    "timeframe": "wait — no actionable entry now; re-evaluate in 2-4 trading days"
+  }
+}

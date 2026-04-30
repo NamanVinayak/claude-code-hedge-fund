@@ -1,0 +1,20 @@
+{
+  "BAC": {
+    "signal": "bullish",
+    "confidence": 38,
+    "reasoning": "BAC is in a strong established uptrend (ADX 54.8) — not a classic coiling consolidation — but the hourly timeframe shows a tight Bollinger squeeze (BB width 0.0338) forming within a defined intraday range of $52.25 (hourly support, 22 tests) to $53.52 (hourly resistance, 22 tests), with $54.65 as the next meaningful resistance. The wiki identified $53 as the prior resistance turned support entry zone, and current daily price ($52.88) is testing exactly that level. A bullish breakout above $53.52 (intraday range) with a target measured move to $54.65–$55.40 is forming on the hourly. However, critical breakout requirements are NOT met: daily volume ratio is only 0.79x (threshold: 1.5x+) and hourly volume is 0.46x — no volume confirmation. The daily BB width (0.1146) is moderate rather than compressed, indicating the daily-level squeeze has already fired from the prior breakout. The MACD histogram is slightly negative (-0.111) and RSI-7 at 30.4 suggests short-term oversold, but RSI-21 at 74.76 remains extended. OBV is in uptrend but diverging from price (a caution flag). The hourly squeeze is the only genuine breakout-setup element present. Range boundaries: daily consolidation approximate floor $51.83 (recent low), ceiling $53.52 (hourly resistance). Volume ratio: 0.79x daily, 0.46x hourly — both well below 1.5x. Squeeze status: fired/done at daily level; on/coiling at hourly level. Confidence is low because volume is absent and the chart is more trending than consolidating.",
+    "entry": 53.55,
+    "target": 55.40,
+    "stop": 51.80,
+    "timeframe": "4-8 trading days"
+  },
+  "GS": {
+    "signal": "neutral",
+    "confidence": 28,
+    "reasoning": "GS delivered a sharp bearish session on Apr 29 (open $927.50, close $905.60, range of ~$28) that broke below hourly support at $924.23 (29 tests), and the live price at $925.48 suggests a subsequent bounce back above that level — a potential false breakdown. The bearish case would be a confirmed breakdown below $924.23 and then $864.45 (daily support, 11 tests), with the wiki's hard stop zone at $874 as intermediate support. However, the volume requirement is not satisfied: Apr 29 volume was 1,722,200 vs 20-day avg 1,962,050, yielding a ratio of only 0.88x (threshold: 1.5x+). Without volume confirmation, a breakdown of this magnitude lacks conviction. Additionally, the daily BB width (0.1157) is already expanded rather than compressed — the chart was not in a squeeze before this move, meaning this looks more like a trend reversal or intraday flush than a true breakout from a defined consolidation base. Hourly indicators are bearish (MACD histogram -1.42, RSI 39.93, minus_di 30.18 > plus_di 21.22, ADX 15.12 weak) but hourly OBV is diverging upward while daily OBV trends down — conflicting signals. Range boundaries: no clean consolidation range present; prior uptrend with resistance at $933.48–$952.01. Volume ratio: 0.88x — fails the 1.5x threshold. Squeeze status: not squeezed; BB width already expanded. A breakout/breakdown setup requires a coiling base giving way with volume — neither condition is met for GS. Assigning neutral pending re-test of $924.23 with volume confirmation.",
+    "entry": 924.25,
+    "target": 864.45,
+    "stop": 933.50,
+    "timeframe": "5-10 trading days"
+  }
+}

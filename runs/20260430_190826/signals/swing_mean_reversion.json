@@ -1,0 +1,20 @@
+{
+  "BAC": {
+    "signal": "bullish",
+    "confidence": 60,
+    "reasoning": "Branch B fires — buy the dip in an uptrend. Daily EMA structure fully aligned uptrend (ADX 54.8, very strong trend). Price has pulled back from the recent swing high of $55.40 to the current close of $52.88, landing near the 23.6% Fibonacci retracement at $53.21 and the prior resistance-turned-support zone at ~$53 that the wiki flagged as the target buy zone. Pullback volume (relative vol 0.79) is declining — healthy sign. RSI-7 at 30.4 signals short-term oversold within the uptrend, consistent with a Branch B entry. Hourly indicators show RSI-21 at 67.56 (elevated but not extreme) and price near the top of the hourly Bollinger Band (pct_b 0.94), which adds slight caution. MACD histogram slightly negative (-0.11), suggesting the pullback is still resolving. OBV diverging from price on the daily — a meaningful warning that reduces conviction. No RSI divergence confirmed. Z-score of 1.05 rules out Branch A. Wiki context confirms this is the expected pullback entry ($53 support, target $57, stop $51.50) — this aligns with current setup, not a repeat reversal failure. Entry at current price near the Fib/support confluence with stop below the 38.2% Fib ($51.86) and wiki stop zone ($51.50).",
+    "entry": 52.88,
+    "target": 55.40,
+    "stop": 51.50,
+    "timeframe": "5-10 trading days"
+  },
+  "GS": {
+    "signal": "bullish",
+    "confidence": 58,
+    "reasoning": "Branch B fires with partial Branch A support — buy the dip in an established uptrend. Daily EMA structure is fully bullish (ema_aligned_uptrend: true, ADX 32.67 — strong trend, well above the 25 threshold, a positive contradiction vs the wiki's prior ADX reading of 19.4 which called the chart 'not yet actionable'). Price pulled back sharply on 4/29 (close $905.60) from the recent swing high of $952.01 toward the 23.6% Fibonacci retracement at $913.91. The daily close of $905.60 slightly undercut the 23.6% Fib but the hourly price has already recovered to $925.48, suggesting the low may be in. RSI-7 at 25.75 approaches Branch A oversold threshold (<25), adding a partial fade-the-extreme signal. Hourly RSI-21 at 39.93 is approaching oversold territory in a pullback within an uptrend — classic Branch B confirmation. The daily nearest support at $864.45 and horizontal support near $890 (38.2% Fib) provide a clear stop reference. Volume on the 4/29 down day (1.72M vs 1.96M avg) was slightly below average — marginally healthy for a pullback. OBV daily is trending down and diverging from price — a notable warning reducing confidence. Hourly MACD histogram at -1.42 shows accelerating short-term bearish momentum, and hourly ADX shows minus_di > plus_di (30.18 vs 21.22), meaning the hourly is still in pullback mode. Wait for reversal candle confirmation or stabilization near $913-920 before full entry. Target is retest of recent swing high $952. Stop below the 38.2% Fib at $890.",
+    "entry": 913.91,
+    "target": 952.01,
+    "stop": 889.00,
+    "timeframe": "7-12 trading days"
+  }
+}

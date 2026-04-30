@@ -1,0 +1,44 @@
+{
+  "run_id": "20260430_190826",
+  "mode": "swing",
+  "started_at": "2026-04-30T19:08:51Z",
+  "ended_at": "2026-04-30T19:26:05Z",
+  "tickers": [
+    "BAC",
+    "GS"
+  ],
+  "decisions": [
+    {
+      "ticker": "BAC",
+      "action": "buy",
+      "confidence": 55,
+      "entry": 52.75,
+      "stop": 51.5,
+      "target": 55.4,
+      "reasoning_tldr": "Head Trader bullish (55 conf), 3/5 swing agents agree"
+    },
+    {
+      "ticker": "GS",
+      "action": "hold",
+      "confidence": 38,
+      "entry": null,
+      "stop": null,
+      "target": null,
+      "reasoning_tldr": "Head Trader neutral (38 conf), only 'hold' in allowed_actions"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 2,
+    "cash": 5000.0,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "mixed",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

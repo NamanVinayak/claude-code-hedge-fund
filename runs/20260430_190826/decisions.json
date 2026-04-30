@@ -1,0 +1,34 @@
+{
+  "decisions": {
+    "BAC": {
+      "action": "buy",
+      "quantity": 15,
+      "entry_price": 52.75,
+      "target_price": 55.40,
+      "stop_loss": 51.50,
+      "risk_reward_ratio": "2.12:1",
+      "timeframe": "5-10 trading days",
+      "confidence": 55,
+      "reasoning": "Head Trader bullish (55 conf), 3/5 swing agents agree. Pullback to 10/21 EMA confluence at $52.73-52.88 in ADX-54.8 uptrend. R/R 2.12:1 meets threshold. Risk mgr limit $806; 15 shares @ $52.75 = $791 within limit. Stop below wiki stop zone / 38.2% Fib at $51.50. Target $55.40 resistance (5 tests). Key risks: OBV divergence, Berkshire overhang — sized defensively at max allowed qty but within vol-adjusted limit."
+    },
+    "GS": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": null,
+      "target_price": null,
+      "stop_loss": null,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "N/A",
+      "confidence": 38,
+      "reasoning": "Head Trader neutral (38 conf), only 'hold' in allowed_actions. Fractured 1B/3N/1Bear signal; FICC miss overhang, heavy insider selling (3.3:1 ratio), broken hourly support at $924. No clean entry either direction."
+    }
+  },
+  "synthesis": {
+    "total_capital": 5000.0,
+    "capital_deployed": 791.25,
+    "capital_remaining": 4208.75,
+    "positions_taken": 1,
+    "positions_skipped": 1,
+    "notes": "BAC: textbook dip-buy in strong uptrend; entry at EMA pullback zone with 2.12:1 R/R. GS: no actionable setup — fractured signals, broken support, extreme insider distribution, and only 'hold' permitted by allowed_actions. Both tickers are correlated (0.63) so BAC-only sizing preserves capital and limits sector concentration."
+  }
+}
