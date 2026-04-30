@@ -1,6 +1,6 @@
 # AI Hedge Fund — Claude Code Skill Collection
 
-Analyze stocks using 30+ AI agents — legendary investor personas, swing trade strategies, and intraday day-trade systems. Built as a collection of Claude Code slash commands.
+Analyze stocks using ~28 AI agents — legendary investor personas, swing trade strategies, and intraday day-trade systems. Built as a collection of Claude Code slash commands. Runs entirely on a Claude Code subscription — no paid LLM APIs.
 
 ## Install
 
@@ -14,9 +14,9 @@ ai-hedge-fund install
 | Command | What it does | Agents | Time |
 |---------|-------------|--------|------|
 | `/invest AAPL,MSFT` | Long-term portfolio decisions | 14 investor personas (Buffett, Munger, Graham, etc.) | ~5 min |
-| `/swing TSLA` | Swing trade setups (2-20 days) | 9 swing strategies + Head Trader | ~3 min |
+| `/swing TSLA` | Swing trade setups (2-20 days) | 5 swing strategies + Head Trader | ~3 min |
 | `/daytrade SPY` | Intraday trade plan | 9 day-trade strategies + Head Trader | ~3 min |
-| `/research NVDA` | Comprehensive research report | All 30+ agents | ~15 min |
+| `/research NVDA` | Comprehensive research report | ~28 agents (all modes combined) | ~15 min |
 
 ## How It Works
 
@@ -29,11 +29,17 @@ Your ticker → Fetch financial data → N AI agents analyze independently
 
 **Invest**: 14 legendary investors (Warren Buffett, Charlie Munger, Ben Graham, Cathie Wood, Michael Burry, etc.) each independently analyze the stock using their real-world investment philosophy. A portfolio manager synthesizes all opinions into a buy/sell/hold decision with holding duration.
 
-**Swing**: 9 trading strategies (trend following, pullback, breakout, momentum, mean reversion, catalyst, sector rotation) analyze the daily chart. A Head Trader resolves conflicting signals. Output includes entry price, target, stop-loss, and risk-reward ratio.
+**Swing**: 5 trading strategies (trend/momentum, mean reversion, breakout, catalyst/news, macro context) analyze daily + hourly charts. Each owns a genuinely distinct viewpoint so the Head Trader resolves real disagreement, not echoes. Output includes entry price, target, stop-loss, and risk-reward ratio.
 
 **Day Trade**: 9 intraday strategies (VWAP, momentum scalping, mean reversion, breakout, gap analysis, volume profiling, pattern reading, stat arb, news catalyst) analyze 5-minute charts. Output is a specific trade plan for the day.
 
-**Research**: All 30+ agents from all modes run. Output is a balanced report: bull case, bear case, key metrics, risk factors, sentiment breakdown. No trading recommendation.
+**Research**: All agents from all modes run. Output is a balanced report: bull case, bear case, key metrics, risk factors, sentiment breakdown. No trading recommendation.
+
+## Wiki Memory Layer (optional)
+
+Each run can read and update a per-ticker wiki — a synthesis of past analysis, trade outcomes, and current thesis. The agents read TL;DR slices of the relevant wiki pages, write decisions, and a curator agent updates the wiki at the end of the run. A weekly compactor keeps pages within size budgets.
+
+Disabled by default. Enable by setting `settings.wiki_enabled: true` in `tracker/watchlist.json` after running `scripts/wiki_bootstrap.py` for your watchlist.
 
 ## Data Sources (all free)
 
