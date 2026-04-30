@@ -1,43 +1,41 @@
 ---
 name: CVX thesis
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_212526
 target_words: 500
 stale_after_days: 30
-word_count: 581
-summary: Bull vs bear case for Chevron, synthesized from the Apr 11 swing run narrative
+word_count: 497
+summary: Iran port blockade partially falsified the ceasefire-driven bear thesis; bearish technical setup intact at $192-193 exhaustion zone; earnings blackout defers any action to May 4-5
 ---
 
 ## TL;DR
 
-CVX is an integrated energy major caught between two competing forces: a strong structural bull case built on new discoveries, analyst upgrades, and resilient global demand, and an immediate bear case driven by a ceasefire-triggered oil price collapse, a self-reported $2.7-3.7B Middle East earnings hit, and heavy insider selling. The swing model chose the bear side for a short entry at $192 with a 2.0:1 risk-reward, targeting $178 over 5-10 days. Source: run `swing_20260411_211655`.
+The prior thesis (Apr 11) held that a US-Iran ceasefire had collapsed the oil risk premium and CVX would decline to $178 from a bounce at $192. That bounce arrived exactly on schedule — but the ceasefire has been replaced by a US military blockade of Iranian ports, which partially falsified the macro bear case by pushing oil back above $100/bbl. The bearish technical structure is intact (OBV diverging, -DI > +DI, hourly RSI divergence), but the macro tailwind for energy has reversed direction. Net result: head trader is bearish (conf 58) but Q1 earnings blackout blocks all action until May 4-5. Source: run `20260430_212526`.
+
+**What falsified the prior thesis:** The April 11 thesis assumed the US-Iran ceasefire would persist and the Hormuz disruption premium would continue to unwind. Instead, the ceasefire ended and the US imposed a port blockade, driving Goldman to raise Brent to $90/bbl. The oil-price bear premise no longer holds at the macro level — though the technical and fundamental bear signals remain. (Source: `20260430_212526/signals_combined.json`, swing_macro_context)
 
 ---
 
 ## Bull Case
 
-Chevron has genuine long-term operational strengths that underpin the analyst community's persistent buy rating.
+**Macro tailwind restored.** The Iran port blockade has reintroduced a geopolitical oil premium. Goldman raised Brent to $90/bbl. CVX as an integrated major benefits directly from sustained higher oil prices. Trump consulted CVX CEO on oil market turbulence — signals strategic importance. (Source: `20260430_212526/web_research/CVX.json`)
 
-**New production pipeline.** CVX confirmed a significant oil discovery at the Bandit prospect in the Gulf of Mexico and is nearing a Venezuela output deal that could add meaningful barrels. The Leviathan gas field in Israel — shut for 33 days during the Strait of Hormuz crisis — resumed production, restoring 14 billion cubic metres of capacity. Separately, the Tengiz expansion in Kazakhstan and ongoing Permian Basin upgrades position CVX competitively among its peers for the next growth cycle.
+**Analyst consensus above current price.** Median analyst target $209 implies ~9% upside. JPMorgan raised PT to $216; Wells Fargo to $222. Of 23-42 analysts covering CVX, ~17-18 rate it Buy. CVX's 38-year dividend growth streak and tighter breakeven vs. European peers give quality premium. (Source: `20260430_212526/web_research/CVX.json`)
 
-**Analyst conviction.** Of 21 analysts covering CVX as of the April 11 run, 16 rate it a Buy and 5 rate it Hold — zero sells. Wells Fargo raised its price target from $204 to $222 on April 9. The consensus average target is $206.58 with a median at $209, implying roughly 7-9% upside from the $192 swing entry price. Jim Cramer recommended Chevron as an oil play. (Source: `swing_20260411_211655/web_research/CVX.json`)
-
-**Valuation floor.** Q4 2025 EPS was $1.52. Even with Q1 2026 Middle East headwinds, consensus Q1 EPS is still estimated at $1.50. The pullback trader agent identified the 61.8% Fibonacci retracement at $185.43 as a potential technical floor where value buyers historically step in.
+**Operational performance solid.** Q1 non-cash charges ($2.7-3.7B) are expected to reverse in subsequent quarters. Production grew YoY. Venezuela and Tengiz expansion plus Gulf of Mexico discoveries (Bandit prospect) provide medium-term upside. (Source: `20260430_212526/web_research/CVX.json`)
 
 ---
 
 ## Bear Case
 
-The near-term headwinds are concrete and quantified, which is why the swing model assigned its highest bearish conviction to CVX among all 19 tickers analyzed.
+**Distribution in a downtrend.** Daily OBV trends down and diverges from price bounce — the rally to $192-193 has no institutional accumulation behind it. ADX 32.24 with -DI (29.97) above +DI (21.31) confirms the underlying daily directional bias remains bearish. 21-day ROC is -8.78% — this is a bounce inside a downtrend, not a reversal. (Source: `20260430_212526/signals_combined.json`)
 
-**Self-reported Middle East damage.** Chevron disclosed a $2.7-3.7B negative impact to Q1 earnings from Middle East commodity volatility — production cut from 4.05M boe/d in Q4 2025 to only 3.8-3.9M boe/d. This is management's own guidance, not analyst speculation. (Source: `swing_20260411_211655/web_research/CVX.json`)
+**Insider selling at the top.** Insider Pate sold $8.6M with no offsetting buys. The bounce from $184 to $193 occurred on 0.77x average volume — no conviction. (Source: `20260430_212526/signals_combined.json`)
 
-**Ceasefire oil shock.** On April 8, a US-Iran ceasefire announcement caused Brent crude to drop 15% in a single day. CVX shares fell 5.3% that day alone. The ceasefire removes the geopolitical war premium that had pushed energy stocks up roughly 40% YTD. If the ceasefire holds, the tailwind that inflated CVX reverses.
-
-**Momentum and insider signal.** CVX holds the worst CCI reading in the 19-stock universe at -170, indicating severe bearish momentum. The stock dropped 9.3% in 10 days as of the run date. CEO-level insider Pate sold $8.6M in shares near what turned out to be a top. Sector rotation data showed 73% confidence that institutional money was flowing out of energy. (Source: `swing_20260411_211655/decisions.json`)
+**Earnings event amplifies downside risk.** Q1 EPS consensus at $0.92-$0.97 vs. prior-year $2.68. Non-cash charges will dominate the headline. A weak print could accelerate the move to the $183.50 target. (Source: `20260430_212526/web_research/CVX.json`)
 
 ---
 
 ## What Would Change the Bear Thesis
 
-The ceasefire is the single biggest risk. It was described as a two-week window from April 8 — if it collapses before it becomes permanent, oil prices spike and the short thesis breaks. Any escalation in Iran, Strait of Hormuz, or Israel-Lebanon situation would invalidate the bear case quickly. The run's risk notes flagged this explicitly: combined energy short exposure (XOM + CVX) was 37.8% of the portfolio, creating concentrated correlation risk. On the bull side, a sustained recovery of Leviathan production, a better-than-feared Q1 earnings report, or a confirmed Venezuela deal could serve as re-rating catalysts for the stock.
+Iran blockade escalating to a full Strait of Hormuz closure would spike oil prices and invalidate the short at any level. A Q1 earnings beat beyond the charge reversal — particularly production outperformance — could re-rate the stock through $196 stop. Any confirmed Venezuela output deal or new discovery headline would also challenge the bear case.
