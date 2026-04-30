@@ -4,126 +4,420 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GOOG | AI Hedge Fund</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg:       #0d1117;
+            --surface:  #161b22;
+            --surface2: #1c2128;
+            --border:   #21262d;
+            --border2:  #30363d;
+            --text:     #e6edf3;
+            --muted:    #7d8590;
+            --subtle:   #484f58;
+            --green:    #3fb950;
+            --green-dim:#1a3a20;
+            --red:      #f85149;
+            --red-dim:  #3b1a1a;
+            --blue:     #58a6ff;
+            --blue-dim: #1a2a3a;
+            --yellow:   #d29922;
+            --yellow-dim:#2d2004;
+            --font:     'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --mono:     'JetBrains Mono', 'Fira Code', monospace;
+            --radius:   10px;
+            --radius-sm:6px;
+        }
+
+        html { scroll-behavior: smooth; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #121212;
-            color: #e0e0e0;
-            margin: 0;
-            padding: 0;
+            font-family: var(--font);
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
             line-height: 1.6;
+            font-size: 14px;
         }
+
+        /* ── NAV ── */
         nav {
-            background-color: #1e1e1e;
-            padding: 1rem;
-            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(13,17,23,0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
         }
-        nav a {
-            color: #90caf9;
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav-brand {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text);
             text-decoration: none;
-            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-right: 16px;
+            white-space: nowrap;
+        }
+        .nav-brand .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--green);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%,100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        .nav-links { display: flex; gap: 4px; flex: 1; }
+        .nav-link {
+            color: var(--muted);
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: var(--radius-sm);
+            font-size: 13px;
             font-weight: 500;
+            transition: color .15s, background .15s;
+            white-space: nowrap;
         }
-        nav a:hover {
-            text-decoration: underline;
+        .nav-link:hover { color: var(--text); background: var(--surface2); }
+        .nav-link.active { color: var(--text); background: var(--surface2); }
+        .nav-meta {
+            font-size: 11px;
+            color: var(--muted);
+            font-family: var(--mono);
+            white-space: nowrap;
+            margin-left: auto;
         }
+
+        /* ── LAYOUT ── */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 32px 20px;
+            flex: 1;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-            background-color: #1e1e1e;
+
+        /* ── PAGE HEADER ── */
+        .page-header { margin-bottom: 28px; }
+        .page-header h1 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text);
+            line-height: 1.2;
         }
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #333;
+        .page-header p {
+            color: var(--muted);
+            font-size: 13px;
+            margin-top: 4px;
         }
-        th {
-            background-color: #2c2c2c;
-            font-weight: 600;
-        }
-        .profit { color: #81c784; }
-        .loss { color: #e57373; }
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-            color: #888;
-            border-top: 1px solid #333;
-            margin-top: 40px;
-        }
+
+        /* ── CARDS ── */
         .card {
-            background-color: #1e1e1e;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
             padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
+        .card-sm {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px;
+        }
+
+        /* ── BADGES ── */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .badge-buy, .badge-long  { background: var(--green-dim); color: var(--green); }
+        .badge-short { background: var(--red-dim);   color: var(--red);   }
+        .badge-hold  { background: var(--surface2);  color: var(--muted); }
+        .badge-win, .badge-target_hit { background: var(--green-dim); color: var(--green); }
+        .badge-stop_hit  { background: var(--red-dim);   color: var(--red);   }
+        .badge-expired   { background: var(--yellow-dim); color: var(--yellow); }
+
+        /* ── PROFIT / LOSS COLORS ── */
+        .profit { color: var(--green); }
+        .loss   { color: var(--red);   }
+        .neutral { color: var(--muted); }
+
+        /* ── STAT BLOCKS ── */
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .stat-block {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px;
+        }
+        .stat-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
+        .stat-value { font-size: 22px; font-weight: 700; font-family: var(--mono); line-height: 1; }
+        .stat-sub   { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+        /* ── GRID ── */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+
+        /* ── DIVIDER ── */
+        hr { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
+
+        /* ── TABLES ── */
+        .table-wrap { overflow-x: auto; border-radius: var(--radius); border: 1px solid var(--border); }
+        table { width: 100%; border-collapse: collapse; }
+        th {
+            background: var(--surface2);
+            padding: 10px 14px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--muted);
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            white-space: nowrap;
+        }
+        td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border);
+            font-size: 13px;
+            vertical-align: middle;
+        }
+        tr:last-child td { border-bottom: none; }
+        tr:hover td { background: var(--surface2); }
+        td a { color: inherit; text-decoration: none; font-weight: 600; }
+        td a:hover { color: var(--blue); }
+        .mono { font-family: var(--mono); }
+
+        /* ── PROGRESS BAR ── */
+        .progress-wrap { background: var(--border); border-radius: 3px; height: 4px; }
+        .progress-fill { height: 4px; border-radius: 3px; }
+
+        /* ── EMPTY STATE ── */
+        .empty {
+            text-align: center;
+            padding: 64px 20px;
+            color: var(--muted);
+        }
+        .empty-icon { font-size: 40px; margin-bottom: 16px; opacity: 0.5; }
+        .empty h2 { font-size: 16px; color: var(--text); margin-bottom: 8px; }
+        .empty p { font-size: 13px; max-width: 360px; margin: 0 auto; }
+
+        /* ── CONFIDENCE BAR ── */
+        .conf-wrap { display: flex; align-items: center; gap: 8px; }
+        .conf-bar-bg { flex: 1; background: var(--border); border-radius: 3px; height: 4px; }
+        .conf-bar { height: 4px; border-radius: 3px; background: var(--blue); }
+        .conf-label { font-family: var(--mono); font-size: 12px; color: var(--muted); min-width: 32px; text-align: right; }
+
+        /* ── FOOTER ── */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 16px 20px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        /* ── TAG ── */
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            background: var(--surface2);
+            border: 1px solid var(--border2);
+            border-radius: 4px;
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        /* ── MOBILE ── */
+        @media (max-width: 640px) {
+            .container { padding: 16px 12px; }
+            .nav-inner { padding: 0 12px; }
+            .nav-brand span { display: none; }
+            .nav-meta { display: none; }
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+            .stat-grid { grid-template-columns: 1fr 1fr; }
+            .hide-mobile { display: none !important; }
+        }
+
+        
+.ticker-hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+.ticker-name {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1;
+}
+.ticker-sub { font-size: 13px; color: var(--muted); margin-top: 6px; }
+
+.pos-pill {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    min-width: 200px;
+}
+.pos-pill-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.pos-pill-pnl { font-size: 28px; font-weight: 700; font-family: var(--mono); line-height: 1.1; margin-top: 4px; }
+.pos-pill-pct { font-size: 13px; font-family: var(--mono); }
+
+.chart-frame {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.thesis-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--blue);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.thesis-card h2 { font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 12px; }
+.thesis-card p { font-size: 13px; color: var(--muted); line-height: 1.75; margin-bottom: 10px; }
+.thesis-card p:last-child { margin-bottom: 0; }
+
+.dec-timeline { }
+.dec-item {
+    display: grid;
+    grid-template-columns: 80px 80px 120px 1fr;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: start;
+}
+.dec-item:last-child { border-bottom: none; }
+.dec-date { font-size: 12px; font-family: var(--mono); color: var(--muted); }
+
+@media (max-width: 640px) {
+    .ticker-name { font-size: 28px; }
+    .dec-item { grid-template-columns: 1fr 1fr; }
+    .dec-item .dec-reason { grid-column: 1/-1; }
+}
+
     </style>
 </head>
 <body>
-    <nav>
-        <div class="container" style="padding: 0;">
-            <a href="index.html">Live Positions</a>
-            <a href="today.html">Today's Decisions</a>
-            <a href="closed.html">Closed Trades</a>
+<nav>
+    <div class="nav-inner">
+        <a class="nav-brand" href="index.html">
+            <div class="dot"></div>
+            <span>AI Hedge Fund</span>
+        </a>
+        <div class="nav-links">
+            <a class="nav-link " href="index.html">Positions</a>
+            <a class="nav-link " href="today.html">Decisions</a>
+            <a class="nav-link " href="closed.html">History</a>
         </div>
-    </nav>
-    <div class="container">
-        
-<h1>GOOG</h1>
-<div class="card">
-    <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container">
-      <div id="tradingview_GOOG"></div>
-      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-      <script type="text/javascript">
-      new TradingView.widget(
-      {
-      "width": "100%",
-      "height": 400,
-      "symbol": "GOOG",
-      "interval": "D",
-      "timezone": "Etc/UTC",
-      "theme": "dark",
-      "style": "1",
-      "locale": "en",
-      "enable_publishing": false,
-      "hide_top_toolbar": true,
-      "save_image": false,
-      "container_id": "tradingview_GOOG"
-    }
-      );
-      </script>
+        <div class="nav-meta">02:31 AM ET · ~4m</div>
     </div>
-    <!-- TradingView Widget END -->
+</nav>
+
+<div class="container">
+    
+<div class="ticker-hero">
+    <div>
+        <div class="ticker-name">GOOG</div>
+        <div class="ticker-sub">
+            <a href="index.html" style="color:var(--muted);text-decoration:none;">← All Positions</a>
+        </div>
+    </div>
+
+    
+</div>
+
+<!-- TradingView Chart -->
+<div class="chart-frame">
+    <div class="tradingview-widget-container" style="height:420px;">
+        <div id="tv_GOOG" style="height:420px;"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script>
+        new TradingView.widget({
+            "width": "100%",
+            "height": 420,
+            "symbol": "GOOG",
+            "interval": "D",
+            "timezone": "America/New_York",
+            "theme": "dark",
+            "style": "1",
+            "locale": "en",
+            "enable_publishing": false,
+            "hide_top_toolbar": false,
+            "hide_side_toolbar": true,
+            "save_image": false,
+            "backgroundColor": "rgba(22,27,34,1)",
+            "gridColor": "rgba(33,38,45,1)",
+            "container_id": "tv_GOOG"
+        });
+        </script>
+    </div>
 </div>
 
 
-
-
-<div class="card">
-    <h2>Thesis (from Wiki)</h2>
+<div class="thesis-card">
+    <h2>AI Thesis (from Wiki)</h2>
     <p>Alphabet is broadly bullish across two independent model runs (20260415_093758 and swing_20260411_211655): 7/10 and 6/9 strategy agents agree on the long side with zero bearish signals in either run. The durable bull case is AI cloud compounding via Google Cloud; the durable bear case is antitrust-mandated structural change plus a $175–185B capex commitment that pressures near-term earnings.</p><p>**1. Google Cloud as the third AI infrastructure hyperscaler.** Both runs flag Google Cloud as gaining ground on AWS and Azure (swing_20260411_211655 web research; 20260415_093758 explanation). AI workloads (Gemini, TPUs, enterprise contracts) are driving margin-accretive revenue at scale. The Thoma Bravo / Google Cloud AI partnership (cited in 20260415_093758 signals as a fresh catalyst) is representative of the enterprise pipeline building.</p><p>**2. Search moat survived the antitrust gauntlet.** The DOJ's final remedy was a choice-screen mandate — not a forced breakup (20260415_093758 web_research/GOOG.json). Citigroup raised its price target to $405 the same day the remedies order landed (April 14, 2026), calling the no-divestiture outcome a significant relief. Analyst consensus is 44 Strong Buy ratings vs. 0 Sells with an average target of $385.46, high of $450.</p>
 </div>
 
 
 <div class="card">
-    <h2>Recent Decisions</h2>
+    <h2 style="font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;">Recent AI Decisions</h2>
     
-    <p>No recent decisions.</p>
+    <p style="color:var(--muted);font-size:13px;">No recent decisions for GOOG.</p>
     
 </div>
 
 
 
-    </div>
-    <footer>
-        Last updated: 12:49 AM ET &middot; Built by AI Hedge Fund &middot; Next update ~1 min
-    </footer>
+
+</div>
+
+<footer>
+    Live AI swing trading · Updates every 5 min via GitHub Actions · <a href="https://github.com/NamanVinayak/claude-code-hedge-fund" style="color:var(--blue);text-decoration:none">Open source</a>
+</footer>
+
+
 </body>
 </html>
