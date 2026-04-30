@@ -121,8 +121,8 @@ def main():
     with open(os.path.join(args.output, "index.html"), "w") as f:
         f.write(index_html)
 
-    # Fetch today's runs
-    today_str = datetime.now(ZoneInfo("America/Vancouver")).strftime("%Y%m%d")
+    # Fetch today's runs — use UTC for folder matching (run folders are named in UTC)
+    today_str = datetime.now(ZoneInfo("UTC")).strftime("%Y%m%d")
     run_folders = glob.glob(f"runs/{today_str}_*")
     runs = []
     for folder in sorted(run_folders, reverse=True):
