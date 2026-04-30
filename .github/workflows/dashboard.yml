@@ -56,6 +56,13 @@ jobs:
 
           echo "skip=false" >> "$GITHUB_OUTPUT"
 
+      - name: Ingest New Decisions
+        if: steps.market_check.outputs.skip != 'true'
+        env:
+          TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
+          TURSO_AUTH_TOKEN: ${{ secrets.TURSO_AUTH_TOKEN }}
+        run: python tracker/ingest_decisions.py
+
       - name: Run Simulator
         if: steps.market_check.outputs.skip != 'true'
         env:
