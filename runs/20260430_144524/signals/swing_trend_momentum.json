@@ -1,0 +1,11 @@
+{
+  "AAPL": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "TREND ASSESSMENT: EMA alignment is technically bullish (EMA10 268.71 > EMA21 265.25 > EMA50 262.54, price above all EMAs, ema_aligned_uptrend confirmed on both daily and hourly). However, ADX 14 is only 15.78 (daily) and 14.33 (hourly) — both labeled 'weak' and well below the required threshold of 25. No tradeable trend strength exists. Wiki context corroborates: prior runs showed ADX below 15 and EMAs converged; current ADX at 15.78 is a marginal uptick but still a failing grade for this strategy's ADX >25 requirement. MOMENTUM ASSESSMENT: ROC is mixed-sign — 5d ROC is -1.1% (negative, short-term pullback in progress), 10d ROC +1.4%, 21d ROC +9.54%. The 5d negative reading means momentum is NOT uniformly positive or accelerating across timeframes, which is a disqualifying condition. Critically, the hourly MACD histogram is negative (-0.166), diverging from the daily positive histogram (+0.607) — this is an early warning of trend exhaustion on the shorter timeframe. ENTRY ASSESSMENT: Price at 270.17 is 0.54% above EMA10 and 1.85% above EMA21 — slightly extended, not at a clean pullback entry to the 10 or 21 EMA. CONCLUSION: Three disqualifiers present simultaneously: (1) ADX 15.78 < 25 required, (2) ROC mixed-sign with 5d negative, (3) hourly MACD histogram negative diverging from daily. Outputting neutral per strategy rules — wait for ADX expansion above 25 and uniform ROC acceleration before committing. Macro regime is mixed-to-cautious per wiki (Dow 5 consecutive losing sessions, meta capex shock) which reinforces patience here.",
+    "entry": 265.25,
+    "target": 276.11,
+    "stop": 262.54,
+    "timeframe": "no trade — revisit when ADX >25"
+  }
+}

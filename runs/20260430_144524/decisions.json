@@ -1,0 +1,31 @@
+{
+  "decisions": {
+    "AAPL": {
+      "action": "hold",
+      "entry_price": null,
+      "target_price": null,
+      "stop_loss": null,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "reassess post-earnings",
+      "confidence": 30,
+      "reasoning": "Earnings blackout (0 days to Q2 print) blocks new positions. Head Trader confidence 30 < 40 threshold; risk manager limit 0.0. Macro R/R fails 2:1 minimum (0.71:1 to first resistance). Insider net selling -$235M, valuation 44.8% above DCF fair value. Three of five swing agents neutral; no confirmed breakout above $276.11 or volume confirmation (0.73x avg). Wait for binary event to resolve and a clean post-earnings structure to form before initiating."
+    }
+  },
+  "synthesis": {
+    "overall_stance": "neutral — no new positions initiated",
+    "capital_deployed": 0,
+    "capital_available": 5000.0,
+    "key_risks": [
+      "Earnings binary event (Q2 FY2026 on 2026-04-30) — hold through print creates unquantifiable gap risk",
+      "Macro regime risk-off: Dow -5 consecutive sessions, Meta capex shock, Iran energy inflation",
+      "Valuation stretched: DCF fair value ~$2.20T vs $3.98T market cap (44.8% premium)",
+      "Insider distribution: CEO Cook sold $12M+ at $251-256; net insider flow -$235M",
+      "Tariff binary unresolved: 145% tariff scenario collapses iPhone gross margin to 2-3%"
+    ],
+    "post_earnings_watch": {
+      "bull_case_entry": "Clean close above $276.11 on volume >1.5x avg + ADX expansion above 25 → breakout measured move to $296.77",
+      "bear_case_entry": "Earnings miss or weak guidance → pullback to 38.2% Fib at $264.21 / 20-SMA $264.36 cluster → mean reversion long",
+      "invalidation": "Close below $255.45 support (21 tests) signals trend break; stand aside"
+    }
+  }
+}

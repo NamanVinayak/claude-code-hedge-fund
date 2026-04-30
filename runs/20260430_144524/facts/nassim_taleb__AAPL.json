@@ -1,0 +1,41 @@
+{
+  "ticker": "AAPL",
+  "score": 25,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 4,
+    "max_score": 8,
+    "details": "Near-Gaussian tails (kurtosis 1.0) \u2014 suspiciously thin; Symmetric distribution (skew -0.17); Balanced tails (tail ratio 1.12); Resilient (max drawdown -13.8%)"
+  },
+  "antifragility_analysis": {
+    "score": 6,
+    "max_score": 10,
+    "details": "Net debt but manageable relative to assets; High leverage (D/E 1.40) \u2014 fragile; Stable high margins (avg 31.2%, CV 0.03) \u2014 antifragile pricing power; Consistent FCF generation (10/10 periods positive)"
+  },
+  "convexity_analysis": {
+    "score": 2,
+    "max_score": 10,
+    "details": "Modest R&D (8.0% of revenue); Slight positive asymmetry (up/down ratio 1.14); Low cash relative to market cap (1%); Low FCF yield (3.7%)"
+  },
+  "fragility_analysis": {
+    "score": 6,
+    "max_score": 8,
+    "details": "Elevated leverage (D/E 1.40); Interest coverage 41.5x \u2014 debt is irrelevant; Stable earnings (growth std 0.07) \u2014 robust; Fat margins (27.7%) buffer shocks"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 3,
+    "max_score": 6,
+    "details": "Normal vol regime (1.00) \u2014 fair pricing; Stable vol-of-vol (0.0237)"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 3986516869120.0
+}

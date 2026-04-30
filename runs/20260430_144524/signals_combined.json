@@ -1,0 +1,309 @@
+{
+  "mode": "swing",
+  "analyst_signals": {
+    "swing_breakout": {
+      "AAPL": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "AAPL is mid-range with no confirmed breakout. Range boundaries: support at $255.45 (21 tests, daily pivot low) and resistance at $276.11 (11 tests, daily pivot high). Current price ~$271 sits in the middle of this ~$20.66 range \u2014 not at a breakout point. Volume is the critical disqualifier: daily relative volume is 0.73x the 20-day average (29.8M vs 40.8M avg), and hourly relative volume is an even weaker 0.32x \u2014 far short of the required 1.5x confirmation. No breakout can be validated without volume. Bollinger Band width has expanded from the prior Bollinger squeeze noted in wiki (0.069 on Apr 15) to 0.0994 now, suggesting the squeeze has begun releasing. However, price has not yet reached the key resistance at $276.11 to trigger a measured-move setup. The hourly pivot resistance at $273.22 (27 tests, volume-confirmed) is the first hurdle; price closed below it on Apr 28 and Apr 29. Wiki context confirms the $270-282 zone was the identified 'break-above target' from prior runs, meaning price has entered this zone but has not decisively broken the upper boundary. ADX at 15.78 daily and 14.33 hourly both signal weak trend \u2014 coiling but not yet firing. MACD histogram is positive (0.607) and RSI divergence is bullish, which adds a slight upside lean, but breakout strategy requires a confirmed CLOSE above resistance with volume \u2014 neither condition is met today. Measured move if $276.11 breaks: 276.11 + 20.66 = $296.77 target. Setup to watch, not yet to enter.",
+        "entry": 276.5,
+        "target": 296.77,
+        "stop": 273.5,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_head_trader": {
+      "AAPL": {
+        "consensus_signal": "neutral",
+        "confidence": 30,
+        "reasoning": "Three of five strategy agents output neutral on AAPL; two output a low-conviction bullish lean (both capped at confidence 42). The consensus is neutral, reinforced by the macro agent's explicit R/R veto argument. The market context here is transitional-to-cautious: Fed higher-for-longer, Dow on five consecutive losing sessions, Meta -9% capex shock creating risk-off in mega-cap tech \u2014 this environment weights swing_macro_context heavily per strategy weighting rules. The macro agent calculates immediate R/R to first resistance of only 0.71:1 and extended R/R of 1.92:1 (below the 2:1 minimum), which is a structural reason to pass independent of sentiment. The two bullish signals are internally hedged: swing_mean_reversion notes the ideal entry window has 'partially passed' and the current 23.6% Fib retracement is a shallow pullback needing a deeper test at 38.2% ($264.21) to be clean; swing_catalyst_news is explicitly a binary pre-earnings trade with a 1-3 day horizon that expires at open tomorrow. Critically, tomorrow's Q2 earnings make this a binary event \u2014 not a swing trade setup. Earnings-day holds require a fundamentally different risk framework than swing trading. ADX at 15.78 (trend_momentum's disqualifier) and volume at 0.73x average (breakout's disqualifier) both confirm that price is in a low-conviction consolidation zone rather than a directional setup. Recommended action: hold existing positions if any; do not initiate new swing positions ahead of the binary catalyst. Reassess post-earnings once the binary resolves and a new swing structure forms.",
+        "agent_agreement_pct": 60.0,
+        "key_conflicts": "The core conflict is between swing_catalyst_news and swing_macro_context. Catalyst_news argues analyst consensus (31 Buy, avg target $299-305), strong Q2 guidance (13-16% revenue growth YoY), and India production ramp support a pre-earnings drift trade \u2014 bullish at 42 confidence. Macro_context counters that R/R fails the 2:1 minimum at current price, the macro regime is risk-off (Iran energy inflation, Meta contagion, Dow losing streak), and no sector inflow signal confirms the thesis \u2014 neutral at 55 confidence. The resolution: catalyst_news is specifically a 1-3 day pre-earnings hold expiring tomorrow at open, which is not a swing trade by definition; macro_context's R/R analysis applies to the swing horizon and holds veto weight in a transitional regime. A secondary conflict exists between swing_mean_reversion (bullish, noting Fib 23.6% bounce in progress) and swing_trend_momentum (neutral, flagging that the bounce entry has 'partially passed' and ADX remains disqualifying). Mean_reversion's own reasoning acknowledges the cleaner setup would be a deeper 38.2% Fib retest at $264.21 \u2014 meaning both agents effectively agree: wait for a better entry. The insider selling signal (-$235M net, CEO Tim Cook distributed $12M+ at $251-256 in April) cuts against the bullish lean from two agents and is unresolved by any bullish argument. Breakout agent is aligned with neutral \u2014 no confirmed close above $276.11 resistance, volume too thin to validate. No high-conviction setup exists today.",
+        "recommended_action": "hold"
+      }
+    },
+    "growth_analyst_agent": {
+      "AAPL": {
+        "signal": "bearish",
+        "confidence": 50,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.35,
+            "revenue_growth": 0.0642551178283274,
+            "revenue_trend": 0.004067190356891542,
+            "eps_growth": 0.22585924713584285,
+            "eps_trend": -0.0007777221267337719,
+            "fcf_growth": -0.09227347505215656,
+            "fcf_trend": 0.019995545667734933
+          },
+          "growth_valuation": {
+            "score": 0,
+            "peg_ratio": 2.43,
+            "price_to_sales_ratio": 8.715914512234097
+          },
+          "margin_expansion": {
+            "score": 0.2,
+            "gross_margin": 0.47238064841917493,
+            "gross_margin_trend": -0.004722737948011159,
+            "operating_margin": 0.33112836128896866,
+            "operating_margin_trend": -0.0028546472609568326,
+            "net_margin": 0.2768405796467818,
+            "net_margin_trend": -0.0024070436617002963
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 0.30000000000000004,
+            "debt_to_equity": 1.3973119227482946,
+            "current_ratio": 0.8932929222186667
+          },
+          "final_analysis": {
+            "signal": "bearish",
+            "confidence": 50,
+            "weighted_score": 0.25
+          }
+        }
+      }
+    },
+    "swing_trend_momentum": {
+      "AAPL": {
+        "signal": "neutral",
+        "confidence": 20,
+        "reasoning": "TREND ASSESSMENT: EMA alignment is technically bullish (EMA10 268.71 > EMA21 265.25 > EMA50 262.54, price above all EMAs, ema_aligned_uptrend confirmed on both daily and hourly). However, ADX 14 is only 15.78 (daily) and 14.33 (hourly) \u2014 both labeled 'weak' and well below the required threshold of 25. No tradeable trend strength exists. Wiki context corroborates: prior runs showed ADX below 15 and EMAs converged; current ADX at 15.78 is a marginal uptick but still a failing grade for this strategy's ADX >25 requirement. MOMENTUM ASSESSMENT: ROC is mixed-sign \u2014 5d ROC is -1.1% (negative, short-term pullback in progress), 10d ROC +1.4%, 21d ROC +9.54%. The 5d negative reading means momentum is NOT uniformly positive or accelerating across timeframes, which is a disqualifying condition. Critically, the hourly MACD histogram is negative (-0.166), diverging from the daily positive histogram (+0.607) \u2014 this is an early warning of trend exhaustion on the shorter timeframe. ENTRY ASSESSMENT: Price at 270.17 is 0.54% above EMA10 and 1.85% above EMA21 \u2014 slightly extended, not at a clean pullback entry to the 10 or 21 EMA. CONCLUSION: Three disqualifiers present simultaneously: (1) ADX 15.78 < 25 required, (2) ROC mixed-sign with 5d negative, (3) hourly MACD histogram negative diverging from daily. Outputting neutral per strategy rules \u2014 wait for ADX expansion above 25 and uniform ROC acceleration before committing. Macro regime is mixed-to-cautious per wiki (Dow 5 consecutive losing sessions, meta capex shock) which reinforces patience here.",
+        "entry": 265.25,
+        "target": 276.11,
+        "stop": 262.54,
+        "timeframe": "no trade \u2014 revisit when ADX >25"
+      }
+    },
+    "swing_macro_context": {
+      "AAPL": {
+        "signal": "neutral",
+        "confidence": 55,
+        "reasoning": "1. MACRO REGIME: Transitional / mixed-to-cautious. Fed held at 3.5%-3.75% (third consecutive hold, no cuts priced through 2026) with higher-for-longer as base case due to Iran conflict-driven energy inflation (IMF: 4.4% headline, 3.1% global growth). Dow on fifth straight losing session. Meta -9% capex shock is injecting near-term sector risk-off sentiment for mega-cap tech. S&P gained ~9% in April but intraday chop persists. Regime is NOT cleanly risk-on \u2014 macro wind is not clearly at the back of a long AAPL trade. 2. RELATIVE STRENGTH: AAPL's 21d ROC of +9.54% signals medium-term strength and the stock is above all EMAs (fully aligned uptrend). However, 5d ROC of -1.1% reveals a near-term stall/shallow retracement while the market is flat. RSI-14 at 60.63 is healthy, RSI-21 at 66.79 shows medium-term constructiveness, but hourly RSI at 63.34 with a bearish MACD histogram (-0.166) indicates near-term fading momentum. Volume today is sub-average (relative volume 0.73 daily, 0.32 hourly) \u2014 no institutional accumulation signal confirming sector inflows. AAPL is tracking in-line with the market, not leading. 3. ASYMMETRIC R/R: Entry ~271.55, nearest resistance 276.11 (11 tests) = +1.7% upside to first target. Stop at 265.00 (below hourly support cluster at 267.20 and swing low 265.07) = -2.4% downside. Immediate R/R to first resistance: 0.71:1 \u2014 fails the 2:1 minimum. Extended target at Fib 1.272 extension of 284.00 = +4.6% upside vs. -2.4% downside = 1.92:1 \u2014 marginally below the 2:1 threshold, and reaching 284 requires clearing 276 resistance that has 11 prior tests. R/R does not meet minimum bar. 4. CAPITAL PRESERVATION: Balance sheet is strong (no leverage concerns at $3.99T market cap / robust FCF). ATR 2.06% is moderate and consistent with the regime. Key thesis risks per wiki: (a) iPhone margin survival in tariff regime unresolved; (b) credible AI story still absent. Wiki records three consecutive neutral-to-weak-buy reads \u2014 no new catalyst has emerged to change that. Macro headwinds (Iran risk, higher-for-longer, Meta contagion) directly conflict with the structurally bullish chart (above all MAs, EMAs aligned). Thesis conflict + sub-2:1 R/R = pass.",
+        "entry": 271.55,
+        "target": 284.0,
+        "stop": 265.0,
+        "timeframe": "10-15 trading days"
+      }
+    },
+    "swing_mean_reversion": {
+      "AAPL": {
+        "signal": "bullish",
+        "confidence": 42,
+        "reasoning": "Branch B fires weakly; Branch A does not fire. Branch A assessment: daily Z-score of 1.21 is within the -2 to +2 neutral band, RSI-14 at 60.63 and RSI-21 at 66.79 are elevated but below the >75 overbought threshold, Bollinger %B at 0.72 is in the upper half but not outside the bands, and price is only 3.64% above the 50-SMA (below the 5% noteworthy threshold). No statistical extreme exists and RSI divergence is bullish rather than bearish, so there is no fade setup. Branch B assessment: all EMAs are aligned in an uptrend, confirming a dominant upward structure. Price pulled back from the recent swing high of 275.77 to a low of 265.07 on April 27, testing near the 23.6% Fibonacci retracement at 268.63. That level held and price has since recovered to ~270-271. The short-term bounce is already underway, so the ideal entry window has partially passed. Concerns that limit confidence: (1) ADX is 15.78, still in weak-trend territory \u2014 the wiki explicitly flagged sub-15 ADX across multiple prior runs and the current read barely clears that bar; (2) volume was not clearly declining on the April 27 pullback (41.5M vs 40.8M 20-day avg), a mild warning; (3) the RSI-7 at 43.9 is approaching but not at oversold levels for a pullback confirmation; (4) wiki context notes repeated failed bounce attempts at similar chart setups since April 11-17, which lowers fresh-fade conviction. The 23.6% Fib is a shallow retracement level \u2014 a deeper pullback to the 38.2% Fib (~264.21) near the 20-SMA (264.36) would be a cleaner Branch B setup. The current entry is best treated as a partial/starter position with tight management. Target is the swing high retest at 275.77. Stop is below the 38.2% Fib / 20-SMA cluster at 263.50, which would signal the pullback has deepened beyond a healthy Branch B structure.",
+        "entry": 270.5,
+        "target": 275.77,
+        "stop": 263.5,
+        "timeframe": "5-10 trading days"
+      }
+    },
+    "swing_catalyst_news": {
+      "AAPL": {
+        "signal": "bullish",
+        "confidence": 42,
+        "reasoning": "CATALYST WINDOW: Q2 FY2026 earnings on April 30, 2026 \u2014 1 trading day away (tomorrow). This is a binary pre-earnings trade with extremely compressed time horizon.\n\nNET NEWS SENTIMENT: Mixed. Constructive: Apple airlifted 1.5M+ iPhones from India, committed to shifting most U.S.-bound production there by end of 2026; management guided Q2 revenue growth 13-16% YoY ($107.8B-$110.7B); Services expanding (Apple TV on Amazon Prime Video); BofA raised target to $325 citing underestimated iPhone/Services strength; analyst consensus 31 Buy / 11 Hold / 4 Sell with avg target $299-305 (~11% upside from current). Negative: Full 145% tariff scenario (30-day temporary truce active) would collapse iPhone gross margin from ~47% to 2-3%; Siri 2.0 delays push to iOS 27 in September \u2014 a full cycle behind Samsung Galaxy S26; AI strategy behind competitors.\n\nINSIDER ACTIVITY: Net selling \u2014 strongly bearish signal. CEO Tim Cook sold $12M+ in early April 2026 at $251-256. COO Deirdre O'Brien and a second executive also sold in the same window. Net insider flow: -$235M, zero buys recorded in the trailing period. Stock is now $271, meaning insiders distributed ~$15-20 below current price. 10b5-1 plan caveat applies, but pattern reads as distribution.\n\nTECHNICAL SETUP GOING IN: Mildly constructive but not ideal for a pre-earnings entry. All EMAs aligned in uptrend. Price $271.56, 3.64% above 50-SMA ($260.69). RSI-14 at 60.63 (healthy, not overbought). Daily MACD histogram positive (+0.61). Bollinger %B 0.72 \u2014 mid-upper band. ADX 14.78 \u2014 weak trend, stock is consolidating. Stock has already rallied ~10% from $245.70 low \u2014 the easy pre-earnings drift may be priced in. Nearest resistance: $276.11 (daily pivot, 11 tests); nearest support: $255.45 (21 tests). Volume below average (0.73x) \u2014 no institutional conviction accumulation visible. Hourly MACD histogram slightly negative (-0.166), suggesting near-term stall.\n\nRATIONALE FOR BULLISH LEAN: Despite insider selling, analyst consensus is overwhelmingly bullish with high-conviction upgrades immediately before earnings. Management guided strong revenue growth and the tariff mitigation story (India ramp) is credible. Pre-earnings momentum drift into a well-flagged catalyst can persist one more day. However, confidence is capped at 42 given: (1) binary event risk on guidance, (2) heavy insider distribution, (3) stock already ~10% off lows heading in, (4) tariff binary remains live if 90-day truce breaks.",
+        "entry": 271.56,
+        "target": 283.5,
+        "stop": 262.0,
+        "timeframe": "1-3 trading days"
+      }
+    },
+    "fundamentals_analyst_agent": {
+      "AAPL": {
+        "signal": "bullish",
+        "confidence": 50.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bullish",
+            "details": "ROE: 171.76%, Net Margin: 27.68%, Op Margin: 33.11%"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 6.43%, Earnings Growth: 19.50%"
+          },
+          "financial_health_signal": {
+            "signal": "neutral",
+            "details": "Current Ratio: 0.89, D/E: 1.40"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 34.37, P/B: 53.99, P/S: 8.70"
+          }
+        }
+      }
+    },
+    "technical_analyst_agent": {
+      "AAPL": {
+        "signal": "neutral",
+        "confidence": 10,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 16,
+            "metrics": {
+              "adx": 16.17686055934872,
+              "trend_strength": 0.1617686055934872
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 1.2120216954735945,
+              "price_vs_bb": 0.7209485330386126,
+              "rsi_14": 60.628057038585276,
+              "rsi_28": 62.89363784659527
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.09386469973823208,
+              "momentum_3m": 0.06131024500785076,
+              "momentum_6m": 0.018206890587832092,
+              "volume_momentum": 0.7241492316815614
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.25177502726417067,
+              "volatility_regime": 1.0023691536736623,
+              "volatility_z_score": 0.0123961783909717,
+              "atr_ratio": 0.020635151389813318
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -0.16787055981559335,
+              "kurtosis": 0.9514423570068106
+            }
+          }
+        }
+      }
+    },
+    "valuation_analyst_agent": {
+      "AAPL": {
+        "signal": "bearish",
+        "confidence": 100,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $2,196,767,123,511.92, Market Cap: $3,980,937,920,512.00, Gap: -44.8%, Weight: 35%\n  WACC: 10.6%, Bear: $1,429,791,851,368.29, Bull: $2,929,719,241,648.73, Range: $1,499,927,390,280.44"
+          },
+          "owner_earnings_analysis": {
+            "signal": "bearish",
+            "details": "Value: $1,355,365,720,604.60, Market Cap: $3,980,937,920,512.00, Gap: -66.0%, Weight: 35%"
+          },
+          "ev_ebitda_analysis": {
+            "signal": "neutral",
+            "details": "Value: $3,934,600,211,028.60, Market Cap: $3,980,937,920,512.00, Gap: -1.2%, Weight: 20%"
+          },
+          "residual_income_analysis": {
+            "signal": "bullish",
+            "details": "Value: $4,843,887,616,898.06, Market Cap: $3,980,937,920,512.00, Gap: 21.7%, Weight: 10%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$1,429,791,851,368.29",
+            "base_case": "$2,208,108,174,847.52",
+            "bull_case": "$2,929,719,241,648.73",
+            "wacc_used": "10.6%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      }
+    },
+    "sentiment_analyst_agent": {
+      "AAPL": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      }
+    },
+    "risk_management_agent": {
+      "AAPL": {
+        "remaining_position_limit": 0.0,
+        "current_price": 271.1600036621094,
+        "earnings_blackout": {
+          "days_to_next_earnings": 0,
+          "blackout_window_days": 3
+        },
+        "reasoning": {
+          "rejected": "earnings in 0 days",
+          "earnings_blackout_window": 3
+        }
+      }
+    }
+  },
+  "allowed_actions": {
+    "AAPL": {
+      "hold": 0
+    }
+  },
+  "portfolio": {
+    "cash": 5000.0,
+    "margin_requirement": 0.0,
+    "margin_used": 0.0,
+    "positions": {
+      "AAPL": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      }
+    },
+    "other_positions": [],
+    "realized_gains": {
+      "AAPL": {
+        "long": 0.0,
+        "short": 0.0
+      }
+    }
+  },
+  "tickers": [
+    "AAPL"
+  ],
+  "end_date": "2026-04-30",
+  "degraded_inputs": []
+}
