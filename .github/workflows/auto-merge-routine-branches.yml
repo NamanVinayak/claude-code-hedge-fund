@@ -1,0 +1,49 @@
+name: Auto-merge routine branches
+
+# Claude routines push their output to feature branches like claude/foo-bar.
+# This workflow detects those pushes, merges them into main, and deletes the
+# feature branch — so the rest of the system (dashboard cron, ingester, etc.)
+# can keep operating off main as if the routines pushed there directly.
+
+on:
+  push:
+    branches:
+      - 'claude/**'
+
+permissions:
+  contents: write
+
+jobs:
+  merge-to-main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge feature branch into main
+        run: |
+          BRANCH="${GITHUB_REF#refs/heads/}"
+          echo "Merging $BRANCH into main"
+          git fetch origin "$BRANCH"
+          # Try fast-forward first (cleanest history). Fall back to merge commit
+          # if main has diverged.
+          if git merge --ff-only "origin/$BRANCH"; then
+            echo "Fast-forward merge succeeded."
+          else
+            git merge "origin/$BRANCH" -m "auto-merge: $BRANCH (routine output)"
+          fi
+          git push origin main
+
+      - name: Delete merged feature branch
+        run: |
+          BRANCH="${GITHUB_REF#refs/heads/}"
+          git push origin --delete "$BRANCH"
+          echo "Deleted $BRANCH from origin."
