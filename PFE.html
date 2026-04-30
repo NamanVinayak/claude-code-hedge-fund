@@ -351,7 +351,7 @@
             <a class="nav-link " href="today.html">Decisions</a>
             <a class="nav-link " href="closed.html">History</a>
         </div>
-        <div class="nav-meta">02:38 AM ET · ~2m</div>
+        <div class="nav-meta">02:46 AM ET · next update <span id="countdown" style="font-family:var(--mono);color:var(--text);font-weight:600;">--:--</span></div>
     </div>
 </nav>
 
@@ -428,5 +428,21 @@
 </footer>
 
 
+<script>
+(function() {
+    function tick() {
+        var now = new Date();
+        var sec = now.getMinutes() * 60 + now.getSeconds();
+        var nextSec = Math.ceil((sec + 1) / 300) * 300;
+        var remaining = nextSec - sec;
+        var m = Math.floor(remaining / 60);
+        var s = remaining % 60;
+        var el = document.getElementById('countdown');
+        if (el) el.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+    }
+    tick();
+    setInterval(tick, 1000);
+})();
+</script>
 </body>
 </html>

@@ -300,38 +300,69 @@
     font-style: italic;
 }
 
-.decision-row {
-    display: grid;
-    grid-template-columns: 70px 80px 120px 1fr;
-    gap: 12px;
-    padding: 14px 20px;
-    border-bottom: 1px solid var(--border);
-    align-items: start;
-    transition: background .1s;
+/* Status badges */
+.status-live {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background: var(--green-dim);
+    color: var(--green);
 }
-.decision-row:last-child { border-bottom: none; }
-.decision-row:hover { background: var(--surface2); }
-
-.dec-ticker {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--text);
-    text-decoration: none;
+.status-awaiting {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background: var(--yellow-dim);
+    color: var(--yellow);
 }
-.dec-ticker:hover { color: var(--blue); }
+.status-none {
+    color: var(--subtle);
+    font-size: 13px;
+}
 
-.dec-reason {
-    font-size: 12px;
+/* Price cells */
+td.price { font-family: var(--mono); font-size: 12px; white-space: nowrap; }
+
+/* Inline confidence bar for table */
+.conf-inline {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 90px;
+}
+.conf-inline .conf-bar-bg {
+    flex: 1;
+    background: var(--border);
+    border-radius: 3px;
+    height: 4px;
+}
+.conf-inline .conf-bar {
+    height: 4px;
+    border-radius: 3px;
+    background: var(--blue);
+}
+.conf-inline .conf-label {
+    font-family: var(--mono);
+    font-size: 11px;
     color: var(--muted);
-    line-height: 1.6;
+    min-width: 28px;
+    text-align: right;
 }
 
 @media (max-width: 640px) {
-    .decision-row {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-    }
-    .dec-reason { grid-column: 1 / -1; }
+    td.hide-mobile, th.hide-mobile { display: none !important; }
 }
 
     </style>
@@ -348,7 +379,7 @@
             <a class="nav-link active" href="today.html">Decisions</a>
             <a class="nav-link " href="closed.html">History</a>
         </div>
-        <div class="nav-meta">02:38 AM ET · ~2m</div>
+        <div class="nav-meta">02:46 AM ET · next update <span id="countdown" style="font-family:var(--mono);color:var(--text);font-weight:600;">--:--</span></div>
     </div>
 </nav>
 
@@ -356,7 +387,7 @@
     
 <div class="page-header">
     <h1>Today's Decisions</h1>
-    <p>What the AI decided this session and why</p>
+    <p>What the AI decided this session — click a ticker for full reasoning</p>
 </div>
 
 
@@ -385,27 +416,46 @@
     
 
     
-    <div class="decision-row">
-        <div>
-            <a class="dec-ticker" href="NVDA.html">NVDA</a>
-        </div>
-        <div>
-            <span class="badge badge-buy">BUY</span>
-        </div>
-        <div>
-            
-            <div class="conf-wrap" style="flex-direction:column;align-items:flex-start;gap:4px;">
-                <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;">Confidence</div>
-                <div class="conf-wrap" style="width:100%;">
-                    <div class="conf-bar-bg">
-                        <div class="conf-bar" style="width:72%"></div>
-                    </div>
-                    <span class="conf-label">72%</span>
-                </div>
-            </div>
-            
-        </div>
-        <div class="dec-reason">4/5 swing agents bullish; ADX 54.67 strong trend; catalyst window live (hyperscaler AI capex); dip to Fib 38.2% at $209.70 with $208.20 volume support. R/R 3.35:1 exceeds 2:1 threshold. Risk manager caps at 67 shares ($14,020). Stop below hourly 61.8% Fib ($205.30); provisional target $222.50 (near-term cluster center); re-evaluate at $216.83 resistance for $231 extension. RSI overbought (74.76/81.52) and hourly OBV declining are key risks — tight stop manages downside.</div>
+    <div class="table-wrap" style="border:none;border-radius:0;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticker</th>
+                    <th>Action</th>
+                    <th class="hide-mobile">Entry</th>
+                    <th class="hide-mobile">Target</th>
+                    <th class="hide-mobile">Stop</th>
+                    <th>Confidence</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td><a href="NVDA.html" style="font-weight:700;">NVDA</a></td>
+                    <td><span class="badge badge-buy">BUY</span></td>
+                    <td class="price hide-mobile">$209.25</td>
+                    <td class="price hide-mobile">$222.50</td>
+                    <td class="price hide-mobile">$205.30</td>
+                    <td>
+                        
+                        <div class="conf-inline">
+                            <div class="conf-bar-bg">
+                                <div class="conf-bar" style="width:72%"></div>
+                            </div>
+                            <span class="conf-label">72%</span>
+                        </div>
+                        
+                    </td>
+                    <td>
+                        
+                        <span class="status-awaiting">Awaiting</span>
+                        
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
     </div>
     
 </div>
@@ -436,27 +486,46 @@
     
 
     
-    <div class="decision-row">
-        <div>
-            <a class="dec-ticker" href="JPM.html">JPM</a>
-        </div>
-        <div>
-            <span class="badge badge-hold">HOLD</span>
-        </div>
-        <div>
-            
-            <div class="conf-wrap" style="flex-direction:column;align-items:flex-start;gap:4px;">
-                <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;">Confidence</div>
-                <div class="conf-wrap" style="width:100%;">
-                    <div class="conf-bar-bg">
-                        <div class="conf-bar" style="width:42%"></div>
-                    </div>
-                    <span class="conf-label">42%</span>
-                </div>
-            </div>
-            
-        </div>
-        <div class="dec-reason">Head Trader neutral (42 conf), 2B/1Br/2N split. R/R at $309.25 is ~1.55:1, failing the 2:1 minimum. Wait for $307.00-$307.50 entry zone where R/R improves to ~2.7:1 (target $319, stop $303). Hourly OBV trending down and MACD negative both timeframes — short-term structure does not confirm a turn. Bull thesis intact (ADX 43.42, EMA stack bullish, Q1 record earnings) but entry quality insufficient today. No short warranted given strong intermediate uptrend. Re-evaluate on touch of $307-$307.50 with reversal candle or volume dry-up, or on reclaim of $311.94 on volume.</div>
+    <div class="table-wrap" style="border:none;border-radius:0;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticker</th>
+                    <th>Action</th>
+                    <th class="hide-mobile">Entry</th>
+                    <th class="hide-mobile">Target</th>
+                    <th class="hide-mobile">Stop</th>
+                    <th>Confidence</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td><a href="JPM.html" style="font-weight:700;">JPM</a></td>
+                    <td><span class="badge badge-hold">HOLD</span></td>
+                    <td class="price hide-mobile">—</td>
+                    <td class="price hide-mobile">$319.00</td>
+                    <td class="price hide-mobile">$303.00</td>
+                    <td>
+                        
+                        <div class="conf-inline">
+                            <div class="conf-bar-bg">
+                                <div class="conf-bar" style="width:42%"></div>
+                            </div>
+                            <span class="conf-label">42%</span>
+                        </div>
+                        
+                    </td>
+                    <td>
+                        
+                        <span class="status-none">—</span>
+                        
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
     </div>
     
 </div>
@@ -471,5 +540,21 @@
 </footer>
 
 
+<script>
+(function() {
+    function tick() {
+        var now = new Date();
+        var sec = now.getMinutes() * 60 + now.getSeconds();
+        var nextSec = Math.ceil((sec + 1) / 300) * 300;
+        var remaining = nextSec - sec;
+        var m = Math.floor(remaining / 60);
+        var s = remaining % 60;
+        var el = document.getElementById('countdown');
+        if (el) el.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+    }
+    tick();
+    setInterval(tick, 1000);
+})();
+</script>
 </body>
 </html>
