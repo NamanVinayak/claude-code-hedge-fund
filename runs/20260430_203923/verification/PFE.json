@@ -1,0 +1,75 @@
+{
+  "ticker": "PFE",
+  "verified_at": "2026-04-30T20:39:23",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.22133,
+      "web_value": 0.1242,
+      "source": "Yahoo Finance TTM (April 29, 2026) — net income $7.75B / revenue $62.58B",
+      "status": "MISMATCH",
+      "deviation": "78%",
+      "action": "replaced with web value 0.1242 in all facts bundles (warren_buffett__PFE.json, aswath_damodaran__PFE.json)",
+      "note": "Our data uses TTM ended Sep 2025; web data includes Q4 2025 which had a negative quarter. GuruFocus shows -9.39% for Dec 2025 standalone quarter, but Yahoo Finance TTM (through Q4) yields ~12.42%. Corrected to Yahoo Finance TTM consensus."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": 0.2276,
+      "source": "Multiple sources (DCFModeling, first search result): Pfizer operating margin ~22.76-29.41% TTM 2025",
+      "status": "unverified",
+      "deviation": "N/A — our value is null, cannot compute deviation",
+      "action": "no correction applied (field is null in all bundles)"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 19.632,
+      "web_value": 19.75,
+      "source": "Multiple sources: trailing P/E ~19.75-20.26 as of March-April 2026 (FullRatio, SimplyWallSt)",
+      "status": "ok",
+      "deviation": "0.6%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 62786000000,
+      "web_value": 62579000000,
+      "source": "StockAnalysis / Pfizer annual 2025 report: $62.579B full-year 2025; TTM Sep 2025 = $62.786B",
+      "status": "ok",
+      "deviation": "0.3%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 151879122944,
+      "web_value": 151000000000,
+      "source": "Multiple sources: market cap $149-153B range late April 2026 (Capital.com, companiesmarketcap.com)",
+      "status": "ok",
+      "deviation": "0.6%"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.15740,
+      "web_value": 0.1097,
+      "source": "Multiple sources: ROE TTM 2025 ranges 8.89-11.97%, consensus ~10.88% (Zacks, CSIMarket, MacroTrends)",
+      "status": "MISMATCH",
+      "deviation": "43%",
+      "action": "replaced with web consensus value 0.1097 in all facts bundles (warren_buffett__PFE.json, aswath_damodaran__PFE.json)",
+      "note": "Our TTM Sep 2025 data overstated ROE relative to updated through-Q4-2025 figures"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.06506,
+      "web_value": 0.0470,
+      "source": "Zacks / StockAnalysis: ROA TTM 2025 ~4.69-4.71%",
+      "status": "MISMATCH",
+      "deviation": "38%",
+      "action": "replaced with web value 0.0470 in all facts bundles (warren_buffett__PFE.json, aswath_damodaran__PFE.json)",
+      "note": "Same cause as ROE — our Sep 2025 TTM window predates Q4 2025 weak quarter"
+    }
+  ],
+  "overall_status": "3 mismatches corrected (net_margin, roe, roa); operating_margin unverified (null in bundles); pe_ratio, revenue, market_cap within tolerance",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260430_203923/facts/warren_buffett__PFE.json",
+    "runs/20260430_203923/facts/aswath_damodaran__PFE.json"
+  ]
+}

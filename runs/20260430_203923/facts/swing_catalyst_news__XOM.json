@@ -1,0 +1,337 @@
+{
+  "ticker": "XOM",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 151.22990507918945,
+      "sma_5": 150.5720001220703,
+      "ema_10": 151.04805200944867,
+      "sma_10": 149.68199920654297,
+      "ema_20": 152.5648887431742,
+      "sma_20": 153.0114990234375,
+      "ema_21": 152.67331900996578,
+      "sma_21": 153.80428495861236,
+      "ema_50": 151.36846427589018,
+      "sma_50": 154.71399932861328,
+      "ema_200": 131.9943664680313,
+      "sma_200": 126.3124863433838,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 154.6699981689453,
+    "dist_from_50sma_pct": -0.03,
+    "price_vs_ma": {
+      "above_ema_5": true,
+      "pct_from_ema_5": 2.27,
+      "above_sma_5": true,
+      "pct_from_sma_5": 2.72,
+      "above_ema_10": true,
+      "pct_from_ema_10": 2.4,
+      "above_sma_10": true,
+      "pct_from_sma_10": 3.33,
+      "above_ema_20": true,
+      "pct_from_ema_20": 1.38,
+      "above_sma_20": true,
+      "pct_from_sma_20": 1.08,
+      "above_ema_21": true,
+      "pct_from_ema_21": 1.31,
+      "above_sma_21": true,
+      "pct_from_sma_21": 0.56,
+      "above_ema_50": true,
+      "pct_from_ema_50": 2.18,
+      "above_sma_50": false,
+      "pct_from_sma_50": -0.03,
+      "above_ema_200": true,
+      "pct_from_ema_200": 17.18,
+      "above_sma_200": true,
+      "pct_from_sma_200": 22.45
+    },
+    "rsi": {
+      "rsi_7": 79.95,
+      "rsi_14": 49.33,
+      "rsi_21": 33.39
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": -1.6791,
+      "signal_line": -1.615,
+      "histogram": -0.064,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 163.79,
+      "middle": 153.01,
+      "lower": 142.23,
+      "width": 0.1409,
+      "pct_b": 0.5769
+    },
+    "atr": {
+      "atr_14": 3.98,
+      "atr_pct": 2.57
+    },
+    "adx": {
+      "adx_14": 31.17,
+      "plus_di": 22.1,
+      "minus_di": 29.86,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 14669100,
+      "avg_volume_20": 19909960,
+      "relative_volume": 0.74,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 155.89,
+          "tests": 11,
+          "volume_confirmed": false
+        },
+        {
+          "price": 159.61,
+          "tests": 10,
+          "volume_confirmed": false
+        },
+        {
+          "price": 176.41,
+          "tests": 1,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 141.97,
+          "tests": 2,
+          "volume_confirmed": false
+        },
+        {
+          "price": 145.15,
+          "tests": 5,
+          "volume_confirmed": false
+        },
+        {
+          "price": 147.66,
+          "tests": 20,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 155.89,
+      "nearest_support": 147.66,
+      "recent_high": 168.0,
+      "recent_low": 141.97,
+      "prev_day_high": 152.31,
+      "prev_day_low": 149.83,
+      "prev_day_close": 150.56
+    },
+    "fibonacci": {
+      "swing_high": 176.41,
+      "swing_low": 141.97,
+      "fib_236": 168.28,
+      "fib_382": 163.25,
+      "fib_500": 159.19,
+      "fib_618": 155.13,
+      "fib_786": 149.34,
+      "fib_ext_1272": 185.78,
+      "fib_ext_1618": 197.69,
+      "fib_ext_2000": 210.85,
+      "fib_ext_low_1272": 132.6,
+      "fib_ext_low_1618": 120.69
+    },
+    "momentum": {
+      "roc_5d": 3.46,
+      "roc_10d": 3.8,
+      "roc_21d": -9.8
+    },
+    "z_score_50": -0.01,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 152.92622586478564,
+      "sma_24": 152.5923868815104,
+      "ema_48": 151.67988664322064,
+      "sma_48": 150.7835496266683,
+      "ema_120": 152.28708591581236,
+      "sma_120": 150.830836613973,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 154.38999938964844,
+    "dist_from_50sma_pct": 2.36,
+    "price_vs_ma": {
+      "above_ema_24": true,
+      "pct_from_ema_24": 0.96,
+      "above_sma_24": true,
+      "pct_from_sma_24": 1.18,
+      "above_ema_48": true,
+      "pct_from_ema_48": 1.79,
+      "above_sma_48": true,
+      "pct_from_sma_48": 2.39,
+      "above_ema_120": true,
+      "pct_from_ema_120": 1.38,
+      "above_sma_120": true,
+      "pct_from_sma_120": 2.36
+    },
+    "rsi": {
+      "rsi_21": 73.48
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 1.3352,
+      "signal_line": 0.7547,
+      "histogram": 0.5805,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 155.74,
+      "middle": 150.78,
+      "lower": 145.83,
+      "width": 0.0657,
+      "pct_b": 0.8638
+    },
+    "atr": {
+      "atr_24": 1.17,
+      "atr_pct": 0.76
+    },
+    "adx": {
+      "adx_24": 29.59,
+      "plus_di": 38.78,
+      "minus_di": 21.49,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 3401678,
+      "avg_volume_20": 2599738,
+      "relative_volume": 1.31,
+      "volume_bias_10d": "down",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": true
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 150.68,
+          "tests": 18,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 146.95,
+          "tests": 8,
+          "volume_confirmed": false
+        },
+        {
+          "price": 151.34,
+          "tests": 15,
+          "volume_confirmed": true
+        }
+      ],
+      "nearest_resistance": null,
+      "nearest_support": 151.34,
+      "recent_high": 155.69,
+      "recent_low": 150.24,
+      "prev_day_high": 154.77,
+      "prev_day_low": 154.27,
+      "prev_day_close": 154.72
+    },
+    "fibonacci": {
+      "swing_high": 155.69,
+      "swing_low": 147.82,
+      "fib_236": 153.83,
+      "fib_382": 152.68,
+      "fib_500": 151.76,
+      "fib_618": 150.83,
+      "fib_786": 149.5,
+      "fib_ext_1272": 157.83,
+      "fib_ext_1618": 160.55,
+      "fib_ext_2000": 163.56,
+      "fib_ext_low_1272": 145.68,
+      "fib_ext_low_1618": 142.96
+    },
+    "momentum": {
+      "roc_5d": -0.44,
+      "roc_10d": -0.03,
+      "roc_21d": 4.18
+    },
+    "z_score_120": 1.12,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 149.85000610351562,
+      "close": 150.52999877929688,
+      "high": 151.22999572753906,
+      "low": 148.5,
+      "volume": 12970400,
+      "time": "2026-04-23"
+    },
+    {
+      "open": 149.63999938964844,
+      "close": 148.91000366210938,
+      "high": 150.3000030517578,
+      "low": 146.9499969482422,
+      "volume": 13735900,
+      "time": "2026-04-24"
+    },
+    {
+      "open": 149.16000366210938,
+      "close": 148.19000244140625,
+      "high": 151.17999267578125,
+      "low": 147.97000122070312,
+      "volume": 13940800,
+      "time": "2026-04-27"
+    },
+    {
+      "open": 151.52999877929688,
+      "close": 150.55999755859375,
+      "high": 152.30999755859375,
+      "low": 149.8300018310547,
+      "volume": 15173600,
+      "time": "2026-04-28"
+    },
+    {
+      "open": 152.02000427246094,
+      "close": 154.6699981689453,
+      "high": 154.9499969482422,
+      "low": 151.00999450683594,
+      "volume": 14669100,
+      "time": "2026-04-29"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 154.3300018310547,
+  "market_cap": 641481834496.0,
+  "wiki_context": {
+    "slices": {
+      "catalysts_full": {
+        "path": "wiki/tickers/XOM/catalysts.md",
+        "mode": "full",
+        "content": "# XOM \u2014 Catalysts\n\n## TL;DR\n\nThe U.S.-Iran ceasefire announced April 10, 2026 is the single biggest catalyst affecting XOM near-term. It collapsed the geopolitical risk premium in oil prices (Brent fell ~14% from the peak) and sent XOM down 5.94% in a single after-hours session. The Q1 2026 earnings report (May 1) is the next scheduled binary event, with complex offsetting forces: upstream beat likely (high oil prices), downstream miss likely (derivatives/shipping timing effects), and a $600\u2013800M one-time impairment.\n\n## Upcoming events (as of April 2026)\n\n| Event | Date | Directional impact |\n|---|---|---|\n| FOMC rate decision | April 29, 2026 | Neutral-to-negative for energy if hawkish |\n| Q1 2026 earnings | May 1, 2026 | Binary \u2014 upstream beat vs. downstream timing hit |\n| Iran ceasefire expiry / renewal | Late April 2026 | Binary \u2014 collapse = oil spike = XOM rally |\n| Uaru (Guyana Stabroek) first oil | 2026 (TBD) | Positive catalyst if announced ahead of schedule |\n\n[Source: web_research XOM 2026-04-11 and 2026-04-15]\n\n## Recent news synthesis\n\n**Bearish:**\n- Ceasefire announced April 10, sent crude plummeting ~14% and XOM down 5.94% after-hours [Apr 11 web research]\n- Hormuz closure cut 6% of Exxon's Q1 global output \u2014 revenue hit even during high oil prices [Apr 15 web research]\n- Downstream Q1 headwind of $3.3\u20135.3B from negative timing effects in derivatives and shipping [Apr 15 web research]\n- One-time impairment of $600\u2013800M from war-related shipping disruptions [Apr 15 web research]\n- EIA projects Brent falling from $115/b (Q2) to $88/b (Q4 2026) \u2014 longer-term price tailwind evaporates [Apr 15 web research]\n- OPEC cut Q2 2026 oil demand forecast by 500k bpd [Apr 15 web research]\n\n**Bullish:**\n- Upstream earnings boosted by up to $2.9B from elevated Q1 oil prices [Apr 15 web research]\n- CFO Neil Hansen: downstream timing effects are temporary and will unwind into gains in later quarters [Apr 15 web research]\n- Uaru project (Guyana) expected to push Stabroek production past 1.1 million bpd [Apr 15 web research]\n- Commercial-scale lithium production from Arkansas launched in 2026 [Apr 15 web research]\n- $2B in Pioneer Natural Resources synergies realized [Apr 11 web research]\n\n## Analyst consensus\n\n| Firm | Target | Rating | Date |\n|---|---|---|---|\n| Wells Fargo | $185 | Buy | Apr 2026 |\n| Jefferies | $184 | Buy | Apr 2026 |\n| RBC | $180 | Buy | Apr 2026 |\n| Citigroup | $175 | Buy | Apr 2 |\n| JPMorgan | $170 | Overweight | Apr 9\u201311 |\n| Morgan Stanley | $172 | Overweight | Mar 27 |\n| Scotiabank | N/A | Strong Buy upgrade | Mar 27 |\n| Wolfe Research | $153 | \u2014 | Apr 8 (lowered post-ceasefire) |\n\nConsensus: ~23 analysts, Moderate Buy, avg target $154\u2013$159. Note that most targets were set before the full ceasefire impact and assume elevated crude prices. The bear case in our models targets $143\u2013$145, which is well below the lowest analyst target ($111 from Freedom Capital Markets). [Source: web_research 2026-04-11 and 2026-04-15]\n\n## Insider activity\n\nNo insider activity data available from run history. No insider buying or selling cited in any of the three runs' XOM decisions or web research.\n",
+        "last_updated": "2026-04-29",
+        "stale": false
+      },
+      "calendar_full": {
+        "missing": true,
+        "mode": "full"
+      }
+    }
+  }
+}

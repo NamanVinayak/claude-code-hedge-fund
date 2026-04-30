@@ -1,0 +1,20 @@
+{
+  "PFE": {
+    "signal": "bearish",
+    "confidence": 55,
+    "reasoning": "TREND: EMAs are tangled (10 EMA 26.83, 21 EMA 27.04, 50 EMA 26.96 — not cleanly stacked), but price (26.26) is below every EMA including the 50, and on the hourly chart EMAs are aligned downtrend. ADX at 25.48 clears the 25 threshold with -DI (28.87) decisively above +DI (15.72), confirming downside trend dominance. MOMENTUM: ROC across all three timeframes is negative and accelerating: 5d=-2.01%, 10d=-3.42%, 21d=-5.44% — classic bearish cascade. Daily MACD histogram is -0.1247 and expanding (more negative), confirming momentum acceleration to the downside. HOURLY DIVERGENCE: Hourly MACD histogram turned slightly positive (+0.03) and hourly ADX shows +DI>-DI — a short-term counter-trend bounce is underway. This is an early warning of intraday exhaustion of the downside, not trend reversal. ENTRY RATIONALE: Per strategy rules, entry on a pullback to the 10 or 21 EMA. With price currently at 26.26, well below all EMAs, the optimal bearish entry is a bounce back toward the 10 EMA (~26.83) or 21 EMA (~27.04). Confidence is moderate (55) because RSI-7 at 17.19 is in extreme oversold territory and the current price is already extended — chasing here risks a sharp squeeze. Wait for the in-progress hourly bounce to stall near 26.83–27.04 before entering short. WIKI CHECK: Prior runs (Apr 11-15) showed neutral/hold with dead RSI and no trend — today's data contradicts that with clear downside momentum established. Current data wins; curator should update technicals page to reflect the new downtrend.",
+    "entry": 26.85,
+    "target": 25.85,
+    "stop": 27.35,
+    "timeframe": "5-10 trading days"
+  },
+  "XOM": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "TREND: EMA alignment is tangled — ema_10 (151.05) < ema_50 (151.37) < ema_21 (152.67), not in clean uptrend order. `ema_aligned_uptrend: false` and `ema_aligned_downtrend: false` confirmed. Despite price trading above all short-term EMAs at 154.67, the ADX structure tells the bearish story: ADX=31.17 (strong trend) with -DI (29.86) > +DI (22.10), meaning the dominant trend force is still bearish. MOMENTUM: ROC is critically mixed — 5d=+3.46% and 10d=+3.80% are positive (short-term bounce), but 21d=-9.80% is deeply negative. This is not momentum acceleration across timeframes; it is a violent short-term bounce within a larger downtrend. Daily MACD line (-1.679) and histogram (-0.064) remain negative — no acceleration to the upside confirmed at the daily level. HOURLY CONTEXT: Hourly EMAs are stacked bullishly and hourly MACD histogram is strongly positive (0.5805), confirming short-term upside momentum. However: hourly RSI at 73.48 is overbought, price is at 86th percentile of hourly Bollinger Band, and critically — hourly OBV is diverging bearishly from price. The bounce is running hot and volume does not confirm the move. KEY RESISTANCE: The bounce has carried XOM to 154.67, sitting just below the Fibonacci 0.618 retracement at 155.13 and the nearest daily pivot high at 155.89. Prior wiki context confirms bearish entries were triggered at $151-155 — we are now in that exact resistance zone. VERDICT: No clean EMA uptrend, -DI > +DI on daily ADX, mixed ROC (21d deeply negative), daily MACD still negative, price at key Fib and S/R resistance, hourly OBV diverging. This is a countertrend bounce hitting resistance — not a trend-momentum continuation setup. Output neutral per rules: 'trend exists but momentum is decelerating' and EMAs not cleanly aligned.",
+    "entry": 0.0,
+    "target": 0.0,
+    "stop": 0.0,
+    "timeframe": "no setup"
+  }
+}

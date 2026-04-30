@@ -1,0 +1,20 @@
+{
+  "PFE": {
+    "signal": "bullish",
+    "confidence": 62,
+    "reasoning": "Branch A (Fade the Extreme) fires on the oversold side. RSI-7 at 17.19 is deeply below the 25 threshold — the strongest single trigger. Z-score at -1.94 is just shy of the -2 statistical threshold but close enough given the RSI confirmation. Price ($26.26) is testing the lower Bollinger Band (%B = 0.065), and the recent low of $26.20 represents a multi-test pivot support. Downside momentum accelerated (ROC -5.44% over 21 days) with volume running below average (0.88x), which is consistent with exhaustion rather than continuation. The hourly frame is already reversing: hourly RSI-21 at 47.94 (neutral-recovering), hourly MACD histogram turning positive (+0.031), and hourly OBV trending up — suggesting the snapback has started intraday. The hourly price ($26.70) is already above the daily close ($26.26), confirming early recovery. Confluence: daily pivot support at $26.36 (12 tests) and $26.68 (29 tests) sit just above current price. Wiki context shows prior runs had RSI at 49-51 with no setup — this is a new and genuine oversold condition, not a repeat false fade. Confidence is moderated because (1) the ADX at 25.48 shows the downtrend has some strength with -DI > +DI, (2) Z-score has not crossed -2, and (3) no confirmed daily reversal candle yet — the Apr 29 bar closed weak. Entry requires either a reversal candle on Apr 30 or a hold above $26.36. Target is the middle Bollinger Band / 50-SMA around $27.15-27.23. Stop below the recent low at $25.95.",
+    "entry": 26.50,
+    "target": 27.20,
+    "stop": 25.95,
+    "timeframe": "5-10 trading days"
+  },
+  "XOM": {
+    "signal": "bearish",
+    "confidence": 52,
+    "reasoning": "Branch A (Fade the Extreme — overbought) fires weakly, supported by Fibonacci confluence. RSI-7 at 79.95 is above the 75 overbought threshold after a sharp 2-day bounce (+4.4% from $148.19 to $154.67) on below-average volume (0.74x daily). The bounce has carried price directly into the 61.8% Fibonacci retracement level ($155.13, from swing high $176.41 to swing low $141.97), which also aligns with the well-tested resistance pivot at $155.89 — a strong confluence zone. Hourly OBV is declining and diverging from rising price (bearish divergence signal), and hourly RSI-21 at 73.48 is approaching overbought. The daily Z-score is essentially zero (-0.01), meaning price is exactly at the 50-day mean — this is the primary reason confidence is limited, as Branch A ideally wants Z-score > +2. However, the short-term RSI-7 extreme combined with the Fib/resistance confluence and OBV divergence provides a reasonable fade signal. Wiki context is a key factor: prior runs (Apr 11-17) identified this exact $151-155 zone as a short entry target; the bounce has now reached that level. Per strategy, repeat tests at the same resistance lower fresh-fade conviction. ADX on the daily shows -DI (29.86) > +DI (22.10), maintaining a slight downtrend bias. Target is the support cluster around $147.66-$148.00 (pivot low at $147.66, 20 tests). Stop above the resistance cluster at $156.50 (beyond $155.89 pivot high). Timeframe is short given this is a short-term RSI fade rather than a full Z-score extreme.",
+    "entry": 154.70,
+    "target": 147.80,
+    "stop": 156.50,
+    "timeframe": "4-8 trading days"
+  }
+}

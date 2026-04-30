@@ -1,0 +1,20 @@
+{
+  "PFE": {
+    "signal": "bearish",
+    "confidence": 42,
+    "reasoning": "PFE broke down through the $26.68 pivot support (tested 29 times) on April 28 with volume 58.08M vs 20-day avg 34.0M — 1.71x average, which meets the volume confirmation requirement. That was the breakdown day. Current price $26.26 is now trading below both key pivot lows ($26.68 tested 29x and $26.36 tested 12x), confirming a bearish range breakdown. The consolidation range was roughly $26.68–$27.67 (resistance), giving a range height of ~$1.00; measured-move target below $26.68 = ~$25.68. However, confidence is capped at 42 because: (1) we are post-breakdown on day 2, meaning the ideal short entry window (on the break day or a backtest of the broken level) has passed; (2) daily RSI 7 is at an extreme 17.19 — deeply oversold, with a bounce already underway on the hourly chart (hourly price $26.70 vs daily close $26.26, hourly RSI 21 = 47.94, hourly ADX plus_di 27.18 > minus_di 13.59); (3) daily BB width is moderate at 0.0821 — no classic squeeze setup preceded this breakdown; (4) daily volume today is only 0.88x average — no fresh confirmation. Wiki cross-check: the wiki had flagged $26.68 support as BofA floor (originally $26), and noted that a break below $26 opens a short toward $24–25. The BofA $26 floor has not yet been decisively broken (daily close $26.26 still above it). Best entry for a bearish play would be a bounce to the $26.68 broken support level that fails with volume. Do not chase here into oversold conditions.",
+    "entry": 26.55,
+    "target": 25.65,
+    "stop": 26.95,
+    "timeframe": "5-12 trading days"
+  },
+  "XOM": {
+    "signal": "neutral",
+    "confidence": 28,
+    "reasoning": "XOM formed a short-term 3-day consolidation range from approximately April 24–28 between lows near $147.97 and highs near $152.31 (range height ~$4.34). April 29 produced a breakout candle closing at $154.67, above the consolidation high. However, this breakout FAILS the volume requirement: today's volume was 14.67M vs the 20-day average of 19.91M — only 0.74x average, well below the required 1.5x minimum. Without volume confirmation, strategy rules classify this as a suspect / false breakout candidate. Additional concerns: (1) daily BB width is 0.1409 — already wide/expanded, NOT a squeeze setup, meaning volatility expansion is already underway rather than coiling for a break; (2) hourly OBV is diverging bearishly from price — hourly price making new highs but OBV trending down; (3) hourly RSI 21 at 73.48 is in overbought territory; (4) the nearest daily resistance is $155.89 (tested 11 times) — only $1.22 above current price, limiting upside before the next obstacle; (5) the Fib 61.8% retracement level at $155.13 sits just above. Wiki cross-check: prior runs through April 17 consistently carried a bearish bias with short entries at exactly this $151–$155 zone. The invalidation for the prior bearish thesis was a $160+ sustained close — we are NOT there yet at $154.67. The daily ADX still shows minus_di (29.86) > plus_di (22.10), meaning the longer-term bearish directional trend has not yet reversed. The 5-day momentum bounce is real but unconfirmed by volume. Waiting for either: (a) a close above $155.89 with 1.5x+ volume to confirm a bullish breakout, or (b) a rejection from $155–156 that returns to the range — which would be a confirmed failed breakout short entry.",
+    "entry": 155.9,
+    "target": 160.25,
+    "stop": 153.0,
+    "timeframe": "5-10 trading days"
+  }
+}
