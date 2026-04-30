@@ -1,52 +1,49 @@
 ---
 name: XOM technicals
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_203923
 target_words: 350
 stale_after_days: 7
-word_count: 352
-summary: Confirmed daily downtrend with all momentum indicators negative as of mid-April 2026; bearish across all three run dates
+word_count: 342
+summary: Sharp recovery to $154.67 — RSI-7 79.95 (overbought), Fib 61.8% resistance at $155.13, daily ADX still bearish-sided; no actionable entry — earnings blackout May 1; watch $153 pullback buy zone post-print
 ---
 
 # XOM — Technicals
 
 ## TL;DR
 
-Every run from Apr 11 through Apr 17 returned a unanimous bearish technical picture: daily SuperTrend bearish, EMAs aligned downward, deeply negative momentum across all timeframes. The stock was bouncing in the oversold zone (RSI ~29, stochastic ~6) as of the April 11 run — models used that bounce as the short entry. By April 15 and 17 the bounce had materialized at ~$151–$155 and entries were triggered at those levels.
+Run 20260430_203923 shows XOM has recovered sharply from the $148 lows to $154.67 (+4.4% in 2 days) on **below-average volume (0.74x)** — an unconfirmed breakout. The daily trend structure remains ambiguous: daily ADX 31.17 with -DI (29.86) still leading +DI (22.10) and MACD negative. Hourly chart is bullish but overbought (RSI-21 73.48) with bearish OBV divergence. Price is pressing Fib 61.8% resistance at $155.13 and the $155.89 pivot high simultaneously. No new position: earnings blackout enforced by risk manager (Q1 print May 1).
 
 ## Multi-timeframe state
 
 | Indicator | Value / State | Signal |
 |---|---|---|
-| Daily SuperTrend | Bearish | Short bias |
-| Daily EMAs (10/21/50) | Aligned downward | Short bias |
-| RSI (14) | ~29.4 (Apr 15 run) | Oversold; bounce risk |
-| MACD | -2.32 (Apr 15) | Bearish, expanding |
-| ROC 5d | -5.1% (Apr 11) | Bearish momentum |
-| ROC 10d | -7.8% (Apr 11) | Bearish momentum |
-| Stochastic | ~6 (Apr 11) | Deeply oversold |
-| CCI | -126 (Apr 11) | Bearish extreme |
-| Consecutive down days | 5 (Apr 15 run) | Persistent selling |
+| Daily RSI-7 | 79.95 (overbought) | Fade risk |
+| Daily ADX | 31.17 — -DI 29.86 vs +DI 22.10 | Daily trend still bearish-sided |
+| Daily MACD | -1.679, histogram -0.064 | No daily momentum reversal |
+| ROC 5d / 10d / 21d | +3.46% / +3.80% / -9.80% | Short-term bounce within larger downtrend |
+| EMA alignment | Daily: tangled (10 < 50 < 21); price above all | Mixed |
+| Volume (Apr 29 breakout) | 14.67M vs 20d avg 19.91M = 0.74x | Unconfirmed — suspect breakout |
+| Hourly EMAs | Stacked bullish (24/48/120) | Short-term trend intact |
+| Hourly RSI-21 | 73.48 (overbought) | Bounce extended |
+| Hourly OBV | Diverging bearishly from price | Warning signal |
 
-[Source: decisions.json runs swing_20260411_211655 and 20260415_110848]
+[Source: 20260430_203923 signals_combined.json swing_trend_momentum, swing_breakout, swing_mean_reversion, swing_macro_context]
 
 ## Key levels
 
 | Level | Value | Notes |
 |---|---|---|
-| Resistance / entry zone | $151–$155 | Short entries across all three runs |
-| Stop loss | $154–$160 | Tightened run-over-run as trend clarified |
-| Target zone | $143–$145 | Consistent across Apr 11, 15, 17 |
-| Invalidation | $160+ sustained close | Would break downtrend structure |
+| Fib 61.8% retracement | $155.13 | Swing high $176.41 → low $141.97; current resistance |
+| Daily pivot resistance | $155.89 | Tested 11 times — strongest nearby ceiling |
+| Current price | $154.67 | At confluence resistance zone |
+| Pullback buy zone (post-earnings) | ~$153.00 | Macro_context preferred entry; 2.9:1 R/R to $159.61 |
+| Hourly pivot support | $151.34 | Deeper pullback support zone |
+| Mean-reversion short stop | $156.50 | Above resistance cluster |
+| Mean-reversion target | $147.66–$148.00 | 20-test pivot low |
 
 ## Setup type
 
-Oversold-bounce short. The model anticipated the bounce from deeply oversold levels (stochastic 6, RSI 29, CCI -126) to resistance ($151–$155) and used that relief rally as a low-risk short entry — entering into strength, not chasing into weakness.
+**Pre-earnings pause — no actionable entry.** The 2-day bounce from $148 to $154 is real but technically exhausted at Fib/resistance confluence with overbought indicators and unconfirmed volume. Earnings blackout blocks all new positions (risk manager position limit = $0). Post-earnings watch: if Q1 print is absorbed and price pulls back to $153, macro_context agent's 2.9:1 R/R bullish setup becomes live. If the print disappoints and price breaks below $151.34, the mean-reversion short ($147.66 target) becomes actionable.
 
-## Cross-run trend
-
-The model went from "enter on bounce to $155" (Apr 11) to "bounce already happened, enter at $151" (Apr 15 and 17), confirming the anticipated bounce materialized and was used as the entry. Risk-reward improved run-over-run: 2.0:1 (Apr 11) → 2.67:1 (Apr 15) → 3.93:1 (Apr 17) as the stop was tightened and the trend became more defined.
-
-## Hourly divergence (Apr 15 run)
-
-The Apr 15 run flagged bearish divergence between macro narrative and price: oil macro headlines were nominally bullish (Iran/Hormuz) but XOM hourly chart was still making lower highs. The tightened stop at $154 referenced a well-defined hourly resistance level.
+**Prior setup (bootstrap through Apr 17):** Confirmed bearish downtrend from $155+ — entries triggered at $151–$155 short. That downtrend has been challenged by the Iran regime shift and the current bounce. Setup superseded. [Prior state noted in recent.md.]

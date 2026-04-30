@@ -1,11 +1,11 @@
 ---
 name: XOM trades
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_203923
 target_words: 800
 stale_after_days: 60
-word_count: 795
-summary: Two short entries recommended by model (Apr 11, Apr 15/17); both resulted in cancelled/abandoned paper orders — no fills, no P&L
+word_count: 849
+summary: Three short entries recommended by model (Apr 11, Apr 15/17) — all cancelled/abandoned, no fills. Run 4 (Apr 30) is first non-short decision: HOLD (42 conf) due to earnings blackout and macro regime shift (Iran blockade resumes)
 ---
 
 # XOM — Trades
@@ -68,18 +68,42 @@ None filled.
 
 ---
 
+### Run 4: 20260430_203923 (Apr 30, 2026)
+
+**Decision: HOLD — 42% confidence (first non-short decision in XOM run history)**
+
+```
+action:        hold
+quantity:      0
+entry_price:   null (would be $153.00 on pullback post-earnings)
+target_price:  null
+stop_loss:     null
+risk_reward:   N/A — earnings blackout enforced
+timeframe:     reassess after May 1 earnings
+```
+
+Source: `runs/20260430_203923/decisions.json`
+
+**Why the direction flipped:** Prior three runs were all bearish (ceasefire unwinding oil premium). US-Iran peace talks stalled as of late April; Goldman raised Brent to $90/bbl; the Iran blockade resumed. The macro_context agent (the only directional vote) is now **bullish** at 58% — a 180° flip from prior runs. The mean_reversion agent is bearish on overbought RSI-7 (79.95) and Fib resistance. Three agents are neutral citing the earnings binary. Net result: 1 bullish / 1 bearish / 3 neutral = no tradeable consensus, earnings blackout blocks entry regardless.
+
+**Risk manager ruling:** Earnings in 1 day — 3-day blackout enforced. Position limit = $0. [Source: 20260430_203923 signals_combined.json risk_management_agent]
+
+**Post-earnings watch (bullish path):** If Q1 earnings are absorbed, macro_context's setup is: entry $153.00 (pullback), target $159.61, stop $150.68, R/R 2.9:1. Do not chase at $154.67. [Source: 20260430_203923 decisions.json portfolio_summary]
+
+---
+
 ## Lifetime stats
 
 | Metric | Value |
 |---|---|
-| Total model recommendations | 3 (all short) |
+| Total model recommendations | 4 (3 short, 1 hold) |
 | Total paper orders placed | 2 |
 | Fills | 0 |
 | Realized P&L | $0 |
 | Unrealized P&L | $0 |
 | Win rate | N/A (no fills) |
-| Average model confidence | 64% (58% / 62% / 72%) |
-| Direction consistency | 100% bearish across all 3 runs |
+| Average model confidence | 58.5% across directional runs (58% / 62% / 72% shorts; 42% hold) |
+| Direction consistency | Bearish Apr 11–17; first flip to neutral/macro-bullish Apr 30 |
 
 ## Lessons / notes
 

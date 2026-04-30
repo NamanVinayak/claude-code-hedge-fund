@@ -1,46 +1,37 @@
 ---
 name: XOM catalysts
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_203923
 target_words: 400
 stale_after_days: 14
-word_count: 412
-summary: Iran ceasefire is the dominant catalyst driving XOM lower; Q1 2026 earnings (May 1) is the next binary event
+word_count: 403
+summary: Q1 2026 earnings prints May 1 (tomorrow) — upstream beat likely, downstream miss likely, 39% YoY EPS decline expected; Iran blockade (peace talks stalled) is the sustained macro catalyst; Golden Pass LNG first cargo shipped April 22
 ---
 
 # XOM — Catalysts
 
 ## TL;DR
 
-The U.S.-Iran ceasefire announced April 10, 2026 is the single biggest catalyst affecting XOM near-term. It collapsed the geopolitical risk premium in oil prices (Brent fell ~14% from the peak) and sent XOM down 5.94% in a single after-hours session. The Q1 2026 earnings report (May 1) is the next scheduled binary event, with complex offsetting forces: upstream beat likely (high oil prices), downstream miss likely (derivatives/shipping timing effects), and a $600–800M one-time impairment.
+Q1 2026 earnings print **May 1** (tomorrow, before market open) is the live binary. Analysts project ~39% YoY EPS decline driven by lower realized prices vs. Q1 2025 and Middle East output disruption. However, the Q1 picture is complex: upstream likely beat (elevated Q1 oil prices boosted ~$2.9B), downstream likely miss ($3.3–5.3B timing headwinds + $600–800M one-time impairment). The dominant macro catalyst has reversed course: U.S.-Iran peace talks stalled, Goldman raised Brent to $90/bbl, making the Iran blockade a persistent oil supply tailwind for XOM going forward — not the bearish headwind it appeared to be in mid-April.
 
-## Upcoming events (as of April 2026)
+## Upcoming events
 
-| Event | Date | Directional impact |
+| Date | Event | Directional impact |
 |---|---|---|
-| FOMC rate decision | April 29, 2026 | Neutral-to-negative for energy if hawkish |
-| Q1 2026 earnings | May 1, 2026 | Binary — upstream beat vs. downstream timing hit |
-| Iran ceasefire expiry / renewal | Late April 2026 | Binary — collapse = oil spike = XOM rally |
-| Uaru (Guyana Stabroek) first oil | 2026 (TBD) | Positive catalyst if announced ahead of schedule |
+| May 1, 2026 | Q1 2026 earnings (Before Open) — EPS est. ~$1.05, ~39% YoY decline | Binary; complex offsetting forces |
+| Ongoing | US military blockade of Iranian ports; US-Iran peace talks stalled | Bullish — sustained oil supply disruption |
+| Late July–Aug 2026 | Q2 2026 earnings (expected) | Next reset binary |
+| 2026 (TBD) | Uaru (Guyana Stabroek) first oil announcement | Positive structural catalyst if ahead of schedule |
 
-[Source: web_research XOM 2026-04-11 and 2026-04-15]
+[Source: 20260430_203923 web_research/XOM.json earnings_info, macro_context]
 
 ## Recent news synthesis
 
-**Bearish:**
-- Ceasefire announced April 10, sent crude plummeting ~14% and XOM down 5.94% after-hours [Apr 11 web research]
-- Hormuz closure cut 6% of Exxon's Q1 global output — revenue hit even during high oil prices [Apr 15 web research]
-- Downstream Q1 headwind of $3.3–5.3B from negative timing effects in derivatives and shipping [Apr 15 web research]
-- One-time impairment of $600–800M from war-related shipping disruptions [Apr 15 web research]
-- EIA projects Brent falling from $115/b (Q2) to $88/b (Q4 2026) — longer-term price tailwind evaporates [Apr 15 web research]
-- OPEC cut Q2 2026 oil demand forecast by 500k bpd [Apr 15 web research]
-
-**Bullish:**
-- Upstream earnings boosted by up to $2.9B from elevated Q1 oil prices [Apr 15 web research]
-- CFO Neil Hansen: downstream timing effects are temporary and will unwind into gains in later quarters [Apr 15 web research]
-- Uaru project (Guyana) expected to push Stabroek production past 1.1 million bpd [Apr 15 web research]
-- Commercial-scale lithium production from Arkansas launched in 2026 [Apr 15 web research]
-- $2B in Pioneer Natural Resources synergies realized [Apr 11 web research]
+- **Q1 earnings: May 1, complex picture** (Apr 30, 2026): EPS consensus ~$1.05, representing ~39% YoY decline. Upstream boosted ~$2.9B from elevated Q1 prices; downstream hit $3.3–5.3B from negative timing effects; one-time impairment $600–800M from shipping disruptions. CFO characterized timing effects as temporary and reversible. Analyst targets ($154–$165 avg) are already at current price, limiting surprise upside. [Source: 20260430_203923 web_research/XOM.json]
+- **Golden Pass LNG Train 1 first export cargo** (Apr 22, 2026): Long-delayed milestone — first cargo shipped from Sabine Pass LNG export facility. Small but positive for LNG strategy and Exxon's energy transition optionality. [Source: 20260430_203923 web_research/XOM.json]
+- **Portfolio optimization: Hong Kong fuel-station sale** (Apr 2026): XOM in talks to sell Hong Kong fuel-station network for $500–$600M — continued asset optimization in non-core downstream. [Source: 20260430_203923 web_research/XOM.json]
+- **Iran blockade / stalled peace talks**: Goldman raised Brent forecast to $90/bbl. ~27% of global maritime oil trade disrupted. IMF cut global growth to 3.1% baseline. US-Iran conflict is now a tailwind for XOM realized prices in Q2+ (beyond the Q1 period when output was physically disrupted). [Source: 20260430_203923 web_research/XOM.json macro_context]
+- **Wolfe Research downgrade** (Apr 21, 2026): Doug Leggate downgraded XOM to Peer Perform from Outperform — the first notable bearish analyst move. Offset by continued Buy ratings and target hikes from Wells Fargo, Jefferies, RBC, and JPMorgan.
 
 ## Analyst consensus
 
@@ -48,15 +39,10 @@ The U.S.-Iran ceasefire announced April 10, 2026 is the single biggest catalyst 
 |---|---|---|---|
 | Wells Fargo | $185 | Buy | Apr 2026 |
 | Jefferies | $184 | Buy | Apr 2026 |
-| RBC | $180 | Buy | Apr 2026 |
-| Citigroup | $175 | Buy | Apr 2 |
-| JPMorgan | $170 | Overweight | Apr 9–11 |
-| Morgan Stanley | $172 | Overweight | Mar 27 |
-| Scotiabank | N/A | Strong Buy upgrade | Mar 27 |
-| Wolfe Research | $153 | — | Apr 8 (lowered post-ceasefire) |
+| RBC Capital | $180 | Buy | Apr 2026 |
+| JPMorgan | $170 | Overweight | Apr 2026 |
+| TD Cowen | $172 | Buy (trimmed from $175) | Apr 2026 |
+| Wolfe Research | — | Peer Perform (downgrade) | Apr 21, 2026 |
+| **Consensus (42 analysts)** | **~$162–$165** | **Moderate Buy** | Apr 2026 |
 
-Consensus: ~23 analysts, Moderate Buy, avg target $154–$159. Note that most targets were set before the full ceasefire impact and assume elevated crude prices. The bear case in our models targets $143–$145, which is well below the lowest analyst target ($111 from Freedom Capital Markets). [Source: web_research 2026-04-11 and 2026-04-15]
-
-## Insider activity
-
-No insider activity data available from run history. No insider buying or selling cited in any of the three runs' XOM decisions or web research.
+Range: $123–$195. Current price ~$154 implies ~5–8% upside to avg target. Note: most targets set before full ceasefire resolution — may be revised upward if Iran blockade persists and oil holds. [Source: 20260430_203923 web_research/XOM.json analyst_consensus]

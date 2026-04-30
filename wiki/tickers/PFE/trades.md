@@ -1,11 +1,11 @@
 ---
 name: PFE trades
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_203923
 target_words: 800
 stale_after_days: 60
-word_count: 817
-summary: Zero trades placed across two model runs; both returned hold with 35% confidence; no entries ever triggered
+word_count: 872
+summary: Zero trades placed across three model runs; runs 1-2 held at 35% conf (no direction), run 3 holds at 38% conf due to May 5 earnings binary despite confirmed bearish downtrend — post-print short setup is primary watch
 ---
 
 # PFE — Trades
@@ -84,6 +84,30 @@ Source: `runs/20260415_110848/decisions.json`
 
 ---
 
+### Run: 20260430_203923 (Apr 30, 2026)
+
+**Decision: HOLD — 38% confidence (below 40 threshold; earnings binary blocks entry)**
+
+```
+action:        hold
+quantity:      0
+entry_price:   null
+target_price:  null
+stop_loss:     null
+risk_reward:   N/A
+timeframe:     hold — reassess after May 5 earnings
+```
+
+Source: `runs/20260430_203923/decisions.json`
+
+**Head Trader reasoning (verbatim):** "Head Trader confidence 38 (<40 threshold). Earnings binary May 5 (4 days). Mean-reversion vs trend bearish conflict unresolved; no setup clears 2:1 R/R with the pre-catalyst risk. Wait for post-earnings directional clarity before initiating any swing position."
+
+**Agent split:** bearish: swing_breakout (42), swing_trend_momentum (55); bullish: swing_mean_reversion (62); neutral: swing_catalyst_news (38), swing_macro_context (30). [Source: 20260430_203923 signals_combined.json]
+
+**Context:** A confirmed bearish downtrend now exists (ADX 25.48, -DI 28.87, $26.68 support broken on 1.71x volume) — a material change from the prior two runs which found no direction. The reason for no trade is solely the May 5 earnings binary, not a lack of signal. Post-earnings, if the downtrend resumes, a short entry on a bounce to $26.68–$26.85 is the primary setup. [Source: 20260430_203923 decisions.json reasoning]
+
+---
+
 ## What would trigger an entry
 
 Based on the model's reasoning across both runs, the following conditions would need to be present for PFE to move from hold to an actionable swing trade:
@@ -102,15 +126,15 @@ Based on the model's reasoning across both runs, the following conditions would 
 
 | metric | value |
 |---|---|
-| Total runs analyzed | 2 (swing_20260411, 20260415) |
+| Total runs analyzed | 3 (swing_20260411, 20260415, 20260430_203923) |
 | Total trades placed | 0 |
 | Total orders in Moomoo | 0 |
 | Win rate | N/A |
 | Average hold time | N/A |
 | Net P&L | $0.00 |
 | Entry hit rate | N/A |
-| Model confidence range seen | 35% (both runs) |
-| Highest conviction achieved | 35% — well below the 55% floor where trades typically get placed |
+| Model confidence range seen | 35%–38% |
+| Highest conviction achieved | 38% (run 3) — still below the 40 threshold and well below 55% floor for typical trades |
 
 ## Notes for next analyst
 
