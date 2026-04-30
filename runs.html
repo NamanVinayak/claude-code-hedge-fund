@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="300">
-    <title>QQQ | AI Hedge Fund</title>
+    <title>All Runs | AI Hedge Fund</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -273,69 +273,167 @@
         }
 
         
-.ticker-hero {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-bottom: 24px;
-}
-.ticker-name {
-    font-size: 36px;
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    line-height: 1;
-}
-.ticker-sub { font-size: 13px; color: var(--muted); margin-top: 6px; }
-
-.pos-pill {
+/* ── RUN ACCORDION CARDS ── */
+.run-accordion {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 16px 20px;
-    min-width: 200px;
-}
-.pos-pill-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
-.pos-pill-pnl { font-size: 28px; font-weight: 700; font-family: var(--mono); line-height: 1.1; margin-top: 4px; }
-.pos-pill-pct { font-size: 13px; font-family: var(--mono); }
-
-.chart-frame {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
+    margin-bottom: 12px;
     overflow: hidden;
-    margin-bottom: 20px;
+    transition: border-color .15s;
+}
+.run-accordion:hover {
+    border-color: var(--border2);
 }
 
-.thesis-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--blue);
-    border-radius: var(--radius);
-    padding: 20px;
-    margin-bottom: 20px;
+.run-accordion-header {
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+    flex-wrap: wrap;
 }
-.thesis-card h2 { font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 12px; }
-.thesis-card p { font-size: 13px; color: var(--muted); line-height: 1.75; margin-bottom: 10px; }
-.thesis-card p:last-child { margin-bottom: 0; }
+.run-accordion-header:hover {
+    background: var(--surface2);
+}
 
-.dec-timeline { }
-.dec-item {
-    display: grid;
-    grid-template-columns: 80px 80px 120px 1fr;
-    gap: 10px;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--border);
-    align-items: start;
+.run-date {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    white-space: nowrap;
+    min-width: 150px;
 }
-.dec-item:last-child { border-bottom: none; }
-.dec-date { font-size: 12px; font-family: var(--mono); color: var(--muted); }
+
+.run-mode-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background: var(--blue-dim);
+    color: var(--blue);
+    white-space: nowrap;
+}
+.run-mode-badge.mode-swing   { background: var(--blue-dim);   color: var(--blue);   }
+.run-mode-badge.mode-invest  { background: var(--green-dim);  color: var(--green);  }
+.run-mode-badge.mode-daytrade{ background: var(--yellow-dim); color: var(--yellow); }
+.run-mode-badge.mode-research{ background: var(--surface2);   color: var(--muted);  }
+
+.run-ticker-pills {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.ticker-pill {
+    display: inline-block;
+    padding: 2px 7px;
+    background: var(--surface2);
+    border: 1px solid var(--border2);
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+    font-family: var(--mono);
+}
+
+.run-decision-count {
+    font-size: 12px;
+    color: var(--muted);
+    white-space: nowrap;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.chevron {
+    width: 16px;
+    height: 16px;
+    color: var(--subtle);
+    transition: transform .2s ease;
+    flex-shrink: 0;
+}
+.run-accordion.expanded .chevron {
+    transform: rotate(90deg);
+}
+
+/* ── EXPANDED BODY ── */
+.run-accordion-body {
+    display: none;
+    border-top: 1px solid var(--border);
+}
+.run-accordion.expanded .run-accordion-body {
+    display: block;
+}
+
+/* Price cells */
+td.price { font-family: var(--mono); font-size: 12px; white-space: nowrap; }
+
+/* Status badges */
+.status-live {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background: var(--green-dim);
+    color: var(--green);
+}
+.status-awaiting {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background: var(--yellow-dim);
+    color: var(--yellow);
+}
+.status-none { color: var(--subtle); font-size: 13px; }
+
+/* Inline confidence bar for table */
+.conf-inline {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 90px;
+}
+.conf-inline .conf-bar-bg {
+    flex: 1;
+    background: var(--border);
+    border-radius: 3px;
+    height: 4px;
+}
+.conf-inline .conf-bar {
+    height: 4px;
+    border-radius: 3px;
+    background: var(--blue);
+}
+.conf-inline .conf-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    min-width: 28px;
+    text-align: right;
+}
 
 @media (max-width: 640px) {
-    .ticker-name { font-size: 28px; }
-    .dec-item { grid-template-columns: 1fr 1fr; }
-    .dec-item .dec-reason { grid-column: 1/-1; }
+    .run-date { min-width: unset; font-size: 12px; }
+    .run-accordion-header { gap: 8px; padding: 12px 14px; }
+    td.hide-mobile, th.hide-mobile { display: none !important; }
 }
 
     </style>
@@ -350,7 +448,7 @@
         <div class="nav-links">
             <a class="nav-link " href="index.html">Positions</a>
             <a class="nav-link " href="today.html">Decisions</a>
-            <a class="nav-link " href="runs.html">All Runs</a>
+            <a class="nav-link active" href="runs.html">All Runs</a>
             <a class="nav-link " href="closed.html">History</a>
         </div>
         <div class="nav-meta">12:03 AM PT · next update <span id="countdown" style="font-family:var(--mono);color:var(--text);font-weight:600;">--:--</span></div>
@@ -359,64 +457,139 @@
 
 <div class="container">
     
-<div class="ticker-hero">
-    <div>
-        <div class="ticker-name">QQQ</div>
-        <div class="ticker-sub">
-            <a href="index.html" style="color:var(--muted);text-decoration:none;">← All Positions</a>
+<div class="page-header">
+    <h1>Run History</h1>
+    <p>Every AI analysis run, newest first — click a row to expand decisions</p>
+</div>
+
+
+
+<div class="run-accordion" id="run-1">
+    <div class="run-accordion-header" onclick="toggleRun('run-1')">
+        <span class="run-date">Apr 30, 2026 · 6:04 AM</span>
+        <span class="run-mode-badge mode-swing">swing</span>
+        <div class="run-ticker-pills">
+            
+            <span class="ticker-pill">NVDA</span>
+            
+        </div>
+        <div class="run-decision-count">
+            1 decision
+            <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6,4 10,8 6,12"></polyline>
+            </svg>
         </div>
     </div>
 
-    
-</div>
-
-<!-- TradingView Chart -->
-<div class="chart-frame">
-    <div class="tradingview-widget-container" style="height:420px;">
-        <div id="tv_QQQ" style="height:420px;"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-        <script>
-        new TradingView.widget({
-            "width": "100%",
-            "height": 420,
-            "symbol": "QQQ",
-            "interval": "D",
-            "timezone": "America/New_York",
-            "theme": "dark",
-            "style": "1",
-            "locale": "en",
-            "enable_publishing": false,
-            "hide_top_toolbar": false,
-            "hide_side_toolbar": true,
-            "save_image": false,
-            "backgroundColor": "rgba(22,27,34,1)",
-            "gridColor": "rgba(33,38,45,1)",
-            "container_id": "tv_QQQ"
-        });
-        </script>
+    <div class="run-accordion-body">
+        
+        <div class="table-wrap" style="border:none;border-radius:0;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ticker</th>
+                        <th>Action</th>
+                        <th class="hide-mobile">Entry</th>
+                        <th class="hide-mobile">Target</th>
+                        <th class="hide-mobile">Stop</th>
+                        <th>Confidence</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><a href="NVDA.html" style="font-weight:700;">NVDA</a></td>
+                        <td><span class="badge badge-buy">BUY</span></td>
+                        <td class="price hide-mobile">$209.25</td>
+                        <td class="price hide-mobile">$222.50</td>
+                        <td class="price hide-mobile">$205.30</td>
+                        <td>
+                            
+                            <div class="conf-inline">
+                                <div class="conf-bar-bg">
+                                    <div class="conf-bar" style="width:72%"></div>
+                                </div>
+                                <span class="conf-label">72%</span>
+                            </div>
+                            
+                        </td>
+                        <td>
+                            
+                            <span class="status-awaiting">Awaiting</span>
+                            
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        
     </div>
 </div>
 
+<div class="run-accordion" id="run-2">
+    <div class="run-accordion-header" onclick="toggleRun('run-2')">
+        <span class="run-date">Apr 30, 2026 · 5:14 AM</span>
+        <span class="run-mode-badge mode-swing">swing</span>
+        <div class="run-ticker-pills">
+            
+            <span class="ticker-pill">JPM</span>
+            
+        </div>
+        <div class="run-decision-count">
+            1 decision
+            <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6,4 10,8 6,12"></polyline>
+            </svg>
+        </div>
+    </div>
 
-<div class="thesis-card">
-    <h2>AI Thesis (from Wiki)</h2>
-    <p>QQQ is the Nasdaq-100 ETF — a concentrated bet on the top 100 non-financial Nasdaq companies (Apple, Microsoft, Nvidia, Meta, Alphabet, Amazon are the top six). It is the cleanest expression of large-cap tech momentum in the US market. Our two runs (daytrade on 2026-04-15 and swing on 2026-04-17) converge on the same structural view: the daily trend is unambiguously bullish but QQQ's extreme correlation with everything else we hold (0.96 vs SPY, 0.74 vs NVDA, 0.67 vs AMZN) means adding a full-size QQQ position on top of single-name tech longs is de facto leveraging the same bet twice.</p><p>- **Daily trend is intact.** As of April 17, 2026, ADX reads 36.08 on the daily with the squeeze momentum in bullish-breakout mode — both confirm a mature but still-running uptrend. [Source: signals_combined.json, dt_breakout_hunter QQQ, 20260415_104041]
-- **Sector rotation into tech.** On April 15, QQQ outperformed SPY by an estimated 0.4–0.6% intraday as Nasdaq-100 megacaps (MSFT +2.1%, META +2.2%, AVGO +2.5%) carried the load while the Dow pared gains. [Source: web_research/QQQ.json, 20260415_104041]
-- **AI capex supercycle.** Meta-Broadcom 1 GW custom AI chip deal, Microsoft Azure 39% growth trajectory, and Nvidia's 10-day winning streak (+18%) entering April 15 all signal that AI spending by the top QQQ components remains at cycle highs.
-- **Options flow constructive.** WhaleStream showed net bullish QQQ flow on April 15; call-side open interest dominated at current strikes with a balanced 5-call/5-put unusual activity reading, net constructive. [Source: web_research/QQQ.json analyst_consensus]
-- **Swing decision: buy at $640.47.** On April 17 the swing PM rated QQQ a Buy with 72% confidence, 8–12 trading day timeframe, target $668, stop $634, for a 4.25:1 risk-reward — the highest R:R in the 14-ticker cohort. [Source: decisions.json, 20260417_233350]</p><p>- **Valuation — ETF fundamentals not available.** The fundamentals agent and growth agent both returned bearish/zero signals for QQQ because standard financial ratios (P/E, ROE, net margin) are not applicable to an ETF wrapper. The bearish flag is a data artifact but the underlying warning is real: the Nasdaq-100 index trades at elevated forward P/E vs historical norms.
-- **Extreme correlation kills diversification.** Correlation of 0.96 vs SPY and 0.74 vs NVDA means QQQ adds almost no independent alpha to a portfolio already long large-cap tech single names. The swing PM explicitly cut QQQ size to 12 shares to avoid double-counting. [Source: portfolio_notes, decisions.json, 20260417_233350]
-- **Intraday structure was bearish on April 15.** The 5-minute SuperTrend had flipped bearish (value $633.70, overhead resistance), squeeze momentum was negative (-0.42), and all 9 DT agents voted neutral — the day-trade call was a firm no-trade sit-out. [Source: decisions.json, 20260415_104041]
-- **Fed on hold with only one cut expected all of 2026.** Core PCE still at 2.7%. Rate-driven multiple expansion for high-growth tech is off the table near-term. [Source: web_research/QQQ.json macro_context]
-- **Tariff overhang.** Apple (~7% QQQ weight) faces lingering tariff pressure on hardware manufactured overseas. The $500B US investment pledge provides political cover but does not eliminate cost risk.</p>
-</div>
-
-
-<div class="card">
-    <h2 style="font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;">Recent AI Decisions</h2>
-    
-    <p style="color:var(--muted);font-size:13px;">No recent decisions for QQQ.</p>
-    
+    <div class="run-accordion-body">
+        
+        <div class="table-wrap" style="border:none;border-radius:0;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ticker</th>
+                        <th>Action</th>
+                        <th class="hide-mobile">Entry</th>
+                        <th class="hide-mobile">Target</th>
+                        <th class="hide-mobile">Stop</th>
+                        <th>Confidence</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><a href="JPM.html" style="font-weight:700;">JPM</a></td>
+                        <td><span class="badge badge-hold">HOLD</span></td>
+                        <td class="price hide-mobile">—</td>
+                        <td class="price hide-mobile">$319.00</td>
+                        <td class="price hide-mobile">$303.00</td>
+                        <td>
+                            
+                            <div class="conf-inline">
+                                <div class="conf-bar-bg">
+                                    <div class="conf-bar" style="width:42%"></div>
+                                </div>
+                                <span class="conf-label">42%</span>
+                            </div>
+                            
+                        </td>
+                        <td>
+                            
+                            <span class="status-none">—</span>
+                            
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
 </div>
 
 
@@ -428,6 +601,15 @@
     Live AI swing trading · Updates every 5 min via GitHub Actions · <a href="https://github.com/NamanVinayak/claude-code-hedge-fund" style="color:var(--blue);text-decoration:none">Open source</a>
 </footer>
 
+
+<script>
+function toggleRun(id) {
+    var el = document.getElementById(id);
+    if (el) {
+        el.classList.toggle('expanded');
+    }
+}
+</script>
 
 <script>
 (function() {
