@@ -1,11 +1,11 @@
 ---
 name: AAPL trades
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_144524
 target_words: 800
 stale_after_days: 60
-word_count: 746
-summary: Full trade journal for AAPL — one abandoned long, three no-trade holds, lifetime stats
+word_count: 780
+summary: Full trade journal for AAPL — one abandoned long, four no-trade holds, lifetime stats; Q2 earnings blackout hold added
 ---
 
 # AAPL — Trades
@@ -60,6 +60,7 @@ These runs analyzed AAPL but the PM gave a no-trade / hold — no order was subm
 | 20260415_093758 | 2026-04-15 | hold | 47% | ADX 12.5 (lowest in universe), daily supertrend bearish, 8/10 strategies neutral, CEO Tim Cook sold $12M+ |
 | wiki_phase1_on | 2026-04-29 | (no decisions file) | n/a | Data-only run, no PM dispatch |
 | wiki_phase1_off | 2026-04-29 | (no decisions file) | n/a | Data-only run, no PM dispatch |
+| 20260430_144524 | 2026-04-30 | hold | 30% | Earnings blackout (0 days to Q2 print) blocks all new positions; head trader confidence 30 < 40 threshold; R/R 0.71:1 fails 2:1 minimum; three of five swing agents neutral; ADX 15.78 still below 25; reassess post-earnings |
 
 ## Lifetime stats
 
@@ -74,8 +75,8 @@ These runs analyzed AAPL but the PM gave a no-trade / hold — no order was subm
 | Win rate (closed, filled) | n/a |
 | Average hold time | n/a |
 | Average R:R on entry | 3.25:1 (one data point) |
-| Runs analyzed (AAPL) | 5 |
-| No-trade decisions | 3 (Apr 11, Apr 15, wiki_phase1) |
+| Runs analyzed (AAPL) | 6 |
+| No-trade decisions | 4 (Apr 11, Apr 15, wiki_phase1, Apr 30) |
 | Buy decisions | 1 (Apr 17) |
 | Short decisions | 0 |
 
@@ -83,4 +84,4 @@ These runs analyzed AAPL but the PM gave a no-trade / hold — no order was subm
 
 **The model has been conservative on AAPL — correctly so.** Three no-trade calls in a row reflect the genuine technical ambiguity: trendless price action, overbought oscillators without a trend to support the overbought, and persistent insider selling. The one buy signal (Apr 17) came when enough strategies agreed on "trend + pullback + sector bullish" for the PM to act. That the order was never filled may mean the market moved away from the limit before the order could execute — or the daily order expiry was not re-queued. Worth investigating if the next run produces another limit-order buy.
 
-**Watch for Q2 earnings resolution.** If AAPL reports a clean April 30 earnings beat with margin guidance above 47%, the technical picture could change rapidly. The chart is coiled and the first clean trend signal could be a fast move. The levels to watch are a daily close above $263 (bull) or below $253 (bear).
+**Q2 earnings binary resolves today (April 30).** The April 30 run (20260430_144524) was blocked by the 3-day earnings blackout — no position initiated. Post-earnings, the key watch levels have updated: bull case requires a clean close above $276.11 on 1.5x+ volume + ADX expansion above 25; bear case is a pullback to the 38.2% Fib cluster at $264.21/$264.36 (mean-reversion long); invalidation is a daily close below $255.45 (21-test support). (Source: decisions.json, 20260430_144524.)
