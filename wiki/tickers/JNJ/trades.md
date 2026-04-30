@@ -1,79 +1,72 @@
 ---
 name: JNJ trades
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_194522
 target_words: 800
 stale_after_days: 60
-word_count: 812
-summary: No trades executed to date — two consecutive holds; run history documented with reasoning
+word_count: 798
+summary: First live trade placed — short 4 shares at $229.50 (entered Apr 30, 2026); prior two consecutive holds now historical; short thesis is bearish squeeze resolution in confirmed downtrend
 ---
 
 # JNJ — Trades
 
 ## TL;DR
 
-JNJ has been analyzed in two swing runs (Apr 11 and Apr 15, 2026) and produced a "hold" recommendation both times. No orders were placed in Moomoo paper trading. Zero realized or unrealized P&L. The stock is on the watchlist for a squeeze-resolution entry — the system is waiting for the chart, not waiting for fundamentals. (Source: tracker.db query, 2026-04-29; decisions.json from both runs)
+JNJ now has its first active trade: a short of ~4 shares entered at $229.50 on April 30, 2026, targeting $216.53 with a stop at $235. The trade is the result of the squeeze that was "building" across two prior hold runs finally resolving to the downside. Prior holds (Apr 11 and Apr 15) were correctly cautious — both would have been losers or flat. Confidence is 42%, just above the 40 threshold, with a 2.36:1 R/R. Risk manager allowed a $1,092.87 limit; actual notional is $918 (~4 shares × $229.50). (Source: decisions.json, risk_management_agent signal, run 20260430_194522.)
 
 ## Open positions
 
-None. No JNJ position is open in tracker.db as of 2026-04-29.
+### Trade — Short (active)
 
-## Run history — holds (no trade executed)
+| field | value |
+|---|---|
+| Status | open |
+| Direction | short |
+| Quantity | ~4 shares |
+| Entry price | $229.50 |
+| Target price | $216.53 |
+| Stop loss | $235.00 |
+| Risk/reward | 2.36:1 |
+| Confidence | 42% |
+| Timeframe | 5–10 trading days |
+| Run ID | 20260430_194522 |
+| Mode | swing |
+| Entry date | 2026-04-30 |
+| Notional | $918 |
+| Risk per share | $5.50 (entry $229.50 to stop $235.00) |
+| Reward per share | $12.97 (entry $229.50 to target $216.53) |
 
-### Run: swing_20260411_211655 — April 11, 2026
+**Trade thesis.** The Apr 15 Bollinger squeeze resolved bearish — the prior $233 bearish trigger was surpassed and price fell to $227.35. ADX moved from 23 (below threshold, no trend) to 29.46 (trend confirmed) with -DI 33.25 >> +DI 15.99. Daily EMAs are fully aligned downtrend. The hourly bounce into 10-EMA resistance ($229–231) is the entry zone. Macro context is a direct headwind: risk-on regime with S&P at ATH drives capital rotation out of defensive healthcare. No catalyst within 10 days to reverse the trend. (Source: swing_head_trader signal, decisions.json, run 20260430_194522.)
 
-**Decision**: Hold. Confidence 35%. (Source: decisions.json, run swing_20260411_211655)
-
-**What the system saw**:
-- Stock at ~$241.30, slightly above the 19-analyst consensus of $236.91
-- ADX 22.9 (below 25 threshold — no trend), RSI 56.9, Bollinger width 0.048 (tight squeeze already forming)
-- z-score -0.36 — near the statistical mean, no mean-reversion edge
-- 7 of 9 agents neutral, 2 leaning bullish (pullback trader saw a Fibonacci 50% entry at $237.30)
-- Earnings on April 14 — 3 days away — were a binary risk that stopped any entry
-- Head trader reasoning: "Dead zone. Earnings Monday could gap either way. Prudent call is to wait for the squeeze to resolve." (Source: swing_head_trader.json, run swing_20260411_211655)
-
-**Proposed (not executed) setup**:
-- Entry: $238.46 (Fibonacci pullback)
-- Target: $245.00
-- Stop: $234.00
-- Risk-reward: 1.5:1 — failed the 2:1 minimum requirement; this alone would have blocked the trade
-(Source: decisions.json, run swing_20260411_211655)
-
-**What happened**: JNJ reported Q1 2026 on April 14 — a strong beat. Revenue $24.06B vs $23.44B expected; adj EPS $2.70 vs $2.68 expected. Guidance raised. Stock was up ~0.5–1% on the day but sellers absorbed the gap-up. Technicals remained in squeeze. (Source: web_research/JNJ.json, run 20260415_110848)
-
-**Lesson**: The hold call was correct. Even with a strong earnings beat, the stock failed to break out of the squeeze. A Fibonacci entry at $237–238 would have been filled (stock pulled back there intraday) but would have gained almost nothing as the post-earnings print stalled near $240. The 1.5:1 R:R filter saved the trade.
-
----
-
-### Run: 20260415_110848 — April 15, 2026
-
-**Decision**: Hold. Confidence 42%. (Source: decisions.json, run 20260415_110848)
-
-**What the system saw**:
-- Stock at ~$237–240 range post-earnings
-- ADX 23 (still below 25), EMAs essentially flat (EMA10 $240.08, EMA21 $240.21)
-- Squeeze still ON — compression has not released
-- Daily SuperTrend: bearish. Conflicting with the bullish earnings news.
-- 8 of 9 agents neutral. Only news_sentiment voted bullish (correctly reflecting the strong Q1).
-- Swing catalyst trader: "Price action is unconvincing — after the gap-up open, the stock pulled back and closed near $240, showing sellers absorbing the good news." Confidence 45%, neutral. (Source: swing_catalyst_trader, signals_combined.json, run 20260415_110848)
-- Head trader: "No position. Monitor for the daily squeeze to release. A decisive close above $244 with volume would trigger a bullish entry." (Source: swing_head_trader.json, run 20260415_110848)
-- Risk manager: $0 current exposure, $1,375 position limit available (27.5% of portfolio, correlation-adjusted upward because JNJ has near-zero correlation to other open positions). (Source: risk_management_agent, signals_combined.json, run 20260415_110848)
-
-**Proposed (not executed) entry trigger**: Close above $244 with volume ≥1.5x average → long entry at $244, target $250–252, stop below $233.
-
-**Why no trade**: The trigger did not fire. No close above $244 was observed on Apr 15. Hold maintained.
-
----
+**Primary risk.** Daily RSI at 28.35 (oversold territory) — a snap-back bounce extending above $235 would stop the trade out. Talc litigation is an unscheduled binary wildcard. Mean-reversion agent (52% confidence) sees a bounce to $234–235 as possible. (Source: swing_mean_reversion signal; explanation.json, run 20260430_194522.)
 
 ## Closed — last 30 days
 
 None.
 
-## Closed — older, rolled by month
+## Run history — holds (no trade executed)
 
-None.
+### Run: swing_20260411_211655 — April 11, 2026
 
-## Closed — older than 6 months
+**Decision**: Hold. Confidence 35%. (Source: decisions.json, run swing_20260411_211655.)
+
+**What the system saw**: Stock at ~$241.30. ADX 22.9 (below 25), RSI 56.9, BB width 0.048 (tight squeeze forming), z-score -0.36 near statistical mean. Earnings binary April 14 was 3 days away — blocked entry. 7/9 agents neutral. Head trader: "Dead zone. Earnings Monday could gap either way." Proposed entry $238.46, target $245, stop $234, R/R 1.5:1 — failed 2:1 minimum. (Source: swing_head_trader.json, run swing_20260411_211655.)
+
+**Lesson**: Hold was correct. Q1 earnings beat but stock barely moved; sellers absorbed the gap-up. A Fibonacci entry at $237–238 would have gained almost nothing near $240. The 1.5:1 R/R filter correctly blocked the trade.
+
+---
+
+### Run: 20260415_110848 — April 15, 2026
+
+**Decision**: Hold. Confidence 42%. (Source: decisions.json, run 20260415_110848.)
+
+**What the system saw**: Stock at ~$237–240. ADX 23 (below 25 threshold), EMAs flat (EMA10 $240.08, EMA21 $240.21), squeeze still ON, daily SuperTrend bearish. 8/9 agents neutral. Head trader: "No position. Monitor for the daily squeeze to release. A decisive close above $244 with volume would trigger a bullish entry." Risk manager allowed $1,375 limit. Trigger levels set: long above $244 on 1.5x volume; short below $233. (Source: decisions.json, run 20260415_110848.)
+
+**What happened**: The $244 bullish trigger was never reached. Price declined further, eventually breaking the $233 bearish trigger, which led to the short setup in this run.
+
+---
+
+## Closed — older than 30 days
 
 None.
 
@@ -81,27 +74,21 @@ None.
 
 | Metric | Value |
 |---|---|
-| Total trades | 0 |
-| Open trades | 0 |
+| Total trades (order placed) | 1 |
+| Open trades | 1 (short ~4 shares at $229.50) |
 | Closed trades | 0 |
-| Win rate | N/A |
-| Average R:R | N/A |
+| Win rate | N/A (no closed trades) |
+| Average R:R | 2.36:1 (1 data point) |
 | Total realized P&L | $0.00 |
-| Total unrealized P&L | $0.00 |
-| Runs analyzed | 2 |
-| Runs resulting in hold | 2 (100%) |
-| Consecutive holds | 2 |
+| Total unrealized P&L | open (depends on fill) |
+| Runs analyzed | 3 |
+| Runs resulting in hold | 2 (Apr 11, Apr 15) |
+| Runs resulting in short | 1 (Apr 30) |
+| Consecutive holds | 2 (broken by short on Apr 30) |
+| Max capital at risk | $918 notional (~4 shares × $229.50) |
 
-## Next entry criteria
+## Notes and lessons
 
-The system will re-analyze JNJ on the next swing run. The pre-defined entry triggers (as of the last run) are:
+**Two holds, then a short — patience paid off.** Both prior holds were correct: the Apr 11 earnings-proximity block saved capital on a muted earnings reaction, and the Apr 15 squeeze-wait call correctly identified direction was unresolved. The bearish resolution on Apr 30 provides the clean entry the system was waiting for.
 
-- **Long trigger**: Daily close above **$244** with volume ≥1.5x the 20-day average and squeeze firing in bullish direction. Entry at $244, target $250–252, stop $233–234. (Source: swing_head_trader.json, run 20260415_110848)
-- **Short trigger**: Daily close below **$233** confirming bearish SuperTrend breakdown. Entry on bounce, target ~$225, stop above $238. (Source: swing_head_trader.json, run 20260415_110848)
-- **No-trade zone**: $233–$244 — the current range. Do not enter in this band until the squeeze resolves.
-
-These levels should be re-validated on the next run as price evolves.
-
-## Last updated
-
-Bootstrap from runs 20260415_110848 and swing_20260411_211655 on 2026-04-29. No trades in tracker.db.
+**RSI oversold is a key risk to manage.** Daily RSI at 28.35 is an early warning that the stock has already fallen far. The system's discipline of entering on the bounce (at 10-EMA resistance ~$229–231) rather than at the flush lows ($227.35) improves the R/R and reduces the risk of being short right at a mean-reversion inflection. Monitor RSI closely — if it bases above 30 with volume pickup, the short thesis may need re-evaluation sooner than the 5–10 day window.

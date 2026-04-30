@@ -1,50 +1,40 @@
 ---
 name: JNJ catalysts
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_194522
 target_words: 400
 stale_after_days: 14
-word_count: 415
-summary: Q1 2026 earnings beat already digested; next catalyst is Q2 (mid-July); Icotyde launch and drug-pricing deal are positive longer-term
+word_count: 396
+summary: No near-term catalyst within 10 days; Q2 earnings ~July 15 is the next binary; FDA Priority Review for IMAAVY is a positive pipeline event; talc litigation remains the unscheduled wildcard
 ---
 
 # JNJ — Catalysts
 
 ## TL;DR
 
-The biggest near-term catalyst — Q1 2026 earnings on April 14 — has already fired. It was a beat on all metrics, but the stock barely moved (up 0.5–1% on the day) and sellers absorbed the gap-up, leaving technicals unchanged. The next scheduled catalyst is Q2 2026 earnings in mid-July. In the interim, watch Icotyde prescription ramp and any developments in the 90,000+ talc lawsuits. (Source: web_research/JNJ.json, runs 20260415_110848 and swing_20260411_211655)
+No actionable catalyst exists within the next 10 trading days. Q1 2026 earnings (April 14) beat all metrics but the stock barely moved (+0.5–1%), confirming trapped longs absorbed the good news. FOMC April 29 rate hold was absorbed without incident. The next scheduled binary is Q2 2026 earnings (~July 15, 2026). FDA Priority Review for IMAAVY (nipocalimab) is a positive pipeline signal. Talc litigation (90,000+ lawsuits) remains the primary unscheduled event-risk. (Source: web_research/JNJ.json; swing_catalyst_news signal, signals_combined.json, run 20260430_194522.)
 
 ## Upcoming events
 
-- **Q2 2026 earnings**: Expected mid-July 2026. Full-year guidance at $100.3B–$101.3B revenue and $11.45–$11.65 adjusted EPS sets a clear bar to beat. Watch Stelara erosion rate and Icotyde prescription volume. (Source: web_research/JNJ.json, run 20260415_110848)
-- **FOMC April 29**: Macro event — rates held at 3.50–3.75%, minimal market-moving impact expected on JNJ specifically, but rate-sensitive rotation into defensives remains a macro tailwind if the economy softens. (Source: web_research/JNJ.json, run swing_20260411_211655)
-- **Talc litigation**: 90,000+ lawsuits remain unresolved. Any court ruling or settlement announcement could create a sharp gap in either direction with no warning. This is the primary event-risk for the stock. (Source: web_research/JNJ.json, run swing_20260411_211655)
-- **Icotyde launch ramp**: New once-daily oral psoriasis treatment. ~1,500 prescriptions in its first weeks post-approval. Competing against AbbVie's Skyrizi. Monthly prescription data will be the key read-through for the immunology franchise recovery thesis. (Source: web_research/JNJ.json, run 20260415_110848)
+| Event | Date | Expected impact |
+|---|---|---|
+| Q2 2026 earnings | ~July 15, 2026 | Next binary — analyst Q2 EPS est. $2.84; watch Stelara erosion rate, Darzalex growth, Icotyde prescription ramp |
+| IMAAVY FDA review decision | TBD (Priority Review granted) | Positive pipeline signal — first therapy for warm autoimmune hemolytic anemia in Priority Review |
+| Talc litigation (90,000+ lawsuits) | Unscheduled | Largest unquantifiable binary risk; any settlement or adverse ruling creates a gap |
+| Royalty Pharma $500M Icotyde partnership | Ongoing ramp | Monthly prescription data is the tracking read-through for immunology franchise recovery |
 
 ## Recent news synthesis
 
-- **Q1 2026 earnings beat (April 14, 2026)**: Revenue $24.06B (+9.9% YoY), adj EPS $2.70 — beat on both lines. Innovative Medicine segment +11.2% to $15.43B, MedTech +7.7% to $8.64B. Raised full-year guidance. Quarterly dividend raised 3.1% to $1.34/share — 64th consecutive annual increase. GAAP net income fell 52.4% (likely a large talc litigation reserve). (Source: web_research/JNJ.json, run 20260415_110848)
-- **Drug pricing deal with Trump administration**: J&J was among 15 of 17 pharma companies to agree to the administration's pricing initiative, removing a regulatory overhang that had weighed on healthcare multiples sector-wide. (Source: web_research/JNJ.json, run 20260415_110848)
-- **Royalty Pharma partnership**: $500M partnership for Icotyde royalties — validates management's confidence in the new pipeline product before it has meaningful commercial traction. (Source: web_research/JNJ.json, run swing_20260411_211655)
+**Q1 2026 earnings beat (April 14, 2026) — digested, muted reaction.** EPS $2.70 vs $2.67 est. Revenue $24.1B vs $23.6B est. Darzalex $4B in Q1 (vs $3.4B est.), Tremfya $1.6B (vs $1.2B est.) offset Stelara biosimilar erosion. FY2026 guidance raised to adj. EPS $11.55, sales midpoint $100.8B. GAAP net income fell 52.4% — driven by a large talc litigation reserve. Stock barely moved (+0.5–1%) as sellers absorbed the gap-up. (Source: web_research/JNJ.json, run 20260430_194522.)
 
-## Insider activity
+**FDA Priority Review for IMAAVY (nipocalimab) — pipeline positive.** First therapy designated Priority Review for warm autoimmune hemolytic anemia — rare blood disorder. Separate Phase 3 trial (Vivacity-MG3) showed sustained efficacy in myasthenia gravis. Pipeline depth is real but no near-term price event. (Source: web_research/JNJ.json, run 20260430_194522.)
 
-No insider activity flagged in either run's signal files. No buy/sell data cited in the Apr 11 or Apr 15 analyses beyond noting the absence of insider buying as a contrast to names like UNH (which had 122 buys vs 29 sells in the same run). (Source: swing_20260411_211655, 20260415_110848)
+**No drug pricing regulatory overhang.** J&J was among 15 of 17 pharma companies to accept the Trump drug-pricing initiative — regulatory overhang removed in prior quarter and absorbed into current price. (Source: thesis.md bootstrap; web_research/JNJ.json, run 20260430_194522.)
 
 ## Analyst consensus
 
-| Analyst | Rating | Price Target | Date |
-|---|---|---|---|
-| Morgan Stanley | Overweight | $267 | Raised Apr 10, 2026 |
-| TD Cowen | Buy | $250 | Initiated Apr 8, 2026 |
-| Citigroup | Buy | $274 | Maintained |
-| 19-analyst consensus | Buy | $234.74 | Apr 2026 |
-| 26-analyst average | Buy | $240.19 | Apr 2026 |
+As of April 30, 2026: Buy consensus from 19–23 covering analysts. Average price target ~$249. HSBC highest at $280 (March 17, 2026). Morgan Stanley PT $262. Recent ratings from Barclays, Stifel, Wells Fargo post-Q1 (April 15, 2026). Current price $227.35 sits ~10% below average consensus PT, but the downtrend indicates the market disagrees with the analyst consensus on timing. (Source: analyst_consensus, web_research/JNJ.json, run 20260430_194522.)
 
-Stock trading near the 19-analyst consensus (~$239–240 on Apr 15). Premium targets ($267–$274) imply 12–15% upside. (Source: analyst_consensus, web_research/JNJ.json, run 20260415_110848)
+## Insider activity
 
-**Prior period**: Apr 11 consensus was $236.91 with stock at $241.30 — stock was briefly above consensus before the earnings digest pulled it back toward the mean. (Source: web_research/JNJ.json, run swing_20260411_211655)
-
-## Last updated
-
-Bootstrap from runs 20260415_110848 and swing_20260411_211655 on 2026-04-29.
+No insider buy or sell activity recorded in the current run. Absence of insider buying — contrasting with UNH's prior 122-buy vs 29-sell signal — is a mild bear signal in the current environment. (Source: sentiment_analyst_agent signal, signals_combined.json, run 20260430_194522.)

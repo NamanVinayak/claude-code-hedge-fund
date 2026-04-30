@@ -1,11 +1,11 @@
 ---
 name: UNH trades
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-04-30
+last_run_id: 20260430_194522
 target_words: 800
 stale_after_days: 60
-word_count: 803
-summary: Full trade journal for UNH — two cancelled/abandoned orders, zero fills, net P&L $0; system liked the setup but neither entry ever triggered
+word_count: 827
+summary: Full trade journal for UNH — two cancelled/abandoned orders, zero fills, net P&L $0; Apr 30 hold confirms no entry at current overextended levels; system waits for $348-355 pullback
 ---
 
 # UNH — Trades
@@ -81,6 +81,7 @@ The Apr 11 swing run (swing_20260411_211655) is the only run that analyzed UNH i
 | run_id | date | decision | confidence | action |
 |---|---|---|---|---|
 | swing_20260411_211655 | 2026-04-11 | buy | 58% | 1 share at $296 limit, target $320, stop $288 |
+| 20260430_194522 | 2026-04-30 | hold | 35% | no trade — RSI 94.3, z-score 2.54, R/R 0.5:1 fails 2:1 minimum; wait for pullback to $348–355 |
 
 ## Lifetime stats
 
@@ -96,8 +97,8 @@ The Apr 11 swing run (swing_20260411_211655) is the only run that analyzed UNH i
 | Win rate (closed, filled) | n/a — no fills |
 | Average hold time | n/a — no fills |
 | Average R:R on entry | 3.0:1 (one data point, trade ID 1) |
-| Runs analyzed | 1 (swing_20260411_211655) |
-| No-trade decisions | 0 |
+| Runs analyzed | 2 (swing_20260411_211655; 20260430_194522) |
+| No-trade decisions | 1 (Apr 30 — hold) |
 | Buy decisions | 1 |
 | Short decisions | 0 |
 | Max capital at risk | $296 (5.9% of $5,000 paper account) |
