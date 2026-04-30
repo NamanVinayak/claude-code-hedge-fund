@@ -240,8 +240,9 @@ def main():
         # Parse timestamp from folder name (YYYYMMDD_HHMMSS)
         formatted_date = run_id
         try:
-            dt = datetime.strptime(run_id, "%Y%m%d_%H%M%S")
-            formatted_date = dt.strftime("%b %-d, %Y · %-I:%M %p")
+            dt = datetime.strptime(run_id, "%Y%m%d_%H%M%S").replace(tzinfo=ZoneInfo("UTC"))
+            dt = dt.astimezone(ZoneInfo("America/Vancouver"))
+            formatted_date = dt.strftime("%b %-d, %Y · %-I:%M %p PT")
         except ValueError:
             pass
 
