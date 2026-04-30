@@ -1,0 +1,47 @@
+{
+  "META": {
+    "signal": "bearish",
+    "confidence": 32,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0.4,
+        "revenue_growth": 0.2216703849824621,
+        "revenue_trend": -0.030609897099080095,
+        "eps_growth": -0.02559934985778135,
+        "eps_trend": -0.08992186755038292,
+        "fcf_growth": -0.14726660748631454,
+        "fcf_trend": -0.053561750346933217
+      },
+      "growth_valuation": {
+        "score": 0,
+        "peg_ratio": null,
+        "price_to_sales_ratio": 7.616217425355533
+      },
+      "margin_expansion": {
+        "score": 0.2,
+        "gross_margin": null,
+        "gross_margin_trend": 0.0,
+        "operating_margin": 0.41437855159579234,
+        "operating_margin_trend": -0.023052424126899736,
+        "net_margin": 0.3008369574952977,
+        "net_margin_trend": -0.020280481585152343
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 1.0,
+        "debt_to_equity": 0.27040687156778354,
+        "current_ratio": 2.5987666124868536
+      },
+      "final_analysis": {
+        "signal": "bearish",
+        "confidence": 32,
+        "weighted_score": 0.34
+      }
+    }
+  }
+}

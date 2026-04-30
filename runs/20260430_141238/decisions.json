@@ -1,0 +1,14 @@
+{
+  "decisions": {
+    "META": {
+      "action": "hold",
+      "entry_price": null,
+      "target_price": 583.0,
+      "stop_loss": 645.0,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "5-10 trading days",
+      "confidence": 55,
+      "reasoning": "Head Trader (conf 58) explicitly says do NOT chase short after -10% drop. Short R/R at current ~$601 fails 2:1 minimum (risk $645-620=$25 vs reward $620-583=$37 = 1.48:1). Bearish medium-term bias confirmed (2 bearish + 2 neutral vs 1 bullish strategy signal, 60% agent agreement bearish) but entry discipline required. Wait for dead-cat bounce into $618-630 resistance zone before initiating short. Hourly RSI 14.7 raises near-term bounce risk. Capex shock ($115-135B plan) is a thesis-changing event, not routine flush — bearish directional bias intact but no valid entry now."
+    }
+  }
+}
