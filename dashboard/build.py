@@ -36,7 +36,7 @@ def get_current_prices(tickers):
         return {}
 
 def calculate_next_update():
-    now = datetime.now(ZoneInfo("America/New_York"))
+    now = datetime.now(ZoneInfo("America/Vancouver"))
     minutes = now.minute
     next_5 = ((minutes // 5) + 1) * 5
     return next_5 - minutes
@@ -51,7 +51,7 @@ def main():
     # Initialize Jinja2
     env = Environment(loader=FileSystemLoader("dashboard/templates"))
     base_context = {
-        "last_updated": datetime.now(ZoneInfo("America/New_York")).strftime("%I:%M %p"),
+        "last_updated": datetime.now(ZoneInfo("America/Vancouver")).strftime("%I:%M %p"),
         "next_update_min": calculate_next_update()
     }
 
@@ -122,7 +122,7 @@ def main():
         f.write(index_html)
 
     # Fetch today's runs
-    today_str = datetime.now(ZoneInfo("America/New_York")).strftime("%Y%m%d")
+    today_str = datetime.now(ZoneInfo("America/Vancouver")).strftime("%Y%m%d")
     run_folders = glob.glob(f"runs/{today_str}_*")
     runs = []
     for folder in sorted(run_folders, reverse=True):
