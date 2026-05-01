@@ -287,6 +287,7 @@
     transition: border-color .15s, transform .15s;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 .pos-card:hover {
     border-color: var(--border2);
@@ -306,7 +307,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 16px;
 }
 .pos-ticker {
     font-size: 20px;
@@ -314,8 +314,20 @@
     letter-spacing: -0.02em;
     color: var(--text);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 .pos-ticker:hover { color: var(--blue); }
+
+.pos-expand-icon {
+    font-size: 10px;
+    color: var(--muted);
+    transition: transform 0.3s ease;
+}
+.pos-card.is-expanded .pos-expand-icon {
+    transform: rotate(180deg);
+}
 
 .pnl-big {
     font-size: 26px;
@@ -327,6 +339,18 @@
     font-size: 13px;
     font-family: var(--mono);
     margin-top: 2px;
+}
+
+.pos-details {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, margin-top 0.3s ease, opacity 0.2s ease;
+}
+.pos-card.is-expanded .pos-details {
+    max-height: 500px;
+    margin-top: 16px;
+    opacity: 1;
 }
 
 .pos-row {
@@ -379,6 +403,69 @@
     border-radius: 2px;
 }
 
+/* Portfolio Summary UI */
+.portfolio-summary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.ps-title {
+    font-size: 14px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.ps-value {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: var(--mono);
+    line-height: 1;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+    color: var(--text);
+}
+.ps-metrics {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    justify-content: center;
+}
+.ps-metric-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 24px;
+    min-width: 180px;
+}
+.ps-metric-label {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+.ps-metric-val {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--mono);
+}
+.ps-badge {
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    margin-left: 8px;
+    font-weight: 700;
+}
+.ps-badge.profit { background: rgba(16, 185, 129, 0.15); color: var(--green); }
+.ps-badge.loss { background: rgba(239, 68, 68, 0.15); color: var(--red); }
+
     </style>
 </head>
 <body>
@@ -394,26 +481,56 @@
             <a class="nav-link " href="runs.html">All Runs</a>
             <a class="nav-link " href="closed.html">History</a>
         </div>
-        <div class="nav-meta">10:30 PM PT · next update <span id="countdown" style="font-family:var(--mono);color:var(--text);font-weight:600;">--:--</span></div>
+        <div class="nav-meta">10:35 PM PT · next update <span id="countdown" style="font-family:var(--mono);color:var(--text);font-weight:600;">--:--</span></div>
     </div>
 </nav>
 
 <div class="container">
     
-<div class="page-header">
-    <h1>Live Positions</h1>
-    <p>Open swing trades · updated 10:30 PM ET</p>
+<div class="page-header" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 16px;">
+    <div>
+        <h1>Live Positions</h1>
+        <p>Open swing trades · updated 10:35 PM ET</p>
+    </div>
 </div>
+
+
+<div class="portfolio-summary">
+    <div class="ps-title">Net Worth</div>
+    <div class="ps-value">$24746.00</div>
+    
+    <div class="ps-metrics">
+        <div class="ps-metric-card">
+            <div class="ps-metric-label">Invested</div>
+            <div class="ps-metric-val">$25000.00</div>
+        </div>
+        <div class="ps-metric-card">
+            <div class="ps-metric-label">All-Time Return</div>
+            
+            
+            <div class="ps-metric-val loss">
+                $-254.00
+                <span class="ps-badge loss">
+                    -1.02%
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 <div class="position-grid">
 
 
 
-<div class="pos-card is-profit">
+<div class="pos-card is-profit" onclick="this.classList.toggle('is-expanded')">
     <div class="pos-header">
         <div>
-            <a class="pos-ticker" href="BAC.html">BAC</a>
+            <div class="pos-ticker">
+                BAC
+                <span class="pos-expand-icon">▼</span>
+            </div>
             <div style="margin-top:4px;">
                 <span class="badge badge-long">long</span>
                 
@@ -431,50 +548,52 @@
         </div>
     </div>
 
-    <div class="pos-row">
-        <span class="pos-key">Entry</span>
-        <span class="pos-val">$52.75</span>
-    </div>
-    <div class="pos-row">
-        <span class="pos-key">Now</span>
-        <span class="pos-val">$53.46</span>
-    </div>
-    <div class="pos-row">
-        <span class="pos-key">Stop / Target</span>
-        <span class="pos-val">
-            <span class="loss">$51.50</span>
-            &nbsp;/&nbsp;
-            <span class="profit">$55.40</span>
-        </span>
-    </div>
-    <div class="pos-row">
-        <span class="pos-key">R:R</span>
-        <span class="rr-badge">1:2.1</span>
-    </div>
+    <div class="pos-details">
+        <div class="pos-row">
+            <span class="pos-key">Entry</span>
+            <span class="pos-val">$52.75</span>
+        </div>
+        <div class="pos-row">
+            <span class="pos-key">Now</span>
+            <span class="pos-val">$53.46</span>
+        </div>
+        <div class="pos-row">
+            <span class="pos-key">Stop / Target</span>
+            <span class="pos-val">
+                <span class="loss">$51.50</span>
+                &nbsp;/&nbsp;
+                <span class="profit">$55.40</span>
+            </span>
+        </div>
+        <div class="pos-row">
+            <span class="pos-key">R:R</span>
+            <span class="rr-badge">1:2.1</span>
+        </div>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="progress-track">
-        <div class="progress-labels">
-            <span>Stop $52</span>
-            <span>Target $55</span>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="progress-track">
+            <div class="progress-labels">
+                <span>Stop $52</span>
+                <span>Target $55</span>
+            </div>
+            <div class="progress-outer">
+                
+                
+                <div class="progress-fill-green" style="width:50.25638678135018%"></div>
+                <div class="progress-marker" style="left:32.051282051282065%"></div>
+            </div>
         </div>
-        <div class="progress-outer">
-            
-            
-            <div class="progress-fill-green" style="width:50.25638678135018%"></div>
-            <div class="progress-marker" style="left:32.051282051282065%"></div>
-        </div>
+        
+        
     </div>
-    
-    
 </div>
 
 </div>
