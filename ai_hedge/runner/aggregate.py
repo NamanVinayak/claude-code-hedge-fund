@@ -294,6 +294,10 @@ def main():
             pending_orders = get_pending_trades()
             recent_closed = get_recent_trade_history(days=7)
         except Exception as e:
+            if args.require_turso:
+                raise SystemExit(
+                    f"FATAL: Turso read failed and --require-turso is set: {e}"
+                ) from e
             print(f"  WARNING: could not load stock open positions: {e}")
             open_positions = []
             pending_orders = []
