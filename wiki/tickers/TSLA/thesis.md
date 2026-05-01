@@ -1,43 +1,48 @@
 ---
 name: TSLA thesis
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-01
+last_run_id: 20260501_160246
 target_words: 500
 stale_after_days: 30
-word_count: 512
-summary: TSLA is a story-stock split between a beaten-down EV business and an optionality bet on robotaxi and Optimus; bears own near-term fundamentals, bulls own the 2027+ narrative.
+word_count: 581
+summary: Q1 2026 earnings crossed the 18%+ gross margin flip threshold — EV bear thesis on margin is partially falsified; autonomy bull case accelerating; swing setup remains watch-not-act due to R/R failure at current $387-399 resistance zone.
 ---
 
 # TSLA — Thesis
 
 ## TL;DR
 
-Tesla in April 2026 is not one stock — it is two bets duct-taped together. The EV manufacturing business is visibly deteriorating (delivery misses, inventory build, margin compression). The autonomy / robotics business has no revenue yet but commands a price-to-perfection multiple. Until Q1 earnings on April 22 resolved margin ambiguity, the stock was un-tradeable for swing purposes. Post-earnings the setup clarifies, but the thesis split remains.
+**Prior thesis falsified on margin:** The April 2026 thesis stated "flip bullish if Q1 gross margin recovers to 18%+." Q1 2026 printed 18.03% — the threshold was crossed. The EV-bear narrative on margins is no longer the dominant blocking factor. However, the swing setup remains in watch-not-act mode: price is mid-resistance ($387–$399 zone), R/R fails 2:1 at all entries from current $396, and the daily EMA structure has not yet confirmed a trend reversal. The thesis split between deteriorating EV fundamentals and optionality on autonomy/robotics now resolves more favorably for the bull camp, but valuation remains massively stretched (DCF gap -97%). [source: runs/20260501_160246/web_research/TSLA.json, decisions.json]
 
-## Bull case
+## What falsified the prior thesis
 
-- **Robotaxi is real and first-mover.** Unsupervised robotaxi rides launched in Austin, Texas in January 2026 using modified Model Y vehicles. First Cybercab rolled off Giga Texas production in February 2026. No other OEM has unsupervised paid robotaxi operating anywhere in the U.S. at commercial scale. (Source: runs/20260415_093758/web_research/TSLA.json — GearMusk / Phemex)
-- **FSD expansion is accelerating.** FSD Supervised received Netherlands approval April 2026 and is rolling out in Europe. Each new jurisdiction adds a royalty-style revenue stream on the installed base. (Source: runs/swing_20260411_211655/web_research/TSLA.json — Motley Fool)
-- **Musk DOGE exit is a catalyst.** Musk signaling he is stepping back from DOGE added $158 billion to Tesla's market cap in a single session, confirming market has been assigning a "distraction discount." (Source: runs/20260415_093758/web_research/TSLA.json — Fortune)
-- **China volume is holding.** China-made EV sales grew for the second straight quarter despite BYD and Xiaomi competition. The tariff wall (100%+ on Chinese EVs) structurally protects the U.S. market. (Source: runs/swing_20260411_211655/web_research/TSLA.json — Yahoo Finance)
-- **Analyst floor is wide.** Wedbush maintains a $600 target; Canaccord maintains Buy at $420. The consensus average is $400.56. Even the median analyst does not see the stock as structurally broken. (Source: both web_research files)
+The prior thesis (bootstrap, 2026-04-29) held that TSLA was "un-tradeable for swing purposes" pending the April 22 earnings binary, and would flip bullish only on gross margin ≥ 18%, Cybercab volume timeline, or Optimus deployment date. Q1 2026 delivered gross margin of 18.03% — the margin condition is met. The Cybercab and Optimus conditions remain unconfirmed but are no longer required given the margin recovery. [source: runs/20260501_160246/web_research/TSLA.json — CNBC Apr 22 2026]
 
-## Bear case
+## Bull case (updated post-earnings)
 
-- **Delivery miss is not a one-quarter blip.** Q1 2026 deliveries came in at 358,023 vs. 408,386 produced — the widest production-delivery gap ever recorded. JPMorgan flagged 164,000 unsold vehicles in inventory and reiterated Underweight with a $145 target (60% downside from ~$347). (Source: runs/swing_20260411_211655/web_research/TSLA.json — Electrek / GuruFocus)
-- **Margin trajectory is unknown.** Q1 2026 EPS consensus was $0.39 as of April 11 but had compressed to $0.24 by April 15 — a 38% consensus cut in four days. Wide estimate range ($0.22–$0.54) signals analysts have no edge on margins. (Source: both web_research files)
-- **Rivian is eating the domestically important segment.** Rivian Q1 2026 deliveries rose 20% YoY to 10,365 and it is now outselling Ford, Kia, Toyota, and BMW in U.S. EVs. Its R2 SUV at ~$45k targets exactly the price-sensitive buyer Tesla needs. (Source: runs/20260415_093758/web_research/TSLA.json)
-- **Downtrend is technically established.** All three runs (April 11, 15, 17) recorded a daily downtrend: EMAs bearish-aligned, ADX 29.5 confirming trend strength. The stock was down roughly 20% YTD in 2026 as of April 11. (Source: runs/swing_20260411_211655/decisions.json)
-- **Earnings binary makes swing trades dangerous.** Every swing run held TSLA or sized minimal specifically because of the April 22 earnings binary event. Our April 15 short was sized to just 1 share ($392 notional) vs. multi-hundred-share positions for other tickers.
+- **Gross margin threshold crossed.** Q1 2026 gross margin: 18.03% — precisely the level the prior thesis demanded as the flip trigger. EPS $0.41 beat ($0.33 estimate). Revenue $21.4B (slight miss). Services +42% YoY; FSD subscriptions 1.28M (+51% YoY). [source: web_research/TSLA.json]
+- **Robotaxi first-mover, no competitor match.** Unsupervised commercial robotaxi rides active in Austin (modified Model Y). Cybercab off Giga Texas production since February 2026. [source: bootstrap web_research/TSLA.json]
+- **FSD Europe live.** Netherlands approval April 2026, rollout imminent; Spring 2026 OTA includes Grok integration. [source: bootstrap web_research/TSLA.json]
+- **Musk DOGE exit.** Management re-engagement removes the distraction discount. [source: bootstrap web_research/TSLA.json]
+- **European sales rebounding.** Significant registration growth after multi-quarter slump. [source: web_research/TSLA.json — 247wallst Apr 29 2026]
+- **Global BEV lead reclaimed.** Q1 deliveries 358,023 — reclaimed from BYD (310K). [source: web_research/TSLA.json]
+
+## Bear case (persistent)
+
+- **Valuation massively stretched.** DCF intrinsic value $42B vs. $1.48T market cap — a 97.2% gap. EV/EBITDA implies 66.3% overvaluation. No entry justified on fundamentals alone. [source: runs/20260501_160246/signals_combined.json — valuation_analyst_agent]
+- **$25B capex, negative FCF guidance.** Three times the $8.5B in 2025. Spending on Cybercab, robotaxi network, Optimus, and AI infrastructure creates a prolonged FCF trough. [source: web_research/TSLA.json — Motley Fool Apr 25 2026]
+- **Related-party governance risk.** Amended 10-K: $573M in 2025 revenue from Musk-affiliated companies plus $2B xAI investment converting to SpaceX equity. [source: web_research/TSLA.json — Electrek May 1 2026]
+- **Worst delivery-production gap on record.** 358,023 delivered vs. 408,386 produced — 50,363 unsold vehicles. JPMorgan $145 target outstanding (Underweight). [source: bootstrap + web_research/TSLA.json]
+- **Daily EMA structure not yet confirmed bullish.** 10/21 EMAs below 50/200 EMA. Daily OBV trend still down. TSLA underperforming S&P 500 in April while market made ATHs. [source: signals_combined.json — swing_trend_momentum, swing_macro_context]
 
 ## What would change my mind
 
-**Flip bullish:** Gross margin recovering to 18%+ on Q1 earnings call; Cybercab volume production timeline confirmed (>10k/month by Q3 2026); Optimus Gen 3 commercial deployment date announced.
+**Add long exposure:** Pullback to $381–$385 (38.2% Fib confluence, 14-test support) with a bullish daily candle; entry $383, stop $365, target $409 = 2.7:1 R/R. OR daily close above $399 on above-average volume (clears the $387–$399 documented resistance zone).
 
-**Stay bearish:** Gross margin prints below 16%; inventory continues building into Q2; Musk re-engages with DOGE or other distractions publicly.
+**Flip bearish:** Daily close back below $370 (50% Fib at $373, 61.8% Fib at $364); reversal of the post-earnings recovery candle; or gross margin deterioration in Q2 below 17%.
 
-**Stay neutral:** Earnings in-line, no robotaxi update, macro stays volatile — the stock remains a story-stock with no near-term tradeable edge for swing timeframes.
+**Stay neutral:** Price remains mid-resistance $387–$399 without a clean pullback or confirmed breakout — R/R stays below 2:1.
 
 ## Last updated
 
-2026-04-29, sourced from runs swing_20260411_211655, 20260415_093758, 20260417_233350.
+2026-05-01. Sourced from runs/20260501_160246 (decisions.json, signals_combined.json, web_research/TSLA.json). Supersedes bootstrap entry 2026-04-29 — prior "un-tradeable pending Q1 earnings" thesis retired; gross margin flip trigger met.

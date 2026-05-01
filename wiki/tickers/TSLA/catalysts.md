@@ -1,58 +1,65 @@
 ---
 name: TSLA catalysts
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-01
+last_run_id: 20260501_160246
 target_words: 400
 stale_after_days: 14
-word_count: 418
-summary: April 22 Q1 earnings was the dominant near-term catalyst; robotaxi launch and Musk DOGE exit are the multi-month structural catalysts.
+word_count: 395
+summary: Q1 2026 earnings resolved (EPS $0.41 beat, revenue slight miss, gross margin 18%); robotaxi Austin commercial, FSD Netherlands, Musk DOGE exit are positive structural catalysts; related-party governance concerns, $25B capex plan with negative FCF guidance, and worst delivery-production gap are the persistent negatives.
 ---
 
 # TSLA — Catalysts
 
 ## TL;DR
 
-Three categories of catalyst were in play across the April 2026 run period: (1) the Q1 earnings binary on April 22, which made every swing setup dangerous until resolved; (2) genuine positive structural catalysts — robotaxi launch, FSD European expansion, Musk stepping back from DOGE; and (3) persistent negative catalysts — the worst delivery-to-production gap in Tesla history, JPMorgan's 60% downside call, and Rivian's acceleration.
+Q1 2026 earnings (April 22) resolved the binary that blocked all prior swing setups. EPS beat ($0.41 vs $0.33 estimate), revenue slightly missed, but gross margin came in at 18.03% — crossing the 18%+ threshold the prior thesis cited as a flip-to-bullish trigger. Post-earnings price action is constructive: Apr 30 produced a Fib-bounce reversal candle, May 1 surging +3.8% on 2.74x volume. The bull structural catalysts (robotaxi, FSD Europe, Musk re-engagement) remain in force. The bear narrative (FCF guidance, governance, delivery gap) is real but partially priced. [source: runs/20260501_160246/web_research/TSLA.json]
 
-## Positive catalysts
+## Positive catalysts (active)
 
-**Musk DOGE exit (April 2026)**
-Musk acknowledged DOGE was "only somewhat successful" and signaled stepping back. This single headline added $158 billion to Tesla's market cap in one session. The market had been pricing in a management-distraction discount for months. Each additional Musk re-engagement with Tesla operations is incrementally bullish for the stock. (Source: runs/20260415_093758/web_research/TSLA.json — Fortune)
+**Q1 2026 earnings beat — margin threshold crossed**
+EPS $0.41 vs $0.33 estimate; gross margin 18.03% (crossed the 18%+ flip threshold). Revenue ~$21.4B (slight miss). Q1 deliveries 358,023 — reclaimed global pure-BEV sales lead from BYD. Services revenue +42% YoY to $3.75B; FSD subscriptions 1.28M (+51% YoY). [source: web_research/TSLA.json — CNBC Apr 22 2026]
 
-**Unsupervised robotaxi — Austin launch**
-Unsupervised (no safety driver) robotaxi rides began in Austin, Texas in January 2026 using modified Model Y vehicles. This is real commercial operation, not a pilot. The first Cybercab rolled off Giga Texas production in February 2026. No competitor has matched this. (Source: runs/20260415_093758/web_research/TSLA.json — Phemex / GearMusk)
+**Unsupervised robotaxi — Austin commercial operation**
+Unsupervised robotaxi commercial rides active in Austin using modified Model Y. No competitor has matched this. Cybercab rolling off Giga Texas production since February 2026. [source: bootstrap web_research/TSLA.json — GearMusk/Phemex]
 
-**FSD Netherlands approval + Spring OTA update**
-FSD Supervised was approved in the Netherlands in April 2026 with rollout imminent. The 2026 Spring OTA update was described as "most feature-dense in recent memory" and added Grok integration. European FSD expansion is a recurring positive data point for the autonomy narrative. (Source: both web_research files)
+**FSD Netherlands approval + imminent Europe rollout**
+FSD Supervised approved in Netherlands April 2026 with rollout imminent. Spring 2026 OTA update includes Grok integration. Each new jurisdiction adds recurring software revenue on the installed base. [source: bootstrap web_research/TSLA.json — Motley Fool]
 
-**China volume holding**
-China-made EV sales grew for the second consecutive quarter. BYD's U.S. ambitions are structurally blocked by 100%+ tariffs on Chinese EVs, which preserves Tesla's U.S. market position. (Source: runs/swing_20260411_211655/web_research/TSLA.json)
+**Musk DOGE exit (management re-engagement)**
+Musk acknowledging DOGE was "only somewhat successful" and stepping back removes the management-distraction discount the market had priced in. [source: bootstrap web_research/TSLA.json — Fortune]
 
-## Negative catalysts
+**European sales rebound**
+Significant European registration growth after multi-quarter slump. [source: web_research/TSLA.json — 247wallst Apr 29 2026]
 
-**Q1 2026 delivery miss — worst production-delivery gap ever**
-358,023 delivered vs. 408,386 produced — 50,363 vehicles sitting unsold. JPMorgan cited 164,000 total unsold vehicles in inventory. Consensus EPS estimate was cut from $0.39 to $0.24 in the four days between April 11 and April 15 as analysts absorbed the delivery data. (Source: both web_research files)
+## Negative catalysts (active)
 
-**JPMorgan Underweight — $145 target**
-JPMorgan reiterated Underweight with a $145 price target, representing 60% downside from the ~$347 level as of April 11. This is the most aggressive institutional bear call tracked across all three runs. The $145 target implies the autonomy narrative is worth near-zero. (Source: runs/swing_20260411_211655/web_research/TSLA.json — Electrek)
+**$25B capex plan — negative FCF guidance for rest of 2026**
+Tesla plans capex exceeding $25B in 2026 (nearly 3× the $8.5B in 2025), expects negative free cash flow for the remainder of the year. Spending targets: Cybercab, Robotaxi network, Optimus, AI infrastructure. [source: web_research/TSLA.json — Motley Fool Apr 25 2026]
 
-**Rivian R2 launch**
-Rivian secured a $1.25B Uber investment for a self-driving taxi fleet. Q1 2026 deliveries up 20% YoY. R2 SUV launching Q2 2026 at ~$45,000 targets the exact price-sensitive buyer Tesla most needs for volume recovery. (Source: runs/20260415_093758/web_research/TSLA.json)
+**Related-party governance concerns**
+Amended 10-K reveals $573M in 2025 revenue from Musk-affiliated companies (SpaceX, xAI) plus a $2B xAI investment that converted to SpaceX equity. Raises related-party conflict risk. [source: web_research/TSLA.json — Electrek May 1 2026]
+
+**Worst delivery-production gap on record**
+Q1 2026: 358,023 delivered vs. 408,386 produced — 50,363 vehicles unsold. [source: bootstrap web_research]
+
+**JPMorgan $145 target remains outstanding**
+Most aggressive institutional bear call; implies autonomy narrative worth near-zero. [source: bootstrap]
 
 ## Upcoming catalyst schedule
 
 | Date | Event | Directional bias |
 |---|---|---|
-| April 22, 2026 | Q1 2026 earnings after close | Binary — high uncertainty |
-| April 29, 2026 | FOMC rate decision | Macro / sector-level |
-| Q2 2026 | Rivian R2 SUV deliveries begin | Negative (competitive) |
-| Ongoing | Cybercab volume production ramp | Positive if on track |
-| Ongoing | Ceasefire stability (Iran) | Macro / sentiment |
+| Now | Post-earnings continuation window (7 trading days in) | Positive (partially priced) |
+| ~July 22, 2026 | Q2 2026 earnings | Binary — EPS est. ~$0.42 |
+| May 15, 2026 | Kevin Warsh Fed Chair confirmation vote | Macro — policy uncertainty |
+| Ongoing | Cybercab volume ramp progress | Positive if >10k/month by Q3 |
+| Ongoing | FSD Europe rollout (Netherlands live) | Positive |
+| Q2 2026 | Rivian R3/R3X deliveries | Negative (competitive) |
 
 ## Analyst consensus
 
-As of April 15, 2026 (32 analysts): Hold rating, average price target $400.56. UBS upgraded from Sell to Neutral on April 14 with a $352 target. Wedbush is the bull at $600; GLJ Research is the bear at $24.86. The extreme dispersion ($24–$600) reflects that analysts are really pricing two different companies — the EV business and the autonomy option. (Source: runs/20260415_093758/web_research/TSLA.json)
+~41 analysts: 19 Buy, 16 Hold, 6 Sell. Average target $405. Range: $24.86 (GLJ Research bear) to $600 (Wedbush Dan Ives). UBS raised to $364 Neutral on Apr 23 2026. Gary Alexander (Seeking Alpha) upgraded to Buy citing Europe recovery and Cybercab. [source: web_research/TSLA.json]
 
 ## Last updated
 
-2026-04-29. Q1 earnings (April 22) has now passed — this page should be refreshed with actual earnings results from the next run.
+2026-05-01. Sourced from runs/20260501_160246/web_research/TSLA.json (dated 2026-05-01). Supersedes bootstrap entry (2026-04-29) which flagged Q1 earnings as a pending binary — that binary has now resolved.
