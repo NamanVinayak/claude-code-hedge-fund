@@ -215,6 +215,23 @@ def get_pending_trades() -> list[dict[str, Any]]:
     return _execute("SELECT * FROM trades WHERE status = ? ORDER BY id", ["pending"])
 
 
+def get_recent_trade_history(days: int = 7) -> list[dict[str, Any]]:
+    """Return all closed trades from the last N days.
+
+    Same semantics as tracker.db.get_recent_trade_history — mirrors the
+    local SQLite version for cloud callers.
+    """
+    from datetime import datetime, timedelta, timezone
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=days)).replace(microsecond=0).isoformat()
+    return _execute(
+        "SELECT ticker, direction, status, entry_price, exit_fill_price, pnl, "
+        "closed_at, timeframe FROM trades "
+        "WHERE status IN ('target_hit', 'stop_hit', 'expired') AND closed_at >= ? "
+        "ORDER BY closed_at DESC",
+        [cutoff],
+    )
+
+
 def insert_trade(d: dict[str, Any]) -> int:
     """Insert a trade row and return the new cloud id."""
     unknown = set(d) - TRADE_COLUMN_SET - {"id"}

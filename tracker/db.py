@@ -134,6 +134,36 @@ def get_pending_trades():
     return out
 
 
+def get_recent_trade_history(days=7):
+    """Return all closed trades from the last N days.
+
+    Injected into portfolio context so the PM can see its recent history
+    per ticker — wins, stops, and expired trades — and reason accordingly.
+    """
+    from datetime import datetime, timedelta
+    cutoff = datetime.utcnow() - timedelta(days=days)
+    session = get_session()
+    rows = session.query(Trade).filter(
+        Trade.status.in_(['target_hit', 'stop_hit', 'expired']),
+        Trade.closed_at >= cutoff,
+    ).order_by(Trade.closed_at.desc()).all()
+    out = [
+        {
+            "ticker": t.ticker,
+            "direction": t.direction,
+            "status": t.status,
+            "entry_price": t.entry_price,
+            "exit_fill_price": t.exit_fill_price,
+            "pnl": t.pnl,
+            "closed_at": t.closed_at.isoformat() if t.closed_at else None,
+            "timeframe": t.timeframe,
+        }
+        for t in rows
+    ]
+    session.close()
+    return out
+
+
 def get_available_cash():
     """Calculate available cash from DB state (global, all modes)."""
     watchlist_path = os.path.join(os.path.dirname(__file__), 'watchlist.json')
