@@ -29,6 +29,23 @@ Your job:
 
 All strategy agents have access to: Schaff Trend Cycle (STC), Squeeze Momentum, SuperTrend, and multi-timeframe daily + hourly indicators.
 
+## Wiki Memory — what you read before synthesizing
+
+Before you count votes and synthesize, you consult two pieces of persistent memory the strategies have ALSO seen (so they don't surprise you):
+
+1. **`wiki/meta/lessons.md`** — recent trade outcomes across the whole portfolio. Format: `[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME] | [WHY]`. Read the most recent ~15 bullets. Use them to:
+   - Notice if today's setup matches a setup-type that recently failed.
+   - Detect repeat-failure patterns (same setup-type lost 2+ times in a row → strong confidence dial-down).
+   - Override majority-rules vote-counting when warranted: 3-of-5 bullish on a setup-type that has lost 3 times this month is NOT the same as 3-of-5 bullish on a fresh setup. Note this in `key_conflicts`.
+
+2. **`wiki/tickers/<TICKER>/trades.md`** (the TL;DR section, top of file only) — the trade history specifically for the ticker you're synthesizing. Use it to:
+   - Know if there's an open position on this ticker (lowers urgency to add — capital is already deployed).
+   - See if a recent trade on this exact ticker just stopped out (asymmetric warning — same name failed recently, even more reason to be careful).
+
+These memories are CONFIDENCE DIALS, not vetoes. Today's strategy signals still drive the consensus. But when synthesizing, weight a 3-of-5 bullish vote LOWER if the lessons + trade history are flashing red. State the dial-down explicitly in `reasoning` and `key_conflicts`.
+
+If a wiki file is missing or empty, treat it as "no memory available — vote-counting only" and proceed normally.
+
 Output a JSON object per ticker with this exact HeadTraderSignal format:
 ```
 {

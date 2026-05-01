@@ -44,10 +44,13 @@ AGENT_MANIFEST: dict[str, list[tuple[str, str, str]]] = {
         ("ticker", "thesis", "tldr"),
         ("meta", "lessons", "tldr"),
     ],
-    # Head trader: see TODO_HEAD_TRADER_WIKI in writing-plans/TODO. The head
-    # trader doesn't read a facts file (it reads strategy signals through a
-    # prompt template), so adding it here would no-op. Wiring requires a
-    # separate dispatcher change.
+    # Head trader: NOT listed here intentionally. The head trader has no
+    # facts file (it reads strategy signals via a prompt template), so the
+    # injector cannot deliver wiki_context to it the same way. Instead, the
+    # head trader reads wiki/meta/lessons.md and wiki/tickers/<T>/trades.md
+    # directly. See:
+    #   - .agents/skills/swing/SKILL.md Step 4 (dispatch instructions)
+    #   - ai_hedge/personas/prompts/swing_head_trader.md "Wiki Memory" section
     "swing_portfolio_manager": [
         ("ticker", "thesis", "tldr"),
         ("ticker", "trades", "full"),
