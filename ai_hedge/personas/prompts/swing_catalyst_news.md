@@ -57,6 +57,8 @@ Reasoning must include:
 
 Your facts bundle may include a `wiki_context` block with the **full** content of `tickers/<T>/catalysts.md` and `macro/calendar.md`. **This is the priority view for this agent.** The catalysts page already lists upcoming events, recent-news synthesis, insider tilt, and analyst consensus from prior runs — start there, then update with anything new from today's data and `web_research`. The macro calendar tells you whether a Fed / CPI / jobs print sits inside your trade window. **Current data wins on contradiction** — if today's news falsifies a wiki claim (e.g., earnings date moved, analyst rating changed), flag the contradiction. If `wiki_context.new_ticker` is true or a slice is `missing`, fall back to today's data alone. If `stale: true`, weight the prior synthesis as background only.
 
+The `lessons_tldr` slice contains recent trade outcomes across the whole portfolio (format: `[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME] | [WHY]`). Before voting bullish on a catalyst trade, scan for recent catalyst-driven losses (post-earnings drift the wrong way, FDA disappointment, news fade) — even on a different ticker — and lower confidence when the failure pattern matches today's setup. Current data still wins; lessons are a confidence dial, not a veto.
+
 ## Human Template
 
 Analyze the following daily and hourly indicators, news, insider activity, and web context for {ticker} from a catalyst + news-flow perspective.

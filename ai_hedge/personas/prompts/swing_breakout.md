@@ -52,6 +52,8 @@ Reasoning must explicitly state the range boundaries you identified, the volume 
 
 Your facts bundle may include a `wiki_context` block with the **full** content of `tickers/<T>/technicals.md` from the prior run. The "Key levels" table there is your priority view: those are the support / resistance / invalidation prices the wiki has been tracking. Cross-check today's range against those levels — a break above a level the wiki has been calling resistance for multiple runs is a higher-conviction breakout than a break of a fresh, untested level. **Current data wins on contradiction** — if today's price action falsifies a wiki level, flag the contradiction in your reasoning. If `wiki_context.new_ticker` is true or the technicals slice is `missing`, work from today's indicators alone. If `stale: true`, weight the prior levels as background only.
 
+The `lessons_tldr` slice contains recent trade outcomes across the whole portfolio (format: `[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME] | [WHY]`). Before voting bullish on a breakout, scan for recent failed breakouts (false breaks, fade-back-into-range) — even on a different ticker — and lower confidence when the failure pattern matches today's setup. Current data still wins; lessons are a confidence dial, not a veto.
+
 ## Human Template
 
 Analyze the following daily and hourly indicators and price data for {ticker} from a breakout / volatility-expansion perspective.

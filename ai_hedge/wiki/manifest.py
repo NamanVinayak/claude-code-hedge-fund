@@ -22,24 +22,32 @@ AGENT_MANIFEST: dict[str, list[tuple[str, str, str]]] = {
     "swing_trend_momentum": [
         ("ticker", "technicals", "tldr"),
         ("macro", "regime", "tldr"),
+        ("meta", "lessons", "tldr"),
     ],
     "swing_mean_reversion": [
         ("ticker", "technicals", "tldr"),
         ("ticker", "recent", "tldr"),
+        ("meta", "lessons", "tldr"),
     ],
     "swing_breakout": [
         ("ticker", "technicals", "full"),
+        ("meta", "lessons", "tldr"),
     ],
     "swing_catalyst_news": [
         ("ticker", "catalysts", "full"),
         ("macro", "calendar", "full"),
+        ("meta", "lessons", "tldr"),
     ],
     "swing_macro_context": [
         ("macro", "regime", "full"),
         ("macro", "sectors", "full"),
         ("ticker", "thesis", "tldr"),
+        ("meta", "lessons", "tldr"),
     ],
-    # Head trader intentionally omitted — synthesizes strategy signals only.
+    # Head trader: see TODO_HEAD_TRADER_WIKI in writing-plans/TODO. The head
+    # trader doesn't read a facts file (it reads strategy signals through a
+    # prompt template), so adding it here would no-op. Wiring requires a
+    # separate dispatcher change.
     "swing_portfolio_manager": [
         ("ticker", "thesis", "tldr"),
         ("ticker", "trades", "full"),

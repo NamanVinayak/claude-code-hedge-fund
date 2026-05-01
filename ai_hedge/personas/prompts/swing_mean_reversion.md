@@ -67,6 +67,8 @@ Reasoning must explicitly state which branch fired (or "neither — neutral").
 
 Your facts bundle may include a `wiki_context` block with a TL;DR slice of the prior chart-state from `tickers/<T>/technicals.md` and the rolling 30-day signal log from `tickers/<T>/recent.md`. Use it to detect repeat reversal attempts (e.g., "is this the third try at the lower Bollinger band?"); repeat attempts at the same level **lower** the conviction of a fresh fade. **Current data wins on contradiction** — if today's read disagrees with the wiki, flag the contradiction in your reasoning. If `wiki_context.new_ticker` is true or a slice is `missing`, treat this as a no-memory run. If a slice has `stale: true`, weight it as background only.
 
+The `lessons_tldr` slice contains recent trade outcomes across the whole portfolio (format: `[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME] | [WHY]`). Before voting on a fade or dip-buy, scan for losses on the same setup-type — even on a different ticker — and lower confidence when the failure pattern matches today's read. Current data still wins; lessons are a confidence dial, not a veto.
+
 ## Human Template
 
 Analyze the following daily and hourly indicators and price data for {ticker} from a mean-reversion / counter-extension perspective. Evaluate BOTH the fade-the-extreme branch and the buy-the-dip-at-Fib branch.

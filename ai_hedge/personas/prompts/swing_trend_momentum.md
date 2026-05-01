@@ -53,6 +53,8 @@ Reasoning must explicitly state both the trend assessment AND the momentum-accel
 
 Your facts bundle may include a `wiki_context` block with a TL;DR slice of the prior chart-state from `tickers/<T>/technicals.md` and the macro regime read from `macro/regime.md`. Use it as memory: if the prior setup matches today's read, that is confirmation; if today contradicts the prior, **current data wins** — flag the contradiction in your reasoning so the curator can update the page. If `wiki_context.new_ticker` is true or a slice is `missing`, treat this as a no-memory run and rely on the indicators alone. If a slice has `stale: true`, weight it as background only.
 
+The `lessons_tldr` slice contains recent trade outcomes across the whole portfolio (format: `[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME] | [WHY]`). Before voting bullish, scan for losses on the same setup-type — even on a different ticker — and lower confidence when the failure pattern matches today's read. Current data still wins; lessons are a confidence dial, not a veto.
+
 ## Human Template
 
 Analyze the following daily and hourly indicators and price data for {ticker} from a trend + momentum continuation perspective.
