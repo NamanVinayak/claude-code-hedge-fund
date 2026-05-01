@@ -15,6 +15,7 @@
     transition: border-color .15s, transform .15s;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 .pos-card:hover {
     border-color: var(--border2);
@@ -34,7 +35,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 16px;
 }
 .pos-ticker {
     font-size: 20px;
@@ -42,8 +42,20 @@
     letter-spacing: -0.02em;
     color: var(--text);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 .pos-ticker:hover { color: var(--blue); }
+
+.pos-expand-icon {
+    font-size: 10px;
+    color: var(--muted);
+    transition: transform 0.3s ease;
+}
+.pos-card.is-expanded .pos-expand-icon {
+    transform: rotate(180deg);
+}
 
 .pnl-big {
     font-size: 26px;
@@ -55,6 +67,18 @@
     font-size: 13px;
     font-family: var(--mono);
     margin-top: 2px;
+}
+
+.pos-details {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, margin-top 0.3s ease, opacity 0.2s ease;
+}
+.pos-card.is-expanded .pos-details {
+    max-height: 500px;
+    margin-top: 16px;
+    opacity: 1;
 }
 
 .pos-row {
@@ -106,23 +130,116 @@
     background: var(--muted);
     border-radius: 2px;
 }
+
+/* Portfolio Summary UI */
+.portfolio-summary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.ps-title {
+    font-size: 14px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.ps-value {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: var(--mono);
+    line-height: 1;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+    color: var(--text);
+}
+.ps-metrics {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    justify-content: center;
+}
+.ps-metric-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 24px;
+    min-width: 180px;
+}
+.ps-metric-label {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+.ps-metric-val {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--mono);
+}
+.ps-badge {
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    margin-left: 8px;
+    font-weight: 700;
+}
+.ps-badge.profit { background: rgba(16, 185, 129, 0.15); color: var(--green); }
+.ps-badge.loss { background: rgba(239, 68, 68, 0.15); color: var(--red); }
 {% endblock %}
 
 {% block content %}
-<div class="page-header">
-    <h1>Live Positions</h1>
-    <p>Open swing trades · updated {{ last_updated }} ET</p>
+<div class="page-header" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 16px;">
+    <div>
+        <h1>Live Positions</h1>
+        <p>Open swing trades · updated {{ last_updated }} ET</p>
+    </div>
 </div>
+
+{% if portfolio_summary %}
+<div class="portfolio-summary">
+    <div class="ps-title">Net Worth</div>
+    <div class="ps-value">${{ "%.2f"|format(portfolio_summary.total_value) }}</div>
+    
+    <div class="ps-metrics">
+        <div class="ps-metric-card">
+            <div class="ps-metric-label">Invested</div>
+            <div class="ps-metric-val">${{ "%.2f"|format(portfolio_summary.base_account_size) }}</div>
+        </div>
+        <div class="ps-metric-card">
+            <div class="ps-metric-label">All-Time Return</div>
+            {% set s_profit = portfolio_summary.total_pnl_dollar > 0 %}
+            {% set s_loss = portfolio_summary.total_pnl_dollar < 0 %}
+            <div class="ps-metric-val {{ 'profit' if s_profit else 'loss' if s_loss else 'neutral' }}">
+                {{ '+' if s_profit else '' }}${{ "%.2f"|format(portfolio_summary.total_pnl_dollar) }}
+                <span class="ps-badge {{ 'profit' if s_profit else 'loss' if s_loss else '' }}">
+                    {{ '+' if s_profit else '' }}{{ "%.2f"|format(portfolio_summary.total_pnl_percent) }}%
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
 
 {% if positions %}
 <div class="position-grid">
 {% for p in positions %}
 {% set is_profit = p.pnl_dollar > 0 %}
 {% set is_loss   = p.pnl_dollar < 0 %}
-<div class="pos-card {{ 'is-profit' if is_profit else 'is-loss' if is_loss else 'is-flat' }}">
+<div class="pos-card {{ 'is-profit' if is_profit else 'is-loss' if is_loss else 'is-flat' }}" onclick="this.classList.toggle('is-expanded')">
     <div class="pos-header">
         <div>
-            <a class="pos-ticker" href="{{ p.ticker }}.html">{{ p.ticker }}</a>
+            <div class="pos-ticker">
+                {{ p.ticker }}
+                <span class="pos-expand-icon">▼</span>
+            </div>
             <div style="margin-top:4px;">
                 <span class="badge badge-{{ p.direction|lower }}">{{ p.direction }}</span>
                 {% if p.days_held is defined %}
@@ -140,50 +257,52 @@
         </div>
     </div>
 
-    <div class="pos-row">
-        <span class="pos-key">Entry</span>
-        <span class="pos-val">${{ "%.2f"|format(p.entry_fill_price|float) }}</span>
-    </div>
-    <div class="pos-row">
-        <span class="pos-key">Now</span>
-        <span class="pos-val">${{ "%.2f"|format(p.current_price|float) }}</span>
-    </div>
-    <div class="pos-row">
-        <span class="pos-key">Stop / Target</span>
-        <span class="pos-val">
-            <span class="loss">${{ "%.2f"|format(p.stop_loss|float) if p.stop_loss != '-' else '-' }}</span>
-            &nbsp;/&nbsp;
-            <span class="profit">${{ "%.2f"|format(p.target_price|float) if p.target_price != '-' else '-' }}</span>
-        </span>
-    </div>
-    <div class="pos-row">
-        <span class="pos-key">R:R</span>
-        <span class="rr-badge">{{ p.rr }}</span>
-    </div>
+    <div class="pos-details">
+        <div class="pos-row">
+            <span class="pos-key">Entry</span>
+            <span class="pos-val">${{ "%.2f"|format(p.entry_fill_price|float) }}</span>
+        </div>
+        <div class="pos-row">
+            <span class="pos-key">Now</span>
+            <span class="pos-val">${{ "%.2f"|format(p.current_price|float) }}</span>
+        </div>
+        <div class="pos-row">
+            <span class="pos-key">Stop / Target</span>
+            <span class="pos-val">
+                <span class="loss">${{ "%.2f"|format(p.stop_loss|float) if p.stop_loss != '-' else '-' }}</span>
+                &nbsp;/&nbsp;
+                <span class="profit">${{ "%.2f"|format(p.target_price|float) if p.target_price != '-' else '-' }}</span>
+            </span>
+        </div>
+        <div class="pos-row">
+            <span class="pos-key">R:R</span>
+            <span class="rr-badge">{{ p.rr }}</span>
+        </div>
 
-    {% if p.stop_loss != '-' and p.target_price != '-' %}
-    {% set stop  = p.stop_loss|float %}
-    {% set tgt   = p.target_price|float %}
-    {% set entry = p.entry_fill_price|float %}
-    {% set curr  = p.current_price|float %}
-    {% set span  = tgt - stop %}
-    {% if span > 0 %}
-    {% set pct = [(curr - stop) / span * 100, 0]|max %}
-    {% set pct = [pct, 100]|min %}
-    <div class="progress-track">
-        <div class="progress-labels">
-            <span>Stop ${{ "%.0f"|format(stop) }}</span>
-            <span>Target ${{ "%.0f"|format(tgt) }}</span>
+        {% if p.stop_loss != '-' and p.target_price != '-' %}
+        {% set stop  = p.stop_loss|float %}
+        {% set tgt   = p.target_price|float %}
+        {% set entry = p.entry_fill_price|float %}
+        {% set curr  = p.current_price|float %}
+        {% set span  = tgt - stop %}
+        {% if span > 0 %}
+        {% set pct = [(curr - stop) / span * 100, 0]|max %}
+        {% set pct = [pct, 100]|min %}
+        <div class="progress-track">
+            <div class="progress-labels">
+                <span>Stop ${{ "%.0f"|format(stop) }}</span>
+                <span>Target ${{ "%.0f"|format(tgt) }}</span>
+            </div>
+            <div class="progress-outer">
+                {% set entry_pct = [(entry - stop) / span * 100, 0]|max %}
+                {% set entry_pct = [entry_pct, 100]|min %}
+                <div class="{{ 'progress-fill-green' if pct > entry_pct else 'progress-fill-red' }}" style="width:{{ pct }}%"></div>
+                <div class="progress-marker" style="left:{{ entry_pct }}%"></div>
+            </div>
         </div>
-        <div class="progress-outer">
-            {% set entry_pct = [(entry - stop) / span * 100, 0]|max %}
-            {% set entry_pct = [entry_pct, 100]|min %}
-            <div class="{{ 'progress-fill-green' if pct > entry_pct else 'progress-fill-red' }}" style="width:{{ pct }}%"></div>
-            <div class="progress-marker" style="left:{{ entry_pct }}%"></div>
-        </div>
+        {% endif %}
+        {% endif %}
     </div>
-    {% endif %}
-    {% endif %}
 </div>
 {% endfor %}
 </div>

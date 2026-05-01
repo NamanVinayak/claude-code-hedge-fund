@@ -132,9 +132,32 @@ def main():
             "days_held": days_held
         })
 
+    # Calculate portfolio summary
+    try:
+        with open("tracker/watchlist.json") as f:
+            config = json.load(f)
+        base_account_size = config.get("settings", {}).get("paper_account_size", 25000)
+    except:
+        base_account_size = 25000
+
+    all_trades = get_all_trades()
+    realized_pnl = sum([t.get("pnl") or 0 for t in all_trades if t.get("status") in ("target_hit", "stop_hit", "expired", "closed")])
+    unrealized_pnl = sum([p["pnl_dollar"] for p in positions])
+    
+    total_pnl = realized_pnl + unrealized_pnl
+    total_value = base_account_size + total_pnl
+    total_pnl_percent = (total_pnl / base_account_size) * 100 if base_account_size > 0 else 0
+
+    portfolio_summary = {
+        "base_account_size": base_account_size,
+        "total_value": total_value,
+        "total_pnl_dollar": total_pnl,
+        "total_pnl_percent": total_pnl_percent
+    }
+
     # Render index.html
     index_template = env.get_template("index.html")
-    index_html = index_template.render(**base_context, title="Live Positions", positions=positions)
+    index_html = index_template.render(**base_context, title="Live Positions", positions=positions, portfolio_summary=portfolio_summary)
     with open(os.path.join(args.output, "index.html"), "w") as f:
         f.write(index_html)
 
