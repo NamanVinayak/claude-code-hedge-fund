@@ -1,0 +1,422 @@
+{
+  "mode": "swing",
+  "analyst_signals": {
+    "swing_breakout": {
+      "GOOG": {
+        "signal": "bullish",
+        "confidence": 62,
+        "reasoning": "GOOG executed a decisive breakout on 2026-04-30, gapping up from a 4-day consolidation range (~$342\u2013353) on volume of 44.5M vs. 20-day avg 17.1M \u2014 a 2.60x ratio, well above the required 1.5x threshold. Price closed at $381.94, a confirmed daily close above resistance. The wiki had been tracking $330.58 as the prior breakout-turned-support and $342\u2013344 as the next target; both are now well exceeded. Range boundaries: consolidation low ~$342, consolidation high ~$353, range height ~$11. Measured move target: $353 + $11 = $364 \u2014 already exceeded, suggesting momentum extension toward the Fib 1.272 extension at $412.85. BB width on the daily is 0.2451 and pct_b is 1.136 (price above upper band at $370.90), confirming the squeeze has fully released and volatility is expanding \u2014 the coil has fired. Hourly BB is also expanded (pct_b 0.969), confirming hourly breakout alignment. ADX at 63.92 with +DI 50.36 vs -DI 4.4 confirms a very strong trending regime, not a false breakout. Confidence is reduced from full conviction for three reasons: (1) RSI is at 97.75/86.83 \u2014 extremely stretched, well beyond normal overbought; (2) the breakout is already 1 day old, and the measured move target of $364 is already exceeded \u2014 chasing at $382 means reduced reward-to-risk on the original measured move; (3) the lessons pattern shows a recent NVDA trade (2026-04-30) failed at similarly stretched RSI (81\u201387) with a stop trigger \u2014 the setup structure (high-RSI breakout with no pullback) matches today's GOOG. Hourly volume (0.13x avg) is very low, suggesting the hourly squeeze confirmation is absent at this moment. A pullback toward the breakout level ($353\u2013358) would be a higher-conviction re-entry per the wiki methodology, but the daily breakout itself is valid.",
+        "entry": 381.94,
+        "target": 412.85,
+        "stop": 352.0,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_head_trader": {
+      "GOOG": {
+        "consensus_signal": "neutral",
+        "confidence": 45,
+        "reasoning": "VOTE COUNT: 1 bullish (swing_breakout, 62), 1 bearish (swing_mean_reversion, 52), 3 neutral (swing_trend_momentum 30, swing_catalyst_news 25, swing_macro_context 62). No directional majority. The most striking feature of this panel is that the 3 neutral agents are not confused \u2014 they are all saying the same thing: the underlying thesis is valid but the entry is wrong right now. swing_trend_momentum is emphatically bullish on the trend (ADX=63.92, EMA fan textbook) but will not chase \u2014 it is waiting for a pullback to EMA10 ~$347-350. swing_macro_context finds the macro regime supportive but the R/R math fails 2:1 at current prices (0.79:1 to nearest support). swing_catalyst_news notes the post-earnings catalyst is already fully priced (the +10% gap-up on Apr 30 is the reaction event, not the setup). Together these three neutral votes form a coherent message: GOOG is the best stock in the basket, it just ran 10% in one day and is not a buyable setup today. The breakout agent is technically correct that a daily close above resistance on 2.6x volume is a valid breakout \u2014 but it also acknowledges the measured move target ($364) is already exceeded and RSI is at 97.75, which makes chasing after the fact a low-conviction trade. The mean reversion agent fires the fade structure correctly (Z-score 3.29, pct_b 1.14, both timeframes overbought) but per its own rules requires a reversal candle before entry \u2014 none exists. LESSONS APPLIED: The NVDA loss (Apr 30, -$264.65, EMA pullback Fib dip-buy) is a direct pattern-match: high RSI (81-87 on NVDA vs 86-98 on GOOG), no confirmation candle, stretched macro environment. This is the only setup-type in the lessons table and it has a 0% win rate. GOOG's RSI is more extreme than NVDA's at the time of that loss. This dials confidence down on any entry attempt now. WIKI CONTEXT: No open GOOG position (both prior trades abandoned Apr 29). Prior trade #14 was entered at $331.73 on a clean breakout above $330.58 \u2014 that structure was similar to today's but the entry was made at the breakout level, not 15% above it. The prior trade hit its $347.50 target. The lesson from prior GOOG history is: enter near the breakout level, not after a gap extension. CONCLUSION: Wait for a pullback. The 3 neutral agents converge on the $342-358 zone as the re-entry window (swing_macro_context: 342-358 for 3:1+ R/R; swing_trend_momentum: EMA10 ~$347-350; swing_breakout: breakout re-test ~$353-358). Any entry in that zone would convert this to a high-conviction long. Today, at $381.94, the trade does not meet the minimum criteria of any strategy agent except swing_breakout \u2014 and even that agent acknowledges the original setup has been superseded. Hold cash, set alerts at $353-358 for re-evaluation.",
+        "agent_agreement_pct": 60.0,
+        "key_conflicts": "The core conflict is swing_breakout (bullish, 62) vs. swing_mean_reversion (bearish, 52) \u2014 one wants to buy the confirmed breakout, the other wants to fade the extreme overbought extension. This conflict is highly informative: it means the trend has transitioned from 'breakout just occurred' to 'breakout is now extended.' swing_breakout is right that the April 30 volume-confirmed daily close is a legitimate breakout event; swing_mean_reversion is right that RSI 97.75 and Z-score 3.29 with no reversal candle are not entry conditions for a new fade either. The resolution: neither side has a clean entry today. swing_trend_momentum and swing_macro_context reinforce this \u2014 both are structurally bullish on GOOG but refuse to chase 10% above the EMA. The three neutral agents are not split on direction; they are split on timing. A second conflict worth noting: swing_breakout uses $381.94 as its entry (current market), while swing_macro_context and swing_trend_momentum use $349-355 (pullback zone). This level divergence of ~8% is a red flag \u2014 when agents are this far apart on entry, it signals the current price is 'no man's land.' Finally, lessons dial down the sole bullish vote: the NVDA EMA pullback Fib dip-buy setup failed at RSI 81-87, and GOOG's RSI (97.75) exceeds that. A 3-of-5 bullish panel on this setup-type with a 0% lessons win rate would still warrant a neutral call \u2014 the actual 1-of-5 bullish reading makes neutral the only defensible outcome.",
+        "recommended_action": "hold"
+      }
+    },
+    "growth_analyst_agent": {
+      "GOOG": {
+        "signal": "neutral",
+        "confidence": 20,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.55,
+            "revenue_growth": 0.13866243322901553,
+            "revenue_trend": 0.003768233621193074,
+            "eps_growth": 0.3419434194341942,
+            "eps_trend": -0.08811401363731199,
+            "fcf_growth": 0.0068990159969215545,
+            "fcf_trend": 0.048502100715874914
+          },
+          "growth_valuation": {
+            "score": 0,
+            "peg_ratio": null,
+            "price_to_sales_ratio": 11.426260069546913
+          },
+          "margin_expansion": {
+            "score": 0.2,
+            "gross_margin": null,
+            "gross_margin_trend": 0.0,
+            "operating_margin": 0.32032638592380025,
+            "operating_margin_trend": -0.015204639079216787,
+            "net_margin": 0.3280987796522654,
+            "net_margin_trend": -0.01262779697805153
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": 0.12300819958339855,
+            "current_ratio": 2.005333592875566
+          },
+          "final_analysis": {
+            "signal": "neutral",
+            "confidence": 20,
+            "weighted_score": 0.4
+          }
+        }
+      }
+    },
+    "swing_trend_momentum": {
+      "GOOG": {
+        "signal": "neutral",
+        "confidence": 30,
+        "reasoning": "TREND ASSESSMENT: Strongly bullish. Daily EMA alignment is a textbook uptrend fan (EMA10=346.87 > EMA21=333.32 > EMA50=320.54), ADX(14)=63.92 (extremely strong), +DI=50.36 vs -DI=4.4 shows dominant directional conviction. Hourly EMAs are identically aligned. Prior wiki read (Apr 15) flagged a breakout above $330.58 resistance with ADX=37 \u2014 today's ADX=63.92 confirms that breakout played out powerfully, consistent with prior thesis. MOMENTUM ASSESSMENT: Strongly accelerating. Daily ROC 5d=+13.08%, 10d=+14.78%, 21d=+33.15% \u2014 all positive and expanding across longer timeframes, driven by a massive gap-up on 2026-04-30 (+10% on 2.6x average volume). MACD histogram=3.92 (daily) and 3.31 (hourly) both positive, confirming momentum is expanding. OBV trend up, no divergence. OVEREXTENSION / ENTRY RULES VIOLATED: This strategy requires entry on a pullback to the 10 or 21 EMA. Current price ($381.94) is 10.1% above EMA10 and 14.6% above EMA21 \u2014 far outside the pullback entry zone. Bollinger %B=1.14 (above upper band), Z-score vs 50-SMA=3.29, RSI(14)=86.83, RSI(7)=97.75. LESSONS APPLIED: The most recent trade lesson (NVDA, 2026-04-30, -$264.65) explicitly flags RSI 81-87 as a failure contributor on a momentum setup \u2014 GOOG's RSI is squarely in that same zone. Chasing at current levels replicates the losing setup. MACRO: Risk-on regime (S&P at ATH), supportive but near-term policy uncertainty from Fed chair transition. VERDICT: Trend and momentum are both emphatically bullish, but the entry criteria are not met. Waiting for a pullback to the 10 EMA (~$347-350) or 21 EMA (~$333-335) before triggering. Flagging for wiki curator: prior technicals page warned of overbought at $332; price has since surged to $382, representing a new phase that should update the technicals TL;DR.",
+        "entry": 349.0,
+        "target": 395.0,
+        "stop": 333.0,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_macro_context": {
+      "GOOG": {
+        "signal": "neutral",
+        "confidence": 62,
+        "reasoning": "1. MACRO REGIME: Risk-on with transitional caveats. S&P 500 at fresh all-time highs above 7,200 (April 2026 best month since 2020). Fed held at 3.5-3.75% on April 29 with 4 dissents (most since Oct 1992) \u2014 unusual internal fracture. Chair Powell exits May 15; Kevin Warsh succession introduces hawkish policy uncertainty. Iran peace talks removing the dominant energy/inflation left-tail risk (WTI -2%). Net regime: risk-on but not cleanly \u2014 Fed leadership transition and elevated inflation (IMF: 4.4% headline) make this transitional. Alphabet/Amazon Q1 AI cloud beats support the AI capex supercycle narrative. 2. RELATIVE STRENGTH: GOOG is a clear sector outperformer. On April 30, GOOG gapped up strongly (open 371.25 \u2192 close 381.94) on 44.5M volume vs 17.1M 20-day avg (2.6x relative volume). ROC: +13.1% (5d), +14.8% (10d), +33.2% (21d). All EMAs aligned in uptrend; price 35-36% above 200-day SMA. This is extreme outperformance \u2014 likely post-earnings gap. However, this also flags the trade is LATE in the sector rotation move, not early. 3. ASYMMETRIC R/R \u2014 FAILS MINIMUM BAR: Current price ~381.94. Upside: nearest Fib extension 1.272 at 412.85 = +8.1% potential. Downside: nearest volume-confirmed hourly support at 342.69 = -10.3% risk. R/R ratio = 0.79:1 \u2014 well below the 2:1 minimum threshold. Even targeting the daily Fib 1.618 extension at 451.29 = +18.2% vs -10.3% downside gives 1.77:1, still below minimum. The stop level that would invalidate relative strength is the hourly support at 342.69, making asymmetry structurally poor at current entry. 4. CAPITAL PRESERVATION FLAGS: RSI 7-day = 97.75, RSI 14-day = 86.83, RSI 21-day = 89.31 \u2014 historically extreme overbought levels. Price is above upper Bollinger Band (pct_b = 1.14). Z-score vs 50-period SMA = 3.29 (more than 3 standard deviations above mean). Daily ATR = 2.49% on a post-gap parabolic move creates meaningful gap-fill risk. LESSON FLAG: The recent NVDA trade (-$264.65) was stopped out entering at RSI 81-87 in a stretched macro environment \u2014 GOOG's RSI is MORE extreme. Same regime context applies; confidence dialed down accordingly. CONCLUSION: The macro regime supports risk-on longs in AI/cloud. GOOG is demonstrably the strongest name in tech. However, the risk/reward math fails the 2:1 minimum bar at current prices, the RSI is at historic extremes (97.75), and the move is likely post-earnings \u2014 meaning the catalyst is already priced. Neutral here; a pullback to the 342-358 zone (hourly Fib 61.8%-78.6% retracement) would create a 3:1+ setup worth entering.",
+        "entry": 355.0,
+        "target": 412.85,
+        "stop": 336.0,
+        "timeframe": "8-15 trading days"
+      }
+    },
+    "swing_mean_reversion": {
+      "GOOG": {
+        "signal": "bearish",
+        "confidence": 52,
+        "reasoning": "Branch A (Fade the Extreme) fires on GOOG \u2014 but without reversal candle confirmation, confidence is capped. Key readings: daily Z-score vs. 50-SMA = 3.29 (well above +2 threshold), daily RSI(14) = 86.83 / RSI(7) = 97.75 (well above 75 overbought level), hourly RSI(21) = 81.05 (overbought on shorter timeframe too). Price is 22.19% above the 50-SMA \u2014 extreme extension (>10% qualifies as extreme per strategy). Daily Bollinger pct_b = 1.1363: price trading above the upper band (370.90). Hourly pct_b = 0.9687: pressing against hourly upper band (382.41). Both daily and hourly Z-scores are simultaneously above +2, which per the prompt is the 'strong fade' condition. HOWEVER, the April 30 candle is a large-range gap-up surge closing at the high (open 371.25, close 381.94) \u2014 no reversal candle, no doji/hammer/bearish engulfing. No bearish RSI divergence is detected (rsi_divergence.bearish = false). ADX(14) = 63.92 with strong trend and volume 2.6x average \u2014 momentum is intact. Strategy rule: WAIT for a reversal candle before entering; do not catch a falling knife. Branch B (Buy the Dip) does not fire: price is at the top of the recent range, not pulling back to Fibonacci support. Lessons context: a recent EMA pullback Fib dip-buy on NVDA at RSI 81-87 with no confirmation candle lost -$264.65 \u2014 directly analogous conditions (stretched RSI, no reversal candle). This is a direct pattern match lowering conviction. Wiki context: prior April 15 note flagged GOOG as overbought at $330-332; current price at $381.94 confirms the extension has grown far more extreme since then (current data supersedes wiki). Net: bearish bias is structurally valid given the extreme Z-score/RSI/BB readings on both timeframes, but per-strategy rules require a reversal candle before entry. Confidence capped at 52 given no confirmation candle, strong ADX trend, and recent lesson-pattern match against fading without confirmation.",
+        "entry": 381.94,
+        "target": 330.41,
+        "stop": 396.0,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_catalyst_news": {
+      "GOOG": {
+        "signal": "neutral",
+        "confidence": 25,
+        "reasoning": "CATALYST WINDOW: Earnings in 0 trading days \u2014 Q1 2026 earnings occurred April 28 post-market (1-2 trading days ago). The post-earnings reaction already happened: GOOG gapped +10% on April 30 (open ~$371, close $381.94) on 2.6x relative volume. No identifiable catalyst within the next ~10 trading days. FOMC was April 29 (passed). DOJ cross-appeal timeline is TBD. NET NEWS SENTIMENT: Mixed/positive overall but catalyst already priced. Positive: antitrust relief (choice-screen, not forced divestiture), Google Cloud AI partnerships, Waymo city expansions, analyst consensus constructive (avg PT $385.46, Citigroup $405). Negative: DOJ cross-appeal for forced divestiture still alive, search index sharing order with Morgan Stanley estimating $15-25B annual ad revenue at risk, massive capex overhang ($175-185B, 2x YoY). INSIDER ACTIVITY: No recent insider trades in the current facts bundle; wiki context notes net -$682M insider flow but characterizes it as routine RSU vesting exercises, not discretionary selling. Net signal: quiet/neutral. TECHNICAL SETUP: Chart is already severely extended post-catalyst. RSI-14 at 86.83, RSI-7 at 97.75 (extreme overbought). Price is 22% above 50 SMA, 36% above 200 SMA, and above the daily Bollinger upper band (pct_b = 1.14). Daily z-score of 3.29. The post-earnings gap has consumed the catalyst thesis. Entry here would be chasing an already-exhausted move with no fresh catalyst on the horizon. LESSONS CHECK: Recent NVDA loss (Apr 30) was triggered precisely by stretched RSI 81-87 with no bullish confirmation \u2014 GOOG's RSI is even more extended at 87-98. Per strategy rules: catalyst exists but the technical setup going in is poor (already extended, already ran post-catalyst). Outputting neutral.",
+        "entry": 381.94,
+        "target": 394.3,
+        "stop": 363.09,
+        "timeframe": "neutral \u2014 no actionable setup"
+      }
+    },
+    "fundamentals_analyst_agent": {
+      "GOOG": {
+        "signal": "bullish",
+        "confidence": 75.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bullish",
+            "details": "ROE: 31.83%, Net Margin: 32.81%, Op Margin: 32.03%"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 13.87%, Earnings Growth: 32.01%"
+          },
+          "financial_health_signal": {
+            "signal": "bullish",
+            "details": "Current Ratio: 2.01, D/E: 0.12"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 29.12, P/B: 11.11, P/S: 11.46"
+          }
+        }
+      }
+    },
+    "technical_analyst_agent": {
+      "GOOG": {
+        "signal": "bullish",
+        "confidence": 32,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 58,
+            "metrics": {
+              "adx": 57.719446279184005,
+              "trend_strength": 0.5771944627918401
+            }
+          },
+          "mean_reversion": {
+            "signal": "bearish",
+            "confidence": 82,
+            "metrics": {
+              "z_score": 3.2879442472136744,
+              "price_vs_bb": 1.136265420893962,
+              "rsi_14": 86.82981408038378,
+              "rsi_28": 75.73508118285491
+            }
+          },
+          "momentum": {
+            "signal": "bullish",
+            "confidence": 100,
+            "metrics": {
+              "momentum_1m": 0.29386224933287597,
+              "momentum_3m": 0.13482791196161525,
+              "momentum_6m": 0.37748360974091255,
+              "volume_momentum": 2.5458842288012193
+            }
+          },
+          "volatility": {
+            "signal": "bearish",
+            "confidence": 76,
+            "metrics": {
+              "historical_volatility": 0.3853481651874049,
+              "volatility_regime": 1.4759704847360173,
+              "volatility_z_score": 2.2761133361172057,
+              "atr_ratio": 0.024885178694562485
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "bullish",
+            "confidence": 100,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 1.7406820295186207,
+              "kurtosis": 6.07501307703129
+            }
+          }
+        }
+      }
+    },
+    "valuation_analyst_agent": {
+      "GOOG": {
+        "signal": "bearish",
+        "confidence": 100,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $1,150,853,762,243.69, Market Cap: $4,615,126,908,928.00, Gap: -75.1%, Weight: 35%\n  WACC: 10.5%, Bear: $813,853,717,612.34, Bull: $1,386,928,558,919.10, Range: $573,074,841,306.76"
+          },
+          "residual_income_analysis": {
+            "signal": "bearish",
+            "details": "Value: $3,707,557,660,678.38, Market Cap: $4,615,126,908,928.00, Gap: -19.7%, Weight: 10%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$813,853,717,612.34",
+            "base_case": "$1,184,495,511,562.34",
+            "bull_case": "$1,386,928,558,919.10",
+            "wacc_used": "10.5%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      }
+    },
+    "sentiment_analyst_agent": {
+      "GOOG": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      }
+    },
+    "risk_management_agent": {
+      "GOOG": {
+        "remaining_position_limit": 504.91188377161626,
+        "current_price": 381.55999755859375,
+        "volatility_metrics": {
+          "daily_volatility": 0.02165863104191611,
+          "annualized_volatility": 0.34382010885008274,
+          "volatility_percentile": 97.28506787330316,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.25732542419358373,
+          "max_correlation_with_active": 0.2707612818771968,
+          "top_correlated_tickers": [
+            {
+              "ticker": "AMD",
+              "correlation": 0.2707612818771968
+            },
+            {
+              "ticker": "BAC",
+              "correlation": 0.24388956650997062
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 3302.26,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.14561798911499174,
+          "correlation_multiplier": 1.05,
+          "combined_position_limit_pct": 0.15289888857074133,
+          "position_limit": 504.91188377161626,
+          "remaining_limit": 504.91188377161626,
+          "available_cash": 3302.26,
+          "risk_adjustment": "Volatility x Correlation adjusted: 15.3% (base 14.6%)"
+        }
+      }
+    }
+  },
+  "allowed_actions": {
+    "GOOG": {
+      "hold": 0,
+      "buy": 1,
+      "short": 1
+    }
+  },
+  "portfolio": {
+    "cash": 3302.26,
+    "margin_requirement": 0.0,
+    "margin_used": 0.0,
+    "positions": {
+      "GOOG": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      }
+    },
+    "other_positions": [
+      {
+        "id": 110,
+        "run_id": "20260430_190826",
+        "mode": "swing",
+        "ticker": "BAC",
+        "direction": "long",
+        "quantity": 15,
+        "entry_price": 52.75,
+        "target_price": 55.4,
+        "target_price_2": null,
+        "stop_loss": 51.5,
+        "confidence": 55,
+        "timeframe": "5-10 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 52.75,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-04-30T19:30:48+00:00",
+        "entered_at": "2026-04-30T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 15, \"entry_price\": 52.75, \"target_price\": 55.4, \"stop_loss\": 51.5, \"risk_reward_ratio\": \"2.12:1\", \"timeframe\": \"5-10 trading days\", \"confidence\": 55, \"reasoning\": \"Head Trader bullish (55 conf), 3/5 swing agents agree. Pullback to 10/21 EMA confluence at $52.73-52.88 in ADX-54.8 uptrend. R/R 2.12:1 meets threshold. Risk mgr limit $806; 15 shares @ $52.75 = $791 within limit. Stop below wiki stop zone / 38.2% Fib at $51.50. Target $55.40 resistance (5 tests). Key risks: OBV divergence, Berkshire overhang \\u2014 sized defensively at max allowed qty but within vol-adjusted limit.\"}",
+        "last_checked_at": "2026-05-01T16:50:00+00:00",
+        "entry_tolerance_pct": 1.0
+      },
+      {
+        "id": 113,
+        "run_id": "20260501_132346",
+        "mode": "swing",
+        "ticker": "AMD",
+        "direction": "short",
+        "quantity": 1,
+        "entry_price": 354.49,
+        "target_price": 277.74,
+        "target_price_2": null,
+        "stop_loss": 372.31,
+        "confidence": 42,
+        "timeframe": "8-15 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 354.49,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T14:40:43+00:00",
+        "entered_at": "2026-05-01T13:33:00+00:00",
+        "closed_at": null,
+        "raw_decision": null,
+        "last_checked_at": "2026-05-01T16:50:00+00:00",
+        "entry_tolerance_pct": 1.0
+      }
+    ],
+    "realized_gains": {
+      "GOOG": {
+        "long": 0.0,
+        "short": 0.0
+      }
+    },
+    "pending_orders": [
+      {
+        "id": 114,
+        "run_id": "20260501_144523",
+        "mode": "swing",
+        "ticker": "AAPL",
+        "direction": "long",
+        "quantity": 2,
+        "entry_price": 276.0,
+        "target_price": 294.84,
+        "target_price_2": null,
+        "stop_loss": 269.5,
+        "confidence": 42,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "pending",
+        "entry_fill_price": null,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T15:00:50+00:00",
+        "entered_at": null,
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 2, \"entry_price\": 276.0, \"target_price\": 294.84, \"stop_loss\": 269.5, \"risk_reward_ratio\": \"2.9:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 42, \"reasoning\": \"Head Trader neutral (42) \\u2014 wait for pullback to $274-278 before entry. Limit buy at $276 (preferred entry): breakout above $276.11 resistance confirmed on 2.08x volume, measured move to $294.84 intact, RSI 61.64 healthy, OBV uptrend, post-earnings drift thesis (Q2 FY2026 beat, analyst targets $299-305). R/R 2.9:1 (18.84 up / 6.50 down) clears 2:1 minimum from pullback level. Stop $269.50 below pre-earnings pivot. NOT chasing at $283 \\u2014 hourly Z-score 2.52 and Bollinger %B 1.28 flag overextension; mean reversion agent correctly warns of fade risk at current price. Entering only on constructive pullback to Fib 38.2% / daily upper BB confluence at $274-278. Size: 2 shares x $276 = $552, within risk manager cap $768 and 25% capital limit $963. ADX 16.83 is the main caveat \\u2014 trigger requires ADX rising above 19 on pullback candle. Key risks: insider net selling (-$235M, Cook sold at $251-256), ADX still sub-25, one prior portfolio loss (NVDA EMA dip, -$264) on similar setup. Sized conservatively at 2 shares.\"}",
+        "last_checked_at": "2026-05-01T16:50:00+00:00",
+        "entry_tolerance_pct": 1.0
+      }
+    ],
+    "recent_closed": [
+      {
+        "ticker": "NVDA",
+        "direction": "long",
+        "status": "stop_hit",
+        "entry_price": 209.25,
+        "exit_fill_price": 205.3,
+        "pnl": -264.65,
+        "closed_at": "2026-04-30T15:59:00",
+        "timeframe": "5-10 trading days"
+      }
+    ]
+  },
+  "tickers": [
+    "GOOG"
+  ],
+  "end_date": "2026-05-01",
+  "degraded_inputs": []
+}

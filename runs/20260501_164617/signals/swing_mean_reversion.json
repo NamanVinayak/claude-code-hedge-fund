@@ -1,0 +1,11 @@
+{
+  "GOOG": {
+    "signal": "bearish",
+    "confidence": 52,
+    "reasoning": "Branch A (Fade the Extreme) fires on GOOG — but without reversal candle confirmation, confidence is capped. Key readings: daily Z-score vs. 50-SMA = 3.29 (well above +2 threshold), daily RSI(14) = 86.83 / RSI(7) = 97.75 (well above 75 overbought level), hourly RSI(21) = 81.05 (overbought on shorter timeframe too). Price is 22.19% above the 50-SMA — extreme extension (>10% qualifies as extreme per strategy). Daily Bollinger pct_b = 1.1363: price trading above the upper band (370.90). Hourly pct_b = 0.9687: pressing against hourly upper band (382.41). Both daily and hourly Z-scores are simultaneously above +2, which per the prompt is the 'strong fade' condition. HOWEVER, the April 30 candle is a large-range gap-up surge closing at the high (open 371.25, close 381.94) — no reversal candle, no doji/hammer/bearish engulfing. No bearish RSI divergence is detected (rsi_divergence.bearish = false). ADX(14) = 63.92 with strong trend and volume 2.6x average — momentum is intact. Strategy rule: WAIT for a reversal candle before entering; do not catch a falling knife. Branch B (Buy the Dip) does not fire: price is at the top of the recent range, not pulling back to Fibonacci support. Lessons context: a recent EMA pullback Fib dip-buy on NVDA at RSI 81-87 with no confirmation candle lost -$264.65 — directly analogous conditions (stretched RSI, no reversal candle). This is a direct pattern match lowering conviction. Wiki context: prior April 15 note flagged GOOG as overbought at $330-332; current price at $381.94 confirms the extension has grown far more extreme since then (current data supersedes wiki). Net: bearish bias is structurally valid given the extreme Z-score/RSI/BB readings on both timeframes, but per-strategy rules require a reversal candle before entry. Confidence capped at 52 given no confirmation candle, strong ADX trend, and recent lesson-pattern match against fading without confirmation.",
+    "entry": 381.94,
+    "target": 330.41,
+    "stop": 396.0,
+    "timeframe": "5-12 trading days"
+  }
+}

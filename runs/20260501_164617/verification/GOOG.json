@@ -1,0 +1,72 @@
+{
+  "ticker": "GOOG",
+  "verified_at": "2026-05-01T16:46:17",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.3281,
+      "web_value": 0.3281,
+      "source": "Yahoo Finance (TTM, as of Apr 30 2026)",
+      "status": "ok",
+      "deviation": "0.0%",
+      "notes": "Perfect match. Our value 32.81% aligns with Yahoo Finance TTM net margin of 32.81%."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.3203,
+      "web_value": 0.3157,
+      "source": "GuruFocus (TTM as of Dec 2025 — 31.57%; Q1 2026 quarter was 36.1%)",
+      "status": "ok",
+      "deviation": "1.5%",
+      "notes": "Our TTM value of 32.03% is consistent with GuruFocus TTM of 31.57%. Q1 2026 standalone margin of 36.1% does not represent TTM. Deviation within acceptable range."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 29.05,
+      "web_value": 32.12,
+      "source": "GuruFocus / public.com (as of Apr 28-29 2026; Forward PE 33.30 per GuruFocus)",
+      "status": "ok",
+      "deviation": "10.6%",
+      "notes": "Post-earnings rally of ~10% on Apr 29-30 drove up the trailing P/E from ~29 to ~32. Our bundle was built pre-earnings-reaction. Deviation is 10.6% — below the 20% flag threshold. No correction needed."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 4602908901376.0,
+      "web_value": 4620000000000.0,
+      "source": "companiesmarketcap.com / CNBC (May 2026 — ~$4.62T)",
+      "status": "ok",
+      "deviation": "0.4%",
+      "notes": "Market cap is essentially flat. Minor intraday variation."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 402840000000.0,
+      "web_value": 402836000000.0,
+      "source": "stockanalysis.com / companiesmarketcap.com (FY2025 TTM = $402.836B; TTM through Q1 2026 = ~$422.5B)",
+      "status": "ok",
+      "deviation": "0.0%",
+      "notes": "Our revenue of ~$402.8B matches the FY2025 annual figure exactly. The TTM through Q1 2026 is ~$422.5B. If the bundle was built using FY2025 data, the figure is correct. Deviation vs Q1-updated TTM is ~4.8% — within threshold."
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.3183,
+      "web_value": 0.3183,
+      "source": "financecharts.com (ROE as of Mar 2026 — 31.83%)",
+      "status": "ok",
+      "deviation": "0.0%",
+      "notes": "Perfect match."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.2220,
+      "web_value": 0.253,
+      "source": "finbox.com (Return on Assets — 25.3%)",
+      "status": "ok",
+      "deviation": "14.0%",
+      "notes": "Our ROA of 22.2% vs finbox's 25.3%. Difference may reflect slightly different asset base or calculation methodology (e.g., average assets vs end-of-period). Deviation is 14.0% — below the 20% threshold. No correction needed."
+    }
+  ],
+  "overall_status": "all metrics within 20% deviation threshold — no corrections required",
+  "corrections_applied": false,
+  "summary": "All 7 metrics for GOOG verified against web sources. No mismatch exceeded the 20% deviation threshold. The largest deviation was ROA at 14.0% (likely a methodology difference between average vs. end-of-period assets). The P/E deviation of 10.6% reflects the post-earnings stock surge on Apr 29-30 which occurred after our facts bundle was built. Net margin and ROE match exactly. No facts bundle files were modified."
+}

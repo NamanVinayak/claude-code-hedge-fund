@@ -1,0 +1,47 @@
+{
+  "GOOG": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0.55,
+        "revenue_growth": 0.13866243322901553,
+        "revenue_trend": 0.003768233621193074,
+        "eps_growth": 0.3419434194341942,
+        "eps_trend": -0.08811401363731199,
+        "fcf_growth": 0.0068990159969215545,
+        "fcf_trend": 0.048502100715874914
+      },
+      "growth_valuation": {
+        "score": 0,
+        "peg_ratio": null,
+        "price_to_sales_ratio": 11.426260069546913
+      },
+      "margin_expansion": {
+        "score": 0.2,
+        "gross_margin": null,
+        "gross_margin_trend": 0.0,
+        "operating_margin": 0.32032638592380025,
+        "operating_margin_trend": -0.015204639079216787,
+        "net_margin": 0.3280987796522654,
+        "net_margin_trend": -0.01262779697805153
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 1.0,
+        "debt_to_equity": 0.12300819958339855,
+        "current_ratio": 2.005333592875566
+      },
+      "final_analysis": {
+        "signal": "neutral",
+        "confidence": 20,
+        "weighted_score": 0.4
+      }
+    }
+  }
+}

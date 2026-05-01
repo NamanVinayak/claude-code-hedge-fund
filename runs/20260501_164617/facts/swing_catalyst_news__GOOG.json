@@ -1,0 +1,348 @@
+{
+  "ticker": "GOOG",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 357.0676297720396,
+      "sma_5": 353.51799926757815,
+      "ema_10": 346.87111514323885,
+      "sma_10": 344.83399963378906,
+      "ema_20": 334.2224693170679,
+      "sma_20": 330.41249694824216,
+      "ema_21": 333.31723549593477,
+      "sma_21": 328.72142537434894,
+      "ema_50": 320.5430949131005,
+      "sma_50": 312.5761114501953,
+      "ema_200": 282.0286624138607,
+      "sma_200": 280.02989585876463,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 381.94000244140625,
+    "dist_from_50sma_pct": 22.19,
+    "price_vs_ma": {
+      "above_ema_5": true,
+      "pct_from_ema_5": 6.97,
+      "above_sma_5": true,
+      "pct_from_sma_5": 8.04,
+      "above_ema_10": true,
+      "pct_from_ema_10": 10.11,
+      "above_sma_10": true,
+      "pct_from_sma_10": 10.76,
+      "above_ema_20": true,
+      "pct_from_ema_20": 14.28,
+      "above_sma_20": true,
+      "pct_from_sma_20": 15.59,
+      "above_ema_21": true,
+      "pct_from_ema_21": 14.59,
+      "above_sma_21": true,
+      "pct_from_sma_21": 16.19,
+      "above_ema_50": true,
+      "pct_from_ema_50": 19.15,
+      "above_sma_50": true,
+      "pct_from_sma_50": 22.19,
+      "above_ema_200": true,
+      "pct_from_ema_200": 35.43,
+      "above_sma_200": true,
+      "pct_from_sma_200": 36.39,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 38094.0
+    },
+    "rsi": {
+      "rsi_7": 97.75,
+      "rsi_14": 86.83,
+      "rsi_21": 89.31
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 14.2128,
+      "signal_line": 10.2963,
+      "histogram": 3.9165,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 370.9,
+      "middle": 330.41,
+      "lower": 289.92,
+      "width": 0.2451,
+      "pct_b": 1.1363
+    },
+    "atr": {
+      "atr_14": 9.5,
+      "atr_pct": 2.49
+    },
+    "adx": {
+      "adx_14": 63.92,
+      "plus_di": 50.36,
+      "minus_di": 4.4,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 44509500,
+      "avg_volume_20": 17136890,
+      "relative_volume": 2.6,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 311.07,
+          "tests": 13,
+          "volume_confirmed": false
+        },
+        {
+          "price": 319.23,
+          "tests": 9,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 271.54,
+          "tests": 1,
+          "volume_confirmed": false
+        },
+        {
+          "price": 296.69,
+          "tests": 12,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": null,
+      "nearest_support": 296.69,
+      "recent_high": 382.63,
+      "recent_low": 287.57,
+      "prev_day_high": 353.4,
+      "prev_day_low": 342.43,
+      "prev_day_close": 347.31
+    },
+    "fibonacci": {
+      "swing_high": 382.63,
+      "swing_low": 271.54,
+      "fib_236": 356.41,
+      "fib_382": 340.19,
+      "fib_500": 327.08,
+      "fib_618": 313.97,
+      "fib_786": 295.31,
+      "fib_ext_1272": 412.85,
+      "fib_ext_1618": 451.29,
+      "fib_ext_2000": 493.73,
+      "fib_ext_low_1272": 241.32,
+      "fib_ext_low_1618": 202.88
+    },
+    "momentum": {
+      "roc_5d": 13.08,
+      "roc_10d": 14.78,
+      "roc_21d": 33.15
+    },
+    "z_score_50": 3.29,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 366.0602203918235,
+      "sma_24": 361.8036359151204,
+      "ema_48": 356.0164304303702,
+      "sma_48": 352.19273312886554,
+      "ema_120": 339.64157465077494,
+      "sma_120": 337.4426732381185,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 380.5199890136719,
+    "dist_from_50sma_pct": 12.77,
+    "price_vs_ma": {
+      "above_ema_24": true,
+      "pct_from_ema_24": 3.95,
+      "above_sma_24": true,
+      "pct_from_sma_24": 5.17,
+      "above_ema_48": true,
+      "pct_from_ema_48": 6.88,
+      "above_sma_48": true,
+      "pct_from_sma_48": 8.04,
+      "above_ema_120": true,
+      "pct_from_ema_120": 12.04,
+      "above_sma_120": true,
+      "pct_from_sma_120": 12.77,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 37952.0
+    },
+    "rsi": {
+      "rsi_21": 81.05
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 11.2912,
+      "signal_line": 7.9824,
+      "histogram": 3.3088,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 382.41,
+      "middle": 352.19,
+      "lower": 321.97,
+      "width": 0.1716,
+      "pct_b": 0.9687
+    },
+    "atr": {
+      "atr_24": 4.74,
+      "atr_pct": 1.24
+    },
+    "adx": {
+      "adx_24": 22.51,
+      "plus_di": 36.12,
+      "minus_di": 11.9,
+      "trend_strength": "moderate"
+    },
+    "volume": {
+      "current_volume": 496001,
+      "avg_volume_20": 3836125,
+      "relative_volume": 0.13,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 340.15,
+          "tests": 13,
+          "volume_confirmed": false
+        },
+        {
+          "price": 350.89,
+          "tests": 12,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 329.63,
+          "tests": 4,
+          "volume_confirmed": false
+        },
+        {
+          "price": 334.05,
+          "tests": 15,
+          "volume_confirmed": false
+        },
+        {
+          "price": 342.69,
+          "tests": 8,
+          "volume_confirmed": true
+        }
+      ],
+      "nearest_resistance": null,
+      "nearest_support": 342.69,
+      "recent_high": 383.26,
+      "recent_low": 342.69,
+      "prev_day_high": 383.26,
+      "prev_day_low": 379.86,
+      "prev_day_close": 380.9
+    },
+    "fibonacci": {
+      "swing_high": 383.26,
+      "swing_low": 342.69,
+      "fib_236": 373.69,
+      "fib_382": 367.76,
+      "fib_500": 362.98,
+      "fib_618": 358.19,
+      "fib_786": 351.37,
+      "fib_ext_1272": 394.3,
+      "fib_ext_1618": 408.33,
+      "fib_ext_2000": 423.83,
+      "fib_ext_low_1272": 331.65,
+      "fib_ext_low_1618": 317.62
+    },
+    "momentum": {
+      "roc_5d": 0.56,
+      "roc_10d": 3.91,
+      "roc_21d": 9.78
+    },
+    "z_score_120": 2.56,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 337.7200012207031,
+      "close": 342.32000732421875,
+      "high": 343.69000244140625,
+      "low": 334.04998779296875,
+      "volume": 18260900,
+      "time": "2026-04-24"
+    },
+    {
+      "open": 343.8800048828125,
+      "close": 348.5199890136719,
+      "high": 350.8999938964844,
+      "low": 340.80999755859375,
+      "volume": 17443000,
+      "time": "2026-04-27"
+    },
+    {
+      "open": 346.9200134277344,
+      "close": 347.5,
+      "high": 349.8999938964844,
+      "low": 344.2799987792969,
+      "volume": 18502300,
+      "time": "2026-04-28"
+    },
+    {
+      "open": 345.4800109863281,
+      "close": 347.30999755859375,
+      "high": 353.3999938964844,
+      "low": 342.42999267578125,
+      "volume": 22232200,
+      "time": "2026-04-29"
+    },
+    {
+      "open": 371.2550048828125,
+      "close": 381.94000244140625,
+      "high": 382.6300048828125,
+      "low": 363.0899963378906,
+      "volume": 44509500,
+      "time": "2026-04-30"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 380.5,
+  "market_cap": 4602908901376.0,
+  "wiki_context": {
+    "slices": {
+      "catalysts_full": {
+        "path": "wiki/tickers/GOOG/catalysts.md",
+        "mode": "full",
+        "content": "# GOOG \u2014 Catalysts\n\n## TL;DR\n\nThe single largest near-term binary is Q1 2026 earnings, scheduled April 28 post-market. Analyst consensus expects $2.60 EPS and $106.81B revenue. On the positive side: the DOJ chose a choice-screen remedy rather than forced breakup, Google Cloud growth is accelerating, and Waymo is expanding to new cities. On the negative side: the DOJ cross-appeal for forced divestiture is still alive, and capex guidance of $175\u2013185B (double year-on-year) is structurally weighing on EPS.\n\n## Upcoming events\n\n| Date | Event | Sentiment |\n|---|---|---|\n| April 28, 2026 (post-market) | Q1 2026 earnings \u2014 EPS est. $2.60, revenue est. $106.81B | Binary; high impact |\n| April 29, 2026 | FOMC rate decision | Macro; indirect |\n| TBD (DOJ appeal timeline) | DOJ cross-appeal seeking forced divestitures | Negative tail risk |\n\nSource: 20260415_093758 and swing_20260411_211655 web_research/GOOG.json.\n\n## Recent news synthesis\n\n**Antitrust relief (positive).** On April 8, 2026 the court issued its remedy: a choice-screen mandate and prohibition on exclusive search distribution contracts \u2014 not forced divestiture. Alphabet stock rallied on the news (20260415_093758 web_research, headline: \"Alphabet dodges structural breakup\"). However the DOJ immediately filed a cross-appeal seeking stronger remedies, so the tail risk of divestiture remains alive.\n\n**Search index sharing order (negative).** April 14, 2026: US District Court ordered Google to share its search index with rivals. Morgan Stanley estimates $15\u201325B in annual ad revenue at risk if rivals build competing search products on top of the index (20260415_093758 web_research).\n\n**Waymo expansion catalyst (positive).** Nashville expansion sent GOOG up 7.3% in a single session leading into the swing_20260411 run. Waymo is unmodeled by consensus \u2014 each new city is incremental optionality.\n\n**Google Cloud AI partnerships (positive).** Thoma Bravo / Google Cloud AI partnership flagged in both runs as a fresh enterprise catalyst. Google partnered with Intel for AI cloud infrastructure (swing_20260411_211655 web_research). Google Cloud Next conference ran April 22\u201324 in Las Vegas \u2014 expected to generate further pipeline announcements.\n\n**Capex overhang (negative).** $175\u2013185B 2026 capex guidance, roughly double year-on-year, weighed on the stock. GOOG fell nearly 9% in the week ending March 27, 2026 after this guidance was revealed (20260415_093758 web_research). Bears argue this compresses free cash flow and may not yield returns for 2\u20133 years.\n\n**AI competition (negative, ongoing).** Microsoft MAI-Transcribe-1 outperformed Gemini audio on the FLEURS benchmark (April 2, 2026). Meta's Muse Spark and OpenAI's enterprise push are both direct Gemini competitors (20260415_093758 web_research, competitor_activity field).\n\n## Insider activity\n\nThe growth-analyst agent (20260415_093758) flagged net insider flow of -$682M \u2014 net selling. However, the swing_20260411 run notes that recent April 8 activity was RSU exercises at $0 cost, which are routine vesting and not discretionary selling signals. No large discretionary insider buys were flagged in either run.\n\n## Analyst consensus\n\n| Metric | Value | Source |\n|---|---|---|\n| Rating | Buy (44 Strong Buy) | 20260415_093758 web_research |\n| Average price target | $385.46 | 20260415_093758 |\n| High target | $450 | Mizuho |\n| Low target | $330 | \u2014 |\n| Most recent upgrade | Citigroup: $405 (Apr 14, 2026) | 20260415_093758 |\n\nConsensus remains constructive despite antitrust and capex headwinds, with analysts citing AI cloud growth as the primary upside driver.\n\n## Last updated\n\nSources: 20260415_093758 and swing_20260411_211655 web_research/GOOG.json. Bootstrap date: 2026-04-29.\n",
+        "last_updated": "2026-04-29",
+        "stale": false
+      },
+      "calendar_full": {
+        "missing": true,
+        "mode": "full"
+      },
+      "lessons_full": {
+        "path": "wiki/meta/lessons.md",
+        "mode": "full",
+        "content": "## Format\n\nEach lesson is one dated bullet:\n\n`[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME: +$X / -$X] | [WHY it worked or failed in 1 sentence]`\n\nThe \"why\" should reference: the thesis at the time, the macro regime, which swing strategy recommended it.\n\n---\n\n## Patterns (auto-generated by Sunday compactor, last 30 days)\n\n| Setup Type | Trades | Wins | Win Rate | Avg P&L | Total P&L |\n|---|---|---|---|---|---|\n| EMA pullback Fib dip-buy | 1 | 0 | 0% | -$264.65 | -$264.65 |\n\n## Lessons\n\n2026-04-30 | NVDA | EMA pullback Fib dip-buy | -$264.65 | Stop triggered at $205.30 (hourly Fib 61.8%); swing_trend_momentum and swing_breakout were bullish on AI capex thesis, but price breached the stop zone intraday amid stretched macro (RSI 81\u201387) with no bullish confirmation candle before exit.\n",
+        "last_updated": "2026-05-01",
+        "stale": false
+      }
+    }
+  }
+}
