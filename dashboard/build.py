@@ -161,9 +161,21 @@ def main():
     with open(os.path.join(args.output, "index.html"), "w") as f:
         f.write(index_html)
 
-    # Fetch today's runs — use UTC for folder matching (run folders are named in UTC)
-    today_str = datetime.now(ZoneInfo("UTC")).strftime("%Y%m%d")
-    run_folders = glob.glob(f"runs/{today_str}_*")
+    # Fetch today's runs — determine "today" in local time
+    pt_zone = ZoneInfo("America/Vancouver")
+    today_pt = datetime.now(pt_zone).date()
+    
+    all_run_folders = glob.glob("runs/202*_*")
+    run_folders = []
+    for folder in all_run_folders:
+        run_id = os.path.basename(folder)
+        try:
+            dt_utc = datetime.strptime(run_id, "%Y%m%d_%H%M%S").replace(tzinfo=ZoneInfo("UTC"))
+            if dt_utc.astimezone(pt_zone).date() == today_pt:
+                run_folders.append(folder)
+        except ValueError:
+            pass
+
     runs = []
     for folder in sorted(run_folders, reverse=True):
         run_id = os.path.basename(folder)
