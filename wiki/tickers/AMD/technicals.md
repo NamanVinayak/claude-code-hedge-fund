@@ -1,48 +1,50 @@
 ---
 name: AMD technicals
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-01
+last_run_id: 20260501_132346
 target_words: 350
 stale_after_days: 7
-word_count: 355
-summary: parabolic momentum run — RSI 91, ADX 41, hourly STC diverging as of Apr 17
+word_count: 348
+summary: parabolic extension V2 — RSI 83, ADX 74.94, Z-score 2.6, +74% in 21 days; system issues short signal
 ---
 
 # AMD — Technicals
 
 ## TL;DR
 
-As of the most recent run (20260417_233350), AMD had the highest raw momentum in the entire 19-stock watchlist — 41.7% 21-day ROC — but was in extreme overbought territory with RSI 91 and a bearish hourly STC cross. The daily trend is intact and strong; the hourly frame is flashing pullback risk. System sized the position at 15 shares (small) despite a 70% confidence rating because the overbought extension was too severe to ignore.
+As of run 20260501_132346, AMD has surged +74% in 21 trading days to $354.49, reaching a new all-time high. RSI-14 is 83 (severely overbought), Z-score vs 50-SMA is 2.6 (statistical exhaustion), and ADX 74.94 is among the strongest trend readings ever recorded on this ticker. All five swing agents refused to enter long; two issued bearish/short signals. The system issued a short at $354.49, stop $372.31, target $277.74 (4.31:1 R/R), sized at 1 share due to earnings binary risk on May 5.
 
 ## Multi-timeframe state
 
 | Timeframe | Bias | Key reading |
 |---|---|---|
-| Daily | Strongly bullish | ADX 40.99, all EMAs aligned up, SuperTrend bullish |
-| Hourly | Pullback risk | STC crossed down (bearish momentum divergence at Apr 17) |
-| Statistical | Mean-reversion risk | Z-score 3.66 (Apr 17), 2.89 (Apr 15), 2.35 (Apr 11) — three-run trend of escalating extension |
+| Daily | Overbought extreme | ADX 74.94, RSI 83, all EMAs fanned bullish, but Z-score 2.6 flags statistical exhaustion |
+| Hourly | Decelerating | ADX 17.25 (weak/indecision), MACD bullish crossover but ROC decelerating; relative vol 0.75 declining |
+| Statistical | Mean-reversion risk | Z-score 2.6 vs prior peaks (3.66 on Apr 17, 2.89 on Apr 15, 2.35 on Apr 11) — extended but partially corrected |
 
-Sources: technical_analyst_agent (run 20260415_110848), swing_head_trader (run 20260417_233350).
+Sources: swing_mean_reversion, swing_trend_momentum, swing_macro_context signals (run 20260501_132346).
 
 ## Key levels
 
 | Level | Value | Source |
 |---|---|---|
-| Entry zone (preferred) | $241–$248 | Hourly SuperTrend / fib 38.2 support (run 20260415_110848) |
-| Pullback target (deep) | $224–$237 | 50-SMA, prior congestion (run swing_20260411_211655) |
-| Resistance / target | $268–$305 | Head Trader target range across three runs |
-| Stop / invalidation | $270 | System stop on Apr 17 buy signal |
-| Extreme pullback | $212 | 50-SMA mean-reversion agent snap-back target (run swing_20260411_211655) |
+| Entry (short) | $354.49 | Mean reversion agent entry (run 20260501_132346) |
+| Stop (short) | $372.31 | Swing high + 1 ATR; invalidation level |
+| Target (short) | $277.74 | 20-SMA / Bollinger mid-band mean reversion |
+| Post-earnings long zone | $310–$328 | Volume-confirmed hourly support; head trader preferred re-entry |
+| Hourly pivot support | $328.81 | 6-test volume-confirmed level; catalyst_news target |
+| Breakout entry (conditional) | $355–$356 | Only valid with 1.5x+ volume confirmation (not met today) |
 
-## Indicator snapshot (run 20260417_233350 + 20260415_110848)
+## Indicator snapshot (run 20260501_132346)
 
-- **RSI-14:** 91 (Apr 17), 75.3 (Apr 15) — deeply overbought both prints; trending worse
-- **ADX:** ~41 — strong trend; above 25 threshold confirming a real directional move
-- **21-day ROC:** 41.7% (Apr 17) — highest in the full watchlist universe
-- **Bollinger position:** 1.04 (price above upper band) as of Apr 15
-- **Squeeze Momentum:** Bullish breakout fired on Apr 15; hourly STC crossed bearish by Apr 17
-- **Historical volatility:** 48.6% annualized — high; expect 3–5% daily swings
+- **RSI-14:** 83.06 (daily), 66.57 (hourly) — overbought daily; elevated but not extreme hourly
+- **ADX:** 74.94 (daily — exceptional trend strength), 17.25 (hourly — weak/indecision)
+- **21-day ROC:** +74.26% — highest reading in watchlist history across all tracked tickers
+- **Z-score vs 50-SMA:** 2.6 — statistical exhaustion level; below prior Apr 17 extreme of 3.66
+- **Bollinger %B:** 0.929 — price near upper band (upper at $367.10)
+- **ATR:** ~4.9% daily — wide; requires wide stops, destroys R/R at current price for long entries
+- **EMA fan:** EMA10 $316.5 / EMA21 $285.9 / EMA50 $251.7 — perfectly bullish fan, but price is 12% above EMA10
 
 ## Setup type
 
-Parabolic momentum — right stock, dangerous entry. System verdict across all three runs: trend is real and catalyst-supported, but entry timing matters enormously. The setup becomes constructive again on a RSI reset to 55–65 range with Z-score below 1.5.
+Parabolic extension V2 — second major overbought episode. Prior episode peaked at RSI 91 / Z-score 3.66 (Apr 17). Partial reset occurred (price fell to $310 low on Apr 28) then re-accelerated +74% in 21 days to today's $354.49. The setup becomes constructive long again on RSI reset to 55–65 and Z-score below 1.5, with earnings resolved (May 5 binary clears the path).

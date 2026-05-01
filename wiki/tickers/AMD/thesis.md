@@ -1,45 +1,45 @@
 ---
 name: AMD thesis
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-01
+last_run_id: 20260501_132346
 target_words: 500
 stale_after_days: 30
-word_count: 510
-summary: AI infrastructure leader with dominant momentum but extreme valuation and tariff headwinds
+word_count: 497
+summary: AI infrastructure leader — direction flipped to short on May 1; prior bullish signals falsified by 0/5 swing agents willing to enter long at current price
 ---
 
 # AMD — Thesis
 
 ## TL;DR
 
-AMD is a genuine AI infrastructure winner riding the second wave of GPU/CPU demand. Three consecutive runs (20260411, 20260415, 20260417) produced the highest momentum readings in the entire watchlist universe. The bull case is real but the stock consistently trades at extreme valuations that create binary risk around catalysts. The system rated it bullish on trend and catalyst grounds in all three runs; entry timing and overbought management were the primary debate.
+AMD is a genuine AI infrastructure winner. The bull structural story — Meta $60B deal, TSMC 2nm first-mover, OpenAI 6GW GPU commitment, Oracle 50k MI450 order — remains intact. However, on May 1, 2026 (run 20260501_132346), the swing system issued its first short signal on AMD. All five swing agents refused to enter long; two explicitly called for a short fade. **What falsified the prior bullish thesis:** the prior TL;DR stated "the system rated it bullish on trend and catalyst grounds in all three runs." That claim is now false — run 20260501_132346 produced 0 bullish signals across 5 swing agents, a complete directional reversal driven by statistical exhaustion after a +74% 21-day surge.
 
 ## Bull case
 
-**AI infrastructure tailwinds are durable.** Data Center revenue hit $5.38B in Q4 2025 (+39% YoY), and Q1 2026 guidance projects ~$9.8B total revenue (+32% YoY) with full-year EPS growth consensus near 72% (source: web_research/AMD.json, run 20260415_110848). Hyperscaler demand is structural — not cyclical.
+**AI infrastructure tailwinds are structurally durable.** Data Center revenue hit $5.38B in Q4 2025 (+39% YoY). Q1 2026 consensus is ~$9.84B total revenue (+32% YoY). AMD secured a 6GW GPU deployment commitment from OpenAI and a 50,000 MI450 order from Oracle for Q3 2026. These are multi-year revenue lock-ins (source: web_research/AMD.json, run 20260501_132346).
 
-**The Meta deal is transformational.** Meta committed a $60B infrastructure deal covering AMD GPUs, Venice-architecture CPUs, and custom silicon co-engineering (source: web_research/AMD.json, run 20260415_110848). This is a multi-year revenue lock-in at a time when AMD is gaining CPU server share at Intel's expense. AMD server CPU market share crossed 40% in early 2026 (source: web_research/AMD.json, run swing_20260411_211655).
+**Meta $60B infrastructure deal is transformational.** Multi-year commitment covering AMD GPUs, Venice-architecture CPUs, and custom silicon co-engineering (source: web_research/AMD.json, run 20260415_110848). AMD server CPU market share crossed 40% in early 2026, gaining at Intel's expense.
 
-**TSMC 2nm first-mover advantage.** CEO Lisa Su announced on April 15, 2026 that AMD will be the first company on TSMC's 2nm process, potentially ahead of both Nvidia and Intel on the next node transition. This is a manufacturing moat that could widen the MI-series gap versus Blackwell competitors.
+**TSMC 2nm first-mover advantage.** CEO Lisa Su confirmed AMD will be first on TSMC's 2nm process, potentially ahead of both Nvidia and Intel on the next node transition. Manufacturing lead widens the MI-series gap vs. Blackwell competitors.
 
-**Analyst community is strongly aligned.** 39 Buy-rated analysts out of 51 covering the stock as of April 2026, with zero Sells. Median price target ~$290. Goldman Sachs named AMD its top Q1 earnings pick (source: web_research/AMD.json, both runs).
+**Analyst community strongly aligned.** 29/34 analysts rate Buy (May 2026). DA Davidson raised target to $375 on April 29, Susquehanna raised to $375, Envision Research upgraded to Buy April 30. Intel's Q1 beat (+22% Data Center YoY) is a direct positive read-through for AMD's upcoming May 5 print (source: web_research/AMD.json, run 20260501_132346).
 
-**Momentum is structural, not speculative.** In all three runs, AMD had the highest ROC in the full watchlist: 21-day ROC of 19.6% (Apr 11), climbing to 41.7% by April 17. ADX stayed above 40 in the two most recent runs, confirming a real trend rather than noise.
+**Earnings quality is improving.** EPS growth +92% YoY; financial health is strong (current ratio 2.62, near-zero debt) (source: growth_analyst_agent, fundamentals_analyst_agent, run 20260501_132346).
 
 ## Bear case
 
-**Extreme valuation is a structural overhang.** P/E of ~115 and P/FCF of ~175 (source: swing_head_trader signal, run 20260415_110848) leave almost no margin for error at each earnings print. The valuation agent was 100% bearish in both runs where it reported.
+**Statistical exhaustion after +74% in 21 days.** Z-score vs 50-SMA is 2.6 standard deviations; RSI-14 is 83; stock is 52.6% above its 50-day average. DCF intrinsic value is ~$33B vs. $579B market cap — a 94% premium (source: valuation_analyst_agent, run 20260501_132346). The valuation agent rated AMD 100% confidence bearish.
 
-**Tariffs create genuine margin risk.** Trump's 25% tariff on advanced AI chips, including AMD's MI325X, was enacted January 14, 2026 (source: web_research/AMD.json, run 20260415_110848). GPU/memory prices are already rising. AMD cannot fully pass this through to hyperscaler customers on multi-year contracts.
+**Stock has run above analyst consensus.** Consensus avg target ~$289–$297; AMD at $354.49 is above the street's average best case. Only three analysts (DA Davidson, Susquehanna, Melius) have targets at or above current price.
 
-**Nvidia's moat has not narrowed.** Nvidia still holds ~89% server GPU market share, and that gap widened in 2026 despite the MI300X/MI325X ramp (source: web_research/AMD.json, run 20260415_110848). MI450 and the Helios platform are 2H 2026 launches — the competitive case is forward-looking, not present.
+**CEO insider selling is persistent.** Lisa Su sold ~$16M in March 2026; 2:1 insider sell ratio at board level (source: swing_catalyst_news, run 20260501_132346). Unchanged from prior runs.
 
-**Insider selling is persistent.** CEO Lisa Su sold approximately $16 million in shares in March 2026. The April 11 run flagged an 83-buy/188-sell insider distribution ratio — more sellers than buyers at the board level (source: swing_head_trader signal, run swing_20260411_211655).
+**Earnings binary on May 5 creates asymmetric risk.** Even a strong beat may fail to hold above $355 given the extreme extension. Analyst consensus EPS $1.18 / revenue $9.84B — a miss or soft guidance would accelerate a mean-reversion to the $310–$328 support zone.
 
 ## What would change my mind
 
-**Bull to neutral or bear:** Q1 earnings miss on Data Center revenue (below $5B), any hyperscaler contract cancellation, MI450 delay beyond Q3 2026, or tariff expansion to cover all AMD chip categories.
+**Short to neutral:** AMD gaps up 10%+ on May 5 earnings beat with strong Data Center guidance and ADX holds above 60 on the daily. Short thesis is wrong if the market re-rates AMD higher on structural demand reacceleration.
 
-**Bear to bull:** Nvidia Blackwell supply shortage forcing hyperscalers to AMD at scale, MI450 benchmarks beating H200 equivalent, or a tariff exemption for foundry customers.
+**Short to long:** Price resets to $310–$328 support zone post-earnings with RSI falling to 55–65 range and Z-score below 1.5. That scenario offers 2.5:1+ R/R with earnings risk resolved — the highest-conviction long entry per the swing head trader (source: swing_head_trader signal, run 20260501_132346).
 
-**Timing trigger:** The system consistently flagged $224–$241 as the preferred entry zone after the April surge. Re-entry below those levels with RSI under 60 would reset the overbought risk substantially.
+**Long-term bull remains intact:** The structural AI infrastructure story has not been falsified. This is a timing and valuation issue, not a company quality issue.
