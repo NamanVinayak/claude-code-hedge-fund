@@ -1,53 +1,53 @@
 ---
 name: NVDA technicals
-last_updated: 2026-04-30
-last_run_id: 20260430_124724
+last_updated: 2026-05-01
+last_run_id: 20260501_124529
 target_words: 350
 stale_after_days: 7
-word_count: 368
-summary: Pullback-buy confirmed — ADX 54.67 strongest trend in run history, price at $209.25–$209.50 near Fib 38.2% with volume-confirmed $208.20 support; 3 additional shares added at $209.50 in this run.
+word_count: 338
+summary: Breakdown confirmed — price collapsed 8% to $199.57; hourly -DI 38.45 >> +DI 11.92; all positions stopped out; watch for reversal candle at 38.2% Fib / EMA-21 confluence $196.75–$197.67 before re-entry.
 ---
 
 # NVDA — Technicals
 
 ## TL;DR
 
-As of 2026-04-30 (price ~$209.25, entry $209.50), NVDA is executing a pullback-buy in one of the strongest trends in the market. ADX 54.67 (highest recorded in this pipeline), full daily EMA alignment confirmed. Price has pulled back 3.5% from the $216.83 52-week high to the hourly Fib 38.2% zone ($209.70) with volume-confirmed support at $208.20 (15 tests). RSI-14 at 74.76 and RSI-21 at 81.52 remain elevated. This run (20260430_124724) added 3 shares at $209.50 (stop $205.30, target $221.89, R/R 2.95:1), complementing the 67-share position from run 20260430_060402.
+As of 2026-05-01 (run 20260501_124529, price ~$199.57), NVDA has broken down 8% from the $216.83 swing high. The $208.20 support zone — previously flagged as the hard invalidation level — was breached on 1.52x average volume. Both open positions were stopped out. The daily trend structure remains intact (ADX 55.96, full EMA stack bullish), but the hourly timeframe is actively bearish. No new entry until a confirmed reversal candle appears at the 38.2% Fib / EMA-21 confluence ($196.75–$197.67). Decision: HOLD, conf 35.
 
 ## Multi-timeframe state
 
 | Timeframe | Trend | Momentum | Note |
 |---|---|---|---|
-| Daily | Bullish (ADX 54.67, full EMA stack) | Extended (RSI 74.76, z-score 1.92) | MACD histogram +1.80; ROC 21d +26.69% |
-| Hourly | Consolidating (EMAs uptrend) | Neutral (RSI-21 ~51.94) | OBV trend down, volume 0.56x avg; normal post-breakout digestion |
+| Daily | Bullish (ADX 55.96, full EMA stack) | Normalizing (RSI-14 59.74, z-score ~1.06) | MACD histogram +0.73; 21d ROC +14.43%; 5d ROC -0.04% |
+| Hourly | Bearish (-DI 38.45 >> +DI 11.92, MACD -1.95) | Deeply oversold (RSI-21 23.58) | OBV diverging bullish — accumulation signal; no reversal candle yet |
 
-**EMA stack (daily, 2026-04-30):** EMA-10: $204.98 / EMA-21: $197.47 / EMA-50: $190.15 — all fanned bullish. Price at $209.25 is 2.1% above EMA-10, inside the constructive pullback zone.
+**EMA stack (daily, 2026-05-01):** EMA-10: $203.99 / EMA-21: $197.67 / EMA-50: $190.52 / EMA-200: $177.38 — all fanned bullish. Price at $199.57 is below EMA-10, just above EMA-21.
 
-**Trend indicators:** ADX-14 = 54.67 (+DI 39.03, -DI 4.66). SuperTrend bullish (daily). Prior squeeze fired (squeeze_off: true) — volatility already expanded; no new squeeze forming.
+**Trend indicators:** ADX-14 = 55.96 (+DI 29.83, -DI 14.49). SuperTrend bullish on daily. Prior squeeze fired and expanded bearishly on hourly.
 
-**Mean-reversion stress:** Bollinger %B = 0.7824 (inside bands). Z-score vs 50-SMA = 1.92. RSI-14 = 74.76, RSI-21 = 81.52. Hourly RSI-21 = 51.94 — neutral.
+**Mean-reversion stress:** Bollinger %B = 0.57 (daily, near midband). Z-score vs 50-SMA = 1.06. Daily RSI-14 = 59.74, RSI-21 = 67.88 — healthy, not stretched. Hourly %B = 0.17 (near lower band). Hourly RSI-21 = 23.58 (deeply oversold).
 
-**Mean-reversion stress:** Bollinger %B = 0.7824 (inside bands). Z-score vs 50-SMA = 1.92. RSI-14 = 74.76, RSI-21 = 81.52. Hourly RSI-21 ≈ 51.94 — neutral, not exhausted.
-
-Sources: run 20260430_124724 — swing_trend_momentum, swing_mean_reversion, swing_catalyst_news, swing_macro_context, swing_head_trader signals; decisions.json; risk_management_agent.
+Sources: run 20260501_124529 — swing_trend_momentum, swing_mean_reversion, swing_breakout, swing_catalyst_news, swing_macro_context, swing_head_trader signals; decisions.json; risk_management_agent.
 
 ## Key levels
 
 | Level | Value | Source |
 |---|---|---|
-| Resistance (next) | $214.73 (hourly, 7 tests) | swing_breakout signal, 20260430_124724 |
-| Resistance (major) | $216.83 (52-week high) | web_research/NVDA.json, 2026-04-30 |
-| Entry (both positions) | $209.25 (67 sh) / $209.50 (3 sh) | PM decisions, 20260430_060402 / 20260430_124724 |
-| Support (hourly) | $208.20 (15 tests, volume-confirmed) | swing_head_trader synthesis, 20260430_124724 |
-| Stop | $205.30 (hourly Fib 61.8%) | swing_head_trader stop consensus, 20260430_124724 |
-| Target | $221.89 (cluster median, this run) | PM decision, 20260430_124724 |
-| Target (extended) | $231.13 (daily Fib 1.272 ext) | swing_macro_context signal |
-| Invalidation | Close below $208.20 before new high | swing_head_trader synthesis |
+| Resistance (prior high) | $216.83 (52-week high) | web_research/NVDA.json, 20260501_124529 |
+| Resistance (next) | $214.73 (hourly pivot) | swing_breakout signal, 20260501_124529 |
+| Key failed support | $208.20 (now resistance; 15 tests) | swing_head_trader synthesis, 20260501_124529 |
+| Current price | $199.57 | decisions.json, 20260501_124529 |
+| Support (hourly) | $199.00 (18 tests) | swing_macro_context signal, 20260501_124529 |
+| Target entry zone | $197.50–$199.50 | swing_head_trader synthesis, 20260501_124529 |
+| Fib 38.2% / EMA-21 confluence | $196.75–$197.67 | swing_trend_momentum, 20260501_124529 |
+| Stop (conditional) | $194.00 | swing_head_trader synthesis, 20260501_124529 |
+| Target (conditional) | $212.25 | decisions.json, 20260501_124529 |
+| Fib 50% / EMA-50 | $190.52 | swing_trend_momentum, 20260501_124529 |
 
 ## Setup type
 
-**Pullback buy in a strong trend.** Run 20260430_060402 opened 67 shares at $209.25; run 20260430_124724 added 3 shares at $209.50 (combined 70 shares). Stop at $205.30 (hourly Fib 61.8%), primary target $221.89 (cluster median from this run), extended target $231.13. Hard exit deadline ~May 17 (3-day pre-earnings blackout). Re-evaluate at $216.83 resistance: clear on expanding volume → activate $231 extension target. Break below $208.20 before new high invalidates thesis.
+**Watch / No position.** Prior pullback-buy (3 shares at $209.50, run 20260430_124724) was stopped out. Price has broken below $208.20 invalidation level on elevated volume (1.52x avg). Entry requires: (1) confirmed hourly reversal candle (hammer, bullish engulfing, or morning star) at $196.75–$199.50 zone, (2) hourly MACD histogram turning positive. If triggered: entry $197.50–$199.50, stop $194.00, target $212.25, R/R 2.67:1, timeframe 5–12 trading days. Hard exit deadline ~May 17 (3-day pre-earnings blackout before May 20 NVDA earnings).
 
 ## Last updated
 
-2026-04-30 — source: 20260430_124724 (swing_trend_momentum, swing_mean_reversion, swing_catalyst_news, swing_macro_context, swing_head_trader signals; PM decisions.json; risk_management_agent). Prior run: 20260430_060402 (same setup, same key levels, 67-share position).
+2026-05-01 — source: 20260501_124529 (swing_trend_momentum, swing_mean_reversion, swing_breakout, swing_catalyst_news, swing_macro_context, swing_head_trader signals; PM decisions.json; risk_management_agent). Prior setup (pullback-buy at $209.50, run 20260430_124724) stopped out; noted in recent.md.
