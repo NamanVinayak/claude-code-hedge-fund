@@ -1,20 +1,20 @@
 ---
 name: NKE catalysts
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-01
+last_run_id: 20260501_221355
 target_words: 400
 stale_after_days: 14
-word_count: 418
-summary: next earnings June 25 2026; wave of analyst downgrades April; insider buying at lows is the lone contrarian signal
+word_count: 398
+summary: next earnings June 25 2026; additional job cuts and analyst downgrades deepen bear case; CEO-level insider buying confirmed; Adidas competitive threat accelerating
 ---
 
 # NKE — Catalysts
 
 ## TL;DR
 
-The catalyst picture is almost entirely bearish: a wave of analyst downgrades in April 2026, weak Q3 earnings, management departure, and no sales recovery expected until February 2027. The one genuine contrarian signal is significant insider buying at multi-year lows by board directors. Next binary event: Q4 FY2026 earnings June 25, 2026.
+The catalyst backdrop is almost entirely bearish: Wave 2 of analyst downgrades in April 2026, ~1,400 additional layoffs under the "Win Now" restructuring, and Adidas pulling a major marketing coup (first sub-2-hour marathon at London 2026). The lone contrarian signal is CEO-level insider buying at multi-year lows. Next binary event: Q4 FY2026 earnings June 25, 2026.
 
-All data sourced from `swing_20260411_211655/web_research/NKE.json` and `swing_20260411_211655` signals unless noted.
+Sources: `web_research/NKE.json` and `swing_catalyst_news` signal, run `20260501_221355`.
 
 ---
 
@@ -22,11 +22,11 @@ All data sourced from `swing_20260411_211655/web_research/NKE.json` and `swing_2
 
 | Date | Event | Significance |
 |---|---|---|
-| June 25, 2026 | Q4 FY2026 earnings (after market close) | Q4 EPS estimate: $0.14 — binary risk |
-| April 29, 2026 | FOMC rate decision | Macro risk; affects consumer discretionary broadly |
-| Ongoing | Iran ceasefire / oil price | Consumer sentiment at record low (47.6); stagflation concerns |
+| June 25, 2026 | Q4 FY2026 earnings (after market close) | EPS est. $0.12–$0.17; revenue est. $10.86B — binary risk |
+| June 12–15, 2026 | Enter earnings catalyst window | Re-evaluate for pre-earnings setup |
+| Ongoing | Iran ceasefire / oil prices | Consumer sentiment impact; tariff exposure on Asian manufacturing |
 
-**Earnings blackout note**: The risk manager enforces a 3-day blackout before earnings. Any swing short initiated before June 22 should be closed or size-reduced before the June 25 print.
+**Earnings blackout note**: Risk manager enforces a 3-day blackout before earnings. Any swing position initiated before June 22 should be closed before the June 25 print.
 
 ---
 
@@ -34,37 +34,37 @@ All data sourced from `swing_20260411_211655/web_research/NKE.json` and `swing_2
 
 | Headline | Sentiment | Date / Source |
 |---|---|---|
-| Nike hits 52-week low of $42.36 amid weakening demand and margin pressure | Negative | Zacks, Apr 9 2026 |
-| Piper Sandler downgrades to Neutral, $50 target; Cramer calls it "damning" | Negative | CNBC / 24/7 Wall St., Apr 10 2026 |
-| Chief Innovation Officer Tom Bignall departs after less than a year | Negative | GuruFocus, Apr 10 2026 |
-| Q3 FY2026 revenues flat YoY; Nike Direct down 4% reported / 7% currency-neutral to $4.5B | Negative | QuiverQuant / Zacks |
-| Stock back to decade-ago levels — some analysts call it generational buying opportunity | Neutral | Motley Fool, Apr 6 2026 |
-
-**Q3 fundamentals context**: Revenue growth -9.8% YoY, EPS growth -43.5% YoY, elevated inventory, tariff pressures flagged. Analysts don't expect annual sales growth to return until February 2027.
-
----
-
-## Insider activity
-
-Conflicted signal — management-level selling vs. board-level buying:
-
-| Insider | Transaction | Amount | Date | Signal |
-|---|---|---|---|---|
-| Robert Swan (board) | Buy — 11,781 shares at $42.44 | ~$500K | Apr 7, 2026 | Bullish |
-| John Rogers Jr. (board) | Buy — 4,000 shares at $43.34 | ~$173K | Apr 9, 2026 | Bullish |
-| Tim Cook (board) | Buy | ~$2.9M | Dec 2025 | Bullish |
-| Net insider flow (growth agent) | Sell-side heavier | Buys $19.7M vs. Sells $33.2M (90-trade window) | Multi-month | Bearish on net |
-
-Interpretation: Board directors are buying at extreme lows (contrarian signal), but the 90-trade net flow is still sell-side heavy. The $500K and $173K buys are meaningful in dollar terms but small relative to the $33M in aggregate sales.
+| Nike cutting ~1,400 jobs as part of "Win Now" restructuring; Greater China sales disappointing | Negative | Motley Fool / Yahoo Finance, Apr 30, 2026 |
+| Stock trading near multi-year lows (~$44.35); analysts ask "Is it cheap?" | Negative | Motley Fool, Apr 30, 2026 |
+| CEO Elliott Hill and Apple CEO Tim Cook both made significant personal share purchases | Positive | WWD / Motley Fool, early 2026 |
+| Nike Zoom Hyperflight and new sneaker releases scheduled May 2026 (product refresh) | Neutral | WWD Footwear News, May 2026 |
+| Wave of analyst downgrades and PT cuts: CICC, DA Davidson, Wells Fargo, UBS, Citigroup | Negative | Markets Daily / Cerbat Gem, Apr 1–7, 2026 |
+| Adidas-sponsored athlete ran first legal sub-2-hour marathon at London 2026 — marketing coup over Nike | Negative | web_research/NKE.json, Apr 2026 |
 
 ---
 
 ## Analyst consensus
 
-As of April 2026 (`swing_20260411_211655/web_research/NKE.json`):
+As of May 1, 2026 (`web_research/NKE.json`, run `20260501_221355`):
 
-- **Rating**: Hold (consensus shifting from Moderate Buy)
-- **Average price target**: $63.25
-- **Recent changes**: Piper Sandler → Neutral ($50); DA Davidson → Neutral ($46); Citigroup → Neutral ($53, cut from $65); CICC → Market Perform; Needham → Hold (Jan 2026)
-- **Lone recent upgrade**: Barclays raised target to $73 (Mar 11 2026)
-- **Competitor read-through**: On Running +24.9% sales YoY; Adidas turnaround ahead of schedule. Nike's "Win Now" strategy showing early signs of refocus but competitors have significant momentum head start.
+- **Rating**: Moderate Buy (13 buy, 11 hold, 0 sell from 24 analysts) — but momentum is decisively negative
+- **Average price target**: $63.44 (~43% implied upside from $44.35)
+- **Recent changes**: CICC → Market Perform (PT $58 from $69); DA Davidson → Neutral (PT $46 from $72); Wells Fargo kept Overweight but cut PT to $55 from $65; UBS neutral at $54 from $58; Citigroup neutral at $53 from $65. Last upgrade: Barclays raised PT to $73 on March 11, 2026.
+
+---
+
+## Insider activity
+
+| Insider | Transaction | Amount | Date | Signal |
+|---|---|---|---|---|
+| Robert Swan (board) | Buy — shares at $42.44 | ~$500K | Apr 7, 2026 | Bullish |
+| John Rogers Jr. (board) | Buy — shares at $43.34 | ~$173K | Apr 9, 2026 | Bullish |
+| Elliott Hill (CEO) | Personal purchase | Significant | Early 2026 | Bullish |
+| Tim Cook (board) | Buy | ~$2.9M | Dec 2025 | Bullish |
+| Net insider flow (90-trade window) | Sell-side heavier | Buys $19.7M vs. Sells $33.2M | Multi-month | Bearish net |
+
+---
+
+## Competitive landscape
+
+Adidas is the sharpest threat: CEO Björn Gulden ahead of schedule on 4-year turnaround; Samba/Gazelle trend dominating lifestyle; first legal sub-2-hour marathon at London 2026 is a major marketing coup. On Running and Hoka taking premium performance share. Under Armour restructuring (parting with Steph Curry) reduces one competitor's relevance. Source: `web_research/NKE.json`, run `20260501_221355`.

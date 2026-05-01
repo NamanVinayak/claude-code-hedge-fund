@@ -1,0 +1,92 @@
+{
+  "NKE": {
+    "signal": "neutral",
+    "confidence": 8,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0.15000000000000002,
+        "revenue_growth": -0.09838012538452552,
+        "revenue_trend": 0.02390139442343084,
+        "eps_growth": -0.4228723404255319,
+        "eps_trend": 0.040650585430679204,
+        "fcf_growth": -0.506120598458516,
+        "fcf_trend": 0.05295752976436569
+      },
+      "growth_valuation": {
+        "score": 0.75,
+        "peg_ratio": 1.37,
+        "price_to_sales_ratio": 1.4198403800557127
+      },
+      "margin_expansion": {
+        "score": 0.4,
+        "gross_margin": 0.42734673605562634,
+        "gross_margin_trend": 0.002158426747311275,
+        "operating_margin": null,
+        "operating_margin_trend": 0.0,
+        "net_margin": 0.06951132609212032,
+        "net_margin_trend": 0.005194680588578173
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 1.0,
+        "debt_to_equity": 0.602891092106259,
+        "current_ratio": 2.2110543251940187
+      },
+      "final_analysis": {
+        "signal": "neutral",
+        "confidence": 8,
+        "weighted_score": 0.46
+      }
+    }
+  },
+  "DIS": {
+    "signal": "neutral",
+    "confidence": 13,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0.44999999999999996,
+        "revenue_growth": 0.03353728615054564,
+        "revenue_trend": 0.025900547836623933,
+        "eps_growth": 1.5294117647058822,
+        "eps_trend": -0.1159293691646741,
+        "fcf_growth": 0.1773571678934455,
+        "fcf_trend": 0.1711342831626994
+      },
+      "growth_valuation": {
+        "score": 0.5,
+        "peg_ratio": 2.95,
+        "price_to_sales_ratio": 1.933897434111729
+      },
+      "margin_expansion": {
+        "score": 0.2,
+        "gross_margin": null,
+        "gross_margin_trend": 0.0,
+        "operating_margin": 0.18587238549113053,
+        "operating_margin_trend": -0.00438264534732787,
+        "net_margin": 0.1313635160180037,
+        "net_margin_trend": -0.006792468539578011
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 0.5,
+        "debt_to_equity": 0.4435919140066807,
+        "current_ratio": 0.7103506820443768
+      },
+      "final_analysis": {
+        "signal": "neutral",
+        "confidence": 13,
+        "weighted_score": 0.43
+      }
+    }
+  }
+}

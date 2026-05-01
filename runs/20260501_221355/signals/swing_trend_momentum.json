@@ -1,0 +1,20 @@
+{
+  "NKE": {
+    "signal": "bearish",
+    "confidence": 65,
+    "reasoning": "TREND: Confirmed downtrend — EMAs fanning bearish (10 EMA $44.98 < 21 EMA $46.16 < 50 EMA $50.47), price 12.1% below 50 EMA and 24.7% below 200 EMA. ADX 31.34 confirms strong trend (though down from wiki's 64.6 on Apr 11, indicating some trend deceleration). Wiki confirms this as one of the strongest downtrends in the analyzed universe. MOMENTUM: All ROC readings negative (5d: -0.94%, 10d: -2.93%, 21d: -16.02%) — bearish momentum intact across all timeframes. MACD histogram slightly positive (+0.426) within a still-negative MACD line (-1.80 vs signal -2.22), indicating minor deceleration of selling pressure but not a bullish reversal. Hourly EMAs are tangled (not aligned in either direction), hourly ADX only 12.17 (weak), and hourly MACD histogram slightly negative — no hourly confirmation of a trend continuation setup. ENTRY RATIONALE: Price is extended below all EMAs; a bearish entry is most cleanly taken on a rally toward the 10/21 EMA zone ($44.98–$46.16). Current price $44.36 is at the lower end with RSI-7 at 15.36 (deeply oversold), suggesting a short-term bounce is more likely before the next leg down. Target set at recent swing low $42.09, stop above 21 EMA. CONFIDENCE DISCOUNT: NVDA EMA-pullback trade failed last run (stop triggered, 0% win rate on this setup type in last 30 days); bearish momentum is decelerating on the hourly, so confidence capped at 65.",
+    "entry": 45.80,
+    "target": 42.20,
+    "stop": 46.50,
+    "timeframe": "5-12 trading days"
+  },
+  "DIS": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "TREND: Daily EMAs are tangled — 10 EMA ($102.69) > 50 EMA ($102.25) > 21 EMA ($101.93). This is NOT a clean uptrend fan (requires 10 > 21 > 50), so `ema_aligned_uptrend` is false. ADX 37.34 is strong and confirms a real trend is in force, with +DI (32.31) well above -DI (18.74). However the EMA tangle disqualifies a clean trend-momentum entry by my rules. MOMENTUM: ROC is mixed — 5d +0.10% (barely positive), 10d -0.14% (slightly negative), 21d +7.65% (positive). The 10d negative reading breaks the requirement for all ROC readings to be positive and expanding. MACD has a bullish crossover (histogram +0.016) but histogram is nearly flat — no clear acceleration. HOURLY POSITIVE: Hourly EMAs are fully aligned uptrend, hourly ADX 34.46 (strong), hourly MACD histogram +0.2345 (expanding positive), hourly volume bias up with OBV rising. Apr 30 saw a strong close (+$2.45) on above-average volume. WIKI NOTE: Prior entry at $103 flagged as 'poor timing' when Bollinger pct_b was 0.98; today pct_b is 0.664 — substantially less stretched, and resistance at $103.59 (Fib 23.6%) was tested on the Apr 30 candle. VERDICT: Hourly trend is clean and bullish, but daily EMA tangle and mixed 5/10d ROC prevent a high-confidence trend-momentum entry. Macro regime is risk-on (S&P all-time highs, Iran de-escalation), which is supportive, but insufficient to override daily structure weakness. Wait for daily EMA alignment to resolve or 10d ROC to turn clearly positive before entering. Neutral.",
+    "entry": 102.50,
+    "target": 107.11,
+    "stop": 100.80,
+    "timeframe": "7-14 trading days"
+  }
+}

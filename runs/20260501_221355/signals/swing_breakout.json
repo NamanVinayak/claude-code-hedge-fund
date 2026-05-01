@@ -1,0 +1,20 @@
+{
+  "NKE": {
+    "signal": "neutral",
+    "confidence": 25,
+    "reasoning": "NKE is consolidating in a range between $42.09 support (1 test) and $46.97 resistance (4 tests, range height ~$4.88). Current price $44.36 is mid-range with no decisive directional break. Daily BB width 0.1051 is moderate — not in a pre-breakout squeeze. Volume is 0.88x the 20-day average, well below the required 1.5x threshold for any confirmed breakout — this is the critical disqualifier. All EMAs are fanning bearish; daily ADX 31.34 is strong but directionally bearish (wiki: ADX was 64.6 on Apr 11, now 31.34 — moderating but still downtrend). Hourly BB width 0.0316 shows some coiling (potential hourly squeeze), but hourly ADX 12.17 is weak and minus_di (24.15) exceeds plus_di (19.42) — bearish pressure still dominates intraday. Hourly OBV is diverging bearish from price. Bullish RSI divergence (daily and hourly) is a positive early signal but insufficient without volume confirmation. No squeeze firing on daily. No breakout is occurring — price has not closed above $46.97 (bullish trigger) nor below $42.09 (bearish trigger). Only setup that could emerge: bullish break above $46.97 on 1.5x volume (target: $51.85 via measured move) or bearish break below $42.09. Lesson check: recent NVDA stop-out on a breakout trade without proper candle confirmation reinforces the need to wait. Monitoring only.",
+    "entry": 46.97,
+    "target": 51.85,
+    "stop": 45.80,
+    "timeframe": "5-10 trading days"
+  },
+  "DIS": {
+    "signal": "bullish",
+    "confidence": 58,
+    "reasoning": "DIS broke out of a compact consolidation base on April 30. The stock coiled in the $100.42–$103.81 zone (hourly resistance with 25 tests) across April 24–29, with daily closes between $101.30–$102.60 forming a tight base. On April 30, price broke decisively: opened $100.91, closed $103.75 — a strong-bodied close above the $103 resistance the wiki explicitly flagged as the breakout confirmation level. Volume confirmation: 9.19M vs 20-day average 7.48M = 1.23x — above average but below the 1.5x threshold, constraining confidence. Measured move: consolidation range $100.42 to $103.81 = $3.39 height. Target: $103.81 + $3.39 = $107.20, which aligns precisely with the daily $107.11 resistance (14 tests) — strong confluence. Support below entry: $101.02 (17 tests, volume confirmed) provides a solid stop anchor. Daily MACD bullish crossover confirmed. Daily ADX 37.34 (strong) with plus_di 32.31 well above minus_di 18.74. Hourly EMAs fully aligned uptrend. Hourly BB width 0.0379 was contracting during the base before the Apr 30 expansion — squeeze-to-fire sequence partially present. RSI(14) 64.64, RSI(21) 67.28 — not overbought, room to run. Caution: daily BB pct_b at 0.664 (upper half) and daily BB width at 0.1219 is moderate, not a deep squeeze — the spring was only partially coiled. Hourly OBV diverging bearishly from price is a watchlist flag. Confidence capped at 58: volume was 1.23x (not 1.5x) and the hourly $103.81 resistance has not yet been cleared on an intraday close basis. Entry on any pullback to the $103.75–$103.90 zone or on a confirmed hourly close above $103.81.",
+    "entry": 103.90,
+    "target": 107.11,
+    "stop": 101.00,
+    "timeframe": "5-10 trading days"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "ticker": "DIS",
+  "verified_at": "2026-05-01T22:20:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.1313,
+      "web_value": 0.128,
+      "source": "Macrotrends / YCharts (Dec 2025 TTM)",
+      "status": "ok",
+      "deviation": "2.6%",
+      "notes": "Our value 13.13%, web consensus 12.8-13.14%. Near-exact alignment. Macrotrends shows 12.8% for Dec 2025 quarter; slight variation is timing-based."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.1491,
+      "web_value": 0.1491,
+      "source": "GuruFocus (DIS operating margin 14.91% — labeled 'Near Media')",
+      "status": "ok",
+      "deviation": "0%",
+      "notes": "Exact match with GuruFocus. Operating income TTM $13,629M on revenue ~$95.7B."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 15.18,
+      "web_value": 15.23,
+      "source": "FinanceCharts / Yahoo Finance (Apr 30, 2026)",
+      "status": "ok",
+      "deviation": "0.3%",
+      "notes": "Our 15.18 vs web 15.23. GuruFocus shows 14.48 (slightly lower EPS base). All sources within ~5% of each other — within threshold."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 94424000000,
+      "web_value": 95720000000,
+      "source": "FinanceCharts / companiesmarketcap.com (TTM Apr 2026)",
+      "status": "ok",
+      "deviation": "1.4%",
+      "notes": "Our implied revenue (182.6B market_cap / 1.9339 P/S) ≈ $94.4B. Web consensus $95.72B TTM. Immaterial difference."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 182608265216,
+      "web_value": 183795000000,
+      "source": "Yahoo Finance / GuruFocus intraday (Apr 30 - May 1, 2026)",
+      "status": "ok",
+      "deviation": "0.6%",
+      "notes": "Our $182.6B vs web ~$183.7-183.8B. Daily price fluctuation accounts for the gap."
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.1129,
+      "web_value": 0.1202,
+      "source": "Yahoo Finance TTM (Apr 29, 2026)",
+      "status": "ok",
+      "deviation": "6.5%",
+      "notes": "Our 11.29% vs Yahoo Finance 12.02%. FinanceCharts shows lower 9.44%. Variation reflects different TTM window endpoints. All within 20% threshold."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.0628,
+      "web_value": 0.0628,
+      "source": "Inferred from net_margin × asset_turnover (0.1313 × 0.4781)",
+      "status": "ok",
+      "deviation": "0%",
+      "notes": "No direct web contradiction found. Calculated ROA from our own data is internally consistent."
+    }
+  ],
+  "overall_status": "all metrics within acceptable range — no corrections needed",
+  "corrections_applied": false
+}

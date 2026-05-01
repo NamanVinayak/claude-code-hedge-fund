@@ -1,0 +1,30 @@
+{
+  "decisions": {
+    "NKE": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 44.36,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 46.94,
+      "stop_loss": 42.09,
+      "risk_reward_ratio": "1.15:1",
+      "timeframe": "no trade",
+      "confidence": 30,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader neutral (30). Macro: neither long nor short clears 2:1 R/R at $44.36. Lessons.md: prior NKE short stopped out by insider-buy bounce in same oversold/insider-buying configuration. Stand aside — reassess on bounce to 21 EMA ($46.16) for short re-entry or break below $42.09 on 1.5x vol."
+    },
+    "DIS": {
+      "action": "buy",
+      "quantity": 2,
+      "entry_price": 102.5,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 107.11,
+      "stop_loss": 101.0,
+      "risk_reward_ratio": "3.07:1",
+      "timeframe": "5-10 trading days",
+      "confidence": 62,
+      "account_risk_pct": 0.13,
+      "reasoning": "Head Trader bullish (62), 4/5 swing agents agree. Pre-earnings momentum (May 6-13 catalyst). Apr 30 breakout above $103 on 1.23x vol, MACD bullish cross, ADX 37.34. Limit at $102.50 pullback for 3.07:1 R/R. Stop $101.00 (17-test support). Allowed max qty=2; 2 shares x $102.50 = $205 within 25% cap."
+    }
+  }
+}

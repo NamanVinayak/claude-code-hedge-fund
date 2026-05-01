@@ -1,0 +1,71 @@
+{
+  "ticker": "NKE",
+  "verified_at": "2026-05-01T22:20:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.0484,
+      "web_value": 0.0484,
+      "source": "Macrotrends / FinanceCharts (Apr 2026)",
+      "status": "ok",
+      "deviation": "0%",
+      "notes": "Exact match. Net income TTM ~$2.25B on revenue ~$46.52B"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": 0.0484,
+      "source": "GuruFocus / Macrotrends (Feb 2026)",
+      "status": "unverified",
+      "deviation": "n/a",
+      "notes": "Our facts bundle has null for operating_margin. Web sources show ~4.84-6% operating margin TTM as of Feb 2026. Cannot calculate deviation; null value left as-is."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 29.21,
+      "web_value": 29.2,
+      "source": "GuruFocus (NKE PE TTM 29.38), FinanceCharts / MacroTrends (Apr 29, 2026 ~28.23-29.20)",
+      "status": "ok",
+      "deviation": "0.03%",
+      "notes": "Essentially identical. Slight cross-source variation 28.23-29.38 reflects intraday price timing."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 46307000000,
+      "web_value": 46510000000,
+      "source": "companiesmarketcap.com / Yahoo Finance TTM May 2026",
+      "status": "ok",
+      "deviation": "0.44%",
+      "notes": "Our implied revenue (market_cap / P/S = 65.75B / 1.4198) ≈ $46.31B. Web consensus $46.51-46.52B. Well within 20% threshold."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 65751388160,
+      "web_value": 65780000000,
+      "source": "capital.com / companiesmarketcap.com (May 1, 2026)",
+      "status": "ok",
+      "deviation": "0.04%",
+      "notes": "Multiple web sources confirm ~$65.69B-$65.87B range as of Apr 30 - May 1, 2026."
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.1476,
+      "web_value": 0.1476,
+      "source": "GuruFocus (NKE ROE 14.76% as of Feb 2026)",
+      "status": "ok",
+      "deviation": "0%",
+      "notes": "Exact match with GuruFocus. Yahoo Finance shows slightly higher 16.02% as of Apr 29 due to more recent quarter inclusion."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.0556,
+      "web_value": 0.052,
+      "source": "Yahoo Finance TTM as of Apr 30, 2026",
+      "status": "ok",
+      "deviation": "6.9%",
+      "notes": "Our value 5.56%, web 5.20%. Deviation ~6.9% — within 20% threshold. Difference reflects more recent quarter weighting in Yahoo's TTM window."
+    }
+  ],
+  "overall_status": "all metrics within acceptable range — no corrections needed",
+  "corrections_applied": false
+}

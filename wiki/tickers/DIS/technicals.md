@@ -1,57 +1,68 @@
 ---
 name: DIS technicals
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-01
+last_run_id: 20260501_221355
 target_words: 350
 stale_after_days: 7
-word_count: 358
-summary: DIS bounced from $92 support to $103 resistance in April 2026; daily MACD bullish crossover and ADX 31 confirm a developing trend, but BB position 0.98 and stochastic 95 flag near-term overextension.
+word_count: 348
+summary: Apr 30 breakout candle above $103 resistance on 1.23x vol; ADX 37.34 strong; MACD bullish crossover; hourly EMAs fully aligned; setup type pre-earnings momentum buy
 ---
 
 # DIS — Technicals
 
 ## TL;DR
 
-As of the April 15, 2026 run (`20260415_110848`), DIS had rallied from a $92.42 swing low to close at $102.59, breaking through prior resistance. Daily MACD histogram just turned strongly positive (+1.03), ADX sits at 31 (above the 25 threshold confirming a real trend), and hourly EMAs are fully aligned uptrend with hourly ADX 52. The caveat: Bollinger Band position at 0.98 and stochastic at 95.3 mean the stock arrived at the top of the daily band right as it pierced resistance. Good trend, poor timing for a fresh entry at $103.
+As of May 1, 2026 (run `20260501_221355`), DIS broke out of a week-long consolidation base on April 30: strong bullish engulfing candle (open $100.91, close $103.75) on 1.23x above-average volume. Daily MACD has a fresh bullish crossover. ADX 37.34 with +DI (32.31) well above -DI (18.74). Hourly EMAs fully aligned uptrend. Limit-buy zone $102.50 on a pullback; stop $101.00; target $107.11 (3.07:1 R/R). Prior technicals state (good trend, poor timing at $103) has been superseded by the breakout confirmation.
 
-## Daily chart state (as of 2026-04-15, run `20260415_110848`)
+---
 
-| Indicator | Reading | Interpretation |
+## Multi-timeframe state
+
+All data from run `20260501_221355`.
+
+| Indicator | Daily Value | Interpretation |
 |---|---|---|
-| ADX | 31.0 | Above 25 — real trend developing |
-| MACD histogram | +1.03 | Bullish crossover; was deeply negative prior |
-| SuperTrend (daily) | Bullish | Price above $95.42 support level |
-| RSI-14 | 68.2 | Approaching overbought (70) but not yet there |
-| Bollinger Band position | 0.98 | Right at the upper band — stretched |
-| Stochastic %K | 95.3 | Overbought zone |
-| CCI | 148.6 | Elevated; mean reversion agent flagged this |
-| Price vs SMA-200 | -6.7% (SMA200 ~$110.56) | Still below long-term average |
-| Squeeze | Bullish breakout, increasing momentum | Spring released to the upside |
+| Price (May 1) | ~$103.75 (Apr 30 close) | Broke out above prior $103 resistance |
+| 10 EMA | $102.69 | Price above — bullish |
+| 21 EMA | $101.93 | Tangled (not clean fan, but above) |
+| 50 EMA | $102.25 | Price above — bullish |
+| 200 EMA | $105.49 | Overhead — still below |
+| 200 SMA | $109.33 | Longer-term overhead — still below |
+| ADX | 37.34 | Strong trend, up from 31.0 |
+| +DI / -DI | 32.31 / 18.74 | Bullish dominance confirmed |
+| MACD histogram | +0.016 | Fresh bullish crossover (positive) |
+| RSI-14 | 64.64 | Healthy — not overbought |
+| BB position (daily) | 0.664 | Upper half — not stretched (was 0.98 on Apr 15) |
+| BB width (daily) | 0.1219 | Moderate — spring partially coiled |
+| Z-score | 0.75 | Not extended |
+| Volume (Apr 30) | 9.19M vs 7.48M avg | 1.23x — above average, below 1.5x ideal |
 
-## Hourly chart state
+| Indicator | Hourly Value | Interpretation |
+|---|---|---|
+| EMA alignment | Fully aligned uptrend | 10 > 21 > 50 — clean bullish fan |
+| ADX (hourly) | 34.46 | Strong intraday trend |
+| MACD histogram (hourly) | +0.2345 | Expanding positive |
+| OBV (hourly) | Rising (accumulation) | Short-term bullish |
+| OBV (daily) | Distribution mode | Longer-term bearish split |
 
-| Indicator | Reading |
-|---|---|
-| EMA alignment | Fully aligned uptrend (10 > 21 > 50) |
-| ADX (hourly) | 51.7 — strong intraday trend |
-| RSI (hourly) | 70.5 |
-| SuperTrend (hourly) | Bullish; stop-level ~$97.50 |
-| STC | 72 — approaching overbought |
+---
 
-## Key price levels (as of April 15, 2026)
+## Key price levels (as of May 1, 2026)
 
-- **$92.42** — April 2026 swing low, hard support
-- **$96.78** — Fib 78.6% retracement (pullback entry level per pullback agent)
-- **$99.12** — Fib 61.8% retracement (key support on any dip)
-- **$100.30 / $100.50** — prior horizontal resistance, now pivot
-- **$102.59** — April 15 close; prior resistance, now potential support
-- **$107–$109** — target zone / prior swing high cluster
-- **$110.56** — 200-day SMA (major overhead resistance)
+| Level | Value | Context |
+|---|---|---|
+| Volume-confirmed support | $101.02 | 17 tests — hard stop anchor |
+| Limit-buy zone | $102.50 | Pullback entry target (head trader, run `20260501_221355`) |
+| Fib 61.8% retracement | $102.11 | Hourly support cluster confluence |
+| Apr 30 close / prior resistance | $103.75 | Now potential support |
+| Hourly resistance | $103.81 | 25 tests (hourly) |
+| Target | $107.11 | 14-test resistance; measured move from range |
+| 200-day EMA (overhead) | $105.49 | Institutional headwind above target path |
 
-## April 11 run context (`swing_20260411_211655`)
+---
 
-Four days earlier, DIS was at $99.17 with EMAs aligned bearish (10 EMA 97.70 below 21 EMA 98.29 below 50 EMA 101.43) and ADX 27.58. The stock was testing the downtrend from above. RSI 49, MACD histogram mildly positive at +0.73 — just starting to turn. The April 15 run confirmed the turn was real.
+## Setup type
 
-## What to watch
+**Pre-earnings momentum breakout buy.** April 30 produced a coil-and-fire sequence: DIS consolidated $100.42–$103.81 for a week, then broke out on above-average volume. Q2 FY2026 earnings May 6 (~4 trading days) is the catalyst. Hourly OBV rising confirms short-term accumulation. Key caution: daily OBV still in distribution mode; DIS remains below both 200-day averages; volume was 1.23x (not 1.5x ideal). Entry on pullback to $102.50, not at $103.75. Stop $101.00 on close basis.
 
-Entry discipline is critical. The head trader in run `20260415_110848` specified: do not enter above $103 — that is chasing into resistance. The actionable window is a dip back to $99.50–101.00 (fib 61.8/hourly SuperTrend support zone) with a stop at $97.50. If price reclaims $103 with volume after a clean consolidation, that shifts posture to breakout confirmation mode.
+*Data freshness: 7-day stale threshold.*

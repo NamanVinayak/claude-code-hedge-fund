@@ -1,71 +1,63 @@
 ---
 name: NKE technicals
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-01
+last_run_id: 20260501_221355
 target_words: 350
 stale_after_days: 7
-word_count: 362
-summary: extreme downtrend — ADX 64.6, all EMAs aligned bearish, multi-oscillator oversold floor near $42
+word_count: 347
+summary: downtrend decelerating — ADX 31.34 (from 64.6 on Apr 11), price $44.36 mid-range; RSI-7 15.36 extreme oversold; coin-flip zone — no trade
 ---
 
 # NKE — Technicals
 
 ## TL;DR
 
-As of April 11, 2026 (`swing_20260411_211655`), NKE was in one of the strongest downtrends in the analyzed universe (ADX 64.6). All EMAs fanning bearish, price at $42.62 — 35% below the 200 SMA. Every momentum oscillator at or near statistical extremes. A bounce from this zone was likely; the trend direction was not in dispute.
+As of May 1, 2026 (run `20260501_221355`), NKE remains in a confirmed downtrend but the trend has decelerated materially — ADX fell from 64.6 (Apr 11) to 31.34. Price at $44.36 sits mid-range between $42.09 support and $46.97 resistance. RSI-7 at 15.36 is a historically extreme oversold reading. Neither side offers a clean R/R above 2:1 at current price; prior setup type (continuation short on oversold bounce) is no longer clean.
 
 ---
 
 ## Multi-timeframe state
 
-All data from `swing_20260411_211655` unless noted.
+All data from run `20260501_221355`.
 
 | Indicator | Value | Interpretation |
 |---|---|---|
-| Price (Apr 11) | $42.62 | Near 52-week low of $42.36 |
-| 10 EMA | $45.74 | Price well below — bearish |
-| 21 EMA | $49.27 | Fanning bearish |
-| 50 EMA | $54.51 | Further bearish fan |
-| 200 SMA | $65.34 | Price 35% below — extreme |
-| ADX | 64.64 | Very strong trend (>60 rare) |
-| RSI (14) | 22.6 | Deeply oversold (<30) |
-| RSI (28) | 17.95 | Longer-window confirms extreme |
-| Stochastic K | 2.19 | At floor — near 0 |
-| Williams %R | -97.8 | Extreme |
-| Z-score | -2.06 | Past -2 standard deviation |
-| MACD histogram | -0.56 | Still negative, no cross |
-| CCI | -107.0 | Bearish territory |
-| Bollinger position | 0.12 | Hugging lower band |
-| ROC (5d) | -3.6% | Accelerating |
-| ROC (10d) | -18.1% | Catastrophic |
-| ROC (21d) | -23.5% | Catastrophic |
-| Historical volatility | 59.1% | High — wide stops required |
-| ATR ratio | 4.6% | Daily range ~$1.97 on $42.62 |
+| Price (May 1) | $44.36 | Mid-range; prior bounce from $42.09 |
+| 10 EMA | $44.98 | Price just below — bearish |
+| 21 EMA | $46.16 | Target on bounce for short re-entry |
+| 50 EMA | $50.47 | Fanning bearish |
+| 200 EMA | ~$58.80 | Price 24.7% below — extreme |
+| ADX | 31.34 | Down from 64.6 — trend decelerating |
+| RSI-7 | 15.36 | Extreme oversold (historically rare) |
+| RSI-21 | 28.53 | Still deeply oversold |
+| MACD histogram | +0.426 | Minor positive — early deceleration signal |
+| BB position (daily) | ~0.45 | Mid-band |
+| BB width (daily) | 0.1051 | Moderate — no pre-breakout squeeze |
+| ROC (5d) | -0.94% | Bearish, slowing |
+| ROC (10d) | -2.93% | Bearish |
+| ROC (21d) | -16.02% | Catastrophic |
+| Hourly ADX | 12.17 | Weak — no intraday trend |
+| Hourly OBV | Bearish divergence | Daily and hourly bearish |
 
 ---
 
 ## Key levels
 
-| Level | Value | Source |
+| Level | Value | Context |
 |---|---|---|
-| 52-week low | $42.36 | `swing_20260411_211655` web_research |
-| Apr 11 price | $42.62 | `swing_20260411_211655` signals |
-| 10 EMA (resistance) | $45.74 | Swing head trader bounce entry zone |
-| Apr 17 entry price | $45.54 | `20260417_233350` decision |
-| Apr 11 short entry | $44.00 | `swing_20260411_211655` decision |
-| Short stop (Apr 17) | $47.50 | `20260417_233350` decision |
-| Short stop (Apr 11) | $46.50 | `swing_20260411_211655` decision |
-| Bear target (Apr 17) | $41.50 | `20260417_233350` decision |
-| Bear target (Apr 11) | $38.00 | `swing_20260411_211655` decision |
+| Range low (support) | $42.09 | 1 test; bear trigger on 1.5x vol break |
+| Current price | $44.36 | Mid-range — neither long nor short clean |
+| 10 EMA (short-term resistance) | $44.98 | Short entry zone on approach |
+| 21 EMA (bounce target/short entry) | $46.16 | Best short entry zone for next attempt |
+| Range high (resistance) | $46.97 | 4 tests; bull trigger if closed above |
+| Bull breakout target | $51.85 | Measured move above $46.97 |
 
 ---
 
 ## Setup type
 
-**Continuation short on oversold bounce.** Both runs targeted entry near the 10 EMA ($44–$46 zone) — not at the absolute low. The logic: ADX 64.6 trend continuation shorts have higher probability when entered on a relief bounce rather than into the capitulation low, where short-covering can produce violent reversals (which did happen in April, see trades.md).
+**No trade — monitoring only.** Prior setup was "continuation short on oversold bounce." That setup is degraded: ADX has dropped from 64.6 to 31.34 (trend deceleration), RSI-7 at 15.36 creates violent reversal risk (confirmed: prior NKE short stopped out in this zone, -$35.70, see trades.md). R/R math at current price: long 1.15:1, short 0.87:1 — both below the 2:1 threshold (source: `swing_head_trader`, run `20260501_221355`).
 
-The Hurst exponent near zero (stat-arb agent, `swing_20260411_211655`) indicates a near-random-walk price process at this scale — high volatility, not a smooth trend. Combined with skewness of -2.7 and kurtosis 16.3, this signals fat-tailed downside with occasional explosive reversals.
+Watch for: (a) bounce to 21 EMA ($46.16) for short re-entry at better R/R, or (b) break below $42.09 on 1.5x volume for confirmed breakdown continuation.
 
----
-
-*Data freshness: 7-day stale threshold. Re-run prepare.py to refresh.*
+*Data freshness: 7-day stale threshold.*
