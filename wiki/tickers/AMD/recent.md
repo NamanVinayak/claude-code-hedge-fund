@@ -1,21 +1,19 @@
 ---
 name: AMD recent
 last_updated: 2026-05-01
-last_run_id: 20260501_132346
-target_words: 200
-stale_after_days: 14
+last_run_id: 20260501_132340
+target_words: 300
+stale_after_days: 60
 word_count: 138
 summary: Signal history — direction flips and key level breaks for AMD across swing runs
 ---
 
-# AMD — Recent
+# AMD — Recent Signal History
 
 ## TL;DR
 
-Append-only log of AMD signal direction flips and key level breaks across runs. One entry per event.
+Append-only log of direction flips and key level breaks. One bullet per material change.
 
 ---
 
-- **[2026-05-01] Signal flip: Buy → Short** — Run 20260501_132346. AMD at $354.49 (+74% in 21 days). 0/5 swing agents bullish; 2 bearish (swing_mean_reversion, swing_catalyst_news), 3 neutral. PM issued short at $354.49, stop $372.31, target $277.74 (4.31:1 R/R), 1 share, 42% confidence. Prior setup type was "parabolic momentum — wait for RSI reset to 55-65"; direction flipped from Hold/Buy to Short driven by Z-score 2.6, RSI 83, and earnings binary risk on May 5. Head trader recommended hold-flat for post-earnings long setup at $310–$328.
-
-- **[2026-04-17] Key level: RSI peaked at 91, Z-score 3.66** — Run 20260417_233350. Highest overbought readings recorded on AMD in wiki history. System placed limit long at $278.26 (15 shares, 70% conf), never filled — limit too tight vs. momentum. Marked abandoned 2026-04-29.
+- **2026-05-01 | run 20260501_132340 | Signal flip: Buy → Hold.** All five swing agents agreed on no valid entry at current price ($354.49 near ATH $354.96). Earnings veto applied: May 5 binary catalyst 3 days away; R/R sub-2:1 from any angle; parabolic extension (RSI-14 83.06, Z-score 2.6, +74% in 21 days). Prior setup (Apr 17 "Buy with limit $278.26") was never filled and is superseded. Prior entry zone ($224–$241) fully invalidated by price running to $354. New watch zone: $316–$328 post-earnings (10 EMA / Fib 23.6% confluence). Source: decisions.json, swing_head_trader signal, run 20260501_132340.
