@@ -366,7 +366,7 @@ def risk_management_agent(state: AgentState, agent_id: str = "risk_management_ag
         progress.update_status(
             agent_id,
             ticker,
-            f"Adj. limit: {combined_limit_pct:.1%}, Available: ${max_position_size:.0f}"
+            f"Risk cap: {effective_max_risk_pct:.1f}%, Available: ${remaining_position_dollars:.0f}"
         )
 
     # Sin #10 cluster cap: even if no single pair crosses the threshold, a
