@@ -1,41 +1,42 @@
 ---
 name: macro regime
-last_updated: 2026-04-30
-last_run_id: 20260430_124724
+last_updated: 2026-05-01
+last_run_id: 20260501_132346
 target_words: 400
 stale_after_days: 14
-word_count: 408
-summary: Mixed-to-cautious — AI mega-cap earnings split (Alphabet/Amazon positive, Meta -9% capex shock); Dow logs 5th straight losing session; Fed holds at 3.5%-3.75%; Iran/Strait of Hormuz is the dominant tail risk.
+word_count: 405
+summary: Mixed-to-cautious — S&P/Nasdaq closed April at all-time highs (best month since 2020) but Q1 GDP missed (2.0% vs 2.3%) and PCE ran hot at 3.5%; Fed chair transition underway; Iran/Strait of Hormuz is the dominant tail risk.
 ---
 
 # Macro Regime
 
 ## TL;DR
 
-**Mixed-to-cautious, with AI tailwind intact but near-term headwinds amplifying.** Mega-cap earnings week split: Alphabet (+7%) and Amazon (+2%) confirmed AI capex expansion; Meta fell 9% on capex shock, injecting sector uncertainty. Dow logged its fifth consecutive losing session (–0.57% to 48,861). S&P 500 and Nasdaq were roughly flat. Fed held at 3.5%–3.75% (April 29, third consecutive hold after three cuts in 2025). US-Iran military blockade of Iranian ports is the dominant geopolitical risk — IMF projects 3.1% global growth and 4.4% headline inflation in 2026 under conflict baseline. AI hardware thematic remains the primary risk-on engine for NVDA-type names despite the broader macro friction.
+**Mixed-to-cautious, with AI tailwind intact but growth/inflation divergence widening.** S&P 500 and Nasdaq closed April at all-time highs — best monthly performance since 2020. However, Q1 2026 GDP came in at 2.0% vs 2.3% forecast and PCE inflation ran hot at 3.5%, creating a stagflation-lite backdrop. Fed held at 3.5%–3.75% (April 29, 8-4 vote — most dissents since 1992) citing elevated inflation and Middle East uncertainty. Powell stepping down as Fed chair May 15; Kevin Warsh advancing through Senate to replace him. US-Iran military tensions and Strait of Hormuz oil-supply threats remain the dominant left-tail geopolitical risk. AI hardware thematic remains the near-term bull engine but is gated on AMD earnings (May 5) as the next sector read-through.
 
 ## Fed posture
 
-The Federal Reserve voted 8-4 on April 29 to hold the federal funds rate at **3.5%–3.75%** — third consecutive hold following three rate cuts in 2025. Inflation remains above the 2% target due to elevated energy prices from the Iran conflict and tariff pass-through. The committee flagged Iran as a major uncertainty. Powell announced he will stay on the Board of Governors after his chair term expires, preserving institutional continuity. No cuts are priced through 2026 [web_research/NVDA.json macro_context, 20260430_124724].
+The Federal Reserve voted **8-4** on April 29 to hold the federal funds rate at **3.5%–3.75%** — the most dissents since 1992, flagging internal division on when to cut. Inflation remains above target driven by energy prices from Iran tensions and tariff pass-through (PCE 3.5%). Chair Powell stepping down May 15 but staying on as governor; Kevin Warsh's Senate confirmation is advancing. Policy continuity is the baseline assumption, but the leadership transition adds uncertainty [web_research/AMD.json macro_context, 20260501_132346].
 
 ## Rate trajectory and inflation
 
-Elevated energy prices driven by the US-Iran conflict are the primary inflation pressure. IMF cut 2026 global growth forecast to 3.1% and raised headline inflation to 4.4%, assuming ~19% energy price spike from a short-lived conflict. US-China trade tariffs add a secondary structural inflation layer. Higher-for-longer remains the base case [web_research/NVDA.json macro_context, 20260430_124724].
+Q1 2026 GDP of 2.0% (vs 2.3% consensus) signals growth softening. PCE inflation at 3.5% is above target and constrains the Fed's ability to cut. No near-term rate cuts expected through 2026. Higher-for-longer is the base case. US-China semiconductor export controls under active review add a secondary structural headwind for the AI hardware supply chain [web_research/AMD.json macro_context, 20260501_132346].
 
 ## Market context
 
-Dow Jones logged its fifth straight losing session (–0.57% to 48,861) on April 30. S&P 500 and Nasdaq roughly flat as investors digested the hawkish-leaning Fed hold and rising oil prices. Despite intraday chop, the S&P has gained approximately +9% in April — still tracking for its best month since 2020. The AI capex cycle (Alphabet/Amazon beat) is the near-term bull engine; Meta's 9% decline on capex shock is the primary risk sentiment headwind for AI hardware names. Oil surge driven by US-Iran tensions added pressure on financials and consumer sectors [web_research/NVDA.json macro_context, 20260430_124724].
+S&P 500 and Nasdaq closed April at all-time highs — S&P gained roughly +9% in April, best month since 2020. Despite this, May 1 futures are mixed as markets digest the Q1 GDP miss and PCE miss. Apple earnings beat added a positive pre-market tone. AI capex supercycle thesis is confirmed by Intel's Q1 beat (+22% Data Center YoY), Alphabet/Amazon earnings, OpenAI/Oracle GPU commitments to AMD. Meta's capex shock (–9% post-earnings) is the residual risk-sentiment headwind for AI hardware names [web_research/AMD.json macro_context, 20260501_132346].
 
 ## Geopolitical and regulatory
 
-**US military blockade of Iranian ports is the dominant left-tail risk.** A Strait of Hormuz closure scenario would spike global oil prices, reignite inflation, and force the Fed further out on its hold. Secondary flashpoints include US involvement in Venezuela and Greenland strategic competition. US-China tariffs remain a structural supply chain headwind. Midterm elections 2026 are adding policy uncertainty to an already complex backdrop [web_research/NVDA.json macro_context, 20260430_124724].
+**Iran's Strait of Hormuz threats are driving oil prices +40% YTD** — the dominant left-tail risk. A closure would spike global oil prices, reignite inflation, and force the Fed to delay any policy pivot. US-China great-power competition intensifying, with Europe targeting Chinese overcapacity in mature-node semiconductors; could benefit AMD's TSMC-fabricated products competitively. US midterm elections creating policy uncertainty [web_research/AMD.json macro_context, 20260501_132346].
 
 ## Risk-off triggers to watch
 
 - **Iran escalation / Strait of Hormuz closure** — oil above $100, inflation re-accelerates, broad de-risking
-- **Meta capex shock contagion** — if Amazon or MSFT revise AI capex lower in coming weeks, NVDA demand thesis is directly impacted
-- **Broad mega-cap earnings disappointment** — next binary read-through is AMD earnings (late April / early May)
+- **AMD earnings miss (May 5 after close)** — next major AI hardware sector read-through; bar is elevated with stock at all-time highs
+- **PCE staying elevated** — forces Fed further out; stagflation-lite scenario suppresses P/E multiples for growth/tech
+- **Kevin Warsh confirmation** — historically hawkish; markets may re-price if his Senate testimony is hawkish on rates
 
 ## Last updated
 
-2026-04-30. Sourced from `web_research/NVDA.json` macro_context (dated 2026-04-30) and `signals_combined.json` swing_macro_context signal from run `20260430_124724`. Supersedes prior entry sourced from `20260430_051455`.
+2026-05-01. Sourced from `web_research/AMD.json` macro_context (dated 2026-05-01) and `signals_combined.json` swing_macro_context signal from run `20260501_132346`. Supersedes prior entry sourced from `20260430_124724`.
