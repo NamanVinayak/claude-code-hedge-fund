@@ -6,7 +6,7 @@ This file is for resuming work after a conversation compaction or session change
 
 ## Current state in one paragraph
 
-The swing-stock AI hedge fund is fully autonomous AND now has a closed feedback loop. The pipeline (5 swing strategies → Head Trader → Swing PM → Explainer → Wiki Curator) runs as Anthropic Routines. Every closed trade flows back into the wiki: a nightly `wiki-maintenance` routine (10pm PT daily; was Sundays only) reads Turso, writes a lesson to `wiki/meta/lessons.md`, prepends an outcome note to the ticker's `thesis.md`, and moves the trade to "Recently Closed" in `trades.md`. **Every swing agent now reads lessons before voting** — strategies via the manifest-driven facts-bundle injector, Head Trader by reading the wiki files directly per its dispatch instructions, PM as before. Pending limit-order exposure is now correctly subtracted from PM cash (was a real math bug). Aggregate.py reads portfolio state from Turso (cloud), not local SQLite. First auto-written lesson — NVDA stop_hit -$264.65 — landed on May 1. Live dashboard still at **https://namanvinayak.github.io/claude-code-hedge-fund/**, GitHub Actions still drives the 5-min ingester→simulator→dashboard cycle. Wiki feature flag ON.
+The swing-stock AI hedge fund is fully autonomous AND has a hardened closed feedback loop. The pipeline (5 swing strategies → Head Trader → Swing PM → Explainer → Wiki Curator) runs as Anthropic Routines. Every closed trade flows back into the wiki: a nightly `wiki-maintenance` routine (10pm PT daily; was Sundays only) reads Turso, writes a lesson to `wiki/meta/lessons.md` (with auto-aggregated `## Patterns` table on top by Sunday compactor), prepends an outcome note to the ticker's `thesis.md` (preserved through curator rewrites), and moves the trade to "Recently Closed" in `trades.md`. **All 7 swing agents now read lessons.md before voting** — strategies + PM via the manifest-driven injector (using `full` mode after a critical silent-empty bug was fixed), Head Trader by reading wiki files directly per dispatch instructions. Pending limit-order exposure is correctly subtracted from PM cash. `aggregate.py` reads portfolio state from Turso, and crashes loud if `--require-turso` is set + creds missing OR Turso fails at runtime. Day-of-week / date logic is consistently America/Los_Angeles (the routine's wallclock). SQLite cutoff queries now use `datetime()` to compare across timezones correctly. First auto-written lesson — NVDA stop_hit -$264.65 — landed on May 1. Live dashboard at **https://namanvinayak.github.io/claude-code-hedge-fund/**, GitHub Actions drives the 5-min ingester→simulator→dashboard cycle. Wiki feature flag ON.
 
 ## What just happened (May 01 session — memory loop closed)
 
@@ -20,6 +20,16 @@ The swing-stock AI hedge fund is fully autonomous AND now has a closed feedback 
 8. **Fix B — Head Trader sees wiki memory** — `swing_head_trader.md` got a "Wiki Memory" section. `.agents/skills/swing/SKILL.md` Step 4 now instructs the Head Trader to read `wiki/meta/lessons.md` and `wiki/tickers/<T>/trades.md` (TL;DR) before synthesizing. Head Trader is intentionally NOT in the manifest because it has no facts bundle.
 9. **Routine env hardened** — user added `TURSO_DATABASE_URL` + `TURSO_AUTH_TOKEN` to the shared `hedge-fund-prod` cloud environment used by all routines. Without this, today's aggregate.py change to read from Turso would have silently fallen back to empty local SQLite.
 10. **First nightly wiki update auto-ran** on May 1 ("Run now") and successfully wrote the NVDA lesson + updated `wiki/tickers/NVDA/{thesis,trades}.md`. Auto-merged to main via `claude/admiring-wright-bwyve` → `main` workflow.
+11. **PT timezone fix** (`3d59f04`) — switched all day-of-week / date checks in wiki-maintenance from `America/New_York` to `America/Los_Angeles` after realizing 10pm PT = 1am Saturday ET, which would have silently skipped Friday-night runs.
+12. **`--require-turso` flag** (`f20727e`, hardened by `d77ace8`) — `aggregate.py` now crashes loud (FATAL) when Turso creds are missing OR when a runtime Turso error happens. All 4 production skills (swing, daytrade, invest, research) pass `--require-turso`.
+13. **`check_docs_drift.py` sys.path fix** (`f4c4161`) — script prepends project root to `sys.path` so `import ai_hedge.*` works inside the routine container (where the project isn't installed editable).
+14. **Confidence_score system attempted then reverted** (`8d37abd` → `074daa0`) — added a numeric thesis confidence score, then reverted after recognizing LLMs can read lessons.md + trades.md as text and reason directly without needing a separate dial. Kept the deterministic patterns table (compactor-aggregated win rates per setup type).
+15. **Critical silent bug — `lessons_tldr` returned empty string** (`ae802b9`) — `lessons.md` has no `## TL;DR` heading, so `read_tldr()` produced an empty slice. Fix A (lessons → strategies, shipped earlier in the session) had been silently delivering empty context. Switched manifest to `full` mode for all 6 agents that read lessons. Verified `build_wiki_context('swing_trend_momentum', 'NVDA')` now returns 791 chars.
+16. **4 HIGH bug fixes from a `superpowers:systematic-debugging` audit** — each in its own commit:
+    - `d77ace8` H1: re-raise Turso errors when `--require-turso` is set (was being swallowed by a try/except)
+    - `2d480b1` H2: tighten lesson dedup to match `[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME]` (4 fields), so same-day multi-lot closes don't drop the second lot's lesson
+    - `a2a8005` H3: switch `closed_at` cutoff query to `datetime(closed_at) >= datetime(?)` so timezone-offset strings compare correctly
+    - `751be27` H4: add hard rule to `wiki_curator.md` to preserve `⚠️ Recent trade:` / `✓ Recent trade:` lines through curator rewrites
 
 ## Previously shipped (Apr 30 — still current)
 
@@ -97,10 +107,19 @@ A creative-brief delegate prompt for redesigning the dashboard UI was prepared i
 - Sin #16: stop management (trailing/breakeven beyond `target_price_2`)
 - Sin #19: Routines reliability — known Anthropic-side bugs; partly mitigated by smaller routines + Sonnet pin
 
-**Memory architecture follow-ups (May 1 audit):**
-- Numeric `confidence_score` field on thesis (currently a string warning)
-- Lessons aggregation / pattern extraction (currently flat append-log)
-- Investigate why `check_docs_drift.py` fails on module import inside the routine container (passes locally)
+**Memory architecture follow-ups (May 1 audit, MEDIUM-priority — not yet shipped):**
+- M1: free-text setup-type vocabulary fragments the patterns table (lock to ~10 strings)
+- M2: `tracker/ingest_decisions.py` silently ignores `sell` / `cover` actions (PM-driven exits never happen)
+- M3: same lex-string TZ comparison risk in `aggregate.py recent_closed=7` window (lower-impact than H3 fix)
+- M4: `read_tldr()` returns empty silently when a page lacks `## TL;DR` heading (caught by `ae802b9` for lessons; could recur on any new manifest entry)
+- M5: malformed YAML front-matter silently treated as no-frontmatter (`_split_front_matter` failure mode)
+- M6: PT-date filename vs UTC cutoff edge case in `tracker/wiki_daily_update.py` at midnight crossings
+- L1–L5: simulator partial-profit booking, `entry_fill_price` falsy fallback, ingest dedup edge case, default-cash mismatch, stale schedule comment
+
+**Resolved (May 1):**
+- ✅ Numeric confidence_score (rolled back — LLM reads text directly)
+- ✅ Lessons pattern aggregation (deterministic compactor step, `## Patterns` block at top of lessons.md)
+- ✅ `check_docs_drift.py` module import (sys.path prepend fix in `f4c4161`)
 
 ## Conventions to keep
 
