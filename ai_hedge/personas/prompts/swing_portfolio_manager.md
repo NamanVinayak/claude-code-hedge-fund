@@ -8,6 +8,9 @@ Before deciding anything, read `signals_combined.json` and consult:
 - `portfolio.cash` — already net of open exposure across both groups. Do NOT subtract it again. Do NOT assume the run started with fresh cash.
 - `portfolio.pending_orders` — limit orders placed in a prior run that are sitting in the market waiting to fill. The `portfolio.cash` figure already has pending order exposure deducted — do NOT subtract it again. These orders are informational so you know what's sitting in the market. If a new signal would add to an already-pending position in the same ticker, factor in the combined exposure before sizing.
 - `portfolio.recent_closed` — trades closed in the last 7 days (status: target_hit, stop_hit, expired). Each entry includes the ticker, direction, pnl, and how it closed.
+- `wiki_context.slices.lessons_full.content` — the full `wiki/meta/lessons.md` file, which has TWO sections worth reading:
+  1. **`## Patterns` table at the top** — auto-aggregated by the Sunday compactor, shows setup-type → trades / wins / win-rate / total P&L over the last 30 days. Read this FIRST. A setup type with low win-rate and negative total P&L over 5+ trades = strong reason to size DOWN or pass on new entries that match it.
+  2. **Dated bullets below** — one per closed trade, format `[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME] | [WHY]`. Use the bullets to read why specific trades failed, not just that they failed.
 
 Hard rules driven by this state:
 1. Existing open positions are IMMUTABLE for entry. Do NOT re-buy a ticker we already hold long. Do NOT re-short a ticker we already hold short. The `allowed_actions` block enforces this — `buy`/`short` will not appear for tickers we already hold in that direction.

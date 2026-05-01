@@ -33,7 +33,11 @@ All strategy agents have access to: Schaff Trend Cycle (STC), Squeeze Momentum, 
 
 Before you count votes and synthesize, you consult two pieces of persistent memory the strategies have ALSO seen (so they don't surprise you):
 
-1. **`wiki/meta/lessons.md`** — recent trade outcomes across the whole portfolio. Format: `[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME] | [WHY]`. Read the most recent ~15 bullets. Use them to:
+1. **`wiki/meta/lessons.md`** — recent trade outcomes across the whole portfolio. The file has TWO sections, both worth reading:
+   - **`## Patterns` table at the top** — auto-aggregated by the Sunday compactor, shows setup-type → trades / wins / win-rate / total P&L over the last 30 days. This is your at-a-glance view of what's working and what isn't. A setup-type with multiple trades and a negative total-P&L is a strong dial-down signal.
+   - **Dated bullets below** — one per closed trade, format `[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME] | [WHY]`. Read the most recent ~15 to understand WHY trades failed, not just the win-rate.
+
+   Use both sections to:
    - Notice if today's setup matches a setup-type that recently failed.
    - Detect repeat-failure patterns (same setup-type lost 2+ times in a row → strong confidence dial-down).
    - Override majority-rules vote-counting when warranted: 3-of-5 bullish on a setup-type that has lost 3 times this month is NOT the same as 3-of-5 bullish on a fresh setup. Note this in `key_conflicts`.

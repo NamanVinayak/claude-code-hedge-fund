@@ -22,27 +22,27 @@ AGENT_MANIFEST: dict[str, list[tuple[str, str, str]]] = {
     "swing_trend_momentum": [
         ("ticker", "technicals", "tldr"),
         ("macro", "regime", "tldr"),
-        ("meta", "lessons", "tldr"),
+        ("meta", "lessons", "full"),
     ],
     "swing_mean_reversion": [
         ("ticker", "technicals", "tldr"),
         ("ticker", "recent", "tldr"),
-        ("meta", "lessons", "tldr"),
+        ("meta", "lessons", "full"),
     ],
     "swing_breakout": [
         ("ticker", "technicals", "full"),
-        ("meta", "lessons", "tldr"),
+        ("meta", "lessons", "full"),
     ],
     "swing_catalyst_news": [
         ("ticker", "catalysts", "full"),
         ("macro", "calendar", "full"),
-        ("meta", "lessons", "tldr"),
+        ("meta", "lessons", "full"),
     ],
     "swing_macro_context": [
         ("macro", "regime", "full"),
         ("macro", "sectors", "full"),
         ("ticker", "thesis", "tldr"),
-        ("meta", "lessons", "tldr"),
+        ("meta", "lessons", "full"),
     ],
     # Head trader: NOT listed here intentionally. The head trader has no
     # facts file (it reads strategy signals via a prompt template), so the
@@ -54,7 +54,7 @@ AGENT_MANIFEST: dict[str, list[tuple[str, str, str]]] = {
     "swing_portfolio_manager": [
         ("ticker", "thesis", "tldr"),
         ("ticker", "trades", "full"),
-        ("meta", "lessons", "tldr"),
+        ("meta", "lessons", "full"),
     ],
 }
 
