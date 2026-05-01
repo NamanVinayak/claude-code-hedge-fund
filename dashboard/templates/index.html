@@ -278,6 +278,20 @@
             <span class="pos-key">R:R</span>
             <span class="rr-badge">{{ p.rr }}</span>
         </div>
+        {% if p.quantity and p.position_value %}
+        <div class="pos-row">
+            <span class="pos-key">Size</span>
+            <span class="pos-val">{{ p.quantity }} sh / ${{ "%.0f"|format(p.position_value) }}</span>
+        </div>
+        {% endif %}
+        {% if p.risk_dollars %}
+        <div class="pos-row">
+            <span class="pos-key">Risk if stopped</span>
+            <span class="pos-val loss">
+                ${{ "%.0f"|format(p.risk_dollars) }}{% if p.account_risk_pct %} ({{ "%.2f"|format(p.account_risk_pct) }}% of cap){% endif %}
+            </span>
+        </div>
+        {% endif %}
 
         {% if p.stop_loss != '-' and p.target_price != '-' %}
         {% set stop  = p.stop_loss|float %}

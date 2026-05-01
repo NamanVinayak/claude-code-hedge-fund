@@ -29,6 +29,9 @@ Allowed:
 Format:
 {{
   "decisions": {{
-    "TICKER": {{"action":"...","quantity":int,"confidence":int,"reasoning":"...","duration":"..."}}
+    "TICKER": {{"action":"...","quantity":int,"confidence":int,"account_risk_pct":float,"reasoning":"...","duration":"..."}}
   }}
 }}
+
+## Sizing
+Pick `account_risk_pct` (% of capital you'd lose if stopped out, hard cap 2.5%) based on conviction. Compute `quantity` from: `floor((capital × account_risk_pct/100) / stop_distance)`, also capped by 30% of capital. For hold: quantity=0, account_risk_pct=0.

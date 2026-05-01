@@ -139,6 +139,7 @@ td.price { font-family: var(--mono); font-size: 12px; white-space: nowrap; }
                     <th class="hide-mobile">Target</th>
                     <th class="hide-mobile">Stop</th>
                     <th class="hide-mobile">Size</th>
+                    <th class="hide-mobile">Risk</th>
                     <th>Confidence</th>
                     <th>Status</th>
                 </tr>
@@ -155,6 +156,12 @@ td.price { font-family: var(--mono); font-size: 12px; white-space: nowrap; }
                         {% if d.quantity and d.position_size %}
                             <span style="color:var(--text);">{{ d.quantity }} sh</span>
                             <span style="color:var(--muted);font-size:11px;"> / ${{ "%.0f"|format(d.position_size) }}</span>
+                        {% else %}—{% endif %}
+                    </td>
+                    <td class="price hide-mobile">
+                        {% if d.risk_dollars %}
+                            <span class="loss">${{ "%.0f"|format(d.risk_dollars) }}</span>
+                            {% if d.account_risk_pct %}<span style="color:var(--muted);font-size:11px;"> ({{ "%.2f"|format(d.account_risk_pct) }}%)</span>{% endif %}
                         {% else %}—{% endif %}
                     </td>
                     <td>

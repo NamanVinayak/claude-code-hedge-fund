@@ -211,6 +211,14 @@ def main() -> None:
             except (TypeError, ValueError):
                 entry_tolerance_pct = 1.0
 
+            raw_risk_pct = dec.get("account_risk_pct", 1.5)
+            try:
+                # Hard cap by mode: 2.5 for swing/invest, 1.5 for daytrade
+                cap = 1.5 if mode == "daytrade" else 2.5
+                account_risk_pct = max(0.0, min(cap, float(raw_risk_pct)))
+            except (TypeError, ValueError):
+                account_risk_pct = 1.5
+
             try:
                 insert_trade({
                     "run_id": run_id,
@@ -224,6 +232,7 @@ def main() -> None:
                     "target_price_2": None,
                     "stop_loss": stop_loss,
                     "confidence": confidence,
+                    "account_risk_pct": account_risk_pct,
                     "timeframe": timeframe,
                     "status": "pending",
                     "raw_decision": json.dumps(dec),

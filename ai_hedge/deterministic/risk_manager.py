@@ -313,19 +313,27 @@ def risk_management_agent(state: AgentState, agent_id: str = "risk_management_ag
                     ]
                     corr_multiplier = calculate_correlation_multiplier(avg_corr)
 
-        # Combine volatility and correlation adjustments
-        combined_limit_pct = vol_adjusted_limit_pct * corr_multiplier
-        # Convert to dollar position limit
-        position_limit = total_portfolio_value * combined_limit_pct
+        # NEW: Conviction-based sizing.
+        # Volatility scaling is no longer used to throttle position size — the PM
+        # decides conviction and account_risk_pct itself, then sizes by
+        # quantity = (capital × risk_pct) / abs(entry - stop).
+        # The risk manager's job is to enforce two hard caps and pass through
+        # context (volatility, correlation) for the PM to consider qualitatively.
 
-        # Calculate remaining limit for this position
-        remaining_position_limit = position_limit - current_position_value
+        MAX_POSITION_PCT = 0.30   # No single position > 30% of capital
+        MAX_ACCOUNT_RISK_PCT = 2.5  # No single trade can risk > 2.5% of capital if stopped out
 
-        # Ensure we don't exceed available cash
-        max_position_size = min(remaining_position_limit, portfolio.get("cash", 0))
+        max_position_dollars = total_portfolio_value * MAX_POSITION_PCT
+        max_account_risk_dollars = total_portfolio_value * (MAX_ACCOUNT_RISK_PCT / 100.0)
+        # Account for currently held value in this ticker — same hard cap applies to total exposure
+        remaining_position_dollars = max(0.0, max_position_dollars - current_position_value)
+        remaining_position_dollars = min(remaining_position_dollars, portfolio.get("cash", 0))
 
         risk_analysis[ticker] = {
-            "remaining_position_limit": float(max_position_size),
+            "remaining_position_limit": float(remaining_position_dollars),  # 30% hard cap, kept for compatibility
+            "max_account_risk_pct": float(MAX_ACCOUNT_RISK_PCT),
+            "max_account_risk_dollars": float(max_account_risk_dollars),
+            "max_position_pct": float(MAX_POSITION_PCT),
             "current_price": float(current_price),
             "volatility_metrics": {
                 "daily_volatility": float(vol_data.get("daily_volatility", 0.05)),
@@ -337,13 +345,18 @@ def risk_management_agent(state: AgentState, agent_id: str = "risk_management_ag
             "reasoning": {
                 "portfolio_value": float(total_portfolio_value),
                 "current_position_value": float(current_position_value),
-                "base_position_limit_pct": float(vol_adjusted_limit_pct),
-                "correlation_multiplier": float(corr_multiplier),
-                "combined_position_limit_pct": float(combined_limit_pct),
-                "position_limit": float(position_limit),
-                "remaining_limit": float(remaining_position_limit),
                 "available_cash": float(portfolio.get("cash", 0)),
-                "risk_adjustment": f"Volatility x Correlation adjusted: {combined_limit_pct:.1%} (base {vol_adjusted_limit_pct:.1%})"
+                "max_position_pct": float(MAX_POSITION_PCT),
+                "max_position_dollars": float(max_position_dollars),
+                "max_account_risk_pct": float(MAX_ACCOUNT_RISK_PCT),
+                "max_account_risk_dollars": float(max_account_risk_dollars),
+                "sizing_model": (
+                    f"PM picks conviction + account_risk_pct (≤{MAX_ACCOUNT_RISK_PCT}%); "
+                    f"qty = (capital × risk_pct) / |entry - stop|. "
+                    f"Hard cap: position ≤ {MAX_POSITION_PCT:.0%} of capital "
+                    f"(${max_position_dollars:,.0f}). "
+                    f"Vol/correlation are context for PM to consider qualitatively."
+                ),
             },
         }
 

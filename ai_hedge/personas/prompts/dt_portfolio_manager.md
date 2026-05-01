@@ -40,6 +40,7 @@ Format:
       "action": "buy/sell/short/no_trade",
       "quantity": int,
       "entry_trigger": "string — exact condition to enter",
+      "entry_price": float,
       "entry_tolerance_pct": float,
       "stop_loss": float,
       "target_1": float,
@@ -47,11 +48,32 @@ Format:
       "risk_reward": "string like 2.1:1",
       "time_window": "string like first hour only",
       "confidence": int (0-100),
+      "account_risk_pct": float,
       "reasoning": "string"
     }}
   }}
 }}
 
-`quantity` is REQUIRED for every decision (number of shares). Set 0 for no_trade. NEVER omit — the downstream ingester silently drops trades with missing quantity.
+## SIZING — conviction × stop distance
 
-`entry_tolerance_pct` is REQUIRED (price-band tolerance, percent, capped 2.5). Daytrade orders fill faster, so use tighter values: **0.3–0.5% for most setups**, up to 1.0% for high-volatility names. The simulator fills if price comes within `entry_price ± tolerance%`. For no_trade, set 0.5.
+You are a discretionary daytrader. Size by conviction × stop, not by volatility scaling.
+
+**`account_risk_pct` is REQUIRED.** % of capital willing to lose on this trade if stopped out. Daytrade is faster and more frequent than swing, so risk per trade should be SMALLER:
+- **High conviction**: 0.75–1.0%
+- **Medium conviction**: 0.5–0.75%
+- **Low**: 0.25% or no_trade
+- **Hard cap: 1.5%** (lower than swing because of higher trade frequency)
+- For no_trade: set 0.0
+
+**`quantity` calculation** (compute yourself):
+```
+account_risk_dollars = capital × (account_risk_pct / 100)
+stop_distance = abs(entry_price - stop_loss)
+quantity_by_risk = floor(account_risk_dollars / stop_distance)
+quantity_by_pos_cap = floor((capital × 0.20) / entry_price)   # 20% hard cap (tighter than swing)
+quantity = min(quantity_by_risk, quantity_by_pos_cap)
+```
+
+`quantity` is REQUIRED. Set 0 for no_trade. NEVER omit either field.
+
+`entry_tolerance_pct` is REQUIRED (price-band tolerance, percent, capped 2.5). Daytrade orders fill faster, so use tighter values: **0.3–0.5% for most setups**, up to 1.0% for high-volatility names.

@@ -119,17 +119,31 @@ def main():
             except:
                 pass
 
+        # Risk exposure: $ at risk if stopped out, and % of capital
+        risk_dollars = None
+        risk_pct_of_cap = None
+        try:
+            stop_val = float(p.get('stop_loss') or 0)
+            if stop_val and entry > 0 and qty > 0:
+                risk_dollars = round(qty * abs(entry - stop_val), 2)
+        except (TypeError, ValueError):
+            pass
+
         positions.append({
             "ticker": ticker,
             "direction": p['direction'],
             "entry_fill_price": entry,
             "current_price": curr_price,
+            "quantity": int(qty) if qty else None,
+            "position_value": round(entry * qty, 2) if entry and qty else None,
             "pnl_dollar": pnl_dollar,
             "pnl_percent": pnl_percent,
             "stop_loss": p.get('stop_loss', '-'),
             "target_price": p.get('target_price', '-'),
             "rr": rr,
-            "days_held": days_held
+            "days_held": days_held,
+            "risk_dollars": risk_dollars,
+            "account_risk_pct": p.get('account_risk_pct'),
         })
 
     # Calculate portfolio summary
@@ -213,6 +227,14 @@ def main():
                         qty = d.get("quantity")
                         entry = d.get("entry_price")
                         position_size = round(float(qty) * float(entry), 2) if qty and entry else None
+                        # Risk exposure
+                        risk_d = None
+                        try:
+                            stop_v = d.get("stop_loss")
+                            if qty and entry and stop_v:
+                                risk_d = round(float(qty) * abs(float(entry) - float(stop_v)), 2)
+                        except (TypeError, ValueError):
+                            pass
                         decisions.append({
                             "ticker": t,
                             "action": d.get("action", ""),
@@ -222,6 +244,8 @@ def main():
                             "stop_loss": d.get("stop_loss"),
                             "quantity": qty,
                             "position_size": position_size,
+                            "account_risk_pct": d.get("account_risk_pct"),
+                            "risk_dollars": risk_d,
                         })
                 except:
                     pass
