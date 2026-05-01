@@ -1,0 +1,20 @@
+{
+  "CVX": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "Neither branch fires cleanly. Branch A: daily Z-score vs 50-SMA is 0.06 — price is essentially AT the mean, no statistical extreme. RSI-14 at 57.01 is neutral; RSI-7 at 78.26 shows short-term heat but is a 7-period reading, not a reliable fade trigger on its own. Bollinger %B at 0.671 is inside the bands. dist_from_50sma_pct is only 0.25%. Branch A does not fire. Branch B: the 5-day recovery from ~183 to ~193 has brought price near the daily 61.8% Fibonacci retracement (191.86). However, daily EMAs are NOT aligned uptrend (false), and ADX shows -DI (25.22) > +DI (23.23), meaning bears still hold marginal trend edge — an uptrend is required for Branch B. Wiki context is critical: prior run explicitly flagged $192-193 as the predicted SHORT-ENTRY zone after the bounce, and that prediction has now been validated. The wiki records a persistent bearish signal across all runs. However, Branch B requires a confirmed uptrend to buy the dip, which is absent; and Branch A requires Z-score > +2 or < -2 which is also absent. Hourly OBV trend is down and hourly -DI (30.97) > +DI (26.38), consistent with distribution. The earnings blackout noted in the prior wiki run has now passed (Q1 May 1), so a directional trade is no longer blocked on that basis — but the lack of a statistical extreme and the absence of a reversal candle prevent a clean entry. Price sits in a contested no-man's-land between the 50-SMA (192.83) and the 61.8% Fib (191.86). Neutral pending a clearer structure break or Z-score extreme.",
+    "entry": 193.31,
+    "target": 189.70,
+    "stop": 196.23,
+    "timeframe": "5-10 trading days"
+  },
+  "WMT": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": "Branch A fires. Daily Z-score vs 50-SMA: 2.31, above the +2 overbought threshold. Price has extended 5.14% above the 50-SMA — a noteworthy extension. Bollinger %B at 0.9468 places price pressing the upper band (upper BB = 132.46, current daily price 131.93). The $132.46 level is also the nearest daily resistance pivot (6 tests) and the upper Bollinger Band — a strong S/R confluence at the extension point. Mean reversion target: middle Bollinger Band at $127.47 / 50-SMA at $125.48. Key confirmation: hourly RSI divergence is bearish (TRUE) — price made a new high but hourly RSI is diverging downward, the strongest fade confirmation in this strategy. Hourly RSI-21 at 68.77 is elevated. Hourly volume bias is declining (rel vol 0.75, bias 'down') and hourly OBV trend is also down — consistent with distribution at resistance. Both daily Z-score extreme AND hourly bearish RSI divergence firing simultaneously = high-conviction Branch A. Caveats: (1) Apr 30 surge was on above-average daily volume (19.87M vs 16.6M avg, rel vol 1.19) — increasing volume on a rally cautions against the fade; (2) no confirmed bearish reversal candle yet; (3) daily ADX is only 11.4 (weak), cutting both ways — less trend momentum makes mean reversion feasible but also means continuation is possible; (4) daily EMA aligned uptrend = TRUE, so the broader uptrend is intact and this is a fade-the-extension not a trend reversal. Wiki context: prior runs were neutral; this is the first run with daily confirmation of the $129 breakout. The breakout itself is now the overbought condition. Entry at market/near current price, target middle Bollinger Band, stop above the volume-confirmed $134.41 resistance pivot. Lessons: only NVDA EMA pullback dip-buy loss on record — a different setup type, no direct confidence reduction applied. Confidence set at 62 due to lack of a confirmed reversal candle and above-average volume on the surge day.",
+    "entry": 131.60,
+    "target": 127.47,
+    "stop": 134.41,
+    "timeframe": "5-12 trading days"
+  }
+}

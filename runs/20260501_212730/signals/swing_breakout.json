@@ -1,0 +1,20 @@
+{
+  "CVX": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "CVX is not a breakout setup. The range boundaries are: support $181.76 (12 tests) and resistance $192.64 (SMA-50) / $205.48 (recent high). Current price $193.31 daily close sits mid-range, having rallied from the $183-184 low — the move is already in progress, not a coiling pre-breakout. Volume ratio 1.10x is well below the required 1.5x threshold for breakout confirmation. Bollinger Band width 0.1112 (daily) is moderate-to-expanded, not in a squeeze. Hourly BB width 0.0669 is tighter but hourly OBV trend is down and volume bias 10d is down. ADX 30.71 is strong but -DI (25.22) marginally exceeds +DI (23.23), consistent with the wiki's bearish directional bias (prior run: -DI 29.97 > +DI 21.31). Wiki confirms: OBV diverging down from price, hourly RSI bearish divergence confirmed at the $193 zone. Critically, Q1 earnings printed today (May 1) — the risk manager's earnings blackout disqualifies any new position. Even post-earnings, the setup is a bearish exhaustion at resistance, not a bullish breakout — wrong regime for this strategy. Squeeze: not firing. No valid breakout setup exists.",
+    "entry": 193.31,
+    "target": 193.31,
+    "stop": 193.31,
+    "timeframe": "no trade"
+  },
+  "WMT": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "WMT made a strong single-day move from $128.01 to $131.93 (+3.1%) on Apr 30, approaching the $132.46 resistance level (6 pivot tests). However, the breakout process rules are not satisfied: (1) Volume ratio 1.19x — below the mandatory 1.5x confirmation threshold; (2) Daily ADX 11.4 — deeply below the 20-threshold disqualification floor established by the wiki's process rule (prior run ADX was 12.89, also disqualified; it has not improved); (3) Price closed at $131.93, just below the $132.46 resistance — no confirmed daily close above the level; (4) Hourly RSI-21 at 68.77 with confirmed bearish RSI divergence — a warning against chasing; (5) Z-score 50 at 2.31 indicates price is stretched 2.3 standard deviations above the 50-day SMA, not coiling. The range boundaries are: base support $121.37 (13 tests), consolidation ceiling $132.46 (6 tests), volume-confirmed resistance $134.41 (3 tests). Measured move IF $132.46 breaks cleanly on 1.5x+ volume with ADX recovery above 20: entry ~$132.50, target $143.55 (range height $11.09 added to breakout), stop $125.50 (below hourly support). Bollinger Band width 0.0782 daily, 0.0615 hourly — moderate, not in strong squeeze. The hourly EMA alignment is bullish and hourly ADX 35.96 is strong (+DI 33.15 > -DI 15.94), which is encouraging background. But daily ADX sub-20 disqualifies a directional entry. Lessons: recent NVDA breakout failed (stop triggered) when RSI was stretched — similar caution applies. Watch for: daily close above $132.46 on ≥1.5x volume with daily ADX inflecting above 20. Not yet.",
+    "entry": 132.50,
+    "target": 143.55,
+    "stop": 125.50,
+    "timeframe": "watch — no current trigger; re-evaluate on daily close above $132.46 with volume"
+  }
+}

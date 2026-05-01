@@ -1,0 +1,355 @@
+{
+  "ticker": "WMT",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 129.5490953051155,
+      "sma_5": 129.00799560546875,
+      "ema_10": 128.83436124907632,
+      "sma_10": 129.20699768066407,
+      "ema_20": 127.66848885750746,
+      "sma_20": 127.47499923706054,
+      "ema_21": 127.57523622955337,
+      "sma_21": 127.34476107642764,
+      "ema_50": 125.40135742494182,
+      "sma_50": 125.4793768310547,
+      "ema_200": 114.81650353796807,
+      "sma_200": 111.86521766662598,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 131.92999267578125,
+    "dist_from_50sma_pct": 5.14,
+    "price_vs_ma": {
+      "above_ema_5": true,
+      "pct_from_ema_5": 1.84,
+      "above_sma_5": true,
+      "pct_from_sma_5": 2.26,
+      "above_ema_10": true,
+      "pct_from_ema_10": 2.4,
+      "above_sma_10": true,
+      "pct_from_sma_10": 2.11,
+      "above_ema_20": true,
+      "pct_from_ema_20": 3.34,
+      "above_sma_20": true,
+      "pct_from_sma_20": 3.49,
+      "above_ema_21": true,
+      "pct_from_ema_21": 3.41,
+      "above_sma_21": true,
+      "pct_from_sma_21": 3.6,
+      "above_ema_50": true,
+      "pct_from_ema_50": 5.21,
+      "above_sma_50": true,
+      "pct_from_sma_50": 5.14,
+      "above_ema_200": true,
+      "pct_from_ema_200": 14.91,
+      "above_sma_200": true,
+      "pct_from_sma_200": 17.94,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 13093.0
+    },
+    "rsi": {
+      "rsi_7": 60.39,
+      "rsi_14": 63.56,
+      "rsi_21": 60.98
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 1.4139,
+      "signal_line": 1.1946,
+      "histogram": 0.2193,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 132.46,
+      "middle": 127.47,
+      "lower": 122.49,
+      "width": 0.0782,
+      "pct_b": 0.9468
+    },
+    "atr": {
+      "atr_14": 2.65,
+      "atr_pct": 2.01
+    },
+    "adx": {
+      "adx_14": 11.4,
+      "plus_di": 31.68,
+      "minus_di": 22.26,
+      "trend_strength": "weak"
+    },
+    "volume": {
+      "current_volume": 19867700,
+      "avg_volume_20": 16636390,
+      "relative_volume": 1.19,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 126.93,
+          "tests": 30,
+          "volume_confirmed": false
+        },
+        {
+          "price": 128.49,
+          "tests": 23,
+          "volume_confirmed": false
+        },
+        {
+          "price": 132.46,
+          "tests": 6,
+          "volume_confirmed": false
+        },
+        {
+          "price": 134.41,
+          "tests": 3,
+          "volume_confirmed": true
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 118.02,
+          "tests": 1,
+          "volume_confirmed": true
+        },
+        {
+          "price": 121.37,
+          "tests": 13,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 132.46,
+      "nearest_support": 121.37,
+      "recent_high": 132.46,
+      "recent_low": 121.33,
+      "prev_day_high": 128.08,
+      "prev_day_low": 125.91,
+      "prev_day_close": 128.01
+    },
+    "fibonacci": {
+      "swing_high": 132.46,
+      "swing_low": 118.02,
+      "fib_236": 129.05,
+      "fib_382": 126.94,
+      "fib_500": 125.24,
+      "fib_618": 123.54,
+      "fib_786": 121.11,
+      "fib_ext_1272": 136.39,
+      "fib_ext_1618": 141.38,
+      "fib_ext_2000": 146.9,
+      "fib_ext_low_1272": 114.09,
+      "fib_ext_low_1618": 109.1
+    },
+    "momentum": {
+      "roc_5d": -0.08,
+      "roc_10d": 5.7,
+      "roc_21d": 6.16
+    },
+    "z_score_50": 2.31,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 130.61092346555574,
+      "sma_24": 129.9076738357544,
+      "ema_48": 129.79306884361827,
+      "sma_48": 129.7664763132731,
+      "ema_120": 128.3614806271444,
+      "sma_120": 128.00236314137777,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 131.60000610351562,
+    "dist_from_50sma_pct": 2.81,
+    "price_vs_ma": {
+      "above_ema_24": true,
+      "pct_from_ema_24": 0.76,
+      "above_sma_24": true,
+      "pct_from_sma_24": 1.3,
+      "above_ema_48": true,
+      "pct_from_ema_48": 1.39,
+      "above_sma_48": true,
+      "pct_from_sma_48": 1.41,
+      "above_ema_120": true,
+      "pct_from_ema_120": 2.52,
+      "above_sma_120": true,
+      "pct_from_sma_120": 2.81,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 13060.0
+    },
+    "rsi": {
+      "rsi_21": 68.77
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": true,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 0.9219,
+      "signal_line": 0.5905,
+      "histogram": 0.3314,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 133.76,
+      "middle": 129.77,
+      "lower": 125.78,
+      "width": 0.0615,
+      "pct_b": 0.7298
+    },
+    "atr": {
+      "atr_24": 0.88,
+      "atr_pct": 0.67
+    },
+    "adx": {
+      "adx_24": 35.96,
+      "plus_di": 33.15,
+      "minus_di": 15.94,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 1330765,
+      "avg_volume_20": 1783021,
+      "relative_volume": 0.75,
+      "volume_bias_10d": "down",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 129.77,
+          "tests": 22,
+          "volume_confirmed": true
+        },
+        {
+          "price": 132.46,
+          "tests": 18,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 125.91,
+          "tests": 2,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 132.46,
+      "nearest_support": 125.91,
+      "recent_high": 133.37,
+      "recent_low": 126.16,
+      "prev_day_high": 131.84,
+      "prev_day_low": 130.98,
+      "prev_day_close": 131.79
+    },
+    "fibonacci": {
+      "swing_high": 133.37,
+      "swing_low": 125.91,
+      "fib_236": 131.61,
+      "fib_382": 130.52,
+      "fib_500": 129.64,
+      "fib_618": 128.76,
+      "fib_786": 127.51,
+      "fib_ext_1272": 135.4,
+      "fib_ext_1618": 137.98,
+      "fib_ext_2000": 140.83,
+      "fib_ext_low_1272": 123.88,
+      "fib_ext_low_1618": 121.3
+    },
+    "momentum": {
+      "roc_5d": -0.72,
+      "roc_10d": -0.02,
+      "roc_21d": 3.14
+    },
+    "z_score_120": 1.42,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 131.94000244140625,
+      "close": 129.9199981689453,
+      "high": 132.1199951171875,
+      "low": 129.27999877929688,
+      "volume": 16016300,
+      "time": "2026-04-24"
+    },
+    {
+      "open": 129.6199951171875,
+      "close": 127.58999633789062,
+      "high": 129.80999755859375,
+      "low": 127.4000015258789,
+      "volume": 17029500,
+      "time": "2026-04-27"
+    },
+    {
+      "open": 129.33999633789062,
+      "close": 127.58999633789062,
+      "high": 129.77000427246094,
+      "low": 126.77999877929688,
+      "volume": 16341800,
+      "time": "2026-04-28"
+    },
+    {
+      "open": 126.68000030517578,
+      "close": 128.00999450683594,
+      "high": 128.0800018310547,
+      "low": 125.91000366210938,
+      "volume": 16538800,
+      "time": "2026-04-29"
+    },
+    {
+      "open": 128.02000427246094,
+      "close": 131.92999267578125,
+      "high": 132.42999267578125,
+      "low": 127.94999694824219,
+      "volume": 19867700,
+      "time": "2026-04-30"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 131.60000610351562,
+  "market_cap": 1048982388736.0,
+  "wiki_context": {
+    "slices": {
+      "regime_full": {
+        "path": "wiki/macro/regime.md",
+        "mode": "full",
+        "content": "# Macro Regime\n\n## TL;DR\n\n**Risk-on mood with near-term caveats.** S&P 500 hit a fresh all-time intraday high above 7,200 on May 1 (+0.54%), driven by Apple earnings beat (+3%) and geopolitical relief from Iran peace talks (WTI \u22122%). April 2026 was the best month for S&P 500 and Nasdaq since 2020. The Fed held at 3.5%\u20133.75% on April 29 in an 8-4 vote (most dissents since Oct 1992). Chair Powell's term ends May 15; Kevin Warsh's likely succession introduces near-term policy uncertainty. Inflation remains elevated (energy-driven), but the Iran de-escalation removes the dominant left-tail risk from the prior entry. [source: web_research/MSFT.json macro_context, run 20260501_153820]\n\n## Fed posture\n\nThe Federal Reserve voted 8-4 on April 29 to hold the federal funds rate at **3.5%\u20133.75%** \u2014 third consecutive hold. The 4 dissents (most since Oct 1992) signal internal disagreement on the path forward. Chair Powell's last day as Chair is May 15; he stays on the Board of Governors. Kevin Warsh is the leading successor candidate. No rate cuts are signaled near-term; stagnant labor market and energy-driven inflation weigh on easing. The transition itself is a source of policy uncertainty independent of the rate level. [source: web_research/MSFT.json macro_context, run 20260501_153820]\n\n## Rate trajectory and inflation\n\nInflation remains above the 2% target primarily due to energy prices from the Iran conflict. IMF projects 2026 global growth at 3.1% and headline inflation at 4.4%. US tariffs remain a secondary structural inflation layer. Iran peace talks as of May 1 have WTI \u22122% for the session \u2014 a partial relief valve. If a ceasefire holds, the energy-driven inflation overhang eases materially, which would open the door for Fed cuts in H2 2026. [source: web_research/MSFT.json macro_context, run 20260501_153820]\n\n## Market context (May 1)\n\nS&P 500 at fresh all-time intraday highs above 7,200 (+0.54%) on May 1. April 2026 was the best month for both S&P 500 and Nasdaq since 2020. Apple Q1 earnings beat drove +3% on May 1. The AI capex supercycle narrative is intact (Alphabet/Amazon beat in prior week, Azure +40%), but MSFT's post-earnings selloff and Meta's \u22129% capex shock introduced near-term AI-spend uncertainty. Big-tech Q1 earnings season is wrapping up with a net-positive read for AI infrastructure. [source: web_research/MSFT.json macro_context, run 20260501_153820]\n\n## Geopolitical and regulatory\n\n**Iran peace talks are the dominant catalyst shift from the prior entry.** Iran is engaging peace mediators as of May 1 \u2014 WTI \u22122% on the session. A Strait of Hormuz closure is no longer the base case. Secondary geopolitical risks: US tariff policy (ongoing), Fed leadership transition (May 15), US midterm elections 2026 (policy uncertainty). US-China trade tensions remain a background structural headwind. [source: web_research/MSFT.json macro_context, run 20260501_153820]\n\n## Risk-off triggers\n\n- **Iran peace talks collapse** \u2014 oil spike resumes, inflation expectations re-accelerate\n- **Kevin Warsh hawkish pivot** \u2014 if successor signals tighter-for-longer, growth stocks re-rate lower\n- **AI capex ROI disappointment** \u2014 MSFT/Google Q4 guidance revisions would directly impact NVDA demand thesis\n- **US tariff escalation** \u2014 additional rounds could pressure supply chains and consumer sentiment\n\n## Last updated\n\n2026-05-01. Sourced from `web_research/MSFT.json` macro_context (dated 2026-05-01), run `20260501_153820`. Supersedes prior entry (2026-04-30, run 20260430_124724) which reflected mixed-to-cautious mood with Iran blockade as dominant tail risk.\n",
+        "last_updated": "2026-05-01",
+        "stale": false
+      },
+      "sectors_full": {
+        "missing": true,
+        "mode": "full"
+      },
+      "thesis_tldr": {
+        "path": "wiki/tickers/WMT/thesis.md",
+        "mode": "tldr",
+        "content": "**What falsified the prior thesis:** The prior thesis (bootstrap, Apr 29) stated \"Both runs noted a technical failure at the $129 resistance.\" That is no longer accurate \u2014 this run (Apr 30) shows price has pushed through $129 and $128.49 on the hourly timeframe to $131.93, with hourly ADX at 30.25 and +DI (36.33) well above -DI (14.64). The hourly breakout is live. However, the daily close ($128.01 at time of analysis) has not confirmed above $128.49 resistance, and daily ADX remains critically weak at 12.89. The model remains on hold \u2014 not because the direction is wrong, but because the daily confirmation and R/R requirements are not yet satisfied. (Source: `20260430_212526/signals_combined.json`, swing_breakout, swing_head_trader)\n\n---",
+        "last_updated": "2026-04-30",
+        "stale": false
+      },
+      "lessons_full": {
+        "path": "wiki/meta/lessons.md",
+        "mode": "full",
+        "content": "## Format\n\nEach lesson is one dated bullet:\n\n`[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME: +$X / -$X] | [WHY it worked or failed in 1 sentence]`\n\nThe \"why\" should reference: the thesis at the time, the macro regime, which swing strategy recommended it.\n\n---\n\n## Patterns (auto-generated by Sunday compactor, last 30 days)\n\n| Setup Type | Trades | Wins | Win Rate | Avg P&L | Total P&L |\n|---|---|---|---|---|---|\n| EMA pullback Fib dip-buy | 1 | 0 | 0% | -$63.20 | -$63.20 |\n\n## Lessons\n\n2026-04-30 | NVDA | EMA pullback Fib dip-buy | -$63.20 (corrected from -$264.65) | Stop triggered at $205.30 (hourly Fib 61.8%); swing_trend_momentum and swing_breakout were bullish on AI capex thesis, but price breached the stop zone intraday amid stretched macro (RSI 81\u201387) with no bullish confirmation candle before exit. **Note:** trade was originally sized 67 shares ($14,020) due to a phantom $100K budget bug (fixed commit b2b472d). With the correct $25K budget at 14.2% vol-adj limit, position would have been 16 shares ($3,348). Corrected P&L reflects the strategy's actual signal quality, not the sizing error.\n",
+        "last_updated": "2026-05-01",
+        "stale": false
+      }
+    }
+  }
+}

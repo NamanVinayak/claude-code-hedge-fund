@@ -1,0 +1,20 @@
+{
+  "CVX": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "TREND: EMA alignment is tangled — EMA 10 (189.09) sits below EMA 21 (190.32), failing the 10>21>50 uptrend requirement; ema_aligned_uptrend is false. ADX 30.71 confirms a strong trend exists, but directional bias is bearish: -DI (25.22) exceeds +DI (23.23) on the daily, and hourly -DI (30.97) also exceeds +DI (26.38) — both timeframes are pointing down directionally. Wiki confirms this pattern: prior run flagged -DI above +DI and OBV diverging from price. MOMENTUM: ROC is critically mixed — 5d (+3.04) and 10d (+2.74) are positive from a short-term bounce, but 21d (-6.57) is deeply negative, violating the requirement that all three ROC periods be positive and expanding for a valid uptrend continuation signal. Daily MACD histogram (+0.43) is expanding but MACD line remains negative (-1.43), indicating momentum recovery from a bearish regime, not an established bullish trend with accelerating momentum. PRICE POSITION: At 193.31, price is 2.23% above EMA 10 — overextended, not at a pullback entry zone. Hourly OBV is in a downtrend and volume bias is down over 10 days. LESSONS: Prior EMA pullback Fib dip-buy on NVDA stopped out (swing_trend_momentum contributed to that call); caution warranted on similar bounce-recovery reads. No clean trend+momentum continuation setup exists. Waiting for EMA alignment to resolve and 21d ROC to turn positive before re-engaging.",
+    "entry": 190.32,
+    "target": 200.59,
+    "stop": 186.55,
+    "timeframe": "neutral — no trade"
+  },
+  "WMT": {
+    "signal": "neutral",
+    "confidence": 25,
+    "reasoning": "TREND: EMA alignment is genuinely bullish — EMA 10 (128.83) > EMA 21 (127.58) > EMA 50 (125.40), cleanly fanning in uptrend order; ema_aligned_uptrend is true on both daily and hourly. Hourly EMAs are also in full uptrend alignment. HOWEVER, daily ADX at 11.4 is critically weak — far below the 20-threshold disqualification floor and even below the ADX > 25 entry requirement. The strategy rules are explicit: ADX < 20 = no clear trend, output neutral. This is a hard disqualifier regardless of directional indicators. Wiki context corroborates: prior run (Apr 30) flagged ADX at 12.89 as the remaining gate, and today's reading of 11.4 is even weaker. MOMENTUM: ROC is mixed — 5d (-0.08) is flat-to-negative, 10d (+5.70) and 21d (+6.16) are positive. The 5d negative ROC means momentum is not uniformly accelerating across all measured periods. MACD histogram (+0.22) is positive and expanding on the daily — a bullish signal — but partially negated by the weak ADX. Hourly shows bearish RSI divergence and OBV in a downtrend, warning of near-term exhaustion. PRICE POSITION: At 131.93, price is 3.41% above EMA 21 — overextended; not at a pullback to 10/21 EMA. Bollinger pct_b at 0.95 (near upper band) and nearest resistance at 132.46 confirm price is stretched into overhead supply. Z-score of 2.31 on the daily is elevated. SETUP: The bullish EMA structure is promising and worth watching. Wait for ADX to build above 25 on a pullback to the 10 or 21 EMA — that would create the valid trend+momentum entry this strategy requires.",
+    "entry": 127.58,
+    "target": 134.41,
+    "stop": 125.40,
+    "timeframe": "neutral — no trade"
+  }
+}

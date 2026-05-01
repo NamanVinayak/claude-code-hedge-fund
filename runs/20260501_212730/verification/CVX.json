@@ -1,0 +1,72 @@
+{
+  "ticker": "CVX",
+  "verified_at": "2026-05-01T21:30:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.0677,
+      "web_value": 0.0677,
+      "source": "Yahoo Finance / CNBC (May 2026)",
+      "status": "ok",
+      "deviation": "0%",
+      "notes": "Yahoo Finance reports 6.66-6.77% TTM; facts bundle value is consistent"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": 0.0879,
+      "source": "GuruFocus (Mar 2026 TTM)",
+      "status": "unverified",
+      "deviation": "n/a",
+      "notes": "Operating margin is null in facts bundle (data not available from provider); web sources report ~8.79% TTM (GuruFocus) and ~7.15% (Dec 2025, Macrotrends). Cannot correct a null value — flagged for awareness only."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 28.75,
+      "web_value": 28.99,
+      "source": "public.com / companiesmarketcap (Apr 29, 2026)",
+      "status": "ok",
+      "deviation": "0.8%",
+      "notes": "Web sources show 28.99-29.17 trailing P/E as of late April 2026; facts bundle value of 28.75 is within normal timing variation"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 193400000000.0,
+      "web_value": 184650000000.0,
+      "source": "Yahoo Finance / WallStreetZen (TTM as of Apr 29, 2026)",
+      "status": "ok",
+      "deviation": "4.7%",
+      "notes": "Revenue derived from facts bundle P/S ratio (1.9632) and market cap ($379.7B) implies ~$193.4B; web reports $184.4-184.7B TTM. Deviation of 4.7% is within the 20% threshold. Likely reflects timing: facts use Q3 2025 (Sep 30 report period) while web includes Q1 2026 data."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 379715682304.0,
+      "web_value": 381090000000.0,
+      "source": "StockAnalysis / Yahoo Finance (May 1, 2026)",
+      "status": "ok",
+      "deviation": "0.4%",
+      "notes": "Web sources report $380-383B; facts bundle $379.7B is consistent with intraday stock price movement"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.0723,
+      "web_value": 0.0723,
+      "source": "FinanceCharts / Yahoo Finance (TTM Apr 2026)",
+      "status": "ok",
+      "deviation": "0%",
+      "notes": "Web confirms ROE (TTM) of 7.23% — exact match"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.0379,
+      "web_value": 0.0379,
+      "source": "FinanceCharts / Yahoo Finance (TTM Apr 2026)",
+      "status": "ok",
+      "deviation": "0%",
+      "notes": "Web confirms ROA (TTM) of 3.79% — exact match"
+    }
+  ],
+  "overall_status": "all checks passed — no mismatches found",
+  "corrections_applied": false,
+  "summary": "All CVX metrics in the facts bundles are accurate within acceptable tolerances. The operating_margin field is null in the facts bundle; web data shows ~8.79% TTM. This null appears to be a data availability issue from the upstream provider (not a data error), so no correction was applied. All other metrics deviate less than 5% from web consensus values."
+}

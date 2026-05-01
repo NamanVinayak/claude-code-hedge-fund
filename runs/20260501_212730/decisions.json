@@ -1,0 +1,30 @@
+{
+  "decisions": {
+    "CVX": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 193.31,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 181.76,
+      "stop_loss": 195.5,
+      "risk_reward_ratio": "5.5:1",
+      "timeframe": "hold",
+      "confidence": 0,
+      "account_risk_pct": 0.0,
+      "reasoning": "Risk manager earnings blackout active (0 days to Q1 earnings). allowed_actions only permits hold. No position exists; no action taken."
+    },
+    "WMT": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 131.6,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 134.41,
+      "stop_loss": 126.0,
+      "risk_reward_ratio": "1.47:1",
+      "timeframe": "hold",
+      "confidence": 0,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader neutral (45), all directional entries fail 2:1 R/R rule. Short R/R 1.47:1, bull R/R 0.84:1 — both below 2:1 minimum. Wait for pullback to $128-129."
+    }
+  }
+}

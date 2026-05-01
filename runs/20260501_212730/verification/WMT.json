@@ -1,0 +1,72 @@
+{
+  "ticker": "WMT",
+  "verified_at": "2026-05-01T21:30:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.02881,
+      "web_value": 0.0312,
+      "source": "CNBC / SimplyWallSt (TTM Apr 2026)",
+      "status": "ok",
+      "deviation": "8.3%",
+      "notes": "Web sources report 3.12-3.3% TTM net margin. Facts bundle uses Oct 2025 report period (2.88%). The improvement reflects more recent periods including FY2026 Q4. Deviation 8.3% is within the 20% threshold."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.04351,
+      "web_value": 0.0413,
+      "source": "GuruFocus / YCharts (TTM through Oct 2025)",
+      "status": "ok",
+      "deviation": "5.3%",
+      "notes": "Facts bundle report period is Oct 31, 2025. TTM operating margin through Oct 2025 per web sources is ~4.13%. The 5.3% deviation is within tolerance. Note: Jan 2026 quarter shows lower 2.97% operating margin due to seasonal effects."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 48.21,
+      "web_value": 46.90,
+      "source": "GuruFocus / MacroTrends (Apr 29, 2026)",
+      "status": "ok",
+      "deviation": "2.8%",
+      "notes": "Web sources consistently show 46.57-48.33 trailing P/E as of late April 2026. Facts bundle 48.21 falls within this range."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 674400000000.0,
+      "web_value": 713160000000.0,
+      "source": "StockTitan / StockAnalysis (FY2026 / TTM Apr 2026)",
+      "status": "ok",
+      "deviation": "5.4%",
+      "notes": "Revenue derived from facts bundle P/S ratio (1.5551) and market cap ($1.049T) implies ~$674B. Web reports $713.2B TTM (FY2026 full year including Q4 Jan 2026). The 5.4% gap reflects timing: facts use Oct 2025 TTM while web has full FY2026 data. Within the 20% threshold."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 1048982388736.0,
+      "web_value": 1050000000000.0,
+      "source": "MarketBeat / public.com (Apr 30, 2026)",
+      "status": "ok",
+      "deviation": "0.1%",
+      "notes": "Web sources confirm $1.03-1.05T market cap. Facts bundle $1.049T is consistent."
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.2136,
+      "web_value": 0.2103,
+      "source": "AlphaQuery / FinanceCharts (FY ending Jan 31, 2026)",
+      "status": "ok",
+      "deviation": "1.6%",
+      "notes": "Most authoritative sources (Yahoo Finance fiscal year, FinanceCharts TTM) show 21.03-21.85% ROE. Facts bundle 21.35% is consistent. GuruFocus shows lower 17.32% using a different equity base calculation, but the consensus from multiple sources validates our figure."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.07452,
+      "web_value": 0.0683,
+      "source": "FinanceCharts (TTM Apr 30, 2026)",
+      "status": "ok",
+      "deviation": "9.1%",
+      "notes": "Web reports ROA (TTM) of 6.83% as of Apr 30, 2026. Facts bundle shows 7.45% using Oct 2025 report period. The 9.1% deviation reflects recent quarterly earnings decline (Q1 2026 net income fell ~37% YoY). Still within 20% threshold."
+    }
+  ],
+  "overall_status": "all checks passed — no mismatches found",
+  "corrections_applied": false,
+  "summary": "All WMT metrics in the facts bundles are accurate within acceptable tolerances. The most notable observation is that ROA has drifted to 9.1% deviation as more recent quarters show lower earnings, but this remains below the 20% correction threshold. Net margin is improving trend vs. facts bundle value (3.12-3.3% web vs 2.88% in facts), reflecting FY2026 Q4 improvement. No corrections required."
+}
