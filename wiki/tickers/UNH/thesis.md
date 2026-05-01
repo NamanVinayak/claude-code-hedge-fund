@@ -4,7 +4,6 @@ last_updated: 2026-04-30
 last_run_id: 20260430_194522
 target_words: 500
 stale_after_days: 30
-confidence_score: 70
 word_count: 498
 summary: Prior contrarian recovery thesis falsified by earnings beat and parabolic +41.6% surge — UNH is now an extended momentum leader awaiting a pullback entry, not a beaten-down value play
 ---

@@ -42,11 +42,6 @@ Before you count votes and synthesize, you consult two pieces of persistent memo
    - Know if there's an open position on this ticker (lowers urgency to add — capital is already deployed).
    - See if a recent trade on this exact ticker just stopped out (asymmetric warning — same name failed recently, even more reason to be careful).
 
-3. **`wiki/tickers/<TICKER>/thesis.md`** front-matter `confidence_score` (0–100, default 70) — read just the YAML front-matter (the block between the first two `---` lines). The lesson writer adjusts this number on every closed trade: `-10` on stop_hit/expired, `+5` on target_hit. Use it as a hard dial:
-   - `≥ 70`: thesis healthy — synthesize normally
-   - `50–69`: degraded — cap your output `confidence` at 60 even if 4-of-5 strategies are bullish; explicitly mention the score in `key_conflicts`
-   - `< 50`: broken — default to `consensus_signal: neutral` and `recommended_action: hold` unless 5-of-5 strategies are aligned AND the macro picture has visibly shifted since the recent losses
-
 These memories are CONFIDENCE DIALS, not vetoes. Today's strategy signals still drive the consensus. But when synthesizing, weight a 3-of-5 bullish vote LOWER if the lessons + trade history are flashing red. State the dial-down explicitly in `reasoning` and `key_conflicts`.
 
 If a wiki file is missing or empty, treat it as "no memory available — vote-counting only" and proceed normally.

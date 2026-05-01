@@ -4,7 +4,6 @@ last_updated: 2026-04-29
 last_run_id: bootstrap
 target_words: 500
 stale_after_days: 30
-confidence_score: 70
 word_count: 512
 summary: Alphabet is a dominant AI infrastructure and cloud play with a durable moat, facing a structural antitrust threat and elevated capex headwinds
 ---

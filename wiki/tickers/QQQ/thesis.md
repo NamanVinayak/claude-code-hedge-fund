@@ -4,7 +4,6 @@ last_updated: 2026-04-29
 last_run_id: bootstrap
 target_words: 500
 stale_after_days: 30
-confidence_score: 70
 word_count: 640
 summary: QQQ is a high-correlation tech-beta play; strong daily trend but expensive valuation and macro headwinds limit swing conviction vs. single names
 ---

@@ -4,7 +4,6 @@ last_updated: 2026-04-30
 last_run_id: 20260430_140858
 target_words: 500
 stale_after_days: 30
-confidence_score: 70
 word_count: 505
 summary: AI infrastructure leader completing parabolic April run at ATH $353 — bull thesis intact but entry timing wrong; prior re-entry zone ($224-$241) falsified by +76% April surge
 ---

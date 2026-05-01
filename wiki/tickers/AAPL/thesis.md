@@ -4,7 +4,6 @@ last_updated: 2026-04-29
 last_run_id: 20260415_093758
 target_words: 500
 stale_after_days: 30
-confidence_score: 70
 word_count: 497
 summary: Durable bull/bear story for Apple — high-quality franchise with near-term tariff and AI overhang
 ---

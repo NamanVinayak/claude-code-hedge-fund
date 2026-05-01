@@ -4,7 +4,6 @@ last_updated: 2026-04-29
 last_run_id: bootstrap
 target_words: 500
 stale_after_days: 30
-confidence_score: 70
 word_count: 512
 summary: TSLA is a story-stock split between a beaten-down EV business and an optionality bet on robotaxi and Optimus; bears own near-term fundamentals, bulls own the 2027+ narrative.
 ---

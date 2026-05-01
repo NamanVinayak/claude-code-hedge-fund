@@ -55,13 +55,6 @@ Read the current thesis.md. Prepend a one-liner **immediately after the `## TL;D
 
 Do NOT rewrite the rest of thesis.md. Only prepend this one line. Update the front-matter: `last_updated` to today, `word_count` to the new count.
 
-**Also update the numeric `confidence_score` in front-matter** (default 70 if missing):
-- `stop_hit` or `expired` → subtract 10
-- `target_hit` → add 5
-- Clamp to the range `[0, 100]`. If the file has no `confidence_score` field, insert one right after `stale_after_days:` with the adjusted value (starting from 70 baseline).
-
-This is the machine-readable signal that strategies and the PM read as a confidence dial. Without it, the prepended warning is just text — the score is what makes confidence decay measurable.
-
 #### 3. Update `wiki/tickers/<TICKER>/trades.md`
 
 Move the trade from `## Open Positions` to a new `## Recently Closed` section (create it if it does not exist, before `## Model Decision Log` if that section exists).

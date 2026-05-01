@@ -4,7 +4,6 @@ last_updated: 2026-04-30
 last_run_id: 20260430_203923
 target_words: 500
 stale_after_days: 30
-confidence_score: 70
 word_count: 497
 summary: Prior bearish thesis (ceasefire unwind driving XOM lower) is falsified — US-Iran peace talks stalled and blockade resumed; regime has flipped to macro-bullish but technical exhaustion and tomorrow's earnings blackout keep the model in a neutral hold
 ---

@@ -4,7 +4,6 @@ last_updated: 2026-04-29
 last_run_id: bootstrap
 target_words: 500
 stale_after_days: 30
-confidence_score: 70
 word_count: 512
 summary: World's most profitable bank — earnings machine with secular growth from investment banking and wealth management offset by rate-cycle sensitivity and macro tail risks
 ---

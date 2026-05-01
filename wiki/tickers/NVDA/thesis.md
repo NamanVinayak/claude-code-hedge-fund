@@ -4,7 +4,6 @@ last_updated: 2026-05-01
 last_run_id: bootstrap
 target_words: 500
 stale_after_days: 30
-confidence_score: 60
 word_count: 533
 summary: NVDA is an AI infrastructure monopoly with exceptional fundamentals, but late-cycle price extension demands pullback entries only.
 ---
