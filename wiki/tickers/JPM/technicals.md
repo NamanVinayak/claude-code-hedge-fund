@@ -1,52 +1,53 @@
 ---
 name: JPM technicals
-last_updated: 2026-04-30
-last_run_id: 20260430_182725
+last_updated: 2026-05-01
+last_run_id: 20260501_182928
 target_words: 350
 stale_after_days: 7
-word_count: 347
-summary: Hold/watch — ADX 43.42 uptrend intact but R/R 1.83:1 fails 2:1 hard rule; wait for $307–$309.50 re-test with momentum confirmation or confirmed breakout above $315.50 on 1.5x volume
+word_count: 348
+summary: Bullish setup active — ADX 42.49 uptrend intact, Apr 30 engulfing candle confirmed bounce from $306.57; HOLD only (correlation-blocked: 74% correlated with open BAC long); watch for BAC exit to unlock JPM entry at $312.50
 ---
 
 # JPM — Technicals
 
 ## TL;DR
 
-As of run 20260430_182725, JPM remains in a "strong intermediate trend, deteriorating short-term structure" configuration. Daily trend is solidly bullish (EMA stack, ADX 43.42, +DI > -DI), but short-term momentum has stalled: daily MACD histogram negative (-0.29), OBV diverging from price, daily RSI-7 at 23.27 (deeply oversold). Two setups exist — neither has triggered. Current decision: HOLD, 38% confidence [run: 20260430_182725].
+As of run 20260501_182928, JPM is in a "confirmed strong uptrend with post-dip bounce confirmation" configuration. Daily trend is solidly bullish (EMA stack, ADX 42.49, +DI > -DI), and the Apr 30 bullish engulfing candle off the $306.57 swing low provides structural confirmation that the dip has ended. Hourly RSI shows bullish divergence; RSI-7 recovered from 23.27 (deeply oversold) to 50.79. The setup is genuine — but entry is correlation-blocked (74% with open BAC long). Decision: HOLD, 55% confidence [run: 20260501_182928].
 
-## Multi-timeframe state (as of run 20260430_182725)
+## Multi-timeframe state (as of run 20260501_182928)
 
 | Timeframe | State | Notes |
 |---|---|---|
-| Daily | Bullish trend | EMAs stacked up: EMA-10 (310.17) > EMA-21 (306.77) > EMA-50 (303.09) [run: 20260430_182725] |
-| Daily | ADX 43.42 | Strong trend confirmation; +DI (23.43) > -DI (16.85) [run: 20260430_182725] |
-| Daily | MACD | Histogram -0.29 — deceleration in trend momentum [run: 20260430_182725] |
-| Daily | OBV | Diverging from price — potential distribution signal [run: 20260430_182725] |
-| Daily | RSI-7 | 23.27 (deeply oversold short-term); RSI-14 at 48.56 (neutral) [run: 20260430_182725] |
-| Hourly | BB squeeze | Width 0.0243 — genuine hourly squeeze with volume surge 4.2x avg [run: 20260430_182725] |
-| Hourly | Volume | 4.2x average — institutional accumulation signal per swing_macro_context [run: 20260430_182725] |
+| Daily | Bullish trend | EMAs stacked up: EMA-10 (310.73) > EMA-21 (307.35) > EMA-50 (303.48) [run: 20260501_182928] |
+| Daily | ADX 42.49 | Strong trend confirmation; +DI (24.80) > -DI (16.06) [run: 20260501_182928] |
+| Daily | MACD | Histogram -0.2481 — mild deceleration; caution flag [run: 20260501_182928] |
+| Daily | OBV | Diverging from price on both daily and hourly — primary risk signal [run: 20260501_182928] |
+| Daily | RSI-7 | 50.79 (recovered from 23.27 deeply oversold) [run: 20260501_182928] |
+| Hourly | RSI | Bullish divergence — lower price low, higher RSI — reversal confirmed [run: 20260501_182928] |
+| Hourly | MACD | Histogram +0.3066 (positive, expanding) — short-term momentum re-accelerating [run: 20260501_182928] |
+| Hourly | ADX | 12.27 (weak, near-term directionality ambiguous) [run: 20260501_182928] |
 
-## Key levels (as of run 20260430_182725)
+## Key levels (as of run 20260501_182928)
 
 | Level | Value | Source |
 |---|---|---|
-| Daily close | $309.25 | Apr 30 close [run: 20260430_182725] |
-| Hourly price | $313.58 | Hourly close at run time [run: 20260430_182725] |
-| Entry zone (dip-buy) | $307.00–$309.50 | Volume-confirmed floor; Apr 27 hammer low at $306.81 [run: 20260430_182725] |
-| Entry (breakout) | $315.50 | Requires daily close above $314.99–$315.45 on 1.5x+ volume [run: 20260430_182725] |
-| Target (dip-buy) | $314.99 | 24 hourly tests — near-term resistance cluster [run: 20260430_182725] |
-| Target (breakout) | $323.50 | Full trend extension to $320.24–$323.50 [run: 20260430_182725] |
-| Stop (dip-buy) | $306.50 | Below Apr 27 swing low ($306.81) and volume-confirmed $307.29 [run: 20260430_182725] |
-| Stop (breakout) | $311.50 | Hourly support [run: 20260430_182725] |
-| R/R (dip-buy at $309.50) | 1.83:1 | Below 2:1 minimum — no entry at current levels [run: 20260430_182725] |
-| Invalidation | $304.26 daily close | 13 tests — break triggers $299.59 target; exit immediately [run: 20260430_182725] |
+| Current price | $313.23–$313.36 | Apr 30 close / run price [run: 20260501_182928] |
+| Entry zone (watch) | $312.50 | Median of bullish agents; near EMA-10 [run: 20260501_182928] |
+| Hourly support (strong) | $311.94 | 44 tests, volume-confirmed [run: 20260501_182928] |
+| Hourly resistance | $314.99 | 24 tests, volume-confirmed [run: 20260501_182928] |
+| Breakout trigger | $315.50 | Requires daily close above $314.99–$315.45 on 1.5x+ volume [run: 20260501_182928] |
+| Target | $320.24 | Daily resistance — 5 prior tests [run: 20260501_182928] |
+| Stop | $307.29 | Below Apr 30 swing low ($306.57) [run: 20260501_182928] |
+| R/R | 1.5:1 | Entry $312.50, target $320.24, stop $307.29 — meets threshold [run: 20260501_182928] |
+| Swing low | $306.57 | Apr 30 — held; new higher-low in uptrend [run: 20260501_182928] |
+| Invalidation | $304.26 daily close | 13 tests — break would trigger $299.59 flush [run: 20260501_182928] |
 
 ## Setup type
 
-**Run 20260430_182725:** Dual conditional hold. Two valid-but-untriggered setups: (1) Dip-buy in uptrend — swing_mean_reversion (62% bull) and swing_macro_context (52% bull) see Apr 27 hammer at $306.81 as the low; R/R at $309.50 entry is 1.83:1, which fails the 2:1 hard rule. (2) Breakout — swing_breakout (30% neutral) watches for daily close above $314.99 on 1.5x+ volume; not fired. Three of five agents neutral; head trader 42% confidence. Primary risk: Iran/Hormuz escalation triggers financials sector selloff — exit immediately on daily close below $304.26 [run: 20260430_182725].
+**Run 20260501_182928:** Bullish dip-bounce in strong uptrend — valid but correlation-blocked. Three of five swing agents bullish (swing_trend_momentum 62%, swing_mean_reversion 52%, swing_macro_context 52%). Entry is synthesized at $312.50 (median of bullish agents). The setup is the Apr 30 bullish engulfing candle off the $306.57 swing low — the key lesson-derived improvement over the NVDA stop-out (which lacked a confirmation candle before entry). Primary risk: OBV divergence on both daily and hourly — institutional distribution signal. Entry remains locked until BAC position closes [run: 20260501_182928].
 
-**Prior setups (history in recent.md):** Apr 30 morning run (20260430_051455) — same Hold call at $309.25, R/R 1.55:1; Apr 15 run — buy-the-dip entry $304.78, 70% confidence.
+**Prior setup archived to recent.md:** Run 20260430_182725 — dual conditional hold at $309.25, R/R 1.83:1, failed 2:1 minimum; ADX 43.42, RSI-7 23.27 deeply oversold.
 
 ## Last updated
 
-2026-04-30. Technical read from run 20260430_182725 (JPM swing). Prior setup history in recent.md.
+2026-05-01. Technical read from run 20260501_182928 (JPM swing). Prior setup history in recent.md.
