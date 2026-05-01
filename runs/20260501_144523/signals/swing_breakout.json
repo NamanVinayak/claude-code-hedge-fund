@@ -1,0 +1,11 @@
+{
+  "AAPL": {
+    "signal": "bullish",
+    "confidence": 78,
+    "reasoning": "AAPL has executed a confirmed breakout above the $276.11 resistance level (11 daily tests, 27 hourly volume-confirmed tests per wiki) on April 30 with decisive volume at 2.08x the 20-day average — well above the required 1.5x threshold. The consolidation range was defined by $276.11 resistance and $255.45 support (21 tests), a $30.66 range spanning multiple weeks. The Bollinger Band squeeze that was coiling at width 0.069 on April 15 has now fired (width 0.0967 daily, expanding); this is the 'coiled spring' setup the strategy requires. Hourly data confirms follow-through: price reached $287.21 intraday on the prior day, closing $285.34, with hourly BB pct_b at 1.28 (price above the upper band), Plus DI 38.31 vs Minus DI 11.70 (strong bullish directional bias). The wiki's bull-case trigger ('clean close above $276.11 on 1.5x+ volume + ADX expansion') is met on volume; daily ADX at 16.83 is still below 25 but rising, which is the one caveat. Daily RSI at 61.64 is healthy and not stretched (below the 70 caution zone). Bullish RSI divergence confirmed over 60-bar lookback. OBV trending up, no price-OBV divergence. Measured move target: $276.11 + $30.60 range = $306.71; conservative first target at Fib ext 1.272 = $284.29, secondary at 1.618 = $294.84. The recent NVDA lesson (failed EMA pullback with RSI 81-87) is a different setup type and RSI environment — minimal applicability here. Confidence capped at 78 (not 85+) because: (1) daily ADX 16.83 still below 25; (2) hourly volume relative volume is only 0.59x (below average) in the most recent hourly bar, suggesting the initial burst may be digesting; (3) price has already moved significantly from the breakout level, raising entry risk.",
+    "entry": 282.09,
+    "target": 294.84,
+    "stop": 274.50,
+    "timeframe": "5-12 trading days"
+  }
+}

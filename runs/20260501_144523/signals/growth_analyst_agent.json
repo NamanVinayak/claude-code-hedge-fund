@@ -1,0 +1,47 @@
+{
+  "AAPL": {
+    "signal": "bearish",
+    "confidence": 58,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0.25,
+        "revenue_growth": 0.0642551178283274,
+        "revenue_trend": -0.0013036168684167674,
+        "eps_growth": 0.22585924713584285,
+        "eps_trend": -0.01316099700171345,
+        "fcf_growth": -0.09227347505215656,
+        "fcf_trend": 0.01738062734058867
+      },
+      "growth_valuation": {
+        "score": 0,
+        "peg_ratio": null,
+        "price_to_sales_ratio": 9.319555924966522
+      },
+      "margin_expansion": {
+        "score": 0.2,
+        "gross_margin": 0.4784610710387433,
+        "gross_margin_trend": -0.004830989406701712,
+        "operating_margin": 0.3252680972689525,
+        "operating_margin_trend": -0.0034716801230119513,
+        "net_margin": 0.26981669236049377,
+        "net_margin_trend": -0.0025251478089986816
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 0.30000000000000004,
+        "debt_to_equity": 1.3973119227482946,
+        "current_ratio": 0.8932929222186667
+      },
+      "final_analysis": {
+        "signal": "bearish",
+        "confidence": 58,
+        "weighted_score": 0.21
+      }
+    }
+  }
+}

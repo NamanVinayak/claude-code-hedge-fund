@@ -1,0 +1,89 @@
+{
+  "ticker": "AAPL",
+  "verified_at": "2026-05-01T14:45:23",
+  "facts_files_checked": [
+    "warren_buffett__AAPL.json",
+    "ben_graham__AAPL.json",
+    "aswath_damodaran__AAPL.json"
+  ],
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.2698,
+      "our_value_pct": "26.98%",
+      "web_value": 0.2537,
+      "web_value_pct": "25.37%",
+      "source": "FinanceCharts / GuruFocus (TTM Apr 2026)",
+      "status": "ok",
+      "deviation": "6.3%",
+      "notes": "Multiple sources range 25.37%–27.04% TTM; our value falls within that band."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.3253,
+      "our_value_pct": "32.53%",
+      "web_value": 0.3189,
+      "web_value_pct": "31.89%",
+      "source": "GuruFocus / YCharts (TTM 2026)",
+      "status": "ok",
+      "deviation": "2.0%",
+      "notes": "Sources range 31.89%–35.37% depending on whether Q2 FY2026 (record gross margin 49.3%) is fully included in TTM. Our value is within range."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 35.70,
+      "web_value": 33.93,
+      "source": "GuruFocus (TTM PE 33.93 as of Apr 2026); FinanceCharts 34.11 Apr 29 2026",
+      "status": "ok",
+      "deviation": "5.2%",
+      "notes": "Our PE of 35.70 is slightly higher than web consensus of ~33.93–34.18, likely due to data timing before Q2 FY2026 earnings (Apr 30) updated EPS. Deviation within acceptable range."
+    },
+    {
+      "metric": "revenue_ttm",
+      "our_value": 444300000000,
+      "our_value_derived": "Derived: market_cap / price_to_sales = $4.141T / 9.32 ≈ $444.3B",
+      "web_value": 435600000000,
+      "web_value_formatted": "$435.6B",
+      "source": "CompaniesMarketCap / YCharts / MacroTrends (TTM through Dec 2025)",
+      "status": "ok",
+      "deviation": "2.0%",
+      "notes": "Revenue TTM $435.6B as of Dec 2025; Q2 FY2026 ($111.2B) may update this figure. Deviation is minimal."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 4141004881920,
+      "our_value_formatted": "$4.14T",
+      "web_value": 3983000000000,
+      "web_value_formatted": "$3.98T",
+      "source": "StockAnalysis / CompaniesMarketCap (Apr 30, 2026)",
+      "status": "ok",
+      "deviation": "4.0%",
+      "notes": "Web sources report ~$3.98T as of Apr 30 2026; our figure $4.14T likely reflects post-Q2 earnings beat (stock +5% on Apr 30). Small timing difference, within acceptable range."
+    },
+    {
+      "metric": "roe",
+      "our_value": 1.6260,
+      "our_value_pct": "162.6%",
+      "web_value": 1.6230,
+      "web_value_pct": "162.3%",
+      "source": "CSIMarket Q1 2026; FinanceCharts (Mar 2026)",
+      "status": "ok",
+      "deviation": "0.2%",
+      "notes": "Multiple sources in range 152%–208% depending on period; CSIMarket Q1 2026 figure of 159.94% and FinanceCharts 162.3% closely match our 162.6%."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.3337,
+      "our_value_pct": "33.37%",
+      "web_value": 0.3118,
+      "web_value_pct": "31.18%",
+      "source": "MLQ.ai TTM ROA / Eulerpool 2026",
+      "status": "ok",
+      "deviation": "7.0%",
+      "notes": "Sources report 31%–33% range; our 33.37% is at the high end but within acceptable deviation."
+    }
+  ],
+  "overall_status": "all metrics verified — no mismatches found",
+  "corrections_applied": false,
+  "summary": "All 7 key metrics for AAPL are within 20% of current web consensus values. The largest deviations observed were net_margin (6.3%) and roa (7.0%), both within threshold. No facts bundles required correction. Note: some minor timing differences exist because facts were likely built before Apple's Q2 FY2026 earnings (reported Apr 30, 2026) fully propagated to all data providers."
+}

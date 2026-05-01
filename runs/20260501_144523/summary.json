@@ -1,0 +1,34 @@
+{
+  "run_id": "20260501_144523",
+  "mode": "swing",
+  "started_at": "2026-05-01T14:45:50Z",
+  "ended_at": "2026-05-01T14:56:13Z",
+  "tickers": [
+    "AAPL"
+  ],
+  "decisions": [
+    {
+      "ticker": "AAPL",
+      "action": "buy",
+      "confidence": 42,
+      "entry": 276.0,
+      "stop": 269.5,
+      "target": 294.84,
+      "reasoning_tldr": "Head Trader neutral (42) \u2014 wait for pullback to $274-278 before entry"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 1,
+    "cash": 3854.26,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "neutral",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}
