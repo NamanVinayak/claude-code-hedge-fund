@@ -1,40 +1,39 @@
 ---
 name: XOM thesis
-last_updated: 2026-04-30
-last_run_id: 20260430_203923
+last_updated: 2026-05-01
+last_run_id: 20260501_203521
 target_words: 500
 stale_after_days: 30
-word_count: 497
-summary: Prior bearish thesis (ceasefire unwind driving XOM lower) is falsified — US-Iran peace talks stalled and blockade resumed; regime has flipped to macro-bullish but technical exhaustion and tomorrow's earnings blackout keep the model in a neutral hold
+word_count: 499
+summary: Prior "neutral hold pending earnings" thesis updated — Q1 beat (EPS $1.16 vs $1.02 est, +15.1%) reported May 1; Iran peace talks now active and WTI -2%; macro/technical regime conflicted; earnings blackout in effect; post-blackout watch for $155.89 breakout or $151.34 base-build
 ---
 
 # XOM — Thesis
 
 ## TL;DR
 
-**Prior thesis falsified.** The previous three runs (Apr 11–17, 2026) carried a bearish thesis centered on the U.S.-Iran ceasefire collapsing the oil geopolitical premium and driving XOM lower. That thesis has been invalidated: peace talks stalled in late April, the U.S. military blockade of Iranian ports resumed, and Goldman Sachs raised its Brent forecast to $90/bbl. XOM has bounced +11% from its lows to $154.67. The new dominant tension is macro-bullish (Iran blockade = sustained oil supply shock) versus technically extended (RSI-7 79.95, Fib 61.8% resistance, daily ADX still bearish-sided). The system's current stance is neutral hold pending the May 1 earnings binary and post-earnings directional clarity. [Source: 20260430_203923 web_research/XOM.json, signals_combined.json swing_macro_context]
+**Prior thesis partially updated — earnings resolved bullishly but Iran macro has shifted.** Run 20260430_203923 held XOM neutral pending the May 1 earnings binary, with the bull case resting on Iran blockade sustaining oil prices. Q1 2026 has now printed: non-GAAP EPS $1.16 vs consensus $1.02 (beat by 15.1%), revenue $85.14B (+2.4% YoY). However, the same May 1 session saw Iran peace talks advance via Pakistani mediators, WTI fell 2%, and the risk manager's 3-day blackout remains enforced (0 days to earnings). The analyst panel is deeply divided (1 bullish / 2 bearish / 2 neutral), confidence is 35%, and no directional consensus exists. Current stance: neutral hold, monitor post-blackout price action at the $155.89 pivot for breakout or $151.34 for base-building. [Source: 20260501_203521 decisions.json, signals_combined.json, web_research/XOM.json]
 
-**What falsified the prior thesis:** The Apr 11–17 bearish thesis assumed the ceasefire would hold and oil prices would normalize toward $75–88/bbl. US-Iran peace talks have stalled as of late April; Goldman now sees $90/bbl Brent by late 2026; the blockade is ongoing. The "ceasefire unwind = oil down = XOM short" chain no longer holds.
+**What changed from prior thesis:** Prior thesis expected Q1 to be a complex offsetting print (upstream beat / downstream miss). The actual print confirmed that pattern — EPS beat on non-GAAP, GAAP fell YoY — but the CFO characterized $3.3–5.3B timing effects as temporary and reversible. The falsification of the Iran-blockade bull thesis is now more material: peace talks are actively advancing on May 1 (WTI -2%), which removes the oil supply premium that underpinned the Apr 30 macro_context bull case.
 
 ## Bull case
 
-- **Iran blockade is a sustained oil supply shock.** ~27% of global maritime oil trade transits the Strait of Hormuz. With peace talks stalled, the supply disruption is not a temporary premium — Goldman raised Brent to $90/bbl by late 2026. A Hormuz closure would spike it further. This directly benefits XOM's upstream realized prices. [Source: 20260430_203923 web_research/XOM.json macro_context]
-- **Guyana Stabroek production ramp (unchanged).** The Uaru project pushes total block production past 1.1M bpd in 2026. Guyana barrels are structurally growing independent of macro. [Source: web_research 2026-04-15]
-- **Pioneer synergies realized.** $2B in synergies confirmed, Permian production at best-in-class efficiency. The integration is largely complete with no drag from legacy costs. [Source: web_research 2026-04-15]
-- **Analyst consensus remains strong buy.** 42 analysts: avg PT ~$162–$165 (current $154). Wells Fargo $185, Jefferies $184, RBC $180. Even after the Wolfe downgrade (Apr 21), the consensus is bullish. [Source: 20260430_203923 web_research/XOM.json analyst_consensus]
-- **Golden Pass LNG Train 1 shipped first export cargo** (Apr 22) — long-delayed milestone, modest but optionally valuable for LNG strategy. [Source: 20260430_203923 web_research/XOM.json ticker_news]
+- **Q1 EPS beat confirms operational strength.** Non-GAAP EPS $1.16 beat consensus $1.02 by 15.1%. Record Guyana and Permian production (on track for 1.8M boe/day in FY2026). CFO confirmed timing effects ($3.3–5.3B) are temporary — Q2 reversal expected. [Source: 20260501_203521 web_research/XOM.json earnings_info]
+- **Analyst consensus remains Buy.** 20–42 analysts: median PT ~$165, range $123–$195. JPMorgan, Wells Fargo, Jefferies, RBC all have Buy/Overweight with targets $170–$185. Only Wolfe Research downgraded (Apr 21). [Source: 20260501_203521 web_research/XOM.json analyst_consensus]
+- **Guyana Uaru project on schedule.** Late-2026 startup adds 250,000 bpd; structural production growth independent of oil price macro. [Source: 20260501_203521 web_research/XOM.json]
+- **Revenue growth.** 54.95% YoY revenue growth. P/E 22.80, P/B 2.41, current ratio 1.31. [Source: 20260501_203521 signals_combined.json fundamentals_analyst_agent]
 
 ## Bear case
 
-- **Daily trend structure has not fully reversed.** ADX=31.17 with -DI (29.86) still leading +DI (22.10) at the daily level; daily MACD is negative (-1.68). The bounce from $148 to $154 is a short-term rally within a still-bearish daily structure. [Source: 20260430_203923 signals_combined.json swing_trend_momentum]
-- **Technical exhaustion at confluence resistance.** RSI-7 at 79.95 (overbought), price directly at the Fib 61.8% retracement ($155.13), nearest resistance at $155.89 (tested 11 times). Hourly OBV is diverging bearishly from price. [Source: 20260430_203923 signals_combined.json swing_mean_reversion]
-- **Q1 2026 earnings print May 1.** Complex offsetting structure: upstream EPS boosted ~$2.9B from high Q1 oil prices, but downstream hit $3.3–5.3B from timing effects, plus $600–800M one-time impairment. Analysts project ~39% YoY EPS decline. [Source: 20260430_203923 web_research/XOM.json earnings_info]
-- **Unconfirmed breakout volume.** The April 29 breakout above $152 came on 0.74x average volume — far below the 1.5x confirmation requirement. Suspect breakout candidate. [Source: 20260430_203923 signals_combined.json swing_breakout]
-- **DCF valuation signals overvalued.** Valuation agent: market cap $641B vs DCF fair value $460B — 28% premium at current price. [Source: 20260430_203923 signals_combined.json valuation_analyst_agent]
+- **Iran peace talks are actively advancing.** Pakistani mediators reported progress on May 1 — WTI fell 2% on the session. If a ceasefire holds, the supply-shock premium that drove the $142→$154 bounce collapses. XOM's realized price forecasts would be revised down materially. [Source: 20260501_203521 web_research/XOM.json macro_context, swing_macro_context]
+- **Panel deeply divided, no tradeable consensus.** Vote count: 1 bullish (catalyst_news 55) / 2 bearish (mean_reversion 42, trend_momentum 40) / 2 neutral. ADX daily 20.18 — borderline trend signal. Hourly -DI 33.87 still leads +DI 27.84. [Source: 20260501_203521 signals_combined.json]
+- **DCF valuation signals overvalued.** Market cap $635B vs DCF fair value $460B — 27.5% premium. Owner earnings model also bearish (-79.9% gap). [Source: 20260501_203521 signals_combined.json valuation_analyst_agent]
+- **Technical resistance unbroken.** $155.89 pivot (12 tests) and Fib 61.8% at $155.13 cap upside. Price was rejected from $155.69 intraday on May 1. [Source: 20260501_203521 signals_combined.json swing_breakout, swing_mean_reversion]
+- **R/R below threshold.** Even the best bullish setup only reaches 1.7:1 — below the 2:1 minimum. [Source: 20260501_203521 decisions.json]
 
 ## What would change the thesis
 
-- **Post-earnings bullish:** Q1 print clears the complex headwinds, guidance reaffirmed, Iran blockade sustains. Pullback to $153 would offer a 2.9:1 R/R entry (macro_context agent's setup). [Source: 20260430_203923 decisions.json]
-- **Post-earnings bearish:** EPS miss + guidance cut + Iran de-escalation signal. Would validate mean-reversion short target $147.66–$148.
-- **Invalidation of bull thesis:** Peace talks resume and ceasefire holds; Brent falls back below $75.
+- **Post-blackout bullish:** Close above $155.89 on 1.5x+ volume with Iran peace talks stalling; opens measured-move target ~$164.12. [Source: 20260501_203521 signals_combined.json swing_breakout]
+- **Base-build entry:** Pullback to $151.34 hourly pivot support with a consolidation pattern — would create the coil that current setup lacks. R/R improves materially from lower base.
+- **Bearish confirmation:** Iran peace deal finalizes, WTI falls below $75/bbl sustained; re-examine mean-reversion short target $147.66–$148.
 - **Sustained close above $160:** Would break the bearish daily ADX structure and signal full trend reversal.
