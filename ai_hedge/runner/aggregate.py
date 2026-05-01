@@ -267,11 +267,15 @@ def main():
         )
     else:
         try:
-            from tracker.db import get_open_positions
+            from tracker.db import get_open_positions, get_pending_trades, get_recent_trade_history
             open_positions = get_open_positions()
+            pending_orders = get_pending_trades()
+            recent_closed = get_recent_trade_history(days=7)
         except Exception as e:
             print(f"  WARNING: could not load stock open positions: {e}")
             open_positions = []
+            pending_orders = []
+            recent_closed = []
 
     analyzed = {t.upper() for t in tickers}
     positions: dict[str, dict] = {
@@ -312,7 +316,8 @@ def main():
     cash_after_exposure = max(0.0, float(args.cash) - total_exposure)
     print(f"  Loaded {len(open_positions)} open position(s); "
           f"{len(other_positions)} in non-analyzed tickers. "
-          f"Exposure ${total_exposure:,.0f} → cash ${cash_after_exposure:,.0f}")
+          f"Exposure ${total_exposure:,.0f} → cash ${cash_after_exposure:,.0f}. "
+          f"{len(pending_orders)} pending order(s), {len(recent_closed)} recent closed trade(s) injected.")
 
     # Build portfolio for deterministic agents (now reflecting real state)
     portfolio = {
@@ -322,6 +327,8 @@ def main():
         "positions": positions,
         "other_positions": other_positions,
         "realized_gains": {ticker: {"long": 0.0, "short": 0.0} for ticker in tickers},
+        "pending_orders": pending_orders,
+        "recent_closed": recent_closed,
     }
 
     # Build shared state for deterministic agents
