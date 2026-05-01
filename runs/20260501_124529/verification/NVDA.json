@@ -1,0 +1,107 @@
+{
+  "ticker": "NVDA",
+  "verified_at": "2026-05-01T12:45:00",
+  "facts_report_period": "2025-10-26",
+  "source_files_checked": [
+    "warren_buffett__NVDA.json",
+    "ben_graham__NVDA.json",
+    "cathie_wood__NVDA.json"
+  ],
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.5272,
+      "our_value_pct": "52.72%",
+      "web_value": 0.5573,
+      "web_value_pct": "55.73%",
+      "source": "MacroTrends / FinanceCharts (TTM as of Jan 2026)",
+      "status": "ok",
+      "deviation": "5.5%",
+      "notes": "Within acceptable range. Our value reflects Q3 FY2026 period (Oct 2025); web value reflects FY2026 full year (Jan 2026). Small timing difference explains gap."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.5903,
+      "our_value_pct": "59.03%",
+      "web_value": 0.6038,
+      "web_value_pct": "60.38%",
+      "source": "MacroTrends (TTM through Jan 2026)",
+      "status": "ok",
+      "deviation": "2.3%",
+      "notes": "Close match. GuruFocus shows 65% for a more recent period; using MacroTrends TTM Jan 2026 (60.38%) as best comparable to our report period."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 40.65,
+      "web_value": 42.44,
+      "source": "FinanceCharts / companiesmarketcap.com (Apr 29, 2026)",
+      "status": "ok",
+      "deviation": "4.4%",
+      "notes": "Multiple sources confirm PE in 40-44x range as of late April 2026. Our value of 40.65 is at the lower end but within normal inter-day and inter-source variance."
+    },
+    {
+      "metric": "revenue_ttm",
+      "our_value": 182900000000,
+      "our_value_label": "~$182.9B (implied from market_cap / P/S ratio)",
+      "web_value": 215900000000,
+      "web_value_label": "$215.9B",
+      "source": "NVIDIA Newsroom Q4 FY2026 press release / GuruFocus / StockAnalysis",
+      "status": "ok",
+      "deviation": "18.0%",
+      "notes": "Revenue is not stored as a direct field in facts bundles — it is implied via price_to_sales_ratio. The ~18% gap is likely because our facts use Q3 FY2026 (Oct 2025) financials, while web sources reflect the full FY2026 (Jan 2026) which added Q4 revenue of ~$39.3B. Deviation does not exceed 20% threshold. No correction applied."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 4850548998144,
+      "our_value_label": "$4.85T",
+      "web_value": 4860000000000,
+      "web_value_label": "~$4.86T",
+      "source": "Capital.com / StockAnalysis (May 1, 2026)",
+      "status": "ok",
+      "deviation": "0.2%",
+      "notes": "Essentially identical. Minor intraday fluctuation."
+    },
+    {
+      "metric": "roe",
+      "our_value": 1.2154,
+      "our_value_pct": "121.54%",
+      "web_value": 1.2444,
+      "web_value_pct": "124.44%",
+      "source": "GuruFocus (TTM Jan 2026)",
+      "status": "ok",
+      "deviation": "2.4%",
+      "notes": "Yahoo Finance reports 101.49% (Apr 29, 2026) which would be ~17% deviation — still under 20% threshold. GuruFocus Oct 2025 value of ~121% closely matches our facts period. No correction warranted."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.8639,
+      "our_value_pct": "86.39%",
+      "web_value": 0.8456,
+      "web_value_pct": "84.56%",
+      "source": "GuruFocus (as of Oct 2025, matching our facts report period)",
+      "status": "ok",
+      "deviation": "2.2%",
+      "notes": "GuruFocus Oct 2025 figure (84.56%) aligns closely with our facts period (Oct 2025). Yahoo Finance Apr 2026 shows 51.19% due to newer balance sheet denominator. Using period-matched source, deviation is within tolerance."
+    }
+  ],
+  "overall_status": "all metrics verified — no mismatches detected",
+  "corrections_applied": false,
+  "corrections_detail": "No metric exceeded the 20% deviation threshold when compared against period-appropriate web sources. Revenue showed the largest deviation (~18%) but this is explained by the Q3-vs-full-FY2026 timing gap and revenue is not stored as a direct field in facts bundles.",
+  "data_quality_notes": [
+    "Facts report period is 2025-10-26 (Q3 FY2026). Web sources citing Jan 2026 (full FY2026) will naturally show slightly higher margins and revenue due to the strong Q4 FY2026 ($39.3B revenue).",
+    "ROA and ROE show wide variance across web sources (51% to 124%) depending on whether they use TTM net income vs annual and beginning vs average equity/assets. Period-matched sources validate our values.",
+    "No margin > 100% anomalies detected. Net margin 52.7% and operating margin 59.0% are plausible for NVIDIA in FY2026.",
+    "PE ratio is positive and reasonable for a profitable growth company — no data bug detected."
+  ],
+  "web_sources_used": [
+    "MacroTrends NVDA Net Profit Margin 2012-2026: https://www.macrotrends.net/stocks/charts/NVDA/nvidia/net-profit-margin",
+    "MacroTrends NVDA Operating Margin 2017-2026: https://www.macrotrends.net/stocks/charts/NVDA/nvidia/operating-margin",
+    "GuruFocus NVDA Operating Margin (65.02%): https://www.gurufocus.com/term/operating-margin/NVDA",
+    "GuruFocus NVDA ROE (124.44%): https://www.gurufocus.com/term/roe/NVDA",
+    "GuruFocus NVDA ROA (84.56% as of Oct 2025): https://www.gurufocus.com/term/roa/NVDA",
+    "FinanceCharts NVDA PE Ratio Apr 2026: https://www.financecharts.com/stocks/NVDA/value/pe-ratio",
+    "NVIDIA Q4 FY2026 Press Release ($215.9B revenue): https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026",
+    "GuruFocus NVDA Revenue ($215.9B): https://www.gurufocus.com/term/revenue/NVDA",
+    "Capital.com NVDA Market Cap April 2026: https://capital.com/en-int/markets/shares/nvidia-corp-share-price/market-cap"
+  ]
+}
