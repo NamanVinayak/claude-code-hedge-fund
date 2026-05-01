@@ -36,7 +36,7 @@ None. Both trades are closed/abandoned as of April 29, 2026 (source: tracker.db 
 | Entered at | 2026-04-15 17:14:47 |
 | Closed at | 2026-04-29 11:19:51 |
 
-**Model thesis at entry:** Strongest momentum in the April 15 basket — #1 momentum rank, MACD histogram +11.84 (more than double next-best), 5-day ROC +15.2%, 10-day ROC +23.5%. Morgan Stanley named META top tech earnings pick ahead of Q1 2026 report. Broadcom AI chip partnership through 2029 cited. Daily RSI at 65.8 was notably not overbought, leaving statistical room. One share was the maximum allowed by the 25%-per-position risk limit given META's $675 price against a $5,000 paper budget. Confidence: 63%, R:R: 2.38:1 (target $706.40, stop $637.70), timeframe 7–14 days (source: decisions.json, run 20260415_093758).
+**Model thesis at entry:** Strongest momentum in the April 15 basket — #1 momentum rank, MACD histogram +11.84 (more than double next-best), 5-day ROC +15.2%, 10-day ROC +23.5%. Morgan Stanley named META top tech earnings pick ahead of Q1 2026 report. Broadcom AI chip partnership through 2029 cited. Daily RSI at 65.8 was notably not overbought, leaving statistical room. One share was the maximum allowed at the time (originally a $5K paper budget — bumped to $25K when the phantom-budget sizing bug was fixed in commit b2b472d). Confidence: 63%, R:R: 2.38:1 (target $706.40, stop $637.70), timeframe 7–14 days (source: decisions.json, run 20260415_093758).
 
 **What happened:** Fill came in slightly below model entry ($673.72 vs. $675.75 — favorable $2.03 slip). Closed April 29 at $671.34, a $2.38 loss. Close coincides with Q1 2026 earnings day — likely exited rather than held through the binary event. Stop of $637.70 was never hit.
 
@@ -60,11 +60,11 @@ None. Both trades are closed/abandoned as of April 29, 2026 (source: tracker.db 
 | Entered at | None |
 | Closed at | 2026-04-29 11:19:51 |
 
-**Model thesis at entry:** Explosive breakout with 1.75x volume. Hourly ADX at 66 signaling very strong intraday trend strength. The April 17 run had much higher confidence (74%) and significantly larger position size (15 shares vs. 1 share on April 15) due to different portfolio cash assumptions ($100k default budget vs. $5k paper budget). R:R: 2.79:1 (target $710, stop $665), timeframe 8–12 trading days. The fundamental bearish signal (declining EPS trend, heavy insider selling) kept the position "moderate" for that run's context (source: decisions.json, run 20260417_233350).
+**Model thesis at entry:** Explosive breakout with 1.75x volume. Hourly ADX at 66 signaling very strong intraday trend strength. The April 17 run had much higher confidence (74%) and a position size (15 shares) that — at the time — was sized against a phantom $100K budget (a sizing bug since fixed in commit b2b472d; current paper account is $25K with proper conviction-based sizing). R:R: 2.79:1 (target $710, stop $665), timeframe 8–12 trading days. The fundamental bearish signal (declining EPS trend, heavy insider selling) kept the position "moderate" for that run's context (source: decisions.json, run 20260417_233350).
 
 **What happened:** No fill recorded. Order placed at 00:18 on April 18 (after market close). Moomoo paper trading uses day-only limit orders — after-hours placement means execution depends on next-day open. If META opened above $676.87, the order would expire unfilled. Abandoned April 29.
 
-**Lessons:** After-hours order placement risks missing entries. The $100k budget assumption for this run vs. the $5k actual paper account created an unrealistic 15-share position ($10,153 notional exceeds budget). Should have used paper account budget constraint.
+**Lessons:** After-hours order placement risks missing entries. This trade is a relic from the phantom $100K budget bug (fixed) — the 15-share size was never appropriate for the actual paper account. Going forward, the new conviction-based sizing model + ledger-aware risk manager prevent recurrence (commits b2b472d, 5361f7c).
 
 ---
 

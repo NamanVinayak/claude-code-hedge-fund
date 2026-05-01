@@ -18,7 +18,7 @@ Reference upstream lives at `reference/ai-hedge-fund/` (read-only). Do NOT assum
 | Persona helpers + prompt rename map | `ai_hedge/personas/CLAUDE.md` |
 | Cloud DB (Turso) + simulator + ingester + dashboard | `tracker/CLAUDE.md` |
 | Architectural audit + dashboard ship notes | `ARCHITECTURE.md` |
-| Resume-from-here after compaction | `HANDOFF.md` |
+| Resume-from-here after compaction | `HANDOFF.md` (gitignored — local personal notes only; not used by routines) |
 | Run instructions step-by-step | `RUN_PLAYBOOK.md` |
 | Trading journal (every trade, position, lesson) | `tracker/TRADING_LOG.md` |
 

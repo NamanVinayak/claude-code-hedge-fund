@@ -203,7 +203,15 @@ Only run this step if the wiki feature flag is on:
 .venv/bin/python -c "from ai_hedge.wiki.inject import is_wiki_enabled; import sys; sys.exit(0 if is_wiki_enabled() else 1)"
 ```
 
-If exit 0 (enabled), dispatch **one** Agent tool call to update wiki pages with what this run learned:
+If exit 0 (enabled), first dump the canonical Turso ledger so the curator has authoritative trade ground truth (prevents Position-N hallucinations from inferring trades that never made it to the ledger):
+
+```bash
+.venv/bin/python -m tracker.wiki_ledger_export --run-id $RUN_ID --tickers $TICKERS
+```
+
+This writes `runs/$RUN_ID/trade_ledger.json` containing open_positions, pending_orders, recent_closures_30d, and per_ticker_history. If the helper fails (e.g. Turso unreachable), continue anyway — the curator will fall back to its previous behavior. Wiki updates never block trade execution.
+
+Then dispatch **one** Agent tool call to update wiki pages with what this run learned:
 
 ```
 IMPORTANT: Do NOT invoke any skills. Do NOT use memory tools. Read files and write files only.
@@ -215,6 +223,7 @@ You are the Wiki Curator agent.
    - runs/{RUN_ID}/decisions.json
    - runs/{RUN_ID}/signals_combined.json
    - runs/{RUN_ID}/explanation.json
+   - runs/{RUN_ID}/trade_ledger.json   ← canonical Turso ledger (authoritative for all trade-related claims, see hard rule #11)
    - runs/{RUN_ID}/web_research/<TICKER>.json (one per ticker if present)
 3. For each ticker in [{TICKERS}], read existing wiki/<TICKER>/{thesis,technicals,catalysts,recent,trades}.md (if they exist) plus their YAML front-matter
 4. Decide per-page whether to rewrite, append, or leave untouched per the prompt rules

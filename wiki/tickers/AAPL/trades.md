@@ -35,7 +35,7 @@ AAPL has one trade on record in tracker.db (trade ID 19, abandoned, no fill, $0 
 | Created | 2026-05-01 |
 | Entry fill | Pending — limit at $276 not yet triggered |
 
-**Rationale.** Head trader neutral (42 conf) after Q2 FY2026 earnings beat (EPS $2.01, gross margin 49.3% record). Breakout above $276.11 on 2.08x volume confirmed on April 30. System will not chase at $282 — hourly Z-score 2.52 and Bollinger %B 1.28 flag overextension. Entry trigger: pullback to $274–278 (Fib 38.2% / daily upper Bollinger Band confluence) with ADX rising above 19. Size: 2 shares × $276 = $552, within risk manager cap $768. Key risks: insider net selling (-$235M), ADX still sub-25, prior portfolio loss on similar NVDA setup (-$264.65). (Source: decisions.json, run 20260501_144523.)
+**Rationale.** Head trader neutral (42 conf) after Q2 FY2026 earnings beat (EPS $2.01, gross margin 49.3% record). Breakout above $276.11 on 2.08x volume confirmed on April 30. System will not chase at $282 — hourly Z-score 2.52 and Bollinger %B 1.28 flag overextension. Entry trigger: pullback to $274–278 (Fib 38.2% / daily upper Bollinger Band confluence) with ADX rising above 19. Size: 2 shares × $276 = $552, within risk manager cap $768. Key risks: insider net selling (-$235M), ADX still sub-25, prior portfolio loss on similar NVDA setup (-$63.20 corrected; was originally -$264.65 due to a sizing bug, fixed in commit b2b472d). (Source: decisions.json, run 20260501_144523.)
 
 ## Closed — last 30 days
 
@@ -99,6 +99,6 @@ No trades.
 
 **Q2 earnings binary resolved bullishly.** The April 30 run (20260430_144524) was blocked by the 3-day earnings blackout. May 1 run (20260501_144523) is the first post-earnings entry attempt. Gross margin at 49.3% (record) falsified the bear-case margin-collapse scenario the model was hedging against.
 
-**Entry discipline maintained.** The system is not chasing the gap from $271 to $282. Limit at $276 reflects the confluence of Fib 38.2% and daily upper Bollinger Band — the same pullback discipline that (with hindsight) would have avoided the NVDA dip-buy stop-out (-$264.65 on an aggressive entry into stretched hourly RSI).
+**Entry discipline maintained.** The system is not chasing the gap from $271 to $282. Limit at $276 reflects the confluence of Fib 38.2% and daily upper Bollinger Band — the same pullback discipline that (with hindsight) would have avoided the NVDA dip-buy stop-out (-$63.20 corrected; was originally -$264.65 from a sizing bug — see `wiki/meta/lessons.md`).
 
 **Watch for re-queue.** The Apr 17 abandoned trade suggests the daily order expiry may not auto-re-queue. If the $276 limit order expires without a fill, manual resubmission or a new run will be needed. (Source: trades.md, prior runs.)

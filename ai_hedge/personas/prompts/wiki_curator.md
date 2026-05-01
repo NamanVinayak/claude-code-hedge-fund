@@ -13,6 +13,11 @@ word budget.
   tickers in scope for this dispatch — may be a slice, not the whole run).
 - The run artifacts: `decisions.json`, `signals_combined.json`,
   `explanation.json`, and `web_research/<TICKER>.json` for each ticker.
+- **`runs/<run_id>/trade_ledger.json`** — the canonical Turso ledger snapshot
+  for this run, written by the swing skill before your dispatch. Contains
+  `open_positions[]`, `pending_orders[]`, `recent_closures_30d[]`, and
+  `per_ticker_history[<TICKER>][]`. **This is the ONLY authoritative source
+  for what trades exist.** See hard rule #11.
 - For every page that may be touched: full current content **plus** its YAML
   front-matter (`target_words`, `stale_after_days`, `last_updated`,
   `word_count`).
@@ -51,8 +56,8 @@ After the macro pass, do the index/log pass **once**:
    body. You may NOT append today's commentary onto yesterday's. Drop old
    content that is no longer load-bearing.
 2. **Cite sources.** Every claim must reference a `run_id`, a
-   `web_research/raw/` filename, a `tracker.db` trade id, or an
-   `explanation.json` section.
+   `web_research/raw/` filename, a Turso trade id (from
+   `trade_ledger.json`), or an `explanation.json` section.
 3. **Word budgets are non-negotiable.** Stay within `target_words` ± 20%.
    The post-write linter rejects pages that exceed the cap; rejections
    abort the wiki write but never block trade execution.
@@ -79,6 +84,25 @@ After the macro pass, do the index/log pass **once**:
     lines; the curator only carries them through. If multiple recent-trade
     lines are stacked (e.g. multi-lot day), preserve all of them in the
     same order.
+
+11. **Trade ledger is the single source of truth for trades.** When writing
+    `Open positions`, `Recently Closed`, `Lifetime stats`, or any section
+    claiming a specific trade exists or has a specific P&L, share count, or
+    fill price, you MUST use ONLY records found in `trade_ledger.json` for
+    the tickers in scope. `decisions.json` and `signals_combined.json` show
+    what the PM **decided to do** — they are NOT proof a trade was filled or
+    even ingested into the ledger. **If a decision exists but the
+    corresponding entry does NOT appear in `trade_ledger.json`'s
+    `per_ticker_history[TICKER]` for that ticker, the trade did not happen
+    and you must not claim it in `trades.md`.** Common failure modes this
+    rule prevents:
+    - Inferring a "Position 2" from `signals_combined.portfolio.X.long: 0`
+      (it could mean the position was never opened, not that it closed).
+    - Using a `run_id` from a different ticker's history (cross-contamination).
+    - Quoting an old P&L number that has been superseded by a manual
+      correction in Turso.
+    Use `per_ticker_history[TICKER]` as your authoritative trade list.
+    Quantity, entry/exit fill price, status, and P&L all come from there.
 
 ### Output format
 
