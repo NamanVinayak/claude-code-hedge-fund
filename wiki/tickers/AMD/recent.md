@@ -1,10 +1,10 @@
 ---
 name: AMD recent
-last_updated: 2026-04-30
-last_run_id: 20260430_140858
+last_updated: 2026-05-01
+last_run_id: 20260501_133944
 target_words: 300
 stale_after_days: 60
-word_count: 145
+word_count: 199
 summary: Signal history — direction flips and key level breaks for AMD across swing runs
 ---
 
