@@ -1,0 +1,47 @@
+{
+  "MSFT": {
+    "signal": "bearish",
+    "confidence": 32,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0.30000000000000004,
+        "revenue_growth": 0.1493215623240672,
+        "revenue_trend": -0.005803035631386482,
+        "eps_growth": 0.1551433389544688,
+        "eps_trend": -0.01294754292763148,
+        "fcf_growth": -0.0332113782721983,
+        "fcf_trend": 0.0006252465025431646
+      },
+      "growth_valuation": {
+        "score": 0,
+        "peg_ratio": null,
+        "price_to_sales_ratio": 9.901626469166201
+      },
+      "margin_expansion": {
+        "score": 0.6000000000000001,
+        "gross_margin": 0.6833323714804199,
+        "gross_margin_trend": 0.0004653784334010941,
+        "operating_margin": 0.47013446703730066,
+        "operating_margin_trend": -0.006032471441538113,
+        "net_margin": 0.39694707885270186,
+        "net_margin_trend": -0.005107016433073878
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 0.8,
+        "debt_to_equity": 0.12562922332951942,
+        "current_ratio": 1.3534464445042416
+      },
+      "final_analysis": {
+        "signal": "bearish",
+        "confidence": 32,
+        "weighted_score": 0.34
+      }
+    }
+  }
+}
