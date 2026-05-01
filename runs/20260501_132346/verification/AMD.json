@@ -1,0 +1,62 @@
+{
+  "ticker": "AMD",
+  "verified_at": "2026-05-01T13:30:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.11527,
+      "web_value": 0.1225,
+      "source": "CNBC / multiple sources (May 1, 2026)",
+      "status": "ok",
+      "deviation": "5.9%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.08548,
+      "web_value": 0.107,
+      "source": "AMD Q4 2025 / FY2025 earnings release (ir.amd.com, Feb 3, 2026) — GAAP operating income $3.7B on revenue $34.6B",
+      "status": "MISMATCH",
+      "deviation": "20.1%",
+      "action": "replaced with web value (0.107) in all facts bundles: warren_buffett__AMD.json, aswath_damodaran__AMD.json"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 135.30,
+      "web_value": 126.28,
+      "source": "FinanceCharts / Macrotrends (April 27, 2026) — range 113-135 across sources depending on date/method",
+      "status": "ok",
+      "deviation": "7.2%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 31200000000,
+      "web_value": 34600000000,
+      "source": "AMD FY2025 earnings release (ir.amd.com) — record annual revenue $34.6B; StockAnalysis TTM $34.63B",
+      "status": "ok",
+      "deviation": "9.8%",
+      "note": "Implied revenue from facts bundle P/S ratio (18.53) and market_cap ($578B) = ~$31.2B; actual FY2025 revenue is $34.6B giving P/S ~16.6. Deviation is 9.8% — under 20% threshold. Facts bundle report_period is 2025-09-27 (TTM ending Sep 2025), which explains partial-year lower figure. No correction applied."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 577964343296,
+      "web_value": 577940000000,
+      "source": "StockAnalysis / CompaniesMarketCap (April 30, 2026)",
+      "status": "ok",
+      "deviation": "0.0%"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.0624,
+      "web_value": 0.0708,
+      "source": "Yahoo Finance TTM ROE as of April 29, 2026",
+      "status": "ok",
+      "deviation": "11.9%"
+    }
+  ],
+  "overall_status": "1 mismatch corrected (operating_margin)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260501_132346/facts/warren_buffett__AMD.json",
+    "runs/20260501_132346/facts/aswath_damodaran__AMD.json"
+  ]
+}

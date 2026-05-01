@@ -1,0 +1,341 @@
+{
+  "ticker": "AMD",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 335.2115677591334,
+      "sma_5": 339.4499938964844,
+      "ema_10": 316.4775302355697,
+      "sma_10": 314.3869964599609,
+      "ema_20": 288.05291296610204,
+      "sma_20": 277.74299850463865,
+      "ema_21": 285.8846280423868,
+      "sma_21": 274.52714175269716,
+      "ema_50": 251.69349640819627,
+      "sma_50": 232.23339904785155,
+      "ema_200": 207.96351901229522,
+      "sma_200": 210.38029960632323,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 354.489990234375,
+    "dist_from_50sma_pct": 52.64,
+    "price_vs_ma": {
+      "above_ema_5": true,
+      "pct_from_ema_5": 5.75,
+      "above_sma_5": true,
+      "pct_from_sma_5": 4.43,
+      "above_ema_10": true,
+      "pct_from_ema_10": 12.01,
+      "above_sma_10": true,
+      "pct_from_sma_10": 12.76,
+      "above_ema_20": true,
+      "pct_from_ema_20": 23.06,
+      "above_sma_20": true,
+      "pct_from_sma_20": 27.63,
+      "above_ema_21": true,
+      "pct_from_ema_21": 24.0,
+      "above_sma_21": true,
+      "pct_from_sma_21": 29.13,
+      "above_ema_50": true,
+      "pct_from_ema_50": 40.84,
+      "above_sma_50": true,
+      "pct_from_sma_50": 52.64,
+      "above_ema_200": true,
+      "pct_from_ema_200": 70.46,
+      "above_sma_200": true,
+      "pct_from_sma_200": 68.5,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 35349.0
+    },
+    "rsi": {
+      "rsi_7": 79.36,
+      "rsi_14": 83.06,
+      "rsi_21": 86.46
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 33.2375,
+      "signal_line": 26.2216,
+      "histogram": 7.0158,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 367.1,
+      "middle": 277.74,
+      "lower": 188.38,
+      "width": 0.6435,
+      "pct_b": 0.9294
+    },
+    "atr": {
+      "atr_14": 17.35,
+      "atr_pct": 4.9
+    },
+    "adx": {
+      "adx_14": 74.94,
+      "plus_di": 55.37,
+      "minus_di": 10.1,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 42000100,
+      "avg_volume_20": 39939065,
+      "relative_volume": 1.05,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 209.21,
+          "tests": 14,
+          "volume_confirmed": false
+        },
+        {
+          "price": 216.71,
+          "tests": 12,
+          "volume_confirmed": true
+        },
+        {
+          "price": 219.65,
+          "tests": 7,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 188.22,
+          "tests": 2,
+          "volume_confirmed": false
+        },
+        {
+          "price": 192.87,
+          "tests": 9,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": null,
+      "nearest_support": 192.87,
+      "recent_high": 354.96,
+      "recent_low": 200.62,
+      "prev_day_high": 340.17,
+      "prev_day_low": 318.86,
+      "prev_day_close": 337.11
+    },
+    "fibonacci": {
+      "swing_high": 354.96,
+      "swing_low": 192.83,
+      "fib_236": 316.7,
+      "fib_382": 293.03,
+      "fib_500": 273.89,
+      "fib_618": 254.76,
+      "fib_786": 227.53,
+      "fib_ext_1272": 399.06,
+      "fib_ext_1618": 455.16,
+      "fib_ext_2000": 517.09,
+      "fib_ext_low_1272": 148.73,
+      "fib_ext_low_1618": 92.63
+    },
+    "momentum": {
+      "roc_5d": 16.1,
+      "roc_10d": 27.4,
+      "roc_21d": 74.26
+    },
+    "z_score_50": 2.6,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 338.3211547279303,
+      "sma_24": 335.3558756510417,
+      "ema_48": 325.7783652210996,
+      "sma_48": 328.29179827372235,
+      "ema_120": 293.96551893486884,
+      "sma_120": 285.9623149871826,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 354.3500061035156,
+    "dist_from_50sma_pct": 23.91,
+    "price_vs_ma": {
+      "above_ema_24": true,
+      "pct_from_ema_24": 4.74,
+      "above_sma_24": true,
+      "pct_from_sma_24": 5.66,
+      "above_ema_48": true,
+      "pct_from_ema_48": 8.77,
+      "above_sma_48": true,
+      "pct_from_sma_48": 7.94,
+      "above_ema_120": true,
+      "pct_from_ema_120": 20.54,
+      "above_sma_120": true,
+      "pct_from_sma_120": 23.91,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 35335.0
+    },
+    "rsi": {
+      "rsi_21": 66.57
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 14.6355,
+      "signal_line": 14.5514,
+      "histogram": 0.084,
+      "bullish_crossover": true
+    },
+    "bollinger": {
+      "upper": 364.3,
+      "middle": 328.29,
+      "lower": 292.29,
+      "width": 0.2193,
+      "pct_b": 0.8619
+    },
+    "atr": {
+      "atr_24": 5.74,
+      "atr_pct": 1.62
+    },
+    "adx": {
+      "adx_24": 17.25,
+      "plus_di": 30.1,
+      "minus_di": 22.93,
+      "trend_strength": "weak"
+    },
+    "volume": {
+      "current_volume": 3739289,
+      "avg_volume_20": 4956006,
+      "relative_volume": 0.75,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 352.99,
+          "tests": 6,
+          "volume_confirmed": true
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 299.76,
+          "tests": 5,
+          "volume_confirmed": false
+        },
+        {
+          "price": 310.0,
+          "tests": 4,
+          "volume_confirmed": true
+        },
+        {
+          "price": 328.81,
+          "tests": 6,
+          "volume_confirmed": true
+        }
+      ],
+      "nearest_resistance": null,
+      "nearest_support": 328.81,
+      "recent_high": 354.96,
+      "recent_low": 316.2,
+      "prev_day_high": 353.11,
+      "prev_day_low": 351.0,
+      "prev_day_close": 352.75
+    },
+    "fibonacci": {
+      "swing_high": 354.96,
+      "swing_low": 310.0,
+      "fib_236": 344.35,
+      "fib_382": 337.79,
+      "fib_500": 332.48,
+      "fib_618": 327.17,
+      "fib_786": 319.62,
+      "fib_ext_1272": 367.19,
+      "fib_ext_1618": 382.75,
+      "fib_ext_2000": 399.92,
+      "fib_ext_low_1272": 297.77,
+      "fib_ext_low_1618": 282.21
+    },
+    "momentum": {
+      "roc_5d": 1.78,
+      "roc_10d": 6.32,
+      "roc_21d": 5.94
+    },
+    "z_score_120": 1.74,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 336.760009765625,
+      "close": 347.80999755859375,
+      "high": 352.989990234375,
+      "low": 334.5400085449219,
+      "volume": 81616700,
+      "time": "2026-04-24"
+    },
+    {
+      "open": 346.32000732421875,
+      "close": 334.6300048828125,
+      "high": 349.2099914550781,
+      "low": 328.80999755859375,
+      "volume": 50585300,
+      "time": "2026-04-27"
+    },
+    {
+      "open": 311.8599853515625,
+      "close": 323.2099914550781,
+      "high": 327.5,
+      "low": 310.0,
+      "volume": 43002500,
+      "time": "2026-04-28"
+    },
+    {
+      "open": 326.5799865722656,
+      "close": 337.1099853515625,
+      "high": 340.1700134277344,
+      "low": 318.8599853515625,
+      "volume": 44704400,
+      "time": "2026-04-29"
+    },
+    {
+      "open": 341.3599853515625,
+      "close": 354.489990234375,
+      "high": 354.9599914550781,
+      "low": 332.6000061035156,
+      "volume": 42000100,
+      "time": "2026-04-30"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 354.489990234375,
+  "market_cap": 577964343296.0,
+  "wiki_context": {
+    "slices": {
+      "catalysts_full": {
+        "path": "wiki/tickers/AMD/catalysts.md",
+        "mode": "full",
+        "content": "# AMD \u2014 Catalysts\n\n## TL;DR\n\nThe next binary event is Q1 2026 earnings on May 5, 2026 after market close. The structural bull catalysts \u2014 the $60B Meta infrastructure deal and AMD's first-mover position on TSMC 2nm \u2014 are already reflected in price following the parabolic April run. The structural bear catalyst \u2014 25% tariff on advanced AI chips \u2014 is an ongoing margin headwind not yet fully digested. Earnings on May 5 is the resolution event.\n\n## Upcoming events\n\n| Date | Event | Expected impact |\n|---|---|---|\n| May 5, 2026 (after close) | Q1 2026 earnings | Binary \u2014 consensus EPS $1.18, revenue ~$9.8B (+32% YoY) |\n| 2H 2026 | MI450 GPU launch | Positive if benchmarks beat H200; neutral if delayed |\n| 2H 2026 | Helios rack-scale platform launch | Positive \u2014 positions AMD for multi-GPU hyperscale deals |\n| Ongoing | TSMC tariff exemption decision | Potential positive relief if hyperscaler exemptions pass |\n\nSources: web_research/AMD.json runs 20260415_110848 and swing_20260411_211655.\n\n## Recent news synthesis\n\n**Positive:**\n- **Meta $60B infrastructure deal** \u2014 Multi-year commitment covering AMD GPUs, Venice-architecture CPUs, and custom silicon co-engineering. Described by analysts as transformational for AMD's Data Center revenue visibility (source: web_research/AMD.json, run 20260415_110848, Capital.com/Motley Fool, April 2026).\n- **TSMC 2nm first adopter** \u2014 CEO Lisa Su confirmed April 15, 2026 that AMD will be first on TSMC's 2nm node. Ahead of both Nvidia and Intel on next process generation (source: web_research/AMD.json, run 20260415_110848).\n- **Q4 2025 beat** \u2014 Revenue $10.27B (+34% YoY), Data Center $5.38B record, EPS $1.53 vs $1.24 estimate. Shares fell on soft Q1 sequential guidance despite the beat (source: web_research/AMD.json, run 20260415_110848).\n- **AMD server CPU share crosses 40%** \u2014 Pricing power at Intel's expense, validated by multiple analyst reports (source: web_research/AMD.json, run swing_20260411_211655).\n- **Goldman Sachs top pick** heading into Q1 earnings season; Erste Group upgraded to Buy (source: web_research/AMD.json, run swing_20260411_211655).\n\n**Negative:**\n- **25% tariff on advanced AI chips** \u2014 Enacted January 14, 2026, covers AMD MI325X and Nvidia H200. Raising GPU/memory prices, compressing margins on hyperscaler deals (source: web_research/AMD.json, run 20260415_110848, Axios/CNN Business).\n- **Nvidia market share gap widened** \u2014 Nvidia holds ~89% server GPU share despite MI-series ramp. AMD's addressable market is smaller than the headline AI tailwind implies (source: web_research/AMD.json, run 20260415_110848, IDC/April 2026).\n\n## Insider activity\n\nCEO Lisa Su sold approximately $16 million in shares in March 2026. Insider distribution tracked at 83 buys / 188 sells \u2014 sellers outnumber buyers at the board level by more than 2:1 (source: swing_head_trader signal, run swing_20260411_211655). This is an ongoing overhang but has not historically been a short-term directional catalyst.\n\n## Analyst consensus\n\n- **Rating:** Buy (consensus across all three runs)\n- **Avg price target:** $274\u2013$277 (April 2026); median $290; range $120\u2013$380\n- **Bull target:** Evercore ISI $358, Melius Research $380\n- **Coverage:** 39 Buy / 0 Sell among 51 analysts as of April 2026\n- **Full-year EPS growth:** ~72% consensus for 2026, ~60% for 2027\n\nSources: web_research/AMD.json, runs 20260415_110848 and swing_20260411_211655.\n",
+        "last_updated": "2026-04-29",
+        "stale": false
+      },
+      "calendar_full": {
+        "missing": true,
+        "mode": "full"
+      }
+    }
+  }
+}

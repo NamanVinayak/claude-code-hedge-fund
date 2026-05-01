@@ -1,54 +1,50 @@
 ---
 name: AMD technicals
-last_updated: 2026-04-30
-last_run_id: 20260430_140858
+last_updated: 2026-05-01
+last_run_id: 20260501_132346
 target_words: 350
 stale_after_days: 7
-word_count: 355
-summary: post-squeeze consolidation at $337-345 — ADX 73.57 confirms extreme trend, RSI 82 overbought, Z-score 2.47; hold pending earnings binary May 5 or pullback to 308-315
+word_count: 348
+summary: parabolic extension V2 — RSI 83, ADX 74.94, Z-score 2.6, +74% in 21 days; system issues short signal
 ---
 
 # AMD — Technicals
 
 ## TL;DR
 
-As of run 20260430_140858, AMD completed a parabolic squeeze run from ~$200 to $353 (ATH), pulled back to $310, and is now consolidating between $328.81–$352.99. ADX 73.57 confirms one of the strongest trends in the watchlist. RSI 82 and Z-score 2.47 indicate statistical overextension. No actionable entry — wait for a confirmed breakout above $352.99 with 1.5x+ daily volume, or a pullback to $308–$315 post-earnings binary (May 5).
-
-Prior setup type (Apr 17, run 20260417_233350): parabolic momentum with RSI 91, Z-score 3.66 — logged to recent.md.
+As of run 20260501_132346, AMD has surged +74% in 21 trading days to $354.49, reaching a new all-time high. RSI-14 is 83 (severely overbought), Z-score vs 50-SMA is 2.6 (statistical exhaustion), and ADX 74.94 is among the strongest trend readings ever recorded on this ticker. All five swing agents refused to enter long; two issued bearish/short signals. The system issued a short at $354.49, stop $372.31, target $277.74 (4.31:1 R/R), sized at 1 share due to earnings binary risk on May 5.
 
 ## Multi-timeframe state
 
 | Timeframe | Bias | Key reading |
 |---|---|---|
-| Daily | Strongly bullish | ADX 73.57, all EMAs aligned up, RSI 82, overbought |
-| Hourly | Distribution forming | MACD histogram –1.69; –DI (33.53) > +DI (20.45) = intraday sellers in control |
-| Statistical | Mean-reversion risk | Z-score 2.47 (vs +2 warning); Bollinger %B 0.885 pressing upper band |
+| Daily | Overbought extreme | ADX 74.94, RSI 83, all EMAs fanned bullish, but Z-score 2.6 flags statistical exhaustion |
+| Hourly | Decelerating | ADX 17.25 (weak/indecision), MACD bullish crossover but ROC decelerating; relative vol 0.75 declining |
+| Statistical | Mean-reversion risk | Z-score 2.6 vs prior peaks (3.66 on Apr 17, 2.89 on Apr 15, 2.35 on Apr 11) — extended but partially corrected |
 
-Sources: swing_breakout, swing_trend_momentum, swing_mean_reversion, swing_macro_context (run 20260430_140858).
+Sources: swing_mean_reversion, swing_trend_momentum, swing_macro_context signals (run 20260501_132346).
 
 ## Key levels
 
 | Level | Value | Source |
 |---|---|---|
-| Breakout trigger | $352.99 | Hourly pivot high, 2x tested, volume-confirmed (run 20260430_140858) |
-| Required volume for breakout | 1.5x+ daily average | swing_breakout agent (run 20260430_140858) |
-| Key hourly support | $328.81 | Hourly pivot low, 6x tested, volume-confirmed |
-| Pullback entry zone | $308–$315 | Trend_momentum + macro_context consensus (2-agent agreement) |
-| Pullback stop | $299.75 | swing_macro_context agent |
-| Pullback target | $366.67 | Fib 1.272 extension |
-| Earnings date | 2026-05-05 | Binary event — do not initiate before resolution |
+| Entry (short) | $354.49 | Mean reversion agent entry (run 20260501_132346) |
+| Stop (short) | $372.31 | Swing high + 1 ATR; invalidation level |
+| Target (short) | $277.74 | 20-SMA / Bollinger mid-band mean reversion |
+| Post-earnings long zone | $310–$328 | Volume-confirmed hourly support; head trader preferred re-entry |
+| Hourly pivot support | $328.81 | 6-test volume-confirmed level; catalyst_news target |
+| Breakout entry (conditional) | $355–$356 | Only valid with 1.5x+ volume confirmation (not met today) |
 
-## Indicator snapshot (run 20260430_140858)
+## Indicator snapshot (run 20260501_132346)
 
-- **RSI-14:** 82.09; **RSI-21:** 85.78 — deeply overbought on daily; down from RSI 91 (Apr 17 run) but still extreme
-- **ADX:** 73.57 (+DI 56.62 / –DI 10.51) — extremely strong trend; highest ever recorded for AMD in this system
-- **Hourly ADX:** –DI 33.53 > +DI 20.45 — intraday sellers dominant despite elevated daily price
-- **MACD:** Daily histogram +6.87 (expanding); hourly histogram –1.69 (distribution forming)
-- **Z-score (50-period):** 2.47 — statistically overextended; below Apr 17 peak of 3.66
-- **Bollinger BB width:** 0.6396 (daily) — wide; squeeze already fired, post-squeeze consolidation phase
-- **Historical volatility:** 71.4% annualized — expect 3–5% daily swings
-- **EMA alignment:** EMA5 325.6 > EMA10 308.0 > EMA21 279.0 > EMA50 247.5 — perfectly fanned bullish
+- **RSI-14:** 83.06 (daily), 66.57 (hourly) — overbought daily; elevated but not extreme hourly
+- **ADX:** 74.94 (daily — exceptional trend strength), 17.25 (hourly — weak/indecision)
+- **21-day ROC:** +74.26% — highest reading in watchlist history across all tracked tickers
+- **Z-score vs 50-SMA:** 2.6 — statistical exhaustion level; below prior Apr 17 extreme of 3.66
+- **Bollinger %B:** 0.929 — price near upper band (upper at $367.10)
+- **ATR:** ~4.9% daily — wide; requires wide stops, destroys R/R at current price for long entries
+- **EMA fan:** EMA10 $316.5 / EMA21 $285.9 / EMA50 $251.7 — perfectly bullish fan, but price is 12% above EMA10
 
 ## Setup type
 
-Post-squeeze consolidation in a parabolic trend. The April squeeze fired the big move ($200 → $353 ATH). Now in a defined consolidation range ($310–$353) with earnings binary May 5 as the primary resolution event. No entry justified at current price ($337–$345) given sub-2:1 R/R and earnings binary risk. Constructive again above $352.99 with 1.5x+ daily volume, or at $308–$315 post-earnings with hourly momentum re-aligned bullish.
+Parabolic extension V2 — second major overbought episode. Prior episode peaked at RSI 91 / Z-score 3.66 (Apr 17). Partial reset occurred (price fell to $310 low on Apr 28) then re-accelerated +74% in 21 days to today's $354.49. The setup becomes constructive long again on RSI reset to 55–65 and Z-score below 1.5, with earnings resolved (May 5 binary clears the path).
