@@ -1,32 +1,65 @@
 ---
 name: DIS trades
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-01
+last_run_id: 20260501_221355
 target_words: 800
 stale_after_days: 60
-word_count: 802
-summary: No trades ever executed on DIS in tracker.db; the model recommended hold (Apr 11) then cautious buy (Apr 15) — the buy was never placed, likely due to entry discipline (do not chase above $103).
+word_count: 734
+summary: No fills confirmed in trade_ledger.json per_ticker_history[DIS]; run 20260501_221355 issued buy decision (2 shares, $102.50 entry, 62% confidence) — pending ledger ingestion; three prior model recommendations, all unexecuted.
 ---
 
 # DIS — Trades
 
 ## TL;DR
 
-Zero trades have ever been placed on DIS in the paper trading account (tracker.db query returned 0 rows). The model produced two assessments in April 2026: a hold on April 11 and a cautious buy signal on April 15. Neither resulted in an executed order. The April 15 buy recommendation came with an explicit entry constraint — do not enter above $103 — and the stock was trading right at resistance when the signal was generated, which likely explains why no order was placed. As of the last run, DIS represents a tracked-but-not-traded ticker.
+`trade_ledger.json` field `per_ticker_history["DIS"]` is empty (`[]`) as of run `20260501_221355` — zero confirmed fills for DIS in the paper trading account. Run `20260501_221355` issued a buy decision (2 shares at $102.50 limit, target $107.11, stop $101.00, 62% confidence, 3.07:1 R/R), but this decision does NOT appear in `per_ticker_history["DIS"]` and therefore has not been confirmed as a fill. It is documented below as a model recommendation pending ledger confirmation. [Hard rule #11: trade_ledger.json is the sole source of truth.]
+
+---
 
 ## Open positions
 
-None. `tracker.db` contains zero DIS records.
+None confirmed. `per_ticker_history["DIS"]` contains zero records as of run `20260501_221355`.
+
+---
 
 ## Closed trades
 
-None. No historical DIS trades in the database.
+None. No historical DIS fills in the trade ledger.
 
-## Run-level model recommendations (not executed trades)
+---
+
+## Run-level model recommendations (not confirmed fills)
+
+### Run: `20260501_221355` — May 1, 2026
+
+**Model recommendation:** BUY 2 shares — DECISION ISSUED, NOT YET CONFIRMED IN LEDGER
+
+| Field | Value |
+|---|---|
+| Action | buy |
+| Quantity | 2 shares |
+| Entry price (limit) | $102.50 |
+| Target price | $107.11 |
+| Stop loss | $101.00 |
+| Risk-reward | 3.07:1 |
+| Timeframe | 5–10 trading days |
+| Confidence | 62% |
+| Run date | May 1, 2026 |
+| Status | DECISION ONLY — NOT IN PER_TICKER_HISTORY |
+
+**Model reasoning** (from `decisions.json`, run `20260501_221355`): "Head Trader bullish (62), 4/5 swing agents agree. Pre-earnings momentum (May 6–13 catalyst). Apr 30 breakout above $103 on 1.23x vol, MACD bullish cross, ADX 37.34. Limit at $102.50 pullback for 3.07:1 R/R. Stop $101.00 (17-test support). Allowed max qty=2; 2 shares x $102.50 = $205 within 25% cap."
+
+**Agent vote breakdown** (run `20260501_221355`):
+- Bullish (4): swing_mean_reversion (52%), swing_breakout (58%), swing_catalyst_news (68%), swing_macro_context (58%)
+- Neutral (1): swing_trend_momentum (45%) — EMA tangle / 10d ROC negative, not opposing
+
+**Why not in ledger yet**: Decision was issued by the PM at run time; ingestion into the paper trading account occurs as a separate step. If the $102.50 limit fill is confirmed, this record will be updated.
+
+---
 
 ### Run: `20260415_110848` — April 15, 2026
 
-**Model recommendation:** BUY 9 shares
+**Model recommendation:** BUY 9 shares — NOT EXECUTED
 
 | Field | Value |
 |---|---|
@@ -41,67 +74,52 @@ None. No historical DIS trades in the database.
 | Run date | April 15, 2026 |
 | Status | NOT EXECUTED |
 
-**Model reasoning (from `decisions.json`, run `20260415_110848`):** "Cautious bullish: MACD histogram turned strongly positive, ADX 31, hourly EMAs aligned uptrend. Druckenmiller bullish on valuation (P/E 14.76). Entry on dip to $100.50 (fib 61.8/SuperTrend support). Do NOT enter above $103. Stop $97.50."
-
-**Agent vote breakdown (run `20260415_110848`):**
-- Bullish (5): swing_trend_follower (60%), swing_momentum_ranker (65%), swing_catalyst_trader (63%), swing_breakout_trader (38%), stanley_druckenmiller (62%)
-- Neutral (2): swing_sector_rotation (40%), growth_analyst_agent (13%)
-- Bearish (3): swing_pullback_trader (32%), swing_mean_reversion (52%), news_sentiment (62%)
-
-**Why not executed:** The stock was trading at approximately $102–103 when the signal was generated, right at the resistance level the model flagged. The head trader's directive was explicit: "do not enter above $103." Since the stock was already at resistance, the limit order at $100.50 would have required a pullback that apparently did not occur within the trading window.
+**Why not executed**: Stock was trading at ~$102–103 at signal time — above the $100.50 entry level. The head trader directive was explicit: "do not enter above $103." Limit order never filled. [source: prior bootstrap analysis]
 
 ---
 
 ### Run: `swing_20260411_211655` — April 11, 2026
 
-**Model recommendation:** HOLD (no trade)
+**Model recommendation:** HOLD — NO TRADE
 
 | Field | Value |
 |---|---|
 | Action | hold |
-| Quantity | 0 |
-| Entry price (indicative) | $99.17 |
+| Entry (indicative) | $99.17 |
 | Target (indicative) | $103.00 |
 | Stop (indicative) | $95.00 |
 | Risk-reward | 0.9:1 |
-| Timeframe | N/A |
 | Confidence | 42% |
 | Run date | April 11, 2026 |
 | Status | HOLD — NO TRADE |
 
-**Model reasoning (from `decisions.json`, run `swing_20260411_211655`):** "Head Trader neutral at 42% with 44% agent agreement — lowest consensus. Mixed signals: downtrend intact but bounce testing it. Druckenmiller sees value at 14x P/E but that is a longer-term thesis. No imminent catalyst (earnings not until May). Wait for directional resolution above 102 or below 95."
-
-**Why held:** Risk-reward of 0.9:1 at the April 11 price point ($99.17) failed the system's 2:1 minimum threshold. The stock had bounced from $92.42 to $99 but the remaining upside to the $103 target was only $3.83 vs. $4.17 to the $95 stop — a losing ratio.
+**Why held**: R/R of 0.9:1 at $99.17 failed the 2:1 minimum. Downtrend intact but bounce testing resistance; earnings not until May. [source: prior bootstrap analysis]
 
 ---
 
-## What the model has been watching (signal trajectory)
+## Model signal trajectory
 
-| Date | Run ID | Price | Model stance | Confidence | Explanation |
+| Date | Run ID | Price | Model stance | Confidence | Notes |
 |---|---|---|---|---|---|
-| Apr 11, 2026 | `swing_20260411_211655` | $99.17 | Hold | 42% | Downtrend testing but R:R 0.9:1 fails |
-| Apr 15, 2026 | `20260415_110848` | ~$102–103 | Cautious buy | 55% | MACD crossover, ADX 31; entry set at $100.50 — stock above entry |
+| Apr 11, 2026 | `swing_20260411_211655` | $99.17 | Hold | 42% | R/R 0.9:1 fails; downtrend testing |
+| Apr 15, 2026 | `20260415_110848` | ~$102–103 | Cautious buy | 55% | MACD crossover; limit $100.50 missed |
+| May 1, 2026 | `20260501_221355` | $103.75 | **Buy** | 62% | Breakout confirmed; May 6 earnings catalyst; 3.07:1 R/R |
 
-**Trend:** Confidence improved from 42% to 55% over four days as the MACD crossover confirmed and ADX strengthened. The stock moved past the entry point rather than pulling back to it.
+Confidence trajectory: 42% → 55% → 62%. Stance trajectory: Hold → Cautious buy → Active buy. Signal flip occurred this run.
 
-## Lifetime stats
+---
+
+## Lifetime stats (DIS — confirmed fills only)
 
 | Metric | Value |
 |---|---|
-| Total DIS trades | 0 |
-| Open positions | 0 |
+| Total confirmed fills | 0 |
+| Open positions (confirmed) | 0 |
 | Closed positions | 0 |
 | Realized P&L | $0.00 |
 | Win rate | N/A |
-| Average hold time | N/A |
-| Model buy signals generated | 1 (Apr 15, 2026) |
-| Model hold signals generated | 1 (Apr 11, 2026) |
-| Executed vs. signaled ratio | 0 / 1 buys executed |
+| Model buy signals issued | 2 (Apr 15 unexecuted; May 1 pending confirmation) |
+| Model hold signals issued | 1 (Apr 11) |
+| Fill rate vs. signaled buys | 0 / 2 confirmed fills |
 
-## Notes for future trades
-
-1. The model's preferred entry range is $99.50–101.00 (fib 61.8/hourly SuperTrend support). If DIS pulls back from its April 15 close of $102.59, this is the zone to watch.
-2. Stop discipline: $97.50 (below hourly SuperTrend). A close below $95 would signal the April base has failed and flip the model bearish.
-3. Target: $107–109 (prior swing high cluster). At $100.50 entry with $97.50 stop and $108 target, R:R is 2.5:1 — the minimum threshold for system approval.
-4. Q2 FY2026 earnings (est. May 6–13, 2026) is the binary event. The system typically avoids holding open swing positions through earnings unless the setup is high-conviction with an earnings catalyst specifically.
-5. Max position size at current price: 9 shares × $100.50 = $904.50 (approximately 18% of the $5,000 paper portfolio). This is within the 25% maximum per-position cap.
+*Source: `per_ticker_history["DIS"]` from `trade_ledger.json`, run `20260501_221355`. If the May 1 buy fills, update with confirmed entry price from ledger.*

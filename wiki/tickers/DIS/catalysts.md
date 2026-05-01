@@ -1,50 +1,59 @@
 ---
 name: DIS catalysts
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-01
+last_run_id: 20260501_221355
 target_words: 400
 stale_after_days: 14
-word_count: 408
-summary: Q2 FY2026 earnings (est. May 6-13) is the next binary event; restructuring job cuts and streaming bundle launch are the live catalysts; Paramount-WBD mega-merger is the key competitive risk event to monitor.
+word_count: 471
+summary: Q2 FY2026 earnings confirmed May 6 2026 (before open, consensus EPS $1.49); May is Disney's biggest parks month; Raymond James upgraded; competition from Universal and Netflix intensifying.
 ---
 
 # DIS — Catalysts
 
 ## TL;DR
 
-The only hard-date catalyst on the horizon is Q2 FY2026 earnings, expected around May 6–13, 2026. Between now and then, the stock is driven by narrative: restructuring progress, streaming profitability trajectory, and the macro read on consumer spending. The Paramount-WBD merger regulatory review is the biggest competitive risk event — if it clears, Disney faces a meaningfully stronger content rival.
+Q2 FY2026 earnings are confirmed for **May 6, 2026** (before market open, 8:30 AM ET webcast) — approximately 4 trading days from this run. This is the dominant near-term catalyst and the primary driver of the current 4/5 bullish swing vote. Earnings binary risk is real: a miss gaps past the $101.00 stop. Secondary catalysts include a major May content/parks wave and Raymond James upgrade.
+
+Sources: `web_research/DIS.json` and `swing_catalyst_news` signal, run `20260501_221355`.
+
+---
 
 ## Upcoming events
 
-| Event | Expected date | Direction | Notes |
-|---|---|---|---|
-| Q2 FY2026 earnings | ~May 6–13, 2026 | Binary | Analyst est. EPS $1.57, revenue $25.76B. Key focus: streaming margin vs. 10% FY2026 target, Parks momentum |
-| Paramount-WBD merger decision | Ongoing (CMA + FCC) | Bearish if cleared | $110.9B deal; creates massive combined content library competitor |
-| FY2026 streaming margin milestone | Q3/Q4 FY2026 | Bullish if hit | Disney guided for 10% streaming operating margin; Q1 was ~8.4% ($450M on $5.35B) |
+| Date | Event | Significance |
+|---|---|---|
+| May 6, 2026 | Q2 FY2026 earnings (before open, 8:30 AM ET) | Consensus EPS $1.49 — binary; streaming margin vs 10% target and Parks performance are key |
+| May 3, 2026 | Big Thunder Mountain reopens at Disney World | Positive parks attendance signal for May |
+| May 26, 2026 | Bluey's Wild World / Rock 'n' Roller Coaster opens | Positive attendance catalyst for late May |
+| Ongoing | Paramount-WBD merger regulatory review | Bearish if cleared — creates third major streaming competitor |
 
-## Recent news synthesis (sources: `web_research/DIS.json` from both runs)
+**Earnings note**: Risk manager enforces a 3-day blackout before earnings (May 1–3). Current buy decision entered before that window; any new position initiated after May 3 should factor in binary gap risk. Stop is $101.00 on close basis.
 
-**Restructuring (mixed sentiment).** Disney cut 1,000 jobs in April 2026, including roles at Marvel Studios. The cuts build on 8,000 cumulative headcount reductions since 2022 under new CEO D'Amaro. Markets initially read this as margin-positive (trend follower and momentum agents in run `20260415_110848` both cited this as a bullish catalyst). However, the news sentiment agent was 62% bearish, reading the Marvel cuts as a potential content quality risk.
+---
 
-**Streaming bundle expansion (positive).** Disney and Warner Bros. Discovery launched a Disney+/Hulu/Max bundle in the US. Disney+ is also integrating Hulu fully into a single unified hub in 2026. The ad-supported tier is expanding internationally via a multi-year Sky deal.
+## Recent news synthesis
 
-**Disney-Epic Games partnership (positive).** A gaming ecosystem collaboration was cited in the April 11 run (`swing_20260411_211655`) as a positive catalyst, diversifying Disney's entertainment revenue beyond film and parks.
+| Headline | Sentiment | Date / Source |
+|---|---|---|
+| Q2 FY2026 earnings confirmed May 6 — EPS consensus $1.49 | Neutral / binary | wdwinfo.com / valuesense.io, May 2026 |
+| Raymond James upgraded DIS to Outperform ($115 PT) — historically cheap entry point | Positive | 247wallst.com, Apr 2026 |
+| May 2026 biggest parks month: Big Thunder Mountain, Bluey's Wild World, Mandalorian film | Positive | disneytouristblog.com / insidethemagic.net, May 2026 |
+| Disney+ content wave: Daredevil Season 2 finale, Star Wars: Maul, Devil Wears Prada 2 | Positive | press.disneyplus.com, May 2026 |
+| Legacy TV network weakness and macro pressures noted as Q1 2026 headwinds | Negative | ainvest.com, Apr 2026 |
 
-**Q1 FY2026 earnings (already reported, Feb 5, 2026).** Revenue $26.0B (+5% YoY), adjusted EPS $1.63 (beat $1.57 estimate). Streaming operating income $450M (+72% YoY). Parks first-ever $10B+ quarterly revenue. FY2026 guidance: double-digit EPS growth, $19B operating cash flow, $7B buybacks. These numbers established the bullish fundamental floor that makes the valuation case credible.
+---
 
-## Analyst consensus (as of April 15, 2026)
+## Analyst consensus
 
-- **Consensus rating:** Buy (38 Buy / 21 Hold / 4 Sell across 63 analysts)
-- **Average price target:** $132–$133; 12-month consensus ~$140
-- **Recent target changes:** Deutsche Bank cut to $132 (from $135); Wells Fargo cut to $148 (from $150); Barclays cut to $130 (from $140); Guggenheim cut to $115 (from $140). Raymond James upgraded to Outperform with $115 PT on April 1, citing historically cheap valuation.
-- **Implied upside from $100:** ~32–40% to consensus target range
+As of May 1, 2026 (`web_research/DIS.json`, run `20260501_221355`):
 
-## Insider activity (as of April 2026)
+- **Rating**: Strong Buy (42 analysts) — consensus overwhelmingly bullish
+- **Average price target**: $131.41 (~25% implied upside from ~$104)
+- **PT range**: $77–$160, median $131
+- **Recent changes**: Raymond James upgraded to Outperform ($115), Apr 2026. Guggenheim reiterated Buy ($140 PT), Feb 2026. One bear-case Underperform note cited Q1 headwinds but was a minority view.
 
-- **April 2026 net:** 88 buys vs. 71 sells — net positive; management signaling conviction at current levels
-- **Board-level RSU grants:** Multiple board members received grants at ~$96.96 in late March 2026, establishing institutional cost basis near current trading range
-- Source: `swing_head_trader` signal, run `20260415_110848`
+---
 
-## Competitive landscape risk
+## Competitive landscape
 
-Netflix at 325M subscribers with ad revenue doubling to $1.5B+ is the dominant near-term threat. The Paramount-WBD merger, if approved, would combine Paramount+, Max, and Discovery+ into a single content house competing directly with Disney+ and Hulu. Netflix walked away from acquiring Warner Bros. Discovery in February 2026, which removed one consolidation scenario but left the two-player (Netflix vs. everyone else) dynamic intact.
+Universal's Epic Universe drove 12% YoY attendance growth vs. Disney World's ~3% in March 2026. Netflix at 300M+ subscribers dominates streaming. Comcast bundled Disney+/Hulu/Max in Xfinity StreamSaver — expands distribution but may dilute per-subscriber revenue. Disney fully owns Hulu (closed $9B Comcast buyout June 2025) and is merging it into Disney+ in 2026. No longer reporting individual subscriber counts from Q1 2026. [source: `web_research/DIS.json`, run `20260501_221355`]

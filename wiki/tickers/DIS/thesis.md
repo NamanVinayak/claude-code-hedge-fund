@@ -1,45 +1,47 @@
 ---
 name: DIS thesis
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-01
+last_run_id: 20260501_221355
 target_words: 500
 stale_after_days: 30
-word_count: 512
-summary: Disney is a cheap-valuation recovery story with streaming now profitable, offset by consumer-media headwinds and no near-term catalyst to close the gap to analyst targets.
+word_count: 467
+summary: Disney pre-earnings momentum buy — Q2 FY2026 earnings on May 6 is the live catalyst; streaming profitability inflection confirmed; short-term swing setup active at 3.07:1 R/R.
 ---
 
 # DIS — Thesis
 
 ## TL;DR
 
-Disney trades at a 30% discount to the S&P 500 on forward P/E (~14x) and has finally reached streaming profitability. That is the bull case in one sentence. The bear case is equally simple: the stock has been cheap for years and keeps getting cheaper, Netflix is winning the streaming war, and no catalyst with a hard date exists until Q2 FY2026 earnings in May 2026. Two runs over April 11–15 (run IDs: `swing_20260411_211655`, `20260415_110848`) produced a "hold" and then a cautious "buy" — a split verdict that captures the genuine ambiguity here.
+**Prior thesis falsified:** The bootstrap thesis (2026-04-29) stated "no near-term catalyst with a hard date exists until Q2 FY2026 earnings in May 2026." That conditional is now resolved — Q2 FY2026 earnings are confirmed for **May 6, 2026** (before market open, 8:30 AM ET), approximately 4 trading days from this run. The prior hold is superseded by an active buy signal (62% confidence, 4/5 swing agents bullish, 3.07:1 R/R). [source: `decisions.json`, run `20260501_221355`; `web_research/DIS.json`, run `20260501_221355`]
+
+DIS is a pre-earnings momentum breakout with a compelling short-term R/R. The structural bull case (streaming profitability, record Parks revenue, cheap valuation) is unchanged. The primary risk is earnings-binary gap risk past the stop.
+
+---
 
 ## Bull case
 
-**Streaming profitability inflection.** Q1 FY2026 (quarter ended Dec 27, 2025) delivered $450M in DTC operating income, up 72% YoY. That is the inflection point bears said would never come. Streaming revenue grew 11% to $5.35B in the same quarter (source: `web_research/DIS.json`, run `20260415_110848`).
+**Confirmed streaming profitability inflection.** Q1 FY2026 DTC operating income $450M (+72% YoY), revenue $5.35B (+11%). Disney guided $19B FY2026 operating cash flow and double-digit EPS growth. This is the inflection point the prior thesis was waiting for. [source: existing thesis, bootstrapped from `web_research/DIS.json`, run `20260415_110848`]
 
-**Valuation is historically cheap.** Forward P/E of ~14.4x is roughly 30% below the S&P 500 average. EV/EBIT 13.12, P/FCF 18.17 — all confirmed cheap by the valuation agent (100% bullish, run `20260415_110848`). Stanley Druckenmiller persona called it "the most interesting risk/reward in the portfolio" at these levels. Analyst consensus of 38 Buys, 21 Holds, 4 Sells across 63 analysts targets $132–140 — implying 30–35% upside from the April 2026 trading range near $100.
+**Breakout with earnings catalyst.** Apr 30 produced a strong bullish engulfing candle (open $100.91, close $103.75) on 1.23x above-average volume, breaking out of a week-long $100.42–$103.81 consolidation. Q2 FY2026 earnings May 6 (consensus EPS $1.49) is the catalyst driving 4/5 swing agents bullish. ADX 37.34, +DI 32.31 >> -DI 18.74. [source: `swing_head_trader`, run `20260501_221355`]
 
-**Parks generating record cash.** Disney Parks and Experiences crossed $10B in quarterly revenue for the first time ever in Q1 FY2026. This high-margin segment provides a durable earnings floor.
+**Valuation cheap by any measure.** P/E ~15x, EV/EBITDA 13.12, P/FCF 18.17 — all below S&P 500 averages. Analyst consensus: 42 Buy at avg PT $131.41. Raymond James upgraded to Outperform (PT $115) in April 2026, citing historically attractive entry point. [source: `web_research/DIS.json`, run `20260501_221355`]
 
-**Capital return story.** Disney guided $7B in share buybacks and double-digit adjusted EPS growth for FY2026. FY2026 operating cash flow guidance is $19B (source: `web_research/DIS.json`, run `20260415_110848`).
+**Risk-on macro tailwind.** S&P 500 at all-time highs; April 2026 best month since 2020. Iran peace talks driving WTI −2% — consumer spending environment improving. [source: `web_research/DIS.json` macro_context, run `20260501_221355`]
 
-**Cost restructuring.** The new CEO D'Amaro cut 1,000 jobs in April 2026 on top of 8,000 cumulative cuts since 2022. Markets are reading this as margin improvement. Board-level insider buying (88 buys vs. 71 sells) adds management conviction signal.
+---
 
 ## Bear case
 
-**Netflix is winning, decisively.** Netflix reached 325M paid subscribers and $1.5B+ in annual ad revenue as of early 2026; Disney stopped disclosing subscriber counts starting Q1 FY2026 — not a coincidence. The Paramount-WBD $110.9B merger under CMA/FCC review as of April 2026 would create a third major content behemoth directly competing with Disney+ (source: `web_research/DIS.json`, run `20260415_110848`).
+**Still below 200-day moving averages.** DIS is trading below EMA200 ($105.49) and SMA200 ($109.33) — the longer-term institutional trend remains distribution, not accumulation. Daily OBV is in distribution mode even as hourly OBV accumulates (a split signal). The current setup is a short-term swing within a longer-term recovery, not a confirmed structural uptrend.
 
-**Stock has been "cheap" for two years and keeps falling.** DIS was down 16% YTD as of April 7, 2026. A cheap P/E multiple without an earnings catalyst is a value trap, not a value play. Barclays cut its target to $130 (from $140), Guggenheim cut to $115 (from $140) in March 2026.
+**Earnings binary risk.** A miss vs. consensus EPS $1.49 or revenue shortfall would likely gap the stock through the $101.00 stop — making the exit price irrelevant. Netflix at 300M+ subscribers and the Paramount-WBD merger regulatory review are structural competitive risks.
 
-**New CEO uncertainty.** The succession narrative and fresh layoffs signal that the turnaround is still in execution phase — not proven. Content quality risks from Marvel restructuring (cuts included Marvel Studios) are real.
+**Volume quality below ideal.** April 30 breakout volume was 1.23x average — above average but below the 1.5x threshold for full confidence. Confidence capped at 62 accordingly.
 
-**Consumer discretionary macro headwind.** Fed funds rate at 3.5–3.75% (higher-for-longer) is a structural headwind for the experiences segment and consumer spending broadly. Consumer sentiment hit a 74-year low in early 2026.
+---
 
-**No near-term catalyst.** Q2 FY2026 earnings are not expected until approximately May 6–13, 2026. Without a binary event, the cheap valuation may simply stay cheap.
+## What would change the thesis
 
-## What would change my mind
+**Bullish confirmed:** Close above $107.11 on 1.5x+ volume (breaks 14-test resistance) + Q2 earnings showing streaming margin > 9% would upgrade to structural uptrend.
 
-**Bullish flips:** Q2 earnings showing streaming margin expansion toward the 10% FY2026 target + any acceleration in Parks revenue guidance. A close above $107 on 1.3x+ volume (breaks the April 2026 resistance cluster) would shift technicals fully bullish.
-
-**Bearish flips:** Streaming operating income declining from the $450M Q1 level, or Paramount-WBD merger clearing regulatory hurdles (creates a formidable content competitor). A close below $92 would signal the April 2026 base has failed.
+**Bearish flip:** Q2 EPS miss vs. $1.49 + close below $101.00 would invalidate the breakout base and restore the "cheap but getting cheaper" bear case.
