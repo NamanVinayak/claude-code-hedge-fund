@@ -40,6 +40,7 @@ Format:
       "action": "buy/sell/short/no_trade",
       "quantity": int,
       "entry_trigger": "string — exact condition to enter",
+      "entry_tolerance_pct": float,
       "stop_loss": float,
       "target_1": float,
       "target_2": float,
@@ -52,3 +53,5 @@ Format:
 }}
 
 `quantity` is REQUIRED for every decision (number of shares). Set 0 for no_trade. NEVER omit — the downstream ingester silently drops trades with missing quantity.
+
+`entry_tolerance_pct` is REQUIRED (price-band tolerance, percent, capped 2.5). Daytrade orders fill faster, so use tighter values: **0.3–0.5% for most setups**, up to 1.0% for high-volatility names. The simulator fills if price comes within `entry_price ± tolerance%`. For no_trade, set 0.5.

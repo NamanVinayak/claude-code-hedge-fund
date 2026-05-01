@@ -144,23 +144,31 @@ def run_simulator(dry_run: bool = False):
                 
             bar_timestamp_str = bar_time.isoformat()
             
-            # 1. Check entries for pending
+            # 1. Check entries for pending (with entry tolerance band)
             if status == 'pending':
-                if direction == 'long' and low <= entry_price:
-                    status = 'entered'
-                    has_fill = True
-                    entries_filled += 1
-                    if not dry_run:
-                        update_trade(trade_id, status='entered', entered_at=bar_timestamp_str, entry_fill_price=entry_price)
-                        log_fill(trade_id, "entry_filled", entry_price, bar_timestamp_str, "long entry hit")
-                        
-                elif direction == 'short' and high >= entry_price:
-                    status = 'entered'
-                    has_fill = True
-                    entries_filled += 1
-                    if not dry_run:
-                        update_trade(trade_id, status='entered', entered_at=bar_timestamp_str, entry_fill_price=entry_price)
-                        log_fill(trade_id, "entry_filled", entry_price, bar_timestamp_str, "short entry hit")
+                tolerance_pct = t.get('entry_tolerance_pct') or 1.0
+                if direction == 'long':
+                    entry_max = entry_price * (1 + tolerance_pct / 100.0)
+                    if low <= entry_max:
+                        fill_price = max(low, entry_price)  # ideal or worse-within-tolerance
+                        status = 'entered'
+                        has_fill = True
+                        entries_filled += 1
+                        if not dry_run:
+                            update_trade(trade_id, status='entered', entered_at=bar_timestamp_str, entry_fill_price=fill_price)
+                            reason = "long entry hit" if fill_price <= entry_price else f"long entry filled within tolerance ({tolerance_pct}%)"
+                            log_fill(trade_id, "entry_filled", fill_price, bar_timestamp_str, reason)
+                elif direction == 'short':
+                    entry_min = entry_price * (1 - tolerance_pct / 100.0)
+                    if high >= entry_min:
+                        fill_price = min(high, entry_price)  # ideal or worse-within-tolerance
+                        status = 'entered'
+                        has_fill = True
+                        entries_filled += 1
+                        if not dry_run:
+                            update_trade(trade_id, status='entered', entered_at=bar_timestamp_str, entry_fill_price=fill_price)
+                            reason = "short entry hit" if fill_price >= entry_price else f"short entry filled within tolerance ({tolerance_pct}%)"
+                            log_fill(trade_id, "entry_filled", fill_price, bar_timestamp_str, reason)
 
             # 2. Check stops/targets for entered
             if status == 'entered':

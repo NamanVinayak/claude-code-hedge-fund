@@ -182,6 +182,12 @@ def main() -> None:
                 except (TypeError, ValueError):
                     confidence = None
 
+            raw_tolerance = dec.get("entry_tolerance_pct", 1.0)
+            try:
+                entry_tolerance_pct = max(0.0, min(2.5, float(raw_tolerance)))
+            except (TypeError, ValueError):
+                entry_tolerance_pct = 1.0
+
             try:
                 insert_trade({
                     "run_id": run_id,
@@ -190,6 +196,7 @@ def main() -> None:
                     "direction": direction,
                     "quantity": quantity,
                     "entry_price": entry_price,
+                    "entry_tolerance_pct": entry_tolerance_pct,
                     "target_price": target_price,
                     "target_price_2": None,
                     "stop_loss": stop_loss,

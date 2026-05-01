@@ -20,7 +20,7 @@ from dotenv import load_dotenv
 
 TRADE_COLUMNS = [
     "run_id", "mode", "ticker", "direction", "quantity",
-    "entry_price", "target_price", "target_price_2", "stop_loss",
+    "entry_price", "entry_tolerance_pct", "target_price", "target_price_2", "stop_loss",
     "confidence", "timeframe", "entry_order_id", "stop_order_id",
     "target_order_id", "status", "entry_fill_price", "exit_fill_price",
     "pnl", "created_at", "entered_at", "closed_at", "raw_decision",
@@ -33,7 +33,8 @@ _CREATE_TABLES_SQL = [
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         run_id TEXT NOT NULL, mode TEXT NOT NULL, ticker TEXT NOT NULL,
         direction TEXT NOT NULL, quantity INTEGER NOT NULL,
-        entry_price REAL NOT NULL, target_price REAL, target_price_2 REAL,
+        entry_price REAL NOT NULL, entry_tolerance_pct REAL DEFAULT 1.0,
+        target_price REAL, target_price_2 REAL,
         stop_loss REAL, confidence INTEGER, timeframe TEXT,
         entry_order_id TEXT, stop_order_id TEXT, target_order_id TEXT,
         status TEXT DEFAULT 'pending', entry_fill_price REAL,

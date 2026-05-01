@@ -53,6 +53,7 @@ Format:
       "action": "buy|sell|short|cover|hold",
       "quantity": int,
       "entry_price": float,
+      "entry_tolerance_pct": float,
       "target_price": float,
       "stop_loss": float,
       "risk_reward_ratio": "e.g. 3.2:1",
@@ -64,3 +65,9 @@ Format:
 }}
 
 `quantity` is REQUIRED for every decision. For buy/short, set it to the number of shares you're sizing (≤ risk manager max, ≤ 25% of capital). For hold/sell/cover, set quantity to 0. NEVER omit this field — the downstream ingester silently drops trades with missing quantity, and the dashboard cannot display position size without it.
+
+`entry_tolerance_pct` is REQUIRED. It's a price-band tolerance (in percent) that absorbs the 20–30 minute lag between when you decide and when the order reaches the broker — during which the price often drifts past your exact `entry_price`. The simulator will fill the order if the price comes within `entry_price ± entry_tolerance_pct%`. Cap is 2.5%. Guidance:
+- **High-volatility stocks** (ATR > 3%, recent ROC > 20%): use 1.5–2.0%
+- **Normal stocks**: 1.0% (default)
+- **Low-volatility / tight setups** (consolidation, narrow pullback): 0.5%
+- For `hold`, set to 1.0 (unused but valid)
