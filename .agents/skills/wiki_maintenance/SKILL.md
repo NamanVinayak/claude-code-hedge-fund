@@ -25,15 +25,15 @@ Markets were closed all of Friday night through Saturday, so nothing
 could have closed since the previous run. Skip immediately on Saturdays
 to avoid a pointless Turso query and routine compute.
 
-The day-of-week check uses **Eastern Time** (not UTC) because that's the
-trading-day timezone. The routine fires at 10pm Pacific = 1am Eastern
-the next day, but our trading day still ends at 4pm Eastern, so "today
-in ET" is the relevant date.
+The day-of-week check uses **Pacific Time** because that's the routine's
+wallclock — the schedule on the Anthropic Routines page is "10pm PT every
+day", so "today" should mean today in PT. (UTC and ET both already say
+"Saturday" by 10pm PT Friday, which would silently skip the run.)
 
 ```bash
-DOW=$(TZ=America/New_York date +%u)  # 1=Mon ... 6=Sat ... 7=Sun (Eastern Time)
+DOW=$(TZ=America/Los_Angeles date +%u)  # 1=Mon ... 6=Sat ... 7=Sun (Pacific Time)
 if [ "$DOW" = "6" ]; then
-  echo "Saturday in Eastern Time — markets were closed. Nothing to do. Exiting."
+  echo "Saturday in Pacific Time — markets were closed. Nothing to do. Exiting."
   exit 0
 fi
 ```
@@ -53,7 +53,7 @@ Read the output:
 The bundle was written to `runs/wiki_daily_<YYYY-MM-DD>.json`. Dispatch the agent:
 
 > Read `ai_hedge/personas/prompts/wiki_daily_lesson_writer.md` for your system prompt.
-> Bundle path: `runs/wiki_daily_<TODAY>.json` (where TODAY = current Eastern Time date in YYYY-MM-DD)
+> Bundle path: `runs/wiki_daily_<TODAY>.json` (where TODAY = current Pacific Time date in YYYY-MM-DD)
 > Read the bundle. Write the three types of updates for each closed trade:
 > 1. Append a lesson bullet to `wiki/meta/lessons.md`
 > 2. Prepend an outcome note to `wiki/tickers/<TICKER>/thesis.md`
@@ -70,7 +70,7 @@ that page and continues — wiki updates never block anything.
 ## Step 3 — On Sundays only, run the deterministic compactor
 
 ```bash
-DOW=$(TZ=America/New_York date +%u)  # 1=Mon ... 7=Sun (Eastern Time)
+DOW=$(TZ=America/Los_Angeles date +%u)  # 1=Mon ... 7=Sun (Pacific Time)
 if [ "$DOW" = "7" ]; then
   cd /Users/naman/Downloads/artist && .venv/bin/python -m scripts.wiki_compactor
 else
@@ -116,8 +116,8 @@ Push only if something changed. Use a message that reflects which jobs ran:
 ```bash
 cd /Users/naman/Downloads/artist
 BRANCH=$(git branch --show-current)
-TODAY=$(TZ=America/New_York date +%Y-%m-%d)  # Eastern Time, the trading-day calendar
-DOW=$(TZ=America/New_York date +%u)
+TODAY=$(TZ=America/Los_Angeles date +%Y-%m-%d)  # Pacific Time, the trading-day calendar
+DOW=$(TZ=America/Los_Angeles date +%u)
 
 if ! git diff --quiet wiki/ scripts/wiki_lint_report.md 2>/dev/null; then
   git add wiki/ scripts/wiki_lint_report.md 2>/dev/null || git add wiki/

@@ -61,7 +61,7 @@ def main() -> None:
 
     runs_dir = ROOT / "runs"
     runs_dir.mkdir(exist_ok=True)
-    today = datetime.now(ZoneInfo("America/New_York")).date().isoformat()
+    today = datetime.now(ZoneInfo("America/Los_Angeles")).date().isoformat()
     bundle_path = runs_dir / f"wiki_daily_{today}.json"
     bundle_path.write_text(json.dumps(bundle, indent=2, default=str), encoding="utf-8")
 
