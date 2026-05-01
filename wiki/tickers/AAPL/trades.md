@@ -1,22 +1,41 @@
 ---
 name: AAPL trades
-last_updated: 2026-04-30
-last_run_id: 20260430_144524
+last_updated: 2026-05-01
+last_run_id: 20260501_144523
 target_words: 800
 stale_after_days: 60
-word_count: 780
-summary: Full trade journal for AAPL — one abandoned long, four no-trade holds, lifetime stats; Q2 earnings blackout hold added
+word_count: 798
+summary: Full trade journal for AAPL — one open limit-buy (2 shares at $276, run 20260501_144523); one prior abandoned long; five no-trade holds; lifetime stats updated
 ---
 
 # AAPL — Trades
 
 ## TL;DR
 
-AAPL has one trade on record in tracker.db: a long that was placed on April 18 from the Apr 17 swing run and abandoned on April 29 before any fill occurred. Three prior swing runs (Apr 11, Apr 15, and the two wiki_phase1 test runs) resulted in no-trade / hold decisions. Net P&L is $0. No realized or unrealized gain or loss.
+AAPL has one trade on record in tracker.db (trade ID 19, abandoned, no fill, $0 P&L) and one new open position initiated by run 20260501_144523: a limit buy of 2 shares at $276.00. The system will only enter on a pullback from the current $282–285 level; the order is conditional and not yet filled.
 
 ## Open positions
 
-None. The one recorded AAPL position (trade ID 19) has status `abandoned` — the order was never filled and was closed out by the monitor on April 29.
+### Trade — Conditional limit buy (20260501_144523)
+
+| field | value |
+|---|---|
+| Status | open (limit order pending fill) |
+| Direction | long |
+| Quantity | 2 shares |
+| Limit entry | $276.00 |
+| Entry zone | $274–$278 |
+| Target price | $294.84 (Fib ext 1.618) |
+| Stop loss | $269.50 |
+| Risk/reward | 2.9:1 |
+| Confidence | 42% |
+| Timeframe | 5–12 trading days |
+| Run ID | 20260501_144523 |
+| Mode | swing |
+| Created | 2026-05-01 |
+| Entry fill | Pending — limit at $276 not yet triggered |
+
+**Rationale.** Head trader neutral (42 conf) after Q2 FY2026 earnings beat (EPS $2.01, gross margin 49.3% record). Breakout above $276.11 on 2.08x volume confirmed on April 30. System will not chase at $282 — hourly Z-score 2.52 and Bollinger %B 1.28 flag overextension. Entry trigger: pullback to $274–278 (Fib 38.2% / daily upper Bollinger Band confluence) with ADX rising above 19. Size: 2 shares × $276 = $552, within risk manager cap $768. Key risks: insider net selling (-$235M), ADX still sub-25, prior portfolio loss on similar NVDA setup (-$264.65). (Source: decisions.json, run 20260501_144523.)
 
 ## Closed — last 30 days
 
@@ -39,12 +58,9 @@ None. The one recorded AAPL position (trade ID 19) has status `abandoned` — th
 | Created | 2026-04-18 00:18 UTC |
 | Closed | 2026-04-29 11:19 UTC |
 | Entry fill | none |
-| Exit fill | none |
 | Realized P&L | $0 |
 
-**What happened.** The Apr 17 swing run was the first run to give AAPL a buy signal after two consecutive no-trade decisions (Apr 11 gave hold at 42% confidence; Apr 15 gave hold at 47% confidence). The PM's rationale was "trend + pullback + breakout + sector bullish; fundamental overhang; wider target for 3.25:1 R:R; moderate size on split conviction." The intended entry of $262.50 was a limit order. The order sat unfilled for 11 days and was marked abandoned on April 29.
-
-The abandonment likely reflects one of two things: (a) the order was placed at a limit price the market never revisited in the window, or (b) the monitor's daily re-order logic did not re-queue it after the Day order expired. Either way, the paper portfolio incurred no capital at risk from this position.
+**What happened.** The Apr 17 swing run was the first run to give AAPL a buy signal after two consecutive no-trade decisions. Intended entry $262.50 was a limit order that sat unfilled for 11 days and was abandoned April 29. No capital at risk was incurred.
 
 ## Closed — older than 30 days
 
@@ -52,36 +68,37 @@ No trades.
 
 ## Prior run decisions (no orders placed)
 
-These runs analyzed AAPL but the PM gave a no-trade / hold — no order was submitted to Moomoo.
-
 | run_id | date | decision | confidence | reasoning summary |
 |---|---|---|---|---|
 | swing_20260411_211655 | 2026-04-11 | hold | 42% | EMAs tangled, ADX 15.2, overbought stochastic 89.75, no actionable setup |
-| 20260415_093758 | 2026-04-15 | hold | 47% | ADX 12.5 (lowest in universe), daily supertrend bearish, 8/10 strategies neutral, CEO Tim Cook sold $12M+ |
+| 20260415_093758 | 2026-04-15 | hold | 47% | ADX 12.5 (lowest in universe), daily supertrend bearish, 8/10 strategies neutral, Cook sold $12M+ |
 | wiki_phase1_on | 2026-04-29 | (no decisions file) | n/a | Data-only run, no PM dispatch |
 | wiki_phase1_off | 2026-04-29 | (no decisions file) | n/a | Data-only run, no PM dispatch |
-| 20260430_144524 | 2026-04-30 | hold | 30% | Earnings blackout (0 days to Q2 print) blocks all new positions; head trader confidence 30 < 40 threshold; R/R 0.71:1 fails 2:1 minimum; three of five swing agents neutral; ADX 15.78 still below 25; reassess post-earnings |
+| 20260430_144524 | 2026-04-30 | hold | 30% | Earnings blackout (0 days to Q2 print) blocks all new positions; R/R 0.71:1 fails 2:1 minimum; ADX 15.78 still below 25 |
 
 ## Lifetime stats
 
 | metric | value |
 |---|---|
-| Total trades (with order) | 1 |
+| Total trades (with order) | 2 |
 | Filled entries | 0 |
+| Open (pending fill) | 1 |
 | Abandoned / expired | 1 |
 | Realized P&L | $0.00 |
-| Unrealized P&L | $0.00 |
+| Unrealized P&L | $0.00 (pending fill at $276) |
 | Net P&L | $0.00 |
 | Win rate (closed, filled) | n/a |
 | Average hold time | n/a |
-| Average R:R on entry | 3.25:1 (one data point) |
-| Runs analyzed (AAPL) | 6 |
+| Average R:R on entry | 3.08:1 (avg of 3.25:1 and 2.9:1) |
+| Runs analyzed (AAPL) | 7 |
 | No-trade decisions | 4 (Apr 11, Apr 15, wiki_phase1, Apr 30) |
-| Buy decisions | 1 (Apr 17) |
+| Buy decisions | 2 (Apr 17 abandoned; May 1 limit pending) |
 | Short decisions | 0 |
 
 ## Notes and lessons
 
-**The model has been conservative on AAPL — correctly so.** Three no-trade calls in a row reflect the genuine technical ambiguity: trendless price action, overbought oscillators without a trend to support the overbought, and persistent insider selling. The one buy signal (Apr 17) came when enough strategies agreed on "trend + pullback + sector bullish" for the PM to act. That the order was never filled may mean the market moved away from the limit before the order could execute — or the daily order expiry was not re-queued. Worth investigating if the next run produces another limit-order buy.
+**Q2 earnings binary resolved bullishly.** The April 30 run (20260430_144524) was blocked by the 3-day earnings blackout. May 1 run (20260501_144523) is the first post-earnings entry attempt. Gross margin at 49.3% (record) falsified the bear-case margin-collapse scenario the model was hedging against.
 
-**Q2 earnings binary resolves today (April 30).** The April 30 run (20260430_144524) was blocked by the 3-day earnings blackout — no position initiated. Post-earnings, the key watch levels have updated: bull case requires a clean close above $276.11 on 1.5x+ volume + ADX expansion above 25; bear case is a pullback to the 38.2% Fib cluster at $264.21/$264.36 (mean-reversion long); invalidation is a daily close below $255.45 (21-test support). (Source: decisions.json, 20260430_144524.)
+**Entry discipline maintained.** The system is not chasing the gap from $271 to $282. Limit at $276 reflects the confluence of Fib 38.2% and daily upper Bollinger Band — the same pullback discipline that (with hindsight) would have avoided the NVDA dip-buy stop-out (-$264.65 on an aggressive entry into stretched hourly RSI).
+
+**Watch for re-queue.** The Apr 17 abandoned trade suggests the daily order expiry may not auto-re-queue. If the $276 limit order expires without a fill, manual resubmission or a new run will be needed. (Source: trades.md, prior runs.)

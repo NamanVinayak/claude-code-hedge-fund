@@ -1,43 +1,43 @@
 ---
 name: AAPL catalysts
-last_updated: 2026-04-30
-last_run_id: 20260430_144524
+last_updated: 2026-05-01
+last_run_id: 20260501_144523
 target_words: 400
 stale_after_days: 14
-word_count: 398
-summary: Q2 FY2026 earnings prints today (April 30) — margin guidance and tariff commentary are the binary read-through; India ramp and analyst consensus constructive; Siri delays and insider selling are the bears
+word_count: 399
+summary: Q2 FY2026 earnings resolved bullishly (Apr 30) — EPS $2.01 beat, revenue $111.2B +16.6% YoY, record gross margin 49.3%, $100B buyback; Tim Cook CEO transition Sept 1; post-earnings drift to $299-305 analyst targets is the swing thesis; next binary Q3 late July
 ---
 
 # AAPL — Catalysts
 
 ## TL;DR
 
-Q2 FY2026 earnings report today (April 30, 2026). This was the single catalyst the prior three swing runs were waiting for. Margin guidance under the tariff regime and iPhone revenue growth are the key numbers. The system triggered a 3-day earnings blackout, blocking any new positions until the binary resolves. Post-earnings structure will determine the next swing setup. (Source: decisions.json, signals_combined.json, run 20260430_144524.)
+Q2 FY2026 earnings resolved on April 30, 2026 — the binary the prior three swing runs were waiting for. The result was decisively positive: EPS $2.01 beat estimate $1.94 (+3.6%), revenue $111.2B beat estimates (+16.6% YoY), gross margin 49.3% (record high), and Apple announced a $100B share buyback plus a dividend increase to $0.27/share. Post-earnings drift toward analyst targets of $299–305 is now the primary swing catalyst. Tim Cook stepping down as CEO on September 1, 2026 (John Ternus successor) is the next major company-specific event. (Source: web_research/AAPL.json, run 20260501_144523.)
 
 ## Upcoming events
 
 | event | date | expected impact |
 |---|---|---|
-| Q2 FY2026 earnings | April 30, 2026 (today) | Binary — gross margin vs. 47% baseline is the key number |
-| iOS 27 reveal (WWDC) | June 2026 | Siri 2.0 / Gemini integration timeline confirmation |
-| Foldable iPhone launch | September 2026 | First major form-factor expansion in years |
-| AMD earnings | Late April / early May 2026 | Mega-cap tech read-through; macro risk indicator |
-| US-China tariff truce expiry | ~90 days from truce start | Binary escalation risk if 145% tariffs resume |
+| Tim Cook CEO transition | September 1, 2026 | Leadership uncertainty; Ternus (hardware) not a Services/AI leader — mixed |
+| Q3 FY2026 earnings | Late July 2026 (~85 trading days) | Next binary; company guided +14% to +17% YoY revenue — high bar |
+| iOS 27 / WWDC reveal | June 2026 (~25 trading days) | Siri 2.0 / Gemini integration timeline; foldable iPhone tease expected |
+| Foldable iPhone launch | September 2026 | First major form-factor expansion; hardware refresh cycle driver |
+| US-China tariff truce expiry | ~90 days from truce start | Binary escalation risk if 145% regime resumes |
 
 ## Recent news synthesis
 
-**Tariff mitigation — constructive.** Apple airlifted 1.5M+ iPhones from India and committed to shifting most U.S.-bound iPhone production there by end of 2026. Management guided Q2 revenue growth 13–16% YoY ($107.8B–$110.7B). Under the current 30% temporary tariff regime this is executable; the risk is 90-day truce expiration. (Source: swing_catalyst_news signal, 20260430_144524.)
+**Earnings beat — all metrics.** Q2 FY2026 (Jan–Mar 2026): EPS $2.01 vs $1.94 estimate; revenue $111.2B (+16.6% YoY); gross margin 49.3% (record); iPhone 17 is the most popular iPhone line in company history (supply-constrained); Services revenue at all-time high. Company guided Q3 revenue growth +14% to +17% YoY. $100B buyback authorized; dividend raised to $0.27/share payable May 14. (Source: web_research/AAPL.json, run 20260501_144523.)
 
-**Tariff binary — still unresolved.** Under a full 145% tariff scenario, Ming-Chi Kuo's analysis warns iPhone gross margin collapses from ~47% to 2–3%. The 90-day truce is the only buffer. Earnings call commentary on tariff exposure and India ramp speed is the critical read. (Source: swing_macro_context signal, 20260430_144524.)
+**Tim Cook CEO departure announced.** Cook stepping down September 1, 2026; John Ternus (SVP Hardware Engineering) named successor. Ternus is a hardware leader, not a Services or AI executive — creates uncertainty around AI strategy continuity at a critical moment in the Siri/Gemini partnership. (Source: web_research/AAPL.json, run 20260501_144523.)
 
-**AI strategy — mixed.** Positive: Apple signed a billion-dollar annual deal with Google to power Siri via Gemini; iOS 27 will allow rival AI assistants. Negative: Siri 2.0 delays pushed to iOS 27 in September — a full cycle behind Samsung Galaxy S26 which ships with deep Gemini integration. (Source: swing_catalyst_news signal, 20260430_144524.)
+**AI strategy — execution risk persists.** Google Gemini 3 outperforms Apple's native AI; Apple is using Gemini to power Siri as a defensive move. Siri 2.0 delayed to iOS 27 in September. AI lag vs. Google and Microsoft was the primary pre-earnings overhang; the Q2 beat partially offset it but did not resolve the structural gap. (Source: swing_catalyst_news signal, web_research/AAPL.json, run 20260501_144523.)
 
-**Services expansion ongoing.** Apple TV now available as paid add-on on Amazon Prime Video (US). Services segment remains the high-margin compounder decoupled from hardware tariff exposure.
+**Tariff mitigation — progressing.** India production ramp ongoing (1.5M+ iPhones airlifted); 90-day tariff truce provides near-term buffer. Record gross margin of 49.3% in Q2 demonstrated margin resilience under current tariff regime. Full 145% escalation risk remains if truce expires. (Source: swing_catalyst_news signal, run 20260501_144523.)
 
 ## Insider activity
 
-Strongly negative. CEO Tim Cook sold $12M+ in early April 2026 at $251–256. COO Deirdre O'Brien and a second executive also sold in the same window. Net insider flow: -$235M, zero buys recorded. Stock is now ~$271, meaning insiders distributed $15–20 below current price. 10b5-1 plan caveat applies but the pattern is treated as a distribution signal across all five swing agents. (Source: swing_catalyst_news signal, growth_analyst_agent signal, 20260430_144524.)
+Strongly negative. CEO Tim Cook sold $12M+ in early April 2026 at $251–256. Net insider flow: -$235M, zero buys recorded. Stock is now ~$282–285, meaning insiders distributed $25–30 below current price. 10b5-1 plan caveat applies. Cook's announced departure may contextualize the sales but the pattern is treated as a distribution signal. (Source: swing_catalyst_news signal, growth_analyst_agent signal, run 20260501_144523.)
 
 ## Analyst consensus
 
-As of April 30, 2026: 31 Buy / 11 Hold / 4 Sell (46 analysts). Average price target $299–305 (~11% upside from ~$271). High target: Wedbush $350 (Dan Ives). BofA raised to $325 ahead of Q2 earnings citing underestimated iPhone and Services strength. (Source: swing_catalyst_news signal, 20260430_144524.)
+As of May 1, 2026: 29 Buy / 16 Hold / 4 Sell (49 analysts per web_research data); median price target $300 (range $200–$350). High target: Wedbush $350 (Dan Ives). BNP Paribas raised PT to $300 (April 17). Post-Q2 beat, several analysts cited better-than-feared results and strong guidance as catalysts for further upgrades. (Source: web_research/AAPL.json, run 20260501_144523.)
