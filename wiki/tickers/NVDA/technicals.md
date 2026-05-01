@@ -4,7 +4,7 @@ last_updated: 2026-05-01
 last_run_id: 20260501_124529
 target_words: 350
 stale_after_days: 7
-word_count: 338
+word_count: 341
 summary: Breakdown confirmed — price collapsed 8% to $199.57; hourly -DI 38.45 >> +DI 11.92; all positions stopped out; watch for reversal candle at 38.2% Fib / EMA-21 confluence $196.75–$197.67 before re-entry.
 ---
 
@@ -12,7 +12,7 @@ summary: Breakdown confirmed — price collapsed 8% to $199.57; hourly -DI 38.45
 
 ## TL;DR
 
-As of 2026-05-01 (run 20260501_124529, price ~$199.57), NVDA has broken down 8% from the $216.83 swing high. The $208.20 support zone — previously flagged as the hard invalidation level — was breached on 1.52x average volume. Both open positions were stopped out. The daily trend structure remains intact (ADX 55.96, full EMA stack bullish), but the hourly timeframe is actively bearish. No new entry until a confirmed reversal candle appears at the 38.2% Fib / EMA-21 confluence ($196.75–$197.67). Decision: HOLD, conf 35.
+As of 2026-05-01 (run 20260501_124529, price ~$199.57), NVDA has broken down 8% from the $216.83 swing high. The $208.20 support zone — previously the hard invalidation level — was breached on 1.52x average volume. All NVDA positions are now closed (both stops hit at $205.30 on 2026-04-30; portfolio shows 0 long shares). The daily trend structure remains intact (ADX 55.96, full EMA stack bullish), but the hourly timeframe is actively bearish. No new entry until a confirmed reversal candle appears at the 38.2% Fib / EMA-21 confluence ($196.75–$197.67). Decision: HOLD, conf 35.
 
 ## Multi-timeframe state
 
@@ -25,7 +25,7 @@ As of 2026-05-01 (run 20260501_124529, price ~$199.57), NVDA has broken down 8% 
 
 **Trend indicators:** ADX-14 = 55.96 (+DI 29.83, -DI 14.49). SuperTrend bullish on daily. Prior squeeze fired and expanded bearishly on hourly.
 
-**Mean-reversion stress:** Bollinger %B = 0.57 (daily, near midband). Z-score vs 50-SMA = 1.06. Daily RSI-14 = 59.74, RSI-21 = 67.88 — healthy, not stretched. Hourly %B = 0.17 (near lower band). Hourly RSI-21 = 23.58 (deeply oversold).
+**Mean-reversion stress:** Bollinger %B = 0.57 (daily, near midband). Z-score vs 50-SMA = 1.06. Daily RSI-14 = 59.74, RSI-21 = 67.88 — healthy, not stretched. Hourly %B = 0.17 (near lower band). Hourly RSI-21 = 23.58 (deeply oversold). OBV trending up while price falls — bullish divergence.
 
 Sources: run 20260501_124529 — swing_trend_momentum, swing_mean_reversion, swing_breakout, swing_catalyst_news, swing_macro_context, swing_head_trader signals; decisions.json; risk_management_agent.
 
@@ -46,8 +46,8 @@ Sources: run 20260501_124529 — swing_trend_momentum, swing_mean_reversion, swi
 
 ## Setup type
 
-**Watch / No position.** Prior pullback-buy (3 shares at $209.50, run 20260430_124724) was stopped out. Price has broken below $208.20 invalidation level on elevated volume (1.52x avg). Entry requires: (1) confirmed hourly reversal candle (hammer, bullish engulfing, or morning star) at $196.75–$199.50 zone, (2) hourly MACD histogram turning positive. If triggered: entry $197.50–$199.50, stop $194.00, target $212.25, R/R 2.67:1, timeframe 5–12 trading days. Hard exit deadline ~May 17 (3-day pre-earnings blackout before May 20 NVDA earnings).
+**Watch / No position.** Both open positions (67 shares @ $209.25 and 3 shares @ $209.50) were stopped out at $205.30 on 2026-04-30. Price has broken below $208.20 invalidation level on elevated volume (1.52x avg). Entry requires: (1) confirmed hourly reversal candle (hammer, bullish engulfing, or morning star) at $196.75–$199.50 zone, (2) hourly MACD histogram turning positive. If triggered: entry $197.50–$199.50, stop $194.00, target $212.25, R/R 2.67:1, timeframe 5–12 trading days. Hard exit deadline ~May 17 (3-day pre-earnings blackout before May 20 NVDA earnings).
 
 ## Last updated
 
-2026-05-01 — source: 20260501_124529 (swing_trend_momentum, swing_mean_reversion, swing_breakout, swing_catalyst_news, swing_macro_context, swing_head_trader signals; PM decisions.json; risk_management_agent). Prior setup (pullback-buy at $209.50, run 20260430_124724) stopped out; noted in recent.md.
+2026-05-01 — source: 20260501_124529 (all five swing strategy agents, swing_head_trader, PM decisions.json, risk_management_agent). Both positions stopped out; noted in trades.md and recent.md.
