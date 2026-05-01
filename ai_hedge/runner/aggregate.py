@@ -220,7 +220,19 @@ def main():
                         help="Analysis mode override (default: read from metadata.json)")
     parser.add_argument("--asset-type", choices=("stock",), default="stock",
                         help="Asset type: stock (default)")
+    parser.add_argument("--require-turso", action="store_true",
+                        help="Crash loud if TURSO_DATABASE_URL is unset (production routine context). "
+                             "Without this flag, we silently fall back to local SQLite when Turso "
+                             "creds are missing — fine for local dev, dangerous in production "
+                             "because the PM would see empty state and propose phantom trades.")
     args = parser.parse_args()
+
+    if args.require_turso and not os.getenv("TURSO_DATABASE_URL"):
+        raise SystemExit(
+            "FATAL: --require-turso was set but TURSO_DATABASE_URL is not in the environment. "
+            "This script must read portfolio state from the cloud DB in production. "
+            "Either set TURSO_DATABASE_URL (and TURSO_AUTH_TOKEN) or remove --require-turso for local dev."
+        )
 
     tickers = [t.strip().upper() for t in args.tickers.split(",")]
     run_dir = os.path.join("runs", args.run_id)

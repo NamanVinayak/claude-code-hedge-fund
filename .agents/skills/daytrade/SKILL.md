@@ -143,7 +143,7 @@ Write your output to: runs/{RUN_ID}/signals/dt_head_trader.json
 Parse `$ARGUMENTS` for an optional `--cash` flag. If present, use that value. Otherwise default to 100000.
 
 ```bash
-python -m ai_hedge.runner.aggregate --run-id $RUN_ID --tickers $TICKERS --cash $CASH
+python -m ai_hedge.runner.aggregate --run-id $RUN_ID --tickers $TICKERS --cash $CASH --require-turso
 ```
 
 This loads all signals, runs deterministic agents (fundamentals, technicals, valuation, sentiment, risk_manager, technicals_intraday), computes allowed actions, and writes `signals_combined.json`.
