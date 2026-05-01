@@ -39,6 +39,31 @@ STALE_NUMBER_PATTERNS = [
 # Run-id pattern (YYYYMMDD_HHMMSS)
 RUN_ID_RE = re.compile(r"\b(20\d{6}_\d{6})\b")
 
+# Section headers that contain TRADE CLAIMS (run_ids here must exist in Turso).
+# Anywhere else (Run decision history, Lessons learned, footnotes) a run_id
+# can be mentioned for context without a corresponding ledger row.
+CLAIM_SECTION_HEADERS = re.compile(
+    r"^##\s+(open\s+positions?|recently\s+closed|closed\s+trades?|active\s+positions?|filled\s+positions?)",
+    re.IGNORECASE | re.MULTILINE,
+)
+
+
+def extract_claim_sections(text: str) -> str:
+    """Return concatenated text of all sections that claim specific trades.
+    Used to scope phantom-run / cross-contamination detection so we don't
+    false-positive on legitimate historical mentions in run-decision tables."""
+    headers = list(CLAIM_SECTION_HEADERS.finditer(text))
+    if not headers:
+        return ""
+    chunks = []
+    for i, h in enumerate(headers):
+        start = h.start()
+        # End at next ## header (any level 2 heading) or EOF
+        next_h2 = re.search(r"^##\s+", text[h.end():], re.MULTILINE)
+        end = h.end() + next_h2.start() if next_h2 else len(text)
+        chunks.append(text[start:end])
+    return "\n".join(chunks)
+
 
 def collect_turso_runs_per_ticker() -> dict[str, set[str]]:
     """Return {ticker: {run_ids that have a Turso trade for this ticker}}."""
@@ -58,18 +83,39 @@ def all_turso_run_ids() -> set[str]:
 def audit_ticker(ticker: str, file: Path, ticker_runs: set[str], all_runs: set[str]) -> dict:
     text = file.read_text()
 
-    # Run IDs mentioned in the file
-    mentioned_runs = set(RUN_ID_RE.findall(text))
+    # Only check claim sections — Open positions, Recently Closed, Closed trades.
+    # Mentions in Run decision history / Lessons learned / footnotes are
+    # legitimate context (HOLDs, prior runs that didn't ingest, etc.).
+    claim_text = extract_claim_sections(text)
+    if not claim_text:
+        mentioned_runs: list[tuple[str, int]] = []
+    else:
+        mentioned_runs = [(m.group(1), m.start()) for m in RUN_ID_RE.finditer(claim_text)]
 
-    phantom_runs = []  # run mentioned but NOT in Turso at all
-    cross_contamination = []  # run mentioned that's in Turso BUT for a different ticker
-    for r in mentioned_runs:
+    # If a run is mentioned in a context explicitly stating "abandoned",
+    # "no fill", "never filled", "not filled", or "expired without" — it's
+    # a record that the trade did NOT execute. Not a false claim.
+    no_trade_markers = re.compile(
+        r"abandoned|no\s+fill|never\s+filled|not\s+filled|expired\s+without|did\s+not\s+(?:fill|execute)",
+        re.IGNORECASE,
+    )
+
+    phantom_runs = []  # run claimed as a real trade but NOT in Turso
+    cross_contamination = []  # run claimed that exists in Turso BUT for a different ticker
+    for r, pos in mentioned_runs:
         if r in ticker_runs:
             continue
+        # Check if the run is mentioned in a "this trade didn't happen" context
+        ctx_start = max(0, pos - 200)
+        ctx_end = min(len(claim_text), pos + 200)
+        if no_trade_markers.search(claim_text[ctx_start:ctx_end]):
+            continue  # explicitly labeled as not-a-real-trade, skip
         if r in all_runs:
-            cross_contamination.append(r)
+            if r not in cross_contamination:
+                cross_contamination.append(r)
         else:
-            phantom_runs.append(r)
+            if r not in phantom_runs:
+                phantom_runs.append(r)
 
     # Skip lines where the stale number appears alongside an annotation
     # marker ("corrected", "originally", "sizing bug", commit hash, etc.) —
