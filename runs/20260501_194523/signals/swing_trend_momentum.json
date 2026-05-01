@@ -1,0 +1,20 @@
+{
+  "UNH": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "TREND ASSESSMENT: UNH is in a confirmed, powerful uptrend — EMA 10 (352) > EMA 21 (332) > EMA 50 (313), fully aligned. ADX 84.15 with +DI 46.67 vs -DI 4.12 is one of the strongest trend readings possible. Higher highs and higher lows intact. MOMENTUM ASSESSMENT: Daily ROC is accelerating strongly — roc_5d +4.49%, roc_10d +17.09%, roc_21d +36.92%, all positive and expanding. Daily MACD histogram +4.43 confirms momentum acceleration. However, this strategy requires entry on pullbacks to the 10 or 21 EMA — current price ($370.48) is 5.2% above the 10 EMA ($352.17) and 11.46% above the 21 EMA ($332.39). No pullback entry exists. ENTRY CONDITION NOT MET: RSI-14 at 97.45 and RSI-7 at 98.07 signal extreme overextension. Z-score 2.34 (>2 sigma above 50 MA). Hourly MACD histogram is -1.01 (contracting/negative), hourly ROC mixed (roc_10d -0.04%), and hourly +DI/−DI nearly equal at 19.65/19.03 — hourly momentum is diverging from daily bullish trend, early warning of near-term exhaustion. Wiki memory from Apr 30 run explicitly flagged: 'No actionable entry exists at current price. Wait for pullback to the $348–355 10-EMA zone.' The 10 EMA has risen to $352 but price is still ~$18 above it. Lessons pattern: prior EMA pullback dip-buy on stretched RSI (NVDA, similar setup) stopped out. Sitting out until a pullback to the $350–358 10-EMA zone materializes with hourly momentum re-aligning bullish.",
+    "entry": 352.0,
+    "target": 403.55,
+    "stop": 340.0,
+    "timeframe": "Wait — no entry signal. Target entry on pullback to 10 EMA zone ($350–358), 5–12 trading days if pullback develops"
+  },
+  "JNJ": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": "TREND ASSESSMENT: JNJ is in a confirmed downtrend — EMAs are fully inverted (EMA 10: 229.64 < EMA 21: 232.66 < EMA 50: 233.78), ema_aligned_downtrend: true. Price is below all short-to-medium EMAs. ADX 30.72 with -DI 29.6 dominating +DI 19.76 confirms bearish trend strength. OBV trending down on both daily and hourly. 10-day volume bias is 'down'. MOMENTUM ASSESSMENT: ROC is negative across all timeframes — roc_5d -0.35%, roc_10d -2.0%, roc_21d -5.97%. Daily MACD histogram -0.5647, MACD line (-3.23) below signal (-2.67), expanding negatively. All consistent with accelerating downside momentum. Hourly EMAs also fully aligned downtrend; price below all hourly EMAs. Hourly MACD histogram +0.32 shows a small counter-trend bounce in progress — this is the bounce into resistance that creates the short entry, not a momentum reversal. ENTRY SIGNAL: Price bounced from $224–225 lows to $229.85 (Apr 30 close, high $231.16), entering the resistance zone flagged in prior wiki run ($229–231 bounce into 10-EMA resistance). This is the textbook short entry: price rallying into EMA resistance in an established downtrend with expanding bearish momentum. Wiki memory (Apr 30): measured-move breakdown target $216.53, stop above $235. RISK FACTORS: Macro is broadly risk-on (S&P 500 at ATH, April best month since 2020), which is a mild headwind for bearish healthcare trades. Confidence capped at 62 for this reason. Hourly ADX only 14.38 (weak) — the bounce lacks directional conviction, consistent with counter-trend relief, but the absence of hourly trend strength means timing risk. No divergence on RSI at daily level. Bearish trade is WITH the established daily downtrend; strategy criteria met.",
+    "entry": 229.85,
+    "target": 216.53,
+    "stop": 235.0,
+    "timeframe": "5-12 trading days"
+  }
+}

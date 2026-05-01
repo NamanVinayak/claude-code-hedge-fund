@@ -1,0 +1,20 @@
+{
+  "UNH": {
+    "signal": "neutral",
+    "confidence": 10,
+    "reasoning": "UNH is a no-trade zone for breakout strategy. The consolidation breakout fired weeks ago near $281-283, and the measured-move target (~$331) has been surpassed by over 12%. Current price at $370.48 is 23.85% above the 50-SMA with RSI-14 at 97.45 and RSI-7 at 98.07 — extreme overbought extension. Bollinger Band width is 0.35 (already wide/expanded), confirming the move is well underway and no squeeze is forming. Daily volume is 0.74x the 20-day average (below the required 1.5x threshold). ADX at 84.15 is extreme trend — this is a runaway trend, not a breakout setup. No consolidation range or defined S/R zone exists at current price; nearest resistance is null (new multi-month highs), nearest support is $276.29, which is far below current price. Wiki confirms: 'No setup — no-trade zone. Parabolic extension, not a consolidation or breakout pattern.' Hourly squeeze is absent (BB width 0.088), hourly volume 0.17x average. Range: none identifiable at current price. Volume ratio: 0.74x (fail). Squeeze status: done/expanded. All three breakout conditions fail simultaneously.",
+    "entry": 370.48,
+    "target": 370.48,
+    "stop": 370.48,
+    "timeframe": "no trade"
+  },
+  "JNJ": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": "JNJ presents a developing bearish breakout setup. Consolidation range: $223.78 (support, 4 daily tests) to $231.03 (hourly resistance, 15 tests with volume confirmation). Range height: $7.25. Current price $229.85 is bouncing into the upper end of this resistance zone ($229-231), exactly where the wiki identified the short entry zone. Hourly Bollinger Band width is 0.0289 — extremely tight squeeze ON, coiled at resistance. Hourly ATR at 0.57% confirms volatility compression. Daily BB width 0.1048 is moderate but narrowing. Daily trend is confirmed bearish: ADX 30.72 with -DI 29.6 dominating +DI 19.76, full EMA downtrend alignment (5 < 10 < 20 < 50), MACD -3.23 below signal -2.67, OBV trending down, ROC-10d -2.0%, ROC-21d -5.97%. Volume today at 1.06x average — does not meet the 1.5x breakout confirmation threshold yet, which is the primary constraint on confidence. The bearish breakdown entry is a confirmed daily close below $223.78 support on volume >1.5x. Measured-move target: $223.78 - $7.25 = $216.53. Stop: $235.00 (above 21-EMA and the consolidation range, as identified by prior wiki analysis). Wiki cross-check confirms this as the active setup: the prior squeeze resolved bearish, the $233 support was broken, and the hourly squeeze is now tight at resistance. Hourly MACD histogram +0.32 (short bounce) is the risk — RSI-14 daily at 36.5 is not deeply oversold, reducing mean-reversion risk. Confidence capped at 62 due to: (1) volume not yet at 1.5x threshold, (2) no confirmed close below $223.78 yet, (3) price at resistance but not yet breaking down. Entry is on confirmed breakdown, not at current price.",
+    "entry": 223.5,
+    "target": 216.53,
+    "stop": 235.0,
+    "timeframe": "5-12 trading days"
+  }
+}

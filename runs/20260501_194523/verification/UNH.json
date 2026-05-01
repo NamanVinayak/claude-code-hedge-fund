@@ -1,0 +1,71 @@
+{
+  "ticker": "UNH",
+  "verified_at": "2026-05-01T19:50:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.0285,
+      "web_value": 0.0268,
+      "source": "Yahoo Finance (April 30, 2026)",
+      "status": "ok",
+      "deviation": "6.3%",
+      "notes": "Multiple sources confirm 2.68-2.85% range for TTM ending April 2026. Within tolerance."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.042,
+      "web_value": 0.0424,
+      "source": "Investing.com / StockAnalysis (TTM)",
+      "status": "ok",
+      "deviation": "0.9%",
+      "notes": "UNH 2026 full-year guidance targets ~5.5% operating margin; current TTM 4.2% is consistent with industry sources."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 27.98,
+      "web_value": 27.98,
+      "source": "Yahoo Finance (April 30, 2026)",
+      "status": "ok",
+      "deviation": "0.0%",
+      "notes": "Trailing P/E of 28.00 confirmed by Yahoo Finance. Multiple sources range 26.79-28.00."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 336235069440.0,
+      "web_value": 336470000000.0,
+      "source": "Yahoo Finance / CompaniesMarketCap (April 30, 2026)",
+      "status": "ok",
+      "deviation": "0.1%",
+      "notes": "Market cap of $336.2B matches web data of $336.47B as of April 30, 2026."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 400300000000.0,
+      "web_value": 447560000000.0,
+      "source": "StockAnalysis / CompaniesMarketCap TTM April 2026",
+      "status": "ok",
+      "deviation": "10.6%",
+      "notes": "Implied revenue from P/S ratio (~$400.3B) appears to reflect FY2024 data ($400.278B). TTM through Q1 2026 is ~$447.56B. Deviation is 10.6%, below 20% threshold. No correction applied."
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.1218,
+      "web_value": 0.1218,
+      "source": "Yahoo Finance / StockAnalysis TTM",
+      "status": "ok",
+      "deviation": "0.0%",
+      "notes": "ROE of 12.18% exactly matches web sources."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.0378,
+      "web_value": 0.0378,
+      "source": "Yahoo Finance / StockAnalysis TTM",
+      "status": "ok",
+      "deviation": "0.0%",
+      "notes": "ROA of 3.78% exactly matches web sources."
+    }
+  ],
+  "overall_status": "all checks passed — no mismatches detected",
+  "corrections_applied": false
+}
