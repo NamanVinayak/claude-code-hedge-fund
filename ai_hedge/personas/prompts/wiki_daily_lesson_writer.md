@@ -16,11 +16,12 @@ A JSON bundle at `runs/wiki_daily_<YYYY-MM-DD>.json` containing:
 
 The bundle's `closed_trades` may include trades from the last 3 days — some may have already been processed in a prior run. Before processing each trade:
 
-1. Scan `lessons_current` for any line matching the trade's `[DATE] | [TICKER]` prefix (using `closed_at` date in YYYY-MM-DD).
-2. If a matching lesson line already exists → SKIP this trade entirely. Do not append a new lesson, do not re-prepend the thesis note, do not move the trade in trades.md (it has already been moved).
-3. If no matching line exists → process this trade normally per the rules below.
+1. Scan `lessons_current` for any line matching the FULL prefix `[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME: ±$X.XX]` — date, ticker, setup type, AND P&L all matching exactly.
+2. If a fully-matching lesson line already exists → SKIP this trade entirely. Do not append a new lesson, do not re-prepend the thesis note, do not move the trade in trades.md (it has already been moved).
+3. If date + ticker match but the SETUP TYPE or P&L differs → this is a DIFFERENT lot of the same ticker that closed the same day (multi-lot positions are common, e.g. an opening fill and a later add that close at different prices). Process it normally as a new lesson bullet — do NOT skip.
+4. If no matching line exists at all → process this trade normally per the rules below.
 
-This makes the script idempotent: extending the lookback window and re-running the routine cannot duplicate work.
+This makes the script idempotent across re-runs (4-field match prevents duplicates) without losing same-day multi-lot closes (different P&L distinguishes them).
 
 ### What to write, for each closed trade (only those that passed the dedup check)
 
