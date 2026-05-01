@@ -1,0 +1,11 @@
+{
+  "AMD": {
+    "signal": "neutral",
+    "confidence": 22,
+    "reasoning": "AMD does not present a valid breakout setup under strict swing_breakout criteria. The stock did close at $354.49, fractionally above the hourly pivot resistance at $352.99 (6 tests, volume-confirmed), which superficially resembles a breakout. However, three mandatory conditions are unmet: (1) VOLUME FAILURE — current day volume is 42M vs 20-day avg 39.9M, a relative volume ratio of only 1.05x. The strategy requires 1.5x+ for a confirmed breakout; this falls materially short, flagging a probable false or unconfirmed breakout. (2) NO SQUEEZE — daily Bollinger Band width is 0.6435, which is already wide and expanded. There is no contraction or coiling prior to this move; volatility was already elevated. Hourly BB width (0.2193) is tighter but hourly ADX is only 17.25 (weak), confirming the hourly frame is not driving a directional thrust. The 'spring loaded' squeeze setup that defines the highest-conviction breakouts is absent. (3) ALREADY IN ESTABLISHED PARABOLIC TREND — daily ADX is 74.94 (extremely strong), RSI-14 is 83.06, RSI-21 is 86.46, 21-day ROC is +74.26%, and Z-score vs 50-SMA is 2.6. This is extreme overbought territory in an already established trend — not the transition from consolidation to breakout that this strategy targets. The wiki confirms AMD has been flagged as 'parabolic momentum, dangerous entry' since the Apr 15-17 runs with RSI 91 and Z-score 3.66; the wiki explicitly states the setup becomes constructive only on RSI reset to 55-65 and Z-score below 1.5. Neither condition is met today. Consolidation range identified: $310 (Apr 28 low) to $353 (Apr 24 high / hourly pivot), a $43 range. If a confirmed breakout were to occur with 1.5x+ volume, measured-move target would be approximately $396 (fib ext 1.272 at $399.06 corroborates). Entry would be above $354-$355 with stop just below $350. However, without volume confirmation, the breakout is suspect and the strategy calls for neutral.",
+    "entry": 355.5,
+    "stop": 349.5,
+    "target": 396.0,
+    "timeframe": "5-12 trading days"
+  }
+}

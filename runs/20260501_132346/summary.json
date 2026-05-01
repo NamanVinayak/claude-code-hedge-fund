@@ -1,0 +1,34 @@
+{
+  "run_id": "20260501_132346",
+  "mode": "swing",
+  "started_at": "2026-05-01T13:24:39Z",
+  "ended_at": "2026-05-01T13:38:55Z",
+  "tickers": [
+    "AMD"
+  ],
+  "decisions": [
+    {
+      "ticker": "AMD",
+      "action": "short",
+      "confidence": 42,
+      "entry": 354.49,
+      "stop": 372.31,
+      "target": 277.74,
+      "reasoning_tldr": "2/5 agents bearish, 3 neutral, 0 bullish at current price"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 1,
+    "cash": 5000.0,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "bearish",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

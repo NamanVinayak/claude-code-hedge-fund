@@ -1,0 +1,337 @@
+{
+  "ticker": "AMD",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 335.2115677591334,
+      "sma_5": 339.4499938964844,
+      "ema_10": 316.4775302355697,
+      "sma_10": 314.3869964599609,
+      "ema_20": 288.05291296610204,
+      "sma_20": 277.74299850463865,
+      "ema_21": 285.8846280423868,
+      "sma_21": 274.52714175269716,
+      "ema_50": 251.69349640819627,
+      "sma_50": 232.23339904785155,
+      "ema_200": 207.96351901229522,
+      "sma_200": 210.38029960632323,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 354.489990234375,
+    "dist_from_50sma_pct": 52.64,
+    "price_vs_ma": {
+      "above_ema_5": true,
+      "pct_from_ema_5": 5.75,
+      "above_sma_5": true,
+      "pct_from_sma_5": 4.43,
+      "above_ema_10": true,
+      "pct_from_ema_10": 12.01,
+      "above_sma_10": true,
+      "pct_from_sma_10": 12.76,
+      "above_ema_20": true,
+      "pct_from_ema_20": 23.06,
+      "above_sma_20": true,
+      "pct_from_sma_20": 27.63,
+      "above_ema_21": true,
+      "pct_from_ema_21": 24.0,
+      "above_sma_21": true,
+      "pct_from_sma_21": 29.13,
+      "above_ema_50": true,
+      "pct_from_ema_50": 40.84,
+      "above_sma_50": true,
+      "pct_from_sma_50": 52.64,
+      "above_ema_200": true,
+      "pct_from_ema_200": 70.46,
+      "above_sma_200": true,
+      "pct_from_sma_200": 68.5,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 35349.0
+    },
+    "rsi": {
+      "rsi_7": 79.36,
+      "rsi_14": 83.06,
+      "rsi_21": 86.46
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 33.2375,
+      "signal_line": 26.2216,
+      "histogram": 7.0158,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 367.1,
+      "middle": 277.74,
+      "lower": 188.38,
+      "width": 0.6435,
+      "pct_b": 0.9294
+    },
+    "atr": {
+      "atr_14": 17.35,
+      "atr_pct": 4.9
+    },
+    "adx": {
+      "adx_14": 74.94,
+      "plus_di": 55.37,
+      "minus_di": 10.1,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 42000100,
+      "avg_volume_20": 39939065,
+      "relative_volume": 1.05,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 209.21,
+          "tests": 14,
+          "volume_confirmed": false
+        },
+        {
+          "price": 216.71,
+          "tests": 12,
+          "volume_confirmed": true
+        },
+        {
+          "price": 219.65,
+          "tests": 7,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 188.22,
+          "tests": 2,
+          "volume_confirmed": false
+        },
+        {
+          "price": 192.87,
+          "tests": 9,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": null,
+      "nearest_support": 192.87,
+      "recent_high": 354.96,
+      "recent_low": 200.62,
+      "prev_day_high": 340.17,
+      "prev_day_low": 318.86,
+      "prev_day_close": 337.11
+    },
+    "fibonacci": {
+      "swing_high": 354.96,
+      "swing_low": 192.83,
+      "fib_236": 316.7,
+      "fib_382": 293.03,
+      "fib_500": 273.89,
+      "fib_618": 254.76,
+      "fib_786": 227.53,
+      "fib_ext_1272": 399.06,
+      "fib_ext_1618": 455.16,
+      "fib_ext_2000": 517.09,
+      "fib_ext_low_1272": 148.73,
+      "fib_ext_low_1618": 92.63
+    },
+    "momentum": {
+      "roc_5d": 16.1,
+      "roc_10d": 27.4,
+      "roc_21d": 74.26
+    },
+    "z_score_50": 2.6,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 338.3211547279303,
+      "sma_24": 335.3558756510417,
+      "ema_48": 325.7783652210996,
+      "sma_48": 328.29179827372235,
+      "ema_120": 293.96551893486884,
+      "sma_120": 285.9623149871826,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 354.3500061035156,
+    "dist_from_50sma_pct": 23.91,
+    "price_vs_ma": {
+      "above_ema_24": true,
+      "pct_from_ema_24": 4.74,
+      "above_sma_24": true,
+      "pct_from_sma_24": 5.66,
+      "above_ema_48": true,
+      "pct_from_ema_48": 8.77,
+      "above_sma_48": true,
+      "pct_from_sma_48": 7.94,
+      "above_ema_120": true,
+      "pct_from_ema_120": 20.54,
+      "above_sma_120": true,
+      "pct_from_sma_120": 23.91,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 35335.0
+    },
+    "rsi": {
+      "rsi_21": 66.57
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 14.6355,
+      "signal_line": 14.5514,
+      "histogram": 0.084,
+      "bullish_crossover": true
+    },
+    "bollinger": {
+      "upper": 364.3,
+      "middle": 328.29,
+      "lower": 292.29,
+      "width": 0.2193,
+      "pct_b": 0.8619
+    },
+    "atr": {
+      "atr_24": 5.74,
+      "atr_pct": 1.62
+    },
+    "adx": {
+      "adx_24": 17.25,
+      "plus_di": 30.1,
+      "minus_di": 22.93,
+      "trend_strength": "weak"
+    },
+    "volume": {
+      "current_volume": 3739289,
+      "avg_volume_20": 4956006,
+      "relative_volume": 0.75,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 352.99,
+          "tests": 6,
+          "volume_confirmed": true
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 299.76,
+          "tests": 5,
+          "volume_confirmed": false
+        },
+        {
+          "price": 310.0,
+          "tests": 4,
+          "volume_confirmed": true
+        },
+        {
+          "price": 328.81,
+          "tests": 6,
+          "volume_confirmed": true
+        }
+      ],
+      "nearest_resistance": null,
+      "nearest_support": 328.81,
+      "recent_high": 354.96,
+      "recent_low": 316.2,
+      "prev_day_high": 353.11,
+      "prev_day_low": 351.0,
+      "prev_day_close": 352.75
+    },
+    "fibonacci": {
+      "swing_high": 354.96,
+      "swing_low": 310.0,
+      "fib_236": 344.35,
+      "fib_382": 337.79,
+      "fib_500": 332.48,
+      "fib_618": 327.17,
+      "fib_786": 319.62,
+      "fib_ext_1272": 367.19,
+      "fib_ext_1618": 382.75,
+      "fib_ext_2000": 399.92,
+      "fib_ext_low_1272": 297.77,
+      "fib_ext_low_1618": 282.21
+    },
+    "momentum": {
+      "roc_5d": 1.78,
+      "roc_10d": 6.32,
+      "roc_21d": 5.94
+    },
+    "z_score_120": 1.74,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 336.760009765625,
+      "close": 347.80999755859375,
+      "high": 352.989990234375,
+      "low": 334.5400085449219,
+      "volume": 81616700,
+      "time": "2026-04-24"
+    },
+    {
+      "open": 346.32000732421875,
+      "close": 334.6300048828125,
+      "high": 349.2099914550781,
+      "low": 328.80999755859375,
+      "volume": 50585300,
+      "time": "2026-04-27"
+    },
+    {
+      "open": 311.8599853515625,
+      "close": 323.2099914550781,
+      "high": 327.5,
+      "low": 310.0,
+      "volume": 43002500,
+      "time": "2026-04-28"
+    },
+    {
+      "open": 326.5799865722656,
+      "close": 337.1099853515625,
+      "high": 340.1700134277344,
+      "low": 318.8599853515625,
+      "volume": 44704400,
+      "time": "2026-04-29"
+    },
+    {
+      "open": 341.3599853515625,
+      "close": 354.489990234375,
+      "high": 354.9599914550781,
+      "low": 332.6000061035156,
+      "volume": 42000100,
+      "time": "2026-04-30"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 354.489990234375,
+  "market_cap": 577964343296.0,
+  "wiki_context": {
+    "slices": {
+      "technicals_full": {
+        "path": "wiki/tickers/AMD/technicals.md",
+        "mode": "full",
+        "content": "# AMD \u2014 Technicals\n\n## TL;DR\n\nAs of the most recent run (20260417_233350), AMD had the highest raw momentum in the entire 19-stock watchlist \u2014 41.7% 21-day ROC \u2014 but was in extreme overbought territory with RSI 91 and a bearish hourly STC cross. The daily trend is intact and strong; the hourly frame is flashing pullback risk. System sized the position at 15 shares (small) despite a 70% confidence rating because the overbought extension was too severe to ignore.\n\n## Multi-timeframe state\n\n| Timeframe | Bias | Key reading |\n|---|---|---|\n| Daily | Strongly bullish | ADX 40.99, all EMAs aligned up, SuperTrend bullish |\n| Hourly | Pullback risk | STC crossed down (bearish momentum divergence at Apr 17) |\n| Statistical | Mean-reversion risk | Z-score 3.66 (Apr 17), 2.89 (Apr 15), 2.35 (Apr 11) \u2014 three-run trend of escalating extension |\n\nSources: technical_analyst_agent (run 20260415_110848), swing_head_trader (run 20260417_233350).\n\n## Key levels\n\n| Level | Value | Source |\n|---|---|---|\n| Entry zone (preferred) | $241\u2013$248 | Hourly SuperTrend / fib 38.2 support (run 20260415_110848) |\n| Pullback target (deep) | $224\u2013$237 | 50-SMA, prior congestion (run swing_20260411_211655) |\n| Resistance / target | $268\u2013$305 | Head Trader target range across three runs |\n| Stop / invalidation | $270 | System stop on Apr 17 buy signal |\n| Extreme pullback | $212 | 50-SMA mean-reversion agent snap-back target (run swing_20260411_211655) |\n\n## Indicator snapshot (run 20260417_233350 + 20260415_110848)\n\n- **RSI-14:** 91 (Apr 17), 75.3 (Apr 15) \u2014 deeply overbought both prints; trending worse\n- **ADX:** ~41 \u2014 strong trend; above 25 threshold confirming a real directional move\n- **21-day ROC:** 41.7% (Apr 17) \u2014 highest in the full watchlist universe\n- **Bollinger position:** 1.04 (price above upper band) as of Apr 15\n- **Squeeze Momentum:** Bullish breakout fired on Apr 15; hourly STC crossed bearish by Apr 17\n- **Historical volatility:** 48.6% annualized \u2014 high; expect 3\u20135% daily swings\n\n## Setup type\n\nParabolic momentum \u2014 right stock, dangerous entry. System verdict across all three runs: trend is real and catalyst-supported, but entry timing matters enormously. The setup becomes constructive again on a RSI reset to 55\u201365 range with Z-score below 1.5.\n",
+        "last_updated": "2026-04-29",
+        "stale": false
+      }
+    }
+  }
+}
