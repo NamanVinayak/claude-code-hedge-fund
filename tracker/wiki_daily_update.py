@@ -9,8 +9,9 @@ from __future__ import annotations
 
 import json
 import sys
-from datetime import date
+from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -58,7 +59,7 @@ def main() -> None:
 
     runs_dir = ROOT / "runs"
     runs_dir.mkdir(exist_ok=True)
-    today = date.today().isoformat()
+    today = datetime.now(ZoneInfo("America/New_York")).date().isoformat()
     bundle_path = runs_dir / f"wiki_daily_{today}.json"
     bundle_path.write_text(json.dumps(bundle, indent=2, default=str), encoding="utf-8")
 

@@ -25,10 +25,15 @@ Markets were closed all of Friday night through Saturday, so nothing
 could have closed since the previous run. Skip immediately on Saturdays
 to avoid a pointless Turso query and routine compute.
 
+The day-of-week check uses **Eastern Time** (not UTC) because that's the
+trading-day timezone. The routine fires at 10pm Pacific = 1am Eastern
+the next day, but our trading day still ends at 4pm Eastern, so "today
+in ET" is the relevant date.
+
 ```bash
-DOW=$(date -u +%u)  # 1=Mon ... 6=Sat ... 7=Sun
+DOW=$(TZ=America/New_York date +%u)  # 1=Mon ... 6=Sat ... 7=Sun (Eastern Time)
 if [ "$DOW" = "6" ]; then
-  echo "Saturday — markets were closed. Nothing to do. Exiting."
+  echo "Saturday in Eastern Time — markets were closed. Nothing to do. Exiting."
   exit 0
 fi
 ```
@@ -48,7 +53,7 @@ Read the output:
 The bundle was written to `runs/wiki_daily_<YYYY-MM-DD>.json`. Dispatch the agent:
 
 > Read `ai_hedge/personas/prompts/wiki_daily_lesson_writer.md` for your system prompt.
-> Bundle path: `runs/wiki_daily_<TODAY>.json` (where TODAY = current UTC date in YYYY-MM-DD)
+> Bundle path: `runs/wiki_daily_<TODAY>.json` (where TODAY = current Eastern Time date in YYYY-MM-DD)
 > Read the bundle. Write the three types of updates for each closed trade:
 > 1. Append a lesson bullet to `wiki/meta/lessons.md`
 > 2. Prepend an outcome note to `wiki/tickers/<TICKER>/thesis.md`
@@ -65,11 +70,11 @@ that page and continues — wiki updates never block anything.
 ## Step 3 — On Sundays only, run the deterministic compactor
 
 ```bash
-DOW=$(date -u +%u)  # 1=Mon ... 7=Sun
+DOW=$(TZ=America/New_York date +%u)  # 1=Mon ... 7=Sun (Eastern Time)
 if [ "$DOW" = "7" ]; then
   cd /Users/naman/Downloads/artist && .venv/bin/python -m scripts.wiki_compactor
 else
-  echo "Not Sunday (DOW=$DOW). Skipping weekly compactor."
+  echo "Not Sunday in ET (DOW=$DOW). Skipping weekly compactor."
 fi
 ```
 
@@ -111,8 +116,8 @@ Push only if something changed. Use a message that reflects which jobs ran:
 ```bash
 cd /Users/naman/Downloads/artist
 BRANCH=$(git branch --show-current)
-TODAY=$(date -u +%Y-%m-%d)
-DOW=$(date -u +%u)
+TODAY=$(TZ=America/New_York date +%Y-%m-%d)  # Eastern Time, the trading-day calendar
+DOW=$(TZ=America/New_York date +%u)
 
 if ! git diff --quiet wiki/ scripts/wiki_lint_report.md 2>/dev/null; then
   git add wiki/ scripts/wiki_lint_report.md 2>/dev/null || git add wiki/
