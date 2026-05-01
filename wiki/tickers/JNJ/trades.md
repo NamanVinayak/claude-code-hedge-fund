@@ -1,94 +1,100 @@
 ---
 name: JNJ trades
-last_updated: 2026-04-30
-last_run_id: 20260430_194522
+last_updated: 2026-05-01
+last_run_id: 20260501_194523
 target_words: 800
 stale_after_days: 60
-word_count: 798
-summary: First live trade placed — short 4 shares at $229.50 (entered Apr 30, 2026); prior two consecutive holds now historical; short thesis is bearish squeeze resolution in confirmed downtrend
+word_count: 784
+summary: No confirmed JNJ fills in trade_ledger.json per_ticker_history as of run 20260501_194523; two short decisions placed (Apr 30 and May 1); ledger shows 0 JNJ entries — pending ingestion or fill confirmation
 ---
 
 # JNJ — Trades
 
 ## TL;DR
 
-JNJ now has its first active trade: a short of ~4 shares entered at $229.50 on April 30, 2026, targeting $216.53 with a stop at $235. The trade is the result of the squeeze that was "building" across two prior hold runs finally resolving to the downside. Prior holds (Apr 11 and Apr 15) were correctly cautious — both would have been losers or flat. Confidence is 42%, just above the 40 threshold, with a 2.36:1 R/R. Risk manager allowed a $1,092.87 limit; actual notional is $918 (~4 shares × $229.50). (Source: decisions.json, risk_management_agent signal, run 20260430_194522.)
+As of run 20260501_194523, the trade ledger (`trade_ledger.json:per_ticker_history["JNJ"]`) contains **zero records** for JNJ. Two short decisions have been issued across two consecutive runs — April 30 (decisions.json, run 20260430_194522: ~4 shares at $229.50) and May 1 (decisions.json, run 20260501_194523: 3 shares at $229.85) — but neither appears as a confirmed fill in per_ticker_history. Until a JNJ record appears in the ledger, no JNJ trade is confirmed. All stats below are sourced exclusively from trade_ledger.json per hard rule #11.
+
+**Note on prior page.** The prior trades.md (run 20260430_194522) described an "open short of ~4 shares at $229.50" sourced from decisions.json. Per the current trade_ledger snapshot, that record does not appear in per_ticker_history[JNJ]. It may be pending ingestion or was not queued to the broker. This page reflects only what the ledger confirms.
 
 ## Open positions
 
-### Trade — Short (active)
+**None confirmed in trade_ledger.json.** `per_ticker_history["JNJ"]` = `[]` as of run 20260501_194523. (Source: trade_ledger.json, run 20260501_194523.)
+
+## Pending orders (unconfirmed — decisions.json only)
+
+The following decisions were issued by the PM but are NOT confirmed by trade_ledger.json. Listed for reference only — do not count toward P&L or confirmed positions.
+
+### Decision A — Short (Apr 30, 2026)
 
 | field | value |
 |---|---|
-| Status | open |
-| Direction | short |
-| Quantity | ~4 shares |
-| Entry price | $229.50 |
-| Target price | $216.53 |
-| Stop loss | $235.00 |
-| Risk/reward | 2.36:1 |
-| Confidence | 42% |
-| Timeframe | 5–10 trading days |
 | Run ID | 20260430_194522 |
-| Mode | swing |
-| Entry date | 2026-04-30 |
-| Notional | $918 |
-| Risk per share | $5.50 (entry $229.50 to stop $235.00) |
-| Reward per share | $12.97 (entry $229.50 to target $216.53) |
+| Direction | short |
+| Quantity | ~4 shares (approximate) |
+| Entry price | $229.50 |
+| Target | $216.53 |
+| Stop | $235.00 |
+| R/R | 2.36:1 |
+| Confidence | 42% |
+| Ledger status | Not in per_ticker_history — unconfirmed |
 
-**Trade thesis.** The Apr 15 Bollinger squeeze resolved bearish — the prior $233 bearish trigger was surpassed and price fell to $227.35. ADX moved from 23 (below threshold, no trend) to 29.46 (trend confirmed) with -DI 33.25 >> +DI 15.99. Daily EMAs are fully aligned downtrend. The hourly bounce into 10-EMA resistance ($229–231) is the entry zone. Macro context is a direct headwind: risk-on regime with S&P at ATH drives capital rotation out of defensive healthcare. No catalyst within 10 days to reverse the trend. (Source: swing_head_trader signal, decisions.json, run 20260430_194522.)
+### Decision B — Short (May 1, 2026)
 
-**Primary risk.** Daily RSI at 28.35 (oversold territory) — a snap-back bounce extending above $235 would stop the trade out. Talc litigation is an unscheduled binary wildcard. Mean-reversion agent (52% confidence) sees a bounce to $234–235 as possible. (Source: swing_mean_reversion signal; explanation.json, run 20260430_194522.)
+| field | value |
+|---|---|
+| Run ID | 20260501_194523 |
+| Direction | short |
+| Quantity | 3 shares |
+| Entry price | $229.85 |
+| Entry tolerance | 1.0% |
+| Target | $216.53 |
+| Stop | $235.00 |
+| R/R | 2.59:1 |
+| Confidence | 58% |
+| Account risk | 0.51% |
+| Timeframe | 5–12 trading days |
+| Ledger status | Not in per_ticker_history — pending confirmation |
+| Reasoning | 4/5 swing agents bearish; confirmed downtrend (EMA stack inverted, ADX 30.72, -DI > +DI, OBV down); bounce to 10-EMA resistance ($229–231) is textbook short entry; risk-on macro removes defensive bid; stop $235 above EMA21/consolidation |
+
+(Source: decisions.json, run 20260501_194523.)
 
 ## Closed — last 30 days
 
-None.
+None confirmed in trade_ledger.json.
 
-## Run history — holds (no trade executed)
+## Run history — holds and decisions (no confirmed ledger entries)
 
-### Run: swing_20260411_211655 — April 11, 2026
+| Run ID | Date | Decision | Confidence | Direction |
+|---|---|---|---|---|
+| swing_20260411_211655 | 2026-04-11 | hold | 35% | None — earnings binary blocked entry; BB squeeze building |
+| 20260415_110848 | 2026-04-15 | hold | 42% | None — squeeze unresolved; ADX below 25 threshold |
+| 20260430_194522 | 2026-04-30 | short | 42% | ~4 shares at $229.50 (not in ledger) |
+| 20260501_194523 | 2026-05-01 | short | 58% | 3 shares at $229.85 (not in ledger) |
 
-**Decision**: Hold. Confidence 35%. (Source: decisions.json, run swing_20260411_211655.)
-
-**What the system saw**: Stock at ~$241.30. ADX 22.9 (below 25), RSI 56.9, BB width 0.048 (tight squeeze forming), z-score -0.36 near statistical mean. Earnings binary April 14 was 3 days away — blocked entry. 7/9 agents neutral. Head trader: "Dead zone. Earnings Monday could gap either way." Proposed entry $238.46, target $245, stop $234, R/R 1.5:1 — failed 2:1 minimum. (Source: swing_head_trader.json, run swing_20260411_211655.)
-
-**Lesson**: Hold was correct. Q1 earnings beat but stock barely moved; sellers absorbed the gap-up. A Fibonacci entry at $237–238 would have gained almost nothing near $240. The 1.5:1 R/R filter correctly blocked the trade.
-
----
-
-### Run: 20260415_110848 — April 15, 2026
-
-**Decision**: Hold. Confidence 42%. (Source: decisions.json, run 20260415_110848.)
-
-**What the system saw**: Stock at ~$237–240. ADX 23 (below 25 threshold), EMAs flat (EMA10 $240.08, EMA21 $240.21), squeeze still ON, daily SuperTrend bearish. 8/9 agents neutral. Head trader: "No position. Monitor for the daily squeeze to release. A decisive close above $244 with volume would trigger a bullish entry." Risk manager allowed $1,375 limit. Trigger levels set: long above $244 on 1.5x volume; short below $233. (Source: decisions.json, run 20260415_110848.)
-
-**What happened**: The $244 bullish trigger was never reached. Price declined further, eventually breaking the $233 bearish trigger, which led to the short setup in this run.
-
----
+(Source: decisions.json for each respective run; trade_ledger.json for ledger status.)
 
 ## Closed — older than 30 days
 
 None.
 
-## Lifetime stats
+## Lifetime stats (from trade_ledger.json)
 
 | Metric | Value |
 |---|---|
-| Total trades (order placed) | 1 |
-| Open trades | 1 (short ~4 shares at $229.50) |
-| Closed trades | 0 |
-| Win rate | N/A (no closed trades) |
-| Average R:R | 2.36:1 (1 data point) |
-| Total realized P&L | $0.00 |
-| Total unrealized P&L | open (depends on fill) |
-| Runs analyzed | 3 |
+| Total confirmed trades (ledger) | 0 |
+| Open confirmed positions | 0 |
+| Closed confirmed trades | 0 |
+| Realized P&L | $0.00 |
+| Unrealized P&L | $0.00 (no confirmed positions) |
+| Runs analyzed | 4 |
 | Runs resulting in hold | 2 (Apr 11, Apr 15) |
-| Runs resulting in short | 1 (Apr 30) |
-| Consecutive holds | 2 (broken by short on Apr 30) |
-| Max capital at risk | $918 notional (~4 shares × $229.50) |
+| Runs resulting in short decision | 2 (Apr 30, May 1) |
+| Confirmed fills | 0 |
 
 ## Notes and lessons
 
-**Two holds, then a short — patience paid off.** Both prior holds were correct: the Apr 11 earnings-proximity block saved capital on a muted earnings reaction, and the Apr 15 squeeze-wait call correctly identified direction was unresolved. The bearish resolution on Apr 30 provides the clean entry the system was waiting for.
+**Two consecutive short decisions, zero ledger entries.** The bearish thesis has now generated two short decisions across two back-to-back runs at nearly the same price ($229.50 on Apr 30; $229.85 on May 1). The run 20260430_194522 short at $229.50 should have been filled if it was entered at market or on the Apr 30 close — the absence from per_ticker_history[JNJ] suggests it may not have been ingested into the ledger system at the time of this snapshot. Check ingester/Turso for any JNJ records created after 2026-04-30.
 
-**RSI oversold is a key risk to manage.** Daily RSI at 28.35 is an early warning that the stock has already fallen far. The system's discipline of entering on the bounce (at 10-EMA resistance ~$229–231) rather than at the flush lows ($227.35) improves the R/R and reduces the risk of being short right at a mean-reversion inflection. Monitor RSI closely — if it bases above 30 with volume pickup, the short thesis may need re-evaluation sooner than the 5–10 day window.
+**The setup is textbook but relies on technical continuation.** Both short decisions share the same core thesis: confirmed downtrend, EMA death stack, OBV institutional distribution, and macro rotation away from defensive healthcare. The catalyst/news agent (neutral, 78% confidence) correctly noted there is no scheduled binary within 10 days — the short relies purely on technical deterioration. If the bounce extends to $231–232 without a catalyst, confidence remains intact and the setup improves (better R/R from a higher entry).
+
+**Stop discipline.** Both decisions used $235 as the stop — above EMA21 ($232.66) and the consolidation range. A close above $235 would confirm the bearish thesis is wrong and trigger the stop regardless of any ledger status.
