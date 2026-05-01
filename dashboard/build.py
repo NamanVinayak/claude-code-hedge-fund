@@ -284,19 +284,17 @@ def main():
     with open(os.path.join(args.output, "closed.html"), "w") as f:
         f.write(closed_html)
 
-    # All runs page
+    # All runs page — only show real date-stamped runs (YYYYMMDD_HHMMSS)
     all_run_folders = sorted(glob.glob("runs/*"), reverse=True)
     all_runs_list = []
     for folder in all_run_folders:
         run_id = os.path.basename(folder)
-        # Parse timestamp from folder name (YYYYMMDD_HHMMSS)
-        formatted_date = run_id
         try:
             dt = datetime.strptime(run_id, "%Y%m%d_%H%M%S").replace(tzinfo=ZoneInfo("UTC"))
             dt = dt.astimezone(ZoneInfo("America/Vancouver"))
             formatted_date = dt.strftime("%b %-d, %Y · %-I:%M %p PT")
         except ValueError:
-            pass
+            continue  # skip smoke/test/validation runs
 
         meta_path = os.path.join(folder, "metadata.json")
         dec_path = os.path.join(folder, "decisions.json")
