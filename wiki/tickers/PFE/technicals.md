@@ -1,49 +1,51 @@
 ---
 name: PFE technicals
-last_updated: 2026-04-30
-last_run_id: 20260430_203923
+last_updated: 2026-05-01
+last_run_id: 20260501_203521
 target_words: 350
 stale_after_days: 7
-word_count: 346
-summary: Confirmed bearish downtrend — RSI-7 at 17.19 (extreme oversold), ADX 25.48 with -DI dominating, price below all EMAs; no actionable entry — wait for bounce to broken support zone before considering short
+word_count: 348
+summary: Bearish downtrend intact — RSI-7 recovered to 35.81 (extreme oversold bounce in progress), ADX 22.84 (weakening trend signal), price at $26.70 pressing broken $26.68 support-now-resistance; ideal short entry zone has arrived but not confirmed; earnings binary May 5 blocks execution
 ---
 
 # PFE — Technicals
 
 ## TL;DR
 
-Run 20260430_203923 confirms a **bearish downtrend with extreme oversold exhaustion**. PFE broke through the $26.68 pivot support on April 28 on 1.71x volume, dropped to $26.26, and now trades below every EMA (10/21/50). RSI-7 at 17.19 signals dangerous oversold conditions. No actionable entry: the ideal short entry window (on the breakdown or a backtest of $26.68) has passed; a live hourly bounce is underway. Wait for the bounce to stall at the $26.68–$26.85 resistance zone before considering a short.
+Run 20260501_203521 shows PFE has bounced from the $26.20 lows back to **$26.70 — pressing directly into the $26.68 broken support now acting as resistance**. This is the textbook short entry zone the prior run was waiting for. However, volume confirmation is absent (1.16x avg, below the 1.5x threshold), RSI-7 has recovered to 35.81 from extreme oversold, and May 5 earnings (4 days out) imposes an uncompensated binary risk. The setup is structurally valid; the timing window is blocked. ADX has softened from 25.48 to 22.84 — trend is weakening slightly but bearish EMA and momentum structure remains intact.
 
 ## Multi-timeframe state
 
 | Indicator | Value / State | Signal |
 |---|---|---|
-| Daily RSI-7 | 17.19 (extreme oversold) | Bounce risk, not a buy |
-| Daily ADX | 25.48 — -DI 28.87 vs +DI 15.72 | Confirmed bearish trend |
-| Daily EMAs (10/21/50) | Tangled but price below all | Bearish |
-| Daily MACD histogram | -0.1247, expanding negative | Bearish momentum accelerating |
-| ROC 5d / 10d / 21d | -2.01% / -3.42% / -5.44% | Bearish cascade |
-| Volume (Apr 28 breakdown) | 58.08M vs 20d avg 34.0M = 1.71x | Confirmed breakdown |
-| Volume (Apr 30) | 0.88x average | No fresh confirmation |
-| Hourly RSI-21 | 47.94 (recovering) | Short-term bounce in progress |
-| Hourly ADX | +DI 27.18 > -DI 13.59 | Intraday counter-trend bounce |
+| Daily RSI-7 | 35.81 (recovering from 17.19 extreme) | Oversold bounce active — squeeze risk |
+| Daily RSI-14 | 46.86 | Neutral — no clear momentum |
+| Daily ADX | 22.84 — -DI 23.4 vs +DI 20.2 | Borderline trend (below 25 threshold) |
+| Daily MACD histogram | -0.1017, negative and widening | Bearish momentum still active |
+| ROC 5d / 10d / 21d | +0.11% / -1.91% / -4.91% | Bearish cascade on intermediate/long |
+| Volume (Apr 30) | 1.16x average | Below 1.5x confirmation threshold |
+| Daily EMAs (10/21/50) | EMA-10 $26.81, EMA-21 $27.01; price below all | Bearish |
+| Hourly EMA alignment | Full downtrend (ema_aligned_downtrend: true) | Bearish — bears still in control |
+| Hourly ADX | 33.61 — -DI 24.64 vs +DI 20.07 | Strong bearish hourly trend |
+| OBV | Trending down (daily and hourly) | Distribution confirmed |
 
-[Source: run 20260430_203923 signals_combined.json swing_trend_momentum, swing_breakout, swing_mean_reversion]
+[Source: run 20260501_203521 signals_combined.json swing_trend_momentum, swing_breakout, swing_mean_reversion]
 
 ## Key levels
 
 | Level | Value | Notes |
 |---|---|---|
-| Broken support / new resistance | $26.68 | Tested 29x; breakdown April 28 on 1.71x vol |
-| Secondary broken support | $26.36 | Tested 12x; now overhead |
-| Current price | $26.26 (daily close) | Below all pivots and EMAs |
-| Hourly price | ~$26.70 | Bounce underway intraday |
-| BofA floor (unchanged) | $26 | Not decisively broken yet |
-| Measured-move short target | ~$25.68 | Range breakdown extension from $26.68 |
-| Stop for any short | $26.95–$27.04 | Above 10-EMA and 21-EMA |
+| Broken support / new resistance | $26.68 | Tested 29x; breakdown Apr 28 on 1.71x vol; current price pressing here |
+| Secondary resistance | $26.91 | Hourly pivot resistance; EMA-10/21 cluster above |
+| 10-EMA / 21-EMA stop zone | $26.81 / $27.01 | Above both = setup invalidated |
+| Short stop | $26.95 | Daily close above invalidates bearish thesis |
+| Current price | ~$26.70 | At the resistance zone |
+| Lower support | $26.36 | Tested 12x; next support below entry |
+| BofA floor | $26.00 | Not decisively broken |
+| Measured-move short target | $25.68 | Range height (~$0.99) subtracted from $26.68 breakdown |
 
 ## Setup type
 
-**Bearish downtrend — oversold bounce, not actionable at current price.** The breakdown of the $26.68 support (29 tests) on April 28 with 1.71x volume is confirmed. The ideal short entry is a bounce back to $26.68–$26.85 (the broken support acting as resistance) that fails with volume. Chasing at $26.26 with RSI-7 at 17.19 risks a sharp squeeze. The hourly chart is already recovering. Hold and wait for the bounce to exhaust before initiating a short.
+**Bearish re-test short — entry zone arrived, execution blocked by earnings binary.** The price has bounced precisely into the $26.68 broken-support-now-resistance zone as anticipated. The technical structure for a short is intact: hourly EMA aligned downtrend, ADX 33.61 with -DI dominating, OBV distributing, MACD histogram widening negative. The missing elements: volume confirmation (1.16x vs required 1.5x) and the May 5 earnings binary. Re-evaluate post-earnings: if the downtrend resumes after the print, this exact level ($26.65–$26.85) remains the short entry zone. Stop above $26.95; target $25.68 (3.7:1 R/R).
 
-Prior setup (Apr 11–15): RSI 49–51, no trend, no setup. That state is now superseded — the trend has resolved decisively bearish. [Prior setup noted in recent.md.]
+Prior setup (run 20260430_203923): Breakdown confirmed at RSI-7 17.19 extreme oversold — bounce was anticipated. That state is now mid-bounce; setup type evolved from "post-breakdown drift" to "re-test of broken support." Noted in recent.md 2026-04-30.
