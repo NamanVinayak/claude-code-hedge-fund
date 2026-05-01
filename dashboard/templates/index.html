@@ -246,6 +246,11 @@
                 <span class="tag" style="margin-left:4px;">{{ p.days_held }}d held</span>
                 {% endif %}
             </div>
+            {% if p.quantity and p.position_value %}
+            <div style="margin-top:8px; font-family: var(--mono); font-size: 12px; color: var(--muted);">
+                {{ p.quantity }} sh · <span style="color: var(--text); font-weight: 500;">${{ "%.2f"|format(p.position_value) }}</span> invested
+            </div>
+            {% endif %}
         </div>
         <div style="text-align:right;">
             <div class="pnl-big {{ 'profit' if is_profit else 'loss' if is_loss else 'neutral' }}">
