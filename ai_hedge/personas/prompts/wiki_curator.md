@@ -68,6 +68,17 @@ After the macro pass, do the index/log pass **once**:
    `pages_in_scope`.
 9. **If you have nothing material to add to a page, do not rewrite it.**
    "untouched" is a valid action and is preferred over a cosmetic rewrite.
+10. **Preserve outcome notes on `thesis.md`.** If the existing thesis.md
+    starts (immediately after the `## TL;DR` heading) with a line that
+    begins with `⚠️ Recent trade:` or `✓ Recent trade:`, that line was
+    placed by the daily lesson writer and is the only piece of memory
+    flowing back from real fills. When you rewrite thesis.md, copy that
+    line through verbatim as the very first line of your new TL;DR body.
+    Do NOT strip it, do NOT reword it, do NOT merge it into prose. The
+    daily lesson writer is the only agent allowed to add or remove these
+    lines; the curator only carries them through. If multiple recent-trade
+    lines are stacked (e.g. multi-lot day), preserve all of them in the
+    same order.
 
 ### Output format
 
