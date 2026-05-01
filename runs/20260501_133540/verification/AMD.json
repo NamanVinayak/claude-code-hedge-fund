@@ -1,0 +1,65 @@
+{
+  "ticker": "AMD",
+  "verified_at": "2026-05-01T13:35:40",
+  "facts_files_read": [
+    "warren_buffett__AMD.json",
+    "ben_graham__AMD.json",
+    "cathie_wood__AMD.json"
+  ],
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.11527,
+      "web_value": 0.1225,
+      "source": "Yahoo Finance / CNBC (TTM, May 2026)",
+      "status": "ok",
+      "deviation": "5.9%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.08548,
+      "web_value": 0.1374,
+      "source": "GuruFocus (TTM Dec 2025); MacroTrends (Sep 2025: 14.80%)",
+      "status": "MISMATCH",
+      "deviation": "37.8%",
+      "action": "replaced with web value (0.1374) in all facts bundles: warren_buffett__AMD.json, aswath_damodaran__AMD.json"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 135.43,
+      "web_value": 130.66,
+      "source": "companiesmarketcap / tradingeconomics (TTM trailing, Apr 2026)",
+      "status": "ok",
+      "deviation": "3.7%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 31188000000.0,
+      "web_value": 34630000000.0,
+      "source": "companiesmarketcap / FinanceCharts (TTM, Apr 2026: $34.63B)",
+      "status": "ok",
+      "deviation": "9.9%",
+      "note": "Revenue derived from market_cap / price_to_sales_ratio in facts bundle. 9.9% deviation is within tolerance; may reflect older reporting period (2025-09-27)."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 578526838784.0,
+      "web_value": 577940000000.0,
+      "source": "stockanalysis.com / companiesmarketcap (May 1, 2026: $577.94B)",
+      "status": "ok",
+      "deviation": "0.1%"
+    }
+  ],
+  "overall_status": "1 mismatch corrected",
+  "corrections_applied": true,
+  "correction_details": {
+    "metric": "operating_margin",
+    "old_value": 0.08548159548544312,
+    "new_value": 0.1374,
+    "source": "GuruFocus TTM (December 2025 report); corroborated by MacroTrends (14.80% as of Sep 30, 2025)",
+    "files_updated": [
+      "runs/20260501_133540/facts/warren_buffett__AMD.json",
+      "runs/20260501_133540/facts/aswath_damodaran__AMD.json"
+    ]
+  }
+}

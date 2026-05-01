@@ -1,0 +1,11 @@
+{
+  "AMD": {
+    "signal": "neutral",
+    "confidence": 32,
+    "reasoning": "AMD closed at $354.49, breaking above the key $352.99 resistance level (wiki-tracked hourly pivot high, 7x tested, volume-confirmed) that has been the defined breakout trigger since the prior run. However, the breakout fails the volume confirmation requirement: breakout day (Apr 30) volume was 42.0M vs. 20-day average of 39.9M = 1.05x relative volume, significantly below the required 1.5x minimum. No squeeze is present — daily BB width is 0.6435 (wide), confirming the squeeze already fired in the $200→$353 move. Consolidation range was $310 (Apr 28 low) to $352.99 (7x tested resistance) = ~$43 range height; measured-move target would be $352.99 + $43 = $396, consistent with Fib 1.272 extension at $368 and 1.618 at $384. Hourly ADX is only 15.89 (weak), hourly volume is 0.48x average, and hourly BB width is not squeezed — no hourly confirmation that the daily breakout is genuine. RSI-14 at 83.06 and Z-score at 2.60 place AMD in statistically overbought territory. Critical: earnings binary on May 5 (4 trading days away) — wiki explicitly flags this as a 'do not initiate before resolution' event. Lessons check: recent NVDA EMA pullback failure occurred at the same RSI extreme (81–87), stop triggered with no bullish confirmation candle. Per breakout rules, a breakout without 1.5x+ volume is flagged as low confidence rather than full signal. Verdict: range boundaries $310–$352.99 confirmed, volume ratio 1.05x (FAIL), squeeze status DONE (not firing). Neutral pending post-earnings resolution and volume confirmation above $352.99.",
+    "entry": 353.5,
+    "target": 396.0,
+    "stop": 340.0,
+    "timeframe": "5-10 trading days post-earnings (May 6+)"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "AMD": {
+    "signal": "bearish",
+    "confidence": 52,
+    "reasoning": "Branch A (Fade the Extreme) fires. Daily Z-score is 2.6 (above +2 threshold), RSI-14 is 83.06 and RSI-21 is 86.46 (well above the 75 overbought threshold), and price is 52.64% above the 50-SMA — an extreme statistical extension far beyond the 10% 'extreme' threshold. Hourly RSI-21 is also 80.95, confirming the overextension on both timeframes (daily + hourly extreme = strong fade signal per strategy rules). Bollinger %B at 0.929 shows price hugging the upper band (upper at 367.10), not yet outside it. Branch B (buy-the-dip) does not apply — price is at all-time highs, not pulling back to Fibonacci levels. Confidence is significantly reduced from a theoretical 70+ for several reasons: (1) No reversal candle has printed — the most recent session (Apr 30) was a strong bullish close near the high of day (open 341.36, close 354.49), violating the strategy rule of waiting for a reversal candle or momentum shift before entering; (2) ADX at 74.94 signals one of the strongest trends in the watchlist — fading a trend of this strength without confirmation is high-risk; (3) Price just broke above the prior key resistance at $352.99 flagged in wiki memory, suggesting the breakout is fresh and momentum may persist short-term; (4) Earnings binary risk on May 5 (4 trading days away) introduces gap risk that makes tight stops unreliable; (5) Recent lessons log shows a loss on NVDA EMA pullback Fib dip-buy where stop triggered intraday amid stretched macro (RSI 81-87) with no bullish confirmation — analogous macro stretch here. Wiki contradiction noted: prior wiki expected a breakout above $352.99 with 1.5x+ volume as bullish; volume at 1.05x on the breakout day does not meet that threshold, weakening the breakout signal and supporting a fade. Entry only valid if a reversal candle (hammer, bearish engulfing, shooting star) prints on daily timeframe. Target is return to 50-SMA mean. Stop is beyond the current extreme high.",
+    "entry": 354.49,
+    "target": 316.7,
+    "stop": 368.0,
+    "timeframe": "5-12 trading days"
+  }
+}
