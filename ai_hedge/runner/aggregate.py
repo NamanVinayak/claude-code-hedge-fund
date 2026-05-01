@@ -277,6 +277,8 @@ def main():
                 from tracker.db import get_open_positions, get_pending_trades, get_recent_trade_history
                 print("  WARNING: TURSO_DATABASE_URL not set — using local SQLite (may be stale).")
             open_positions = get_open_positions()
+            if not open_positions:
+                print("  WARNING: Turso returned 0 open positions — confirm this is expected if you have live trades.")
             pending_orders = get_pending_trades()
             recent_closed = get_recent_trade_history(days=7)
         except Exception as e:
@@ -321,10 +323,15 @@ def main():
         else:
             other_positions.append(p)
 
-    cash_after_exposure = max(0.0, float(args.cash) - total_exposure)
+    pending_exposure = sum(
+        float(o.get("quantity", 0) or 0) * float(o.get("entry_price", 0) or 0)
+        for o in pending_orders
+    )
+    cash_after_exposure = max(0.0, float(args.cash) - total_exposure - pending_exposure)
     print(f"  Loaded {len(open_positions)} open position(s); "
           f"{len(other_positions)} in non-analyzed tickers. "
-          f"Exposure ${total_exposure:,.0f} → cash ${cash_after_exposure:,.0f}. "
+          f"Exposure ${total_exposure:,.0f} + pending ${pending_exposure:,.0f} "
+          f"→ cash ${cash_after_exposure:,.0f}. "
           f"{len(pending_orders)} pending order(s), {len(recent_closed)} recent closed trade(s) injected.")
 
     # Build portfolio for deterministic agents (now reflecting real state)
