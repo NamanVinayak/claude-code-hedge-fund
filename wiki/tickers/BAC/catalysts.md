@@ -1,16 +1,16 @@
 ---
 name: BAC catalysts
-last_updated: 2026-04-30
-last_run_id: 20260430_190826
+last_updated: 2026-05-01
+last_run_id: 20260501_190923
 target_words: 400
 stale_after_days: 14
-word_count: 398
-summary: FOMC fired (hold at 3.5-3.75%), Q1 beat in rearview; next binary Q2 earnings ~July 14; Daiwa raised PT to $61; Berkshire overhang persists
+word_count: 472
+summary: No catalyst within 10 trading days; Jim Cramer buy call, Alaska Air deal, $18.66B buyback, private credit BDC stress warning; Q2 earnings July 14; analyst avg PT ~$61.50
 ---
 
 ## TL;DR
 
-FOMC (April 29) fired as expected — rates held at 3.5%–3.75%, a mild NII tailwind already priced in. The Q1 2026 blowout (EPS $1.11, +17% net income) is also fully priced. No identifiable catalyst within the next 10 trading days. Forward catalysts are structural and medium-term: Q2 earnings ~July 14, deregulation capital relief, and SpaceX IPO fee potential. Berkshire stake reduction remains the single active negative catalyst. [run `20260430_190826`, `web_research/BAC.json`]
+No actionable catalyst within the next 10 trading days. Q1 2026 blowout (EPS $1.11, NII +9%) and FOMC hold (Apr 29) are fully priced. News flow is net positive: Cramer buy call, Alaska Air co-brand extension, $18.66B trailing buyback, Basel III capital relief. Single active near-term negative: BofA's own research warns private credit BDC redemptions likely peak in Q2 — idiosyncratic credit risk signal. Berkshire overhang is the structural persistent negative. Q2 earnings (~July 14) is the next binary. [run `20260501_190923`, web_research/BAC.json]
 
 ---
 
@@ -18,43 +18,47 @@ FOMC (April 29) fired as expected — rates held at 3.5%–3.75%, a mild NII tai
 
 | Event | Expected Date | Impact |
 |---|---|---|
-| Q2 2026 earnings | ~July 14, 2026 | Next binary event; watch NII guidance update |
+| Q2 2026 earnings | ~July 14, 2026 pre-market | Next binary; watch NII guidance and credit loss trends |
 | SpaceX IPO bookrunner | TBD | IB fee catalyst; no confirmed date |
-| Deregulation capital relief | TBD (rulemaking) | $320B potential — structural tailwind if finalized |
-| Berkshire stake filings | Ongoing (13-F quarterly) | Overhang; no disclosed floor or endpoint |
+| Basel III capital relief finalization | TBD | ~$40B additional buyback capacity potential |
+| Berkshire 13-F quarterly | Ongoing | Stake reduction overhang; no disclosed floor |
+| Private credit BDC redemptions | Q2 2026 | BofA Research warns of peak redemption requests — near-term credit stress signal |
 
 ---
 
-## Recent News Synthesis (as of April 30, 2026)
+## Recent News Synthesis (as of May 1, 2026)
 
 **Positive:**
-- Q1 2026: EPS $1.11 beat $1.01 estimate (+9.9%); NII $15.745B raised full-year guidance to 6%–8% growth; net income $8.584B; share repurchases $10.849B [web_research/BAC.json, newsroom.bankofamerica.com, April 15 2026]
-- BAC completed a $14B bond sale to finance Oracle's Michigan data center — marquee IB deal [web_research/BAC.json, gurufocus.com, April 26 2026]
-- Alaska Air Group co-branded credit card agreement extended multi-year — recurring fee income [web_research/BAC.json, stocktitan.net, April 20 2026]
-- Daiwa raised price target from $58 to $61 post-Q1 [web_research/BAC.json, April 28 2026]
-- Truist raised PT $57→$61; Piper Sandler raised $53→$59; Morningstar raised fair value to $65 from $58 post-Q1 [web_research/BAC.json, analyst_consensus]
-- Morningstar rates BAC its "best idea" among major US banks
+- Jim Cramer called BAC "a plain out buy" — retail sentiment catalyst [web_research/BAC.json, Yahoo Finance / American Market News, May 2026]
+- Alaska Air Group co-brand credit card partnership extended — multi-year recurring fee income [web_research/BAC.json, StockTitan]
+- $18.66B share buyback pace over trailing 12 months — aggressive capital return program [web_research/BAC.json, American Market News, May 2026]
+- Basel III endgame softening (March 2026) cuts required CET1 by ~4.8% — unlocking ~$40B incremental buyback capacity over 18 months [web_research/BAC.json]
+- Analyst consensus: 18 Strong Buy, 4 Buy, avg PT ~$61.50 (15% implied upside at $53.46) [web_research/BAC.json]
+- $14B Oracle Michigan data center bond deal — marquee IB mandate [run `20260430_190826`]
+- BAC branch-opening spree announced — near-term cost headwind, long-term deposit growth support [web_research/BAC.json]
 
-**Neutral / Negative:**
-- BAC redeemed $3B in Fixed/Floating Rate Senior Notes early — balance sheet management, neutral to slightly positive [web_research/BAC.json, April 23 2026]
-- UBS lowered PT $67→$62 (kept Buy) in early April [web_research/BAC.json]
-- No catalyst within next 10 trading days — catalyst_news agent stayed neutral on this basis [signals_combined.json, swing_catalyst_news]
+**Negative / Neutral:**
+- BofA Research warns non-traded private credit BDC redemptions likely peak Q2 2026 — self-generated credit stress signal [web_research/BAC.json, May 2026]
+- No swing catalyst in next 10 trading days — swing_catalyst_news stayed neutral on this basis [signals_combined.json, run `20260501_190923`]
+- No executive-level insider buy/sell filings in current run [signals_combined.json]
 
 ---
 
 ## Insider Activity
 
-No BAC executive-level insider buy or sell data recorded in Form 4 filings per run `20260430_190826`. The Berkshire Hathaway stake reduction remains the material institutional-equivalent negative — no disclosed floor or timeline. Monitor SEC 13-F quarterly filings.
+No BAC executive-level Form 4 filings in run `20260501_190923`. Berkshire Hathaway stake reduction remains the material institutional-equivalent negative — no disclosed floor or timeline. Monitor SEC 13-F quarterly filings.
 
 ---
 
-## Analyst Consensus (April 30, 2026)
+## Analyst Consensus (May 1, 2026)
 
 | Metric | Value |
 |---|---|
 | Rating | Buy |
-| Avg price target | $60.61 |
-| Analyst breakdown | ~40% Strong Buy / 45% Buy / 15% Hold / 0% Sell |
-| Implied upside to consensus | ~28% from recent price ~$47–$53 range |
+| Avg price target | ~$61.50 |
+| Coverage breakdown | 18 Strong Buy / 4 Buy / ~2 Hold / 0 Sell |
+| Implied upside | ~15% from $53.46 |
+| Q2 EPS estimate | $1.09–$1.10 |
+| Q2 Revenue estimate | ~$29.99B |
 
-Source: `web_research/BAC.json`, run `20260430_190826`.
+Source: web_research/BAC.json, run `20260501_190923`.
