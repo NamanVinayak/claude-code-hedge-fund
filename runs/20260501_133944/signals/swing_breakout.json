@@ -1,0 +1,11 @@
+{
+  "AMD": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "AMD has technically cleared the wiki-tracked $352.99 breakout trigger (hourly pivot high, 7x tested, volume-confirmed), with price closing at $354.49 and trading ~$357 intraday. The consolidation range was $310–$352.99 (range height ~$43), implying a measured-move target of ~$396 if the breakout confirms. However, my strategy requires 1.5x+ daily volume on the breakout day — today's relative volume is only 1.05x (42.0M vs 20-day avg 39.9M), well below the required threshold. This is a disqualifying factor. Additionally: (1) Daily Bollinger Band width is 0.6435 — wide, indicating the squeeze already fired on the $200→$353 move; the spring is uncoiled, not coiled. (2) RSI-14 at 83.06 and Z-score 2.60 indicate statistical overextension beyond the +2.0 warning zone. (3) Earnings binary on May 5 (4 trading days away) creates extreme event risk that makes initiating a breakout position inadvisable. (4) Hourly volume is subdued (0.67x avg) and hourly ADX is only 15.89 (weak), providing no intraday confirmation of the breakout. The squeeze on the daily fired weeks ago; the hourly is not showing a new squeeze firing. Per my rules: breakout without 1.5x volume confirmation = no entry. Flagging as neutral. Constructive above $352.99 WITH 1.5x+ daily volume confirmation post-earnings resolution (May 5+). Stop if re-entered: below $352.99 close.",
+    "entry": 352.99,
+    "target": 396.0,
+    "stop": 340.0,
+    "timeframe": "5-10 trading days (post-earnings only)"
+  }
+}
