@@ -234,6 +234,23 @@ def main():
             "decisions": decisions
         })
 
+    # Dedupe: Today's Decisions shows only the latest decision per ticker.
+    # `runs` is already sorted most-recent-first, so first occurrence wins.
+    seen_tickers: set[str] = set()
+    deduped_runs = []
+    for run in runs:
+        kept = []
+        for d in run["decisions"]:
+            if d["ticker"] in seen_tickers:
+                continue
+            seen_tickers.add(d["ticker"])
+            kept.append(d)
+        if kept:  # only keep runs that still have at least one fresh decision
+            run = dict(run)
+            run["decisions"] = kept
+            deduped_runs.append(run)
+    runs = deduped_runs
+
     # Build ticker status sets for the today page
     open_tickers = set(p['ticker'] for p in positions)
     pending_data = get_pending_trades()

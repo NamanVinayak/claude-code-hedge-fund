@@ -86,6 +86,18 @@ def _existing_run_tickers(run_id: str) -> set[str]:
     return {r["ticker"] for r in rows}
 
 
+def _open_positions_by_ticker_direction() -> set[tuple[str, str]]:
+    """Return (ticker, direction) pairs that already have an open position.
+    'Open' = pending or entered. Used to block duplicate inserts when a routine
+    fires multiple times in quick succession or upstream allowed_actions misses."""
+    from tracker.turso_client import _execute
+    rows = _execute(
+        "SELECT ticker, direction FROM trades WHERE status IN ('pending', 'entered')",
+        [],
+    )
+    return {(r["ticker"], r["direction"]) for r in rows}
+
+
 def main() -> None:
     from tracker.turso_client import create_all_tables, insert_trade
 
@@ -144,6 +156,12 @@ def main() -> None:
         except Exception:
             existing_tickers = set()
 
+        # Cross-run dedup: tickers already holding an open position (any prior run)
+        try:
+            open_ticker_directions = _open_positions_by_ticker_direction()
+        except Exception:
+            open_ticker_directions = set()
+
         run_trade_count = 0
         for ticker, dec in decisions.items():
             action = dec.get("action", "").lower()
@@ -152,6 +170,11 @@ def main() -> None:
 
             entry_price = _get_entry_price(dec)
             if not entry_price:
+                continue
+
+            direction_check = "long" if action == "buy" else "short"
+            if (ticker, direction_check) in open_ticker_directions:
+                print(f"  SKIP: {ticker} {action} in run {run_id} — already have open {direction_check} position. Cross-run dedup.")
                 continue
 
             raw_qty = dec.get("quantity")
