@@ -1,0 +1,34 @@
+{
+  "run_id": "20260430_060402",
+  "mode": "swing",
+  "started_at": "2026-04-30T06:04:54Z",
+  "ended_at": "2026-04-30T06:21:46Z",
+  "tickers": [
+    "NVDA"
+  ],
+  "decisions": [
+    {
+      "ticker": "NVDA",
+      "action": "buy",
+      "confidence": 72,
+      "entry": 209.25,
+      "stop": 205.3,
+      "target": 222.5,
+      "reasoning_tldr": "4/5 swing agents bullish; ADX 54.67 strong trend; catalyst window live (hyperscaler AI capex); dip to Fib 38.2% at $209.70 with $208.20 volume support"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 1,
+    "cash": 100000.0,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "bullish",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}
