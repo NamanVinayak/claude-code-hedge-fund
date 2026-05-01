@@ -1,0 +1,15 @@
+{
+  "decisions": {
+    "META": {
+      "action": "hold",
+      "entry_price": 628.0,
+      "target_price": 585.0,
+      "stop_loss": 643.0,
+      "risk_reward_ratio": "2.87:1",
+      "timeframe": "3-10 trading days",
+      "confidence": 62,
+      "reasoning": "No trade now. Head Trader bearish (62 conf) but conditions short on bounce to $626-630 with confirmed rejection candle. Current price ~$612 is BELOW entry zone — shorting here yields 0.84:1 R/R (fails 2:1 minimum). Risk mgr limits position to $613, barely 1 share at current price. Await bounce to $626-630 before entering short. Conditional plan: short ~$628, target $585 (Fib 61.8%), stop $643 (R/R 2.87:1). Recent NVDA dip-buy stop-out reinforces no long bias on oversold AI names. BAC long already open; keeping powder dry for conditional short entry."
+    }
+  },
+  "synthesis": "META is in a confirmed post-earnings bear regime after a -7.9% collapse on 3.34x volume (Apr 30). All swing agents agree on direction (bearish) but disagree on timing. The setup to short does NOT exist yet at current price ($611-612): entering short here produces <1:1 R/R vs the $643 stop, well below the 2:1 minimum rule. The trade plan is fully conditional on price bouncing to the $626-630 resistance cluster (Fib 38.2%, broken prior support) and printing a confirmed rejection candle (bearish engulfing or pin bar on hourly). When that condition is met, short ~$628, target $585 (Fib 61.8%), stop $643 for ~2.87:1 R/R. Max position size at risk manager limit of $613 (~0.97 shares, rounded to 1 share = $628 notional, well within limit and 25% cap of $1,052). If price instead breaks below $600 support on volume without a bounce, reassess for momentum continuation short below $597. Capital preserved for the conditional entry."
+}

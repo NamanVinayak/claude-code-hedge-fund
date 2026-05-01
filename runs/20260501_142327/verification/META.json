@@ -1,0 +1,61 @@
+{
+  "ticker": "META",
+  "verified_at": "2026-05-01T14:30:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.3008,
+      "web_value": 0.374,
+      "source": "CNBC (May 2026 TTM figure)",
+      "status": "ok",
+      "deviation": "19.6%",
+      "notes": "Web value of 37.4% is inflated by a one-time $8B tax benefit in Q1 2026. Excluding the tax benefit, Q1 2026 adj. net margin ~33.4%. Our value of 30.08% reflects a pre-Q1-2026 or normalized TTM calculation. Deviation is below the 20% threshold and partially explained by the one-time item."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.4144,
+      "web_value": 0.41,
+      "source": "Meta Q1 2026 earnings press release (investor.atmeta.com) and GuruFocus TTM",
+      "status": "ok",
+      "deviation": "1.1%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 22.319803,
+      "web_value": 28.0,
+      "source": "Multiple sources: FinanceCharts (Apr 2026), Macrotrends, companiesmarketcap, Investing.com — trailing PE consensus ~28.0x",
+      "status": "MISMATCH",
+      "deviation": "20.3%",
+      "action": "replaced with web value (28.0) in all facts bundles containing price_to_earnings_ratio: warren_buffett__META.json, aswath_damodaran__META.json"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 200970000000.0,
+      "web_value": 200960000000.0,
+      "source": "FinanceCharts META Revenue TTM (Apr 2026); stockanalysis.com FY2025 $200.97B; Q1 2026 rev $56.31B reported by CNBC",
+      "status": "ok",
+      "deviation": "0.0%",
+      "notes": "Facts bundle TTM revenue matches FY2025 annual of ~$200.97B. Post-Q1-2026 TTM is higher (~$214.96B per one source), but facts report_period is 2026-03-31 and the core FY2025 figure is confirmed."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 1556370817024.0,
+      "web_value": 1556000000000.0,
+      "source": "CNBC (~$1.553T), Robinhood (~$1.55T), MacroTrends ($1,593B as of Apr 28 2026)",
+      "status": "ok",
+      "deviation": "0.0%"
+    }
+  ],
+  "overall_status": "1 mismatch corrected (pe_ratio)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260501_142327/facts/warren_buffett__META.json",
+    "runs/20260501_142327/facts/aswath_damodaran__META.json"
+  ],
+  "correction_detail": {
+    "metric": "pe_ratio",
+    "old_value": 22.319803,
+    "new_value": 28.0,
+    "reason": "Our data reflected a stale or pre-earnings trailing PE. Post Q1 2026 results, META trailing PE is consistently reported at ~28.0x across FinanceCharts, Macrotrends, Investing.com, and companiesmarketcap. Deviation was 20.3%, exceeding the 20% correction threshold."
+  }
+}

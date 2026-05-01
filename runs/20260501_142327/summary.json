@@ -1,0 +1,34 @@
+{
+  "run_id": "20260501_142327",
+  "mode": "swing",
+  "started_at": "2026-05-01T14:23:52Z",
+  "ended_at": "2026-05-01T14:37:51Z",
+  "tickers": [
+    "META"
+  ],
+  "decisions": [
+    {
+      "ticker": "META",
+      "action": "hold",
+      "confidence": 62,
+      "entry": 628.0,
+      "stop": 643.0,
+      "target": 585.0,
+      "reasoning_tldr": "No trade now"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 1,
+    "cash": 4208.75,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "bearish",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}
