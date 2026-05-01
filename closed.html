@@ -298,7 +298,7 @@
             <a class="nav-link " href="runs.html">All Runs</a>
             <a class="nav-link active" href="closed.html">History</a>
         </div>
-        <div class="nav-meta">09:50 PM PT · next update <span id="countdown" style="font-family:var(--mono);color:var(--text);font-weight:600;">--:--</span></div>
+        <div class="nav-meta">09:51 PM PT · next update <span id="countdown" style="font-family:var(--mono);color:var(--text);font-weight:600;">--:--</span></div>
     </div>
 </nav>
 
@@ -312,7 +312,7 @@
 <div class="stat-grid">
     <div class="stat-block">
         <div class="stat-label">Total Trades</div>
-        <div class="stat-value">0</div>
+        <div class="stat-value">1</div>
     </div>
     <div class="stat-block">
         <div class="stat-label">Win Rate</div>
@@ -321,19 +321,61 @@
     </div>
     <div class="stat-block">
         <div class="stat-label">Total P&L</div>
-        <div class="stat-value ">
-            $0.00
+        <div class="stat-value loss">
+            $-264.65
+        </div>
+    </div>
+    
+    <div class="stat-block">
+        <div class="stat-label">Avg P&L / Trade</div>
+        
+        <div class="stat-value loss">
+            $-264.65
         </div>
     </div>
     
 </div>
 
 
-<div class="empty">
-    <div class="empty-icon">📈</div>
-    <h2>No closed trades yet</h2>
-    <p>Trades appear here once they hit their target, stop, or expiry. The AI is working on it.</p>
+<div class="table-wrap">
+<table>
+    <thead>
+        <tr>
+            <th>Ticker</th>
+            <th>Result</th>
+            <th>Entry</th>
+            <th>Exit</th>
+            <th>P&L $</th>
+            <th>P&L %</th>
+            <th class="hide-mobile">Entered</th>
+            <th class="hide-mobile">Closed</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+        <td><a href="NVDA.html">NVDA</a></td>
+        <td>
+            
+                <span class="result-dot dot-loss"></span><span class="loss" style="font-size:12px;font-weight:600;">STOP</span>
+            
+        </td>
+        <td class="mono">$209.25</td>
+        <td class="mono">$205.30</td>
+        <td class="mono loss">
+            $-264.65
+        </td>
+        <td class="mono loss">
+            -1.89%
+        </td>
+        <td class="hide-mobile" style="color:var(--muted);font-size:12px;">2026-04-30</td>
+        <td class="hide-mobile" style="color:var(--muted);font-size:12px;">2026-04-30</td>
+    </tr>
+    
+    </tbody>
+</table>
 </div>
+
 
 
 </div>
