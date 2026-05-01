@@ -1,0 +1,16 @@
+{
+  "decisions": {
+    "JPM": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 312.5,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 320.24,
+      "stop_loss": 307.29,
+      "risk_reward_ratio": "1.5:1",
+      "timeframe": "5-12 trading days",
+      "confidence": 55,
+      "reasoning": "Setup is genuine bullish (Head Trader 55, 3/5 agents agree, ADX 42.49 uptrend, Apr 30 engulfing candle), but risk manager hard-blocks entry: JPM 74% correlated with BAC (above 0.7 threshold) and we hold BAC long from Apr 30. Allowed actions: hold only. Cannot add correlated long exposure. Watch for BAC exit to unlock JPM entry."
+    }
+  }
+}

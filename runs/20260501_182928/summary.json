@@ -1,0 +1,34 @@
+{
+  "run_id": "20260501_182928",
+  "mode": "swing",
+  "started_at": "2026-05-01T18:30:11Z",
+  "ended_at": "2026-05-01T18:39:47Z",
+  "tickers": [
+    "JPM"
+  ],
+  "decisions": [
+    {
+      "ticker": "JPM",
+      "action": "hold",
+      "confidence": 55,
+      "entry": 312.5,
+      "stop": 307.29,
+      "target": 320.24,
+      "reasoning_tldr": "Setup is genuine bullish (Head Trader 55, 3/5 agents agree, ADX 42.49 uptrend, Apr 30 engulfing candle), but risk manager hard-blocks entry: JPM 74% correlated with BAC (above 0.7 threshold) and we ho"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 1,
+    "cash": 3036.4000146484377,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "bullish",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

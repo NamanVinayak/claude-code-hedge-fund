@@ -1,0 +1,47 @@
+{
+  "JPM": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0,
+        "revenue_growth": null,
+        "revenue_trend": 0.0,
+        "eps_growth": null,
+        "eps_trend": 0.0,
+        "fcf_growth": null,
+        "fcf_trend": 0.0
+      },
+      "growth_valuation": {
+        "score": 0.25,
+        "peg_ratio": 1.65,
+        "price_to_sales_ratio": 8.622576103690163
+      },
+      "margin_expansion": {
+        "score": 0,
+        "gross_margin": null,
+        "gross_margin_trend": 0.0,
+        "operating_margin": null,
+        "operating_margin_trend": 0.0,
+        "net_margin": 0.18369673503343023,
+        "net_margin_trend": -0.0004001731231337682
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 0.8,
+        "debt_to_equity": 1.2685459659623635,
+        "current_ratio": null
+      },
+      "final_analysis": {
+        "signal": "bearish",
+        "confidence": 62,
+        "weighted_score": 0.19
+      }
+    }
+  }
+}
