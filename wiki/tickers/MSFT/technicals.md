@@ -1,54 +1,58 @@
 ---
 name: MSFT technicals
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-01
+last_run_id: 20260501_153820
 target_words: 350
 stale_after_days: 7
-word_count: 358
-summary: evolved from confirmed downtrend (Apr 11) to SuperTrend bullish flip + price recovery to $420 (Apr 17); near-term overbought warns caution on size
+word_count: 347
+summary: Post-earnings breakdown — confirmed daily close below $413.05 pivot on 2.06x volume; contested no-man's-land between $404 bear confirmation and $420 bull recapture; daily uptrend structurally intact but hourly bearish
 ---
 
 # MSFT — Technicals
 
 ## TL;DR
 
-MSFT went from a confirmed downtrend in early April (ADX 28.87, price $371-375, 21.5% below 200-day SMA) to a clear bullish recovery by April 17 (entry $420.26, confidence 72%, momentum agents at 78% each). The SuperTrend flip on April 15 was the key signal change. The stock remained overbought by late April — the Apr 17 run PM noted this explicitly and trimmed size to 25 shares.
+MSFT printed a high-volume post-earnings breakdown on April 30, 2026 — open $410.81, low $398.01, close $407.78 on 70.8M shares (2.06x 20-day average). Price closed below the $413.05 pivot support that held 11 tests. The daily EMA uptrend remains structurally intact (EMA-10 > EMA-21 > EMA-50), but the hourly trend is bearish (-DI 38.88 >> +DI 20.38). Setup is a contested no-man's-land: no actionable edge until price resolves above $416–420 or below $404. [source: signals_combined.json, run 20260501_153820]
 
 ## Multi-timeframe state
 
-**As of Apr 11 (run swing_20260411_211655):**
-- Daily: confirmed downtrend. ADX 28.87 confirms trend has strength. EMA structure bearish (10 < 21 < 50). Price $371-375, 21.5% below 200-day SMA. P/E 23.7x — historically cheap but technicals overriding valuation.
-- Agent consensus: 44% agreement — lowest of all 19 tickers. Bears and bulls roughly balanced. Head Trader bearish at 52%; no trade taken (R:R only 0.9:1).
+**Daily (as of May 1, 2026 close):**
+- EMA alignment: EMA-10 $417.11 > EMA-21 $408.30 > EMA-50 $406.60 — uptrend structure intact.
+- ADX 51.4, +DI 40.91 vs. -DI 22.85 — strong trend, but +DI/−DI spread has narrowed post-selloff.
+- RSI-14: 64.93 — elevated, not yet overbought; room for further pullback without triggering oversold.
+- MACD histogram: +1.34 (positive but contracting).
+- OBV trend: down — distribution signal.
+- Bollinger width: 0.2332 — volatility expanded (squeeze already fired on the breakdown).
 
-**As of Apr 15 (run 20260415_110848):**
-- Daily SuperTrend **flipped bullish** (`trend_changed=true`) — the primary signal change. Price recovered to ~$400. 6/9 swing agents turned bullish.
-- Entry zone identified: $400 (EMA50/fib 38.2% retracement). Stop: $390 (below base support). Target: $422. R:R 2.2:1. Confidence 60%.
-- Note: mean reversion agent still bearish (55%); valuation agent 100% bearish on AI capex risk.
-
-**As of Apr 17 (run 20260417_233350):**
-- Momentum fully confirmed. Trend agent 78% confidence, momentum ranker 78% confidence — both strong.
-- Price: $420.26. Entry taken at market. Target $442, stop $412. R:R 2.63:1.
-- PM noted overbought warning and sized down to 25 shares. Hourly indicators not separately logged for this run.
+**Hourly (as of Apr 30–May 1):**
+- EMA structure: tangled, not aligned — no hourly trend confirmation.
+- ADX 30.25, -DI 38.88 >> +DI 20.38 — active hourly downtrend.
+- MACD histogram: -2.35 (bearish).
+- RSI-21: 39.01 — approaching oversold; near-term bounce possible.
+- OBV: trending up (minor bullish divergence from price).
+- Hourly support: $411.41 (5 tests).
 
 ## Key levels
 
 | level | value | source |
 |---|---|---|
-| strong support | $390 (EMA50/fib 38.2) | run 20260415_110848 |
-| stop level used | $412 | run 20260417_233350 |
-| entry taken | $420.26 | run 20260417_233350 |
-| near-term target | $442 | run 20260417_233350 |
-| analyst median PT | $600 | web_research, run 20260415_110848 |
-| deep support | $370-375 (Apr 11 low zone) | run swing_20260411_211655 |
+| bull recapture zone | $416–420 | run 20260501_153820 |
+| breakdown pivot (now resistance) | $413.05 | run 20260501_153820 |
+| hourly support | $411.41 (5 tests) | run 20260501_153820 |
+| bear confirmation level | $404 | run 20260501_153820 |
+| Fib 38.2% daily retrace | $404.13 | run 20260501_153820 |
+| EMA-50 daily | $406.60 | run 20260501_153820 |
+| Fib 50% daily retrace | $394.99 | run 20260501_153820 |
+| prior strong support / measured-move target | $381.71 (7-test pivot low) | run 20260501_153820 |
 
 ## Setup type
 
-**Apr 11:** Downtrend — no trade. R:R failed (0.9:1). Wait for earnings resolution.
+**May 1, 2026:** Post-earnings breakdown retest. Price is in a dead-cat bounce zone ($407–416) after the April 30 distribution day. Two valid setups exist but conflict: (1) buy-the-dip at 21-EMA/Fib 38.2% if bulls recapture $416–420 on constructive volume; (2) short on bear confirmation below $404, measured-move to $381.71. Neither fires until the contested zone resolves. Head Trader hold (38% confidence) is correct. [source: signals_combined.json swing_head_trader, run 20260501_153820]
 
-**Apr 15:** SuperTrend reversal + pre-earnings run-up play. Classic buy-the-flip-into-earnings setup. Limit entry at pullback to $400.
+## Prior setup archived to recent.md
 
-**Apr 17:** Trend continuation + momentum confirmation. 78% dual-agent agreement. PM executed buy at market.
+The Apr 17 setup (trend continuation buy at $420.26, target $442, stop $412) was the prior active setup. The stop at $412 was violated on April 30. See `recent.md` for the dated entry.
 
 ## Last updated
 
-2026-04-29 — sourced from runs swing_20260411_211655, 20260415_110848, 20260417_233350
+2026-05-01 — sourced from run 20260501_153820 (signals_combined.json, explanation.json)
