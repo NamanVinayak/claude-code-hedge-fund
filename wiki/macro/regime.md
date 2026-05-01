@@ -1,41 +1,42 @@
 ---
 name: macro regime
-last_updated: 2026-04-30
-last_run_id: 20260430_182725
+last_updated: 2026-05-01
+last_run_id: 20260501_133540
 target_words: 400
 stale_after_days: 14
-word_count: 399
-summary: Risk-on recovery — S&P 500 new all-time high (+0.8%), Dow +1.5% on Apr 30; Fed holds at 3.5%-3.75%; Iran/Strait of Hormuz remains the dominant tail risk; AI capex cycle intact despite Meta shock.
+word_count: 398
+summary: Transitional risk-on — S&P April best month since 2020; Q1 GDP 2.0% (miss vs 2.3%); PCE 3.5% above target; Fed holds 3.5%-3.75%; Iran/Hormuz and Warsh confirmation are live risks; AI capex cycle intact.
 ---
 
 # Macro Regime
 
 ## TL;DR
 
-**Risk-on recovery on April 30, with Iran geopolitical tail intact.** S&P 500 hit a new all-time high (+0.8%) and Dow surged +1.5% on strong Caterpillar earnings; Qualcomm +16% on results. April tracks as the best month for the S&P since 2020 (+9% MTD). Fed held at 3.5%–3.75% on April 29 (third consecutive hold, unusual 8-4 dissent split). US military blockade of Iranian ports remains the dominant left-tail risk — IMF projects 3.1% global growth and 4.4% headline inflation under conflict baseline. AI capex cycle intact (Alphabet and Amazon confirmed expansion) despite Meta's -9% capex shock from the prior session.
+**Transitional risk-on as of May 1, 2026.** April 2026 was the S&P 500's best month since 2020, with indices at new all-time highs. However, Q1 GDP came in at 2.0% versus the 2.3% expected — a soft miss signaling growth deceleration. PCE inflation is running at 3.5%, above the Fed's 2% target, keeping rate cuts firmly off the table. The Federal Reserve held at 3.5%–3.75% in an 8-4 dissent vote; Kevin Warsh's Senate confirmation as next Fed chair adds policy transition risk. US military posturing around Iranian ports remains the dominant left-tail macro risk. The AI capex cycle is fundamentally intact (Alphabet and Amazon confirmed expansion), but growth signals are mixed.
 
 ## Fed posture
 
-The Federal Reserve voted 8-4 on April 29 to hold the federal funds rate at **3.5%–3.75%** — third consecutive hold following three cuts in 2025. Unusual dissent split (last seen October 1992) signals internal disagreement. Inflation remains above the 2% target driven by tariff pass-through and Iran-driven energy prices. Powell will remain on the Board of Governors after his chair term expires; Kevin Warsh awaits Senate confirmation as next Chair. No cuts are priced through 2026. Easing bias retained in statement but contested [web_research/JPM.json, 2026-04-30].
+The Fed voted 8-4 on April 29 to hold at **3.5%–3.75%** — third consecutive hold. Unusual 8-4 dissent (last seen October 1992) signals internal disagreement on next move. PCE inflation at 3.5% is meaningfully above target. No near-term rate cut expected. Kevin Warsh's Senate confirmation advancing — potential hawkish policy transition risk in 2H 2026 [web_research/AMD.json, run 20260501_133540].
 
 ## Rate trajectory and inflation
 
-Higher-for-longer is the structural baseline. Tariff pass-through and Iran-driven oil prices are the two inflation engines. IMF cut 2026 global growth forecast to 3.1% and raised headline inflation to 4.4% assuming ~19% energy price spike from a short-lived conflict. US-China trade tariffs add a secondary structural layer. JPM's own NII guidance trim from $104.5B to ~$103B reflects the rate-flat environment [web_research/JPM.json, 2026-04-30].
+Higher-for-longer is the structural baseline. PCE at 3.5% driven by tariff pass-through and Iran-driven energy prices. Q1 GDP of 2.0% (vs 2.3% expected) marks the first meaningful growth miss in three quarters — stagflation risk is rising but not yet dominant. IMF downgraded global growth to 3.1% and raised headline inflation forecast to 4.4% under conflict baseline. Semiconductor supply chains face additional scrutiny under trade policy [web_research/AMD.json, run 20260501_133540].
 
-## Market context (April 30)
+## Market context (May 1)
 
-S&P 500 hit a new all-time high (+0.8%). Dow Jones surged +1.5% powered by Caterpillar's 10% earnings beat and Qualcomm +16%. JPMorgan raised its own S&P 500 year-end target to 7,600 from 7,200, citing AI momentum and stronger earnings. April remains on track as the best month for the S&P since 2020 (+9% MTD). AI capex thematic intact: Alphabet and Amazon confirmed expansion in Q1 results. Meta's -9% capex shock from April 29 is the primary risk sentiment headwind but has not derailed the broader market [web_research/JPM.json, 2026-04-30].
+S&P 500 closed at all-time highs in April (+9% MTD, best since 2020). Futures edged higher on May 1 despite the GDP miss. AI capex thematic intact: Alphabet and Amazon confirmed expansion in Q1 results. The two most concentrated risk themes for swing positions are: (1) AMD earnings binary May 5 — a sell-the-news risk given the +76% April run; (2) NVDA stop-out on April 30 confirmed that extended RSI readings (81–87) in AI names carry real downside snap risk even when the macro thesis is valid [web_research/AMD.json, run 20260501_133540].
 
 ## Geopolitical and regulatory
 
-**US military blockade of Iranian ports is the dominant left-tail risk.** Goldman raised Brent forecast to $90/bbl by late 2026 on blockade risk. A Strait of Hormuz closure would spike oil, reignite inflation, force the Fed further out on its hold, and directly pressure large-cap banks via credit quality and consumer demand. Secondary flashpoints: NATO-Greenland strategic competition, US-China tariffs and export controls, Kevin Warsh policy transition uncertainty [web_research/JPM.json, 2026-04-30].
+**US-Iran Strait of Hormuz risk is the dominant left-tail.** Goldman raised Brent forecast to $90/bbl on blockade risk. A closure would spike oil, reignite inflation, force the Fed further hawkish, and pressure credit quality across financials. Secondary risks: NATO-Greenland competition, US-China tariffs and export controls (25% tariff on AMD MI325X), Venezuela posturing. IMF global growth forecast 3.1% embeds conflict baseline [web_research/AMD.json, run 20260501_133540].
 
 ## Risk-off triggers to watch
 
-- **Iran escalation / Strait of Hormuz closure** — oil above $100, inflation re-accelerates, broad de-risking; immediate exit signal for JPM positions below $304.26
-- **Meta capex shock contagion** — if Amazon or MSFT revise AI capex lower, NVDA demand thesis directly impacted
-- **Fed dissent crystallizing hawkish** — any hint of rate hike scenarios would reset financials pricing
+- **Iran escalation / Strait of Hormuz closure** — oil above $100 would re-accelerate inflation and force de-risking across risk assets
+- **AMD earnings miss (May 5)** — data center GPU revenue below $5B or downward Q2 guidance would hit the AI infrastructure narrative broadly
+- **Warsh confirmation hawkish signal** — any hint of rate hike scenarios would reset financials and rate-sensitive tech multiples
+- **Q2 GDP deceleration** — Q1 miss at 2.0% warns; a sub-1.5% Q2 print would shift the regime from risk-on to stagflation caution
 
 ## Last updated
 
-2026-04-30. Sourced from `web_research/JPM.json` macro_context (run `20260430_182725`). Supersedes prior entry sourced from `20260430_124724`.
+2026-05-01. Sourced from `web_research/AMD.json` macro_context (run `20260501_133540`). Supersedes prior entry sourced from `20260430_182725`.
