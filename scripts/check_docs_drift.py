@@ -14,6 +14,12 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+# Make `ai_hedge` importable when the project isn't installed as an editable
+# package (e.g. inside the Anthropic Routine container where the cloud-env
+# setup script installs only third-party deps, not the project itself).
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 CLAUDE_MD_FILES = [
     ROOT / "CLAUDE.md",
     ROOT / "ai_hedge" / "CLAUDE.md",
