@@ -1,53 +1,53 @@
 ---
 name: BAC thesis
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-01
+last_run_id: 20260501_190923
 target_words: 500
 stale_after_days: 30
-word_count: 502
-summary: Durable bull/bear investment thesis for Bank of America synthesized from two swing runs (Apr 11 and Apr 15)
+word_count: 537
+summary: Bull thesis intact with open 15-share position (+1.35%); prior "overbought technicals" bear claim falsified by RSI reset; R/R failure at current price and OBV divergence are the new cautions
 ---
 
 ## TL;DR
 
-Bank of America is a high-quality large-cap bank riding a structural NII tailwind and recovering earnings power. The bull case is anchored by the best EPS quarter in roughly twenty years, confirmed across two run cycles. The bear case centers on overbought technicals, an ongoing Berkshire stake reduction, and binary exposure to macro and rate reversals.
+Bank of America is in an active long position: 15 shares at $52.75 (Apr 30 2026), currently +1.35%. The bull case is intact — exceptional ADX-53 uptrend, best Q1 in two decades, risk-on macro. **Prior thesis falsification (run `20260501_190923`):** The bootstrap thesis (Apr 29) cited "overbought technicals (RSI 79)" as the central bear risk. That condition no longer holds: RSI-14 is now 57.26 and RSI-7 reset to 49.65. The new caution is R/R failure at current price (1.6:1 to $55.40 target fails the 2:1 minimum) and a persistent OBV bearish divergence. No bull-to-bear flip; confidence is capped, not reversed.
 
 ---
 
 ## Bull Case
 
-**Earnings momentum is real and recent.** Run `20260415_110848` confirmed Q1 2026 results: EPS $1.11 beat the $1.02 estimate, net income $8.6B (+17% YoY), NII $15.7B (+9% YoY), and equities trading revenue $2.83B (+30% YoY). The explanation narrative called it "the best Q1 in nearly two decades with zero trading loss days — a remarkable achievement for a major bank."
+**Best Q1 in two decades, confirmed.** Q1 2026: EPS $1.11 beat (+9.9%), NII $15.7B (+9% YoY), net income $8.6B (+17% YoY), zero trading loss days. 18 analysts rate Strong Buy, avg PT ~$61.50 (15% implied upside). [web_research/BAC.json, run `20260501_190923`]
 
-**Higher-for-longer rates are a structural tailwind.** Both web research files note the Fed holding at 3.50–3.75% with only 1–2 cuts priced in through 2026. BAC is among the most asset-sensitive large-cap banks, so each incremental rate hold adds disproportionately to NII versus peers.
+**Exceptional trend structure.** ADX 53.17 — one of the strongest readings in the current run universe. EMA-10 ($52.86) > EMA-21 ($52.21) > EMA-50 ($51.50) — textbook bullish staircase. Open position at $52.75 sits at the EMA confluence zone; the trend is working. [signals_combined.json, run `20260501_190923`]
 
-**Deregulation and capital relief.** Web research from run `swing_20260411_211655` cited draft regulatory rules potentially freeing up $320B in capital for US banks. BAC has already cleared most legacy regulatory hurdles that still constrain Wells Fargo. Released capital would fund accelerated buybacks, dividend growth, and lending expansion.
+**Capital return and deal flow.** $18.66B share buyback pace over trailing 12 months. $14B Oracle Michigan data center bond deal closed. Alaska Air co-brand partnership extended. Basel III capital relief (~4.8% CET1 reduction) could unlock ~$40B in additional buybacks over 18 months. [web_research/BAC.json]
 
-**Capital markets franchise strengthening.** BAC was named active bookrunner for the potential SpaceX IPO (run `20260415_110848`) and poached four top tech bankers in March 2026. The CashPro payments platform logged $1.2T in 2025 payments with a 20% usage jump — recurring fee income not dependent on rates.
-
-**Analyst consensus strongly bullish.** 31 analysts rate BAC Buy, 0 Sell, average price target $59.54 as of April 15. CET1 at 11.2% and $9.3B returned to shareholders in Q1 alone confirm balance sheet health.
+**Macro tailwind.** S&P 500 at all-time highs (>7,200), Fed hold at 3.5%–3.75%, Iran peace talks easing oil pressure. Higher-for-longer rates benefit BAC disproportionately as one of the most asset-sensitive large-cap banks. [web_research/BAC.json macro_context]
 
 ---
 
 ## Bear Case
 
-**Overbought entry conditions.** Both runs flagged elevated RSI readings: 79.0 on April 11 and 78.6 on April 15. The April 11 run held BAC explicitly because overbought conditions produced a 1.0:1 risk-reward ratio. The sentiment agent in the April 15 run was 73% bearish, flagging that the earnings catalyst may already be fully priced in.
+**R/R failure at current price.** At $53.46, upside to $55.40 is +$1.94; downside to stop $51.50 is -$1.96. That is 1.6:1 — below the 2:1 system minimum. No add-on justified until pullback to $52.85–$53.21 restores the ratio. [signals_combined.json, swing_macro_context]
 
-**Berkshire Hathaway is selling.** Ongoing stake reduction by Buffett/Berkshire is a structural overhang cited in both web research files. While BAC remains a Berkshire holding, the selling program signals that the world's most scrutinized long-term investor is reducing exposure — a meaningful reputational headwind.
+**OBV divergence persists.** On-Balance Volume is diverging bearishly from price — potential institutional distribution into the rally. RSI-21 remains elevated at 72.49. MACD histogram mildly negative (-0.084). [signals_combined.json, swing_trend_momentum]
 
-**Macro and geopolitical binary risk.** Bank stocks can gap sharply on macro surprises. The April 15 explanation warned that "if the Iran ceasefire collapses, financial stocks could sell off." Core PCE heading toward 3.3% by mid-2026 could force a more hawkish Fed pivot that compresses sector multiples.
+**Berkshire Hathaway structural overhang.** Ongoing stake reduction, no disclosed floor or endpoint. World's most scrutinized long-term investor reducing exposure caps institutional enthusiasm and creates persistent supply. [web_research/BAC.json]
 
-**Pre-earnings analyst target cuts.** The April 11 web research noted multiple analysts trimming targets ahead of earnings (Goldman to $57, JPMorgan to $57.50, Evercore to $55). The earnings beat superseded these cuts, but the pattern reflects ongoing uncertainty about forward NII guidance quality.
+**EMA dip-buy pattern caution.** System's only recent EMA pullback Fib dip-buy (NVDA, Apr 30) lost at -$63.20. BAC's current setup is the same pattern type. NVDA failure was RSI-driven (81–87); BAC's RSI-14 is 57 — that risk is absent, but the pattern-type lesson is logged. [signals_combined.json, swing_trend_momentum]
 
 ---
 
 ## What Would Change the Thesis
 
-**Bull-to-bear flip:** NII guidance reduction, rate cuts arriving faster than priced, or Berkshire stake dropping below 5%.
+**Bull-to-bear flip:** Daily close below EMA-21 ($52.21) on volume, Berkshire stake disclosed below 5%, or NII guidance cut at Q2 earnings (July 14, 2026).
 
-**Bear-to-bull flip:** RSI reset below 50 on pullback to $50–51, followed by volume re-acceleration above 1.3x average.
+**Stop trigger:** Hard exit at $51.50. Open position stops there.
+
+**Add-on trigger:** Pullback to $52.85–$53.21 (EMA-10/Fib 38.2% zone) with volume > 1.2x average — restores 2:1+ R/R to $55.40 target.
 
 ---
 
 ## Synthesis
 
-BAC is a quality cyclical: strong fundamentals, improving capital returns, and a balance sheet that benefits from the current rate regime. The core tension is between a genuinely strong earnings print and an overbought chart requiring a pullback entry. The $53 level from the April 15 decision — prior resistance turned support — represents the thesis in practice: buy the story only where the technical risk-reward holds.
+BAC is the clearest active swing long in the current portfolio. Trend is real (ADX 53), entry is working (+1.35%), fundamentals support the direction. The sole constraint is price: at $53.46 the R/R to the $55.40 five-test resistance ceiling is insufficient to add. Hold the position, monitor OBV for re-convergence, and wait for a pullback to the EMA zone before increasing exposure.
