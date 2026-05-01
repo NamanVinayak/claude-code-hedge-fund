@@ -157,13 +157,16 @@ def main():
     all_trades = get_all_trades()
     realized_pnl = sum([t.get("pnl") or 0 for t in all_trades if t.get("status") in ("target_hit", "stop_hit", "expired", "closed")])
     unrealized_pnl = sum([p["pnl_dollar"] for p in positions])
-    
+
+    capital_deployed = sum([p["position_value"] for p in positions if p.get("position_value")])
+
     total_pnl = realized_pnl + unrealized_pnl
     total_value = base_account_size + total_pnl
     total_pnl_percent = (total_pnl / base_account_size) * 100 if base_account_size > 0 else 0
 
     portfolio_summary = {
         "base_account_size": base_account_size,
+        "capital_deployed": capital_deployed,
         "total_value": total_value,
         "total_pnl_dollar": total_pnl,
         "total_pnl_percent": total_pnl_percent
