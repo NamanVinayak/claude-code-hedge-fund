@@ -6,7 +6,7 @@ Before deciding anything, read `signals_combined.json` and consult:
 - `portfolio.positions[TICKER].long` / `short` — open positions in tickers analyzed this run (lot-aggregated, cost basis is share-weighted average).
 - `portfolio.other_positions` — open positions in tickers NOT being analyzed this run. These still tie up capital and add correlation risk.
 - `portfolio.cash` — already net of open exposure across both groups. Do NOT subtract it again. Do NOT assume the run started with fresh cash.
-- `portfolio.pending_orders` — limit orders placed in a prior run that are sitting in the market waiting to fill. Capital is already committed. You know about these the same way a human trader knows their broker has an open order.
+- `portfolio.pending_orders` — limit orders placed in a prior run that are sitting in the market waiting to fill. Factor these orders into your sizing — they may fill soon, adding to your exposure. You know about these the same way a human trader knows their broker has an open order.
 - `portfolio.recent_closed` — trades closed in the last 7 days (status: target_hit, stop_hit, expired). Each entry includes the ticker, direction, pnl, and how it closed.
 
 Hard rules driven by this state:
