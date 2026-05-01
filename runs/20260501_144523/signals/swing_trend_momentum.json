@@ -1,0 +1,11 @@
+{
+  "AAPL": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "TREND ASSESSMENT: EMA alignment is cleanly bullish on both daily and hourly timeframes (daily: 10 EMA 269.19 > 21 EMA 265.81 > 50 EMA 262.89; hourly: 24 EMA > 48 EMA > 120 EMA). Higher highs and higher lows are intact in recent price action. Post-earnings gap (Apr 30 close $271.35 to current $282.08) has established a new momentum thrust. However, ADX daily is 16.83 and hourly is 19.34 — both below the 25 threshold required to confirm trend strength worth trading. Per strategy rules, ADX < 20 mandates neutral output regardless of EMA alignment. MOMENTUM ASSESSMENT: Daily ROC is mixed in sign: roc_5d = -0.76 (negative), roc_10d = +3.02, roc_21d = +6.92. The negative 5-day ROC indicates short-term momentum deceleration even as the medium-term trend remains up. This mixed-sign ROC condition independently triggers neutral per strategy rules. Hourly ROC is all positive (3.41 / 4.37 / 4.35) but flat — not clearly accelerating. Daily MACD histogram is +0.48 and hourly is +0.89, both positive but the hourly is near overbought (RSI 67.84, Bollinger pct_b 1.28 — price above upper band). WIKI CONTEXT ALIGNMENT: Prior technicals noted ADX 15.78 daily on Apr 30 with a post-earnings blackout suggestion. ADX has only improved marginally to 16.83 — still well below threshold. The earnings beat has created the gap-up structure but trend confirmation via ADX has not materialized yet. The lessons table shows a recent swing_trend_momentum EMA pullback Fib dip-buy loss on NVDA when RSI was stretched — current hourly RSI 67.84 is approaching similar territory. CONCLUSION: Two independent neutral triggers (ADX < 20 on both timeframes; daily 5d ROC negative/mixed signs). The setup is not actionable for trend-momentum continuation today. Wait for: (1) ADX to rise above 25 confirming trend strength, (2) a constructive pullback to the 10 or 21 EMA with all ROC values positive and expanding, (3) MACD histogram expanding on the daily. Tentative levels if/when setup firms: entry on pullback to daily 10 EMA (~$269), stop below 21 EMA (~$265), target Fib extension 1.272 at $284.",
+    "entry": 269.19,
+    "target": 284.29,
+    "stop": 264.50,
+    "timeframe": "neutral — no actionable setup; revisit in 2-5 trading days"
+  }
+}
