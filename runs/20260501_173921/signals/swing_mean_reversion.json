@@ -1,0 +1,11 @@
+{
+  "AMZN": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": "Branch A (Fade the Extreme) fires. Multiple overbought extremes confirmed with a reversal candle: Daily RSI-14 at 82.21 and RSI-21 at 88.83 (well above the 75 threshold); Z-score vs 50-day mean at 2.01 (at the +2 overbought threshold); price is 18.58% above the 50-SMA (extreme extension, >10%). The Apr 30 daily candle is a bearish reversal signal — opened at 273.17 (near the recent high of 273.88), closed at 265.06, a large-range down candle on volume 2.05x the 20-day average. Reversal-candle confirmation criterion is met. Hourly timeframe adds confluence: bearish RSI divergence detected (rising price + falling hourly RSI), and hourly OBV is trending down while price is near highs (OBV diverging from price). Current hourly price (269.02) is hugging the upper hourly Bollinger Band (269.49, pct_b 0.97) — both daily and hourly extremes aligning per the strategy's strong-fade rule. Branch B (Buy-the-Dip) does NOT fire: price is near the top of the range, not at a Fibonacci pullback level within the uptrend. Confidence moderated to 62 (not higher) because: (1) ADX of 64.34 signals a very strong trend — fades in strong trends often get run over; (2) price has not yet breached the daily upper Bollinger Band (upper at 279.68), so the extreme is statistical rather than a full BB blow-off; (3) no daily RSI divergence (only hourly). Wiki context: the Apr 17 run flagged z-score of 2.84 as extended and the PM sized down — current z-score is slightly lower at 2.01, suggesting the extension has partially compressed but remains stretched. Lessons: the prior NVDA Fib dip-buy failure in RSI 81-87 macro stretch is not directly applicable (that was Branch B on a different setup type), but confirms the macro environment rewards fading extremes more than chasing breakouts. Target is return to the middle Bollinger Band / 20-SMA mean (~244.44). Stop is set above the confirmed reversal swing high (273.88) with a small buffer.",
+    "entry": 269.00,
+    "target": 244.44,
+    "stop": 276.00,
+    "timeframe": "7-14 trading days"
+  }
+}

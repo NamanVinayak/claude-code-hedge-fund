@@ -1,0 +1,79 @@
+{
+  "ticker": "AMZN",
+  "verified_at": "2026-05-01T17:45:00",
+  "checks": [
+    {
+      "metric": "gross_margin",
+      "our_value": 0.00638,
+      "web_value": 0.506,
+      "source": "GuruFocus / Zacks (Zacks: AMZN Gross Margin TTM; GuruFocus: AMZN gross-margin)",
+      "status": "MISMATCH",
+      "deviation": "7830%",
+      "action": "replaced with web value (0.506) in all facts bundles: warren_buffett__AMZN.json, aswath_damodaran__AMZN.json"
+    },
+    {
+      "metric": "net_margin",
+      "our_value": 0.1266,
+      "web_value": 0.111,
+      "source": "Macrotrends / Yahoo Finance (Amazon Net Profit Margin TTM 2026)",
+      "status": "ok",
+      "deviation": "14.1%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.1151,
+      "web_value": 0.115,
+      "source": "Amazon Q1 2026 Earnings Release / AlphaStreet (TTM operating margin 11.5%)",
+      "status": "ok",
+      "deviation": "0.1%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 32.22,
+      "web_value": 33.25,
+      "source": "GuruFocus / FinanceCharts (AMZN PE Ratio Apr 2026)",
+      "status": "ok",
+      "deviation": "3.2%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 2893323960320.0,
+      "web_value": 2820000000000.0,
+      "source": "CompaniesMarketCap / Public.com (AMZN Market Cap May 1, 2026: ~$2.82T)",
+      "status": "ok",
+      "deviation": "2.6%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 685000000000.0,
+      "web_value": 716920000000.0,
+      "source": "StockAnalysis / CompaniesMarketCap (AMZN TTM Revenue ~$716.92B–$742.78B)",
+      "note": "our_value derived from market_cap / price_to_sales_ratio (2893323960320 / 4.2235); TTM revenue updated post-Q1 2026 earnings to $716.92B–$742.78B",
+      "status": "ok",
+      "deviation": "4.7%"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.211,
+      "web_value": 0.217,
+      "source": "GuruFocus (AMZN ROE 21.72% TTM)",
+      "status": "ok",
+      "deviation": "2.8%"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.106,
+      "web_value": 0.0991,
+      "source": "FinanceCharts / GuruFocus (AMZN ROA TTM ~9.91%)",
+      "status": "ok",
+      "deviation": "6.9%"
+    }
+  ],
+  "overall_status": "1 mismatch corrected",
+  "corrections_applied": true,
+  "corrected_files": [
+    "runs/20260501_173921/facts/warren_buffett__AMZN.json",
+    "runs/20260501_173921/facts/aswath_damodaran__AMZN.json"
+  ],
+  "notes": "gross_margin stored as 0.00638 (~0.64%) — likely a data pipeline bug where gross profit was divided by total assets or some non-revenue denominator instead of revenue. Amazon's actual TTM gross margin is ~50.6% (GuruFocus: 50.60% as of May 1, 2026). All other metrics are within the 20% tolerance threshold."
+}

@@ -1,0 +1,358 @@
+{
+  "ticker": "AMZN",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 261.6275927702429,
+      "sma_5": 262.5820007324219,
+      "ema_10": 256.6833811314164,
+      "sma_10": 257.2100006103516,
+      "ema_20": 246.65169746042884,
+      "sma_20": 244.44100036621094,
+      "ema_21": 245.8146377149328,
+      "sma_21": 242.82809593563988,
+      "ema_50": 232.8790676955186,
+      "sma_50": 223.53280029296874,
+      "ema_200": 223.4991901104215,
+      "sma_200": 227.15209999084473,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 265.05999755859375,
+    "dist_from_50sma_pct": 18.58,
+    "price_vs_ma": {
+      "above_ema_5": true,
+      "pct_from_ema_5": 1.31,
+      "above_sma_5": true,
+      "pct_from_sma_5": 0.94,
+      "above_ema_10": true,
+      "pct_from_ema_10": 3.26,
+      "above_sma_10": true,
+      "pct_from_sma_10": 3.05,
+      "above_ema_20": true,
+      "pct_from_ema_20": 7.46,
+      "above_sma_20": true,
+      "pct_from_sma_20": 8.44,
+      "above_ema_21": true,
+      "pct_from_ema_21": 7.83,
+      "above_sma_21": true,
+      "pct_from_sma_21": 9.16,
+      "above_ema_50": true,
+      "pct_from_ema_50": 13.82,
+      "above_sma_50": true,
+      "pct_from_sma_50": 18.58,
+      "above_ema_200": true,
+      "pct_from_ema_200": 18.6,
+      "above_sma_200": true,
+      "pct_from_sma_200": 16.69,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 26406.0
+    },
+    "rsi": {
+      "rsi_7": 81.19,
+      "rsi_14": 82.21,
+      "rsi_21": 88.83
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 12.3745,
+      "signal_line": 11.1008,
+      "histogram": 1.2737,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 279.68,
+      "middle": 244.44,
+      "lower": 209.2,
+      "width": 0.2884,
+      "pct_b": 0.7925
+    },
+    "atr": {
+      "atr_14": 7.1,
+      "atr_pct": 2.68
+    },
+    "adx": {
+      "adx_14": 64.34,
+      "plus_di": 45.78,
+      "minus_di": 11.51,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 100869700,
+      "avg_volume_20": 49122620,
+      "relative_volume": 2.05,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 220.47,
+          "tests": 3,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 196.0,
+          "tests": 1,
+          "volume_confirmed": false
+        },
+        {
+          "price": 199.14,
+          "tests": 5,
+          "volume_confirmed": false
+        },
+        {
+          "price": 202.48,
+          "tests": 13,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": null,
+      "nearest_support": 202.48,
+      "recent_high": 273.88,
+      "recent_low": 204.9,
+      "prev_day_high": 265.91,
+      "prev_day_low": 257.7,
+      "prev_day_close": 263.04
+    },
+    "fibonacci": {
+      "swing_high": 273.88,
+      "swing_low": 199.14,
+      "fib_236": 256.24,
+      "fib_382": 245.33,
+      "fib_500": 236.51,
+      "fib_618": 227.69,
+      "fib_786": 215.13,
+      "fib_ext_1272": 294.21,
+      "fib_ext_1618": 320.07,
+      "fib_ext_2000": 348.62,
+      "fib_ext_low_1272": 178.81,
+      "fib_ext_low_1618": 152.95
+    },
+    "momentum": {
+      "roc_5d": 3.91,
+      "roc_10d": 6.15,
+      "roc_21d": 27.27
+    },
+    "z_score_50": 2.01,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 264.1739874018984,
+      "sma_24": 263.2059618631999,
+      "ema_48": 260.97717691062667,
+      "sma_48": 261.54089800516766,
+      "ema_120": 250.543194236197,
+      "sma_120": 251.43246625264484,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 269.0199890136719,
+    "dist_from_50sma_pct": 6.99,
+    "price_vs_ma": {
+      "above_ema_24": true,
+      "pct_from_ema_24": 1.83,
+      "above_sma_24": true,
+      "pct_from_sma_24": 2.21,
+      "above_ema_48": true,
+      "pct_from_ema_48": 3.08,
+      "above_sma_48": true,
+      "pct_from_sma_48": 2.86,
+      "above_ema_120": true,
+      "pct_from_ema_120": 7.37,
+      "above_sma_120": true,
+      "pct_from_sma_120": 6.99,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 26802.0
+    },
+    "rsi": {
+      "rsi_21": 62.78
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": true,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 3.7525,
+      "signal_line": 3.4729,
+      "histogram": 0.2796,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 269.49,
+      "middle": 261.54,
+      "lower": 253.59,
+      "width": 0.0608,
+      "pct_b": 0.9705
+    },
+    "atr": {
+      "atr_24": 3.22,
+      "atr_pct": 1.2
+    },
+    "adx": {
+      "adx_24": 22.73,
+      "plus_di": 36.73,
+      "minus_di": 8.82,
+      "trend_strength": "moderate"
+    },
+    "volume": {
+      "current_volume": 435053,
+      "avg_volume_20": 13641475,
+      "relative_volume": 0.03,
+      "volume_bias_10d": "down",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": true
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 258.79,
+          "tests": 17,
+          "volume_confirmed": false
+        },
+        {
+          "price": 264.38,
+          "tests": 17,
+          "volume_confirmed": false
+        },
+        {
+          "price": 270.62,
+          "tests": 6,
+          "volume_confirmed": true
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 249.1,
+          "tests": 2,
+          "volume_confirmed": false
+        },
+        {
+          "price": 253.07,
+          "tests": 12,
+          "volume_confirmed": false
+        },
+        {
+          "price": 256.65,
+          "tests": 16,
+          "volume_confirmed": false
+        },
+        {
+          "price": 260.34,
+          "tests": 24,
+          "volume_confirmed": true
+        }
+      ],
+      "nearest_resistance": 270.62,
+      "nearest_support": 260.34,
+      "recent_high": 273.32,
+      "recent_low": 256.16,
+      "prev_day_high": 269.81,
+      "prev_day_low": 268.12,
+      "prev_day_close": 269.39
+    },
+    "fibonacci": {
+      "swing_high": 273.32,
+      "swing_low": 256.16,
+      "fib_236": 269.27,
+      "fib_382": 266.76,
+      "fib_500": 264.74,
+      "fib_618": 262.71,
+      "fib_786": 259.83,
+      "fib_ext_1272": 277.98,
+      "fib_ext_1618": 283.92,
+      "fib_ext_2000": 290.47,
+      "fib_ext_low_1272": 251.49,
+      "fib_ext_low_1618": 245.56
+    },
+    "momentum": {
+      "roc_5d": 1.51,
+      "roc_10d": 4.19,
+      "roc_21d": 3.59
+    },
+    "z_score_120": 1.61,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 259.9800109863281,
+      "close": 263.989990234375,
+      "high": 264.5,
+      "low": 257.69000244140625,
+      "volume": 53777400,
+      "time": "2026-04-24"
+    },
+    {
+      "open": 263.4599914550781,
+      "close": 261.1199951171875,
+      "high": 264.1499938964844,
+      "low": 260.3399963378906,
+      "volume": 44906800,
+      "time": "2026-04-27"
+    },
+    {
+      "open": 258.3900146484375,
+      "close": 259.70001220703125,
+      "high": 261.0299987792969,
+      "low": 256.6300048828125,
+      "volume": 42204400,
+      "time": "2026-04-28"
+    },
+    {
+      "open": 257.989990234375,
+      "close": 263.0400085449219,
+      "high": 265.9100036621094,
+      "low": 257.70001220703125,
+      "volume": 72367900,
+      "time": "2026-04-29"
+    },
+    {
+      "open": 273.1700134277344,
+      "close": 265.05999755859375,
+      "high": 273.8800048828125,
+      "low": 256.1600036621094,
+      "volume": 100869700,
+      "time": "2026-04-30"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 269.0299987792969,
+  "market_cap": 2893323960320.0,
+  "wiki_context": {
+    "slices": {
+      "catalysts_full": {
+        "path": "wiki/tickers/AMZN/catalysts.md",
+        "mode": "full",
+        "content": "# AMZN \u2014 Catalysts\n\n## TL;DR\n\nAmazon had a dense catalyst cluster in April 2026: Andy Jassy's shareholder letter disclosed $15B AWS AI ARR, the $11.6B Globalstar acquisition closed, and AWS Trainium3 launched \u2014 all in a two-week window. Q1 2026 earnings were due April 30 (after close). These catalysts drove a 13\u201314% surge in AMZN stock from April 8\u201315 and were the primary reason 6-of-9 swing agents voted bullish in runs 20260415_110848 and 20260417_233350.\n\n---\n\n## Upcoming events (as of last run, April 2026)\n\n| Event | Date | Impact |\n|---|---|---|\n| Q1 2026 Earnings | April 30, 2026 (after close) | High \u2014 binary event; consensus $177.3B revenue, $1.67 EPS |\n| FOMC rate decision | April 29, 2026 | Medium \u2014 no cut expected; hawkish tone could pressure tech multiples |\n| AWS guidance update | April 30, 2026 | High \u2014 AWS growth rate (expected 18\u201320% YoY) will set the tone |\n\nThe earnings date of April 30 was confirmed across both web research files (runs 20260415_110848 and swing_20260411_211655). The company's own Q1 guidance was $173.5B\u2013$178.5B in net sales, with analyst consensus at $177.3B \u2014 implying the bar is near the high end of guidance.\n\n---\n\n## Recent news synthesis (April 2026)\n\n**AWS AI monetization:** CEO Andy Jassy's annual shareholder letter (early April 2026) revealed AWS AI services at $15B annualized revenue run-rate and a chips business at $20B ARR. This was the most concrete public disclosure of Amazon's AI monetization scale to date and was the single most cited catalyst by bullish agents in run swing_20260411_211655.\n\n**$11.6B Globalstar acquisition:** Closed April 2026. Opens a satellite connectivity layer for Amazon's device ecosystem and enables the Apple Leo satellite partnership announced shortly after. The breakout agent in run 20260415_110848 identified this as the trigger for the April 14 breakout volume surge (72.5M shares vs 46.3M average, or 1.57x).\n\n**AWS Trainium3:** Launched April 2026. The chip delivers 3x faster AI training than the prior generation and competes directly with AMD MI325X and Google TPUs. Positions AWS to capture more AI training workloads rather than passing that spend to NVIDIA (source: run 20260415_110848 web_research).\n\n**Amazon Pharmacy + GLP-1:** Partnership with Eli Lilly for same-day delivery of GLP-1 medications, announced around April 11 (run swing_20260411_211655 web_research). Extends Amazon's healthcare logistics reach into one of the fastest-growing drug categories.\n\n**Macro tailwind:** The April 7 US-Iran ceasefire sparked a broad market relief rally. AMZN was up 13\u201314% in the four days following the ceasefire as risk appetite returned and tech saw heavy inflows. Oil falling 16% on the ceasefire reduced input cost pressures and improved the macro backdrop for consumer spending (run swing_20260411_211655 macro context).\n\n---\n\n## Analyst consensus (April 2026)\n\n| Metric | Value | Source |\n|---|---|---|\n| Buy ratings | 64 of 68 analysts | Run 20260415_110848 |\n| Avg price target | $284\u2013$287 | Runs 20260415_110848, swing_20260411_211655 |\n| Target range | $175 low \u2014 $325 high | Run swing_20260411_211655 |\n| Recent changes | Goldman Sachs trimmed to $275 from $280 (April 14, maintained Buy) | Run 20260415_110848 |\n| Recent upgrades | Cantor Fitzgerald raised to $260 from $250 (April 8); Citizens set $315 target (April 10); Agar Capital upgraded citing AI enthusiasm (April 10) | Run swing_20260411_211655 |\n\nThe Goldman trim on April 14 was the only notable negative analyst action; it was a $5 trim while keeping the Buy rating, interpreted as routine rather than bearish. The upgrading activity outnumbered downgrades 3-to-1 in the two-week window around the catalyst cluster.\n\n---\n\n## Competitor activity\n\nAWS holds 31% cloud market share vs Azure 23% and GCP 12%. Azure grew 39% and GCP grew 48% in the most recent quarter \u2014 both closing the gap \u2014 but AWS posted $35.6B Q4 revenue (+24% YoY, fastest in 13 quarters) with a $244B backlog that provides revenue visibility. Walmart's retail scale nearly matched Amazon's ($713.2B vs Amazon for FY2026) but lacks AWS's profitability engine. Netflix at 325M subscribers remains the top Prime Video rival (runs 20260415_110848, swing_20260411_211655).\n",
+        "last_updated": "2026-04-29",
+        "stale": false
+      },
+      "calendar_full": {
+        "missing": true,
+        "mode": "full"
+      },
+      "lessons_full": {
+        "path": "wiki/meta/lessons.md",
+        "mode": "full",
+        "content": "## Format\n\nEach lesson is one dated bullet:\n\n`[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME: +$X / -$X] | [WHY it worked or failed in 1 sentence]`\n\nThe \"why\" should reference: the thesis at the time, the macro regime, which swing strategy recommended it.\n\n---\n\n## Patterns (auto-generated by Sunday compactor, last 30 days)\n\n| Setup Type | Trades | Wins | Win Rate | Avg P&L | Total P&L |\n|---|---|---|---|---|---|\n| EMA pullback Fib dip-buy | 1 | 0 | 0% | -$63.20 | -$63.20 |\n\n## Lessons\n\n2026-04-30 | NVDA | EMA pullback Fib dip-buy | -$63.20 (corrected from -$264.65) | Stop triggered at $205.30 (hourly Fib 61.8%); swing_trend_momentum and swing_breakout were bullish on AI capex thesis, but price breached the stop zone intraday amid stretched macro (RSI 81\u201387) with no bullish confirmation candle before exit. **Note:** trade was originally sized 67 shares ($14,020) due to a phantom $100K budget bug (fixed commit b2b472d). With the correct $25K budget at 14.2% vol-adj limit, position would have been 16 shares ($3,348). Corrected P&L reflects the strategy's actual signal quality, not the sizing error.\n",
+        "last_updated": "2026-05-01",
+        "stale": false
+      }
+    }
+  }
+}

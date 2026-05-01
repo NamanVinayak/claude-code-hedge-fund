@@ -1,0 +1,430 @@
+{
+  "mode": "swing",
+  "analyst_signals": {
+    "swing_breakout": {
+      "AMZN": {
+        "signal": "bearish",
+        "confidence": 72,
+        "reasoning": "AMZN does not present a valid breakout entry \u2014 it presents a failed breakout signal. The stock gapped up on Apr 30 to $273.88 (recent high) but CLOSED DOWN at $265.06, forming a shooting star / topping tail with 2.05x volume (100.87M vs 49.12M 20-day avg). A breakout requires a decisive CLOSE above resistance, not just an intraday spike \u2014 this close did NOT confirm the breakout. The consolidation range from Apr 27\u201329 was roughly $256\u2013$264, with the breakout level at ~$265 (prior day high). Price closed back inside that range, making this a failed breakout on massive distribution volume. Daily BB width of 0.2884 is already wide \u2014 volatility has already expanded; the squeeze is DONE, not coiling. ADX at 64.34 confirms the trend is mature and extended, not building for a new breakout. RSI-14 at 82.21 and RSI-7 at 81.19 are deeply overbought. Wiki context confirms the original breakout from $199\u2013$249 consolidation already played out (April 14 breakout at 1.57x volume), with the PM target of $262 already achieved. The hourly shows a narrow BB (width 0.0608) suggesting some hourly squeeze, but hourly OBV is diverging bearishly from price, hourly RSI divergence is bearish, and nearest hourly resistance at $270.62 is volume-confirmed overhead. Lessons from NVDA (Apr 30): stop triggered on a similarly stretched RSI 81-87 breakout \u2014 failure pattern matches today's setup. The high-volume topping tail on Apr 30, combined with an already-expanded BB and overbought RSI, points to distribution and a likely pullback to the $256\u2013$260 support zone.",
+        "entry": 265.06,
+        "target": 256.65,
+        "stop": 271.0,
+        "timeframe": "3-7 trading days"
+      }
+    },
+    "swing_head_trader": {
+      "AMZN": {
+        "consensus_signal": "bearish",
+        "confidence": 62,
+        "reasoning": "The April 30 session produced a textbook 'sell the news' reversal candle on AMZN: gapped to $273.88 (Q1 2026 earnings reaction high), then closed at $265.06 \u2014 a $8.82 fade on 2.05x average volume (100.87M vs 49.12M avg). That single candle carries more information than any indicator stack: large buyers who chased the gap were aggressively sold into. The reversal is confirmed across 5 strategy agents with no agent taking a bullish stance.\n\nVote breakdown: swing_mean_reversion BEARISH (62), swing_breakout BEARISH (72), swing_trend_momentum NEUTRAL (35), swing_catalyst_news NEUTRAL (35), swing_macro_context NEUTRAL (35). Zero bullish votes. The three neutrals are not bullish holdouts \u2014 they are waiting for a pullback entry (trend_momentum wants $256\u2013258, macro_context wants $252, catalyst_news sees no actionable catalyst). Their neutrality reflects 'not here, not now' rather than any disagreement with the bearish read on current price.\n\nThe two bearish agents agree on the core thesis: (1) RSI 82/88 is statistically extreme and historically reverts; (2) the April 30 candle is a failed breakout / shooting star with distribution volume, not a consolidation; (3) hourly bearish RSI divergence and hourly OBV divergence from price both signal internal weakness. ADX at 64.34 is the lone bull argument \u2014 trend momentum is genuinely strong \u2014 but even swing_trend_momentum explicitly invokes the NVDA lesson (RSI 81\u201387 stretch \u2192 stop triggered) as a reason to not chase.\n\nWiki memory reinforces the bearish lean: AMZN's prior run (Apr 17) was sized down due to z-score 2.84; current z-score 2.01 is lower but still extended. The only closed trade in the lessons log (NVDA, Apr 30) is an EMA pullback Fib dip-buy at RSI 81\u201387 that stopped out \u2014 0% win rate on that setup type, -$63.20 P&L. AMZN is in the same RSI regime (82/88). The pattern match is explicit and damaging to any bullish case at current price.\n\nSynthesized levels: Entry near current price ~$269 (bearish swing), target at 20-SMA / mean-reversion anchor ~$244\u2013$245, stop above the confirmed reversal swing high at $273.88 with buffer ($276). R:R: roughly 24 pts downside vs 7 pts upside = 3.4:1 short R:R. Alternatively for trend_momentum / macro_context's preferred scenario \u2014 if price pulls back to $252\u2013$258, that is a long entry zone with a 2:1+ R:R to $275+, but that requires waiting. No long entry is valid at $269.\n\nFinal call: BEARISH, confidence 62. The strong ADX and intact daily EMA alignment prevent higher conviction \u2014 this is not a broken stock, it is an extended stock with a reversal candle. Short or stand aside. The 62 confidence reflects strong agreement on the bearish near-term view while acknowledging the longer-term uptrend remains structurally intact.",
+        "agent_agreement_pct": 40.0,
+        "key_conflicts": "The central conflict is trend_momentum vs mean_reversion/breakout: swing_trend_momentum sees a perfectly aligned EMA stack, ADX 64.34, and accelerating ROC across all timeframes \u2014 objectively the strongest trend read. It is NOT bullish right now only because price is too far above the entry zone (3.26% above 10 EMA, 7.83% above 21 EMA) and the April 30 reversal candle disqualifies a chase entry. swing_mean_reversion and swing_breakout both see the same candle as an active short trigger \u2014 mean_reversion targets the 20-SMA at $244 (Branch A: fade the extreme), and breakout interprets the failed gap-close as distribution that confirms overhead resistance at $270.62. The conflict resolves as follows: trend_momentum's bullish underlying thesis is not wrong, but it agrees the ENTRY is wrong at current prices. All agents converge on 'do not buy here.' The divergence is only on direction of trade: mean_reversion and breakout want a short from $269 to $244\u2013$257; trend_momentum and macro_context want to wait for a long re-entry at $252\u2013$258. swing_catalyst_news is genuinely neutral \u2014 the earnings catalyst just fired and there is no known forward catalyst within 10 days. The macro_context neutral is a near-veto signal: R:R at current price is 1.03:1, which fails the 2:1 minimum bar regardless of directional view. Wiki lessons warning: the only closed trade on record (NVDA Apr 30, EMA pullback Fib dip-buy, RSI 81\u201387) stopped out for -$63.20. AMZN is in the same RSI regime. This dials confidence down from potentially 70+ to 62.",
+        "recommended_action": "short"
+      }
+    },
+    "growth_analyst_agent": {
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 19,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.45,
+            "revenue_growth": 0.12377754683294695,
+            "revenue_trend": -0.0026293691464428204,
+            "eps_growth": 0.2879858657243816,
+            "eps_trend": -0.02007235059922867,
+            "fcf_growth": null,
+            "fcf_trend": 0.0
+          },
+          "growth_valuation": {
+            "score": 0.25,
+            "peg_ratio": null,
+            "price_to_sales_ratio": 4.223479156216198
+          },
+          "margin_expansion": {
+            "score": 0.2,
+            "gross_margin": 0.00638195069899293,
+            "gross_margin_trend": 0.00027466750940727947,
+            "operating_margin": 0.11509991139423435,
+            "operating_margin_trend": -0.010429709913396014,
+            "net_margin": 0.1266069830685622,
+            "net_margin_trend": -0.013139559664959534
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 0.8,
+            "debt_to_equity": 0.1685645822436841,
+            "current_ratio": 1.0508153482718285
+          },
+          "final_analysis": {
+            "signal": "neutral",
+            "confidence": 19,
+            "weighted_score": 0.4
+          }
+        }
+      }
+    },
+    "swing_trend_momentum": {
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "TREND ASSESSMENT: Daily EMA alignment is perfectly bullish (EMA 5 > EMA 10 > EMA 21 > EMA 50) and hourly EMAs are also aligned upward \u2014 the uptrend is confirmed and strong. ADX 14 at 64.34 with +DI 45.78 vs -DI 11.51 is an exceptionally strong trend reading. Higher highs and higher lows are intact on the daily. MOMENTUM ASSESSMENT: ROC is all-positive across timeframes (5d: +3.91%, 10d: +6.15%, 21d: +27.27%) and expanding \u2014 technically momentum is accelerating. MACD histogram is positive at +1.27. HOWEVER, the strategy requires ENTRY ON A PULLBACK to the 10 or 21 EMA \u2014 current price (269.03) is 3.26% above the 10 EMA (256.68) and 7.83% above the 21 EMA (245.81). Price is NOT in the entry zone. Additional concerns: (1) The April 30 candle was a reversal bar \u2014 gapped up to 273.88, then closed at 265.06, a 3.2% fade from intraday high on 2x average volume, suggesting distribution at the top. (2) Hourly bearish RSI divergence detected and hourly OBV is diverging from price (falling while price rises) \u2014 early warning signs of trend exhaustion on the intraday timeframe. (3) RSI 82 on daily is deeply overbought; Z-score vs 50 SMA is 2.01 \u2014 statistically extended. (4) Lessons log: the prior swing_trend_momentum trade (NVDA, April 30) lost $63.20 when price was similarly stretched at RSI 81-87 \u2014 identical setup to today. Entry would require a pullback to the 10 EMA zone around 256-258. Waiting for that pullback before committing is the correct strategy discipline.",
+        "entry": 257.5,
+        "target": 275.0,
+        "stop": 252.0,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_macro_context": {
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "1. MACRO REGIME: Risk-on with near-term caveats. S&P 500 at fresh all-time highs above 7,200; April 2026 was the best month since 2020. Fed held at 3.5%-3.75% in an 8-4 vote (most dissents since Oct 1992), introducing policy uncertainty ahead of the Powell-to-Warsh transition on May 15. Iran peace talks have WTI -2%, removing the dominant left-tail energy-inflation risk. AI capex supercycle narrative is intact \u2014 Amazon beat on Q1 cloud revenue \u2014 but MSFT post-earnings selloff and Meta -9% capex shock injected near-term AI spend uncertainty. Net read: risk-on regime, macro tailwind for AMZN's AWS/AI story, but with elevated policy uncertainty. 2. RELATIVE STRENGTH: AMZN is decisively outperforming. ROC 21d at +27.27% vs broad market at fresh highs \u2014 this is sector leadership, not just market beta. EMA aligned uptrend confirmed on both daily and hourly timeframes. ADX 64.34 with +DI 45.78 vs -DI 11.51 confirms a very strong, uncontested trend. However, outperformance at this magnitude (+27% in 21 days) flags a late-cycle entry, not an early-cycle accumulation. 3. ASYMMETRIC R/R (EXPLICIT NUMBERS): Entry at $269. Target at hourly Fib ext 1.272 ($277.98) = +3.3% upside. Stop at volume-confirmed hourly pivot support ($260.34) = -3.2% downside. Ratio: 1.03:1 \u2014 this fails the 2:1 minimum bar. For a 2:1 ratio, upside would need to be $278.78+ or stop would need to tighten to ~$264, but $264 is already above EMA-aligned support levels and would be too tight given 2.68% daily ATR. Even using the daily Fib ext 1.272 ($294.21) as target = +9.4% upside vs -3.2% downside = 2.94:1, but that target requires holding 15-20 trading days through an earnings risk window, and the thesis does not support chasing at RSI 88+. 4. CAPITAL PRESERVATION FLAGS: RSI 14 = 82.21, RSI 21 = 88.83 \u2014 extremely overbought, identical regime to the NVDA trade (RSI 81-87) that triggered a stop loss per wiki lessons. Hourly OBV is diverging bearishly from price, and hourly RSI shows bearish divergence \u2014 early sector-rotation warning signals. Daily volume was 2x average on April 30, but the daily candle was a bearish reversal: opened $273.17, closed $265.06 (well off the $273.88 high). Z-score vs 50 SMA = 2.01 (historically stretched). 18.58% above 50 SMA is an extreme extension. WIKI LESSON ENFORCEMENT: The lessons_full Patterns table shows 0% win rate on EMA pullback Fib dip-buy in last 30 days, and the NVDA loss explicitly notes 'stretched macro (RSI 81-87) with no bullish confirmation candle' as the cause. AMZN is in the same RSI regime. This is a wait-for-pullback, not a chase.",
+        "entry": 252.0,
+        "target": 277.98,
+        "stop": 244.0,
+        "timeframe": "8-15 trading days"
+      }
+    },
+    "swing_mean_reversion": {
+      "AMZN": {
+        "signal": "bearish",
+        "confidence": 62,
+        "reasoning": "Branch A (Fade the Extreme) fires. Multiple overbought extremes confirmed with a reversal candle: Daily RSI-14 at 82.21 and RSI-21 at 88.83 (well above the 75 threshold); Z-score vs 50-day mean at 2.01 (at the +2 overbought threshold); price is 18.58% above the 50-SMA (extreme extension, >10%). The Apr 30 daily candle is a bearish reversal signal \u2014 opened at 273.17 (near the recent high of 273.88), closed at 265.06, a large-range down candle on volume 2.05x the 20-day average. Reversal-candle confirmation criterion is met. Hourly timeframe adds confluence: bearish RSI divergence detected (rising price + falling hourly RSI), and hourly OBV is trending down while price is near highs (OBV diverging from price). Current hourly price (269.02) is hugging the upper hourly Bollinger Band (269.49, pct_b 0.97) \u2014 both daily and hourly extremes aligning per the strategy's strong-fade rule. Branch B (Buy-the-Dip) does NOT fire: price is near the top of the range, not at a Fibonacci pullback level within the uptrend. Confidence moderated to 62 (not higher) because: (1) ADX of 64.34 signals a very strong trend \u2014 fades in strong trends often get run over; (2) price has not yet breached the daily upper Bollinger Band (upper at 279.68), so the extreme is statistical rather than a full BB blow-off; (3) no daily RSI divergence (only hourly). Wiki context: the Apr 17 run flagged z-score of 2.84 as extended and the PM sized down \u2014 current z-score is slightly lower at 2.01, suggesting the extension has partially compressed but remains stretched. Lessons: the prior NVDA Fib dip-buy failure in RSI 81-87 macro stretch is not directly applicable (that was Branch B on a different setup type), but confirms the macro environment rewards fading extremes more than chasing breakouts. Target is return to the middle Bollinger Band / 20-SMA mean (~244.44). Stop is set above the confirmed reversal swing high (273.88) with a small buffer.",
+        "entry": 269.0,
+        "target": 244.44,
+        "stop": 276.0,
+        "timeframe": "7-14 trading days"
+      }
+    },
+    "swing_catalyst_news": {
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "CATALYST WINDOW: Q1 2026 earnings occurred April 30 (after close) \u2014 catalyst just triggered, now 0-1 trading days post-event. No identifiable next catalyst within the forward 10 trading days. NET NEWS SENTIMENT: Positive leading into earnings (AWS AI ARR at $15B, Globalstar acquisition close, Trainium3 launch, Amazon Pharmacy GLP-1 expansion) \u2014 but all pre-catalyst news is now priced. INSIDER ACTIVITY: Quiet \u2014 no insider trades in the data window. TECHNICAL SETUP GOING IN \u2014 POOR/EXHAUSTED: The April 30 daily candle is a textbook 'sell the news' reversal: gap-up open at $273.17, intraday high $273.88, close at $265.06 \u2014 a wide-range bearish engulfing reversal on 2.05x average volume (100.87M vs 49.12M avg). Daily RSI-14 at 82.21 and RSI-21 at 88.83 \u2014 deeply overbought. Price is 18.58% above the 50 SMA and z-score 50 = 2.01 (2 standard deviations above mean). Hourly OBV is diverging bearishly from price, and hourly RSI shows bearish divergence. Hourly price (~$269) is pressing against volume-confirmed resistance at $270.62. The setup is not constructive \u2014 it is extended and exhausted. LESSONS WARNING: The lessons file explicitly records a -$63.20 loss on NVDA in a nearly identical setup: RSI 81-87, extended chart, post-catalyst, stop triggered. That pattern matches today's AMZN profile. Catalyst-alone is insufficient when the chart is already at extremes; the analyst rules require a constructive technical setup going in. Given the 'sell the news' reversal candle, overbought momentum on all timeframes, hourly bearish divergences, and no forward catalyst within 10 trading days, a new entry is not justified. BULL CASE IF EARNINGS BEAT IS LARGE: If after-hours or next-day price action shows acceptance above $270.62 on volume, a bullish re-entry could be considered \u2014 but that requires new data not yet in this facts bundle. Current evidence does not support it.",
+        "entry": 265.06,
+        "target": 284.0,
+        "stop": 256.65,
+        "timeframe": "neutral \u2014 no actionable entry; monitor for post-earnings acceptance above 270.62 resistance"
+      }
+    },
+    "fundamentals_analyst_agent": {
+      "AMZN": {
+        "signal": "bullish",
+        "confidence": 50.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "neutral",
+            "details": "ROE: 21.10%, Net Margin: 12.66%, Op Margin: 11.51%"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 12.38%, Earnings Growth: 31.09%"
+          },
+          "financial_health_signal": {
+            "signal": "bullish",
+            "details": "Current Ratio: 1.05, D/E: 0.17"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 32.23, P/B: 7.04, P/S: 4.23"
+          }
+        }
+      }
+    },
+    "technical_analyst_agent": {
+      "AMZN": {
+        "signal": "bullish",
+        "confidence": 59,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 53,
+            "metrics": {
+              "adx": 53.293006444229526,
+              "trend_strength": 0.5329300644422953
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 2.0071180585669426,
+              "price_vs_bb": 0.7925182015891904,
+              "rsi_14": 82.20669162401299,
+              "rsi_28": 78.00507433238309
+            }
+          },
+          "momentum": {
+            "signal": "bullish",
+            "confidence": 91,
+            "metrics": {
+              "momentum_1m": 0.2454426240988421,
+              "momentum_3m": 0.10562402320474706,
+              "momentum_6m": 0.1719969650335369,
+              "volume_momentum": 2.059750713676034
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.274829564056494,
+              "volatility_regime": 0.8709421274159139,
+              "volatility_z_score": -1.1817334332380245,
+              "atr_ratio": 0.02680255066572309
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -0.07140439233177856,
+              "kurtosis": 0.5141175929426756
+            }
+          }
+        }
+      }
+    },
+    "valuation_analyst_agent": {
+      "AMZN": {
+        "signal": "bearish",
+        "confidence": 88,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $1,547,811,738,563.61, Market Cap: $2,894,453,014,528.00, Gap: -46.5%, Weight: 35%\n  WACC: 10.7%, Bear: $1,070,320,040,052.67, Bull: $1,870,742,906,333.60, Range: $800,422,866,280.93"
+          },
+          "owner_earnings_analysis": {
+            "signal": "bearish",
+            "details": "Value: $1,960,143,193,744.68, Market Cap: $2,894,453,014,528.00, Gap: -32.3%, Weight: 35%"
+          },
+          "ev_ebitda_analysis": {
+            "signal": "neutral",
+            "details": "Value: $2,700,513,571,456.37, Market Cap: $2,894,453,014,528.00, Gap: -6.7%, Weight: 20%"
+          },
+          "residual_income_analysis": {
+            "signal": "bullish",
+            "details": "Value: $3,622,041,617,990.32, Market Cap: $2,894,453,014,528.00, Gap: 25.1%, Weight: 10%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$1,070,320,040,052.67",
+            "base_case": "$1,599,331,915,477.26",
+            "bull_case": "$1,870,742,906,333.60",
+            "wacc_used": "10.7%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      }
+    },
+    "sentiment_analyst_agent": {
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      }
+    },
+    "risk_management_agent": {
+      "AMZN": {
+        "remaining_position_limit": 508.2768211157237,
+        "current_price": 269.1499938964844,
+        "volatility_metrics": {
+          "daily_volatility": 0.021047300422657355,
+          "annualized_volatility": 0.33411553612569606,
+          "volatility_percentile": 79.63800904977376,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.3138430368728575,
+          "max_correlation_with_active": 0.32309599194007266,
+          "top_correlated_tickers": [
+            {
+              "ticker": "BAC",
+              "correlation": 0.32309599194007266
+            },
+            {
+              "ticker": "AMD",
+              "correlation": 0.3045900818056423
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 3302.26,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.14658844638743038,
+          "correlation_multiplier": 1.05,
+          "combined_position_limit_pct": 0.1539178687068019,
+          "position_limit": 508.2768211157237,
+          "remaining_limit": 508.2768211157237,
+          "available_cash": 3302.26,
+          "risk_adjustment": "Volatility x Correlation adjusted: 15.4% (base 14.7%)"
+        }
+      }
+    }
+  },
+  "allowed_actions": {
+    "AMZN": {
+      "hold": 0,
+      "buy": 1,
+      "short": 1
+    }
+  },
+  "portfolio": {
+    "cash": 3302.26,
+    "margin_requirement": 0.0,
+    "margin_used": 0.0,
+    "positions": {
+      "AMZN": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      }
+    },
+    "other_positions": [
+      {
+        "id": 110,
+        "run_id": "20260430_190826",
+        "mode": "swing",
+        "ticker": "BAC",
+        "direction": "long",
+        "quantity": 15,
+        "entry_price": 52.75,
+        "target_price": 55.4,
+        "target_price_2": null,
+        "stop_loss": 51.5,
+        "confidence": 55,
+        "timeframe": "5-10 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 52.75,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-04-30T19:30:48+00:00",
+        "entered_at": "2026-04-30T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 15, \"entry_price\": 52.75, \"target_price\": 55.4, \"stop_loss\": 51.5, \"risk_reward_ratio\": \"2.12:1\", \"timeframe\": \"5-10 trading days\", \"confidence\": 55, \"reasoning\": \"Head Trader bullish (55 conf), 3/5 swing agents agree. Pullback to 10/21 EMA confluence at $52.73-52.88 in ADX-54.8 uptrend. R/R 2.12:1 meets threshold. Risk mgr limit $806; 15 shares @ $52.75 = $791 within limit. Stop below wiki stop zone / 38.2% Fib at $51.50. Target $55.40 resistance (5 tests). Key risks: OBV divergence, Berkshire overhang \\u2014 sized defensively at max allowed qty but within vol-adjusted limit.\"}",
+        "last_checked_at": "2026-05-01T17:45:00+00:00",
+        "entry_tolerance_pct": 1.0
+      },
+      {
+        "id": 113,
+        "run_id": "20260501_132346",
+        "mode": "swing",
+        "ticker": "AMD",
+        "direction": "short",
+        "quantity": 1,
+        "entry_price": 354.49,
+        "target_price": 277.74,
+        "target_price_2": null,
+        "stop_loss": 372.31,
+        "confidence": 42,
+        "timeframe": "8-15 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 354.49,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T14:40:43+00:00",
+        "entered_at": "2026-05-01T13:33:00+00:00",
+        "closed_at": null,
+        "raw_decision": null,
+        "last_checked_at": "2026-05-01T17:45:00+00:00",
+        "entry_tolerance_pct": 1.0
+      }
+    ],
+    "realized_gains": {
+      "AMZN": {
+        "long": 0.0,
+        "short": 0.0
+      }
+    },
+    "pending_orders": [
+      {
+        "id": 114,
+        "run_id": "20260501_144523",
+        "mode": "swing",
+        "ticker": "AAPL",
+        "direction": "long",
+        "quantity": 2,
+        "entry_price": 276.0,
+        "target_price": 294.84,
+        "target_price_2": null,
+        "stop_loss": 269.5,
+        "confidence": 42,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "pending",
+        "entry_fill_price": null,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T15:00:50+00:00",
+        "entered_at": null,
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 2, \"entry_price\": 276.0, \"target_price\": 294.84, \"stop_loss\": 269.5, \"risk_reward_ratio\": \"2.9:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 42, \"reasoning\": \"Head Trader neutral (42) \\u2014 wait for pullback to $274-278 before entry. Limit buy at $276 (preferred entry): breakout above $276.11 resistance confirmed on 2.08x volume, measured move to $294.84 intact, RSI 61.64 healthy, OBV uptrend, post-earnings drift thesis (Q2 FY2026 beat, analyst targets $299-305). R/R 2.9:1 (18.84 up / 6.50 down) clears 2:1 minimum from pullback level. Stop $269.50 below pre-earnings pivot. NOT chasing at $283 \\u2014 hourly Z-score 2.52 and Bollinger %B 1.28 flag overextension; mean reversion agent correctly warns of fade risk at current price. Entering only on constructive pullback to Fib 38.2% / daily upper BB confluence at $274-278. Size: 2 shares x $276 = $552, within risk manager cap $768 and 25% capital limit $963. ADX 16.83 is the main caveat \\u2014 trigger requires ADX rising above 19 on pullback candle. Key risks: insider net selling (-$235M, Cook sold at $251-256), ADX still sub-25, one prior portfolio loss (NVDA EMA dip, -$264) on similar setup. Sized conservatively at 2 shares.\"}",
+        "last_checked_at": "2026-05-01T17:45:00+00:00",
+        "entry_tolerance_pct": 1.0
+      }
+    ],
+    "recent_closed": [
+      {
+        "ticker": "NVDA",
+        "direction": "long",
+        "status": "stop_hit",
+        "entry_price": 209.25,
+        "exit_fill_price": 205.3,
+        "pnl": -63.2,
+        "closed_at": "2026-04-30T15:59:00",
+        "timeframe": "5-10 trading days"
+      }
+    ]
+  },
+  "tickers": [
+    "AMZN"
+  ],
+  "end_date": "2026-05-01",
+  "degraded_inputs": []
+}
