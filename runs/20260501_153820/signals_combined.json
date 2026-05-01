@@ -1,0 +1,317 @@
+{
+  "mode": "swing",
+  "analyst_signals": {
+    "swing_breakout": {
+      "MSFT": {
+        "signal": "bearish",
+        "confidence": 72,
+        "reasoning": "MSFT printed a confirmed bearish breakdown on 2026-04-30. The stock had been consolidating in the $381.71\u2013$413.05 range (pivot low 7 tests, pivot high 11 tests) before the Apr 24\u201329 rally pushed it above range into the $424\u2013$429 zone. The Apr 30 candle reversed sharply: open $410.81, close $407.78, low $398.01 \u2014 a decisive daily close BELOW the $413.05 pivot support on volume 70.78M vs 20-day avg 34.35M (relative volume 2.06x, well above the 1.5x required). This constitutes a volume-confirmed bearish breakdown by strategy rules. Measured move: range height = $413.05 \u2212 $381.71 = $31.34; target = $413.05 \u2212 $31.34 = $381.71 (lower range boundary, also 7-test pivot low). Wiki context confirms the prior stop level was $412 (run 20260417_233350), which is now violated. Hourly confirmation: ADX 30.25 with \u2212DI 38.88 >> +DI 20.38 (strong bearish hourly trend); hourly MACD histogram \u22122.35; hourly RSI-21 at 39.01. The current hourly price ($415.71) is retesting the breakdown level from below \u2014 a classic dead-cat bounce retest. Hourly Bollinger width is narrow (0.0786), suggesting the retest squeeze could fire to the downside imminently. Confidence capped at 72 (not higher) due to: (1) daily Bollinger width already at 0.2332 (volatility somewhat expanded, not a tight squeeze/coil setup \u2014 the squeeze already fired on the gap down), (2) hourly OBV trend is up (minor divergence with price breakdown), and (3) daily RSI-14 at 64.93 remains elevated, leaving room for a more extended retest before continuation. The wiki \u2018strong support\u2019 at $390 (EMA50/fib 38.2%) is the next meaningful level below the measured-move target.",
+        "entry": 414.0,
+        "target": 381.71,
+        "stop": 416.5,
+        "timeframe": "5-10 trading days"
+      }
+    },
+    "swing_head_trader": {
+      "MSFT": {
+        "consensus_signal": "neutral",
+        "confidence": 38,
+        "reasoning": "The 5 strategy agents split exactly 2-2-1 (bullish / bearish / neutral), producing no actionable consensus. The bullish camp (trend_momentum at 52, mean_reversion at 58) anchors on the intact daily uptrend: EMA alignment is clean, ADX 51.4 confirms trend strength, and the Apr 30 pullback has already tagged the 21-EMA and 50% Fibonacci zone where buyers historically reload. The bearish camp (breakout at 72, catalyst_news at 62) sees the same Apr 30 candle as a confirmed breakdown: 70.8M volume (2.06x average) closed below the $413.05 pivot support, constituting a volume-confirmed bearish range breakdown with a measured-move target of $381.71; the post-earnings high-volume rejection and negative news flow (OpenAI partnership tension, Copilot overhaul, Stifel downgrade) reinforce the short thesis. The macro_context agent adds a decisive pass: the R/R at current prices is 0.82:1 \u2014 well below the 2:1 minimum \u2014 with a higher-for-longer Fed, US-Iran conflict, Meta capex contagion risk, and MSFT exhibiting recent relative underperformance. Weighting by market context: the Apr 30 candle is a post-earnings catalyst event, which elevates catalyst_news weight; the high-volume breakdown point also makes breakout's volume-confirmation criterion the highest-confidence structural call in the batch (confidence 72 is the strongest single reading). Mean_reversion correctly identifies the Fibonacci bounce zone but the strategy's own Branch B warning fires on expanding volume during the pullback. Trend_momentum's hourly divergence warning (hourly ADX -DI 38.88 >> +DI 20.38, hourly MACD -2.35) undermines its own bullish case. Macro veto consideration: macro_context is not in strong veto territory (neutral, confidence only 38) but its R/R failure is an objective disqualifier independent of directional bias \u2014 it does not override the split so much as confirm that the setup does not meet risk standards at current prices. Net synthesis: the daily trend structure is still technically intact (price above EMA-50), but the setup has lost its edge. Bulls are defending the 21-EMA; bears are defending the volume-confirmed break of $413 pivot. Until price resolves cleanly above $416-420 (recapturing the breakdown zone on constructive volume) or below $404 (confirming the measured-move thesis toward $381.71), this is a contested no-man's-land. No trade is the correct call \u2014 capital is better preserved until the market reveals its hand.",
+        "agent_agreement_pct": 40.0,
+        "key_conflicts": "The core conflict is between breakout (bearish, 72) / catalyst_news (bearish, 62) and trend_momentum (bullish, 52) / mean_reversion (bullish, 58) \u2014 four agents reading the same Apr 30 candle in opposite directions. Breakout argues the 70.8M-volume close below $413.05 is a textbook volume-confirmed bearish breakdown; trend_momentum argues the same price is a normal 21-EMA pullback within a pristine ADX-51 uptrend. This is classic 'trend extended, reversal risk rising' \u2014 mean_reversion itself acknowledges the expanding-volume Branch B warning that undercuts its own bullish case. Catalyst_news pins the bearish read on the post-earnings distribution: the high-volume selloff 1 day after Q3 FY2026 earnings is a material negative catalyst signal even without knowing the magnitude of the miss, whereas trend_momentum treats the macro noise as short-term friction rather than a thesis-changer. Macro_context cuts through the directional argument by simply noting the R/R at current levels is 0.82:1 \u2014 an objective disqualifier that applies regardless of which directional camp is right. The productive signal in this disagreement: when trend_momentum and mean_reversion are both bullish but each acknowledges significant hourly bearish divergence and elevated distribution volume, and when breakout and catalyst_news are both bearish with above-average confidence, the market is telling us the prior uptrend is in contested territory \u2014 not confirmed broken, not confirmed resuming. Wait for resolution.",
+        "recommended_action": "hold"
+      }
+    },
+    "growth_analyst_agent": {
+      "MSFT": {
+        "signal": "bearish",
+        "confidence": 32,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.30000000000000004,
+            "revenue_growth": 0.1493215623240672,
+            "revenue_trend": -0.005803035631386482,
+            "eps_growth": 0.1551433389544688,
+            "eps_trend": -0.01294754292763148,
+            "fcf_growth": -0.0332113782721983,
+            "fcf_trend": 0.0006252465025431646
+          },
+          "growth_valuation": {
+            "score": 0,
+            "peg_ratio": null,
+            "price_to_sales_ratio": 9.901626469166201
+          },
+          "margin_expansion": {
+            "score": 0.6000000000000001,
+            "gross_margin": 0.6833323714804199,
+            "gross_margin_trend": 0.0004653784334010941,
+            "operating_margin": 0.47013446703730066,
+            "operating_margin_trend": -0.006032471441538113,
+            "net_margin": 0.39694707885270186,
+            "net_margin_trend": -0.005107016433073878
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 0.8,
+            "debt_to_equity": 0.12562922332951942,
+            "current_ratio": 1.3534464445042416
+          },
+          "final_analysis": {
+            "signal": "bearish",
+            "confidence": 32,
+            "weighted_score": 0.34
+          }
+        }
+      }
+    },
+    "swing_trend_momentum": {
+      "MSFT": {
+        "signal": "bullish",
+        "confidence": 52,
+        "reasoning": "TREND ASSESSMENT: Daily EMA alignment is clean and confirmed (ema_10 417.1 > ema_21 408.3 > ema_50 406.6, ema_aligned_uptrend=true). ADX 51.4 with +DI 40.91 >> -DI 22.85 signals a very strong established uptrend. Price at 407.78 is -0.13% below the 21 EMA \u2014 textbook pullback-to-21-EMA entry zone. Higher highs and higher lows remain intact on the daily chart through Apr 29 (429.92 high). The wiki confirms the uptrend is real: SuperTrend flipped bullish Apr 15, recovery ran to 433.70 by Apr 28-29. MOMENTUM ASSESSMENT: This is where caution is required. Daily ROC 5d (-1.92%) and 10d (-2.97%) are negative \u2014 momentum is NOT accelerating on the short-term. The 21d ROC (+10.16%) confirms the broader trend but the near-term is decelerating. Daily MACD histogram is positive (+1.34) and above zero, which is constructive, but contracting on the current pullback. HOURLY DIVERGENCE WARNING: Hourly indicators are diverging significantly from the daily trend \u2014 hourly EMAs are tangled (not aligned), hourly MACD histogram is -2.35 (bearish), hourly ADX shows minus_di (38.88) > plus_di (20.38) indicating an active hourly downtrend. RSI-7 at 36.55 on the daily confirms oversold conditions consistent with a sharp pullback. VOLUME: Apr 30 printed 70.8M shares (2.06x 20-day average) on a large down day \u2014 elevated volume on a red day is a bearish near-term signal. MACRO: Regime is mixed-to-cautious; macro headwinds (Meta capex shock, geopolitical risk, Dow five consecutive losing sessions) add near-term friction. Wiki noted MSFT was overbought late April \u2014 this selloff is a continuation. ENTRY RATIONALE: Despite short-term momentum deceleration, the daily trend remains intact with exceptional ADX strength. Price is at the 21 EMA support, which is the prescribed entry zone. The hourly downtrend suggests a potential 1-2 day further shakeout before stabilization. Confidence is tempered by the ROC deceleration and hourly divergence \u2014 this is a valid but not high-conviction entry. A patient entry near or slightly below the 21 EMA (~408) with a stop below the 50 EMA is appropriate.",
+        "entry": 408.3,
+        "target": 429.91,
+        "stop": 403.5,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_macro_context": {
+      "MSFT": {
+        "signal": "neutral",
+        "confidence": 38,
+        "reasoning": "Macro regime: Transitional/cautious. Fed held at 3.5-3.75% (third consecutive hold, higher-for-longer confirmed), US-Iran military conflict driving oil spike and 4.4% IMF inflation forecast, and Meta's -9% capex shock creates contagion risk for AI cloud spending multiples. The AI tailwind (Alphabet/Amazon beat) is intact but the macro backdrop is not clearly risk-on. Relative strength: MSFT's 5d ROC of -1.92% and 10d ROC of -2.97% indicate recent underperformance vs the S&P +9% April run. Price is now below the Apr 17 prior entry ($420.26) and below all short-term EMAs (EMA-5 at $419.01, EMA-10 at $417.11). Price sits barely above EMA-50 ($406.60, +0.29%) \u2014 a thin margin. The April 30 session logged 70.8M volume (2.06x 20-day avg) on a down day from $424.46 to $407.78 \u2014 a high-conviction distribution signal. Daily OBV trend is down. Asymmetry math fails the 2:1 minimum bar: entry near $410, upside to nearest resistance $413.05 = ~0.75% or to recent high $433.70 = ~5.8%, downside to nearest support $381.71 = ~7.1%. Even to the further target, R/R is approximately 5.8% upside vs 7.1% downside = 0.82:1, well below the 2:1 minimum. Hourly picture: hourly RSI-21 at 39.01 approaching oversold, hourly OBV trending up, and hourly support at $411.41 (5 tests) has held \u2014 these suggest a near-term bounce is possible but does not fix the unfavorable daily-timeframe R/R. Capital preservation: MSFT balance sheet is pristine \u2014 no leverage flag. Sector cycle timing: the 21d ROC is +10.16%, suggesting we are later in the current leg, not early. Wiki thesis notes prior bullish calls were confirmed at lower prices; current price is below the last recorded buy entry, indicating the prior technical thesis has partially unwound. Regime continuity: wiki macro regime labeled 'mixed-to-cautious' as of 2026-04-30 \u2014 today's data is consistent, no regime change to signal. Pass: asymmetry is 0.82:1, macro is not decisively risk-on, and recent high-volume distribution day breaks the bullish thesis.",
+        "entry": 410.0,
+        "target": 433.7,
+        "stop": 381.71,
+        "timeframe": "N/A - no trade"
+      }
+    },
+    "swing_mean_reversion": {
+      "MSFT": {
+        "signal": "bullish",
+        "confidence": 58,
+        "reasoning": "Branch B (buy the dip in an uptrend) fires with moderate conviction. Branch A (fade the extreme) does NOT fire \u2014 daily Z-score is only 0.60 (well within \u00b11), BB %B at 0.55 is mid-band, and RSI-14 at 64.93 does not reach the >75 overbought threshold. For Branch B: the dominant uptrend is confirmed by EMA-aligned-uptrend=true, price above SMA-50 (+3.0%), and the wiki records the SuperTrend flip on April 15 as the key structural shift. MSFT pulled back ~6.4% from the recent swing high of 433.70 to the April 30 intraday low of 398.01, nearly tagging the 50% Fibonacci level (394.99) before recovering. The current hourly price of ~415.74 is sitting between the daily 23.6% Fib (415.43) and the daily 38.2% Fib (404.13). Key caution: April 30 volume was 2.06x the 20-day average \u2014 expanding volume on a pullback is a Branch B warning per strategy rules, and hourly indicators still show a bearish bias (hourly ADX -DI 38.88 >> +DI 20.38, hourly MACD negative at -1.72). However, hourly RSI-21 at 39.01 is approaching oversold, hourly OBV is trending up (bullish divergence from price), and the intraday bounce from 398.01 signals that buyers stepped in at the 50% Fib area. The confluence of the daily 38.2% Fib (404.13) with the horizontal support cluster near 404-407 (prior pivot behavior and 21-day SMA 401.90) forms a reasonable re-entry zone if price pulls back again; otherwise the current bounce level (415-416) offers a tighter risk entry with a stop just below the 50% Fib at 394.99. Target is the re-test of the recent swing high area / hourly resistance at 429.91 (14 tests) and then the full swing high of 433.70. Confidence capped at 58 due to the high volume on the down day and unresolved hourly bearish momentum \u2014 this is a buy-the-dip setup, not a confirmed reversal candle.",
+        "entry": 415.74,
+        "target": 429.91,
+        "stop": 394.5,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_catalyst_news": {
+      "MSFT": {
+        "signal": "bearish",
+        "confidence": 62,
+        "reasoning": "CATALYST WINDOW: Q3 FY2026 earnings fired April 29, 2026 (after close) \u2014 1 trading day ago. The post-earnings price action is the thesis: MSFT opened April 30 at $410.81, sold to a low of $398.01, and closed at $407.78 on 70.8M volume (2.06x the 20-day average). This is a high-volume post-earnings rejection from the $424-$430 range, breaking below the EMA-5, EMA-10, and EMA-20 on the daily. We are within the 1-3 day window after a material negative catalyst. No identifiable catalyst within the next 10 trading days \u2014 earnings passed, FOMC was also April 29 (double binary risk resolved). NET NEWS SENTIMENT: Mixed-to-negative. Pre-earnings wiki noted OpenAI's public memo calling the MSFT partnership limiting (April 13), Copilot in 'Code Red' overhaul, and Stifel downgrade to Hold. Post-earnings high-volume selloff confirms market found the print or guidance disappointing. No positive catalyst news post-earnings. INSIDER ACTIVITY: Quiet \u2014 no recent insider trades in live data. February board buy of ~$2M is too stale to carry weight here. TECHNICAL SETUP: Daily \u2014 price below EMA-5/10/20/21 but still above EMA-50 ($406.60) and SMA-50 ($395.79). ADX 51.4 with +DI 40.91 vs -DI 22.85 reflects the prior uptrend momentum, but the post-earnings candle is a distribution signal. Hourly \u2014 minus_di (38.88) > plus_di (20.38) with ADX 30.25, confirming intraday bearish trend. Hourly price at $415.71 is a bounce from the $398.01 intraday low, but still below EMA-48 and SMA-48. Fibonacci: $404.13 (38.2% retrace of the swing high/low) is the first support below; $394.99 (50%) and $385.85 (61.8%) are next. Daily pivot support is $381.71 (7 tests). Stop placed above the April 29 close resistance zone at $427 \u2014 if the post-earnings gap fills, the bearish thesis is wrong. RISK NOTE: Confidence capped at 62 because the hourly OBV trend is up (suggesting some accumulation at lows), the stock is still above the daily EMA-50, and the magnitude of the earnings miss is unknown. A positive earnings surprise held back by macro/tariff guidance could mean this selloff is overdone.",
+        "entry": 415.71,
+        "target": 385.85,
+        "stop": 427.0,
+        "timeframe": "3-8 trading days"
+      }
+    },
+    "fundamentals_analyst_agent": {
+      "MSFT": {
+        "signal": "bullish",
+        "confidence": 50.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bullish",
+            "details": "ROE: 36.04%, Net Margin: 39.69%, Op Margin: 47.01%"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 14.93%, Earnings Growth: 15.54%"
+          },
+          "financial_health_signal": {
+            "signal": "neutral",
+            "details": "Current Ratio: 1.35, D/E: 0.13"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 24.77, P/B: 9.00, P/S: 9.91"
+          }
+        }
+      }
+    },
+    "technical_analyst_agent": {
+      "MSFT": {
+        "signal": "neutral",
+        "confidence": 8,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 39,
+            "metrics": {
+              "adx": 39.28580314882826,
+              "trend_strength": 0.3928580314882826
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 0.5987938434672828,
+              "price_vs_bb": 0.5452218549004518,
+              "rsi_14": 64.9276037746701,
+              "rsi_28": 57.36288643665258
+            }
+          },
+          "momentum": {
+            "signal": "bearish",
+            "confidence": 26,
+            "metrics": {
+              "momentum_1m": 0.10137691454147313,
+              "momentum_3m": -0.04787785002276834,
+              "momentum_6m": -0.2585047801613066,
+              "volume_momentum": 2.0749208361047384
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.33245795304916986,
+              "volatility_regime": 1.0359089346017956,
+              "volatility_z_score": 0.11561798678573897,
+              "atr_ratio": 0.031072424322268005
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -0.09896967727691078,
+              "kurtosis": 0.3323934878710586
+            }
+          }
+        }
+      }
+    },
+    "valuation_analyst_agent": {
+      "MSFT": {
+        "signal": "bearish",
+        "confidence": 100,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $1,114,061,310,311.45, Market Cap: $3,091,491,979,264.00, Gap: -64.0%, Weight: 35%\n  WACC: 10.5%, Bear: $802,031,275,956.84, Bull: $1,338,305,913,775.24, Range: $536,274,637,818.40"
+          },
+          "residual_income_analysis": {
+            "signal": "bullish",
+            "details": "Value: $3,634,313,057,264.94, Market Cap: $3,091,491,979,264.00, Gap: 17.6%, Weight: 10%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$802,031,275,956.84",
+            "base_case": "$1,143,323,120,608.39",
+            "bull_case": "$1,338,305,913,775.24",
+            "wacc_used": "10.5%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      }
+    },
+    "sentiment_analyst_agent": {
+      "MSFT": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      }
+    },
+    "risk_management_agent": {
+      "MSFT": {
+        "remaining_position_limit": 925.9626819216272,
+        "current_price": 416.2200012207031,
+        "volatility_metrics": {
+          "daily_volatility": 0.01877693712873358,
+          "annualized_volatility": 0.29807463615674556,
+          "volatility_percentile": 83.710407239819,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": null,
+          "max_correlation_with_active": null,
+          "top_correlated_tickers": []
+        },
+        "reasoning": {
+          "portfolio_value": 5000.0,
+          "current_position_value": 0.0,
+          "base_position_limit_pct": 0.18519253638432545,
+          "correlation_multiplier": 1.0,
+          "combined_position_limit_pct": 0.18519253638432545,
+          "position_limit": 925.9626819216272,
+          "remaining_limit": 925.9626819216272,
+          "available_cash": 5000.0,
+          "risk_adjustment": "Volatility x Correlation adjusted: 18.5% (base 18.5%)"
+        }
+      }
+    }
+  },
+  "allowed_actions": {
+    "MSFT": {
+      "hold": 0,
+      "buy": 2,
+      "short": 2
+    }
+  },
+  "portfolio": {
+    "cash": 5000.0,
+    "margin_requirement": 0.0,
+    "margin_used": 0.0,
+    "positions": {
+      "MSFT": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      }
+    },
+    "other_positions": [],
+    "realized_gains": {
+      "MSFT": {
+        "long": 0.0,
+        "short": 0.0
+      }
+    }
+  },
+  "tickers": [
+    "MSFT"
+  ],
+  "end_date": "2026-05-01",
+  "degraded_inputs": []
+}
