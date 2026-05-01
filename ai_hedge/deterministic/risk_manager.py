@@ -174,10 +174,12 @@ def risk_management_agent(state: AgentState, agent_id: str = "risk_management_ag
         if _qty > 0 and _px > 0:
             existing_exposures[_tk] = existing_exposures.get(_tk, 0.0) + _qty * _px
 
-    # Sin #10 per-candidate correlation rejection: any candidate whose
-    # |correlation| with any existing position exceeds MAX_CORRELATION_THRESHOLD
-    # is hard-rejected. Computed up front so the loop just looks it up.
-    correlation_blocked: dict[str, dict] = {}
+    # Correlation soft-cap (was hard-veto, now informational + risk-pct cap).
+    # Find the worst correlation each candidate has with existing positions,
+    # then cap the max account_risk_pct the PM is allowed to use. This way:
+    #  - Highly correlated trades CAN still be taken, but with smaller risk
+    #  - PM has discretion; the system just protects against over-concentration
+    correlation_context: dict[str, dict] = {}
     if correlation_matrix is not None:
         for _t in tickers:
             if _t in earnings_blackout:
@@ -195,19 +197,30 @@ def risk_management_agent(state: AgentState, agent_id: str = "risk_management_ag
                 if pd.isna(_c):
                     continue
                 _ac = abs(float(_c))
-                if _ac >= MAX_CORRELATION_THRESHOLD and (worst is None or _ac > worst[1]):
+                if worst is None or _ac > worst[1]:
                     worst = (_held, _ac, float(_c))
-            if worst is not None:
+            if worst is not None and worst[1] >= 0.50:
                 _held, _ac, _raw = worst
-                correlation_blocked[_t] = {
+                # Tiered risk-pct cap based on correlation severity
+                if _ac >= 0.85:
+                    risk_cap = 0.75   # very high — half-normal (or less)
+                    note = "very high correlation — keep position small"
+                elif _ac >= 0.70:
+                    risk_cap = 1.5    # high — about half normal max
+                    note = "high correlation — reduce risk vs. uncorrelated trade"
+                else:  # 0.50-0.69
+                    risk_cap = 2.0    # moderate — slight reduction
+                    note = "moderate correlation — small reduction warranted"
+                correlation_context[_t] = {
                     "blocking_ticker": _held,
                     "correlation": _raw,
                     "abs_correlation": _ac,
-                    "threshold": MAX_CORRELATION_THRESHOLD,
+                    "risk_pct_cap": risk_cap,
+                    "advice": note,
                 }
                 print(
-                    f"[correlation cap] {_t} skipped — "
-                    f"{_ac:.2f} correlated with {_held} (already long)"
+                    f"[correlation soft-cap] {_t} — {_ac:.2f} corr with {_held}; "
+                    f"PM advised to keep account_risk_pct ≤ {risk_cap}%"
                 )
 
     # Calculate volatility- and correlation-adjusted risk limits for each ticker
@@ -232,32 +245,9 @@ def risk_management_agent(state: AgentState, agent_id: str = "risk_management_ag
             progress.update_status(agent_id, ticker, f"Rejected: earnings in {days} days")
             continue
 
-        # Sin #10: hard-reject candidates correlated > threshold with any
-        # existing position. Runs AFTER earnings blackout, BEFORE sizing.
-        if ticker in correlation_blocked:
-            info = correlation_blocked[ticker]
-            risk_analysis[ticker] = {
-                "remaining_position_limit": 0.0,
-                "current_price": float(current_prices.get(ticker, 0.0)),
-                "correlation_blocked": True,
-                "correlation_block_reason": (
-                    f"{info['abs_correlation']*100:.0f}% correlated with "
-                    f"{info['blocking_ticker']}"
-                ),
-                "reasoning": {
-                    "rejected": "correlation cap",
-                    "blocking_ticker": info["blocking_ticker"],
-                    "correlation": info["correlation"],
-                    "abs_correlation": info["abs_correlation"],
-                    "threshold": MAX_CORRELATION_THRESHOLD,
-                },
-            }
-            progress.update_status(
-                agent_id,
-                ticker,
-                f"Rejected: correlated with {info['blocking_ticker']}",
-            )
-            continue
+        # Correlation context (informational, not blocking — PM decides).
+        # The risk_pct_cap will be passed in the output below so the PM
+        # can size accordingly.
 
         if ticker not in current_prices or current_prices[ticker] <= 0:
             progress.update_status(agent_id, ticker, "Failed: No valid price data")
@@ -324,16 +314,29 @@ def risk_management_agent(state: AgentState, agent_id: str = "risk_management_ag
         MAX_ACCOUNT_RISK_PCT = 2.5  # No single trade can risk > 2.5% of capital if stopped out
 
         max_position_dollars = total_portfolio_value * MAX_POSITION_PCT
-        max_account_risk_dollars = total_portfolio_value * (MAX_ACCOUNT_RISK_PCT / 100.0)
+        # Apply correlation soft-cap if applicable
+        corr_info = correlation_context.get(ticker)
+        effective_max_risk_pct = MAX_ACCOUNT_RISK_PCT
+        if corr_info:
+            effective_max_risk_pct = min(MAX_ACCOUNT_RISK_PCT, corr_info["risk_pct_cap"])
+        max_account_risk_dollars = total_portfolio_value * (effective_max_risk_pct / 100.0)
         # Account for currently held value in this ticker — same hard cap applies to total exposure
         remaining_position_dollars = max(0.0, max_position_dollars - current_position_value)
         remaining_position_dollars = min(remaining_position_dollars, portfolio.get("cash", 0))
 
         risk_analysis[ticker] = {
             "remaining_position_limit": float(remaining_position_dollars),  # 30% hard cap, kept for compatibility
-            "max_account_risk_pct": float(MAX_ACCOUNT_RISK_PCT),
+            "max_account_risk_pct": float(effective_max_risk_pct),
             "max_account_risk_dollars": float(max_account_risk_dollars),
             "max_position_pct": float(MAX_POSITION_PCT),
+            "correlation_advisory": (
+                {
+                    "correlated_with": corr_info["blocking_ticker"],
+                    "abs_correlation": corr_info["abs_correlation"],
+                    "advice": corr_info["advice"],
+                    "risk_pct_cap_applied": corr_info["risk_pct_cap"],
+                } if corr_info else None
+            ),
             "current_price": float(current_price),
             "volatility_metrics": {
                 "daily_volatility": float(vol_data.get("daily_volatility", 0.05)),
