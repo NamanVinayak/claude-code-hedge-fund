@@ -1,18 +1,18 @@
 ---
 name: WMT technicals
-last_updated: 2026-04-30
-last_run_id: 20260430_212526
+last_updated: 2026-05-01
+last_run_id: 20260501_212730
 target_words: 350
 stale_after_days: 7
-word_count: 338
-summary: Hourly breakout above $129 confirmed (ADX 30.25, +DI 36.33); daily ADX remains critically weak at 12.89 — wait mode; prior hourly-bearish setup is replaced by bullish hourly with daily lagging.
+word_count: 342
+summary: Daily close confirmed above $129-130 trigger but ADX deteriorated to 11.4 (vs 12.89 prior) — bull trigger partially met, ADX gate still open; price $131.93 at Bollinger upper; Z-score 2.31 extended; hourly bearish RSI divergence; wait for pullback to $128-129
 ---
 
 ## TL;DR
 
-The prior setup (bootstrap, Apr 29) described "no swing setup — ADX 17-18, failed breakout at $129, hourly EMAs in downtrend." That is now stale. As of Apr 30: hourly chart has broken above $129 resistance with strong intraday momentum, but the daily ADX (12.89) remains critically below the 20-threshold disqualification floor. Decision: HOLD/watch — daily confirmation is the remaining gate. Source: run `20260430_212526`.
+The prior setup (Apr 30, run `20260430_212526`) identified the bull trigger as "daily close above $129-130 on ≥1.5x volume AND daily ADX inflecting above 20." As of May 1: the daily close condition is met (price confirmed at $131.93, well above $129), BUT daily ADX has deteriorated further to 11.4 (vs. 12.89 prior run) — the ADX gate has not only failed to improve, it has worsened. Volume on the Apr 30 surge was 1.19x, below the 1.5x threshold. Decision: HOLD — price moved past the watch level but ADX and volume gates remain open. Current price is stretched (Z-score 2.31, Bollinger %B 0.947). Wait for pullback to $128-$129 for valid risk/reward. Source: run `20260501_212730`.
 
-**Prior setup type archived to recent.md:** "failed-breakout / no-man's-land — hourly EMAs bearish, ADX 17-18" (Apr 11–Apr 29).
+**Prior setup type archived to recent.md:** "Watch mode — hourly leading, daily lagging" (Apr 30); daily ADX 12.89.
 
 ---
 
@@ -20,31 +20,35 @@ The prior setup (bootstrap, Apr 29) described "no swing setup — ADX 17-18, fai
 
 | Level | Value | Notes |
 |---|---|---|
-| Watch entry (bull trigger) | ~$129.50 | Requires daily close above $129-130 on ≥1.5x volume AND daily ADX > 20 |
-| Target (if triggered) | $136.00 | Measured-move ($129+$7 range) / analyst consensus cluster |
-| Stop (if triggered) | $125.50 | Below hourly support at $125.91 (2 tests) |
-| Resistance (23 tests) | $128.49 | Prior consolidation ceiling; hourly has broken above, daily has not |
+| Preferred entry (pullback) | $128.50–$129.00 | Former resistance now support; R/R 2.36:1 from here (target $134.41, stop $126.00) |
+| Bull breakout confirm | $132.46 | 6-test resistance; needs daily close above on ≥1.5x volume AND ADX > 20 |
+| Target (if triggered) | $134.41 | Volume-confirmed resistance pivot (3 tests); analyst consensus cluster |
+| Stop | $126.00 | Below hourly support $125.91 |
+| Current price (daily, May 1) | $131.93 | Bollinger upper $132.46 — stretched; R/R 0.84:1 at current price fails minimum |
 | Support (13 tests) | $121.37 | Major base floor |
-| Current price (intraday Apr 30) | $131.93 | Hourly breakout in progress |
-| Daily close (Apr 30) | $128.01 | Daily has not confirmed the breakout |
+| Volume-confirmed resistance | $134.41 | 3 tests; above is analyst PT range ($136–$140) |
 
 ---
 
-## Momentum Indicators (as of Apr 30)
+## Momentum Indicators (as of May 1)
 
 | Indicator | Timeframe | Value | Interpretation |
 |---|---|---|---|
-| ADX | Daily | 12.89 | Critically weak — below 20 disqualification floor |
-| +DI / -DI | Daily | 20.82 / 24.94 | Daily directional bias slightly bearish despite EMA alignment |
-| EMA stack | Daily | Aligned uptrend (10 > 21 > 50) | Bullish structure but trend strength absent |
-| ADX | Hourly | 30.25 | Strong trend — +DI 36.33 vs -DI 14.64 |
-| RSI-21 | Hourly | 70.29 | Elevated, no bearish divergence |
-| Volume ratio | Hourly | 1.4x | Near but below 1.5x threshold |
-| 5-day ROC | Daily | -1.52% | Short-term momentum slightly negative |
-| 21-day ROC | Daily | +3.65% | Positive medium-term participation in April rally |
+| ADX | Daily | 11.4 | Critically weak — below 20 disqualification floor; worsened from 12.89 prior run |
+| +DI / -DI | Daily | Aligned bullish | EMA stack uptrend intact (10 > 21 > 50) |
+| EMA stack | Daily | 10 (128.83) > 21 (127.58) > 50 (125.40) | Bullish structure but trend strength absent |
+| Z-score vs 50-SMA | Daily | 2.31 | Statistically extended — above +2.0 overbought threshold |
+| Bollinger %B | Daily | 0.947 | Pressing upper band ($132.46) |
+| RSI-14 | Daily | 63.56 | Healthy, not overbought on daily |
+| RSI-21 | Hourly | 68.77 | Elevated; bearish RSI divergence confirmed — price new high, RSI not |
+| ADX | Hourly | 35.96 | Strong hourly trend; +DI (33.15) > -DI (15.94) |
+| OBV | Hourly | Downtrend | Distribution signal — declining OBV despite price at highs |
+| Volume ratio (Apr 30 surge) | Daily | 1.19x | Below the 1.5x confirmation threshold |
+| 5-day ROC | Daily | -0.08% | Flat short-term momentum |
+| 21-day ROC | Daily | +6.16% | Positive medium-term trend |
 
 ---
 
 ## Setup Type
 
-**Watch mode — hourly leading, daily lagging.** Hourly breakout above $129 is live (ADX 30.25, +DI 36.33, OBV trending up). Daily remains in no-trend territory (ADX 12.89). The strategy's process rule is clear: daily ADX < 20 disqualifies any directional trade regardless of hourly strength. The watch condition is a daily close above $129-130 on ≥1.5x volume with daily ADX inflecting above 20. R/R at the watch entry ($129.50) computes to ~2.1:1 — acceptable if triggered. At current intraday price ($131.93) R/R is 0.63:1 — fails minimum. Do not chase.
+**Extended breakout — wait for constructive pullback.** The Apr 30 daily close at $131.93 confirms price above the $129 prior resistance zone, but the two qualifying gates (daily ADX > 20 on 1.5x+ volume) remain open. ADX 11.4 is the worst reading since analysis began on this ticker. Hourly bearish RSI divergence and declining hourly OBV at $131.93 signal near-term exhaustion. Current R/R at $131.93 entry fails minimum (0.84:1 bull / 1.47:1 short — both below 2:1). The preferred entry is a pullback to $128.50-$129.00 (former resistance now support), which yields R/R 2.36:1 to the $134.41 target. (Source: `20260501_212730/signals_combined.json`, swing_macro_context, swing_breakout)

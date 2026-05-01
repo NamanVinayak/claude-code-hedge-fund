@@ -1,16 +1,18 @@
 ---
 name: CVX technicals
-last_updated: 2026-04-30
-last_run_id: 20260430_212526
+last_updated: 2026-05-01
+last_run_id: 20260501_212730
 target_words: 350
 stale_after_days: 7
-word_count: 342
-summary: Price hit wiki-predicted $192 short zone; earnings blackout blocks entry; hourly RSI bearish divergence firing; daily trend remains bearish (ADX 32.24, -DI > +DI)
+word_count: 348
+summary: Post-earnings stall at $193.31 — Iran peace talks shifted macro; ADX 30.71, -DI > +DI on both timeframes; earnings blackout lifted; bearish exhaustion at resistance; short entry zone arrived but decision hold on macro-only thesis
 ---
 
 ## TL;DR
 
-CVX has rallied from the $183-184 low to precisely the $192-193 resistance zone identified in the April 11 run as the short-entry target — validating the prior prediction in real time. Hourly RSI at 76.18 shows confirmed bearish divergence; daily OBV is diverging down from price; ADX at 32.24 confirms a strong daily trend with -DI (29.97) above +DI (21.31). Entry is blocked by the earnings blackout (Q1 May 1), not by technical weakness. Source: run `20260430_212526`.
+Q1 2026 earnings printed May 1 (BMO): EPS $1.41 beat vs $1.17 estimate; revenue $48.6B missed $53.0B est. Stock fell >1% on the day despite the EPS beat — a sell-the-news reaction at $193.31, precisely the $192-193 short-entry zone flagged in prior runs. Earnings blackout has now lapsed. The Iran peace-talk macro shift (WTI −2% on May 1) removes the oil-risk-premium tailwind that complicated the prior bear thesis. Bearish directional bias intact on both timeframes. Head trader: bearish consensus (conf 52), short entry ~$193.30, stop $195.50, target $181.76, R/R 5.5:1. Decision: HOLD — risk manager required head trader confidence ≥50 but PM enforced hold pending R/R checks. Source: run `20260501_212730`.
+
+**Prior setup type archived to recent.md:** "Short on exhaustion — blocked by earnings blackout" (Apr 30).
 
 ---
 
@@ -18,28 +20,29 @@ CVX has rallied from the $183-184 low to precisely the $192-193 resistance zone 
 
 | Level | Value | Notes |
 |---|---|---|
-| Short entry (on bounce) | ~$193.00 | Current price; head trader synthesized entry; blocked by earnings blackout |
-| Stop loss | $196.00 | All three bearish agents agree — above this the short is wrong |
-| Target | $183.50 | Median of three bearish agent targets ($181.76–$188.16) |
-| Support (12 tests) | $181.76 | Consolidation range floor; first major support |
-| Resistance (SMA-50) | $192.64 | Just above current; OBV still bearish despite price recovery |
-| Invalidation (long) | $199–$200 | EMA10 area; Iran escalation scenario |
+| Short entry zone | ~$193.00–$193.50 | Current price; head trader entry $193.30 |
+| Stop loss | $195.50 | Above hourly resistance cluster and prior bounce high |
+| Target | $181.76 | 12-test pivot support — confirmed by swing_macro_context |
+| Resistance (SMA-50) | ~$192.64 | Price above, pressing resistance cluster |
+| Fib 50% retrace | $196.23 | If broken, short thesis invalid |
+| Support (12 tests) | $181.76 | First major downside target |
 
 ---
 
-## Momentum Indicators (as of Apr 30)
+## Momentum Indicators (as of May 1)
 
 | Indicator | Value | Interpretation |
 |---|---|---|
-| Daily ADX | 32.24 | Strong trend; -DI (29.97) > +DI (21.31) — bearish directional bias |
-| Daily OBV | Trending down | Diverging from price bounce — distribution signal |
-| 21-day ROC | -8.78% | Dominant medium-term momentum remains bearish |
-| Hourly RSI-21 | 76.18 | Overbought; confirmed bearish RSI divergence on hourly |
-| Hourly BB %B | 0.92 | Price stretched near upper Bollinger Band |
-| Volume ratio | 0.77x | Below average — no institutional accumulation conviction |
+| Daily ADX | 30.71 | Strong trend; -DI (25.22) > +DI (23.23) — bearish directional edge |
+| Hourly ADX | — | Hourly -DI (30.97) > +DI (26.38) — both timeframes bearish |
+| 21-day ROC | -6.57% | Medium-term momentum deeply bearish |
+| 5-day ROC | +3.04% | Short-term bounce from $183-184 lows — counter-trend |
+| Daily RSI-7 | 78.26 | Overbought short-term; RSI-21 at 38.82 confirms bounce in downtrend |
+| Hourly OBV | Downtrend | Distribution underneath the price recovery |
+| Volume ratio | 1.10x | Below 1.5x threshold — no institutional accumulation |
 
 ---
 
 ## Setup Type
 
-**Short on exhaustion at resistance — blocked by earnings blackout.** The bounce from $184 to $193 has occurred on weak volume (0.77x) with hourly RSI divergence firing. Three of five swing agents rate bearish (mean_reversion 58%, catalyst_news 62%, breakout 42%). Head trader consensus: short at $193, target $183.50, stop $196, R/R 3.2:1 — but disqualified by risk manager's 3-day earnings blackout (Q1 prints May 1). Revisit earliest May 4-5. Prior setup type (short on relief bounce) is still the active pattern; the bounce has now arrived.
+**Bearish exhaustion at resistance — earnings blackout lifted, direction confirmed.** The bounce from $183-184 to $193.31 occurred on weak volume (1.10x vs. 1.5x required) with hourly OBV declining and hourly RSI-7 at 78.26 overbought. Iran peace talks on May 1 drove WTI −2%, removing the macro bullish tailwind for energy that partially complicated the April 30 thesis. CEO Pate sold $8.6M; TD Cowen cut to Hold. Swing_macro_context: 5.5:1 R/R short from $193.30, stop $195.50, target $181.76. Earnings blackout lapsed. Short entry zone is now live. (Source: `20260501_212730/signals_combined.json`)

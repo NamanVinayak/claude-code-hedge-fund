@@ -1,10 +1,10 @@
 ---
 name: WMT recent
-last_updated: 2026-04-30
-last_run_id: 20260430_212526
+last_updated: 2026-05-01
+last_run_id: 20260501_212730
 target_words: 300
 stale_after_days: 60
-word_count: 178
+word_count: 252
 summary: Signal history — direction flips and key level breaks for WMT across swing runs
 ---
 
@@ -15,6 +15,8 @@ WMT has held a neutral/no-trade signal across all prior runs. This run (Apr 30) 
 ---
 
 ## Signal Log
+
+- **2026-05-01** | run `20260501_212730` | **Daily close confirmed above $129-$130 trigger but ADX gate deteriorated further.** Daily confirmed close at $131.93 — the price condition of the bull trigger is now met. However, daily ADX fell to 11.4 (from 12.89 in prior run) — the trend gate worsened, not improved. Volume on Apr 30 surge was 1.19x vs. required ≥1.5x. Hourly bearish RSI divergence confirmed (price new high, RSI diverging). Z-score 2.31 — statistically extended. Decision: HOLD — wait for pullback to $128.50-$129.00 where R/R improves to 2.36:1. Head trader neutral (conf 45). Signal direction: neutral, unchanged. (Source: `20260501_212730/decisions.json`, `20260501_212730/signals_combined.json`)
 
 - **2026-04-30** | run `20260430_212526` | **Key level broken: price cleared $129-$128.49 resistance on the hourly timeframe.** Hourly price $131.93; hourly ADX 30.25 with +DI (36.33) vs. -DI (14.64) — strong intraday bullish trend. However, daily close at $128.01 has NOT confirmed above $128.49. Daily ADX at 12.89 remains below the 20-threshold disqualification floor. Decision: HOLD/watch with explicit trigger — daily close above $129-130 on ≥1.5x volume AND daily ADX inflecting above 20. If triggered: entry ~$129.50, target $136.00, stop $125.50 (R/R ~2.1:1). Head trader confidence 38 (below 40 threshold). (Source: `20260430_212526/decisions.json`)
 
