@@ -1,0 +1,76 @@
+{
+  "ticker": "JNJ",
+  "verified_at": "2026-05-01T19:50:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.2846,
+      "web_value": 0.2183,
+      "source": "Yahoo Finance / CNBC (April 29, 2026)",
+      "status": "MISMATCH",
+      "deviation": "30.4%",
+      "action": "replaced with web value (0.2183) in all facts bundles: warren_buffett__JNJ.json, aswath_damodaran__JNJ.json",
+      "notes": "Our value of 28.46% reflects the raw TTM figure inflated by a $5.6B one-time divestiture gain. The Yahoo Finance / CNBC normalized consensus TTM is 21.83%. Per Simply Wall St reporting, analysts expect margins to settle near 22.5% once the one-off item rolls out. Deviation of 30.4% exceeds the 20% threshold. Corrected to 0.2183 in all applicable bundles."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.2292,
+      "web_value": 0.2753,
+      "source": "Investing.com / CompaniesMarketCap TTM April 2026",
+      "status": "ok",
+      "deviation": "16.7%",
+      "notes": "Our value 22.92% vs web 27.53% (Investing.com) / 26.39% (CompaniesMarketCap). Q1 2026 operating margin was 26.58%. Deviation is 16.7%, below the 20% threshold. No correction applied, but note that our data may reflect an older TTM window. Borderline — monitor for next run."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 26.44,
+      "web_value": 26.23,
+      "source": "GuruFocus (April 28, 2026)",
+      "status": "ok",
+      "deviation": "0.8%",
+      "notes": "Trailing P/E of 26.44 closely matches GuruFocus 26.23 and Yahoo Finance 26.10. Some sources show 22.08 (forward-adjusted) but raw TTM P/E is consistent."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 548688986112.0,
+      "web_value": 549180000000.0,
+      "source": "StockAnalysis (May 1, 2026)",
+      "status": "ok",
+      "deviation": "0.1%",
+      "notes": "Market cap of $548.7B matches web data of $549.18B as of May 1, 2026."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 94200000000.0,
+      "web_value": 94190000000.0,
+      "source": "CompaniesMarketCap / MacroTrends TTM April 2026",
+      "status": "ok",
+      "deviation": "0.0%",
+      "notes": "Implied revenue from P/S ratio matches web data of ~$94.19B TTM exactly. Q1 2026 alone was $24.1B; full-year TTM through Q4 2025 + Q1 2026 is ~$96.4B per some sources, but consensus TTM at April 2026 is ~$94.2B."
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.3302,
+      "web_value": 0.3287,
+      "source": "FinanceCharts (April 2026)",
+      "status": "ok",
+      "deviation": "0.5%",
+      "notes": "Our value 33.02% vs web 32.87% (FinanceCharts April 2026). GuruFocus shows 25.45% (Dec 2025 basis). Using the April 2026 TTM figure of 32.87%, deviation is only 0.5%. No mismatch."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.1346,
+      "web_value": 0.1365,
+      "source": "FinanceCharts (April 2026)",
+      "status": "ok",
+      "deviation": "1.4%",
+      "notes": "ROA of 13.46% vs web 13.65%. Well within tolerance."
+    }
+  ],
+  "overall_status": "1 mismatch corrected",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260501_194523/facts/warren_buffett__JNJ.json",
+    "runs/20260501_194523/facts/aswath_damodaran__JNJ.json"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "run_id": "20260501_194523",
+  "mode": "swing",
+  "started_at": "2026-05-01T19:45:53Z",
+  "ended_at": "2026-05-01T20:11:43Z",
+  "tickers": [
+    "UNH",
+    "JNJ"
+  ],
+  "decisions": [
+    {
+      "ticker": "UNH",
+      "action": "hold",
+      "confidence": 22,
+      "entry": 370.48,
+      "stop": 370.48,
+      "target": 370.48,
+      "reasoning_tldr": "Head Trader emphatically neutral (22 conf)"
+    },
+    {
+      "ticker": "JNJ",
+      "action": "short",
+      "confidence": 58,
+      "entry": 229.85,
+      "stop": 235.0,
+      "target": 216.53,
+      "reasoning_tldr": "4/5 swing agents bearish"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 2,
+    "cash": 3036.4000146484377,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "mixed",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}
