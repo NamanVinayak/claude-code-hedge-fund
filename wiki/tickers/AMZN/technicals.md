@@ -1,32 +1,28 @@
 ---
 name: AMZN technicals
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-01
+last_run_id: 20260501_173921
 target_words: 350
 stale_after_days: 7
-word_count: 358
-summary: As of April 17 2026 — bullish trend with elevated ADX 44, z-score 2.84 flagging extension, entry zone 244-249, stop 244
+word_count: 352
+summary: Post-earnings shooting star on 2.05x volume — failed breakout / distribution signal; ADX 64.34 strong trend but RSI 82/88 and z-score 2.01 flag extension; SHORT setup active, no long entry valid
 ---
 
 # AMZN — Technicals
 
 ## TL;DR
 
-As of the most recent run (20260417_233350, April 17 2026), AMZN is in a confirmed daily uptrend with ADX at 44 — strong enough to sustain a swing trade — but the z-score of 2.84 signals the stock is statistically extended. The PM sized down to 35 shares (vs a full position) specifically because of this extension. Entry zone is a tight pullback to $249.70 with stop at $244.00.
+As of run 20260501_173921 (May 1, 2026), AMZN printed a textbook "sell the news" shooting star on April 30: gapped to $273.88, closed at $265.06 on 2.05x average volume (100.87M vs 49.12M 20-day avg). RSI-14 at 82.21, RSI-21 at 88.83, z-score 2.01, price 18.58% above 50-SMA. ADX 64.34 confirms a mature strong trend, but mean-reversion and breakout agents read the reversal candle as distribution. Setup type: **failed breakout / shooting star fade**. SHORT from ~$269, stop $276, target 20-SMA $244.44. No long entry valid at current price.
+
+*Prior setup (bootstrap, run 20260417_233350): momentum breakout with pullback entry at $249.70, ADX 44. Superseded — see recent.md 2026-05-01 entry.*
 
 ---
 
 ## Multi-timeframe state
 
-**Daily (primary):** All EMAs aligned in uptrend. ADX at 44 (rising from 37 at Apr 15 run) — well above the 25 threshold that confirms a real trend. RSI was 81 on April 15; likely still elevated. Squeeze indicator in bullish breakout phase with increasing momentum. SuperTrend bullish. MACD line positive with expanding histogram.
+**Daily (primary):** All EMAs aligned bullish uptrend (EMA 5 > EMA 10 > EMA 21 > EMA 50). ADX 64.34 with +DI 45.78 vs -DI 11.51 — exceptionally strong trend, mature phase. RSI-14 82.21, RSI-21 88.83 (both overbought). Z-score vs 50-SMA: 2.01. April 30 candle: open $273.17, high $273.88, close $265.06 — large-range bearish reversal on 2.05x volume. BB upper band at $279.68; price below the band but near it.
 
-**Hourly:** EMAs aligned uptrend. Hourly ADX was 57 at the April 15 run — unusually strong intraday trend. Hourly SuperTrend bullish. The one cautionary note: by April 15 the hourly MACD histogram had begun turning slightly negative (-0.53), and hourly volume declined to 0.36x average post-breakout. This divergence (daily strong, hourly momentum fading) was the reason swing_mean_reversion voted bearish at 85% confidence in run 20260415_110848.
-
-**Momentum readings (April 15 run — most granular data available):**
-- ROC-5: +16.5%
-- ROC-10: +23.9%
-- ROC-21: +19.9%
-- Volume on breakout day (April 14): 72.5M vs 46.3M 20-day avg = 1.57x
+**Hourly:** EMAs aligned uptrend but showing fatigue. Hourly OBV diverging bearishly from price (OBV declining while price near highs). Hourly RSI divergence bearish detected. Hourly BB %B at 0.97 (hugging upper band). Nearest volume-confirmed hourly resistance: $270.62.
 
 ---
 
@@ -34,32 +30,31 @@ As of the most recent run (20260417_233350, April 17 2026), AMZN is in a confirm
 
 | Level | Value | Source |
 |---|---|---|
-| Current entry | $249.70 | Run 20260417_233350 |
-| Stop / invalidation | $244.00 | Run 20260417_233350 |
-| Target (PM) | $262.00 | Run 20260417_233350 |
-| Target (breakout measured move) | ~$299 | Run 20260415_110848 breakout agent |
-| Pullback ideal entry | $220–$238 | Runs swing_20260411_211655, 20260415_110848 |
-| Breakout resistance | $249 | Prior consolidation high |
-| Consolidation support | $199 | Run 20260415_110848 |
+| Short entry | ~$269 | Run 20260501_173921 |
+| Stop / invalidation | $276.00 | Above reversal swing high $273.88 + buffer |
+| Target (20-SMA / mean reversion) | $244.44 | Run 20260501_173921 |
+| Reversal swing high | $273.88 | April 30 intraday high |
+| Hourly resistance (vol-confirmed) | $270.62 | Run 20260501_173921 |
+| Support zone | $256–$260 | Run 20260501_173921 |
+| Long re-entry zone (wait) | $252–$258 | swing_trend_momentum, swing_macro_context |
 
 ---
 
 ## Setup type
 
-**Momentum breakout with pullback entry discipline.** The system classified this as a volume-confirmed breakout (1.57x volume on April 14 close at $249) above a prior consolidation range of $199–$249. The measured move target of $299 comes from the breakout agent in run 20260415_110848. However, the PM and risk manager have consistently capped the near-term target at $262–$263, reflecting the Z-score overhang rather than the full measured move.
-
-The key tension in every run: the trend is real (ADX 37–44, volume confirmed) but the entry is extended (z-score 2.2–3.0). The system resolves this by entering with reduced size and a tight stop — not by waiting for a deep pullback that may never come during a momentum surge.
+**Failed breakout / shooting star fade (Branch A mean reversion).** The April 30 session was a "sell the news" reaction to Q1 2026 earnings beat: price gapped to $273.88 (new high) but closed at $265.06 — back inside the prior consolidation range. This is distribution volume confirming overhead resistance, not a breakout close. The prior breakout thesis (April 14, 1.57x volume at $249) has fully played out with the PM's $262 target already achieved. The new setup is a mean-reversion fade from statistical extremes. R:R 3.51:1 at $269 entry clears the 2:1 minimum.
 
 ---
 
-## Indicator snapshot (April 15 2026 — last run with full signals data)
+## Indicator snapshot (May 1, 2026)
 
 | Indicator | Value | Interpretation |
 |---|---|---|
-| ADX | 36.7–44 | Strong trend, rising |
-| RSI-14 | 80.7 | Overbought |
-| Z-score | 2.84–3.01 | Extended, pullback risk |
-| BB position | 1.10–1.19 | Above upper band |
-| Volume ratio | 1.28–1.57x | Institutional confirmation |
-| SuperTrend | Bullish | Trend confirmed |
-| Squeeze | Bullish breakout | Momentum expanding |
+| ADX | 64.34 | Strong mature trend — fade risk |
+| +DI / -DI | 45.78 / 11.51 | Bull momentum intact but extended |
+| RSI-14 | 82.21 | Overbought |
+| RSI-21 | 88.83 | Extremely overbought |
+| Z-score (50-SMA) | 2.01 | At +2σ — statistical extreme |
+| % above 50-SMA | 18.58% | Extreme extension |
+| Volume (Apr 30) | 2.05x avg | Distribution / reversal confirmation |
+| Hourly OBV | Bearish divergence | Internal weakness |

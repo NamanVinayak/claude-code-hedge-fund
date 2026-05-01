@@ -1,47 +1,47 @@
 ---
 name: AMZN thesis
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-01
+last_run_id: 20260501_173921
 target_words: 500
 stale_after_days: 30
-word_count: 505
-summary: AWS cloud dominance and AI infrastructure build-out is the durable bull thesis; mean reversion risk and tariff pass-through are the structural bear risks
+word_count: 497
+summary: Prior bull entry thesis falsified by "sell the news" shooting star on Apr 30 — Q1 beat absorbed, distribution volume confirmed; near-term bias now BEARISH (mean reversion to $244); longer-term AWS structural bull case remains intact
 ---
 
 # AMZN — Thesis
 
 ## TL;DR
 
-Amazon's bull thesis rests on two durable structural advantages: AWS is the world's largest cloud platform with 31% market share and accelerating AI monetization, and the retail flywheel continues to extend its moat via logistics, pharmacy, and now satellite connectivity. The system has been net bullish across all three run history data points (run IDs: swing_20260411_211655, 20260415_110848, 20260417_233350) with 6-of-9 agent agreement each time — but consistently flagged that price extensions force disciplined entry, not chasing.
+**Prior claim falsified:** The bootstrap thesis stated the ideal long re-entry zone was $220–$244 and that the system would wait for a pullback from overbought extremes before buying. That claim was not falsified — it was correct discipline. What changed in run 20260501_173921 is that the April 30 "sell the news" shooting star on 2.05x volume has now made the current price ($265–$269) a **short entry**, not a waiting zone. The long-term AWS structural bull case is intact, but the near-term swing bias has flipped to bearish for the first time across all AMZN run history. [source: decisions.json, signals_combined.json, run 20260501_173921]
 
 ---
 
-## Bull case
+## What falsified the prior near-term thesis
 
-**AWS as the AI picks-and-shovels play.** CEO Andy Jassy's April 2026 shareholder letter disclosed AWS AI services hitting $15B annualized revenue and a chips business at $20B ARR. AWS Trainium3 launched in April 2026, delivering 3x faster AI training versus its predecessor and putting Amazon directly in competition with NVIDIA H-series and Google TPUs. The cloud backlog stood at $244B at end of Q4 2025, and Q4 AWS revenue grew 24% YoY — the fastest in 13 quarters. With Azure at 23% and GCP at 12% market share, AWS leads and is still growing fast (runs 20260415_110848, swing_20260411_211655).
-
-**Capex as moat-building, not waste.** Amazon committed roughly $200B in 2026 capex including a $25B data center investment in Mississippi. Institutional analysts view this as a structural widening of the cloud infrastructure gap versus peers. Sixty-four of 68 sell-side analysts rate AMZN Buy as of April 2026, with an average price target of $284–$287 (run 20260415_110848, swing_20260411_211655).
-
-**Platform optionality beyond AWS.** The $11.6B Globalstar satellite acquisition (closed April 2026) opens a direct-to-device connectivity layer that pairs with the Apple Leo satellite partnership. Amazon Pharmacy's GLP-1 same-day delivery partnership with Eli Lilly expands healthcare delivery reach. These are not core-business bets — they are low-cost options on adjacent multi-billion-dollar markets.
-
-**Momentum confirmation.** Across all three runs, volume on AMZN breakout days was 1.28x–1.57x average daily volume, confirming institutional participation rather than retail-driven froth. The swing breakout agent flagged the April 2026 breakout as the strongest volume-confirmed setup in its basket (run 20260415_110848).
+The bootstrap thesis (run bootstrap, April 29 2026) was explicitly bullish with a stated ideal long re-entry in the $220–$244 zone after a pullback. Instead of pulling back, AMZN continued to rally +10% to $265–$273 on Q1 earnings momentum — the PM's $262 target from run 20260417_233350 was exceeded. The April 30 session then produced a failed breakout: price gapped to $273.88 but closed at $265.06. **The falsifying evidence is the shooting star reversal candle on 2.05x volume** — distribution, not continuation. Zero swing agents voted bullish in run 20260501_173921 (vs. 6-of-9 bullish in all prior runs). The mean-reversion and breakout agents now both read the same candle as a short trigger. [source: signals_combined.json, run 20260501_173921]
 
 ---
 
-## Bear case
+## Bull case (structural — intact, not actionable here)
 
-**Mean reversion is the persistent short-term risk.** In every single run, the mean reversion agent was the lone dissenter, bearish at 70–85% confidence. The numbers back it up: z-scores hit 2.2 (April 11), 3.0 (April 15), and 2.84 (April 17). RSI was 75–81, CCI as high as 305, and price blew through the upper Bollinger Band on each rally leg. These are the readings of a stock that routinely gets ahead of itself. Post-catalyst fades are a documented AMZN pattern.
+**AWS as the AI picks-and-shovels play.** Q1 2026 confirmed: AWS $37.6B revenue (+28% YoY, fastest in 15 quarters), Anthropic $100B+ 10-year AWS commitment, OpenAI shifting from Azure to AWS, Meta AWS Graviton5 deal. AWS AI ARR at $15B as disclosed in Andy Jassy's April shareholder letter. Cloud backlog at $244B. Analyst avg PT post-Q1 raises: $308.55 (43–47 Buy ratings). The structural AI infrastructure bull case is stronger post-Q1 than before. [source: web_research/AMZN.json, run 20260501_173921]
 
-**Valuation overhang.** The valuation agent rated AMZN 100% bearish on at least two runs — the stock carries a premium multiple that prices in a lot of AWS growth that must still be delivered. Any macro slowdown that compresses cloud spending budgets would pressure the valuation.
+**Platform optionality.** The $11.6B Globalstar acquisition (closed April 2026) and Amazon Pharmacy GLP-1 partnerships are intact low-cost options on adjacent markets.
 
-**Tariff and regulatory risk.** US-China tariff tensions (Trump's 25% AI chip tariffs enacted January 2026) create supply chain exposure for devices. The $11.6B Globalstar deal could face FCC scrutiny. Consumer-facing retail margins are exposed to tariff pass-through costs at a time when consumer sentiment hit multi-decade lows (47.6 in April 2026 per run web_research).
+---
 
-**Correlated to broad tech beta.** AMZN-QQQ correlation is 0.67 per the portfolio manager's April 2026 notes (run 20260417_233350), meaning a broad tech drawdown pulls AMZN down regardless of AWS fundamentals. Z-score 2.84 + QQQ correlation = concentrated risk in a momentum reversal.
+## Bear case (near-term — actionable)
+
+**Mean reversion is now the primary swing thesis.** Five metrics align on an extreme: RSI-14 82.21, RSI-21 88.83, z-score 2.01, price 18.58% above 50-SMA, ADX 64.34 (mature trend). The April 30 shooting star on 2.05x volume is the reversal candle that activates Branch A (fade the extreme). Target: 20-SMA at $244.44. Stop: above confirmed reversal high $273.88 + buffer at $276. R:R 3.51:1 from $269 entry. [source: signals_combined.json swing_mean_reversion, run 20260501_173921]
+
+**ADX 64 is the primary risk to the short.** A 64 ADX reading signals a very strong, mature trend — fades in strong trends frequently get run over. Swing_trend_momentum explicitly flagged this: EMA stack is perfectly bullish, ROC is all-positive and accelerating, and the underlying uptrend is structurally intact. The bearish view is a **near-term mean reversion**, not a trend reversal. Confidence is 55 (from 62 head trader, dialed down further by risk manager on NVDA lesson). [source: signals_combined.json swing_head_trader, risk_management_agent, run 20260501_173921]
+
+**NVDA lesson parallel.** The only closed trade in portfolio history (NVDA, April 30, -$63.20 stop hit) was at RSI 81–87 in a similarly stretched ADX environment. AMZN is in the same RSI regime. This pattern match was cited explicitly by three of five swing agents as a warning against chasing at current prices. [source: signals_combined.json, portfolio.recent_closed, run 20260501_173921]
 
 ---
 
 ## What would change my mind
 
-**Bull to Bear:** AWS revenue growth decelerates below 15% YoY for two consecutive quarters; cloud capex cycle shows demand destruction rather than capacity build-out; Globalstar regulatory block.
+**Bear to Bull (re-entry):** Price pulls back to $252–$258 (swing_trend_momentum entry zone) or $252 (swing_macro_context entry), z-score normalizes toward 1.0–1.5, RSI drops below 65, and a constructive daily candle forms. At those levels the R:R long exceeds 2:1 with a stop below the EMA cluster. Alternatively, acceptance above $270.62 hourly resistance on volume re-opens a long.
 
-**Bear to Bull (on entry):** Price retraces to the $220–$238 zone where mean reversion risk eases, z-score normalizes below 1.5, and RSI falls below 60 — the system's stated ideal entry in all three runs.
+**Bull case strengthened:** AWS Q2 revenue materially above $188.9B guide; further major cloud migration deals announced; Iran ceasefire holds and macro risk-off eases, giving AMZN's AI infrastructure premium room to re-expand.
