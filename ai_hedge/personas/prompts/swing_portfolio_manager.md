@@ -51,6 +51,7 @@ Format:
   "decisions": {{
     "TICKER": {{
       "action": "buy|sell|short|cover|hold",
+      "quantity": int,
       "entry_price": float,
       "target_price": float,
       "stop_loss": float,
@@ -61,3 +62,5 @@ Format:
     }}
   }}
 }}
+
+`quantity` is REQUIRED for every decision. For buy/short, set it to the number of shares you're sizing (≤ risk manager max, ≤ 25% of capital). For hold/sell/cover, set quantity to 0. NEVER omit this field — the downstream ingester silently drops trades with missing quantity, and the dashboard cannot display position size without it.

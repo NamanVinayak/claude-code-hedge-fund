@@ -154,11 +154,15 @@ def main() -> None:
             if not entry_price:
                 continue
 
-            quantity = dec.get("quantity", 0)
+            raw_qty = dec.get("quantity")
+            if raw_qty is None:
+                print(f"  WARNING: {ticker} {action} in run {run_id} has no quantity field — PM forgot to size. Skipping.")
+                continue
             try:
-                quantity = int(quantity)
+                quantity = int(raw_qty)
             except (TypeError, ValueError):
-                quantity = 0
+                print(f"  WARNING: {ticker} {action} in run {run_id} has non-numeric quantity={raw_qty!r}. Skipping.")
+                continue
             if quantity <= 0:
                 continue
 
