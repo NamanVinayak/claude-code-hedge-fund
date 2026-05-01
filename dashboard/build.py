@@ -210,17 +210,22 @@ def main():
                     dec_data = json.load(f)
                     decs = dec_data.get("decisions", {})
                     for t, d in decs.items():
+                        qty = d.get("quantity")
+                        entry = d.get("entry_price")
+                        position_size = round(float(qty) * float(entry), 2) if qty and entry else None
                         decisions.append({
                             "ticker": t,
                             "action": d.get("action", ""),
                             "confidence": d.get("confidence", ""),
-                            "entry_price": d.get("entry_price"),
+                            "entry_price": entry,
                             "target_price": d.get("target_price"),
                             "stop_loss": d.get("stop_loss"),
+                            "quantity": qty,
+                            "position_size": position_size,
                         })
                 except:
                     pass
-                    
+
         runs.append({
             "run_id": run_id,
             "mode": mode,
@@ -261,13 +266,15 @@ def main():
         entry = float(t.get('entry_fill_price') or t.get('entry_price') or 0)
         exit_price = float(t.get('exit_fill_price') or 0)
         pnl_dollar = float(t.get('pnl') or 0)
+        qty = float(t.get('quantity') or 0)
+        position_size = round(entry * qty, 2) if entry and qty else None
         pnl_percent = 0.0
         if entry > 0:
             if t.get('direction', 'long').lower() == 'long':
                 pnl_percent = (exit_price - entry) / entry * 100 if exit_price else 0
             else:
                 pnl_percent = (entry - exit_price) / entry * 100 if exit_price else 0
-                
+
         formatted_closed.append({
             "ticker": t['ticker'],
             "status": t['status'],
@@ -275,6 +282,8 @@ def main():
             "exit_fill_price": exit_price,
             "pnl_dollar": pnl_dollar,
             "pnl_percent": pnl_percent,
+            "quantity": int(qty) if qty else None,
+            "position_size": position_size,
             "entered_at": t.get('entered_at', '').split('T')[0] if t.get('entered_at') else '',
             "closed_at": t.get('closed_at', '').split('T')[0] if t.get('closed_at') else ''
         })
@@ -317,13 +326,18 @@ def main():
                     dec_data = json.load(f)
                     decs = dec_data.get("decisions", {})
                     for t, d in decs.items():
+                        qty = d.get("quantity")
+                        entry = d.get("entry_price")
+                        position_size = round(float(qty) * float(entry), 2) if qty and entry else None
                         decisions.append({
                             "ticker": t,
                             "action": d.get("action", ""),
                             "confidence": d.get("confidence", ""),
-                            "entry_price": d.get("entry_price"),
+                            "entry_price": entry,
                             "target_price": d.get("target_price"),
                             "stop_loss": d.get("stop_loss"),
+                            "quantity": qty,
+                            "position_size": position_size,
                         })
                 except Exception:
                     pass

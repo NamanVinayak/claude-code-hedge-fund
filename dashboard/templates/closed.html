@@ -54,6 +54,7 @@
             <th>Result</th>
             <th>Entry</th>
             <th>Exit</th>
+            <th class="hide-mobile">Size</th>
             <th>P&L $</th>
             <th>P&L %</th>
             <th class="hide-mobile">Entered</th>
@@ -75,6 +76,11 @@
         </td>
         <td class="mono">${{ "%.2f"|format(t.entry_fill_price|float) }}</td>
         <td class="mono">{{ '$' + "%.2f"|format(t.exit_fill_price|float) if t.exit_fill_price else '—' }}</td>
+        <td class="mono hide-mobile" style="color:var(--muted);">
+            {% if t.quantity and t.position_size %}
+                {{ t.quantity }} sh / ${{ "%.0f"|format(t.position_size) }}
+            {% else %}—{% endif %}
+        </td>
         <td class="mono {{ 'profit' if t.pnl_dollar > 0 else 'loss' if t.pnl_dollar < 0 else '' }}">
             {{ '+' if t.pnl_dollar > 0 else '' }}${{ "%.2f"|format(t.pnl_dollar) }}
         </td>

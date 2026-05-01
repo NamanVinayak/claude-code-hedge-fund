@@ -138,6 +138,7 @@ td.price { font-family: var(--mono); font-size: 12px; white-space: nowrap; }
                     <th class="hide-mobile">Entry</th>
                     <th class="hide-mobile">Target</th>
                     <th class="hide-mobile">Stop</th>
+                    <th class="hide-mobile">Size</th>
                     <th>Confidence</th>
                     <th>Status</th>
                 </tr>
@@ -150,6 +151,12 @@ td.price { font-family: var(--mono); font-size: 12px; white-space: nowrap; }
                     <td class="price hide-mobile">{{ '$%.2f'|format(d.entry_price) if d.entry_price else '—' }}</td>
                     <td class="price hide-mobile">{{ '$%.2f'|format(d.target_price) if d.target_price else '—' }}</td>
                     <td class="price hide-mobile">{{ '$%.2f'|format(d.stop_loss) if d.stop_loss else '—' }}</td>
+                    <td class="price hide-mobile">
+                        {% if d.quantity and d.position_size %}
+                            <span style="color:var(--text);">{{ d.quantity }} sh</span>
+                            <span style="color:var(--muted);font-size:11px;"> / ${{ "%.0f"|format(d.position_size) }}</span>
+                        {% else %}—{% endif %}
+                    </td>
                     <td>
                         {% if d.confidence %}
                         <div class="conf-inline">
