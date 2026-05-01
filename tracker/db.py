@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine, Column, Integer, Float, String, DateTime, Text
 from sqlalchemy.orm import declarative_base, sessionmaker
-from datetime import datetime
+from datetime import datetime, timedelta
 import os
 import json
 
@@ -140,7 +140,6 @@ def get_recent_trade_history(days=7):
     Injected into portfolio context so the PM can see its recent history
     per ticker — wins, stops, and expired trades — and reason accordingly.
     """
-    from datetime import datetime, timedelta
     cutoff = datetime.utcnow() - timedelta(days=days)
     session = get_session()
     rows = session.query(Trade).filter(

@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import json
 import os
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from typing import Any
 
 import requests
@@ -221,7 +221,6 @@ def get_recent_trade_history(days: int = 7) -> list[dict[str, Any]]:
     Same semantics as tracker.db.get_recent_trade_history — mirrors the
     local SQLite version for cloud callers.
     """
-    from datetime import datetime, timedelta, timezone
     cutoff = (datetime.now(timezone.utc) - timedelta(days=days)).replace(microsecond=0).isoformat()
     return _execute(
         "SELECT ticker, direction, status, entry_price, exit_fill_price, pnl, "
