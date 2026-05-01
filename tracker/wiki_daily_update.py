@@ -29,7 +29,9 @@ def _read_wiki_file(path: Path) -> str:
 def main() -> None:
     from tracker.turso_client import get_recent_trade_history
 
-    closed_trades = get_recent_trade_history(days=1)
+    # Look back 3 days so a Friday/Saturday routine miss still catches Friday closures.
+    # The agent dedupes against lessons_current — already-written lessons are skipped.
+    closed_trades = get_recent_trade_history(days=3)
 
     close_statuses = {"target_hit", "stop_hit", "expired"}
     closed_trades = [t for t in closed_trades if t.get("status") in close_statuses]

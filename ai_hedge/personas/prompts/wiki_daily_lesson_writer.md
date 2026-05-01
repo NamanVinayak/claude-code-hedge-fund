@@ -12,7 +12,17 @@ A JSON bundle at `runs/wiki_daily_<YYYY-MM-DD>.json` containing:
 - `macro_regime` — current content of `wiki/macro/regime.md` (or "NOT FOUND")
 - `lessons_current` — current content of `wiki/meta/lessons.md`
 
-### What to write, for each closed trade
+### Dedup rule (READ FIRST, before writing anything)
+
+The bundle's `closed_trades` may include trades from the last 3 days — some may have already been processed in a prior run. Before processing each trade:
+
+1. Scan `lessons_current` for any line matching the trade's `[DATE] | [TICKER]` prefix (using `closed_at` date in YYYY-MM-DD).
+2. If a matching lesson line already exists → SKIP this trade entirely. Do not append a new lesson, do not re-prepend the thesis note, do not move the trade in trades.md (it has already been moved).
+3. If no matching line exists → process this trade normally per the rules below.
+
+This makes the script idempotent: extending the lookback window and re-running the routine cannot duplicate work.
+
+### What to write, for each closed trade (only those that passed the dedup check)
 
 #### 1. Append to `wiki/meta/lessons.md`
 
