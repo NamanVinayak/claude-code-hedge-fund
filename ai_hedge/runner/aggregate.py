@@ -267,7 +267,15 @@ def main():
         )
     else:
         try:
-            from tracker.db import get_open_positions, get_pending_trades, get_recent_trade_history
+            # Prefer Turso (cloud DB) — that's where the simulator and ingester
+            # write real fills. Fall back to local SQLite only if Turso creds
+            # aren't available (e.g. running offline without .env).
+            if os.getenv("TURSO_DATABASE_URL"):
+                from tracker.turso_client import get_open_positions, get_pending_trades, get_recent_trade_history
+                print("  Using Turso (cloud DB) for portfolio state.")
+            else:
+                from tracker.db import get_open_positions, get_pending_trades, get_recent_trade_history
+                print("  WARNING: TURSO_DATABASE_URL not set — using local SQLite (may be stale).")
             open_positions = get_open_positions()
             pending_orders = get_pending_trades()
             recent_closed = get_recent_trade_history(days=7)
