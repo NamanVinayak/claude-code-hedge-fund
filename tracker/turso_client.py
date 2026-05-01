@@ -225,7 +225,8 @@ def get_recent_trade_history(days: int = 7) -> list[dict[str, Any]]:
     return _execute(
         "SELECT ticker, direction, status, entry_price, exit_fill_price, pnl, "
         "closed_at, timeframe FROM trades "
-        "WHERE status IN ('target_hit', 'stop_hit', 'expired') AND closed_at >= ? "
+        "WHERE status IN ('target_hit', 'stop_hit', 'expired') "
+        "AND datetime(closed_at) >= datetime(?) "
         "ORDER BY closed_at DESC",
         [cutoff],
     )

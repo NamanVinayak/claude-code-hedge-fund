@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, Column, Integer, Float, String, DateTime, Text
+from sqlalchemy import create_engine, Column, Integer, Float, String, DateTime, Text, func
 from sqlalchemy.orm import declarative_base, sessionmaker
 from datetime import datetime, timedelta
 import os
@@ -144,7 +144,7 @@ def get_recent_trade_history(days=7):
     session = get_session()
     rows = session.query(Trade).filter(
         Trade.status.in_(['target_hit', 'stop_hit', 'expired']),
-        Trade.closed_at >= cutoff,
+        func.datetime(Trade.closed_at) >= func.datetime(cutoff),
     ).order_by(Trade.closed_at.desc()).all()
     out = [
         {
