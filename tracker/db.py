@@ -108,6 +108,31 @@ def get_open_positions():
     return out
 
 
+def get_pending_trades():
+    """Return all pending (not-yet-filled) trades as plain dicts.
+
+    Injected into portfolio context so the PM knows about open limit orders
+    that haven't filled yet — same awareness a human trader would have.
+    """
+    session = get_session()
+    rows = session.query(Trade).filter(Trade.status == 'pending').all()
+    out = [
+        {
+            "ticker": t.ticker,
+            "direction": t.direction,
+            "quantity": t.quantity,
+            "entry_price": t.entry_price,
+            "stop_loss": t.stop_loss,
+            "target_price": t.target_price,
+            "mode": t.mode,
+            "created_at": t.created_at.isoformat() if t.created_at else None,
+        }
+        for t in rows
+    ]
+    session.close()
+    return out
+
+
 def get_available_cash():
     """Calculate available cash from DB state (global, all modes)."""
     watchlist_path = os.path.join(os.path.dirname(__file__), 'watchlist.json')
