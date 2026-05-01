@@ -1,41 +1,40 @@
 ---
 name: AAPL technicals
-last_updated: 2026-04-30
-last_run_id: 20260430_144524
+last_updated: 2026-05-01
+last_run_id: 20260501_144523
 target_words: 350
 stale_after_days: 7
-word_count: 342
-summary: Squeeze released, price entered $270-282 target zone — ADX 15.78 (weak), no trend confirmation; earnings blackout blocks new entry; post-earnings structure needed
+word_count: 348
+summary: Breakout confirmed above $276.11 on 2.08x volume — price at $282-285; ADX 16.83 (rising, below 25); hourly overextended (Z-score 2.52, %B 1.28); limit-buy zone $274-278 on pullback; setup type post-earnings coiled-spring breakout
 ---
 
 # AAPL — Technicals
 
 ## TL;DR
 
-As of the April 30 run (20260430_144524), AAPL has entered the $270–282 break-above target zone identified in prior runs but lacks the trend or volume confirmation to act on it. The Bollinger squeeze that was coiling in mid-April has begun releasing (BB width 0.0994 vs. 0.069 on Apr 15), but ADX at 15.78 daily / 14.33 hourly remains well below the 25 threshold. Q2 earnings today creates a 3-day blackout regardless of technical setup. Wait for post-earnings structure.
+As of run 20260501_144523, AAPL has executed a confirmed breakout above the $276.11 resistance (11 daily tests, 27 hourly tests) on April 30 with 2.08x average daily volume — clearing the 1.5x threshold the prior run required. The Bollinger Band squeeze that was coiling since mid-April has fired (BB width 0.0967 daily, expanding from 0.069 on Apr 15). Price is now at $282–285, but the hourly is overextended (Z-score 2.52, Bollinger %B 1.28 — price above upper band). ADX 16.83 daily / 19.34 hourly remains below the 25 threshold. Limit-buy zone is $274–278 on pullback; do not chase at current levels.
 
 ## Multi-timeframe state
 
 | timeframe | trend | momentum | note |
 |---|---|---|---|
-| Daily | No trend (ADX 15.78) | Mixed — 5d ROC -1.1%, 21d ROC +9.54% | Squeeze releasing; EMAs fully aligned up |
-| Hourly | No trend (ADX 14.33) | Fading — MACD histogram -0.166 | RSI 63.34 healthy but losing steam |
+| Daily | Weak developing trend (ADX 16.83, rising) | Bullish — 21d ROC +6.92%, RSI 61.64, MACD hist +0.48 | EMA 10 > 21 > 50 fully aligned up; OBV uptrend, no divergence |
+| Hourly | No confirmed trend (ADX 19.34, below 25) | Overextended — Z-score 2.52, %B 1.28, rel-vol 0.59x | RSI 67.84 approaching caution zone; MACD hist +0.89 but flattening |
 
-Prior run (Apr 17, 20260417_233350) had ADX 12.5–15.2 with EMAs clustered in a $2 range. Current run shows marginal improvement — ADX 15.78 daily — but still failing the 25 threshold. EMA alignment is clean: EMA10 $268.71 > EMA21 $265.25 > EMA50 $262.54, price above all. The hourly MACD histogram diverging negative (-0.166) from the positive daily (+0.607) is an early warning of short-term exhaustion.
+Prior run (Apr 30, 20260430_144524) showed ADX 15.78 with squeeze releasing but direction unconfirmed. This run confirms direction: breakout with volume, bullish RSI divergence on 60-bar lookback, Plus DI 38.31 vs Minus DI 11.70. The marginal ADX improvement (15.78 → 16.83) and the sub-average hourly relative volume (0.59x) are the key caveats — the initial burst may be digesting.
 
 ## Key levels
 
 | level | value | source |
 |---|---|---|
-| Resistance — daily pivot high (11 tests) | $276.11 | signals_combined.json, 20260430_144524 |
-| Hourly pivot resistance (27 tests, volume-confirmed) | $273.22 | swing_breakout signal, 20260430_144524 |
-| Current price (Apr 29 close) | ~$271 | signals_combined.json, 20260430_144524 |
-| Fib 38.2% retracement / 20-SMA cluster | $264.21 / $264.36 | swing_mean_reversion signal, 20260430_144524 |
-| Support — daily pivot low (21 tests) | $255.45 | swing_breakout signal, 20260430_144524 |
-| Hard invalidation | $255.45 close | decisions.json, 20260430_144524 |
+| Measured-move target (Fib ext 1.618) | $294.84 | swing_breakout signal, 20260501_144523 |
+| Fib ext 1.272 (conservative first target) | $284.29 | swing_breakout signal, 20260501_144523 |
+| Limit-buy zone / Fib 38.2% pullback | $274–$278 | decisions.json, 20260501_144523 |
+| Breakout level (now support) | $276.11 | swing_breakout signal, 20260501_144523 |
+| Daily upper Bollinger Band | ~$277.97 | swing_catalyst_news signal, 20260501_144523 |
+| Pre-earnings pivot / stop zone | $269.50 | decisions.json, 20260501_144523 |
+| Support — daily pivot low (21 tests) | $255.45 | swing_breakout signal, prior runs |
 
 ## Setup type
 
-**Squeeze breakout — unconfirmed.** BB width expanded from 0.069 (Apr 15) to 0.0994 (Apr 30) — the squeeze has begun releasing but direction is not confirmed. Volume is disqualifying: daily relative volume 0.73x, hourly 0.32x (both far below the 1.5x required for breakout confirmation). No close above $276.11 has occurred. Measured move if $276.11 breaks with volume: $276.11 + $20.66 range = $296.77 target. Breakout agent explicitly labeled this "setup to watch, not yet to enter."
-
-**Post-earnings watch levels.** Bull case: clean close above $276.11 on 1.5x+ volume + ADX expansion above 25. Bear case: earnings miss triggers pullback to 38.2% Fib cluster $264.21/$264.36 — mean-reversion long. Invalidation: close below $255.45 (21-test support) signals trend break.
+**Post-earnings coiled-spring breakout — confirmed, pullback-entry mode.** The breakout above $276.11 is volume-confirmed (2.08x), the BB squeeze has fired, RSI is healthy (61.64 daily), and the measured move to $294.84 is intact. Entry trigger per head trader: pullback to $274–278 with ADX rising above 19 and daily 5-day ROC turning positive; or hourly reversal candle with volume pickup above 1.0x average. ADX must clear 25 before the trend is fully confirmed. (Source: decisions.json, swing_breakout signal, swing_head_trader signal, run 20260501_144523.)
