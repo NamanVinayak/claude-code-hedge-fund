@@ -1,0 +1,54 @@
+{
+  "ticker": "AMD",
+  "verified_at": "2026-05-01T13:30:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.11527,
+      "web_value": 0.1225,
+      "source": "Macrotrends / FinanceCharts (AMD net profit margin TTM Apr 2026)",
+      "status": "ok",
+      "deviation": "5.9%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.08548,
+      "web_value": 0.1067,
+      "source": "AMD Full Year 2025 Press Release (amd.com, Feb 2026); confirmed via Gurufocus, CompaniesMarketCap (TTM Apr 2026)",
+      "status": "MISMATCH",
+      "deviation": "20.1%",
+      "action": "replaced with web value (0.1067) in all facts bundles containing this metric: warren_buffett__AMD.json, aswath_damodaran__AMD.json"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 135.30,
+      "web_value": 131.0,
+      "source": "StockAnalysis (135.82), FinanceCharts (126.28 Apr 27), Public.com (131.51 Apr 24) — midpoint used",
+      "status": "ok",
+      "deviation": "3.3%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 31200000000.0,
+      "web_value": 34630000000.0,
+      "source": "AMD Full Year 2025 Press Release — record revenue $34.6B; Zacks Revenue TTM (Apr 2026)",
+      "note": "our_value derived from market_cap / price_to_sales_ratio (577.96B / 18.53). Facts bundle report_period is 2025-09-27 (Q3 TTM), not full-year 2025. Difference attributable to stale period.",
+      "status": "ok",
+      "deviation": "9.9%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 577964343296.0,
+      "web_value": 577940000000.0,
+      "source": "StockAnalysis / CompaniesMarketCap (AMD market cap Apr 30, 2026: $577.94B)",
+      "status": "ok",
+      "deviation": "0.0%"
+    }
+  ],
+  "overall_status": "1 mismatch corrected",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260501_132340/facts/warren_buffett__AMD.json",
+    "runs/20260501_132340/facts/aswath_damodaran__AMD.json"
+  ]
+}

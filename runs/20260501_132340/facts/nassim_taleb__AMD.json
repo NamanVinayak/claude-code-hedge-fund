@@ -1,0 +1,90 @@
+{
+  "ticker": "AMD",
+  "score": 27,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 5,
+    "max_score": 8,
+    "details": "Moderate fat tails (kurtosis 3.7); Symmetric distribution (skew -0.47); Asymmetric upside (tail ratio 1.28); Moderate drawdown (-27.8%)"
+  },
+  "antifragility_analysis": {
+    "score": 6,
+    "max_score": 10,
+    "details": "Net cash positive ($3,860,000,000); Taleb-approved low leverage (D/E 0.00); Volatile margins (CV 0.82) \u2014 fragile pricing power; Consistent FCF generation (10/10 periods positive)"
+  },
+  "convexity_analysis": {
+    "score": 4,
+    "max_score": 10,
+    "details": "Significant embedded optionality via R&D (23.7% of revenue); Slight positive asymmetry (up/down ratio 1.24); Low cash relative to market cap (1%); Low FCF yield (0.4%)"
+  },
+  "fragility_analysis": {
+    "score": 5,
+    "max_score": 8,
+    "details": "Low leverage (D/E 0.00) \u2014 not fragile; Interest coverage 22.6x \u2014 debt is irrelevant; Highly volatile earnings (growth std 0.67) \u2014 fragile; Moderate margins (11.5%)"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 3,
+    "max_score": 6,
+    "details": "Normal vol regime (0.96) \u2014 fair pricing; Stable vol-of-vol (0.0516)"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 577964343296.0,
+  "web_context": {
+    "ticker": "AMD",
+    "research_date": "2026-05-01",
+    "macro_context": {
+      "market_sentiment": "Risk-on. S&P 500 and Nasdaq closed April at record highs \u2014 best monthly gain since 2020. May 1 futures edge higher (+0.2% S&P 500) though Q1 GDP came in at 2.0% vs 2.3% expected, and PCE inflation is running hot at 3.5%. Most global markets closed for Labour Day, reducing liquidity. Sources: TheStreet, CNBC, Yahoo Finance.",
+      "fed_outlook": "FOMC held rates at 3.50\u20133.75% on April 29 in an unusual 8-4 vote (third consecutive hold). Powell's chairmanship ends May 15; Kevin Warsh advancing through Senate confirmation as successor. Three dissenters wanted to remove the easing bias; the committee retained it, keeping modest rate-cut optionality alive for H2 2026. Sources: CNBC, Al Jazeera, Fed.gov.",
+      "geopolitical": "Middle East conflict (Strait of Hormuz risk) driving energy price uncertainty; U.S. intervention in Venezuela; ongoing tariff disputes; critical semiconductor supply-chain tensions cited by IMF as growth headwinds. IMF projects global growth at 3.1% with inflation at 4.4%. Sources: IMF WEO April 2026, Lazard, Morgan Stanley.",
+      "key_events": [
+        "AMD Q1 2026 earnings: May 5, 2026 after market close",
+        "Fed Chair Powell's term ends May 15; Kevin Warsh confirmation vote pending",
+        "Continued Middle East escalation risk affecting energy prices",
+        "US midterm election cycle beginning to influence policy uncertainty"
+      ]
+    },
+    "ticker_news": [
+      {
+        "headline": "AMD stock hits all-time high of $353 on April 30, up 248% over trailing twelve months, driven by AI GPU ramp and data-center demand",
+        "sentiment": "positive",
+        "source": "Rolling Out / TheStreet (2026-04-30)"
+      },
+      {
+        "headline": "DA Davidson upgrades AMD to Buy, raises price target to $375 from $220, citing data center GPU demand ahead of Q1 earnings",
+        "sentiment": "positive",
+        "source": "TheStreet / Motley Fool (2026-04-29)"
+      },
+      {
+        "headline": "Intel blowout Q1 report (Data Center & AI revenue +22% YoY) seen as positive read-through for AMD EPYC server CPU business",
+        "sentiment": "positive",
+        "source": "24/7 Wall St. (2026-04-29)"
+      },
+      {
+        "headline": "Northland Capital Markets downgrades AMD to Market Perform from Outperform, cuts price target to $260, citing competitive headwinds",
+        "sentiment": "negative",
+        "source": "GuruFocus / Benzinga (2026-04-27)"
+      },
+      {
+        "headline": "AMD Q1 2026 earnings due May 5 after close; analysts forecast $9.8B revenue (+32% YoY) and $1.30 EPS (+35% YoY)",
+        "sentiment": "positive",
+        "source": "MarketBeat / Zacks (2026-05-01)"
+      }
+    ],
+    "analyst_consensus": {
+      "rating": "buy",
+      "avg_price_target": 296.0,
+      "recent_changes": "Strong net-positive revision cycle. DA Davidson upgraded to Buy, raised PT $220\u2192$375. Susquehanna reiterated Buy, raised PT $300\u2192$375. Melius Research reportedly targeting $380. Northland Capital offset with downgrade to Market Perform, PT $260. Net consensus: 34 analysts, 41% Strong Buy, 38% Buy, 21% Hold, 0% Sell. Source: MarketBeat, StockAnalysis, Benzinga (as of 2026-04-30)."
+    },
+    "competitor_activity": "Intel surged +24.89% after blowout Q1 earnings (Data Center & AI revenue +22% to $5.05B) \u2014 the positive read-through supports AMD EPYC server CPU thesis. NVIDIA reported Q1 Data Center revenue >$30B with 75%+ gross margins, maintaining dominant AI GPU market share; AMD's MI300 GPU series is positioned as the cost-aware second-supplier alternative for hyperscalers. Custom silicon (Google TPU, Amazon Trainium) is emerging as a longer-term structural threat to both NVIDIA and AMD in AI training/inference workloads. Sources: 24/7 Wall St., IBTimes Australia, Motley Fool (April 2026).",
+    "earnings_info": "AMD Q1 2026 earnings: May 5, 2026, after market close (5:00 PM ET). Consensus EPS estimate: $1.30 (+35.4% YoY). Revenue guidance: $9.8B \u00b1$300M (+32.3% YoY). AMD Data Center segment expected to again be the key driver following record $5.38B in Q4 2025. Source: MarketBeat, Zacks, StockTitan (2026-05-01)."
+  }
+}
