@@ -1,14 +1,27 @@
 # HANDOFF — Resume from here
 
-_Last updated: 2026-04-30 (autonomous dashboard system shipped)_
+_Last updated: 2026-05-01 (memory feedback loop closed — every agent now reads lessons)_
 
 This file is for resuming work after a conversation compaction or session change. Read this first; it points at the right files for whatever you're picking up.
 
 ## Current state in one paragraph
 
-The swing-stock AI hedge fund is now **fully autonomous** — no Mac dependency. The pipeline (5 swing strategies → Head Trader → Swing PM → Explainer → Wiki Curator) runs as Anthropic Routines on claude.ai. Routines push to `claude/*` feature branches, an auto-merge workflow merges to `main`, and a 5-min GitHub Actions cron runs the **decision ingester → fill simulator → dashboard builder → GitHub Pages deploy**. **Moomoo and OpenD are retired.** All trade state lives in a free Turso cloud SQLite DB. The live dashboard is at **https://namanvinayak.github.io/claude-code-hedge-fund/** and rebuilds itself every 5 minutes regardless of time. First real routine test (`swing-jpm`) ran end-to-end on 2026-04-30 and the PM correctly returned HOLD (R/R below 2:1 minimum). Wiki feature flag remains ON; first wiki-curator update on `JPM/recent.md` succeeded.
+The swing-stock AI hedge fund is fully autonomous AND now has a closed feedback loop. The pipeline (5 swing strategies → Head Trader → Swing PM → Explainer → Wiki Curator) runs as Anthropic Routines. Every closed trade flows back into the wiki: a nightly `wiki-maintenance` routine (10pm PT daily; was Sundays only) reads Turso, writes a lesson to `wiki/meta/lessons.md`, prepends an outcome note to the ticker's `thesis.md`, and moves the trade to "Recently Closed" in `trades.md`. **Every swing agent now reads lessons before voting** — strategies via the manifest-driven facts-bundle injector, Head Trader by reading the wiki files directly per its dispatch instructions, PM as before. Pending limit-order exposure is now correctly subtracted from PM cash (was a real math bug). Aggregate.py reads portfolio state from Turso (cloud), not local SQLite. First auto-written lesson — NVDA stop_hit -$264.65 — landed on May 1. Live dashboard still at **https://namanvinayak.github.io/claude-code-hedge-fund/**, GitHub Actions still drives the 5-min ingester→simulator→dashboard cycle. Wiki feature flag ON.
 
-## What just happened (Apr 30 session)
+## What just happened (May 01 session — memory loop closed)
+
+1. **Pending exposure math fix** (`ai_hedge/runner/aggregate.py`) — `pending_exposure = sum(qty × entry_price)` for `pending` trades is now subtracted from `cash_after_exposure` alongside `total_exposure`. PM no longer sees committed cash as free. PM prompt's `pending_orders` bullet rewritten to say cash already accounts for them.
+2. **Empty-positions warning** — `aggregate.py` prints a loud warning if Turso returns 0 open positions, so silent data issues are visible.
+3. **Wiki lesson writer** — new `tracker/wiki_daily_update.py` queries Turso for closures in last 3 days, builds a context bundle JSON. New agent prompt `ai_hedge/personas/prompts/wiki_daily_lesson_writer.md` writes one lesson bullet + thesis prepend + trades.md move per closed trade. Bundle has agent-side dedup against `lessons_current` for idempotency.
+4. **Unified wiki-maintenance skill** (`.agents/skills/wiki_maintenance/SKILL.md`) — runs nightly. Saturday early-exit (ET-aware). Sunday additionally runs the deterministic compactor. Same Anthropic Routine entry, just a smarter skill internally.
+5. **ET timezone fix** — all day-of-week and date checks now use `TZ=America/New_York`, not UTC. Fixes a real bug where 10pm Pacific = 5am UTC = "Saturday" in UTC, which would have silently skipped Friday closures.
+6. **`wiki/meta/lessons.md`** created with YAML front-matter + format spec. First real lesson appended on May 1: NVDA stop_hit, -$264.65, EMA pullback Fib dip-buy.
+7. **Fix A — Strategy agents see lessons.md** — `ai_hedge/wiki/manifest.py` now adds `("meta", "lessons", "tldr")` to all 5 swing strategies. Each strategy prompt got a paragraph framing lessons as a confidence dial (not a veto).
+8. **Fix B — Head Trader sees wiki memory** — `swing_head_trader.md` got a "Wiki Memory" section. `.agents/skills/swing/SKILL.md` Step 4 now instructs the Head Trader to read `wiki/meta/lessons.md` and `wiki/tickers/<T>/trades.md` (TL;DR) before synthesizing. Head Trader is intentionally NOT in the manifest because it has no facts bundle.
+9. **Routine env hardened** — user added `TURSO_DATABASE_URL` + `TURSO_AUTH_TOKEN` to the shared `hedge-fund-prod` cloud environment used by all routines. Without this, today's aggregate.py change to read from Turso would have silently fallen back to empty local SQLite.
+10. **First nightly wiki update auto-ran** on May 1 ("Run now") and successfully wrote the NVDA lesson + updated `wiki/tickers/NVDA/{thesis,trades}.md`. Auto-merged to main via `claude/admiring-wright-bwyve` → `main` workflow.
+
+## Previously shipped (Apr 30 — still current)
 
 1. **Turso cloud DB layer** (`tracker/turso_client.py`) — HTTP-based client (Hrana over HTTP, no native extension). Same public API as the SQLite layer. 4 tables: `trades`, `daily_summary`, `fills`, `pending_decisions`.
 2. **Migration script** (`scripts/migrate_to_turso.py`) — moved 28 historical rows from `tracker.db` to Turso once, then wiped both for a clean slate.
@@ -33,7 +46,7 @@ The swing-stock AI hedge fund is now **fully autonomous** — no Mac dependency.
 | Cloud DB + simulator + ingester + dashboard | `tracker/CLAUDE.md` |
 | Architectural audit + roadmap (Wave 4 SHIPPED) | `ARCHITECTURE.md` |
 | User context (style, focus, preferences) | `~/.claude/projects/-Users-naman-Downloads-artist/memory/MEMORY.md` and pointed files |
-| Most recent project snapshot | `~/.claude/projects/-Users-naman-Downloads-artist/memory/project_apr30_dashboard_ship.md` |
+| Most recent project snapshot | `~/.claude/projects/-Users-naman-Downloads-artist/memory/project_may01_memory_loop_closed.md` |
 | Manual run instructions | `RUN_PLAYBOOK.md` |
 | Production swing skill (used by routines) | `.claude/skills/swing/SKILL.md` |
 
@@ -47,37 +60,47 @@ The swing-stock AI hedge fund is now **fully autonomous** — no Mac dependency.
 
 ## Next steps queued (in order)
 
-### 1. Trigger more real routines (user)
+### 1. Verify next morning's swing run uses the new memory (user + automatic)
 
-Re-enable / trigger more routines from the list of 15 (14 swing + 1 wiki-maintenance). Recommended next test: a ticker likely to produce a `buy` action so we exercise the full chain (decision → ingester creates pending trade in Turso → simulator checks bars → dashboard shows pending position). NVDA, MSFT, TSLA all good candidates.
+The NVDA lesson is in `wiki/meta/lessons.md`. When the next swing routine fires:
+- Confirm Head Trader's `key_conflicts` field references the recent NVDA failure where relevant
+- Confirm the strategies' confidence values are not ignoring the lesson context
+- `git log hedge-remote/main --oneline` should show "wiki: nightly update" commits landing every night around 1am UTC (10pm PT)
 
-### 2. Validate first auto-merge (user)
+### 2. Investigate docs drift check failing inside the routine container
 
-When the next routine fires, watch:
-- `git log hedge-remote/main --oneline` — should see `swing run ...` commit landing on main directly (via auto-merge)
-- `claude/<name>` branch should be auto-deleted
-- Within 5 min, dashboard cron should pick it up — visible at the dashboard URL
+The 2026-05-01 routine log said "Docs drift check failed on module import (non-blocking per skill spec)". Locally `.venv/bin/python scripts/check_docs_drift.py` passes clean. Probably a Python-path / installation difference inside the routine container. Investigate fresh — either fix the import or document why the check has to be skipped in routines.
 
-### 3. Fancy dashboard redesign (delegated, awaiting trigger)
+### 3. (Deferred) Numeric thesis confidence_score
 
-A creative-brief delegate prompt for redesigning the dashboard UI was prepared. The current UI is dark-themed but plain. The brief gives a worker full creative freedom (typography, color, charts, motion, layout). Trigger when ready.
+Original audit directive #1 was a numeric `confidence_score` field in thesis.md that the simulator could decay automatically. Current implementation prepends a string warning ("⚠️ Recent trade: stop_hit ..."). Good enough for now; numeric score is a future enhancement once we have ~20 closed trades and want to do calibration / decay logic.
 
-### 4. Phase 2 wiki work (not blocking)
+### 4. (Deferred) Lessons aggregation
 
-- Page types: `recent.md`, `sectors.md`, `calendar.md`, `lessons.md`, `playbook.md`
-- Telemetry: `wiki_used: bool` column on Trade table, `tracker/backtest.py --split-on wiki_used`
-- `decisions.json` schema extension for "thesis-update warranted" field
-- Now possible because Turso has full trade history that the wiki curator can read
+`wiki/meta/lessons.md` is a flat append-log of bullets. After ~20 trades it should grow a "patterns" section synthesized weekly by the Sunday compactor — e.g., "EMA pullback dip-buys have lost 3 of last 4". Punted to a future session.
+
+### 5. Trigger more real routines (user)
+
+The watchlist still has 14 swing routines. Recommended next test: a ticker likely to produce a `buy` decision to exercise the full chain (decision → ingester → simulator fill → dashboard).
+
+### 6. Fancy dashboard redesign (delegated, awaiting trigger)
+
+A creative-brief delegate prompt for redesigning the dashboard UI was prepared in a prior session. Trigger when ready.
 
 ## Pending audit items (not yet shipped)
 
 - Sin #2: routine cadence — addressed by smaller routines (15 total)
 - Sin #4: deterministic screener — biggest remaining structural win
 - Sin #8: fact-bundle dedup
-- Sin #11: confidence calibration (defer until 50+ closed trades)
+- Sin #11: confidence calibration (defer until 50+ closed trades) — partial mitigation: lessons.md is now feeding the dial
 - Sin #15: per-run timeout/budget
 - Sin #16: stop management (trailing/breakeven beyond `target_price_2`)
 - Sin #19: Routines reliability — known Anthropic-side bugs; partly mitigated by smaller routines + Sonnet pin
+
+**Memory architecture follow-ups (May 1 audit):**
+- Numeric `confidence_score` field on thesis (currently a string warning)
+- Lessons aggregation / pattern extraction (currently flat append-log)
+- Investigate why `check_docs_drift.py` fails on module import inside the routine container (passes locally)
 
 ## Conventions to keep
 
@@ -96,12 +119,18 @@ A creative-brief delegate prompt for redesigning the dashboard UI was prepared. 
 .venv/bin/python -c "from ai_hedge.wiki.inject import is_wiki_enabled; print('wiki:', is_wiki_enabled())"
 .venv/bin/python -c "
 from dotenv import load_dotenv; load_dotenv()
-from tracker.turso_client import get_all_trades, get_pending_trades, get_open_positions
+from tracker.turso_client import get_all_trades, get_pending_trades, get_open_positions, get_recent_trade_history
 print('Turso — total:', len(get_all_trades()), 'pending:', len(get_pending_trades()), 'open:', len(get_open_positions()))
+print('  recent closures (3d):', len(get_recent_trade_history(days=3)))
+"
+.venv/bin/python tracker/wiki_daily_update.py   # writes runs/wiki_daily_<DATE>.json or prints 'No trades closed today'
+.venv/bin/python -c "
+from ai_hedge.wiki.manifest import AGENT_MANIFEST
+for a, e in AGENT_MANIFEST.items():
+    print(a, 'lessons=', any(x == ('meta','lessons','tldr') for x in e))
 "
 gh secret list --repo NamanVinayak/claude-code-hedge-fund
-gh api repos/NamanVinayak/claude-code-hedge-fund/pages | python3 -c "import sys,json; d=json.load(sys.stdin); print('Pages:', d['source']['branch'], d['build_type'])"
-git log hedge-remote/main --oneline -5
+git log hedge-remote/main --oneline -10
 ```
 
-Expected: drift passes, wiki flag True, Turso reachable, both TURSO_* secrets present, Pages on `gh-pages`/`legacy`, recent commits include the dashboard worker series + auto-merge workflow.
+Expected: drift passes, wiki flag True, Turso reachable, all 6 swing agents in manifest show `lessons=True`, recent commits include the May 1 memory-loop series (`9b364af`, `91e0b6f`, `b921309`, `aa6c73e`, `8e83444`, `2c505c3`, `1d7dfbc`, `51cdfab`, `d44dd6d`).
