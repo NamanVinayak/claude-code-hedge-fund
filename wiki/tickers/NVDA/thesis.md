@@ -12,7 +12,7 @@ summary: NVDA is an AI infrastructure monopoly with exceptional fundamentals; pr
 
 ## TL;DR
 
-⚠️ Recent trade: stop_hit 2026-04-30, -$264.65. Thesis under review.
+⚠️ Recent trade: stop_hit 2026-04-30, -$63.20 corrected (originally -$264.65 due to sizing bug, see commit b2b472d). Thesis under review.
 
 NVDA dominates the AI chip market (~81% share) in a multi-year capex supercycle. Fundamentals remain exceptional — 61% revenue growth, 144% earnings growth, 59% operating margin, near-zero leverage, D/E 0.11. The structural thesis is intact. **What changed:** the prior bear case cited RSI 81–87 and z-score 2.39–2.42 as overextension risks; those risks have now resolved (RSI-14 59.74, z-score 1.06 as of 2026-05-01 run). The new dominant risk is that the $208.20 invalidation level has been broken on 1.52x volume — price is now at $199.57, testing the 38.2% Fib / EMA-21 confluence zone ($196.75–$197.67). Two consecutive entries (67 shares at $209.25 and 3 shares at $209.50) were both stopped out at $205.30 on 2026-04-30, recording -$264.65 in realized losses. Entry discipline remains paramount: do not chase.
 

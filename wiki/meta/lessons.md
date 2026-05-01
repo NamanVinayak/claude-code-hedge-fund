@@ -21,8 +21,8 @@ The "why" should reference: the thesis at the time, the macro regime, which swin
 
 | Setup Type | Trades | Wins | Win Rate | Avg P&L | Total P&L |
 |---|---|---|---|---|---|
-| EMA pullback Fib dip-buy | 1 | 0 | 0% | -$264.65 | -$264.65 |
+| EMA pullback Fib dip-buy | 1 | 0 | 0% | -$63.20 | -$63.20 |
 
 ## Lessons
 
-2026-04-30 | NVDA | EMA pullback Fib dip-buy | -$264.65 | Stop triggered at $205.30 (hourly Fib 61.8%); swing_trend_momentum and swing_breakout were bullish on AI capex thesis, but price breached the stop zone intraday amid stretched macro (RSI 81–87) with no bullish confirmation candle before exit.
+2026-04-30 | NVDA | EMA pullback Fib dip-buy | -$63.20 (corrected from -$264.65) | Stop triggered at $205.30 (hourly Fib 61.8%); swing_trend_momentum and swing_breakout were bullish on AI capex thesis, but price breached the stop zone intraday amid stretched macro (RSI 81–87) with no bullish confirmation candle before exit. **Note:** trade was originally sized 67 shares ($14,020) due to a phantom $100K budget bug (fixed commit b2b472d). With the correct $25K budget at 14.2% vol-adj limit, position would have been 16 shares ($3,348). Corrected P&L reflects the strategy's actual signal quality, not the sizing error.
