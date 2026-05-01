@@ -22,14 +22,18 @@ def get_current_prices(tickers):
         data = yf.download(" ".join(tickers), period="1d", progress=False)['Close']
         if data.empty:
             return {}
+        import math
         prices = {}
-        if len(tickers) == 1:
-            if not data.isna().iloc[-1]:
-                prices[tickers[0]] = float(data.iloc[-1])
+        if not hasattr(data, 'columns'):
+            val = data.iloc[-1]
+            if not math.isnan(float(val)):
+                prices[tickers[0]] = float(val)
         else:
             for ticker in tickers:
-                if ticker in data.columns and not data[ticker].isna().iloc[-1]:
-                    prices[ticker] = float(data[ticker].iloc[-1])
+                if ticker in data.columns:
+                    val = data[ticker].iloc[-1]
+                    if not math.isnan(float(val)):
+                        prices[ticker] = float(val)
         return prices
     except Exception as e:
         print(f"Error fetching prices: {e}")
