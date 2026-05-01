@@ -1,46 +1,46 @@
 ---
 name: GOOG thesis
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-01
+last_run_id: 20260501_164617
 target_words: 500
 stale_after_days: 30
-word_count: 502
-summary: Alphabet is an AI-infrastructure compounder with a dominant search moat, but antitrust remedies and capex inflation are the key bear risks.
+word_count: 498
+summary: Q1 2026 earnings beat triggered the prior bear-invalidation clause (revenue $109.9B > $107B threshold); Google Cloud $20B+ quarter validates the AI cloud bull case; DOJ cross-appeal and $180-190B capex remain the durable bear risks; swing setup is watch-not-act at current $382 price.
 ---
 
 # GOOG — Thesis
 
 ## TL;DR
 
-Alphabet is broadly bullish across two independent model runs (20260415_093758 and swing_20260411_211655): 7/10 and 6/9 strategy agents agree on the long side with zero bearish signals in either run. The durable bull case is AI cloud compounding via Google Cloud; the durable bear case is antitrust-mandated structural change plus a $175–185B capex commitment that pressures near-term earnings.
+**Prior bear thesis falsified (partially).** The prior thesis (bootstrap, 2026-04-29) listed "Q1 2026 earnings beat with revenue above $107B" as a bear invalidation trigger. Q1 2026 revenue came in at $109.9B (+20% YoY), EPS $5.11 vs. $2.62 consensus — triggering that clause definitively. Additionally, "Google Cloud quarterly growth decelerating below 25% YoY" was identified as a bull invalidation; actual Q1 Cloud growth was +63% YoY, the opposite. The bull case is materially upgraded. The durable bear risks are the DOJ cross-appeal for forced divestiture and $180–190B capex guidance pressure on FCF. Swing setup: structurally bullish but price at $381.94 is in no-chase territory — 3 of 5 agents wait for $342–$358 pullback to restore 3:1+ R/R. (Source: decisions.json, explanation.json, web_research/GOOG.json — run 20260501_164617)
 
 ## Bull case
 
-**1. Google Cloud as the third AI infrastructure hyperscaler.** Both runs flag Google Cloud as gaining ground on AWS and Azure (swing_20260411_211655 web research; 20260415_093758 explanation). AI workloads (Gemini, TPUs, enterprise contracts) are driving margin-accretive revenue at scale. The Thoma Bravo / Google Cloud AI partnership (cited in 20260415_093758 signals as a fresh catalyst) is representative of the enterprise pipeline building.
+**1. Google Cloud as the validated AI cloud leader.** Q1 2026 confirmed Google Cloud as a full-scale hyperscaler: $20B+ quarterly revenue (+63% YoY), cloud backlog nearly doubling QoQ to $460B+. This is no longer a "thesis to be proven" — the AI cloud acceleration is already in the numbers. Alphabet outperformed AWS, Azure, and Meta in post-earnings market reaction (+10%), described by Fortune as "the only hyperscaler to convince investors that AI spending is already paying off." (Source: web_research/GOOG.json, run 20260501_164617)
 
-**2. Search moat survived the antitrust gauntlet.** The DOJ's final remedy was a choice-screen mandate — not a forced breakup (20260415_093758 web_research/GOOG.json). Citigroup raised its price target to $405 the same day the remedies order landed (April 14, 2026), calling the no-divestiture outcome a significant relief. Analyst consensus is 44 Strong Buy ratings vs. 0 Sells with an average target of $385.46, high of $450.
+**2. Search moat survived antitrust.** DOJ's final remedy was a choice-screen mandate, not forced breakup. The cross-appeal risk exists, but the base case is structural survival of the core business. Citigroup PT $405; analyst consensus overwhelmingly bullish (37–68 Strong Buy ratings). (Source: 20260415_093758 web_research; web_research/GOOG.json, run 20260501_164617)
 
-**3. Waymo optionality.** The April 2026 Waymo expansion to Nashville drove a 7.3% single-session gain (swing_20260411_211655 explanation). Waymo is not modeled in consensus estimates — any acceleration in robotaxi city rollouts is a free call option on top of the core ad/cloud business.
+**3. Waymo optionality.** Not modeled in consensus estimates. Each new city rollout is incremental call-option value on top of the core ad/cloud business. Nashville expansion drove a 7.3% single-session gain in April 2026. (Source: swing_20260411_211655 explanation)
 
-**4. Balance sheet and financial fortress.** The Druckenmiller-styled agent in the 20260415 run cited a debt-to-equity ratio of 0.04, calling it a "fortress balance sheet." Annualized price momentum of 109% at that print confirms the market was pricing in substantial fundamental re-rating.
+**4. Balance sheet fortress.** Debt-to-equity: 0.12, current ratio: 2.01. Pristine financial health (fundamentals_analyst_agent, run 20260501_164617). Net margin 32.81%, operating margin 32.03% — exceptional profitability at scale.
 
-**5. TurboQuant / AI efficiency.** Google's TurboQuant algorithm shrinks LLM inference memory more than six-fold (swing_20260411_211655 web_research). This is a direct moat extension — lower inference cost means higher margins for Gemini-based products and a competitive moat against memory-hungry rivals like OpenAI.
+**5. Google I/O 2026 and Anthropic investment.** Google I/O on May 19–20 represents the next catalyst. Alphabet's reported $40B consideration for Anthropic signals intent to compete directly with Microsoft's OpenAI partnership — a potential moat extension in enterprise AI. (Source: web_research/GOOG.json, run 20260501_164617)
 
 ## Bear case
 
-**1. Antitrust search-index sharing.** The April 14, 2026 remedies order requires Google to share its search index with rivals (20260415_093758 web_research). Morgan Stanley estimates this could put $15–25B in annual advertising revenue at risk. The DOJ filed a cross-appeal seeking stronger remedies including forced divestitures — the tail risk is not fully off the table.
+**1. DOJ cross-appeal — forced divestiture tail risk.** The remedy may be escalated on appeal. Morgan Stanley estimates search index sharing puts $15–25B in annual ad revenue at risk. This remains live and unresolved. (Source: 20260415_093758 web_research)
 
-**2. Capex inflation vs. earnings growth.** Alphabet's 2026 capital expenditure guidance is $175–185B, roughly double year-on-year (20260415_093758 web_research). The growth-analyst agent in the 20260415 run flagged a declining EPS trend (-0.4%), negative insider net flow (-$682M), and operating margin contraction (-1.3% trend) — the only bearish signal in either run's agent roster.
+**2. Capex inflation vs. near-term FCF.** Full-year 2026 capex guidance raised to $180–190B (from $175–185B), with management signaling 2027 capex will "significantly increase." Free cash flow compression is real near-term — the returns are 2–3 years out. Growth analyst flags declining EPS trend (-0.08 trend), operating margin contraction (-1.5% trend). (Source: growth_analyst_agent, run 20260501_164617)
 
-**3. AI competition intensifying.** Microsoft launched three proprietary foundational AI models (MAI brand) in April 2026, including one that outperformed Google Gemini on audio benchmarks. Meta's Muse Spark, OpenAI's enterprise push, and Anthropic's Claude are all competing directly with Gemini in both enterprise and consumer AI.
+**3. Valuation gap (DCF).** DCF intrinsic value: $1.15T. Market cap: $4.6T — a 75% premium. Even the bull-case DCF ($1.39T) is well below current market cap. The market is pricing in extraordinary growth; any deceleration would compress multiples sharply. (Source: valuation_analyst_agent, run 20260501_164617)
 
-**4. Low-volume rally fragility.** The swing_20260411 run flagged volume at only 0.59x average during the rally. Momentum on thin volume is historically less reliable and more prone to reversal.
+**4. Near-term mean reversion risk.** RSI-7 at 97.75, Z-score 3.29 vs. 50-SMA — statistically extreme extension post-earnings. The NVDA pattern match (April 30 stop loss at RSI 81-87) applies directly. Price at $382 carries poor R/R (0.79:1 to nearest support). (Source: swing_mean_reversion, swing_macro_context, run 20260501_164617)
 
 ## What would change my mind
 
-- Bull invalidation: DOJ wins forced divestiture on appeal; Google Cloud quarterly growth decelerates below 25% YoY; Q1 2026 earnings miss with capex guidance raised further.
-- Bear invalidation: Q1 2026 earnings beat with revenue above $107B; antitrust appeal is rejected; Google Cloud wins a marquee enterprise AI contract over AWS/Azure.
+- Bull invalidation: Google Cloud quarterly growth decelerates to <40% YoY; DOJ wins forced divestiture on appeal; capex raised above $200B without revenue guidance raise.
+- Bear invalidation: Pullback to $342–$358 restores 3:1+ R/R — this is the swing entry trigger, not a thesis change.
 
 ## Last updated
 
-Sources: runs/20260415_093758 and runs/swing_20260411_211655. Bootstrap date: 2026-04-29.
+Sources: runs/20260501_164617 (decisions.json, explanation.json, web_research/GOOG.json, signals_combined.json). Prior thesis (bootstrap 2026-04-29) bear invalidation triggered by Q1 2026 revenue $109.9B > $107B threshold.
