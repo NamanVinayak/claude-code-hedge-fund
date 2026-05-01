@@ -1,0 +1,77 @@
+{
+  "ticker": "AMD",
+  "verified_at": "2026-05-01T13:45:00",
+  "facts_files_read": [
+    "warren_buffett__AMD.json",
+    "ben_graham__AMD.json",
+    "aswath_damodaran__AMD.json"
+  ],
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.1153,
+      "web_value": 0.1225,
+      "source": "CNBC / Investing.com (Apr 30, 2026)",
+      "status": "ok",
+      "deviation": "6.2%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.0855,
+      "web_value": 0.1067,
+      "source": "GuruFocus / companiesmarketcap.com (Apr 2026)",
+      "status": "MISMATCH",
+      "deviation": "24.8%",
+      "action": "replaced with web value (0.1067) in warren_buffett__AMD.json and aswath_damodaran__AMD.json"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 136.16,
+      "web_value": 130.0,
+      "source": "FinanceCharts / fullratio.com (Apr 27, 2026); range 126-136 across sources",
+      "status": "ok",
+      "deviation": "4.7%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 31200000000.0,
+      "web_value": 34639000000.0,
+      "source": "YCharts / FinanceCharts TTM Dec 2025",
+      "status": "ok",
+      "deviation": "11.0%",
+      "note": "Our value derived from market_cap / price_to_sales_ratio using Sep 2025 TTM period; web reflects full-year 2025 data"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 581632786432.0,
+      "web_value": 577940000000.0,
+      "source": "stockanalysis.com / companiesmarketcap.com (May 1, 2026)",
+      "status": "ok",
+      "deviation": "0.6%"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.0624,
+      "web_value": 0.0708,
+      "source": "Yahoo Finance / CNBC (Apr 28-29, 2026)",
+      "status": "ok",
+      "deviation": "11.9%"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.0519,
+      "web_value": 0.038,
+      "source": "Yahoo Finance 3.20%, Investing.com 4.5%, average ~3.8% (Apr 29, 2026)",
+      "status": "MISMATCH",
+      "deviation": "36.6%",
+      "action": "replaced with web value (0.038) in warren_buffett__AMD.json and aswath_damodaran__AMD.json"
+    }
+  ],
+  "overall_status": "2 mismatches corrected",
+  "corrections_applied": true,
+  "files_updated": [
+    "warren_buffett__AMD.json",
+    "aswath_damodaran__AMD.json"
+  ],
+  "notes": "Our metrics used report_period 2025-09-27 (Sep TTM). Web sources reflect full-year 2025 / Q4 2025 data. Operating margin deviation likely explained by the full-year 2025 non-GAAP improvement ($7.8B non-GAAP operating income vs GAAP $3.7B) and more recent period coverage. ROA deviation is larger as our value appears to use a smaller asset base from the older period."
+}

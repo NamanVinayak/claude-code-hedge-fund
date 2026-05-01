@@ -1,42 +1,42 @@
 ---
 name: macro regime
 last_updated: 2026-05-01
-last_run_id: 20260501_133540
+last_run_id: 20260501_133944
 target_words: 400
 stale_after_days: 14
-word_count: 398
-summary: Transitional risk-on — S&P April best month since 2020; Q1 GDP 2.0% (miss vs 2.3%); PCE 3.5% above target; Fed holds 3.5%-3.75%; Iran/Hormuz and Warsh confirmation are live risks; AI capex cycle intact.
+word_count: 390
+summary: Risk-on continuation May 1 — S&P/Nasdaq at record highs (best April since 2020); Q1 GDP 2.0% misses 2.3% estimate; PCE at 3.5%; Fed holds 3.5-3.75%; Intel Q1 blowout is positive AI read-through; Iran/Hormuz blockade remains dominant tail risk.
 ---
 
 # Macro Regime
 
 ## TL;DR
 
-**Transitional risk-on as of May 1, 2026.** April 2026 was the S&P 500's best month since 2020, with indices at new all-time highs. However, Q1 GDP came in at 2.0% versus the 2.3% expected — a soft miss signaling growth deceleration. PCE inflation is running at 3.5%, above the Fed's 2% target, keeping rate cuts firmly off the table. The Federal Reserve held at 3.5%–3.75% in an 8-4 dissent vote; Kevin Warsh's Senate confirmation as next Fed chair adds policy transition risk. US military posturing around Iranian ports remains the dominant left-tail macro risk. The AI capex cycle is fundamentally intact (Alphabet and Amazon confirmed expansion), but growth signals are mixed.
+**Risk-on continuation as of May 1, with GDP softness and Iran tail intact.** S&P 500 and Nasdaq closed April at record highs — best month since 2020 (+9% MTD). May 1 open: indices +0.3–0.4% on Apple earnings beat. Q1 2026 GDP came in at 2.0% (below the 2.3% consensus estimate) but still expansionary; PCE at 3.5% keeps near-term cut expectations muted. Fed held at 3.5%–3.75% on April 29 (third consecutive hold, unusual 8-4 dissent). Intel Q1 blowout (+24.89%) is a direct positive read-through for AI semiconductors. US military blockade of Iranian ports remains the dominant left-tail risk.
 
 ## Fed posture
 
-The Fed voted 8-4 on April 29 to hold at **3.5%–3.75%** — third consecutive hold. Unusual 8-4 dissent (last seen October 1992) signals internal disagreement on next move. PCE inflation at 3.5% is meaningfully above target. No near-term rate cut expected. Kevin Warsh's Senate confirmation advancing — potential hawkish policy transition risk in 2H 2026 [web_research/AMD.json, run 20260501_133540].
+Held at **3.5%–3.75%** on April 29 — third consecutive hold. Unusual 8-4 dissent split signals deepening internal disagreement. PCE at 3.5% and tariff pass-through keep cuts off the table through 2026. April 29 was likely Powell's final meeting as Chair; Kevin Warsh awaits Senate confirmation as next Chair. Easing bias retained but contested [web_research/AMD.json, run 20260501_133944].
 
 ## Rate trajectory and inflation
 
-Higher-for-longer is the structural baseline. PCE at 3.5% driven by tariff pass-through and Iran-driven energy prices. Q1 GDP of 2.0% (vs 2.3% expected) marks the first meaningful growth miss in three quarters — stagflation risk is rising but not yet dominant. IMF downgraded global growth to 3.1% and raised headline inflation forecast to 4.4% under conflict baseline. Semiconductor supply chains face additional scrutiny under trade policy [web_research/AMD.json, run 20260501_133540].
+Higher-for-longer is the structural baseline. Q1 GDP 2.0% below estimate introduces soft-landing ambiguity. PCE at 3.5% and Iran-driven energy spikes are the two inflation engines. US-China tariffs at 25% on advanced AI chips add a secondary structural layer. IMF cut 2026 global growth to 3.1% and raised headline inflation to 4.4% under conflict baseline [web_research/AMD.json, run 20260501_133944].
 
 ## Market context (May 1)
 
-S&P 500 closed at all-time highs in April (+9% MTD, best since 2020). Futures edged higher on May 1 despite the GDP miss. AI capex thematic intact: Alphabet and Amazon confirmed expansion in Q1 results. The two most concentrated risk themes for swing positions are: (1) AMD earnings binary May 5 — a sell-the-news risk given the +76% April run; (2) NVDA stop-out on April 30 confirmed that extended RSI readings (81–87) in AI names carry real downside snap risk even when the macro thesis is valid [web_research/AMD.json, run 20260501_133540].
+S&P 500 and Nasdaq at record highs; best April since 2020. Intel Q1 +24.89% on blowout results (18A process + AI CPU demand) is a direct positive read-through for AMD and AI semiconductor complex. AI capex cycle intact: Alphabet and Amazon expanded in Q1 results. Meta -9% capex shock from April 29 absorbed without broad de-risking. US midterm election cycle adding policy uncertainty [web_research/AMD.json, run 20260501_133944].
 
 ## Geopolitical and regulatory
 
-**US-Iran Strait of Hormuz risk is the dominant left-tail.** Goldman raised Brent forecast to $90/bbl on blockade risk. A closure would spike oil, reignite inflation, force the Fed further hawkish, and pressure credit quality across financials. Secondary risks: NATO-Greenland competition, US-China tariffs and export controls (25% tariff on AMD MI325X), Venezuela posturing. IMF global growth forecast 3.1% embeds conflict baseline [web_research/AMD.json, run 20260501_133540].
+**US military blockade of Iranian ports is the dominant left-tail risk.** Hormuz disruption spikes global energy prices; IMF projects 19% rise in energy commodities. Goldman raised Brent to $90/bbl on blockade risk. Secondary flashpoints: NATO-Greenland, US-Venezuela, Warsh policy transition uncertainty [web_research/AMD.json, run 20260501_133944].
 
-## Risk-off triggers to watch
+## Risk-off triggers
 
-- **Iran escalation / Strait of Hormuz closure** — oil above $100 would re-accelerate inflation and force de-risking across risk assets
-- **AMD earnings miss (May 5)** — data center GPU revenue below $5B or downward Q2 guidance would hit the AI infrastructure narrative broadly
-- **Warsh confirmation hawkish signal** — any hint of rate hike scenarios would reset financials and rate-sensitive tech multiples
-- **Q2 GDP deceleration** — Q1 miss at 2.0% warns; a sub-1.5% Q2 print would shift the regime from risk-on to stagflation caution
+- **Iran escalation / Hormuz closure** — oil above $100, inflation re-accelerates, broad de-risking
+- **GDP deceleration** — Q1 2.0% miss; watch Q2 jobs and ISM data
+- **Capex shock contagion** — if Amazon or MSFT revise AI capex lower, semiconductor demand thesis impacted
+- **Warsh hawkish shift** — new Fed Chair could reset rate expectations in 2H 2026
 
 ## Last updated
 
-2026-05-01. Sourced from `web_research/AMD.json` macro_context (run `20260501_133540`). Supersedes prior entry sourced from `20260430_182725`.
+2026-05-01. Source: `web_research/AMD.json` macro_context (run `20260501_133944`). Supersedes `20260430_182725`.

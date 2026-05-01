@@ -1,0 +1,11 @@
+{
+  "AMD": {
+    "signal": "bearish",
+    "confidence": 60,
+    "reasoning": "Branch A (fade the extreme) fires. AMD is statistically overextended on multiple timeframes: daily Z-score 2.6 (above +2 threshold), daily RSI 83.06 (well above 75 overbought threshold), and price is +52.64% above the 50-SMA (extreme extension, well above the >10% threshold). Bollinger %B at 0.929 shows price pressing the upper band. Hourly RSI also reads 81.63 (overbought), confirming multi-timeframe overbought alignment — daily extreme plus hourly extreme is the strongest fade signal per strategy rules. Hourly ADX of 15.89 (weak) contrasts with daily ADX of 74.94 (strong), suggesting intraday momentum is decelerating even as the daily trend remains powerful. Branch B (buy-the-dip at Fib) does not fire — price is at ATH, not in a pullback to any retracement level. Caution factors lowering confidence: (1) No confirmed reversal candle yet — the last daily session was a strong bull close (+$17.38, from $337 to $354); strategy requires reversal confirmation before full entry. (2) Extraordinarily strong daily trend (ADX 74.94, +DI 55.37 vs -DI 10.1) means the extension can persist or grow. (3) Earnings binary on May 5 creates asymmetric gap risk. (4) Wiki context: this is a repeat overbought extension scenario (prior Apr 17 run saw RSI 91, Z-score 3.66 — repeat attempts at same overextended level lower conviction of a fresh fade). (5) Lessons log: NVDA EMA-pullback dip-buy in RSI 81–87 territory stopped out last run — caution on any early fade against strong-trend names. Target is a reversion toward the hourly Bollinger middle band / hourly support at 328.81, stopping short of full 50-SMA mean reversion given earnings risk. Stop placed above hourly swing high at 357.33 plus buffer.",
+    "entry": 354.0,
+    "target": 328.81,
+    "stop": 360.0,
+    "timeframe": "3-7 trading days"
+  }
+}

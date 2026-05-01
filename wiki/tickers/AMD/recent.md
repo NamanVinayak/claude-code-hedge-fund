@@ -1,11 +1,11 @@
 ---
 name: AMD recent
 last_updated: 2026-05-01
-last_run_id: 20260501_133540
+last_run_id: 20260501_133944
 target_words: 300
 stale_after_days: 60
-word_count: 258
-summary: Signal history — direction flips and key level breaks for AMD across swing runs; $352.99 level broken 2026-05-01 but volume-deficient (1.05x vs 1.5x required)
+word_count: 199
+summary: Signal history — direction flips and key level breaks for AMD across swing runs
 ---
 
 # AMD — Recent Signal History
