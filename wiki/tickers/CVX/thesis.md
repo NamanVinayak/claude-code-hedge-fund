@@ -4,6 +4,7 @@ last_updated: 2026-04-30
 last_run_id: 20260430_212526
 target_words: 500
 stale_after_days: 30
+confidence_score: 70
 word_count: 497
 summary: Iran port blockade partially falsified the ceasefire-driven bear thesis; bearish technical setup intact at $192-193 exhaustion zone; earnings blackout defers any action to May 4-5
 ---

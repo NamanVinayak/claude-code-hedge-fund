@@ -4,6 +4,7 @@ last_updated: 2026-04-29
 last_run_id: bootstrap
 target_words: 500
 stale_after_days: 30
+confidence_score: 70
 word_count: 512
 summary: SPY serves as a liquid broad-market vehicle; bullish structurally, capped near-term by tech correlation and Iran tail risk
 ---

@@ -4,6 +4,7 @@ last_updated: 2026-04-29
 last_run_id: bootstrap
 target_words: 500
 stale_after_days: 30
+confidence_score: 70
 word_count: 512
 summary: dominant cloud/AI platform trading at a multi-year valuation discount; bull case is Azure re-acceleration, bear case is AI capex destroying margins
 ---

@@ -4,6 +4,7 @@ last_updated: 2026-04-29
 last_run_id: bootstrap
 target_words: 500
 stale_after_days: 30
+confidence_score: 70
 word_count: 505
 summary: AWS cloud dominance and AI infrastructure build-out is the durable bull thesis; mean reversion risk and tariff pass-through are the structural bear risks
 ---

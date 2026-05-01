@@ -4,6 +4,7 @@ last_updated: 2026-04-30
 last_run_id: 20260430_194522
 target_words: 500
 stale_after_days: 30
+confidence_score: 70
 word_count: 497
 summary: Prior "squeeze-unresolved, no direction" thesis falsified — bearish squeeze resolution confirmed; JNJ is now a downtrend short candidate, not a range-bound hold
 ---

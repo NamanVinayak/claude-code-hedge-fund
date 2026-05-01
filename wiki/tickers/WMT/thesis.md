@@ -4,6 +4,7 @@ last_updated: 2026-04-30
 last_run_id: 20260430_212526
 target_words: 500
 stale_after_days: 30
+confidence_score: 70
 word_count: 491
 summary: Hourly breakout above $129 in progress — the exact trigger the prior thesis demanded — but daily ADX (12.89) and R/R (<1:1 at current price) keep the model in watch mode; watch entry $129.50 with $136 target if daily confirms.
 ---

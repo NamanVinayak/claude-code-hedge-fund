@@ -4,6 +4,7 @@ last_updated: 2026-04-29
 last_run_id: bootstrap
 target_words: 500
 stale_after_days: 30
+confidence_score: 70
 word_count: 516
 summary: Durable bull/bear story for the iShares Russell 2000 ETF — small-cap benchmark sensitive to rates, domestic demand, and credit conditions.
 ---

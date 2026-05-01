@@ -4,6 +4,7 @@ last_updated: 2026-04-29
 last_run_id: bootstrap
 target_words: 500
 stale_after_days: 30
+confidence_score: 70
 word_count: 502
 summary: Alphabet is an AI-infrastructure compounder with a dominant search moat, but antitrust remedies and capex inflation are the key bear risks.
 ---

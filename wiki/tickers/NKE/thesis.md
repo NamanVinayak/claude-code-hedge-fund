@@ -4,6 +4,7 @@ last_updated: 2026-04-29
 last_run_id: bootstrap
 target_words: 500
 stale_after_days: 30
+confidence_score: 70
 word_count: 521
 summary: NKE is a broken-trend short with insider-buying wildcard — structural decay vs. potential mean-reversion floor
 ---

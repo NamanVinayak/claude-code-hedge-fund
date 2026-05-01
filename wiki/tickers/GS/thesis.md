@@ -4,6 +4,7 @@ last_updated: 2026-04-30
 last_run_id: 20260430_190826
 target_words: 500
 stale_after_days: 30
+confidence_score: 70
 word_count: 497
 summary: Goldman Sachs thesis updated April 30 — ADX cleared 25 (falsifying the prior "not yet actionable" gate), but bearish narrative intensified via FICC miss, extreme insider distribution, and broken hourly support
 ---

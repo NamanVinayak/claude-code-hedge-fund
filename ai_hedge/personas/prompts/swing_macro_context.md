@@ -61,6 +61,8 @@ Your facts bundle may include a `wiki_context` block with the **full** content o
 
 The `lessons_tldr` slice contains recent trade outcomes across the whole portfolio (format: `[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME] | [WHY]`). Recent losses driven by macro stress (regime shift, sector rotation, rate scare) are especially relevant for your veto power — if the same regime context that sank a recent trade is still in effect, lower confidence. Current data still wins; lessons are a confidence dial, not a veto.
 
+The `thesis_tldr` slice carries a numeric `confidence_score` (0–100, default 70). It decays on stop-outs (-10) and ticks up on wins (+5). When the score is below 50, that ticker's thesis has been failing recently — bias your macro veto toward bearish/neutral unless the macro regime has visibly changed since those losses. When it's ≥ 80, the thesis has earned the right to a higher-conviction read.
+
 ## Human Template
 
 Analyze the following daily and hourly indicators, financials, news, and macro/web context for {ticker} from a top-down macro + relative-strength + asymmetric-R/R perspective.

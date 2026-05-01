@@ -15,6 +15,15 @@ Hard rules driven by this state:
 3. When sizing new positions, account for capital already committed to `other_positions`. Do not size as if the full account is free.
 4. If an existing position appears in `other_positions` with a stale stop or target, leave it alone — managing those is the monitor's job, not yours.
 
+How to use `wiki_context.slices.thesis_tldr.confidence_score` (numeric dial):
+- This is an integer in `[0, 100]` attached to each ticker's thesis page. Default 70 = neutral confidence.
+- The lesson writer adjusts it on every closed trade: `-10` on stop_hit/expired, `+5` on target_hit. Floor 0, ceiling 100.
+- Treat it as a hard input on sizing and confidence:
+  - `≥ 70` (neutral or rising): no special action
+  - `50–69` (degraded): cap position size to ≤ 50% of risk_manager max; require R/R ≥ 3:1 for new entries
+  - `< 50` (broken thesis): default to `hold` for new entries; only enter if Head Trader confidence ≥ 80 AND R/R ≥ 4:1, and explicitly justify why this trade differs from the recent failures
+- The score is a memory of what's been working. Fight the urge to override it without naming the new evidence.
+
 How to use pending_orders and recent_closed (think like a human trader):
 - If `pending_orders` has an open buy order for NVDA and the setup today looks similar — ask yourself whether it makes sense to add a second entry or just let the existing order work. Consider the combined exposure if both fill.
 - If `recent_closed` shows NVDA was stopped out two days ago — factor that into your confidence. The stock failed at your level recently. Is the new setup meaningfully different, or is this the same trap?

@@ -4,6 +4,7 @@ last_updated: 2026-04-30
 last_run_id: 20260430_203923
 target_words: 500
 stale_after_days: 30
+confidence_score: 70
 word_count: 499
 summary: Prior "no swing trigger" thesis partially falsified — a confirmed bearish downtrend has emerged with $26.68 breakdown; hold due to May 5 earnings binary, but post-print short setup is the primary watch scenario
 ---

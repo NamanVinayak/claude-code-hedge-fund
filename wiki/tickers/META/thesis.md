@@ -4,6 +4,7 @@ last_updated: 2026-04-30
 last_run_id: 20260430_141238
 target_words: 500
 stale_after_days: 30
+confidence_score: 70
 word_count: 498
 summary: Prior bull thesis (breakout long at $675-677) is fully invalidated by Q1 2026 earnings capex shock; bias flipped to bearish medium-term pending reassessment of $125-145B capex narrative.
 ---

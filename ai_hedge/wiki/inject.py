@@ -56,13 +56,20 @@ def _slice_for(category: str, basename: str, mode: str, ticker: str | None) -> d
         return {}
     fm = parse_front_matter(path)
     text = read_tldr(path) if mode == "tldr" else read_full(path)
-    return {
+    out = {
         "path": str(path),
         "mode": mode,
         "content": text,
         "last_updated": fm.get("last_updated"),
         "stale": is_stale(fm),
     }
+    # Expose numeric confidence_score from thesis pages (set by the daily
+    # lesson writer on every closed trade: -10 on stop_hit/expired, +5 on
+    # target_hit, clamped to [0,100]; default 70). Agents read this as a
+    # confidence dial — low score = thesis has been losing recently.
+    if basename == "thesis" and "confidence_score" in fm:
+        out["confidence_score"] = fm["confidence_score"]
+    return out
 
 
 def build_wiki_context(agent: str, ticker: str) -> dict[str, Any]:
