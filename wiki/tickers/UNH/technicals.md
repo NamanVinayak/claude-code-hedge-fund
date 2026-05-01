@@ -1,42 +1,42 @@
 ---
 name: UNH technicals
-last_updated: 2026-04-30
-last_run_id: 20260430_194522
+last_updated: 2026-05-01
+last_run_id: 20260501_194523
 target_words: 350
 stale_after_days: 7
-word_count: 342
-summary: Parabolic trend at statistical extremes — ADX 81.64, RSI 94.3, z-score 2.54; no-trade zone until pullback to $348-355 EMA cluster
+word_count: 348
+summary: Runaway uptrend at new statistical extremes — ADX 84.15, RSI 97.45, z-score 2.34; no-trade zone intact; wait for pullback to $350-358 10-EMA zone
 ---
 
 # UNH — Technicals
 
 ## TL;DR
 
-As of the April 30, 2026 run, UNH is in a runaway uptrend with ADX 81.64 — one of the strongest trend readings in the healthcare sector — but is severely overextended: RSI-14 at 94.3, RSI-7 at 99.52, z-score 2.54, and price 25% above the 50-SMA. No actionable entry exists at current price. Wait for pullback to the $348–355 10-EMA zone. Prior setup (Apr 11 post-catalyst consolidation near $304) has been completely superseded by the +41.6% surge. (Source: swing_head_trader signal, signals_combined.json, run 20260430_194522.)
+As of the May 1, 2026 run, UNH remains in a runaway uptrend with ADX 84.15 — extreme trend territory — but has become even more overextended than the prior run: RSI-14 at 97.45 (up from 94.3), RSI-7 at 98.07, price 23.85% above the 50-SMA, z-score 2.34. No actionable entry exists at current price ($370.48). The no-trade zone is confirmed for the second consecutive run. Wait for a pullback to the $350–358 10-EMA zone. The 10-EMA has risen to $352 but price remains ~$18 above it. (Source: swing_head_trader signal, signals_combined.json, run 20260501_194523.)
+
+**Prior setup archived.** The Apr 30 parabolic extension setup (RSI 94.3, z-score 2.54) was the prior state. RSI has climbed further to 97.45; z-score has eased marginally to 2.34. The no-trade verdict is unchanged.
 
 ## Multi-timeframe state
 
 | Timeframe | Trend | Momentum | Note |
 |---|---|---|---|
-| Daily | Extreme uptrend — ADX 81.64, +DI 49.41 vs -DI 2.75 | Severely overbought — RSI 94.3, pct-b 0.905 | Textbook parabolic extension; mean-reversion risk elevated |
-| Hourly | Uptrend intact (24h EMA 365.6 > 48h EMA 358.3 > 120h EMA 336.6) | MACD histogram -0.63 (turning negative) | Early intraday momentum exhaustion signal |
+| Daily | Extreme uptrend — ADX 84.15, +DI 46.67 vs -DI 4.12 | Historically overbought — RSI-14 97.45, RSI-7 98.07, z-score 2.34, pct-b 0.869 | Runaway trend; ROC-21d +36.92%; no reversal candle yet |
+| Hourly | Uptrend intact but losing momentum | MACD histogram -1.01 (negative), ROC mixed, hourly +DI/-DI nearly equal (19.65/19.03) | Early intraday momentum fade; hourly RSI 56.41 (not overbought — divergence from daily) |
 
-EMA stack (daily): 10 EMA $348.1 > 21 EMA $328.6 > 50 EMA $310.7 — textbook bullish alignment. However, price at $370.74 is 6.5% above the 10-EMA and 12.8% above the 21-EMA. (Source: swing_trend_momentum signal, signals_combined.json, run 20260430_194522.)
+EMA stack (daily): 10 EMA $352.17 > 21 EMA $332.39 > 50 EMA $299 — textbook bullish alignment. Price at $370.48 is 5.2% above the 10-EMA and 11.5% above the 21-EMA. (Source: swing_trend_momentum signal, signals_combined.json, run 20260501_194523.)
 
 ## Key levels
 
 | Level | Value | Source |
 |---|---|---|
-| Wait-to-buy zone (10-EMA) | $348–355 | swing_head_trader; swing_trend_momentum, run 20260430_194522 |
-| Upside target (if trend resumes) | $402 (Fib 1.272 extension) | swing_trend_momentum, run 20260430_194522 |
-| Mean-reversion fade entry | $368–370 on confirmed reversal candle | swing_mean_reversion, run 20260430_194522 |
-| Mean-reversion target | $348 | swing_mean_reversion, run 20260430_194522 |
-| Stop loss (pullback entry) | $325 (below 21-EMA) | decisions.json, run 20260430_194522 |
-| Bollinger upper | $381.87 | swing_macro_context, run 20260430_194522 |
-| Price at analysis (Apr 30) | $370.74 | signals_combined.json, run 20260430_194522 |
+| Wait-to-buy zone (10-EMA) | $350–358 | swing_head_trader; swing_trend_momentum, run 20260501_194523 |
+| Upside target (if trend resumes from EMA pullback) | $403.55 (Fib 1.272 extension) | swing_trend_momentum, run 20260501_194523 |
+| Mean-reversion fade entry | $368 on confirmed bearish reversal candle below prior session low | swing_mean_reversion, run 20260501_194523 |
+| Mean-reversion target | $352 (10-EMA) | swing_mean_reversion, run 20260501_194523 |
+| Mean-reversion stop | $373.50 (above recent high $371.99) | swing_mean_reversion, run 20260501_194523 |
+| Bollinger upper | $385.50 | swing_macro_context, run 20260501_194523 |
+| Price at analysis (May 1) | $370.48 | signals_combined.json, run 20260501_194523 |
 
 ## Setup type
 
-**No setup — no-trade zone.** This is a parabolic extension, not a consolidation or breakout pattern. The breakout that generated the prior measured-move target (~$331) fired weeks ago at ~$281–283 and has been surpassed. The current structure is: too extended to chase long (R/R 0.5:1), too strong a trend to short with confidence (ADX 81.64). Three agents independently declined entry: breakout (no consolidation range), catalyst_news (all catalysts priced), macro_context (sub-1:1 R/R veto). (Source: swing_head_trader signal, decisions.json, run 20260430_194522.)
-
-**Prior setup archived.** The Apr 11 volume-confirmed gap breakout near $304 with target ~$331 is now historical. That measured-move target was achieved and exceeded by 12%. (Source: technicals.md bootstrap 2026-04-29.)
+**No setup — no-trade zone (second consecutive run).** UNH is in a parabolic extension, not a consolidation or breakout pattern. The only conditional setup is a mean-reversion fade (swing_mean_reversion, 42% confidence): entry on a confirmed bearish reversal candle below $368, stop $373.50, target $352 — R/R ~2.9:1, but confidence is below the 40% floor for a swing trade when ADX=84 and no reversal candle exists. All five swing agents declined entry. The flat-top Apr 30 session on 0.74x volume is the first hint of exhaustion but is not yet a confirmed reversal. (Source: swing_head_trader signal, decisions.json, run 20260501_194523.)
