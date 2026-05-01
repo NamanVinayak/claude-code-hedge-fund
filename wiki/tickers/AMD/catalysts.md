@@ -1,55 +1,53 @@
 ---
 name: AMD catalysts
 last_updated: 2026-05-01
-last_run_id: 20260501_132340
+last_run_id: 20260501_133540
 target_words: 400
 stale_after_days: 14
-word_count: 405
-summary: Q1 earnings May 5 is 3 days away; analyst consensus EPS $1.30 (+35% YoY); DA Davidson upgraded to Buy $375; Northland downgraded; Intel beat is positive read-through
+word_count: 409
+summary: Q1 earnings May 5 after close is the live binary; consensus EPS $1.24; DA Davidson and Susquehanna both raised PT to $375; Northland at $260 (downgrade); avg consensus PT $297; beat-and-raise largely priced in
 ---
 
 # AMD — Catalysts
 
 ## TL;DR
 
-Q1 2026 earnings on **May 5, 2026 after market close** (3 trading days away as of this run). Analyst consensus: EPS $1.30 (+35.4% YoY), revenue $9.8B ±$300M (+32.3% YoY). The bull case has been heavily discounted: AMD is up +248% over the trailing twelve months and +74% in 21 trading days. Even the most bullish current price target ($380 Melius) is barely above the current price ($354). Classic "buy the rumor, sell the news" setup. Intel's Q1 blowout (+22% Data Center & AI revenue) is a positive read-through for AMD EPYC.
+Q1 2026 earnings on May 5 (after close) is the live binary catalyst. AMD has surged +76% in April to ATH $354, and the consensus EPS of ~$1.24 is considered a conservatively set bar (AMD pre-guided softly post-Q4 beat of $1.53 EPS). Both DA Davidson and Susquehanna raised their targets to $375 on April 29 — but Northland simultaneously downgraded to Market Perform ($260). Intel's +22% Data Center & AI revenue in Q1 is a positive read-through. Risk: a beat-and-lower Q2 guidance scenario (tariff headwinds, 25% tariff on MI325X) could trigger sell-the-news from an already-extended price.
 
 ## Upcoming events
 
 | Date | Event | Expected impact |
 |---|---|---|
-| May 5, 2026 (after close) | Q1 2026 earnings | Binary — consensus EPS $1.30, revenue ~$9.8B (+32% YoY) |
-| May 15, 2026 | Fed Chair Powell term ends | Policy uncertainty; Kevin Warsh confirmation vote pending |
-| 2H 2026 | MI450 GPU launch | Positive if benchmarks beat H200; neutral if delayed |
-| 2H 2026 | Helios rack-scale platform launch | Positions AMD for multi-GPU hyperscale deals |
+| May 5, 2026 (after close) | Q1 2026 earnings | Binary — EPS consensus ~$1.24; watch Data Center GPU revenue ramp and EPYC market share |
+| July 23, 2026 | AMD "Advancing AI 2026" flagship event, Moscone Center, San Francisco | Positive — product roadmap and AI strategy reveal |
+| 2H 2026 | MI450 GPU launch | Positive if benchmarks beat; neutral if delayed beyond Q3 |
+| 2H 2026 | Helios rack-scale platform launch | Positive — multi-GPU hyperscale positioning |
+| Ongoing | TSMC tariff exemption decision | Potential positive relief if hyperscaler exemptions enacted |
+| Pending | Kevin Warsh Fed chair Senate confirmation | Macro: potential hawkish shift risk |
 
-Sources: web_research/AMD.json, MarketBeat/Zacks (2026-05-01); web_research macro_context (2026-05-01).
+Sources: web_research/AMD.json run 20260501_133540.
 
 ## Recent news synthesis (within 14 days)
 
 **Positive:**
-- **Intel Q1 blowout** — Data Center & AI revenue +22% YoY to $5.05B; taken as positive read-through for AMD EPYC server CPU business (source: web_research/AMD.json, 24/7 Wall St. 2026-04-29).
-- **DA Davidson upgrade** — Raised AMD to Buy, PT $220 → $375, citing data center GPU demand ahead of Q1 earnings (source: web_research/AMD.json, TheStreet/Motley Fool 2026-04-29).
-- **Susquehanna reiterated Buy** — Raised PT $300 → $375 (source: web_research/AMD.json, 2026-04-30).
-- **AMD hit all-time high of $353** on April 30, up 248% over trailing twelve months (source: web_research/AMD.json, Rolling Out/TheStreet 2026-04-30).
-- **Q1 2026 analyst consensus** — EPS $1.30 (+35.4% YoY), revenue $9.8B ±$300M (+32.3% YoY); Data Center segment expected to again lead (source: web_research/AMD.json, MarketBeat/Zacks 2026-05-01).
+- **DA Davidson upgrade** — Upgraded to Buy, raised PT from $220 to $375, citing structural CPU demand growth from agentic AI deployment. April 29 (source: web_research/AMD.json, 20260501_133540).
+- **Susquehanna raises PT to $375** — Reiterated Buy, raised target from $300 to $375, citing data center GPU demand ahead of earnings. April 29 (source: web_research/AMD.json, 20260501_133540).
+- **AMD ATH $353, +246% one-year** — Hit all-time high driven by AI chip demand and analyst upgrades. April 30 (source: web_research/AMD.json, 20260501_133540).
+- **Intel Q1 +22% Data Center & AI revenue** — Positive read-through for AMD's EPYC server CPU franchise. Q1 2026 (source: swing_catalyst_news, run 20260501_133540).
+- **Meta $60B infrastructure deal** — Multi-year commitment covering AMD GPUs, Venice CPUs, and custom silicon. Still a structural bull catalyst (source: thesis.md).
 
 **Negative:**
-- **Northland Capital downgrade** — Lowered to Market Perform from Outperform, PT cut to $260, citing competitive headwinds (source: web_research/AMD.json, GuruFocus/Benzinga 2026-04-27).
-- **25% tariff on advanced AI chips** — Ongoing margin headwind (enacted January 14, 2026, covers AMD MI325X). GPU/memory prices rising; hyperscaler contracts may not absorb fully (source: prior web_research runs 20260415_110848).
-- **Nvidia 89% server GPU share retention** — AMD's MI300 positioned as cost-aware second-supplier, not primary AI GPU (source: web_research/AMD.json, Motley Fool April 2026).
-- **Custom silicon structural risk** — Google TPU, Amazon Trainium emerging as longer-term threat to both NVIDIA and AMD (source: web_research/AMD.json, competitor_activity).
+- **Northland downgrade** — Downgraded to Market Perform from Outperform, PT $260, citing competitive concerns. April 27 (source: web_research/AMD.json, 20260501_133540).
+- **Avg analyst consensus PT $297 vs current price $354** — AMD is trading 20% above the average analyst price target. Beat-and-raise is largely priced in (source: swing_catalyst_news, run 20260501_133540).
+- **25% tariff on advanced AI chips** — Ongoing margin headwind on MI325X. Hyperscaler multi-year contracts limit pass-through (source: thesis.md).
+- **Insider selling** — CEO Lisa Su sold ~$16M in March 2026. Board distribution: 188 sells vs. 83 buys (2:1 sellers). "Don't chase" signal (source: swing_catalyst_news, run 20260501_133540).
 
-## Analyst consensus (as of April 29–30, 2026)
+## Analyst consensus (as of May 1, 2026)
 
-CEO Lisa Su sold approximately $16 million in shares in March 2026. Board-level ratio: 83 buys / 188 sells — sellers outnumber buyers 2:1 (source: swing_catalyst_news signal, run 20260501_132340). No fresh insider trades reported in the immediate window, but distribution overhang persists.
+- **Rating:** Buy consensus — 34 analysts covering AMD; 41% Strong Buy, 38% Buy, 21% Hold, 0% Sell
+- **Avg price target:** $297 (web_research/AMD.json, 20260501_133540); range $120–$375
+- **Bull targets:** DA Davidson $375, Susquehanna $375, Evercore ISI $358
+- **Bear target:** Northland $260 (downgrade April 27)
+- **PT vs price:** Current $354 is 19% above average analyst PT — material premium already embedded
 
-## Analyst consensus (as of 2026-04-30)
-
-- **Rating:** Buy (consensus); 34 analysts — 41% Strong Buy, 38% Buy, 21% Hold, 0% Sell
-- **Avg price target:** $296 (MarketBeat 2026-04-30)
-- **Recent high targets:** DA Davidson $375, Susquehanna $375, Melius Research $380
-- **Downside target:** Northland Capital $260
-- **Note:** Average analyst target ($296) is ~16% below current price ($354) — the street's consensus is already below market, meaning even buy-rated analysts see limited upside from here
-
-Sources: web_research/AMD.json analyst_consensus (run 20260501_132340).
+Sources: web_research/AMD.json run 20260501_133540; swing_catalyst_news signal run 20260501_133540.

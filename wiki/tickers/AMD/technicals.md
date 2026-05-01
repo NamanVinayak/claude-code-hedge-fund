@@ -1,53 +1,55 @@
 ---
 name: AMD technicals
 last_updated: 2026-05-01
-last_run_id: 20260501_132340
+last_run_id: 20260501_133540
 target_words: 350
 stale_after_days: 7
-word_count: 348
-summary: late-stage parabolic extension — RSI 83, ADX 74.94, Z-score 2.6, price $354.49 near ATH; no valid entry any direction pre-earnings
+word_count: 352
+summary: failed breakout at $354.49 — AMD cleared $352.99 resistance on Apr 30 but volume only 1.05x vs 1.5x required; RSI 83-86, Z-score 2.60, ADX 74.94; earnings binary May 5 hard veto; no entry
 ---
 
 # AMD — Technicals
 
 ## TL;DR
 
-As of run 20260501_132340 (May 1, 2026), AMD sits at $354.49 — near its all-time recent high of $354.96. The daily trend is one of the strongest readings the system has ever logged (ADX 74.94), but the price is statistically extreme: Z-score 2.6, RSI-14 83.06, price 52.6% above the 50-SMA. Hourly trend is weakening (ADX 17.25). All five swing agents agreed: no valid entry long or short at current price. Prior setup (Apr 17: "Buy with limit $278.26") is superseded — that entry level was never reached, and price ran far above it.
+As of run 20260501_133540, AMD closed at $354.49, technically breaking above the $352.99 seven-times-tested resistance level — but the breakout is invalid: volume was only 1.05x the 20-day average versus the required 1.5x minimum. RSI 83.06–86.46 and Z-score 2.60 remain at statistical extremes. ADX 74.94 confirms one of the strongest trends in the system, but hourly ADX 15.89 signals intraday momentum fragmentation. Earnings binary May 5 is a hard veto on all new entries. Do not trade. Re-evaluate post-earnings: bull re-entry $316–335 (10 EMA zone), bear fade $355–368 on confirmed reversal candle.
+
+Prior setup type (Apr 30, run 20260430_140858): post-squeeze consolidation in defined range $310–$352.99 — logged to recent.md.
 
 ## Multi-timeframe state
 
 | Timeframe | Bias | Key reading |
 |---|---|---|
-| Daily | Strongly bullish (trend intact) | ADX 74.94, all EMAs aligned up, OBV rising, +DI 55.37 vs -DI 10.1 |
-| Daily (overbought) | Mean-reversion risk | RSI-14 83.06, RSI-21 86.46, Z-score 2.6, price 52.6% above 50-SMA |
-| Hourly | Trend weakening | ADX 17.25 (below 25 threshold), MACD histogram near-flat (+0.084) |
-| Statistical | Parabolic extension | 21-day ROC +74.26%; Bollinger %B 0.929 (hugging upper band) |
+| Daily | Strongly bullish (extended) | ADX 74.94, RSI 83.06, Z-score 2.60, overbought |
+| Hourly | Momentum fragmenting | ADX 15.89 (weak), hourly relative volume 0.48x — thin |
+| Statistical | Mean-reversion risk elevated | Z-score 2.60 (above +2 warning); Bollinger %B 0.929 pressing upper band |
 
-Sources: swing_trend_momentum, swing_macro_context, swing_mean_reversion signals (run 20260501_132340).
+Sources: swing_breakout, swing_trend_momentum, swing_mean_reversion, swing_macro_context, swing_head_trader (run 20260501_133540).
 
 ## Key levels
 
 | Level | Value | Source |
 |---|---|---|
-| Current price | $354.49 | run 20260501_132340 |
-| Recent ATH | $354.96 | swing_breakout signal |
-| Hourly resistance (confirmed) | $352.99 (6 tests) | swing_breakout signal |
-| Hourly support (volume-confirmed) | $328.81 (6 tests) | swing_breakout, macro_context signals |
-| 10 EMA (entry target on pullback) | ~$316–$320 | swing_trend_momentum signal |
-| Fib 23.6% retracement | $316.70 | swing_trend_momentum signal |
-| Post-earnings watch zone | $316–$328 | swing_head_trader signal |
-| Prior resistance (now support) | $268–$305 | prior technicals, fully broken |
+| Breakout level (cleared, volume-deficient) | $352.99 | 7x tested hourly pivot; 1.05x vol on Apr 30 — insufficient (swing_breakout, run 20260501_133540) |
+| Required volume for valid breakout | 1.5x+ daily average | swing_breakout agent (run 20260501_133540) |
+| Current price | $354.49 | run 20260501_133540 |
+| Bear fade entry zone | $355–$368 | catalyst_news + mean_reversion (requires reversal candle) |
+| Bull re-entry zone | $316–$335 | 10 EMA ~$316, hourly volume support $328.81, all 3 neutral agents converge |
+| Bull stop | $308 | swing_trend_momentum (run 20260501_133540) |
+| Bear stop | $368–$370 | swing_mean_reversion + swing_catalyst_news (run 20260501_133540) |
+| Earnings date | 2026-05-05 after close | Hard veto — no new entries in either direction |
 
-## Indicator snapshot (run 20260501_132340)
+## Indicator snapshot (run 20260501_133540)
 
-- **RSI-14:** 83.06 — deeply overbought; RSI-21 at 86.46 is even more extreme
-- **ADX:** 74.94 — exceptional trend strength; +DI 55.37 crushes -DI 10.1
-- **21-day ROC:** +74.26% — AMD ran from ~$203 to $354 in one month
-- **Z-score (50-period):** 2.6 standard deviations above mean (extreme; threshold is +2.0)
-- **Bollinger %B:** 0.929 — price hugging upper band, upper band at $367.10
-- **Annualized volatility:** 71.8%; daily volatility 4.52%
-- **OBV:** Trending up, no price divergence
+- **RSI-14:** 83.06; **RSI-21:** 86.46 — deeply overbought; up from RSI 82.09 / 85.78 on Apr 30
+- **ADX:** 74.94 (+DI 55.37 / –DI 10.10) — extremely strong trend; new run high for AMD
+- **Hourly ADX:** 15.89 (weak) — intraday trend fragmenting despite powerful daily trend
+- **MACD:** Daily histogram +7.02 (bullish, expanding); hourly volume 0.48x average (thin)
+- **Z-score (50-period):** 2.60 — statistically overextended; ticked up from 2.47 on Apr 30
+- **Bollinger %B:** 0.929 — hugging upper band (upper band at $367.10)
+- **Historical volatility:** 71.8% annualized — expect 3–5% daily swings
+- **EMA alignment:** 10 EMA $316.48 / 21 EMA $285.88 / 50 EMA $251.69 — perfectly fanned bullish; price 12% above 10 EMA
 
 ## Setup type
 
-Late-stage parabolic extension — strongest trend in run history, but untradeable at current price. Setup becomes constructive on pullback to 10 EMA (~$316–$320) with RSI reset to 55–65 and Z-score below 1.5. Binary earnings catalyst (May 5) makes entry in either direction inadvisable until post-earnings price discovery.
+Volume-deficient breakout above $352.99 ATH. AMD technically cleared the seven-times-tested breakout trigger on April 30, but volume of 1.05x (vs. 1.5x minimum) invalidates the signal. The squeeze already fired in the $200→$353 move; BB width 0.6435 (wide) confirms the squeeze phase is done. Earnings binary May 5 is the resolution event. Post-earnings two-way setups defined: bull dip-buy $316–$335 with ADX >25 and hourly MACD re-crossing; bear fade $355–$368 on daily reversal candle with 2:1+ R/R.
