@@ -1,16 +1,18 @@
 ---
 name: NVDA thesis
-last_updated: 2026-04-29
+last_updated: 2026-05-01
 last_run_id: bootstrap
 target_words: 500
 stale_after_days: 30
-word_count: 521
+word_count: 533
 summary: NVDA is an AI infrastructure monopoly with exceptional fundamentals, but late-cycle price extension demands pullback entries only.
 ---
 
 # NVDA — Thesis
 
 ## TL;DR
+
+⚠️ Recent trade: stop_hit 2026-04-30, -$264.65. Thesis under review.
 
 NVDA dominates the AI chip market (~81% share) in a multi-year capex supercycle. Fundamentals are exceptional — 61% revenue growth, 144% earnings growth, 59% operating margin, near-zero leverage. The stock trades at a stretched valuation (P/E 43x, P/S 28x), but the owner-earnings model and residual-income model both show intrinsic value well above market cap. The structural thesis is intact across all 5 runs from 2026-04-11 to 2026-04-29. Do not chase — every run that scored a buy was entered below the EMA-10 on a pullback.
 

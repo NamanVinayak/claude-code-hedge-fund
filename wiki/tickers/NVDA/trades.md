@@ -1,18 +1,18 @@
 ---
 name: NVDA trades
-last_updated: 2026-04-30
+last_updated: 2026-05-01
 last_run_id: 20260430_124724
 target_words: 800
 stale_after_days: 60
-word_count: 812
-summary: 4 abandoned DB trades (2026-04-29); 2 open positions entered 2026-04-30 — 67 shares at $209.25 (run 20260430_060402) and 3 shares at $209.50 (run 20260430_124724); combined 70 shares; stop $205.30, target $221.89, hard exit ~May 17.
+word_count: 920
+summary: 4 abandoned DB trades (2026-04-29); 1 open position remaining — 3 shares at $209.50 (run 20260430_124724); Position 1 (67 shares at $209.25) stop_hit 2026-04-30, P&L -$264.65.
 ---
 
 # NVDA — Trades
 
 ## TL;DR
 
-Four tracker.db entries (trade IDs 6, 12, 13, 21) all marked "abandoned" on 2026-04-29. Two fresh long positions are open as of 2026-04-30: 67 shares at $209.25 (run 20260430_060402) and 3 additional shares at $209.50 (run 20260430_124724). Combined: 70 shares. Stop: $205.30 (hourly Fib 61.8%), primary target: $221.89 (cluster median, 20260430_124724), extended target: $231.13 (daily Fib 1.272), R/R: 2.95:1, timeframe: 5–12 trading days. Hard exit deadline ~May 17 (3-day pre-earnings blackout before ~May 20 NVDA earnings).
+Four tracker.db entries (trade IDs 6, 12, 13, 21) all marked "abandoned" on 2026-04-29. Position 1 (67 shares @ $209.25, run 20260430_060402) was stop-hit on 2026-04-30 at $205.30, P&L -$264.65. One position remains open as of 2026-04-30: 3 shares at $209.50 (run 20260430_124724). Stop: $205.30 (hourly Fib 61.8%), primary target: $221.89 (cluster median), extended target: $231.13 (daily Fib 1.272), R/R: 2.95:1, timeframe: 5–12 trading days. Hard exit deadline ~May 17 (3-day pre-earnings blackout before ~May 20 NVDA earnings).
 
 ## Open positions
 
@@ -25,14 +25,20 @@ Four tracker.db entries (trade IDs 6, 12, 13, 21) all marked "abandoned" on 2026
 - **Position value:** $628.50 (3 × $209.50); risk cap $708.36 (14.2% of $5K capital, volatility-adjusted at 38.3% annualized vol)
 - **Rationale:** 4/5 swing agents bullish (swing_breakout neutral — not bearish); ADX 54.67 strongest trend in run history; pullback to hourly Fib 38.2% / $208.20 volume-confirmed support (15 tests). (source: decisions.json, signals_combined.json, 20260430_124724)
 
-### Position 1 — 2026-04-30 (run 20260430_060402)
-- **Direction:** Long | **Quantity:** 67 shares | **Entry:** $209.25
-- **Stop:** $205.30 (hourly Fib 61.8% from $216.83 high) | **Target:** $222.50 | **R/R:** 3.35:1
-- **Extended target:** $231.13 (daily Fib 1.272 ext)
-- **Confidence:** 72 | **Invalidation:** Close below $208.20 before new high
-- **Hard exit deadline:** ~May 17, 2026 (3-day pre-earnings blackout)
-- **Position value:** ~$14,020 (67 × $209.25); risk cap $14,167 (14.2% of $100K)
-- **Rationale:** 4/5 swing agents bullish; ADX 54.67; pullback to Fib 38.2% / $208.20 volume-confirmed support. (source: decisions.json, signals_combined.json, 20260430_060402)
+## Recently Closed
+
+### Trade: Long 67 shares NVDA — CLOSED 2026-04-30
+
+| Field | Value |
+|---|---|
+| Entry price | $209.25 |
+| Exit price | $205.30 |
+| P&L | -$264.65 |
+| Closed via | stop_hit |
+| Days held | 0 (entered and stopped out same day, 2026-04-30) |
+| Run | `N/A` |
+
+**Notes:** Position 1 from run 20260430_060402 (67 shares). Stop at $205.30 was the hourly Fib 61.8% level from the $216.83 high. 4/5 swing agents were bullish on entry (ADX 54.67, pullback to Fib 38.2% support), but price broke below the stop zone intraday. Exit filled at $205.30. Thesis remains under review.
 
 ## Closed trades — 2026-04-14 to 2026-04-29
 
@@ -77,6 +83,7 @@ Four tracker.db entries (trade IDs 6, 12, 13, 21) all marked "abandoned" on 2026
 3. **Abandonment vs formal close.** All four prior trades show None in the DB pnl column — the +$95.70 implied gain is not in realized P&L.
 4. **Model waited correctly for pullback.** All prior runs flagged overextension. Apr 15 and Apr 30 are the only two runs where a clean entry existed near the constructive zone.
 5. **Second run on same day adds 3 shares.** Both Apr 30 runs (060402 and 124724) are long at the same support zone — the thesis is consistent across both dispatches; position sizing is disciplined within risk manager caps.
+6. **Stop respected on Position 1.** The 67-share position entered 2026-04-30 was stopped out the same day at $205.30 (-$264.65). The stop level (hourly Fib 61.8%) held as a hard floor — execution was correct even though the outcome was a loss. Position 2 (3 shares) remains open.
 
 ## Lifetime stats
 
@@ -85,11 +92,10 @@ Four tracker.db entries (trade IDs 6, 12, 13, 21) all marked "abandoned" on 2026
 | Total DB trades | 4 (all prior abandoned) |
 | Filled (prior) | 2 (trades 12, 13) |
 | Unfilled (prior) | 2 (trades 6, 21) |
-| Formally closed | 0 |
-| Recorded realized P&L | $0 |
+| Formally closed | 1 (Position 1, stop_hit 2026-04-30) |
+| Recorded realized P&L | -$264.65 |
+| Win rate (formally closed trades) | 0% (0 wins / 1 closed) |
 | Implied unrealized P&L (abandoned) | +$95.70 (+8.1%) |
-| **Current open — Position 1** | **67 shares @ $209.25 (run 20260430_060402)** |
 | **Current open — Position 2** | **3 shares @ $209.50 (run 20260430_124724)** |
-| **Combined open position** | **70 shares** |
-| Open risk (combined) | $277.20 (70 × ~$3.96 avg stop distance) |
-| Open target gain (combined) | $876.93 (blended to $221.89 target) |
+| Open risk (Position 2) | $12.60 (3 × $4.20 stop distance) |
+| Open target gain (Position 2) | $37.17 (3 × $12.39 to $221.89 target) |

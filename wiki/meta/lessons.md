@@ -3,7 +3,7 @@ name: trade lessons
 last_updated: 2026-05-01
 target_words: 1500
 stale_after_days: 90
-word_count: 0
+word_count: 90
 summary: Running log of trade outcome lessons — one bullet per closed trade, written nightly by wiki_daily_lesson_writer
 ---
 
@@ -19,4 +19,4 @@ The "why" should reference: the thesis at the time, the macro regime, which swin
 
 ## Lessons
 
-_(No closed trades yet. The nightly wiki_daily_lesson_writer agent appends here when trades close.)_
+2026-04-30 | NVDA | EMA pullback Fib dip-buy | -$264.65 | Stop triggered at $205.30 (hourly Fib 61.8%); swing_trend_momentum and swing_breakout were bullish on AI capex thesis, but price breached the stop zone intraday amid stretched macro (RSI 81–87) with no bullish confirmation candle before exit.
