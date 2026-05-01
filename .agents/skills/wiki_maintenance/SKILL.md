@@ -19,6 +19,20 @@ Runs every night at 10pm ET. Two jobs:
 The two jobs never conflict — the lesson writer touches lessons/thesis/trades
 pages; the compactor touches everything else.
 
+## Step 0 — Saturday early-exit
+
+Markets were closed all of Friday night through Saturday, so nothing
+could have closed since the previous run. Skip immediately on Saturdays
+to avoid a pointless Turso query and routine compute.
+
+```bash
+DOW=$(date -u +%u)  # 1=Mon ... 6=Sat ... 7=Sun
+if [ "$DOW" = "6" ]; then
+  echo "Saturday — markets were closed. Nothing to do. Exiting."
+  exit 0
+fi
+```
+
 ## Step 1 — Fetch closed trades and build context bundle
 
 ```bash
