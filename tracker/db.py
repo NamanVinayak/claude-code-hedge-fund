@@ -125,6 +125,7 @@ def get_pending_trades():
             "stop_loss": t.stop_loss,
             "target_price": t.target_price,
             "mode": t.mode,
+            "run_id": t.run_id,
             "created_at": t.created_at.isoformat() if t.created_at else None,
         }
         for t in rows
