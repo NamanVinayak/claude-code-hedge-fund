@@ -38,8 +38,8 @@ Format:
   "decisions": {{
     "TICKER": {{
       "action": "buy/sell/short/no_trade",
+      "quantity": int,
       "entry_trigger": "string — exact condition to enter",
-      "position_size": int,
       "stop_loss": float,
       "target_1": float,
       "target_2": float,
@@ -50,3 +50,5 @@ Format:
     }}
   }}
 }}
+
+`quantity` is REQUIRED for every decision (number of shares). Set 0 for no_trade. NEVER omit — the downstream ingester silently drops trades with missing quantity.

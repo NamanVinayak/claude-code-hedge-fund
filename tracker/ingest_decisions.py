@@ -156,7 +156,9 @@ def main() -> None:
 
             raw_qty = dec.get("quantity")
             if raw_qty is None:
-                print(f"  WARNING: {ticker} {action} in run {run_id} has no quantity field — PM forgot to size. Skipping.")
+                raw_qty = dec.get("position_size")
+            if raw_qty is None:
+                print(f"  WARNING: {ticker} {action} in run {run_id} has no quantity/position_size field — PM forgot to size. Skipping.")
                 continue
             try:
                 quantity = int(raw_qty)
