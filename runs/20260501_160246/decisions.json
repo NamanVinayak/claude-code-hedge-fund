@@ -1,0 +1,16 @@
+{
+  "decisions": {
+    "TSLA": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 387.0,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 409.28,
+      "stop_loss": 370.0,
+      "risk_reward_ratio": "1.18:1",
+      "timeframe": "5-12 trading days",
+      "confidence": 35,
+      "reasoning": "R/R fails 2:1 at all entries: $387/$407/$370 = 1.18:1. Head Trader (48 conf) says watch-not-act. Price mid-resistance $387-$399 zone. Hourly RSI 70.5 overbought, daily OBV still down. NVDA EMA dip-buy analogue stopped out -$264.65 on same setup type. Valuation massively stretched (DCF -97%). Wait for confirmed pullback to $381-385 with bullish daily candle before entry — only then does R/R approach 2:1+ with $365 stop / $409 target."
+    }
+  }
+}

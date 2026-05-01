@@ -1,0 +1,77 @@
+{
+  "ticker": "TSLA",
+  "verified_at": "2026-05-01T16:30:00",
+  "facts_files_sampled": [
+    "warren_buffett__TSLA.json",
+    "ben_graham__TSLA.json",
+    "peter_lynch__TSLA.json"
+  ],
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.04001,
+      "web_value": 0.0395,
+      "source": "Yahoo Finance (Apr 30, 2026 profit margin 3.95%); GuruFocus TTM 3.37%; Simply Wall St TTM 3.9%",
+      "status": "ok",
+      "deviation": "1.3%",
+      "notes": "Our value 4.0% vs web consensus ~3.9-4.0% — within normal timing differences"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.04593,
+      "web_value": 0.0459,
+      "source": "YCharts TTM operating margin 4.59%; MacroTrends; GuruFocus",
+      "status": "ok",
+      "deviation": "0.1%",
+      "notes": "Exact match — multiple sources confirm 4.59% TTM operating margin"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 356.85,
+      "web_value": 342.02,
+      "source": "GuruFocus PE TTM 342.02 (Apr 30, 2026); companiesmarketcap 343.52 (Apr 28, 2026); public.com 317.23",
+      "status": "ok",
+      "deviation": "4.3%",
+      "notes": "Slight variation due to intraday price fluctuations; all sources in 317-356 range — within 20% threshold"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 94800000000,
+      "web_value": 97879000000,
+      "source": "MacroTrends / StockAnalysis — Tesla TTM revenue for 12 months ending Mar 31, 2026 was $97.879B",
+      "status": "ok",
+      "deviation": "3.2%",
+      "notes": "Our value inferred from market_cap / price_to_sales_ratio (~$94.8B); web TTM $97.88B; gap within normal data-lag tolerance"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 1487642165248,
+      "web_value": 1433000000000,
+      "source": "companiesmarketcap.com $1.433T as of May 2026; Capital.com April 2026",
+      "status": "ok",
+      "deviation": "3.8%",
+      "notes": "Our value $1.488T vs web $1.433T — difference reflects intraday/close price used in prepare step vs current price"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.04619,
+      "web_value": 0.0449,
+      "source": "GuruFocus ROE 4.15%; FinanceCharts ROE TTM ~4.83%; MacroTrends; midpoint ~4.49%",
+      "status": "ok",
+      "deviation": "2.9%",
+      "notes": "Our 4.62% is consistent with web range of 4.15%-4.83%"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.02753,
+      "web_value": 0.0275,
+      "source": "FinanceCharts ROA TTM 2.75%; MacroTrends",
+      "status": "ok",
+      "deviation": "0.1%",
+      "notes": "Exact match — confirmed at 2.75% TTM"
+    }
+  ],
+  "overall_status": "all metrics verified — no mismatches detected",
+  "corrections_applied": false,
+  "summary": "All 7 key metrics for TSLA are within the 20% deviation threshold. Net margin (4.0% vs web 3.95%), operating margin (4.59% vs web 4.59%), PE ratio (356.85 vs web ~342), revenue (~$94.8B vs web $97.9B TTM), market cap ($1.488T vs web $1.433T), ROE (4.62% vs web ~4.49%), and ROA (2.75% vs web 2.75%) are all consistent. No facts bundle corrections required."
+}

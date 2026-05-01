@@ -1,0 +1,151 @@
+{
+  "ticker": "TSLA",
+  "score": 6,
+  "max_score": 27,
+  "fundamental_analysis": {
+    "score": 3,
+    "details": "Weak ROE of 4.6%; Conservative debt levels; Weak operating margin of 4.6%; Good liquidity position",
+    "metrics": {
+      "ticker": "TSLA",
+      "report_period": "2026-03-31",
+      "period": "ttm",
+      "currency": "USD",
+      "market_cap": 1487642165248.0,
+      "enterprise_value": 1477764006248.0,
+      "price_to_earnings_ratio": 356.84686,
+      "price_to_book_ratio": 18.111717803766876,
+      "price_to_sales_ratio": 15.687959813639575,
+      "enterprise_value_to_ebitda_ratio": 288.3835853185801,
+      "enterprise_value_to_revenue_ratio": 15.58378949295032,
+      "free_cash_flow_yield": 0.004181113002375194,
+      "peg_ratio": 5.18,
+      "gross_margin": 0.18026511436616155,
+      "operating_margin": 0.04592573845001951,
+      "net_margin": 0.04000970187815706,
+      "return_on_equity": 0.04619111971462313,
+      "return_on_assets": 0.02753145726601164,
+      "return_on_invested_capital": 0.0357614146212721,
+      "asset_turnover": 0.6881195303542661,
+      "inventory_turnover": 6.2728373143963845,
+      "receivables_turnover": 20.722683566433567,
+      "days_sales_outstanding": 17.613548883756735,
+      "operating_cycle": 75.8009339068486,
+      "working_capital_turnover": 2.5678888648180243,
+      "current_ratio": 2.1644068865485275,
+      "quick_ratio": 1.7736646276092578,
+      "cash_ratio": 0.5206848710348742,
+      "operating_cash_flow_ratio": 0.464999684681844,
+      "debt_to_equity": 0.08077773719517392,
+      "debt_to_assets": 0.04814624181820821,
+      "interest_coverage": 27.916666666666668,
+      "revenue_growth": -0.029306991503736307,
+      "earnings_growth": -0.46495557749259625,
+      "book_value_growth": 0.1265069329200554,
+      "earnings_per_share_growth": -0.47085201793721976,
+      "free_cash_flow_growth": 0.7369449874336778,
+      "operating_income_growth": -0.3845392877331826,
+      "ebitda_growth": -3.539570616712271,
+      "payout_ratio": null,
+      "earnings_per_share": 1.18,
+      "book_value_per_share": 21.897360703812318,
+      "free_cash_flow_per_share": 1.6582244734737404
+    }
+  },
+  "consistency_analysis": {
+    "score": 0,
+    "details": "Inconsistent earnings growth pattern; Total earnings growth of -69.8% over past 10 periods"
+  },
+  "moat_analysis": {
+    "score": 0,
+    "max_score": 5,
+    "details": "Inconsistent ROE: only 3/10 periods >15%; Low operating margins (avg: 10.4%) suggest limited pricing power"
+  },
+  "pricing_power_analysis": {
+    "score": 0,
+    "details": "Declining gross margins may indicate pricing pressure"
+  },
+  "book_value_analysis": {
+    "score": 3,
+    "details": "Consistent book value per share growth (Buffett's favorite metric); Book value CAGR: 4.4%"
+  },
+  "management_analysis": {
+    "score": 0,
+    "max_score": 2,
+    "details": "No significant new stock issuance detected; No or minimal dividends paid"
+  },
+  "intrinsic_value_analysis": {
+    "intrinsic_value": -75540154145.64491,
+    "raw_intrinsic_value": -88870769583.11166,
+    "owner_earnings": -4931650000.0,
+    "assumptions": {
+      "stage1_growth": 0.08,
+      "stage2_growth": 0.04,
+      "terminal_growth": 0.025,
+      "discount_rate": 0.1,
+      "stage1_years": 5,
+      "stage2_years": 5,
+      "historical_growth": 0.105
+    },
+    "details": [
+      "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+      "Stage 1 PV: $-23,345,419,093",
+      "Stage 2 PV: $-19,072,382,062",
+      "Terminal PV: $-46,452,968,428",
+      "Total IV: $-88,870,769,583",
+      "Conservative IV (15% haircut): $-75,540,154,146",
+      "Owner earnings: $-4,931,650,000",
+      "Discount rate: 10.0%"
+    ]
+  },
+  "market_cap": 1487510700032.0,
+  "margin_of_safety": -1.0507829316078332,
+  "web_context": {
+    "ticker": "TSLA",
+    "research_date": "2026-05-01",
+    "macro_context": {
+      "market_sentiment": "Strongly bullish to start May 2026: S&P 500 surpassed 7,200 (+0.54%), Nasdaq +0.69%, Russell 2000 +2.21%, buoyed by Apple's earnings beat and Middle East peace-deal hopes. April was the best month for S&P and Nasdaq since 2020.",
+      "fed_outlook": "FOMC held rates at 3.5%-3.75% on April 29, 2026 in an unusual 8-4 split vote; one dissenter wanted a 25 bps cut while three opposed the easing bias language. Kevin Warsh advancing through Senate confirmation to replace Powell \u2014 leadership transition adds policy uncertainty.",
+      "geopolitical": "Middle East conflict has driven a ~19% spike in global energy prices (Strait of Hormuz closure risk); IMF projects world growth at 3.1% with inflation at 4.4%. US-Venezuela tensions, Iran civil unrest, and NATO posture in Greenland add tail risk. Today's Iranian peace-proposal news is providing some relief, with oil pulling back.",
+      "key_events": [
+        "Fed leadership transition: Kevin Warsh Senate floor vote pending",
+        "Middle East peace negotiations \u2014 outcome could sharply move energy prices",
+        "US midterm election cycle increasing policy uncertainty",
+        "Q2 2026 earnings season starting mid-July"
+      ]
+    },
+    "ticker_news": [
+      {
+        "headline": "Tesla's amended 10-K reveals $573M in 2025 revenue from Musk-affiliated companies (SpaceX, xAI) plus $2B xAI investment that converted to SpaceX equity \u2014 raising related-party governance concerns",
+        "sentiment": "negative",
+        "source": "Electrek, May 1 2026 (https://electrek.co/2026/05/01/tesla-tsla-web-transactions-musk-companies-spacex-xai-10ka-2025/)"
+      },
+      {
+        "headline": "Tesla plans capex exceeding $25B in 2026 (nearly 3\u00d7 the $8.5B in 2025), expects negative free cash flow for the rest of the year; spending on Cybercab, Robotaxi network, Optimus, AI infra",
+        "sentiment": "negative",
+        "source": "Motley Fool, Apr 25 2026 (https://www.fool.com/investing/2026/04/25/tesla-is-down-after-its-earnings-report-time-to-bu/)"
+      },
+      {
+        "headline": "Tesla Q1 2026 EPS beat ($0.41 vs $0.33 estimate) but revenue came in slightly below estimates; Q1 deliveries 358,023 vehicles, reclaiming global EV sales lead from BYD",
+        "sentiment": "positive",
+        "source": "CNBC, Apr 2 & 22 2026 (https://www.cnbc.com/2026/04/02/tesla-tsla-q1-2026-vehicle-delivery-production.html)"
+      },
+      {
+        "headline": "Tesla experiencing European sales rebound with significant registration growth after a multi-quarter slump",
+        "sentiment": "positive",
+        "source": "247 Wall St., Apr 29 2026 (https://247wallst.com/investing/2026/04/29/opinion-tesla-is-the-priciest-bargain-stock-on-the-market/)"
+      },
+      {
+        "headline": "TSLA stock down ~16% YTD amid robotaxi deployment delays and elevated valuation multiples, though services revenue jumped +42% YoY to $3.75B and FSD subscriptions hit 1.28M (+51%)",
+        "sentiment": "neutral",
+        "source": "Blockonomi / MEXC News 2026 (https://blockonomi.com/tesla-tsla-stock-down-16-in-2026-amid-robotaxi-setbacks-and-revenue-shortfall/)"
+      }
+    ],
+    "analyst_consensus": {
+      "rating": "hold",
+      "avg_price_target": 405.0,
+      "recent_changes": "UBS raised target to $364 (Neutral) on Apr 23 2026, up from $352 on Apr 14. Gary Alexander (Seeking Alpha) upgraded to Buy in late April citing Europe recovery and Cybercab catalyst. Of ~41 analysts: 19 Buy, 16 Hold, 6 Sell. Range: $24.86 bear to $600 (Wedbush Dan Ives bull). ARK Invest outlier at $4,600 for robotaxi bull case. Last sell-side downgrade was Morgan Stanley in December 2025."
+    },
+    "competitor_activity": "Tesla reclaimed the global pure-BEV sales lead from BYD in Q1 2026 (358K vs 310K), but BYD continues rapid global expansion (factories in SE Asia, Europe, Latin America) and is nearly fully vertically integrated. BYD's China home-market share is eroding from local competition. Rivian remains the biggest near-term US EV threat with R3/R3X models targeting sub-$50K price points; Rivian produced 42K+ EVs in 2025 and is approaching profitability. In humanoid robotics, Unitree, Boston Dynamics, Agility Robotics, and Apptronik compete with Tesla's Optimus. Ford and GM are scaling back EV programs, reducing near-term domestic competitive pressure.",
+    "earnings_info": "Q1 2026 earnings reported April 22, 2026: EPS $0.41 (beat; estimate was $0.33), revenue ~$21.4B (slight miss). Next earnings (Q2 2026) expected ~July 22, 2026 (unconfirmed); analyst EPS estimate for Q2 is approximately $0.42. Q2 delivery markets assign 49% probability to 450,000+ vehicles."
+  }
+}
