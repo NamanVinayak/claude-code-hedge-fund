@@ -1,23 +1,27 @@
 ---
 name: wiki-maintenance
-description: Nightly wiki keeper — writes lessons + updates thesis/trades pages for trades that closed today. On Sundays, also runs the deterministic compactor (rolls stale entries, prunes old bullets, archives idle folders). Invoke as /wiki-maintenance.
+description: Nightly wiki keeper — writes lessons + updates thesis/trades pages for trades that closed today, then refreshes the open-positions ledger snapshot. On Sundays, also runs the deterministic compactor (rolls stale entries, prunes old bullets, archives idle folders). Invoke as /wiki-maintenance.
 # Schedule: 0 2 * * *  (2am UTC = 10pm ET, every night)
 allowed-tools: Bash(*) Read Write Agent
 ---
 
-# Wiki Maintenance — Nightly Lesson Writer + Sunday Compactor
+# Wiki Maintenance — Nightly Lesson Writer + Open-Position Snapshot + Sunday Compactor
 
-Runs every night at 10pm ET. Two jobs:
+Runs every night at 10pm ET. Three jobs:
 
 1. **Every night** — write lessons for any trades that closed today, update
    thesis confidence, mark trade as closed in `trades.md`. No-op if nothing
    closed.
-2. **Sundays only** — additionally run the deterministic compactor: roll
+2. **Every night** — refresh `wiki/meta/open_positions.md` with the current
+   structured ledger snapshot (open + pending positions). No-op if portfolio
+   is empty.
+3. **Sundays only** — additionally run the deterministic compactor: roll
    stale trade entries, prune old `recent.md` bullets, archive idle ticker
    folders, lint front-matter.
 
-The two jobs never conflict — the lesson writer touches lessons/thesis/trades
-pages; the compactor touches everything else.
+The jobs never conflict — the lesson writer touches lessons/thesis/trades
+pages, the open-position writer touches only `wiki/meta/open_positions.md`,
+and the compactor touches everything else.
 
 ## Step 0 — Saturday early-exit
 
@@ -66,6 +70,29 @@ wiki_curator — it only touches lessons.md, thesis.md (prepend only), and trade
 
 If the agent errors on a specific ticker (e.g. thesis.md not found), it skips
 that page and continues — wiki updates never block anything.
+
+## Step 2.5 — Refresh open-position snapshot (every night)
+
+Independent of whether trades closed today. Runs after the lesson writer so the lesson writer has finished moving any closed positions out of the open-positions list before we snapshot.
+
+```bash
+cd /Users/naman/Downloads/artist && .venv/bin/python tracker/wiki_open_positions_update.py
+```
+
+Read the output:
+- If it prints `"Portfolio is empty (no open or pending positions). Wiki update skipped."` → skip the agent dispatch, continue to Step 3.
+- If it prints `"N open, M pending"` → continue with the agent dispatch below.
+
+Bundle is at `runs/wiki_open_positions_<YYYY-MM-DD>.json`. Dispatch the agent:
+
+> Read `ai_hedge/personas/prompts/wiki_open_position_writer.md` for your system prompt.
+> Bundle path: `runs/wiki_open_positions_<TODAY>.json` (where TODAY = current Pacific Time date in YYYY-MM-DD)
+> Read the bundle. Rewrite `wiki/meta/open_positions.md` per the rules. Touch nothing else.
+> Return the manifest JSON.
+
+Agent dispatch: `model: sonnet`. The writer's scope is one file (`wiki/meta/open_positions.md`); it must NOT touch any per-ticker page. The prompt enforces a forbidden-vocabulary list to keep the page editorial-free — the page is read by head trader + PM only and any narrative framing creates anchoring bias.
+
+If the agent errors, the previous snapshot stays in place — wiki updates never block anything.
 
 ## Step 3 — On Sundays only, run the deterministic compactor
 

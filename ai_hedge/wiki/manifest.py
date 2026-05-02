@@ -55,6 +55,7 @@ AGENT_MANIFEST: dict[str, list[tuple[str, str, str]]] = {
         ("ticker", "thesis", "tldr"),
         ("ticker", "trades", "full"),
         ("meta", "lessons", "full"),
+        ("meta", "open_positions", "full"),
     ],
 }
 

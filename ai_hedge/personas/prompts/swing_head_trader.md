@@ -46,7 +46,13 @@ Before you count votes and synthesize, you consult two pieces of persistent memo
    - Know if there's an open position on this ticker (lowers urgency to add — capital is already deployed).
    - See if a recent trade on this exact ticker just stopped out (asymmetric warning — same name failed recently, even more reason to be careful).
 
-These memories are CONFIDENCE DIALS, not vetoes. Today's strategy signals still drive the consensus. But when synthesizing, weight a 3-of-5 bullish vote LOWER if the lessons + trade history are flashing red. State the dial-down explicitly in `reasoning` and `key_conflicts`.
+3. **`wiki/meta/open_positions.md`** — portfolio-wide snapshot of every currently-open and pending position across ALL tickers, refreshed nightly. This is a structured ledger (tables, no narrative). Use it to:
+   - See how many positions are already in flight and which direction the book is tilted (net long vs net short).
+   - Spot stacking risk: if you're already short 3 names, adding a 4th short on a 3-of-5 vote should be sized down for correlation.
+   - Notice that a ticker you're synthesizing is already pending (limit order resting) — adding another order on the same name is usually wrong.
+   - The page deliberately contains NO commentary on whether positions are "winning" or "losing" — just numbers. You interpret. Do not let the unrealized-P&L column nudge you toward double-down rationalization on losing positions.
+
+These memories are CONFIDENCE DIALS, not vetoes. Today's strategy signals still drive the consensus. But when synthesizing, weight a 3-of-5 bullish vote LOWER if the lessons + trade history are flashing red, OR if the book is already heavily tilted in the same direction. State the dial-down explicitly in `reasoning` and `key_conflicts`.
 
 If a wiki file is missing or empty, treat it as "no memory available — vote-counting only" and proceed normally.
 
