@@ -111,16 +111,32 @@ When the user opens a new session, run the swing backtest and report a plain-Eng
 
 One short paragraph: open trades, net P&L, entry hit rate, win rate. Wealthsimple-style: "You're up $X / down $X across N open trades. Win rate Y%, entry hit rate Z%."
 
+## Git remotes (READ FIRST — easy to confuse)
+
+This repo has **two** GitHub remotes that look similar but serve different purposes. Pushing to the wrong one (or checking the wrong one) is a recurring source of confusion.
+
+| Remote | URL | Role | Push here? |
+|---|---|---|---|
+| **`hedge-remote`** | `NamanVinayak/claude-code-hedge-fund` | **Production.** Anthropic Routines clone this every fire. Auto-merge workflow + dashboard cron live here. | **YES — always push config/wiki/code changes here.** |
+| `origin` | `NamanVinayak/ai-hedge-fund` | Legacy fork of upstream `virattt/ai-hedge-fund`. Workflows disabled Apr 30. | Generally no. Mirror only if user explicitly asks. |
+
+**Mandatory checks before reporting "pushed":**
+1. `git push` target must be `hedge-remote main`, not `origin main`. The default `git push` may go to `origin` — be explicit.
+2. After pushing, verify: `git ls-remote hedge-remote refs/heads/main` shows the same SHA as `git rev-parse main`.
+3. If a tool/check shows "GitHub still has the old version," ask which repo it's looking at — almost always it's `origin` (the legacy one), and the user's actual production state on `hedge-remote` is correct.
+
+When in doubt, run `git remote -v` and prefer `hedge-remote` for anything routine-facing.
+
 ## Conventions
 
 - **`.agents/` is for OpenCode** — Claude Code does NOT auto-load it. Treat it as out-of-scope; do not read or modify files there unless the user explicitly requests it.
 - **graphify is no longer used** — do not run rebuild scripts, do not read `graphify-out/`. The dir is gitignored and will be deleted in a later cleanup.
 - All Agent dispatches: `model: sonnet`
 - Run `.venv/bin/python scripts/check_docs_drift.py` after structural changes
-- Wiki feature flag is currently ON. Routines clone the repo per run, so config changes must be pushed to `hedge-remote/main`.
+- Wiki feature flag is currently ON. Routines clone the repo per run, so config changes must be pushed to `hedge-remote/main` (see "Git remotes" above).
 - **After every Playwright worker**: delete `.playwright-mcp/storageState*.json` to prevent session tokens from leaking into next session's context.
-- **Routine push flow**: routines push to `claude/*` feature branches; the `auto-merge-routine-branches.yml` workflow fast-forwards them to `main` automatically.
+- **Routine push flow**: routines push to `claude/*` feature branches on `hedge-remote`; the `auto-merge-routine-branches.yml` workflow fast-forwards them to `main` automatically.
 
 ---
 
-_Last updated: 2026-04-30. Autonomous dashboard system shipped (Wave 4)._
+_Last updated: 2026-05-01. Added AI-storage cohort (SNDK/STX/WDC/MU); dropped PFE/CVX/XOM/WMT; routines renamed; bootstrap pages neutralized; Git-remotes section added to prevent origin/hedge-remote confusion._
