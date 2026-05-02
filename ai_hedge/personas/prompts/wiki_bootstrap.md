@@ -55,6 +55,33 @@ Write four pages (recent.md is Phase 2, skip):
    `word_count`. Use the values from the page templates as defaults.
 4. **TL;DR first.** Every page leads with `## TL;DR`.
 5. **Word budgets are firm.** Same ±20% rule as the curator.
+6. **Neutrality (read carefully — bootstrap pages are NOT signals).**
+   The runtime swing routine reads your output as **prior research /
+   context**. It must INFORM the runtime agent without BIASING it.
+   - **TL;DR is fact-only.** Strip directional framing
+     ("bull case is intact", "screamingly bullish", "extension risk
+     dominates", "blowout", "discount a lot of good news"). State
+     numbers and events; let the runtime weigh them.
+   - **Append this disclaimer line verbatim at the end of every TL;DR**
+     (after your fact sentences, before the next `##` heading):
+     > `_This is bootstrap context dated YYYY-MM-DD. The runtime swing routine must do its own fresh research and indicator analysis; do not anchor to anything stated here._`
+   - **Bull case + Bear case must be structurally balanced** — same
+     bullet count, similar specificity. If a fact cuts both ways
+     (e.g. "sold out through 2027", "DRAM supercycle"), put it in
+     BOTH cases with different framings.
+   - **`## What would change my mind` lists bidirectional triggers** —
+     events that would flip a bear bullish AND events that would flip
+     a bull bearish. NOT just stop levels.
+   - **Technicals `## Setup type` lists ALL applicable setups**
+     (trending / mean-reversion / breakout / range-bound / counter-
+     trend) with the activation condition for each. Do NOT commit
+     to a single setup — runtime decides.
+   - **Technicals `## Key levels` table** uses neutral labels
+     ("resistance / pivot / support / range bracket"), not directional
+     ones ("entry zone" / "invalidation"). Numbers stay; framing is
+     descriptive.
+   - **Catalysts page lists events; does NOT interpret them.** Insider
+     activity is a fact log, not a signal.
 
 ### Output format
 

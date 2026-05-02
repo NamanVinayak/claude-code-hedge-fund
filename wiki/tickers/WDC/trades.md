@@ -1,10 +1,10 @@
 ---
 name: WDC trades
-last_updated: 2026-05-02
-last_run_id: bootstrap
-target_words: 800
+last_updated: 2026-05-01
+last_run_id: bootstrap_2026-05-01
+target_words: 200
 stale_after_days: 60
-word_count: 0
+word_count: 60
 summary: trade journal for this ticker
 ---
 
@@ -12,7 +12,9 @@ summary: trade journal for this ticker
 
 ## TL;DR
 
-_No trades yet._
+No trades yet — ticker added 2026-05-01.
+
+> _This is bootstrap context dated 2026-05-01. The runtime swing routine must do its own fresh research and indicator analysis; do not anchor to anything stated here._
 
 ## Open positions
 
@@ -26,10 +28,6 @@ _none_
 
 _none_
 
-## Closed — older than 6 months
-
-_none_
-
 ## Lifetime stats
 
-_none_
+_none — first run pending_
