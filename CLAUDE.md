@@ -111,21 +111,19 @@ When the user opens a new session, run the swing backtest and report a plain-Eng
 
 One short paragraph: open trades, net P&L, entry hit rate, win rate. Wealthsimple-style: "You're up $X / down $X across N open trades. Win rate Y%, entry hit rate Z%."
 
-## Git remotes (READ FIRST — easy to confuse)
+## Git remote (single — clean as of 2026-05-02)
 
-This repo has **two** GitHub remotes that look similar but serve different purposes. Pushing to the wrong one (or checking the wrong one) is a recurring source of confusion.
+This folder has exactly **one** GitHub remote: **`hedge-remote`** → `NamanVinayak/claude-code-hedge-fund`. That's production — Anthropic Routines clone it on every fire; auto-merge workflow + dashboard cron live there. All pushes go to `hedge-remote main`.
 
-| Remote | URL | Role | Push here? |
-|---|---|---|---|
-| **`hedge-remote`** | `NamanVinayak/claude-code-hedge-fund` | **Production.** Anthropic Routines clone this every fire. Auto-merge workflow + dashboard cron live here. | **YES — always push config/wiki/code changes here.** |
-| `origin` | `NamanVinayak/ai-hedge-fund` | Legacy fork of upstream `virattt/ai-hedge-fund`. Workflows disabled Apr 30. | Generally no. Mirror only if user explicitly asks. |
+The legacy fork (`NamanVinayak/ai-hedge-fund`) was disconnected from this folder on 2026-05-02 to eliminate two-remote confusion. A standalone clone of the legacy repo lives at `~/Downloads/oldartist/` for backup; it has its own `origin` and is unrelated to this project. Don't touch it from here.
 
-**Mandatory checks before reporting "pushed":**
-1. `git push` target must be `hedge-remote main`, not `origin main`. The default `git push` may go to `origin` — be explicit.
-2. After pushing, verify: `git ls-remote hedge-remote refs/heads/main` shows the same SHA as `git rev-parse main`.
-3. If a tool/check shows "GitHub still has the old version," ask which repo it's looking at — almost always it's `origin` (the legacy one), and the user's actual production state on `hedge-remote` is correct.
+**Verification any time:**
+```bash
+git remote -v   # should show ONLY hedge-remote
+git ls-remote hedge-remote refs/heads/main   # SHA matches `git rev-parse main` after a push
+```
 
-When in doubt, run `git remote -v` and prefer `hedge-remote` for anything routine-facing.
+If `git remote -v` ever shows a remote other than `hedge-remote` in this folder, something pulled it back in by mistake — investigate before pushing.
 
 ## Conventions
 
@@ -139,4 +137,4 @@ When in doubt, run `git remote -v` and prefer `hedge-remote` for anything routin
 
 ---
 
-_Last updated: 2026-05-01. Added AI-storage cohort (SNDK/STX/WDC/MU); dropped PFE/CVX/XOM/WMT; routines renamed; bootstrap pages neutralized; Git-remotes section added to prevent origin/hedge-remote confusion._
+_Last updated: 2026-05-02. Disconnected legacy `origin` remote (NamanVinayak/ai-hedge-fund); folder now single-remote (hedge-remote = production). Legacy backup clone at `~/Downloads/oldartist/`._
