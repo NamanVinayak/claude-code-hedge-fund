@@ -1,10 +1,10 @@
 ---
 name: JPM recent
-last_updated: 2026-04-30
-last_run_id: 20260430_051455
+last_updated: 2026-05-04
+last_run_id: 20260504_182958
 target_words: 300
 stale_after_days: 30
-word_count: 198
+word_count: 296
 summary: Signal history — direction flips and key level breaks for JPM across swing runs
 ---
 
@@ -15,6 +15,8 @@ summary: Signal history — direction flips and key level breaks for JPM across 
 Append-log of signal direction flips and key level breaks across swing runs. Most recent entry first. Full trade record in trades.md; technical state in technicals.md.
 
 ## Signal log
+
+- **2026-05-04** [run: 20260504_182958] — **Critical support test:** Hourly price $307.81 sitting on $307.29 volume-confirmed support (20 prior tests). Level held at run time; a break below invalidates the daily bull thesis and signals flush toward $304–$305. Macro regime reversed: Iran missile strikes (May 4) drove WTI above $106, Brent above $114 — directly falsifying the prior "Iran peace talks" narrative from run 20260501_182928. Hard cluster cap block (BAC+JPM $1,322 > 30% of $1,794) supersedes correlation advisory; HOLD only, conf 38 (below 40 threshold). [run: 20260504_182958]
 
 - **2026-04-30** [run: 20260430_051455] — Direction flip: **Buy → Hold/Neutral** (conf 42%). Price at $309.25, below prior Apr 17 entry level of $309.95. R/R at current price 1.55:1, failing 2:1 minimum. Agent vote 2B/1Br/2N — no consensus. Head Trader neutral. Prior setup (Apr 17 buy-the-dip at $309.95) has stalled at same level; the stock is now testing it from below. Entry re-triggers only at $307.00–$307.50 (R/R improves to ~2.7:1). Hourly OBV trending down (distribution). BB squeeze coiled near lower range boundary. No reversal signal confirmed. [run: 20260430_051455]
 
