@@ -1,10 +1,10 @@
 ---
 name: GS recent
-last_updated: 2026-04-30
-last_run_id: 20260430_190826
+last_updated: 2026-05-04
+last_run_id: 20260504_192106
 target_words: 300
 stale_after_days: 30
-word_count: 149
+word_count: 185
 summary: Signal history — direction flips and key level breaks for GS across swing runs
 ---
 
@@ -15,6 +15,8 @@ GS has issued HOLD on every run. No direction flip. Key level break on April 30:
 ---
 
 ## Signal History
+
+- **2026-05-04** — Key level broken: price dropped from $923.77 to $905.10 (-$18.67), breaking below the $912.14 bear trigger level identified in prior technicals. Iran escalation (UAE missile intercept May 4, WTI above $106) reversed the May 1 peace-talks stabilization. Signal: HOLD, conf 30 (lowest confidence in GS history). 1B/4N vote split. $924.23 overhead resistance confirmed — partial recovery rejected. Volume-confirmed support at $899.16 (8 tests) is the critical near-term floor. [run `20260504_192106`]
 
 - **2026-04-30** — Key level broken: hourly support at $924.23 (29 tests) broke on April 29 (-2.4% session). ADX cleared 25 threshold for first time (32.67). Signal: HOLD, conf 38. Fractured agent split 1B/3N/1Bear. No entry — conflicting signals and broken support preclude clean setup on either side. [run `20260430_190826`]
 
