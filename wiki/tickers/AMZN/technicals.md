@@ -1,28 +1,28 @@
 ---
 name: AMZN technicals
-last_updated: 2026-05-01
-last_run_id: 20260501_173921
+last_updated: 2026-05-04
+last_run_id: 20260504_173321
 target_words: 350
 stale_after_days: 7
-word_count: 352
-summary: Post-earnings shooting star on 2.05x volume — failed breakout / distribution signal; ADX 64.34 strong trend but RSI 82/88 and z-score 2.01 flag extension; SHORT setup active, no long entry valid
+word_count: 348
+summary: Short stopped out at $276 on May 4 — bears absorbed by bulls in $268-276 distribution zone; price ~$271.46; RSI 82.9/88.96 still extreme, ADX 65.59 mature trend; HOLD/wait for re-entry; no valid short entry without hourly RSI >75 + volume rejection at resistance
 ---
 
 # AMZN — Technicals
 
 ## TL;DR
 
-As of run 20260501_173921 (May 1, 2026), AMZN printed a textbook "sell the news" shooting star on April 30: gapped to $273.88, closed at $265.06 on 2.05x average volume (100.87M vs 49.12M 20-day avg). RSI-14 at 82.21, RSI-21 at 88.83, z-score 2.01, price 18.58% above 50-SMA. ADX 64.34 confirms a mature strong trend, but mean-reversion and breakout agents read the reversal candle as distribution. Setup type: **failed breakout / shooting star fade**. SHORT from ~$269, stop $276, target 20-SMA $244.44. No long entry valid at current price.
+As of run 20260504_173321 (May 4, 2026), the prior SHORT setup from run 20260501_173921 was stopped out: price rallied through the $276 stop level intraday on May 4, closing the short at a -$7/share loss. Current price ~$271.46. RSI-14 remains 82.9, RSI-21 at 88.96, z-score 2.03, ADX 65.59 — overbought conditions persist but bulls absorbed the $268-276 distribution zone. Setup type: **HOLD / wait for re-entry**. No valid short without hourly RSI extreme (>75) plus volume-confirmed rejection at $273-276 resistance, OR a daily close below $265 to re-establish bearish momentum.
 
-*Prior setup (bootstrap, run 20260417_233350): momentum breakout with pullback entry at $249.70, ADX 44. Superseded — see recent.md 2026-05-01 entry.*
+*Prior setup (run 20260501_173921): failed breakout / shooting star fade, SHORT from ~$269, stop $276, target $244.44. Stop hit 2026-05-04 — see trades.md.*
 
 ---
 
 ## Multi-timeframe state
 
-**Daily (primary):** All EMAs aligned bullish uptrend (EMA 5 > EMA 10 > EMA 21 > EMA 50). ADX 64.34 with +DI 45.78 vs -DI 11.51 — exceptionally strong trend, mature phase. RSI-14 82.21, RSI-21 88.83 (both overbought). Z-score vs 50-SMA: 2.01. April 30 candle: open $273.17, high $273.88, close $265.06 — large-range bearish reversal on 2.05x volume. BB upper band at $279.68; price below the band but near it.
+**Daily (primary):** All EMAs remain aligned bullish (10 EMA $258.79 > 21 EMA $247.86 > 50 SMA $234.27). ADX 65.59 with +DI 43.04 vs -DI 10.82 — exceptionally strong trend, bulls in control. RSI-14 82.9, RSI-21 88.96 (deeply overbought). Z-score vs 50-SMA: 2.03. Price 19.3% above 50-SMA. BB upper band ~$279; price below. April 30 shooting star candle ($273.88 high / $265.06 close on 2.05x volume) is still the key distribution candle — but $276 stop was absorbed.
 
-**Hourly:** EMAs aligned uptrend but showing fatigue. Hourly OBV diverging bearishly from price (OBV declining while price near highs). Hourly RSI divergence bearish detected. Hourly BB %B at 0.97 (hugging upper band). Nearest volume-confirmed hourly resistance: $270.62.
+**Hourly:** BB %B at 0.957 (pressing upper band). Hourly RSI 61.75 — NOT at extreme; double-confirmation for short fade is absent. Volume-confirmed hourly resistance at $270.62 (now below current price). Prior hourly OBV divergence not yet resolved. MACD histogram positive at +1.163.
 
 ---
 
@@ -30,31 +30,33 @@ As of run 20260501_173921 (May 1, 2026), AMZN printed a textbook "sell the news"
 
 | Level | Value | Source |
 |---|---|---|
-| Short entry | ~$269 | Run 20260501_173921 |
-| Stop / invalidation | $276.00 | Above reversal swing high $273.88 + buffer |
-| Target (20-SMA / mean reversion) | $244.44 | Run 20260501_173921 |
-| Reversal swing high | $273.88 | April 30 intraday high |
-| Hourly resistance (vol-confirmed) | $270.62 | Run 20260501_173921 |
+| Current price | ~$271.46 | Run 20260504_173321 |
+| Resistance zone | $273–$276 | April 30 swing high + prior stop |
+| Short re-entry trigger (hourly RSI) | >75 + vol rejection at $273-276 | decisions.json, run 20260504_173321 |
+| Bear confirmation (daily close) | Below $265 | decisions.json, run 20260504_173321 |
 | Support zone | $256–$260 | Run 20260501_173921 |
-| Long re-entry zone (wait) | $252–$258 | swing_trend_momentum, swing_macro_context |
+| Long re-entry zone (trend pullback) | $258–$261 (10 EMA zone) | swing_trend_momentum, run 20260504_173321 |
+| Mean-reversion target (if short re-entered) | ~$247–$248 (EMA-20 / 20-SMA) | swing_mean_reversion, run 20260504_173321 |
+| Fib extension (1.272) | $281.52 | swing_breakout, run 20260504_173321 |
 
 ---
 
 ## Setup type
 
-**Failed breakout / shooting star fade (Branch A mean reversion).** The April 30 session was a "sell the news" reaction to Q1 2026 earnings beat: price gapped to $273.88 (new high) but closed at $265.06 — back inside the prior consolidation range. This is distribution volume confirming overhead resistance, not a breakout close. The prior breakout thesis (April 14, 1.57x volume at $249) has fully played out with the PM's $262 target already achieved. The new setup is a mean-reversion fade from statistical extremes. R:R 3.51:1 at $269 entry clears the 2:1 minimum.
+**HOLD — no valid entry.** Prior short thesis (mean-reversion Branch A from April 30 shooting star) remains directionally intact but stop was hit at $276 on May 4 — bulls absorbed the selling zone. ADX 65.59 is an extreme trend reading; fading this trend requires a fresh hourly RSI extreme AND volume-confirmed rejection at $273-276 resistance. That condition is not currently met (hourly RSI 61.75, hourly relative volume 0.02x). No capital available to deploy (risk manager $0 remaining limit). Trend-momentum long entry requires pullback to 10 EMA at $258-261.
 
 ---
 
-## Indicator snapshot (May 1, 2026)
+## Indicator snapshot (May 4, 2026)
 
 | Indicator | Value | Interpretation |
 |---|---|---|
-| ADX | 64.34 | Strong mature trend — fade risk |
-| +DI / -DI | 45.78 / 11.51 | Bull momentum intact but extended |
-| RSI-14 | 82.21 | Overbought |
-| RSI-21 | 88.83 | Extremely overbought |
-| Z-score (50-SMA) | 2.01 | At +2σ — statistical extreme |
-| % above 50-SMA | 18.58% | Extreme extension |
-| Volume (Apr 30) | 2.05x avg | Distribution / reversal confirmation |
-| Hourly OBV | Bearish divergence | Internal weakness |
+| ADX | 65.59 | Extreme mature uptrend — fade risk |
+| +DI / -DI | 43.04 / 10.82 | Bull momentum dominant |
+| RSI-14 | 82.9 | Deeply overbought |
+| RSI-21 | 88.96 | Extremely overbought |
+| Hourly RSI | 61.75 | Not extreme — no fade trigger |
+| Z-score (50-SMA) | 2.03 | At +2σ — still stretched |
+| % above 50-SMA | 19.3% | Extreme extension |
+| Hourly BB %B | 0.957 | Pressing upper hourly band |
+| ATR-14 | $7.56 | 2.82% daily range — high volatility |
