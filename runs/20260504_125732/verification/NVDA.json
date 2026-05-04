@@ -1,0 +1,100 @@
+{
+  "ticker": "NVDA",
+  "verified_at": "2026-05-04T12:57:32",
+  "metrics_checked": {
+    "net_margin": {
+      "our_value": 0.5272,
+      "our_value_pct": "52.72%"
+    },
+    "operating_margin": {
+      "our_value": 0.5903,
+      "our_value_pct": "59.03%"
+    },
+    "pe_ratio": {
+      "our_value": 40.5
+    },
+    "revenue_ttm_implied": {
+      "our_value": 182893000000,
+      "note": "Implied from market_cap / P/S ratio; bundle report_period is 2025-10-26 (Q3 FY2026)"
+    },
+    "market_cap": {
+      "our_value": 4823327440896
+    },
+    "roe": {
+      "our_value": 1.2154,
+      "our_value_pct": "121.54%"
+    },
+    "roa": {
+      "our_value": 0.8639,
+      "our_value_pct": "86.39%"
+    }
+  },
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.5272,
+      "web_value": 0.537,
+      "source": "FinanceCharts / MacroTrends (TTM Feb 2026)",
+      "status": "ok",
+      "deviation": "1.8%",
+      "notes": "Sources range 53.7%-55.6%. Deviation is within normal timing differences."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.5903,
+      "web_value": 0.6038,
+      "source": "YCharts / MacroTrends (TTM through Jan 2026)",
+      "status": "ok",
+      "deviation": "2.2%",
+      "notes": "Q1 FY2026 operating margin reached 65.02%. TTM through Jan 2026 was ~60.4%. Our value of 59.0% reflects a slightly earlier TTM window (report_period 2025-10-26). All within 20% threshold."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 40.5,
+      "web_value": 40.49,
+      "source": "MacroTrends / FinanceCharts (May 1, 2026)",
+      "status": "ok",
+      "deviation": "0.0%",
+      "notes": "Multiple sources confirm PE ratio of 40.25-41.28 as of early May 2026. Excellent match."
+    },
+    {
+      "metric": "revenue_ttm",
+      "our_value": 182893000000,
+      "web_value": 215938000000,
+      "source": "GuruFocus / StockAnalysis / NVIDIA Newsroom (FY2026 ending Jan 2026)",
+      "status": "ok",
+      "deviation": "15.3%",
+      "notes": "Our value is implied from market_cap / P/S ratio using report_period 2025-10-26 (Q3 FY2026). The $215.9B is the full FY2026 (ending Jan 2026) figure. TTM through Oct 2025 would legitimately be lower. Deviation of 15.3% is within the 20% threshold."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 4823327440896,
+      "web_value": 4820000000000,
+      "source": "Capital.com / CompaniesMarketCap (May 4, 2026)",
+      "status": "ok",
+      "deviation": "0.1%",
+      "notes": "Multiple sources confirm ~$4.82T market cap as of May 4, 2026. Near-perfect match."
+    },
+    {
+      "metric": "roe",
+      "our_value": 1.2154,
+      "web_value": 1.2444,
+      "source": "GuruFocus (Q1 FY2026 annualized)",
+      "status": "ok",
+      "deviation": "2.3%",
+      "notes": "GuruFocus reports 124.44% annualized for Q1 FY2026. Our 121.54% TTM is consistent. Multiple sources range 101.5%-124.44%; all within expected variance."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.8639,
+      "web_value": 0.771,
+      "source": "Investing.com / Finbox (Feb 2026)",
+      "status": "ok",
+      "deviation": "12.0%",
+      "notes": "Web sources are inconsistent: 58.06% (MLQ.ai), 72.74% (FinanceCharts Feb 2026), 77.1% (Investing.com/Finbox). Our value of 86.39% is elevated vs. the most commonly cited range. Deviation vs. 77.1% is 12.0%, which is within the 20% threshold. No correction applied, but value noted as high end of observed range."
+    }
+  ],
+  "overall_status": "all checks passed — no mismatches above 20% threshold",
+  "corrections_applied": false,
+  "data_note": "Facts bundles use report_period 2025-10-26 (Q3 FY2026 data). Some metrics will differ from full FY2026 figures by design. PE ratio and market_cap match current data precisely. Revenue implied from P/S ratio is consistent with Q3 FY2026 TTM window."
+}

@@ -1,0 +1,537 @@
+{
+  "mode": "swing",
+  "analyst_signals": {
+    "swing_breakout": {
+      "NVDA": {
+        "signal": "neutral",
+        "confidence": 38,
+        "reasoning": "No valid breakout setup is present. The relevant range boundaries are: upper consolidation resistance at $208.20 (former 15-test support, now resistance per wiki; confirmed breach on April 30 with 1.52x avg volume = bearish breakout already completed) and base support at $197.12 (recent low). The downside breakout from the $208.20 level has already fired and partially exhausted \u2014 price dropped from $216.83 to $198.45 (-8.5%) in 4 sessions. The breakout is done; it is not my setup anymore. For a new bullish breakout opportunity, I require a confirmed daily close above $203.00 (hourly pivot, 12-test volume-confirmed resistance) with volume 1.5x+ the 20-day average (current: 0.87x \u2014 no confirmation). Bollinger Band width on the daily is 0.2224 (not compressed; volatility already expanded). Hourly BB width is 0.1123, tighter but with price near the lower band (pct_b 0.17) and hourly RSI-21 at 18.82 \u2014 deeply oversold but no bullish reversal candle yet. Squeeze status: no active squeeze; the hourly expansion already fired bearishly (MACD histogram -1.82, -DI 36.05 >> +DI 12.97). Wiki confirms both stops were hit at $205.30 on April 30; prior lesson flags a false breakout pattern on NVDA (EMA pullback failed, -$63.20). The $208.20 level is now overhead resistance. Price may be forming a base at $197-$199, consistent with the wiki's target entry zone ($197.50-$199.50), but a base is not a breakout \u2014 I need to see the coil complete and a confirmed volume surge above resistance before acting. No entry until close above $203.00 on 1.5x+ volume.",
+        "entry": 203.25,
+        "target": 214.73,
+        "stop": 196.5,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_head_trader": {
+      "NVDA": {
+        "consensus_signal": "bullish",
+        "confidence": 44,
+        "reasoning": "Vote count: 3 bullish (swing_mean_reversion 42, swing_catalyst_news 62, swing_macro_context 55), 2 neutral (swing_trend_momentum 35, swing_breakout 38), 0 bearish. Weighted toward bullish but all three bullish agents are explicitly CONDITIONAL \u2014 they require a confirmed hourly reversal candle at the Fib 38.2% / EMA-21 confluence ($196.75\u2013$199.50) AND the hourly MACD histogram turning positive before entry is valid. Neither condition is currently met. The setup structure is correct: price pulled back -8.5% from $216.83 high to $198.45, daily trend intact (ADX 56.9, full EMA uptrend alignment), AMD earnings catalyst imminent (AI capex read-through), and macro is risk-on with S&P near ATHs. However, the hourly layer is actively bearish (-DI 36.05 vs +DI 12.97, MACD histogram -1.82) with OBV showing distribution on both timeframes. WIKI MEMORY DIAL-DOWN: The only closed NVDA trade in 30 days is the April 30 EMA pullback Fib dip-buy, which was stopped at $205.30 with -$63.20 P&L. This exact same setup type now scores a 0% win rate. The wiki explicitly flagged $196.75\u2013$197.67 as the true entry zone and required bullish confirmation candle before entry \u2014 the prior stop-out occurred because entry was taken WITHOUT confirmation. A conditional buy at the confluence is appropriate; a blind entry at current price ($198.45) is not. No open NVDA position exists so there is no stacking concern. The broader book is balanced (3 long / 3 short). AMD catalyst is binary \u2014 a negative AI capex report from AMD would invalidate the thesis immediately and is an unpriced tail risk within the 1-3 day window. Confidence is capped at 44 (below the typical 50 threshold for action) because: (1) the required confirmation candle is absent, (2) this setup type is 0-for-1 in the last 30 days on this exact ticker, (3) the AMD read-through is unresolved. Consensus is bullish-conditional \u2014 do not act until trigger conditions are met.",
+        "agent_agreement_pct": 60.0,
+        "key_conflicts": "The primary conflict is between swing_trend_momentum (neutral, 35) and the three bullish agents. Trend-momentum is explicitly waiting for ROC-5d to turn positive and the daily MACD histogram to cross above zero \u2014 it interprets the current short-term momentum contraction (-4.72% ROC-5d, slightly negative MACD histogram) as unfinished selling, not a buy signal. Swing_breakout (neutral, 38) sees the same data differently: the bearish breakout from $208.20 has already fired and exhausted, but a new bullish setup requires a confirmed daily close above $203.00 on 1.5x volume \u2014 a higher bar than the other agents require. This disagreement is telling us something important: the DAILY trend structure is fully intact (all EMAs bullish, ADX very strong) but the SHORT-TERM price action is still distributing. The bullish camp (catalyst-news and macro-context) is willing to buy the dip into the confluence zone with a tight stop because the catalyst window and macro backdrop justify the risk. The neutral camp argues that without momentum re-acceleration, buying is premature. This is NOT a coin flip \u2014 it is a legitimate 'trend intact but near-term momentum stalled' setup where the entry trigger matters more than the directional call. Additionally, all agents have absorbed the wiki's April 30 lesson: the prior NVDA stop-out on this exact setup type at this exact zone is a known risk. This lesson appears to have REDUCED all confidence scores across the board compared to what they would otherwise be.",
+        "recommended_action": "buy",
+        "entry_zone": "196.75-199.50",
+        "entry_trigger": "Confirmed bullish reversal candle (hammer or bullish engulfing) on the daily or hourly chart at the 38.2% Fib / EMA-21 confluence AND hourly MACD histogram turning positive",
+        "target": 210.5,
+        "stop": 194.0,
+        "timeframe": "5-10 trading days",
+        "hard_exit_deadline": "2026-05-17 (3 trading days before NVDA Q1 FY2027 earnings ~May 20)",
+        "risk_factors": [
+          "AMD earnings (1-3 trading days) \u2014 binary AI capex read-through; negative report invalidates thesis immediately",
+          "EMA pullback Fib dip-buy setup: 0% win rate on this exact ticker in last 30 days (1 trade, -$63.20)",
+          "Hourly trend actively bearish at time of signal \u2014 confirmation candle required before entry",
+          "OBV showing distribution on both daily and hourly timeframes",
+          "Fed policy transition (Powell -> Warsh, May 15) introduces macro uncertainty near the trade window",
+          "Meta AI capex shock overhang \u2014 near-term AI-spend uncertainty not fully resolved"
+        ]
+      }
+    },
+    "growth_analyst_agent": {
+      "NVDA": {
+        "signal": "bullish",
+        "confidence": 27,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.75,
+            "revenue_growth": 0.6140329835082459,
+            "revenue_trend": 6.890111377067638e-17,
+            "eps_growth": 1.4545454545454548,
+            "eps_trend": -0.30925615724790323,
+            "fcf_growth": null,
+            "fcf_trend": 0.0
+          },
+          "growth_valuation": {
+            "score": 0.5,
+            "peg_ratio": 0.63,
+            "price_to_sales_ratio": 26.372400479493475
+          },
+          "margin_expansion": {
+            "score": 0.4,
+            "gross_margin": 0.7027387598213163,
+            "gross_margin_trend": -0.016158974070427698,
+            "operating_margin": 0.5902740946892445,
+            "operating_margin_trend": -0.051517922206571955,
+            "net_margin": 0.5271716249391721,
+            "net_margin_trend": -0.04213069533849651
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": 0.10668498745698186,
+            "current_ratio": 4.439851498864077
+          },
+          "final_analysis": {
+            "signal": "bullish",
+            "confidence": 27,
+            "weighted_score": 0.64
+          }
+        }
+      }
+    },
+    "swing_trend_momentum": {
+      "NVDA": {
+        "signal": "neutral",
+        "confidence": 35,
+        "reasoning": "TREND ASSESSMENT: Daily trend structure is intact and strong \u2014 full EMA uptrend alignment (EMA-10 202.99 > EMA-21 197.74 > EMA-50 190.83), ADX-14 at 56.9 (very strong trend), and price is sitting right at the EMA-21 / 38.2% Fib confluence ($196.75\u2013$197.74), which is precisely the pullback entry zone this strategy targets. The macro regime is risk-on (S&P 500 near ATHs, April was best month since 2020). MOMENTUM ASSESSMENT: Short-term momentum is NOT accelerating \u2014 ROC-5d is -4.72 and ROC-10d is -1.60 (both negative), indicating the recent sell-off from $216.83 high has not yet exhausted itself. MACD histogram is slightly negative (-0.11) with no bullish crossover. Strategy rule: 'wait for re-acceleration when ROC is contracting and MACD histogram is shrinking.' HOURLY DIVERGENCE: The hourly frame is actively bearish (-DI 36.05 > +DI 12.97, hourly MACD histogram at -1.82, hourly RSI-21 at 18.82 \u2014 severely oversold but no reversal signal yet). Hourly ROC is negative across all windows. No hourly/daily alignment = no confirmation. WIKI ALIGNMENT: Prior entry (wiki 2026-05-01) flagged exactly this $196.75\u2013$197.67 zone as the re-entry trigger, BUT required a confirmed bullish reversal candle before entry. No such candle is present at current reading. LESSON APPLIED: The prior EMA pullback Fib dip-buy on NVDA resulted in -$63.20 loss when no bullish confirmation appeared before stop hit (April 30). Lowering confidence to 35 \u2014 the setup is structurally forming but momentum has not yet re-accelerated. VERDICT: Neutral. Watch for: hourly RSI-21 bouncing from oversold + daily ROC-5d turning positive + MACD histogram crossing back above zero on daily as re-entry triggers.",
+        "entry": 197.5,
+        "target": 210.3,
+        "stop": 194.5,
+        "timeframe": "5-10 trading days"
+      }
+    },
+    "swing_macro_context": {
+      "NVDA": {
+        "signal": "bullish",
+        "confidence": 55,
+        "reasoning": "1. MACRO REGIME: Cautiously risk-on. S&P 500 at all-time highs (7,200+), April 2026 best month since 2020. Fed held at 3.5%-3.75% with 4 dissents (most since Oct 1992) \u2014 internal disagreement signals policy uncertainty ahead. Powell transition on May 15 to likely successor Kevin Warsh introduces additional uncertainty. Iran peace talks removed the dominant left-tail oil-spike risk (WTI -2% May 1). Inflation remains elevated but the worst-case energy scenario has eased. Net regime read: risk-on with near-term policy transition overhang. AI capex supercycle narrative intact (Alphabet, Amazon beat, Azure +40%), but MSFT post-earnings selloff and Meta -9% capex shock introduced near-term AI-spend uncertainty \u2014 directly relevant to NVDA demand thesis. 2. RELATIVE STRENGTH: NVDA is SHORT-TERM underperforming. 5d ROC -4.72%, 10d ROC -1.6% vs broad market risk-on. However, 21d ROC +12.92% shows NVDA led the prior sector upswing. Price broke below EMA-5 and EMA-10, now testing EMA-20/21 confluence \u2014 structure is intact at all longer MAs (above EMA-20/50/200) but the recent pullback puts it below short-term averages. Hourly: price is below all hourly EMAs (24, 48, 120) with hourly ADX -DI (36.05) > +DI (12.97) showing active intraday downward momentum. OBV trending down on both daily and hourly \u2014 distribution signal, not accumulation. 3. ASYMMETRIC R/R: Entry ~$198.45 at EMA-21 / Fib 38.2% confluence zone ($196.75-$197.67 per thesis). Nearest resistance: $203 (hourly pivot, volume-confirmed, 19 tests at $198.70). Target: $209-210 (prior support zone turned resistance, below recent highs). Stop: $193.50 (below Fib 38.2% support at $196.75 plus buffer; a close below the confluence zone invalidates the thesis). Upside: $209 - $198.45 = $10.55 (~5.3%). Downside: $198.45 - $193.50 = $4.95 (~2.5%). Asymmetry: ~2.1:1 \u2014 meets minimum 2:1 bar, but barely. 4. CAPITAL PRESERVATION FLAGS: NVDA fundamentals remain exceptional (61% revenue growth, 144% EPS growth, 59% operating margin, D/E 0.11 near-zero leverage). No balance sheet concerns. ATR 3.23% daily is elevated but consistent with NVDA's norm and the current macro regime. KEY LESSON FROM PRIOR RUN (Apr 30): The last EMA pullback Fib dip-buy at this zone was stopped out at $205.30 (entered too high). The wiki thesis now explicitly identifies $196.75-$197.67 as the real entry zone \u2014 current price at $198.45 is AT the identified confluence. However, the prior lesson also warns 'do not enter without bullish confirmation candle.' Hourly RSI-21 at 18.82 is deeply oversold \u2014 a potential early sector rotation signal per the prompt \u2014 but no bullish hourly candle confirmation is evident yet. OVERALL: Risk-on macro and intact AI thesis support a bullish lean. Price is at the thesis-defined support confluence. Hourly oversold condition suggests bounce potential. However, OBV distribution on both timeframes, ongoing short-term momentum weakness, and the 0% win rate on this exact setup type (EMA pullback Fib dip-buy) warrant reduced confidence. Enter only on a confirmed bullish candle at the confluence, not blindly at current price.",
+        "entry": 197.5,
+        "target": 209.0,
+        "stop": 193.5,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_mean_reversion": {
+      "NVDA": {
+        "signal": "bullish",
+        "confidence": 42,
+        "reasoning": "Branch B (buy-the-dip) is near-firing but UNCONFIRMED \u2014 entry not yet valid. Branch A (fade-the-extreme) does NOT fire: daily Z-score 0.94 is within normal range, RSI-14 58.08 is neutral, Bollinger pct_b 0.528 sits near the middle band \u2014 no statistical extreme present.\n\nBranch B setup: NVDA is in a strong uptrend (ADX 56.9, +DI 29.18 >> -DI 15.93, full EMA stack bullish). Price has pulled back -8.5% from the $216.83 swing high and is now testing the 38.2% Fibonacci retracement at $196.75 \u2014 price $198.45 is only 0.87% above this level. Confluence confirmed: hourly pivot low $198.70 (19 tests, volume-confirmed) and daily pivot high $197.62 (6 tests) both cluster at the 38.2% Fib zone. Pullback volume is DECLINING (relative volume 0.87, volume_bias_10d: down) \u2014 a healthy characteristic.\n\nHourly layer strongly supports a bounce: RSI-21 = 18.82 (deeply oversold, below 25 threshold), Bollinger pct_b = 0.166 (near lower band). However, the hourly MACD histogram is still -1.8166 (no positive turn yet) and price remains below all hourly MAs (EMA-24, SMA-24, EMA-48, SMA-48) with bearish ADX internals (-DI 36.05 >> +DI 12.97). No bullish divergence detected on either timeframe. The most recent daily candle (May 1) closed near the low ($198.45 close vs $203.00 high) with no hammer or engulfing reversal pattern confirmed.\n\nWiki lesson penalty: The prior identical 'EMA pullback Fib dip-buy' setup on NVDA failed (0% win rate, 1 trade, -$63.20). The wiki pre-identified this exact $197.50\u2013$199.50 entry zone but explicitly required a confirmed hourly reversal candle AND MACD histogram turning positive before entry \u2014 neither condition is met yet. The $208.20 structural support level was also breached on 1.52x volume, weakening the trend structure. Confidence is reduced accordingly from what would otherwise be ~60 to 42.\n\nConditional bullish: the setup will be valid once a reversal candle (hammer, bullish engulfing) prints at the 38.2% Fib zone AND hourly MACD histogram turns positive. Entry zone: $196.75\u2013$199.50.",
+        "entry": 198.45,
+        "target": 212.25,
+        "stop": 194.0,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_catalyst_news": {
+      "NVDA": {
+        "signal": "bullish",
+        "confidence": 62,
+        "reasoning": "CATALYST WINDOW: AMD earnings imminent (1-3 trading days, AI data center read-through) + NVDA Q1 FY2027 earnings ~May 20, 2026 (~12 trading days). Hard exit deadline ~May 17. NET NEWS SENTIMENT: Moderately bullish. Positive drivers: 94% analyst Buy, avg PT $270 (~35% upside from $199.57), Blackwell Ultra shipping with 2-gen competitive lead vs AMD/Intel, Alphabet +7% and Amazon +2% post-earnings confirming AI GPU capex, Apple Q2 beat adds positive Magnificent Seven sentiment, NVDA forward P/E 18.97 with $96.68B FCF. Negative drivers: Meta fell 9% on AI capex shock ($125-145B raised guidance) creating near-term sector ROI concern; H20 China export ban ($4.5B charge) fully priced but structural drag; custom silicon (Google TPUs, AWS Trainium) cited as long-term threat. INSIDER ACTIVITY: Quiet in current 30-day window (0 trades). Background historically bearish (706/735 historic sales) but prior CFO Kress sales were at $171-177 \u2014 well below current $198.45 \u2014 scheduled 10b5-1 sales, not an acute signal. TECHNICAL SETUP \u2014 CONSTRUCTIVE BASE: Price ($198.45) resting at the confluence of daily 20/21 EMA/SMA support zone ($197-198), just above daily Fib 38.2% retracement at $196.75 from the $164.27-$216.83 swing. Daily RSI-14 at 58.08 (not overbought), ADX 56.9 (strong trend), price above all key MAs (20/21/50/200 on daily). Hourly RSI at 18.82 (deeply oversold \u2014 bounce due). Hourly volume confirmed support at $198.70 (19 tests). RISK FACTORS: Prior NVDA stop-out on 2026-04-30 at $205.30 on similar pre-earnings dip-buy setup (EMA pullback Fib dip-buy, -$63.20); however AMD catalyst timing is new trigger not present then. Meta capex shock overhang persists. Hourly trend still bearish (minus_di 36.05 > plus_di 12.97). AMD read-through is binary \u2014 negative AI capex report would invalidate thesis quickly. Confidence: 62 (bullish with catalyst tailwinds but recent stop-out pattern acknowledged).",
+        "entry": 198.5,
+        "target": 211.5,
+        "stop": 195.8,
+        "timeframe": "3-8 trading days"
+      }
+    },
+    "fundamentals_analyst_agent": {
+      "NVDA": {
+        "signal": "bullish",
+        "confidence": 75.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bullish",
+            "details": "ROE: 121.54%, Net Margin: 52.72%, Op Margin: 59.03%"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 61.40%, Earnings Growth: 144.89%"
+          },
+          "financial_health_signal": {
+            "signal": "bullish",
+            "details": "Current Ratio: 4.44, D/E: 0.11"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 40.50, P/B: 60.80, P/S: 26.37"
+          }
+        }
+      }
+    },
+    "technical_analyst_agent": {
+      "NVDA": {
+        "signal": "bullish",
+        "confidence": 21,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 39,
+            "metrics": {
+              "adx": 39.224833834097126,
+              "trend_strength": 0.3922483383409713
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 0.941430619785976,
+              "price_vs_bb": 0.527951556880137,
+              "rsi_14": 58.07706258722636,
+              "rsi_28": 61.61997252639624
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.12642260882852496,
+              "momentum_3m": 0.05638604614364773,
+              "momentum_6m": -0.009935569405127964,
+              "volume_momentum": 0.8717448266875517
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.34068267846116135,
+              "volatility_regime": 0.9199957344706641,
+              "volatility_z_score": -0.6435781699893666,
+              "atr_ratio": 0.03227872945861763
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.3169782939707034,
+              "kurtosis": 0.8635945333137423
+            }
+          }
+        }
+      }
+    },
+    "valuation_analyst_agent": {
+      "NVDA": {
+        "signal": "bullish",
+        "confidence": 100,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $585,110,967,175.85, Market Cap: $4,823,327,440,896.00, Gap: -87.9%, Weight: 35%\n  WACC: 10.5%, Bear: $456,679,804,336.66, Bull: $693,045,829,350.56, Range: $236,366,025,013.91"
+          },
+          "owner_earnings_analysis": {
+            "signal": "bullish",
+            "details": "Value: $29,189,078,686,923.05, Market Cap: $4,823,327,440,896.00, Gap: 505.2%, Weight: 35%"
+          },
+          "ev_ebitda_analysis": {
+            "signal": "neutral",
+            "details": "Value: $4,934,045,602,782.02, Market Cap: $4,823,327,440,896.00, Gap: 2.3%, Weight: 20%"
+          },
+          "residual_income_analysis": {
+            "signal": "bullish",
+            "details": "Value: $27,046,540,917,856.73, Market Cap: $4,823,327,440,896.00, Gap: 460.7%, Weight: 10%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$456,679,804,336.66",
+            "base_case": "$591,943,067,397.34",
+            "bull_case": "$693,045,829,350.56",
+            "wacc_used": "10.5%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      }
+    },
+    "sentiment_analyst_agent": {
+      "NVDA": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      }
+    },
+    "risk_management_agent": {
+      "NVDA": {
+        "remaining_position_limit": 642.6690049438477,
+        "max_account_risk_pct": 2.5,
+        "max_account_risk_dollars": 53.55575041198731,
+        "max_position_pct": 0.3,
+        "correlation_advisory": null,
+        "current_price": 198.4499969482422,
+        "volatility_metrics": {
+          "daily_volatility": 0.024197711039441617,
+          "annualized_volatility": 0.3841267542441887,
+          "volatility_percentile": 82.27272727272728,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.22151651670610942,
+          "max_correlation_with_active": 0.4868665124667258,
+          "top_correlated_tickers": [
+            {
+              "ticker": "AMD",
+              "correlation": 0.4868665124667258
+            },
+            {
+              "ticker": "AMZN",
+              "correlation": 0.35696645334673993
+            },
+            {
+              "ticker": "BAC",
+              "correlation": 0.2479192466720987
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 2142.2300164794924,
+          "current_position_value": 0.0,
+          "available_cash": 2142.2300164794924,
+          "max_position_pct": 0.3,
+          "max_position_dollars": 642.6690049438477,
+          "max_account_risk_pct": 2.5,
+          "max_account_risk_dollars": 53.55575041198731,
+          "sizing_model": "PM picks conviction + account_risk_pct (\u22642.5%); qty = (capital \u00d7 risk_pct) / |entry - stop|. Hard cap: position \u2264 30% of capital ($643). Vol/correlation are context for PM to consider qualitatively."
+        }
+      }
+    }
+  },
+  "allowed_actions": {
+    "NVDA": {
+      "hold": 0,
+      "short": 3
+    }
+  },
+  "portfolio": {
+    "cash": 2142.2300164794924,
+    "margin_requirement": 0.0,
+    "margin_used": 0.0,
+    "positions": {
+      "NVDA": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      }
+    },
+    "other_positions": [
+      {
+        "id": 110,
+        "run_id": "20260430_190826",
+        "mode": "swing",
+        "ticker": "BAC",
+        "direction": "long",
+        "quantity": 15,
+        "entry_price": 52.75,
+        "target_price": 55.4,
+        "target_price_2": null,
+        "stop_loss": 51.5,
+        "confidence": 55,
+        "timeframe": "5-10 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 52.75,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-04-30T19:30:48+00:00",
+        "entered_at": "2026-04-30T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 15, \"entry_price\": 52.75, \"target_price\": 55.4, \"stop_loss\": 51.5, \"risk_reward_ratio\": \"2.12:1\", \"timeframe\": \"5-10 trading days\", \"confidence\": 55, \"reasoning\": \"Head Trader bullish (55 conf), 3/5 swing agents agree. Pullback to 10/21 EMA confluence at $52.73-52.88 in ADX-54.8 uptrend. R/R 2.12:1 meets threshold. Risk mgr limit $806; 15 shares @ $52.75 = $791 within limit. Stop below wiki stop zone / 38.2% Fib at $51.50. Target $55.40 resistance (5 tests). Key risks: OBV divergence, Berkshire overhang \\u2014 sized defensively at max allowed qty but within vol-adjusted limit.\"}",
+        "last_checked_at": "2026-05-01T19:59:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.075
+      },
+      {
+        "id": 113,
+        "run_id": "20260501_132346",
+        "mode": "swing",
+        "ticker": "AMD",
+        "direction": "short",
+        "quantity": 1,
+        "entry_price": 354.49,
+        "target_price": 277.74,
+        "target_price_2": null,
+        "stop_loss": 372.31,
+        "confidence": 42,
+        "timeframe": "8-15 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 354.49,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T14:40:43+00:00",
+        "entered_at": "2026-05-01T13:33:00+00:00",
+        "closed_at": null,
+        "raw_decision": null,
+        "last_checked_at": "2026-05-01T19:59:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.071
+      },
+      {
+        "id": 115,
+        "run_id": "20260501_173921",
+        "mode": "swing",
+        "ticker": "AMZN",
+        "direction": "short",
+        "quantity": 1,
+        "entry_price": 269.0,
+        "target_price": 244.44,
+        "target_price_2": null,
+        "stop_loss": 276.0,
+        "confidence": 55,
+        "timeframe": "7-14 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 265.8599853515625,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T17:55:57+00:00",
+        "entered_at": "2026-05-01T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"short\", \"quantity\": 1, \"entry_price\": 269.0, \"entry_tolerance_pct\": 2.0, \"target_price\": 244.44, \"stop_loss\": 276.0, \"risk_reward_ratio\": \"3.51:1\", \"timeframe\": \"7-14 trading days\", \"confidence\": 55, \"reasoning\": \"Head Trader BEARISH (62). Apr 30 'sell the news' shooting star on 2.05x vol: gap to $273.88, close $265.06. RSI 82/88, z-score 2.01, 18.6% above 50-SMA. Zero bullish swing votes. Mean-reversion Branch A fires; target 20-SMA $244.44. R:R 3.51:1 clears 2:1 bar. Stop above confirmed reversal high $273.88. Risk mgr limit $508; 1 share @ $269 = $269. Confidence dialed to 55 (from 62) on ADX 64 strong trend risk and NVDA lesson (same RSI regime, stop hit -$63). Short or stand aside \\u2014 no long entry valid at current price.\"}",
+        "last_checked_at": "2026-05-01T19:59:00+00:00",
+        "entry_tolerance_pct": 2.0,
+        "account_risk_pct": 0.028
+      },
+      {
+        "id": 116,
+        "run_id": "20260501_194523",
+        "mode": "swing",
+        "ticker": "JNJ",
+        "direction": "short",
+        "quantity": 3,
+        "entry_price": 229.85,
+        "target_price": 216.53,
+        "target_price_2": null,
+        "stop_loss": 235.0,
+        "confidence": 58,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 229.05999755859375,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T20:15:58+00:00",
+        "entered_at": "2026-05-01T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"short\", \"quantity\": 3, \"entry_price\": 229.85, \"entry_tolerance_pct\": 1.0, \"target_price\": 216.53, \"stop_loss\": 235.0, \"risk_reward_ratio\": \"2.59:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 58, \"account_risk_pct\": 0.51, \"reasoning\": \"4/5 swing agents bearish. Confirmed daily downtrend (EMA stack, ADX 30.72, -DI>+DI, OBV down). Bounce to 10-EMA resistance ($229-231) = textbook short entry. R/R 2.59:1. No open JNJ position. Risk-on macro removes defensive bid. 3 shares @ $229.85 = $689.55 (within 25% cap). Stop $235 above EMA21/consolidation.\"}",
+        "last_checked_at": "2026-05-01T19:59:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.51
+      },
+      {
+        "id": 117,
+        "run_id": "20260501_221355",
+        "mode": "swing",
+        "ticker": "DIS",
+        "direction": "long",
+        "quantity": 2,
+        "entry_price": 102.5,
+        "target_price": 107.11,
+        "target_price_2": null,
+        "stop_loss": 101.0,
+        "confidence": 62,
+        "timeframe": "5-10 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 103.49500274658205,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T22:41:01+00:00",
+        "entered_at": "2026-05-01T13:39:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 2, \"entry_price\": 102.5, \"entry_tolerance_pct\": 1.0, \"target_price\": 107.11, \"stop_loss\": 101.0, \"risk_reward_ratio\": \"3.07:1\", \"timeframe\": \"5-10 trading days\", \"confidence\": 62, \"account_risk_pct\": 0.13, \"reasoning\": \"Head Trader bullish (62), 4/5 swing agents agree. Pre-earnings momentum (May 6-13 catalyst). Apr 30 breakout above $103 on 1.23x vol, MACD bullish cross, ADX 37.34. Limit at $102.50 pullback for 3.07:1 R/R. Stop $101.00 (17-test support). Allowed max qty=2; 2 shares x $102.50 = $205 within 25% cap.\"}",
+        "last_checked_at": "2026-05-01T19:59:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.13
+      }
+    ],
+    "realized_gains": {
+      "NVDA": {
+        "long": 0.0,
+        "short": 0.0
+      }
+    },
+    "pending_orders": [
+      {
+        "id": 114,
+        "run_id": "20260501_144523",
+        "mode": "swing",
+        "ticker": "AAPL",
+        "direction": "long",
+        "quantity": 2,
+        "entry_price": 276.0,
+        "target_price": 294.84,
+        "target_price_2": null,
+        "stop_loss": 269.5,
+        "confidence": 42,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "pending",
+        "entry_fill_price": null,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T15:00:50+00:00",
+        "entered_at": null,
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 2, \"entry_price\": 276.0, \"target_price\": 294.84, \"stop_loss\": 269.5, \"risk_reward_ratio\": \"2.9:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 42, \"reasoning\": \"Head Trader neutral (42) \\u2014 wait for pullback to $274-278 before entry. Limit buy at $276 (preferred entry): breakout above $276.11 resistance confirmed on 2.08x volume, measured move to $294.84 intact, RSI 61.64 healthy, OBV uptrend, post-earnings drift thesis (Q2 FY2026 beat, analyst targets $299-305). R/R 2.9:1 (18.84 up / 6.50 down) clears 2:1 minimum from pullback level. Stop $269.50 below pre-earnings pivot. NOT chasing at $283 \\u2014 hourly Z-score 2.52 and Bollinger %B 1.28 flag overextension; mean reversion agent correctly warns of fade risk at current price. Entering only on constructive pullback to Fib 38.2% / daily upper BB confluence at $274-278. Size: 2 shares x $276 = $552, within risk manager cap $768 and 25% capital limit $963. ADX 16.83 is the main caveat \\u2014 trigger requires ADX rising above 19 on pullback candle. Key risks: insider net selling (-$235M, Cook sold at $251-256), ADX still sub-25, one prior portfolio loss (NVDA EMA dip, -$264) on similar setup. Sized conservatively at 2 shares.\"}",
+        "last_checked_at": "2026-05-01T19:59:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.052
+      }
+    ],
+    "recent_closed": [
+      {
+        "ticker": "NVDA",
+        "direction": "long",
+        "status": "stop_hit",
+        "entry_price": 209.25,
+        "exit_fill_price": 205.3,
+        "pnl": -63.2,
+        "closed_at": "2026-04-30T15:59:00",
+        "timeframe": "5-10 trading days"
+      }
+    ]
+  },
+  "tickers": [
+    "NVDA"
+  ],
+  "end_date": "2026-05-04",
+  "degraded_inputs": []
+}

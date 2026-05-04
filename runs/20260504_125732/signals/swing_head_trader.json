@@ -1,0 +1,24 @@
+{
+  "NVDA": {
+    "consensus_signal": "bullish",
+    "confidence": 44,
+    "reasoning": "Vote count: 3 bullish (swing_mean_reversion 42, swing_catalyst_news 62, swing_macro_context 55), 2 neutral (swing_trend_momentum 35, swing_breakout 38), 0 bearish. Weighted toward bullish but all three bullish agents are explicitly CONDITIONAL — they require a confirmed hourly reversal candle at the Fib 38.2% / EMA-21 confluence ($196.75–$199.50) AND the hourly MACD histogram turning positive before entry is valid. Neither condition is currently met. The setup structure is correct: price pulled back -8.5% from $216.83 high to $198.45, daily trend intact (ADX 56.9, full EMA uptrend alignment), AMD earnings catalyst imminent (AI capex read-through), and macro is risk-on with S&P near ATHs. However, the hourly layer is actively bearish (-DI 36.05 vs +DI 12.97, MACD histogram -1.82) with OBV showing distribution on both timeframes. WIKI MEMORY DIAL-DOWN: The only closed NVDA trade in 30 days is the April 30 EMA pullback Fib dip-buy, which was stopped at $205.30 with -$63.20 P&L. This exact same setup type now scores a 0% win rate. The wiki explicitly flagged $196.75–$197.67 as the true entry zone and required bullish confirmation candle before entry — the prior stop-out occurred because entry was taken WITHOUT confirmation. A conditional buy at the confluence is appropriate; a blind entry at current price ($198.45) is not. No open NVDA position exists so there is no stacking concern. The broader book is balanced (3 long / 3 short). AMD catalyst is binary — a negative AI capex report from AMD would invalidate the thesis immediately and is an unpriced tail risk within the 1-3 day window. Confidence is capped at 44 (below the typical 50 threshold for action) because: (1) the required confirmation candle is absent, (2) this setup type is 0-for-1 in the last 30 days on this exact ticker, (3) the AMD read-through is unresolved. Consensus is bullish-conditional — do not act until trigger conditions are met.",
+    "agent_agreement_pct": 60.0,
+    "key_conflicts": "The primary conflict is between swing_trend_momentum (neutral, 35) and the three bullish agents. Trend-momentum is explicitly waiting for ROC-5d to turn positive and the daily MACD histogram to cross above zero — it interprets the current short-term momentum contraction (-4.72% ROC-5d, slightly negative MACD histogram) as unfinished selling, not a buy signal. Swing_breakout (neutral, 38) sees the same data differently: the bearish breakout from $208.20 has already fired and exhausted, but a new bullish setup requires a confirmed daily close above $203.00 on 1.5x volume — a higher bar than the other agents require. This disagreement is telling us something important: the DAILY trend structure is fully intact (all EMAs bullish, ADX very strong) but the SHORT-TERM price action is still distributing. The bullish camp (catalyst-news and macro-context) is willing to buy the dip into the confluence zone with a tight stop because the catalyst window and macro backdrop justify the risk. The neutral camp argues that without momentum re-acceleration, buying is premature. This is NOT a coin flip — it is a legitimate 'trend intact but near-term momentum stalled' setup where the entry trigger matters more than the directional call. Additionally, all agents have absorbed the wiki's April 30 lesson: the prior NVDA stop-out on this exact setup type at this exact zone is a known risk. This lesson appears to have REDUCED all confidence scores across the board compared to what they would otherwise be.",
+    "recommended_action": "buy",
+    "entry_zone": "196.75-199.50",
+    "entry_trigger": "Confirmed bullish reversal candle (hammer or bullish engulfing) on the daily or hourly chart at the 38.2% Fib / EMA-21 confluence AND hourly MACD histogram turning positive",
+    "target": 210.50,
+    "stop": 194.00,
+    "timeframe": "5-10 trading days",
+    "hard_exit_deadline": "2026-05-17 (3 trading days before NVDA Q1 FY2027 earnings ~May 20)",
+    "risk_factors": [
+      "AMD earnings (1-3 trading days) — binary AI capex read-through; negative report invalidates thesis immediately",
+      "EMA pullback Fib dip-buy setup: 0% win rate on this exact ticker in last 30 days (1 trade, -$63.20)",
+      "Hourly trend actively bearish at time of signal — confirmation candle required before entry",
+      "OBV showing distribution on both daily and hourly timeframes",
+      "Fed policy transition (Powell -> Warsh, May 15) introduces macro uncertainty near the trade window",
+      "Meta AI capex shock overhang — near-term AI-spend uncertainty not fully resolved"
+    ]
+  }
+}
