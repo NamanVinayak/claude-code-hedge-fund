@@ -1,0 +1,11 @@
+{
+  "AAPL": {
+    "signal": "bullish",
+    "confidence": 48,
+    "reasoning": "TREND ASSESSMENT: EMA alignment is cleanly bullish — 10 EMA (271.18) > 21 EMA (267.11) > 50 EMA (263.56) — confirmed on both daily and hourly timeframes. Plus DI (40.22) dominates Minus DI (13.81), showing strong directional pressure. However, daily ADX is 19.92 — below the required 25 threshold. This is the primary constraint under strategy rules: trend exists but lacks the confirmed strength ADX > 25 demands. Hourly ADX is 23.01, also below 25. The strategy requires both EMA alignment AND ADX > 25 for a full-confidence entry. MOMENTUM ASSESSMENT: Daily ROC is all-positive and expanding: 5d=+3.35%, 10d=+3.67%, 21d=+9.59% — the structure shows multi-week momentum building. MACD histogram is positive (0.91 daily, 0.86 hourly) and above zero, confirming acceleration. However, the hourly 5d ROC is -1.98% — a divergence warning. Hourly OBV is in a downtrend and diverging from price, indicating institutional distribution on the short-term horizon. ENTRY ZONE: Price closed at 280.14 daily — 4.88% above the 21 EMA and at the upper Bollinger Band (%B=1.003, Z-score 2.25). This is NOT a pullback entry; chasing here violates strategy rules. The strategy requires pullback to 10 or 21 EMA before entry. WIKI / PRIOR CONTEXT: The May 1 wiki noted an overextended hourly (Z-score 2.52, %B 1.28) and advised limit-buy only at $274-278 on pullback. Current daily is equally stretched. The macro regime shifted bearish on May 4 (Iran geopolitical re-escalation, oil higher, Dow futures lower), overturning the prior risk-on read. LESSONS: The prior NVDA EMA pullback trade was stopped out when price breached the stop zone with an overextended RSI and no bullish confirmation candle — confidence dial is lowered for aggressive entries at extension. VERDICT: Bullish structure exists with positive momentum, but ADX below 25 and price extended above all EMAs means no actionable entry at current prices. Setting limit-buy at 21 EMA pullback zone (~267). If price pulls back and ADX crosses 25 with momentum intact, confidence upgrades significantly. Moderate-low confidence due to ADX weakness, overextension, hourly OBV divergence, and mixed macro backdrop.",
+    "entry": 267.5,
+    "target": 287.0,
+    "stop": 263.5,
+    "timeframe": "8-15 trading days"
+  }
+}
