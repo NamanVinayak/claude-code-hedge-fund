@@ -1,0 +1,95 @@
+{
+  "ticker": "JPM",
+  "verified_at": "2026-05-04T18:30:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.18369673503343023,
+      "web_value": 0.2844,
+      "source": "GuruFocus (TTM, May 2026)",
+      "status": "MISMATCH",
+      "deviation": "55%",
+      "action": "replaced with web value in warren_buffett__JPM.json (only file containing this metric)",
+      "note": "facts bundle report_period was 2014-09-30 — stale historical data was the root cause"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": null,
+      "source": "MacroTrends / CompaniesMarketCap",
+      "status": "unverified",
+      "deviation": "n/a",
+      "note": "operating_margin is null in facts bundle; banks typically report net interest income not traditional operating margin — skipped"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 14.728707,
+      "web_value": 14.92,
+      "source": "GuruFocus TTM PE (May 2026)",
+      "status": "ok",
+      "deviation": "1.3%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": null,
+      "web_value": 173560000000.0,
+      "source": "MacroTrends / StockAnalysis TTM as of May 2026 (~$173.56B)",
+      "status": "unverified",
+      "deviation": "n/a",
+      "note": "revenue is not stored as a standalone field in the facts bundle metrics block — no correction applied"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 824830459904.0,
+      "web_value": 837000000000.0,
+      "source": "CompaniesMarketCap / Capital.com (May 2026 ~$837B)",
+      "status": "ok",
+      "deviation": "1.5%"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.08469632253359725,
+      "web_value": 0.1703,
+      "source": "CNBC Q1 2026 ROE 17.03% TTM",
+      "status": "MISMATCH",
+      "deviation": "101%",
+      "action": "replaced with web value in warren_buffett__JPM.json (only file containing this metric)",
+      "note": "stale 2014 data pulled extremely low ROE; Q1 2026 actual reported ROE is ~17-19%"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.007406582275964965,
+      "web_value": 0.0129,
+      "source": "GuruFocus / ValueInvesting.io (April 2026 ROA 1.29%)",
+      "status": "MISMATCH",
+      "deviation": "74%",
+      "action": "replaced with web value in warren_buffett__JPM.json (only file containing this metric)",
+      "note": "stale 2014 data yielded 0.74% ROA vs current 1.29%"
+    }
+  ],
+  "files_with_metrics_block": [
+    "warren_buffett__JPM.json"
+  ],
+  "files_without_metrics_block": [
+    "aswath_damodaran__JPM.json",
+    "ben_graham__JPM.json",
+    "bill_ackman__JPM.json",
+    "cathie_wood__JPM.json",
+    "charlie_munger__JPM.json",
+    "michael_burry__JPM.json",
+    "mohnish_pabrai__JPM.json",
+    "nassim_taleb__JPM.json",
+    "news_sentiment__JPM.json",
+    "peter_lynch__JPM.json",
+    "phil_fisher__JPM.json",
+    "rakesh_jhunjhunwala__JPM.json",
+    "stanley_druckenmiller__JPM.json",
+    "swing_breakout__JPM.json",
+    "swing_catalyst_news__JPM.json",
+    "swing_macro_context__JPM.json",
+    "swing_mean_reversion__JPM.json",
+    "swing_trend_momentum__JPM.json"
+  ],
+  "overall_status": "3 mismatches corrected (net_margin, roe, roa)",
+  "corrections_applied": true
+}
