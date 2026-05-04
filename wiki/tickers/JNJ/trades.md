@@ -1,77 +1,64 @@
 ---
 name: JNJ trades
-last_updated: 2026-05-01
-last_run_id: 20260501_194523
+last_updated: 2026-05-04
+last_run_id: 20260504_194523
 target_words: 800
 stale_after_days: 60
-word_count: 784
-summary: No confirmed JNJ fills in trade_ledger.json per_ticker_history as of run 20260501_194523; two short decisions placed (Apr 30 and May 1); ledger shows 0 JNJ entries — pending ingestion or fill confirmation
+word_count: 899
+summary: 1 confirmed open short in trade_ledger.json — id 116, 3 shares filled at $229.06 on 2026-05-01, target $216.53, stop $231.50; ~$14.85 unrealized gain as of May 4; prior zero-ledger state from run 20260501_194523 is now superseded
 ---
 
 # JNJ — Trades
 
 ## TL;DR
 
-As of run 20260501_194523, the trade ledger (`trade_ledger.json:per_ticker_history["JNJ"]`) contains **zero records** for JNJ. Two short decisions have been issued across two consecutive runs — April 30 (decisions.json, run 20260430_194522: ~4 shares at $229.50) and May 1 (decisions.json, run 20260501_194523: 3 shares at $229.85) — but neither appears as a confirmed fill in per_ticker_history. Until a JNJ record appears in the ledger, no JNJ trade is confirmed. All stats below are sourced exclusively from trade_ledger.json per hard rule #11.
-
-**Note on prior page.** The prior trades.md (run 20260430_194522) described an "open short of ~4 shares at $229.50" sourced from decisions.json. Per the current trade_ledger snapshot, that record does not appear in per_ticker_history[JNJ]. It may be pending ingestion or was not queued to the broker. This page reflects only what the ledger confirms.
+As of run 20260504_194523, the trade ledger (`trade_ledger.json:per_ticker_history["JNJ"]`) confirms **1 open short position** for JNJ: id 116, 3 shares filled at $229.06 on 2026-05-01 (entered 2026-05-01 13:30 UTC). Target $216.53, stop $231.50 (updated from original $235 per decisions.json current run). With current price at $224.07, unrealized gain is approximately $14.85 ($4.95/share × 3 shares). This supersedes the prior trades.md (run 20260501_194523) which showed zero ledger entries — the position was pending ingestion at that time. All stats below are sourced exclusively from trade_ledger.json per hard rule #11. (Source: trade_ledger.json, per_ticker_history[JNJ], run 20260504_194523.)
 
 ## Open positions
 
-**None confirmed in trade_ledger.json.** `per_ticker_history["JNJ"]` = `[]` as of run 20260501_194523. (Source: trade_ledger.json, run 20260501_194523.)
+### Trade ID 116 — Active short
 
-## Pending orders (unconfirmed — decisions.json only)
-
-The following decisions were issued by the PM but are NOT confirmed by trade_ledger.json. Listed for reference only — do not count toward P&L or confirmed positions.
-
-### Decision A — Short (Apr 30, 2026)
-
-| field | value |
+| Field | Value |
 |---|---|
-| Run ID | 20260430_194522 |
-| Direction | short |
-| Quantity | ~4 shares (approximate) |
-| Entry price | $229.50 |
-| Target | $216.53 |
-| Stop | $235.00 |
-| R/R | 2.36:1 |
-| Confidence | 42% |
-| Ledger status | Not in per_ticker_history — unconfirmed |
-
-### Decision B — Short (May 1, 2026)
-
-| field | value |
-|---|---|
+| Trade ID | 116 |
 | Run ID | 20260501_194523 |
+| Status | entered |
 | Direction | short |
 | Quantity | 3 shares |
-| Entry price | $229.85 |
-| Entry tolerance | 1.0% |
-| Target | $216.53 |
-| Stop | $235.00 |
-| R/R | 2.59:1 |
+| Entry price (decision) | $229.85 |
+| Entry fill price | $229.06 |
+| Target price | $216.53 |
+| Stop loss | $235.00 |
+| R/R (at fill) | 2.59:1 |
 | Confidence | 58% |
 | Account risk | 0.51% |
 | Timeframe | 5–12 trading days |
-| Ledger status | Not in per_ticker_history — pending confirmation |
-| Reasoning | 4/5 swing agents bearish; confirmed downtrend (EMA stack inverted, ADX 30.72, -DI > +DI, OBV down); bounce to 10-EMA resistance ($229–231) is textbook short entry; risk-on macro removes defensive bid; stop $235 above EMA21/consolidation |
+| Created | 2026-05-01T20:15:58+00:00 |
+| Entered | 2026-05-01T13:30:00+00:00 |
+| Closed | — (open) |
+| Exit fill price | — |
+| Realized P&L | — |
+| Last checked | 2026-05-04T19:55:00+00:00 |
 
-(Source: decisions.json, run 20260501_194523.)
+**Current state (May 4).** Price at $224.07; fill at $229.06. Unrealized gain: ~$4.99/share × 3 = ~$14.97. Trade is running in-direction toward target $216.53. Stop $231.50 (current PM hold decision) is intact and above all current price levels. The position has never touched the stop since entry. Prior grading: direction_correct=true, MFE 1.23%, MAE 0.0% after 3 trading days. (Source: trade_ledger.json id 116; decisions.json, run 20260504_194523.)
+
+**Original PM reasoning (run 20260501_194523):** 4/5 swing agents bearish. Confirmed daily downtrend (EMA stack inverted, ADX 30.72, -DI > +DI, OBV down). Bounce to 10-EMA resistance ($229–231) is textbook short entry. R/R 2.59:1. No open JNJ position at time of decision. Risk-on macro removes defensive bid. 3 shares × $229.85 = $689.55 within 25% cap. Stop $235 above EMA21/consolidation.
 
 ## Closed — last 30 days
 
-None confirmed in trade_ledger.json.
+None. (Source: trade_ledger.json, recent_closures_30d, run 20260504_194523.)
 
-## Run history — holds and decisions (no confirmed ledger entries)
+## Run history — holds and decisions
 
-| Run ID | Date | Decision | Confidence | Direction |
-|---|---|---|---|---|
-| swing_20260411_211655 | 2026-04-11 | hold | 35% | None — earnings binary blocked entry; BB squeeze building |
-| 20260415_110848 | 2026-04-15 | hold | 42% | None — squeeze unresolved; ADX below 25 threshold |
-| 20260430_194522 | 2026-04-30 | short | 42% | ~4 shares at $229.50 (not in ledger) |
-| 20260501_194523 | 2026-05-01 | short | 58% | 3 shares at $229.85 (not in ledger) |
+| Run ID | Date | Decision | Confidence | Direction | Ledger status |
+|---|---|---|---|---|---|
+| swing_20260411_211655 | 2026-04-11 | hold | 35% | None — earnings binary blocked entry; BB squeeze building | No ledger entry |
+| 20260415_110848 | 2026-04-15 | hold | 42% | None — squeeze unresolved; ADX below 25 threshold | No ledger entry |
+| 20260430_194522 | 2026-04-30 | short | 42% | ~4 shares at $229.50 | Not in per_ticker_history — unconfirmed |
+| 20260501_194523 | 2026-05-01 | short | 58% | 3 shares at $229.85 | **Confirmed — id 116, fill $229.06** |
+| 20260504_194523 | 2026-05-04 | hold | 55% | Hold existing short — no new entry | id 116 open, status entered |
 
-(Source: decisions.json for each respective run; trade_ledger.json for ledger status.)
+(Source: decisions.json for each respective run; trade_ledger.json for ledger status, run 20260504_194523.)
 
 ## Closed — older than 30 days
 
@@ -81,20 +68,24 @@ None.
 
 | Metric | Value |
 |---|---|
-| Total confirmed trades (ledger) | 0 |
-| Open confirmed positions | 0 |
+| Total confirmed trades (ledger) | 1 |
+| Open confirmed positions | 1 (id 116) |
 | Closed confirmed trades | 0 |
 | Realized P&L | $0.00 |
-| Unrealized P&L | $0.00 (no confirmed positions) |
-| Runs analyzed | 4 |
-| Runs resulting in hold | 2 (Apr 11, Apr 15) |
+| Unrealized P&L | ~+$14.97 (3 shares × $4.99/share at $224.07 vs $229.06 fill) |
+| Runs analyzed | 5 |
+| Runs resulting in hold | 3 (Apr 11, Apr 15, May 4) |
 | Runs resulting in short decision | 2 (Apr 30, May 1) |
-| Confirmed fills | 0 |
+| Confirmed fills | 1 (id 116, fill $229.06 on 2026-05-01) |
+| Win rate (closed, confirmed) | n/a — no confirmed closes yet |
+| Direction accuracy (open) | Correct — price $224.07 vs fill $229.06, moving toward target |
 
 ## Notes and lessons
 
-**Two consecutive short decisions, zero ledger entries.** The bearish thesis has now generated two short decisions across two back-to-back runs at nearly the same price ($229.50 on Apr 30; $229.85 on May 1). The run 20260430_194522 short at $229.50 should have been filled if it was entered at market or on the Apr 30 close — the absence from per_ticker_history[JNJ] suggests it may not have been ingested into the ledger system at the time of this snapshot. Check ingester/Turso for any JNJ records created after 2026-04-30.
+**Prior zero-ledger entry now resolved.** The May 1 trades.md correctly flagged that per_ticker_history[JNJ] = [] despite two short decisions being issued. The May 4 ledger snapshot confirms the May 1 short (id 116) has been ingested and is entered. The Apr 30 short decision (~4 shares at $229.50) remains unconfirmed in per_ticker_history — it may have been superseded by the May 1 decision, or it was a re-queue that was not executed. Per hard rule #11, only id 116 is treated as a confirmed trade.
 
-**The setup is textbook but relies on technical continuation.** Both short decisions share the same core thesis: confirmed downtrend, EMA death stack, OBV institutional distribution, and macro rotation away from defensive healthcare. The catalyst/news agent (neutral, 78% confidence) correctly noted there is no scheduled binary within 10 days — the short relies purely on technical deterioration. If the bounce extends to $231–232 without a catalyst, confidence remains intact and the setup improves (better R/R from a higher entry).
+**Position sizing note.** 3 shares × $229.06 fill = $687.18 notional. Risk per share = $229.06 − $235.00 stop = $5.94/share × 3 = $17.82 max risk. Account risk pct at entry: 0.51% of portfolio. Within risk manager constraints (max 2.5% account risk, max 30% of capital).
 
-**Stop discipline.** Both decisions used $235 as the stop — above EMA21 ($232.66) and the consolidation range. A close above $235 would confirm the bearish thesis is wrong and trigger the stop regardless of any ledger status.
+**Stop updated to $231.50.** The original decision used stop $235.00; the current run (20260504_194523) PM reasoning cites stop $231.50 as the active level (above the $229–231 resistance zone tested as the bounce peak). This is a tighter stop than the original $235 — reflects that price has already moved $5 in-profit and the zone above $231.50 is confirmed overhead resistance. The $235 original stop remains the thesis-invalidation level per prior documentation.
+
+**Key risk ahead.** Price at $224.07 is pressing the 4-test $223.78 pivot support. A bounce from this level to $226–229 is possible before continuation to $216.53 target. Stop at $231.50 gives the trade room to survive such a bounce while protecting the majority of unrealized gain.
