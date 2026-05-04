@@ -244,7 +244,10 @@ def insert_trade(d: dict[str, Any]) -> int:
         payload["created_at"] = _now_iso()
     cols = [c for c in TRADE_COLUMNS if c in payload]
     placeholders = ", ".join("?" for _ in cols)
-    sql = f"INSERT INTO trades ({', '.join(cols)}) VALUES ({placeholders})"
+    # OR IGNORE: UNIQUE INDEX on (run_id, ticker) means a duplicate insert is
+    # silently skipped instead of raising — belt-and-suspenders behind the
+    # app-level checks in ingest_decisions.py.
+    sql = f"INSERT OR IGNORE INTO trades ({', '.join(cols)}) VALUES ({placeholders})"
     return _insert_and_get_id(sql, [payload[c] for c in cols])
 
 
