@@ -1,0 +1,17 @@
+{
+  "decisions": {
+    "MSFT": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 414.44,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 411.41,
+      "stop_loss": 421.0,
+      "risk_reward_ratio": "3.1:1",
+      "timeframe": "watch — no entry until bear trigger fires ($411.41 break) or bull trigger fires ($420 daily close on 1.5x vol)",
+      "confidence": 38,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader confidence 38 (<40 threshold); best setup is macro bear at 3.1:1 which does NOT clear 4:1 bar required for sub-40 confidence. Bear trigger ($411.41 hourly confirmed break) has NOT fired — macro agent entry is conditional, not actionable at $414.44. Price in no-man's-land ($404-$420). Portfolio already carries 3 net shorts (AMD, JNJ, META) + 2 longs (BAC, AAPL, DIS); adding a 4th short increases directional crowding and correlation risk (MSFT-META corr 0.36). Synthesis: neutral with bearish lean — watch $411.41 (short trigger) and $420 on 1.5x+ volume (long trigger). No edge to enter today. Capital preserved for actionable setups."
+    }
+  }
+}

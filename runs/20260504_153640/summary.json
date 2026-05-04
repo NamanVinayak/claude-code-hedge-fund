@@ -1,0 +1,34 @@
+{
+  "run_id": "20260504_153640",
+  "mode": "swing",
+  "started_at": "2026-05-04T15:37:10Z",
+  "ended_at": "2026-05-04T15:49:34Z",
+  "tickers": [
+    "MSFT"
+  ],
+  "decisions": [
+    {
+      "ticker": "MSFT",
+      "action": "hold",
+      "confidence": 38,
+      "entry": 414.44,
+      "stop": 421.0,
+      "target": 411.41,
+      "reasoning_tldr": "Head Trader confidence 38 (<40 threshold); best setup is macro bear at 3.1:1 which does NOT clear 4:1 bar required for sub-40 confidence"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 1,
+    "cash": 1793.7699945068362,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "neutral",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

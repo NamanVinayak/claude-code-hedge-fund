@@ -1,0 +1,72 @@
+{
+  "ticker": "MSFT",
+  "verified_at": "2026-05-04T15:36:40",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.3969,
+      "web_value": 0.3934,
+      "source": "CNBC (May 2026)",
+      "status": "ok",
+      "deviation": "0.9%",
+      "notes": "Facts bundle: 39.69%, Web: ~39.34% (CNBC). Well within 20% threshold."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.4701,
+      "web_value": 0.4709,
+      "source": "GuruFocus (May 2026)",
+      "status": "ok",
+      "deviation": "0.2%",
+      "notes": "Facts bundle: 47.01%, Web: 47.09% (GuruFocus). Near-perfect match."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 24.71,
+      "web_value": 24.19,
+      "source": "MacroTrends / FinanceCharts (Apr 30, 2026)",
+      "status": "ok",
+      "deviation": "2.2%",
+      "notes": "Facts bundle: 24.71, Web range 24.11-26.84 depending on date/source. Using Apr 30 figure. Well within 20% threshold."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 311900000000,
+      "web_value": 318273000000,
+      "source": "StockAnalysis / MacroTrends (TTM ending March 31, 2026)",
+      "status": "ok",
+      "deviation": "2.0%",
+      "notes": "Facts implied TTM revenue (~$311.9B via market_cap/P_S). Web: $318.273B TTM through Q3 FY2026. 2% difference well within threshold."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 3080534884352,
+      "web_value": 3070000000000,
+      "source": "Capital.com / CompaniesMarketCap (May 4, 2026)",
+      "status": "ok",
+      "deviation": "0.3%",
+      "notes": "Facts bundle: $3.081T, Web: ~$3.07-3.08T. Near-perfect match."
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.3604,
+      "web_value": 0.3401,
+      "source": "Zacks (May 1, 2026 TTM)",
+      "status": "ok",
+      "deviation": "6.0%",
+      "notes": "Facts bundle: 36.04%, Web: ~34.01% (Zacks). Some sources cite 40.81% (GuruFocus). Using Zacks TTM of 34.01%. 6% deviation well within 20% threshold."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.2000,
+      "web_value": 0.1813,
+      "source": "Zacks TTM average (2026)",
+      "status": "ok",
+      "deviation": "10.3%",
+      "notes": "Facts bundle: 20.0%, Web: ~18.13% (Zacks TTM average). One source showed 14.81% (single-point Zacks) but TTM average consensus closer to 18%. Using 18.13% as reference. 10.3% deviation is below 20% threshold — no correction required."
+    }
+  ],
+  "overall_status": "all metrics verified — no mismatches found",
+  "corrections_applied": false,
+  "summary": "All 7 key metrics for MSFT are within the 20% deviation threshold when compared to current web sources (GuruFocus, MacroTrends, Zacks, CNBC, StockAnalysis). The most notable differences were ROA (10.3%) and ROE (6.0%), both within acceptable bounds. Revenue TTM showed 2% gap due to the Q3 FY2026 earnings update ($318.3B actual vs $311.9B implied in facts). No facts bundles were modified."
+}
