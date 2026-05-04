@@ -1,0 +1,77 @@
+{
+  "ticker": "SNDK",
+  "verified_at": "2026-05-04T21:30:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.3426,
+      "web_value": 0.3426,
+      "source": "CNBC / stockanalysis.com (May 2026)",
+      "status": "ok",
+      "deviation": "0%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.709,
+      "web_value": 0.416,
+      "source": "stockanalysis.com / CNBC (May 2026)",
+      "status": "MISMATCH",
+      "deviation": "70%",
+      "action": "replaced 0.709 with 0.416 in all facts bundles (warren_buffett__SNDK.json, aswath_damodaran__SNDK.json)",
+      "note": "Our value of 70.9% appears to reflect a non-GAAP Q3 figure injected as TTM. Current TTM operating margin per web sources is 41.6%."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": null,
+      "web_value": 40.57,
+      "source": "public.com / CNBC (May 1, 2026)",
+      "status": "unverified",
+      "deviation": "N/A",
+      "note": "Facts bundle has null P/E (negative TTM EPS from stale period). Web trailing P/E is ~40.57. Not corrected — updating PE alone without reconciling EPS would create internal inconsistency."
+    },
+    {
+      "metric": "revenue",
+      "our_value": null,
+      "web_value": 13180000000,
+      "source": "CNBC / stockanalysis.com (May 2026) — TTM $13.18B",
+      "status": "unverified",
+      "deviation": "N/A",
+      "note": "Revenue not stored as a direct top-level field in facts bundles. No direct correction applied."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 185867272192.0,
+      "web_value": 175680000000.0,
+      "source": "CNBC (May 1, 2026)",
+      "status": "ok",
+      "deviation": "5.8%"
+    },
+    {
+      "metric": "roe",
+      "our_value": -0.178,
+      "web_value": 0.393,
+      "source": "stockanalysis.com / Yahoo Finance (May 2026)",
+      "status": "MISMATCH",
+      "deviation": "321%",
+      "action": "replaced -0.178 with 0.393 in all facts bundles (warren_buffett__SNDK.json, aswath_damodaran__SNDK.json)",
+      "note": "Stale pre-turnaround data showed deeply negative ROE. Current TTM ROE per web is +39.3%."
+    },
+    {
+      "metric": "roa",
+      "our_value": -0.126,
+      "web_value": 0.228,
+      "source": "stockanalysis.com / Yahoo Finance (May 2026)",
+      "status": "MISMATCH",
+      "deviation": "281%",
+      "action": "replaced -0.126 with 0.228 in all facts bundles (warren_buffett__SNDK.json, aswath_damodaran__SNDK.json)",
+      "note": "Stale pre-turnaround data showed negative ROA. Current TTM ROA per web is +22.82%."
+    }
+  ],
+  "overall_status": "3 mismatches corrected (operating_margin, roe, roa)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260504_212836/facts/warren_buffett__SNDK.json",
+    "runs/20260504_212836/facts/aswath_damodaran__SNDK.json"
+  ],
+  "context": "SNDK (SanDisk) completed its spinoff from Western Digital and re-emerged as a standalone public company in February 2026. Several metrics reflected stale pre-turnaround quarterly data. The Q3 FY2026 blowout earnings (revenue +251% YoY, non-GAAP EPS $23.41 vs $14.66 estimate) represent the current business profile. Operating_margin, ROE, and ROA all corrected to current TTM web values."
+}

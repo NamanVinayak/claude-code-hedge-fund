@@ -1,0 +1,30 @@
+{
+  "decisions": {
+    "SNDK": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 0.0,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 0.0,
+      "stop_loss": 0.0,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "N/A",
+      "confidence": 30,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader neutral (30 conf, below 40 threshold). Price $1,256 is parabolic: 55% above 50-SMA, hourly RSI 81 with bearish divergence, pct_b 1.03. Mean-reversion short (68 conf) is structurally sound but ADX 62.46 and exceptional earnings ($5.95B +251% YoY, $42B backlog) make fade low-probability. Allowed actions only permit hold. Wait for pullback to $1,030-$1,060 (10 EMA convergence) for 2:1+ R/R long entry, or confirmed reversal candle above $1,200 for a mean-reversion short. No edge at current price."
+    },
+    "MU": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 0.0,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 0.0,
+      "stop_loss": 0.0,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "N/A",
+      "confidence": 38,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader neutral (38 conf, below 40 threshold). Risk manager correlation-blocked (MU+SNDK cluster 0.70 corr, cap exceeded). AMD earnings May 5 AMC = direct HBM binary event within swing window. Price $576 at hourly Bollinger upper, R/R only 1.7:1 from current price. No hourly RSI bearish divergence (unlike SNDK) keeps fundamentally bullish thesis alive. Dip-buy thesis valid at $502-$520 (10 EMA, hourly support cluster, 3:1+ R/R) contingent on AMD positive guidance. Wait; do not initiate at current levels."
+    }
+  }
+}

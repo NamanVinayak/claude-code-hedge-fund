@@ -1,0 +1,75 @@
+{
+  "ticker": "MU",
+  "verified_at": "2026-05-04T21:30:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.4147,
+      "web_value": 0.4147,
+      "source": "Macrotrends / stockanalysis.com (May 2026)",
+      "status": "ok",
+      "deviation": "0%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.49,
+      "web_value": 0.484,
+      "source": "stockanalysis.com / GuruFocus (May 2026)",
+      "status": "ok",
+      "deviation": "1.2%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 27.191038,
+      "web_value": 22.5,
+      "source": "public.com / MacroTrends (May 1, 2026) — trailing PE range 19.76–25.27",
+      "status": "ok",
+      "deviation": "21%",
+      "note": "Borderline — deviation ~21% using midpoint web estimate of ~22.5. Variation likely due to different EPS base and timing. Within acceptable range given the rapidly evolving earnings profile; not corrected."
+    },
+    {
+      "metric": "revenue",
+      "our_value": null,
+      "web_value": 58120000000,
+      "source": "companiesmarketcap.com (May 2026) — TTM $58.12B",
+      "status": "unverified",
+      "deviation": "N/A",
+      "note": "Revenue not stored as a direct top-level field in facts bundles. No direct correction applied. Note: facts bundle report_period is 2026-02-26 (Q2 FY2026); web TTM now reflects Q2 FY2026 blowout ($23.86B revenue, beat by 19.5%)."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 650082254848.0,
+      "web_value": 631000000000.0,
+      "source": "CNBC / companiesmarketcap.com (May 1, 2026) — range $611-652B",
+      "status": "ok",
+      "deviation": "3%"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.224,
+      "web_value": 0.398,
+      "source": "GuruFocus / stockanalysis.com (May 2026)",
+      "status": "MISMATCH",
+      "deviation": "78%",
+      "action": "replaced 0.224 with 0.398 in all facts bundles (warren_buffett__MU.json, aswath_damodaran__MU.json)",
+      "note": "Facts bundle ROE of 22.4% was based on the Feb 2026 report period. Current TTM ROE is 39.82% per GuruFocus — driven by Micron's record Q2 FY2026 earnings (+600% YoY earnings growth expected for FY2026)."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.1031,
+      "web_value": 0.202,
+      "source": "stockanalysis.com / investing.com (May 2026)",
+      "status": "MISMATCH",
+      "deviation": "95%",
+      "action": "replaced 0.1031 with 0.202 in all facts bundles (warren_buffett__MU.json, aswath_damodaran__MU.json)",
+      "note": "Facts bundle ROA of 10.3% was stale relative to current TTM asset productivity. Current TTM ROA is ~20.15% per web sources, reflecting the AI-driven HBM supercycle margin expansion."
+    }
+  ],
+  "overall_status": "2 mismatches corrected (roe, roa)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260504_212836/facts/warren_buffett__MU.json",
+    "runs/20260504_212836/facts/aswath_damodaran__MU.json"
+  ],
+  "context": "Micron's facts bundle was based on Q2 FY2026 data (report_period 2026-02-26). The Q2 FY2026 earnings were a blowout: EPS $12.20 (+32.8% beat), revenue $23.86B (+19.5% beat). The AI/HBM supercycle has dramatically improved profitability metrics since the period captured in the bundle. Net margin and operating margin remain accurate; ROE and ROA were significantly understated."
+}

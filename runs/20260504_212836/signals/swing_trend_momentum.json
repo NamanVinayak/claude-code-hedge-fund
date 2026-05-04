@@ -1,0 +1,20 @@
+{
+  "SNDK": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "TREND: Strongly confirmed uptrend. EMA alignment is clean (10 EMA $1,032 > 21 EMA $940 > 50 EMA $794), ADX 62.46 indicates an extremely powerful trend with +DI 30.85 dwarfing -DI 6.58. OBV trend is up with no divergence. MOMENTUM: ROC is all positive and expanding (5d +19.9%, 10d +28.9%, 21d +71.4%) and MACD histogram is positive at +16.98 — momentum is genuinely accelerating. However, ENTRY CONDITION FAILS: current price ($1,187 daily close / $1,256 intraday) is 15% above the 10 EMA and 26% above the 21 EMA — far beyond the pullback entry zone the strategy requires. Bollinger pct_b >1.03 means price is printing above the upper band. Hourly RSI is 81.45 with a CONFIRMED BEARISH RSI DIVERGENCE on the hourly timeframe — a direct early-warning flag of trend exhaustion at the hourly level. This matches the prior NVDA lesson (RSI 81-87, EMA pullback setup, stopped out): stretched RSI without a confirmation candle is a known failure pattern. Macro backdrop is now mixed-to-cautious (Iran escalation, Dow futures lower May 4). CONCLUSION: Trend and momentum are both excellent but price is severely overextended with an active hourly RSI bearish divergence. Strategy rules require pullback entry to 10/21 EMA — chasing here after a +8.3% earnings gap violates the rules. Watch for pullback to $1,030-$940 range before re-evaluating.",
+    "entry": 1040.0,
+    "target": 1360.0,
+    "stop": 920.0,
+    "timeframe": "wait — no valid entry currently"
+  },
+  "MU": {
+    "signal": "bullish",
+    "confidence": 55,
+    "reasoning": "TREND: Clean uptrend confirmed. EMA alignment is intact (10 EMA $500 > 21 EMA $470 > 50 EMA $431), ADX 57.40 is very strong with +DI 35.46 vs -DI 10.94. Hourly ADX is also strong at 47.36 with +DI 40.89 vs -DI 4.34 — daily and hourly trend direction are fully aligned. OBV trending up on both timeframes with no divergence. MOMENTUM: ROC across all periods is strongly positive and expanding (5d +9.2%, 10d +19.2%, 21d +47.4%). MACD histogram is positive at +7.61 on daily; hourly MACD histogram at +5.21 also positive. No RSI bearish divergence on hourly (unlike SNDK). The hourly 5d ROC is slightly negative (-0.78%), suggesting a brief intraday consolidation, but 10d and 21d hourly ROC are solidly positive — this is a minor pause, not a momentum reversal. ENTRY NOTE: Price ($542 daily close / $576 intraday) is extended from the 10 EMA (8.3%) and 21 EMA (15.4%). Strategy ideally requires a pullback to 10/21 EMA. Setting entry as a limit at the 10 EMA zone (~$500-$505), which aligns with hourly support at $502.58 (9 tests). Target is the Fib 1.272 extension at $609.67, with nearest hourly resistance at $592.77 as an interim level. Stop below the 21 EMA at $465 (below $470 EMA with a small buffer). RISK ADJUSTMENT: Confidence is moderate at 55 — not high — because current price is extended and daily RSI(14) at 77.96 / RSI(21) at 82.18 is overbought. Macro is mixed-to-cautious (Iran escalation). Lessons show EMA pullback setups with stretched RSI have stopped out before (NVDA). Entry is conditional on a pullback occurring; if price continues higher without pulling back, stand aside. This is a limit-order thesis, not a market-order chase.",
+    "entry": 503.0,
+    "target": 609.0,
+    "stop": 465.0,
+    "timeframe": "5-12 trading days"
+  }
+}

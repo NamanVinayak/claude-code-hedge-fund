@@ -1,0 +1,44 @@
+{
+  "run_id": "20260504_212836",
+  "mode": "swing",
+  "started_at": "2026-05-04T21:29:06Z",
+  "ended_at": "2026-05-04T21:50:37Z",
+  "tickers": [
+    "SNDK",
+    "MU"
+  ],
+  "decisions": [
+    {
+      "ticker": "SNDK",
+      "action": "hold",
+      "confidence": 30,
+      "entry": null,
+      "stop": null,
+      "target": null,
+      "reasoning_tldr": "Head Trader neutral (30 conf, below 40 threshold)"
+    },
+    {
+      "ticker": "MU",
+      "action": "hold",
+      "confidence": 38,
+      "entry": null,
+      "stop": null,
+      "target": null,
+      "reasoning_tldr": "Head Trader neutral (38 conf, below 40 threshold)"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 2,
+    "cash": 1793.7699945068362,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "neutral",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

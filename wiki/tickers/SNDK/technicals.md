@@ -1,48 +1,41 @@
 ---
 name: SNDK technicals
-last_updated: 2026-05-01
-last_run_id: bootstrap_2026-05-01
+last_updated: 2026-05-04
+last_run_id: 20260504_212836
 target_words: 350
 stale_after_days: 7
-word_count: 380
-summary: current chart state
+word_count: 342
+summary: Parabolic post-earnings extension — price $1,256 (intraday), 55% above 50-SMA; hourly RSI bearish divergence active; setup type trending/mean-reversion watch — no actionable entry at current price
 ---
 
 # SNDK — Technicals
 
 ## TL;DR
 
-SNDK closed 2026-05-01 at ~$1,187, +8.3% on the day post-earnings, with the 50-day SMA near $763 and the 200-day SMA near $353. RSI(14) ~68.9, ATR(14) ~$69.84 (~5.9% of price). May 1 volume was ~23M vs 20-day average ~12.5M. New all-time high printed at $1,189 the same session (source: yfinance 2026-05-01).
-
-> _This is bootstrap context dated 2026-05-01. The runtime swing routine must do its own fresh research and indicator analysis; do not anchor to anything stated here._
+Price ~$1,256 intraday / $1,187 daily close (run 20260504_212836). 55.6% above the 50-SMA ($812 area), 164.6% above the 200-SMA. Daily ADX 62.46 — extreme trend strength, +DI 30.85 >> -DI 6.58. Hourly RSI 81.45 with confirmed bearish divergence. Daily Bollinger pct_b 1.03 (price above upper band). Z-score vs 50-period: 2.56. Setup type: parabolic trending extension — watch-not-act zone. [source: signals_combined.json swing_head_trader, run 20260504_212836]
 
 ## Multi-timeframe state
 
-- **Daily:** Price above 50-day and 200-day SMA; both moving averages rising; 50-day above 200-day. Higher highs and higher lows on weekly bars since the February low. New all-time high 2026-05-01 (source: yfinance).
-- **Hourly / intraday:** Earnings gap from the $1,096 Apr 30 close to the $1,189 May 1 high, closing near $1,187. Intraday gave back ~$2 from the high into the bell (source: yfinance).
-- **Momentum:** RSI(14) 68.9 (below the conventional 70 overbought line). MACD positive. ATR(14) $69.84.
-- **Volume:** May 1 ~23M vs 20-day avg ~12.5M (~1.8x).
+- **Daily:** EMA stack fully bullish — 10 EMA ~$1,032 > 21 EMA ~$940 > 50 SMA ~$812. All rising. Daily Bollinger pct_b 1.03 (outside upper band). RSI(14) 68.91. RSI(28) 70.48. Daily BB width 0.51 (wide — volatility already expanded, squeeze is done). MACD histogram positive at +16.98, momentum accelerating. [source: signals_combined.json swing_trend_momentum SNDK]
+- **Hourly:** Hourly RSI(21) 81.45 with confirmed bearish RSI divergence (price higher highs, RSI lower highs). Hourly pct_b 1.02 (also above upper band). Hourly relative volume 0.61 — follow-through thinning. Hourly Z-score 2.67. [source: signals_combined.json swing_mean_reversion SNDK]
+- **Volume:** May 1 breakout volume ~23M vs 20-day average ~15.4M (1.49x — borderline). Hourly relative volume 0.61 — well below 1.5x confirmation threshold. [source: signals_combined.json swing_breakout SNDK]
 
 ## Key levels
 
 | level | value | rationale |
 |---|---|---|
-| resistance | $1,189 | May 1 ATH intraday high |
-| reference / pivot | $1,096 | Apr 30 close + earnings-gap fill level |
-| support | $1,002 | Apr 28 low + recent pivot shelf |
-| support (deeper) | $989 | Apr 24 close |
-| range bracket | $1,070 – $1,100 | post-earnings consolidation shelf |
+| recent intraday high | $1,275.08 | May 4 intraday high — mean-reversion stop reference |
+| daily close / ATH area | $1,187–$1,189 | May 1 ATH close and intraday high |
+| wait-to-short zone | above $1,200 | head trader: requires reversal candle confirmation |
+| wait-to-buy zone | $1,030–$1,060 | 10 EMA convergence zone — 2:1+ R/R long entry |
+| hourly support cluster | $1,060 | macro_context entry reference; prior hourly support |
+| Fib 23.6% mean-reversion target | $1,040 | mean_reversion agent target from $1,256 entry |
+| deeper support | $980–$1,002 | prior hourly pivot cluster |
 
 ## Setup type
 
-Trending / mean-reversion / breakout / range-bound — runtime to determine which is active. Multiple readings are simultaneously plausible from the data above:
-
-- **Trending / breakout:** new ATH on >1.5x average volume, price above rising MAs, MACD positive.
-- **Mean-reversion candidate:** price ~3.4x the 200-day SMA and ~1.55x the 50-day SMA; ATR(14) ~5.9% of price implies wide normal swings.
-- **Range-bound candidate:** $989 – $1,189 brackets multiple recent sessions and could define a post-earnings range until resolved.
-
-The runtime should classify the active setup using fresh indicator data and recent bar structure, not this bootstrap snapshot.
+**Trending / parabolic extension — no actionable entry.** The trend is real (ADX 62.46, best in run history), but price is statistically extreme (Z-score 2.56, pct_b 1.03, 55.6% above 50-SMA). Hourly RSI bearish divergence is an early exhaustion signal but not a confirmed reversal. Head Trader neutral (conf 30, below 40 threshold): wait for price to come to the trade — long entry at $1,030–$1,060 or short entry above $1,200 with reversal candle. [source: signals_combined.json swing_head_trader, run 20260504_212836]
 
 ## Last updated
 
-2026-05-01 — bootstrap, intraday close basis.
+2026-05-04 — run 20260504_212836 (first live swing run for SNDK).

@@ -1,0 +1,20 @@
+{
+  "SNDK": {
+    "signal": "bearish",
+    "confidence": 68,
+    "reasoning": "Branch A (Fade the Extreme) fires. SNDK is in a statistical blow-off condition across both daily and hourly timeframes simultaneously. Daily Z-score vs 50-SMA: 2.56 (well above +2 threshold). Daily Bollinger pct_b: 1.03 — price is OUTSIDE the upper band. Daily RSI(21): 77.23; RSI(14): 68.91 — approaching and crossing overbought. Distance from 50-SMA: 55.59% — extreme extension. On the hourly frame: Z-score 2.67, RSI(21) 81.45, Bollinger pct_b 1.02 — also outside the upper band. Critically, the HOURLY shows confirmed BEARISH RSI DIVERGENCE (rising price + falling RSI), which is the reversal-candle/momentum-shift confirmation the strategy requires before entering a fade. Both timeframes extreme + hourly divergence = strong fade signal. Context: Price spiked +8.3% on May 1 post-earnings (all-time high $1,189) and is extending further intraday to ~$1,256. The earnings catalyst makes this a partial 'justified' extension, which lowers conviction vs a non-event fade. ADX at 62.46 with plus_DI 30.85 confirms a strong trend — fades in strong ADX regimes fail more often. Confidence capped at 68 for these reasons. Lesson log: prior EMA pullback Fib dip-buy on NVDA stopped out in RSI-stretched conditions; that was a different setup (Branch B), so no direct penalty here, but stretched macro remains a caution. No prior prediction to grade (null). Branch B does not fire — no pullback in trend, we are at the extreme. Target is the Fib 23.6% retracement at $1,040.40, which aligns with the prior resistance pivot at $965-1,002 hourly cluster — a realistic near-term mean-reversion landing zone. Stop set above the hourly recent high of $1,275.08 with ATR buffer ($69.84 * 0.65 = ~$45) at $1,320.",
+    "entry": 1256.0,
+    "target": 1040.4,
+    "stop": 1320.0,
+    "timeframe": "5-12 trading days"
+  },
+  "MU": {
+    "signal": "bearish",
+    "confidence": 52,
+    "reasoning": "Branch A (Fade the Extreme) partially fires with LOW conviction. MU shows overbought conditions across RSI: RSI(7) 75.02, RSI(14) 77.96, RSI(21) 82.18 — all overbought on the daily. Daily Z-score vs 50-SMA: 2.36 (above +2). Price is +27% above the 50-SMA. However, the daily Bollinger pct_b is 0.92 — near the upper band but NOT outside it (contrast with SNDK at 1.03). On the hourly frame: RSI(21) 72.12 (elevated but not extreme), Z-score 2.25, Bollinger pct_b 1.0007 — just touching the upper band. Critically, the HOURLY RSI DIVERGENCE is NOT confirmed (bearish: false) — the key reversal confirmation is ABSENT. This is the primary reason for low confidence: the strategy explicitly requires a reversal candle or momentum shift before entering a fade, and neither is present on MU. ADX at 57.4 with plus_DI 35.46 vs minus_DI 10.94 shows a very strong bullish trend. ROC-21d at +47.4% reflects sustained momentum. Volume on the latest daily bar (40.1M) is in line with the 20-day average — no volume blow-off sign. Current intraday price ~$576 is at/above hourly BB upper ($576.28) and daily RSI is extreme, so a lean bearish is warranted, but absent the divergence confirmation, this is a low-conviction fade. Branch B does not fire (at highs, no pullback). Lesson log: EMA pullback Fib dip-buy on NVDA failed without bullish confirmation — analogous caution applies here to fading without bearish confirmation. No prior prediction to grade (null). Target: Fib 23.6% retrace at $490.59, which is near the prior pivot highs at $471-$490 cluster. Stop: above the hourly recent high at $592.77 with ATR buffer ($11.65 * 1.5 = ~$17) at $610.",
+    "entry": 576.0,
+    "target": 490.59,
+    "stop": 610.0,
+    "timeframe": "7-15 trading days"
+  }
+}
