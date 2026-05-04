@@ -2,16 +2,16 @@
 name: open positions snapshot
 description: Structured ledger view of currently-open and pending swing trades. Refreshed nightly. Read by head trader + portfolio manager only.
 type: meta
-last_updated: 2026-05-02
-snapshot_at_pt: 2026-05-02T06:28:06.010377-07:00
+last_updated: 2026-05-03
+snapshot_at_pt: 2026-05-03T22:07:19.235862-07:00
 target_words: 600
 stale_after_days: 2
-word_count: 220
+word_count: 222
 ---
 
 # Open Positions — Snapshot
 
-Snapshot taken: `2026-05-02T06:28:06.010377-07:00`. Refreshed nightly by `tracker/wiki_open_positions_update.py` + `wiki_open_position_writer`.
+Snapshot taken: `2026-05-03T22:07:19.235862-07:00`. Refreshed nightly by `tracker/wiki_open_positions_update.py` + `wiki_open_position_writer`.
 
 ## Summary
 
@@ -25,11 +25,11 @@ Snapshot taken: `2026-05-02T06:28:06.010377-07:00`. Refreshed nightly by `tracke
 
 | Ticker | Dir | Qty | Entry | Current | Stop | Target | Days | Unreal $ | Unreal % | Run |
 |---|---|---|---|---|---|---|---|---|---|---|
-| BAC | long | 15 | 52.75 | 53.24 | 51.50 | 55.40 | 2 | +7.35 | +0.93% | 20260430_190826 |
-| AMD | short | 1 | 354.49 | 360.54 | 372.31 | 277.74 | 1 | -6.05 | -1.71% | 20260501_132346 |
-| AMZN | short | 1 | 265.86 | 268.26 | 276.00 | 244.44 | 1 | -2.40 | -0.90% | 20260501_173921 |
-| JNJ | short | 3 | 229.06 | 227.19 | 235.00 | 216.53 | 1 | +5.61 | +0.82% | 20260501_194523 |
-| DIS | long | 2 | 103.50 | 103.08 | 101.00 | 107.11 | 1 | -0.83 | -0.40% | 20260501_221355 |
+| BAC | long | 15 | 52.75 | 53.24 | 51.50 | 55.40 | 4 | +7.35 | +0.93% | 20260430_190826 |
+| AMD | short | 1 | 354.49 | 360.54 | 372.31 | 277.74 | 3 | -6.05 | -1.71% | 20260501_132346 |
+| AMZN | short | 1 | 265.86 | 268.26 | 276.00 | 244.44 | 3 | -2.40 | -0.90% | 20260501_173921 |
+| JNJ | short | 3 | 229.06 | 227.19 | 235.00 | 216.53 | 3 | +5.61 | +0.82% | 20260501_194523 |
+| DIS | long | 2 | 103.50 | 103.08 | 101.00 | 107.11 | 3 | -0.83 | -0.40% | 20260501_221355 |
 
 ## Pending orders
 
