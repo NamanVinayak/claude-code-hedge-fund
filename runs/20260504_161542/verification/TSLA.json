@@ -1,0 +1,86 @@
+{
+  "ticker": "TSLA",
+  "verified_at": "2026-05-04T16:20:00",
+  "facts_bundles_sampled": [
+    "warren_buffett__TSLA.json",
+    "ben_graham__TSLA.json",
+    "cathie_wood__TSLA.json"
+  ],
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.04001,
+      "our_value_pct": "4.00%",
+      "web_value": 0.039,
+      "web_value_pct": "3.9%",
+      "source": "MacroTrends / GuruFocus / Search results (TTM through Mar 2026)",
+      "status": "ok",
+      "deviation": "2.6%",
+      "notes": "Our value 4.00% vs web 3.9%. GuruFocus shows 3.37% (possibly slightly different period). Within 20% threshold."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.04593,
+      "our_value_pct": "4.59%",
+      "web_value": 0.0459,
+      "web_value_pct": "4.59%",
+      "source": "Live market data verified late April 2026 / TIKR / heygotrade.com Q1 2026 recap",
+      "status": "ok",
+      "deviation": "0.1%",
+      "notes": "Exact match confirmed. Q1 2026 standalone operating margin was 4.2%; TTM as of March 31 2026 is 4.59%, matching our bundle precisely."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 354.31,
+      "web_value": 342.02,
+      "source": "GuruFocus (Apr 30, 2026: 342.02); multiple sources range 317-357 in early May 2026",
+      "status": "ok",
+      "deviation": "3.6%",
+      "notes": "Daily price fluctuations explain the spread. All sources confirm PE is in the 320-360 range."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 1450460577792.0,
+      "our_value_formatted": "$1.450T",
+      "web_value": 1470000000000.0,
+      "web_value_formatted": "$1.47T",
+      "source": "companiesmarketcap.com / stockanalysis.com (May 1, 2026)",
+      "status": "ok",
+      "deviation": "1.3%",
+      "notes": "Our value $1.450T vs web $1.47T. Normal intraday/daily fluctuation."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 94830000000.0,
+      "our_value_formatted": "~$94.83B",
+      "web_value": 97879000000.0,
+      "web_value_formatted": "$97.879B",
+      "source": "MacroTrends / stockanalysis.com (TTM through March 31, 2026)",
+      "status": "ok",
+      "deviation": "3.2%",
+      "notes": "Our implied revenue (~$94.83B from market_cap/P-S ratio) reflects FY2025 annual revenue. Web TTM through Q1 2026 is $97.88B. The 3.2% difference is explained by the facts bundle using Dec 2025 period data while web includes Q1 2026.",
+      "derivation": "Derived from market_cap ($1,450,460,577,792) / price_to_sales_ratio (15.296) = ~$94.83B"
+    },
+    {
+      "metric": "return_on_equity",
+      "our_value": 0.04619,
+      "our_value_pct": "4.62%",
+      "web_value": null,
+      "source": "unverified",
+      "status": "unverified",
+      "notes": "Could not obtain a reliable TTM ROE figure from search results for cross-check."
+    },
+    {
+      "metric": "return_on_assets",
+      "our_value": 0.02753,
+      "our_value_pct": "2.75%",
+      "web_value": null,
+      "source": "unverified",
+      "status": "unverified",
+      "notes": "Could not obtain a reliable TTM ROA figure from search results for cross-check."
+    }
+  ],
+  "overall_status": "all verifiable metrics within acceptable range (no deviation >20%)",
+  "corrections_applied": false,
+  "summary": "All 5 verifiable key metrics for TSLA are within the 20% deviation threshold. Operating margin (4.59%) is an exact match to web sources confirming the TTM figure as of late April 2026. Net margin (4.00% vs 3.9% web) and PE ratio (354.31 vs ~342-357 web) show only minor timing-based differences. Market cap ($1.450T vs $1.47T) and implied revenue ($94.83B vs $97.88B TTM) deviations of 1-3% are explained by the facts bundle using FY2025 data vs. the web's TTM through Q1 2026. No corrections to facts bundles were needed."
+}
