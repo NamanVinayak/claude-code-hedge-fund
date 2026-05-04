@@ -1,0 +1,11 @@
+{
+  "AMD": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "AMD has closed above the $352.99 resistance level (10x tested, volume-confirmed hourly pivot high) on both Apr 30 ($354.49) and May 1 ($360.54), technically constituting a daily close breakout. However, the breakout FAILS the mandatory volume confirmation requirement: daily relative volume on May 1 is only 0.86x the 20-day average (0.86x vs the required 1.5x minimum). This is actually weaker than the prior run (1.05x), making this a deteriorating-volume breakout — the exact pattern most prone to failure. Range boundaries: consolidation was $328.81 (hourly support, 6x tested, volume-confirmed) to $352.99 (hourly resistance), giving a range height of ~$24.18. Measured-move target if volume were confirmed: $352.99 + $24.18 = $377.17. BB width = 0.6453 — already wide and expanding, confirming the squeeze has already fully fired; there is no coil left to release. ADX = 76.53 signals an extreme established trend, not a fresh breakout setup — this is not my setup type. RSI-14 = 83.49 and RSI-21 = 86.42 indicate deep statistical overextension; Z-score = 2.5 is above the +2.0 mean-reversion warning zone. Hourly volume = 1.48x (borderline, just under threshold) with OBV diverging bearishly from price — no institutional accumulation signal. Earnings binary May 5 (after close) creates undefined gap risk in both directions and is a hard veto on new swing entries per standing policy. Lessons cross-check: the recent NVDA EMA pullback failure at comparable RSI (81-87) warns against chasing overbought setups even with valid trend structure. No prior call to grade (prediction_grading: null). Standing aside: re-entry paths are (1) post-earnings gap-and-hold above $352.99 with 1.5x+ daily volume, or (2) organic pullback to $308-$315 EMA zone with bullish hourly MACD recross.",
+    "entry": 352.99,
+    "target": 377.17,
+    "stop": 340.0,
+    "timeframe": "N/A — no entry (earnings veto + volume disqualification)"
+  }
+}

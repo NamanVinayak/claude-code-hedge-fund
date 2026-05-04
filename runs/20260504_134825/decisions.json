@@ -1,0 +1,17 @@
+{
+  "decisions": {
+    "AMD": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 354.49,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 277.74,
+      "stop_loss": 372.31,
+      "risk_reward_ratio": "4.31:1",
+      "timeframe": "1-3 trading days (post-earnings May 5 AMC)",
+      "confidence": 22,
+      "account_risk_pct": 0.0,
+      "reasoning": "Hold existing 1-share short (entered $354.49, stop $372.31, target $277.74). Earnings binary May 5 AMC vetoes all new entries. 5/5 swing agents and head trader unanimous: stand aside. Short underwater by ~$6 but within valid stop range. Overbought RSI 83.5, Z-score 2.5, bearish hourly OBV divergence support the short thesis. Covering preemptively locks in a loss and foregoes the earnings-miss scenario (15-20% gap downside). Risk manager confirmed 0 remaining position limit and earnings blackout. Sized at 1 share (minimum) by design — binary risk is contained. Reassess post-earnings: if gap-and-hold above $352.99 on 1.5x+ volume, cover and reassess long; if confirmed reversal below $352.99 on earnings miss, consider adding 1 share to the short at $350-$355."
+    }
+  }
+}

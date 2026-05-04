@@ -1,0 +1,11 @@
+{
+  "AMD": {
+    "signal": "neutral",
+    "confidence": 72,
+    "reasoning": "Branch A (fade the extreme) shows multiple statistical overextension signals: daily Z-score 2.50 (above the >2 threshold), RSI-14 83.49 and RSI-21 86.42 (well above the 75 overbought threshold), and distance from 50-SMA at 53.18% (extreme, far exceeding the >10% notable threshold). However, three factors collectively veto a bearish fade. First, ADX 76.53 is the highest ever recorded for AMD in this system — a trend this strong can stay extended far longer than mean-reversion timing allows, and the prior bearish fade at $354 was stopped out on the same day (2026-05-01, stopped at $360, mae 2.48%). The adjustment from the stopped-out call: I am not repeating the bearish fade when ADX is at an all-time system extreme with no reversal candle confirmation. Second, there is no reversal candle in the 5-bar recent price series — five consecutive closes with rising highs. The prompt explicitly says 'WAIT for a reversal candle or momentum shift before entering — do not catch a falling knife' (or in the bullish-fade case, a parabolic top). Third — and most critical — AMD earnings are tomorrow May 5, confirmed in wiki context across multiple runs. The wiki's two-way post-earnings framework explicitly vetoes all swing positions in either direction ahead of the binary. Branch B (dip-buy at Fib) does not fire: price is AT the recent swing high ($362.79), not in a pullback. Hourly indicators show partial cooling (RSI-21 68.0 vs daily 83+, Z-score 1.33 vs daily 2.50, MACD histogram slightly negative at -0.0179, OBV diverging from price on hourly) but this intraday softness does not constitute a clean Fib-confluence setup. Wiki two-way post-earnings re-entry framework: bull leg re-entry $316-$335 (10-EMA zone) on gap-and-hold with 1.5x+ volume; bear fade $355-$368 on confirmed daily reversal candle with 2:1+ R/R. Wait for post-earnings resolution before taking any directional swing position.",
+    "entry": 360.54,
+    "target": 360.54,
+    "stop": 360.54,
+    "timeframe": "0 trading days — stand aside until post-earnings (May 6+)"
+  }
+}

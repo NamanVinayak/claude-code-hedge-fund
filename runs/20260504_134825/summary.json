@@ -1,0 +1,34 @@
+{
+  "run_id": "20260504_134825",
+  "mode": "swing",
+  "started_at": "2026-05-04T13:48:56Z",
+  "ended_at": "2026-05-04T14:01:46Z",
+  "tickers": [
+    "AMD"
+  ],
+  "decisions": [
+    {
+      "ticker": "AMD",
+      "action": "hold",
+      "confidence": 22,
+      "entry": 354.49,
+      "stop": 372.31,
+      "target": 277.74,
+      "reasoning_tldr": "Hold existing 1-share short (entered $354.49, stop $372.31, target $277.74)"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 1,
+    "cash": 2139.6900384521487,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "neutral",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

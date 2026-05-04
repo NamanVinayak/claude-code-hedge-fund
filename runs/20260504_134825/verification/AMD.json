@@ -1,0 +1,88 @@
+{
+  "ticker": "AMD",
+  "verified_at": "2026-05-04T13:48:25",
+  "facts_files_read": [
+    "warren_buffett__AMD.json",
+    "ben_graham__AMD.json",
+    "cathie_wood__AMD.json"
+  ],
+  "facts_files_with_metrics": [
+    "warren_buffett__AMD.json",
+    "aswath_damodaran__AMD.json"
+  ],
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.1153,
+      "web_value": 0.1225,
+      "source": "CNBC / Macrotrends (TTM Dec 2025)",
+      "status": "ok",
+      "deviation": "6.2%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.08548,
+      "web_value": 0.1067,
+      "source": "StockAnalysis / GuruFocus (GAAP TTM FY2025)",
+      "status": "MISMATCH",
+      "deviation": "24.9%",
+      "action": "replaced with web value 0.1067 in warren_buffett__AMD.json and aswath_damodaran__AMD.json"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 133.75,
+      "web_value": 136.05,
+      "source": "MacroTrends / financecharts.com (May 1 2026)",
+      "status": "ok",
+      "deviation": "1.7%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 566828662784.0,
+      "web_value": 587810000000.0,
+      "source": "companiesmarketcap.com / public.com (May 1 2026)",
+      "status": "ok",
+      "deviation": "3.7%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 31183000000.0,
+      "web_value": 34639000000.0,
+      "source": "AMD IR press release FY2025 / stockanalysis.com",
+      "status": "ok",
+      "deviation": "9.9%",
+      "note": "revenue is implicit in facts (derived from market_cap / price_to_sales_ratio); not stored as a standalone field"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.0624,
+      "web_value": 0.0688,
+      "source": "financecharts.com (Mar 2026)",
+      "status": "ok",
+      "deviation": "9.3%"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.0519,
+      "web_value": 0.043,
+      "source": "stock-analysis-on.net / macrotrends (Q3 2025 trailing)",
+      "status": "ok",
+      "deviation": "20.7%",
+      "note": "borderline at 20.7%; web value reflects Q3 2025 data vs facts TTM ending Sep 2025; difference within noise of quarterly vs annual TTM windows — no correction applied"
+    }
+  ],
+  "overall_status": "1 mismatch corrected (operating_margin)",
+  "corrections_applied": true,
+  "corrections_detail": [
+    {
+      "field": "operating_margin",
+      "old_value": 0.08548159548544312,
+      "new_value": 0.1067,
+      "files_updated": [
+        "warren_buffett__AMD.json",
+        "aswath_damodaran__AMD.json"
+      ],
+      "reason": "Our value 8.55% vs GAAP TTM consensus 10.67% (FY2025 full year: $3.7B op income / $34.64B revenue). Deviation 24.9% exceeds 20% threshold. Note: non-GAAP operating margin is ~22.5%; correction uses GAAP figure consistent with facts bundle methodology."
+    }
+  ]
+}

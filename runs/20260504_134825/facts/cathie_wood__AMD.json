@@ -1,0 +1,73 @@
+{
+  "signal": "bearish",
+  "score": 4.416666666666667,
+  "max_score": 15,
+  "disruptive_analysis": {
+    "score": 2.0833333333333335,
+    "details": "Positive operating leverage: Revenue growing faster than expenses; High R&D investment: 23.7% of revenue",
+    "raw_score": 5,
+    "max_score": 12
+  },
+  "innovation_analysis": {
+    "score": 2.3333333333333335,
+    "details": "Strong R&D investment growth: +160.0%; Increasing R&D intensity: 23.7% vs 17.3%; Consistent positive FCF, good innovation funding capacity; Insufficient dividend data",
+    "raw_score": 7,
+    "max_score": 15
+  },
+  "valuation_analysis": {
+    "score": 0,
+    "details": "Calculated intrinsic value: ~86,349,030,676.58; Market cap: ~566,975,397,888.00; Margin of safety: -84.77%",
+    "intrinsic_value": 86349030676.5814,
+    "margin_of_safety": -0.8477023324147148
+  },
+  "web_context": {
+    "ticker": "AMD",
+    "research_date": "2026-05-04",
+    "macro_context": {
+      "market_sentiment": "Markets mixed on May 4 with S&P 500 -0.18%, Dow -0.40%, Nasdaq +0.04%; geopolitical tension from conflicting reports of Iran-US naval confrontation in the Strait of Hormuz is weighing on sentiment and spiking oil prices, while equity bulls are buoyed by a strong April rally that saw S&P 500 and Nasdaq close at records on May 1.",
+      "fed_outlook": "FOMC held rates steady at 3.50%-3.75% on April 29, 2026 in a split 8-4 vote; one dissenter wanted a 25bp cut while three others opposed inclusion of an easing bias; market is pricing zero cuts for full-year 2026 and one 25bp cut in December 2027. Powell remains on the Board despite White House legal pressure.",
+      "geopolitical": "US-Iran naval tensions are the dominant near-term risk; conflicting reports of an Iranian blockade of US warships at the Strait of Hormuz caused an oil price spike. Broader risks include US tariff policy uncertainty, US intervention in Venezuela, NATO posture in Greenland, and global trade restrictions on advanced semiconductors (export controls, Chinese overcapacity in mature nodes).",
+      "key_events": [
+        "AMD Q1 2026 earnings: May 5, 2026 after market close (TOMORROW \u2014 highest impact event)",
+        "Iran-US Strait of Hormuz standoff: escalation could spike energy costs and dampen risk appetite",
+        "Fed next meeting: June 2026 (no rate change expected)",
+        "US midterm elections later in 2026: policy uncertainty for tech sector",
+        "Palantir Q1 2026 earnings: May 4 after close (AI infrastructure read-through)"
+      ]
+    },
+    "ticker_news": [
+      {
+        "headline": "AMD Q1 2026 earnings due Tuesday May 5 after market; consensus EPS $1.28-$1.29 (up ~34% YoY) on revenue $9.84-$9.89B (up ~33% YoY); AI GPU execution and data-center trajectory are the key watch items",
+        "sentiment": "positive",
+        "source": "TipRanks / Bitget News / Yahoo Finance"
+      },
+      {
+        "headline": "AMD signs 6GW deal with OpenAI for Instinct MI450 GPU deployment (first 1GW in H2 2026) and a similar 6GW agreement with Meta including custom MI450 GPUs and 6th-gen EPYC Venice CPUs",
+        "sentiment": "positive",
+        "source": "247wallst.com / primaryignition.com"
+      },
+      {
+        "headline": "AMD stock surged ~59% YTD and ~74% in April alone; share price around $314 as of early May after rallying ~88% from March lows before a modest pullback",
+        "sentiment": "positive",
+        "source": "The Motley Fool / TheStreet"
+      },
+      {
+        "headline": "DA Davidson upgraded AMD to Buy with $375 price target (from $220) after Intel Q1 results signalled structural shift in CPU demand for AI; raised 2026 revenue estimate by $2B above consensus",
+        "sentiment": "positive",
+        "source": "TheStreet"
+      },
+      {
+        "headline": "Northland Capital Markets downgraded AMD to Market Perform (from Outperform) on April 27 with $260 PT; a TipRanks analyst also cut to Hold on valuation concerns days before earnings",
+        "sentiment": "negative",
+        "source": "GuruFocus / TipRanks"
+      }
+    ],
+    "analyst_consensus": {
+      "rating": "buy",
+      "avg_price_target": 291.52,
+      "recent_changes": "Out of 54 Wall Street analysts: 37 Buy, 12 Hold, 0 Sell. Consensus avg PT ~$291.52; median $290.50; range $220-$365. Notable recent changes: DA Davidson PT $375 (upgrade to Buy, post-Intel Q1); Stifel PT $320 (raised); Envision Research upgraded to Buy (agentic AI positioning). Counter-moves: Northland downgraded to Market Perform ($260 PT, April 27); one analyst cut to Hold on valuation. Cathie Wood sold ~$79.9M of AMD stock ahead of Q1 print."
+    },
+    "competitor_activity": "NVIDIA remains the dominant AI GPU provider with an estimated $1T in Blackwell+Vera Rubin chip sales projected across 2026-2027; its installed base and software ecosystem (CUDA) are still AMD's main ceiling. Intel under CEO Lip-Bu Tan is executing a turnaround around the 18A process node and foundry strategy; Intel Q1 2026 showed strong Data Center AI revenue with multiple hyperscaler design wins, which paradoxically boosted AMD's own outlook (analysts see a rising-tide effect for x86 CPUs). Google/Alphabet's Axion ARM-based CPUs are an emerging x86 challenger with 2x price-performance claims. AMD's competitive differentiation: it is the only credible alternative GPU merchant silicon vendor to NVIDIA, holds structural advantage in EPYC server CPUs, and is gaining market share in hyperscale deployments.",
+    "earnings_info": "Q1 2026 earnings: Tuesday May 5, 2026 after market close. Consensus EPS estimate: $1.28-$1.29 (up ~34% YoY vs $0.96 in Q1 2025). Consensus revenue estimate: $9.84-$9.89B (up ~32-33% YoY). AMD's own revenue guidance for Q1 was $9.8B +/-$300M. Key focus areas: MI450 GPU shipment ramp, data center segment growth (record $5.38B in Q4 2025), OpenAI/Meta partnership execution, and any updated full-year 2026 guidance."
+  }
+}
