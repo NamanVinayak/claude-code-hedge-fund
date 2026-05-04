@@ -1,0 +1,11 @@
+{
+  "JPM": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "No breakout has fired. JPM is mid-range within its $306.57–$320.24 daily consolidation band. The wiki-identified breakout trigger requires a daily CLOSE above $314.99–$315.50 on 1.5x+ volume; current daily close is $312.47 (daily) with the hourly price at $307.81, well below the trigger. Volume ratio is 0.76x (below the required 1.5x minimum) — no volume confirmation exists. Daily BB width is 0.0662 (moderate, not a tight squeeze); the coiling condition is on the hourly (BB width 0.029, ADX 14.09 = weak, range-bound) but the hourly price is sitting just above hourly support at $307.29 (20 tests, volume-confirmed), not pressing against resistance. The daily trend is established and strong (ADX 41.45, all EMAs stacked up), which is not the coiling, flat-range setup this strategy requires — the stock is already trending, making a fresh breakout thesis less compelling. MACD histogram is mildly negative (-0.2957), OBV trend is down (distribution signal), and hourly price is below all hourly MAs (ema_24, sma_24, ema_48, sma_48, ema_120, sma_120) — short-term momentum is weak. The setup to watch: a daily close above $315.50 on volume >= 12M (1.5x the 8M 20-day avg) would be a valid breakout entry. Until that fires, this is a stand-aside. No prior prediction to grade (prediction_grading: null). Lessons: the one logged trade (NVDA EMA pullback, -$63.20) involved a lack of confirmation candle — reinforces waiting for decisive confirmed closes before entry.",
+    "entry": 315.5,
+    "target": 320.24,
+    "stop": 307.29,
+    "timeframe": "5-12 trading days"
+  }
+}
