@@ -1,0 +1,20 @@
+{
+  "STX": {
+    "signal": "bearish",
+    "confidence": 68,
+    "reasoning": "Branch A — Fade the extreme fires on STX. Daily Z-score vs 50-SMA is 2.90 (well above +2 threshold). RSI across all lookbacks is extreme: rsi_7=90.08, rsi_14=86.37, rsi_21=89.57 — all above 75. Price is 58.08% above the 50-SMA and 30.51% above the 20-SMA, an extreme extension. Bollinger pct_b=1.1262, meaning price is ABOVE the upper Bollinger band ($692.68). On the hourly frame, rsi_21=77.42 and z_score_120=2.28 — both also at statistical extremes. This is the dual daily+hourly extreme scenario the strategy flags as strong fade confirmation. Critically, hourly OBV is diverging from price (OBV trend down while price grinds higher), an early bearish structural signal. ADX=76.56 signals a ferociously strong trend, which is the main risk to this fade — strong trends can extend beyond statistical extremes. Branch B does not apply (price is at the extreme high, not a pullback in trend). Reversal candle caveat: no confirmed reversal candle is documented yet; the strategy requires one before entry, so this signal assumes a bearish confirmation trigger (topping tail, bearish engulfing, or inside-bar failure) intraday or on the next session before committing. Lessons context: the prior NVDA EMA-pullback dip-buy loss (-$63.20) was in a stretched RSI environment, reinforcing caution about trend-extension continuation — but this is the opposite direction (fade), where the lesson supports waiting for confirmation before entry. No prior call on STX to grade. Wiki bootstrap only, no recent signal history. Confidence held at 68 rather than higher due to: (1) no confirmed reversal candle, (2) extremely strong ADX trend, (3) elevated daily volume (1.69x avg) confirming the breakout.",
+    "entry": 726.93,
+    "target": 557.01,
+    "stop": 755.0,
+    "timeframe": "5-12 trading days"
+  },
+  "WDC": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "Neither branch fires cleanly for WDC. Branch A partial: daily Z-score is 2.13 (just above +2), daily RSI is extreme (rsi_7=78.49, rsi_14=83.22, rsi_21=86.72, all >75). However, Bollinger pct_b=0.9007 — price is still INSIDE the upper band ($445.82 upper, current ~$431.52), so the band-breach criterion is not met. Critically, the hourly frame does NOT confirm: rsi_21=65.74 (below 75 overbought threshold) and z_score_120=1.79 (below 2.0). When hourly RSI is not at an extreme, the daily fade lacks the dual-timeframe confirmation that this strategy requires for a high-conviction fade. No RSI divergence detected on either timeframe. Volume is concerning for a bearish fade: daily relative volume is 2.08x average with OBV trend up and NOT diverging from price — the move is institutionally supported, which makes a snap-back less likely in the near term. The daily ADX at 67.86 with strong trend also argues against fading. The 5/1 session showed a large upper wick (high $446.62 vs close $431.52), which has some topping-tail character, but the close was also well above the open ($406.22), making it more of a bullish rocket with partial give-back rather than a clean reversal candle. Branch B (dip-buy in trend) does not apply — price is at the recent high, not a pullback to Fibonacci support. Lessons reference (NVDA EMA pullback at RSI 81-87 with no bullish confirmation) does not directly apply to a fade setup but reinforces the risk of acting in strongly trending, high-RSI environments without confirmation. No prior call on WDC to grade. Conclusion: neither branch fires cleanly; price is stretched but not at a dual-timeframe extreme with confirmed reversal. Outputting neutral.",
+    "entry": 431.52,
+    "target": 373.82,
+    "stop": 453.0,
+    "timeframe": "neutral — no active trade"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "STX": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "TREND ASSESSMENT: EMA alignment is perfectly bullish (10 EMA $618 > 21 EMA $563 > 50 EMA $487) and ADX at 76.56 is one of the strongest trend readings possible — the uptrend is unambiguous. Daily OBV trend is up, volume on the May 1 surge was 1.69x average. MOMENTUM ASSESSMENT: ROC 5d=+24%, 10d=+32.7%, 21d=+71.8% — all strongly positive and accelerating dramatically. MACD histogram +13.35 and expanding. Momentum acceleration is clear. ENTRY CONDITION FAILURE: Despite the strong trend and momentum, the strategy requires entry on pullbacks to the 10 or 21 EMA. Price at $726.93 is 17.6% above EMA-10 and 29.2% above EMA-21 — severely overextended. No pullback entry is available. Additional red flags: RSI at 86.37, Bollinger pct_b at 1.13 (well above upper band), daily z-score 2.9, hourly OBV is DIVERGING from price (OBV trend down while price up), hourly relative volume only 0.54x average. MACRO: The macro regime has shifted to mixed-to-cautious due to Iran escalation (missile strikes on US warship May 4), reversing the prior risk-on read. LESSONS CHECK: The recent EMA pullback Fib dip-buy on NVDA stopped out precisely when RSI was in the 81-87 zone — STX RSI is 86.37, matching that failure pattern exactly. Waiting for a pullback to the 10 EMA (~$618) or 21 EMA (~$563) zone before considering entry. The trend is real and strong; this is a timing and entry-discipline issue, not a thesis disagreement.",
+    "entry": 618.32,
+    "target": 799.03,
+    "stop": 555.0,
+    "timeframe": "5-12 trading days"
+  },
+  "WDC": {
+    "signal": "bullish",
+    "confidence": 52,
+    "reasoning": "TREND ASSESSMENT: EMA alignment is cleanly bullish (10 EMA $403 > 21 EMA $375 > 50 EMA $330 > 200 EMA $217). ADX at 67.86 confirms very strong trend. Plus DI 33.04 vs Minus DI 13.11 — bulls firmly in control. Higher highs and higher lows intact over the 5-day window (recent low $374 on Apr 28, then $410, $422, $404 low on May 1 with close $431). MOMENTUM ASSESSMENT: ROC 5d=+6.81%, 10d=+15.84%, 21d=+44.94% — all positive and expanding. MACD histogram +3.71 and positive. Daily momentum is accelerating. HOURLY CONFIRMATION (partial): Hourly EMAs are also aligned bullish. Hourly OBV is up with no divergence. However, hourly ADX is only 21.21 (moderate, barely above 20 threshold), and hourly MACD histogram is just +0.60 — hourly momentum is much weaker than daily, representing a mild caution flag. Hourly price is 2.7% above hourly EMA-24, not overextended. ENTRY: Price at $431.52 is 7.1% above daily EMA-10 — not at ideal pullback entry yet, but a manageable distance. A modest pullback to the EMA-10 area (~$403-410) would be the ideal entry. Setting entry at $410 (near EMA-10 and tested hourly support at $410.05). RISK MANAGEMENT: Stop below EMA-10 area, using 1x ATR ($24) below the EMA-10 for cushion. Target at the Fib extension 1.272 ($500.36). R/R approximately 2.4:1. MACRO: Mixed-to-cautious due to Iran escalation (May 4). This reduces conviction from what would otherwise be a high-confidence setup. LESSONS CHECK: The NVDA EMA pullback loss occurred at RSI 81-87 with stretched macro. WDC RSI is 83.22 — partially matching the failure pattern. However, WDC is less overextended (7% above EMA-10 vs NVDA which was chased at top), hourly OBV is NOT diverging (unlike STX), and the hourly RSI at 65.74 is not overbought — suggesting more room. Confidence reduced to 52 to reflect macro headwind, overbought daily RSI, and the lessons-based caution on this RSI zone.",
+    "entry": 410.0,
+    "target": 500.36,
+    "stop": 379.0,
+    "timeframe": "5-15 trading days"
+  }
+}

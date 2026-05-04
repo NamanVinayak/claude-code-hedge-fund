@@ -1,0 +1,31 @@
+{
+  "decisions": {
+    "STX": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 738.54,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 799.0,
+      "stop_loss": 680.0,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "N/A — no active position",
+      "confidence": 42,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader neutral (42 conf). Unanimous pass: RSI 86-90, 58% above 50-SMA, hourly OBV bearish divergence, NVDA lesson directly analogous. Wait for pullback to $618-700 zone. Allowed actions: hold only."
+    },
+    "WDC": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 442.36,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 489.0,
+      "stop_loss": 409.0,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "N/A — no active position",
+      "confidence": 52,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader bullish (52 conf) but risk manager correlation-blocked: STX+WDC cluster cap exceeded (combined $1,076 > 30% of $1,794). Cannot enter WDC without breaching cluster cap. Monitor for STX exit to free cluster capacity. Preferred entry $422-440 on pullback when capital permits."
+    }
+  },
+  "synthesis": "Both STX and WDC are passes this session. STX is a unanimous technical timing failure — extreme overbought (RSI 86-90), parabolic extension 58% above the 50-SMA, and bearish hourly OBV divergence; the NVDA lesson (stopped out at RSI 81-87 in same conditions) directly applies. Wait for pullback to $618-700 before re-engaging. WDC has a genuine bullish thesis — post-earnings catalyst (+45% YoY revenue), head trader bullish at 52 conf, 3/5 agents agree, and technicals are materially healthier than STX (RSI 83, Z-score 2.13, OBV confirming). However, the risk manager has explicitly correlation-blocked WDC: STX and WDC share 0.865 correlation and their combined theoretical position size ($1,076) would exceed the 30% cluster cap on a $1,794 account. Since STX must be analyzed first and it consumes available cluster capacity, WDC cannot be entered today. The correct path: monitor the open book (BAC long, AMD short, AAPL long, JNJ short, DIS long, META short — 6 active trades), allow STX to either set up a proper pullback entry or be removed from watchlist, and re-run WDC when cluster capacity opens. Preferred WDC entry zone remains $422-440 on any constructive pullback with stop $409, target $489 for ~2.5-2.7:1 R/R."
+}

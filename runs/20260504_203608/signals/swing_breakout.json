@@ -1,0 +1,20 @@
+{
+  "STX": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "STX is NOT a breakout setup — the move is already done. Range boundaries: the consolidation base was ~$639–$728 (post-earnings gap base to ATH), but that range has already resolved with a confirmed close at $726.93 and intraday print at $728 on 2026-05-01. Daily BB width is 0.487 (wide, already expanded) with pct_b at 1.126 — price is above the upper Bollinger Band, meaning volatility is already fully expanded. The squeeze is NOT on; it is done. ADX 76.56 confirms an extremely strong established trend. Volume ratio 1.69x met the threshold, but only confirms the trend that already fired — not a new breakout to enter now. Hourly OBV is diverging from price (bearish), and hourly relative volume is only 0.54 (well below average), suggesting hourly momentum is fading. Daily RSI 86–90 is extreme overbought territory; the NVDA lesson (2026-04-30, same swing_breakout signal on RSI 81–87, stopped out) is directly analogous — entering a parabolic extension at extreme RSI without a fresh, defined consolidation range is a losing pattern. No clear consolidation range is forming at current levels; the chart is trending vertically. My mandate is to trade the moment a range gives way, not to chase an already-extended trend 58% above the 50-SMA. Standing aside.",
+    "entry": 726.93,
+    "target": 830.43,
+    "stop": 680.63,
+    "timeframe": "neutral — no active setup"
+  },
+  "WDC": {
+    "signal": "bullish",
+    "confidence": 52,
+    "reasoning": "WDC shows the most structured near-breakout setup of the two tickers. Range boundaries: hourly chart has defined a range with support at ~$404 (18 hourly tests) and resistance at the ATH of $446.62 (6 volume-confirmed tests), a range height of ~$42.62. The measured-move target is $446.62 + $42.62 = ~$489. Hourly BB width is 0.173 — notably narrow relative to the daily BB width of 0.385 — consistent with a coiling/squeeze at the hourly level, though the daily is not showing a classic squeeze. Daily volume ratio 2.08x far exceeds the 1.5x threshold required for breakout confirmation. Hourly ADX is only 21.21 (moderate), consistent with range-bound/coiling rather than a trending breakout — this is the regime I want. However, several confidence discounts apply: (1) The breakout has NOT closed above $446.62 ATH on the daily — the 2026-05-01 daily close was $431.52, well below the resistance; a confirmed daily close above ATH is required before full-conviction entry. (2) Daily RSI 83–87 is extreme overbought — the NVDA lesson warns directly that swing_breakout at RSI 81–87 without a confirmation candle led to a stop-out; lowering confidence accordingly. (3) Hourly relative volume is only 0.47 — the hourly squeeze has not yet fired with volume. (4) Wiki identifies $446.62 as ATH resistance with multiple tests; breaking this would be higher-conviction than a fresh level, but it has not broken yet. Entry is on a confirmed daily close above $446.62 on volume 1.5x+; stop below the $410 support cluster; target is the measured move to ~$489.",
+    "entry": 447.5,
+    "target": 489.0,
+    "stop": 409.0,
+    "timeframe": "5-12 trading days"
+  }
+}

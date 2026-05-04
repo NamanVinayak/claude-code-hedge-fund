@@ -1,0 +1,44 @@
+{
+  "run_id": "20260504_203608",
+  "mode": "swing",
+  "started_at": "2026-05-04T20:36:32Z",
+  "ended_at": "2026-05-04T20:52:46Z",
+  "tickers": [
+    "STX",
+    "WDC"
+  ],
+  "decisions": [
+    {
+      "ticker": "STX",
+      "action": "hold",
+      "confidence": 42,
+      "entry": 738.54,
+      "stop": 680.0,
+      "target": 799.0,
+      "reasoning_tldr": "Head Trader neutral (42 conf)"
+    },
+    {
+      "ticker": "WDC",
+      "action": "hold",
+      "confidence": 52,
+      "entry": 442.36,
+      "stop": 409.0,
+      "target": 489.0,
+      "reasoning_tldr": "Head Trader bullish (52 conf) but risk manager correlation-blocked: STX+WDC cluster cap exceeded (combined $1,076 > 30% of $1,794)"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 2,
+    "cash": 1793.7699945068362,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "mixed",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

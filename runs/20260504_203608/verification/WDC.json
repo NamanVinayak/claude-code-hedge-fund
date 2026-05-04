@@ -1,0 +1,68 @@
+{
+  "ticker": "WDC",
+  "verified_at": "2026-05-04T20:40:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.368,
+      "web_value": 0.3771,
+      "source": "CNBC / Simply Wall St: 'TTM net margin 37.71% as of May 1, 2026'; note includes ~$984M one-off SanDisk stake gain",
+      "status": "ok",
+      "deviation": "2.5%",
+      "notes": "Our value already corrected by prior agent pass. Current bundle value matches web consensus."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.3183,
+      "web_value": 0.28,
+      "source": "Investing.com TTM GAAP operating margin: 28.00%",
+      "status": "ok",
+      "deviation": "13.7%",
+      "notes": "Q3 FY2026 standalone quarter showed 38.6% operating margin — but TTM includes earlier weaker quarters, so 28-32% TTM is reasonable. Within 20% threshold."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 33.88,
+      "web_value": 33.88,
+      "source": "GuruFocus TTM PE ratio; consistent across multiple sources ~33-38 range (Apr/May 2026)",
+      "status": "ok",
+      "deviation": "0.0%",
+      "notes": "Our value already corrected by prior agent pass. Exact match with web reference."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 151242571776,
+      "web_value": 147530000000,
+      "source": "StockAnalysis.com WDC market cap: $147.53B (May 2026)",
+      "status": "ok",
+      "deviation": "2.5%",
+      "notes": "Normal price movement; within threshold"
+    },
+    {
+      "metric": "roe",
+      "our_value": 1.2708,
+      "web_value": 0.8592,
+      "source": "Yahoo Finance / Zacks: Return on Equity TTM 85.92% (May 2026)",
+      "status": "MISMATCH",
+      "deviation": "47.9%",
+      "notes": "Our value 127.1% vs web 85.92%. The gap is likely due to the SanDisk spin-off ($3.1B stake sold Feb 2026) drastically reducing book equity mid-TTM, making ROE denominator unusually small in our snapshot but normalised in web data. Deviation >20% — MISMATCH flagged.",
+      "action": "replaced with 0.8592 in warren_buffett__WDC.json and aswath_damodaran__WDC.json"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.482,
+      "web_value": 0.1457,
+      "source": "Yahoo Finance / Zacks: Return on Assets TTM 14.57% (May 2026)",
+      "status": "MISMATCH",
+      "deviation": "231%",
+      "notes": "Our value 48.2% vs web 14.57% — a very large deviation. The SanDisk spin-off reduced total assets significantly mid-TTM in our data snapshot, deflating the denominator and inflating ROA artificially. This is a genuine data artifact that would mislead LLM agents. Web value of 14.57% is consistent with $3.72B net income on ~$25.5B total assets post-spin-off.",
+      "action": "replaced with 0.1457 in warren_buffett__WDC.json and aswath_damodaran__WDC.json"
+    }
+  ],
+  "overall_status": "2 mismatches corrected (roe, roa) — inflated by SanDisk spin-off asset base reduction artifact",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260504_203608/facts/warren_buffett__WDC.json",
+    "runs/20260504_203608/facts/aswath_damodaran__WDC.json"
+  ]
+}

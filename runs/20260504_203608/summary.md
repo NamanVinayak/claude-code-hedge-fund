@@ -1,0 +1,5 @@
+# Swing Run 20260504_203608 — STX, WDC
+
+Both tickers are passes today. STX (Seagate) posted a blowout Q3 (+44% YoY revenue, nearline sold out through 2027) but the chart is parabolic: RSI 86-90, price 58% above the 50-day MA, bearish hourly OBV divergence, and Z-score 2.9 — conditions nearly identical to the recent NVDA stop-out. All 5 swing agents declined to enter; the mean-reversion agent is outright bearish, targeting a fade toward $557. WDC (Western Digital) is the better setup — 3/5 agents bullish, RSI 83 (not 90), OBV confirming, fresh +45% YoY catalyst just 2 days old — but the risk manager correlation-blocked it: STX and WDC share 0.865 correlation and their combined size would exceed the 30% cluster cap on a $1,794 account.
+
+Top watch: WDC at $422-440 entry zone, stop $409, target $489 (~2.7:1 R/R), 5-10 days — activate when cluster capacity opens. STX pullback watch zone: $618-700 (EMA-10 support). Macro backdrop is risk-off (Iran missile exchange, Fed in policy transition), which supports patience over forced entries.
