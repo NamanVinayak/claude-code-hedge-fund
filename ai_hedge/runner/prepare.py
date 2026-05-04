@@ -188,6 +188,26 @@ def main():
             except Exception as exc:  # never block the pipeline on wiki errors
                 print(f"  [WARN] wiki injection failed: {exc}")
 
+        # Self-grading: score each persona's prior call vs yfinance reality.
+        # Always-on for swing; failures log + skip, don't crash.
+        if mode == "swing":
+            try:
+                from ai_hedge.grading.inject import inject_grading
+                print("\nGrading prior persona signals against yfinance...")
+                report = inject_grading(args.run_id, tickers)
+                if report.get("skipped"):
+                    print(f"  grading skipped: {report.get('reason')}")
+                else:
+                    print(
+                        f"  graded {report['written']}, "
+                        f"cold_start {report['cold_start']}"
+                    )
+                    if report.get("errors"):
+                        for err in report["errors"][:5]:
+                            print(f"  [WARN] {err}")
+            except Exception as exc:  # never block the pipeline on grading errors
+                print(f"  [WARN] grading failed: {exc}")
+
     # Day-trade facts: needed for daytrade and research modes
     if mode in ("daytrade", "research"):
         print("\nBuilding day-trade strategy facts...")

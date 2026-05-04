@@ -62,6 +62,16 @@ Day-trade strategies (9): dt_vwap_trader, dt_momentum_scalper, dt_mean_reversion
 - **Bootstrap**: `scripts/wiki_bootstrap.py` populated 96 pages across 23 tickers.
 - **Maintenance**: `scripts/wiki_compactor.py` invoked by `.agents/skills/wiki_maintenance/` skill (Sunday routine).
 
+## Self-grading (V1, swing-only)
+
+- **Purpose**: each swing persona sees its OWN prior call on this ticker graded against yfinance daily OHLC before it votes. Lands in facts as `prediction_grading`.
+- **Module**: `ai_hedge/grading/{grader,loader,inject,wiki_writer}.py`. `grader` is pure; `loader` filesystem-scans recent runs; `inject` mutates facts; `wiki_writer` appends bullets to `wiki/agents/<persona>/track_record.md` from `finalize.py`.
+- **Run-flow integration**: `prepare.py` calls `inject_grading()` after wiki injection. `finalize.py` calls `append_track_records()` after `summary.json`. Both wrapped in try/except — never block the pipeline.
+- **Source-of-truth note**: yfinance OHLC is truth for grading agent calls; Turso `trades` table stays truth for portfolio P&L. They will sometimes disagree on slippage (e.g. NVDA 2026-04-30: simulator -$63.20, real fill closer to -$80–$100). Document, don't reconcile.
+- **Daily-bar limitation**: same-bar tie (high≥target AND low≤stop) scored as `stopped_out` with `tie_breaker_applied: true`. Persona prompt block tells the agent to flag if the tie biased the grade.
+- **Same-day scoring**: bars are filtered `>= prior_run_date` (not `>`) so same-day stop-outs from pre-market signals are caught.
+- **Out of scope (V2+)**: PM weighting by hit rate, Turso `persona_signals` table, dashboard surface, daytrade mode, head-trader self-grading, intraday tie-breaking, reading `track_record.md` back into prompts (currently write-only — let it accumulate ~30 days first).
+
 ## Enhanced Pipeline (Web Research + Verification)
 
 ```

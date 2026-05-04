@@ -660,6 +660,19 @@ def main():
     except Exception as exc:
         print(f"[WARN] wiki touch_index failed: {exc}")
 
+    # Append graded persona calls to wiki/agents/<persona>/track_record.md.
+    # Idempotent on run_id; no-op when no grading files exist (non-swing).
+    try:
+        from ai_hedge.grading.wiki_writer import append_track_records
+        report = append_track_records(args.run_id)
+        if not report.get("skipped") and report.get("appended", 0) > 0:
+            print(
+                f"[grading] appended {report['appended']} persona track records "
+                f"({report['verdict_count']} verdicts)"
+            )
+    except Exception as exc:
+        print(f"[WARN] grading wiki append failed: {exc}")
+
 
 if __name__ == "__main__":
     main()

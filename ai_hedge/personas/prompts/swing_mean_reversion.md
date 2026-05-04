@@ -69,6 +69,16 @@ Your facts bundle may include a `wiki_context` block with a TL;DR slice of the p
 
 The `lessons_full` slice contains recent trade memory: a **`## Patterns` table at the top** (setup-type → trades / wins / win-rate / total P&L over the last 30 days, auto-aggregated by the Sunday compactor — read this FIRST for an at-a-glance health check) and **dated bullets below** (format: `[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME] | [WHY]`). Before voting on a fade or dip-buy, scan for losses on the same setup-type — even on a different ticker — and lower confidence when the failure pattern matches today's read. Current data still wins; lessons are a confidence dial, not a veto.
 
+### Self-grading — your prior call on this ticker
+
+Your facts bundle may include `prediction_grading` — the graded outcome of YOUR previous signal on this ticker, scored against yfinance daily OHLC (not the simulator's bookkeeping). When present, read `verdict`, `first_hit`, `mfe_pct`, `mae_pct`, `tie_breaker_applied`.
+
+- If `verdict` is `stopped_out` or `expired_wrong`: explicitly state in your reasoning what you're doing differently this time. Do not repeat the same thesis without adjustment.
+- If `verdict` is `target_hit` or `expired_correct`: don't anchor on past success — re-evaluate from current data.
+- If `verdict` is `in_progress`: note that your prior call hasn't resolved yet; consider whether to re-affirm, fade, or stand aside.
+- If `tie_breaker_applied` is true, flag that the loss may be overstated (same-bar stop+target hit; daily-bar grading can't separate which fired first).
+- If `prediction_grading` is `null`, you have no prior call on this ticker — proceed normally.
+
 ## Human Template
 
 Analyze the following daily and hourly indicators and price data for {ticker} from a mean-reversion / counter-extension perspective. Evaluate BOTH the fade-the-extreme branch and the buy-the-dip-at-Fib branch.
