@@ -1,0 +1,44 @@
+{
+  "run_id": "20260504_194523",
+  "mode": "swing",
+  "started_at": "2026-05-04T19:45:50Z",
+  "ended_at": "2026-05-04T19:57:31Z",
+  "tickers": [
+    "UNH",
+    "JNJ"
+  ],
+  "decisions": [
+    {
+      "ticker": "UNH",
+      "action": "hold",
+      "confidence": 30,
+      "entry": 370.12,
+      "stop": 374.5,
+      "target": 355.0,
+      "reasoning_tldr": "No position; no allowed entry"
+    },
+    {
+      "ticker": "JNJ",
+      "action": "hold",
+      "confidence": 55,
+      "entry": 224.07,
+      "stop": 231.5,
+      "target": 216.53,
+      "reasoning_tldr": "Hold existing 3-share short (entry $229.06, +$14.85 unrealized)"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 2,
+    "cash": 1793.7699945068362,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "mixed",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

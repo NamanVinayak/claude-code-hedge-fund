@@ -1,0 +1,30 @@
+{
+  "decisions": {
+    "UNH": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 370.12,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 355.0,
+      "stop_loss": 374.5,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "N/A",
+      "confidence": 30,
+      "account_risk_pct": 0.0,
+      "reasoning": "No position; no allowed entry. Head Trader neutral (30). RSI 94.45, ADX 85.61 parabolic extension — no safe entry in either direction. Waiting for EMA pullback to $348-355."
+    },
+    "JNJ": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 224.07,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 216.53,
+      "stop_loss": 231.5,
+      "risk_reward_ratio": "3.1:1",
+      "timeframe": "5-10 trading days",
+      "confidence": 55,
+      "account_risk_pct": 0.0,
+      "reasoning": "Hold existing 3-share short (entry $229.06, +$14.85 unrealized). 4/5 agents bearish; EMA death stack confirmed; measured-move target $216.53 still ~$7.50 away. Stop $231.50 intact."
+    }
+  }
+}

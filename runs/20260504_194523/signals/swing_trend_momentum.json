@@ -1,0 +1,20 @@
+{
+  "UNH": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "TREND ASSESSMENT: Daily EMA alignment is a textbook uptrend (10 EMA 355.2 > 21 EMA 335.7 > 50 EMA 315.3) with ADX 85.61 — one of the strongest trend readings possible. All ROC readings are powerfully positive and expanding (5d +3.91%, 10d +13.6%, 21d +34.6%), confirming extreme momentum acceleration on the daily timeframe. MOMENTUM-ACCELERATION ASSESSMENT: Daily momentum is clearly accelerating, but the entry discipline rule disqualifies this setup. Price at ~368.78 is 3.83% above the 10 EMA and 9.86% above the 21 EMA — there is no pullback to enter. This strategy requires an entry at the 10 or 21 EMA, not at a parabolic extension. RSI-14 at 94.45 and RSI-7 at 88.85 are at extreme overbought territory. HOURLY DIVERGENCE WARNING: Hourly MACD histogram is -1.36 (negative, decelerating), hourly ADX minus_di (26.15) exceeds plus_di (19.16) — the hourly timeframe is showing bearish pressure against the daily trend, a classic exhaustion signal. Hourly ROC is essentially flat/negative (10d -0.10%, 21d -0.13%). WIKI CONFIRMATION: Wiki confirms 'No actionable entry exists at current price' — this is the second consecutive run in the no-trade zone. Z-score of 2.12 confirms overextension. LESSONS: The prior EMA pullback dip-buy (NVDA) stopped out in a similarly extended macro setup with RSI 81-87. UNH RSI-14 at 94.45 is even more stretched. MACRO: Iran escalation has returned backdrop to mixed-to-cautious. Verdict: The trend is real and strong but there is no safe entry point. Waiting for pullback to the 10 EMA (~355) before considering a long. Output neutral per strategy rules.",
+    "entry": 355.0,
+    "target": 390.0,
+    "stop": 348.0,
+    "timeframe": "N/A — no entry (waiting for pullback to 10 EMA)"
+  },
+  "JNJ": {
+    "signal": "bearish",
+    "confidence": 68,
+    "reasoning": "TREND ASSESSMENT: JNJ is in a confirmed daily downtrend — EMA stack is fully bearish (ema_aligned_downtrend: true), with 5 EMA (228.0) < 10 EMA (229.2) < 21 EMA (232.2) < 50 EMA (233.5). Price at 224.34 is below every EMA. ADX 31.07 with minus_di (26.9) > plus_di (19.9) confirms the downtrend has strength. MOMENTUM-ACCELERATION ASSESSMENT: All ROC readings are negative: 5d -0.14%, 10d -2.98%, 21d -6.94%. The expanding negativity from 5d to 21d indicates downside momentum is accelerating over longer horizons, consistent with a trend in force. Daily MACD line -3.24, signal -2.78, histogram -0.46 — bearish and below zero. HOURLY ALIGNMENT: Hourly EMA stack also aligned downtrend (ema_aligned_downtrend: true). Hourly minus_di (32.44) >> plus_di (14.83). Hourly MACD histogram -0.29 (bearish). Hourly ROC 5d -0.18%, 10d -1.59%, 21d -1.30% — all negative. Hourly and daily are directionally aligned — strong confirmation. PRIOR CALL GRADING: Prior bearish signal at 229.85 (target 216.53, stop 235.0) is in_progress with direction_correct=true, MFE 1.23%, MAE 0.0%. Price has moved from entry ~229.85 to current ~224.34, toward the target. Do not repeat the same thesis blindly — but current data strongly re-affirms the downtrend is intact and accelerating. Entry here is a continuation of the established short setup, with price having already broken below the prior entry zone. ENTRY MECHANICS: Price is below the 21 EMA (232.2), confirming trend; a re-test of the 10 EMA / 21 EMA area (229-232) on a relief bounce would be the cleanest entry, but current price (224.34) is already extended intraday (hourly pct_b 0.076, near lower Bollinger Band). Entering near hourly support ($224.66 pivot, 20 tests) with stop above 10 EMA. MACRO: Iran escalation / risk-off backdrop is modestly bearish for defensives. CONFIDENCE ADJUSTMENT: Lessons show EMA pullback setups have 0% win rate recently (though that was a bullish setup on NVDA, different direction). JNJ bearish thesis is confirmed by multiple timeframes. Confidence 68 — downtrend strong, momentum aligned, prior call in-progress and direction correct.",
+    "entry": 226.5,
+    "target": 216.5,
+    "stop": 232.5,
+    "timeframe": "5-10 trading days"
+  }
+}

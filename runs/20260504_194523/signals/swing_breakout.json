@@ -1,0 +1,20 @@
+{
+  "UNH": {
+    "signal": "neutral",
+    "confidence": 10,
+    "reasoning": "UNH is in a parabolic runaway uptrend — not a breakout setup. ADX 85.61 (extreme trend), RSI-14 94.45, z-score 2.12, price 22.61% above 50-SMA. This is the opposite of my required setup: Bollinger Band width 0.3304 is wide (volatility fully expanded), meaning the move is already done — there is no coiling spring to release. Daily volume 0.54x average (no surge). No consolidation range or base is forming; there are no meaningful pivot highs above current price (nearest resistance = null). Range boundaries: support near $276 (pivot low), but price has blown past all resistance and is running open air. Volume ratio: 0.54x (well below the 1.5x required for breakout confirmation). Squeeze status: done — BB width wide, not contracting. Hourly indicators confirm no setup: hourly relative volume 0.32x, hourly OBV trending down, hourly MACD histogram negative (-1.36). Wiki context (two consecutive runs) confirms no-trade zone: 'UNH is in a parabolic extension, not a consolidation or breakout pattern.' Standing aside — this is a trend-following chart, not a breakout/volatility-expansion setup.",
+    "entry": 368.78,
+    "target": 368.78,
+    "stop": 368.78,
+    "timeframe": "no setup"
+  },
+  "JNJ": {
+    "signal": "bearish",
+    "confidence": 58,
+    "reasoning": "JNJ is setting up a bearish breakdown through a well-defined support level at $223.78. Range boundaries: consolidation between ~$223.78 (pivot low, 4 tests) and ~$231 (hourly resistance, 15 tests volume-confirmed) — range height ~$7.25. Current price $224.34 is hovering just above the breakdown level. EMA stack fully bearish (5/10/20/21/50 EMAs all above price; ema_aligned_downtrend: true). ADX 31.07 with -DI 26.9 > +DI 19.9 confirms active downtrend. Volume ratio: daily relative volume 0.89x — does NOT yet meet the 1.5x requirement for confirmed breakout. Bollinger analysis: daily BB width 0.1016 (moderate, not a tight coil), but HOURLY BB width 0.0313 (extremely tight squeeze — spring loaded). This hourly squeeze at the breakdown level is the key signal: the hourly coil is firing toward the $223.78 breakdown. Hourly ADX weak (14.95) but -DI 32.44 >> +DI 14.83 shows strong hourly bearish pressure. Squeeze status: hourly squeeze tight (0.0313) — imminent directional resolution. Prior grading (in_progress): bearish call from May 1 run at entry $223.50, target $216.53, stop $235; price bounced to the 10-EMA resistance zone ($229-231) exactly as the wiki predicted, now rolling over again toward $224 — this re-affirms the breakdown thesis. Wiki key level for breakdown entry: close below $223.78 on volume >1.5x average. Measured-move target: $223.78 - $7.25 (range height) = $216.53. Confidence held at 58 (not raising) because daily volume confirmation is absent; the 1.5x requirement is not yet met. No relevant failed-breakdown lessons in the lesson log to discount further. Entry is a limit at the breakout trigger (close below $223.78).",
+    "entry": 223.5,
+    "target": 216.53,
+    "stop": 231.5,
+    "timeframe": "5-10 trading days"
+  }
+}

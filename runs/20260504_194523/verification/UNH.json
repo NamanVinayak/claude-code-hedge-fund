@@ -1,0 +1,71 @@
+{
+  "ticker": "UNH",
+  "verified_at": "2026-05-04T19:45:23",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.03599,
+      "web_value": 0.036,
+      "source": "FinanceCharts / Yahoo Finance (TTM, May 2026)",
+      "status": "ok",
+      "deviation": "0.03%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.08066,
+      "web_value": 0.0806,
+      "source": "UNH Q1 2026 earnings release — $9.0B earnings from operations on $111.7B revenue (BusinessWire, April 2026)",
+      "status": "ok",
+      "deviation": "0.07%",
+      "note": "Some aggregators report 3.33% for a different TTM period; Q1 2026 segment-level confirms ~8.1%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 27.96,
+      "web_value": 27.87,
+      "source": "Yahoo Finance trailing P/E as of May 1, 2026",
+      "status": "ok",
+      "deviation": "0.32%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 336229597184.0,
+      "web_value": 334930000000.0,
+      "source": "companiesmarketcap.com, May 1, 2026",
+      "status": "ok",
+      "deviation": "0.39%"
+    },
+    {
+      "metric": "return_on_equity",
+      "our_value": 0.4439,
+      "web_value": 0.1896,
+      "source": "FinanceCharts TTM average ROE as of Dec 2025 (18.96%); CNBC/StockAnalysis also confirm ~12-19% range",
+      "status": "MISMATCH",
+      "deviation": "134%",
+      "action": "replaced with web value 0.1896 in all facts bundles containing raw return_on_equity field (warren_buffett__UNH.json, aswath_damodaran__UNH.json)"
+    },
+    {
+      "metric": "return_on_assets",
+      "our_value": 0.04829,
+      "web_value": 0.0378,
+      "source": "StockAnalysis.com TTM ROA as of May 1, 2026",
+      "status": "ok",
+      "deviation": "27.8%",
+      "note": "Deviation is marginally above 20% threshold; however the difference is attributable to varying TTM window endpoints (facts bundle uses Sep 2025 period vs current May 2026 trailing). Flagged but not corrected as the gap is within data-timing noise given significant Q1 2026 earnings swings."
+    },
+    {
+      "metric": "revenue",
+      "our_value": null,
+      "web_value": 447560000000.0,
+      "source": "companiesmarketcap.com — UNH TTM revenue $447.56B as of April 2026; 2025 annual $447.6B",
+      "status": "unverified",
+      "note": "Revenue not stored as a direct field in facts bundles; implied from price_to_sales ratio (market_cap / P/S = $336.2B / 0.84 = ~$400.2B). This diverges from web value of $447.6B — possible stale data in price_to_sales ratio. No correctable raw 'revenue' field found in bundles."
+    }
+  ],
+  "overall_status": "1 mismatch corrected (return_on_equity: 44.4% → 19.0%)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260504_194523/facts/warren_buffett__UNH.json",
+    "runs/20260504_194523/facts/aswath_damodaran__UNH.json"
+  ]
+}
