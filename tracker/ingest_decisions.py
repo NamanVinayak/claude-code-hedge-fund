@@ -78,7 +78,9 @@ def _get_timeframe(dec: dict) -> str | None:
 
 
 def _existing_run_tickers(run_id: str) -> set[str]:
-    """Return tickers already inserted for this run_id (Turso double-safety check)."""
+    """Return tickers already inserted for this run_id (Turso double-safety check).
+    Raises on Turso failure — callers must NOT swallow this; a silent empty set would
+    bypass the guard and create duplicates."""
     from tracker.turso_client import _execute  # internal but safe — same module
     rows = _execute(
         "SELECT ticker FROM trades WHERE run_id = ?", [run_id]
@@ -89,7 +91,8 @@ def _existing_run_tickers(run_id: str) -> set[str]:
 def _open_positions_by_ticker_direction() -> set[tuple[str, str]]:
     """Return (ticker, direction) pairs that already have an open position.
     'Open' = pending or entered. Used to block duplicate inserts when a routine
-    fires multiple times in quick succession or upstream allowed_actions misses."""
+    fires multiple times in quick succession or upstream allowed_actions misses.
+    Raises on Turso failure — callers must NOT swallow this."""
     from tracker.turso_client import _execute
     rows = _execute(
         "SELECT ticker, direction FROM trades WHERE status IN ('pending', 'entered')",
@@ -150,17 +153,14 @@ def main() -> None:
             except (json.JSONDecodeError, OSError):
                 pass
 
-        # Double-safety: check what's already in Turso for this run
-        try:
-            existing_tickers = _existing_run_tickers(run_id)
-        except Exception:
-            existing_tickers = set()
+        # Double-safety: check what's already in Turso for this run.
+        # Do NOT catch exceptions here — a Turso timeout returning an empty set
+        # would bypass the guard and create duplicates. Let the run fail loudly.
+        existing_tickers = _existing_run_tickers(run_id)
 
-        # Cross-run dedup: tickers already holding an open position (any prior run)
-        try:
-            open_ticker_directions = _open_positions_by_ticker_direction()
-        except Exception:
-            open_ticker_directions = set()
+        # Cross-run dedup: tickers already holding an open position (any prior run).
+        # Same rationale — fail loudly on Turso error rather than silently proceeding.
+        open_ticker_directions = _open_positions_by_ticker_direction()
 
         run_trade_count = 0
         for ticker, dec in decisions.items():
