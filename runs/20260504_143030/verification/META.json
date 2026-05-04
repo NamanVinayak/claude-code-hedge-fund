@@ -1,0 +1,72 @@
+{
+  "ticker": "META",
+  "verified_at": "2026-05-04T14:30:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.3008,
+      "web_value": 0.3936,
+      "source": "CNBC (cnbc.com/quotes/META) — Net Margin (TTM) post-Q1 2026 earnings",
+      "status": "MISMATCH",
+      "deviation": "23.6%",
+      "action": "replaced 0.3008 with 0.3936 in warren_buffett__META.json and aswath_damodaran__META.json (only files containing raw metrics sub-object)"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.4144,
+      "web_value": 0.41,
+      "source": "Macrotrends / GuruFocus — META operating margin Q1 2026 ~41%",
+      "status": "ok",
+      "deviation": "1.1%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 22.012,
+      "web_value": 28.89,
+      "source": "FinanceCharts (financecharts.com/stocks/META/value/pe-ratio) — P/E as of Apr 27, 2026",
+      "status": "MISMATCH",
+      "deviation": "23.8%",
+      "action": "replaced 22.012173 with 28.89 in warren_buffett__META.json and aswath_damodaran__META.json (only files containing raw metrics sub-object)"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 200960000000.0,
+      "web_value": 214960000000.0,
+      "source": "StockAnalysis / Macrotrends — Meta TTM revenue through March 31, 2026: $214.96B",
+      "status": "ok",
+      "deviation": "6.5%",
+      "note": "Our value derived from market_cap / price_to_sales_ratio ($1.5377T / 7.6516). Deviation within 20% threshold — not corrected."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 1537713373184.0,
+      "web_value": 1545000000000.0,
+      "source": "StockAnalysis / companiesmarketcap.com — META market cap ~$1.545T as of May 2026",
+      "status": "ok",
+      "deviation": "0.5%"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.2783,
+      "web_value": null,
+      "source": null,
+      "status": "unverified",
+      "note": "No distinct ROE TTM figure retrieved from search results — skipped per rules"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.1652,
+      "web_value": null,
+      "source": null,
+      "status": "unverified",
+      "note": "No distinct ROA TTM figure retrieved from search results — skipped per rules"
+    }
+  ],
+  "overall_status": "2 mismatches corrected (net_margin, pe_ratio)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260504_143030/facts/warren_buffett__META.json",
+    "runs/20260504_143030/facts/aswath_damodaran__META.json"
+  ],
+  "notes": "net_margin mismatch likely caused by facts bundle using pre-Q1-2026 TTM data. Q1 2026 earnings (reported Apr 29) showed strong net income, pushing TTM net margin from ~30% to ~39%. pe_ratio discrepancy reflects stock price change since data was fetched — price has risen since the bundle was built but EPS was not updated proportionally. 11 other invest-mode facts bundles do not contain the raw metrics sub-object and thus had no updatable raw margin/PE fields. Swing bundles are purely technical indicators and were not affected."
+}
