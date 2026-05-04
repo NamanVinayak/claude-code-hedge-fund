@@ -71,6 +71,8 @@ def run_simulator(dry_run: bool = False):
         ticker = t['ticker']
         direction = t['direction']
         entry_price = t['entry_price']
+        # Use actual fill price for P&L calcs; fall back to limit price for new fills
+        effective_entry = t.get('entry_fill_price') or entry_price
         status = t['status']
         stop_loss = t.get('stop_loss')
         target_price = t.get('target_price')
@@ -151,6 +153,7 @@ def run_simulator(dry_run: bool = False):
                     entry_max = entry_price * (1 + tolerance_pct / 100.0)
                     if low <= entry_max:
                         fill_price = max(low, entry_price)  # ideal or worse-within-tolerance
+                        effective_entry = fill_price  # use actual fill for P&L this cycle
                         status = 'entered'
                         has_fill = True
                         entries_filled += 1
@@ -162,6 +165,7 @@ def run_simulator(dry_run: bool = False):
                     entry_min = entry_price * (1 - tolerance_pct / 100.0)
                     if high >= entry_min:
                         fill_price = min(high, entry_price)  # ideal or worse-within-tolerance
+                        effective_entry = fill_price  # use actual fill for P&L this cycle
                         status = 'entered'
                         has_fill = True
                         entries_filled += 1
@@ -178,7 +182,7 @@ def run_simulator(dry_run: bool = False):
                         has_fill = True
                         stops_hit += 1
                         if not dry_run:
-                            pnl = (stop_loss - entry_price) * qty
+                            pnl = (stop_loss - effective_entry) * qty
                             update_trade(trade_id, status='stop_hit', closed_at=bar_timestamp_str, exit_fill_price=stop_loss, pnl=pnl)
                             log_fill(trade_id, "stop_hit", stop_loss, bar_timestamp_str, "long stop loss hit")
                         break
@@ -186,9 +190,9 @@ def run_simulator(dry_run: bool = False):
                         if target_price_2 is not None:
                             has_fill = True
                             if not dry_run:
-                                update_trade(trade_id, stop_loss=entry_price, target_price=target_price_2, target_price_2=None)
+                                update_trade(trade_id, stop_loss=effective_entry, target_price=target_price_2, target_price_2=None)
                                 log_fill(trade_id, "target_hit", target_price, bar_timestamp_str, "long target 1 hit, trailing stop to entry")
-                            stop_loss = entry_price
+                            stop_loss = effective_entry
                             target_price = target_price_2
                             target_price_2 = None
                         else:
@@ -196,18 +200,18 @@ def run_simulator(dry_run: bool = False):
                             has_fill = True
                             targets_hit += 1
                             if not dry_run:
-                                pnl = (target_price - entry_price) * qty
+                                pnl = (target_price - effective_entry) * qty
                                 update_trade(trade_id, status='target_hit', closed_at=bar_timestamp_str, exit_fill_price=target_price, pnl=pnl)
                                 log_fill(trade_id, "target_hit", target_price, bar_timestamp_str, "long target hit")
                             break
-                            
+
                 elif direction == 'short':
                     if stop_loss is not None and high >= stop_loss:
                         status = 'stop_hit'
                         has_fill = True
                         stops_hit += 1
                         if not dry_run:
-                            pnl = (entry_price - stop_loss) * qty
+                            pnl = (effective_entry - stop_loss) * qty
                             update_trade(trade_id, status='stop_hit', closed_at=bar_timestamp_str, exit_fill_price=stop_loss, pnl=pnl)
                             log_fill(trade_id, "stop_hit", stop_loss, bar_timestamp_str, "short stop loss hit")
                         break
@@ -215,9 +219,9 @@ def run_simulator(dry_run: bool = False):
                         if target_price_2 is not None:
                             has_fill = True
                             if not dry_run:
-                                update_trade(trade_id, stop_loss=entry_price, target_price=target_price_2, target_price_2=None)
+                                update_trade(trade_id, stop_loss=effective_entry, target_price=target_price_2, target_price_2=None)
                                 log_fill(trade_id, "target_hit", target_price, bar_timestamp_str, "short target 1 hit, trailing stop to entry")
-                            stop_loss = entry_price
+                            stop_loss = effective_entry
                             target_price = target_price_2
                             target_price_2 = None
                         else:
@@ -225,7 +229,7 @@ def run_simulator(dry_run: bool = False):
                             has_fill = True
                             targets_hit += 1
                             if not dry_run:
-                                pnl = (entry_price - target_price) * qty
+                                pnl = (effective_entry - target_price) * qty
                                 update_trade(trade_id, status='target_hit', closed_at=bar_timestamp_str, exit_fill_price=target_price, pnl=pnl)
                                 log_fill(trade_id, "target_hit", target_price, bar_timestamp_str, "short target hit")
                             break
