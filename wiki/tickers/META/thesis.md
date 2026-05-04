@@ -1,46 +1,48 @@
 ---
 name: META thesis
-last_updated: 2026-04-30
-last_run_id: 20260430_141238
+last_updated: 2026-05-04
+last_run_id: 20260504_143030
 target_words: 500
 stale_after_days: 30
-word_count: 498
-summary: Prior bull thesis (breakout long at $675-677) is fully invalidated by Q1 2026 earnings capex shock; bias flipped to bearish medium-term pending reassessment of $125-145B capex narrative.
+word_count: 496
+summary: Bearish medium-term thesis confirmed and advanced — conditional short decision issued at $621 (bounce to resistance), target $575, stop $635, R/R 3.3:1; capex shock re-rating thesis intact Day 4; prior "awaiting bounce" stance converted to active conditional short order.
 ---
 
 # META — Thesis
 
 ## TL;DR
 
-The prior bull thesis — buy breakout at $675–677 targeting $706–710 on AI monetization + ad dominance — is falsified. The prior "bear to bull" trigger was "Q1 2026 earnings beat with capex discipline signal." Q1 2026 did deliver a massive EPS beat ($10.44 vs $6.65 est, +57%) and revenue beat ($56.31B, +33% YoY), but capital discipline was the opposite: full-year capex guidance was raised from $115–135B to **$125–145B**. This is the bear case materializing, not the bull trigger. Price collapsed ~10% from $669 to ~$601–603 on 9.99x hourly volume (source: web_research/META.json, explanation.json, run 20260430_141238). Medium-term bias is now bearish; HOLD awaiting dead-cat bounce to $618–630 before considering a short entry to $583.
+The prior bearish thesis (run 20260430_141238: "hold awaiting dead-cat bounce to $618–630 before considering a short entry") has **advanced to an active conditional short decision**. The wait-and-see posture is now a placed conditional order: short 1 share at $621 (limit on bounce), target $575, stop $635, R/R 3.3:1, 62% confidence. The capex-shock bearish thesis remains the controlling narrative; no evidence has emerged to falsify it. The bull case is structurally intact but is secondary. (source: decisions.json, explanation.json, run 20260504_143030)
 
-## What falsified the prior bull thesis
+**What advanced from the prior thesis:** The prior thesis was neutral-to-bearish pending bounce confirmation. The May 4 run confirmed the macro regime worsened (Iran escalation reversed May 1 peace talks), the ADX remains extreme (49.52 daily / 50.9 hourly), and the conditional short setup criteria — $619–628 resistance zone, bearish rejection candle, R/R ≥ 2:1 — are structurally validated. The PM issued a short decision; the entry requires the bounce to materialize first.
 
-The prior thesis (bootstrap, 2026-04-29) explicitly stated: "Bear to bull trigger: Q1 2026 earnings beat with raised guidance AND any capex discipline signal." The Q1 2026 earnings on April 29 delivered the beat but the inverse of discipline — capex was raised again, not guided lower. The $125–145B plan now nearly doubles FY2025's $72B. Institutional sellers confirmed this reading via 9.99x relative hourly volume (source: signals_combined.json, swing_head_trader signal, run 20260430_141238).
+## What falsified the prior bull thesis (carried forward)
 
-## Bull case (still live, but secondary)
+The prior thesis (bootstrap 2026-04-29, run 20260430_141238) stated: "Bear to bull trigger: Q1 2026 earnings beat with raised guidance AND any capex discipline signal." The Q1 2026 earnings on April 29 delivered the beat but the inverse of discipline — capex was raised from $115–135B to $125–145B, nearly doubling FY2025's $72B. Institutional sellers confirmed this reading via 9.99x relative hourly volume on April 30. (source: signals_combined.json, swing_head_trader, run 20260430_141238)
 
-**Fundamentals remain strong.** Revenue growth 22.2% YoY; operating margin 41.4%; ROE 27.83%; debt-to-equity 0.27; current ratio 2.60. These are class-leading metrics (source: signals_combined.json, fundamentals_analyst_agent, run 20260430_141238).
+## Bull case (structurally intact, secondary)
 
-**Mean-reversion snap-back is near-term probable.** Hourly RSI-21 at 14.7 and BB %B at -0.993 are extreme oversold readings historically consistent with a 3–7 day bounce. The mean_reversion agent rates this bullish at 68% confidence for a snap-back to $651 (source: signals_combined.json, swing_mean_reversion, run 20260430_141238).
+**Fundamentals class-leading.** Revenue +22.2% YoY, operating margin 41.4%, ROE 27.83%, D/E 0.27, current ratio 2.60. EV/EBITDA model shows ~44% upside vs. current market cap. (source: signals_combined.json, fundamentals_analyst_agent, run 20260504_143030)
 
-**Analyst consensus still heavily bullish.** 28 buy / 5 hold / 0 sell; avg price target ~$840. EV/EBITDA analysis implies intrinsic value above $2.2T vs. $1.5T market cap (source: web_research/META.json, run 20260430_141238).
+**Analyst consensus still bullish.** 36–40 analysts; avg price target $836.81; only JPMorgan has moved to Neutral so far. (source: web_research/META.json, run 20260504_143030)
 
-## Bear case (now primary)
+**Mean-reversion bounce is probable near-term.** RSI-7 at 18.56, hourly RSI-21 at 22.58 — extreme oversold historically consistent with 3–7 day bounce. $600 support tested 3 times hourly. (source: signals_combined.json, swing_mean_reversion, 42 conf, run 20260504_143030)
 
-**Capex shock is a thesis-changing event.** The $125–145B capex plan raised April 29, 2026 confirms the bear case: free cash flow compression is real, not hypothetical. FCF growth trend was already -14.7% entering this run. The catalyst_news agent (72% confidence) explicitly classifies this as institutional re-rating, not panic (source: signals_combined.json, run 20260430_141238).
+## Bear case (primary, confirmed)
 
-**Key support broken on extreme volume.** The $627.61 support level (11 prior tests) was breached on 9.99x hourly volume. Measured-move target is $583. DCF model values META at ~$724B vs. $1.5T market cap — 52.6% overvalued (source: signals_combined.json, valuation_analyst_agent, run 20260430_141238).
+**Capex shock remains thesis-defining.** $125–145B FY2026 plan has no cloud revenue offset (vs. Alphabet, MSFT, Amazon). JPMorgan downgraded; analyst consensus was formed pre-capex absorption. FCF compression expected 2–3 years. (source: web_research/META.json, run 20260504_143030)
 
-**Litigation overhang unchanged.** California 70% liability verdict; 10,000+ lawsuits; New Mexico $375M award; Massachusetts AG proceeding. Open-ended liability remains a structural discount factor (source: web_research/META.json, run 20260430_141238).
+**Trend structure extremely bearish.** Daily ADX 49.52 (-DI 34.25 >> +DI 26.06), hourly ADX 50.9 (-DI 47.79 >> +DI 7.66). Price below ALL EMAs on both timeframes. ROC 5d −9.82%, ROC 10d −11.59%. (source: signals_combined.json, run 20260504_143030)
 
-**Layoffs signal capex pressure is real.** ~8,000 employees (10% workforce) cut alongside 6,000 frozen roles — cost offsets against rising capex are being activated (source: web_research/META.json, run 20260430_141238).
+**Macro veto on high-multiple tech.** Iran missile escalation May 4 reversed May 1 peace-talks optimism. Fed holding at 3.5–3.75%; hawkish Warsh succession (May 15) introduces policy uncertainty. Oil above $100/bbl; Strait of Hormuz risk active. (source: web_research/META.json macro_context, run 20260504_143030)
+
+**Litigation overhang.** CA 70% liability verdict; 10,000+ lawsuits; NM $375M award. Open-ended liability remains structural discount. (source: web_research/META.json, run 20260504_143030)
 
 ## What would change my mind
 
-**Bearish to bullish:** Two consecutive quarters of capex stabilization at or below $125B with ad revenue growth re-accelerating above 25%. A litigation framework settlement removing open-ended liability. Hourly price stabilization above $630 with volume confirmation.
+**Bearish to bullish:** Two consecutive quarters of capex stabilization at or below $125B with ad revenue re-accelerating above 25%. Price recapture above $635 on 1.5x+ volume with bullish daily candle. Litigation framework settlement.
 
-**Bullish to more bearish:** Capex further raised above $145B. Ad revenue growth below 20% in Q2 2026. Iran disruption materially impacting DAP growth (already cited as a factor in Q1 2026 DAP miss: 3.56B, +4% YoY but down >5% QoQ).
+**Bearish invalidation of short:** Price breaks below $596 without bouncing to entry zone first — stand aside, do not chase. Fundamental positive catalyst (AI monetization proof, capex discipline signal, peace deal reducing oil inflation).
 
 ## Source runs
 
@@ -48,3 +50,5 @@ The prior thesis (bootstrap, 2026-04-29) explicitly stated: "Bear to bull trigge
 - 20260415_093758 (buy 1 share at $675.75, confidence 63%)
 - 20260417_233350 (buy 15 shares at $676.87, confidence 74%)
 - 20260430_141238 (HOLD, bearish bias; prior long thesis invalidated by capex shock)
+- 20260501_142327 (HOLD, bearish conditional; dead-cat bounce watch, no entry at $611–612)
+- 20260504_143030 (CONDITIONAL SHORT, 1 share at $621, target $575, stop $635, R/R 3.3:1, conf 62)
