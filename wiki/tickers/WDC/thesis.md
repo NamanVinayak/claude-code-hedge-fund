@@ -1,53 +1,43 @@
 ---
 name: WDC thesis
-last_updated: 2026-05-01
-last_run_id: bootstrap_2026-05-01
+last_updated: 2026-05-04
+last_run_id: 20260504_203608
 target_words: 500
 stale_after_days: 30
-word_count: 470
-summary: durable bull/bear story
+word_count: 497
+summary: first live run — bull thesis confirmed; hold forced by STX+WDC cluster cap (combined $1,076 > 30% of $1,794); preferred entry $422-440 on pullback; ATH $446.62 overhead resistance
 ---
 
 # WDC — Thesis
 
 ## TL;DR
 
-Post-SanDisk-spinoff Western Digital is a pure-play HDD producer (duopoly with STX) reporting that its calendar-2026 production is fully booked by hyperscale cloud customers; shares are +130% YTD and trade at ~38x trailing P/E with a $431.52 close on 2026-05-01. Bulls and bears both agree on the facts and disagree on what's already priced in.
+First live swing run (20260504_203608, 2026-05-04). Decision: **hold — correlation-blocked**. Head trader bullish at 52 conf; 3/5 swing agents bullish. Q3 FY26 revenue +45% YoY ($3.34B), EPS $2.72 vs $2.36 est, gross margin above 50% for the first time. 100% of CY2026 HDD output committed to AI hyperscalers. Despite a genuine bull setup, the risk manager correlation-blocked entry: STX+WDC share 0.865 correlation and combined theoretical position size ($1,076) exceeds the 30% cluster cap on a $1,794 portfolio. Preferred entry zone $422–$440 on pullback when cluster capacity opens. Prior bootstrap disclaimer superseded. [source: decisions.json, explanation.json, trade_ledger.json, run 20260504_203608]
 
-> _This is bootstrap context dated 2026-05-01. The runtime swing routine must do its own fresh research and indicator analysis; do not anchor to anything stated here._
+Prior bootstrap claim falsified: bootstrap stated "runtime to determine active setup" (undecided). First live run determined: bullish setup, blocked by risk rules — this is a thesis confirmation, not falsification.
 
 ## Bull case
 
-- **Pure-play HDD focus.** WDC completed its final separation from SanDisk in early 2025 / wound down residual ties Feb 2026, leaving a magnetic-recording business focused on high-capacity drives at the lowest TCO for hyperscalers ([FinancialContent](https://markets.financialcontent.com/wral/article/finterra-2026-3-2-western-digital-wdc-2026-feature-the-pure-play-pivot-to-ai-storage-dominance)).
-- **Calendar-2026 sold out.** Management states all of CY26 HDD output is 100% booked by hyperscale AI customers, framed as visibility into the next four quarters ([Yahoo Finance](https://finance.yahoo.com/news/western-digital-sold-2026-hard-112206446.html)). Cloud was 89% of Q3 FY26 revenue ([Investor.WDC](https://investor.wdc.com/news-releases/news-release-details/wd-reports-fiscal-third-quarter-2026-financial-results)).
-- **Q3 FY26 print + raise.** Revenue $3.34B (+45% YoY), EPS $2.72 (~2x YoY), gross margin >50%. Q4 guide $3.65B ±$100M and EPS $3.25 ±$0.15 — sequential growth implied ([Motley Fool transcript](https://www.fool.com/earnings/call-transcripts/2026/04/30/western-digital-wdc-q3-2026-earnings-transcript/)).
-- **HAMR roadmap.** 44TB HAMR drives in qualification with four customers; 40TB EPMR with three. HAMR production targeted start of CY27, with mgmt guiding to >50% sustained gross margin and "$20+ EPS" longer term ([GuruFocus](https://www.gurufocus.com/news/8836418/western-digital-corp-wdc-q3-2026-earnings-call-highlights-record-revenue-and-strategic-growth-in-aidriven-data-economy)).
-- **Three AI demand legs (per CEO Irving Tan):** training data hoarding, agentic AI inference data, and synthetic data from physical AI / robotics ([GuruFocus](https://www.gurufocus.com/news/8836418/western-digital-corp-wdc-q3-2026-earnings-call-highlights-record-revenue-and-strategic-growth-in-aidriven-data-economy)).
+- **Pure-play HDD focus after SanDisk separation.** WDC completed its final separation from SanDisk in Feb 2026 ($3.1B residual exit), leaving a magnetic-recording business focused on high-capacity nearline drives for AI hyperscalers. [source: web_research/WDC.json competitor_activity, run 20260504_203608]
+- **Q3 FY26 blowout and raised guide.** Revenue $3.0B (beat by ~$313M), EPS $5.27 blowout. Q4 FY26 guide: $3.65B ±$100M (~40% YoY growth at midpoint), gross margin 51–52%. First-ever gross margin above 50% (50.5% Q3). [source: web_research/WDC.json earnings_info, run 20260504_203608]
+- **CY2026 sold out to AI hyperscalers.** 100% of calendar-2026 HDD output committed; cloud = 89% of revenue. Three AI demand legs: training data, agentic inference, and physical AI/robotics. [source: web_research/WDC.json, signals_combined.json swing_catalyst_news, run 20260504_203608]
+- **HAMR roadmap advancing.** 44TB HAMR drives in customer qualification with 4 hyperscale customers; 40TB EPMR with 3 customers. HAMR volume production targeted start of CY2027. Analyst path to "$20+ EPS" longer term on HAMR margins. [source: web_research/WDC.json, run 20260504_203608]
+- **Healthier technicals vs STX.** Daily RSI-14 83.22 (elevated but inside Bollinger Band), Z-score 2.13 (vs STX 2.90), hourly OBV trending UP with no divergence, hourly RSI 65.74 (not overbought). ADX 67.86 strong uptrend with +DI 33 >> −DI 13. 20% dividend increase ($0.15/share). [source: signals_combined.json, run 20260504_203608]
 
 ## Bear case
 
-- **Triple-digit YTD run on a historically cyclical product.** Stock +130% YTD with 38x trailing P/E; HDD-cycle multiples have historically compressed once supply catches demand ([24/7 Wall St](https://247wallst.com/investing/2026/04/24/western-digital-stock-is-up-135-this-year-heres-why/)).
-- **Calendar-2026 sold out cuts both ways.** With CY26 already booked, incremental upside to CY26 numbers is limited — beats from here have to come from price/mix or CY27 visibility, not unit growth.
-- **Concentration risk.** 89% of revenue from cloud / hyperscalers — any AI capex normalization at MSFT / META / GOOG / AMZN flows through twice (volume + pricing).
-- **SSD encroachment.** Flash $/TB continues to decline; certain warm-tier workloads can migrate, capping HDD's TAM expansion at the margin.
-- **Execution risk on HAMR.** Slippage in the CY27 HAMR yield ramp would let STX (further along on HAMR) take share at the highest-margin tier.
-- **Stretched analyst dispersion.** B of A $495, Citi $405, but yfinance mean target $448 vs $431 close — only ~4% upside to consensus mean ([Stockanalysis](https://stockanalysis.com/stocks/wdc/forecast/)).
+- **Correlation-blocked; cluster cap in force.** WDC+STX 0.865 correlation exceeds the 0.70 cluster threshold; combined $1,076 > 30% of $1,794 portfolio. No entry until STX exits the cluster or cluster capacity opens. [source: signals_combined.json risk_management_agent, trade_ledger.json, run 20260504_203608]
+- **ATH $446.62 directly overhead.** Price tested $446.62 (52-week high, 6 volume-confirmed hourly tests) and closed at $431.52 — no confirmed daily close above ATH. A clean breakout above ATH has not yet occurred. [source: signals_combined.json swing_breakout, run 20260504_203608]
+- **Macro risk-off (May 4).** UAE intercepted Iranian missiles on May 4; oil surged; Fed on hold with Powell succession uncertainty May 15. Mixed-to-cautious backdrop reduces margin of safety for high-multiple momentum names. [source: web_research/WDC.json macro_context, run 20260504_203608]
+- **Valuation stretched.** P/B 28.48, P/E 26.49, P/S 13.19. Residual income model: intrinsic value ~$8.8B vs market cap ~$151B. DCF unable to compute ($0 base/bull case). Priced for extended AI-demand perfection. [source: signals_combined.json valuation_analyst_agent, run 20260504_203608]
+- **Daily RSI 83 — NVDA lesson partially applicable.** RSI below STX but in the same elevated range. Post-earnings catalyst timing is more forgiving than pure momentum extension, but NVDA stop-out at RSI 81-87 (-$63.20, 2026-04-30) remains a direct lesson. [source: signals_combined.json swing_mean_reversion, run 20260504_203608]
 
 ## What would change my mind
 
-Bullish-flip triggers (events that would make a bear less negative):
-- **HAMR qualification headline** — any of the four hyperscale customers signing off on 44TB HAMR ahead of schedule.
-- **CY27 booking commentary** — mgmt extending the "sold out" line into CY27 on the next call.
-- **HDD ASP step-up** — pricing commentary showing per-TB price strength rather than just volume.
-- **STX execution stumble** — share gains for WDC at the highest-margin tier.
-
-Bearish-flip triggers (events that would make a bull less positive):
-- **Hyperscaler capex cut** from MSFT / META / GOOG / AMZN.
-- **HAMR qualification slippage** — any hint the four customers push the timeline.
-- **HDD pricing rollover** — softening ASP commentary on the next call.
-- **Gross-margin print below 48%** — would signal mix or pricing reversal.
-- **Insider open-market selling cluster** beyond the routine 10b5-1 small slices already on file.
+- **Bull entry triggers:** Cluster capacity opens (STX exits watchlist or is sized down); price pulls back to $422–$440 zone with constructive tape (RSI reset, OBV holding); daily close above ATH $446.62 on 1.5x+ volume (clean breakout confirmation).
+- **Bull-to-neutral flips:** Q4 FY26 gross margin guidance drops below 50%; hyperscaler reports AI capex cut; HAMR qualification slippage; gross margin below 48% on any quarter.
+- **Bearish flip triggers:** CY2027 booking commentary withdrawn; HDD ASP reversal; any hyperscaler shifts nearline workloads to NAND alternatives; WDC closes below EMA-50 (~$330) on heavy volume.
 
 ## Last updated
 
-2026-05-01 — bootstrap_2026-05-01. First WDC entry; no prior runs.
+2026-05-04 — run 20260504_203608, first live swing run. Supersedes bootstrap_2026-05-01. Sources: decisions.json, explanation.json, signals_combined.json, web_research/WDC.json, trade_ledger.json.

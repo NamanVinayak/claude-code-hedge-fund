@@ -1,49 +1,44 @@
 ---
 name: WDC catalysts
-last_updated: 2026-05-01
-last_run_id: bootstrap_2026-05-01
+last_updated: 2026-05-04
+last_run_id: 20260504_203608
 target_words: 400
 stale_after_days: 14
-word_count: 395
-summary: upcoming events + recent news
+word_count: 391
+summary: Q3 FY26 blowout 2 days old (best entry window still open); Q4 FY26 earnings Aug 5; 20% dividend increase; macro risk-off (Iran escalation May 4); analyst consensus Strong Buy, avg PT $456.67
 ---
 
 # WDC — Catalysts
 
 ## TL;DR
 
-Q3 FY26 was reported 2026-04-30; the next scheduled earnings event is Q4 FY26, expected ~2026-07-29. Near-term newsflow centers on hyperscaler capex prints and HAMR qualification updates. Events listed below; runtime to interpret.
-
-> _This is bootstrap context dated 2026-05-01. The runtime swing routine must do its own fresh research and indicator analysis; do not anchor to anything stated here._
+Q3 FY26 earnings (April 30, 2026) are the live catalyst — only 2 trading days old; market likely has not fully priced the magnitude of the beat. Q4 FY26 earnings confirmed for August 5, 2026. Macro backdrop turned risk-off on May 4 (Iran missile escalation). Analyst consensus is Strong Buy with avg PT $456.67 — marginally above current price, suggesting analysts are still catching up to the tape. [source: web_research/WDC.json, run 20260504_203608]
 
 ## Upcoming events
 
-- **Q4 FY26 earnings — ~2026-07-29** (yfinance calendar). Consensus EPS $3.26 (range $3.20–$3.33), revenue avg $3.64B (range $3.47–$3.75B). Mgmt guide: $3.65B ± $100M revenue, EPS $3.25 ± $0.15.
-- **Ex-dividend date — 2026-06-04**.
-- **HAMR customer qualification status** — four hyperscale customers currently in qualification on 44TB HAMR drives ([GuruFocus](https://www.gurufocus.com/news/8836418/western-digital-corp-wdc-q3-2026-earnings-call-highlights-record-revenue-and-strategic-growth-in-aidriven-data-economy)).
-- **Hyperscaler capex disclosures** — MSFT, META, GOOG, AMZN earnings cycles. Cohort 2026 capex referenced at ~$700B aggregate.
+- **Q4 FY26 earnings — August 5, 2026 AMC** (confirmed per WesternDigital.com press release). Q4 guide: $3.65B ±$100M revenue, gross margin 51–52%; analyst EPS est ~$3.21–$3.26. [source: web_research/WDC.json earnings_info]
+- **Ex-dividend date — 2026-06-05**. WDC raised quarterly dividend 20% to $0.15/share; payment June 17, record date June 5. [source: web_research/WDC.json ticker_news]
+- **HAMR customer qualification status** — 44TB HAMR drives in qualification with 4 hyperscale customers; any qualification sign-off announcement is a material positive catalyst. HAMR volume production targeted start CY2027. [source: web_research/WDC.json earnings_info]
+- **AMD earnings (May 5 AMC)** — near-term AI capex barometer; a miss would reprice the AI storage cohort. [source: web_research/WDC.json key_events]
+- **Hyperscaler capex prints** — MSFT/META/GOOG/AMZN quarterly cycles are second-derivative read-throughs for HDD demand.
 
 ## Recent news synthesis
 
-- **Q3 FY26 (released 2026-04-30):** Revenue $3.34B (+45% YoY) vs $3.23B est; EPS $2.72 vs $2.36 est; gross margin >50%; cloud = 89% of revenue. Q4 guide raised vs prior. Shares +~4% intraday post-print ([Investing.com](https://www.investing.com/news/transcripts/earnings-call-transcript-western-digital-beats-q3-2026-forecasts-stock-jumps-427-93CH-4651509), [WDC IR](https://investor.wdc.com/news-releases/news-release-details/wd-reports-fiscal-third-quarter-2026-financial-results)).
-- **CY2026 HDD output disclosed as 100% booked** to AI cloud customers — disclosed Q2 / reaffirmed Q3 ([Yahoo Finance](https://finance.yahoo.com/news/western-digital-sold-2026-hard-112206446.html)).
-- **Final SanDisk separation completed** Feb 2026 ($3.1B residual exit) — pure-play HDD entity now ([FinancialContent](https://markets.financialcontent.com/stocks/article/marketminute-2026-2-18-western-digital-cuts-final-ties-with-sandisk-31-billion-exit-sends-shares-tumbling)).
-- **Tech roadmap:** 36TB CMR and 44TB UltraSMR shipping in 2026; 44TB HAMR in qualification with 4 customers; HAMR production targeted start CY27 ([FinancialContent](https://markets.financialcontent.com/wral/article/finterra-2026-3-2-western-digital-wdc-2026-feature-the-pure-play-pivot-to-ai-storage-dominance)).
+- **Q3 FY26 beat (April 30, 2026):** Revenue $3.0B beat midpoint ~$313M; EPS $5.27 blowout. First-ever gross margin above 50% (50.5%). Cloud = 89% of revenue. Q4 guide raised to $3.65B ±$100M. [source: web_research/WDC.json earnings_info, GuruFocus 2026-04-30]
+- **Stock gapped down May 1 on modest margin guidance.** Market focused on modestly cautious Q4 gross margin outlook (51–52% vs some bull expectations of higher); stock recovered intraday after touching $446.62 ATH. The initial gap-down followed by intraday ATH test is a constructive post-earnings consolidation pattern. [source: web_research/WDC.json ticker_news, MarketBeat 2026-05-01]
+- **Analyst upgrade wave (May 1, 2026):** Mizuho $470, Goldman Sachs $400, TD Cowen $500, BofA $572, JP Morgan ~$530, Wedbush maintained ~$530. 25-analyst consensus: 20 Strong Buy, 1 Moderate Buy, 4 Hold, 0 Sell. [source: web_research/WDC.json analyst_consensus]
+- **Macro risk-off (May 4):** UAE intercepted Iranian missiles; oil surged; Dow −1.13%; 10-yr yield 4.45%; Fed on hold with Powell succession risk May 15. Prior risk-on narrative from May 1 fully reversed. [source: web_research/WDC.json macro_context]
 
 ## Insider activity
 
-Recent Form 4 filings logged here as fact; runtime to interpret signal vs noise.
-
-- **CEO Irving Tan (Mar 24, 2026):** 49 shares from dividend-equivalent rights converted, 1,042 withheld for taxes; holds 618,150 shares directly. Earlier 10b5-1 sale of 20K restricted shares on 2026-02-02.
-- **CLO Cynthia Tregillis (Apr 22, 2026):** 363 shares sold at $377.09 under 10b5-1; holds 120,023.
-- **Chief of Global Ops Vidyadhara (Apr 22, 2026):** 4,595 shares withheld for taxes; holds 99,310.
-
-No open-market insider purchases on file ([StockTitan](https://www.stocktitan.net/sec-filings/WDC/form-4-western-digital-corp-insider-trading-activity-9b88dc148d5b.html)).
+- CEO Irving Tan: 10b5-1 sale of 20K restricted shares on 2026-02-02; 49 shares from dividend-equivalent rights converted (Mar 24, 2026). Holds 618,150 shares directly.
+- CLO Cynthia Tregillis: 363 shares sold at $377.09 under 10b5-1 plan (Apr 22, 2026).
+- No open-market insider purchases. Minor 10b5-1 plan sales only — routine, not a strong signal. [source: web_research/WDC.json competitor_activity, bootstrap 2026-05-01]
 
 ## Analyst consensus
 
-Yahoo Finance / yfinance: 23 analysts, mean target **$448**, high $660, low $182, vs $431.52 close. MarketBeat / TipRanks aggregations: Buy 17, Strong Buy 4, Hold 3, Sell 1. Recent PT changes: B of A (Mohan) $495 from $415 (2026-04-27); Citi (Merchant) $405 from $335 (2026-04-13) ([Benzinga](https://www.benzinga.com/quote/WDC/analyst-ratings), [Stockanalysis](https://stockanalysis.com/stocks/wdc/forecast/)).
+25-analyst consensus: Strong Buy (20 Strong Buy, 1 Moderate Buy, 4 Hold, 0 Sell). Avg price target $456.67 (post-earnings May 1 wave); range $285–$660. Current price ~$442 is near but below the average target, suggesting most analyst upside is in the $456–$572 zone. [source: web_research/WDC.json analyst_consensus]
 
 ## Last updated
 
-2026-05-01 — bootstrap_2026-05-01.
+2026-05-04 — run 20260504_203608. Supersedes bootstrap_2026-05-01. Sources: web_research/WDC.json (2026-05-04), GuruFocus, MarketBeat, WesternDigital.com IR.
