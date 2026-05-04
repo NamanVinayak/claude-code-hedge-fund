@@ -1,0 +1,872 @@
+{
+  "mode": "swing",
+  "analyst_signals": {
+    "swing_breakout": {
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 20,
+        "reasoning": "No valid breakout setup present. Prior call (bearish, run 20260501_173921) was stopped out on 2026-05-01 when price rallied through the $271 stop \u2014 the shooting star pattern failed to follow through bearishly. Adjusting thesis: bulls remain in control, but this is NOT a breakout-from-consolidation opportunity either. Range assessment: no consolidation base is forming. The daily Bollinger Band width is 0.2648 (already expanded, not squeezing) \u2014 the move has already happened. Volume today is 1.01x the 20-day average (50.78M vs 50.09M avg), well below the required 1.5x minimum for breakout confirmation. RSI-14 at 82.9 and RSI-21 at 88.96 signal deeply overbought conditions in an already mature trend. ADX 65.59 with +DI 43.04 vs -DI 10.82 confirms a strong, established trend \u2014 not a pre-breakout coil. The wiki had identified $270.62 as hourly volume-confirmed resistance; price is now trading above it ($271.85), but without the volume surge required to call this a confirmed breakout. Hourly BB %B = 0.957 (hugging upper band) with width 0.0672 \u2014 no hourly squeeze firing. Fibonacci extension at 1.272 = $281.52 is the next meaningful upside level. Support zone per wiki: $256-$260 (daily pivot lows at $260.34 hourly, $256.65). The stock is 19.3% above its 50-SMA (z-score 2.03) \u2014 a statistical extreme, not a breakout launch pad. Squeeze status: OFF (wide bands). No setup for my strategy here \u2014 chart is trending, not coiling. Lessons pattern check: 0% win rate on recent setups (NVDA failed breakout -$63.20). Standing aside.",
+        "entry": 268.26,
+        "target": 281.52,
+        "stop": 260.34,
+        "timeframe": "N/A - neutral, no trade"
+      }
+    },
+    "swing_head_trader": {
+      "AMZN": {
+        "consensus_signal": "bearish",
+        "confidence": 62,
+        "reasoning": "Bearish consensus driven by 2-of-5 directional votes (swing_mean_reversion at 58, swing_macro_context at 76) and 3 neutral abstentions. The abstentions are NOT bullish \u2014 all three neutrals explicitly cite the same overbought conditions (RSI 82.9/88.96, z-score 2.03, +19.3% above 50-SMA) as reasons NOT to buy. This is a 5-of-5 anti-bullish reading masked as a 2-0-3 vote. No agent is bullish. The macro context agent applies veto-weight pressure: Iran missile strike on a US warship has re-ignited oil risk and risk-off flows, S&P 500 local peak at 7,230 on May 1, Fed leadership transition (Powell out May 15, hawkish Warsh likely), and no rate cuts in sight. Regime is transitional-to-risk-off \u2014 this directly suppresses the validity of chasing a stock 19.3% above its 50-SMA. The mean-reversion Branch A thesis is intact: April 30 shooting star on 2.05x average volume at $273.88 high / $265.06 close is a confirmed distribution candle. RSI-14 = 82.9 and RSI-21 = 88.96 are deep overbought across all lookbacks. Z-score vs 50-SMA = 2.03 clears the +2 fade threshold. OBV is positive but the hourly RSI at 61.75 (not extreme) and hourly %B at 0.957 (not outside band) mean the double-confirmation is absent \u2014 this keeps confidence below 70 rather than above 80. CRITICAL POSITION FLAG: An AMZN short is already open from run 20260501_173921, entered at ~$265.86, stop $276, target $244.44. Current price ~$268.26 puts the position -$2.40 unrealized (-0.90%). Capital is already deployed on this thesis. The correct action is to HOLD the existing short, not add a second position. Book is currently net short 3 names (AMD, AMZN, JNJ) vs net long 3 (BAC, DIS, pending AAPL) \u2014 balanced but further shorting would tilt the book directionally. Confluence of levels: stop clusters at $276.0-$276.1 across both bearish agents. Target range: $244.44 (mean-reversion 20-SMA, swing_mean_reversion) to $248.71 (EMA-20, swing_macro_context) \u2014 $244-$249 zone is the mean-reversion target band. Entry for any new position would be current zone $268-$272, but given the existing open short, no new entry is warranted. Confidence set at 62: directional conviction is solid (2 bearish + 3 anti-bullish neutrals + macro veto + open short already placed at a worse price), dialed down from macro agent's 76 by: (a) ADX 65.59 strong-trend headwind against short-fade, (b) absence of hourly RSI extreme, (c) no distribution confirmation in OBV, (d) existing position already deployed making urgency low.",
+        "agent_agreement_pct": 40.0,
+        "key_conflicts": "The primary conflict is swing_trend_momentum (neutral, 30 conf) vs swing_mean_reversion (bearish, 58 conf) vs swing_macro_context (bearish, 76 conf). Trend_momentum correctly identifies ADX 65.59 as one of the strongest possible trend readings \u2014 historically, fading a trend this strong is a low-probability bet even when RSI is overbought. This is the most important headwind to the bearish thesis. However, trend_momentum itself is not bullish \u2014 it is abstaining because the pullback entry condition (price must reach the 10 EMA at $258-$261) has not been met. The disagreement is NOT 'trend momentum thinks bulls win,' it is 'trend momentum sees no valid entry for either bulls or bears right now.' Mean_reversion resolves this correctly: the shooting star on 2x volume IS the reversal confirmation the fade requires, even if the trend is strong. The ADX headwind is acknowledged (confidence held at 58 vs prior 62). Swing_breakout (neutral, 20 conf) caught that its prior bearish call (from run 20260501) was stopped out at $271 \u2014 price rallied through. This is a live warning: bulls showed they can absorb selling at the $270 resistance zone. Catalyst_news (neutral, 78 conf) confirms the post-earnings dynamic is 'sell the news' distribution, not a continuation catalyst \u2014 earnings are priced, next binary is Q2 ~60 trading days out. The Amazon Ads Upfront (May 11) is a non-event for position sizing. Macro_context invokes veto weight: the Iran geopolitical escalation (missile strike on US warship near Jask, May 4) re-creates Strait of Hormuz tail risk, reversing the May 1 peace-talk relief rally. This is the single most important external development since the last run \u2014 it invalidates the 'macro cleared' condition that would be required to justify a long. Net read: all conflicts resolve bearish or to 'hold, don't add long.' No agent provides a credible bull case. Productive disagreement signal: trend_momentum bullish on the structure but abstaining on timing + mean_reversion bearish on extension = 'trend extended, reversal risk rising' \u2014 exactly what shooting-star candle on 2x volume tells us. Breakout agent's stop-out warning is real but was flagged as a failed bearish candle, not a confirmed bullish breakout \u2014 price is still below the April 30 high of $273.88.",
+        "recommended_action": "hold"
+      }
+    },
+    "growth_analyst_agent": {
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 7,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.45,
+            "revenue_growth": 0.12377754683294695,
+            "revenue_trend": -0.0026293691464428204,
+            "eps_growth": 0.2879858657243816,
+            "eps_trend": -0.02007235059922867,
+            "fcf_growth": null,
+            "fcf_trend": 0.0
+          },
+          "growth_valuation": {
+            "score": 0.5,
+            "peg_ratio": 1.89,
+            "price_to_sales_ratio": 4.267434177255323
+          },
+          "margin_expansion": {
+            "score": 0.2,
+            "gross_margin": 0.00638195069899293,
+            "gross_margin_trend": 0.00027466750940727947,
+            "operating_margin": 0.11509991139423435,
+            "operating_margin_trend": -0.010429709913396014,
+            "net_margin": 0.1266069830685622,
+            "net_margin_trend": -0.013139559664959534
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 0.8,
+            "debt_to_equity": 0.1685645822436841,
+            "current_ratio": 1.0508153482718285
+          },
+          "final_analysis": {
+            "signal": "neutral",
+            "confidence": 7,
+            "weighted_score": 0.47
+          }
+        }
+      }
+    },
+    "swing_trend_momentum": {
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 30,
+        "reasoning": "TREND ASSESSMENT: Uptrend is unambiguously confirmed. EMA alignment is clean (10 EMA 258.79 > 21 EMA 247.86 > 50 EMA 234.27), ADX 14 at 65.59 is one of the strongest trend readings possible, and both daily and hourly EMA structures are fully aligned bullish. Higher highs and higher lows are intact (lows: 209 -> 257; highs: 264 -> 273.88). Volume bias is up with OBV confirming price. MOMENTUM ASSESSMENT: All ROC timeframes are positive (5d +1.62%, 10d +7.06%, 21d +27.4%), which confirms the trend. However, the near-term 5d ROC at 1.62% is notably weaker than the 10d at 7.06%, signaling deceleration in the most recent window. MACD histogram is positive at +1.163 but the strategy requires confirmation of expanding \u2014 not just positive \u2014 histogram. RSI 14 is 82.9 and RSI 21 is 88.96, deeply overbought, consistent with trend exhaustion risk on daily. Hourly RSI 21 at 61.75 is healthier, leaving room. ENTRY ZONE ASSESSMENT (critical): The strategy requires a pullback to the 10 or 21 EMA as the entry trigger. Price is currently 3.66% above the 10 EMA ($258.79) and 8.23% above the 21 EMA ($247.86) \u2014 this is NOT a valid entry point under this strategy's rules. Entering here would be chasing an extended trend. The April 30 shooting star at $273.88 high on 2x volume is unresolved overhead resistance near current price. WIKI / LESSONS CONFLICT: Prior wiki note (May 1 run) flagged a shooting star/short setup from $269 \u2014 current data overrides this as price recovered, but the resistance zone at $273-274 remains valid. Macro regime has shifted back to cautious (Iran geopolitical escalation, missile strike on US warship, oil rising, Dow futures lower). Lessons table shows 0% win rate on EMA pullback entries under stretched RSI conditions (NVDA -$63.20). VERDICT: Strong trend exists but no valid entry is present. Wait for a pullback to the 10 EMA zone ($258-261) with momentum re-acceleration before initiating a long position.",
+        "entry": 259.5,
+        "target": 281.52,
+        "stop": 254.5,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_macro_context": {
+      "AMZN": {
+        "signal": "bearish",
+        "confidence": 76,
+        "reasoning": "1. MACRO REGIME: Mixed-to-cautious, leaning risk-off. The May 1 risk-on narrative (Iran peace talks, WTI -2%) has reversed sharply on May 4: reports of missile strikes on a US warship near Jask island have driven oil prices higher and Dow futures lower. Strait of Hormuz closure is back as a tail risk. The S&P 500 hit an all-time intraday high of 7,230 on May 1 \u2014 that session now looks like a local peak, not a breakout. Fed holds at 3.5-3.75% with the most dissents since 1992 and a leadership transition (Powell's last day May 15, Warsh as likely successor with hawkish lean) adding policy uncertainty. No rate cuts in sight. Regime: transitional-to-risk-off \u2014 not a green light for chasing stretched large-caps.\n\n2. RELATIVE STRENGTH ASSESSMENT: AMZN has massively outperformed over the past 21 trading days (ROC 21d = +27.4%). This is LATE-cycle relative strength, not early. Sector rotation discipline calls for bullish entries early in a relative-strength uptrend; at +27.4% the stock is extended. Daily RSI 14 = 82.9, RSI 7 = 79.27, RSI 21 = 88.96 \u2014 across all lookbacks the stock is deeply overbought. The z-score vs SMA-50 is 2.03 (statistically stretched). Price is 19.3% above SMA-50. The hourly Bollinger %B = 0.957 \u2014 price is pressing the upper hourly band. The prior wiki thesis (run 20260501_173921) already identified the April 30 'sell the news' shooting star on 2.05x volume as a short entry signal; current price range ($265-$271) was marked as a short entry zone.\n\n3. ASYMMETRY (BEARISH): Entry short at ~271.85. Target: EMA-20 mean reversion at ~248.71 (8.52% downside move, also aligns with Fib 38.2% retrace at 245.33). Stop: above recent hourly high and volume-confirmed hourly resistance at 276.1 (1.56% adverse move). Asymmetry = 8.52% downside / 1.56% stop = 5.5:1 in favor of the bearish trade \u2014 well above the 2:1 minimum. Bullish alternative (long to Fib ext 1.272 at 294.21) offers ~8.2% upside vs ~6% downside to hourly support at 256.16 = 1.37:1 \u2014 below the 1.5:1 pass threshold. The bearish setup is the only trade with acceptable asymmetry.\n\n4. CAPITAL PRESERVATION FLAGS: No excessive leverage concerns for AMZN (strong balance sheet, $2.92T market cap). However, volatility is meaningful: ATR 14 = $7.56 (2.82% daily range). The macro risk-off tilt from Iran escalation could create a gap-down scenario that bypasses the stop \u2014 position sizing must respect this tail risk. Lessons from wiki (run 20260501): NVDA EMA-pullback Fib dip-buy failed at RSI 81-87 with stretched macro. AMZN is in the same RSI/macro zone. The lesson directly applies: do not buy stretched RSI in a risk-off regime. The prior call grading is null (no prior call by this persona on this ticker), so no anchoring bias. Wiki thesis from May 1 run is not stale and explicitly endorsed bearish \u2014 continuity confirmed by current data.",
+        "entry": 271.85,
+        "target": 248.71,
+        "stop": 276.1,
+        "timeframe": "8-15 trading days"
+      }
+    },
+    "swing_mean_reversion": {
+      "AMZN": {
+        "signal": "bearish",
+        "confidence": 58,
+        "reasoning": "Branch A (fade the extreme) fires. Branch B (buy the dip) does not fire \u2014 AMZN is not in a pullback within the uptrend; price remains near the April 30 shooting star high with no Fib retracement setup.\n\nBranch A case: Daily RSI-14 at 82.9 and RSI-21 at 88.96 are deeply overbought (threshold >75). Z-score (50-day) is 2.03, crossing the +2 fade threshold. Price is 19.33% above the 50-SMA \u2014 extreme extension (>10% is extreme per strategy rules). The April 30 candle (gap to $273.88, close $265.06 on 101M shares \u2014 2x average volume) was the required reversal candle confirmation: a textbook shooting star/sell-the-news bar. That candle provides the 'reversal confirmation' the strategy requires before entering.\n\nModifiers lowering conviction vs. prior call: (1) ADX at 65.59 confirms a very mature strong trend \u2014 trend-fade setups against ADX >60 have elevated failure risk. (2) Hourly RSI is only 61.75, not extreme; the 'hourly extreme + daily extreme = strong fade' double-confirmation is absent. (3) Hourly Bollinger %B is 0.957, approaching but not outside the upper band. (4) OBV is trending up with no divergence from price \u2014 distribution is not yet confirmed by breadth.\n\nPrior call status (in_progress): My 2026-05-01 bearish call at $269 / stop $276 / target $244.44 is still active (3 days elapsed, neither stop nor target hit, MFE 2.33%, MAE -1.61%). I am re-affirming the same directional thesis but not changing the trade parameters materially. Confidence held at 58 (down from prior 62) to account for the strong ADX headwind and lack of hourly extreme confirmation. Wiki context aligns: zero bullish votes across 5 swing agents in prior run, shooting star already catalogued.\n\nLessons check: The only recent loss was an EMA pullback Fib dip-buy on NVDA (0% win rate) \u2014 a different setup type; not directly applicable. No lessons penalizing short-fade setups.\n\nTarget: 20-SMA / middle Bollinger Band at ~$247.37 (mean reversion). Stop: above the April 30 shooting star high at $276. Entry: current price zone ~$268-269.",
+        "entry": 268.5,
+        "target": 247.37,
+        "stop": 276.0,
+        "timeframe": "7-14 trading days"
+      }
+    },
+    "swing_catalyst_news": {
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 78,
+        "reasoning": "CATALYST WINDOW: Q1 2026 earnings fired April 29 after close (EPS $2.78 vs $1.63 consensus, +70% upside surprise; AWS +28% YoY). The catalyst is fully priced. Next identifiable binary is Q2 2026 earnings (~July 30, 2026, ~60+ trading days out). Amazon Ads Upfront on May 11 (approximately 5 trading days out) is the only near-term dated event but is a low-medium ad-showcase, not a binary catalyst \u2014 no position-sizing rationale for a catalyst trade. No catalyst within 10 trading days. NET NEWS SENTIMENT: Neutral-to-mixed. Post-earnings 'sell the news' dynamic is the dominant signal \u2014 price gapped to $273.88 on April 30 then closed at $265.06 on 2.05x average volume (bearish shooting star). Wiki confirms no new material headline flow since. Analyst PT consensus $308.55 (bullish long-term) but that is not a near-term catalyst. INSIDER ACTIVITY: Quiet \u2014 no insider trades in the recent window. TECHNICAL SETUP: Poor for a catalyst-entry. Daily RSI 14 at 82.9, RSI 21 at 88.96 \u2014 severely overbought; this is the extended/exhausted chart condition my rules require me to stand aside on. Price is 19.3% above 50 SMA and z-score 2.03 above the 50-period mean. Daily Bollinger %B at 0.819. Post-earnings shooting star candle on heavy volume is a distribution signal, not a constructive base. Hourly: %B at 0.957 with price pressing the upper hourly band and sitting at volume-confirmed hourly pivot resistance $270.62 \u2014 but hourly relative volume is only 0.02, meaning no volume confirmation of acceptance above resistance (wiki trigger for re-entry requires acceptance above $270.62 ON volume; that condition is not met). LESSONS: Recent NVDA catalyst trade failed precisely because RSI was 81-87 and extended with no bullish confirmation candle before exit \u2014 AMZN matches this pattern. Lowering confidence in any bullish catalyst call under these conditions. CONCLUSION: No binary catalyst within 10 trading days, setup is already extended post-earnings, no insider buying, no volume confirmation of breakout above hourly resistance. All conditions point to neutral. Will re-evaluate if: (1) price pulls back to $252-$258 for a constructive re-entry, or (2) a new material catalyst emerges.",
+        "entry": 271.85,
+        "target": 281.52,
+        "stop": 260.34,
+        "timeframe": "neutral \u2014 no trade"
+      }
+    },
+    "fundamentals_analyst_agent": {
+      "AMZN": {
+        "signal": "bullish",
+        "confidence": 50.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "neutral",
+            "details": "ROE: 21.10%, Net Margin: 12.66%, Op Margin: 11.51%"
+          },
+          "growth_signal": {
+            "signal": "bullish",
+            "details": "Revenue Growth: 12.38%, Earnings Growth: 31.09%"
+          },
+          "financial_health_signal": {
+            "signal": "bullish",
+            "details": "Current Ratio: 1.05, D/E: 0.17"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 32.43, P/B: 7.10, P/S: 4.26"
+          }
+        }
+      }
+    },
+    "technical_analyst_agent": {
+      "AMZN": {
+        "signal": "bullish",
+        "confidence": 44,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 55,
+            "metrics": {
+              "adx": 54.70735116167002,
+              "trend_strength": 0.5470735116167001
+            }
+          },
+          "mean_reversion": {
+            "signal": "bearish",
+            "confidence": 51,
+            "metrics": {
+              "z_score": 2.0259765090956297,
+              "price_vs_bb": 0.8190098651451333,
+              "rsi_14": 82.90423342317773,
+              "rsi_28": 77.67619943908683
+            }
+          },
+          "momentum": {
+            "signal": "bullish",
+            "confidence": 95,
+            "metrics": {
+              "momentum_1m": 0.2464720369048965,
+              "momentum_3m": 0.127749315451804,
+              "momentum_6m": 0.1794895834628456,
+              "volume_momentum": 1.031976384097511
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.27482228762091454,
+              "volatility_regime": 0.8712105572918336,
+              "volatility_z_score": -1.174923157096087,
+              "atr_ratio": 0.02816829872804588
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": -0.11881549552387834,
+              "kurtosis": 0.5302999281407575
+            }
+          }
+        }
+      }
+    },
+    "valuation_analyst_agent": {
+      "AMZN": {
+        "signal": "bearish",
+        "confidence": 90,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $1,548,100,119,304.40, Market Cap: $2,919,237,156,864.00, Gap: -47.0%, Weight: 35%\n  WACC: 10.7%, Bear: $1,070,503,718,700.28, Bull: $1,871,106,258,566.54, Range: $800,602,539,866.26"
+          },
+          "owner_earnings_analysis": {
+            "signal": "bearish",
+            "details": "Value: $1,960,143,193,744.68, Market Cap: $2,919,237,156,864.00, Gap: -32.9%, Weight: 35%"
+          },
+          "ev_ebitda_analysis": {
+            "signal": "neutral",
+            "details": "Value: $2,700,513,571,456.37, Market Cap: $2,919,237,156,864.00, Gap: -7.5%, Weight: 20%"
+          },
+          "residual_income_analysis": {
+            "signal": "bullish",
+            "details": "Value: $3,622,041,617,990.32, Market Cap: $2,919,237,156,864.00, Gap: 24.1%, Weight: 10%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$1,070,503,718,700.28",
+            "base_case": "$1,599,630,206,418.39",
+            "bull_case": "$1,871,106,258,566.54",
+            "wacc_used": "10.7%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      }
+    },
+    "sentiment_analyst_agent": {
+      "AMZN": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      }
+    },
+    "risk_management_agent": {
+      "AMZN": {
+        "remaining_position_limit": 0.0,
+        "max_account_risk_pct": 2.5,
+        "max_account_risk_dollars": 0.0,
+        "max_position_pct": 0.3,
+        "correlation_advisory": null,
+        "current_price": 271.4599914550781,
+        "volatility_metrics": {
+          "daily_volatility": 0.020815426748906102,
+          "annualized_volatility": 0.3304346556677236,
+          "volatility_percentile": 71.81818181818181,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.25423744064482634,
+          "max_correlation_with_active": 0.47855206174746084,
+          "top_correlated_tickers": [
+            {
+              "ticker": "META",
+              "correlation": 0.47855206174746084
+            },
+            {
+              "ticker": "AAPL",
+              "correlation": 0.335588751462627
+            },
+            {
+              "ticker": "BAC",
+              "correlation": 0.3251582032972583
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 0.0,
+          "current_position_value": 0.0,
+          "available_cash": 0.0,
+          "max_position_pct": 0.3,
+          "max_position_dollars": 0.0,
+          "max_account_risk_pct": 2.5,
+          "max_account_risk_dollars": 0.0,
+          "sizing_model": "PM picks conviction + account_risk_pct (\u22642.5%); qty = (capital \u00d7 risk_pct) / |entry - stop|. Hard cap: position \u2264 30% of capital ($0). Vol/correlation are context for PM to consider qualitatively."
+        }
+      }
+    }
+  },
+  "allowed_actions": {
+    "AMZN": {
+      "hold": 0
+    }
+  },
+  "portfolio": {
+    "cash": 0.0,
+    "margin_requirement": 0.0,
+    "margin_used": 0.0,
+    "positions": {
+      "AMZN": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      }
+    },
+    "other_positions": [
+      {
+        "id": 110,
+        "run_id": "20260430_190826",
+        "mode": "swing",
+        "ticker": "BAC",
+        "direction": "long",
+        "quantity": 15,
+        "entry_price": 52.75,
+        "target_price": 55.4,
+        "target_price_2": null,
+        "stop_loss": 51.5,
+        "confidence": 55,
+        "timeframe": "5-10 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 52.75,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-04-30T19:30:48+00:00",
+        "entered_at": "2026-04-30T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 15, \"entry_price\": 52.75, \"target_price\": 55.4, \"stop_loss\": 51.5, \"risk_reward_ratio\": \"2.12:1\", \"timeframe\": \"5-10 trading days\", \"confidence\": 55, \"reasoning\": \"Head Trader bullish (55 conf), 3/5 swing agents agree. Pullback to 10/21 EMA confluence at $52.73-52.88 in ADX-54.8 uptrend. R/R 2.12:1 meets threshold. Risk mgr limit $806; 15 shares @ $52.75 = $791 within limit. Stop below wiki stop zone / 38.2% Fib at $51.50. Target $55.40 resistance (5 tests). Key risks: OBV divergence, Berkshire overhang \\u2014 sized defensively at max allowed qty but within vol-adjusted limit.\"}",
+        "last_checked_at": "2026-05-04T17:40:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.075
+      },
+      {
+        "id": 113,
+        "run_id": "20260501_132346",
+        "mode": "swing",
+        "ticker": "AMD",
+        "direction": "short",
+        "quantity": 1,
+        "entry_price": 354.49,
+        "target_price": 277.74,
+        "target_price_2": null,
+        "stop_loss": 372.31,
+        "confidence": 42,
+        "timeframe": "8-15 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 354.49,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T14:40:43+00:00",
+        "entered_at": "2026-05-01T13:33:00+00:00",
+        "closed_at": null,
+        "raw_decision": null,
+        "last_checked_at": "2026-05-04T17:40:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.071
+      },
+      {
+        "id": 114,
+        "run_id": "20260501_144523",
+        "mode": "swing",
+        "ticker": "AAPL",
+        "direction": "long",
+        "quantity": 2,
+        "entry_price": 276.0,
+        "target_price": 294.84,
+        "target_price_2": null,
+        "stop_loss": 269.5,
+        "confidence": 42,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 277.2699890136719,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T15:00:50+00:00",
+        "entered_at": "2026-05-04T13:31:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 2, \"entry_price\": 276.0, \"target_price\": 294.84, \"stop_loss\": 269.5, \"risk_reward_ratio\": \"2.9:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 42, \"reasoning\": \"Head Trader neutral (42) \\u2014 wait for pullback to $274-278 before entry. Limit buy at $276 (preferred entry): breakout above $276.11 resistance confirmed on 2.08x volume, measured move to $294.84 intact, RSI 61.64 healthy, OBV uptrend, post-earnings drift thesis (Q2 FY2026 beat, analyst targets $299-305). R/R 2.9:1 (18.84 up / 6.50 down) clears 2:1 minimum from pullback level. Stop $269.50 below pre-earnings pivot. NOT chasing at $283 \\u2014 hourly Z-score 2.52 and Bollinger %B 1.28 flag overextension; mean reversion agent correctly warns of fade risk at current price. Entering only on constructive pullback to Fib 38.2% / daily upper BB confluence at $274-278. Size: 2 shares x $276 = $552, within risk manager cap $768 and 25% capital limit $963. ADX 16.83 is the main caveat \\u2014 trigger requires ADX rising above 19 on pullback candle. Key risks: insider net selling (-$235M, Cook sold at $251-256), ADX still sub-25, one prior portfolio loss (NVDA EMA dip, -$264) on similar setup. Sized conservatively at 2 shares.\"}",
+        "last_checked_at": "2026-05-04T17:40:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.052
+      },
+      {
+        "id": 116,
+        "run_id": "20260501_194523",
+        "mode": "swing",
+        "ticker": "JNJ",
+        "direction": "short",
+        "quantity": 3,
+        "entry_price": 229.85,
+        "target_price": 216.53,
+        "target_price_2": null,
+        "stop_loss": 235.0,
+        "confidence": 58,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 229.05999755859375,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T20:15:58+00:00",
+        "entered_at": "2026-05-01T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"short\", \"quantity\": 3, \"entry_price\": 229.85, \"entry_tolerance_pct\": 1.0, \"target_price\": 216.53, \"stop_loss\": 235.0, \"risk_reward_ratio\": \"2.59:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 58, \"account_risk_pct\": 0.51, \"reasoning\": \"4/5 swing agents bearish. Confirmed daily downtrend (EMA stack, ADX 30.72, -DI>+DI, OBV down). Bounce to 10-EMA resistance ($229-231) = textbook short entry. R/R 2.59:1. No open JNJ position. Risk-on macro removes defensive bid. 3 shares @ $229.85 = $689.55 (within 25% cap). Stop $235 above EMA21/consolidation.\"}",
+        "last_checked_at": "2026-05-04T17:40:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.51
+      },
+      {
+        "id": 117,
+        "run_id": "20260501_221355",
+        "mode": "swing",
+        "ticker": "DIS",
+        "direction": "long",
+        "quantity": 2,
+        "entry_price": 102.5,
+        "target_price": 107.11,
+        "target_price_2": null,
+        "stop_loss": 101.0,
+        "confidence": 62,
+        "timeframe": "5-10 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 103.49500274658205,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T22:41:01+00:00",
+        "entered_at": "2026-05-01T13:39:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 2, \"entry_price\": 102.5, \"entry_tolerance_pct\": 1.0, \"target_price\": 107.11, \"stop_loss\": 101.0, \"risk_reward_ratio\": \"3.07:1\", \"timeframe\": \"5-10 trading days\", \"confidence\": 62, \"account_risk_pct\": 0.13, \"reasoning\": \"Head Trader bullish (62), 4/5 swing agents agree. Pre-earnings momentum (May 6-13 catalyst). Apr 30 breakout above $103 on 1.23x vol, MACD bullish cross, ADX 37.34. Limit at $102.50 pullback for 3.07:1 R/R. Stop $101.00 (17-test support). Allowed max qty=2; 2 shares x $102.50 = $205 within 25% cap.\"}",
+        "last_checked_at": "2026-05-04T17:40:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.13
+      },
+      {
+        "id": 118,
+        "run_id": "20260504_143030",
+        "mode": "swing",
+        "ticker": "META",
+        "direction": "short",
+        "quantity": 1,
+        "entry_price": 621.0,
+        "target_price": 575.0,
+        "target_price_2": null,
+        "stop_loss": 635.0,
+        "confidence": 62,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 611.780029296875,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-04T14:46:00+00:00",
+        "entered_at": "2026-05-04T14:48:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"short\", \"quantity\": 1, \"entry_price\": 621.0, \"entry_tolerance_pct\": 1.5, \"target_price\": 575.0, \"stop_loss\": 635.0, \"risk_reward_ratio\": \"3.3:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 62, \"account_risk_pct\": 1.0, \"reasoning\": \"Head Trader bearish 62 conf. Conditional short on bounce to $619-628 resistance (Fib 38.2% + former support) with bearish rejection candle. 3/5 swing agents bearish/conditional bearish. Post-earnings capex-shock breakdown ($669\\u2192$600, 3.26x avg vol Apr 30) confirmed structural re-rating. Daily ADX 49.52 with -DI 34.25 >> +DI 26.06; hourly ADX 50.9 with -DI 47.79 >> +DI 7.66 \\u2014 extreme bearish trend. Risk-off macro (Iran escalation May 4, Fed hawkish succession risk). R/R 3.3:1 clears 2:1 minimum. Entry $621 is limit on bounce \\u2014 do NOT chase if price breaks below $596. Stop $635 above all identified resistance. Target $575 (Fib extension support). 1 share \\u00d7 $621 = $621 within risk manager cap of $641.91. High-vol stock (ATR 3.27%) \\u2192 tolerance 1.5%. Mean-reversion bullish vote (42 conf, 0% win-rate lesson) discounted; breakout absent. No open META position per portfolio state.\"}",
+        "last_checked_at": "2026-05-04T17:40:00+00:00",
+        "entry_tolerance_pct": 1.5,
+        "account_risk_pct": 1.0
+      },
+      {
+        "id": 120,
+        "run_id": "20260430_190826",
+        "mode": "swing",
+        "ticker": "BAC",
+        "direction": "long",
+        "quantity": 15,
+        "entry_price": 52.75,
+        "target_price": 55.4,
+        "target_price_2": null,
+        "stop_loss": 51.5,
+        "confidence": 55,
+        "timeframe": "5-10 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 52.75,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-04T17:14:29+00:00",
+        "entered_at": "2026-05-04T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 15, \"entry_price\": 52.75, \"target_price\": 55.4, \"stop_loss\": 51.5, \"risk_reward_ratio\": \"2.12:1\", \"timeframe\": \"5-10 trading days\", \"confidence\": 55, \"reasoning\": \"Head Trader bullish (55 conf), 3/5 swing agents agree. Pullback to 10/21 EMA confluence at $52.73-52.88 in ADX-54.8 uptrend. R/R 2.12:1 meets threshold. Risk mgr limit $806; 15 shares @ $52.75 = $791 within limit. Stop below wiki stop zone / 38.2% Fib at $51.50. Target $55.40 resistance (5 tests). Key risks: OBV divergence, Berkshire overhang \\u2014 sized defensively at max allowed qty but within vol-adjusted limit.\"}",
+        "last_checked_at": "2026-05-04T17:40:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 1.5
+      },
+      {
+        "id": 122,
+        "run_id": "20260501_144523",
+        "mode": "swing",
+        "ticker": "AAPL",
+        "direction": "long",
+        "quantity": 2,
+        "entry_price": 276.0,
+        "target_price": 294.84,
+        "target_price_2": null,
+        "stop_loss": 269.5,
+        "confidence": 42,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 278.5799865722656,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-04T17:19:07+00:00",
+        "entered_at": "2026-05-04T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 2, \"entry_price\": 276.0, \"target_price\": 294.84, \"stop_loss\": 269.5, \"risk_reward_ratio\": \"2.9:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 42, \"reasoning\": \"Head Trader neutral (42) \\u2014 wait for pullback to $274-278 before entry. Limit buy at $276 (preferred entry): breakout above $276.11 resistance confirmed on 2.08x volume, measured move to $294.84 intact, RSI 61.64 healthy, OBV uptrend, post-earnings drift thesis (Q2 FY2026 beat, analyst targets $299-305). R/R 2.9:1 (18.84 up / 6.50 down) clears 2:1 minimum from pullback level. Stop $269.50 below pre-earnings pivot. NOT chasing at $283 \\u2014 hourly Z-score 2.52 and Bollinger %B 1.28 flag overextension; mean reversion agent correctly warns of fade risk at current price. Entering only on constructive pullback to Fib 38.2% / daily upper BB confluence at $274-278. Size: 2 shares x $276 = $552, within risk manager cap $768 and 25% capital limit $963. ADX 16.83 is the main caveat \\u2014 trigger requires ADX rising above 19 on pullback candle. Key risks: insider net selling (-$235M, Cook sold at $251-256), ADX still sub-25, one prior portfolio loss (NVDA EMA dip, -$264) on similar setup. Sized conservatively at 2 shares.\"}",
+        "last_checked_at": "2026-05-04T17:40:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 1.5
+      },
+      {
+        "id": 123,
+        "run_id": "20260430_190826",
+        "mode": "swing",
+        "ticker": "BAC",
+        "direction": "long",
+        "quantity": 15,
+        "entry_price": 52.75,
+        "target_price": 55.4,
+        "target_price_2": null,
+        "stop_loss": 51.5,
+        "confidence": 55,
+        "timeframe": "5-10 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 52.75,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-04T17:19:29+00:00",
+        "entered_at": "2026-05-04T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 15, \"entry_price\": 52.75, \"target_price\": 55.4, \"stop_loss\": 51.5, \"risk_reward_ratio\": \"2.12:1\", \"timeframe\": \"5-10 trading days\", \"confidence\": 55, \"reasoning\": \"Head Trader bullish (55 conf), 3/5 swing agents agree. Pullback to 10/21 EMA confluence at $52.73-52.88 in ADX-54.8 uptrend. R/R 2.12:1 meets threshold. Risk mgr limit $806; 15 shares @ $52.75 = $791 within limit. Stop below wiki stop zone / 38.2% Fib at $51.50. Target $55.40 resistance (5 tests). Key risks: OBV divergence, Berkshire overhang \\u2014 sized defensively at max allowed qty but within vol-adjusted limit.\"}",
+        "last_checked_at": "2026-05-04T17:40:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 1.5
+      },
+      {
+        "id": 127,
+        "run_id": "20260501_221355",
+        "mode": "swing",
+        "ticker": "DIS",
+        "direction": "long",
+        "quantity": 2,
+        "entry_price": 102.5,
+        "target_price": 107.11,
+        "target_price_2": null,
+        "stop_loss": 101.0,
+        "confidence": 62,
+        "timeframe": "5-10 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 102.5,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-04T17:23:11+00:00",
+        "entered_at": "2026-05-04T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 2, \"entry_price\": 102.5, \"entry_tolerance_pct\": 1.0, \"target_price\": 107.11, \"stop_loss\": 101.0, \"risk_reward_ratio\": \"3.07:1\", \"timeframe\": \"5-10 trading days\", \"confidence\": 62, \"account_risk_pct\": 0.13, \"reasoning\": \"Head Trader bullish (62), 4/5 swing agents agree. Pre-earnings momentum (May 6-13 catalyst). Apr 30 breakout above $103 on 1.23x vol, MACD bullish cross, ADX 37.34. Limit at $102.50 pullback for 3.07:1 R/R. Stop $101.00 (17-test support). Allowed max qty=2; 2 shares x $102.50 = $205 within 25% cap.\"}",
+        "last_checked_at": "2026-05-04T17:40:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.13
+      },
+      {
+        "id": 128,
+        "run_id": "20260501_144523",
+        "mode": "swing",
+        "ticker": "AAPL",
+        "direction": "long",
+        "quantity": 2,
+        "entry_price": 276.0,
+        "target_price": 294.84,
+        "target_price_2": null,
+        "stop_loss": 269.5,
+        "confidence": 42,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 278.5799865722656,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-04T17:24:03+00:00",
+        "entered_at": "2026-05-04T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 2, \"entry_price\": 276.0, \"target_price\": 294.84, \"stop_loss\": 269.5, \"risk_reward_ratio\": \"2.9:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 42, \"reasoning\": \"Head Trader neutral (42) \\u2014 wait for pullback to $274-278 before entry. Limit buy at $276 (preferred entry): breakout above $276.11 resistance confirmed on 2.08x volume, measured move to $294.84 intact, RSI 61.64 healthy, OBV uptrend, post-earnings drift thesis (Q2 FY2026 beat, analyst targets $299-305). R/R 2.9:1 (18.84 up / 6.50 down) clears 2:1 minimum from pullback level. Stop $269.50 below pre-earnings pivot. NOT chasing at $283 \\u2014 hourly Z-score 2.52 and Bollinger %B 1.28 flag overextension; mean reversion agent correctly warns of fade risk at current price. Entering only on constructive pullback to Fib 38.2% / daily upper BB confluence at $274-278. Size: 2 shares x $276 = $552, within risk manager cap $768 and 25% capital limit $963. ADX 16.83 is the main caveat \\u2014 trigger requires ADX rising above 19 on pullback candle. Key risks: insider net selling (-$235M, Cook sold at $251-256), ADX still sub-25, one prior portfolio loss (NVDA EMA dip, -$264) on similar setup. Sized conservatively at 2 shares.\"}",
+        "last_checked_at": "2026-05-04T17:40:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 1.5
+      },
+      {
+        "id": 129,
+        "run_id": "20260504_143030",
+        "mode": "swing",
+        "ticker": "META",
+        "direction": "short",
+        "quantity": 1,
+        "entry_price": 621.0,
+        "target_price": 575.0,
+        "target_price_2": null,
+        "stop_loss": 635.0,
+        "confidence": 62,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 611.780029296875,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-04T17:24:53+00:00",
+        "entered_at": "2026-05-04T14:48:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"short\", \"quantity\": 1, \"entry_price\": 621.0, \"entry_tolerance_pct\": 1.5, \"target_price\": 575.0, \"stop_loss\": 635.0, \"risk_reward_ratio\": \"3.3:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 62, \"account_risk_pct\": 1.0, \"reasoning\": \"Head Trader bearish 62 conf. Conditional short on bounce to $619-628 resistance (Fib 38.2% + former support) with bearish rejection candle. 3/5 swing agents bearish/conditional bearish. Post-earnings capex-shock breakdown ($669\\u2192$600, 3.26x avg vol Apr 30) confirmed structural re-rating. Daily ADX 49.52 with -DI 34.25 >> +DI 26.06; hourly ADX 50.9 with -DI 47.79 >> +DI 7.66 \\u2014 extreme bearish trend. Risk-off macro (Iran escalation May 4, Fed hawkish succession risk). R/R 3.3:1 clears 2:1 minimum. Entry $621 is limit on bounce \\u2014 do NOT chase if price breaks below $596. Stop $635 above all identified resistance. Target $575 (Fib extension support). 1 share \\u00d7 $621 = $621 within risk manager cap of $641.91. High-vol stock (ATR 3.27%) \\u2192 tolerance 1.5%. Mean-reversion bullish vote (42 conf, 0% win-rate lesson) discounted; breakout absent. No open META position per portfolio state.\"}",
+        "last_checked_at": "2026-05-04T17:40:00+00:00",
+        "entry_tolerance_pct": 1.5,
+        "account_risk_pct": 1.0
+      },
+      {
+        "id": 131,
+        "run_id": "20260501_221355",
+        "mode": "swing",
+        "ticker": "DIS",
+        "direction": "long",
+        "quantity": 2,
+        "entry_price": 102.5,
+        "target_price": 107.11,
+        "target_price_2": null,
+        "stop_loss": 101.0,
+        "confidence": 62,
+        "timeframe": "5-10 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 102.5,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-04T17:28:08+00:00",
+        "entered_at": "2026-05-04T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 2, \"entry_price\": 102.5, \"entry_tolerance_pct\": 1.0, \"target_price\": 107.11, \"stop_loss\": 101.0, \"risk_reward_ratio\": \"3.07:1\", \"timeframe\": \"5-10 trading days\", \"confidence\": 62, \"account_risk_pct\": 0.13, \"reasoning\": \"Head Trader bullish (62), 4/5 swing agents agree. Pre-earnings momentum (May 6-13 catalyst). Apr 30 breakout above $103 on 1.23x vol, MACD bullish cross, ADX 37.34. Limit at $102.50 pullback for 3.07:1 R/R. Stop $101.00 (17-test support). Allowed max qty=2; 2 shares x $102.50 = $205 within 25% cap.\"}",
+        "last_checked_at": "2026-05-04T17:38:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.13
+      },
+      {
+        "id": 132,
+        "run_id": "20260430_190826",
+        "mode": "swing",
+        "ticker": "BAC",
+        "direction": "long",
+        "quantity": 15,
+        "entry_price": 52.75,
+        "target_price": 55.4,
+        "target_price_2": null,
+        "stop_loss": 51.5,
+        "confidence": 55,
+        "timeframe": "5-10 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 52.75,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-04T17:29:08+00:00",
+        "entered_at": "2026-05-04T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 15, \"entry_price\": 52.75, \"target_price\": 55.4, \"stop_loss\": 51.5, \"risk_reward_ratio\": \"2.12:1\", \"timeframe\": \"5-10 trading days\", \"confidence\": 55, \"reasoning\": \"Head Trader bullish (55 conf), 3/5 swing agents agree. Pullback to 10/21 EMA confluence at $52.73-52.88 in ADX-54.8 uptrend. R/R 2.12:1 meets threshold. Risk mgr limit $806; 15 shares @ $52.75 = $791 within limit. Stop below wiki stop zone / 38.2% Fib at $51.50. Target $55.40 resistance (5 tests). Key risks: OBV divergence, Berkshire overhang \\u2014 sized defensively at max allowed qty but within vol-adjusted limit.\"}",
+        "last_checked_at": "2026-05-04T17:38:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 1.5
+      },
+      {
+        "id": 133,
+        "run_id": "20260504_143030",
+        "mode": "swing",
+        "ticker": "META",
+        "direction": "short",
+        "quantity": 1,
+        "entry_price": 621.0,
+        "target_price": 575.0,
+        "target_price_2": null,
+        "stop_loss": 635.0,
+        "confidence": 62,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 611.780029296875,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-04T17:29:38+00:00",
+        "entered_at": "2026-05-04T14:48:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"short\", \"quantity\": 1, \"entry_price\": 621.0, \"entry_tolerance_pct\": 1.5, \"target_price\": 575.0, \"stop_loss\": 635.0, \"risk_reward_ratio\": \"3.3:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 62, \"account_risk_pct\": 1.0, \"reasoning\": \"Head Trader bearish 62 conf. Conditional short on bounce to $619-628 resistance (Fib 38.2% + former support) with bearish rejection candle. 3/5 swing agents bearish/conditional bearish. Post-earnings capex-shock breakdown ($669\\u2192$600, 3.26x avg vol Apr 30) confirmed structural re-rating. Daily ADX 49.52 with -DI 34.25 >> +DI 26.06; hourly ADX 50.9 with -DI 47.79 >> +DI 7.66 \\u2014 extreme bearish trend. Risk-off macro (Iran escalation May 4, Fed hawkish succession risk). R/R 3.3:1 clears 2:1 minimum. Entry $621 is limit on bounce \\u2014 do NOT chase if price breaks below $596. Stop $635 above all identified resistance. Target $575 (Fib extension support). 1 share \\u00d7 $621 = $621 within risk manager cap of $641.91. High-vol stock (ATR 3.27%) \\u2192 tolerance 1.5%. Mean-reversion bullish vote (42 conf, 0% win-rate lesson) discounted; breakout absent. No open META position per portfolio state.\"}",
+        "last_checked_at": "2026-05-04T17:38:00+00:00",
+        "entry_tolerance_pct": 1.5,
+        "account_risk_pct": 1.0
+      }
+    ],
+    "realized_gains": {
+      "AMZN": {
+        "long": 0.0,
+        "short": 0.0
+      }
+    },
+    "pending_orders": [
+      {
+        "id": 126,
+        "run_id": "20260501_194523",
+        "mode": "swing",
+        "ticker": "JNJ",
+        "direction": "short",
+        "quantity": 3,
+        "entry_price": 229.85,
+        "target_price": 216.53,
+        "target_price_2": null,
+        "stop_loss": 235.0,
+        "confidence": 58,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "pending",
+        "entry_fill_price": null,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-04T17:22:10+00:00",
+        "entered_at": null,
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"short\", \"quantity\": 3, \"entry_price\": 229.85, \"entry_tolerance_pct\": 1.0, \"target_price\": 216.53, \"stop_loss\": 235.0, \"risk_reward_ratio\": \"2.59:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 58, \"account_risk_pct\": 0.51, \"reasoning\": \"4/5 swing agents bearish. Confirmed daily downtrend (EMA stack, ADX 30.72, -DI>+DI, OBV down). Bounce to 10-EMA resistance ($229-231) = textbook short entry. R/R 2.59:1. No open JNJ position. Risk-on macro removes defensive bid. 3 shares @ $229.85 = $689.55 (within 25% cap). Stop $235 above EMA21/consolidation.\"}",
+        "last_checked_at": "2026-05-04T17:40:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.51
+      }
+    ],
+    "recent_closed": [
+      {
+        "ticker": "AMZN",
+        "direction": "short",
+        "status": "stop_hit",
+        "entry_price": 269.0,
+        "exit_fill_price": 276.0,
+        "pnl": -7.0,
+        "closed_at": "2026-05-04T14:48:00+00:00",
+        "timeframe": "7-14 trading days"
+      },
+      {
+        "ticker": "AMZN",
+        "direction": "short",
+        "status": "stop_hit",
+        "entry_price": 269.0,
+        "exit_fill_price": 276.0,
+        "pnl": -7.0,
+        "closed_at": "2026-05-04T14:48:00+00:00",
+        "timeframe": "7-14 trading days"
+      },
+      {
+        "ticker": "AMZN",
+        "direction": "short",
+        "status": "stop_hit",
+        "entry_price": 269.0,
+        "exit_fill_price": 276.0,
+        "pnl": -7.0,
+        "closed_at": "2026-05-04T14:48:00+00:00",
+        "timeframe": "7-14 trading days"
+      },
+      {
+        "ticker": "AMZN",
+        "direction": "short",
+        "status": "stop_hit",
+        "entry_price": 269.0,
+        "exit_fill_price": 276.0,
+        "pnl": -7.0,
+        "closed_at": "2026-05-04T14:48:00+00:00",
+        "timeframe": "7-14 trading days"
+      },
+      {
+        "ticker": "NVDA",
+        "direction": "long",
+        "status": "stop_hit",
+        "entry_price": 209.25,
+        "exit_fill_price": 205.3,
+        "pnl": -264.64999999999924,
+        "closed_at": "2026-05-04T13:30:00+00:00",
+        "timeframe": "5-10 trading days"
+      },
+      {
+        "ticker": "NVDA",
+        "direction": "long",
+        "status": "stop_hit",
+        "entry_price": 209.25,
+        "exit_fill_price": 205.3,
+        "pnl": -264.64999999999924,
+        "closed_at": "2026-05-04T13:30:00+00:00",
+        "timeframe": "5-10 trading days"
+      },
+      {
+        "ticker": "NVDA",
+        "direction": "long",
+        "status": "stop_hit",
+        "entry_price": 209.25,
+        "exit_fill_price": 205.3,
+        "pnl": -264.64999999999924,
+        "closed_at": "2026-05-04T13:30:00+00:00",
+        "timeframe": "5-10 trading days"
+      },
+      {
+        "ticker": "NVDA",
+        "direction": "long",
+        "status": "stop_hit",
+        "entry_price": 209.25,
+        "exit_fill_price": 205.3,
+        "pnl": -63.2,
+        "closed_at": "2026-04-30T15:59:00",
+        "timeframe": "5-10 trading days"
+      }
+    ]
+  },
+  "tickers": [
+    "AMZN"
+  ],
+  "end_date": "2026-05-04",
+  "degraded_inputs": []
+}

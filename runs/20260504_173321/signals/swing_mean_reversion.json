@@ -1,0 +1,11 @@
+{
+  "AMZN": {
+    "signal": "bearish",
+    "confidence": 58,
+    "reasoning": "Branch A (fade the extreme) fires. Branch B (buy the dip) does not fire — AMZN is not in a pullback within the uptrend; price remains near the April 30 shooting star high with no Fib retracement setup.\n\nBranch A case: Daily RSI-14 at 82.9 and RSI-21 at 88.96 are deeply overbought (threshold >75). Z-score (50-day) is 2.03, crossing the +2 fade threshold. Price is 19.33% above the 50-SMA — extreme extension (>10% is extreme per strategy rules). The April 30 candle (gap to $273.88, close $265.06 on 101M shares — 2x average volume) was the required reversal candle confirmation: a textbook shooting star/sell-the-news bar. That candle provides the 'reversal confirmation' the strategy requires before entering.\n\nModifiers lowering conviction vs. prior call: (1) ADX at 65.59 confirms a very mature strong trend — trend-fade setups against ADX >60 have elevated failure risk. (2) Hourly RSI is only 61.75, not extreme; the 'hourly extreme + daily extreme = strong fade' double-confirmation is absent. (3) Hourly Bollinger %B is 0.957, approaching but not outside the upper band. (4) OBV is trending up with no divergence from price — distribution is not yet confirmed by breadth.\n\nPrior call status (in_progress): My 2026-05-01 bearish call at $269 / stop $276 / target $244.44 is still active (3 days elapsed, neither stop nor target hit, MFE 2.33%, MAE -1.61%). I am re-affirming the same directional thesis but not changing the trade parameters materially. Confidence held at 58 (down from prior 62) to account for the strong ADX headwind and lack of hourly extreme confirmation. Wiki context aligns: zero bullish votes across 5 swing agents in prior run, shooting star already catalogued.\n\nLessons check: The only recent loss was an EMA pullback Fib dip-buy on NVDA (0% win rate) — a different setup type; not directly applicable. No lessons penalizing short-fade setups.\n\nTarget: 20-SMA / middle Bollinger Band at ~$247.37 (mean reversion). Stop: above the April 30 shooting star high at $276. Entry: current price zone ~$268-269.",
+    "entry": 268.5,
+    "target": 247.37,
+    "stop": 276.0,
+    "timeframe": "7-14 trading days"
+  }
+}

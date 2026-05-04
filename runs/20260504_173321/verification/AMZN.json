@@ -1,0 +1,77 @@
+{
+  "ticker": "AMZN",
+  "verified_at": "2026-05-04T17:33:21",
+  "checks": [
+    {
+      "metric": "gross_margin",
+      "our_value": 0.00638,
+      "web_value": 0.5079,
+      "source": "GuruFocus / MacroTrends / Zacks (TTM through Q1 2026)",
+      "status": "MISMATCH",
+      "deviation": "7860%",
+      "note": "Our value 0.638% is implausible for Amazon — correct TTM gross margin is ~50.8%. Likely a unit or decimal error in the data pipeline (perhaps gross profit divided by wrong denominator). This is a critical data bug per rule #6 (margins >100% or clearly wrong values).",
+      "action": "replaced with web value (0.5079) in all facts bundles containing this metric: warren_buffett__AMZN.json, aswath_damodaran__AMZN.json"
+    },
+    {
+      "metric": "net_margin",
+      "our_value": 0.1266,
+      "web_value": 0.1083,
+      "source": "MacroTrends / FinanceCharts (TTM Dec 2025); Q1 2026 TTM ~12.4% (stocktitan/alphastreet)",
+      "status": "ok",
+      "deviation": "17%",
+      "note": "Within 20% threshold. Our value (~12.66%) reflects Q1 2026 TTM (March 31, 2026), which is slightly higher than the FY2025 figure (~10.83%). Web sources confirm net margin improved from ~8% to ~11-12.7% range in recent periods. No correction needed."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.1151,
+      "web_value": 0.115,
+      "source": "GuruFocus / companiesmarketcap / alphastreet (TTM through Q1 2026: 11.5%)",
+      "status": "ok",
+      "deviation": "0.1%",
+      "note": "Exact match. Web sources confirm 11.5% TTM operating margin as of Q1 2026. Q1 2026 single-quarter margin was a record 13.1%."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 32.48,
+      "web_value": 32.5,
+      "source": "GuruFocus / FinanceCharts / companiesmarketcap (May 1, 2026: ~32.06-33.25 range)",
+      "status": "ok",
+      "deviation": "0.1%",
+      "note": "Essentially identical. Web consensus P/E is ~32-33 as of early May 2026."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 2923435655168.0,
+      "web_value": 2884000000000.0,
+      "source": "companiesmarketcap / stockanalysis.com (May 3, 2026: ~$2.884T)",
+      "status": "ok",
+      "deviation": "1.4%",
+      "note": "Within normal daily stock price fluctuation. Our value ($2.923T) vs web ($2.884T) — ~$39B difference consistent with a few days' price movement."
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.211,
+      "web_value": 0.2172,
+      "source": "GuruFocus (21.72% current TTM)",
+      "status": "ok",
+      "deviation": "2.9%",
+      "note": "Well within threshold. Web sources range 18.89%-24.29% depending on exact period and methodology; our value 21.1% is squarely in this range."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.106,
+      "web_value": 0.09,
+      "source": "Eulerpool (ROA 0.09 for 2026); FinanceCharts; Macrotrends",
+      "status": "ok",
+      "deviation": "17.8%",
+      "note": "Just under the 20% threshold. Our value (10.6%) vs web (9-11.15% range depending on source and period). No correction needed."
+    }
+  ],
+  "overall_status": "1 mismatch corrected (gross_margin data bug: 0.638% corrected to 50.79%)",
+  "corrections_applied": true,
+  "files_corrected": [
+    "runs/20260504_173321/facts/warren_buffett__AMZN.json",
+    "runs/20260504_173321/facts/aswath_damodaran__AMZN.json"
+  ],
+  "summary": "Amazon's facts bundles were largely accurate. The only material error was gross_margin (0.638% vs ~50.8% actual) — a ~7,860% deviation consistent with a decimal placement or denominator bug in the data pipeline. All other metrics (net_margin, operating_margin, PE ratio, market_cap, ROE, ROA) verified within acceptable tolerance of web sources. Corrected gross_margin to 0.5079 in the 2 files that contained it."
+}
