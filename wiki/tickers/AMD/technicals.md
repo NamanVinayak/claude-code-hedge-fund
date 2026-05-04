@@ -1,54 +1,55 @@
 ---
 name: AMD technicals
-last_updated: 2026-05-01
-last_run_id: 20260501_133944
+last_updated: 2026-05-04
+last_run_id: 20260504_134825
 target_words: 350
 stale_after_days: 7
-word_count: 352
-summary: breakout above $352.99 unconfirmed (1.05x vol vs 1.5x required) — price at $354-357 ATH; ADX 74.94 strongest ever; RSI 83-86 overbought; hold pending earnings binary May 5 or pullback to 308-315
+word_count: 354
+summary: Earnings-eve hold — price $360.54 (+$6 from prior run); ADX 76.53 highest ever; RSI 83.49/86.42 extreme overbought; OBV bearish divergence; short underwater by ~$6; earnings binary May 5 AMC vetoes all new entries
 ---
 
 # AMD — Technicals
 
 ## TL;DR
 
-As of run 20260501_133944, AMD cleared the $352.99 breakout trigger (7x tested, volume-confirmed hourly pivot high) with daily close at $354.49 and intraday high ~$357. However, the breakout is disqualified: daily relative volume only 1.05x (vs 1.5x+ required). ADX 74.94 is the highest ever recorded for AMD in this system. RSI 83-86 and Z-score 2.60 confirm statistical overextension. No actionable entry — earnings binary May 5 vetoes all swing positions in either direction. Re-entry paths: post-earnings gap-and-hold above $352.99 with 1.5x+ vol, or pullback to $308-$315 EMA zone.
+As of run 20260504_134825 (May 4, 2026), AMD closed at $360.54 — up ~$6 from the prior run's $354.49. ADX 76.53 is the highest ever recorded for AMD in this system, surpassing the prior peak of 74.94 from run 20260501_133944. RSI-14 83.49 and RSI-21 86.42 confirm continued statistical overextension. Daily Bollinger %B 0.91 (pressing upper band). Breakout above $352.99 (10x tested) occurred on 0.86x relative volume — below the 1.5x minimum; breakout remains volume-disqualified. Hourly OBV is diverging bearishly from price, the only institutional sentiment warning in the data. Earnings binary May 5 AMC vetoes all new swing entries in either direction. The existing 1-share short (entered $354.49, run 20260501_132346) is underwater by ~$6.05.
 
-Prior setup (run 20260430_140858): post-squeeze consolidation in the $328-$353 range with hourly sellers dominant (–DI 33.53 > +DI 20.45) — logged to recent.md.
+Prior setup logged: unconfirmed breakout on 1.05x volume (run 20260501_133944) — logged to technicals as prior state; no recent.md bullet warranted (no direction flip, no level break).
 
 ## Multi-timeframe state
 
 | Timeframe | Bias | Key reading |
 |---|---|---|
-| Daily | Extremely bullish trend | ADX 74.94, all EMAs aligned up, RSI 83-86, deeply overbought |
-| Hourly | Momentum decelerating | ADX 15.89 (weak intraday despite strong daily); hourly RSI 81.6; rel vol 0.67x |
-| Statistical | Mean-reversion risk elevated | Z-score 2.60 (above +2.0 warning); Bollinger %B 0.93 pressing upper band |
+| Daily | Extreme bullish trend | ADX 76.53 (system record), all EMAs aligned up, RSI 83-86, deeply overbought |
+| Hourly | Momentum cooling | ROC 5d –2.56%, ROC 10d –1.3%; MACD histogram –0.018 (flat/turning); OBV diverging bearishly |
+| Statistical | Mean-reversion risk elevated | Z-score 2.5 (above +2.0 warning); Bollinger %B 0.91; 53% above 50-SMA |
 
-Sources: swing_breakout, swing_trend_momentum, swing_mean_reversion, swing_macro_context (run 20260501_133944).
+Sources: swing_breakout, swing_trend_momentum, swing_mean_reversion, swing_macro_context, swing_head_trader (run 20260504_134825).
 
 ## Key levels
 
 | Level | Value | Source |
 |---|---|---|
-| Breakout trigger (cleared, unconfirmed) | $352.99 | Hourly pivot high, 7x tested; daily vol only 1.05x (run 20260501_133944) |
-| Volume required for breakout confirmation | 1.5x+ daily average | swing_breakout agent (run 20260501_133944) |
-| Key hourly support | $328.81 | Nearest meaningful stop zone (swing_macro_context) |
-| Pullback entry zone | $308–$315 | 10-EMA (~$316) confluence; 2-agent consensus (trend_momentum + macro_context) |
-| Pullback target | $370.20 | swing_trend_momentum Fib target |
-| Pullback stop | $299.76 | swing_trend_momentum agent |
-| Earnings date | 2026-05-05 (after close) | Binary event — hard veto on new entries until post-earnings |
+| Breakout trigger (cleared, disqualified) | $352.99 | 10x tested hourly pivot high; volume 0.86x (run 20260504_134825) |
+| Existing short entry | $354.49 | trade_ledger.json id 113 (run 20260501_132346) |
+| Stop loss (existing short) | $372.31 | trade_ledger.json id 113 |
+| Target (existing short) | $277.74 | trade_ledger.json id 113 |
+| Key hourly support | $328.81 | 6x tested; swing_macro_context (run 20260504_134825) |
+| Bull re-entry zone (post-earnings) | $316–$335 | 10-EMA ($324.49) / Fib 23.6% confluence; swing_head_trader (run 20260504_134825) |
+| Earnings date | 2026-05-05 (after close, 5 PM ET) | Hard veto on all new entries |
 
-## Indicator snapshot (run 20260501_133944)
+## Indicator snapshot (run 20260504_134825)
 
-- **RSI-14:** 83.06; **RSI-21:** 86.46 — deeply overbought on daily; highest since Apr 17 (RSI 91)
-- **ADX:** 74.94 (+DI 55.37 / –DI 10.1) — highest reading ever for AMD in this system
-- **Hourly ADX:** 15.89 (weak) — sharp divergence from daily trend strength; early exhaustion signal
-- **Hourly rel. volume:** 0.67x — below average at ATH highs; no institutional accumulation signal
-- **Z-score (50-period):** 2.60 — statistically overextended; approaching Apr 17 peak of 3.66
-- **Bollinger %B:** 0.929 (daily) — price pressing the upper band; mean-reversion warning
-- **EMA alignment (daily):** EMA-10 $316.48 > EMA-21 $285.88 > EMA-50 $251.69 — fully fanned bullish
-- **21d ROC:** +74.26%; **5d ROC:** +16.1% — parabolic acceleration
+- **RSI-14:** 83.49; **RSI-21:** 86.42 — deeply overbought, second consecutive run above 83
+- **ADX:** 76.53 (+DI 55+ dominant) — highest ever for AMD in this system; exceeds prior record 74.94
+- **Hourly ROC 5d:** –2.56%; **ROC 10d:** –1.3% — negative short-term (early deceleration signal)
+- **Hourly MACD histogram:** –0.018 — barely negative; momentum flattening
+- **Hourly OBV:** Diverging from price — bearish divergence; no institutional accumulation
+- **Z-score (50-period):** 2.5 — statistically overextended
+- **Bollinger %B:** 0.91 (daily) — pressing upper band; mean-reversion risk flagged
+- **EMA alignment (daily):** EMA-10 $324.49 > EMA-21 $292.67 > EMA-50 $255.96 — fully fanned bullish
+- **Relative volume:** 0.86x (weakening from prior run's 1.05x — deteriorating breakout quality)
 
 ## Setup type
 
-Unconfirmed breakout above $352.99 in a parabolic trend. The $200→$353 move completed the squeeze; AMD now trades 12% above its 10-EMA and 24% above its 21-EMA — far outside any valid pullback entry window. R/R at current entry (~$357) is only 1.51:1 (target $399 / stop $328.81), below the 2:1 minimum. Earnings binary May 5 creates undefined gap risk in both directions. Setup becomes actionable again via two paths: (1) post-earnings gap-and-hold above $352.99 with 1.5x+ daily volume; (2) organic pullback to 10-EMA zone ($308-$315) with hourly MACD recrossing bullish.
+Hold-through-binary. No new entries valid. The $354.49 short (id 113) is the only active position. Price at $360.54 is $11.77 below the $372.31 stop — within valid stop range. Post-earnings re-assessment required: bull re-entry on gap-and-hold above $352.99 with 1.5x+ daily volume; bear continuation (add 1 share) on confirmed reversal below $352.99 with daily reversal candle.
