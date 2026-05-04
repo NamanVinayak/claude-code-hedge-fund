@@ -1,47 +1,47 @@
 ---
 name: DIS thesis
-last_updated: 2026-05-01
-last_run_id: 20260501_221355
+last_updated: 2026-05-04
+last_run_id: 20260504_221111
 target_words: 500
 stale_after_days: 30
-word_count: 467
-summary: Disney pre-earnings momentum buy — Q2 FY2026 earnings on May 6 is the live catalyst; streaming profitability inflection confirmed; short-term swing setup active at 3.07:1 R/R.
+word_count: 498
+summary: DIS open long (id 117, 2 shares at $103.495) is near its $101.00 stop ahead of May 6 earnings binary; breakout thesis intact but macro tailwind claim falsified by Iran escalation; reassess post-print.
 ---
 
 # DIS — Thesis
 
 ## TL;DR
 
-**Prior thesis falsified:** The bootstrap thesis (2026-04-29) stated "no near-term catalyst with a hard date exists until Q2 FY2026 earnings in May 2026." That conditional is now resolved — Q2 FY2026 earnings are confirmed for **May 6, 2026** (before market open, 8:30 AM ET), approximately 4 trading days from this run. The prior hold is superseded by an active buy signal (62% confidence, 4/5 swing agents bullish, 3.07:1 R/R). [source: `decisions.json`, run `20260501_221355`; `web_research/DIS.json`, run `20260501_221355`]
+**Prior thesis falsified (partial):** The May 1 thesis cited "Risk-on macro tailwind — S&P 500 at all-time highs; Iran peace talks driving WTI −2%" as a supporting factor. That claim was falsified on May 4: Iran escalation (UAE intercepted Iranian missiles, WTI near $105/bbl, Dow -557 pts) reversed the risk-on backdrop. The structural bull case — streaming profitability, record Parks revenue, cheap valuation, strong analyst consensus — is unchanged. [source: `web_research/DIS.json` macro_context, `decisions.json`, run `20260504_221111`]
 
-DIS is a pre-earnings momentum breakout with a compelling short-term R/R. The structural bull case (streaming profitability, record Parks revenue, cheap valuation) is unchanged. The primary risk is earnings-binary gap risk past the stop.
+An open long position (id 117, 2 shares, fill price $103.495) was confirmed in `trade_ledger.json per_ticker_history["DIS"]` as of run `20260504_221111`. The position is currently near its $101.00 stop (hourly price $101.31 as of May 4). Earnings binary on May 6 resolves the near-term question.
 
 ---
 
 ## Bull case
 
-**Confirmed streaming profitability inflection.** Q1 FY2026 DTC operating income $450M (+72% YoY), revenue $5.35B (+11%). Disney guided $19B FY2026 operating cash flow and double-digit EPS growth. This is the inflection point the prior thesis was waiting for. [source: existing thesis, bootstrapped from `web_research/DIS.json`, run `20260415_110848`]
+**Confirmed streaming profitability.** Q1 FY2026 DTC operating income $450M (+72% YoY), revenue $5.35B (+11%). Disney guided $19B FY2026 operating cash flow and double-digit EPS growth. Analyst consensus Q2 FY2026 EPS $1.49, revenue $24.84B. [source: prior thesis, `web_research/DIS.json`, run `20260504_221111`]
 
-**Breakout with earnings catalyst.** Apr 30 produced a strong bullish engulfing candle (open $100.91, close $103.75) on 1.23x above-average volume, breaking out of a week-long $100.42–$103.81 consolidation. Q2 FY2026 earnings May 6 (consensus EPS $1.49) is the catalyst driving 4/5 swing agents bullish. ADX 37.34, +DI 32.31 >> -DI 18.74. [source: `swing_head_trader`, run `20260501_221355`]
+**Daily trend structure intact despite pullback.** ADX 38.73 (strong), +DI 31.91 >> -DI 19.30 on the daily timeframe. The April 30 breakout candle (open $100.91, close $103.75 on 1.23x volume) is structurally real even though price has retraced to the base. Fib 78.6% retracement and 17-test volume support at $101.02 provides a technical floor. [source: `swing_head_trader`, run `20260504_221111`]
 
-**Valuation cheap by any measure.** P/E ~15x, EV/EBITDA 13.12, P/FCF 18.17 — all below S&P 500 averages. Analyst consensus: 42 Buy at avg PT $131.41. Raymond James upgraded to Outperform (PT $115) in April 2026, citing historically attractive entry point. [source: `web_research/DIS.json`, run `20260501_221355`]
+**Valuation remains compelling.** P/E ~15x, EV/EBITDA 13.12. Analyst consensus: 16+ analysts Buy/Strong Buy, avg PT $132.62 (~31% upside from ~$101). Raymond James upgraded to Outperform ($115 PT) in April 2026. Owner earnings model shows intrinsic value well above market cap (EV/EBITDA analysis: 26% undervaluation). [source: `valuation_analyst_agent`, `web_research/DIS.json`, run `20260504_221111`]
 
-**Risk-on macro tailwind.** S&P 500 at all-time highs; April 2026 best month since 2020. Iran peace talks driving WTI −2% — consumer spending environment improving. [source: `web_research/DIS.json` macro_context, run `20260501_221355`]
+**Content and parks pipeline.** Full Hulu ownership since June 2025 ($9B Comcast buyout) is a streaming differentiator. $24B 2026 content spend. May 2026 parks wave: seven new attractions opening, including Bluey's Wild World (May 26). Daredevil Season 2, Maul – Shadow Lord, and Devil Wears Prada 2 on Disney+. [source: `web_research/DIS.json`, run `20260504_221111`]
 
 ---
 
 ## Bear case
 
-**Still below 200-day moving averages.** DIS is trading below EMA200 ($105.49) and SMA200 ($109.33) — the longer-term institutional trend remains distribution, not accumulation. Daily OBV is in distribution mode even as hourly OBV accumulates (a split signal). The current setup is a short-term swing within a longer-term recovery, not a confirmed structural uptrend.
+**Breakout fully retraced.** Price fell from $104.83 post-breakout high to $101.31 hourly on May 4 — a full retracement of the April 30 move. Volume on the April 30 breakout was 1.23x (below the 1.5x ideal threshold). Daily OBV remains in distribution mode. EMAs are now tangled (all four short-term EMAs within $0.80 band) — no clean directional fan on either timeframe. [source: `swing_head_trader`, `technical_analyst_agent`, run `20260504_221111`]
 
-**Earnings binary risk.** A miss vs. consensus EPS $1.49 or revenue shortfall would likely gap the stock through the $101.00 stop — making the exit price irrelevant. Netflix at 300M+ subscribers and the Paramount-WBD merger regulatory review are structural competitive risks.
+**Earnings binary at near-stop price.** Open position id 117 is $0.50 above its $101.00 stop. May 6 earnings (2 trading days) creates gap risk that the stop cannot fully protect against. A pre-market miss gap below $100.61 would likely blow through the stop before the market opens. [source: `risk_management_agent`, `decisions.json`, run `20260504_221111`]
 
-**Volume quality below ideal.** April 30 breakout volume was 1.23x average — above average but below the 1.5x threshold for full confidence. Confidence capped at 62 accordingly.
+**Macro headwind restored.** Iran escalation reversed the prior risk-on tailwind (May 4). DIS is less directly exposed than pure consumer goods names, but the macro climate is now mixed-to-cautious. DCF analysis values DIS at ~$121B vs. $179B market cap (32.7% gap). Current ratio 0.71 — short-term liquidity tight. [source: `web_research/DIS.json`, `valuation_analyst_agent`, run `20260504_221111`]
 
 ---
 
 ## What would change the thesis
 
-**Bullish confirmed:** Close above $107.11 on 1.5x+ volume (breaks 14-test resistance) + Q2 earnings showing streaming margin > 9% would upgrade to structural uptrend.
+**Bullish confirmed:** May 6 earnings beat (EPS >$1.49 + streaming margin > 9%) with a gap above $104 on open — restart long thesis with fresh entry.
 
-**Bearish flip:** Q2 EPS miss vs. $1.49 + close below $101.00 would invalidate the breakout base and restore the "cheap but getting cheaper" bear case.
+**Bearish flip:** May 6 EPS miss + gap below $100.61 (volume-confirmed hourly support) — stop out existing position and restore "cheap but getting cheaper" bear case. Watch for close below $101.02.

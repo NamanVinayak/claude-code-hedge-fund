@@ -1,68 +1,67 @@
 ---
 name: DIS technicals
-last_updated: 2026-05-01
-last_run_id: 20260501_221355
+last_updated: 2026-05-04
+last_run_id: 20260504_221111
 target_words: 350
 stale_after_days: 7
 word_count: 348
-summary: Apr 30 breakout candle above $103 resistance on 1.23x vol; ADX 37.34 strong; MACD bullish crossover; hourly EMAs fully aligned; setup type pre-earnings momentum buy
+summary: breakout fully retraced — price $101.31 (hourly) near hard stop; ADX 38.73 daily trend intact but EMAs tangled; hourly below all EMAs; earnings blackout in force (May 6); no new entry; open long id 117 at $103.495
 ---
 
 # DIS — Technicals
 
 ## TL;DR
 
-As of May 1, 2026 (run `20260501_221355`), DIS broke out of a week-long consolidation base on April 30: strong bullish engulfing candle (open $100.91, close $103.75) on 1.23x above-average volume. Daily MACD has a fresh bullish crossover. ADX 37.34 with +DI (32.31) well above -DI (18.74). Hourly EMAs fully aligned uptrend. Limit-buy zone $102.50 on a pullback; stop $101.00; target $107.11 (3.07:1 R/R). Prior technicals state (good trend, poor timing at $103) has been superseded by the breakout confirmation.
+As of May 4, 2026 (run `20260504_221111`), the April 30 breakout has been almost entirely retraced: price fell from the $104.83 post-breakout high back to $101.31 (hourly) — near the hard stop at $101.00. The daily trend remains technically intact (ADX 38.73, +DI 31.91 dominating -DI 19.30) but EMA structure is tangled — all four short-term EMAs clustered within $0.80. Hourly price is below all EMAs with -DI leading +DI. Earnings risk manager blackout enforced (May 6 pre-market, 2 days). Prior setup type "pre-earnings momentum breakout" has been replaced by "near-stop pullback consolidation — watch only."
 
 ---
 
 ## Multi-timeframe state
 
-All data from run `20260501_221355`.
+All data from run `20260504_221111`.
 
 | Indicator | Daily Value | Interpretation |
 |---|---|---|
-| Price (May 1) | ~$103.75 (Apr 30 close) | Broke out above prior $103 resistance |
-| 10 EMA | $102.69 | Price above — bullish |
-| 21 EMA | $101.93 | Tangled (not clean fan, but above) |
-| 50 EMA | $102.25 | Price above — bullish |
-| 200 EMA | $105.49 | Overhead — still below |
-| 200 SMA | $109.33 | Longer-term overhead — still below |
-| ADX | 37.34 | Strong trend, up from 31.0 |
-| +DI / -DI | 32.31 / 18.74 | Bullish dominance confirmed |
-| MACD histogram | +0.016 | Fresh bullish crossover (positive) |
-| RSI-14 | 64.64 | Healthy — not overbought |
-| BB position (daily) | 0.664 | Upper half — not stretched (was 0.98 on Apr 15) |
-| BB width (daily) | 0.1219 | Moderate — spring partially coiled |
-| Z-score | 0.75 | Not extended |
-| Volume (Apr 30) | 9.19M vs 7.48M avg | 1.23x — above average, below 1.5x ideal |
+| Price (hourly, May 4) | $101.31 | Near hard stop $101.00 — critical level |
+| Price (daily close) | $103.08 | Above EMAs on daily |
+| EMA-5 | 102.84 | Tangled with other EMAs |
+| EMA-10 | 102.76 | Tangled — no clean fan |
+| EMA-21 | 102.04 | Tangled within $0.80 band |
+| EMA-50 | 102.28 | All four clustered — no EMA alignment |
+| EMA-200 | 105.49 | Overhead resistance (unchanged) |
+| ADX | 38.73 | Strong trend (above 35) — daily structure intact |
+| +DI / -DI | 31.91 / 19.30 | Bullish dominance on daily |
+| MACD histogram (daily) | -0.0013 | Essentially flat — stalling |
+| RSI-14 | 56.64 | Healthy, neutral zone |
+| BB position (daily) | 0.5906 | Mid-band — not extended |
+| BB width (daily) | Moderate | No squeeze |
 
 | Indicator | Hourly Value | Interpretation |
 |---|---|---|
-| EMA alignment | Fully aligned uptrend | 10 > 21 > 50 — clean bullish fan |
-| ADX (hourly) | 34.46 | Strong intraday trend |
-| MACD histogram (hourly) | +0.2345 | Expanding positive |
-| OBV (hourly) | Rising (accumulation) | Short-term bullish |
-| OBV (daily) | Distribution mode | Longer-term bearish split |
+| Price below all hourly EMAs | Yes | Short-term distribution |
+| Hourly ADX | 25.75 | Borderline strong |
+| Hourly +DI / -DI | 27.09 / 19.05 | Mild bullish but reversed from prior |
+| Hourly BB width | 0.0353 | Squeeze coiling at support |
+| OBV (daily) | Distribution | Bearish split vs prior accumulation |
 
 ---
 
-## Key price levels (as of May 1, 2026)
+## Key price levels (as of May 4, 2026)
 
 | Level | Value | Context |
 |---|---|---|
-| Volume-confirmed support | $101.02 | 17 tests — hard stop anchor |
-| Limit-buy zone | $102.50 | Pullback entry target (head trader, run `20260501_221355`) |
-| Fib 61.8% retracement | $102.11 | Hourly support cluster confluence |
-| Apr 30 close / prior resistance | $103.75 | Now potential support |
-| Hourly resistance | $103.81 | 25 tests (hourly) |
-| Target | $107.11 | 14-test resistance; measured move from range |
-| 200-day EMA (overhead) | $105.49 | Institutional headwind above target path |
+| Hard stop (open position id 117) | $101.00 | 17-test volume-confirmed support floor |
+| Hourly current price | $101.31 | 30 cents above stop — near-stop territory |
+| Fib 78.6% retracement | $101.36 | Confluence with volume support |
+| Hourly support (9 tests) | $100.61 | Below stop — breakdown level |
+| EMA cluster zone | $102.04–$102.84 | Resistance on any bounce |
+| Target (open position) | $107.11 | 14-test resistance; unchanged |
+| EMA-200 overhead | $105.49 | Institutional headwind en route to target |
 
 ---
 
 ## Setup type
 
-**Pre-earnings momentum breakout buy.** April 30 produced a coil-and-fire sequence: DIS consolidated $100.42–$103.81 for a week, then broke out on above-average volume. Q2 FY2026 earnings May 6 (~4 trading days) is the catalyst. Hourly OBV rising confirms short-term accumulation. Key caution: daily OBV still in distribution mode; DIS remains below both 200-day averages; volume was 1.23x (not 1.5x ideal). Entry on pullback to $102.50, not at $103.75. Stop $101.00 on close basis.
+**Watch only — near-stop pullback ahead of earnings binary.** The open long position (id 117, 2 shares at $103.495 fill) is within $0.50 of its stop at $101.00. No new entry authorized (earnings blackout, risk manager $0 remaining limit). Prior "pre-earnings momentum breakout" setup-type is superseded. The Fib 78.6% / volume-support confluence at $101.02–$101.36 is the critical floor. If held, May 6 earnings provides the catalyst resumption. If breached, position stops out.
 
 *Data freshness: 7-day stale threshold.*
