@@ -1,53 +1,55 @@
 ---
 name: BAC thesis
-last_updated: 2026-05-01
-last_run_id: 20260501_190923
+last_updated: 2026-05-04
+last_run_id: 20260504_192106
 target_words: 500
 stale_after_days: 30
-word_count: 537
-summary: Bull thesis intact with open 15-share position (+1.35%); prior "overbought technicals" bear claim falsified by RSI reset; R/R failure at current price and OBV divergence are the new cautions
+word_count: 502
+summary: Bull thesis intact — open 15-share long at $52.75; Iran escalation (May 4) falsifies prior "macro tailwind" claim; pullback to $52.31 deepens but stop at $51.50 not hit; OBV divergence and Iran headwind are the new primary cautions
 ---
 
 ## TL;DR
 
-Bank of America is in an active long position: 15 shares at $52.75 (Apr 30 2026), currently +1.35%. The bull case is intact — exceptional ADX-53 uptrend, best Q1 in two decades, risk-on macro. **Prior thesis falsification (run `20260501_190923`):** The bootstrap thesis (Apr 29) cited "overbought technicals (RSI 79)" as the central bear risk. That condition no longer holds: RSI-14 is now 57.26 and RSI-7 reset to 49.65. The new caution is R/R failure at current price (1.6:1 to $55.40 target fails the 2:1 minimum) and a persistent OBV bearish divergence. No bull-to-bear flip; confidence is capped, not reversed.
+Bank of America has an active long position: 15 shares at $52.75 (Apr 30, 2026, id 110), currently at $52.31 (unrealized ~-$0.44/share). The underlying uptrend is structurally intact — ADX 51.52, EMA-10 > EMA-21 > EMA-50 — but near-term momentum has turned negative. **Prior thesis falsification (run `20260504_192106`):** The May 1 thesis cited "Iran peace talks easing oil pressure" as a macro tailwind (web_research/BAC.json, run `20260501_190923`). That claim is falsified: Iran-US military escalation returned on May 4 (UAE intercepted Iranian missiles, WTI surged above $106), directly reversing the risk-on narrative. The new macro backdrop is mixed-to-cautious. No bull-to-bear flip; the position remains open with stop at $51.50.
+
+---
+
+## Prior Thesis Claim Falsified
+
+**Falsified claim (run `20260501_190923`):** "Iran peace talks easing oil pressure" — cited as a positive macro tailwind for banks.
+
+**What falsified it (run `20260504_192106`):** Iran-US ceasefire collapsed. UAE intercepted Iranian missiles on May 4, Strait of Hormuz closure fears re-emerged, WTI surged above $106, and Dow futures declined. Macro regime reverted to mixed-to-cautious per `macro/regime.md` (updated run `20260504_125732`). [web_research/BAC.json, run `20260504_192106`]
 
 ---
 
 ## Bull Case
 
-**Best Q1 in two decades, confirmed.** Q1 2026: EPS $1.11 beat (+9.9%), NII $15.7B (+9% YoY), net income $8.6B (+17% YoY), zero trading loss days. 18 analysts rate Strong Buy, avg PT ~$61.50 (15% implied upside). [web_research/BAC.json, run `20260501_190923`]
+**Exceptional trend structure.** ADX 51.52 — still in the "exceptional" range (>50). EMA alignment bullish (EMA-10 $52.93 > EMA-21 $52.31 > EMA-50 $51.56). The 38.2% Fibonacci retracement ($52.07) and volume-confirmed hourly support at $52.25 (28 tests) form a dip-buy confluence zone that swing_mean_reversion rates as valid. [signals_combined.json, run `20260504_192106`]
 
-**Exceptional trend structure.** ADX 53.17 — one of the strongest readings in the current run universe. EMA-10 ($52.86) > EMA-21 ($52.21) > EMA-50 ($51.50) — textbook bullish staircase. Open position at $52.75 sits at the EMA confluence zone; the trend is working. [signals_combined.json, run `20260501_190923`]
-
-**Capital return and deal flow.** $18.66B share buyback pace over trailing 12 months. $14B Oracle Michigan data center bond deal closed. Alaska Air co-brand partnership extended. Basel III capital relief (~4.8% CET1 reduction) could unlock ~$40B in additional buybacks over 18 months. [web_research/BAC.json]
-
-**Macro tailwind.** S&P 500 at all-time highs (>7,200), Fed hold at 3.5%–3.75%, Iran peace talks easing oil pressure. Higher-for-longer rates benefit BAC disproportionately as one of the most asset-sensitive large-cap banks. [web_research/BAC.json macro_context]
+**Fundamentals remain strong.** Q1 2026: EPS $1.11 beat (+9.9%), NII $15.7B (+9% YoY), zero trading loss days. Analyst consensus: 40% Strong Buy / 45% Buy, avg PT ~$61.61 (17% implied upside from $52.31). $18.66B trailing buyback. Basel III capital relief could unlock ~$40B additional buyback capacity. [web_research/BAC.json, run `20260504_192106`]
 
 ---
 
 ## Bear Case
 
-**R/R failure at current price.** At $53.46, upside to $55.40 is +$1.94; downside to stop $51.50 is -$1.96. That is 1.6:1 — below the 2:1 system minimum. No add-on justified until pullback to $52.85–$53.21 restores the ratio. [signals_combined.json, swing_macro_context]
+**Iran escalation is a direct macro headwind.** Risk-off on May 4 specifically pressures financials: loan demand, credit quality, and consumer spending deteriorate under a stagflationary energy-shock scenario. [web_research/BAC.json macro_context]
 
-**OBV divergence persists.** On-Balance Volume is diverging bearishly from price — potential institutional distribution into the rally. RSI-21 remains elevated at 72.49. MACD histogram mildly negative (-0.084). [signals_combined.json, swing_trend_momentum]
+**OBV divergence persists.** On-Balance Volume trending down on both daily and hourly timeframes — institutional distribution into the rally. Hourly MACD histogram negative (-0.085). 10-day ROC -1.24% (negative). Short-term momentum decelerating even as the daily trend holds. [signals_combined.json, swing_trend_momentum]
 
-**Berkshire Hathaway structural overhang.** Ongoing stake reduction, no disclosed floor or endpoint. World's most scrutinized long-term investor reducing exposure caps institutional enthusiasm and creates persistent supply. [web_research/BAC.json]
+**Berkshire Hathaway structural overhang.** Ongoing stake reduction; no disclosed floor. Persistent cap on institutional enthusiasm. Berkshire continues to reduce. [web_research/BAC.json, swing_catalyst_news]
 
-**EMA dip-buy pattern caution.** System's only recent EMA pullback Fib dip-buy (NVDA, Apr 30) lost at -$63.20. BAC's current setup is the same pattern type. NVDA failure was RSI-driven (81–87); BAC's RSI-14 is 57 — that risk is absent, but the pattern-type lesson is logged. [signals_combined.json, swing_trend_momentum]
+**R/R to target is marginal.** From $52.31, upside to $55.40 is +$3.09; downside to stop $51.50 is -$0.81. R/R is approximately 3.8:1 from current price but 4/5 agents are neutral and the risk manager's remaining_position_limit is $0 (BAC position is at cap). No add-on is authorized regardless of R/R. [signals_combined.json, risk_management_agent]
 
 ---
 
 ## What Would Change the Thesis
 
-**Bull-to-bear flip:** Daily close below EMA-21 ($52.21) on volume, Berkshire stake disclosed below 5%, or NII guidance cut at Q2 earnings (July 14, 2026).
+**Bull-to-bear flip:** Hard exit if daily close below stop at $51.50. Secondary: Berkshire stake disclosed below 5%, or Iran escalation drives NII guidance cut at Q2 earnings (July 14, 2026).
 
-**Stop trigger:** Hard exit at $51.50. Open position stops there.
-
-**Add-on trigger:** Pullback to $52.85–$53.21 (EMA-10/Fib 38.2% zone) with volume > 1.2x average — restores 2:1+ R/R to $55.40 target.
+**Re-entry / add-on trigger:** Not applicable while position is open at max capital allocation. Monitor OBV for re-convergence. Re-acceleration trigger: daily MACD histogram turns positive AND 5d/10d ROC both turn positive AND macro regime stabilizes.
 
 ---
 
 ## Synthesis
 
-BAC is the clearest active swing long in the current portfolio. Trend is real (ADX 53), entry is working (+1.35%), fundamentals support the direction. The sole constraint is price: at $53.46 the R/R to the $55.40 five-test resistance ceiling is insufficient to add. Hold the position, monitor OBV for re-convergence, and wait for a pullback to the EMA zone before increasing exposure.
+The 15-share long is the core active position. The underlying trend is real and structurally intact. The short-term case is challenged by decelerating momentum, Iran escalation headwind, and OBV distribution — all of which the four neutral agents flagged correctly. The position is held with stop at $51.50; no new capital is deployed into BAC at this run. [decisions.json, run `20260504_192106`]
