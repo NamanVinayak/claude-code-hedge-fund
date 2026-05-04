@@ -1,50 +1,41 @@
 ---
 name: STX technicals
-last_updated: 2026-05-01
-last_run_id: bootstrap_2026-05-01
+last_updated: 2026-05-04
+last_run_id: 20260504_203608
 target_words: 350
 stale_after_days: 7
-word_count: 362
-summary: current chart state
+word_count: 348
+summary: parabolic extension at statistical extremes — unanimous timing fail; wait $618-700 pullback
 ---
 
 # STX — Technicals
 
 ## TL;DR
 
-STX closed 2026-05-01 at $726.93. Price is 58% above the 50-SMA ($460) and 138% above the 200-SMA ($305). ATR(14) is $38.50, ~5.3% of price. Last 3 sessions averaged ~8.2M shares vs 60-day baseline ~3M. 52-week high is $728 (today's print).
-
-> _This is bootstrap context dated 2026-05-01. The runtime swing routine must do its own fresh research and indicator analysis; do not anchor to anything stated here._
+Price ~$738.54 (run 20260504_203608). Daily RSI-14 86.37, RSI-7 90.08 — extreme overbought across all lookbacks. Z-score vs 50-SMA = 2.90 (top 0.5% of historical readings). Price is 58% above 50-SMA and 138% above 200-SMA. ADX 76.56 — one of the strongest trend readings possible but also flagging potential exhaustion. Hourly OBV bearish divergence with hourly relative volume only 0.54x: classic distribution behavior. Bollinger pct_b = 1.126, price trading above the upper band. No valid entry at current price. Setup type: **extended trend / wait for pullback**. [source: signals_combined.json, run 20260504_203608]
 
 ## Multi-timeframe state
 
-- **Daily**: Close $726.93 vs 20-SMA $557, 50-SMA $460, 200-SMA $305. All three stacked and rising. 52-week high $728 printed today.
-- **Weekly**: Stock is +600% over 12 months and +140% YTD. No prior weekly resistance overhead.
-- **Volume**: Last 3 sessions averaged ~8.2M shares vs 60-day baseline ~3M (post-earnings, Apr 28 print).
-- **Volatility regime**: ATR(14) = $38.50, ~5.3% of price. Apr 29 range $667–$697 = $30 intraday.
+- **Daily**: Price $726.93–$738.54. EMA-10 ~$618, EMA-21 ~$563, EMA-50 ~$487 — all stacked and rising. Price is 17.6% above EMA-10, 29.2% above EMA-21. MACD histogram +13.35 (expanding). Volume ratio 1.69x average — confirms the trend but does not provide new breakout entry. Bollinger pct_b 1.126 (above upper band). Daily RSI 86.37 — top 5% of historical overbought.
+- **Hourly**: RSI-21 = 77.42 (overbought), Z-score ~2.28. OBV trending DOWN while price trends higher — bearish divergence. Hourly relative volume 0.54x (below average). This distribution pattern is the critical intraday warning sign.
+- **Momentum**: ROC 5d +24%, 10d +32.7%, 21d +71.8%. ADX 76.56. All-time-high regime, but momentum divergence hourly is a tell.
 
 ## Key levels
 
 | level | value | note |
 |---|---|---|
-| overhead resistance / ATH | $728 | today's print |
-| pivot / post-earnings gap base | $643 | Apr 29 close |
-| 20-SMA | $557 | rising |
-| 50-SMA | $460 | structural support |
-| 60-day swing low | $341 | nearest meaningful prior low |
-| 200-SMA | $305 | macro trend reference |
-| ATR(14) | $38.50 | daily range reference |
+| Current price | ~$738.54 | extreme extension |
+| ATH | ~$728–$751 | zone (hourly pivot resistance) |
+| Pullback target / EMA-10 | ~$618 | preferred re-entry zone (low end) |
+| Pullback target / prior pivot | ~$700 | preferred re-entry zone (high end) |
+| EMA-21 | ~$563 | deeper support |
+| EMA-50 | ~$487 | structural support |
+| 200-SMA | ~$305 | macro trend reference |
 
 ## Setup type
 
-Multiple setups are possible — runtime to determine which is active:
-
-- **Trending / pullback continuation**: Active if price holds above the rising 20-SMA and pulls back to a higher-low without breaking the post-earnings gap base ($643).
-- **Breakout**: Active if price consolidates near $728 for 3+ sessions and breaks the range high on expanding volume.
-- **Mean-reversion (long)**: Active if price overshoots back toward the 20-SMA / 10-EMA on declining volume and reverses with a clean higher-low.
-- **Range-bound**: Active if price builds a horizontal bracket between the post-earnings gap base ($643) and the ATH ($728) over multiple sessions.
-- **Counter-trend short**: Generally low-edge in a stage-2 trend; would require a confirmed close below the 50-SMA on volume to be relevant.
+**Extended trend — no valid entry at current price.** Prior setup (consolidation range ~$639–$728, bootstrap 2026-05-01) fully resolved with confirmed breakout; the range has already fired. Current regime is parabolic extension 58% above 50-SMA with hourly OBV divergence. Valid entry requires pullback to $618–$700 zone (EMA-10 to prior pivot support) and RSI reset toward 60–70. All 5 swing agents agree: wait. Mean-reversion agent flags fade potential (bearish) at 68 conf — but no confirmed reversal candle; ADX 76.56 discourages shorting without trigger. [source: signals_combined.json swing_breakout, swing_trend_momentum, swing_mean_reversion, run 20260504_203608]
 
 ## Last updated
 
-2026-05-01 — pulled from yfinance daily bars (1y window).
+2026-05-04 — run 20260504_203608. Prior setup type (multiple-setup bootstrap, 2026-05-01) replaced: range already resolved into parabolic extension.

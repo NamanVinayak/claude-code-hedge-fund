@@ -1,42 +1,42 @@
 ---
 name: STX thesis
-last_updated: 2026-05-01
-last_run_id: bootstrap_2026-05-01
+last_updated: 2026-05-04
+last_run_id: 20260504_203608
 target_words: 500
 stale_after_days: 30
-word_count: 578
-summary: durable bull/bear story
+word_count: 498
+summary: durable bull thesis intact; timing fail at parabolic extension; no falsification of fundamentals — wait $618-700
 ---
 
 # STX — Thesis
 
 ## TL;DR
 
-Seagate is one half of the HDD duopoly (with WDC). Per the Q3 FY26 print (Apr 28 2026): revenue $3.1B (+44% YoY), non-GAAP EPS $4.10, FCF $953M, non-GAAP gross margin 47% (+180 bps QoQ). FY26 revenue growth target raised to ≥20%; June quarter guide $3.45B ± $100M. Management states nearline capacity is allocated through calendar 2027. Stock is ~$726.93 on 2026-05-01, +140% YTD, +600% over the trailing 12 months. Sell-side PT range spans Goldman $700 to Rosenblatt $1,000 (sources: BusinessWire 2026-04-28; Motley Fool transcript 2026-04-28; 24/7 Wall St 2026-04-29; Trefis / Yahoo Finance 2026-04-30).
+First live swing run (20260504_203608). Decision: **hold — no entry**. Unanimous timing fail at extreme overbought (RSI 86-90, z-score 2.90, 58% above 50-SMA). Bull thesis on fundamentals is unimpeached: Q3 FY26 revenue +44% YoY, nearline capacity sold out through CY2027, Mozaic HAMR leadership intact. The session's lesson is timing, not thesis. Preferred re-entry zone: $618–$700 on pullback to EMA-10 / prior pivot support with RSI reset toward 60–70. 42% confidence in neutral stance. [source: decisions.json, explanation.json, run 20260504_203608]
 
-> _This is bootstrap context dated 2026-05-01. The runtime swing routine must do its own fresh research and indicator analysis; do not anchor to anything stated here._
+Prior bootstrap disclaimer context (2026-05-01) is now superseded. No prior swing-run thesis claim to falsify — this is the first live run.
 
 ## Bull case
 
-- **Datacenter mix shift.** Datacenter is now 87% of Seagate's shipments (Motley Fool transcript). Bulls argue this re-rates the revenue base toward AI infrastructure and away from consumer-PC HDD cyclicality.
-- **Allocated supply.** Management says nearline capacity is "almost fully allocated through calendar 2027" (Trefis / Yahoo Finance, Apr 30 2026). Bulls argue this gives unusual visibility for a hardware vendor and supports take-or-pay pricing power.
-- **Mozaic / HAMR roadmap.** Mozaic 4 began shipping for revenue late March 2026; two of the largest CSPs are qualified on the 4TB-per-disk product; Mozaic shipped to 75% of leading global cloud customers. Mozaic 5 (50TB) targeted for late-2027 qualification (Motley Fool, Apr 28 2026).
-- **Margin expansion.** Non-GAAP gross margin 47% (all-time high), FCF $953M (highest in 10+ years), FY26 growth target raised to ≥20% (BusinessWire, Apr 28 2026).
-- **Pricing tailwind.** HDD ASPs reportedly +50% on AI buyer absorption of 2026 supply (Winbuzzer, Feb 2026). Bulls argue duopoly structure plus tight supply equals durable price.
+- **HDD duopoly / AI storage supercycle.** Seagate and WDC together hold >85% of global HDD share. AI data-center buildout (hyperscalers allocating $700B+ aggregate capex in 2026) is pulling nearline HDD demand dramatically higher. Data centers are now 80–87% of Seagate shipments. [source: web_research/STX.json, Motley Fool 2026-05-03]
+- **Sold-out capacity with pricing power.** Nearline capacity allocated through CY2027 gives unusual multi-quarter revenue visibility. HDD ASPs reportedly +50% on AI-buyer absorption. [source: web_research/STX.json, Winbuzzer Feb 2026]
+- **HAMR technology leadership.** Mozaic 3+ qualified by five major cloud customers; ahead of WDC in volume HAMR production. Mozaic 4+ in development; Mozaic 5 (50TB) targeted late 2027. [source: web_research/STX.json, Barchart 2026-04-28]
+- **Q3 FY26 beat quality.** Revenue $3.11B (+44.1% YoY), EPS $4.10 (+18.84% beat), FCF $953M (10-year high), non-GAAP gross margin 47% (all-time high). [source: web_research/STX.json earnings_info]
+- **Strong trend.** ADX 76.56, EMA alignment perfectly bullish. Fundamentals analyst bullish at 50 conf; technical momentum sub-score 100. [source: signals_combined.json, run 20260504_203608]
 
 ## Bear case
 
-- **Allocated supply cuts both ways.** "Sold out through 2027" caps incremental upside to unit volumes; beats from here have to come from price/mix or CY28 visibility, not unit growth. Historically a peak-cycle signal as much as a bull tell.
-- **Memory-cycle mean reversion.** Gross margin moving from 36% to 47% in a year fits prior cycle peaks; bears argue HDD has always been cyclical and supply eventually catches demand.
-- **Run already large.** Stock +600% trailing 12 months, +140% YTD, trades above all sell-side PTs ex-Rosenblatt — bears argue analysts are chasing the tape, not leading it (24/7 Wall St, Apr 29 2026).
-- **Insider activity.** 140 insider transactions in the trailing 6 months — all sales, zero open-market purchases. ~$46.9M sold in the trailing 3 months; CEO Mosley sold ~144,584 shares (~$51M) (GuruFocus / Yahoo Finance).
-- **Substitution risk.** Accelerated QLC NAND adoption for warm-tier workloads would narrow nearline TAM at the margin.
+- **Parabolic extension — current price is un-enterable.** RSI-14 86.37, RSI-7 90.08 — statistically extreme. Price 58% above 50-SMA, 138% above 200-SMA. Bollinger pct_b 1.126 (above upper band). Z-score 2.90 (top 0.5% of historical readings). Hourly OBV diverging bearishly on 0.54x relative volume. NVDA lesson (stopped out at RSI 81-87 in identical conditions, Apr 30, -$63.20) applies directly at even higher RSI. [source: signals_combined.json swing_mean_reversion at 68 conf, run 20260504_203608]
+- **Sold out caps incremental upside.** "CY2027 allocated" limits unit-volume beats; future alpha requires price/mix or CY28 visibility. Historically a late-cycle signal as much as a bull tell.
+- **Insider distribution.** 140 transactions trailing 6 months, all sales. ~$46.9M in trailing 3 months. Raw trend reported without interpretation; no open-market purchases. [source: web_research/STX.json]
+- **Valuation stretched.** P/E 70, P/S 15.44. DCF fair value ~$10B vs market cap ~$166B (−94% gap). [source: signals_combined.json valuation_analyst_agent, fundamentals_analyst_agent]
+- **Macro risk-off.** Iran escalation May 4 reversed prior risk-on posture; oil higher; Fed on hold with Powell succession risk May 15. Mixed-to-cautious backdrop reduces margin of safety for high-beta momentum names. [source: web_research/STX.json macro_context]
 
 ## What would change my mind
 
-- **Bear flips bullish if:** Q4 FY26 print beats the $3.45B guide and operating margin holds ≥40%; management extends "allocated supply" language into CY28; an additional hyperscaler signs a multi-quarter HDD pricing agreement; Mozaic 5 sample-shipment news arrives ahead of late-2027 schedule; cohort peers (WDC/SNDK/MU) print supportive datacenter numbers.
-- **Bull flips bearish if:** Q4 FY26 misses the $3.45B guide or operating margin slips below 40%; HDD ASP commentary softens; a hyperscaler announces a NAND-first nearline tier shift; STX closes below the 50-DMA (~$460) on volume; insider 10b5-1 plan amendments accelerate distribution; cohort peers (WDC/SNDK/MU) miss together signaling a memory-cycle correction.
+- **Bull flips bearish if:** Q4 FY26 misses $3.45B guide or operating margin slips below 40%; HDD ASP commentary softens; hyperscaler announces a NAND-first nearline tier shift; STX closes below 50-DMA on volume; Mozaic ramp slips.
+- **Bear flips bullish (timing) if:** Price pulls back to $618–$700 zone (EMA-10 to prior pivot); RSI resets toward 60–70; ADX holds above 50 on pullback (confirming trend continuation, not reversal); Q4 FY26 extends the "sold out" language into CY28; cohort peers (WDC/MU) print supportive data-center numbers.
 
 ## Last updated
 
-2026-05-01 — bootstrap run. Sources: Motley Fool, BusinessWire, Yahoo Finance, Trefis, 24/7 Wall St., GuruFocus, Winbuzzer.
+2026-05-04 — run 20260504_203608, first live swing run on STX. Supersedes bootstrap context (2026-05-01). Sources: decisions.json, explanation.json, signals_combined.json, web_research/STX.json.
