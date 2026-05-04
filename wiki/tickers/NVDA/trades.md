@@ -1,11 +1,11 @@
 ---
 name: NVDA trades
-last_updated: 2026-05-01
-last_run_id: 20260501_124529
+last_updated: 2026-05-04
+last_run_id: 20260504_125732
 target_words: 800
 stale_after_days: 60
-word_count: 720
-summary: One formally closed position — 16 shares at $209.25 stopped out 2026-04-30 at $205.30, P&L -$63.20 (corrected from buggy -$264.65; see lessons.md). Four prior abandoned tracker.db entries from Apr 14-29 (no realized P&L). No open positions as of 2026-05-01.
+word_count: 737
+summary: One formally closed position — 16 shares at $209.25 stopped out 2026-04-30 at $205.30, P&L -$63.20 (corrected from buggy -$264.65; see lessons.md). Four prior abandoned tracker.db entries from Apr 14-29 (no realized P&L). No open positions as of 2026-05-04.
 ---
 
 # NVDA — Trades
@@ -72,6 +72,7 @@ None. Last position closed 2026-04-30.
 | 20260430_060402 | 2026-04-30 | **buy 67 sh** (only this one ingested → corrected to 16 sh, trade 112) | $209.25 | $222.50 | $205.30 | 3.35:1 | 72 |
 | 20260430_124724 | 2026-04-30 | buy 3 sh (decision JSON only — NEVER ingested into Turso, no real position) | $209.50 | $221.89 | $205.30 | 2.95:1 | 74 |
 | **20260501_124529** | **2026-05-01** | **hold** | n/a | $212.25 (conditional) | $194.00 (conditional) | 2.67:1 | 35 |
+| **20260504_125732** | **2026-05-04** | **hold** | n/a | $210.50 (conditional) | $194.00 (conditional) | ~2.6:1 | 44 |
 
 ## Lessons learned
 
