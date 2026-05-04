@@ -12,7 +12,7 @@ summary: One formally closed position — 16 shares at $209.25 stopped out 2026-
 
 ## TL;DR
 
-One formally closed NVDA position in Turso (trade id 112): originally booked as 67 shares @ $209.25 due to a phantom $100K budget bug (commit b2b472d), now corrected to its proper sizing of 16 shares (14.2% vol-adjusted limit on the actual $25K paper account). Stopped out at $205.30 on 2026-04-30, realized P&L **-$63.20** (corrected from the buggy -$264.65 that briefly appeared in earlier wiki versions). Four prior tracker.db entries (IDs 6, 12, 13, 21) were marked abandoned 2026-04-29 with no realized P&L. No open NVDA positions as of 2026-05-01. Latest 2026-05-01 run scored HOLD (R/R 2.67, conf 35) pending hourly reversal candle at $196.75–$199.50.
+One formally closed NVDA position in Turso (trade id 112): originally booked as 67 shares @ $209.25 due to a phantom $100K budget bug (commit b2b472d), now corrected to its proper sizing of 16 shares (14.2% vol-adjusted limit on the actual $25K paper account). Stopped out at $205.30 on 2026-04-30, realized P&L **-$63.20** (corrected from the buggy -$264.65 that briefly appeared in earlier wiki versions). Four prior tracker.db entries (IDs 6, 12, 13, 21) were marked abandoned 2026-04-29 with no realized P&L. No open NVDA positions as of 2026-05-04. Latest 2026-05-04 run scored HOLD (R/R ~2.6:1, conf 44) pending hourly reversal candle at $196.75–$199.50. Confidence slightly higher vs. prior run (44 vs. 35) but still below 50 action threshold.
 
 ## Open positions
 

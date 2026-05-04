@@ -1,42 +1,42 @@
 ---
 name: macro regime
-last_updated: 2026-05-01
-last_run_id: 20260501_153820
+last_updated: 2026-05-04
+last_run_id: 20260504_125732
 target_words: 400
 stale_after_days: 14
-word_count: 397
-summary: Risk-on with caveats — S&P 500 at fresh all-time intraday highs above 7,200; Apple earnings beat; Iran peace talks ease oil pressure; April was best month since 2020. Fed leadership transition adds policy uncertainty.
+word_count: 408
+summary: Risk-off turn — Iran peace talks collapsed into active military escalation (missile strikes on US warship May 4); oil prices higher; Dow futures lower. Prior risk-on baseline from May 1 materially reversed. S&P 500 prior record high (7,230) may be tested.
 ---
 
 # Macro Regime
 
 ## TL;DR
 
-**Risk-on mood with near-term caveats.** S&P 500 hit a fresh all-time intraday high above 7,200 on May 1 (+0.54%), driven by Apple earnings beat (+3%) and geopolitical relief from Iran peace talks (WTI −2%). April 2026 was the best month for S&P 500 and Nasdaq since 2020. The Fed held at 3.5%–3.75% on April 29 in an 8-4 vote (most dissents since Oct 1992). Chair Powell's term ends May 15; Kevin Warsh's likely succession introduces near-term policy uncertainty. Inflation remains elevated (energy-driven), but the Iran de-escalation removes the dominant left-tail risk from the prior entry. [source: web_research/MSFT.json macro_context, run 20260501_153820]
+**Prior risk-on baseline overturned by Iran escalation.** The May 1 regime summary cited Iran peace talks and WTI −2% as the dominant catalyst shift to risk-on. That narrative reversed on May 4: reports of missile strikes on a US warship near Jask island have driven oil prices higher and Dow futures lower, returning the macro backdrop to mixed-to-cautious. The S&P 500 hit a record intraday high (7,230) on May 1 on Apple earnings; that session was the local peak before the geopolitical re-escalation. [source: web_research/NVDA.json macro_context, run 20260504_125732]
 
 ## Fed posture
 
-The Federal Reserve voted 8-4 on April 29 to hold the federal funds rate at **3.5%–3.75%** — third consecutive hold. The 4 dissents (most since Oct 1992) signal internal disagreement on the path forward. Chair Powell's last day as Chair is May 15; he stays on the Board of Governors. Kevin Warsh is the leading successor candidate. No rate cuts are signaled near-term; stagnant labor market and energy-driven inflation weigh on easing. The transition itself is a source of policy uncertainty independent of the rate level. [source: web_research/MSFT.json macro_context, run 20260501_153820]
+The Federal Reserve voted 8-4 on April 29 to hold the federal funds rate at **3.5%–3.75%** — third consecutive hold. The 4 dissents (most since Oct 1992) signal internal disagreement. Chair Powell's last day as Chair is May 15; he stays on the Board of Governors. Kevin Warsh is the leading successor candidate; Senate confirmation pending. No rate cuts signaled near-term. The transition introduces policy uncertainty independent of the rate level. [source: web_research/NVDA.json macro_context, run 20260504_125732]
 
 ## Rate trajectory and inflation
 
-Inflation remains above the 2% target primarily due to energy prices from the Iran conflict. IMF projects 2026 global growth at 3.1% and headline inflation at 4.4%. US tariffs remain a secondary structural inflation layer. Iran peace talks as of May 1 have WTI −2% for the session — a partial relief valve. If a ceasefire holds, the energy-driven inflation overhang eases materially, which would open the door for Fed cuts in H2 2026. [source: web_research/MSFT.json macro_context, run 20260501_153820]
+Inflation remains above the 2% target. The prior Iran de-escalation (WTI −2% on May 1) briefly eased the energy-driven inflation overhang — that relief is now unwinding. Strait of Hormuz closure threat is back on the table as a tail risk. If the conflict escalates further, energy prices spike, inflation expectations re-accelerate, and Fed easing timeline extends. [source: web_research/NVDA.json macro_context, run 20260504_125732]
 
-## Market context (May 1)
+## Market context (May 4)
 
-S&P 500 at fresh all-time intraday highs above 7,200 (+0.54%) on May 1. April 2026 was the best month for both S&P 500 and Nasdaq since 2020. Apple Q1 earnings beat drove +3% on May 1. The AI capex supercycle narrative is intact (Alphabet/Amazon beat in prior week, Azure +40%), but MSFT's post-earnings selloff and Meta's −9% capex shock introduced near-term AI-spend uncertainty. Big-tech Q1 earnings season is wrapping up with a net-positive read for AI infrastructure. [source: web_research/MSFT.json macro_context, run 20260501_153820]
+S&P 500 hit all-time intraday high 7,230 on May 1; Dow futures declined on May 4 on Iran escalation news. April 2026 was best month for S&P 500 and Nasdaq since 2020. AI capex supercycle narrative intact (Alphabet/Amazon beat, Azure +40%), but MSFT post-earnings selloff and Meta −9% capex shock introduced near-term AI-spend uncertainty. Palantir Q1 earnings due after close May 4 — AI software demand barometer. [source: web_research/NVDA.json macro_context and ticker_news, run 20260504_125732]
 
 ## Geopolitical and regulatory
 
-**Iran peace talks are the dominant catalyst shift from the prior entry.** Iran is engaging peace mediators as of May 1 — WTI −2% on the session. A Strait of Hormuz closure is no longer the base case. Secondary geopolitical risks: US tariff policy (ongoing), Fed leadership transition (May 15), US midterm elections 2026 (policy uncertainty). US-China trade tensions remain a background structural headwind. [source: web_research/MSFT.json macro_context, run 20260501_153820]
+**Iran escalation is the dominant catalyst reversal from the prior entry.** Peace talks cited on May 1 have collapsed into reported missile strikes on a US warship near Jask island on May 4 — Strait of Hormuz closure risk is back as a left-tail scenario. US tariff policy (ongoing), Fed leadership transition (May 15), and US-China trade tensions remain secondary structural headwinds. [source: web_research/NVDA.json macro_context, run 20260504_125732]
 
 ## Risk-off triggers
 
-- **Iran peace talks collapse** — oil spike resumes, inflation expectations re-accelerate
-- **Kevin Warsh hawkish pivot** — if successor signals tighter-for-longer, growth stocks re-rate lower
-- **AI capex ROI disappointment** — MSFT/Google Q4 guidance revisions would directly impact NVDA demand thesis
-- **US tariff escalation** — additional rounds could pressure supply chains and consumer sentiment
+- **Iran escalation deepens** — Strait of Hormuz closure, oil spike, inflation re-acceleration
+- **Kevin Warsh hawkish pivot** — successor signals tighter-for-longer, growth stocks re-rate lower
+- **AI capex ROI disappointment** — AMD Q1 earnings (May 5 AMC) is the immediate read-through for AI data center demand; negative report hits NVDA, AMD, and the broader AI capex thesis
+- **US tariff escalation** — additional rounds pressure supply chains and consumer sentiment
 
 ## Last updated
 
-2026-05-01. Sourced from `web_research/MSFT.json` macro_context (dated 2026-05-01), run `20260501_153820`. Supersedes prior entry (2026-04-30, run 20260430_124724) which reflected mixed-to-cautious mood with Iran blockade as dominant tail risk.
+2026-05-04. Sourced from `web_research/NVDA.json` macro_context (dated 2026-05-04), run `20260504_125732`. Supersedes prior entry (2026-05-01, run 20260501_153820) which reflected risk-on mood driven by Iran peace talks — that narrative has reversed as of May 4.
