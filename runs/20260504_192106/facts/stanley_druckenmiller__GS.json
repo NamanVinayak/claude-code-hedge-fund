@@ -1,0 +1,74 @@
+{
+  "signal": "bearish",
+  "score": 3.083333333333333,
+  "max_score": 10,
+  "growth_momentum_analysis": {
+    "score": 0,
+    "details": "Insufficient financial data for growth analysis"
+  },
+  "sentiment_analysis": {
+    "score": 5,
+    "details": "No news data; defaulting to neutral sentiment"
+  },
+  "insider_activity": {
+    "score": 5,
+    "details": "No insider trades data; defaulting to neutral"
+  },
+  "risk_reward_analysis": {
+    "score": 6.666666666666666,
+    "details": "Moderate debt-to-equity: 0.59; Moderate volatility: daily returns stdev 1.69%"
+  },
+  "valuation_analysis": {
+    "score": 2.5,
+    "details": "Attractive P/E: 14.77; No positive free cash flow for P/FCF calculation; No valid EV/EBIT because EV <= 0 or EBIT <= 0; No valid EV/EBITDA because EV <= 0 or EBITDA <= 0"
+  },
+  "web_context": {
+    "ticker": "GS",
+    "research_date": "2026-05-04",
+    "macro_context": {
+      "market_sentiment": "Risk-off on May 4, 2026: Dow -0.98%, S&P 500 and Nasdaq down ~0.5% as UAE intercepted Iranian missiles, reigniting Strait of Hormuz closure fears. WTI crude surged 4% above $106 and Brent crude +6% above $114, compressing risk appetite across equities.",
+      "fed_outlook": "FOMC held rates at 3.5%-3.75% on April 29, 2026 in an 8-4 split vote \u2014 the third consecutive hold after three prior cuts in 2025. Statement flagged elevated inflation partly from rising global energy prices; next cut not priced in until at least September 2026 given Middle East uncertainty.",
+      "geopolitical": "Iran-U.S. military confrontation (intermittent Strait of Hormuz closure) is the dominant risk event of 2026, driving the energy price spike and global growth downgrades. Trump suspended U.S. strikes on Iran for two weeks on May 1, triggering a brief rally; escalation risk remains elevated. Tariff uncertainty, Venezuela intervention, and NATO/Greenland posturing add secondary friction.",
+      "key_events": [
+        "Strait of Hormuz situation \u2014 any escalation or re-closure will spike oil further and pressure equities",
+        "Fed next meeting (June 2026) \u2014 market watching for any shift in easing timeline amid energy-driven inflation",
+        "U.S. midterm elections (November 2026) \u2014 increasing policy uncertainty",
+        "Q2 2026 earnings season (July 2026) \u2014 test of how corporates managed energy cost pass-through"
+      ]
+    },
+    "ticker_news": [
+      {
+        "headline": "Goldman Sachs Q1 2026 earnings: Revenue $17.2B (+14.4% YoY), EPS $17.55 (+24.3% YoY), beating $16.37 estimate; net income +17.9% YoY",
+        "sentiment": "positive",
+        "source": "QuiverQuant / Goldman Sachs Investor Relations"
+      },
+      {
+        "headline": "HSBC raised Goldman Sachs price target from $729 to $765 on May 4, 2026, maintaining positive outlook",
+        "sentiment": "positive",
+        "source": "TheStockObserver.com (2026-05-04)"
+      },
+      {
+        "headline": "Goldman Sachs is a partner in a $1.5B Anthropic/Blackstone enterprise AI joint venture, targeting private-equity portfolio companies",
+        "sentiment": "positive",
+        "source": "QuiverQuant / Goldman Sachs news aggregator"
+      },
+      {
+        "headline": "Goldman Sachs raised its oil price forecast following Middle East escalation; WTI now targeted above $110 for Q2 2026",
+        "sentiment": "neutral",
+        "source": "Motley Fool (2026-05-01)"
+      },
+      {
+        "headline": "Goldman Sachs disclosed $1.25M in lobbying spend; fixed income revenue fell 10% in Q1 vs. estimates, trailing JPMorgan and Morgan Stanley peers",
+        "sentiment": "negative",
+        "source": "QuiverQuant / CNBC (2026-04-15)"
+      }
+    ],
+    "analyst_consensus": {
+      "rating": "hold",
+      "avg_price_target": 913.0,
+      "recent_changes": "HSBC raised PT from $729 to $765 on May 4, 2026. Broader consensus (37 analysts) shows median PT of $982.50 with range $600-$1,050. Distribution: 8 Buy, 17 Hold, 1 Sell. Seeking Alpha recently downgraded stance to Hold citing market uncertainty. No major upgrades or downgrades from bulge-bracket analysts this week."
+    },
+    "competitor_activity": "JPMorgan and Morgan Stanley significantly outperformed Goldman in Q1 2026 fixed income: JPMorgan FICC revenue +21% to $7.1B vs. Goldman FICC -10% (missed by $910M); Morgan Stanley bond revenue +29%. Goldman led North America M&A by value ($267B in Q1), ahead of Morgan Stanley ($210B) and JPMorgan ($207B), suggesting advisory strength offsets trading weakness. Morgan Stanley viewed as cheaper and better diversified via wealth management; JPMorgan remains largest IB by total revenue and poses greatest competitive threat in trading.",
+    "earnings_info": "Q1 2026 reported April 14, 2026: Revenue $17.2B vs. $15.1B estimate (+14.4% YoY), EPS $17.55 vs. $16.37 estimate (+24.3% YoY). Large operating cash outflow flagged as a watch item. Q2 2026 (next earnings): expected ~July 14, 2026 (some sources cite July 22), analyst EPS consensus estimate $13.72, revenue estimate not confirmed via search."
+  }
+}

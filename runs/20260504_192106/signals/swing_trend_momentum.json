@@ -1,0 +1,20 @@
+{
+  "BAC": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "TREND ASSESSMENT: Daily EMA alignment is cleanly bullish (ema_10 52.93 > ema_21 52.31 > ema_50 51.56) with exceptional ADX of 51.52, confirming a strong underlying uptrend. Prior bullish call (run 20260430) is in-progress (MFE 2.52%, MAE -1.1%, verdict: in_progress) — no change in underlying thesis needed. MOMENTUM ASSESSMENT: Momentum is NOT accelerating — this is the key disqualifier. Daily MACD histogram is -0.0849 (negative, contracting). ROC is mixed: 5d +2.29% but 10d -1.24% (negative), 21d +8.06% — the 10d ROC going negative signals short-term momentum reversal. Hourly confirms: price (52.31) is below all hourly EMAs, hourly ADX 18.81 with minus_di (29.38) > plus_di (18.20) indicates hourly downtrend, and all hourly ROCs are negative (-0.68, -1.66, -1.13). Hourly MACD histogram also negative (-0.0838). MACRO: Iran escalation (missile strikes on US warship near Jask) returns regime to mixed-to-cautious — unfavorable for adding to financials. Wiki confirms: 'no add — R/R to $55.40 is only 1.6:1 at current price' with hourly momentum bearish. Lessons show EMA pullback setups have 0% win rate in last 30 days — lower confidence on any bullish entry. DECISION: Daily trend intact but momentum is decelerating (MACD histogram contracting, 10d ROC negative, hourly diverging bearish). Per strategy rules: 'Trend exists but momentum is decelerating — wait for re-acceleration.' Standing aside. Prior in-progress position holders may continue holding (stop below 21 EMA at ~51.50), but no new entry signal.",
+    "entry": 52.31,
+    "target": 55.4,
+    "stop": 51.5,
+    "timeframe": "neutral — no entry"
+  },
+  "GS": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "TREND ASSESSMENT: Daily EMA alignment is bullish (ema_10 920.84 > ema_21 907.08 > ema_50 888.81) with ADX 34.03 (strong) and plus_di (30.62) well above minus_di (12.32) at the daily close. Structurally an uptrend. MOMENTUM ASSESSMENT: Momentum is NOT accelerating — critical disqualifier. Daily MACD histogram -1.4238 (negative, decelerating). Daily ROC: 5d -0.35%, 10d -0.24% — both negative, only 21d (+7.38%) is positive. This means near-term momentum has reversed despite the longer-term trend. Hourly is materially weaker: current price (905.10) is below all hourly EMAs, hourly ADX 26.7 with minus_di (28.24) > plus_di (18.74) — a confirmed hourly downtrend. Hourly MACD histogram -2.1147 (strongly negative). Hourly ROC all negative: -0.93, -1.96, -0.15. Hourly bullish RSI divergence present (a nascent recovery signal) but not sufficient to override negative momentum. Wiki notes 'post-breakdown partial recovery — unresolved direction' from May 1 — current data (deeper hourly pullback to 905.10) supports the continuation of that unresolved state, which contradicts any bullish thesis. MACRO: Iran escalation to mixed-to-cautious regime — unfavorable for financials/trading firms. No prior grading on GS (null). DECISION: While the daily structure remains bullish, near-term momentum (5d ROC -0.35%, 10d ROC -0.24%, daily MACD histogram -1.4238) is decelerating. Hourly timeframe is in active downtrend. Per strategy rules, this is a 'wait for re-acceleration' situation. The hourly RSI divergence is worth watching as a potential re-entry trigger, but it has not confirmed. Stand aside until daily ROC 5d/10d turn positive and MACD histogram begins expanding.",
+    "entry": 907.08,
+    "target": 933.48,
+    "stop": 897.0,
+    "timeframe": "neutral — no entry"
+  }
+}

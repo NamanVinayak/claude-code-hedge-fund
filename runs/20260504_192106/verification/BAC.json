@@ -1,0 +1,77 @@
+{
+  "ticker": "BAC",
+  "verified_at": "2026-05-04T19:30:00",
+  "facts_files_checked": [
+    "warren_buffett__BAC.json",
+    "ben_graham__BAC.json",
+    "aswath_damodaran__BAC.json"
+  ],
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.2698,
+      "our_value_pct": "26.98%",
+      "web_value": 0.2732,
+      "web_value_pct": "27.32%",
+      "source": "CNBC / MacroTrends (April 2026)",
+      "status": "ok",
+      "deviation": "1.2%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": null,
+      "source": "N/A — not available for banks on standard screens (banks report NIM instead)",
+      "status": "unverified",
+      "deviation": "N/A",
+      "note": "Operating margin is not meaningful for banks; both facts bundle and web sources return null/N/A"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 13.01,
+      "web_value": 13.72,
+      "source": "MacroTrends / Gurufocus (April 27, 2026)",
+      "status": "ok",
+      "deviation": "5.5%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 372929855488.0,
+      "our_value_bn": 372.9,
+      "web_value_bn": 382.0,
+      "source": "CompaniesMarketCap / StockAnalysis (May 4, 2026)",
+      "status": "ok",
+      "deviation": "2.4%"
+    },
+    {
+      "metric": "revenue",
+      "our_value_implied_bn": 113.1,
+      "web_value_bn": 111.0,
+      "source": "MacroTrends / StockAnalysis / WallStreetZen (TTM through Q1 2026; range $110.47B–$113.09B)",
+      "status": "ok",
+      "deviation": "1.9%",
+      "note": "Revenue implied from facts price_to_sales_ratio=3.2974 × market_cap=$372.9B ÷ price_to_sales logic; Q1 2026 quarterly revenue $30.43B, FY2025 revenue $107.42B"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.1006,
+      "our_value_pct": "10.06%",
+      "web_value_pct": "10.50–10.97%",
+      "source": "CNBC (April 28, 2026), Gurufocus (Dec 2025: 9.92%), FinanceCharts (Apr 2026)",
+      "status": "ok",
+      "deviation": "4.4–9.0%"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.008942,
+      "our_value_pct": "0.894%",
+      "web_value_pct": "0.83–0.89%",
+      "source": "CNBC (April 18, 2026), mlq.ai (TTM 0.89%)",
+      "status": "ok",
+      "deviation": "0.6–7.7%"
+    }
+  ],
+  "overall_status": "all checks passed — no mismatches exceeding 20% threshold",
+  "corrections_applied": false,
+  "notes": "BAC metrics in facts bundle are well-aligned with current web consensus. The facts bundle was built from Q1 2026 data (report_period 2026-03-31). Operating margin is null in both sources — standard for bank financial reporting. Market cap difference (~2.4%) reflects normal intraday price movement between data pull and verification time."
+}
