@@ -1,18 +1,18 @@
 ---
 name: NVDA trades
-last_updated: 2026-05-04
-last_run_id: 20260504_125732
+last_updated: 2026-05-05
+last_run_id: 20260505_163241
 target_words: 800
 stale_after_days: 60
-word_count: 737
-summary: One formally closed position — 16 shares at $209.25 stopped out 2026-04-30 at $205.30, P&L -$63.20 (corrected from buggy -$264.65; see lessons.md). Four prior abandoned tracker.db entries from Apr 14-29 (no realized P&L). No open positions as of 2026-05-04.
+word_count: 763
+summary: One formally closed position — 16 shares at $209.25 stopped out 2026-04-30 at $205.30, P&L -$63.20 (corrected from buggy -$264.65; see lessons.md). Four prior abandoned tracker.db entries from Apr 14-29 (no realized P&L). No open positions as of 2026-05-05.
 ---
 
 # NVDA — Trades
 
 ## TL;DR
 
-One formally closed NVDA position in Turso (trade id 112): originally booked as 67 shares @ $209.25 due to a phantom $100K budget bug (commit b2b472d), now corrected to its proper sizing of 16 shares (14.2% vol-adjusted limit on the actual $25K paper account). Stopped out at $205.30 on 2026-04-30, realized P&L **-$63.20** (corrected from the buggy -$264.65 that briefly appeared in earlier wiki versions). Four prior tracker.db entries (IDs 6, 12, 13, 21) were marked abandoned 2026-04-29 with no realized P&L. No open NVDA positions as of 2026-05-04. Latest 2026-05-04 run scored HOLD (R/R ~2.6:1, conf 44) pending hourly reversal candle at $196.75–$199.50. Confidence slightly higher vs. prior run (44 vs. 35) but still below 50 action threshold.
+One formally closed NVDA position in Turso (trade id 112): originally booked as 67 shares @ $209.25 due to a phantom $100K budget bug (commit b2b472d), now corrected to its proper sizing of 16 shares (14.2% vol-adjusted limit on the actual $25K paper account). Stopped out at $205.30 on 2026-04-30, realized P&L **-$63.20** (corrected from the buggy -$264.65 that briefly appeared in earlier wiki versions). Four prior tracker.db entries (IDs 6, 12, 13, 21) were marked abandoned 2026-04-29 with no realized P&L. No open NVDA positions as of 2026-05-05. Latest 2026-05-05 run scored HOLD (conf 42, below 50 threshold), 3rd consecutive HOLD at the EMA-21/Fib 38.2% confluence zone ($196.75–$198.50) — waiting for hourly MACD histogram to turn positive AND a confirmed bullish reversal candle. AMD Q1 earnings tonight (May 5 AMC) is the immediate catalyst watch.
 
 ## Open positions
 
@@ -73,6 +73,7 @@ None. Last position closed 2026-04-30.
 | 20260430_124724 | 2026-04-30 | buy 3 sh (decision JSON only — NEVER ingested into Turso, no real position) | $209.50 | $221.89 | $205.30 | 2.95:1 | 74 |
 | **20260501_124529** | **2026-05-01** | **hold** | n/a | $212.25 (conditional) | $194.00 (conditional) | 2.67:1 | 35 |
 | **20260504_125732** | **2026-05-04** | **hold** | n/a | $210.50 (conditional) | $194.00 (conditional) | ~2.6:1 | 44 |
+| **20260505_163241** | **2026-05-05** | **hold** | n/a | $216.83 (conditional) | $193.50 (conditional) | 3.7:1 | 42 |
 
 ## Lessons learned
 
@@ -83,6 +84,7 @@ None. Last position closed 2026-04-30.
 5. **EMA pullback dip-buy: 0 wins, 1 stop, -$63.20 (corrected) in 30 days.** This setup type requires a confirmed hourly reversal candle at the EMA-21 / Fib 38.2% confluence ($196.75–$197.67) before re-entry — not a blind dip-buy.
 6. **$208.20 invalidation level must be respected.** The Apr 30 entry at $209.25 was just above $208.20. Price went on to break $208.20 decisively. The wiki's own hard stop was the right signal — trust it.
 7. **Sizing bug taught us a meta-lesson.** A buggy $100K phantom budget produced a position 4× too large. The strategy itself wasn't broken — the engineering was. Going forward, the new conviction-based sizing model + hard caps should prevent this recurring.
+8. **Three consecutive HOLDs at the same zone.** Runs 20260501_124529, 20260504_125732, and 20260505_163241 all landed at the same EMA-21/Fib 38.2% support zone ($196.75–$198.50) with HOLD verdicts pending confirmation. AMD Q1 earnings tonight (May 5 AMC) is the binary catalyst that may resolve the entry trigger. R/R improved to 3.7:1 on the extended $216.83 target. (decisions.json, 20260505_163241)
 
 ## Lifetime stats
 
