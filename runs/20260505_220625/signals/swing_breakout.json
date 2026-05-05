@@ -1,0 +1,20 @@
+{
+  "NKE": {
+    "signal": "neutral",
+    "confidence": 25,
+    "reasoning": "NKE presents a potential bearish breakout setup below $42.09 support (1 test, not volume-confirmed), but critical factors veto a trade entry. Consolidation range: $42.09 (support) to $46.97 (resistance, 4 tests, wiki-tracked bull trigger). Current price at $43.09 is $1.00 above the bear-trigger support level — not a confirmed break. Volume on May 4 was 33.27M vs 20-day avg 22.29M = 1.49x relative volume, just below the required 1.5x threshold. Daily BB width of 0.1087 is moderate — no squeeze present, volatility is not in coil state. Hourly BB width 0.0662 is tighter but the squeeze has not fired with price direction. RSI-7 at 18.35 is deeply oversold and wiki explicitly flags 'DO NOT short here' — the Apr 14 NKE short failed on insider-buying bounce when RSI was similarly extreme (-$35.70 loss). EMA cascade is fully bearish (downtrend confirmed on both daily and hourly), but this is an established trend, not a breakout-from-range setup. For a bullish breakout: price would need a close above $46.97 with 1.5x+ volume (measured move target $51.85); price is 9% below that level with no consolidation forming near resistance. For a bearish breakout: a close below $42.09 with 1.5x+ volume would be the trigger, but RSI-7 oversold extreme and lack of volume confirmation today make shorting here a low-probability setup with poor R/R. Squeeze: not in coil state (BB width moderate). Standing aside — no clean breakout entry in either direction.",
+    "entry": 42.09,
+    "target": 38.79,
+    "stop": 44.10,
+    "timeframe": "5-10 trading days"
+  },
+  "DIS": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "DIS had a candidate breakout on April 30 ($103.75 close, 9.2M volume = 1.21x avg — volume below 1.5x threshold), which has now fully retraced. Price pulled back from $104.83 high to $101.31 (daily) / $100.48 (hourly), within $0.50 of the prior hard stop at $101.00. Consolidation range: $98.45 support (11 tests) to $107.11 resistance (12 tests) — well-defined, multi-test range ideal for a breakout setup in principle. However, the April 30 move failed to hold: the breakout above the EMA cluster ($102.04–$102.84) has been negated and price is now testing the lower end of the range. Prior call (bullish, confidence 58, entry $103.90, target $107.11, stop $101.00) is graded 'in_progress' — price has traveled against the entry by 2.53% MAE without hitting either target or stop. This run's price action is different: I am NOT re-entering the same thesis that is currently underwater. Earnings May 6 pre-market (2 days) creates a binary catalyst — risk manager blackout applies and no new entry is authorized per wiki. Hourly BB width 0.0404 is very tight (squeeze coiling at support) and hourly RSI-21 at 25.04 is deeply oversold — these are conditions for a potential bounce / bullish breakout after earnings, but the setup requires earnings to act as catalyst confirmation, which is outside the scope of a pre-earnings breakout trade. Daily volume 1.11x average — no volume confirmation for any break. ADX 36.98 with +DI 26.02 vs -DI 25.43 nearly equal — no dominant direction. Squeeze is coiling (hourly width 0.0404 is the tightest reading), but the breakout direction is unresolved and earnings in 2 days make this untradeable. Standing aside — earnings binary blocks entry, prior bullish call is in-progress and I am not doubling down at near-stop levels.",
+    "entry": 98.45,
+    "target": 107.11,
+    "stop": 96.50,
+    "timeframe": "7-12 trading days"
+  }
+}

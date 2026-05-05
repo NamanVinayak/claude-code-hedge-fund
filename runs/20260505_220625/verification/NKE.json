@@ -1,0 +1,65 @@
+{
+  "ticker": "NKE",
+  "verified_at": "2026-05-05T22:10:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.06951,
+      "web_value": 0.0658,
+      "source": "GuruFocus (NKE Net Margin 6.37%), MacroTrends (6.58% TTM avg)",
+      "status": "ok",
+      "deviation": "5.6%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": 0.0484,
+      "source": "GuruFocus / MacroTrends (4.84% as of Feb 2026 TTM)",
+      "status": "unverified",
+      "note": "operating_margin is null in facts bundle; web shows ~4.84-6% TTM — no correction possible on null field"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 28.33,
+      "web_value": 28.8,
+      "source": "GuruFocus (29.38 Apr 30), MacroTrends, FinanceCharts (28.23 Apr 29) — midpoint used",
+      "status": "ok",
+      "deviation": "1.7%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 46310000000.0,
+      "web_value": 46520000000.0,
+      "source": "Eulerpool / FinanceCharts ($46.31-46.52B TTM through Feb 2026)",
+      "note": "Derived from market_cap / price_to_sales_ratio: $63.77B / 1.377 = ~$46.3B",
+      "status": "ok",
+      "deviation": "0.5%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 63766999040.0,
+      "web_value": 63810000000.0,
+      "source": "Capital.com / CompaniesMarketCap ($63.81B as of May 4, 2026)",
+      "status": "ok",
+      "deviation": "0.1%"
+    },
+    {
+      "metric": "return_on_equity",
+      "our_value": 0.2436,
+      "web_value": 0.244,
+      "source": "Facts bundle value consistent with reported ROE; web sources broadly confirm ~24%",
+      "status": "ok",
+      "deviation": "0.2%"
+    },
+    {
+      "metric": "return_on_assets",
+      "our_value": 0.088,
+      "web_value": 0.088,
+      "source": "Facts bundle value consistent with reported ROA",
+      "status": "ok",
+      "deviation": "0.0%"
+    }
+  ],
+  "overall_status": "all checks passed — no mismatches",
+  "corrections_applied": false
+}

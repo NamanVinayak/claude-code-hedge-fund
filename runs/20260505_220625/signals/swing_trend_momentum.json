@@ -1,0 +1,20 @@
+{
+  "NKE": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "TREND ASSESSMENT: NKE is in a confirmed downtrend — EMA cascade is fully bearish (10 EMA 44.55 < 21 EMA 45.74 < 50 EMA 49.95), ema_aligned_downtrend=true on both daily and hourly timeframes. Price ($43.09) is 5.78% below the 21 EMA and 13.73% below the 50 EMA. ADX is 23.96, just below the 25 threshold required for a clean trend trade, with -DI (27.5) dominating +DI (21.59) confirming bearish direction. MOMENTUM ASSESSMENT: ROC is all-negative (5d: -4.54%, 10d: -7.29%, 21d: -2.49%), confirming downward momentum. However, the daily MACD histogram has turned slightly positive (+0.3007) as the MACD line moves from -2.048 toward -1.747 — indicating downside momentum is beginning to decelerate, not accelerate. Hourly MACD histogram is -0.1259 (still negative). NO ENTRY RATIONALE: My strategy requires entering on a PULLBACK to the 10 or 21 EMA — not chasing price already extended 5.78% below the 21 EMA. RSI-7 at 18.35 signals extreme oversold conditions creating violent bounce risk, which is explicitly flagged in the wiki as a veto on shorting at current levels. The prior bearish call (entry $45.80, target $42.20) is in-progress with MFE of 5.92% — price is approaching the target zone. WIKI CONFIRMATION: Prior technicals note confirms 'wait for bounce to 10 EMA zone ($44.88-$44.96) for clean short entry.' Current price is $2+ below that zone. LESSONS: The prior EMA pullback Fib dip-buy loss on NVDA (-$63.20) demonstrates the danger of entering in momentum exhaustion without confirmation candle. Standing aside until price bounces to 10/21 EMA zone for a potential bearish re-entry.",
+    "entry": 44.55,
+    "target": 42.09,
+    "stop": 45.5,
+    "timeframe": "5-10 trading days"
+  },
+  "DIS": {
+    "signal": "neutral",
+    "confidence": 15,
+    "reasoning": "TREND ASSESSMENT: DIS has no clear trend — ema_aligned_uptrend=false AND ema_aligned_downtrend=false on both daily and hourly timeframes. All short-term EMAs (5d: 102.33, 10d: 102.50, 20d: 102.02, 21d: 101.97, 50d: 102.24) are clustered within a $0.50 band — a tangled EMA structure with no directional alignment. Despite ADX at 36.98 (strong reading), +DI (26.02) and -DI (25.43) are nearly identical — the ADX is measuring volatility from recent chop, not a directional trend worth trading. MOMENTUM ASSESSMENT: ROC is deeply mixed — roc_5d: -1.02%, roc_10d: -4.69% (negative) vs roc_21d: +4.86% (positive). This mixed ROC across timeframes is an explicit neutral trigger per strategy rules. Daily MACD histogram is -0.132 (negative, decelerating from the April 30 surge). Hourly MACD histogram is -0.2023 (worsening), with hourly -DI (30.48) significantly dominating +DI (14.62), indicating short-term bearish pressure. EARNINGS EVENT RISK: DIS reports earnings May 6 pre-market — this is a 1-day binary event that makes any swing position taken today a pure earnings gamble, not a trend-momentum trade. WIKI CONFIRMATION: Wiki confirms 'near-stop pullback consolidation — watch only' with earnings blackout enforced. The April 30 breakout from $104.83 has been nearly fully retraced to $101.31. MACRO: Mixed-to-cautiously-bullish regime with geopolitical tail risk from Iran-Strait of Hormuz adds further uncertainty. All conditions point to standing aside: tangled EMAs, mixed ROC, decelerating MACD, and earnings event risk within 24 hours.",
+    "entry": 0.0,
+    "target": 0.0,
+    "stop": 0.0,
+    "timeframe": "no trade"
+  }
+}

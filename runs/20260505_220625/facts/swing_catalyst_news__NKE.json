@@ -1,0 +1,344 @@
+{
+  "ticker": "NKE",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 44.101327908995295,
+      "sma_5": 44.25400009155273,
+      "ema_10": 44.55267297451337,
+      "sma_10": 44.79499969482422,
+      "ema_20": 45.59934856830965,
+      "sma_20": 44.557499694824216,
+      "ema_21": 45.735135275201486,
+      "sma_21": 44.53238060360863,
+      "ema_50": 49.950158098379994,
+      "sma_50": 50.89963348388672,
+      "ema_200": 58.64378711002844,
+      "sma_200": 63.268370361328124,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": true
+    },
+    "current_price": 43.09000015258789,
+    "dist_from_50sma_pct": -15.34,
+    "price_vs_ma": {
+      "above_ema_5": false,
+      "pct_from_ema_5": -2.29,
+      "above_sma_5": false,
+      "pct_from_sma_5": -2.63,
+      "above_ema_10": false,
+      "pct_from_ema_10": -3.28,
+      "above_sma_10": false,
+      "pct_from_sma_10": -3.81,
+      "above_ema_20": false,
+      "pct_from_ema_20": -5.5,
+      "above_sma_20": false,
+      "pct_from_sma_20": -3.29,
+      "above_ema_21": false,
+      "pct_from_ema_21": -5.78,
+      "above_sma_21": false,
+      "pct_from_sma_21": -3.24,
+      "above_ema_50": false,
+      "pct_from_ema_50": -13.73,
+      "above_sma_50": false,
+      "pct_from_sma_50": -15.34,
+      "above_ema_200": false,
+      "pct_from_ema_200": -26.52,
+      "above_sma_200": false,
+      "pct_from_sma_200": -31.89,
+      "above_ema_aligned_downtrend": true,
+      "pct_from_ema_aligned_downtrend": 4209.0
+    },
+    "rsi": {
+      "rsi_7": 18.35,
+      "rsi_14": 41.65,
+      "rsi_21": 45.57
+    },
+    "rsi_divergence": {
+      "bullish": true,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": -1.7473,
+      "signal_line": -2.048,
+      "histogram": 0.3007,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 46.98,
+      "middle": 44.56,
+      "lower": 42.14,
+      "width": 0.1087,
+      "pct_b": 0.1971
+    },
+    "atr": {
+      "atr_14": 1.13,
+      "atr_pct": 2.63
+    },
+    "adx": {
+      "adx_14": 23.96,
+      "plus_di": 21.59,
+      "minus_di": 27.5,
+      "trend_strength": "moderate"
+    },
+    "volume": {
+      "current_volume": 33272400,
+      "avg_volume_20": 22285370,
+      "relative_volume": 1.49,
+      "volume_bias_10d": "down",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 46.97,
+          "tests": 4,
+          "volume_confirmed": false
+        },
+        {
+          "price": 68.04,
+          "tests": 1,
+          "volume_confirmed": true
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 42.09,
+          "tests": 1,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 46.97,
+      "nearest_support": 42.09,
+      "recent_high": 46.97,
+      "recent_low": 42.09,
+      "prev_day_high": 44.96,
+      "prev_day_low": 44.22,
+      "prev_day_close": 44.4
+    },
+    "fibonacci": {
+      "swing_high": 54.22,
+      "swing_low": 42.09,
+      "fib_236": 51.36,
+      "fib_382": 49.59,
+      "fib_500": 48.16,
+      "fib_618": 46.72,
+      "fib_786": 44.69,
+      "fib_ext_1272": 57.52,
+      "fib_ext_1618": 61.72,
+      "fib_ext_2000": 66.35,
+      "fib_ext_low_1272": 38.79,
+      "fib_ext_low_1618": 34.59
+    },
+    "momentum": {
+      "roc_5d": -4.54,
+      "roc_10d": -7.29,
+      "roc_21d": -2.49
+    },
+    "z_score_50": -1.17,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 43.56381522155423,
+      "sma_24": 43.74387804667155,
+      "ema_48": 44.02113975632211,
+      "sma_48": 44.1993633111318,
+      "ema_120": 44.39068814164461,
+      "sma_120": 44.78269653320312,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": true
+    },
+    "current_price": 43.045467376708984,
+    "dist_from_50sma_pct": -3.88,
+    "price_vs_ma": {
+      "above_ema_24": false,
+      "pct_from_ema_24": -1.19,
+      "above_sma_24": false,
+      "pct_from_sma_24": -1.6,
+      "above_ema_48": false,
+      "pct_from_ema_48": -2.22,
+      "above_sma_48": false,
+      "pct_from_sma_48": -2.61,
+      "above_ema_120": false,
+      "pct_from_ema_120": -3.03,
+      "above_sma_120": false,
+      "pct_from_sma_120": -3.88,
+      "above_ema_aligned_downtrend": true,
+      "pct_from_ema_aligned_downtrend": 4204.55
+    },
+    "rsi": {
+      "rsi_21": 30.69
+    },
+    "rsi_divergence": {
+      "bullish": true,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": -0.5087,
+      "signal_line": -0.3828,
+      "histogram": -0.1259,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 45.66,
+      "middle": 44.2,
+      "lower": 42.74,
+      "width": 0.0662,
+      "pct_b": 0.1056
+    },
+    "atr": {
+      "atr_24": 0.32,
+      "atr_pct": 0.75
+    },
+    "adx": {
+      "adx_24": 19.52,
+      "plus_di": 16.61,
+      "minus_di": 28.33,
+      "trend_strength": "weak"
+    },
+    "volume": {
+      "current_volume": 2933250,
+      "avg_volume_20": 4837381,
+      "relative_volume": 0.61,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": true
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 44.96,
+          "tests": 28,
+          "volume_confirmed": false
+        },
+        {
+          "price": 45.41,
+          "tests": 8,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 42.65,
+          "tests": 4,
+          "volume_confirmed": false
+        },
+        {
+          "price": 43.51,
+          "tests": 7,
+          "volume_confirmed": true
+        },
+        {
+          "price": 44.75,
+          "tests": 29,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 44.96,
+      "nearest_support": 42.65,
+      "recent_high": 44.71,
+      "recent_low": 42.65,
+      "prev_day_high": 43.08,
+      "prev_day_low": 42.76,
+      "prev_day_close": 43.06
+    },
+    "fibonacci": {
+      "swing_high": 44.96,
+      "swing_low": 42.65,
+      "fib_236": 44.41,
+      "fib_382": 44.08,
+      "fib_500": 43.81,
+      "fib_618": 43.53,
+      "fib_786": 43.14,
+      "fib_ext_1272": 45.59,
+      "fib_ext_1618": 46.39,
+      "fib_ext_2000": 47.27,
+      "fib_ext_low_1272": 42.02,
+      "fib_ext_low_1618": 41.22
+    },
+    "momentum": {
+      "roc_5d": -0.21,
+      "roc_10d": -0.83,
+      "roc_21d": -2.96
+    },
+    "z_score_120": -1.54,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 45.380001068115234,
+      "close": 45.029998779296875,
+      "high": 45.709999084472656,
+      "low": 44.75,
+      "volume": 12426000,
+      "time": "2026-04-28"
+    },
+    {
+      "open": 44.91999816894531,
+      "close": 44.38999938964844,
+      "high": 45.15999984741211,
+      "low": 44.150001525878906,
+      "volume": 13329700,
+      "time": "2026-04-29"
+    },
+    {
+      "open": 44.09000015258789,
+      "close": 44.36000061035156,
+      "high": 44.810001373291016,
+      "low": 43.5099983215332,
+      "volume": 21679500,
+      "time": "2026-04-30"
+    },
+    {
+      "open": 44.81999969482422,
+      "close": 44.400001525878906,
+      "high": 44.959999084472656,
+      "low": 44.220001220703125,
+      "volume": 11562800,
+      "time": "2026-05-01"
+    },
+    {
+      "open": 44.189998626708984,
+      "close": 43.09000015258789,
+      "high": 44.34000015258789,
+      "low": 43.09000015258789,
+      "volume": 33272400,
+      "time": "2026-05-04"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 43.060001373291016,
+  "market_cap": 63766999040.0,
+  "wiki_context": {
+    "slices": {
+      "catalysts_full": {
+        "path": "wiki/tickers/NKE/catalysts.md",
+        "mode": "full",
+        "content": "# NKE \u2014 Catalysts\n\n## TL;DR\n\nThe catalyst backdrop remains almost entirely bearish: a second round of 2026 layoffs (~1,400 roles in tech and global operations), ongoing analyst downgrades in April 2026, and macro risk-off from Iran escalation (May 4, WTI near $105) adding consumer discretionary pressure. The lone contrarian signals are board insider buys at multi-year lows and a Dogs of the Dow contrarian thesis. Next binary event: Q4 FY2026 earnings June 25, 2026.\n\nSources: `web_research/NKE.json` and `swing_catalyst_news` signal, run `20260504_221111`.\n\n---\n\n## Upcoming events\n\n| Date | Event | Significance |\n|---|---|---|\n| June 25, 2026 | Q4 FY2026 earnings (after market close) | Consensus EPS $0.12, revenue $10.86B \u2014 binary risk |\n| June 12\u201315, 2026 | Enter earnings catalyst window | Re-evaluate for pre-earnings setup |\n| May 4+, Ongoing | Iran escalation / oil >$105/bbl | Consumer sentiment headwind; tariff pass-through on Asian manufacturing |\n| Ongoing | Fed leadership transition (Powell successor May 15) | Policy uncertainty; no cuts priced in 2026 |\n\n**Earnings blackout note**: Risk manager enforces a 3-day blackout before earnings. Any swing position initiated before June 22 should be closed before the June 25 print.\n\n---\n\n## Recent news synthesis\n\n| Headline | Sentiment | Date / Source |\n|---|---|---|\n| Nike second round of 2026 layoffs: ~1,400 roles in tech and global ops cut under \"Win Now\" restructuring | Negative | StockTwits / MarketBeat, May 2026 |\n| Stock down ~29% YTD; turnaround under CEO Elliott Hill taking longer than expected | Negative | Yahoo Finance / Morningstar, May 2026 |\n| Q3 FY2026: Wholesale +5% to $6.5B, Nike Direct -4%, digital -9%; low-single-digit revenue declines guided for next 9 months | Neutral | 24/7 Wall St. / FinancialContent, April 2026 |\n| Wave of analyst downgrades: DA Davidson (buy\u2192neutral, PT $72\u2192$46), CICC (outperform\u2192market perform, PT $69\u2192$58), Citigroup (neutral, PT $65\u2192$53), Piper Sandler (overweight\u2192neutral, PT $60\u2192$50) | Negative | Cerbat Gem / GuruFocus, April 2026 |\n| Dogs of the Dow contrarian thesis: some analysts argue NKE is a buy at elevated yield and decade lows | Positive | 24/7 Wall St., April 14, 2026 |\n| Adidas gaining market share \u2014 lifestyle shoes dominant; Adizero performance line advancing; earnings momentum stronger than NKE | Negative | web_research/NKE.json, run `20260504_221111` |\n| Iran escalation (UAE intercepted Iranian missiles May 4) \u2014 consumer discretionary names face risk-off headwind | Negative | web_research/NKE.json macro_context, run `20260504_221111` |\n\n---\n\n## Analyst consensus\n\nAs of May 4, 2026 (`web_research/NKE.json`, run `20260504_221111`):\n\n- **Rating**: Hold (~19 Buy / 18 Hold / 2 Sell across surveyed analysts)\n- **Average price target**: $63.44 (~43% implied upside from ~$44 current price)\n- **Recent changes**: DA Davidson (buy\u2192neutral, PT $72\u2192$46), CICC (outperform\u2192market perform, PT $69\u2192$58), Citigroup (neutral, PT $65\u2192$53), HSBC (buy\u2192hold), Piper Sandler (overweight\u2192neutral, PT $60\u2192$50). Last upgrade: Barclays PT raised to $73 on March 11, 2026.\n\n---\n\n## Insider activity\n\n| Insider | Transaction | Amount | Date | Signal |\n|---|---|---|---|---|\n| Robert Swan (board) | Buy \u2014 shares at $42.44 | ~$500K | Apr 7, 2026 | Bullish |\n| John Rogers Jr. (board) | Buy \u2014 shares at $43.34 | ~$173K | Apr 9, 2026 | Bullish |\n| Net insider flow (90-trade window) | Sell-side heavier | Buys $19.7M vs. Sells $33.2M | Multi-month | Bearish net |\n\n---\n\n## Competitive landscape\n\nAdidas is the sharpest threat: Samba/Gazelle trend dominating lifestyle; strong earnings momentum and better relative valuation. On Running and Hoka taking premium performance share. Under Armour restructured aggressively \u2014 severed Steph Curry endorsement deal, reduces competitive relevance. Nike's wholesale rebound (+5%) contrasts sharply with continued Nike Direct and digital declines. Source: `web_research/NKE.json`, run `20260504_221111`.\n",
+        "last_updated": "2026-05-04",
+        "stale": false
+      },
+      "calendar_full": {
+        "missing": true,
+        "mode": "full"
+      },
+      "lessons_full": {
+        "path": "wiki/meta/lessons.md",
+        "mode": "full",
+        "content": "## Format\n\nEach lesson is one dated bullet:\n\n`[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME: +$X / -$X] | [WHY it worked or failed in 1 sentence]`\n\nThe \"why\" should reference: the thesis at the time, the macro regime, which swing strategy recommended it.\n\n---\n\n## Patterns (auto-generated by Sunday compactor, last 30 days)\n\n| Setup Type | Trades | Wins | Win Rate | Avg P&L | Total P&L |\n|---|---|---|---|---|---|\n| EMA pullback Fib dip-buy | 1 | 0 | 0% | -$63.20 | -$63.20 |\n\n## Lessons\n\n2026-04-30 | NVDA | EMA pullback Fib dip-buy | -$63.20 (corrected from -$264.65) | Stop triggered at $205.30 (hourly Fib 61.8%); swing_trend_momentum and swing_breakout were bullish on AI capex thesis, but price breached the stop zone intraday amid stretched macro (RSI 81\u201387) with no bullish confirmation candle before exit. **Note:** trade was originally sized 67 shares ($14,020) due to a phantom $100K budget bug (fixed commit b2b472d). With the correct $25K budget at 14.2% vol-adj limit, position would have been 16 shares ($3,348). Corrected P&L reflects the strategy's actual signal quality, not the sizing error.\n",
+        "last_updated": "2026-05-01",
+        "stale": false
+      }
+    }
+  },
+  "prediction_grading": null
+}

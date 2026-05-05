@@ -1,0 +1,20 @@
+{
+  "NKE": {
+    "signal": "bullish",
+    "confidence": 42,
+    "reasoning": "Branch A fires weakly. RSI-7 at 18.35 is deeply oversold (below 25 threshold), RSI-14 at 41.65 is mid-range with daily bullish RSI divergence confirmed over 60-bar lookback, and hourly RSI-21 at 30.69 is also approaching oversold with hourly bullish RSI divergence firing. Price is -15.34% from 50-SMA, an extreme extension. Daily Bollinger pct_b = 0.197 and hourly pct_b = 0.106 indicate price is compressed near the lower bands on both timeframes. Hourly OBV is diverging from price (OBV trending up while price drifts lower) — a classic bullish divergence. Branch B does not fire: the dominant trend is clearly bearish (EMA cascade fully aligned down on daily and hourly, ADX 23.96 with -DI 27.5 dominating +DI 21.59), and price has overshot the 78.6% Fibonacci retracement level (swing high 54.22, 78.6% fib = 44.69), so structure is broken for a clean dip-buy. Confidence capped at 42 for several reasons: (1) Prior call in_progress (bullish from 44.40, stop 42.09) — price has moved from 44.40 to 43.09, approaching the stop zone; prior thesis has not yet resolved. Today's re-entry differs by targeting the RSI-7 oversold extreme rather than a Fib bounce. (2) Daily Z-score only -1.17, below the -2.0 statistical extreme threshold; RSI-7 extreme is the primary Branch A trigger here. (3) Volume expanding on today's selloff (relative volume 1.49, 33.2M shares) — expanding volume on a down move is a warning sign, not a bullish signal. (4) Wiki notes RSI-7 at ~21 on May 4 already flagged violent bounce risk — this is not a fresh extreme but a continuation. (5) EMA pullback Fib dip-buy has a 0% win rate in last 30 days (NVDA loss). Waiting for a reversal candle confirmation before committing. Entry is near current price contingent on a non-red close or hammer. Target is the middle Bollinger Band / 50-SMA area (~44.56). Stop below the prior pivot low at 42.09.",
+    "entry": 43.15,
+    "target": 44.56,
+    "stop": 41.90,
+    "timeframe": "4-8 trading days"
+  },
+  "DIS": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "Neither branch fires. Branch A: Daily Z-score is 0.12 (squarely at the mean — no statistical extreme). RSI-14 at 45.63 and RSI-7 at 33.84 are not extreme enough for a fade setup. Daily Bollinger pct_b = 0.403 (well inside the bands). No Branch A setup. Branch B consideration: Price pulled back from the April 30 breakout high at 104.83 to 101.31, landing almost exactly at the daily Fibonacci 38.2% retracement level (101.41) — a technically interesting level. Hourly RSI-21 = 25.04 is approaching the oversold extreme and bullish RSI divergence is detected on both timeframes. On the surface, this has Branch B characteristics. However, three factors vetoed: (1) EARNINGS in 2 days (May 6 pre-market, per wiki). Entering a swing trade 2 days before earnings creates binary gap risk that negates the entire risk/reward framework — the stop loss is meaningless if price gaps 5%+ through it. Wiki explicitly states 'earnings risk manager blackout enforced.' (2) Prior call expired_wrong: prior bullish call entered at 103.75 targeting 107.11, stop 101.00. Price fell from 103.75 to 101.31 — close to the stop level. Repeating the same bullish dip-buy thesis at 101.31 without adjustment would ignore the lesson from the expired_wrong grade. The breakout thesis has been invalidated. (3) OBV is trending down on both daily and hourly timeframes with no divergence — accumulation is not occurring despite the price dip, which undermines the dip-buy thesis. Post-earnings reassessment is appropriate. If DIS gaps up on earnings and holds above 104.83, a momentum entry would be valid. If DIS gaps down and stabilizes near 98.45 support, a Branch A oversold fade could set up.",
+    "entry": 101.31,
+    "target": 103.59,
+    "stop": 99.40,
+    "timeframe": "neutral — no active setup; reassess post-earnings (May 6)"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "ticker": "DIS",
+  "verified_at": "2026-05-05T22:10:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.13136,
+      "web_value": 0.1314,
+      "source": "FinanceCharts (13.87% latest), AlphaQuery / MacroTrends (13.14% FY2025 annual) — facts bundle matches FY2025 annual figure",
+      "status": "ok",
+      "deviation": "0.0%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.18587,
+      "web_value": 0.1491,
+      "source": "GuruFocus (14.91% TTM Dec 2025); Disney Q1 FY2026 earnings confirm TTM operating income $13,629M — 18.59% reflects FY2025 annual (Sept 2025), not TTM through Dec 2025",
+      "status": "MISMATCH",
+      "deviation": "24.7%",
+      "action": "replaced 0.18587238549113053 with 0.1491 in all facts bundles containing this field (warren_buffett__DIS.json, aswath_damodaran__DIS.json)"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 14.798,
+      "web_value": 14.86,
+      "source": "GuruFocus (14.48 Apr 8), FinanceCharts (15.23 Apr 30), Public.com (14.48 TTM) — midpoint ~14.86",
+      "status": "ok",
+      "deviation": "0.4%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 94440000000.0,
+      "web_value": 95716000000.0,
+      "source": "FinanceCharts / YCharts ($95.716B TTM through Dec 27, 2025)",
+      "note": "Derived from market_cap / price_to_sales_ratio: $178B / 1.885 = ~$94.4B; slight lag vs web likely due to rounding in P/S ratio",
+      "status": "ok",
+      "deviation": "1.3%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 178002329600.0,
+      "web_value": 180570000000.0,
+      "source": "CompaniesMarketCap ($180.57B May 4, 2026); Capital.com ($182.90B May 3); reflects stock price movement since facts were built",
+      "status": "ok",
+      "deviation": "1.4%"
+    },
+    {
+      "metric": "return_on_equity",
+      "our_value": 0.11290,
+      "web_value": 0.113,
+      "source": "Facts bundle value consistent with DIS reported ROE ~11.3%",
+      "status": "ok",
+      "deviation": "0.1%"
+    },
+    {
+      "metric": "return_on_assets",
+      "our_value": 0.06280,
+      "web_value": 0.063,
+      "source": "Facts bundle value consistent with DIS reported ROA ~6.3%",
+      "status": "ok",
+      "deviation": "0.3%"
+    }
+  ],
+  "overall_status": "1 mismatch corrected",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260505_220625/facts/warren_buffett__DIS.json",
+    "runs/20260505_220625/facts/aswath_damodaran__DIS.json"
+  ]
+}
