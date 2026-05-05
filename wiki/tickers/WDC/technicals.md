@@ -1,42 +1,41 @@
 ---
 name: WDC technicals
-last_updated: 2026-05-04
-last_run_id: 20260504_203608
+last_updated: 2026-05-05
+last_run_id: 20260505_203524
 target_words: 350
 stale_after_days: 7
-word_count: 344
-summary: pre-ATH coiling setup — bullish but entry requires pullback to $422-440 or confirmed daily close above $446.62 ATH; hourly OBV confirming; RSI 83 elevated but inside Bollinger Band
+word_count: 419
+summary: post-ATH breakout pullback setup — price ~$465 hourly / $442.36 daily close; ATH $446.62 broken intraday (high $453.83), now support; hourly OBV bearish divergence (key risk); entry zone $444-448; ADX 67.55 strong uptrend
 ---
 
 # WDC — Technicals
 
 ## TL;DR
 
-Price ~$442.36 (run 20260504_203608). Daily RSI-14 83.22, RSI-7 78.49 — elevated but inside the Bollinger Band (pct_b 0.90, not above upper band). Z-score vs 50-SMA = 2.13. ADX 67.86 with +DI 33 >> −DI 13 — strong established uptrend. Hourly OBV trending UP with no divergence (key contrast with STX). Hourly RSI-21 = 65.74 (not overbought). ATH $446.62 directly overhead as resistance (6 hourly tests). Setup type: **pre-ATH coiling / wait for pullback or confirmed breakout**. [source: signals_combined.json, run 20260504_203608]
+Price ~$465.26 (hourly) / $442.36 (daily close, run 20260505_203524). Daily RSI-14 82.48, RSI-7 77.53 — elevated but less extreme than STX. Z-score vs 50-SMA = 2.16. ADX 67.55 with EMA stack fully aligned bullish. ATH $446.62 broken intraday (high $453.83, daily close below) — former resistance now flipping to support. **Key change from prior run:** hourly OBV is now trending DOWN with bearish price divergence (was trending UP in run 20260504_203608). Hourly relative volume 0.46x. Setup type: **post-ATH breakout pullback — entry zone $444–$448**. [source: signals_combined.json, run 20260505_203524]
 
 ## Multi-timeframe state
 
-- **Daily**: Price $431.52 (close 2026-05-01), current ~$442.36. EMA-10 ~$403, EMA-21 ~$375, EMA-50 ~$330, EMA-200 ~$217 — fully stacked and rising. Price 7.1% above EMA-10 (manageable vs STX at 17.6%). MACD histogram +3.71 (positive, expanding). Volume ratio 2.08x average on May 1 — strong institutional participation. Bollinger pct_b 0.90 (near upper band but inside it). Daily RSI-14 83.22.
-- **Hourly**: RSI-21 = 65.74 (moderate, room to run). Z-score hourly ~1.79 (below 2.0 statistical extreme). OBV trending UP — no divergence from price. Hourly ADX 21.21 (moderate, range-bound/coiling). Hourly support cluster at $404 (18 hourly tests, volume-confirmed). Resistance: ATH $446.62 (6 volume-confirmed tests).
-- **Momentum**: ROC 5d +6.81%, 10d +15.84%, 21d +44.94%. ADX 67.86. Less extended than STX on every metric.
+- **Daily**: Price $442.36 (close) / ~$465 (hourly). EMA-10 ~$410, EMA-21 ~$381, EMA-50 ~$330 — fully stacked and rising. MACD histogram +3.94 (positive). Volume ratio 1.36x average (below 1.5x breakout confirmation threshold). Bollinger pct_b 0.938 (near upper band, inside it — not as extended as STX). Daily RSI-14 82.48.
+- **Hourly**: RSI-21 = 64.48 (healthy, not overbought). ADX 24.85 (moderate — hourly uptrend decelerating). OBV trending DOWN with price divergence — distribution signal. Hourly ROC-5d = −2.11% (negative). Relative volume 0.46x (thin). Hourly support cluster $428–$430 (pivot low cluster). Prior 16-test support ~$404–$410 is secondary support.
+- **Momentum**: ROC 5d +10.39%, 10d +18.24%, 21d +49.97%. Daily ADX 67.55 confirmed uptrend with all EMAs aligned.
 
 ## Key levels
 
 | level | value | note |
 |---|---|---|
-| Current price | ~$442.36 | approaching ATH resistance |
-| ATH resistance | $446.62 | 6 hourly tests, volume-confirmed |
-| Hourly support cluster | ~$404–$410 | 18 tests, volume-confirmed (preferred entry zone) |
-| Fib 61.8% pullback entry | ~$414–$422 | macro agent preferred zone |
-| Preferred entry zone | $422–$440 | best R/R zone (swing head trader synthesis) |
-| EMA-10 | ~$403 | deeper pullback entry |
-| Stop zone | ~$409–$410 | below hourly pivot support |
-| Target (measured move) | ~$489 | range height + breakout level |
+| Current price | ~$465 (hourly) | above ATH, extended |
+| ATH → now support | $446.62 | 6+ hourly tests; former resistance flipped |
+| Entry zone | $444–$448 | preferred pullback entry (former ATH zone, EMA-5) |
+| Stop zone | $428–$430 | hourly pivot low cluster (clean invalidation) |
+| Target (measured move) | $489 | range height $42.62 added to $446.62 |
+| Secondary support | $404–$410 | structural support cluster (16+ tests) |
+| Fib 1.272 extension | ~$509 | secondary target |
 
 ## Setup type
 
-**Pre-ATH coiling — wait for pullback to $422–$440 or confirmed daily close above $446.62 ATH on 1.5x+ volume.** Hourly squeeze forming (hourly BB width 0.173 vs daily 0.385). Institutional volume confirmed (2.08x). Three bullish agents agree on direction; disagree on entry (trend_momentum $403–410, catalyst_news $438–440, breakout $447.50). Synthesis: enter on constructive pullback to $422–440 for 2.5–3:1 R/R (entry $422, stop $409, target $489). Correlation-blocked until STX cluster cap resolved. [source: signals_combined.json swing_breakout, swing_trend_momentum, swing_catalyst_news, swing_head_trader, run 20260504_203608]
+**Post-ATH breakout pullback.** Prior "pre-ATH coiling" setup (20260504_203608) resolved — price broke above $446.62 intraday (high $453.83). Former resistance is now the tactical entry level on pullback. Three bullish agents agree on direction; hourly OBV divergence is the shared caution. Entry at $444–$448 (former ATH zone / EMA-5 area). Stop below $428 (hourly pivot cluster invalidation). Target $489 (measured move). Do NOT chase above $452. [source: signals_combined.json swing_breakout, swing_trend_momentum, swing_catalyst_news, swing_head_trader, run 20260505_203524]
 
 ## Last updated
 
-2026-05-04 — run 20260504_203608. Supersedes bootstrap_2026-05-01. Sources: signals_combined.json.
+2026-05-05 — run 20260505_203524. Prior setup "pre-ATH coiling" superseded — ATH broken intraday. Hourly OBV flipped from bullish (20260504) to bearish divergence (20260505) — key monitoring risk. Sources: signals_combined.json.

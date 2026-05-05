@@ -4,7 +4,7 @@ last_updated: 2026-05-05
 last_run_id: 20260505_203524
 target_words: 400
 stale_after_days: 14
-word_count: 399
+word_count: 452
 summary: Q3 FY26 fully priced (7 days old); next catalyst Q4 FY26 ~July 28; no near-term binary; macro partial recovery May 5 (S&P/Nasdaq ATH) but Iran-UAE ongoing; analyst avg PT $748.65 — stock trading at consensus PT
 ---
 
@@ -31,12 +31,12 @@ Q3 FY26 earnings landed Apr 28, 2026 — now 7 trading days old and fully priced
 
 ## Analyst consensus
 
-Post-earnings PT wave (Apr 29, 2026): Rosenblatt $500→$1,000 (most bullish 2026 HDD call), BofA $700→$840, Barclays $625→$750, Citi $595→$740, Goldman Sachs $385→$700. Consensus avg PT **$748.65** per web_research/STX.json — stock is now trading near / at the analyst consensus mean ($771 intraday). Strong Buy consensus: 14 Buy / 3 Hold / 0 Sell (17 analysts). Note: at $771 price, stock has run past most individual price targets; only Rosenblatt ($1,000) and BofA ($840) have room left. [source: web_research/STX.json analyst_consensus]
+Post-earnings PT wave (Apr 29, 2026): Rosenblatt $1,000, BofA $840, Barclays $750, Citi $740, Goldman $700. Consensus avg PT **$748.65** per web_research/STX.json — stock now trading at the consensus mean ($771 intraday). Strong Buy: 14 Buy / 3 Hold / 0 Sell (17 analysts). At $771, only Rosenblatt ($1,000) and BofA ($840) have meaningful upside left. [source: web_research/STX.json analyst_consensus]
 
 ## Insider activity
 
-140 insider transactions over trailing 6 months — all sales, zero open-market purchases. ~$46.9M sold in trailing 3 months. Routine 10b5-1 dispositions; no open-market buys have emerged post-earnings. Swing_catalyst_news cited this as a mild negative signal. [source: web_research/STX.json, signals_combined.json swing_catalyst_news, run 20260505_203524]
+140 transactions over trailing 6 months — all sales, zero open-market purchases. ~$46.9M sold in trailing 3 months. Routine 10b5-1 dispositions. [source: web_research/STX.json, signals_combined.json swing_catalyst_news, run 20260505_203524]
 
 ## Last updated
 
-2026-05-05 — run 20260505_203524. Updated analyst avg PT to $748.65 (was $592.46 on prior page — now current). Macro updated to reflect May 5 partial recovery + Nasdaq ATH. Supersedes 2026-05-04 entry (run 20260504_203608). Sources: web_research/STX.json (2026-05-05).
+2026-05-05 — run 20260505_203524. Updated analyst avg PT to $748.65 (was $592.46). Macro updated to May 5 partial recovery + Nasdaq ATH. Sources: web_research/STX.json (2026-05-05).
