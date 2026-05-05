@@ -1,47 +1,47 @@
 ---
 name: DIS thesis
-last_updated: 2026-05-04
-last_run_id: 20260504_221111
+last_updated: 2026-05-05
+last_run_id: 20260505_220625
 target_words: 500
 stale_after_days: 30
-word_count: 498
-summary: DIS open long (id 117, 2 shares at $103.495) is near its $101.00 stop ahead of May 6 earnings binary; breakout thesis intact but macro tailwind claim falsified by Iran escalation; reassess post-print.
+word_count: 496
+summary: DIS open long id 117 stopped out today (-$4.99); pre-earnings breakout thesis invalidated by price action; earnings tomorrow May 6 — reassess post-print; structural bull case (streaming profitability, valuation) remains intact
 ---
 
 # DIS — Thesis
 
 ## TL;DR
 
-**Prior thesis falsified (partial):** The May 1 thesis cited "Risk-on macro tailwind — S&P 500 at all-time highs; Iran peace talks driving WTI −2%" as a supporting factor. That claim was falsified on May 4: Iran escalation (UAE intercepted Iranian missiles, WTI near $105/bbl, Dow -557 pts) reversed the risk-on backdrop. The structural bull case — streaming profitability, record Parks revenue, cheap valuation, strong analyst consensus — is unchanged. [source: `web_research/DIS.json` macro_context, `decisions.json`, run `20260504_221111`]
+**Prior thesis falsified (additional):** The May 4 thesis claimed "An open long position (id 117, 2 shares, fill price $103.495) was confirmed in trade_ledger.json." That position was closed today (2026-05-05) at $101.00 stop, realizing a loss of -$4.99. [source: `trade_ledger.json per_ticker_history["DIS"]`, run `20260505_220625`]
 
-An open long position (id 117, 2 shares, fill price $103.495) was confirmed in `trade_ledger.json per_ticker_history["DIS"]` as of run `20260504_221111`. The position is currently near its $101.00 stop (hourly price $101.31 as of May 4). Earnings binary on May 6 resolves the near-term question.
+The pre-earnings breakout thesis from run `20260501_221355` (4/5 swing agents bullish, April 30 breakout above $103 on 1.23x vol) has been invalidated by price action — the breakout fully retraced and the stop was hit. No open DIS positions remain as of this run. Earnings tomorrow (May 6, pre-market 8:30 AM ET) are the next resolution catalyst.
 
 ---
 
 ## Bull case
 
-**Confirmed streaming profitability.** Q1 FY2026 DTC operating income $450M (+72% YoY), revenue $5.35B (+11%). Disney guided $19B FY2026 operating cash flow and double-digit EPS growth. Analyst consensus Q2 FY2026 EPS $1.49, revenue $24.84B. [source: prior thesis, `web_research/DIS.json`, run `20260504_221111`]
+**Streaming profitability confirmed.** Q1 FY2026 DTC operating income $450M (+72% YoY), revenue $5.35B (+11%). Q2 FY2026 consensus: EPS $1.49, revenue $24.84B. Streaming operating income expected $500M+ in Q2. Disney guided $19B FY2026 operating cash flow and double-digit EPS growth. EPS grew +149% in the most recent period. [source: `explanation.json per_ticker["DIS"]`, run `20260505_220625`]
 
-**Daily trend structure intact despite pullback.** ADX 38.73 (strong), +DI 31.91 >> -DI 19.30 on the daily timeframe. The April 30 breakout candle (open $100.91, close $103.75 on 1.23x volume) is structurally real even though price has retraced to the base. Fib 78.6% retracement and 17-test volume support at $101.02 provides a technical floor. [source: `swing_head_trader`, run `20260504_221111`]
+**Compelling valuation.** P/E ~14.8x vs. market average ~20x. EV/EBITDA 13.12. Analyst consensus: 16+ Buy/Strong Buy, avg PT $132 (~31% upside from ~$101). Raymond James upgraded to Outperform ($115 PT), April 2026. Owner earnings model and EV/EBITDA analysis suggest significant undervaluation. [source: `valuation_analyst_agent`, `web_research/DIS.json`, run `20260505_220625`]
 
-**Valuation remains compelling.** P/E ~15x, EV/EBITDA 13.12. Analyst consensus: 16+ analysts Buy/Strong Buy, avg PT $132.62 (~31% upside from ~$101). Raymond James upgraded to Outperform ($115 PT) in April 2026. Owner earnings model shows intrinsic value well above market cap (EV/EBITDA analysis: 26% undervaluation). [source: `valuation_analyst_agent`, `web_research/DIS.json`, run `20260504_221111`]
-
-**Content and parks pipeline.** Full Hulu ownership since June 2025 ($9B Comcast buyout) is a streaming differentiator. $24B 2026 content spend. May 2026 parks wave: seven new attractions opening, including Bluey's Wild World (May 26). Daredevil Season 2, Maul – Shadow Lord, and Devil Wears Prada 2 on Disney+. [source: `web_research/DIS.json`, run `20260504_221111`]
+**Content and parks pipeline.** The Mandalorian and Grogu film releasing May 22, 2026. Daredevil Season 2, full Hulu ownership ($9B Comcast buyout), $24B content spend. Big Thunder Mountain Railroad reopened, Rock 'n' Roller Coaster (Muppets) opens May 26 at Hollywood Studios. Seven new park attractions for May. Josh D'Amaro taking over as CEO next month. [source: `web_research/DIS.json`, run `20260505_220625`]
 
 ---
 
 ## Bear case
 
-**Breakout fully retraced.** Price fell from $104.83 post-breakout high to $101.31 hourly on May 4 — a full retracement of the April 30 move. Volume on the April 30 breakout was 1.23x (below the 1.5x ideal threshold). Daily OBV remains in distribution mode. EMAs are now tangled (all four short-term EMAs within $0.80 band) — no clean directional fan on either timeframe. [source: `swing_head_trader`, `technical_analyst_agent`, run `20260504_221111`]
+**Pre-earnings breakout thesis fully invalidated.** The April 30 breakout from $104.83 was fully retraced and the stop was hit on May 5 at $101.00. The breakout occurred on below-threshold volume (1.23x, below the 1.5x minimum). Daily OBV remained in distribution mode. All short-term EMAs are now overhead and the hourly trend is bearish going into earnings. [source: `signals_combined.json swing_head_trader["DIS"]`, run `20260505_220625`]
 
-**Earnings binary at near-stop price.** Open position id 117 is $0.50 above its $101.00 stop. May 6 earnings (2 trading days) creates gap risk that the stop cannot fully protect against. A pre-market miss gap below $100.61 would likely blow through the stop before the market opens. [source: `risk_management_agent`, `decisions.json`, run `20260504_221111`]
+**Weak technical setup heading into binary event.** Hourly RSI-21 at 25.04 (deeply oversold), -DI (30.48) dominating +DI (14.62). The stock is falling into earnings, not coiling constructively. Current ratio 0.71 — short-term liquidity tight. Operating margins declining (-0.4% trend). DCF analysis values DIS at ~$121B vs. $178B market cap (32.2% gap). [source: `swing_macro_context`, `valuation_analyst_agent`, run `20260505_220625`]
 
-**Macro headwind restored.** Iran escalation reversed the prior risk-on tailwind (May 4). DIS is less directly exposed than pure consumer goods names, but the macro climate is now mixed-to-cautious. DCF analysis values DIS at ~$121B vs. $179B market cap (32.7% gap). Current ratio 0.71 — short-term liquidity tight. [source: `web_research/DIS.json`, `valuation_analyst_agent`, run `20260504_221111`]
+**Warner Bros. Discovery + Netflix merger risk.** A combined WBD/Netflix entity would create a dominant streaming competitor with ~22% U.S. share — structural competitive pressure if cleared. [source: `web_research/DIS.json`, run `20260505_220625`]
 
 ---
 
 ## What would change the thesis
 
-**Bullish confirmed:** May 6 earnings beat (EPS >$1.49 + streaming margin > 9%) with a gap above $104 on open — restart long thesis with fresh entry.
+**Post-earnings bull restart:** Gap above $104.83 on May 6 earnings beat (EPS >$1.49, streaming margin >10%) and hold — restart long thesis with fresh entry on pullback, not a chase.
 
-**Bearish flip:** May 6 EPS miss + gap below $100.61 (volume-confirmed hourly support) — stop out existing position and restore "cheap but getting cheaper" bear case. Watch for close below $101.02.
+**Post-earnings bear trigger:** Gap below $98.45 (11-test daily support) on May 6 miss — wait for stabilization near $97.89 (Fib 61.8%) before considering a bounce trade.
+
+**Neutral path:** Earnings print in line, price meanders in $99–$104 range — continue watching; no entry until a directional break with volume confirmation.
