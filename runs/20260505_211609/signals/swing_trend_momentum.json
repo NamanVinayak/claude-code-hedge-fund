@@ -1,0 +1,20 @@
+{
+  "SNDK": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "TREND ASSESSMENT: Unambiguously bullish. Daily EMA fully fanned (10 EMA $1,072 > 21 EMA $969 > 50 EMA $812), ADX 64.82 — extreme trend strength with +DI 37.48 >> -DI 6.42. Hourly EMAs also aligned uptrend, hourly ADX 44.72. Higher highs and higher lows intact over the last 5 sessions ($1,002 → $1,406). OBV trending up with no divergence on either timeframe. MOMENTUM ASSESSMENT: Accelerating — ROC 5d +17.35%, ROC 10d +37.55%, ROC 21d +79.0%, all positive and expanding across windows. MACD histogram +22.99 daily, +27.44 hourly — both positive and expanding. Momentum is genuinely accelerating. WHY NEUTRAL: Despite pristine trend and accelerating momentum, the strategy requires entering on pullbacks to the 10 or 21 EMA. Price at $1,406 (hourly current) is 31% above the 21 EMA ($969) and 17% above the 10 EMA ($1,072) — no pullback entry exists. RSI 85 (7d) / 73 (14d) / 79 (21d) are overbought; Bollinger pct_b 1.072 (well above upper band); Z-score 2.69. The wiki from May 4 flagged this as 'parabolic trending extension — watch-not-act zone' at $1,256; today at $1,406 it is even more extended. Critically, the lessons log shows a stop-out on NVDA with RSI 81-87 on an EMA pullback Fib dip-buy — same overextended setup. Macro context is mixed-to-cautiously-bullish with Iran/Strait of Hormuz geopolitical risk tail. No prediction_grading on record. CONTRADICTION FLAG for wiki: Price has continued higher from the May 4 'watch-not-act' read, confirming parabolic momentum but not yet offering a re-entry. Wait for a pullback to the 10 EMA (~$1,072-1,100) before re-evaluating.",
+    "entry": 1075.0,
+    "target": 1470.0,
+    "stop": 960.0,
+    "timeframe": "wait — no entry signal; re-evaluate on pullback to 10 EMA"
+  },
+  "MU": {
+    "signal": "neutral",
+    "confidence": 25,
+    "reasoning": "TREND ASSESSMENT: Very strong uptrend. Daily EMA cleanly fanned (10 EMA $514 > 21 EMA $479 > 50 EMA $437), ADX 59.67 with +DI 36.56 >> -DI 10.68. Hourly ADX 64.77 — extreme, with +DI 47.28 >> -DI 3.33. Higher highs and higher lows on all recent sessions ($504 → $576 daily close). MOMENTUM ASSESSMENT: Strong and positive on daily — ROC 5d +9.89%, ROC 10d +28.55%, ROC 21d +57.4% all positive and expanding. MACD histogram +9.43 daily, +10.68 hourly — accelerating on both. However, a critical warning: hourly OBV is DIVERGING FROM PRICE (trend 'down', diverging_from_price: true), and hourly volume bias 10d is 'down'. This is an early warning of hourly trend exhaustion per the strategy prompt. WHY NEUTRAL: Strategy requires entering on pullbacks to the 10 or 21 EMA. Daily price $576 is 12% above 10 EMA ($514) and 20% above 21 EMA ($479). Hourly current price $640 is 8.9% above hourly EMA-24 ($588). No pullback entry exists at these levels. RSI 77 (14d) / 85 (21d) overbought, Bollinger pct_b 1.026 above upper band. PRIOR CALL IN PROGRESS: Prior bullish call (entry $503, target $609, stop $465) is in_progress with MFE 17.85% — the target of $609 was essentially hit (high $592 on daily data, now hourly at $640). The wiki from May 4 said 'wait for AMD binary and dip to $502-520.' AMD catalyst has passed; price ran to $640, well above the prior target. The hourly OBV bearish divergence at this extended level is a momentum deceleration warning that makes a new entry here unattractive. Wait for a pullback toward the 10 EMA ($514-530 zone) before considering a fresh long. Macro: mixed-to-cautiously-bullish with geopolitical tail risk limiting upside conviction.",
+    "entry": 518.0,
+    "target": 669.0,
+    "stop": 465.0,
+    "timeframe": "wait — no entry signal; re-evaluate on pullback to 10 EMA (~$514-530)"
+  }
+}

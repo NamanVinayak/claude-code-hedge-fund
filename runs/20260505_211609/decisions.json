@@ -1,0 +1,30 @@
+{
+  "decisions": {
+    "SNDK": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 1406.32,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 1470.0,
+      "stop_loss": 1060.0,
+      "risk_reward_ratio": "0.18:1",
+      "timeframe": "N/A — wait for pullback to 10 EMA (~$1,072-1,100)",
+      "confidence": 22,
+      "account_risk_pct": 0.0,
+      "reasoning": "No actionable entry. Parabolic ADX-64.82 extension, price 62% above 50-SMA. R/R 0.18:1 — fails 2:1 minimum badly. Only allowed action is hold. Head Trader neutral (22 conf). All 4 neutral agents agree: wait for pullback to $1,072-1,100 (10 EMA zone). Mean-reversion bearish vote (60 conf) is counter-trend fade against extreme ADX — NVDA lesson directly applies (RSI 81-87 stop-out analog). Z-score 2.69, RSI-7 85.2, pct_b 1.072 — deeply overbought. Hourly volume 0.31x (thin). No catalyst within 10-day window; next earnings 55+ days out; stock already above sell-side consensus PT ($1,341). Will re-evaluate on confirmed pullback to 10 EMA with restored R/R ≥ 2:1."
+    },
+    "MU": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 640.20,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 692.0,
+      "stop_loss": 530.0,
+      "risk_reward_ratio": "0.47:1",
+      "timeframe": "N/A — wait for pullback to 10 EMA (~$514-530)",
+      "confidence": 30,
+      "account_risk_pct": 0.0,
+      "reasoning": "Correlation-blocked by risk manager (MU+SNDK cluster at 70.2% correlation, cluster cap exceeded). Even without block: R/R maximum 1.09:1 using tightest credible stop ($592.77) — fails 2:1 minimum. Head Trader neutral (30 conf). Hourly OBV bearishly diverging from price while volume 0.25x average — distribution warning. Price 34.5% above 50-SMA, Z-score 2.74, RSI-7 84.4, pct_b 1.026 — overbought across all timeframes. AMD binary (May 5 AMC) now resolving; wait for AMD result clarity before assessing MU impact. Prior bullish signal (entry $503, target $609) fully achieved and exceeded — do not chase at $640. Will re-evaluate on pullback to daily 10 EMA ($514-530) for proper 2:1 R/R long entry toward $692 Fib ext target."
+    }
+  }
+}

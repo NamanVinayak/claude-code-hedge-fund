@@ -1,0 +1,20 @@
+{
+  "SNDK": {
+    "signal": "bearish",
+    "confidence": 60,
+    "reasoning": "Branch A (Fade the Extreme) fires on both timeframes simultaneously — the strongest fade signal this framework recognizes. Daily Z-score vs 50-period: 2.69 (above +2 threshold). Hourly Z-score vs 120-period: 2.88 (even more extreme). Daily RSI(7) at 85.22 and RSI(21) at 78.65; hourly RSI(21) at 84.55. Both daily and hourly Bollinger pct_b exceed 1.0 (daily: 1.0721, hourly: 1.0142 — price above both upper bands). Distance from 50-SMA: 62% — parabolic. Prior call context: yesterday's bearish signal (confidence 68, entry $1,256, stop $1,320) is still 'in_progress' per daily-bar grading (MFE 4.06%, MAE -1.52%), but the hourly current price of $1,406 has blown through the $1,320 stop. I am reaffirming bearish but adjusting the stop higher to $1,480 (beyond hourly swing high $1,418.88 + buffer) to avoid a repeat whipsaw. The wiki flagged this as 'parabolic trending extension — watch-not-act zone' with hourly bearish divergence in the prior run; today's data confirms continued extension with no RSI divergence yet (which lowers confidence slightly vs. prior). Caution: ADX at 64.82 reflects extreme trend strength — this is a counter-trend fade against a very strong move. Lesson from NVDA (EMA pullback Fib dip-buy, -$63.20): do not enter without reversal candle confirmation. Target is the daily middle Bollinger Band / 50-SMA convergence zone (~$960), representing a mean-reversion from a 62% extension. Timeframe extended given momentum; await at least one daily reversal candle before acting.",
+    "entry": 1406.0,
+    "target": 960.91,
+    "stop": 1480.0,
+    "timeframe": "8-15 trading days"
+  },
+  "MU": {
+    "signal": "bearish",
+    "confidence": 48,
+    "reasoning": "Branch A (Fade the Extreme) fires but conviction is reduced given prior call failure. Daily Z-score vs 50-period: 2.74 (above +2). Hourly Z-score vs 120-period: 2.72 (above +2). Daily RSI(14): 77.43 (above 75 threshold), RSI(7): 84.35, RSI(21): 84.63. Both daily and hourly BB pct_b exceed 1.0 (daily: 1.0261, hourly: 1.0142). Distance from 50-SMA: 34.51%. Key confirmation: hourly OBV is diverging from price (OBV trend: down, diverging_from_price: true) while price makes new highs and hourly volume_bias_10d is 'down' — classic bearish OBV divergence against price extension. Prior call failure: yesterday's bearish signal (confidence 52, entry $576, stop $610) was direction_correct: false. Price ran from $576 to current $640, blowing through the $610 stop. What I'm doing differently: (1) acknowledging the trend is stronger than anticipated — ADX 59.67 daily / 64.77 hourly, +DI 36.56 / 47.28 crushing -DI; (2) widening the stop to $675 (above the hourly resistance at $651.74 with buffer) to respect the momentum; (3) lowering confidence to 48 since this is a repeat bearish call after a wrong prior call. The OBV divergence on the hourly is the strongest new evidence since yesterday. Wiki noted prior run: 'no actionable entry at current price — wait for AMD binary (May 5 AMC) and dip to $502-520.' Today AMD earnings have passed; if AMD guidance was positive, MU may ride the coattails further — this is a risk factor. Lesson pattern: EMA pullback Fib dip-buy failed on NVDA with RSI 81-87 and no confirmation candle. Same RSI extreme is present here. Target: middle daily BB / area of 50-SMA convergence near $471-482 for full mean reversion, but partial target at $545 (prior pivot high resistance, now support test).",
+    "entry": 640.0,
+    "target": 545.0,
+    "stop": 675.0,
+    "timeframe": "7-14 trading days"
+  }
+}

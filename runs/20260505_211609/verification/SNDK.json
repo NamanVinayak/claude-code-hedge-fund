@@ -1,0 +1,74 @@
+{
+  "ticker": "SNDK",
+  "verified_at": "2026-05-05T21:16:09",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": -0.22311,
+      "web_value": 0.3419,
+      "source": "Yahoo Finance / StockAnalysis.com (TTM as of May 2026)",
+      "status": "MISMATCH",
+      "deviation": "165% (sign flip — company turned profitable after Q3 FY2026 blowout earnings reported Apr 30, 2026)",
+      "action": "replaced with web value in warren_buffett__SNDK.json and aswath_damodaran__SNDK.json"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": -0.18722,
+      "web_value": 0.416,
+      "source": "StockAnalysis.com / investor.sandisk.com Q3 FY2026 release (TTM ~41.6%)",
+      "status": "MISMATCH",
+      "deviation": "sign flip — old TTM used pre-Q3 stale data; operating margin now strongly positive",
+      "action": "replaced with web value in warren_buffett__SNDK.json and aswath_damodaran__SNDK.json"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": null,
+      "web_value": 41.0,
+      "source": "Yahoo Finance / MacroTrends (trailing P/E ~40-42 as of May 2026)",
+      "status": "MISMATCH",
+      "deviation": "was null (earnings negative on stale TTM); now 41x as company is profitable",
+      "action": "replaced with web value in warren_buffett__SNDK.json and aswath_damodaran__SNDK.json"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 7352000000,
+      "web_value": 13180000000,
+      "source": "StockAnalysis.com (TTM revenue ~$13.18B as of May 2026, up 82.76% YoY)",
+      "status": "MISMATCH",
+      "deviation": "79.3% — facts bundle used stale market_cap/P/S implied revenue pre-Q3 earnings; no raw revenue field to patch (embedded as ratio denominator only)",
+      "action": "noted for awareness; no standalone revenue field in metrics to correct (derived from P/S ratio)"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 208261578752.0,
+      "web_value": 185867000000.0,
+      "source": "Yahoo Finance intraday May 2026 (~$185.87B)",
+      "status": "ok",
+      "deviation": "11% — within 20% tolerance; difference due to data capture timing vs live quote"
+    },
+    {
+      "metric": "roe",
+      "our_value": -0.17806,
+      "web_value": 0.393,
+      "source": "Yahoo Finance / WallStreetZen (TTM ROE 39.30% as of May 2026)",
+      "status": "MISMATCH",
+      "deviation": "sign flip — ROE turned strongly positive after profitability inflection",
+      "action": "replaced with web value in warren_buffett__SNDK.json and aswath_damodaran__SNDK.json"
+    },
+    {
+      "metric": "roa",
+      "our_value": -0.12638,
+      "web_value": null,
+      "source": "no reliable TTM web source found",
+      "status": "unverified",
+      "deviation": "n/a"
+    }
+  ],
+  "root_cause": "Facts bundle used report_period 2026-04-03 (pre-Q3 earnings). SanDisk reported blowout Q3 FY2026 on April 30, 2026 with revenue $5.95B (+251% YoY) and gross margin expanding to 78.4%, turning the company from loss-making to highly profitable on a TTM basis. The API data was captured before this earnings release was reflected in financial data providers.",
+  "files_corrected": [
+    "facts/warren_buffett__SNDK.json",
+    "facts/aswath_damodaran__SNDK.json"
+  ],
+  "overall_status": "4 mismatches corrected (net_margin, operating_margin, pe_ratio, roe)",
+  "corrections_applied": true
+}

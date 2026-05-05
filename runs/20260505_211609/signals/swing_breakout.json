@@ -1,0 +1,20 @@
+{
+  "SNDK": {
+    "signal": "neutral",
+    "confidence": 10,
+    "reasoning": "No breakout setup present. SNDK is in a parabolic trending extension — the exact opposite of what swing_breakout requires. Consolidation range: none identifiable; price is 62% above 50-SMA with ADX 64.82 (extreme trend). Bollinger Band width 0.5366 (daily) and 0.4412 (hourly) — both wide, confirming the volatility squeeze is done and the move is already underway. Daily pct_b 1.0721: price is well above the upper band with no fresh coil. Volume ratio on May 4: 17.85M vs 20-day avg 15.66M = 1.14x — below the required 1.5x threshold. Hourly relative volume 0.31 — very thin, no surge. Wiki confirms this is a watch-not-act parabolic extension (prior run 20260504_212836). The last run noted borderline volume on the May 1 breakout (1.49x) but hourly follow-through was 0.61x — sub-threshold. Hourly RSI bearish divergence noted by wiki adds exhaustion risk. Z-score 2.69 vs 50-period — statistically stretched. No new consolidation base is forming above the breakout level. Breakout strategy rule: 'BB width is wide (volatility already expanded) — the move is already done' → output neutral. Lessons: NVDA EMA pullback breakout (Apr 30) failed with RSI 81-87 and stretched macro — similar overbought analog here. No prior call grading to adjust (null).",
+    "entry": 1275.11,
+    "target": 1470.01,
+    "stop": 1187.0,
+    "timeframe": "N/A — no setup"
+  },
+  "MU": {
+    "signal": "neutral",
+    "confidence": 12,
+    "reasoning": "No qualifying breakout setup. MU is in an extended bull trend, not a coiling consolidation. Consolidation range: none forming — price is 34.5% above the 50-SMA with daily ADX 59.67 and hourly ADX 64.77, both indicating a strong established trend. Bollinger Band width 0.4221 (daily) — expanded, squeeze is done. Daily pct_b 1.0261: above upper band. Volume ratio on May 4: 46.04M vs 20-day avg 39.52M = 1.17x — below the required 1.5x threshold. Hourly relative volume 0.25 — critically thin. Hourly OBV is diverging from price (bearish flag: diverging_from_price: true) and hourly volume_bias_10d is 'down' — no institutional accumulation supporting a breakout. Nearest hourly resistance at $651.74 (2 tests, volume confirmed) is 1.8% above current hourly price — a potential breakout level — but without volume confirmation (0.25x) and with OBV divergence, this does not meet entry criteria. Wiki from prior run (20260504_212836): May 1 volume only 1.02x, hourly relative volume 0.34x — sub-threshold in both runs. AMD earnings May 5 AMC is a direct HBM binary catalyst within the swing window — elevated gap risk on both sides. R/R from current price to $651.74 resistance vs $502.58 hourly support is asymmetric against longs. Z-score 2.74 (daily) and 2.72 (hourly) — statistically extended in both timeframes. No prior call grading to adjust (null). Patterns table: 0% win rate on EMA pullback breakout setups in last 30 days (NVDA -$63.20) — caution on momentum breakout entries in stretched macro.",
+    "entry": 651.74,
+    "target": 743.92,
+    "stop": 592.77,
+    "timeframe": "N/A — no setup"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "ticker": "MU",
+  "verified_at": "2026-05-05T21:16:09",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.22845,
+      "web_value": 0.4149,
+      "source": "StockAnalysis.com / MacroTrends (TTM net profit margin 41.49% as of Feb 28, 2026)",
+      "status": "MISMATCH",
+      "deviation": "44.9% — facts bundle captured Q1 FY2026 period; subsequent quarters improved margins significantly driven by AI HBM demand",
+      "action": "replaced with web value in warren_buffett__MU.json and aswath_damodaran__MU.json"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.26138,
+      "web_value": 0.4841,
+      "source": "StockAnalysis.com (TTM operating margin 48.41% as of latest data)",
+      "status": "MISMATCH",
+      "deviation": "46% — consistent with improved profitability in recent quarters (H2 FY2025 / Q1-Q2 FY2026)",
+      "action": "replaced with web value in warren_buffett__MU.json and aswath_damodaran__MU.json"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 30.183878,
+      "web_value": 26.86,
+      "source": "FinanceCharts.com / CompaniesMarketCap (trailing P/E ~26.86 as of May 4, 2026)",
+      "status": "ok",
+      "deviation": "11% — within 20% tolerance; difference partly due to earnings improvements lowering the multiple"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 37380000000,
+      "web_value": 58110000000.0,
+      "source": "CompaniesMarketCap.com / StockAnalysis.com (TTM revenue $58.11B as of May 2026)",
+      "status": "MISMATCH",
+      "deviation": "55.4% — facts bundle revenue (implied from P/S) used an older TTM period missing recent explosive quarters; no standalone revenue field to patch",
+      "action": "noted for awareness; no standalone revenue field in metrics (derived from ratio denominators)"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 721975312384.0,
+      "web_value": 651850000000.0,
+      "source": "CompaniesMarketCap.com (MU market cap $651.85B as of May 2026)",
+      "status": "ok",
+      "deviation": "9.7% — within 20% tolerance; facts bundle captured higher price from a few days prior"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.15765,
+      "web_value": 0.3982,
+      "source": "CNBC (TTM ROE ~39.82%); GuruFocus reports 84.01% (annualized Q2 FY2026 only); using CNBC TTM as more conservative",
+      "status": "MISMATCH",
+      "deviation": "152.6% — ROE has expanded dramatically as net income surged in recent quarters",
+      "action": "replaced with web value (0.3982) in warren_buffett__MU.json and aswath_damodaran__MU.json"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.10313,
+      "web_value": null,
+      "source": "no reliable TTM consensus found across searched sources",
+      "status": "unverified",
+      "deviation": "n/a"
+    }
+  ],
+  "root_cause": "Facts bundle used report_period 2026-02-26 (end of Q1 FY2026). Micron has reported two additional strong quarters since then, driven by surging HBM and DRAM demand for AI applications. DRAM prices rose ~60% in 2025, and operating leverage on higher volumes has dramatically expanded margins from the levels captured in the facts bundle.",
+  "files_corrected": [
+    "facts/warren_buffett__MU.json",
+    "facts/aswath_damodaran__MU.json"
+  ],
+  "overall_status": "3 mismatches corrected (net_margin, operating_margin, roe)",
+  "corrections_applied": true
+}
