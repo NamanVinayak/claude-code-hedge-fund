@@ -1,0 +1,44 @@
+{
+  "run_id": "20260505_190606",
+  "mode": "swing",
+  "started_at": "2026-05-05T19:06:35Z",
+  "ended_at": "2026-05-05T19:25:49Z",
+  "tickers": [
+    "BAC",
+    "GS"
+  ],
+  "decisions": [
+    {
+      "ticker": "BAC",
+      "action": "hold",
+      "confidence": 42,
+      "entry": 52.19,
+      "stop": 51.83,
+      "target": 55.4,
+      "reasoning_tldr": "Hold 15-share long at $52.75 cost"
+    },
+    {
+      "ticker": "GS",
+      "action": "hold",
+      "confidence": 35,
+      "entry": 903.27,
+      "stop": 933.48,
+      "target": 864.45,
+      "reasoning_tldr": "No position"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 2,
+    "cash": 1617.7600000000002,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "neutral",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

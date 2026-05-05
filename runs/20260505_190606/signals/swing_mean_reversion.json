@@ -1,0 +1,20 @@
+{
+  "BAC": {
+    "signal": "bullish",
+    "confidence": 60,
+    "reasoning": "Branch B fires: Buy the Dip in Trend. BAC is in an established daily uptrend (EMA aligned uptrend confirmed, ADX 48.06 strong). The current daily close of $52.19 is sitting precisely at the 38.2% Fibonacci retracement level ($52.13) from the swing high of $55.40 to swing low of $46.84. Horizontal support at $51.83 (13 tests) sits just below, creating Fib + S/R confluence. Volume bias over the past 10 days is 'down' (healthy pullback), though today's relative volume of 1.29 on the down day is a minor warning. Daily RSI-14 at 41.47 is approaching oversold territory (<35 threshold) but not there yet. Critically, hourly RSI divergence is bullish (rising RSI on falling price), suggesting the reversal may already be starting on the intraday timeframe. Hourly momentum ROC 5d/10d is positive (+0.49 / +1.95) confirming hourly recovery. Wiki confirms price has pulled back from $53.46 to $52.19 and is holding above the $52.07 38.2% Fib level and the heavily-tested hourly support at $52.25 (30 tests). Prior call (bullish, 58 confidence) remains in_progress with correct direction (MAE only -0.29%) — affirming thesis with slight confidence increase. Confidence held at 60 (not higher) because: (1) today's daily candle is bearish (opened 53.07, closed 52.19 — no reversal candle confirmation yet), (2) daily OBV trend is down, (3) MACD histogram slightly negative (-0.16), and (4) the EMA pullback Fib dip-buy setup has 0% win rate in the lessons table (one trade, though on NVDA not BAC). Entry zone is at or near the 38.2% Fib at $52.13. Target is the recent swing high at $55.40. Stop placed below the 50% Fib ($51.12) and strong pivot support ($51.83), at $50.90.",
+    "entry": 52.15,
+    "target": 55.40,
+    "stop": 50.90,
+    "timeframe": "5-10 trading days"
+  },
+  "GS": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "Neither Branch A nor Branch B fires cleanly. Branch A: Daily Z-score of 0.70 and RSI-14 of 48.08 are both squarely in neutral territory — no statistical extreme. RSI-7 at 33.74 is approaching short-term oversold but not sufficient alone. Branch B: GS is in a daily EMA uptrend, and the pullback exists, but price ($903.27 daily close, $918.94 hourly) is in no-man's land between Fibonacci levels — the fib_236 at $915.61 has been breached to the downside, and the fib_382 at $893.09 has not been tested. There is no clean Fib confluence to enter against. The $924.23 level (previously 37-test hourly support) is now broken and acting as resistance per wiki — this structural damage reduces dip-buy conviction. Hourly ADX shows a confirmed downtrend (minus_di 29.23 > plus_di 17.36), hourly MACD histogram is negative (-0.30), and daily OBV trend is down. Prior call: bullish at 45 confidence, 'in_progress,' but directionally wrong so far (current price $903.27 below prior entry $905.00, direction_correct: false, MAE -0.66%). Adjustment from prior: prior call entered at $905 expecting a bounce; price instead deteriorated. This time standing aside until either (a) price reaches the fib_382 / $893 support confluence for a clean Branch B entry, or (b) price reclaims $924 to re-establish broken support as support. The 0% win rate on EMA pullback Fib dip-buys in the lessons table further confirms caution. Setting entry/target/stop to reflect the conditional setup if fib_382 is reached.",
+    "entry": 893.00,
+    "target": 933.48,
+    "stop": 878.00,
+    "timeframe": "7-12 trading days"
+  }
+}

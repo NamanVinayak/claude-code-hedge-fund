@@ -1,0 +1,20 @@
+{
+  "BAC": {
+    "signal": "bullish",
+    "confidence": 45,
+    "reasoning": "TREND ASSESSMENT: Daily EMA alignment is fully bullish (10 EMA 52.80 > 21 EMA 52.30 > 50 EMA 51.59) with a very strong ADX of 48.06. Price at 52.19 has pulled back to the 21 EMA (52.30) — exactly the entry zone this strategy requires. Daily structure shows higher lows intact with support at 51.83 holding. MOMENTUM-ACCELERATION ASSESSMENT: This is where the setup is compromised. Daily ROC 5d = -0.84% and ROC 10d = -3.26% — both negative, meaning short-term momentum is decelerating. Only the 21d ROC (+5.69%) is positive. MACD histogram = -0.1559 (negative, not expanding). This fails the 'all ROC positive AND expanding' requirement. HOURLY DIVERGENCE: Hourly is beginning to show re-acceleration — hourly EMA aligned uptrend, MACD histogram +0.0129 (positive), ROC 5d = +0.49% and 10d = +1.95%. The hourly is recovering ahead of the daily. This is an early warning that momentum may be bottoming at the 21 EMA. WIKI/LESSONS CONTEXT: Prior state (May 4) had price just above 38.2% Fib at $52.07 with a position already at cap. The EMA pullback dip-buy setup has a 0% win rate in the last 30 days (1 trade, -$63.20 on NVDA). Macro is mixed-to-cautiously-bullish with geopolitical tail risk. VERDICT: Legitimate 21 EMA pullback in a strong trend but daily momentum has not re-accelerated. Calling bullish at reduced confidence — the hourly recovery is the lone confirmation. Stop below the 21 EMA at 51.83 (nearest support). Lesson learned from NVDA: wait for a confirmation candle and avoid entering when macro tail risk is elevated. Confidence capped at 45 given deceleration pattern and 0% recent win rate on this setup type.",
+    "entry": 52.30,
+    "target": 54.62,
+    "stop": 51.60,
+    "timeframe": "5-10 trading days"
+  },
+  "GS": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "TREND ASSESSMENT: Daily EMA alignment is technically bullish (10 EMA 917.65 > 21 EMA 906.74 > 50 EMA 889.38) with ADX = 34.21 (strong). Price at 903.27 is -0.38% from the 21 EMA, nominally in the entry zone. MOMENTUM-ACCELERATION ASSESSMENT: Momentum is clearly decelerating — ROC 5d = -3.68%, ROC 10d = -4.08% (both significantly negative), only ROC 21d = +4.66% is positive. MACD histogram = -3.1266, deeply negative and not recovering. This is a clear failure of the 'ROC across 5/10/21d all positive' requirement. HOURLY DIVERGENCE (WARNING): Hourly EMA alignment is NOT bullish (ema_aligned_uptrend: false). Hourly ADX = 25.37 with minus_di 29.23 > plus_di 17.36, confirming an established downtrend on the hourly timeframe. Hourly MACD histogram = -0.2997 (negative). The hourly is diverging from the daily — an early warning of trend exhaustion flagged explicitly in my system prompt. WIKI CONTEXT: The May 4 wiki read stated 'deterioration confirmed' with hourly downtrend established. Today's data confirms the hourly downtrend is ongoing, contradicting any bullish entry thesis. VERDICT: While daily EMA structure is intact, this setup fails on: (1) daily short-term ROC both negative, (2) MACD histogram deeply negative, (3) hourly in confirmed downtrend — the exact condition my system prompt flags as 'wait for re-acceleration.' Outputting neutral. Will re-evaluate when hourly downtrend breaks, plus_di reclaims minus_di on hourly, and daily ROC 5d/10d return to positive.",
+    "entry": 0.0,
+    "target": 0.0,
+    "stop": 0.0,
+    "timeframe": "no trade"
+  }
+}

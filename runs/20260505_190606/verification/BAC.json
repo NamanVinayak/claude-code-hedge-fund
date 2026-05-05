@@ -1,0 +1,72 @@
+{
+  "ticker": "BAC",
+  "verified_at": "2026-05-05T19:15:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.2698,
+      "web_value": 0.27,
+      "source": "Macrotrends (BAC net profit margin TTM ~27% May 2026); GuruFocus TTM 26.98%",
+      "status": "ok",
+      "deviation": "0.1%",
+      "notes": "Facts bundle value 26.98% aligns closely with web sources reporting ~27% TTM. Well within 20% threshold."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": null,
+      "source": "N/A — operating margin not available for banks in standard form (net interest margin used instead)",
+      "status": "unverified",
+      "deviation": "n/a",
+      "notes": "Operating margin is null in facts bundle. Banks report this differently; standard operating margin not applicable. No correction applied."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 13.217,
+      "web_value": 13.72,
+      "source": "Macrotrends (BAC PE ratio 13.72 as of April 27, 2026); GuruFocus TTM",
+      "status": "ok",
+      "deviation": "3.8%",
+      "notes": "Facts bundle PE of 13.22 is within expected range of 12.95–13.72 from multiple sources. No correction needed."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 377999917056.0,
+      "web_value": 335290000000.0,
+      "source": "CompaniesMarketCap / Yahoo Finance (~$335.3B as of late April 2026)",
+      "status": "ok",
+      "deviation": "12.7%",
+      "notes": "Deviation of 12.7% is below the 20% threshold. Difference reflects stock price fluctuation between data fetch and late-April reference date. No correction applied."
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.10061,
+      "web_value": 0.1005,
+      "source": "GuruFocus: 9.92% as of Dec 2025; FinanceCharts: 10.05–10.50% TTM April 2026",
+      "status": "ok",
+      "deviation": "0.1%",
+      "notes": "Facts value 10.06% matches published TTM ROE of ~10.05%. No correction needed."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.008942,
+      "web_value": 0.0091,
+      "source": "Macrotrends / Yahoo Finance: BAC ROA ~0.91% TTM 2026",
+      "status": "ok",
+      "deviation": "1.8%",
+      "notes": "Facts value 0.894% vs web 0.91% — <2% deviation, within tolerance."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 113100000000.0,
+      "web_value": 113090000000.0,
+      "source": "StockAnalysis / Macrotrends: BAC TTM revenue ~$113.09B as of April 2026",
+      "status": "ok",
+      "deviation": "0.0%",
+      "notes": "our_value derived from market_cap / price_to_sales_ratio: 377,999,917,056 / 3.342262 ≈ $113.1B. Matches web source exactly."
+    }
+  ],
+  "overall_status": "all checks passed — no mismatches found",
+  "corrections_applied": false,
+  "summary": "All verifiable BAC metrics in the facts bundles are within 20% of current web sources. Operating margin is null in source data (normal for banks). All other metrics verified against Macrotrends, GuruFocus, StockAnalysis, Yahoo Finance. No corrections applied."
+}

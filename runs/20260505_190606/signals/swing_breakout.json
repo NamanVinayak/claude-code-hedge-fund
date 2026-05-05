@@ -1,0 +1,20 @@
+{
+  "BAC": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "BAC does not present a breakout setup — it presents an established trend in a pullback phase. Daily ADX is 48.06 (exceptional trend strength), which is the exact condition my strategy avoids (I trade range breaks, not established trends). The consolidation range would nominally be between $51.83 support (13 tests) and $54.06/$55.40 resistance, but price is actively trending and pulling back within that structure, not coiling. Daily BB width is 0.068 — no squeeze present. Volume on the May 4 selloff was 1.29x the 20-day average, below the 1.5x threshold required for breakout confirmation. Price closed at $52.19 on May 4, below all short-term MAs (EMA-5 through EMA-21), confirming the pullback direction. Hourly BB width 0.0347 shows mild compression but no squeeze firing; hourly pct_b 0.6913 puts price in the upper portion of the hourly band — not a coiling setup. Wiki confirms this is a trend-continuation pullback, not a base-building breakout zone. The OBV daily trend is down with distribution into the rally, and the recent lesson (NVDA EMA-pullback Fib dip-buy: 0% win rate) counsels caution on similar setups. No actionable breakout signal. Range boundaries: support $51.83, resistance $55.40 (range height $3.57). Volume ratio 1.29x (below 1.5x threshold). Squeeze status: off — BB already at moderate width, no coil.",
+    "entry": 55.45,
+    "target": 59.02,
+    "stop": 54.90,
+    "timeframe": "7-12 trading days"
+  },
+  "GS": {
+    "signal": "neutral",
+    "confidence": 25,
+    "reasoning": "GS is oscillating in a defined range ($899-$935 over 5 days) but lacks the volume and momentum confirmation required for a valid breakout signal. The key consolidation range is bounded by $899.16 hourly support (9 tests) and $933.48 resistance (16-17 tests, as confirmed by both daily and hourly pivot data and wiki). Range height: ~$34.32. A bullish breakout above $933.48 would project a measured move target of ~$967.80, but the setup is not firing: daily volume on May 4 was 0.85x average (far below the 1.5x threshold), daily MACD histogram is -3.1266 (no bullish crossover), and hourly trend is confirmed bearish (minus DI 29.23 > plus DI 17.36, ADX 25.37). Hourly BB width 0.0465 shows some compression but the hourly MACD histogram is -0.2997 — the hourly squeeze is not firing bullish. Daily BB width 0.0823 is elevated — volatility already somewhat expanded, meaning the move may already be in progress (but directionless). Wiki's bull trigger remains unmet: no daily close above $924.23 with 1.5x volume or positive hourly MACD. Current price ($918.94 hourly) is below the $924.23 broken support now acting as resistance. Bear trigger (break below $899.16 with volume acceleration) also not confirmed. Waiting for directional resolution with volume. Range boundaries: support $899.16, resistance $933.48. Volume ratio 0.85x (below 1.5x threshold). Squeeze status: partial compression on hourly, not firing.",
+    "entry": 933.98,
+    "target": 968.30,
+    "stop": 924.00,
+    "timeframe": "5-10 trading days"
+  }
+}
