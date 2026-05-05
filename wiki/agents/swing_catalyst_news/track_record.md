@@ -1,7 +1,7 @@
 ---
 name: swing_catalyst_news track record
 last_updated: 2026-05-05
-last_run_id: 20260505_140723
+last_run_id: 20260505_144544
 stale_after_days: 365
 target_words: 1200
 summary: 0 graded calls. (Appended by ai_hedge.grading.wiki_writer.)
@@ -21,3 +21,4 @@ one resolved call scored against yfinance daily OHLC.
 - — | GS | bearish $925.48→$864.45 stop $945.3 | **in_progress** (day 4, MFE 2.21%, MAE -1.11%) _(prior_run=20260430_190826, graded_in=20260504_192106)_
 - — | DIS | bullish $103.75→$107.11 stop $100.8 | **in_progress** (day 3, MFE 1.04%, MAE -0.75%) _(prior_run=20260501_221355, graded_in=20260504_221111)_
 - — | META | bearish $619.0→$564.76 stop $628.0 | **in_progress** (day 1, MFE 2.63%, MAE 0.0%) _(prior_run=20260504_143030, graded_in=20260505_140723)_
+- — | AAPL | bullish $275.5→$298.0 stop $268.5 | **in_progress** (day 1, MFE 1.86%, MAE -0.23%) _(prior_run=20260504_144833, graded_in=20260505_144544)_

@@ -1,42 +1,42 @@
 ---
 name: AAPL catalysts
-last_updated: 2026-05-04
-last_run_id: 20260504_144833
+last_updated: 2026-05-05
+last_run_id: 20260505_144544
 target_words: 400
 stale_after_days: 14
-word_count: 398
-summary: Post-earnings drift thesis intact — Q2 FY2026 beat (EPS $2.01, revenue +17% YoY, GM 49.3%, $100B buyback); Q3 guidance +14-17% YoY above consensus; Apple-Google Siri AI collaboration confirmed; analyst consensus 78% buy avg PT $304.31; WWDC AI reveal ~25 days out; macro risk-off Iran escalation on May 4
+word_count: 396
+summary: Post-earnings drift thesis active — Q2 FY2026 beat (EPS $2.01, revenue +17% YoY, GM 49.3%); Q3 guidance +14-17% vs +9.5% consensus; analyst wave of post-Q2 upgrades (avg PT $301.54, BofA $330, Maxim $310, Baird $310, UBS $296); Apple fell to 3rd most valuable company (behind NVIDIA, Alphabet); Intel/Samsung chip-manufacturing talks new; macro Iran oil >$102/bbl; CEO Ternus transition Sept 1
 ---
 
 # AAPL — Catalysts
 
 ## TL;DR
 
-Q2 FY2026 earnings resolved on April 30, 2026 — all metrics beat. Post-earnings drift toward analyst median $300–$304 remains the active swing catalyst as of May 4. New detail from this run: Q3 revenue guidance of +14–17% YoY significantly exceeded the +9.5% analyst consensus estimate; Apple confirmed a collaboration with Google to power Siri using Google foundation models (published iOS 27 AI roadmap); MacBook Neo is driving a Mac upcycle (+6% Mac revenue). Tim Cook CEO departure September 1 and Iran geopolitical escalation (May 4) are the current headwinds. (Source: web_research/AAPL.json, run 20260504_144833.)
+Q2 FY2026 earnings resolved April 30, 2026 — all metrics beat. Post-earnings drift toward analyst median $300–$304 remains the active swing catalyst as of May 5. New detail vs. prior run: post-Q2 analyst upgrade wave expanded (UBS $296, Maxim $310, BofA $330, Baird $310 — average PT now $301.54 across 77 analysts); Apple is in early-stage discussions with Intel and Samsung about U.S.-based chip manufacturing (positive supply-chain reshoring signal); Apple has dropped to the 3rd most valuable company globally, behind NVIDIA and Alphabet (new competitive framing risk). Macro headwind persists — oil WTI ~$104/Brent ~$113 with Iran-UAE conflict ongoing. (Source: web_research/AAPL.json, run 20260505_144544.)
 
 ## Upcoming events
 
 | event | date | expected impact |
 |---|---|---|
-| WWDC / iOS 27 reveal | June 2026 (~25 trading days) | Siri 2.0 / Google foundation model integration reveal; foldable iPhone tease — high impact |
-| Q3 FY2026 earnings | Late July 2026 (~85 trading days) | Next binary; high bar (guided +14–17% YoY vs $108.78B consensus) |
-| Tim Cook CEO transition | September 1, 2026 | Ternus (hardware) not a Services/AI leader — leadership uncertainty |
-| Foldable iPhone launch | September 2026 | Hardware refresh cycle; first major form-factor expansion |
+| WWDC / iOS 27 reveal | June 2026 (~25 trading days) | Siri 2.0 / Google foundation model integration; foldable iPhone tease — high impact |
+| Q3 FY2026 earnings | July 30, 2026 (~58 trading days) | Next binary; high bar (guided +14–17% YoY vs $108.78B consensus); EPS consensus $1.82 |
+| $0.27/share dividend payable | May 14, 2026 (9 days) | Minor near-term income catalyst |
+| Tim Cook CEO transition | September 1, 2026 | John Ternus (hardware, not Services/AI) successor — leadership uncertainty |
+| Foldable iPhone launch | September 2026 | Hardware form-factor expansion; first major new category |
 | US-China tariff truce expiry | ~80 days from truce start | Escalation risk if 145% regime resumes |
-| $0.27/share dividend payable | May 14, 2026 | Minor near-term income catalyst |
 
 ## Recent news synthesis
 
-**Q2 FY2026 beat — all metrics.** EPS $2.01 vs $1.94 estimate; revenue $111.2B (+17% YoY per updated web data, vs prior +16.6% figure — same print, rounding differs); gross margin 49.3% (record); iPhone 17 sales surged 22% to $57B; Mac revenue +6% to $8.4B (MacBook Neo driving demand); Services at all-time high. Q3 revenue guidance +14–17% YoY vs analyst estimate of +9.5% — significant guidance outperformance. $100B buyback authorized; dividend raised to $0.27/share payable May 14. (Source: web_research/AAPL.json, run 20260504_144833.)
+**Q2 FY2026 beat — all metrics.** EPS $2.01 vs $1.94 estimate; revenue $111.2B (+17% YoY); gross margin 49.3% (record); iPhone 17 sales +22% to $57B; Mac revenue +6% to $8.4B (MacBook Neo demand); Services at all-time high. Q3 revenue guidance +14–17% YoY vs analyst estimate of +9.5% — significant outperformance. $100B buyback authorized; dividend raised to $0.27/share payable May 14. (Source: web_research/AAPL.json, run 20260505_144544.)
 
-**Apple-Google Siri AI collaboration confirmed.** Reports confirm Apple is using Google foundation models to power Siri ahead of the iOS 27 reveal. This partially addresses the AI execution gap that was the primary pre-earnings overhang — Siri 2.0 delay to iOS 27 was previously a negative; the Google partnership makes the delay less bearish (the feature is coming with stronger underlying AI). Context: Google Cloud revenue +63% YoY; Apple's capex lean at $4.3B for first two quarters contrasts with Microsoft ($190B) and Google ($180–190B) — AAPL is outsourcing AI infrastructure cost. (Source: web_research/AAPL.json, run 20260504_144833.)
+**Post-Q2 analyst upgrade wave.** Following the April 30 earnings beat: UBS raised PT to $296, Maxim to $310, Bank of America to $330, Baird to $310. BNP Paribas raised PT to $300 on April 17. Current consensus: 29 Buy / 16 Hold / 4 Sell out of 77 analysts (78% bullish), avg PT $301.54, Wedbush bull case $350, Barclays bear case $248. Upgrade cycle is likely ongoing. (Source: web_research/AAPL.json analyst_consensus, run 20260505_144544.)
 
-**Macro risk-off — Iran escalation May 4.** Reports of missile strikes on a US warship near Jask island reversed the May 1 peace-talks risk-on narrative. Dow futures declining; oil prices higher. This is the current near-term drag on AAPL despite the idiosyncratic fundamental strength. (Source: swing_macro_context signal, web_research AAPL.json macro_context, run 20260504_144833.)
+**Intel/Samsung chip-manufacturing discussions.** Bloomberg reports Apple held early-stage discussions with Intel and Samsung about manufacturing main processors in the U.S. — a positive supply-chain reshoring signal; Intel shares surged 10% on the news. If confirmed, this would reduce Apple's reliance on TSMC and Taiwan geopolitical risk. (Source: web_research/AAPL.json ticker_news, run 20260505_144544.)
+
+**Apple dropped to 3rd most valuable company globally.** Alphabet (~$385) briefly surpassed Apple (~$280) in market cap — first time since 2019. NVIDIA is #1. Google Cloud +63% YoY; Gemini 3 directly pressures Apple Intelligence. OpenAI developing an AI-optimized smartphone. This framing adds competitive pressure context to the AI-lag bear case. (Source: web_research/AAPL.json competitor_activity, run 20260505_144544.)
+
+**Macro risk-off — Iran escalation.** Iran-UAE conflict ongoing; Strait of Hormuz closure risk live; WTI ~$104, Brent ~$113. Oil elevated relative to prior run ($102 reference). Near-term drag on AAPL despite idiosyncratic fundamental strength. (Source: web_research/AAPL.json macro_context, swing_macro_context signal, run 20260505_144544.)
 
 ## Insider activity
 
-Negative. CEO Tim Cook sold $12M+ in early April 2026 at $251–256. Net insider flow: −$235M, zero buys. Context: 10b5-1 plan and CEO departure contextualize (but do not neutralize) the distribution signal. (Source: swing_catalyst_news signal, run 20260504_144833.)
-
-## Analyst consensus
-
-As of May 4, 2026: 78% buy consensus across 53 analysts. Average price target $304.31 (range $215–$350). BNP Paribas raised PT to $300 (April 17, 2026 upgrade); Raymond James downgraded to Market Perform at start of 2026 (contrarian minority). Post-Q2 upgrade cycle likely ongoing. (Source: web_research/AAPL.json, analyst_consensus field, run 20260504_144833.)
+Negative. CEO Tim Cook sold $12M+ in early April 2026 at $251–256. Net insider flow: −$235M, zero buys. Context: 10b5-1 plan and CEO departure contextualize (but do not neutralize) the distribution signal. (Source: swing_catalyst_news signal, run 20260505_144544.)
