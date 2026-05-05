@@ -1,0 +1,30 @@
+{
+  "decisions": {
+    "UNH": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 370.75,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 370.75,
+      "stop_loss": 370.75,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "N/A — no entry",
+      "confidence": 22,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader confidence 22 (<40 threshold). 4/5 agents neutral. RSI 94.52 extreme but ADX 86 runaway — no daily reversal candle. R/R 2.3:1 on fade doesn't clear the 4:1 bar required at this confidence level. Wait for pullback to $348-355 EMA zone."
+    },
+    "JNJ": {
+      "action": "short",
+      "quantity": 5,
+      "entry_price": 226.50,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 216.53,
+      "stop_loss": 231.00,
+      "risk_reward_ratio": "2.2:1",
+      "timeframe": "6-12 trading days",
+      "confidence": 52,
+      "account_risk_pct": 1.0,
+      "reasoning": "4/5 agents bearish. Full EMA downtrend daily+hourly, ADX 33.25 -DI>>+DI. Pivot $223.78 tested 5x — breakdown imminent. BofA conf May 12 risk sized into stop. No existing position. R/R 2.2:1 clears minimum. Insider silence at 21-day lows confirms no accumulation."
+    }
+  }
+}

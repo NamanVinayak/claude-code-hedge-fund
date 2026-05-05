@@ -1,0 +1,20 @@
+{
+  "UNH": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "Catalyst window: NO identifiable catalyst within 10 trading days. Q1 2026 earnings (April 21) beat by 10.2% is fully priced into the +34.6% recent move. Goldman Sachs Conviction Buy ($435 PT, May 1) is the most recent catalyst and is already absorbed — current price $370.75 is only ~17% below that PT, and the broader analyst average ($388.57) is only ~5% away, meaning the upgrade cycle is nearly exhausted as a price driver. Next scheduled binary is Q2 2026 earnings (~July 10-28, approximately 46+ trading days away). Net news sentiment: neutral-to-mildly-positive (prior authorization elimination is a long-term structural positive, not a near-term catalyst; RICO insulin lawsuit is an unpriced negative overhang). Insider activity: quiet — no buys or sells recorded; no bullish positioning signal. Technical setup going in: SEVERELY extended — daily RSI 94.52 (extreme overbought), price 22.59% above 50 SMA, 18.68% above 200 SMA, momentum ROC-21d +33.72%. Hourly chart shows active pullback: price below EMA24 and SMA24, hourly ADX minus_di (29.64) > plus_di (10.08) indicating intraday downward pressure, hourly OBV trending down, hourly MACD bearish. The chart is the opposite of constructive — it is already exhausted at multi-month highs. Without an identifiable catalyst within 10 trading days and with an extremely overextended technical setup, the catalyst-news framework requires a neutral call. Lessons: no directly comparable recent catalyst-trade patterns in this book.",
+    "entry": 370.75,
+    "target": 370.75,
+    "stop": 370.75,
+    "timeframe": "neutral — no trade"
+  },
+  "JNJ": {
+    "signal": "bearish",
+    "confidence": 52,
+    "reasoning": "Catalyst window: BofA Healthcare Conference May 12, 2026 (~6 trading days) is the live near-term event — management expected to comment on IMAAVY FDA Priority Review progress and Darzalex trajectory. RBC Capital Markets Global Healthcare Conference follows May 19 (~11 trading days). These are two-sided events: positive commentary could trigger short-covering from deeply oversold levels; disappointing/absent pipeline updates sustain the downtrend. Net news sentiment: mixed-to-negative. Caplyta favorable efficacy data (May 4) is a pipeline positive but not a near-term price driver. Q1 2026 earnings beat (April 14) produced only a muted +0.5-1% reaction — trapped longs absorbing sellers. Structural headwinds remain: Stelara biosimilar erosion (AbbVie/Amgen launches), talc litigation (90,000+ lawsuits with unquantified reserve added to Q1). Insider activity: QUIET — no insider buying at 21-trading-day lows. This is a mild bearish signal; insiders are not stepping in to buy the dip. Analyst consensus: Buy (19 of 23 analysts), avg PT ~$249 (~11% implied upside) — but the market has been ignoring consensus for 21 trading days of decline, suggesting institutional disagreement on timing. Technical setup going in: POOR for a long entry, constructive for a short. Daily EMAs fully bearish-aligned (ema_aligned_downtrend: true); price below all MAs (5/10/20/21/50-period EMA and SMA); ADX 33.25 with minus_di (34.83) >> plus_di (15.44) — strong confirmed downtrend; MACD bearish; Bollinger pct_b 0.157 (near lower band); z-score -2.1 (oversold but not at exhaustion). Hourly: also below all MAs, bearish RSI divergence (hourly), minus_di (33.31) >> plus_di (12.36). Support at $223.78 (5 tests) just below current price. Confidence limited to 52 because: (1) the BofA conference creates two-sided risk — positive IMAAVY/Darzalex commentary could reverse; (2) RSI 27.22 (daily) is deeply oversold and a reflex rally is possible; (3) lessons pattern (NVDA catalyst play stopped out when stretched momentum turned) suggests caution on momentum-based stops. Bearish lean is sustained by the absence of any bullish capitulation signal (no insider buying, no volume divergence from price, hourly OBV not confirming any accumulation). Entry on any intraday bounce into $226-227 resistance zone.",
+    "entry": 226.50,
+    "target": 218.50,
+    "stop": 230.50,
+    "timeframe": "6-12 trading days"
+  }
+}

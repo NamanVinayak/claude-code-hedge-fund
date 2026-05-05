@@ -1,0 +1,67 @@
+{
+  "ticker": "JNJ",
+  "verified_at": "2026-05-05T19:50:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.28456,
+      "web_value": 0.2850,
+      "source": "Simply Wall St / Yahoo Finance TTM (28.5% elevated due to ~$5.6B one-off gain; normalized consensus ~22.5%)",
+      "status": "ok",
+      "deviation": "0.2%",
+      "note": "Our 28.46% matches the TTM reported figure (including one-off gain). Normalized margin ~22.5% is a forward-looking consensus view, not a TTM mismatch."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.22921,
+      "web_value": 0.2396,
+      "source": "CompaniesMarketCap / Macrotrends TTM (22.39%–27.53% range; gurufocus 27.53%; macrotrends ~26.39%; mid ~24%)",
+      "status": "ok",
+      "deviation": "4.3%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 26.187,
+      "web_value": 26.23,
+      "source": "GuruFocus PE (TTM) 26.23 as of Apr 28, 2026",
+      "status": "ok",
+      "deviation": "0.2%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 94189000000.0,
+      "web_value": 96362000000.0,
+      "source": "Macrotrends / CompaniesMarketCap TTM ending March 31, 2026 = $96.362B",
+      "status": "ok",
+      "deviation": "2.3%",
+      "note": "Our value estimated from market_cap / price_to_sales_ratio (544B / 5.775). Close to web figure."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 544006963200.0,
+      "web_value": 539700000000.0,
+      "source": "CompaniesMarketCap as of May 4, 2026 ($539.7B)",
+      "status": "ok",
+      "deviation": "0.8%"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.33016,
+      "web_value": 0.3287,
+      "source": "FinanceCharts / GuruFocus ROE as of April 2026 (32.87%–32.96%)",
+      "status": "ok",
+      "deviation": "0.5%"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.13455,
+      "web_value": 0.1365,
+      "source": "FinanceCharts ROA as of April 2026 (13.65%)",
+      "status": "ok",
+      "deviation": "1.4%"
+    }
+  ],
+  "overall_status": "all metrics within tolerance — no corrections needed",
+  "corrections_applied": false,
+  "files_updated": []
+}

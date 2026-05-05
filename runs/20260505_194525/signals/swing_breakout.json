@@ -1,0 +1,20 @@
+{
+  "UNH": {
+    "signal": "neutral",
+    "confidence": 10,
+    "reasoning": "UNH is in a runaway uptrend — this is NOT a breakout setup. Range boundaries: no consolidation range exists. The stock has been in a parabolic trend for weeks. BB width of 0.3076 is wide (volatility already fully expanded — breakout happened long ago). RSI-14 at 94.52 and ADX at 86.04 place this in the top 1% of overbought readings. Volume at 0.54x 20-day average fails the 1.5x volume confirmation requirement entirely. Squeeze status: done — no squeeze on the daily chart. Hourly confirms distribution: -DI (29.64) > +DI (10.08), MACD histogram -2.18, OBV trending down. Wiki corroborates: third consecutive no-trade run; 'no actionable entry at current price.' The only potential setup here would be a bearish breakdown below the $348–355 10-EMA zone, but that is outside my breakout/breakdown framework at current levels. Standing aside.",
+    "entry": 370.75,
+    "target": 370.75,
+    "stop": 370.75,
+    "timeframe": "no trade"
+  },
+  "JNJ": {
+    "signal": "bearish",
+    "confidence": 52,
+    "reasoning": "JNJ is pressing a well-defined support level at $223.78 (5 daily pivot low tests per data; 4+ tests per wiki). This is a textbook breakdown-pending setup. Range boundaries: support at $223.78 (multi-tested pivot low), resistance zone at $232–235 (pivot lows flipped resistance, SMA-20 $232.39, EMA-20 $231.21). Range height: ~$11.65. Measured-move target on confirmed close below $223.78: $223.78 - $11.65 = $212.13 (wiki-tracked prior version: $216.53 — using wiki's tested level for conservatism). Squeeze status: PRIMED but not fired. Hourly BB width 0.0325 (extreme squeeze) with pct_b 0.3422 — spring-loaded at support. Daily BB width 0.1026, contracting. ADX 33.25 with -DI (34.83) >> +DI (15.44) confirms downtrend direction. MACD -3.45 below signal -2.92. Volume on May 4: 1.04x average — NOT yet at the 1.5x required threshold; this is the confidence limiter. RSI-14 at 27.22 is deeply oversold and raises dead-cat bounce risk ($226–229 per wiki). Prior grading: bearish call in_progress at 58 confidence (entry $223.50, target $216.53, stop $231.50) — MAE -1.6% but price has not broken yet. Re-affirming bearish bias but holding at moderate confidence until a daily close below $223.78 with volume >1.5x clears. Lessons: one recent false breakout (NVDA EMA pullback) — different setup type, no direct pattern match. Hourly OBV is trending up (slight divergence) and hourly RSI at 32.66 — watch for dead-cat bounce before breakdown resumes.",
+    "entry": 223.5,
+    "target": 216.53,
+    "stop": 227.5,
+    "timeframe": "5-10 trading days"
+  }
+}

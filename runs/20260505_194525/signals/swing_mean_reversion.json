@@ -1,0 +1,20 @@
+{
+  "UNH": {
+    "signal": "bearish",
+    "confidence": 55,
+    "reasoning": "Branch A — Fade the Extreme fires on the bearish side, but with caveats. Daily RSI-14 at 94.52 is one of the most extreme readings possible (well above the 75 threshold), Z-score 2.04 (just above +2), price 22.59% above the 50-SMA (extreme extension), and ADX 86.04 signals a runaway trend. Bollinger pct_b at 0.82 is inside the upper band (not a full band-break), tempering the fade signal slightly. The key setup confirmation comes from the hourly–daily divergence: hourly RSI at 36.02 is approaching oversold while the daily screams overbought — this cross-timeframe divergence indicates the short-term correction is already underway. Hourly momentum is negative (roc_10d -1.52%, roc_21d -1.85%), hourly MACD histogram -2.18 (bearish), and hourly ADX shows -DI 29.64 > +DI 10.08 — intraday sellers are in control. Volume is declining (rel vol 0.54 daily, hourly bias down), consistent with a stalling move at the high rather than healthy continuation. Prior call (yesterday, bearish, conf 52) is in_progress with MFE 1.45% — direction is correct so far. Wiki confirms third consecutive runaway run; prior analyst noted 'parabola is stalling, not extending' and recommended waiting for pullback to $348–355 EMA zone. Critically, the ADX at 86 is a major risk — runaway trends can stay extreme far longer than mean-reversion traders expect. Confidence capped at 55 (not 65+) because no clean reversal candle has formed on the daily yet; the hourly correction is early-stage. Entry near current price (363–365 range, where hourly has already pulled back from the 370.75 daily close), target the 20-EMA at ~340 (mean reversion to upper reference), stop above the recent high at 374.5 (prior stop). Branch B does not apply — price is not pulling back to a Fib level in an established trend context that offers a clean entry.",
+    "entry": 364.0,
+    "target": 340.0,
+    "stop": 374.5,
+    "timeframe": "5-10 trading days"
+  },
+  "JNJ": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "Branch A — Fade the Extreme technically triggers on the BULLISH side: daily RSI-14 at 27.22 (approaching the <25 extreme threshold), Z-score -2.10 (below -2), price 5.85% below the 50-SMA, Bollinger pct_b at 0.1565 (near the lower band at 220.47). These are statistically oversold readings. However, the strategy requires a reversal candle or momentum shift BEFORE entering — and none is present. The most recent daily candle (May 4) closed lower at 224.20 on above-average relative volume (1.04x) — bearish continuation, not a reversal signal. MACD is bearish (histogram -0.53, no bullish crossover). Hourly RSI divergence is BEARISH (falling price with bearish RSI divergence on the hourly — opposite of what a bullish fade needs). Hourly MACD also negative. ADX 33.25 with -DI 34.83 vs +DI 15.44 confirms the downtrend is strong and accelerating. The OBV trend on the daily is down with no divergence from price. No reversal candle means the 'don't catch a falling knife' rule applies. The z-score has only barely crossed -2.0, meaning the oversold extreme is fresh — not a prolonged capitulation. Wiki confirms: active short position at $229.06 fill (target $216.53, stop $231.50) is running profitably ($14.85 gain). Prior bearish call from yesterday is in_progress with direction_correct=true and MFE 1.51% — the bearish thesis is working. From a mean-reversion perspective, the bullish bounce setup is not confirmed (no reversal candle, bearish hourly divergence, strong downtrend ADX). Branch B (buy-the-dip) does not apply in a downtrend with bearish structure. Outputting neutral: the oversold condition is noted but unconfirmed for a reversal trade; the strategy requires confirmation before entry.",
+    "entry": 224.2,
+    "target": 232.4,
+    "stop": 220.0,
+    "timeframe": "5-10 trading days"
+  }
+}

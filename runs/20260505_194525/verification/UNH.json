@@ -1,0 +1,70 @@
+{
+  "ticker": "UNH",
+  "verified_at": "2026-05-05T19:50:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.03599,
+      "web_value": 0.0340,
+      "source": "Macrotrends / Yahoo Finance / CNBC (range 2.68%–4.15% TTM; mid ~3.4%)",
+      "status": "ok",
+      "deviation": "5.9%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.08066,
+      "web_value": 0.0378,
+      "source": "Macrotrends (3.33% as of Mar 31 2026); StockAnalysis / Investing.com (4.19%–4.24%); Q1 2026 actual 6.6% (single-quarter, not TTM). Web TTM mid-point ~3.78%.",
+      "status": "MISMATCH",
+      "deviation": "113%",
+      "action": "replaced with web value (0.0378) in all facts bundles that contained the field: warren_buffett__UNH.json, aswath_damodaran__UNH.json"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 27.469,
+      "web_value": 27.87,
+      "source": "Yahoo Finance trailing P/E as of May 1, 2026",
+      "status": "ok",
+      "deviation": "1.5%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 400300000000.0,
+      "web_value": 449710000000.0,
+      "source": "CompaniesMarketCap / StockAnalysis TTM as of Q1 2026 results",
+      "status": "ok",
+      "deviation": "12.3%",
+      "note": "Our value estimated from market_cap / price_to_sales_ratio (330.3B / 0.825). Facts bundle revenue data period is 2025-09-30 (partial year lag) vs web TTM including Q1 2026. Deviation within tolerance."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 330312613888.0,
+      "web_value": 334930000000.0,
+      "source": "CompaniesMarketCap / StockAnalysis as of May 1, 2026",
+      "status": "ok",
+      "deviation": "1.4%"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.1218,
+      "web_value": 0.1240,
+      "source": "GuruFocus / AlphaSpread TTM as of late April 2026",
+      "status": "ok",
+      "deviation": "1.8%"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.0378,
+      "web_value": 0.0385,
+      "source": "StockAnalysis / AlphaSpread TTM as of late April 2026",
+      "status": "ok",
+      "deviation": "1.8%"
+    }
+  ],
+  "overall_status": "1 mismatch corrected",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260505_194525/facts/warren_buffett__UNH.json",
+    "runs/20260505_194525/facts/aswath_damodaran__UNH.json"
+  ]
+}
