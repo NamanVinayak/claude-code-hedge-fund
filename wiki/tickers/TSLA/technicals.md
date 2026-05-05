@@ -1,51 +1,50 @@
 ---
 name: TSLA technicals
-last_updated: 2026-05-04
-last_run_id: 20260504_161542
+last_updated: 2026-05-05
+last_run_id: 20260505_160654
 target_words: 350
 stale_after_days: 7
-word_count: 358
-summary: Mid-resistance hold — price $390.82 inside $387-399 bear-rally resistance cluster; daily EMA structure mixed (10/21 below 50/200); ADX 28.36 bullish directional pressure but daily volume 0.97x fails breakout confirmation; setup type watch-not-act; macro veto (Iran escalation May 4).
+word_count: 363
+summary: Mid-resistance hold — price $392.51 inside $387-399 bear-rally resistance cluster; daily EMA structure mixed (10/21 below 50/200); ADX 30.08 bullish directional pressure, volume 0.74x fails breakout confirmation; hourly OBV bearish divergence cross-confirmed by 4/5 agents; setup type watch-not-act (6th consecutive); Head Trader conf 35, below 40 threshold.
 ---
 
 # TSLA — Technicals
 
 ## TL;DR
 
-TSLA closed at $390.82 on May 4, 2026 — squarely inside the documented $387–$399 bear-rally resistance cluster (14–15 tests). Daily EMA structure remains mixed: 10/21 EMAs marginally above each other but still below the 50 EMA ($386) and 200 EMA ($389.2). ADX 28.36 with +DI 35.64 >> -DI 15.17 shows strong bullish directional pressure, but daily volume at 0.97x average fails the 1.5x breakout confirmation gate. Setup type: **watch, not act — same as prior run.** Head Trader confidence 38, below the 40 capital-deployment threshold. Iran escalation (May 4) added a macro veto on high-beta names. [source: run 20260504_161542 signals_combined.json]
+TSLA at $392.51 on May 5, 2026 — still squarely inside the documented $387–$399 bear-rally resistance cluster (14–15 tests). Daily EMA structure remains mixed: 10 EMA ($382.6) and 21 EMA not confirmed above 50 EMA ($386.3) or 200 EMA ($389.3). ADX 30.08 with +DI >> -DI shows strong directional bias, but daily volume at 0.74x average fails the 1.5x breakout confirmation gate. Hourly OBV diverging bearishly from price — flagged independently by 4 of 5 swing agents, the strongest cross-confirmed signal in this dataset. Setup type: **watch, not act — 6th consecutive hold.** Head Trader confidence 35, below the 40 capital-deployment threshold. [source: run 20260505_160654 signals_combined.json]
 
 ## Multi-timeframe state
 
 | Timeframe | State | Source run |
 |---|---|---|
-| Daily | Transition — 10 EMA (380.4) > 21 EMA (378.5), both below 50 EMA (386.0) and 200 EMA (389.2) | 20260504_161542 |
-| Daily | ADX 28.36, +DI 35.64 >> -DI 15.17 — bullish directional bias, trend not clean | 20260504_161542 |
-| Daily | RSI-14 67.11 (approaching overbought), MACD histogram +1.88 (expanding); daily OBV diverging from price (distribution signal) | 20260504_161542 |
-| Daily | Z-score 0.37 (neutral band); Bollinger %B 0.748 (inside bands, not extended) | 20260504_161542 |
-| Hourly | EMAs fully aligned uptrend (ema_24 > ema_48 > ema_120); hourly bullish RSI divergence confirmed | 20260504_161542 |
-| Hourly | 4.79x relative volume surge on hourly — smart-money accumulation signal (not daily confirmation) | 20260504_161542 |
+| Daily | Mixed EMA structure — 10 EMA (382.6) sits below 50 EMA (386.3) and 200 EMA (389.3); 10>21 EMA positive but sub-50/200 fails clean uptrend criteria | 20260505_160654 |
+| Daily | ADX 30.08, +DI >> -DI — strong bullish directional bias; RSI-7 80.77 (overbought), RSI-14 63.86 | 20260505_160654 |
+| Daily | MACD histogram +2.27 (expanding bullish); 10d ROC 0.0% flat (breaks all-positive requirement) | 20260505_160654 |
+| Daily | Z-score vs 50-SMA: 0.48 (neutral band); Bollinger %B 0.75 (inside bands); BB width 0.1949 (expanded, no squeeze) | 20260505_160654 |
+| Hourly | EMAs fully aligned bullish uptrend (24>48>120); hourly ADX 27.6 | 20260505_160654 |
+| Hourly | OBV diverging bearishly — price rallied, OBV declining (distribution signal); relative volume 4.02x elevated | 20260505_160654 |
 
 ## Key levels
 
 | Level | Value | Notes |
 |---|---|---|
-| Current price | $390.82 | Mid-resistance — inside $387-$399 cluster |
-| Bear-rally resistance | $387–$399 | 14–15 test zone; bear-rally short zone Apr 15 |
-| Resistance ceiling | $409.28 | 14-test prior swing high; target for any long |
-| Conditional entry watch zone | $381–$385 | Fib 38.2% ($381.76) + 15-test pivot support ($381.40) confluence |
-| Stop for watch-zone entry | $364 | Below Fib 61.8% ($364.76) and 3-test hourly support ($364.02) |
-| 50 EMA (daily) | $386.0 | Price must hold above for trend continuation |
-| 200 EMA (daily) | $389.2 | Second resistance ceiling — price now below both |
-| Daily ATR | $15.32 (3.92%) | Extreme volatility; wide stops required |
+| Current price | $392.51 | Mid-resistance — inside $387–$399 cluster |
+| Bear-rally resistance | $387–$399 | 14–15 test zone; 6 runs without a breakout |
+| Resistance ceiling | $409.28 | 14-test prior swing high; breakout target |
+| Breakout confirmation gate | Daily close above $409.28 on 1.5x+ volume | Not met; volume 0.74x as of this run |
+| Conditional long entry zone | $381–$385 | Fib 38.2% ($381.76) + 15-test pivot ($381.40) confluence |
+| Stop for watch-zone entry | $374 | Below recent low $378.80 and swing Fib levels |
+| 50 EMA (daily) | $386.3 | Price must sustain above for trend continuation |
+| 200 EMA (daily) | $389.3 | Overhead resistance — price sitting at/just below |
+| Daily ATR | 3.81% | Significant volatility; wide stops required |
 
 ## Setup type
 
-**Watch-not-act (unchanged from run 20260501_160246).** Price advanced from $381.63 (May 1 close) to $390.82 but remains inside the resistance cluster, not above it. The breakout condition requires a daily close above $399–$409 on 1.5x+ daily volume — that has not printed. No long is valid at current price (R/R ~1.96:1, fails 2:1 minimum). No short thesis constructed.
+**Watch-not-act (6th consecutive run — Apr 11, Apr 15, Apr 17, May 1, May 4, May 5).** Price at $392.51 is 1.84% above the 21 EMA, inside the resistance cluster, not above it. Breakout condition requires daily close above $409.28 on 1.5x+ daily volume — not met (0.74x). No long valid at current price (R/R ~1.26:1 from nearest target at $409.28 with stop $379, fails 2:1 minimum). Warsh vote May 15 is a near-term macro headwind. Hourly OBV bearish divergence is the strongest cross-confirmed signal arguing against a new long.
 
-**Ideal entry condition:** Pullback to $381–$385 with bullish confirmation candle on hourly, daily volume not confirming distribution. Stop $364, target $409.28 = R/R improves to 3:1+ from entry zone midpoint.
-
-**Prior setup note:** The May 1 surge (+3.8%, 2.74x volume) that fired the hourly squeeze has been partially absorbed — price is 3 days into the resistance zone without a confirmed breakout. Macro veto from Iran escalation applies.
+**Ideal entry conditions:** Pullback to $381–$385 on declining volume with a bullish daily reversal candle (R/R improves to ~3:1 from zone midpoint to $409.28, stop $374). OR confirmed daily close above $409.28 on 1.5x+ volume for a breakout long.
 
 ## Last updated
 
-2026-05-04. Prices as of run 20260504_161542 (daily close $390.82). Stale within 7 days.
+2026-05-05. Prices as of run 20260505_160654 (price $392.51). Stale within 7 days. Supersedes 20260504_161542 entry ($390.82).
