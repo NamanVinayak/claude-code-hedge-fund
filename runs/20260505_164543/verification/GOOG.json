@@ -1,0 +1,74 @@
+{
+  "ticker": "GOOG",
+  "verified_at": "2026-05-05T16:50:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.3281,
+      "web_value": 0.3792,
+      "source": "Yahoo Finance (GuruFocus cross-checked) — TTM as of May 1, 2026",
+      "status": "ok",
+      "deviation": "13.5%",
+      "note": "Discrepancy likely reflects Q1 2026 one-time $36.9B equity gain boosting TTM net income; our value pre-dates that quarter's inclusion. Under 20% threshold."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.3203,
+      "web_value": 0.3300,
+      "source": "CNBC Q1 2026 earnings (Q1 operating margin 36.1%; blended TTM ~33%)",
+      "status": "ok",
+      "deviation": "3.0%",
+      "note": "Q1 2026 standalone operating margin was 36.1%; TTM blend estimated ~33%. Deviation well under 20%."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 29.28,
+      "web_value": 29.35,
+      "source": "Yahoo Finance / companiesmarketcap.com — May 1, 2026",
+      "status": "ok",
+      "deviation": "0.2%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 402900000000,
+      "web_value": 422500000000,
+      "source": "Yahoo Finance / stockanalysis.com — TTM post-Q1 2026 ($422.5B)",
+      "status": "ok",
+      "deviation": "4.6%",
+      "note": "Our implied TTM revenue (~$402.9B from market_cap / price_to_sales) aligns with full-year 2025 figure; post-Q1 2026 TTM is $422.5B. Under 20% threshold."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 4646392299520,
+      "web_value": 4640000000000,
+      "source": "companiesmarketcap.com / public.com — early May 2026 range $4.605T–$4.67T",
+      "status": "ok",
+      "deviation": "0.1%"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.3183,
+      "web_value": 0.3888,
+      "source": "Zacks.com / financecharts.com — TTM ROE as of May 1, 2026",
+      "status": "ok",
+      "deviation": "18.1%",
+      "note": "18.1% deviation — just under 20% threshold. Not flagged as mismatch but warrants monitoring. Likely inflated by Q1 2026 equity gain boosting net income."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.2220,
+      "web_value": 0.1464,
+      "source": "Zacks.com — TTM ROA as of May 1, 2026 (14.64%)",
+      "status": "MISMATCH",
+      "deviation": "51.6%",
+      "action": "replaced with web value (0.1464) in all facts bundles: warren_buffett__GOOG.json, aswath_damodaran__GOOG.json"
+    }
+  ],
+  "overall_status": "1 mismatch corrected (roa: 22.2% → 14.64%)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260505_164543/facts/warren_buffett__GOOG.json",
+    "runs/20260505_164543/facts/aswath_damodaran__GOOG.json"
+  ],
+  "notes": "Only 2 of 19 GOOG facts bundle files contained the raw return_on_assets metric. All other files (ben_graham, bill_ackman, cathie_wood, charlie_munger, michael_burry, mohnish_pabrai, nassim_taleb, news_sentiment, peter_lynch, phil_fisher, rakesh_jhunjhunwala, stanley_druckenmiller, swing_breakout, swing_catalyst_news, swing_macro_context, swing_mean_reversion, swing_trend_momentum) do not contain return_on_assets as a standalone field and were not updated. Score/signal fields were not modified per protocol."
+}
