@@ -1,7 +1,7 @@
 ---
 name: swing_mean_reversion track record
 last_updated: 2026-05-05
-last_run_id: 20260505_211609
+last_run_id: 20260505_220625
 stale_after_days: 365
 target_words: 1200
 summary: 2 graded calls. (Appended by ai_hedge.grading.wiki_writer.)
@@ -40,3 +40,5 @@ one resolved call scored against yfinance daily OHLC.
 - — | STX | bearish $726.93→$557.01 stop $755.0 | **in_progress** (day 1, MFE 0.0%, MAE -3.04%) _(prior_run=20260504_203608, graded_in=20260505_203524)_
 - — | MU | bearish $576.0→$490.59 stop $610.0 | **in_progress** (day 1, MFE 3.17%, MAE -2.92%) _(prior_run=20260504_212836, graded_in=20260505_211609)_
 - — | SNDK | bearish $1256.0→$1040.4 stop $1320.0 | **in_progress** (day 1, MFE 4.06%, MAE -1.52%) _(prior_run=20260504_212836, graded_in=20260505_211609)_
+- — | DIS | bullish $103.75→$107.11 stop $101.0 | **expired_wrong** (day 4, MFE 1.04%, MAE -2.39%) _(prior_run=20260501_221355, graded_in=20260505_220625)_
+- — | NKE | bullish $44.4→$46.94 stop $42.09 | **in_progress** (day 4, MFE 1.26%, MAE -2.95%) _(prior_run=20260501_221355, graded_in=20260505_220625)_
