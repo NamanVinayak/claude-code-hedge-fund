@@ -1,22 +1,22 @@
 ---
 name: GS trades
-last_updated: 2026-05-04
-last_run_id: 20260504_192106
+last_updated: 2026-05-05
+last_run_id: 20260505_190606
 target_words: 800
 stale_after_days: 60
-word_count: 700
-summary: GS has zero executed trades in tracker.db; model held GS across five analyzed runs (Apr 11–May 4); blockers evolved from weak ADX → FICC miss/insider sell/broken support → Iran escalation macro veto
+word_count: 694
+summary: GS has zero executed trades in tracker.db; model held GS across six analyzed runs (Apr 11–May 5); blockers evolved from weak ADX → FICC miss/insider sell/broken support → Iran escalation macro veto → EMA-21 break + R/R failure
 ---
 
 ## TL;DR
 
-No GS trades have ever been placed in the paper trading system. The model has analyzed GS five times (Apr 11, Apr 15, Apr 17, Apr 30, May 4) and issued a Hold decision every time. The consistent blockers evolved: initially weak ADX (sub-25), then post-earnings FICC miss and broken support, and now the Iran escalation macro headwind specifically targeting GS's M&A/IPO/FICC revenue. GS remains a "watched but not traded" name. `per_ticker_history[GS]` in trade_ledger.json (run `20260504_192106`) = [] — zero fills confirmed. [trade_ledger.json, run `20260504_192106`]
+No GS trades have ever been placed in the paper trading system. The model has analyzed GS six times (Apr 11, Apr 15, Apr 17, Apr 30, May 4, May 5) and issued a Hold decision every time. The consistent blockers evolved: initially weak ADX (sub-25), then post-earnings FICC miss and broken support, then the Iran escalation macro headwind specifically targeting GS's M&A/IPO/FICC revenue, and now an EMA-21 break with R/R still failing the 2:1 minimum (1.28:1). GS remains a "watched but not traded" name. `per_ticker_history[GS]` in trade_ledger.json (run `20260505_190606`) = [] — zero fills confirmed. [trade_ledger.json, run `20260505_190606`]
 
 ---
 
 ## Open Positions
 
-None. GS has zero open positions in `tracker.db` as of 2026-05-04. `per_ticker_history[GS]` = [] per trade_ledger.json (run `20260504_192106`).
+None. GS has zero open positions in `tracker.db` as of 2026-05-05. `per_ticker_history[GS]` = [] per trade_ledger.json (run `20260505_190606`).
 
 ---
 
@@ -38,10 +38,10 @@ None. No GS trades have been executed, filled, or closed in the paper trading sy
 | Realized P&L | $0 |
 | Unrealized P&L | $0 |
 | Total return | N/A |
-| Runs analyzed | 5 (Apr 11, Apr 15, Apr 17, Apr 30, May 4) |
-| Model hold signals | 5 |
+| Runs analyzed | 6 (Apr 11, Apr 15, Apr 17, Apr 30, May 4, May 5) |
+| Model hold signals | 6 |
 
-Source: trade_ledger.json (run `20260504_192106`) — per_ticker_history[GS] = [], 0 rows confirmed.
+Source: trade_ledger.json (run `20260505_190606`) — per_ticker_history[GS] = [], 0 rows confirmed.
 
 ---
 
@@ -49,19 +49,28 @@ Source: trade_ledger.json (run `20260504_192106`) — per_ticker_history[GS] = [
 
 This section records every model run that analyzed GS and the resulting decision, explaining why no trade was ever placed.
 
+### Run: `20260505_190606` — May 5, 2026
+
+**Decision:** Hold, 35% confidence. 0 shares. (6th consecutive hold.)
+
+**Why not entered:** Price $903.27 broke below daily EMA-21 ($906.74) for the first time in the run sequence — a new deterioration signal. R/R for short from daily close ($903.27) to target ($864.45) vs stop ($933.48) = 1.28:1 — still below 2:1 minimum. RSI-7 at 33.74 near oversold creates near-term bounce risk that would hit the short stop. Iran escalation headwinds on M&A/IPO/FICC persist despite May 5 partial ceasefire. Agent vote: 0 bullish / 1 bearish (catalyst_news 62) / 4 neutral (trend_momentum 20, mean_reversion 35, breakout 25, macro_context 32). Preferred short entry remains $918–$924 resistance zone. [decisions.json, run `20260505_190606`]
+
+**Key metrics at decision time:**
+- Price: $903.27 daily close / $918.94 hourly
+- ADX daily: 34.21 (strong)
+- EMA-21 daily: $906.74 — price now below
+- Hourly MACD histogram: -0.2997 (negative, confirmed downtrend)
+- MACD histogram daily: -3.1266 (deeply negative)
+- Insider sell ratio: 3.3:1 ($109.9M sold, zero buys)
+- Head Trader confidence: 35%
+
+---
+
 ### Run: `20260504_192106` — May 4, 2026
 
 **Decision:** Hold, 30% confidence. 0 shares. (5th consecutive hold — lowest confidence in GS history.)
 
-**Why not entered:** Five independent blockers converging: (1) Iran escalation on May 4 (UAE intercepted Iranian missiles, WTI >$106) directly suppresses GS's M&A deal flow, IPO activity, and FICC trading revenue — swing_macro_context applied sector-specific veto; (2) Hourly timeframe in confirmed downtrend (minus DI 28.24 > plus DI 18.74, MACD histogram -2.11); (3) $924.23 overhead resistance confirmed — rejected partial recovery from $899 low; (4) Extreme insider distribution (3.3:1, $109.9M in sales, zero buys) remains live headwind; (5) swing_catalyst_news carries active in-progress bearish thesis (run `20260430_190826`, conf 68, target $864.45) — a new long would directly conflict. Agent vote: 1B (mean_reversion, 45) / 4N (trend_momentum 30, breakout 25, catalyst_news 30, macro_context 35). Lone bullish agent limited confidence to 45 and noted broken $924.23 overhead resistance. [decisions.json, run `20260504_192106`]
-
-**Key metrics at decision time:**
-- Price: $905.10
-- ADX daily: 34.03 (strong, trend confirmed)
-- Hourly MACD histogram: -2.11 (deeply negative)
-- Hourly RSI divergence: confirmed (positive signal, insufficient alone)
-- Insider sell ratio: 3.3:1 ($109.9M sold, zero buys)
-- Head Trader confidence: 30%
+**Why not entered:** Five blockers converging: (1) Iran escalation directly suppresses GS revenue drivers; (2) hourly confirmed downtrend (minus DI 28.24 > plus DI 18.74); (3) $924.23 overhead resistance confirmed; (4) extreme insider distribution (3.3:1); (5) active in-progress bearish background thesis (run `20260430_190826`, conf 68, target $864.45). Agent vote: 1B/4N. [decisions.json, run `20260504_192106`]
 
 ---
 
@@ -69,11 +78,7 @@ This section records every model run that analyzed GS and the resulting decision
 
 **Decision:** Not placed (pre-earnings hold pending confirmation)
 
-**Head Trader signal:** Bullish, 63% confidence. 7 of 9 agents bullish. The run analyzed GS ahead of Q1 earnings on April 13 and identified it as a top catalyst setup in the financial cohort. Entry was suggested at $895–$910 with a $940 target (prior swing high). Bullish votes came from: swing_catalyst_trader (75%), swing_sector_rotation (70%), swing_momentum_ranker (72%), news_sentiment (70%), stanley_druckenmiller (58%), swing_breakout_trader (55%). Neutral votes from: swing_trend_follower (ADX 22.75 below threshold), swing_pullback_trader.
-
-**Why not entered:** The Apr 11 run produced a bullish head trader signal but the entry window was described as conditional on earnings — specifically "buy the rumor, sell the news" risk was flagged explicitly. No executor run placed the trade, and the earnings print (Apr 13) delivered a mixed result: EPS beat but FICC missed. The stock gapped down intraday from ~$907 to ~$865 before recovering, validating the caution.
-
-**Key quote from head trader:** "The only real risk is a 'buy the rumor, sell the news' reaction if earnings merely meet expectations." (run `swing_20260411_211655`, swing_head_trader reasoning for GS)
+**Head Trader signal:** Bullish, 63% confidence (7/9 agents). Entry suggested $895–$910, target $940. Earnings "buy the rumor, sell the news" risk flagged. Not entered. Validated: stock fell intraday on April 13 FICC-miss print.
 
 ---
 
@@ -81,28 +86,29 @@ This section records every model run that analyzed GS and the resulting decision
 
 **Decision:** Hold, 48% confidence. 0 shares.
 
-**Why not entered:** Post-earnings, the agent split deteriorated from 7/9 bullish to a contested 4-3-3 (4 bullish, 3 neutral, 3 bearish). The head trader cited three explicit blockers: (1) ADX 19.4 — below the 25 threshold for trend confirmation; (2) hourly momentum turned negative post-earnings (ROC slightly negative, MACD histogram negative); (3) heavier bearish participation from growth agent and Druckenmiller due to FICC miss and insider selling. PM reasoning from run `20260417_233350` confirmed: "R:R cannot reach 2:1 cleanly."
-
-**Key metrics at decision time:**
-- Price: ~$903–$909
-- ADX: 19.4
-- RSI-14: 69.1
-- Head trader entry/target/stop: $895 / $940 / $874 (implicit R:R ~2.1:1)
-- Confidence: 48% — below the model's actionable threshold
+**Why not entered:** Post-earnings agent split deteriorated (4-3-3). ADX 19.4 — below 25 threshold. Hourly momentum negative post-earnings. FICC miss and insider selling added bearish votes. [decisions.json, run `20260415_110848`]
 
 ---
 
 ### Run: `20260417_233350` — Apr 17, 2026
 
-**Decision:** Hold, 62% confidence. 0 shares. Entry price referenced at $909.63, target $925.00, stop $890.00, R:R 1.43:1.
+**Decision:** Hold, 62% confidence. 0 shares. Entry reference $909.63, target $925.00, stop $890.00, R/R 1.43:1.
 
-**Why not entered:** The PM's own R:R was 1.43:1 — well below the 2:1 minimum mandate. ADX was cited as "weak (20.66)" and 5-day ROC was -0.4% (decelerating, not accelerating). PM reasoning: "HT neutral; daily ADX weak (20.66), 5d ROC -0.4%, momentum decelerating. R:R cannot reach 2:1 cleanly. Stand aside." (run `20260417_233350`, decisions.json, GS entry)
+**Why not entered:** R/R 1.43:1 below 2:1 minimum. ADX 20.66 (weak). 5d ROC -0.4% (decelerating). [decisions.json, run `20260417_233350`]
+
+---
+
+### Run: `20260430_190826` — Apr 30, 2026
+
+**Decision:** Hold, 38% confidence. 0 shares.
+
+**Why not entered:** FICC miss dissipated momentum; $924.23 hourly support broke April 29 (-2.4%); ADX crossed 25 threshold (32.67) but conflicting signals (1B/3N/1Bear) precluded clean setup on either side. [decisions.json, run `20260430_190826`]
 
 ---
 
 ## What Would Trigger a Trade
 
-Based on five-run hold streak, the model has explicitly defined entry criteria (updated run `20260504_192106`):
+Based on six-run hold streak, the model has explicitly defined entry criteria (updated run `20260505_190606`):
 
 **Long entry — all three must fire simultaneously:**
 1. **Daily close above $924.23** on volume ≥ 1.5x average — reclaims broken support as support
@@ -110,6 +116,7 @@ Based on five-run hold streak, the model has explicitly defined entry criteria (
 3. **Hourly MACD histogram positive** — hourly trend re-aligns with daily
 
 **Short entry:**
-- Sustained volume-accelerated break below $899.16 (8-test floor) → directional short thesis
+- Bounce to $918–$924 resistance zone with 2:1+ R/R (stop $933.48, target $864.45 = 4:1 from $918 entry)
+- OR volume-accelerated break below $899.16 (8-test floor) → momentum short thesis
 
-**Macro pre-condition:** Iran escalation must de-escalate (Strait of Hormuz closure risk off the table) before initiating any long; macro_context will apply veto as long as Iran risk suppresses GS revenue drivers.
+**Macro pre-condition:** Iran escalation must de-escalate durably before initiating any long.

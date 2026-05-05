@@ -1,41 +1,42 @@
 ---
 name: GS technicals
-last_updated: 2026-05-04
-last_run_id: 20260504_192106
+last_updated: 2026-05-05
+last_run_id: 20260505_190606
 target_words: 350
 stale_after_days: 7
-word_count: 347
-summary: Breakdown deepened — price $905.10 (-$18.67 from May 1); $924.23 confirmed resistance; ADX 34.03 daily trend intact but hourly in confirmed downtrend; hourly MACD -2.11 deeply negative; volume-confirmed support at $899.16 (8 tests) is the critical floor; HOLD
+word_count: 344
+summary: Continued deterioration — price $903.27 (-$1.83 from May 4); hourly confirmed downtrend (minus_di 29.23 > plus_di 17.36, ADX 25.37); daily EMA structure intact but MACD histogram -3.1266 deeply negative; RSI-7 33.74 approaching oversold; $899.16 support (8 tests) is critical floor; HOLD — no entry, 6th consecutive
 ---
 
 ## TL;DR
 
-**Deterioration confirmed — price dropped to $905.10.** The May 1 partial stabilization at $923.77 reversed: GS fell $18.67 further. The $924.23 broken support level (29 hourly tests, now resistance) acted as a ceiling. Hourly timeframe remains in a confirmed downtrend (minus DI 28.24 > plus DI 18.74). Daily structure still bullish (EMA alignment intact, ADX 34.03). Volume-confirmed support at $899.16 (8 tests) is the critical near-term floor; a break invalidates the bullish thesis. HOLD. [run `20260504_192106`]
+**Continued deterioration — price slipped to $903.27.** Price moved down $1.83 from $905.10 (May 4) to $903.27 daily close. Daily EMA alignment remains technically bullish (EMA-10 $917.65 > EMA-21 $906.74 > EMA-50 $889.38), but price has slipped below EMA-21 — a warning. Hourly timeframe remains in a confirmed downtrend (minus DI 29.23 > plus DI 17.36, ADX 25.37 strong). MACD histogram deeply negative. RSI-7 at 33.74 approaching oversold — near-term bounce risk. $899.16 volume-confirmed support (8 tests) is the critical floor. HOLD — 6th consecutive. [run `20260505_190606`]
 
 ---
 
-## Multi-Timeframe State (run `20260504_192106`, May 4 2026)
+## Multi-Timeframe State (run `20260505_190606`, May 5 2026)
 
 **Daily timeframe**
 
 | Indicator | Value | Interpretation |
 |---|---|---|
-| ADX | 34.03 | Strong trend confirmed (above 25); up from 31.41 prior run |
-| Plus DI / Minus DI | plus_di 30.62 / minus_di 12.32 | Daily trend still bullish; plus DI dominant |
-| EMA alignment | EMA-10 $920.84 > EMA-21 $907.08 > EMA-50 $888.81 | Daily uptrend intact |
-| RSI-14 | 60.04 (daily per technical_analyst) | Neutral to mild bullish on daily |
-| RSI-7 | 41.97 | Weakened; below 50 (entry threshold not met) |
-| MACD histogram | -1.4238 | Strongly negative; no bullish crossover |
-| ROC 5d / 10d / 21d | -0.35% / -0.24% / +7.38% | Near-term both negative; 21d still positive |
+| ADX | 34.21 | Strong trend (above 25 threshold); slightly up from 34.03 prior run |
+| EMA alignment | EMA-10 $917.65 > EMA-21 $906.74 > EMA-50 $889.38 | Bullish staircase but price below EMA-21 |
+| Daily close | $903.27 | Below EMA-21 ($906.74) — caution flag |
+| RSI-14 | 48.08 | Neutral territory; not oversold |
+| RSI-7 | 33.74 | Near oversold — potential near-term bounce risk |
+| MACD histogram | -3.1266 | Deeply negative; no bullish crossover |
+| ROC 5d / 10d / 21d | -3.68% / -4.08% / +4.66% | Near-term both negative and accelerating |
+| Volume ratio | 0.85x | Below average; no breakout confirmation |
 
 **Hourly timeframe**
 
-- Hourly ADX: 26.7; minus DI (28.24) > plus DI (18.74) — confirmed bearish hourly trend
-- Hourly MACD: -3.14 (MACD line) vs signal -1.02; histogram -2.11 (deeply negative)
-- Hourly RSI: 49.09; **bullish RSI divergence still visible** (price lower lows, RSI higher lows)
-- Hourly BB pct_b: 0.1035 — approaching lower Bollinger band; stretched condition
-- Volume ratio: 0.70x daily (below average; no breakout confirmation possible)
-- Hourly ROC all negative: 5d -0.93%, 10d -1.96%, 21d -0.15%
+- Hourly ADX: 25.37 (strong threshold); minus DI 29.23 > plus DI 17.36 — confirmed active bearish trend
+- Hourly MACD histogram: -0.2997 (negative)
+- Hourly RSI: normalized (not extended)
+- Hourly BB width: 0.0465 (mild compression)
+- Hourly EMA aligned uptrend: false (confirmed)
+- Hourly current price: $918.94 (vs $903.27 daily close — intraday recovery attempted)
 
 ---
 
@@ -43,24 +44,17 @@ summary: Breakdown deepened — price $905.10 (-$18.67 from May 1); $924.23 conf
 
 | Level | Value | Notes |
 |---|---|---|
-| Current price | $905.10 | Below all hourly EMAs; below $924.23 resistance |
-| Broken support (overhead resistance) | $924.23 | 29 tests; bull trigger = daily close above + 1.5x vol + hourly MACD positive |
-| Hourly resistance | $933.48 | 16 tests; next ceiling if $924.23 reclaimed |
-| Fib 78.6% retracement (hourly) | $906.87 | Near current price; weak support zone |
+| Current price | $903.27 (daily) / $918.94 (hourly) | Below all key overhead levels on daily |
+| Broken support (overhead resistance) | $924.23 | 29 hourly tests; bull trigger = daily close above + 1.5x vol + hourly MACD positive |
+| Hourly resistance | $933.48 | 16-17 tests; stop level for any short |
+| Fib 38.2% retracement | $893.09 | Next significant support below current price |
 | Volume-confirmed support | $899.16 | 8 tests; structural floor; break invalidates thesis |
-| EMA-21 daily | $907.08 | Must hold for daily uptrend continuity |
-| EMA-50 daily | $888.81 | Secondary support |
-| Bear trigger | $912.14 | Short entry level (below = directional break) |
-| Bull target | $933.48 / $952.01 | Resistance cluster and prior swing high |
+| EMA-21 daily | $906.74 | Price slipped below — monitoring |
+| EMA-50 daily | $889.38 | Secondary support |
+| Preferred short entry zone | $918–$924 | Bounce-to-resistance fade with 2:1+ R/R |
 
 ---
 
 ## Setup Type
 
-**Continued deterioration — waiting for directional resolution.** Prior setup (May 1: partial stabilization at $923.77, RSI divergence, first +MACD hourly reading) has reversed: price dropped $18.67, MACD histogram turned deeply negative again (-2.11), hourly trend re-confirmed bearish. RSI divergence persists as the only bullish signal.
-
-**Bull trigger (unchanged):** Daily close above $924.23, volume ≥ 1.5x, hourly MACD positive → entry $924–$926, target $933.48 / $952.01, stop $912.14.
-
-**Bear trigger:** Volume-accelerated sustained break below $899.16 → short thesis, target $864.45 zone.
-
-**Wiki entry conditions (must all fire before any long):** Daily RSI-7 > 50, MACD histogram turning positive, close above $920 on volume.
+**Continued deterioration — sixth consecutive hold.** Price slipped $1.83 further and is now below EMA-21. The bearish thesis (Iran escalation suppressing M&A/IPO/FICC, 3.3:1 insider selling) remains valid but R/R from daily close ($903.27) to target ($864.45) vs. stop ($933.48) = 1.28:1 — below 2:1 minimum. RSI-7 at 33.74 creates near-term bounce risk that could hit short stop. Preferred short entry remains $918–$924 resistance zone for cleaner 2:1+ setup. Prior setup: May 4 continued deterioration at $905.10 → May 5 further slip to $903.27 with daily price now below EMA-21.
