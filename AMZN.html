@@ -484,7 +484,7 @@
             <a class="nav-link " href="closed.html">History</a>
             <a class="nav-link " href="runs.html">All Runs</a>
         </div>
-        <div class="nav-meta">10:45 AM PT · NEXT TX <span id="countdown">--:--</span></div>
+        <div class="nav-meta">10:55 AM PT · NEXT TX <span id="countdown">--:--</span></div>
     </div>
 </nav>
 
@@ -531,7 +531,7 @@
 
 <div class="thesis-card">
     <h2>AI Thesis (from Wiki)</h2>
-    <p>**Prior claim falsified:** The 20260501_173921 thesis stated a short was open at ~$269 with stop $276, targeting $244.44 (20-SMA mean reversion). That stop was hit on May 4, 2026: price rallied through $276 intraday, closing the position at -$7.00. **What this falsifies:** the assumption that the April 30 shooting star distribution candle would be immediately followed by a bearish continuation without first absorbing the $268-276 zone. The mean-reversion directional thesis (stock is statistically extreme) remains intact — but the stop-out is evidence bulls have short-term control. No new AMZN position can be entered: portfolio cash = $0, risk manager limit = $0. HOLD is the only allowed action. [source: decisions.json, trade_ledger.json per_ticker_history[AMZN] ID 115, run 20260504_173321]</p><p>---</p><p>The 20260501_173921 thesis placed a short at ~$265.86 (fill) with a hard stop at $276. The stop-out on May 4 demonstrates that bulls successfully absorbed the selling pressure in the $268-276 distribution zone identified by the April 30 shooting star. This is the second consecutive stop-out at RSI 82-88 / ADX 60+ levels in the portfolio (NVDA at $205.30, AMZN at $276) — a pattern flagging that extreme-trend stocks can stay overbought far longer than expected even with confirmed reversal candles. The stop-out does NOT invalidate the mean-reversion direction — RSI 82.9/88.96 and z-score 2.03 still flag statistical extreme — but it sets a higher bar for re-entry confirmation. [source: trade_ledger.json, signals_combined.json, run 20260504_173321]</p>
+    <p>**Prior claim falsified:** The 20260504_173321 thesis stated "HOLD is the only allowed action — portfolio cash = $0, risk manager limit = $0." As of run 20260505_173521, that capital constraint no longer holds: portfolio cash is $1,617.76, risk manager max position is $485.33, and `allowed_actions[AMZN]` shows short: 1. **HOLD today is a setup-quality decision, not a capital-constraint decision.** All 5 swing agents returned neutral with 100% agreement — no valid entry exists from current price ($272-273). Two distinct entry scenarios are fully defined and waiting; neither is available today. [source: decisions.json, signals_combined.json, trade_ledger.json, run 20260505_173521]</p><p>---</p><p>The May 4 thesis (run 20260504_173321) stated no trade was possible because cash was zero and risk manager limit was $0. That capital state has changed: other positions closed (DIS stop hit May 5, -$4.99; see trade_ledger.json recent_closures_30d) and portfolio cash is now $1,617.76. The AMZN position remains closed (ID 115 stop_hit at $276 on May 4, P&L -$10.14 — see trade_ledger.json per_ticker_history[AMZN]). No new AMZN capital constraint exists today. The prior AMZN short thesis (mean-reversion from April 30 shooting star) remains falsified by the stop-out: bulls proved control above $268-276. HOLD today reflects the consensus of all five agents that no actionable entry exists at current price, not a lack of capital. [source: trade_ledger.json, decisions.json, run 20260505_173521]</p>
 </div>
 
 
@@ -539,6 +539,20 @@
     <h2 style="font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;">Recent AI Decisions</h2>
     
     <div class="dec-timeline">
+    
+    <div class="dec-item">
+        <span class="dec-date">20260505</span>
+        <span><span class="badge badge-hold">HOLD</span></span>
+        <span>
+            
+            <div class="conf-wrap">
+                <div class="conf-bar-bg"><div class="conf-bar" style="width:52%"></div></div>
+                <span class="conf-label">52%</span>
+            </div>
+            
+        </span>
+        <span class="dec-reason" style="font-size:12px;color:var(--muted);line-height:1.6;">Short trigger not met: hourly RSI-21 67.45 (need >75) and hourly rel-vol 0.04x (need rejection candle). Prior AMZN short stopped out May 4 at $276 (-$10.14). ADX 65.1 + clean EMA alignment means fading the trend without confirmation is disqualified. All 5 swing agents neutral. Book already 4 short / 2 long — adding a short without a clean setup increases concentration risk. Wait for: (A) hourly RSI-21 >75 + volume-confirmed rejection candle at $273-276 for a short entry ~$272-273, target $257, stop $277, R/R ~2.5:1; or (B) pullback to 10 EMA zone $258-265 with RSI cooling below 65 for a long entry, target $284.65, stop $256, R/R ~3.5:1. Neither is available today.</span>
+    </div>
     
     <div class="dec-item">
         <span class="dec-date">20260504</span>
