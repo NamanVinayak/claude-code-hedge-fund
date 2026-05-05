@@ -1,22 +1,22 @@
 ---
 name: TSLA trades
-last_updated: 2026-05-04
-last_run_id: 20260504_161542
+last_updated: 2026-05-05
+last_run_id: 20260505_160654
 target_words: 800
 stale_after_days: 60
-word_count: 762
-summary: No fills in trade_ledger.json per_ticker_history[TSLA]; five swing runs analyzed (Apr 11, Apr 15, Apr 17, May 1, May 4); model recommended 1 unexecuted short (Apr 15, earnings risk) and 4 holds; consistent R/R failure and resistance-zone caution across all runs near $387-399 zone.
+word_count: 785
+summary: No fills in trade_ledger.json per_ticker_history[TSLA]; six swing runs analyzed (Apr 11, Apr 15, Apr 17, May 1, May 4, May 5); model recommended 1 unexecuted short (Apr 15, earnings risk) and 5 holds; consistent R/R failure and resistance-zone caution across all runs near $387-399 zone.
 ---
 
 # TSLA — Trades
 
 ## TL;DR
 
-TSLA has been analyzed across five swing runs (April–May 2026). The model recommended one short (April 15, unexecuted due to earnings binary) and four holds. No TSLA trade has ever been executed — `trade_ledger.json per_ticker_history[TSLA]` shows zero rows across all runs through 20260504_161542. The consistent theme: price keeps returning to the $387–$399 bear-rally resistance zone with R/R below 2:1, and macro conditions have repeatedly blocked entry.
+TSLA has been analyzed across six swing runs (April–May 2026). The model recommended one short (April 15, unexecuted due to earnings binary) and five holds. No TSLA trade has ever been executed — `trade_ledger.json per_ticker_history[TSLA]` shows zero rows across all runs through 20260505_160654. The consistent theme: price keeps returning to the $387–$399 bear-rally resistance zone with R/R below 2:1, and macro or setup conditions have repeatedly blocked entry.
 
 ## Open positions
 
-None. `trade_ledger.json per_ticker_history[TSLA]: []` (run 20260504_161542 — authoritative).
+None. `trade_ledger.json per_ticker_history[TSLA]: []` (run 20260505_160654 — authoritative).
 
 ## Model decisions log (all unexecuted)
 
@@ -104,6 +104,24 @@ None. `trade_ledger.json per_ticker_history[TSLA]: []` (run 20260504_161542 — 
 
 ---
 
+### Run: 20260505_160654 — Hold (6th consecutive)
+
+| Field | Value |
+|---|---|
+| Run date | 2026-05-05 |
+| Action | HOLD |
+| Reference price | $392.51 |
+| Conditional entry (long) | $381–$385 pullback with bullish daily reversal candle |
+| Conditional entry (breakout) | Daily close above $409.28 on 1.5x+ volume |
+| Target (if entered) | $409.28 (long from dip) or $437 (breakout measured move) |
+| Stop | $379.00 (below recent low $378.80) |
+| Conditional R/R | ~3:1 from $381–$385 dip zone; 1.26:1 from current price (fails 2:1) |
+| Confidence | 35% |
+
+**Why hold?** Price at $392.51 inside the $387–$399 bear-rally resistance cluster (14–15 tests). Head Trader confidence 35, below 40 capital-deployment threshold. Vote tally: 4 neutral, 1 bearish (catalyst_news, 58 conf on Warsh vote May 15 macro headwind); 0 bullish. The portfolio already carries 3 shorts (AMD, JNJ, META) — adding a 4th concentrates the short book. R/R at current price 1.26:1 (entry $392.51 to $409.28 target, stop $379) fails the 2:1 minimum. Hourly OBV bearish divergence is the strongest cross-confirmed technical read (4 of 5 agents independently flagged). Daily volume 0.74x — no institutional accumulation. Neither conditional entry gate (pullback to $381–$385 OR confirmed close above $409.28 on 1.5x+ vol) has fired. Warsh Fed vote May 15 is a real bearish catalyst but insufficient R/R from current price. Stand aside. [source: runs/20260505_160654/decisions.json, trade_ledger.json per_ticker_history[TSLA]=[]]
+
+---
+
 ## Closed positions
 
 None. No fills ever executed for TSLA.
@@ -114,12 +132,12 @@ None. No fills ever executed for TSLA.
 |---|---|
 | Total trades executed | 0 |
 | trade_ledger.json rows (TSLA) | 0 |
-| Model runs analyzed | 5 |
+| Model runs analyzed | 6 |
 | Unexecuted shorts recommended | 1 (Apr 15, earnings risk) |
-| Holds issued | 4 (Apr 11, Apr 17, May 1, May 4) |
+| Holds issued | 5 (Apr 11, Apr 17, May 1, May 4, May 5) |
 | Realized P&L | $0 |
 | Unrealized P&L | $0 |
 
 ## Last updated
 
-2026-05-04. Sourced from `trade_ledger.json per_ticker_history[TSLA]` (0 rows, run 20260504_161542) + decisions.json from runs swing_20260411_211655, 20260415_093758, 20260417_233350, 20260501_160246, 20260504_161542. Supersedes bootstrap entry (2026-04-29) which covered only 3 runs.
+2026-05-05. Sourced from `trade_ledger.json per_ticker_history[TSLA]` (0 rows, run 20260505_160654) + decisions.json from runs swing_20260411_211655, 20260415_093758, 20260417_233350, 20260501_160246, 20260504_161542, 20260505_160654. Supersedes 2026-05-04 entry — adds 6th consecutive hold decision.
