@@ -1,45 +1,47 @@
 ---
 name: AMZN thesis
-last_updated: 2026-05-04
-last_run_id: 20260504_173321
+last_updated: 2026-05-05
+last_run_id: 20260505_173521
 target_words: 500
 stale_after_days: 30
-word_count: 498
-summary: Short stopped out at $276 on May 4 — prior claim "stop at $276 holds" falsified by bull absorption in distribution zone; near-term bias still bearish/neutral but no capital to act; AWS structural bull case intact; re-entry requires fresh confirmation candle
+word_count: 499
+summary: Prior "no capital to act" constraint falsified — portfolio now has $1,617.76 cash and short is allowed; HOLD is now a setup-quality decision, not a capital constraint; 5/5 swing agents unanimous neutral; bullish structural trend intact (ADX 65.1, EMA aligned); entry blocked by lack of a clean R/R setup; wait for 10 EMA pullback $258–$265 or confirmed breakout above $276 on 1.5x+ volume
 ---
 
 # AMZN — Thesis
 
 ## TL;DR
 
-**Prior claim falsified:** The 20260501_173921 thesis stated a short was open at ~$269 with stop $276, targeting $244.44 (20-SMA mean reversion). That stop was hit on May 4, 2026: price rallied through $276 intraday, closing the position at -$7.00. **What this falsifies:** the assumption that the April 30 shooting star distribution candle would be immediately followed by a bearish continuation without first absorbing the $268-276 zone. The mean-reversion directional thesis (stock is statistically extreme) remains intact — but the stop-out is evidence bulls have short-term control. No new AMZN position can be entered: portfolio cash = $0, risk manager limit = $0. HOLD is the only allowed action. [source: decisions.json, trade_ledger.json per_ticker_history[AMZN] ID 115, run 20260504_173321]
+**Prior claim falsified:** The 20260504_173321 thesis stated "HOLD is the only allowed action — portfolio cash = $0, risk manager limit = $0." As of run 20260505_173521, that capital constraint no longer holds: portfolio cash is $1,617.76, risk manager max position is $485.33, and `allowed_actions[AMZN]` shows short: 1. **HOLD today is a setup-quality decision, not a capital-constraint decision.** All 5 swing agents returned neutral with 100% agreement — no valid entry exists from current price ($272-273). Two distinct entry scenarios are fully defined and waiting; neither is available today. [source: decisions.json, signals_combined.json, trade_ledger.json, run 20260505_173521]
 
 ---
 
 ## What falsified the prior thesis claim
 
-The 20260501_173921 thesis placed a short at ~$265.86 (fill) with a hard stop at $276. The stop-out on May 4 demonstrates that bulls successfully absorbed the selling pressure in the $268-276 distribution zone identified by the April 30 shooting star. This is the second consecutive stop-out at RSI 82-88 / ADX 60+ levels in the portfolio (NVDA at $205.30, AMZN at $276) — a pattern flagging that extreme-trend stocks can stay overbought far longer than expected even with confirmed reversal candles. The stop-out does NOT invalidate the mean-reversion direction — RSI 82.9/88.96 and z-score 2.03 still flag statistical extreme — but it sets a higher bar for re-entry confirmation. [source: trade_ledger.json, signals_combined.json, run 20260504_173321]
+The May 4 thesis (run 20260504_173321) stated no trade was possible because cash was zero and risk manager limit was $0. That capital state has changed: other positions closed (DIS stop hit May 5, -$4.99; see trade_ledger.json recent_closures_30d) and portfolio cash is now $1,617.76. The AMZN position remains closed (ID 115 stop_hit at $276 on May 4, P&L -$10.14 — see trade_ledger.json per_ticker_history[AMZN]). No new AMZN capital constraint exists today. The prior AMZN short thesis (mean-reversion from April 30 shooting star) remains falsified by the stop-out: bulls proved control above $268-276. HOLD today reflects the consensus of all five agents that no actionable entry exists at current price, not a lack of capital. [source: trade_ledger.json, decisions.json, run 20260505_173521]
 
 ---
 
-## Bull case (structural — intact, not actionable)
+## Bull case (structural — intact, waiting for entry)
 
-**AWS as the AI picks-and-shovels play.** Q1 2026 confirmed: revenue $181.5B (+17% YoY), EPS $2.78 (beat $1.64 estimate by 69.5%), AWS $37.6B (+28% YoY). OpenAI and Anthropic confirmed using Amazon Trainium chips — validating AWS AI silicon strategy. $11.57B Globalstar acquisition (second-largest in company history) adds satellite connectivity optionality. Amazon Supply Chain Services launched for external businesses, expanding logistics revenue. Analyst consensus: ~45 Buy / 2 Hold / 0 Sell, avg PT $310.25. Q2 2026 guide: $194-199B revenue, operating income $20-24B. [source: web_research/AMZN.json, run 20260504_173321]
+**AWS as the AI picks-and-shovels play.** Q1 2026 confirmed: EPS $2.78 (beat $1.64 by 69.5%), revenue $181.5B (+17% YoY), AWS $37.6B (+28% YoY), backlog ~$365B (+50% QoQ). OpenAI deepened AWS commitment, pivoting aggressively from Microsoft Azure. Amazon Supply Chain Services launched — described as "AWS of Logistics," threatening UPS/FedEx (-8-9% on announcement). Analyst consensus: ~45 Buy / 2 Hold / 0 Sell, avg PT $311.65. Trend is structurally real: ADX 65.1, EMA aligned (10 > 21 > 50), higher highs/higher lows intact. [source: web_research/AMZN.json, explanation.json, run 20260505_173521]
+
+**Bull entry scenario:** Pullback to 10 EMA zone $258-265 with RSI normalizing below 65 and constructive daily candle — entry ~$262, target $284.65 (Fib 1.272), stop $256, R/R ~3.5:1. OR confirmed daily close above $276 on 1.5x+ volume — entry ~$276.50, measured move target $296, stop $268, R/R ~2.3:1. Neither condition met today.
 
 ---
 
-## Bear case (near-term — intact but no capital)
+## Bear case (near-term — valid but no trigger)
 
-**Mean reversion thesis survives the stop-out.** RSI-14 at 82.9 and RSI-21 at 88.96 remain deeply overbought. Z-score 2.03. Price 19.3% above 50-SMA. ADX 65.59 (extreme, mature trend — the bull headwind). The April 30 shooting star on 2.05x volume ($273.88 high / $265.06 close) remains the key distribution reference candle. Two of five swing agents are actively bearish (swing_mean_reversion 58 conf, swing_macro_context 76 conf); zero are bullish. Macro backdrop is risk-off: Iran missile strike on US warship near Jask (May 4), WTI crude above $105, Dow futures lower. Fed hawkish succession (Warsh replacing Powell May 15). No new capital available — this thesis is directionally valid but unactionable. [source: signals_combined.json, web_research/AMZN.json, explanation.json, run 20260504_173321]
+**Statistical extreme.** RSI-14 80.49, RSI-21 90.43 (deeply overbought). Z-score 2.06. Price 20.36% above 50-SMA. Valuation: DCF gap -47.4% (market cap $2.94T vs. intrinsic value $1.55T). Hourly volume bias negative (0.04x relative volume). Macro tail: Iran-Strait of Hormuz unresolved, WTI $104.10, Fed hawkish succession (Warsh, May 15). ADX 65.1 extreme means reversal attempts face a powerful adversary.
 
-**ADX 65 is the primary headwind.** This is among the strongest trend readings in the portfolio — historically, trends this powerful absorb multiple distribution attempts before reversing. The stop-out confirms this risk is live, not theoretical.
+**Prior short falsified:** Mean-reversion short (run 20260501_173921) stopped out May 4 at $276 (-$10.14) — bulls absorbed the distribution zone. Two consecutive stop-outs in RSI 80+/ADX 60+ environment (NVDA Apr 30 -$63.20, AMZN May 4 -$10.14) are a pattern flag: do NOT re-enter shorts in this regime without hourly RSI-21 >75 PLUS volume-confirmed rejection candle at $273-276. Current hourly RSI-21 is only 67.45 with near-zero volume (0.04x). Short trigger not met. [source: signals_combined.json, trade_ledger.json ID 115, run 20260505_173521]
 
 ---
 
 ## What would change my mind
 
-**Bear (re-entry conditions):** Hourly RSI extreme (>75) plus volume-confirmed rejection at $273-276 resistance zone. OR daily close below $265 to re-establish bearish momentum. Both conditions needed given the stop-out warning. New capital must become available.
+**Bull re-entry:** Price pulls back to 10 EMA zone $258-265, RSI cools below 65, constructive daily candle. OR confirmed daily close above $276 on 1.5x+ volume (breakout long).
 
-**Bull re-entry:** Price pulls back to 10 EMA zone $258-261, RSI normalizes below 65, constructive daily candle forms. R:R long entry at those levels exceeds 2:1 with stop below EMA cluster. Alternatively, AWS Q2 revenue materially above $188.9B guide confirms structural acceleration.
+**Bear re-entry (short):** Hourly RSI-21 >75 PLUS volume-confirmed rejection candle at $273-276 resistance. Entry ~$272-273, target $257 (Fib 23.6%), stop $277, R/R ~2.5:1. Both conditions must be met simultaneously — stop-out pattern demands higher confirmation bar.
 
-**Bull case strengthened:** Iran ceasefire holds durably, macro risk-off resolves, giving AMZN's AI infrastructure premium room to re-expand.
+**Macro catalyst:** Durable Iran ceasefire removes energy cost tail and restores clean risk-on bid for AMZN AI premium. Hawkish Warsh confirmation on May 15 would be a bearish catalyst for high-multiple growth.
