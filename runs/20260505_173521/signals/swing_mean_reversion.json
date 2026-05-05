@@ -1,0 +1,11 @@
+{
+  "AMZN": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "Neither branch fires cleanly. Branch A (fade the extreme): Z-score 2.06 barely crosses the +2 threshold, RSI-14 80.49 and RSI-21 90.43 are deeply overbought, and price is 20.36% above the 50-SMA — statistically extreme. However, the prior bearish call (stopped out 2026-05-04 at $276) proves the fade failed when bulls absorbed the $268-276 distribution zone with force. Per system rules, a stopped-out prior call requires doing something different; simply re-initiating the same short thesis without adjustment is disqualified. No RSI divergence is present (neither bullish nor bearish), Bollinger %B is 0.86 (price still inside upper band at 280.53), and — critically — there is no reversal candle or momentum shift confirming a fade entry. ADX 65.1 with +DI 35.65 vs -DI 11.3 signals extreme bullish trend strength; fighting this without confirmation is knife-catching. Wiki condition for a re-entry short requires hourly RSI >75 + volume-confirmed rejection at $273-276 resistance, but hourly RSI-21 is only 67.45 and hourly relative volume is near zero (0.04x) — neither condition is met. Branch B (buy the dip): price is near the recent high, not pulling back toward any Fibonacci level (nearest 23.6% retracement is at $257.94, 38.2% at $246.70). No dip-buy setup exists at current levels. Conclusion: price is in no-man's land — extended enough to be a fade candidate but lacking any reversal trigger, and not pulling back enough for a dip-buy. Standing aside is the disciplined call. Re-entry criteria: short only on hourly RSI >75 + volume-confirmed rejection candle at $273-276, OR dip to $257-260 Fib 23.6%/prior hourly support with reversal candle confirmation.",
+    "entry": 272.05,
+    "target": 272.05,
+    "stop": 272.05,
+    "timeframe": "n/a — neutral, no trade"
+  }
+}

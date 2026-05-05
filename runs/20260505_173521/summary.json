@@ -1,0 +1,34 @@
+{
+  "run_id": "20260505_173521",
+  "mode": "swing",
+  "started_at": "2026-05-05T17:35:48Z",
+  "ended_at": "2026-05-05T17:45:49Z",
+  "tickers": [
+    "AMZN"
+  ],
+  "decisions": [
+    {
+      "ticker": "AMZN",
+      "action": "hold",
+      "confidence": 52,
+      "entry": 273.49,
+      "stop": null,
+      "target": null,
+      "reasoning_tldr": "Short trigger not met: hourly RSI-21 67.45 (need >75) and hourly rel-vol 0.04x (need rejection candle)"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 1,
+    "cash": 1617.7600000000002,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "neutral",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

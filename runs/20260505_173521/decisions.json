@@ -1,0 +1,17 @@
+{
+  "decisions": {
+    "AMZN": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 273.49,
+      "entry_tolerance_pct": 1.0,
+      "target_price": null,
+      "stop_loss": null,
+      "risk_reward_ratio": "n/a",
+      "timeframe": "n/a",
+      "confidence": 52,
+      "account_risk_pct": 0.0,
+      "reasoning": "Short trigger not met: hourly RSI-21 67.45 (need >75) and hourly rel-vol 0.04x (need rejection candle). Prior AMZN short stopped out May 4 at $276 (-$10.14). ADX 65.1 + clean EMA alignment means fading the trend without confirmation is disqualified. All 5 swing agents neutral. Book already 4 short / 2 long — adding a short without a clean setup increases concentration risk. Wait for: (A) hourly RSI-21 >75 + volume-confirmed rejection candle at $273-276 for a short entry ~$272-273, target $257, stop $277, R/R ~2.5:1; or (B) pullback to 10 EMA zone $258-265 with RSI cooling below 65 for a long entry, target $284.65, stop $256, R/R ~3.5:1. Neither is available today."
+    }
+  }
+}

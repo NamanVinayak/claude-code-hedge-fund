@@ -1,0 +1,83 @@
+{
+  "ticker": "AMZN",
+  "verified_at": "2026-05-05T17:45:00",
+  "files_checked": [
+    "warren_buffett__AMZN.json",
+    "ben_graham__AMZN.json",
+    "aswath_damodaran__AMZN.json"
+  ],
+  "checks": [
+    {
+      "metric": "gross_margin",
+      "our_value": 0.00638,
+      "web_value": 0.5079,
+      "source": "GuruFocus / MacroTrends (TTM as of Jan 16, 2026; gross profit $375.875B on TTM revenue ~$742.78B)",
+      "status": "MISMATCH",
+      "deviation": "7862%",
+      "action": "replaced with web value (0.5079) in warren_buffett__AMZN.json and aswath_damodaran__AMZN.json — only two files contained this metric"
+    },
+    {
+      "metric": "net_margin",
+      "our_value": 0.1266,
+      "web_value": 0.1100,
+      "source": "MacroTrends / Yahoo Finance (FY2025 net margin 10.83%–11.1%; Q1 2026 TTM trending slightly higher)",
+      "status": "ok",
+      "deviation": "15%",
+      "note": "Our value reflects Q1 2026 TTM (March 31, 2026) which includes a strong Q1 2026. Web sources primarily cite FY2025 figures. Deviation is within 20% threshold."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.1151,
+      "web_value": 0.1120,
+      "source": "AlphaStreet / TIKR.com (TTM operating margin ~11.2%–11.5% as of Q1 2026)",
+      "status": "ok",
+      "deviation": "3%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 32.77,
+      "web_value": 32.50,
+      "source": "MacroTrends / companiesmarketcap.com (PE ratio 32.04–33.25 as of early May 2026)",
+      "status": "ok",
+      "deviation": "1%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 2943650889728.0,
+      "web_value": 2925000000000.0,
+      "source": "companiesmarketcap.com / stockanalysis.com (market cap ~$2.925T as of May 2026)",
+      "status": "ok",
+      "deviation": "1%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 685244561400.0,
+      "web_value": 742776000000.0,
+      "source": "stockanalysis.com / MacroTrends (TTM revenue ending March 31, 2026: $742.776B)",
+      "status": "ok",
+      "deviation": "8%",
+      "note": "Our value inferred from market_cap / price_to_sales_ratio. Actual TTM revenue from Q1 2026 filing is $742.776B. Deviation ~8%, within threshold. The P/S ratio in the bundle may use a slightly different revenue base."
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.2110,
+      "web_value": 0.2172,
+      "source": "GuruFocus (ROE 21.72% near median; range reported 18.89%–22.3% depending on source and date)",
+      "status": "ok",
+      "deviation": "3%"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.1060,
+      "web_value": 0.1060,
+      "source": "unverified — no precise TTM ROA figure found in search results",
+      "status": "unverified"
+    }
+  ],
+  "overall_status": "1 mismatch corrected (gross_margin data bug: 0.64% corrected to 50.79%)",
+  "corrections_applied": true,
+  "corrected_files": [
+    "runs/20260505_173521/facts/warren_buffett__AMZN.json",
+    "runs/20260505_173521/facts/aswath_damodaran__AMZN.json"
+  ]
+}
