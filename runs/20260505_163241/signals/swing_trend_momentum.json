@@ -1,0 +1,11 @@
+{
+  "NVDA": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "TREND ASSESSMENT: Daily EMA alignment is clean uptrend (10 EMA 202.17 > 21 EMA 197.80 > 50 EMA 191.13, ema_aligned_uptrend=true) with ADX 55.33 confirming a very strong trend. Price ($198.48) has pulled back to the 21 EMA / 38.2% Fib confluence zone ($196.75–$197.80) after a 4-session decline from the $216.83 swing high — structurally the correct re-entry zone. MOMENTUM ASSESSMENT: Momentum is NOT accelerating — this is the disqualifying factor. ROC 5d = -8.37% (deeply negative), ROC 10d = -1.77% (negative), ROC 21d = +11.89% (positive). Two of three ROC readings are negative and not expanding positively, failing the 'all positive AND expanding' requirement. Daily MACD histogram is -0.69 (negative, histogram contracting/bearish). Hourly MACD histogram is -0.93 (also negative), and hourly EMA alignment is neither uptrend nor downtrend — tangled. Wiki context confirms this same setup was identified in the prior run (20260504_125732) with a HOLD decision: entry required a confirmed hourly reversal candle AND hourly MACD histogram turning positive — neither condition is met today. LESSONS: The one logged trade on NVDA (-$63.20) was a losing EMA pullback Fib dip-buy on exactly this setup type (0% win rate in lessons table), stopped out with no bullish confirmation candle. MACRO: Iran tail risk with oil above $102 adds left-tail risk to a tech momentum trade. VERDICT: Daily trend structure intact, but per strategy rules, trend with decelerating momentum = wait for re-acceleration. Stand aside until hourly MACD histogram turns positive and hourly EMAs re-align bullishly.",
+    "entry": 197.8,
+    "target": 216.83,
+    "stop": 194.5,
+    "timeframe": "5-12 trading days"
+  }
+}

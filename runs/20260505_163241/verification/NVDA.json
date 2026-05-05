@@ -1,0 +1,83 @@
+{
+  "ticker": "NVDA",
+  "verified_at": "2026-05-05T16:32:41",
+  "facts_bundles_read": [
+    "warren_buffett__NVDA.json",
+    "ben_graham__NVDA.json",
+    "cathie_wood__NVDA.json"
+  ],
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.5272,
+      "web_value": 0.5373,
+      "source": "MacroTrends / FinanceCharts (TTM avg as of May 2026)",
+      "status": "ok",
+      "deviation": "1.9%",
+      "notes": "Fiscal 2026 annual net margin 55.6%; TTM avg 53.73%. Our value within normal timing range."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.5903,
+      "web_value": 0.6038,
+      "source": "MacroTrends / YCharts TTM through January 2026",
+      "status": "ok",
+      "deviation": "2.2%",
+      "notes": "Latest quarterly (Q4 FY2026) operating margin is 65.02% per GuruFocus; TTM blended is 60.38%. Our value consistent with TTM."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 40.38,
+      "web_value": 40.38,
+      "source": "MacroTrends / FinanceCharts / Gurufocus (as of May 4-5, 2026)",
+      "status": "ok",
+      "deviation": "0.0%",
+      "notes": "Multiple sources confirm trailing P/E of 40.26-40.50. Our value is accurate."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 182900000000,
+      "web_value": 215938000000,
+      "source": "GuruFocus / StockAnalysis / NVIDIA Newsroom (fiscal year 2026 ending Jan 25, 2026)",
+      "status": "ok",
+      "deviation": "15.3%",
+      "notes": "Our value implied from market_cap / price_to_sales_ratio (~$182.9B). Web confirms TTM/FY2026 revenue is $215.94B. Deviation is 15.3% — below 20% threshold but significant. Likely due to P/S ratio being pulled from a slightly stale data snapshot. No correction applied (under 20% threshold).",
+      "implied_calculation": "market_cap ($4,809,594,765,312) / price_to_sales_ratio (26.2973) = $182.9B"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 4809594765312,
+      "web_value": 4820000000000,
+      "source": "Capital.com / CompaniesMarketCap (May 5, 2026)",
+      "status": "ok",
+      "deviation": "0.2%",
+      "notes": "Our value matches current market cap almost exactly."
+    },
+    {
+      "metric": "roe",
+      "our_value": 1.2154,
+      "web_value": 1.2444,
+      "source": "GuruFocus (124.44% as of May 2026)",
+      "status": "ok",
+      "deviation": "2.3%",
+      "notes": "Yahoo Finance shows 101.49% TTM (May 1, 2026), GuruFocus shows 124.44%. Using GuruFocus as primary source, deviation is 2.3%. Even against Yahoo Finance the deviation is 19.8%, narrowly under the 20% threshold. No correction applied."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.8639,
+      "web_value": 0.5806,
+      "source": "MacroTrends / Zacks TTM (58.06% as of May 2026); confirmed by multiple sources: fiscal 2026 annual 58.1%",
+      "status": "MISMATCH",
+      "deviation": "48.8%",
+      "action": "replaced with web value (0.5806) in all facts bundles containing this metric",
+      "bundles_corrected": [
+        "warren_buffett__NVDA.json",
+        "aswath_damodaran__NVDA.json"
+      ],
+      "notes": "Our value of 86.39% is inconsistent with the current web consensus of ~58.1% TTM. The discrepancy likely reflects a calculation methodology difference (e.g., using beginning-of-period assets vs. average assets, or a stale asset base). Corrected to 0.5806 in both bundles."
+    }
+  ],
+  "overall_status": "1 mismatch corrected (roa: 86.39% -> 58.06%)",
+  "corrections_applied": true,
+  "summary": "6 metrics verified for NVDA. net_margin, operating_margin, pe_ratio, market_cap, and roe are all within acceptable range. roa deviated by 48.8% (our: 86.39%, web: 58.06%) and was corrected in warren_buffett__NVDA.json and aswath_damodaran__NVDA.json — the only two bundles containing this metric."
+}
