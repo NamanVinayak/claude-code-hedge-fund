@@ -1,0 +1,73 @@
+{
+  "ticker": "STX",
+  "verified_at": "2026-05-05T20:35:24",
+  "facts_bundles_checked": [
+    "warren_buffett__STX.json",
+    "ben_graham__STX.json",
+    "aswath_damodaran__STX.json"
+  ],
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.2079,
+      "web_value": 0.216,
+      "source": "Simply Wall St / Yahoo Finance (TTM, as of May 5 2026)",
+      "status": "ok",
+      "deviation": "3.8%",
+      "note": "Bundle value 20.79% vs web 21.6% — within tolerance"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.2765,
+      "web_value": 0.298,
+      "source": "Seagate Q2 FY2026 GAAP operating margin; Q3 non-GAAP 37.5% (GAAP lower)",
+      "status": "ok",
+      "deviation": "7.2%",
+      "note": "Bundle is TTM GAAP blended (~27.65%); Q3 GAAP improved to ~29-32%. Difference reflects rapid margin expansion; within 20% threshold on TTM basis"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 73.01,
+      "web_value": 68.97,
+      "source": "Public.com / Macrotrends (trailing P/E as of May 1, 2026)",
+      "status": "ok",
+      "deviation": "5.9%",
+      "note": "73.01 vs 68.97; stock moved significantly post-earnings — minor timing difference"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 172882804736.0,
+      "web_value": 171520000000.0,
+      "source": "Multiple sources — stock ~$764-768 × ~223.4M shares as of May 5 2026",
+      "status": "ok",
+      "deviation": "0.8%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 10726000000.0,
+      "web_value": 11010000000.0,
+      "source": "Simply Wall St / CompaniesMarketCap TTM as of May 2026 ($11.0B)",
+      "status": "ok",
+      "deviation": "2.6%",
+      "note": "Our value derived from market_cap / price_to_sales_ratio (172.88B / 16.118)"
+    },
+    {
+      "metric": "roe",
+      "our_value": -4.9227,
+      "web_value": null,
+      "source": "unverified",
+      "status": "unverified",
+      "note": "Negative ROE due to negative book equity; web sources inconsistent on this figure. No reliable TTM consensus found — value retained as-is."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.2780,
+      "web_value": null,
+      "source": "unverified",
+      "status": "unverified",
+      "note": "Web sources did not return a clear TTM ROA figure for STX in this search. Value retained."
+    }
+  ],
+  "overall_status": "all verified metrics within 20% threshold — no corrections needed",
+  "corrections_applied": false
+}

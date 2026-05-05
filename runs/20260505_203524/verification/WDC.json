@@ -1,0 +1,79 @@
+{
+  "ticker": "WDC",
+  "verified_at": "2026-05-05T20:35:24",
+  "facts_bundles_checked": [
+    "warren_buffett__WDC.json",
+    "ben_graham__WDC.json",
+    "aswath_damodaran__WDC.json"
+  ],
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.5886,
+      "web_value": 0.5503,
+      "source": "CNBC / Yahoo Finance TTM as of May 1 2026 (55.03%–55.29%)",
+      "status": "ok",
+      "deviation": "6.9%",
+      "note": "Bundle 58.86% vs web consensus ~55%. Within 20% threshold; difference may reflect timing (WDC reported Q3 April 30; some sources lag)"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.3183,
+      "web_value": 0.386,
+      "source": "WDC Q3 FY2026 earnings release — non-GAAP operating margin 38.6% (GAAP slightly lower)",
+      "status": "ok",
+      "deviation": "17.5%",
+      "note": "Bundle is TTM GAAP blended (~31.8%); Q3 non-GAAP 38.6% reflects recent acceleration. TTM GAAP basis is ~17.5% below Q3 non-GAAP — just within the 20% threshold. Retained, flagging for awareness."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 27.826557,
+      "web_value": 42.85,
+      "source": "Calculated from stock price ~$465 / TTM EPS ~$10.85 (GuruFocus TTM EPS Jan 2026); corroborated by GuruFocus trailing PE 33.88 and public.com May 1 PE 53.49. Consensus estimate ~43–53.",
+      "status": "MISMATCH",
+      "deviation": "35.0%",
+      "action": "replaced with web value (42.85) in all facts bundles containing this metric: warren_buffett__WDC.json, aswath_damodaran__WDC.json",
+      "root_cause": "Bundle EPS is $0.78 (single quarter, not TTM). The PE of 27.83 is inconsistent with either the single-quarter EPS (which would imply PE ~595) or TTM EPS (~$10.85 → PE ~43). Data provider appears to have used a stale or partial EPS figure. Web TTM PE consensus is ~43–53 range (May 2026)."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 160366821376.0,
+      "web_value": 147530000000.0,
+      "source": "Capital.com / StockAnalysis.com WDC market cap May 2026 (~$147.5B)",
+      "status": "ok",
+      "deviation": "8.7%",
+      "note": "Our value ~$160.4B vs web ~$147.5B. Deviation 8.7% — below 20% threshold. Difference reflects rapid stock price movement post-Q3 earnings (Apr 30) vs data capture time."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 11461000000.0,
+      "web_value": 9100000000.0,
+      "source": "CompaniesMarketCap TTM as of Feb 2026 (€9.10B); Q3 FY2026 quarterly revenue $3.34B implies TTM run-rate ~$11.5B",
+      "status": "ok",
+      "deviation": "unverified",
+      "note": "Web TTM revenue figure (€9.10B as of Feb 2026) is stale — does not include Q3 FY2026 ($3.34B reported Apr 30). Run-rate TTM from Q3 earnings would be ~$11.5B. Bundle value derived from market_cap/P_S ratio = 160.37B/13.986 = ~$11.47B, consistent with post-Q3 run rate. Retained."
+    },
+    {
+      "metric": "roe",
+      "our_value": 1.2708,
+      "web_value": null,
+      "source": "unverified",
+      "status": "unverified",
+      "note": "ROE of 127.1% appears elevated but may reflect thin book equity post-SanDisk divestiture (Feb 2026). Web sources did not return a clear TTM consensus. Retained."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.4820,
+      "web_value": null,
+      "source": "unverified",
+      "status": "unverified",
+      "note": "Web sources did not return a clear TTM ROA figure for WDC. Value retained."
+    }
+  ],
+  "overall_status": "1 mismatch corrected (pe_ratio: 27.83 → 42.85)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260505_203524/facts/warren_buffett__WDC.json",
+    "runs/20260505_203524/facts/aswath_damodaran__WDC.json"
+  ]
+}

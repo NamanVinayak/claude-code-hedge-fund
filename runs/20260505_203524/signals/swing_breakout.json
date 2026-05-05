@@ -1,0 +1,20 @@
+{
+  "STX": {
+    "signal": "neutral",
+    "confidence": 10,
+    "reasoning": "STX is not a breakout setup — it is a parabolic extension in progress. The prior consolidation range (~$639–$728) fully resolved and fired in the week prior to this run. Current price (~$771 hourly, $738.54 daily close) is 58% above the 50-SMA, 118% above EMA-200, and Bollinger pct_b = 1.061 (price above the upper band). BB width = 0.52 — already fully expanded; no squeeze, no coil. Daily RSI-14 = 85.96, RSI-7 = 90.28: extreme overbought across all lookbacks. Daily relative volume 1.36x (close to the 1.5x threshold but there is no breakout level left to confirm). Hourly relative volume = 0.54x — below average, no volume surge. ADX = 78.48 — the strongest trend reading in portfolio history, confirming this is an established trend, NOT a regime change setting up. Wiki (2026-05-04, fresh) explicitly states: 'Consolidation range ~$639–$728 fully resolved and fired. Current regime is parabolic extension 58% above 50-SMA with hourly OBV divergence signaling distribution.' Nearest meaningful resistance is the hourly pivot at $792 (1 test, unconfirmed). No squeeze is on — squeeze is long-done. Breakout strategy requires a consolidation range giving way; STX is already 50-100% beyond any former breakout point. Nearest valid breakout reentry would require a base forming near $618–$700 (EMA-10 to prior pivot zone) — none exists yet. Verdict: no valid breakout entry; wait for pullback and new consolidation base.",
+    "entry": 0.0,
+    "target": 0.0,
+    "stop": 0.0,
+    "timeframe": "no setup — wait for pullback and base formation"
+  },
+  "WDC": {
+    "signal": "bullish",
+    "confidence": 42,
+    "reasoning": "WDC is approaching but has not yet confirmed a breakout above its ATH resistance at $446.62 (6 hourly volume-confirmed tests per wiki). Prior call (run 20260504_203608): bullish entry $447.50, verdict 'in_progress' — price has not closed above that entry on a daily basis yet. May 4 daily: high $453.83 touched above ATH resistance, but closed at $442.36 — no confirmed daily close above $446.62. Daily volume 1.36x average (below the required 1.5x+ threshold for full breakout confirmation). Consolidation range: The hourly support cluster is $404–$410 (16+ tests, volume-confirmed); ATH resistance $446.62. Range height ≈ $42.62 → measured move target $489 (matching wiki estimate). The hourly current price ($465.26) suggests market is testing above the breakout level intraday/pre-market, but a clean daily close confirmation is still required. Key positives: (1) daily BB pct_b = 0.938 — inside the upper band with room to expand; (2) daily BB width = 0.37 — not yet blown wide, squeeze condition partially preserved; (3) hourly RSI-21 = 64.48 — not overbought, room to run; (4) hourly ADX = 24.85 — moderate, range-bound transitioning (not an exhausted trend); (5) daily OBV trending up with no divergence; (6) z-score 50 = 2.16 (less extreme than STX at 2.72); (7) EMA stack fully aligned and rising. Key negatives / caution flags: (1) hourly OBV trending DOWN with price divergence — distribution signal intraday; (2) hourly relative volume = 0.46x — no surge confirming the move; (3) daily volume 1.36x — just below the 1.5x requirement; (4) daily RSI-14 = 82.48 — elevated, similar to prior NVDA setup that stopped out (lessons: RSI 81–87 with no bullish confirmation candle = stop risk). Prior lesson (2026-04-30 NVDA): same-regime setup (RSI 81–87, AI/tech momentum, swing_breakout bullish) stopped out. Applying lesson: reduce confidence, do NOT enter until daily close above $446.62 on 1.5x+ volume is confirmed. Entry set just above ATH breakout level ($447.50 per prior call, maintained). Stop below hourly support cluster ($409). Target: measured move $489.",
+    "entry": 447.5,
+    "target": 489.0,
+    "stop": 409.0,
+    "timeframe": "5-12 trading days (conditional on confirmed daily close above $446.62 on 1.5x+ volume)"
+  }
+}

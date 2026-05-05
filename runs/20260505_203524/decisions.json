@@ -1,0 +1,30 @@
+{
+  "decisions": {
+    "STX": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 0.0,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 0.0,
+      "stop_loss": 0.0,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "wait — re-evaluate on pullback to $618-700",
+      "confidence": 22,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader neutral (22 conf). Parabolic extension: RSI 86-90, ADX 78, Z-score 2.72, 58% above 50-SMA. No valid entry from any direction. 0 bullish votes, 3 neutral (no setup), 2 low-conv bearish. Catastrophic R/R at $771 — 2.7% upside to $792 resistance vs 18% downside to EMA-10. No confirmed reversal candle for short; no pullback base for long. All agents agree: do not enter. Wait for $618-700 pullback zone with RSI reset toward 60-70."
+    },
+    "WDC": {
+      "action": "buy",
+      "quantity": 2,
+      "entry_price": 446.0,
+      "entry_tolerance_pct": 1.5,
+      "target_price": 489.0,
+      "stop_loss": 428.0,
+      "risk_reward_ratio": "2.39:1",
+      "timeframe": "5-12 trading days",
+      "confidence": 44,
+      "account_risk_pct": 0.75,
+      "reasoning": "Head Trader bullish (44 conf). 3/5 swing agents bullish. Post-earnings catalyst live (Q3 FY26 blowout: $3.0B rev, 50.5% GM first-ever above 50%, Q4 guide $3.65B, analyst upgrades $470-$572). Former ATH $446.62 flipped to support — pullback entry at $444-448 zone. R/R 2.39:1 ($43 up / $18 down). STX correlation block resolved: STX is hold (no new position), cluster cap is not triggered. DO NOT CHASE above $452 — limit order at $446. Stop $428 below hourly pivot cluster. Sized conservatively: 2 shares x $446 = $892 (within 25% of $5K capital). Key risk: hourly OBV divergence (institutional distribution signal) + 0% recent win rate on extended-move entries. Confidence held at 44 — do not size up."
+    }
+  }
+}

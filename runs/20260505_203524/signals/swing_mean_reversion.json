@@ -1,0 +1,20 @@
+{
+  "STX": {
+    "signal": "bearish",
+    "confidence": 62,
+    "reasoning": "Branch A fires — Fade the extreme. STX is in one of the most statistically stretched conditions observable: Z-score vs 50-SMA = 2.72 (>+2 threshold), price 58.34% above 50-SMA (extreme by any measure), RSI-14 = 85.96 / RSI-7 = 90.28 / RSI-21 = 89.71 (all well above the 75 overbought threshold), Bollinger pct_b = 1.061 (price above upper band). Daily + hourly both overbought (hourly RSI-21 = 79.59), which per strategy rules = strong fade signal. ADX 78.48 is one of the strongest trend readings possible — this is the primary counterargument. No RSI divergence on the daily (warns against a clean fade). Hourly shows a bullish divergence, which contradicts the daily extreme and suggests the reversal may not have started yet — this is a meaningful caution flag. Wiki from prior run confirms: 'No valid entry at current price — setup type: extended trend / wait for pullback.' Prior call: bearish at $726.93 (in_progress, MAE -3.04%); price has continued up intraday to ~$771 but not hit the stop ($755 on the daily close). I am not repeating the same thesis blindly — I acknowledge the momentum remains extreme, but the overextension has worsened (Z-score higher, RSI higher, price further above bands). Entry requires waiting for a reversal candle; last daily bar (742 open → 738 close, high 749) shows a potential small rejection at the $749 swing high but no confirmed reversal candle yet. Lessons context: prior EMA pullback dip-buy trade in NVDA failed; that reinforces not fading without confirmation. Confidence reduced from 68 (prior) to 62 to account for lack of confirmed reversal candle and the hourly bullish divergence. Target = middle Bollinger Band (mean reversion). Stop = above the recent swing high $749 plus 1 ATR ($37.73) = ~$787.",
+    "entry": 755.0,
+    "target": 571.27,
+    "stop": 787.0,
+    "timeframe": "7-15 trading days"
+  },
+  "WDC": {
+    "signal": "bearish",
+    "confidence": 45,
+    "reasoning": "Branch A fires weakly — Fade the extreme, low conviction. WDC has rallied sharply: Z-score vs 50-SMA = 2.16 (just above +2 threshold), RSI-14 = 82.48 / RSI-7 = 77.53 / RSI-21 = 88.73 (overbought but less extreme than STX), Bollinger pct_b = 0.938 (approaching but still inside upper band — not broken above). Hourly RSI-21 = 64.48 — NOT overbought hourly, which means the daily + hourly double-extreme condition does not fire. The critical bearish signal is the hourly OBV: trending DOWN and diverging from price (OBV.diverging_from_price = true), with hourly relative volume at only 0.46x — classic distribution pattern at new highs. Hourly volume bias 10d is down. Wiki context from prior run: 'ATH $446.62 directly overhead as resistance' — price has now broken above to 453.83, a genuine new-high breakout. This complicates the fade: breakouts above prior ATH can extend further before reversing. Branch B does not apply (no pullback in progress). No RSI divergence on daily. No reversal candle confirmed (last daily bar: 430.73 open → 442.36 close, range 428.51–453.83, a strong bull candle). The hourly OBV divergence is the sole bearish evidence; it is meaningful but insufficient for high confidence without a daily reversal candle or Z-score > 2.5. This is a low-conviction bearish lean. If no reversal candle emerges, neutral is the correct read. Entry only on weakness showing; stop above recent high 453.83 plus buffer. Target = middle Bollinger Band. No prior call on this ticker (prediction_grading null). Lessons context: EMA pullback dip-buy in NVDA failed (different setup type, but caution on chasing fades without reversal confirmation is reinforced).",
+    "entry": 453.83,
+    "target": 380.73,
+    "stop": 475.0,
+    "timeframe": "8-15 trading days"
+  }
+}
