@@ -1,0 +1,17 @@
+{
+  "decisions": {
+    "GOOG": {
+      "action": "short",
+      "quantity": 1,
+      "entry_price": 383.0,
+      "entry_tolerance_pct": 1.5,
+      "target_price": 338.95,
+      "stop_loss": 389.5,
+      "risk_reward_ratio": "4.32:1",
+      "timeframe": "6-14 trading days",
+      "confidence": 40,
+      "account_risk_pct": 0.75,
+      "reasoning": "Mean-reversion Branch A: Z-score 2.56, RSI-7 90.69, %B 0.963 — extreme extension. Hourly $384.16 resistance (13 tests) capping price. Stop not hit since May 1 call. Head trader low conf (35) but R/R 4.32:1 clears exceptional threshold. 1 share respects risk mgr $600 cap. Portfolio book already 2 short / 2 long — adding 1 short adds modest bear tilt, acceptable given no GOOG position exists and correlation with existing shorts (AMD, JNJ, META) is low (max 0.33 with AAPL long, not a short). Valuation bearish (DCF gap -75%). No new info since May 1 but stop intact — reaffirming the fade."
+    }
+  }
+}
