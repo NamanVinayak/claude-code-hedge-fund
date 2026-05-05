@@ -1,43 +1,38 @@
 ---
 name: SNDK thesis
-last_updated: 2026-05-01
-last_run_id: bootstrap_2026-05-01
+last_updated: 2026-05-05
+last_run_id: 20260505_211609
 target_words: 500
 stale_after_days: 30
-word_count: 540
-summary: durable bull/bear story
+word_count: 498
+summary: Parabolic leader — Q3 FY2026 blowout ($5.95B +251% YoY, $42B backlog); price $1,406 now above sell-side avg PT $1,250 (range $650-$2,000); operating margins still negative; Seeking Alpha downgraded; wait for $1,072-1,100 pullback before any entry
 ---
 
 # SNDK — Thesis
 
 ## TL;DR
 
-SanDisk is a pure-play NAND flash supplier whose Q3 FY2026 print (2026-04-30) reported $5.95B revenue (+251% YoY), 78.4% GAAP gross margin, $1.47B datacenter revenue (+645% YoY), and five multi-year hyperscaler contracts covering >1/3 of FY27 bit supply with a $42B minimum revenue backlog from the three deals signed in Q3. The stock closed 2026-05-01 at ~$1,187, up >250% YTD, against a sell-side mean PT of ~$1,099–$1,206 with a wide $650–$1,800 range (sources: SanDisk IR / businesswire 2026-04-30; Public.com / yfinance 2026-05-02).
+SanDisk printed a blowout Q3 FY2026 (2026-04-30): $5.95B revenue (+251% YoY), 78.4% GAAP gross margin, $1.47B datacenter revenue (+645% YoY), five multi-year hyperscaler contracts, $42B minimum revenue backlog, zero net debt. Stock has since run to ~$1,406 intraday — above the sell-side average PT of ~$1,250 (range $650–$2,000 post-earnings revisions; source: web_research/SNDK.json analyst_consensus, run 20260505_211609). Despite exceptional top-line growth, operating margins remain negative (-18.7% operating, -22.3% net; source: signals_combined.json fundamentals_analyst_agent SNDK, run 20260505_211609). The prior thesis was "blowout fundamentals vs. stretched valuation"; the valuation case has now worsened — price has overrun even the most bullish prior PTs. No entry exists until pullback to ~$1,072–$1,100 (10 EMA zone).
 
-> _This is bootstrap context dated 2026-05-01. The runtime swing routine must do its own fresh research and indicator analysis; do not anchor to anything stated here._
+**Prior thesis claim falsified this run:** The bootstrap note that the stock traded "within or above the buy consensus range" at ~$1,187 has been superseded — at $1,406, SNDK now trades well above the sell-side average PT ($1,250) and has been downgraded as "overheated" by Seeking Alpha (2026-05-05; source: web_research/SNDK.json ticker_news).
 
 ## Bull case
 
-- **Datacenter revenue inflection.** Q3 FY2026 datacenter revenue $1.47B, +233% QoQ and +645% YoY; enterprise SSD revenue +233% sequentially driven by TLC plus the upcoming QLC Stargate product (source: SanDisk Q3 FY2026 release). Bulls argue this re-bases the revenue mix toward AI infrastructure rather than consumer flash.
-- **Contracted backlog.** Five multi-year hyperscaler partnerships with >$11B of enforceable financial guarantees and a $42B minimum revenue backlog from three Q3-signed deals (source: Q3 transcript via Motley Fool). Bulls argue take-or-pay floors structurally dampen the historical NAND down-cycle.
-- **Margin expansion.** GAAP gross margin 78.4% vs 22.5% a year earlier; $23.03 diluted EPS on $5.95B revenue (source: businesswire). Bulls argue NAND scarcity plus datacenter mix is durable pricing power.
-- **Balance sheet and capital return.** Zero net debt, $3.74B cash, $2.99B quarterly FCF, fresh $6B buyback (source: SanDisk Q3 FY2026 release).
-- **Cohort tailwind.** Bulls cite hyperscaler AI capex tracking ~$700B in 2026 with storage as an under-owned leg vs GPUs (source: cohort thesis, watchlist 2026-05-01).
+- **Datacenter revenue inflection.** Q3 FY2026: $1.47B datacenter revenue (+645% YoY, +233% QoQ). Enterprise SSD re-based toward AI infrastructure. [source: web_research/SNDK.json earnings_info, run 20260505_211609]
+- **Contracted backlog.** Five multi-year hyperscaler partnerships, $42B minimum revenue backlog from three Q3-signed deals; take-or-pay floors dampen the historical NAND down-cycle. [source: web_research/SNDK.json ticker_news, run 20260505_211609]
+- **Margin transformation.** GAAP gross margin 78.4% vs 22.5% a year prior; $2.99B quarterly FCF; $6B buyback authorized. [source: web_research/SNDK.json earnings_info, run 20260505_211609]
+- **Analyst conviction.** Post-earnings: Susquehanna $2,000; Cantor Fitzgerald $1,800; Bernstein $1,700; Fox Advisors $1,500; Evercore $1,400; Jefferies Buy $1,400; Raymond James $1,470; 29 Buy / 4 Hold / 0 Sell. [source: web_research/SNDK.json analyst_consensus, run 20260505_211609]
+- **Competitive moat.** NAND market tight post-capacity cuts by Samsung/SK Hynix/Kioxia; SK Hynix pivoting to HBM leaves enterprise SSD share open. [source: web_research/SNDK.json competitor_activity, run 20260505_211609]
 
 ## Bear case
 
-- **Valuation and price.** Stock is up >250% YTD at ~$1,187 vs sell-side mean PT ~$1,099 — bears argue the news is in the price (source: yfinance 2026-05-01; Public.com 2026-05-02).
-- **NAND remains cyclical underneath the contracts.** Backlog covers >1/3 of FY27 bit supply, leaving the remainder exposed to spot pricing; bears argue gross margin moving from 22% to 78% in a single year historically mean-reverts (source: 24/7 Wall St note, 2026-04-29).
-- **Sell-side dispersion.** PT range $650 → $1,800 — bears argue the spread itself signals nobody has confident through-cycle earnings (source: WallStreetZen, MarketBeat).
-- **Insider activity.** ~$7.3M of recent Form 4 sales (mostly RSU tax-withholding plus one estate-planning gift); no recent open-market insider buys (source: OpenInsider, stoxpulse).
-- **Crowded positioning.** Bears argue the name has become the consensus AI-storage long, raising unwind risk if cohort sentiment turns.
+- **Negative operating margins.** Operating margin -18.7%, net margin -22.3% — for every $100 of revenue the company spends $122 in costs. P/S ratio 28.3x. [source: signals_combined.json fundamentals_analyst_agent SNDK, run 20260505_211609]
+- **Valuation overrun.** At $1,406, SNDK trades above the post-earnings sell-side average PT ($1,250). Seeking Alpha downgraded "Overheated and Primed to Fall" on 2026-05-05. 24/7 Wall St flagged 32% downside scenario on 2026-05-04. [source: web_research/SNDK.json ticker_news, run 20260505_211609]
+- **Parabolic extension.** Price 62% above 50-SMA, Z-score 2.69, RSI-7 85.2, pct_b 1.072. Historical analog: NVDA RSI 81–87 stop-out (EMA pullback, -$63.20). [source: signals_combined.json swing_macro_context SNDK, run 20260505_211609]
+- **NAND cyclicality.** Contracts cover >1/3 of FY27 bit supply; remainder exposed to spot. YMTC planning 2.5x capacity expansion — longer-term supply risk. [source: web_research/SNDK.json competitor_activity, run 20260505_211609]
+- **No near-term catalyst.** Next earnings Q4 FY2026 ~August 13, 2026 (55+ trading days out). [source: web_research/SNDK.json key_events, run 20260505_211609]
 
 ## What would change my mind
 
-- **Bear flips bullish if:** Q4 FY2026 datacenter revenue prints another sequential >50% jump; FY27 contracted bit-supply share is raised above 50%; an additional hyperscaler contract is announced; cohort peers (STX/WDC/MU) print supportive datacenter numbers.
-- **Bull flips bearish if:** any of the five multi-year contracts is cut, paused, or renegotiated; QLC Stargate ramp slips two-plus quarters; spot NAND pricing rolls over hard; cohort peers (STX/WDC/MU) miss together signaling a memory-cycle correction; gross margin compresses meaningfully off the 78.4% peak.
-- **Macro check:** STX/WDC/MU prints are the cohort tell — divergence vs convergence carries different signal.
-
-## Last updated
-
-2026-05-01 — bootstrap from cohort add; pre-first-run.
+- **Bear flips bullish if:** Pullback to 10 EMA ($1,072–$1,100) on lower volume with bullish reversal candle, restoring R/R ≥ 2:1 long toward $1,470 Fib target; Q4 FY2026 datacenter guide >50% sequential growth; additional hyperscaler contract announced.
+- **Bull flips bearish if:** Any of the five multi-year contracts cut or renegotiated; operating margins fail to turn positive in Q4 FY2026; NAND spot pricing rolls over; YMTC capacity comes online faster than expected; cohort peers (STX/WDC/MU) miss together.

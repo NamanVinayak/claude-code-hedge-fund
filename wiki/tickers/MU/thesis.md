@@ -1,42 +1,38 @@
 ---
 name: MU thesis
-last_updated: 2026-05-01
-last_run_id: bootstrap_2026-05-01
+last_updated: 2026-05-05
+last_run_id: 20260505_211609
 target_words: 500
 stale_after_days: 30
-word_count: 564
-summary: durable bull/bear story
+word_count: 503
+summary: HBM leader with exceptional fundamentals (revenue +48.9% YoY, EPS +997%); price $640 (up from $542 bootstrap); prior bullish signal ($503 entry, $609 target) fully achieved and exceeded; AMD binary now resolved (May 5 AMC passed); wait-to-buy $514-530 (10 EMA zone) for 2:1 R/R long toward $692
 ---
 
 # MU — Thesis
 
 ## TL;DR
 
-Micron is one of three HBM suppliers (SK hynix ~62%, Micron ~21%, Samsung ~17%). Per the Q2 FY26 print (Mar 2026): revenue $23.86B (+196% YoY, +75% QoQ), GAAP EPS $12.07, non-GAAP EPS $12.20. Q3 FY26 guide is $33.5B ± $0.75B revenue at ~81% non-GAAP gross margin. HBM4 36GB 12-high entered volume production in Q1 CY26 for NVIDIA Vera Rubin (>11 Gb/s pin speed, >2.8 TB/s bandwidth). Stock close $542.21 on 2026-05-01: +27% above 50DMA, +96% above 200DMA. Sell-side PTs span BofA $300 to DA Davidson $1,000 (sources: Micron IR / investors.micron.com; Tom's Hardware; TheStreet; 24/7 Wall St; VideoCardz).
+Micron is one of three global HBM suppliers (~21% share) with exceptional near-term fundamentals: Q2 FY26 revenue $23.86B (+196% YoY), non-GAAP EPS $12.20, Q3 FY26 guide $33.5B at ~81% gross margin; HBM4 in volume production for NVIDIA Vera Rubin. Stock at ~$640 (run 20260505_211609) is 34.5% above the 50-SMA — the prior bullish signal (entry $503, target $609, from prior run) has been fully achieved and exceeded. AMD Q1 2026 earnings printed May 5 AMC (the binary gate flagged in prior runs) — results now resolved. Wait for pullback to the 10 EMA zone ($514–$530) before considering a fresh long entry with proper 2:1 R/R toward the $692 Fib extension target. Fundamentals are strong; timing and entry discipline are the gating factors. [source: signals_combined.json swing_head_trader MU + decisions.json, run 20260505_211609]
 
-> _This is bootstrap context dated 2026-05-01. The runtime swing routine must do its own fresh research and indicator analysis; do not anchor to anything stated here._
+**Prior thesis claim superseded:** The bootstrap thesis (2026-05-01) cited stock at $542.21. Price has since run to $640 and the AMD binary gate has now closed (May 5 AMC). The prior "wait for AMD binary" gating instruction has expired; the new gating factor is R/R discipline at $514–$530 entry.
 
 ## Bull case
 
-- **Q2 FY26 record print.** Revenue $23.86B (+196% YoY, +75% QoQ), GAAP EPS $12.07, non-GAAP EPS $12.20. Q3 FY26 guide $33.5B ± $0.75B at ~81% non-GAAP GM (Micron release, investors.micron.com).
-- **HBM4 in NVIDIA Vera Rubin.** Micron began shipping HBM4 36GB 12-high in Q1 CY26 with >11 Gb/s pin speed, >2.8 TB/s bandwidth, +20% power efficiency vs HBM3E. Plan: lift HBM4 to 15K wafers/month, ~30% of total HBM capacity (Micron press release, Tom's Hardware). Bulls argue this is durable share in the highest-margin DRAM tier.
-- **Diversified mix.** Q2 segment revenue: Cloud Memory $7.7B, Core Data Center $5.7B, Mobile & Client $7.7B, Auto & Embedded $2.7B. Bulls argue cycle exposure is no longer single-customer or single-segment.
-- **Capex commitment.** FY26 capex raised to ~$25B from $20B, funding HBM and leading-edge DRAM nodes. Bulls argue this signals demand confidence into CY27.
-- **Cohort tailwind.** Bulls cite hyperscaler AI capex tracking ~$700B in 2026; CEO Sanjay Mehrotra characterizes AI memory as a "multi-year structural shortage" (TheStreet).
+- **HBM demand supercycle.** Micron estimates 50–67% of medium-term HBM demand unmet; DRAM prices up 60% in 2025 with another 30–40% projected for 2026. HBM demand growing 70% YoY across a supply-constrained oligopoly. [source: web_research/MU.json competitor_activity, run 20260505_211609]
+- **Exceptional Q2 FY26 print.** Revenue $23.86B (+196% YoY), non-GAAP GM ~81%, Q3 FY26 guide $33.5B. HBM4 36GB 12-high in volume production for NVIDIA Vera Rubin. [source: web_research/MU.json earnings_info, run 20260505_211609]
+- **Strong fundamentals.** ROE 15.76%, net margin 22.84%, operating margin 26.14%, EPS growth +997% YoY, revenue growth +48.9% YoY. PEG ratio 0.2 — fundamentally attractive relative to growth. [source: signals_combined.json fundamentals_analyst_agent MU, run 20260505_211609]
+- **Analyst support.** DA Davidson initiated Buy at $1,000 (highest on Street); Melius Research Buy $700; TD Cowen raised to $660. Strong Buy consensus (30 analysts). [source: web_research/MU.json analyst_consensus, run 20260505_211609]
+- **New enterprise product.** Micron began shipping the 6600 ION SSD — world's highest-capacity storage device, bolstering enterprise portfolio. [source: web_research/MU.json ticker_news, run 20260505_211609]
 
 ## Bear case
 
-- **Memory has always been cyclical.** Bears argue every supercycle ends; consensus is now extrapolating peak ~81% non-GAAP gross margins, and prior cycle peaks have mean-reverted violently when supply caught demand.
-- **Samsung HBM4 qualification.** VideoCardz reports Samsung HBM4 also entering mass production for Vera Rubin. Bears argue successful Samsung qualification compresses Micron's HBM ASPs and share simultaneously.
-- **Run already large.** MU at $542.21 trades +27% above 50DMA ($425.58), +96% above 200DMA ($276.86), and well above most published PTs ex-DA Davidson. Bears argue much of the supercycle is priced.
-- **Hyperscaler capex digestion.** ~$700B of 2026 hyperscaler capex underwrites the demand backbone — any trim from MSFT/META/GOOGL/AMZN reprices the HBM book quickly.
-- **China + tariff overhang.** Memory is the most globally exposed semis sub-sector; export controls or retaliation could clip a non-trivial share of demand.
+- **Valuation extreme.** DCF intrinsic value ~$20.8B vs market cap ~$722B — 97% overvaluation gap (valuation_analyst_agent bearish, confidence 100). EV/EBITDA gap -32.1%. [source: signals_combined.json valuation_analyst_agent MU, run 20260505_211609]
+- **Overbought across all timeframes.** Z-score 2.74, RSI-7 84.4, daily and hourly pct_b both >1.0. Hourly OBV bearish divergence (OBV trend down while price makes new highs). Hourly relative volume 0.25x average. [source: signals_combined.json swing_macro_context + swing_mean_reversion MU, run 20260505_211609]
+- **Samsung competition.** Samsung HBM4 qualification for NVIDIA improving; SK Hynix remains the dominant HBM supplier (revenue from AI memory tripled). Micron's ASP and share face compression if Samsung fully qualifies. [source: web_research/MU.json competitor_activity, run 20260505_211609]
+- **Correlation-blocked.** SNDK+MU cluster correlation 70.2%; cluster cap exceeded at current prices — risk manager blocked MU from the portfolio even without the R/R failure. [source: signals_combined.json risk_management_agent MU, run 20260505_211609]
+- **Memory cyclicality.** ~81% gross margins extrapolated at peak; prior supercycles have mean-reverted violently when supply caught demand. [source: thesis judgment]
 
 ## What would change my mind
 
-- **Bear flips bullish if:** Q3 FY26 print beats the $33.5B guide and gross margin holds ≥81%; an additional hyperscaler signs an HBM4 multi-quarter agreement; Samsung HBM4 NVIDIA qualification slips; cohort peers (SNDK/STX/WDC) print supportive datacenter numbers; MU breaks above $545.91 on expanding volume and holds.
-- **Bull flips bearish if:** Samsung qualifies HBM4 with NVIDIA at scale; any of MSFT/META/GOOGL/AMZN cuts AI capex guidance; DRAM contract pricing rolls over MoM for two consecutive months; Q3 FY26 misses the $33.5B guide or GM compresses below 78%; MU closes below the 50DMA ($425) on volume; cohort peers (SNDK/STX/WDC) miss together signaling a memory-cycle correction.
-
-## Last updated
-
-2026-05-01 (bootstrap_2026-05-01). Sources: Micron IR, Tom's Hardware, Futurum, TheStreet, 24/7 Wall St, VideoCardz, Globenewswire.
+- **Bear flips bullish if:** Pullback to $514–$530 (10 EMA zone) on lower volume with bullish candle and R/R ≥ 2:1 to $692 Fib target; AMD Q1 earnings positive HBM guidance (to be confirmed post-AMC); Samsung HBM4 NVIDIA qualification slips; Q3 FY26 print beats $33.5B guide with GM holding ≥81%.
+- **Bull flips bearish if:** Samsung qualifies HBM4 at scale with NVIDIA; any major hyperscaler cuts AI capex guidance; Q3 FY26 misses $33.5B guide or GM compresses below 78%; MU closes below 50 SMA ($437) on volume; DRAM contract pricing rolls over for two consecutive months.
