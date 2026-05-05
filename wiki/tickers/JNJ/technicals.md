@@ -1,41 +1,44 @@
 ---
 name: JNJ technicals
-last_updated: 2026-05-04
-last_run_id: 20260504_194523
+last_updated: 2026-05-05
+last_run_id: 20260505_194525
 target_words: 350
 stale_after_days: 7
-word_count: 410
-summary: Confirmed downtrend deepening — ADX 31.07, EMA death stack intact, RSI 34.19 approaching oversold; price $224.07 pressing $223.78 pivot support (4 tests); hourly BB squeeze 0.0313; short id 116 in flight, +$14.85 unrealized
+word_count: 412
+summary: Downtrend deepening — ADX 33.25 (up from 31.07), RSI 27.22 deeply oversold, price ~$225.67 still below all EMAs; $223.78 pivot support (5 tests); BofA Healthcare Conference May 12 is live event risk; active short id 116 in flight; PM issued new short at $226.50 (5 shares) per decisions.json — not yet confirmed in ledger
 ---
 
 # JNJ — Technicals
 
 ## TL;DR
 
-As of May 4, 2026, JNJ's confirmed daily downtrend has deepened: price dropped from $229.85 (May 1) to $224.07, now pressing the critical $223.78 pivot support tested 4 times without breaking. Daily RSI at 34.19 is approaching oversold — bounce risk is rising. ADX at 31.07 (up from 30.72) confirms the downtrend is strengthening. Hourly Bollinger width 0.0313 (extreme squeeze) with pct_b 0.076 — a directional resolution is imminent. Active short (id 116, 3 shares entered at $229.06 fill) running with ~$14.85 unrealized gain. Stop $231.50 intact; target $216.53 still ~$7.50 away. (Source: swing_head_trader signal, decisions.json, trade_ledger.json, run 20260504_194523.)
+As of May 5, 2026, JNJ's confirmed daily downtrend has further deepened. Price is trading around $225.67 (signals_combined portfolio state shows short_cost_basis $0 — new short order from this run not yet in ledger), with RSI-14 at 27.22 (deeply oversold) and ADX at 33.25 (strengthened from 31.07 on May 4). Daily EMA alignment remains fully bearish: price below all 5, 10, 20, 21, and 50-period EMAs. The $223.78 pivot support has now been tested 5 times. Hourly Bollinger squeeze primed (width 0.0325, pct_b 0.3422). Active short: id 116 (3 shares filled at $229.06, target $216.53, stop per ledger $235.00 / decisions.json says $231.00). Decisions this run: PM issued a new 5-share short at $226.50 entry, stop $231.00, target $216.53, R/R 2.2:1, conf 52 — hold-vs-add debate; ledger not yet confirmed. (Source: swing_head_trader signal, decisions.json, trade_ledger.json, run 20260505_194525.)
 
-**Prior setup evolution.** May 1 had price $229.85 at 10-EMA resistance, hourly BB width 0.029. Price has since broken below the 10-EMA and dropped $5.78 toward $223.78. Downtrend is working exactly as modeled.
+**Prior setup evolution.** May 4 had price $224.07 pressing the $223.78 pivot (4 tests). May 5 shows price ~$225.67 — slight dead-cat bounce from the pivot. The bounce has not exceeded $226–229 resistance zone. ADX strengthened (31.07 → 33.25), -DI still >> +DI (34.83 vs 15.44). Downtrend working as modeled.
 
 ## Multi-timeframe state
 
 | Timeframe | Trend | Momentum | Note |
 |---|---|---|---|
-| Daily | Confirmed downtrend — ADX 31.07, -DI 26.9 > +DI 19.9; all EMAs inverted | MACD -3.24 below signal -2.78; ROC-21d -6.94%; OBV down; volume bias 10d down | RSI-14 34.19 approaching oversold; bounce risk increasing near $223.78 |
-| Hourly | Downtrend — EMAs bearish aligned | -DI (32.44) >> +DI (14.83); Bollinger width 0.0313 (extreme squeeze); pct_b 0.076 | Spring-loaded at $223.78 support — imminent directional resolution |
+| Daily | Confirmed downtrend — ADX 33.25, -DI 34.83 >> +DI 15.44; all EMAs inverted | MACD -3.45 below signal -2.92; ROC-21d -7.75%; OBV daily down | RSI-14 27.22 deeply oversold; bounce risk rising but no reversal candle |
+| Hourly | Downtrend — EMAs bearish aligned; -DI (33.31) >> +DI (12.36) | Bollinger width 0.0325 (extreme squeeze primed); pct_b 0.3422 | Hourly OBV slight upward divergence — watch for dead-cat bounce $226–229 |
 
-EMA stack (daily): EMA 5 $228.0 < EMA 10 $229.2 < EMA 21 $232.2 < EMA 50 $233.5 — bearish tightening intact. Price $224.07 below all EMA levels. (Source: swing_trend_momentum, signals_combined.json, run 20260504_194523.)
+EMA stack (daily): EMA 5 $226.74 > EMA 10 $228.29 > EMA 21 $231.44 > EMA 50 $233.15 — all above price (~$225.67). Bearish alignment intact. (Source: swing_trend_momentum, signals_combined.json, run 20260505_194525.)
 
 ## Key levels
 
 | Level | Value | Source |
 |---|---|---|
-| Critical pivot support (breakdown trigger) | $223.78 (4 tests) | swing_breakout, run 20260504_194523 |
-| Measured-move target | $216.53 | swing_breakout, run 20260504_194523 |
-| Active short entry fill | $229.06 (id 116, 3 shares) | trade_ledger.json, run 20260504_194523 |
-| Stop loss (active) | $231.50 | decisions.json, run 20260504_194523 |
-| Dead-cat bounce resistance | $226–229 | swing_mean_reversion, run 20260504_194523 |
-| Price at analysis (May 4) | $224.07 | signals_combined.json, run 20260504_194523 |
+| Critical pivot support (5-test breakdown trigger) | $223.78 | swing_breakout, run 20260505_194525 |
+| Measured-move target on breakdown | $216.53 | swing_breakout; decisions.json, run 20260505_194525 |
+| Fib 1.272 extension target | $217.15 | swing_trend_momentum, run 20260505_194525 |
+| Bollinger lower band | $220.47 | swing_macro_context, run 20260505_194525 |
+| Active short entry fill (id 116) | $229.06 (3 shares) | trade_ledger.json, run 20260505_194525 |
+| Stop loss (ledger) | $235.00 (id 116) | trade_ledger.json |
+| New short decision (decisions.json, unconfirmed) | Entry $226.50 / stop $231.00 / target $216.53 | decisions.json, run 20260505_194525 |
+| Dead-cat bounce resistance | $226–229 | swing_mean_reversion, run 20260505_194525 |
+| BofA Healthcare Conference watch date | May 12, 2026 (~5 trading days) | swing_catalyst_news, run 20260505_194525 |
 
 ## Setup type
 
-**Bearish continuation — holding active short at $223.78 support.** The short (id 116, fill $229.06) is running in-direction. A close below $223.78 on volume >1.5x average confirms the measured-move breakdown to $216.53. Risk: hourly Bollinger squeeze at the lower band and RSI approaching oversold signal a possible dead-cat bounce to $226–229 before continuation. No new entries; hold existing position. (Source: decisions.json; swing_head_trader, run 20260504_194523.)
+**Bearish continuation — active short at id 116, new short decision from current run unconfirmed.** ADX 33.25 confirms the downtrend has real strength. The $223.78 pivot has been tested 5 times; a confirmed daily close below on volume >1.5x average opens the measured-move target of $216.53. Risk: RSI 27.22 is deeply oversold and the hourly Bollinger squeeze could resolve either direction. Dead-cat bounce to $226–229 is possible before continuation. BofA Healthcare Conference May 12 is the two-sided event risk. Do not add to short if price is bouncing without a rejection candle at resistance. (Source: decisions.json; swing_head_trader, run 20260505_194525.)
