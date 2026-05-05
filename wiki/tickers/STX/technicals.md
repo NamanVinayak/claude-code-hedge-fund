@@ -4,7 +4,7 @@ last_updated: 2026-05-05
 last_run_id: 20260505_203524
 target_words: 350
 stale_after_days: 7
-word_count: 349
+word_count: 413
 summary: parabolic extension deepened — price ~$771 (was $738); RSI 85.96/90.28, Z-score 2.72, ADX 78.48; hourly OBV bearish divergence continues; unanimous hold, wait $618-700 pullback
 ---
 
