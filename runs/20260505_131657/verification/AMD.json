@@ -1,0 +1,83 @@
+{
+  "ticker": "AMD",
+  "verified_at": "2026-05-05T13:16:57",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.11527,
+      "web_value": 0.1225,
+      "source": "CNBC / Macrotrends / Investing.com",
+      "status": "ok",
+      "deviation": "6.3%",
+      "notes": "Our value 11.53% vs web range 12.25-12.52%. Within 20% threshold; minor timing difference."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.08548,
+      "web_value": 0.1195,
+      "source": "GuruFocus / companiesmarketcap.com / AMD Q4 2025 press release",
+      "status": "MISMATCH",
+      "deviation": "39.8%",
+      "action": "replaced with web value (0.1195) in all facts bundles: warren_buffett__AMD.json, aswath_damodaran__AMD.json",
+      "notes": "Our value 8.55% vs web ~11.95% GAAP TTM. AMD full-year 2025 GAAP operating income $3.7B / revenue $34.6B = ~10.7%; GAAP TTM as of Q4 2025 is ~11.95%. Deviation 39.8% exceeds 20% threshold. Non-GAAP operating margin (~22.5%) not used — GAAP applied consistently."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 131.36,
+      "web_value": 135.5,
+      "source": "FinanceCharts / FullRatio / companiesmarketcap.com",
+      "status": "ok",
+      "deviation": "3.1%",
+      "notes": "Our value 131.36 vs web range 135-136. Within threshold; price fluctuation accounts for difference."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 31200000000.0,
+      "web_value": 34630000000.0,
+      "source": "Zacks / YCharts / companiesmarketcap.com",
+      "status": "ok",
+      "deviation": "10.9%",
+      "notes": "Our value ~$31.2B (derived from market_cap / price_to_sales_ratio) vs web $34.63B TTM (full-year 2025). Difference is partly due to our P/S ratio reflecting an earlier period snapshot. Below 20% threshold; no correction applied.",
+      "calculation_note": "Revenue not stored as a direct field in facts bundles; derived from price_to_sales_ratio. Direct revenue field correction not applicable."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 556850544640.0,
+      "web_value": 582000000000.0,
+      "source": "companiesmarketcap.com / public.com",
+      "status": "ok",
+      "deviation": "4.5%",
+      "notes": "Our value $556.85B vs web ~$577-588B (May 2026). Minor timing difference; facts bundle captures an earlier price point. Within threshold."
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.06245,
+      "web_value": 0.0708,
+      "source": "Yahoo Finance / Zacks",
+      "status": "ok",
+      "deviation": "13.4%",
+      "notes": "Our value 6.24% vs web 7.08%. Within 20% threshold; minor data recency difference."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.05193,
+      "web_value": null,
+      "source": null,
+      "status": "unverified",
+      "deviation": null,
+      "notes": "Web search did not return a clear TTM ROA figure; skipped per rules."
+    }
+  ],
+  "overall_status": "1 mismatch corrected",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260505_131657/facts/warren_buffett__AMD.json",
+    "runs/20260505_131657/facts/aswath_damodaran__AMD.json"
+  ],
+  "correction_detail": {
+    "metric": "operating_margin",
+    "old_value": 0.08548159548544312,
+    "new_value": 0.1195,
+    "source": "GuruFocus (operating margin TTM May 2026) / AMD Q4 2025 earnings report ($3.7B operating income / $34.6B revenue)"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "ticker": "AMD",
+  "score": 28,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 5,
+    "max_score": 8,
+    "details": "Moderate fat tails (kurtosis 3.8); Symmetric distribution (skew -0.45); Asymmetric upside (tail ratio 1.28); Moderate drawdown (-27.8%)"
+  },
+  "antifragility_analysis": {
+    "score": 6,
+    "max_score": 10,
+    "details": "Net cash positive ($3,860,000,000); Taleb-approved low leverage (D/E 0.00); Volatile margins (CV 0.82) \u2014 fragile pricing power; Consistent FCF generation (10/10 periods positive)"
+  },
+  "convexity_analysis": {
+    "score": 4,
+    "max_score": 10,
+    "details": "Significant embedded optionality via R&D (23.7% of revenue); Slight positive asymmetry (up/down ratio 1.23); Low cash relative to market cap (1%); Low FCF yield (0.4%)"
+  },
+  "fragility_analysis": {
+    "score": 5,
+    "max_score": 8,
+    "details": "Low leverage (D/E 0.00) \u2014 not fragile; Interest coverage 22.6x \u2014 debt is irrelevant; Highly volatile earnings (growth std 0.67) \u2014 fragile; Moderate margins (11.5%)"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 4,
+    "max_score": 6,
+    "details": "Normal vol regime (1.05) \u2014 fair pricing; Elevated vol-of-vol (0.0595 vs median 0.0535)"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 556850544640.0,
+  "web_context": {
+    "ticker": "AMD",
+    "research_date": "2026-05-05",
+    "macro_context": {
+      "market_sentiment": "Mixed and cautious: S&P 500 futures +0.5% on May 5 after a risk-off session on May 4 (Dow -1.13%, S&P -0.41%, Nasdaq -0.19%) driven by escalating U.S.-Iran conflict. May 1 saw record Nasdaq and S&P closes, so the broader trend year-to-date remains bullish but fragile.",
+      "fed_outlook": "Fed held rates at 3.5%-3.75% on April 29 (8-4 vote, most dissents since 1992). Median forecast remains one cut in 2026, pushed later due to elevated inflation partly from Middle East oil price spike. Powell stepping down as chair but remaining on the Board; markets pricing near-zero probability of a 2026 cut.",
+      "geopolitical": "U.S.-Iran conflict in month three with no resolution; UAE intercepted Iranian missiles May 4, sending crude oil above $104 (WTI). Strait of Hormuz traffic near standstill. Chinese semiconductor overcapacity and U.S. export controls add supply chain pressure for chip companies. Tariff uncertainty and midterm elections loom.",
+      "key_events": [
+        "AMD Q1 2026 earnings report today (May 5) after market close \u2014 high-stakes catalyst",
+        "U.S.-Iran ceasefire progress (or breakdown) remains primary macro risk driver",
+        "Next FOMC meeting: no imminent date; market pricing no cuts until late 2027",
+        "Oil price trajectory ($100+ WTI) affects inflation and risk appetite broadly"
+      ]
+    },
+    "ticker_news": [
+      {
+        "headline": "AMD Q1 2026 earnings report scheduled after close on May 5; consensus sees $9.84B revenue (+32% YoY) and EPS $1.28 (+33% YoY) \u2014 stock is 'priced for perfection'",
+        "sentiment": "neutral",
+        "source": "Bloomberg / heygotrade.com"
+      },
+      {
+        "headline": "AMD had its best monthly stock performance since the dot-com era in April 2026; stock fell -5.27% on May 4 to $341.54 as geopolitical risk flared",
+        "sentiment": "negative",
+        "source": "Bloomberg / stockinvest.us"
+      },
+      {
+        "headline": "Meta partnership announced February 2026: 6GW deployment using AMD MI450 GPUs + 6th-gen EPYC CPUs; OpenAI also signed 6GW deal with first 1GW of MI450 in H2 2026",
+        "sentiment": "positive",
+        "source": "heygotrade.com / bitget.com"
+      },
+      {
+        "headline": "HSBC downgraded AMD on valuation concerns ahead of Q1 earnings; stock hit $240 reference level in the note",
+        "sentiment": "negative",
+        "source": "fxleaders.com"
+      },
+      {
+        "headline": "AMD's data center segment expected at $5.56B in Q1 (+51.5% YoY per Zacks); gross margin guidance 55% is a key watchpoint given TSMC capacity constraints",
+        "sentiment": "positive",
+        "source": "tradingkey.com / coindcx.com"
+      }
+    ],
+    "analyst_consensus": {
+      "rating": "buy",
+      "avg_price_target": 307.0,
+      "recent_changes": "Multiple downgrades in late April/early May on valuation: Northland Capital Markets downgraded to Market Perform (from Outperform) with $260 PT on April 27 (analyst Gus Richard); HSBC downgraded ahead of earnings. Upgrades: DA Davidson raised to Buy from Neutral, PT $375; Stifel raised PT to $320. Net consensus remains Buy (34 analysts) with average PT ~$307 (range $240-$400). Source: Benzinga, MarketBeat, TipRanks"
+    },
+    "competitor_activity": "NVIDIA holds 75-80% of AI accelerator market and remains Wall Street's highest-conviction AI play; analysts project 30-40% NVDA upside. Intel reported Q1 2026 beat and guidance raise on April 23, with Intel stock up 164% YTD \u2014 far outpacing AMD's run. On May 4, AMD fell -5.27% while Intel was -2% and NVDA -1%, signaling a selective AI chip trade divergence against AMD. AMD's server upside is constrained by TSMC foundry capacity limits, unlike NVDA which has prioritized supply. The biggest competitive threat to NVDA is actually hyperscaler custom silicon (Google TPU, Amazon Trainium), not AMD. Source: 24/7wallst.com, ibtimes.com",
+    "earnings_info": "Q1 2026 earnings report TODAY (May 5, 2026) after market close. Analyst consensus: revenue ~$9.84B (+32% YoY; AMD guided $9.8B +/-$300M), EPS ~$1.28-1.29 (+33-34% YoY). Data center revenue consensus $5.56B (+51.5% YoY). Key focus: data center beat vs. $5.56B estimate, MI325 roadmap timeline credibility, and whether 55% gross margin guidance holds given TSMC capacity constraints. Source: MarketBeat, TipRanks, coindcx.com"
+  }
+}
