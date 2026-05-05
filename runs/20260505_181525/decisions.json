@@ -1,0 +1,17 @@
+{
+  "decisions": {
+    "JPM": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 309.4,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 320.24,
+      "stop_loss": 304.26,
+      "risk_reward_ratio": "2.1:1",
+      "timeframe": "hold — no new entry",
+      "confidence": 38,
+      "account_risk_pct": 0.0,
+      "reasoning": "Correlation block: BAC+JPM cluster $1,284 > 30% of $1,618 portfolio. Head Trader neutral (38 conf) — below 40 threshold. 2 bullish vs 1 bearish vs 2 neutral agents; no majority. Adverse catalyst environment (Iran escalation, Dimon bond-crisis warning, zero Fed cuts priced 2026, oil $106+) counters technically interesting dip-buy setup. Trend momentum fails momentum-acceleration requirements (ROC-5d -1.28%, ROC-10d -2.95%, MACD histogram negative). Allowed actions confirm hold only. Standing aside until cluster exposure clears or breakout triggers ($315.50 daily close on 1.5x+ volume)."
+    }
+  }
+}

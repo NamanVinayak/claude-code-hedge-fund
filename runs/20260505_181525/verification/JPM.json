@@ -1,0 +1,82 @@
+{
+  "ticker": "JPM",
+  "verified_at": "2026-05-05T18:30:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.1837,
+      "web_value": 0.2844,
+      "source": "GuruFocus (TTM, May 2026)",
+      "status": "MISMATCH",
+      "deviation": "55%",
+      "note": "Our value (18.37%) sourced from stale data (report_period: 2014-09-30). Web consensus: GuruFocus 28.44%, Macrotrends 20.35%, CNBC 31.50%. Used GuruFocus as primary authoritative source.",
+      "action": "replaced with web value in all facts bundles (warren_buffett__JPM.json, aswath_damodaran__JPM.json)"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": 0.3979,
+      "source": "CompaniesMarketCap / Macrotrends (TTM 2026)",
+      "status": "unverified",
+      "deviation": "N/A — our value was null",
+      "note": "Operating margin was null in facts bundles (unavailable for bank). Web sources show ~30-40% depending on methodology. No correction applied since original value was null."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 14.809,
+      "web_value": 14.93,
+      "source": "GuruFocus TTM PE 14.92, FullRatio 14.93 (Apr-May 2026)",
+      "status": "ok",
+      "deviation": "0.8%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 829000000000.0,
+      "web_value": 837000000000.0,
+      "source": "CompaniesMarketCap (May 2026)",
+      "status": "ok",
+      "deviation": "1.0%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": null,
+      "web_value": 173560000000.0,
+      "source": "StockAnalysis TTM March 31 2026",
+      "status": "unverified",
+      "deviation": "N/A — not directly in facts bundles",
+      "note": "Revenue not stored as a direct field; implied by P/S ratio. No correction applied."
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.0847,
+      "web_value": 0.1574,
+      "source": "valueinvesting.io (2026-05-02), GuruFocus corroborates ~15-17%",
+      "status": "MISMATCH",
+      "deviation": "86%",
+      "note": "Our value (8.47%) is from stale 2014 data. Web consensus: 15.74% (valueinvesting.io), 16.7% (finbox), 17.0% (YCharts). Used 15.74% as conservative estimate.",
+      "action": "replaced with web value in all facts bundles (warren_buffett__JPM.json, aswath_damodaran__JPM.json)"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.0074,
+      "web_value": 0.0116,
+      "source": "GuruFocus (1.16%, TTM 2026)",
+      "status": "MISMATCH",
+      "deviation": "57%",
+      "note": "Our value (0.74%) is from stale 2014 data. Web sources: GuruFocus 1.16%, finbox/YCharts ~1.3%. Used GuruFocus 1.16% as conservative estimate.",
+      "action": "replaced with web value in all facts bundles (warren_buffett__JPM.json, aswath_damodaran__JPM.json)"
+    }
+  ],
+  "root_cause": "Facts bundles for warren_buffett__JPM.json and aswath_damodaran__JPM.json contained metrics with report_period '2014-09-30' — data pulled from a stale SEC filing rather than the most recent TTM period. This caused ROE, ROA, and net_margin to reflect 2014 figures rather than current 2026 values.",
+  "files_updated": [
+    "runs/20260505_181525/facts/warren_buffett__JPM.json",
+    "runs/20260505_181525/facts/aswath_damodaran__JPM.json"
+  ],
+  "corrected_values": {
+    "net_margin": 0.2844,
+    "return_on_equity": 0.1574,
+    "return_on_assets": 0.0116
+  },
+  "overall_status": "3 mismatches corrected (net_margin, roe, roa)",
+  "corrections_applied": true
+}

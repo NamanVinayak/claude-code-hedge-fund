@@ -1,0 +1,34 @@
+{
+  "run_id": "20260505_181525",
+  "mode": "swing",
+  "started_at": "2026-05-05T18:15:58Z",
+  "ended_at": "2026-05-05T18:31:34Z",
+  "tickers": [
+    "JPM"
+  ],
+  "decisions": [
+    {
+      "ticker": "JPM",
+      "action": "hold",
+      "confidence": 38,
+      "entry": 309.4,
+      "stop": 304.26,
+      "target": 320.24,
+      "reasoning_tldr": "Correlation block: BAC+JPM cluster $1,284 > 30% of $1,618 portfolio"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 1,
+    "cash": 1617.7600000000002,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "neutral",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}
