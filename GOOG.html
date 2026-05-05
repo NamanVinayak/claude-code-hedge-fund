@@ -484,7 +484,7 @@
             <a class="nav-link " href="closed.html">History</a>
             <a class="nav-link " href="runs.html">All Runs</a>
         </div>
-        <div class="nav-meta">10:01 AM PT · NEXT TX <span id="countdown">--:--</span></div>
+        <div class="nav-meta">10:05 AM PT · NEXT TX <span id="countdown">--:--</span></div>
     </div>
 </nav>
 
@@ -498,6 +498,26 @@
         </div>
     </div>
 
+    
+    
+    
+    
+    <div class="pos-pill">
+        <div class="pos-pill-label">Open Position · SHORT</div>
+        <div class="pos-pill-pnl profit">
+            +$0.77
+        </div>
+        <div class="pos-pill-pct profit">
+            +0.20% since entry $383.00
+        </div>
+        <div style="margin-top:10px;display:flex;gap:8px;font-size:12px;color:var(--muted);font-family:var(--mono);">
+            <span class="loss">Stop $389.50</span>
+            <span>·</span>
+            <span class="profit">Tgt $338.95</span>
+            <span>·</span>
+            <span>1:6.8</span>
+        </div>
+    </div>
     
 </div>
 
@@ -531,7 +551,7 @@
 
 <div class="thesis-card">
     <h2>AI Thesis (from Wiki)</h2>
-    <p>**Prior bear thesis falsified (partially).** The prior thesis (bootstrap, 2026-04-29) listed "Q1 2026 earnings beat with revenue above $107B" as a bear invalidation trigger. Q1 2026 revenue came in at $109.9B (+20% YoY), EPS $5.11 vs. $2.62 consensus — triggering that clause definitively. Additionally, "Google Cloud quarterly growth decelerating below 25% YoY" was identified as a bull invalidation; actual Q1 Cloud growth was +63% YoY, the opposite. The bull case is materially upgraded. The durable bear risks are the DOJ cross-appeal for forced divestiture and $180–190B capex guidance pressure on FCF. Swing setup: structurally bullish but price at $381.94 is in no-chase territory — 3 of 5 agents wait for $342–$358 pullback to restore 3:1+ R/R. (Source: decisions.json, explanation.json, web_research/GOOG.json — run 20260501_164617)</p><p>**1. Google Cloud as the validated AI cloud leader.** Q1 2026 confirmed Google Cloud as a full-scale hyperscaler: $20B+ quarterly revenue (+63% YoY), cloud backlog nearly doubling QoQ to $460B+. This is no longer a "thesis to be proven" — the AI cloud acceleration is already in the numbers. Alphabet outperformed AWS, Azure, and Meta in post-earnings market reaction (+10%), described by Fortune as "the only hyperscaler to convince investors that AI spending is already paying off." (Source: web_research/GOOG.json, run 20260501_164617)</p><p>**2. Search moat survived antitrust.** DOJ's final remedy was a choice-screen mandate, not forced breakup. The cross-appeal risk exists, but the base case is structural survival of the core business. Citigroup PT $405; analyst consensus overwhelmingly bullish (37–68 Strong Buy ratings). (Source: 20260415_093758 web_research; web_research/GOOG.json, run 20260501_164617)</p>
+    <p>**Prior "watch-not-act neutral" stance upgraded to short decision.** The prior thesis (run 20260501_164617) described a structurally bullish stock in a no-chase zone, waiting for a $342–$358 pullback. That pullback never materialized — price remained pinned at $383–$384 for four trading days. Run 20260505_164543 (May 5) marks a signal direction shift: the Portfolio Manager issued a short (1 share at $383, target $338.95, stop $389.50, R/R 4.32:1, conf 40%) based on mean-reversion Branch A. The falsification trigger is not a fundamental change but a decision shift: the prior thesis explicitly flagged RSI-7 97.75 and Z-score 3.29 as extreme; those readings have eased to RSI-7 90.69 and Z-score 2.56 without price breaking higher — confirming the thesis that the extension is not accelerating. No fill is yet confirmed in trade_ledger.json `per_ticker_history[GOOG]` — the decision was issued; execution pending. (Source: decisions.json, trade_ledger.json, explanation.json, run 20260505_164543)</p><p>**1. Google Cloud as the validated AI cloud leader.** Q1 2026 confirmed Google Cloud at $20B+ quarterly revenue (+63% YoY), cloud backlog nearly doubling QoQ to $460B+. The AI cloud acceleration is already in the numbers — Alphabet outperformed AWS, Azure, and Meta in post-earnings market reaction (+10%). (Source: web_research/GOOG.json, run 20260501_164617)</p><p>**2. Exceptional profitability and balance sheet.** Net margin 32.81%, operating margin 32.03%, ROE 31.83%, D/E 0.12, current ratio 2.01. EPS $5.11 vs. $2.62 consensus (+94%); net income $62.58B (+81% YoY). (Source: fundamentals_analyst_agent, run 20260505_164543)</p>
 </div>
 
 
@@ -539,6 +559,20 @@
     <h2 style="font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;">Recent AI Decisions</h2>
     
     <div class="dec-timeline">
+    
+    <div class="dec-item">
+        <span class="dec-date">20260505</span>
+        <span><span class="badge badge-short">SHORT</span></span>
+        <span>
+            
+            <div class="conf-wrap">
+                <div class="conf-bar-bg"><div class="conf-bar" style="width:40%"></div></div>
+                <span class="conf-label">40%</span>
+            </div>
+            
+        </span>
+        <span class="dec-reason" style="font-size:12px;color:var(--muted);line-height:1.6;">Mean-reversion Branch A: Z-score 2.56, RSI-7 90.69, %B 0.963 — extreme extension. Hourly $384.16 resistance (13 tests) capping price. Stop not hit since May 1 call. Head trader low conf (35) but R/R 4.32:1 clears exceptional threshold. 1 share respects risk mgr $600 cap. Portfolio book already 2 short / 2 long — adding 1 short adds modest bear tilt, acceptable given no GOOG position exists and correlation with existing shorts (AMD, JNJ, META) is low (max 0.33 with AAPL long, not a short). Valuation bearish (DCF gap -75%). No new info since May 1 but stop intact — reaffirming the fade.</span>
+    </div>
     
     <div class="dec-item">
         <span class="dec-date">20260501</span>
