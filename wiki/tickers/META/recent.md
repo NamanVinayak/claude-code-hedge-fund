@@ -1,11 +1,11 @@
 ---
 name: META recent
-last_updated: 2026-04-30
-last_run_id: 20260430_141238
+last_updated: 2026-05-05
+last_run_id: 20260505_140723
 target_words: 300
 stale_after_days: 30
-word_count: 186
-summary: Signal history — direction flips and key level breaks for META across swing runs
+word_count: 244
+summary: Signal history — direction flips and key level breaks for META across swing runs; latest: conditional short entry trigger fired (May 4–5), trade id 118 filled at $611.78
 ---
 
 # META — Recent Signal History

@@ -1,7 +1,7 @@
 ---
 name: swing_macro_context track record
-last_updated: 2026-05-04
-last_run_id: 20260504_221111
+last_updated: 2026-05-05
+last_run_id: 20260505_140723
 stale_after_days: 365
 target_words: 1200
 summary: 0 graded calls. (Appended by ai_hedge.grading.wiki_writer.)
@@ -17,3 +17,4 @@ one resolved call scored against yfinance daily OHLC.
 - — | JPM | bullish $312.5→$320.24 stop $307.29 | **in_progress** (day 3, MFE 1.15%, MAE -0.21%) _(prior_run=20260501_182928, graded_in=20260504_182958)_
 - — | JNJ | bearish $229.85→$217.41 stop $232.73 | **in_progress** (day 3, MFE 1.23%, MAE 0.0%) _(prior_run=20260501_194523, graded_in=20260504_194523)_
 - — | DIS | bullish $102.5→$107.11 stop $101.02 | **in_progress** (day 3, MFE 2.27%, MAE 0.0%) _(prior_run=20260501_221355, graded_in=20260504_221111)_
+- — | META | bearish $620.0→$583.0 stop $635.0 | **in_progress** (day 1, MFE 2.78%, MAE 0.0%) _(prior_run=20260504_143030, graded_in=20260505_140723)_
