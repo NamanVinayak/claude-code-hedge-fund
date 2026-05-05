@@ -1,42 +1,43 @@
 ---
 name: JPM thesis
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-05
+last_run_id: 20260505_181525
 target_words: 500
 stale_after_days: 30
-word_count: 512
-summary: World's most profitable bank — earnings machine with secular growth from investment banking and wealth management offset by rate-cycle sensitivity and macro tail risks
+word_count: 498
+summary: World's most profitable bank — earnings machine with secular growth from investment banking and wealth management; NII plateau + Iran escalation + BAC cluster cap = HOLD; breakout trigger $315.50 or cluster clearance needed for new entry
 ---
 
 # JPM — Thesis
 
 ## TL;DR
 
-JPMorgan Chase is the dominant US bank by net income and total revenue. It prints earnings cycle after cycle — Q1 2026 delivered a record $16.5 billion profit (+13% YoY) on $50.54 billion in revenue, beating estimates on every line [run: 20260415_093758]. The bull case is straightforward: leadership position across every banking segment, $4.8 trillion in AUM, and a CEO who has been right about macro more often than most. The bear case is equally simple: net interest income is plateauing, full-year 2026 NII guidance was trimmed from $104.5B to ~$103B [run: 20260415_093758], and Jamie Dimon himself flags geopolitics and large fiscal deficits as systemic risks in his shareholder letter.
+JPMorgan Chase is the dominant US bank by net income and total revenue. Q1 2026 delivered record profit: EPS $5.07 beat the $4.62 estimate on revenue of $45.9B [web_research/JPM.json, run 20260505_181525]. The bull case is intact but currently blocked by three compounding factors: Iran-driven oil spike re-accelerating inflation (extending the Fed hold), Jamie Dimon's self-generated bond-crisis warning, and a portfolio cluster cap (BAC+JPM combined $1,284 > 30% of $1,618 portfolio). Two unlock triggers remain defined: (a) BAC cluster exposure clears, or (b) price closes above $315.50 on ≥1.5x daily volume [run: 20260505_181525].
+
+**Prior thesis claim falsified:** The bootstrap thesis (2026-04-29) cited "Iran peace talks easing geopolitical pressure" as a macro tailwind. That claim was directly reversed on May 4 when UAE intercepted Iranian missiles — Iran-UAE military escalation with active Strait of Hormuz closure risk replaced the peace-talks narrative [web_research/JPM.json, run 20260505_181525].
 
 ## Bull case
 
-- **Earnings machine:** Four consecutive quarters of EPS beats heading into Q1 2026. Q1 EPS of $5.94 crushed the $5.45 consensus by ~9% [run: 20260415_093758]. Financials sector on pace for ~15% YoY earnings growth — third-highest of any S&P 500 sector [run: 20260415_093758].
-- **Investment banking leadership:** 18% YoY increase in IB fees expected to outpace Goldman and BofA. Record equities trading. The Commercial and Investment Bank delivered $9.0 billion net income in Q1 2026 alone [run: 20260415_093758].
-- **Wealth management flywheel:** Asset and Wealth Management AUM hit $4.8 trillion, net income up 12% YoY. Consumer and Community Banking earns $5.0 billion at 32% ROE — remarkable efficiency for a consumer bank [run: 20260415_093758].
-- **Strategic optionality:** Apple Card takeover from Goldman ($20B portfolio, millions of tech-savvy users) [run: swing_20260411_211655]. Entry into prediction markets [run: swing_20260411_211655]. $20 billion technology spend in 2026 to widen the moat.
-- **Analyst consensus:** 14 Buy ratings, 12 Hold, 0 Sell from 33 Wall Street analysts. Goldman Sachs raised target to $365 post-Q1. Average price target $337, median cluster $337–$345 [run: 20260415_093758].
-- **Board insider buying:** Multiple directors bought shares in March 2026 [run: 20260415_093758].
+- **Earnings machine:** Q1 2026 EPS $5.07 beat $4.62 consensus; net income +13% YoY; revenue $45.9B beat $43.8B estimate [web_research/JPM.json, run 20260505_181525]. Financials sector broadly beating estimates in Q1.
+- **Investment banking leadership:** Commercial and Investment Bank continues to deliver; Goldman Sachs's record Q1 confirms sector-wide strength [web_research/JPM.json, run 20260505_181525].
+- **Strategic optionality:** Apple Card acquisition from Goldman ($20B portfolio) expands consumer lending footprint. PE secondaries advisory expansion (Will Boyle hire from Morgan Stanley). $20B technology spend planned for 2026 [web_research/JPM.json, run 20260505_181525].
+- **Analyst consensus:** 14 Buy, 12 Hold, 0 Sell from 33 analysts; avg price target $337; Evercore ISI $340 Outperform; TD Cowen $375 Buy [web_research/JPM.json, run 20260505_181525].
+- **Technical support intact:** $307.29 hourly support confirmed 23 times (volume-confirmed); Apr 30 engulfing candle off $306.57 showed buyers still active [run: 20260505_181525].
 
 ## Bear case
 
-- **NII plateau:** Full-year 2026 net interest income guidance was trimmed to ~$103 billion from prior $104.5 billion [run: 20260415_093758]. Morgan Stanley lowered target to $334 on this [run: 20260415_093758]. If the Fed cuts aggressively, deposit repricing compresses margins further.
-- **Macro headwinds Dimon named directly:** Geopolitical tensions (Russia-Ukraine, US-China, Middle East), elevated asset prices, large fiscal deficits, and sticky inflation (PCE expected at 2.7% for 2026 vs 2% target) [run: 20260415_093758].
-- **Credit cycle risk:** Consumer credit quality is the hidden variable. "Resilient consumer" is the current narrative; any labor market softening tests it fast.
-- **Revenue growth slightly negative YoY on some metrics:** Growth-focused strategy models flagged this as a caution in the Apr 15 run [run: 20260415_093758].
-- **Valuation premium:** Trading near analyst consensus target with limited upside without another earnings beat cycle.
+- **NII plateau:** Full-year 2026 net interest income guidance trimmed from $104.5B to ~$103B at Q1 earnings call [web_research/JPM.json, run 20260505_181525]. Iran oil spike re-accelerates inflation, extending Fed hold and compressing NIM expansion probability.
+- **Dimon bond-crisis warning (dominant May 2026 headline):** CEO self-generated bearish signal — Dimon warns of "increasingly complex set of risks" and potential bond-market crisis [web_research/JPM.json, run 20260505_181525].
+- **Fed: zero cuts priced in 2026:** FOMC held 3.50%–3.75% on April 29 in contentious 8-4 split (most dissents since Oct 1992); Kevin Warsh (hawkish) set to replace Powell May 15 [web_research/JPM.json, run 20260505_181525]. Bank NII growth headwind.
+- **OBV distribution:** On-balance volume trending down on both daily and hourly timeframes — institutional distribution, not accumulation [run: 20260505_181525].
+- **Competitive pressure:** Goldman record Q1 equities trading revenue outpacing JPM's IB growth; Wells Fargo freed from asset cap and encroaching on JPM's retail franchise [web_research/JPM.json, run 20260505_181525].
 
 ## What would change my mind
 
-- **Turns bearish:** NII declines two consecutive quarters; credit losses spike above management guidance; Dimon departure; Fed cuts faster than expected, compressing net interest margin sharply.
-- **Adds conviction bullish:** NII guidance raised back above $104B; investment banking fees sustain 15%+ YoY growth; Apple Card integration drives measurable consumer deposit growth.
-- **Stays neutral:** Macro uncertainty persists, stock range-bound $295–$325 without a fresh catalyst.
+- **Opens new entry:** BAC position exits (cluster cap clears) AND R/R re-exceeds 2:1; OR daily close above $315.50 on ≥1.5x volume (measured-move target $323.66).
+- **Turns bearish:** $307.29 hourly support fails on high volume; $304.26 daily pivot breaks; Iran-Strait of Hormuz closes (oil spike → Fed tightening → financials re-rate).
+- **Adds conviction bullish:** NII guidance raised back above $104B; Warsh confirmation less hawkish than feared; BAC cluster cap resolves.
 
 ## Last updated
 
-2026-04-29. Based on runs 20260415_093758 (Apr 15 swing, JPM in basket) and swing_20260411_211655 (Apr 11 swing, JPM held pre-earnings). Supplemented by web_research files from both runs.
+2026-05-05. Based on run 20260505_181525 (JPM swing, HOLD 38% conf). Supersedes bootstrap (2026-04-29) — prior Iran peace-talks tailwind narrative falsified; Q1 EPS figure corrected to $5.07 beat vs $4.62 est (web_research/JPM.json). Trade ledger per_ticker_history[JPM]=[] — no open positions.
