@@ -1,0 +1,11 @@
+{
+  "TSLA": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "TREND ASSESSMENT: Daily EMA structure is not in proper uptrend alignment — 10 EMA (382.6) sits below 50 EMA (386.3) and 200 EMA (389.3), failing the core 10>21>50 fan requirement. The hourly EMA structure IS aligned bullish (24>48>120), and ADX on both daily (30.08) and hourly (27.6) confirms strong trend strength with +DI >> -DI. However, daily EMA misalignment is a hard filter for this strategy — the primary trend structure does not qualify as clean. MOMENTUM ASSESSMENT: Daily ROC is mixed — 5d (+3.65%) and 21d (+8.85%) are positive but 10d ROC is flat at 0.0%, breaking the 'all positive AND expanding' requirement. Daily MACD histogram is positive (+2.27) and expanding, which is a bullish signal, but the flat 10d ROC undermines the acceleration thesis. Hourly ROC is all positive and expanding (0.35%/0.80%/4.27%), but hourly OBV is diverging from price (OBV trend 'down' while price rallied) and hourly volume bias is 'down' over 10 days — warning signs of distribution under the hood. ENTRY ZONE: Price at $392.51 is 3.36% above 21 EMA, extended from the preferred pullback entry zone. RSI-7 at 80.77 signals short-term overbought. ADDITIONAL CAUTION: Wiki context confirms prior run flagged 'watch, not act' on the same EMA-below-50/200 setup. Macro regime is mixed-to-cautiously-bullish with unresolved Iran tail risk. The one recent trade in lessons (NVDA EMA pullback Fib dip-buy) was a loss — this exact setup type has a 0% win rate over 30 days, which further reduces confidence. No prior prediction to grade (prediction_grading: null). CONCLUSION: Core strategy rules require clean EMA alignment AND clearly accelerating momentum across 5/10/21d ROC — both conditions fail. Wait for a pullback to 21 EMA (~$380) with confirmed re-acceleration before acting.",
+    "entry": 381.0,
+    "target": 409.28,
+    "stop": 372.0,
+    "timeframe": "5-10 trading days"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "decisions": {
+    "TSLA": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 392.51,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 409.28,
+      "stop_loss": 379.0,
+      "risk_reward_ratio": "0:1",
+      "timeframe": "watch — no active setup",
+      "confidence": 35,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader conf 35 < 40 threshold; best short R/R 2.4:1 fails ≥4:1 bar required at this confidence. Price at $392.51 inside 14-15-test $387-$399 resistance cluster; 5 consecutive holds in same zone per wiki. Warsh vote May 15 is real bearish catalyst but insufficient R/R from current price to justify entry. Portfolio already carries 3 shorts (AMD, JNJ, META); adding 4th concentrates short book. Wait for pullback to $381-$385 (3:1 R/R long) or confirmed close above $409.28 on 1.5x volume (breakout long). Neither gate has fired. Stand aside."
+    }
+  }
+}
