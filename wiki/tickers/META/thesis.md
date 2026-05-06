@@ -1,20 +1,20 @@
 ---
 name: META thesis
-last_updated: 2026-05-05
-last_run_id: 20260505_140723
+last_updated: 2026-05-06
+last_run_id: 20260506_140335
 target_words: 500
 stale_after_days: 30
-word_count: 498
-summary: Active short position confirmed — trade id 118 filled at $611.78; prior "conditional short pending bounce" stance now an open trade; MFE +2.78% / MAE 0%; capex shock thesis intact; hold decision with stop $635, target $580, R/R 2.5:1.
+word_count: 497
+summary: Cover decision issued for trade id 118 (fill $611.78, current $604.96, ~$6.82 gain locked); R/R degraded to 0.17:1 from current levels; extreme oversold RSI-7 6.52 + bullish RSI divergence made holding risky; capex-shock bearish thesis remains structurally intact; re-entry plan on failed bounce to $612-614; cover action run 20260506_140335.
 ---
 
 # META — Thesis
 
 ## TL;DR
 
-The prior conditional short decision (run 20260504_143030: "short 1 share at $621 limit, pending dead-cat bounce") has **converted to an active open position**. Trade id 118 is now entered: fill price $611.78, stop $635, target $580, R/R 2.5:1, 58% confidence. MFE +2.78%, MAE 0.0% — tracking well. The capex-shock bearish thesis remains the controlling narrative. PM decision: **hold**, no new entry allowed (same-direction stacking blocked, remaining position limit = 0). (source: trade_ledger.json id 118, decisions.json, explanation.json, run 20260505_140723)
+The PM has issued a **cover** decision for trade id 118 (run 20260506_140335, 55% confidence). The short (fill $611.78, entered 2026-05-04) is being closed at ~$604.96, locking in approximately **$6.82/share gain**. The bearish structural thesis (capex shock, litigation, ADX 52.76 downtrend) remains intact — but the risk-reward for holding has degraded to 0.17:1 ($4.96 remaining to $580 target vs. $30 adverse risk to $635 stop). RSI-7 at 6.52 with confirmed bullish RSI divergence on both daily and hourly timeframes represents extreme mean-reversion risk. Re-entry plan: wait for a failed bounce to $612–614 resistance zone, enter short on bearish rejection candle. (source: decisions.json, signals_combined.json, trade_ledger.json id 118, run 20260506_140335)
 
-**What advanced from the prior thesis:** The prior thesis (run 20260504_143030) had a placed conditional order with the entry trigger NOT yet met. This run confirms the entry materialized — price bounced into the $619–621 resistance zone and the short was filled at $611.78 (within 1.5% tolerance). The "pending bounce" posture is now a live trade.
+**What changed from prior thesis (run 20260505_140723 — hold):** The prior thesis held the short with R/R 2.5:1 and RSI-7 at 23.22 (oversold but not extreme). This run: RSI-7 collapsed further to 6.52 (extreme), bullish RSI divergence confirmed on both timeframes, hourly OBV diverging bullishly, and the remaining R/R degraded to 0.17:1. The prior claim of "MFE +2.78% / R/R 2.5:1 — tracking well" is superseded. The trade did not falsify the bearish thesis; it harvested a gain from a deteriorating risk-reward setup.
 
 ## What falsified the prior bull thesis (carried forward)
 
@@ -22,34 +22,31 @@ The prior thesis (bootstrap 2026-04-29, run 20260430_141238) stated: "Bear to bu
 
 ## Bull case (structurally intact, secondary)
 
-**Fundamentals class-leading.** Revenue +22.2% YoY, operating margin 41.4%, ROE 27.83%, D/E 0.27, current ratio 2.60. EV/EBITDA model shows ~44.5% upside vs. current market cap. PEG ratio 0.93 (below 1.0). (source: signals_combined.json, fundamentals_analyst_agent, run 20260505_140723)
+**Fundamentals class-leading.** Revenue +22.2% YoY, operating margin 41.4%, ROE 27.83%, D/E 0.27, current ratio 2.60. EV/EBITDA model shows ~44.5% upside vs. current market cap. PEG ratio 0.93. (source: signals_combined.json, fundamentals_analyst_agent, run 20260506_140335)
 
-**Analyst consensus still broadly bullish.** 61 Buy / 6 Hold / 0 Sell out of 67 analysts; avg price target $839. No new downgrades week of May 5 beyond prior JPMorgan move to Neutral. Meta on track to surpass Google in global digital ad revenue ($243B vs $239B projected 2026). (source: web_research/META.json, run 20260505_140723)
+**Analyst consensus broadly bullish.** 61 Buy / 0 Sell out of analysts; avg price target $839.87; median $856; range $676–$1,144. Snap Q1 2026 swung to $45M profit — positive digital-ad read-through. (source: web_research/META.json, run 20260506_140335)
 
-**RSI recovering from extreme oversold.** RSI-7 at 23.22, up from 18.56 (May 4) — the worst oversold extreme has passed. Short-term downside continuation is less certain at these levels. (source: signals_combined.json, swing_mean_reversion, run 20260505_140723)
+**RSI-7 at 6.52 — extreme mean-reversion setup.** Bullish RSI divergence confirmed on both daily and hourly timeframes. Fibonacci 50% retracement at $605.89 is the natural bounce node. Hourly OBV diverging upward from falling price signals early accumulation. (source: signals_combined.json, swing_mean_reversion, run 20260506_140335)
 
-## Bear case (primary, confirmed)
+## Bear case (primary, thesis intact)
 
-**Capex shock remains thesis-defining.** Full-year 2026 capex raised to $125–145B (also raised again at May 4 web research: $125–145B range; analysts flagging margin compression). No cloud revenue stream (vs. Alphabet $20B Cloud quarter, +63% YoY). FCF compression expected 2–3 years. (source: web_research/META.json, run 20260505_140723)
+**Capex shock remains thesis-defining.** Full-year 2026 capex $125–145B — nearly double FY2025's $72B. No cloud revenue stream. FCF compression expected 2–3 years. Meta layoffs ~8,000 employees (10% workforce) concurrent with $135B AI spending. (source: web_research/META.json, run 20260506_140335)
 
-**Trend structure extremely bearish.** Daily ADX 50.73 (-DI 38.27 >> +DI 16.01), hourly ADX 63.39 (-DI 45.47 >> +DI 10.07). Price below ALL EMAs on both timeframes. ROC 5d −10.05%, ROC 10d −9.02%. OBV down on both timeframes. (source: signals_combined.json, run 20260505_140723)
+**Trend structure extremely bearish.** Daily ADX 52.76 (-DI 39.5 >> +DI 11.36), price below ALL EMAs. ROC 5d −9.89%, ROC 10d −9.55%. OBV down daily. MACD histogram -8.207 deeply negative. (source: signals_combined.json, run 20260506_140335)
 
-**Macro headwinds intact.** Iran-UAE/Strait of Hormuz conflict ongoing (oil >$102/bbl); Fed 3.5–3.75% with hawkish Warsh succession (May 15); S&P recovered May 5 (+0.7–1%) but Iran risk unresolved. (source: web_research/META.json macro_context, run 20260505_140723)
+**Litigation overhang worsened.** New Mexico $3.7B youth-harm trial (started May 2026); Reuters Pulitzer Prize reporting on harmful AI chatbots and fraudulent ads. CA 70% liability verdict and 10,000+ suits unchanged. (source: web_research/META.json, run 20260506_140335)
 
-**Litigation overhang worsened.** New Mexico seeks $3.7B and platform overhaul (trial starting May 2026); Reuters Pulitzer Prize reporting on harmful AI chatbots to children and fraudulent ads. CA liability verdict and 10,000+ suits unchanged. (source: web_research/META.json ticker_news, run 20260505_140723)
+**Macro headwind (partial).** Fed Chair Warsh transition May 15 (hawkish, rate-tightening tail risk). US-Iran ceasefire talks advancing — if deal closes, removes macro tailwind for fresh bearish entries. (source: web_research/META.json macro_context, run 20260506_140335)
 
 ## What would change my mind
 
-**Bearish invalidation of short (stop hit):** Price recapture above $635 — stop triggered, trade closed at loss.
+**Re-entry short trigger:** Failed bounce to $612–614 hourly resistance with bearish rejection candle and volume. Stop above $621. Target $580–585 (Fib 61.8% $585.68).
 
-**Bearish to bullish (medium-term):** Two consecutive quarters of capex stabilization at or below $125B with ad revenue re-accelerating above 25%. Litigation framework settlement. Price recapture above $635 on 1.5x+ volume.
+**Bearish invalidation (medium-term):** Two consecutive quarters of capex stabilization at or below $125B with ad revenue re-accelerating above 25%. Litigation framework settlement. Price recapture above $635 on 1.5x+ volume.
 
 ## Source runs
 
-- swing_20260411_211655 (hold at $625, R:R 1.4:1 failed 2:1 minimum)
-- 20260415_093758 (buy 1 share at $675.75, confidence 63%)
-- 20260417_233350 (buy 15 shares at $676.87, confidence 74%)
-- 20260430_141238 (HOLD, bearish bias; prior long thesis invalidated by capex shock)
-- 20260501_142327 (HOLD, bearish conditional; dead-cat bounce watch, no entry at $611–612)
-- 20260504_143030 (CONDITIONAL SHORT, 1 share at $621, target $575, stop $635, R/R 3.3:1, conf 62)
-- 20260505_140723 (HOLD existing short id 118, fill $611.78, target $580, stop $635, R/R 2.5:1, conf 58)
+- swing_20260411_211655 through 20260504_143030 (conditional short issued)
+- 20260504_143030 (SHORT 1 share at $621, fill $611.78, stop $635, target $575)
+- 20260505_140723 (HOLD existing short id 118, R/R 2.5:1)
+- 20260506_140335 (COVER id 118 at ~$605, lock in ~$6.82 gain, re-enter on bounce)

@@ -1,44 +1,45 @@
 ---
 name: META technicals
-last_updated: 2026-05-05
-last_run_id: 20260505_140723
+last_updated: 2026-05-06
+last_run_id: 20260506_140335
 target_words: 350
 stale_after_days: 7
-word_count: 342
-summary: Day 5+ post-earnings bear regime — short id 118 now active at $611.78 fill; ADX 50.73 extreme downtrend; RSI-7 23.22 (oversold but recovering from 18.56); dead-cat bounce entry triggered and filled; holding with stop $635, target $580, R/R 2.5:1.
+word_count: 338
+summary: Day 7 post-earnings breakdown — cover decision issued (id 118, fill $611.78, current $604.96, ~$6.82 gain); RSI-7 collapsed to 6.52 (extreme oversold); bullish RSI divergence confirmed both timeframes; ADX 52.76 confirms extreme downtrend; bounce risk elevated; R/R from current levels 0.17:1 — degraded.
 ---
 
 # META — Technicals
 
 ## TL;DR
 
-Day 5+ post-earnings breakdown (May 5, 2026). Short position **entered** (trade id 118, fill $611.78). The conditional dead-cat bounce short from run 20260504_143030 triggered: price bounced into the $619–621 entry zone and filled at $611.78 (within 1.5% tolerance of $621 limit). ADX 50.73 (daily) confirms extremely strong established downtrend. RSI-7 recovered to 23.22 from prior extreme of 18.56 — still oversold but the worst of the oversold reading has passed. Holding with stop $635, target $580, R/R 2.5:1. (source: trade_ledger.json id 118, decisions.json, signals_combined.json, run 20260505_140723)
+Day 7 post-earnings breakdown (May 6, 2026). Cover decision issued for trade id 118 (run 20260506_140335). RSI-7 has collapsed to **6.52** — extreme oversold reading with bullish RSI divergence confirmed on BOTH daily and hourly timeframes. ADX 52.76 (daily) confirms the underlying downtrend remains extremely strong, but momentum is exhausting at this reading. Hourly OBV is diverging bullishly from falling price — early accumulation signal. Bounce risk is elevated. Prior setup type "post-earnings breakdown active short" transitions to "cover and re-enter on failed bounce." (source: signals_combined.json, decisions.json, run 20260506_140335)
 
 ## Setup type
 
-**Post-earnings breakdown — active short in dead-cat bounce zone.** The conditional entry at the dead-cat bounce resistance materialized: price bounced from ~$600 lows toward the $619–621 resistance cluster, and the short was filled at $611.78 (with 1.5% tolerance applied). Prior setup type "conditional dead-cat bounce short, trigger not yet met" (May 4) retired. Current setup: confirmed short, managing open position, watching for $580 target or $635 stop.
+**Post-earnings breakdown — extreme oversold, cover and re-entry watch.** Prior setup (dead-cat bounce short, entered $611.78) has been managed to the PM's cover decision. Price at $604.96 reflects ~$6.82/share gain from fill. RSI-7 at 6.52 is the defining feature of this session — a reading at this extreme historically precedes violent snap-back rallies even in ADX 50+ downtrends. Re-entry watch zone: $612–614 resistance (hourly, 19 volume-confirmed tests) on failed bounce with bearish rejection candle.
 
-## Key levels (as of May 5, 2026)
+## Key levels (as of May 6, 2026)
 
 | Level | Price | Significance |
 |---|---|---|
-| Current price | ~$604.55 | Below entry fill, trade in profit (MFE +2.78%) |
+| Current price | ~$604.96 | Inside $602.75–$614.34 hourly consolidation band |
 | Short entry (filled) | $611.78 | Fill price, trade id 118 (run 20260504_143030) |
-| Short stop | $635 | Above all identified resistance; ~2 ATR from entry |
-| Short target | $580 | Prior thesis target; R/R 2.5:1 from fill |
-| Key support | $602.75 | Hourly, 6 volume-confirmed tests — floor to watch |
-| Critical support | $600 | April 30 intraday low; break → next stop $580–585 |
-| Invalidation | Above $635 | Stop hit, exit trade |
+| Hourly resistance cluster | $614.34 | 19 volume-confirmed tests — re-entry short trigger zone |
+| Hourly support | $602.75 | 13 volume-confirmed tests — key floor |
+| Fibonacci 50% retracement | $605.89 | Swing high $691.52 → low $520.26 — natural bounce node |
+| Fibonacci 61.8% retracement | $585.68 | Next support if $602.75 breaks |
+| Short stop (if re-entered) | $621.00 | Above earnings-day resistance |
+| Prior short target | $580.00 | Adjusted from original $575; still valid if re-entered |
 
-## Indicator state (as of May 5, 2026)
+## Indicator state (as of May 6, 2026)
 
 | Indicator | Value | Signal |
 |---|---|---|
-| RSI-7 (daily) | 23.22 | Oversold but recovering from prior 18.56 extreme |
-| ADX (daily) | 50.73 | Very strong confirmed downtrend |
-| -DI / +DI (daily) | 38.27 / 16.01 | Bearish directional dominance |
-| ADX (hourly) | 63.39 | Extreme hourly bearish trend strength |
-| -DI / +DI (hourly) | 45.47 / 10.07 | Extreme bearish dominance |
-| MACD histogram (daily) | -7.06 | Deeply negative; expanding bearish momentum |
-| OBV trend | Down (daily + hourly) | Distribution confirmed; Apr 30 volume 3.2x avg |
-| BB width (daily) | 0.1971 | Wide — volatility already expanded post-breakdown |
+| RSI-7 (daily) | 6.52 | EXTREME oversold; bullish RSI divergence confirmed |
+| RSI-14 (daily) | 28.45 | Deeply oversold; approaching OB threshold |
+| ADX (daily) | 52.76 | Very strong confirmed downtrend |
+| -DI / +DI (daily) | 39.5 / 11.36 | Strong bearish directional dominance |
+| MACD histogram (daily) | -8.207 | Deeply negative; magnitude large but momentum decelerating |
+| Hourly OBV | Diverging up | Rising OBV vs. falling price — early accumulation signal |
+| BB width (daily) | 0.1776 | Wide — volatility already expanded; squeeze not firing |
+| Bollinger %B (daily) | 0.107 | Near lower band — bounce risk zone |
