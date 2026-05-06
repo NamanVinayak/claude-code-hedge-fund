@@ -1,0 +1,20 @@
+{
+  "STX": {
+    "signal": "neutral",
+    "confidence": 10,
+    "reasoning": "STX is NOT a breakout setup — it is a violent, parabolic established trend with no consolidation range in sight. Range boundaries: none identifiable; the stock has rallied from ~$487 to $792 in recent weeks without forming a base. Bollinger Band width = 0.565 (daily) — already fully expanded, the exact opposite of the squeeze condition I require. Price is above the upper Bollinger Band (pct_b = 1.057), 147% above the 200-SMA, and 62.76% above the 50-SMA. Z-score vs 50-SMA = 2.74 — catastrophically stretched. Volume ratio = 1.44x (daily) and 0.82x (hourly) — both below the 1.5x threshold; no volume confirmation even if a range existed. ADX = 80.29 with RSI-14 = 91.38 confirm an extreme established trend, not a coiling spring. Hourly squeeze: not on — hourly BB width 0.386 is also expanded. Wiki confirms from the prior run (20260505): 'do not enter from any direction, extension deepened.' This is the exact scenario my strategy is designed to avoid: a stock that has already broken out and run far, where the move is done. The only valid breakout setup I could contemplate is if price pulls back to form a multi-day base near the $749–$760 zone, but that has not happened. No trade.",
+    "entry": 0.0,
+    "target": 0.0,
+    "stop": 0.0,
+    "timeframe": "no setup — wait for pullback to ~$700-$750 and multi-day consolidation before re-evaluating"
+  },
+  "WDC": {
+    "signal": "bullish",
+    "confidence": 45,
+    "reasoning": "Prior call (20260505) on WDC was bullish at $447.50 entry targeting $489 — graded 'in_progress' with MFE 7.29% and MAE 0.0% (no stop test). Direction correct; price is now ~$465 daily close / $483 hourly, approaching the $489 target set by the measured move from the ATH breakout. I am affirming rather than re-initiating. The original breakout setup: WDC consolidated below ATH resistance at $446.62 (6+ hourly tests) for multiple days, then broke above with volume. Range boundaries: $404 low to $446.62 ATH resistance = range height ~$42.62. Breakout level: $446.62. Measured-move target: $446.62 + $42.62 = $489.24. Price has moved well into the measured move. Current state: Bollinger BB width daily = 0.3717 — not in squeeze, already expanded from the breakout. Volume ratio = 1.27x daily / 0.98x hourly — BELOW the 1.5x threshold I require for a new breakout signal. Hourly BB pct_b = 0.94 (inside upper band). A potential new mini-breakout above $480.11 (recent ATH, 5 hourly tests) could extend the move, but volume has not confirmed that level (0.98x hourly, not volume-confirmed pivot). Daily RSI-14 = 86.09 (elevated but less extreme than STX). ADX = 67.88. No prior squeeze — the original ATH-breakout setup fired last run and is executing cleanly. Lessons check: recent failed breakout on DIS (05/05, sub-threshold 1.23x volume, -$4.99) mirrors the risk here if volume stays below 1.5x. Holding the existing bullish thesis rather than escalating, with the target near. Entry is above ideal ($447.50 was the right entry; chasing above $483 is unattractive). Setting entry at current daily close for any new participation, target at original measured-move $489, stop below the flipped support at $446.62 (former ATH resistance, now support).",
+    "entry": 465.26,
+    "target": 489.0,
+    "stop": 444.0,
+    "timeframe": "2-5 trading days (target $489 is close; original call in progress)"
+  }
+}

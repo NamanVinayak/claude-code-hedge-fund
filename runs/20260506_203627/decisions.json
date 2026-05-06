@@ -1,0 +1,30 @@
+{
+  "decisions": {
+    "STX": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 0.0,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 0.0,
+      "stop_loss": 0.0,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "N/A",
+      "confidence": 20,
+      "account_risk_pct": 0.0,
+      "reasoning": "No position, no entry. RSI 91, ADX 80, Z-score 2.74 — severely extended. Cluster cap blocks new exposure. All 5 agents + head trader neutral. Wait for pullback to EMA-10 (~$664-690)."
+    },
+    "WDC": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 0.0,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 489.0,
+      "stop_loss": 446.62,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "2-4 trading days",
+      "confidence": 28,
+      "account_risk_pct": 0.0,
+      "reasoning": "Hold existing 2L @ $448.99. Price $483 is ~1.2% from original $489 target. Stop $446.62 (former ATH resistance, now support). No new entry — RSI 86, ADX 68, R/R fails at current prices. Let trade run to target."
+    }
+  }
+}

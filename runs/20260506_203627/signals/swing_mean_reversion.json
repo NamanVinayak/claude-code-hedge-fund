@@ -1,0 +1,20 @@
+{
+  "STX": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "Branch A fires statistically (Z-score 2.74, RSI-14 91.38, Bollinger pct_b 1.057, price 62.76% above 50-SMA) but the ADX 80.29 regime is the highest I've seen in this portfolio and sets an extreme bar against any fade. The lessons file is explicit: AMZN fade short stopped at ADX 65 (May 4), and my OWN prior bearish call on STX yesterday (entry $755, stop $787) was stopped out with MAE -4.9% and tie_breaker_applied=false — a clean, unambiguous stop. I am explicitly NOT repeating the same thesis without adjustment: the prior fade thesis underestimated trend persistence in an ADX 80+ regime. Branch B (dip-buy at Fib) does not fire — no pullback has occurred; price is pressing against the recent high of $792. Hourly RSI 70.91 and hourly Z-score 2.01 confirm the overbought condition extends to shorter timeframes, but no RSI divergence (bullish or bearish) is detected on either timeframe, meaning no reversal confirmation candle or momentum shift is present. Volume is expanding (1.44x average, OBV trending up), which further validates continuation over reversion. Wiki (run 20260505) flagged 'no valid entry — extended trend / wait for pullback' and today's data is unchanged: extension has worsened. Neither branch provides a confirmed, safe entry. Output: neutral until a meaningful pullback to the 23.6% Fib ($688) or a clear reversal candle forms.",
+    "entry": 688.0,
+    "target": 586.39,
+    "stop": 792.01,
+    "timeframe": "neutral — no active setup"
+  },
+  "WDC": {
+    "signal": "neutral",
+    "confidence": 22,
+    "reasoning": "Branch A statistically fires (Z-score 2.37, RSI-14 86.09, Bollinger pct_b 1.032, price 43.65% above 50-SMA) but the lessons pattern is clear and directly applicable: my OWN prior bearish call on WDC (entry $453.83, stop $475, May 5) was stopped out the same day with MAE -5.79% — a decisive rejection of the fade thesis. I am explicitly adjusting: the prior call underestimated trend momentum and ADX 67.88 regime strength, which mirrors the AMZN failure at ADX 65 (May 4 lesson: 'the regime [ADX 60+] sets an elevated bar for fading overbought conditions'). With ADX 67.88, the regime caution applies equally here. No RSI divergence detected on either timeframe. Volume is 1.27x average with OBV trending up — not a distribution pattern. Branch B (dip-buy at Fib) does not cleanly fire: hourly price at $483 is above all Fib retracement levels from the recent swing (23.6% = $464.96, already passed through on the way up). The hourly Bollinger pct_b of 0.94 is less stretched than the daily (1.032), suggesting some room before an hourly reversal. Wiki noted 'post-ATH breakout pullback entry zone $444–$448' for a dip-buy, but price never pulled back — it continued higher. A dip to $448–$454 (former resistance/new support) would be a Branch B dip-buy opportunity, but that level has not been reached. Standing aside: neither branch fires cleanly with confirmed entry signal.",
+    "entry": 448.99,
+    "target": 480.11,
+    "stop": 428.51,
+    "timeframe": "neutral — no active setup; watch for pullback to $448-$454"
+  }
+}

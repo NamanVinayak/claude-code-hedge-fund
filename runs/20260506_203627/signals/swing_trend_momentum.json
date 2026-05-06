@@ -1,0 +1,20 @@
+{
+  "STX": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "TREND: Fully confirmed bullish — EMA-10 ($664) > EMA-21 ($596) > EMA-50 ($508), all fanning upward. ADX 80.29 is the strongest trend reading in portfolio history (wiki confirms). Hourly EMAs also aligned bullish (EMA-24 > EMA-48 > EMA-120). MOMENTUM: Strongly accelerating on the daily — ROC-5d +33.2%, ROC-10d +37.7%, ROC-21d +70.1%, all positive and expanding. MACD histogram +17.65, positive. Both trend and momentum are running at full power. ENTRY PROBLEM: Current price ($771-786) is +16% above EMA-10 and +29% above EMA-21. Bollinger pct_b = 1.057 (above upper band). RSI-14 = 91.38 — extreme overbought. Wiki from prior run flagged 'no valid entry, wait for pullback' at $738; the extension has worsened by another 5-7%. Hourly MACD histogram (+1.71) is vastly smaller than daily (+17.65), indicating hourly momentum is decelerating — an early warning of short-term exhaustion even as the daily trend stays intact. Z-score vs 50-SMA = 2.74. LESSONS: EMA pullback dip-buy on RSI 81-87+ setups has 0% win rate in recent history (NVDA April 30 stop-out). STX RSI at 91.4 is more extreme. Strategy requires pullback to EMA-10 or EMA-21 before entry. No such pullback exists. MACRO: Risk-on regime is supportive but does not override entry discipline. OUTPUT: Neutral — trend and momentum are both exceptional, but strategy mandates a pullback to EMA-10 (~$664) or EMA-21 (~$596) before any entry. Wait for consolidation.",
+    "entry": 690.0,
+    "target": 830.0,
+    "stop": 655.0,
+    "timeframe": "Wait — no valid entry. If pullback to EMA-10 (~$664-690) occurs: 8-15 trading days"
+  },
+  "WDC": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "TREND: Fully confirmed bullish — EMA-10 ($420) > EMA-21 ($389) > EMA-50 ($339), well fanned. ADX 67.88 — strong trend. Hourly EMAs aligned bullish. MOMENTUM: Daily ROC-5d +19.0%, ROC-10d +21.22%, ROC-21d +53.0% — all positive and expanding. MACD histogram +5.07, positive. Both trend and momentum conditions met on the daily. PRIOR CALL: My prior bullish call (run 20260505, entry $444, target $500, stop $427) is in_progress with MFE +8.13% and MAE 0.0% — the thesis is directionally correct and the trade is working. Current price ($465-483) has moved well above the prior entry. ENTRY PROBLEM: Current price is +10.7% above EMA-10 ($420) and +19.7% above EMA-21 ($389). Bollinger pct_b = 1.032, above upper band. RSI-14 = 86.09. Hourly ADX is only 29.93 (vs daily 67.88), indicating the hourly timeframe is in a digestion/consolidation phase. Hourly RSI at 70.0 (overbought). No pullback entry exists at current price. Nearest valid entry zone would be a pullback to EMA-10 (~$420-435) or, at minimum, the hourly support cluster at $449-454. WIKI CHANGE: Prior wiki noted hourly OBV bearish divergence; current data shows OBV aligned (no divergence) and hourly volume bias is up — a modest positive. LESSONS: EMA pullback dip-buy on RSI 82-86+ has 0% win rate in lessons table. RSI 86 matches the failure zone. MACRO: Strongly risk-on (S&P at ATH, AMD/AI capex supercycle), beneficial for storage demand (WDC is a storage play). CONCLUSION: Re-affirm prior bullish thesis is directionally correct. However, no new entry signal at current prices. Strategy rule: entry only on pullbacks to 10 or 21 EMA. Output neutral — wait for a pullback to $440-455 range before initiating new exposure.",
+    "entry": 452.0,
+    "target": 542.0,
+    "stop": 427.0,
+    "timeframe": "Wait — no valid entry at current price. If pullback to $440-455 occurs: 8-15 trading days"
+  }
+}
