@@ -1,0 +1,20 @@
+{
+  "BAC": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "BAC is mid-range with no breakout setup present. Consolidation range: $51.83 (13-test support) to $55.40 (5-test resistance), range height $3.57. Current daily price $53.12 sits near the midpoint, ~4.3% below resistance. No squeeze: daily BB width 0.0493 is moderate, not contracting. Volume ratio 0.84x — well below the 1.5x minimum required for breakout confirmation. Hourly volume even weaker at 0.29x. Daily MACD histogram negative (-0.1405) and ADX 44.67 with -DI 26.59 > +DI 20.31 signals continued downward pressure. Daily OBV diverging bearishly from price. Hourly BB pct_b at 0.8184 shows price near upper hourly band but no confirmed close above, and hourly volume is absent. Wiki notes open position at $52.75 with price at Fib 38.2% ($52.13) support confluence — this is a dip-buy zone, not a breakout zone. Breakout angle requires waiting for a confirmed daily close above $55.40 with 1.5x+ volume before engaging. Lessons: DIS breakout on sub-threshold volume (1.23x) stopped out May 5; BAC volume even lower at 0.84x reinforces the no-trade decision. No coiled squeeze, no volume surge, no close beyond resistance — all three breakout requirements unmet.",
+    "entry": 55.50,
+    "target": 59.07,
+    "stop": 54.90,
+    "timeframe": "5-10 trading days"
+  },
+  "GS": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "GS is attempting a breakout but fails the volume threshold — flagged as low confidence per strategy rules. Consolidation range: $899.00 (recent low) to $933.48 (16-test resistance), range height ~$34.48. Measured move target: $933.48 + $34.48 = $967.96. Hourly price at $940.77 has surged above both the 17-test hourly resistance at $935.78 (volume-confirmed) and is approaching $945.30 (6-test, volume-confirmed), showing a decisive intraday push. Positive signals: hourly MACD histogram strongly positive (+2.8851), hourly +DI 31.17 > -DI 17.35, hourly OBV trending up (no divergence), hourly EMA aligned bullish, hourly RSI 59.66. These satisfy the wiki's bull trigger condition for hourly MACD turning positive above $924.23 resistance. HOWEVER: hourly volume 0.32x, daily volume 0.77x — both far below the required 1.5x minimum. Strategy rules explicitly state: 'A breakout is occurring but WITHOUT volume confirmation — flag as low confidence rather than full signal.' Daily MACD histogram remains negative (-3.1933) and daily close ($918.89) has not yet exceeded $933.48 resistance on a closing basis. Wiki prior wiki state had hourly in confirmed bearish trend; today's reversal is dramatic but unconfirmed by volume. Lessons: DIS pre-earnings breakout stopped out on 1.23x volume (May 5); GS at 0.77x is an even weaker volume picture. If GS closes the daily session above $933.48 with volume >= 1.5x average (~2.9M shares), re-evaluate as a confirmed bullish breakout entry.",
+    "entry": 934.00,
+    "target": 967.96,
+    "stop": 924.00,
+    "timeframe": "5-12 trading days"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_id": "20260506_190825",
+  "mode": "swing",
+  "started_at": "2026-05-06T19:08:55Z",
+  "ended_at": "2026-05-06T19:22:56Z",
+  "tickers": [
+    "BAC",
+    "GS"
+  ],
+  "decisions": [
+    {
+      "ticker": "BAC",
+      "action": "sell",
+      "confidence": 30,
+      "entry": 53.72,
+      "stop": 51.5,
+      "target": 55.4,
+      "reasoning_tldr": "Unanimous 5/5 neutral; OBV distribution divergence daily+hourly; bearish DI crossover; valuation agent 100-conf bearish (-35.8% overvalued); R/R ~0.75:1 fails 2:1 rule"
+    },
+    {
+      "ticker": "GS",
+      "action": "hold",
+      "confidence": 38,
+      "entry": 942.27,
+      "stop": 912.0,
+      "target": 952.01,
+      "reasoning_tldr": "No open position; only allowed action is hold"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 2,
+    "cash": 1457.27001953125,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "neutral",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "BAC": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "TREND: Daily EMA alignment is bullish (EMA-10 $52.86 > EMA-21 $52.37 > EMA-50 $51.65) and ADX is strong at 44.67. However, directional bias is bearish: minus_DI (26.59) > plus_DI (20.31), meaning selling pressure dominates despite EMA alignment. Hourly EMA also aligned bullish but hourly ADX is weak (17.05) and hourly OBV is trending down with divergence. MOMENTUM: ROC is mixed — roc_5d +0.87% is positive but roc_10d is -0.67% (negative), with roc_21d +6.11%. The negative 10-day ROC indicates short-term momentum deceleration, violating the requirement for all ROC periods to be positive. Daily MACD histogram is -0.1405 (negative and in contraction territory), confirming momentum is decelerating — a clear 'wait for re-acceleration' signal per strategy rules. PRIOR CALL: My prior bullish call (run 20260505_190606, entry $52.30, target $54.62, stop $51.60) is in-progress with MFE 2.03% and MAE only -0.04% — price has moved modestly in the right direction. I am not reversing that call, but a fresh entry is not warranted here. LESSONS: The 'EMA pullback Fib dip-buy' setup type has a 0% win rate across the last 30 days (1 trade, -$63.20 NVDA). BAC's current setup closely resembles that pattern. MACRO: Strongly risk-on regime provides tailwind, but cannot override the decelerating momentum signal. CONCLUSION: Strategy rules require momentum acceleration (positive ROC across all timeframes + expanding MACD histogram). With roc_10d negative and MACD histogram negative, the setup does not meet entry criteria. Neutral — wait for MACD histogram to turn positive and ROC 10d to recover.",
+    "entry": 52.37,
+    "target": 55.4,
+    "stop": 51.6,
+    "timeframe": "5-10 trading days"
+  },
+  "GS": {
+    "signal": "bullish",
+    "confidence": 48,
+    "reasoning": "TREND: Daily EMA alignment is cleanly bullish (EMA-10 $917.87 > EMA-21 $907.84 > EMA-50 $890.53 > EMA-200 $820.60) with ADX 33.63 (strong) and plus_DI (21.39) > minus_DI (17.12) — the directional bias is bullish. Hourly EMA alignment is also bullish; hourly ADX 21.72 (moderate) with plus_DI 31.17 dominating. MOMENTUM — CONTRADICTORY: Daily MACD histogram is -3.19 (negative, decelerating) and daily ROC 5d and 10d are both -0.83% — per strategy rules this is a 'wait for re-acceleration' signal. HOWEVER, the hourly timeframe tells a sharply different story: hourly MACD histogram is +2.89 (positive and strongly expanding), and hourly ROC 5d +0.78%, 10d +2.52%, 21d +1.74% — all positive and accelerating. WIKI CONTRADICTION: Prior wiki noted 'continued deterioration' with hourly in confirmed downtrend (minus_DI 29.23 > plus_DI 17.36, ADX 25.37, MACD deeply negative). Today's hourly shows a complete reversal of that picture — price surged from ~$903 (May 4 low) to $940.77 (current hourly). Current data wins; the hourly trend has reversed bullishly. ENTRY ZONE: Daily close ($918.89) is essentially at EMA-10 ($917.87), which is a valid pullback entry. The current hourly price of $940.77 has run ~2.4% above the daily 10 EMA intraday — extended short-term. Ideal entry is a pullback to the hourly 35-test support level at $924.23 or back toward the daily EMA-10 zone ($917-918). RESISTANCE: Nearest daily resistance is $933.48 (16 tests); next at $952.01. Fib extension 1.272 = $993.96. MACRO: Strongly risk-on regime (S&P at all-time highs, AMD/AI earnings tailwind, Iran peace deal optimism) benefits financial sector. NO PRIOR CALL (prediction_grading: null). CONFIDENCE REDUCED due to: (1) daily MACD histogram still negative — full momentum re-acceleration not confirmed on daily timeframe; (2) hourly price extended near upper Bollinger band (pct_b 0.96) — chasing risk if entering at current levels; (3) three consecutive losses in recent lessons log. Entry on pullback only.",
+    "entry": 924.23,
+    "target": 952.01,
+    "stop": 908.22,
+    "timeframe": "5-10 trading days"
+  }
+}

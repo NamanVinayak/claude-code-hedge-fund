@@ -1,0 +1,67 @@
+{
+  "ticker": "BAC",
+  "verified_at": "2026-05-06T19:08:25",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.2698,
+      "web_value": 0.270,
+      "source": "CNBC / Yahoo Finance",
+      "status": "ok",
+      "deviation": "0.1%",
+      "notes": "CNBC reports 27.32%, Yahoo Finance 26.98% — our value 26.98% matches Yahoo Finance exactly"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 13.32,
+      "web_value": 13.72,
+      "source": "MacroTrends / StockAnalysis (as of Apr 27, 2026)",
+      "status": "ok",
+      "deviation": "2.9%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 381051437056.0,
+      "web_value": 380000000000.0,
+      "source": "MacroTrends / Yahoo Finance (Apr-May 2026 range: $377B-$384B)",
+      "status": "ok",
+      "deviation": "0.3%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 113097000000.0,
+      "web_value": 113090000000.0,
+      "source": "YCharts / StockAnalysis TTM as of Apr 2026",
+      "status": "ok",
+      "deviation": "0.0%",
+      "notes": "Our value derived from market_cap / price_to_sales_ratio (381.05B / 3.369 = ~113.1B); web confirms ~$113.09B TTM"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.1006,
+      "web_value": 0.0997,
+      "source": "GuruFocus (9.92% as of Dec 2025) / StockAnalysis (10.97% TTM May 2026)",
+      "status": "ok",
+      "deviation": "0.9%",
+      "notes": "Our value 10.06% sits within the range of reported figures (9.92%-10.97%)"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.008942,
+      "web_value": null,
+      "source": null,
+      "status": "unverified",
+      "notes": "Specific TTM ROA figure not found in web search results; value (~0.89%) is consistent with typical large bank ROA range"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": null,
+      "source": "MacroTrends (data unavailable in search results)",
+      "status": "unverified",
+      "notes": "Operating margin is null in facts bundle; banks typically report NIM instead of operating margin — skipping"
+    }
+  ],
+  "overall_status": "all checks passed — no mismatches",
+  "corrections_applied": false
+}

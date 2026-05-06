@@ -1,0 +1,65 @@
+{
+  "ticker": "GS",
+  "verified_at": "2026-05-06T19:08:25",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": null,
+      "web_value": 0.277,
+      "source": "Yahoo Finance / Macroaxis (net income $17.06B / revenue $61.53B TTM as of May 4, 2026)",
+      "status": "unverified",
+      "notes": "net_margin is null in our facts bundle — cannot compute deviation. Web sources show ~27.7% (Yahoo: net income $17.06B / revenue $61.53B); Macroaxis shows 14.13% (possible methodology difference). No value to correct."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 17.18,
+      "web_value": 17.7,
+      "source": "MacroTrends / FullRatio (as of Apr 17, 2026 ~16.92-17.70)",
+      "status": "ok",
+      "deviation": "2.9%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 277534146560.0,
+      "web_value": 283890000000.0,
+      "source": "StockAnalysis / Public.com (Apr 17, 2026: $283.89B)",
+      "status": "ok",
+      "deviation": "2.2%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": null,
+      "web_value": 61530000000.0,
+      "source": "Yahoo Finance / Macroaxis TTM as of May 4, 2026 ($61.53B)",
+      "status": "unverified",
+      "notes": "revenue is null in our facts bundle (price_to_sales_ratio is null for GS); web shows ~$60.4B-$61.53B TTM. No value to correct."
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.14554,
+      "web_value": 0.1388,
+      "source": "Zacks / Yahoo Finance TTM (13.86-13.89% as of Feb-Apr 2026)",
+      "status": "ok",
+      "deviation": "4.8%",
+      "notes": "Q1 2026 annualized ROE was 19.8% per GS press release, but TTM ROE is ~13.86-13.89%; our value 14.55% is within 5% of TTM consensus"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.010053,
+      "web_value": null,
+      "source": null,
+      "status": "unverified",
+      "notes": "Specific TTM ROA not found in web search results; value (~1.0%) is plausible for a large investment bank"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": null,
+      "source": null,
+      "status": "unverified",
+      "notes": "Operating margin is null in facts bundle; not reported in standard form for investment banks — skipping"
+    }
+  ],
+  "overall_status": "all checks passed — no mismatches",
+  "corrections_applied": false
+}

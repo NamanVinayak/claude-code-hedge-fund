@@ -1,0 +1,20 @@
+{
+  "BAC": {
+    "signal": "neutral",
+    "confidence": 45,
+    "reasoning": "Neither branch fires cleanly for a new entry. Branch A (fade extreme): daily Z-score of 1.10 is within the neutral -1 to +1 range; Bollinger pct_b of 0.53 is mid-band; RSI-14 at 41.12 is not extreme; no RSI divergence. Not a statistical blow-off in either direction. Branch B (dip-buy at Fib): the prior call (in_progress, bullish at entry $52.15, target $55.40, stop $50.90) already executed the dip-buy at the 38.2% Fibonacci level ($52.13) with 13-test horizontal support at $51.83 on May 5. That setup has already fired — current daily close $53.12 and hourly current $53.695 are above the entry. No new clean Fib pullback entry exists: price is now near the 23.6% level ($53.38) but has already bounced past it. Caution flags: ADX minus_di (26.59) still exceeds plus_di (20.31) on the daily, indicating bearish directional pressure despite EMA uptrend alignment; daily OBV diverging from price; hourly OBV downtrending and diverging; MACD histogram negative (-0.14). Lessons check: the only Fib dip-buy in recent memory (NVDA April 30) was a loss at 0% win rate — lowering conviction further. Prior call is in_progress with MFE 2.32% and MAE 0.0% after 1 day — standing aside rather than layering a duplicate position.",
+    "entry": 52.25,
+    "target": 55.4,
+    "stop": 50.9,
+    "timeframe": "5-10 trading days"
+  },
+  "GS": {
+    "signal": "neutral",
+    "confidence": 40,
+    "reasoning": "Neither branch fires for a clean new entry. Branch A (fade extreme): daily Z-score of 1.01 is within the -1 to +1 neutral zone; Bollinger pct_b 0.53 at daily close is mid-band; RSI-14 at 55.67 is neutral; no RSI divergence; distance from 50-SMA is 5.58% noteworthy but sub-extreme. Branch B (dip-buy): the setup narrative is compelling in hindsight — GS pulled back from the $952 swing high to $899-$903 (near the 38.2% Fib at $893.09, close but not tested precisely), and has since recovered sharply. The hourly current price of $940.77 (vs daily close of $918.89 on May 5) indicates a strong intraday surge today. The dip-buy entry opportunity has already passed: price is now +4.7% off the $899 low and approaching hourly resistance at $945.30 (6 tests volume-confirmed). Hourly pct_b at 0.9588 (near upper Bollinger $942.60) and hourly Z-score of 1.47 both suggest the near-term upswing is extended on the hourly timeframe — not a chase entry. The wiki confirms HOLD on every prior run (6 consecutive), with the prior $924.23 hourly support broken and never cleanly re-established as entry. No prediction_grading for GS (no prior call to evaluate). The 23.6% daily Fib at $915.61 was briefly broken but now recovered — if price consolidates and pulls back to $924-$930 hourly support on declining volume, a dip-buy opportunity could emerge in 2-3 sessions. For now, standing aside.",
+    "entry": 924.23,
+    "target": 952.01,
+    "stop": 897.0,
+    "timeframe": "5-10 trading days"
+  }
+}
