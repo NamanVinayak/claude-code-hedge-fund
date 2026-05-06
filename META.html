@@ -484,7 +484,7 @@
             <a class="nav-link " href="closed.html">History</a>
             <a class="nav-link " href="runs.html">All Runs</a>
         </div>
-        <div class="nav-meta">07:15 AM PT · NEXT TX <span id="countdown">--:--</span></div>
+        <div class="nav-meta">07:25 AM PT · NEXT TX <span id="countdown">--:--</span></div>
     </div>
 </nav>
 
@@ -505,10 +505,10 @@
     <div class="pos-pill">
         <div class="pos-pill-label">Open Position · SHORT</div>
         <div class="pos-pill-pnl loss">
-            $-0.96
+            $-4.70
         </div>
         <div class="pos-pill-pct loss">
-            -0.16% since entry $611.78
+            -0.77% since entry $611.78
         </div>
         <div style="margin-top:10px;display:flex;gap:8px;font-size:12px;color:var(--muted);font-family:var(--mono);">
             <span class="loss">Stop $635.00</span>
@@ -551,7 +551,7 @@
 
 <div class="thesis-card">
     <h2>AI Thesis (from Wiki)</h2>
-    <p>The prior conditional short decision (run 20260504_143030: "short 1 share at $621 limit, pending dead-cat bounce") has **converted to an active open position**. Trade id 118 is now entered: fill price $611.78, stop $635, target $580, R/R 2.5:1, 58% confidence. MFE +2.78%, MAE 0.0% — tracking well. The capex-shock bearish thesis remains the controlling narrative. PM decision: **hold**, no new entry allowed (same-direction stacking blocked, remaining position limit = 0). (source: trade_ledger.json id 118, decisions.json, explanation.json, run 20260505_140723)</p><p>**What advanced from the prior thesis:** The prior thesis (run 20260504_143030) had a placed conditional order with the entry trigger NOT yet met. This run confirms the entry materialized — price bounced into the $619–621 resistance zone and the short was filled at $611.78 (within 1.5% tolerance). The "pending bounce" posture is now a live trade.</p><p>The prior thesis (bootstrap 2026-04-29, run 20260430_141238) stated: "Bear to bull trigger: Q1 2026 earnings beat with raised guidance AND any capex discipline signal." The Q1 2026 earnings on April 29 delivered the beat but the inverse of discipline — capex was raised from $115–135B to $125–145B, nearly doubling FY2025's $72B. Institutional sellers confirmed this reading via 3.2x relative daily volume on April 30. (source: signals_combined.json, swing_head_trader, run 20260430_141238)</p>
+    <p>The PM has issued a **cover** decision for trade id 118 (run 20260506_140335, 55% confidence). The short (fill $611.78, entered 2026-05-04) is being closed at ~$604.96, locking in approximately **$6.82/share gain**. The bearish structural thesis (capex shock, litigation, ADX 52.76 downtrend) remains intact — but the risk-reward for holding has degraded to 0.17:1 ($4.96 remaining to $580 target vs. $30 adverse risk to $635 stop). RSI-7 at 6.52 with confirmed bullish RSI divergence on both daily and hourly timeframes represents extreme mean-reversion risk. Re-entry plan: wait for a failed bounce to $612–614 resistance zone, enter short on bearish rejection candle. (source: decisions.json, signals_combined.json, trade_ledger.json id 118, run 20260506_140335)</p><p>**What changed from prior thesis (run 20260505_140723 — hold):** The prior thesis held the short with R/R 2.5:1 and RSI-7 at 23.22 (oversold but not extreme). This run: RSI-7 collapsed further to 6.52 (extreme), bullish RSI divergence confirmed on both timeframes, hourly OBV diverging bullishly, and the remaining R/R degraded to 0.17:1. The prior claim of "MFE +2.78% / R/R 2.5:1 — tracking well" is superseded. The trade did not falsify the bearish thesis; it harvested a gain from a deteriorating risk-reward setup.</p><p>The prior thesis (bootstrap 2026-04-29, run 20260430_141238) stated: "Bear to bull trigger: Q1 2026 earnings beat with raised guidance AND any capex discipline signal." The Q1 2026 earnings on April 29 delivered the beat but the inverse of discipline — capex was raised from $115–135B to $125–145B, nearly doubling FY2025's $72B. Institutional sellers confirmed this reading via 3.2x relative daily volume on April 30. (source: signals_combined.json, swing_head_trader, run 20260430_141238)</p>
 </div>
 
 
@@ -559,6 +559,20 @@
     <h2 style="font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;">Recent AI Decisions</h2>
     
     <div class="dec-timeline">
+    
+    <div class="dec-item">
+        <span class="dec-date">20260506</span>
+        <span><span class="badge badge-cover">COVER</span></span>
+        <span>
+            
+            <div class="conf-wrap">
+                <div class="conf-bar-bg"><div class="conf-bar" style="width:55%"></div></div>
+                <span class="conf-label">55%</span>
+            </div>
+            
+        </span>
+        <span class="dec-reason" style="font-size:12px;color:var(--muted);line-height:1.6;">Covering short (id 118, fill $611.78) at ~$605. RSI-7 at 6.52 = extreme oversold + bullish RSI divergence on both daily/hourly frames + macro at ATH = elevated bounce risk. Short has captured ~$6.82/share gain (MFE). Head Trader consensus is hold but allowed_actions only permits cover (hold:0, cover:1). Locking in the gain before a mean-reversion spike risks stopping out the open profit. Catalyst thesis (capex shock, litigation) remains intact but R/R for holding further is degrading: only $4.96 to target $580 vs $30 adverse move to $635 stop from current levels. Cover and re-enter on bounce to $612-614 resistance zone as swing_catalyst_news recommends.</span>
+    </div>
     
     <div class="dec-item">
         <span class="dec-date">20260505</span>
@@ -586,20 +600,6 @@
             
         </span>
         <span class="dec-reason" style="font-size:12px;color:var(--muted);line-height:1.6;">Head Trader bearish 62 conf. Conditional short on bounce to $619-628 resistance (Fib 38.2% + former support) with bearish rejection candle. 3/5 swing agents bearish/conditional bearish. Post-earnings capex-shock breakdown ($669→$600, 3.26x avg vol Apr 30) confirmed structural re-rating. Daily ADX 49.52 with -DI 34.25 >> +DI 26.06; hourly ADX 50.9 with -DI 47.79 >> +DI 7.66 — extreme bearish trend. Risk-off macro (Iran escalation May 4, Fed hawkish succession risk). R/R 3.3:1 clears 2:1 minimum. Entry $621 is limit on bounce — do NOT chase if price breaks below $596. Stop $635 above all identified resistance. Target $575 (Fib extension support). 1 share × $621 = $621 within risk manager cap of $641.91. High-vol stock (ATR 3.27%) → tolerance 1.5%. Mean-reversion bullish vote (42 conf, 0% win-rate lesson) discounted; breakout absent. No open META position per portfolio state.</span>
-    </div>
-    
-    <div class="dec-item">
-        <span class="dec-date">20260501</span>
-        <span><span class="badge badge-hold">HOLD</span></span>
-        <span>
-            
-            <div class="conf-wrap">
-                <div class="conf-bar-bg"><div class="conf-bar" style="width:62%"></div></div>
-                <span class="conf-label">62%</span>
-            </div>
-            
-        </span>
-        <span class="dec-reason" style="font-size:12px;color:var(--muted);line-height:1.6;">No trade now. Head Trader bearish (62 conf) but conditions short on bounce to $626-630 with confirmed rejection candle. Current price ~$612 is BELOW entry zone — shorting here yields 0.84:1 R/R (fails 2:1 minimum). Risk mgr limits position to $613, barely 1 share at current price. Await bounce to $626-630 before entering short. Conditional plan: short ~$628, target $585 (Fib 61.8%), stop $643 (R/R 2.87:1). Recent NVDA dip-buy stop-out reinforces no long bias on oversold AI names. BAC long already open; keeping powder dry for conditional short entry.</span>
     </div>
     
     </div>
