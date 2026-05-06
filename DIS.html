@@ -484,7 +484,7 @@
             <a class="nav-link " href="closed.html">History</a>
             <a class="nav-link " href="runs.html">All Runs</a>
         </div>
-        <div class="nav-meta">03:25 PM PT · NEXT TX <span id="countdown">--:--</span></div>
+        <div class="nav-meta">03:27 PM PT · NEXT TX <span id="countdown">--:--</span></div>
     </div>
 </nav>
 
@@ -531,7 +531,7 @@
 
 <div class="thesis-card">
     <h2>AI Thesis (from Wiki)</h2>
-    <p>⚠️ Recent trade: stop_hit 2026-05-05, -$4.99. Thesis under review.</p><p>**Prior thesis falsified (additional):** The May 4 thesis claimed "An open long position (id 117, 2 shares, fill price $103.495) was confirmed in trade_ledger.json." That position was closed today (2026-05-05) at $101.00 stop, realizing a loss of -$4.99. [source: `trade_ledger.json per_ticker_history["DIS"]`, run `20260505_220625`]</p><p>The pre-earnings breakout thesis from run `20260501_221355` (4/5 swing agents bullish, April 30 breakout above $103 on 1.23x vol) has been invalidated by price action — the breakout fully retraced and the stop was hit. No open DIS positions remain as of this run. Earnings tomorrow (May 6, pre-market 8:30 AM ET) are the next resolution catalyst.</p>
+    <p>⚠️ Recent trade: stop_hit 2026-05-05, -$4.99. Thesis under review.</p><p>**Prior thesis falsified (additional):** The May 5 thesis stated "Earnings tomorrow May 6 — reassess post-print." The reassessment is now complete: Q2 FY2026 earnings beat (EPS $1.57 vs. $1.49 est, revenue $25.17B vs. $24.84B est) triggered the pre-stated bull restart condition — "gap and hold above $104.83 on 1.5x+ volume = fresh long opportunity." Both conditions were met: price gapped to $108.06 (+7.5%) and daily volume came in at 1.81x average (above the 1.5x minimum that failed in the prior May 5 trade). [source: `web_research/DIS.json`, `signals_combined.json swing_breakout`, run `20260506_220627`]</p><p>**However:** The earnings blackout rule (3-day window) prohibits any new position until at least May 9+. Additionally, R/R at the $108 gap price is 0.16:1 ($1.14 upside to $109.14 resistance vs. $7.36 downside to $100.61 support) — making a chase entry mathematically indefensible regardless of blackout. [source: `signals_combined.json swing_macro_context`, `risk_management_agent`, run `20260506_220627`]</p>
 </div>
 
 
@@ -539,6 +539,15 @@
     <h2 style="font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;">Recent AI Decisions</h2>
     
     <div class="dec-timeline">
+    
+    <div class="dec-item">
+        <span class="dec-date">20260506</span>
+        <span><span class="badge badge-hold">HOLD</span></span>
+        <span>
+            
+        </span>
+        <span class="dec-reason" style="font-size:12px;color:var(--muted);line-height:1.6;">Earnings blackout enforced: earnings reported 0 days ago, 3-day blackout window active. Risk manager set remaining_position_limit=0 and allowed_actions=hold only. No new position permissible regardless of signal quality. Previous DIS long stopped out -$4.99 on May 5. Post-earnings gap-up to $108.06 is bullish (2/5 agents, 1.81x volume clearing threshold) but macro veto on chase entry (R/R 0.16:1 at gap price) and hourly OBV divergence add further caution. Reassess after blackout clears (May 9+) if price consolidates near $105-107 breakout zone.</span>
+    </div>
     
     <div class="dec-item">
         <span class="dec-date">20260505</span>
