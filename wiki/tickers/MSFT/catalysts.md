@@ -1,49 +1,48 @@
 ---
 name: MSFT catalysts
-last_updated: 2026-05-05
-last_run_id: 20260505_153435
+last_updated: 2026-05-06
+last_run_id: 20260506_153927
 target_words: 400
 stale_after_days: 14
-word_count: 396
-summary: Catalyst picture largely unchanged from May 4 — partial macro recovery on May 5 (S&P +0.7%, Nasdaq ATH intraday) partially offsets Iran-UAE escalation; AMD Q1 earnings tonight (AI data center barometer); commercial bookings -46% YoY and capex overhang persist; next binary Q4 FY2026 ~July 28-29
+word_count: 398
+summary: AMD Q1 2026 earnings resolved (beat+raise, MSFT AI narrative intact); macro upgraded to cautiously bullish (S&P/Nasdaq ATH, US-Iran ceasefire MOU ~48h, oil easing $104→$102); Raymond James downgrade to Market Perform on Xbox concerns; commercial bookings -46% YoY and capex overhang persist; next MSFT binary Q4 FY2026 ~July 28-29
 ---
 
 # MSFT — Catalysts
 
 ## TL;DR
 
-The near-term catalyst picture is net bearish but slightly less dire than May 4. A partial macro recovery on May 5 (S&P +0.7%, Nasdaq partial ATH) partially offsets the Iran shock. The Iran-UAE/Strait of Hormuz conflict is unresolved with WTI above $104/bbl and Brent above $113/bbl, keeping the geopolitical overhang active. Key bearish structural items remain: commercial bookings down 46% YoY, $190B capex guidance, and OpenAI exclusivity ended. AMD Q1 2026 earnings tonight (May 5 AMC) is a near-term AI infrastructure barometer — a miss or cautious guidance would pressure the Azure AI narrative. Next MSFT binary is Q4 FY2026 earnings ~July 28–29. [source: web_research/MSFT.json, signals_combined.json swing_catalyst_news, run 20260505_153435]
+Macro improved materially: AMD Q1 2026 earnings (May 5 AMC) resolved as a blowout beat (+38% revenue, +43% EPS, Q2 guide above consensus) — the AI data center demand narrative is intact and MSFT Azure AI ($37B run-rate) benefits indirectly. US-Iran ceasefire MOU is reportedly ~48 hours away as of May 6, pushing oil from $104 toward $102 and lifting equities to ATH. The Raymond James downgrade (May 5, Market Perform, Xbox -33%) is a new marginal negative. Structural bear items persist: commercial bookings down 46% YoY, $190B capex overhang, and OpenAI exclusivity ended. Next MSFT binary is Q4 FY2026 earnings ~July 28-29. No binary within 10 trading days. [source: web_research/MSFT.json, signals_combined.json swing_catalyst_news, run 20260506_153927]
 
 ## Live events
 
-- **~July 28–29, 2026:** Q4 FY2026 earnings (next MSFT binary). Analyst EPS consensus ~$4.22. Azure growth rate, Q4 capex trajectory, and commercial bookings recovery are the key reads.
-- **May 15, 2026:** Fed Chair Powell's last day; Kevin Warsh hawkish successor (Senate confirmation pending) — policy uncertainty adds overlay for all rate-sensitive growth stocks including MSFT.
-- **May 5, 2026 (tonight):** AMD Q1 2026 earnings (after close) — direct AI data center demand barometer; a beat-and-raise supports the Azure AI narrative; a miss or cautious Q2 guidance would incrementally pressure MSFT. [source: signals_combined.json swing_catalyst_news, run 20260505_153435]
-- **Ongoing:** Iran-UAE/Strait of Hormuz conflict. WTI $104/bbl, Brent $113/bbl. De-escalation would remove dominant macro headwind; further escalation accelerates risk-off selling.
+- **~July 28–29, 2026:** Q4 FY2026 earnings (next MSFT binary). Analyst consensus EPS ~$4.21, revenue ~$87.57B. Azure growth rate, Q4 capex trajectory, and commercial bookings recovery are the key reads. [web_research/MSFT.json earnings_info, run 20260506_153927]
+- **May 15, 2026:** Fed Chair Powell's last day; Kevin Warsh hawkish successor (Senate confirmation pending) — policy uncertainty overlay for all growth stocks including MSFT. [web_research/MSFT.json macro_context, run 20260506_153927]
+- **Ongoing:** US-Iran ceasefire/nuclear deal framework. Deal reportedly ~48 hours from signing as of May 6; oil easing from $104 toward $102. Resolution removes the dominant macro headwind. Failure reintroduces risk-off pressure sharply. [web_research/MSFT.json macro_context, run 20260506_153927]
 
 ## Recent news synthesis (within 14 days)
 
 **Bearish catalysts:**
-- Commercial bookings fell 46% YoY (constant currency) — tied to lower OpenAI deal commitments, raising Azure backlog-quality concerns going forward. [web_research/MSFT.json, run 20260505_153435]
-- MSFT down ~15.7% YTD, one of the weakest performers in the Magnificent Seven despite the Q3 earnings beat. [web_research/MSFT.json, run 20260505_153435]
-- Full-year 2026 capex ~$190B (23% above analyst expectations) — margin compression risk sustained; $40B+ Q4 guidance reinforces the overhang. [web_research/MSFT.json, run 20260505_153435]
-- OpenAI exclusivity ended — AWS and Google can now distribute OpenAI models, removing a key competitive moat. [web_research/MSFT.json, run 20260505_153435]
-- Iran-UAE escalation ongoing — missiles and drones targeted UAE after brief ceasefire; oil above $100 sustains inflation overhang. [web_research/MSFT.json macro_context, run 20260505_153435]
+- Raymond James downgraded MSFT to Market Perform on May 5, citing Xbox hardware weakness — console sales fell 33% in Q3 FY2026. First analyst downgrade in current run history. [web_research/MSFT.json, run 20260506_153927]
+- Commercial bookings fell 46% YoY (constant currency) — tied to lower OpenAI deal commitments, raising Azure backlog-quality concerns. [web_research/MSFT.json, run 20260506_153927]
+- Full-year 2026 capex ~$190B (23% above analyst expectations) — margin compression risk sustained. [web_research/MSFT.json, run 20260506_153927]
+- OpenAI exclusivity ended — AWS and Google can now distribute OpenAI models, removing a key competitive moat. [web_research/MSFT.json, run 20260506_153927]
+- MSFT down ~15.7% YTD — significant underperformance vs. S&P 500 and Nasdaq ATHs on May 5. [signals_combined.json swing_macro_context, run 20260506_153927]
 
 **Bullish catalysts:**
-- Q3 FY2026 beat: revenue $82.9B (+18.3% YoY), Azure +40% YoY (above 37–38% consensus), EPS $4.27 vs $4.07 estimate. [web_research/MSFT.json, run 20260505_153435]
-- Azure AI annual run-rate $37B (+123% YoY); Copilot 20M paid commercial seats. [web_research/MSFT.json, run 20260505_153435]
-- Analyst consensus: ~31 Buy / 2 Hold / 0 Sell (as of May 1); avg PT ~$566, implying ~36% upside from current ~$415. Tom Steyer maintaining confidence in AI revenue trajectory. [web_research/MSFT.json, run 20260505_153435]
-- Partial macro recovery on May 5 (S&P +0.7%, Nasdaq intraday ATH) reduces near-term risk-off pressure. [web_research/MSFT.json macro_context, run 20260505_153435]
+- AMD Q1 2026 earnings beat (May 5 AMC): revenue $10.25B (+38% YoY), EPS $1.37 non-GAAP (+43%), Q2 guide $11.2B above $10.5B consensus — AI data center demand confirmed robust, indirectly supports Azure AI thesis. [signals_combined.json swing_catalyst_news, run 20260506_153927]
+- Q3 FY2026 beat: revenue $82.9B (+18% YoY), Azure +40% YoY, EPS $4.27 vs $4.07 estimate; Azure AI $37B annual run-rate (+123% YoY). [web_research/MSFT.json, run 20260506_153927]
+- Analyst consensus bullish: ~65 of 67 analysts Buy/Strong Buy; avg PT $566 (~37% upside from $411). Tom Steyer's fund building position. [web_research/MSFT.json analyst_consensus, run 20260506_153927]
+- Commercial backlog ~100% growth cited by 24/7 Wall St.; 41% upside potential at current levels. [web_research/MSFT.json, run 20260506_153927]
 
 ## Insider activity
 
-No insider trades in April/May 2026 data. February 2026 board buy (~$2M, Stanton) is too stale for near-term weight. [source: signals_combined.json growth_analyst_agent insider_conviction, run 20260505_153435]
+No insider trades in April/May 2026. February 2026 board buy (~$2M, Stanton) is too stale for near-term weight. [source: signals_combined.json growth_analyst_agent insider_conviction, run 20260506_153927]
 
 ## Competitor watch
 
-Google Cloud Q1 2026: $20B quarterly (+63% YoY) — better investor reaction than Azure +40%. AWS Q1 2026 grew 28% (fastest in 15 quarters). Both AWS and Google now authorized to distribute OpenAI models after exclusivity ended. All three hyperscalers competing for scarce AI chip supply — constraining near-term capacity expansion and revenue realization. [source: web_research/MSFT.json competitor_activity, run 20260505_153435]
+Google Cloud Q1 2026: $20B quarterly (+63% YoY, backlog >$460B) — still outpacing Azure +40% and AWS 28%. Both AWS and Google now authorized to distribute OpenAI models. Combined hyperscaler AI capex projected $725B for 2026 (+77% YoY) — validating buildout thesis but raising ROI-timeline concerns. Azure holds enterprise moat via Microsoft 365/Copilot (20M paid seats). [source: web_research/MSFT.json competitor_activity, run 20260506_153927]
 
 ## Last updated
 
-2026-05-05 — sourced from web_research/MSFT.json and signals_combined.json, run 20260505_153435. Supersedes prior page (2026-05-04, run 20260504_153640); key update is May 5 partial macro recovery (S&P +0.7%, Nasdaq ATH) and AMD earnings tonight as near-term AI barometer; structural bearish items (commercial bookings, capex, OpenAI exclusivity) unchanged.
+2026-05-06 — sourced from web_research/MSFT.json and signals_combined.json, run 20260506_153927. Supersedes prior page (2026-05-05, run 20260505_153435): AMD Q1 earnings resolved (AI demand confirmed); macro upgraded to cautiously bullish (S&P/Nasdaq ATH, US-Iran ceasefire MOU ~48h, oil easing to $102); Raymond James downgrade (Market Perform, Xbox concerns) is new marginal negative.
