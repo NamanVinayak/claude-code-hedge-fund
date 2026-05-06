@@ -1,0 +1,47 @@
+{
+  "AMD": {
+    "signal": "neutral",
+    "confidence": 2,
+    "reasoning": {
+      "historical_growth": {
+        "score": 0.85,
+        "revenue_growth": 0.34337793290672874,
+        "revenue_trend": 0.023619547309892703,
+        "eps_growth": 1.6435643564356435,
+        "eps_trend": -0.2646504010499025,
+        "fcf_growth": 1.8004158004158004,
+        "fcf_trend": -0.21812120217689698
+      },
+      "growth_valuation": {
+        "score": 0,
+        "peg_ratio": null,
+        "price_to_sales_ratio": 19.249228544162673
+      },
+      "margin_expansion": {
+        "score": 0,
+        "gross_margin": 0.4907573219340304,
+        "gross_margin_trend": -0.004911663508589238,
+        "operating_margin": 0.09872335509213795,
+        "operating_margin_trend": -0.005418023621820082,
+        "net_margin": 0.12151233319854428,
+        "net_margin_trend": -0.008503626150294253
+      },
+      "insider_conviction": {
+        "score": 0.5,
+        "net_flow_ratio": 0,
+        "buys": 0,
+        "sells": 0
+      },
+      "financial_health": {
+        "score": 1.0,
+        "debt_to_equity": 0.013889109350942078,
+        "current_ratio": 2.850026441036489
+      },
+      "final_analysis": {
+        "signal": "neutral",
+        "confidence": 2,
+        "weighted_score": 0.49
+      }
+    }
+  }
+}

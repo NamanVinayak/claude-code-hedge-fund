@@ -1,0 +1,124 @@
+{
+  "signal": "neutral",
+  "score": 2,
+  "max_score": 8,
+  "margin_of_safety": null,
+  "growth_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "Revenue data incomplete; Positive FCFF growth",
+    "metrics": {
+      "ticker": "AMD",
+      "report_period": "2026-03-28",
+      "period": "ttm",
+      "currency": "USD",
+      "market_cap": 666446790656.0,
+      "enterprise_value": 661782790656.0,
+      "price_to_earnings_ratio": 157.8224,
+      "price_to_book_ratio": 10.5786884022921,
+      "price_to_sales_ratio": 19.249228544162673,
+      "enterprise_value_to_ebitda_ratio": 183.31933259168974,
+      "enterprise_value_to_revenue_ratio": 19.114516511351162,
+      "free_cash_flow_yield": 0.006001979536975039,
+      "peg_ratio": null,
+      "gross_margin": 0.4907573219340304,
+      "operating_margin": 0.09872335509213795,
+      "net_margin": 0.12151233319854428,
+      "return_on_equity": 0.06677883775932951,
+      "return_on_assets": 0.0546889218209708,
+      "return_on_invested_capital": 0.06235271449956278,
+      "asset_turnover": 0.4500688973818995,
+      "inventory_turnover": 2.2261363636363636,
+      "receivables_turnover": 5.482501979414093,
+      "days_sales_outstanding": 66.57544335971349,
+      "operating_cycle": 230.53664805598711,
+      "working_capital_turnover": 1.979304825062886,
+      "current_ratio": 2.850026441036489,
+      "quick_ratio": 2.012374405076679,
+      "cash_ratio": 0.5858276044420941,
+      "operating_cash_flow_ratio": 0.5183500793231095,
+      "debt_to_equity": 0.013889109350942078,
+      "debt_to_assets": 0.011374567766424875,
+      "interest_coverage": 25.893939393939394,
+      "revenue_growth": 0.34337793290672874,
+      "earnings_growth": 1.6416819012797075,
+      "book_value_growth": 0.09434060589216231,
+      "earnings_per_share_growth": 1.6435643564356435,
+      "free_cash_flow_growth": 1.8004158004158004,
+      "operating_income_growth": 0.9442105263157895,
+      "ebitda_growth": null,
+      "payout_ratio": null,
+      "earnings_per_share": 2.67,
+      "book_value_per_share": 38.64969325153374,
+      "free_cash_flow_per_share": 2.4539877300613497
+    }
+  },
+  "risk_analysis": {
+    "score": 1,
+    "max_score": 3,
+    "details": "Beta NA; D/E 0.0; Interest coverage NA",
+    "beta": null,
+    "cost_of_equity": 0.09
+  },
+  "relative_val_analysis": {
+    "score": 0,
+    "max_score": 1,
+    "details": "P/E inline with history"
+  },
+  "intrinsic_val_analysis": {
+    "intrinsic_value": null,
+    "details": [
+      "Missing FCFF or share count"
+    ]
+  },
+  "market_cap": 666446790656.0,
+  "web_context": {
+    "ticker": "AMD",
+    "research_date": "2026-05-06",
+    "macro_context": {
+      "market_sentiment": "Risk-on rebound on May 6 with S&P 500 +0.72%, Nasdaq +0.73%, Russell 2000 +1.75% as hopes for a U.S.-Iran memorandum of understanding drove oil prices lower and equities higher after a volatile week dominated by Middle East tensions. Strong Q1 earnings season (AMD, Intel, Meta) providing an earnings tailwind alongside the geopolitical relief rally.",
+      "fed_outlook": "Fed held rates steady at 3.50-3.75% at its April 29 meeting (Powell's final as chair), with the most FOMC dissents since 1992. Median SEP shows one rate cut projected for 2026; elevated energy-driven inflation and Middle East uncertainty cited as key concerns keeping cuts on hold.",
+      "geopolitical": "U.S.-Iran conflict over the Strait of Hormuz is the primary market risk \u2014 oil briefly crossed $110/bbl on May 4 (UAE missile interception) before pulling back on May 6 ceasefire/MOU reports. Ongoing tariff uncertainty, Federal Reserve leadership transition, and U.S. midterm elections add additional uncertainty. Energy stocks benefit; travel, logistics, and rate-sensitive sectors face pressure.",
+      "key_events": [
+        "U.S.-Iran nuclear/ceasefire negotiations \u2014 outcome within 48 hours could move oil 5-10%",
+        "Fed leadership transition \u2014 Powell stepping down; new chair direction could reprice rate expectations",
+        "U.S. midterm elections 2026 \u2014 fiscal and tech-regulation risk",
+        "Ongoing Q1 earnings season \u2014 semiconductors broadly outperforming"
+      ]
+    },
+    "ticker_news": [
+      {
+        "headline": "AMD Q1 2026 beats: revenue $10.25B (+38% YoY, vs $9.89B est.), non-GAAP EPS $1.37 (+43% YoY, vs $1.25-1.29 est.); data center revenue $5.8B (+57% YoY)",
+        "sentiment": "positive",
+        "source": "AMD IR / Bloomberg / CNBC (May 5, 2026)"
+      },
+      {
+        "headline": "AMD Q2 2026 guidance of $11.2B revenue (+/- $300M) substantially tops $10.5B Wall Street consensus, sparking best post-earnings stock day in seven years (+15-20%)",
+        "sentiment": "positive",
+        "source": "AMD IR press release / Artvoice / TheStreet (May 5-6, 2026)"
+      },
+      {
+        "headline": "Morgan Stanley raises AMD price target to $360 (from $255) post-earnings; Stifel also raises target citing AI data center strength",
+        "sentiment": "positive",
+        "source": "TheStreet (May 6, 2026)"
+      },
+      {
+        "headline": "HSBC downgrades AMD Buy to Hold (May 4, pre-earnings) citing stretched valuation at ~33x 2027 earnings, though raises PT to $340",
+        "sentiment": "negative",
+        "source": "HSBC / indmoney.com (May 4, 2026)"
+      },
+      {
+        "headline": "AMD CEO Lisa Su warns gaming segment will face headwinds from high memory/component costs in H2 2026",
+        "sentiment": "negative",
+        "source": "Shacknews / AMD Q1 2026 earnings call (May 5, 2026)"
+      }
+    ],
+    "analyst_consensus": {
+      "rating": "buy",
+      "avg_price_target": 301.0,
+      "recent_changes": "Post-earnings upgrades: Morgan Stanley raised PT to $360 (from $255), D.A. Davidson upgraded to Buy with $375 street-high PT. Pre-earnings downgrades: HSBC (Buy\u2192Hold, PT $340) on valuation, Northland Capital Markets (Outperform\u2192Market Perform, Apr 27). Pre-earnings consensus avg was ~$287-301 across 32-34 analysts; post-earnings targets likely to be revised meaningfully higher as stock trades ~$348. Overall consensus remains Buy with 77.78% of 54 covering analysts rating it Buy. Note: stock is trading at or above many pre-earnings price targets following the 15-20% post-earnings surge."
+    },
+    "competitor_activity": "NVIDIA continues to dominate AI GPU market but faces its own threats \u2014 unveiled Groq 3 and Vera CPU at GTC 2026 and targets $1T in Blackwell/Vera Rubin chip sales in 2026-2027, directly competing with AMD in AI data centers. Intel had a strong Q1 2026 (revenue +7.18% YoY, data center +22%) and gapped up ~25% post-earnings; Intel's 18A chip launch and May 6 Apple partnership report (+6.4% premarket) signal a genuine Intel comeback in the foundry and CPU space. AMD is positioned as the primary NVIDIA alternative in AI accelerators, with ROCm open-source stack gaining traction, but TSMC foundry capacity constraints are cited as the key risk limiting AMD's ability to fully capitalize on AI demand surge. AMD expects data center revenue to reach $100B annually by 2030.",
+    "earnings_info": "Q1 2026 reported May 5, 2026 \u2014 beat on revenue ($10.25B vs $9.89B est.) and EPS ($1.37 non-GAAP vs ~$1.27 est.). Q2 2026 guidance: $11.2B revenue (+/- $300M), non-GAAP gross margin ~54%. Next earnings: Q2 2026 results expected approximately August 4, 2026. Q2 EPS estimate: ~$1.39 (analyst consensus). Full-year 2026 revenue estimates likely to be revised upward following Q1 beat and Q2 raise."
+  }
+}

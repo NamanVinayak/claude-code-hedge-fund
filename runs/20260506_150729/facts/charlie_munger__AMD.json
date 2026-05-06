@@ -1,0 +1,83 @@
+{
+  "signal": "neutral",
+  "score": 6.069444444444445,
+  "max_score": 10,
+  "moat_analysis": {
+    "score": 5.555555555555555,
+    "details": "Poor ROIC: Never exceeds 15% threshold; Good pricing power: Average gross margin 46.7%; Low capital requirements: Avg capex 2.2% of revenue; Invests in R&D, building intellectual property; Significant goodwill/intangible assets, suggesting brand value or IP"
+  },
+  "management_analysis": {
+    "score": 7.5,
+    "details": "Excellent cash conversion: FCF/NI ratio of 1.48; Conservative debt management: D/E ratio of 0.01; Prudent cash management: Cash/Revenue ratio of 0.16; No insider trading data available; Stable share count: Limited dilution",
+    "insider_buy_ratio": null,
+    "recent_de_ratio": 0.013573888492445162,
+    "cash_to_revenue": 0.16131361562012594,
+    "share_count_trend": "stable"
+  },
+  "predictability_analysis": {
+    "score": 9.0,
+    "details": "Moderately predictable revenue: 4.5% avg growth with some volatility; Highly predictable operations: Operating income positive in all periods; Highly predictable margins: 5.3% avg with minimal volatility; Highly predictable cash generation: Positive FCF in all periods"
+  },
+  "valuation_analysis": {
+    "score": 0.0,
+    "details": "Expensive: Only 0.4% FCF yield; Expensive: 94.5% premium to reasonable value; Declining FCF trend is concerning",
+    "intrinsic_value_range": {
+      "conservative": 24390000000.0,
+      "reasonable": 36585000000.0,
+      "optimistic": 48780000000.0
+    },
+    "fcf_yield": 0.0036597070226705303,
+    "normalized_fcf": 2439000000.0,
+    "margin_of_safety_vs_fair_value": -0.945104394659942
+  },
+  "news_sentiment": "No news data available",
+  "web_context": {
+    "ticker": "AMD",
+    "research_date": "2026-05-06",
+    "macro_context": {
+      "market_sentiment": "Risk-on rebound on May 6 with S&P 500 +0.72%, Nasdaq +0.73%, Russell 2000 +1.75% as hopes for a U.S.-Iran memorandum of understanding drove oil prices lower and equities higher after a volatile week dominated by Middle East tensions. Strong Q1 earnings season (AMD, Intel, Meta) providing an earnings tailwind alongside the geopolitical relief rally.",
+      "fed_outlook": "Fed held rates steady at 3.50-3.75% at its April 29 meeting (Powell's final as chair), with the most FOMC dissents since 1992. Median SEP shows one rate cut projected for 2026; elevated energy-driven inflation and Middle East uncertainty cited as key concerns keeping cuts on hold.",
+      "geopolitical": "U.S.-Iran conflict over the Strait of Hormuz is the primary market risk \u2014 oil briefly crossed $110/bbl on May 4 (UAE missile interception) before pulling back on May 6 ceasefire/MOU reports. Ongoing tariff uncertainty, Federal Reserve leadership transition, and U.S. midterm elections add additional uncertainty. Energy stocks benefit; travel, logistics, and rate-sensitive sectors face pressure.",
+      "key_events": [
+        "U.S.-Iran nuclear/ceasefire negotiations \u2014 outcome within 48 hours could move oil 5-10%",
+        "Fed leadership transition \u2014 Powell stepping down; new chair direction could reprice rate expectations",
+        "U.S. midterm elections 2026 \u2014 fiscal and tech-regulation risk",
+        "Ongoing Q1 earnings season \u2014 semiconductors broadly outperforming"
+      ]
+    },
+    "ticker_news": [
+      {
+        "headline": "AMD Q1 2026 beats: revenue $10.25B (+38% YoY, vs $9.89B est.), non-GAAP EPS $1.37 (+43% YoY, vs $1.25-1.29 est.); data center revenue $5.8B (+57% YoY)",
+        "sentiment": "positive",
+        "source": "AMD IR / Bloomberg / CNBC (May 5, 2026)"
+      },
+      {
+        "headline": "AMD Q2 2026 guidance of $11.2B revenue (+/- $300M) substantially tops $10.5B Wall Street consensus, sparking best post-earnings stock day in seven years (+15-20%)",
+        "sentiment": "positive",
+        "source": "AMD IR press release / Artvoice / TheStreet (May 5-6, 2026)"
+      },
+      {
+        "headline": "Morgan Stanley raises AMD price target to $360 (from $255) post-earnings; Stifel also raises target citing AI data center strength",
+        "sentiment": "positive",
+        "source": "TheStreet (May 6, 2026)"
+      },
+      {
+        "headline": "HSBC downgrades AMD Buy to Hold (May 4, pre-earnings) citing stretched valuation at ~33x 2027 earnings, though raises PT to $340",
+        "sentiment": "negative",
+        "source": "HSBC / indmoney.com (May 4, 2026)"
+      },
+      {
+        "headline": "AMD CEO Lisa Su warns gaming segment will face headwinds from high memory/component costs in H2 2026",
+        "sentiment": "negative",
+        "source": "Shacknews / AMD Q1 2026 earnings call (May 5, 2026)"
+      }
+    ],
+    "analyst_consensus": {
+      "rating": "buy",
+      "avg_price_target": 301.0,
+      "recent_changes": "Post-earnings upgrades: Morgan Stanley raised PT to $360 (from $255), D.A. Davidson upgraded to Buy with $375 street-high PT. Pre-earnings downgrades: HSBC (Buy\u2192Hold, PT $340) on valuation, Northland Capital Markets (Outperform\u2192Market Perform, Apr 27). Pre-earnings consensus avg was ~$287-301 across 32-34 analysts; post-earnings targets likely to be revised meaningfully higher as stock trades ~$348. Overall consensus remains Buy with 77.78% of 54 covering analysts rating it Buy. Note: stock is trading at or above many pre-earnings price targets following the 15-20% post-earnings surge."
+    },
+    "competitor_activity": "NVIDIA continues to dominate AI GPU market but faces its own threats \u2014 unveiled Groq 3 and Vera CPU at GTC 2026 and targets $1T in Blackwell/Vera Rubin chip sales in 2026-2027, directly competing with AMD in AI data centers. Intel had a strong Q1 2026 (revenue +7.18% YoY, data center +22%) and gapped up ~25% post-earnings; Intel's 18A chip launch and May 6 Apple partnership report (+6.4% premarket) signal a genuine Intel comeback in the foundry and CPU space. AMD is positioned as the primary NVIDIA alternative in AI accelerators, with ROCm open-source stack gaining traction, but TSMC foundry capacity constraints are cited as the key risk limiting AMD's ability to fully capitalize on AI demand surge. AMD expects data center revenue to reach $100B annually by 2030.",
+    "earnings_info": "Q1 2026 reported May 5, 2026 \u2014 beat on revenue ($10.25B vs $9.89B est.) and EPS ($1.37 non-GAAP vs ~$1.27 est.). Q2 2026 guidance: $11.2B revenue (+/- $300M), non-GAAP gross margin ~54%. Next earnings: Q2 2026 results expected approximately August 4, 2026. Q2 EPS estimate: ~$1.39 (analyst consensus). Full-year 2026 revenue estimates likely to be revised upward following Q1 beat and Q2 raise."
+  }
+}
