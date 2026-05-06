@@ -1,42 +1,42 @@
 ---
 name: STX catalysts
-last_updated: 2026-05-05
-last_run_id: 20260505_203524
+last_updated: 2026-05-06
+last_run_id: 20260506_203627
 target_words: 400
 stale_after_days: 14
-word_count: 452
-summary: Q3 FY26 fully priced (7 days old); next catalyst Q4 FY26 ~July 28; no near-term binary; macro partial recovery May 5 (S&P/Nasdaq ATH) but Iran-UAE ongoing; analyst avg PT $748.65 — stock trading at consensus PT
+word_count: 408
+summary: Q3 FY26 now 8 days old and fully priced; next catalyst Q4 FY26 ~July 16-28; no near-term binary; macro strongly risk-on (S&P 7,338.89 confirmed ATH, Nasdaq 25,670); US-Iran peace MOU ~48h from completion; stock trading ABOVE consensus analyst PT $748.65
 ---
 
 # STX — Catalysts
 
 ## TL;DR
 
-Q3 FY26 earnings landed Apr 28, 2026 — now 7 trading days old and fully priced into the ~24% post-earnings surge. Next scheduled catalyst is Q4 FY26 earnings (~July 28, 2026). No identifiable catalyst within the next 10 trading days. Macro backdrop: S&P 500 and Nasdaq recovered to ATH on May 5 (+0.7%/+1%), partially reversing the May 4 Iran risk-off shock. Iran-UAE/Strait of Hormuz conflict escalation is ongoing; oil remains above $102/bbl. [source: web_research/STX.json, run 20260505_203524]
+Q3 FY26 earnings landed Apr 28, 2026 — now 8 trading days old and fully priced into the ~24% post-earnings surge. Next scheduled catalyst is Q4 FY26 earnings (~July 16-28, 2026). No identifiable catalyst within the next 10 trading days. Macro backdrop: S&P 500 confirmed close at 7,338.89 (+1.10% ATH), Nasdaq 25,670 (+1.36% ATH) on May 6 — strongly risk-on, driven by AMD Q1 2026 blowout and US-Iran peace deal optimism. Iran ceasefire MOU reportedly ~48 hours from completion (oil easing toward $102). [source: web_research/STX.json, run 20260506_203627]
 
 ## Upcoming events
 
-- **Q4 FY26 earnings** — ~July 28, 2026 (web_research/STX.json narrows to ~July 28 from prior estimated July 16-28). Guidance: $3.45B ±$100M revenue, analyst EPS est ~$4.75. Outside the 10-day swing window.
-- **Mozaic 4 majority ramp** — management guided Mozaic 4 to be majority of HAMR exabyte shipments exiting CY2026. Any qualification or volume-shipment news is a positive catalyst.
+- **Q4 FY26 earnings** — ~July 16-28, 2026 (sources vary on exact date; web_research/STX.json narrows to ~July 16-28). Guidance: $3.45B ±$100M revenue, ~$5.00 EPS. Outside the 10-day swing window.
+- **Mozaic 4 majority ramp** — management guided Mozaic 4 to be majority of HAMR exabyte shipments exiting CY2026. Volume-shipment or qualification news is a positive catalyst.
 - **Mozaic 5 (50TB)** — targeted late 2027. Earlier sample-shipment news is upside optionality.
 - **Hyperscaler capex updates** — MSFT/META/GOOGL/AMZN quarterly prints are second-derivative AI storage signals.
-- **AMD Q1 earnings (May 5 AMC)** — AI capex barometer; negative print could reprice the AI storage cohort. [source: web_research/STX.json key_events]
+- **US-Iran ceasefire resolution** — MOU reportedly ~48h from completion; sustained peace could ease oil-driven inflation and support risk-on. [source: web_research/STX.json key_events]
 
 ## Recent news synthesis
 
-- **Q3 FY26 print (Apr 28, 2026):** Revenue $3.11B (+44.1% YoY), non-GAAP EPS $4.10 (beat by 17.1%), FCF $953M (10-year high), non-GAAP gross margin 47% (+180 bps QoQ). Annual revenue growth target raised to ≥20%. Q4 FY26 guide: $3.45B ±$100M, EPS ~$5.00. Fully priced — 7 trading days elapsed. [source: web_research/STX.json earnings_info]
-- **Nearline sold out:** Large data centers = 80% of Seagate revenue; capacity allocated through CY2027. [source: web_research/STX.json competitor_activity]
-- **HAMR leadership:** Mozaic 3+ qualified by five major cloud customers; shipped over 1 million units Q3. Mozaic 4+ in development. [source: web_research/STX.json ticker_news]
-- **Macro partial recovery (May 5):** S&P 500 +0.81% to 7,259.22 (ATH), Nasdaq +1.03% to 25,326.13 (record). Iran-UAE escalation ongoing (UAE intercepted missiles May 4, drones targeted; Strait of Hormuz risk active). Oil: WTI ~$104, Brent ~$110-113/bbl. [source: web_research/STX.json macro_context]
+- **Q3 FY26 print (Apr 28, 2026):** Revenue $3.11B (+44.1% YoY), non-GAAP EPS $4.10 (beat by 18.8%), FCF $953M (10-year high), non-GAAP gross margin 47%. Annual revenue growth target ≥20%. Q4 FY26 guide: $3.45B ±$100M, EPS ~$5.00. 8 trading days elapsed — fully priced. [source: web_research/STX.json earnings_info]
+- **Nearline sold out:** Large data centers = 80% of Seagate revenue; capacity allocated through CY2027. [source: web_research/STX.json]
+- **HAMR leadership:** Mozaic 3+ qualified by five major cloud customers. [source: web_research/STX.json ticker_news]
+- **Macro strongly risk-on (May 6):** S&P 500 confirmed close 7,338.89 (ATH +1.10%), Nasdaq 25,670 (ATH +1.36%), Dow 49,854 (+1.14%). AMD Q1 2026 blowout (+38% YoY) confirmed AI capex supercycle intact. US-Iran peace deal MOU ~48 hours from completion. Oil easing toward ~$102/bbl. [source: web_research/STX.json macro_context, run 20260506_203627]
 
 ## Analyst consensus
 
-Post-earnings PT wave (Apr 29, 2026): Rosenblatt $1,000, BofA $840, Barclays $750, Citi $740, Goldman $700. Consensus avg PT **$748.65** per web_research/STX.json — stock now trading at the consensus mean ($771 intraday). Strong Buy: 14 Buy / 3 Hold / 0 Sell (17 analysts). At $771, only Rosenblatt ($1,000) and BofA ($840) have meaningful upside left. [source: web_research/STX.json analyst_consensus]
+Post-earnings PT wave (Apr 29, 2026): Rosenblatt $1,000, BofA $840, Barclays $750, Citi $740, Goldman $700. Consensus avg PT **$748.65** (TipRanks 17 analysts, Strong Buy consensus). **Stock now trading ABOVE consensus mean** ($786.42 at run time) — only Rosenblatt ($1,000) and BofA ($840) offer meaningful upside at current price. 20 analysts rate Buy as of May 5, 2026. [source: web_research/STX.json analyst_consensus]
 
 ## Insider activity
 
-140 transactions over trailing 6 months — all sales, zero open-market purchases. ~$46.9M sold in trailing 3 months. Routine 10b5-1 dispositions. [source: web_research/STX.json, signals_combined.json swing_catalyst_news, run 20260505_203524]
+140 transactions over trailing 6 months — all sales, zero open-market purchases. ~$46.9M sold in trailing 3 months. Routine 10b5-1 dispositions; unambiguously net-selling. [source: web_research/STX.json, signals_combined.json swing_catalyst_news, run 20260506_203627]
 
 ## Last updated
 
-2026-05-05 — run 20260505_203524. Updated analyst avg PT to $748.65 (was $592.46). Macro updated to May 5 partial recovery + Nasdaq ATH. Sources: web_research/STX.json (2026-05-05).
+2026-05-06 — run 20260506_203627. Macro updated to confirmed May 6 ATH closes (S&P 7,338.89, Nasdaq 25,670); US-Iran peace MOU updated to ~48h from completion. STX now trading above consensus analyst PT $748.65. Sources: web_research/STX.json (2026-05-06).

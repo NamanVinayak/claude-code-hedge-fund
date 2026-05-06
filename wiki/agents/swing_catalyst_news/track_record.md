@@ -1,7 +1,7 @@
 ---
 name: swing_catalyst_news track record
 last_updated: 2026-05-06
-last_run_id: 20260506_194605
+last_run_id: 20260506_203627
 stale_after_days: 365
 target_words: 1200
 summary: 2 graded calls. (Appended by ai_hedge.grading.wiki_writer.)
@@ -33,3 +33,4 @@ one resolved call scored against yfinance daily OHLC.
 - — | JPM | bearish $311.5→$304.26 stop $316.5 | **in_progress** (day 1, MFE 1.51%, MAE 0.0%) _(prior_run=20260505_181525, graded_in=20260506_181533)_
 - — | GS | bearish $918.94→$864.45 stop $933.48 | **in_progress** (day 1, MFE 1.17%, MAE -0.31%) _(prior_run=20260505_190606, graded_in=20260506_190825)_
 - — | JNJ | bearish $226.5→$218.5 stop $230.5 | **in_progress** (day 1, MFE 0.71%, MAE -0.01%) _(prior_run=20260505_194525, graded_in=20260506_194605)_
+- — | WDC | bullish $462.0→$480.11 stop $446.62 | **in_progress** (day 1, MFE 3.92%, MAE -1.47%) _(prior_run=20260505_203524, graded_in=20260506_203627)_
