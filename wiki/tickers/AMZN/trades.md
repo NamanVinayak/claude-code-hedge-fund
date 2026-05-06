@@ -1,24 +1,24 @@
 ---
 name: AMZN trades
 last_updated: 2026-05-06
-last_run_id: 20260505_173521
+last_run_id: 20260506_173925
 target_words: 800
 stale_after_days: 60
-word_count: 853
-summary: All AMZN positions closed — short ID 115 stopped out at $276 on May 4 (-$10.14); runs 20260504_173321 and 20260505_173521 both HOLD (no valid entry setup); 1 prior abandoned long; net lifetime realized P&L -$10.14; capital now available but entry conditions not met
+word_count: 798
+summary: All AMZN positions closed — short ID 115 stopped out at $276 on May 4 (-$10.14); runs 20260504_173321, 20260505_173521, and 20260506_173925 all HOLD (no valid entry setup); 1 prior abandoned long; net lifetime realized P&L -$10.14; capital available but entry conditions not met
 ---
 
 # AMZN — Trades
 
 ## TL;DR
 
-All AMZN positions are closed as of May 4, 2026. The short from run 20260501_173921 (1 share, entered at $265.86 fill, stop $276) was stopped out on May 4 at $276.00, P&L -$10.14 (ID 115, trade_ledger.json per_ticker_history[AMZN]). Run 20260504_173321 issued HOLD — no capital available at that time. Run 20260505_173521 also issued HOLD — capital is now available ($1,617.76 cash, short allowed) but no valid entry setup exists (all 5 swing agents neutral, unanimous). Net lifetime realized P&L: -$10.14 (1 closed short, 1 abandoned long at $0).
+All AMZN positions are closed as of May 4, 2026. The short from run 20260501_173921 (1 share, filled at $265.86, stop $276) was stopped out on May 4 at $276.00, P&L -$10.14 (ID 115, trade_ledger.json per_ticker_history[AMZN]). Runs 20260504_173321, 20260505_173521, and 20260506_173925 all issued HOLD — no valid entry setup exists (unanimous or near-unanimous neutral). Run 20260506_173925 noted an intraday wick to $278.56 but price closed at $273.55 — breakout unconfirmed (0.80x volume vs 1.5x required). Net lifetime realized P&L: -$10.14 (1 closed short, 1 abandoned long at $0).
 
 ---
 
 ## Open positions
 
-**No open AMZN positions.** [source: trade_ledger.json open_positions, per_ticker_history[AMZN], run 20260505_173521]
+**No open AMZN positions.** [source: trade_ledger.json open_positions and per_ticker_history[AMZN], run 20260506_173925]
 
 ---
 
@@ -62,7 +62,7 @@ All AMZN positions are closed as of May 4, 2026. The short from run 20260501_173
 
 **What happened:** The mean-reversion short thesis (April 30 shooting star on 2.05x volume, RSI 82/88, z-score 2.01) was entered with a $276 stop above the reversal swing high. On May 4, price rallied through $276 intraday, triggering the stop. The bullish absorption of the $268-276 distribution zone is the key lesson: ADX 64-65 (extreme trend strength) counteracted the overbought fade setup. Short correctly sized at 1 share; loss contained to -$10.14. [source: trade_ledger.json per_ticker_history[AMZN] ID 115, run 20260504_173321]
 
-*Note: The P&L of -$10.14 is calculated as (entry fill $265.86 - exit $276.00) × 1 share = -$10.14. The decision entry price was $269.00; the actual fill was $265.86 per the ledger. The trade_ledger.json per_ticker_history[AMZN] contains one record (ID 115). Any additional stop_hit records for the same underlying AMZN decision from run 20260501_173921 are ingestion artifacts; ID 115 is the canonical entry (earliest created_at 2026-05-01T17:55:57).*
+*Note: P&L of -$10.14 is calculated as (entry fill $265.86 - exit $276.00) × 1 share = -$10.14. Decision entry price was $269.00; actual fill was $265.86 per the ledger. Per_ticker_history[AMZN] contains one record (ID 115). ID 115 is the canonical entry.*
 
 ---
 
@@ -92,6 +92,7 @@ All AMZN positions are closed as of May 4, 2026. The short from run 20260501_173
 | 20260501_173921 | 2026-05-01 | **Short** | $269.00 | $244.44 | $276.00 | 3.51:1 | 55% | Stop hit -$10.14 (ID 115) |
 | 20260504_173321 | 2026-05-04 | **Hold** | N/A | N/A | N/A | N/A | 55% | No fill — no capital at time |
 | 20260505_173521 | 2026-05-05 | **Hold** | N/A | N/A | N/A | N/A | 52% | No fill — no valid entry setup |
+| 20260506_173925 | 2026-05-06 | **Hold** | N/A | N/A | N/A | 0:1 | 0% | No fill — no valid entry; intraday wick $278.56 unconfirmed (0.80x vol) |
 
 ---
 
@@ -108,9 +109,9 @@ All AMZN positions are closed as of May 4, 2026. The short from run 20260501_173
 | Total realized P&L | -$10.14 |
 | Total unrealized P&L | $0 (no open positions) |
 | Average confidence at entry | 55% (closed short only) |
-| Times model voted Buy | 2 of 6 runs |
-| Times model voted Hold | 3 of 6 runs |
-| Times model voted Short | 1 of 6 runs |
+| Times model voted Buy | 2 of 7 runs |
+| Times model voted Hold | 4 of 7 runs |
+| Times model voted Short | 1 of 7 runs |
 
 ---
 
@@ -118,8 +119,8 @@ All AMZN positions are closed as of May 4, 2026. The short from run 20260501_173
 
 **Stop-out lesson (ADX / RSI regime):** ADX 65 strong trend absorbed the mean-reversion short at the $276 stop. The NVDA lesson (April 30, same RSI regime, stop hit -$63.20) repeated in AMZN — fading extreme-trend stocks at overbought RSI carries elevated stop-out risk even with a textbook distribution candle. Two consecutive stop-outs at RSI 80-90 / ADX 60-65 environments set a higher confirmation bar for any new position.
 
-**Re-entry conditions (short):** Hourly RSI-21 >75 PLUS volume-confirmed rejection candle at $273-276. Both conditions must fire simultaneously — current reading (hourly RSI-21 67.45, relative volume 0.04x) fails both gates.
+**Re-entry conditions (short):** Hourly RSI-21 >75 PLUS volume-confirmed rejection candle at $273-276. Both conditions must fire simultaneously — current reading (hourly RSI-21 64.43, relative volume 0.06x) fails both gates. The intraday wick to $278.56 on 0.80x volume (run 20260506_173925) is explicitly not a valid rejection signal per swing_breakout and swing_mean_reversion.
 
-**Re-entry conditions (long pullback):** Price retreats to 10 EMA zone $258-265, RSI normalizes below 65, constructive daily candle on rising ADX. Entry ~$262, target $284.65, stop $256, R/R ~3.5:1.
+**Re-entry conditions (long pullback):** Price retreats to 10 EMA zone $263-266 (currently $263.44), RSI normalizes below 65, constructive daily candle on rising ADX. Entry ~$264, target $284.20, stop $259.50, R/R ~4:1.
 
 **Breakout long:** Confirmed daily close above $276 on 1.5x+ volume. Entry ~$276.50, measured move target $296, stop $268, R/R ~2.3:1.
