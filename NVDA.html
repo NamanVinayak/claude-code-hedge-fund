@@ -484,7 +484,7 @@
             <a class="nav-link " href="closed.html">History</a>
             <a class="nav-link " href="runs.html">All Runs</a>
         </div>
-        <div class="nav-meta">05:55 AM PT · NEXT TX <span id="countdown">--:--</span></div>
+        <div class="nav-meta">06:01 AM PT · NEXT TX <span id="countdown">--:--</span></div>
     </div>
 </nav>
 
@@ -531,7 +531,7 @@
 
 <div class="thesis-card">
     <h2>AI Thesis (from Wiki)</h2>
-    <p>⚠️ Recent trade: stop_hit 2026-04-30, -$63.20 corrected (originally -$264.65 due to sizing bug, see commit b2b472d). Thesis under review.</p><p>NVDA dominates the AI chip market (~81% share) in a multi-year capex supercycle. Fundamentals remain exceptional — 61% revenue growth, 144% earnings growth, 59% operating margin, near-zero leverage, D/E 0.11. The structural thesis is intact. **What changed:** the prior bear case cited RSI 81–87 and z-score 2.39–2.42 as overextension risks; those risks have now resolved (RSI-14 59.74, z-score 1.06 as of 2026-05-01 run). The new dominant risk is that the $208.20 invalidation level has been broken on 1.52x volume — price is now at $199.57, testing the 38.2% Fib / EMA-21 confluence zone ($196.75–$197.67). One entry on 2026-04-30 (originally sized 67 shares due to a now-fixed budget bug; corrected sizing was 16 shares) was stopped out at $205.30, recording -$63.20 in realized loss (corrected from the original -$264.65 buggy figure; see `wiki/meta/lessons.md` for full context). Entry discipline remains paramount: do not chase.</p><p>**Prior thesis claim falsified:** the 2026-04-29 thesis stated "every run that scored a buy was entered below the EMA-10 on a pullback." The Apr 30 entry at $209.25 was near the EMA-10 ($203.99 today) but above the Fib 38.2% — and was stopped out as price continued lower. The real entry zone is the EMA-21 / Fib 38.2% confluence at $196.75–$197.67.</p>
+    <p>⚠️ Recent trade: stop_hit 2026-04-30, -$63.20 corrected (originally -$264.65 due to sizing bug, see commit b2b472d). Thesis under review.</p><p>NVDA dominates the AI chip market (~81% share) in a multi-year capex supercycle. Fundamentals remain exceptional — 61% revenue growth, 144% earnings growth, 59% operating margin, near-zero leverage, D/E 0.11. The structural thesis is intact. AMD Q1 2026 earnings (May 5 AMC) — the prior run's intended confirmation trigger — passed without firing: price slipped -1% to $196.50, now below the EMA-21 ($197.69) and Fib 38.2% zone ($196.75). This is the **4th consecutive HOLD** at this exact zone (runs 20260501, 20260504, 20260505, 20260506). Entry discipline remains paramount: the same "EMA pullback Fib dip-buy" setup was stopped out for -$63.20 on 2026-04-30 when neither hourly confirmation gate was met. Both gates remain unmet today.</p><p>**Prior thesis claim falsified (2026-05-01):** the 2026-04-29 thesis stated "every run that scored a buy was entered below the EMA-10 on a pullback." The Apr 30 entry at $209.25 was above the Fib 38.2% and was stopped out as price continued lower. The real entry zone is confirmed: EMA-21 / Fib 38.2% confluence at $196.75–$197.69. What has now changed: price has slipped slightly below that zone ($196.50 vs $196.75 floor), and AMD earnings provided no catalyst boost — the confirmation trigger requirement is unchanged.</p>
 </div>
 
 
@@ -539,6 +539,20 @@
     <h2 style="font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;">Recent AI Decisions</h2>
     
     <div class="dec-timeline">
+    
+    <div class="dec-item">
+        <span class="dec-date">20260506</span>
+        <span><span class="badge badge-hold">HOLD</span></span>
+        <span>
+            
+            <div class="conf-wrap">
+                <div class="conf-bar-bg"><div class="conf-bar" style="width:38%"></div></div>
+                <span class="conf-label">38%</span>
+            </div>
+            
+        </span>
+        <span class="dec-reason" style="font-size:12px;color:var(--muted);line-height:1.6;">Head Trader conf 38 < 40 threshold; buy not allowed (no confirmed entry trigger); short contradicts all 5 agents (3 bullish, 2 neutral, 0 bearish). Conditional bull setup valid (Fib 38.2%/EMA-21 at $196.75, ADX 53.63 uptrend, earnings catalyst May 20-27, R/R 3.7:1) but two confirmation gates still unmet: hourly MACD histogram = -0.7742 (must cross above 0) and no confirmed hourly bullish reversal candle. Same unconfirmed dip-buy at this exact zone cost -$63.20 on Apr 30. Three consecutive HOLDs (runs 20260501/04/05) at same level. Macro adds left-tail risk: Iran/Hormuz conflict live, oil >$102, hawkish Warsh Fed transition May 15. No entry until both gates fire; if $194.74 hourly support breaks on a close, thesis invalidated — next support cluster $179/$174.</span>
+    </div>
     
     <div class="dec-item">
         <span class="dec-date">20260505</span>
@@ -566,20 +580,6 @@
             
         </span>
         <span class="dec-reason" style="font-size:12px;color:var(--muted);line-height:1.6;">Head Trader bullish-conditional (44, below 50 threshold). Buy not allowed (no long entry permitted by allowed_actions). Shorting rejected: daily trend intact (ADX 56.9, full EMA uptrend), macro risk-on, hourly RSI-21 at 18.82 deeply oversold — shorting at EMA-21/Fib 38.2% confluence against a strong uptrend is wrong-side risk. Confirmation trigger not met (no bullish reversal candle, hourly MACD histogram still -1.82). AMD earnings binary risk in 1-3 days. Same EMA pullback Fib dip-buy setup 0-for-1 in last 30 days (-$63.20). Standing aside until trigger conditions fire.</span>
-    </div>
-    
-    <div class="dec-item">
-        <span class="dec-date">20260501</span>
-        <span><span class="badge badge-hold">HOLD</span></span>
-        <span>
-            
-            <div class="conf-wrap">
-                <div class="conf-bar-bg"><div class="conf-bar" style="width:35%"></div></div>
-                <span class="conf-label">35%</span>
-            </div>
-            
-        </span>
-        <span class="dec-reason" style="font-size:12px;color:var(--muted);line-height:1.6;">Head Trader explicit hold (44 conf) — entry conditions unmet: no hourly reversal candle, MACD histogram still negative. Identical EMA-pullback Fib dip-buy failed yesterday (-$264.65, 0% win rate last 30d). Hourly structure bearish (-DI 38.45 vs +DI 11.92, MACD -1.95). R/R 2.67:1 is acceptable but setup requires confirmation before entry. Monitor for hammer/bullish engulfing on hourly + MACD histogram flip positive. Risk mgr limit $622 (~3 shares) within budget if conditions are met in a future session.</span>
     </div>
     
     </div>
