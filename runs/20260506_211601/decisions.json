@@ -1,0 +1,31 @@
+{
+  "decisions": {
+    "SNDK": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 1409.98,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 1652.88,
+      "stop_loss": 1275.11,
+      "risk_reward_ratio": "2.67:1",
+      "timeframe": "no trade — revisit on pullback to 1072-1100 (10-21 EMA zone)",
+      "confidence": 22,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader neutral (22). All 5 agents pass — price 78% above 50-SMA, RSI 83-87, Z-score 3.09, pct_b 1.18. Parabolic extension with hourly OBV down, vol 0.19x avg. No confirmed reversal candle for short; no pullback to EMA for long. Allowed actions: hold only. Cluster cap (MU+SNDK) further constrains. Wait for pullback to $1,072-1,100 (10 EMA) before re-evaluating a long entry, or a confirmed daily reversal candle for short. No actionable setup today."
+    },
+    "MU": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 666.59,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 710.5,
+      "stop_loss": 627.58,
+      "risk_reward_ratio": "1.1:1",
+      "timeframe": "no trade — revisit on pullback to 627-650 or daily close above 667.67 with 1.5x+ volume",
+      "confidence": 30,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader neutral (30). 4 neutral, 1 bullish (catalyst_news, JEDEC May 13). However R/R from $667 to $710.50 target vs $627.58 stop is only ~1.1:1 — fails the 2:1 minimum hard rule. Risk manager correlation_blocked (MU+SNDK cluster cap exceeded at $874 > 30% of $1,457). Z-score 3.36 highest stretch in analysis; RSI 85.9 + hourly ADX 81.52 matches NVDA Apr-30 and AMZN May-4 stop-out pattern exactly. Catalyst_news bullish thesis intact for JEDEC May 13 but entry level is wrong — prefers $645-650. Hold; re-engage if price pulls back to $627-650 with volume confirmation, or if prior mean-reversion short resolves and cluster cap frees."
+    }
+  },
+  "overall_synthesis": "Both SNDK and MU are in late-stage parabolic extensions with no actionable entry at current prices. SNDK (RSI 87, Z-score 3.09, 78% above 50-SMA) and MU (RSI 86, Z-score 3.36, highest stretch this run) are both deeply overbought. The risk manager's cluster cap (MU+SNDK combined exposure would exceed 30% of $1,457 capital) independently blocks any new position. R/R on MU from current price is only 1.1:1, failing the 2:1 minimum. The pattern match to recent stop-outs (NVDA Apr-30, AMZN May-4 — both RSI 81-87, ADX 65+) is direct and disqualifying. Portfolio already carries 5 open positions (BAC long, AAPL long, JNJ short, META short, WDC long) and just absorbed two stop-outs today (AMD, GOOG). Capital preservation is the priority. The MU catalyst thesis (JEDEC HBM4 May 13, DA Davidson $1,000 initiation) remains intact — re-engage on a pullback to $627-650 with volume confirmation for a proper 2:1+ R/R setup. SNDK re-evaluates at $1,072-1,100 (10 EMA convergence)."
+}

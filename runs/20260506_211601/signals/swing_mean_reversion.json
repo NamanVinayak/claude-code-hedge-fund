@@ -1,0 +1,20 @@
+{
+  "SNDK": {
+    "signal": "bearish",
+    "confidence": 42,
+    "reasoning": "Branch A (fade the extreme) fires on nearly every metric: daily Z-score 3.09 vs 50-period, RSI-14 83.05 / RSI-7 87.71, daily Bollinger pct_b 1.18 (well above upper band), and 78% above the 50-SMA — all extreme by any threshold. Hourly Z-score 2.31 and hourly ROC-5d is -1.09% suggesting mild deceleration, and hourly OBV trend is down with volume bias down (distribution signal). Branch B (dip-buy) does not apply — price is at new highs with no Fib pullback available. Prior call assessment: my prior bearish call (run 20260505_211609, entry $1406, stop $1480, target $960.91) is in_progress after 1 day. MFE +8.53% and MAE -0.92% — still within range. Re-affirming rather than reversing as the setup character is unchanged. Confidence is capped at 42 for three reasons: (1) ADX 68.03 is an extreme trend regime; the lessons table shows two mean-reversion fade short losses in ADX 60+ environments (AMZN May 4 -$10.14, and by extension NVDA Apr 30 -$63.20 in an RSI 81-87 regime); (2) no confirmed daily reversal candle — the prompt requires a reversal candle or momentum shift before entry, and the most recent daily was a strong gap-up close; (3) wiki from yesterday confirmed 'watch-not-act zone — parabolic trending extension.' The prior bearish call remains live; this is a re-affirmation with the same entry zone and adjusted parameters reflecting no new confirmation candle.",
+    "entry": 1406.0,
+    "target": 995.69,
+    "stop": 1490.0,
+    "timeframe": "8-15 trading days"
+  },
+  "MU": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "Neither branch fires cleanly. Branch A extreme metrics are present (daily Z-score 3.36, RSI-14 85.9, pct_b 1.17, +47.88% above 50-SMA, hourly Z-score 2.55, hourly RSI-21 76.7), but critical blockers prevent a fade entry: (1) Prior bearish call is in_progress and ADVERSE — prior entry $640 with stop $675; current hourly price $666.9 is only $8.1 from the stop level. Repeating a new bearish entry here while the prior short is near its stop would compound risk on an already-challenged position. (2) No reversal candle or momentum shift on the daily — the May 5 close was a strong gap-up day ($609 open, $640 close, high $651.7). (3) Hourly ADX 81.52 is among the strongest trend readings seen, and the two most comparable fades in recent memory (AMZN ADX 65 May 4, NVDA RSI 81-87 Apr 30) were both stopped out. (4) The prior wiki warned of hourly OBV bearish divergence; this run shows hourly OBV trend back up with no divergence — a bullish contradiction vs. yesterday's distribution signal, meaning the thesis has weakened. (5) Lessons table: mean-reversion fade short on ADX 60+ = 0% win rate in last 30 days. Branch B (dip-buy) does not apply — no Fib pullback available; price is at or above the recent swing high. Standing aside while the prior in_progress call resolves near its stop. Entry, target, and stop below are reference levels only — not an actionable entry this bar.",
+    "entry": 667.0,
+    "target": 640.0,
+    "stop": 680.0,
+    "timeframe": "neutral — no actionable setup"
+  }
+}

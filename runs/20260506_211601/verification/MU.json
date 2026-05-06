@@ -1,0 +1,70 @@
+{
+  "ticker": "MU",
+  "verified_at": "2026-05-06T21:16:01",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.4147,
+      "web_value": 0.4147,
+      "source": "MacroTrends / Macrotrends Micron profit margins (Feb 28, 2026 = 41.47%)",
+      "status": "ok",
+      "deviation": "0%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.4182,
+      "web_value": 0.4182,
+      "source": "MacroTrends Micron Operating Margin (Feb 28, 2026 = 41.82%)",
+      "status": "ok",
+      "deviation": "0%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 31.457764,
+      "web_value": 31.46,
+      "source": "Yahoo Finance trailing P/E (May 2026)",
+      "status": "ok",
+      "deviation": "0%"
+    },
+    {
+      "metric": "revenue_ttm",
+      "our_value": 37378000000.0,
+      "web_value": 58110000000.0,
+      "source": "MacroTrends Micron Revenue 2012-2026 / Micron Q2 FY2026 earnings release (March 18, 2026) — TTM as of Feb 28, 2026 = $58.119B",
+      "status": "MISMATCH",
+      "deviation": "55%",
+      "note": "Facts bundle used stale FY2025 annual revenue ($37.38B); current TTM revenue is $58.11B reflecting Q1 FY2026 ($13.64B) and Q2 FY2026 ($23.86B). price_to_sales_ratio and enterprise_value_to_revenue_ratio corrected in warren_buffett__MU.json (only file containing these derived ratios).",
+      "action": "Corrected price_to_sales_ratio (20.11 -> 12.94) and enterprise_value_to_revenue_ratio (20.17 -> 12.97) in warren_buffett__MU.json"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 751736258560.0,
+      "web_value": 721970000000.0,
+      "source": "Multiple sources: CNBC $760.98B, CompaniesMarketCap $721.97B, Robinhood $722.31B (May 6, 2026) — intraday variation",
+      "status": "ok",
+      "deviation": "4%"
+    },
+    {
+      "metric": "return_on_equity",
+      "our_value": 0.3982,
+      "web_value": 0.3982,
+      "source": "GuruFocus / Yahoo Finance (ROE 39.82%, Feb 2026 quarterly annualized)",
+      "status": "ok",
+      "deviation": "0%"
+    },
+    {
+      "metric": "return_on_assets",
+      "our_value": 0.295,
+      "web_value": 0.295,
+      "source": "StockAnalysis (ROA 29.5%, TTM May 2026)",
+      "status": "ok",
+      "deviation": "0%"
+    }
+  ],
+  "overall_status": "1 mismatch corrected (stale revenue driving bad P/S and EV/Revenue ratios)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260506_211601/facts/warren_buffett__MU.json"
+  ],
+  "notes": "Only warren_buffett__MU.json contains the fundamental_analysis.metrics block with price_to_sales_ratio and enterprise_value_to_revenue_ratio. All other 18 MU facts files do not contain raw metric fields — no update needed. Revenue growth metric (0.4885 = 48.85%) reflects FY2025 vs FY2024 annual comparison which is correctly sourced from SEC/yfinance; the TTM-vs-annual revenue mismatch only affects the P/S and EV/Revenue ratios."
+}

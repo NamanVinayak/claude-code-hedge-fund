@@ -1,0 +1,70 @@
+{
+  "ticker": "SNDK",
+  "verified_at": "2026-05-06T21:16:01",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.3426,
+      "web_value": 0.3426,
+      "source": "CNBC / StockAnalysis (May 6, 2026)",
+      "status": "ok",
+      "deviation": "0%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.416,
+      "web_value": 0.416,
+      "source": "StockAnalysis / CNBC (May 6, 2026) — TTM operating margin 41.60%; Q3 FY2026 non-GAAP 70.9%",
+      "status": "ok",
+      "deviation": "0%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 47.16,
+      "web_value": 47.16,
+      "source": "StockAnalysis / Yahoo Finance trailing P/E (May 6, 2026)",
+      "status": "ok",
+      "deviation": "0%"
+    },
+    {
+      "metric": "revenue_ttm",
+      "our_value": 7355000000.0,
+      "web_value": 13180000000.0,
+      "source": "StockAnalysis (SNDK Revenue 2013-2026) / SanDisk Q3 FY2026 earnings release (April 30, 2026)",
+      "status": "MISMATCH",
+      "deviation": "79%",
+      "note": "Facts bundle used stale FY2025 revenue ($7.355B); current TTM revenue is $13.18B following Q3 FY2026 ($5.95B). price_to_sales_ratio and enterprise_value_to_revenue_ratio corrected in warren_buffett__SNDK.json (only file containing these derived ratios).",
+      "action": "Corrected price_to_sales_ratio (28.39 -> 15.84) and enterprise_value_to_revenue_ratio (28.44 -> 15.87) in warren_buffett__SNDK.json"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 208803594240.0,
+      "web_value": 208000000000.0,
+      "source": "Multiple sources — Yahoo Finance, CompaniesMarketCap (May 6, 2026)",
+      "status": "ok",
+      "deviation": "0.4%"
+    },
+    {
+      "metric": "return_on_equity",
+      "our_value": 0.393,
+      "web_value": 0.393,
+      "source": "StockAnalysis / Yahoo Finance (ROE 39.30%, May 2026)",
+      "status": "ok",
+      "deviation": "0%"
+    },
+    {
+      "metric": "return_on_assets",
+      "our_value": 0.27,
+      "web_value": 0.27,
+      "source": "Yahoo Finance / StockAnalysis (ROA 27%, May 2026)",
+      "status": "ok",
+      "deviation": "0%"
+    }
+  ],
+  "overall_status": "1 mismatch corrected (stale revenue driving bad P/S and EV/Revenue ratios)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260506_211601/facts/warren_buffett__SNDK.json"
+  ],
+  "notes": "Only warren_buffett__SNDK.json contains the fundamental_analysis.metrics block with price_to_sales_ratio and enterprise_value_to_revenue_ratio. All other 18 SNDK facts files do not contain raw metric fields — no update needed. Internal text discrepancies (some persona analysis text references old -18.7% operating margin from prior quarters) are narrative artifacts, not metric data bugs, and were not modified per rules (do not change signal/score values)."
+}
