@@ -1,7 +1,7 @@
 ---
 name: swing_trend_momentum track record
 last_updated: 2026-05-06
-last_run_id: 20260506_190825
+last_run_id: 20260506_194605
 stale_after_days: 365
 target_words: 1200
 summary: 0 graded calls. (Appended by ai_hedge.grading.wiki_writer.)
@@ -26,3 +26,4 @@ one resolved call scored against yfinance daily OHLC.
 - — | NKE | bearish $45.8→$42.2 stop $46.5 | **in_progress** (day 4, MFE 5.92%, MAE 0.0%) _(prior_run=20260501_221355, graded_in=20260505_220625)_
 - — | AAPL | bullish $267.5→$287.0 stop $263.5 | **in_progress** (day 2, MFE 6.38%, MAE 0.0%) _(prior_run=20260504_144833, graded_in=20260506_144523)_
 - — | BAC | bullish $52.3→$54.62 stop $51.6 | **in_progress** (day 1, MFE 2.03%, MAE -0.04%) _(prior_run=20260505_190606, graded_in=20260506_190825)_
+- — | JNJ | bearish $226.5→$217.15 stop $232.0 | **in_progress** (day 1, MFE 0.71%, MAE -0.01%) _(prior_run=20260505_194525, graded_in=20260506_194605)_

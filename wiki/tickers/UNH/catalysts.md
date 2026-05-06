@@ -1,42 +1,42 @@
 ---
 name: UNH catalysts
-last_updated: 2026-05-05
-last_run_id: 20260505_194525
+last_updated: 2026-05-06
+last_run_id: 20260506_194605
 target_words: 400
 stale_after_days: 14
-word_count: 437
-summary: Q1 2026 beat fully priced; Goldman $435 Conviction Buy and Argus $400 upgrade absorbed; avg PT now $386.50 (28 analysts); GLP-1 Medicare pilot is new headwind; prior-auth elimination is structural positive; next binary Q2 earnings ~July 10-28; RICO lawsuit and Iran oil-inflation are live risks
+word_count: 418
+summary: Q1 2026 beat fully priced; Goldman $435 Conviction Buy, Argus $400, JP Morgan $420 all absorbed; avg PT $385 (25-28 analysts); GLP-1 Medicare pilot headwind active; next binary Q2 earnings ~July 10-28; RICO lawsuit and ceasefire-oil easing live; prior-auth elimination structural positive unchanged; macro risk-on environment mildly negative for defensive healthcare
 ---
 
 # UNH — Catalysts
 
 ## TL;DR
 
-All near-term catalysts have fired or been absorbed. Q1 2026 earnings (April 21) beat by 10.2% and are priced into the +33.72% recent move. Goldman Sachs added UNH to its Conviction Buy list at $435 PT (late April); Argus upgraded to Buy at $400 (April 22); JP Morgan reiterated at $420 (April 28) — 28 analysts covering with 24% Strong Buy, 56% Buy. Analyst avg PT is $386.50, and at $370.75 the stock is only 4.2% below the consensus — the upgrade cycle is nearly exhausted as a price driver. **New headwind:** UNH expressed "challenges" around the Medicare GLP-1 obesity drug pilot ($50/month program) — a potential drag on medical cost ratios. Next scheduled binary: Q2 2026 earnings (~July 10–28). Notable structural development: UnitedHealthcare's "Value Connect" AI platform (launched early 2026) is cutting manual prior-authorization review by 45% — a long-term competitive advantage. Live risks: RICO insulin-pricing lawsuit (City of New Haven); Iran-Strait of Hormuz escalation driving oil above $100/bbl may pressure medical cost ratios via energy pass-through. (Source: web_research/UNH.json; swing_catalyst_news signal, signals_combined.json, run 20260505_194525.)
+All near-term catalysts have fired or been absorbed. Q1 2026 earnings (April 21) beat by 10.2% and are fully priced into the +29.33% 21-day move. Goldman Sachs Conviction Buy at $435, Argus upgraded to Buy at $400 (April 22), JP Morgan reiterated at $420 (April 28) — 24% Strong Buy, 56% Buy across analysts. Analyst avg PT is ~$385–$386.50, and at $363.87 the stock is ~5.8% below the consensus — the upgrade cycle is nearly exhausted as a price driver. **Live headwind:** The Medicare GLP-1 obesity drug pilot ($50/month program) "challenges" UNH expressed remain unquantified as a drag on medical cost ratios. **May 6 macro context:** S&P 500 confirmed ATH (7,338.89), risk-on rally led by AI/growth (AMD, NVDA, META) — sector rotation is OUT of defensive healthcare. US-Iran ceasefire MOU reportedly within ~48 hours; oil easing toward $102/bbl. Fed holding at 3.50–3.75%; Kevin Warsh Fed transition May 15 adds policy uncertainty. Next scheduled binary: Q2 2026 earnings (~July 10–28). (Source: web_research/UNH.json; swing_catalyst_news signal, signals_combined.json, run 20260506_194605.)
 
 ## Upcoming events
 
 | Event | Date | Expected impact |
 |---|---|---|
-| Q2 2026 earnings | ~July 10–28, 2026 | Next binary — consensus Q2 EPS ~$4.84; guidance cadence is market focus |
-| RICO insulin pricing lawsuit | Unscheduled | City of New Haven suit vs UNH, Cigna, CVS Health — no timeline or liability estimate |
-| Iran-Strait of Hormuz escalation | Active, May 5 | Oil ~$100+/bbl (eased slightly) — indirect cost-of-care headwind; risk-on partial recovery underway |
+| Q2 2026 earnings | ~July 10–28, 2026 | Next binary — consensus Q2 EPS ~$4.85; guidance cadence is market focus |
+| RICO insulin pricing lawsuit | Unscheduled | City of New Haven suit vs UNH, Cigna, CVS Health — no quantified liability |
+| US-Iran ceasefire deal | ~May 7–8, 2026 (48h) | Oil easing toward $102/bbl — indirect benefit (lower medical cost pass-through inflation) |
 | Medicare GLP-1 pilot challenges | Active | $50/month obesity drug program creates MCR uncertainty — not yet quantified |
+| Kevin Warsh Fed transition | May 15, 2026 | Hawkish successor — tighter-for-longer tail risk; defensive healthcare less exposed but not immune |
 | US midterm elections 2026 | Ongoing | Healthcare policy campaign topic; managed-care regulatory exposure |
-| Fed leadership transition | May 15, 2026 | Kevin Warsh (hawkish) as Powell successor — policy uncertainty |
 
 ## Recent news synthesis
 
-**GLP-1 Medicare pilot headwind (May 2026 — new).** UNH expressed "challenges" around the Medicare GLP-1 obesity drug pilot program ($50/month). Potential headwind to medical cost ratio. Magnitude not yet quantified by management. (Source: web_research/UNH.json, run 20260505_194525.)
+**Macro risk-on unfavorable for UNH (May 6, 2026).** S&P 500 confirmed ATH +1.10% on AMD blowout and Iran peace optimism. Capital is rotating into AI/growth/tech, not defensive healthcare. UNH is no longer receiving a macro tailwind. (Source: web_research/UNH.json macro_context, run 20260506_194605.)
 
-**Analyst consensus — 28 analysts, avg PT $386.50.** Goldman Sachs Conviction Buy at $435; Argus upgraded to Buy at $400 (April 22); JP Morgan reiterated at $420. Distribution: 24% Strong Buy, 56% Buy, 12% Hold, 8% Sell; high PT $444, low PT $287. At current price $370.75, only 4.2% below consensus average. (Source: web_research/UNH.json, run 20260505_194525.)
+**Analyst consensus — 25-28 analysts, avg PT ~$385.** Goldman Sachs Conviction Buy at $435; Argus upgraded to Buy at $400 (April 22); JP Morgan reiterated at $420 (April 28). Distribution: 24% Strong Buy, 56% Buy, 12% Hold, 8% Sell; high PT $444, low PT $287. Stock at $363.87 is ~5.8% below consensus — upgrade cycle largely priced. (Source: web_research/UNH.json, run 20260506_194605.)
 
-**Value Connect AI platform — structural competitive advantage.** UNH's AI-driven prior-authorization platform (launched early 2026) cutting manual review by 45%. Improves efficiency and supports member retention. Long-term positive; not a near-term price catalyst. (Source: web_research/UNH.json, run 20260505_194525.)
+**UNH prior-auth elimination (structural positive, unchanged).** UnitedHealthcare removing prior-authorization requirements for 30% of covered services by end of 2026 — long-term competitive advantage for member retention. Not a near-term price catalyst. (Source: web_research/UNH.json, run 20260506_194605.)
 
-**Q1 2026 earnings beat (April 21, 2026) — fully priced.** Adj. EPS $7.23 vs $6.56 consensus (+10.2%); revenue $111.7B (+$2.1B above consensus); MCR improved to 84%; FY2026 guidance raised; $2B+ buyback announced. (Source: web_research/UNH.json, run 20260505_194525.)
+**Q1 2026 earnings beat (April 21, 2026) — fully priced.** Adj. EPS $7.23 vs $6.56 consensus (+10.2%); revenue $111.7B (+$2.1B above consensus); MCR improved to 84%; FY2026 guidance raised; $2B+ buyback announced. (Source: web_research/UNH.json, run 20260506_194605.)
 
-**RICO lawsuit — unpriced legal overhang.** New Haven filed RICO allegations against UNH, Cigna, and CVS Health for an alleged insulin pricing scheme. No quantified liability. (Source: web_research/UNH.json, run 20260505_194525.)
+**RICO lawsuit — unpriced legal overhang.** City of New Haven filed RICO allegations vs UNH, Cigna, CVS Health for alleged insulin pricing scheme. No quantified liability. (Source: web_research/UNH.json, run 20260506_194605.)
 
 ## Insider activity
 
-No insider activity recorded. Sentiment agent: 0 buys, 0 sells across all recorded periods. (Source: sentiment_analyst_agent, signals_combined.json, run 20260505_194525.)
+No insider activity recorded. Sentiment agent: 0 buys, 0 sells. (Source: sentiment_analyst_agent, signals_combined.json, run 20260506_194605.)
