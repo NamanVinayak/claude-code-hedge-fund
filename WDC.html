@@ -484,7 +484,7 @@
             <a class="nav-link " href="closed.html">History</a>
             <a class="nav-link " href="runs.html">All Runs</a>
         </div>
-        <div class="nav-meta">01:55 PM PT · NEXT TX <span id="countdown">--:--</span></div>
+        <div class="nav-meta">02:05 PM PT · NEXT TX <span id="countdown">--:--</span></div>
     </div>
 </nav>
 
@@ -551,7 +551,7 @@
 
 <div class="thesis-card">
     <h2>AI Thesis (from Wiki)</h2>
-    <p>Run 20260505_203524 (2026-05-05). Decision: **buy — 2 shares, limit $446, target $489, stop $428, R/R 2.39:1, conf 44**.</p><p>Prior thesis claim falsified: "Correlation-blocked; cluster cap in force" (20260504_203608). That block is now resolved — STX received a hold decision this run (no new STX position), which means the STX+WDC cluster cap ($971 combined) is no longer triggered. PM issued a buy order. [source: decisions.json, signals_combined.json risk_management_agent, run 20260505_203524]</p><p>Prior thesis claim partially falsified: "ATH $446.62 directly overhead as resistance." Price broke above ATH intraday (high $453.83), though daily close ($442.36) was below the level. Former resistance has now flipped to support; the breakout is conditionally confirmed. [source: signals_combined.json swing_breakout, run 20260505_203524]</p>
+    <p>Run 20260506_203627 (2026-05-06). Decision: **hold existing position — 2 shares, fill confirmed at $448.99, target $489, stop $428, R/R 2.39:1 original, conf 28.**</p><p>Prior thesis claim falsified: "Fill not yet confirmed in per_ticker_history[WDC]" (20260505_203524). Trade id 150 now appears in trade_ledger.json `per_ticker_history[WDC]` with status `entered`, `entry_fill_price: $448.99`, entered 2026-05-06 at 14:29. The limit order at $446 triggered and filled — fill confirmed. [source: trade_ledger.json per_ticker_history[WDC] id 150, run 20260506_203627]</p><p>Prior thesis claim partially updated: "Hourly OBV bearish divergence — unanimous warning." OBV bearish divergence flagged in 20260505_203524 has resolved — OBV is now trending UP with price. The primary monitoring risk has abated. [source: signals_combined.json swing_trend_momentum, swing_head_trader, run 20260506_203627]</p>
 </div>
 
 
@@ -559,6 +559,20 @@
     <h2 style="font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;">Recent AI Decisions</h2>
     
     <div class="dec-timeline">
+    
+    <div class="dec-item">
+        <span class="dec-date">20260506</span>
+        <span><span class="badge badge-hold">HOLD</span></span>
+        <span>
+            
+            <div class="conf-wrap">
+                <div class="conf-bar-bg"><div class="conf-bar" style="width:28%"></div></div>
+                <span class="conf-label">28%</span>
+            </div>
+            
+        </span>
+        <span class="dec-reason" style="font-size:12px;color:var(--muted);line-height:1.6;">Hold existing 2L @ $448.99. Price $483 is ~1.2% from original $489 target. Stop $446.62 (former ATH resistance, now support). No new entry — RSI 86, ADX 68, R/R fails at current prices. Let trade run to target.</span>
+    </div>
     
     <div class="dec-item">
         <span class="dec-date">20260505</span>
