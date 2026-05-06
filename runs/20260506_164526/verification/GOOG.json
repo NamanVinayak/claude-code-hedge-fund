@@ -1,0 +1,72 @@
+{
+  "ticker": "GOOG",
+  "verified_at": "2026-05-06T16:50:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.3281,
+      "web_value": 0.3792,
+      "source": "Yahoo Finance TTM as of May 4, 2026",
+      "status": "ok",
+      "deviation": "13.5%",
+      "notes": "Facts bundle period is 2026-03-31 TTM; web value reflects slightly later TTM including full Q1 2026 beat. Difference is within 20% threshold."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.3203,
+      "web_value": 0.34,
+      "source": "Alphabet Q1 2026 earnings release (SEC EDGAR); YCharts TTM estimate",
+      "status": "ok",
+      "deviation": "5.8%",
+      "notes": "Q1 2026 quarterly operating margin was 36.1% (up 2pp YoY). TTM estimate from multiple sources is approximately 34-36%. Our value of 32.03% is within acceptable range for a slightly older TTM window."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 30.16,
+      "web_value": 28.95,
+      "source": "Yahoo Finance, GuruFocus (forward PE 29.79) as of May 4-5, 2026",
+      "status": "ok",
+      "deviation": "4.2%",
+      "notes": "Range across sources: 28.95-32.42. Our value of 30.16 is well within that range."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 402900000000.0,
+      "web_value": 422500000000.0,
+      "source": "Yahoo Finance TTM revenue as of May 4, 2026; companiesmarketcap.com",
+      "status": "ok",
+      "deviation": "4.6%",
+      "notes": "Our derived revenue (~$402.9B from market_cap/P_S ratio) aligns with 2025 annual revenue of $402.84B. Web TTM of ~$422.5B includes Q1 2026 results. The difference reflects the reporting lag in our data, not a data error."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 4786690719744.0,
+      "web_value": 4710000000000.0,
+      "source": "companiesmarketcap.com, public.com, capital.com — all as of May 5-6, 2026",
+      "status": "ok",
+      "deviation": "1.6%",
+      "notes": "Our value ($4.787T) matches current market cap within normal intraday/daily fluctuation range."
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.3183,
+      "web_value": 0.3183,
+      "source": "FinanceCharts.com / GuruFocus ROE as of Mar 2026",
+      "status": "ok",
+      "deviation": "0.0%",
+      "notes": "Exact match with one source (31.83%). Higher sources cite peak ROE of ~38.9% (Mar 2026 peak), average is ~31-36%. Our value is at the lower end of the range but not a mismatch."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.222,
+      "web_value": null,
+      "source": null,
+      "status": "unverified",
+      "deviation": null,
+      "notes": "ROA for Alphabet was not available in web search results for 2026. No correction applied."
+    }
+  ],
+  "overall_status": "all metrics within tolerance — no corrections needed",
+  "corrections_applied": false,
+  "summary": "All 6 verifiable key metrics for GOOG are within the 20% deviation threshold. The slight differences in net_margin and operating_margin are attributable to Alphabet's strong Q1 2026 earnings beat (Search +19% YoY, Cloud +62.7% YoY) being partially captured in the web TTM figures but not yet in our facts bundle period (2026-03-31 TTM window). No facts bundles were modified."
+}

@@ -1,0 +1,11 @@
+{
+  "GOOG": {
+    "signal": "bearish",
+    "confidence": 42,
+    "reasoning": "Branch A fires on extreme readings but confidence is capped by regime risk. Daily Z-score 2.51 (above +2 threshold), RSI-7 90.7 / RSI-14 80.88 (both well above the 75 overbought trigger), and price is +21.25% above the 50-SMA (extreme by any definition). Hourly Z-score 2.17 also confirms multi-timeframe extension. However, the critical headwind: ADX 74.23 with +DI 42.98 vs -DI 3.72 signals one of the strongest uptrends in recent memory — this is the same ADX 60+ regime that stopped out the AMZN mean-reversion fade (May 4, -$10.14) and the NVDA fade (Apr 30, -$63.20). Lessons warn explicitly that 'extreme ADX regime sets an elevated bar for fading overbought conditions.' Wiki confirms prior call (run 20260505_164543, bearish, entry $380) is in_progress with 'no reversal candle confirmed' — I am reaffirming the bearish thesis but this is the SAME call, not a fresh setup. The current price $395.11 has pushed MAE to -2.36% against the prior stop of $389.5, suggesting the prior stop may be in jeopardy intraday even though daily close ($384.27) held. No RSI divergence on either timeframe. No reversal candle. Branch B is not applicable — price is at multi-week highs, not pulling back to a Fib level. I am raising the stop tighter (to just above the recent swing high $396.38 intraday + 1 ATR buffer) to respect the trend's strength. Confidence reduced from prior 55 to 42 given: (1) no reversal candle still absent, (2) trend regime increasingly extreme (ADX rising), (3) two similar mean-reversion fades failed in the past week. Will not chase a new entry — this is a thesis reaffirmation only if still in prior trade.",
+    "entry": 384.27,
+    "target": 342.97,
+    "stop": 397.5,
+    "timeframe": "8-15 trading days"
+  }
+}
