@@ -1,44 +1,46 @@
 ---
 name: META trades
-last_updated: 2026-05-05
-last_run_id: 20260505_140723
+last_updated: 2026-05-06
+last_run_id: 20260506_140335
 target_words: 800
 stale_after_days: 60
-word_count: 622
-summary: 1 confirmed open short (id 118, 1 share, fill $611.78, stop $635, target $580, R/R 2.5:1); 2 prior longs closed/abandoned; net lifetime realized P&L approximately -$2.38; holding short from run 20260504_143030.
+word_count: 648
+summary: Cover decision issued for short id 118 (fill $611.78, cover at ~$604.96, ~$6.82 gain; ledger status still "entered" — exit fill not yet confirmed in trade_ledger.json); 2 prior longs closed/abandoned; net lifetime realized P&L approximately -$2.38 (id 16 only); cover fill pending confirmation.
 ---
 
 # META — Trades
 
 ## TL;DR
 
-One open short position — trade id 118, 1 share filled at $611.78 on 2026-05-04 (entered at 14:48 UTC), stop $635, target $580, R/R 2.5:1. Tracking well: MFE +2.78%, MAE 0.0%. Decision run 20260505_140723: **hold**, no new entry (same-direction stacking blocked, remaining position limit 0). Two prior long trades are fully closed/abandoned. (source: trade_ledger.json per_ticker_history[META] id 118, run 20260505_140723)
+Cover decision issued for trade id 118 (run 20260506_140335, 55% confidence) — PM instructed closing the 1-share short at ~$604.96, locking in approximately **$6.82/share gain** from fill $611.78. However, the ledger (`trade_ledger.json`) still shows id 118 with status "entered" and no `exit_fill_price` — the exit fill is not yet confirmed. Per hard rule #11, this trade is NOT yet recorded as closed. Two prior long trades remain fully closed/abandoned. (source: trade_ledger.json per_ticker_history[META] id 118, decisions.json, run 20260506_140335)
 
-## Open positions
+## Open positions (per trade_ledger.json — exit fill not yet confirmed)
 
-### Trade ID 118 — Short, Entered (Run: 20260504_143030)
+### Trade ID 118 — Short, Entered / Cover Decision Pending (Run: 20260504_143030)
 
 | Field | Value |
 |---|---|
 | Trade ID | 118 |
 | Direction | Short |
 | Quantity | 1 share |
-| Status | Entered (open) |
+| Status | Entered (open in ledger) — cover decision issued run 20260506_140335 |
 | Entry price (model) | $621.00 (limit on bounce) |
 | Entry fill price | $611.78 |
 | Entry tolerance | 1.5% |
 | Stop loss | $635.00 |
 | Target price | $575.00 (original) / $580.00 (PM adjusted, run 20260505_140723) |
-| R/R ratio | 3.3:1 (original) / 2.5:1 from fill |
-| Confidence | 62% (entry run) / 58% (current hold run) |
+| Cover decision price | ~$604.96 (run 20260506_140335) |
+| Expected gain (if filled) | ~$6.82/share |
+| R/R ratio | 3.3:1 (original) / 0.17:1 remaining from current levels |
+| Confidence | 62% (entry run) / 55% (cover run) |
 | Timeframe | 5–12 trading days |
 | Created at | 2026-05-04T14:46:00+00:00 |
 | Entered at | 2026-05-04T14:48:00+00:00 |
-| MFE / MAE | +2.78% / 0.0% |
+| MFE / MAE | ~+1.11% / 0.0% (as of cover decision) |
 
 **Model thesis at entry (run 20260504_143030):** Post-earnings capex-shock breakdown ($669→$600, 3.26x avg vol Apr 30) confirmed structural re-rating. Head Trader bearish 62 conf. Conditional short at $619–628 resistance (Fib 38.2% + former support) with bearish rejection candle. Daily ADX 49.52 with -DI 34.25 >> +DI 26.06; hourly ADX 50.9 with -DI 47.79 >> +DI 7.66 — extreme bearish trend. Risk-off macro (Iran escalation May 4, Fed hawkish succession risk). R/R 3.3:1 from $621 entry. (source: trade_ledger.json raw_decision, id 118)
 
-**Current status (run 20260505_140723):** Holding. Price ~$604.55, fill was $611.78, MFE +2.78%, MAE 0.0%. PM decision: hold with stop $635, target $580, R/R 2.5:1. ADX now 50.73 (strengthened bearish trend). 4/5 swing agents directionally bearish. (source: decisions.json, run 20260505_140723)
+**Cover decision (run 20260506_140335, 55% conf):** RSI-7 collapsed to 6.52 (extreme oversold), bullish RSI divergence confirmed on both daily and hourly timeframes, hourly OBV diverging bullishly from price — elevated mean-reversion bounce risk. R/R from $604.96 to target $580 only $4.96 vs. $30 adverse risk to $635 stop = 0.17:1, deeply unfavorable. Head trader voted hold but allowed_actions only permits cover (hold=0, cover=1). PM decision: cover and re-enter on failed bounce to $612–614 resistance zone. Re-entry: short at $612–614, stop above $621, target $580–585 (Fib 61.8% at $585.68). (source: decisions.json, signals_combined.json, run 20260506_140335)
 
 ---
 
@@ -82,13 +84,15 @@ One open short position — trade id 118, 1 share filled at $611.78 on 2026-05-0
 | Metric | Value |
 |---|---|
 | Total trades in ledger | 3 (id 16, id 22, id 118) |
-| Open positions | 1 (id 118 — short) |
+| Open positions (ledger) | 1 (id 118 — short; cover decision issued, exit fill unconfirmed) |
 | Filled and closed | 1 (id 16 — long, ~-$2.38) |
 | Unfilled/abandoned | 1 (id 22 — long, no P&L) |
 | Realized P&L | ~-$2.38 (id 16 only) |
-| Unrealized P&L | ~+$7.23 (id 118: 1 share × ($611.78 − $604.55)) |
+| Unrealized P&L (if cover fills) | ~+$6.82 (id 118: 1 share × ($611.78 − $604.96)) |
 | Win rate (closed) | 0% (1 closed, 0 wins) |
 | Directions traded | Long (id 16, 22), Short (id 118) |
 | First short ever | id 118 (run 20260504_143030) |
 
-(source: trade_ledger.json per_ticker_history[META], run 20260505_140723)
+Note: id 118 exit fill not yet in ledger as of run 20260506_140335. Stats will update when cover fill is confirmed in trade_ledger.json per_ticker_history[META].
+
+(source: trade_ledger.json per_ticker_history[META], run 20260506_140335)
