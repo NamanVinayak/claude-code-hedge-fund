@@ -1,7 +1,7 @@
 ---
 name: swing_trend_momentum track record
-last_updated: 2026-05-05
-last_run_id: 20260505_220625
+last_updated: 2026-05-06
+last_run_id: 20260506_144523
 stale_after_days: 365
 target_words: 1200
 summary: 0 graded calls. (Appended by ai_hedge.grading.wiki_writer.)
@@ -24,3 +24,4 @@ one resolved call scored against yfinance daily OHLC.
 - — | WDC | bullish $410.0→$500.36 stop $379.0 | **in_progress** (day 1, MFE 10.69%, MAE 0.0%) _(prior_run=20260504_203608, graded_in=20260505_203524)_
 - — | MU | bullish $503.0→$609.0 stop $465.0 | **in_progress** (day 1, MFE 17.85%, MAE 0.0%) _(prior_run=20260504_212836, graded_in=20260505_211609)_
 - — | NKE | bearish $45.8→$42.2 stop $46.5 | **in_progress** (day 4, MFE 5.92%, MAE 0.0%) _(prior_run=20260501_221355, graded_in=20260505_220625)_
+- — | AAPL | bullish $267.5→$287.0 stop $263.5 | **in_progress** (day 2, MFE 6.38%, MAE 0.0%) _(prior_run=20260504_144833, graded_in=20260506_144523)_

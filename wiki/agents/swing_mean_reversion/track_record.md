@@ -1,7 +1,7 @@
 ---
 name: swing_mean_reversion track record
 last_updated: 2026-05-06
-last_run_id: 20260506_140335
+last_run_id: 20260506_144523
 stale_after_days: 365
 target_words: 1200
 summary: 2 graded calls. (Appended by ai_hedge.grading.wiki_writer.)
@@ -44,3 +44,4 @@ one resolved call scored against yfinance daily OHLC.
 - — | NKE | bullish $44.4→$46.94 stop $42.09 | **in_progress** (day 4, MFE 1.26%, MAE -2.95%) _(prior_run=20260501_221355, graded_in=20260505_220625)_
 - — | NVDA | bullish $197.5→$216.83 stop $193.5 | **in_progress** (day 1, MFE 1.39%, MAE -0.74%) _(prior_run=20260505_163241, graded_in=20260506_123913)_
 - — | META | bullish $608.0→$626.0 stop $599.0 | **in_progress** (day 1, MFE 1.04%, MAE -1.26%) _(prior_run=20260505_140723, graded_in=20260506_140335)_
+- — | AAPL | bullish $277.25→$285.5 stop $274.5 | **in_progress** (day 2, MFE 2.64%, MAE -0.86%) _(prior_run=20260504_144833, graded_in=20260506_144523)_

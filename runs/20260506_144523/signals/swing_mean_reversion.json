@@ -1,0 +1,11 @@
+{
+  "AAPL": {
+    "signal": "bearish",
+    "confidence": 48,
+    "reasoning": "Branch A (fade the extreme) fires with moderate conviction; Branch B (dip-buy) does not apply — price is near recent highs with no pullback. Branch A indicators: daily Z-score 2.42 (above +2 threshold), hourly Z-score 2.07 (both timeframes extended simultaneously — strongest fade signal per strategy rules), daily Bollinger pct_b 1.0361 (price outside upper band), price 8.54% above 50-SMA (noteworthy extension zone). RSI-7 at 73.67 is approaching the >75 overbought threshold but not yet breached; RSI-14 at 65.59 is elevated. Hourly RSI 52.24 is neutral — the hourly extreme has not yet confirmed the daily Z-score signal, which tempers conviction. Critically, no bearish reversal candle has formed (May 5 closed near highs at $284.18 on a strong bull bar), and RSI divergence reads bullish not bearish — the strategy requires reversal-candle confirmation before entry to avoid catching a falling knife in reverse. Prior call context: my prior bullish signal (run 20260504_144833, entry $277.25, target $285.50) is in_progress with MFE 2.64% — price at $284.18 is within $1.32 of that target. I am not anchoring on past success; the thesis has largely played out and the current setup is mean-reversion back toward the middle. Lessons check: the AMZN mean-reversion short on 2026-05-04 stopped out due to extreme ADX (65+), but AAPL's ADX is only 24.45 (moderate), making this a more favorable fade environment. Macro: daily OBV trend is up with no divergence, and volume on the upward move is only 1.07x — not a capitulation blow-off. Confidence held at 48 (below 50) because the critical requirement of a confirmed reversal candle is not yet met; this is a conditional setup — valid on first reversal bar near current levels. Target is middle Bollinger Band / 50-SMA convergence zone (~$268). Stop above the recent swing high.",
+    "entry": 284.50,
+    "target": 268.79,
+    "stop": 288.50,
+    "timeframe": "5-12 trading days"
+  }
+}

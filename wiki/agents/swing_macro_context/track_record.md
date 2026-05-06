@@ -1,7 +1,7 @@
 ---
 name: swing_macro_context track record
 last_updated: 2026-05-06
-last_run_id: 20260506_140335
+last_run_id: 20260506_144523
 stale_after_days: 365
 target_words: 1200
 summary: 1 graded calls. (Appended by ai_hedge.grading.wiki_writer.)
@@ -26,3 +26,4 @@ one resolved call scored against yfinance daily OHLC.
 - — | DIS | bullish $102.5→$107.11 stop $101.02 | **in_progress** (day 4, MFE 2.27%, MAE -1.2%) _(prior_run=20260501_221355, graded_in=20260505_220625)_
 - — | NVDA | bullish $198.5→$216.83 stop $193.5 | **in_progress** (day 1, MFE 0.88%, MAE -1.24%) _(prior_run=20260505_163241, graded_in=20260506_123913)_
 - — | META | bearish $618.0→$580.0 stop $635.0 | **in_progress** (day 1, MFE 2.85%, MAE 0.0%) _(prior_run=20260505_140723, graded_in=20260506_140335)_
+- — | AAPL | bullish $277.0→$291.0 stop $270.34 | **in_progress** (day 2, MFE 2.73%, MAE -0.77%) _(prior_run=20260504_144833, graded_in=20260506_144523)_

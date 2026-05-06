@@ -1,7 +1,7 @@
 ---
 name: swing_breakout track record
-last_updated: 2026-05-05
-last_run_id: 20260505_220625
+last_updated: 2026-05-06
+last_run_id: 20260506_144523
 stale_after_days: 365
 target_words: 1200
 summary: 3 graded calls. (Appended by ai_hedge.grading.wiki_writer.)
@@ -26,3 +26,4 @@ one resolved call scored against yfinance daily OHLC.
 - — | JNJ | bearish $223.5→$216.53 stop $231.5 | **in_progress** (day 1, MFE 0.0%, MAE -1.6%) _(prior_run=20260504_194523, graded_in=20260505_194525)_
 - — | WDC | bullish $447.5→$489.0 stop $409.0 | **in_progress** (day 1, MFE 1.41%, MAE -4.24%) _(prior_run=20260504_203608, graded_in=20260505_203524)_
 - — | DIS | bullish $103.9→$107.11 stop $101.0 | **in_progress** (day 4, MFE 0.9%, MAE -2.53%) _(prior_run=20260501_221355, graded_in=20260505_220625)_
+- — | AAPL | bullish $277.5→$296.77 stop $274.0 | **in_progress** (day 2, MFE 2.55%, MAE -0.95%) _(prior_run=20260504_144833, graded_in=20260506_144523)_
