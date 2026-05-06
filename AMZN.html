@@ -484,7 +484,7 @@
             <a class="nav-link " href="closed.html">History</a>
             <a class="nav-link " href="runs.html">All Runs</a>
         </div>
-        <div class="nav-meta">10:10 PM PT · NEXT TX <span id="countdown">--:--</span></div>
+        <div class="nav-meta">10:15 PM PT · NEXT TX <span id="countdown">--:--</span></div>
     </div>
 </nav>
 
@@ -531,7 +531,7 @@
 
 <div class="thesis-card">
     <h2>AI Thesis (from Wiki)</h2>
-    <p>**Prior claim falsified:** The 20260504_173321 thesis stated "HOLD is the only allowed action — portfolio cash = $0, risk manager limit = $0." As of run 20260505_173521, that capital constraint no longer holds: portfolio cash is $1,617.76, risk manager max position is $485.33, and `allowed_actions[AMZN]` shows short: 1. **HOLD today is a setup-quality decision, not a capital-constraint decision.** All 5 swing agents returned neutral with 100% agreement — no valid entry exists from current price ($272-273). Two distinct entry scenarios are fully defined and waiting; neither is available today. [source: decisions.json, signals_combined.json, trade_ledger.json, run 20260505_173521]</p><p>---</p><p>The May 4 thesis (run 20260504_173321) stated no trade was possible because cash was zero and risk manager limit was $0. That capital state has changed: other positions closed (DIS stop hit May 5, -$4.99; see trade_ledger.json recent_closures_30d) and portfolio cash is now $1,617.76. The AMZN position remains closed (ID 115 stop_hit at $276 on May 4, P&L -$10.14 — see trade_ledger.json per_ticker_history[AMZN]). No new AMZN capital constraint exists today. The prior AMZN short thesis (mean-reversion from April 30 shooting star) remains falsified by the stop-out: bulls proved control above $268-276. HOLD today reflects the consensus of all five agents that no actionable entry exists at current price, not a lack of capital. [source: trade_ledger.json, decisions.json, run 20260505_173521]</p>
+    <p>⚠️ Recent trade: stop_hit 2026-05-04, -$10.14. Thesis under review.</p><p>**Prior claim falsified:** The 20260504_173321 thesis stated "HOLD is the only allowed action — portfolio cash = $0, risk manager limit = $0." As of run 20260505_173521, that capital constraint no longer holds: portfolio cash is $1,617.76, risk manager max position is $485.33, and `allowed_actions[AMZN]` shows short: 1. **HOLD today is a setup-quality decision, not a capital-constraint decision.** All 5 swing agents returned neutral with 100% agreement — no valid entry exists from current price ($272-273). Two distinct entry scenarios are fully defined and waiting; neither is available today. [source: decisions.json, signals_combined.json, trade_ledger.json, run 20260505_173521]</p><p>---</p>
 </div>
 
 
