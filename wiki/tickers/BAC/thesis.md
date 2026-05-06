@@ -1,55 +1,57 @@
 ---
 name: BAC thesis
-last_updated: 2026-05-04
-last_run_id: 20260504_192106
+last_updated: 2026-05-06
+last_run_id: 20260506_190825
 target_words: 500
 stale_after_days: 30
-word_count: 502
-summary: Bull thesis intact — open 15-share long at $52.75; Iran escalation (May 4) falsifies prior "macro tailwind" claim; pullback to $52.31 deepens but stop at $51.50 not hit; OBV divergence and Iran headwind are the new primary cautions
+word_count: 498
+summary: SELL issued — PM exiting 15-share long at market (~$53.72); prior "Iran escalation falsifies macro tailwind" thesis updated — Iran ceasefire MOU now ~48h from completion (macro improved), but bearish technicals (OBV distribution, DI crossover, 0.75:1 R/R, valuation -35.8%) override the macro recovery; unanimous 5/5 neutral; exit is proactive, not stop-hit
 ---
 
 ## TL;DR
 
-Bank of America has an active long position: 15 shares at $52.75 (Apr 30, 2026, id 110), currently at $52.31 (unrealized ~-$0.44/share). The underlying uptrend is structurally intact — ADX 51.52, EMA-10 > EMA-21 > EMA-50 — but near-term momentum has turned negative. **Prior thesis falsification (run `20260504_192106`):** The May 1 thesis cited "Iran peace talks easing oil pressure" as a macro tailwind (web_research/BAC.json, run `20260501_190923`). That claim is falsified: Iran-US military escalation returned on May 4 (UAE intercepted Iranian missiles, WTI surged above $106), directly reversing the risk-on narrative. The new macro backdrop is mixed-to-cautious. No bull-to-bear flip; the position remains open with stop at $51.50.
+**PM issued SELL on the 15-share long (id 110, $52.75 cost basis) at market (~$53.72) on May 6, 2026 (run `20260506_190825`).** **Prior thesis falsification:** The May 4 thesis (run `20260504_192106`) described Iran escalation as the primary macro headwind. That specific claim is now reversed: US-Iran ceasefire MOU is reportedly ~48 hours from completion as of May 6, S&P 500 confirmed ATH close at 7,338.89 (+1.10%). The macro headwind has eased. However, the sell decision is not driven by macro — it is driven by deteriorating technical internals and failed R/R that were present even before the macro improvement. The macro recovery does not fix the bearish DI crossover, OBV distribution on both timeframes, or a risk-reward ratio of 0.75:1 that fails the 2:1 minimum. [decisions.json, signals_combined.json, run `20260506_190825`]
 
 ---
 
 ## Prior Thesis Claim Falsified
 
-**Falsified claim (run `20260501_190923`):** "Iran peace talks easing oil pressure" — cited as a positive macro tailwind for banks.
+**Falsified claim (run `20260504_192106`):** "Iran-US ceasefire collapsed — new macro backdrop is mixed-to-cautious for banks."
 
-**What falsified it (run `20260504_192106`):** Iran-US ceasefire collapsed. UAE intercepted Iranian missiles on May 4, Strait of Hormuz closure fears re-emerged, WTI surged above $106, and Dow futures declined. Macro regime reverted to mixed-to-cautious per `macro/regime.md` (updated run `20260504_125732`). [web_research/BAC.json, run `20260504_192106`]
+**What falsified it (run `20260506_190825`):** US-Iran ceasefire MOU negotiations are reportedly ~48 hours from completion. S&P 500 and Nasdaq confirmed ATH closes May 6. Oil easing toward $102/bbl from ~$110 peak. The Iran escalation narrative reversed. [web_research/BAC.json, run `20260506_190825`]
+
+**Note:** The macro falsification does NOT change the sell decision. The exit is driven by technical deterioration and R/R failure, not the macro thesis. The bearish case stands on independent technical grounds.
 
 ---
 
 ## Bull Case
 
-**Exceptional trend structure.** ADX 51.52 — still in the "exceptional" range (>50). EMA alignment bullish (EMA-10 $52.93 > EMA-21 $52.31 > EMA-50 $51.56). The 38.2% Fibonacci retracement ($52.07) and volume-confirmed hourly support at $52.25 (28 tests) form a dip-buy confluence zone that swing_mean_reversion rates as valid. [signals_combined.json, run `20260504_192106`]
+**Fundamentals remain genuinely solid.** Q1 2026: EPS $1.11 beat (+9.9%), NII +9% YoY, zero trading loss days. Q2 EPS estimate $1.09, revenue $29.99B. Analyst consensus 18 Strong Buy / 4 Buy of 24 brokerages, avg PT $60.34, median $62.00 — implying ~12–15% upside from $53.72. $18.66B trailing buyback pace; Basel III endgame softening could unlock ~$40B additional buyback capacity. PEG ratio 0.93 (cheap relative to growth). [web_research/BAC.json, run `20260506_190825`]
 
-**Fundamentals remain strong.** Q1 2026: EPS $1.11 beat (+9.9%), NII $15.7B (+9% YoY), zero trading loss days. Analyst consensus: 40% Strong Buy / 45% Buy, avg PT ~$61.61 (17% implied upside from $52.31). $18.66B trailing buyback. Basel III capital relief could unlock ~$40B additional buyback capacity. [web_research/BAC.json, run `20260504_192106`]
+**EMA alignment structurally intact.** Daily EMA staircase bullish (EMA-10 $52.86 > EMA-21 $52.37 > EMA-50 $51.65). ADX 44.67 — strong trend. Macro regime now strongly risk-on (S&P ATH). [signals_combined.json, swing_trend_momentum]
 
 ---
 
 ## Bear Case
 
-**Iran escalation is a direct macro headwind.** Risk-off on May 4 specifically pressures financials: loan demand, credit quality, and consumer spending deteriorate under a stagflationary energy-shock scenario. [web_research/BAC.json macro_context]
+**OBV distribution divergence on both timeframes.** On-Balance Volume trending down on daily and hourly despite price bouncing from $52.19 to $53.72 — institutional distribution into the bounce. This signal was present in May 4 and May 5 runs and has not resolved. [signals_combined.json, swing_macro_context, swing_trend_momentum, run `20260506_190825`]
 
-**OBV divergence persists.** On-Balance Volume trending down on both daily and hourly timeframes — institutional distribution into the rally. Hourly MACD histogram negative (-0.085). 10-day ROC -1.24% (negative). Short-term momentum decelerating even as the daily trend holds. [signals_combined.json, swing_trend_momentum]
+**Bearish DI crossover.** Minus DI (26.59) exceeds Plus DI (20.31) — selling pressure now dominant despite bullish EMA alignment. Daily MACD histogram -0.1405 (negative). 10d ROC -0.67% (decelerating). [signals_combined.json, swing_trend_momentum]
 
-**Berkshire Hathaway structural overhang.** Ongoing stake reduction; no disclosed floor. Persistent cap on institutional enthusiasm. Berkshire continues to reduce. [web_research/BAC.json, swing_catalyst_news]
+**R/R 0.75:1 fails the 2:1 minimum.** From $53.72 intraday, target $55.40 = +$1.68 upside; prior stop $51.50 = -$2.22 downside. R/R approximately 0.75:1 — well below the 2:1 minimum. [decisions.json, run `20260506_190825`]
 
-**R/R to target is marginal.** From $52.31, upside to $55.40 is +$3.09; downside to stop $51.50 is -$0.81. R/R is approximately 3.8:1 from current price but 4/5 agents are neutral and the risk manager's remaining_position_limit is $0 (BAC position is at cap). No add-on is authorized regardless of R/R. [signals_combined.json, risk_management_agent]
+**Valuation agent: -35.8% overvalued.** Residual income analysis calculates intrinsic value ~$244.8B vs market cap $381.3B — a 35.8% premium. 100% confidence bearish signal. [signals_combined.json, valuation_analyst_agent]
+
+**Unanimous 5/5 neutral signal.** All five swing agents (trend_momentum, mean_reversion, breakout, catalyst_news, macro_context) issued neutral signals for a new entry. No agent found a reason to hold or add. [signals_combined.json, swing_head_trader, run `20260506_190825`]
 
 ---
 
 ## What Would Change the Thesis
 
-**Bull-to-bear flip:** Hard exit if daily close below stop at $51.50. Secondary: Berkshire stake disclosed below 5%, or Iran escalation drives NII guidance cut at Q2 earnings (July 14, 2026).
-
-**Re-entry / add-on trigger:** Not applicable while position is open at max capital allocation. Monitor OBV for re-convergence. Re-acceleration trigger: daily MACD histogram turns positive AND 5d/10d ROC both turn positive AND macro regime stabilizes.
+Position is being exited. Re-entry criteria for a new long: OBV divergence resolves (OBV resumes uptrend), daily MACD histogram turns positive, 5d AND 10d ROC both positive, R/R ≥ 2:1, AND either macro remains risk-on or Berkshire overhang clears. No re-entry while all momentum signals negative.
 
 ---
 
 ## Synthesis
 
-The 15-share long is the core active position. The underlying trend is real and structurally intact. The short-term case is challenged by decelerating momentum, Iran escalation headwind, and OBV distribution — all of which the four neutral agents flagged correctly. The position is held with stop at $51.50; no new capital is deployed into BAC at this run. [decisions.json, run `20260504_192106`]
+The 15-share long initiated Apr 30 (id 110) is being exited proactively. The position achieved unrealized gain of ~$14.55 (+$0.97/share) but the forward risk-reward of 0.75:1 and confirmed OBV distribution on both timeframes justify the exit. The macro improvement (ceasefire, ATH) is real but is a sector-wide tailwind, not BAC-specific. BAC-specific technicals (DI crossover, OBV divergence, MACD histogram negative) override the macro recovery. [decisions.json, run `20260506_190825`]

@@ -1,54 +1,57 @@
 ---
 name: GS thesis
-last_updated: 2026-05-05
-last_run_id: 20260505_190606
+last_updated: 2026-05-06
+last_run_id: 20260506_190825
 target_words: 500
 stale_after_days: 30
-word_count: 499
-summary: EMA-21 break confirmed ($906.74); price fell to $903.27; prior "deterioration at $905.10" claim superseded — GS now below daily EMA-21 for first time; 6th consecutive HOLD (conf 35); Iran ceasefire fragile but GS revenue headwind unchanged; zero GS trades in ledger
+word_count: 496
+summary: Prior bearish thesis falsified — EMA-21 break reversed intraday; price $940.77 reclaimed all daily EMAs; hourly regime completely flipped (plus_DI 31.17 > minus_DI 17.35, MACD histogram +2.89); 2/5 agents bullish; HOLD (7th consecutive) — ideal pullback entry at $924 already passed; volume 0.77x/0.32x still far below threshold; zero GS trades in ledger
 ---
 
 ## TL;DR
 
-**Prior thesis falsification (run `20260505_190606`):** The May 4 thesis (last_run_id `20260504_192106`) described deterioration at $905.10 as a "warning" with price approaching EMA-21 ($907.08). That threshold has now been crossed: GS closed $903.27 on May 5, breaking below EMA-21 ($906.74) for the first time in this run sequence. The structural daily uptrend remains technically intact (EMA-10 > EMA-21 > EMA-50), but price below EMA-21 is a meaningful new caution flag. Macro context shifted marginally positive on May 5 (ceasefire held per Hegseth, S&P +0.9%, Nasdaq ATH) but the Iran headwind on GS's revenue drivers is unchanged. Model issued a 6th consecutive HOLD (confidence 35%). Zero GS trades in ledger. [run `20260505_190606`]
+**Prior thesis falsification (run `20260506_190825`):** The May 5 thesis (run `20260505_190606`) concluded that GS broke below daily EMA-21 ($906.74) for the first time — described as "a meaningful new caution flag" and the most important new deterioration signal. That claim is now falsified: GS surged from ~$899-903 intraday lows all the way to $940.77, recovering above all daily EMAs (EMA-10 $917.87, EMA-21 $907.84). The EMA-21 break has been reversed intraday. The hourly trend has completely flipped: from confirmed bearish (minus_DI 29.23 > plus_DI 17.36, MACD histogram -0.2997) to confirmed bullish (plus_DI 31.17 > minus_DI 17.35, MACD histogram +2.89). Model issued 7th consecutive HOLD (conf 38%) — bullish setup forming but entry discipline required. Zero GS trades in ledger. [run `20260506_190825`, trade_ledger.json per_ticker_history[GS]=[]]
 
 ---
 
 ## Prior Thesis Claim Falsified
 
-**Falsified claim (run `20260504_192106`):** Price at $905.10 was "approaching EMA-21 ($907.08)" — described as a caution flag, not yet a confirmed break.
+**Falsified claim (run `20260505_190606`):** "GS closed $903.27, confirmed below EMA-21 ($906.74) for the first time in this run sequence — a meaningful new caution flag."
 
-**What falsified it (run `20260505_190606`):** Price fell $1.83 further to $903.27 daily close, confirmed below EMA-21 ($906.74). This is the first daily close below EMA-21 in the current run sequence. MACD histogram deepened to -3.1266 (from -1.42 on May 4). Hourly downtrend intensified: minus DI 29.23 vs plus DI 17.36 with ADX 25.37 (strong active bear trend). [signals_combined.json, swing_trend_momentum, run `20260505_190606`]
+**What falsified it (run `20260506_190825`):** GS surged from $899-903 lows (May 5-6 session) to $940.77 intraday on May 6, recovering above EMA-21 ($907.84), EMA-10 ($917.87), and all daily moving averages. Hourly regime flipped from confirmed bearish downtrend (minus_DI 29.23 > plus_DI 17.36) to confirmed bullish reversal (plus_DI 31.17 > minus_DI 17.35, MACD histogram +2.8851 vs prior -0.2997). US-Iran ceasefire MOU ~48h from completion directly reversed the macro headwind. [signals_combined.json, swing_trend_momentum, swing_macro_context, run `20260506_190825`]
 
 ---
 
 ## Bull Case
 
-**Daily EMA structure technically intact.** Despite closing below EMA-21, the EMA staircase remains ordered: EMA-10 $917.65 > EMA-21 $906.74 > EMA-50 $889.38. ADX 34.21 — strong trend (above 25). GS has not broken EMA-50 ($889.38). RSI-7 at 33.74 is near oversold; a technical bounce from this level toward $918–$924 is the most likely near-term path if macro stabilizes. [signals_combined.json, run `20260505_190606`]
+**Macro regime is the strongest in this run sequence.** S&P 500 confirmed ATH close (7,338.89 +1.10%), Nasdaq ATH (25,670 +1.36%). US-Iran ceasefire MOU ~48h from completion — directly positive for GS's three core revenue drivers: M&A deal flow (resumes in risk-on), IPO pipeline (reopens), FICC trading (risk-on volumes). AI capex supercycle confirmed by AMD Q1 (+38% YoY), Azure +40%, AWS $37.6B — GS's $1.5B Anthropic/Blackstone JV puts it inside the structural AI growth story. [web_research/GS.json, swing_macro_context, run `20260506_190825`]
 
-**Strong earnings franchise unchanged.** Q1 2026: EPS $17.55 (+24.3% YoY), revenue $17.23B (+14.4% YoY), ROCE 19.8%. GS led all banks in global M&A by value ($267B, Q1 2026). AI partnership ($1.5B Anthropic/Blackstone JV) adds new revenue stream. [web_research/GS.json, run `20260505_190606`]
+**Hourly reversal is genuinely strong.** Hourly plus_DI 31.17 >> minus_DI 17.35, MACD histogram +2.89 (from -0.2997 prior run — a large, fast reversal). Hourly OBV is trending up without divergence for the first time in this run sequence. Q1 2026 earnings franchise: EPS $17.55 (+24.3% YoY), revenue $17.2B (+14.4% YoY), equities trading all-time record $5.33B, #1 global M&A. At $924 pullback entry: target $952.01 (+$28), stop $912.00 (-$12) = R/R 2.33:1. [signals_combined.json, swing_trend_momentum, swing_macro_context]
 
 ---
 
 ## Bear Case
 
-**Iran escalation remains structurally negative for GS revenue.** Even with the May 5 ceasefire holding (S&P +0.9%), the threat to GS's three revenue drivers persists: M&A deal flow freezes in risk-off, IPO pipeline contracts, FICC trading desks face elevated counterparty risk. FICC already fell 10% YoY in Q1 while JPMorgan FICC grew +21% and Morgan Stanley +29% — a market share problem that predates the Iran escalation. [web_research/GS.json macro_context, signals_combined.json swing_macro_context]
+**Volume is the fundamental problem.** Daily volume 0.77x average; hourly 0.32x — far below the 1.5x confirmation threshold required by strategy rules. DIS lesson (May 5 stop-out on 1.23x breakout) is directly applicable; GS volume is even weaker. Strategy rules explicitly require: "A breakout without volume confirmation — flag as low confidence rather than full signal." [signals_combined.json, swing_breakout, run `20260506_190825`]
 
-**Extreme insider distribution unchanged.** 173 sell transactions vs 52 buys over trailing 3 months — 3.3:1 ratio, ~$109.9M in insider sales. No new Form 4 filings in run `20260505_190606` change this picture. [signals_combined.json, swing_catalyst_news]
+**Daily momentum not yet confirmed.** Daily MACD histogram -3.1933 (still negative). Daily ROC 5d -0.83%, 10d -0.83% — both negative. Daily close $918.89 has NOT exceeded $933.48 resistance on a closing basis. The hourly intraday surge is real, but the daily confirmation candle (close above $933.48 on 1.5x+ volume) has not yet fired. [signals_combined.json, swing_mean_reversion, swing_breakout]
 
-**EMA-21 break is a new deterioration signal.** Price $903.27 is now below EMA-21 ($906.74). Hourly confirmed downtrend (minus DI 29.23 > plus DI 17.36). MACD histogram -3.1266 — deepening bearish momentum. R/R from daily close to target $864.45 vs stop $933.48 = 1.28:1 — below 2:1 minimum; short entry geometry still not clean enough. [signals_combined.json, swing_macro_context]
+**Insider selling extreme.** 173 sell transactions vs 52 buys over trailing 3 months — 3.3:1 ratio, ~$109.9M in net insider sales. CAO Sheara Fredman sold shares May 2026 [web_research/GS.json]. No new Form 4 purchases in run `20260506_190825`. [signals_combined.json, swing_catalyst_news]
 
-**Analyst consensus at fair value.** Average 12-month price target $904.27 (WallStreetZen) — essentially at current price. HSBC PT $765 (bearish framing). 8 Buy / 17 Hold / 1 Sell across 37 analysts. No upgrade catalyst visible near-term. [web_research/GS.json, run `20260505_190606`]
+**Ideal entry already passed.** Dip-buy opportunity at $903-924 is now in the rearview mirror. Intraday at $940.77, entering now destroys R/R ($952 target = only +$11 upside vs $30 downside to $912 stop = 0.37:1). [decisions.json, swing_macro_context, run `20260506_190825`]
 
 ---
 
 ## What Would Change the Thesis
 
-**Bull entry trigger:** Daily close above $924.23 on volume ≥ 1.5x average AND daily RSI-7 > 50 AND hourly MACD histogram positive. All three must fire simultaneously.
+**Long entry trigger (all three must fire):**
+1. Pullback to $924.00 (35-test hourly support) with constructive reversal candle
+2. Volume ≥ 1.5x average on entry bar
+3. Hourly MACD histogram positive at entry
 
-**Short entry trigger:** Bounce to $918–$924 resistance for 2:1+ R/R, or volume-accelerated break below $899.16 (8-test floor) for momentum short.
+**Macro pre-condition:** Iran ceasefire durably holds (MOU signed, Strait of Hormuz closure risk removed).
 
-**Macro pre-condition:** Iran ceasefire must durably hold (Strait of Hormuz closure risk removed) before initiating any long.
+**Short entry:** No longer valid at current price. Prior bearish thesis (run `20260505_190606` target $864.45) was active when catalyst_news had price near $903 — stop at $933.48 has been breached intraday. Short thesis is falsified.
 
 ---
 
@@ -60,5 +63,6 @@ summary: EMA-21 break confirmed ($906.74); price fell to $903.27; prior "deterio
 | `20260415_110848` | Apr 15 | HT neutral | 48% | Hold — ADX 19.4 |
 | `20260417_233350` | Apr 17 | PM hold | 62% | Hold — ADX 20.66, R/R 1.43:1 |
 | `20260430_190826` | Apr 30 | HT neutral | 38% | Hold — FICC miss, insider sell, broken support |
-| `20260504_192106` | May 4 | HT neutral | 30% | Hold — Iran escalation, price drop to $905.10, 5th consecutive hold |
-| `20260505_190606` | May 5 | HT neutral | 35% | Hold — EMA-21 break confirmed, price $903.27, R/R 1.28:1, 6th consecutive hold |
+| `20260504_192106` | May 4 | HT neutral | 30% | Hold — Iran escalation, price drop to $905.10, 5th consecutive |
+| `20260505_190606` | May 5 | HT neutral | 35% | Hold — EMA-21 break confirmed, price $903.27, 6th consecutive |
+| `20260506_190825` | May 6 | HT neutral | 38% | Hold — hourly reversal without volume, dip-buy entry passed, 7th consecutive |
