@@ -1,41 +1,42 @@
 ---
 name: WDC technicals
-last_updated: 2026-05-05
-last_run_id: 20260505_203524
+last_updated: 2026-05-06
+last_run_id: 20260506_203627
 target_words: 350
 stale_after_days: 7
-word_count: 419
-summary: post-ATH breakout pullback setup — price ~$465 hourly / $442.36 daily close; ATH $446.62 broken intraday (high $453.83), now support; hourly OBV bearish divergence (key risk); entry zone $444-448; ADX 67.55 strong uptrend
+word_count: 381
+summary: trade in-flight — fill confirmed at $448.99; price $483 (hourly) now ~1.2% from $489 target; RSI-14 86.09 / ADX 67.88; hourly OBV divergence resolved (now uptrend); setup type: running measured-move, hold to target
 ---
 
 # WDC — Technicals
 
 ## TL;DR
 
-Price ~$465.26 (hourly) / $442.36 (daily close, run 20260505_203524). Daily RSI-14 82.48, RSI-7 77.53 — elevated but less extreme than STX. Z-score vs 50-SMA = 2.16. ADX 67.55 with EMA stack fully aligned bullish. ATH $446.62 broken intraday (high $453.83, daily close below) — former resistance now flipping to support. **Key change from prior run:** hourly OBV is now trending DOWN with bearish price divergence (was trending UP in run 20260504_203608). Hourly relative volume 0.46x. Setup type: **post-ATH breakout pullback — entry zone $444–$448**. [source: signals_combined.json, run 20260505_203524]
+Price ~$483 (hourly) / $465.26 (daily close, run 20260506_203627). Trade id 150 is in-flight: fill confirmed at $448.99, target $489, stop $428. Target is now ~1.2% away. **Key change from prior run (20260505_203524):** hourly OBV bearish divergence has fully resolved — OBV is now trending UP with price. Daily RSI-14 86.09 (vs 82.48 prior run), ADX 67.88 (vs 67.55 prior run). Bollinger pct_b 1.032 — price above daily upper band. Z-score vs 50-SMA = 2.37. Setup type: **running measured-move — hold to target, no new entry.** [source: signals_combined.json, trade_ledger.json, run 20260506_203627]
 
 ## Multi-timeframe state
 
-- **Daily**: Price $442.36 (close) / ~$465 (hourly). EMA-10 ~$410, EMA-21 ~$381, EMA-50 ~$330 — fully stacked and rising. MACD histogram +3.94 (positive). Volume ratio 1.36x average (below 1.5x breakout confirmation threshold). Bollinger pct_b 0.938 (near upper band, inside it — not as extended as STX). Daily RSI-14 82.48.
-- **Hourly**: RSI-21 = 64.48 (healthy, not overbought). ADX 24.85 (moderate — hourly uptrend decelerating). OBV trending DOWN with price divergence — distribution signal. Hourly ROC-5d = −2.11% (negative). Relative volume 0.46x (thin). Hourly support cluster $428–$430 (pivot low cluster). Prior 16-test support ~$404–$410 is secondary support.
-- **Momentum**: ROC 5d +10.39%, 10d +18.24%, 21d +49.97%. Daily ADX 67.55 confirmed uptrend with all EMAs aligned.
+- **Daily**: Price $465.26 (close) / $483 (hourly). EMA-10 ~$420, EMA-21 ~$389, EMA-50 ~$339 — fully stacked and rising. MACD histogram +5.07 (positive, expanding). Volume ratio 1.27x daily (below 1.5x breakout threshold). Bollinger pct_b 1.032 (above upper band). Daily RSI-14 86.09; RSI-21 89.49.
+- **Hourly**: RSI at/above overbought. ADX 67.88 on daily confirms strong trend; hourly ADX 29.93 (digestion phase). OBV trending UP — prior bearish divergence (flagged 20260505_203524) has resolved. Hourly Bollinger pct_b 0.94 (inside upper band — less stretched than daily). ROC-5d hourly 2.48% (decelerating).
+- **Momentum**: ROC 5d +19.0%, 10d +21.22%, 21d +53.0%. All positive and expanding. Daily MACD bullish.
 
 ## Key levels
 
 | level | value | note |
 |---|---|---|
-| Current price | ~$465 (hourly) | above ATH, extended |
-| ATH → now support | $446.62 | 6+ hourly tests; former resistance flipped |
-| Entry zone | $444–$448 | preferred pullback entry (former ATH zone, EMA-5) |
-| Stop zone | $428–$430 | hourly pivot low cluster (clean invalidation) |
-| Target (measured move) | $489 | range height $42.62 added to $446.62 |
-| Secondary support | $404–$410 | structural support cluster (16+ tests) |
-| Fib 1.272 extension | ~$509 | secondary target |
+| Current price | ~$483 (hourly) | above upper BB daily, running to target |
+| Target (measured move) | $489 | range height $42.62 added to ATH $446.62; ~1.2% away |
+| ATH → support | $446.62 | former 6-test resistance, flipped; current stop reference |
+| Stop (per trade_ledger) | $428 | id 150 stop; below hourly pivot cluster |
+| Daily close | $465.26 | EMA stack clean |
+| EMA-10 | ~$420 | dip-buy zone if position were not open |
+| EMA-21 | ~$389 | secondary support |
+| Fib 1.272 extension | ~$505–$509 | secondary target if $489 breaks |
 
 ## Setup type
 
-**Post-ATH breakout pullback.** Prior "pre-ATH coiling" setup (20260504_203608) resolved — price broke above $446.62 intraday (high $453.83). Former resistance is now the tactical entry level on pullback. Three bullish agents agree on direction; hourly OBV divergence is the shared caution. Entry at $444–$448 (former ATH zone / EMA-5 area). Stop below $428 (hourly pivot cluster invalidation). Target $489 (measured move). Do NOT chase above $452. [source: signals_combined.json swing_breakout, swing_trend_momentum, swing_catalyst_news, swing_head_trader, run 20260505_203524]
+**Running measured-move — hold to target.** Prior "post-ATH breakout pullback" setup (20260505_203524) resolved on fill — price rallied without giving back the entry zone. Trade id 150 (fill $448.99, target $489, stop $428) is now ~$34 in profit. R/R from current price to target/stop: ~0.65:1 — catastrophically unfavorable for new entry. No new shares; hold existing position to $489 or stop. Mean-reversion agent and macro context agent both explicitly pass on new entries at current extension. [source: signals_combined.json swing_breakout, swing_macro_context, swing_head_trader, trade_ledger.json id 150, run 20260506_203627]
 
 ## Last updated
 
-2026-05-05 — run 20260505_203524. Prior setup "pre-ATH coiling" superseded — ATH broken intraday. Hourly OBV flipped from bullish (20260504) to bearish divergence (20260505) — key monitoring risk. Sources: signals_combined.json.
+2026-05-06 — run 20260506_203627. Hourly OBV bearish divergence from run 20260505_203524 resolved — OBV now trending up. Fill confirmed in per_ticker_history[WDC] (id 150, $448.99). Price advanced from ~$465 hourly to ~$483. Sources: signals_combined.json, trade_ledger.json.
