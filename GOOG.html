@@ -484,7 +484,7 @@
             <a class="nav-link " href="closed.html">History</a>
             <a class="nav-link " href="runs.html">All Runs</a>
         </div>
-        <div class="nav-meta">10:00 AM PT · NEXT TX <span id="countdown">--:--</span></div>
+        <div class="nav-meta">10:06 AM PT · NEXT TX <span id="countdown">--:--</span></div>
     </div>
 </nav>
 
@@ -531,7 +531,7 @@
 
 <div class="thesis-card">
     <h2>AI Thesis (from Wiki)</h2>
-    <p>**Prior "watch-not-act neutral" stance upgraded to short decision.** The prior thesis (run 20260501_164617) described a structurally bullish stock in a no-chase zone, waiting for a $342–$358 pullback. That pullback never materialized — price remained pinned at $383–$384 for four trading days. Run 20260505_164543 (May 5) marks a signal direction shift: the Portfolio Manager issued a short (1 share at $383, target $338.95, stop $389.50, R/R 4.32:1, conf 40%) based on mean-reversion Branch A. The falsification trigger is not a fundamental change but a decision shift: the prior thesis explicitly flagged RSI-7 97.75 and Z-score 3.29 as extreme; those readings have eased to RSI-7 90.69 and Z-score 2.56 without price breaking higher — confirming the thesis that the extension is not accelerating. No fill is yet confirmed in trade_ledger.json `per_ticker_history[GOOG]` — the decision was issued; execution pending. (Source: decisions.json, trade_ledger.json, explanation.json, run 20260505_164543)</p><p>**1. Google Cloud as the validated AI cloud leader.** Q1 2026 confirmed Google Cloud at $20B+ quarterly revenue (+63% YoY), cloud backlog nearly doubling QoQ to $460B+. The AI cloud acceleration is already in the numbers — Alphabet outperformed AWS, Azure, and Meta in post-earnings market reaction (+10%). (Source: web_research/GOOG.json, run 20260501_164617)</p><p>**2. Exceptional profitability and balance sheet.** Net margin 32.81%, operating margin 32.03%, ROE 31.83%, D/E 0.12, current ratio 2.01. EPS $5.11 vs. $2.62 consensus (+94%); net income $62.58B (+81% YoY). (Source: fundamentals_analyst_agent, run 20260505_164543)</p>
+    <p>**Prior short thesis falsified by stop-out.** The prior thesis (run 20260505_164543) issued a mean-reversion short at $383, stop $389.50. That stop was explicitly named as the bear-invalidation trigger: "price breaks cleanly above $389.50 stop (short stopped out)." That condition was met on May 6 — id 149 stopped out at $389.50, realized P&L −$6.50. Price continued to $395.11 hourly, confirming the extension is not reversing. Run 20260506_164526 issues a Hold (conf 28) — no new directional trade in either direction. The falsified claim is the mean-reversion fade thesis: the short assumed $384.16 hourly resistance (16 tests) would cap price, but buyers absorbed that level and continued higher. ADX intensified to 74.23 — the extreme trend regime absorbed the fade exactly as the NVDA (Apr 30) and AMZN (May 4) lessons warned. (Source: trade_ledger.json per_ticker_history[GOOG] id 149, decisions.json, explanation.json, run 20260506_164526)</p><p>**1. Google Cloud as the validated AI cloud leader.** Q1 2026 confirmed Google Cloud at $20B+ quarterly revenue (+62.7% YoY), cloud backlog $460B+. AI revenue +800% YoY. Alphabet signed a $200B cloud deal with Anthropic, cementing position against AWS (OpenAI GPT-5.5 pivot to Amazon Bedrock). Google also won the Pentagon AI contract for classified government work. The fundamentals are not in question. (Source: web_research/GOOG.json, run 20260506_164526)</p><p>**2. Exceptional profitability and balance sheet.** Net margin 32.81%, operating margin 32.03%, ROE 31.83%, D/E 0.12, current ratio 2.01. EPS $5.11 vs. $2.62 consensus (+94%). Fundamentals agent bullish at 75% confidence. (Source: fundamentals_analyst_agent, signals_combined.json, run 20260506_164526)</p>
 </div>
 
 
@@ -539,6 +539,20 @@
     <h2 style="font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;">Recent AI Decisions</h2>
     
     <div class="dec-timeline">
+    
+    <div class="dec-item">
+        <span class="dec-date">20260506</span>
+        <span><span class="badge badge-hold">HOLD</span></span>
+        <span>
+            
+            <div class="conf-wrap">
+                <div class="conf-bar-bg"><div class="conf-bar" style="width:28%"></div></div>
+                <span class="conf-label">28%</span>
+            </div>
+            
+        </span>
+        <span class="dec-reason" style="font-size:12px;color:var(--muted);line-height:1.6;">Prior GOOG short stopped out today at $389.50 (-$6.50). Price at $395 with ADX 74.23, RSI-7 90.7, no reversal candle. Head Trader neutral (28 conf, hold). 3/5 strategy agents neutral. New short at current levels replicates the just-failed fade with no new confirmation. New long is not in allowed_actions (no long position to add). Revisit on pullback to $375-385 or when Google I/O pre-positioning window opens ~May 14-15 with a confirming setup.</span>
+    </div>
     
     <div class="dec-item">
         <span class="dec-date">20260505</span>
