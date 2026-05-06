@@ -1,0 +1,17 @@
+{
+  "decisions": {
+    "TSLA": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 389.37,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 409.28,
+      "stop_loss": 379.0,
+      "risk_reward_ratio": "0.0:1",
+      "timeframe": "watch — no entry",
+      "confidence": 32,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader neutral (32 conf, below 40 threshold). Short R/R 0.71:1 fails 2:1 minimum. Allowed actions: hold/short only — no long. Short from $391 targets $381.76 with $404 stop = 0.71:1, well below 2:1 floor. Market at record highs (S&P, Nasdaq ATH May 5) makes adding a 5th short into an already-short-tilted book (JNJ, META open) imprudent. Bearish OBV divergence is confirmed 4/5 agents but divergence alone without level break is not a short trigger. 6th consecutive neutral read on TSLA — price has not resolved the $381–$409 range. Conditional watch: long entry only IF price pulls back to $381–$385 on declining volume with bullish reversal candle (allowed_actions gate would need to clear). No action today."
+    }
+  }
+}

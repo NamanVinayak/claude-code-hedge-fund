@@ -1,0 +1,151 @@
+{
+  "ticker": "TSLA",
+  "score": 6,
+  "max_score": 27,
+  "fundamental_analysis": {
+    "score": 3,
+    "details": "Weak ROE of 4.6%; Conservative debt levels; Weak operating margin of 4.6%; Good liquidity position",
+    "metrics": {
+      "ticker": "TSLA",
+      "report_period": "2026-03-31",
+      "period": "ttm",
+      "currency": "USD",
+      "market_cap": 1485257310208.0,
+      "enterprise_value": 1475379151208.0,
+      "price_to_earnings_ratio": 362.81192,
+      "price_to_book_ratio": 18.082682715560587,
+      "price_to_sales_ratio": 15.6628102777479,
+      "enterprise_value_to_ebitda_ratio": 287.9181841828152,
+      "enterprise_value_to_revenue_ratio": 15.558639957058643,
+      "free_cash_flow_yield": 0.004187826551837629,
+      "peg_ratio": 5.4,
+      "gross_margin": 0.18026511436616155,
+      "operating_margin": 0.04592573845001951,
+      "net_margin": 0.04000970187815706,
+      "return_on_equity": 0.04619111971462313,
+      "return_on_assets": 0.02753145726601164,
+      "return_on_invested_capital": 0.0357614146212721,
+      "asset_turnover": 0.6881195303542661,
+      "inventory_turnover": 6.2728373143963845,
+      "receivables_turnover": 20.722683566433567,
+      "days_sales_outstanding": 17.613548883756735,
+      "operating_cycle": 75.8009339068486,
+      "working_capital_turnover": 2.5678888648180243,
+      "current_ratio": 2.1644068865485275,
+      "quick_ratio": 1.7736646276092578,
+      "cash_ratio": 0.5206848710348742,
+      "operating_cash_flow_ratio": 0.464999684681844,
+      "debt_to_equity": 0.08077773719517392,
+      "debt_to_assets": 0.04814624181820821,
+      "interest_coverage": 27.916666666666668,
+      "revenue_growth": -0.029306991503736307,
+      "earnings_growth": -0.46495557749259625,
+      "book_value_growth": 0.1265069329200554,
+      "earnings_per_share_growth": -0.47085201793721976,
+      "free_cash_flow_growth": 0.7369449874336778,
+      "operating_income_growth": -0.3845392877331826,
+      "ebitda_growth": -3.539570616712271,
+      "payout_ratio": null,
+      "earnings_per_share": 1.18,
+      "book_value_per_share": 21.897360703812318,
+      "free_cash_flow_per_share": 1.6582244734737404
+    }
+  },
+  "consistency_analysis": {
+    "score": 0,
+    "details": "Inconsistent earnings growth pattern; Total earnings growth of -69.8% over past 10 periods"
+  },
+  "moat_analysis": {
+    "score": 0,
+    "max_score": 5,
+    "details": "Inconsistent ROE: only 3/10 periods >15%; Low operating margins (avg: 10.4%) suggest limited pricing power"
+  },
+  "pricing_power_analysis": {
+    "score": 0,
+    "details": "Declining gross margins may indicate pricing pressure"
+  },
+  "book_value_analysis": {
+    "score": 3,
+    "details": "Consistent book value per share growth (Buffett's favorite metric); Book value CAGR: 4.4%"
+  },
+  "management_analysis": {
+    "score": 0,
+    "max_score": 2,
+    "details": "No significant new stock issuance detected; No or minimal dividends paid"
+  },
+  "intrinsic_value_analysis": {
+    "intrinsic_value": -75540154145.64491,
+    "raw_intrinsic_value": -88870769583.11166,
+    "owner_earnings": -4931650000.0,
+    "assumptions": {
+      "stage1_growth": 0.08,
+      "stage2_growth": 0.04,
+      "terminal_growth": 0.025,
+      "discount_rate": 0.1,
+      "stage1_years": 5,
+      "stage2_years": 5,
+      "historical_growth": 0.105
+    },
+    "details": [
+      "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+      "Stage 1 PV: $-23,345,419,093",
+      "Stage 2 PV: $-19,072,382,062",
+      "Terminal PV: $-46,452,968,428",
+      "Total IV: $-88,870,769,583",
+      "Conservative IV (15% haircut): $-75,540,154,146",
+      "Owner earnings: $-4,931,650,000",
+      "Discount rate: 10.0%"
+    ]
+  },
+  "market_cap": 1485257310208.0,
+  "margin_of_safety": -1.0508599780162442,
+  "web_context": {
+    "ticker": "TSLA",
+    "research_date": "2026-05-06",
+    "macro_context": {
+      "market_sentiment": "Risk-on tone today as U.S.-Iran de-escalation talks progress. S&P 500 +0.72%, Nasdaq +0.73%, Russell 2000 +1.75%. Oil fell below $100/barrel on ceasefire hopes, easing inflation pressure. Stocks rebounding after volatility earlier in the week when UAE intercepted Iranian missiles.",
+      "fed_outlook": "FOMC held benchmark rate at 3.5%-3.75% on April 29, 2026 (8-4 vote split, historically unusual dissent). Fed notes inflation 'elevated, in part reflecting global energy prices.' Markets pricing in no rate changes for the rest of 2026 and into 2027. Jerome Powell may remain on the Fed board despite Trump pressure.",
+      "geopolitical": "U.S.-Iran military tensions near Strait of Hormuz drove oil near $100/barrel this week; a potential one-page de-escalation deal is being negotiated. U.S. tariffs on Chinese EVs remain at 100%+, blocking BYD from U.S. market. Trade friction also building over Chinese overcapacity in EVs, solar, and semiconductors in Europe.",
+      "key_events": [
+        "U.S.-Iran de-escalation negotiations \u2014 resolution would reduce oil price risk",
+        "Federal Reserve next meeting (June 2026) \u2014 held steady in April, no rate change expected",
+        "U.S. midterm elections cycle heating up \u2014 policy uncertainty for tariffs and EV credits",
+        "Semiconductor supply chain geopolitics \u2014 Terafab/Intel partnerships in focus"
+      ]
+    },
+    "ticker_news": [
+      {
+        "headline": "Tesla Semi enters mass production at Nevada facility, beginning customer deliveries",
+        "sentiment": "positive",
+        "source": "Simply Wall St / Electrek (May 2026)"
+      },
+      {
+        "headline": "Tesla's Terafab semiconductor foundry announced \u2014 $25B+ investment with Intel for chips used in robots, EVs, and SpaceX orbital data centers",
+        "sentiment": "positive",
+        "source": "24/7 Wall St. (May 3, 2026)"
+      },
+      {
+        "headline": "Tesla discloses $573M web of related-party transactions with Elon Musk companies xAI and SpaceX in amended 10-K filing; governance concerns raised",
+        "sentiment": "negative",
+        "source": "Electrek (May 1, 2026)"
+      },
+      {
+        "headline": "Netherlands regulator clears FSD (Supervised); seeks EU-wide approval \u2014 could unlock European market in Q2 2026",
+        "sentiment": "positive",
+        "source": "Yahoo Finance / Simply Wall St (May 2026)"
+      },
+      {
+        "headline": "Robotaxi rides launched in Dallas and Houston; FSD paid subscriptions reach 1.28M in Q1 (up 51% YoY)",
+        "sentiment": "positive",
+        "source": "24/7 Wall St. / Yahoo Finance (May 2026)"
+      }
+    ],
+    "analyst_consensus": {
+      "rating": "hold",
+      "avg_price_target": 405.47,
+      "recent_changes": "UBS raised price target to $352 on April 14, 2026. Seeking Alpha analyst downgraded to Hold citing capital-intensive AI/robotics/semiconductor transition as a 'generational capital trap.' Wedbush's Dan Ives maintains $600 bull case. Consensus from 26-31 analysts converges around Hold/Buy with average target ~$400-414, median ~$395. Wide range: $25.53 bear case to $630 bull case reflects deep disagreement on autonomous driving and robotics monetization timelines."
+    },
+    "competitor_activity": "BYD overtook Tesla as the world's largest battery EV producer in 2025 but its Q1 2026 net income fell 55% YoY and revenue dropped 12%; 100%+ U.S. tariffs keep BYD out of North America. Rivian gained momentum with a $1B Volkswagen equity investment and $4.5B DOE loan, posting Q1 revenue of $1.38B (+11% YoY) and deliveries of 10,365 units (+20% YoY). Lucid fell 33% in April after an EPS miss and -$1.24B free cash flow; it is eyeing a 2027 midsize affordable EV. Legacy OEM competition (GM, Ford) remains muted in EV segment. Overall, near-term U.S. EV competition is manageable for Tesla given tariff protections; the real long-run threat is Rivian at the truck/SUV segment and Chinese OEMs if tariffs ever ease.",
+    "earnings_info": "Next earnings date: approximately July 22-29, 2026 (unconfirmed, Q2 2026 results). Analyst EPS estimate: $0.42. Revenue estimate: not confirmed in search results. Tesla most recently reported Q1 2026 EPS of $0.41, beating consensus. Pattern suggests announcement in late July 2026."
+  }
+}

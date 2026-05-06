@@ -1,0 +1,526 @@
+{
+  "mode": "swing",
+  "analyst_signals": {
+    "swing_breakout": {
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 20,
+        "reasoning": "No valid breakout setup. Range boundaries: well-defined consolidation between $337.24 (recent swing low) and $409.28 (14-test swing high). Current price $389.37 sits squarely inside the $387\u2013$399 bear-rally resistance cluster documented by the wiki across 6 consecutive runs \u2014 this is mid-range, not at a breakout inflection point. Breakout confirmation gate requires a daily CLOSE above $409.28 on 1.5x+ volume; that gate has not been approached. Volume ratio: 0.74x today (far below 1.5x minimum); the strongest recent day (May 1, +2.2% to $390.82) printed only ~1.02x average volume \u2014 still fails the gate. Squeeze status: BB width 0.1836 on the daily is already expanded \u2014 the range contraction that precedes a high-quality breakout has already unwound; this is not a coiled spring. Hourly OBV is diverging bearishly from price (price advancing, OBV declining), confirmed independently by 4 of 5 swing agents per wiki \u2014 distribution pattern argues against a breakout sustaining even if price pokes above resistance. Lessons: the May 5 DIS pre-earnings breakout failed explicitly because entry volume was 1.23x vs 1.5x minimum; TSLA\u2019s 0.74x is even weaker. Pattern of false breakouts on sub-threshold volume is the freshest lesson in the log. No prior call to grade (prediction_grading null). Setup type remains watch-not-act: ideal bullish entry is either (a) pullback to $381\u2013$385 confluence (Fib 38.2% + 15-test pivot) on declining volume with bullish reversal candle, or (b) confirmed daily close above $409.28 on 1.5x+ volume for a true breakout long. Neither condition is present today.",
+        "entry": 409.5,
+        "target": 428.87,
+        "stop": 402.0,
+        "timeframe": "5-15 trading days"
+      }
+    },
+    "swing_head_trader": {
+      "TSLA": {
+        "consensus_signal": "neutral",
+        "confidence": 32,
+        "reasoning": "VOTE COUNT: 4 neutral (swing_trend_momentum 30, swing_breakout 20, swing_catalyst_news 52, swing_macro_context 38), 1 bearish (swing_mean_reversion 42), 0 bullish. This is the 7th consecutive neutral/hold read on TSLA across swing runs dating to April 2026. No TSLA trade has ever been executed (trade_ledger.json: 0 rows). The pattern is consistent \u2014 price keeps cycling into the $387\u2013$399 bear-rally resistance cluster with R/R that fails the 2:1 minimum, and the model correctly stands aside each time.\n\nMARKET CONTEXT WEIGHTING: Macro regime is cautiously bullish (S&P 500 and Nasdaq at record highs May 5; US-Iran ceasefire progress easing oil from $104+ toward $102). This environment tilts weight toward swing_trend_momentum and away from a fade. However, swing_trend_momentum itself is neutral \u2014 entry conditions not met (EMA fan not clean on daily, momentum decelerating 5d vs 21d, price extended from 10/21 EMA rather than pulling back). Macro is NOT providing a directional catalyst strong enough to override the technical no-trade read.\n\nLEVEL SYNTHESIS: Long conditional entry: $381\u2013$385 zone (Fib 38.2% at $381.76, 15-test pivot confluence at $381.40) \u2014 this zone is unanimous across all agents as the only valid long entry, but price ($389.37) has not reached it. Breakout entry: daily close above $409.28 on 1.5x+ volume \u2014 not approached. Short fade entry (mean_reversion): $391 entry / $381.76 target / $404 stop = 0.7:1 R/R on the short, below threshold from the downside too. There is no actionable entry from either direction at current price.\n\nCRITICAL CROSS-CONFIRMED SIGNAL \u2014 BEARISH OBV DIVERGENCE: Hourly OBV is diverging bearishly from price (OBV trend: down, price trend: up). This was flagged independently by 4 of 5 swing agents in the prior run and is confirmed again today. This is the strongest repeated cross-confirmed signal in TSLA's run history and represents ongoing distribution at the $387\u2013$402 resistance zone. It is a warning against new longs, not a trigger for shorts (divergence alone without level break or volume collapse is not a short entry).\n\nWIKI MEMORY DIAL: Lessons table: EMA-pullback Fib dip-buy failed (NVDA, -$63.20); mean-reversion fade short failed (AMZN, -$10.14 stopped at ADX 65); pre-earnings breakout failed (DIS, -$4.99). All 3 recent closed trades are losses. The mean-reversion lesson is directly applicable \u2014 the AMZN fade-short stopped out into an extreme ADX trend. TSLA ADX is 31 (lower than AMZN's 65), so regime risk is lower, but a repeat fade-short here would be the 2nd mean-reversion short in 3 trades, against a backdrop of 3 consecutive losses. That warrants confidence suppression.\n\nBOOK TILT: Open book = 4 net short (AMD, JNJ, META, GOOG) vs 3 net long (BAC, AAPL, WDC pending). Adding a TSLA short would make it 5 short / 3 long \u2014 concentrated short-side correlation in a market printing record highs. This is a meaningful stacking risk flag that provides additional weight toward neutral/hold.\n\nMACRO VETO CHECK: swing_macro_context is neutral (not bearish), so full macro veto does not apply. The Warsh/hawkish-Fed-transition risk on May 15 is a real headwind for TSLA (high-beta growth), but swing_catalyst_news explicitly rates it as insufficient for a directional position at current R/R. Macro provides a mild bearish lean but not enough to override the neutral consensus.\n\nCONCLUSION: Neutral. No deployment. Conditional watch: (a) long IF price pulls back to $381\u2013$385 with a bullish daily reversal candle and declining volume on the pullback \u2014 target $409.28, stop $379, R/R ~3:1; (b) long breakout IF daily close above $409.28 on 1.5x+ average volume \u2014 target $428\u2013$437, stop $402. Neither condition is met today. Short fade does not meet 2:1 R/R at current price, and adding a 5th short into a market at record highs with an already-short-tilted book is imprudent.",
+        "agent_agreement_pct": 80.0,
+        "key_conflicts": "The only directional disagreement is swing_mean_reversion (bearish, 42 conf) vs. the 4 neutral agents. Mean_reversion argues TSLA is pressing into a 15-test resistance cluster with bearish hourly OBV divergence and a failed intraday breakout on May 5 (touched $402, closed $389 \u2014 rejection candle), making a fade short to the $381.76 Fib confluence valid. The 4 neutral agents counter that: (1) the fade target of $381.76 from a $391 entry gives only 0.7:1 R/R on the short \u2014 the move is too small to justify the position; (2) the macro backdrop (S&P and Nasdaq at all-time highs, oil easing) makes fade-shorts on high-beta growth names adversarial to the prevailing regime; (3) swing_trend_momentum notes ADX 31 with +DI > -DI confirming an active uptrend bias \u2014 fading into an ADX-confirmed trend is the exact setup that stopped out the AMZN mean-reversion short 2 days ago (-$10.14). This disagreement is informative: it signals 'price is in a contested zone \u2014 neither a clean long nor a clean short from here.' The resolution is to wait for the zone to resolve: either a pullback to $381\u2013$385 (long entry) or a confirmed close above $409.28 on volume (breakout long). The mean-reversion short is dismissed not because mean_reversion is wrong about the resistance \u2014 it is correct \u2014 but because the R/R math fails from the current entry and the regime context (book tilt + market at highs + 3 consecutive losses) argues for patience over aggression.",
+        "recommended_action": "hold"
+      }
+    },
+    "growth_analyst_agent": {
+      "TSLA": {
+        "signal": "bearish",
+        "confidence": 36,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0.2,
+            "revenue_growth": -0.029306991503736307,
+            "revenue_trend": 0.06951109830233838,
+            "eps_growth": -0.47085201793721976,
+            "eps_trend": -0.05339071881392446,
+            "fcf_growth": 0.7369449874336778,
+            "fcf_trend": 0.03302308363434736
+          },
+          "growth_valuation": {
+            "score": 0,
+            "peg_ratio": 5.4,
+            "price_to_sales_ratio": 15.6628102777479
+          },
+          "margin_expansion": {
+            "score": 0.6000000000000001,
+            "gross_margin": 0.18026511436616155,
+            "gross_margin_trend": 0.009826417053762282,
+            "operating_margin": 0.04592573845001951,
+            "operating_margin_trend": 0.013916121034982739,
+            "net_margin": 0.04000970187815706,
+            "net_margin_trend": 0.011004779243870213
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 1.0,
+            "debt_to_equity": 0.08077773719517392,
+            "current_ratio": 2.1644068865485275
+          },
+          "final_analysis": {
+            "signal": "bearish",
+            "confidence": 36,
+            "weighted_score": 0.32
+          }
+        }
+      }
+    },
+    "swing_trend_momentum": {
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 30,
+        "reasoning": "TREND ASSESSMENT: Daily EMA alignment is mixed/tangled \u2014 EMA 50 (386.4) sits ABOVE both EMA 10 (383.8) and EMA 21 (380.6), so the required 10>21>50 uptrend fan is NOT intact (ema_aligned_uptrend: false). Price (389.4 daily) is above all EMAs including the 50 and 200, which is constructive, but ADX 31 with +DI 24.0 > -DI 17.12 confirms directional bias rather than a clean fanning structure. The hourly frame shows cleaner EMA alignment (24>48>120, ema_aligned_uptrend: true), which is a partial positive. MOMENTUM ASSESSMENT: Daily ROC pattern is NOT cleanly accelerating \u2014 21d (+10.36) is large but 10d (+0.76) is near-flat and 5d (+3.55) is moderate, suggesting a deceleration wave rather than expanding momentum across all three windows. Hourly ROC is 5d +0.94, 10d +0.74, 21d ~0.0 \u2014 essentially flat on the intraday timeframe. Daily MACD histogram +2.20 is positive, but the critical concern is the hourly OBV divergence (trend: down, diverging_from_price: true) which was independently flagged by 4 of 5 swing agents in the prior run (per wiki_context) and persists today. ENTRY CONDITIONS NOT MET: Price is 1.44% above EMA 10 and 2.29% above EMA 21 \u2014 not pulling back to the 10/21 EMA as the strategy requires for entry. Nearest intraday resistance at 397.82 is only ~0.6% above current price (~395.5), making risk/reward unfavorable for chasing here. Volume is 0.74x average \u2014 no volume confirmation for trend extension. WIKI MEMORY: This is the 6th consecutive hold signal per wiki_context, and the wiki flags 14-15 tests of the $387-$399 resistance cluster with persistent hourly OBV bearish divergence. Today's data confirms both: price is inside that cluster and OBV divergence remains active. No contradiction with prior memory \u2014 current data reinforces the watch stance. LESSONS CHECK: Recent swing_trend_momentum losses (DIS -$4.99, NVDA EMA pullback -$63.20) both involved entering when price was extended toward resistance rather than waiting for a clean pullback. Repeating that pattern here is explicitly avoided. CONCLUSION: Bullish bias exists (ADX strong, hourly EMA aligned, positive daily ROC) but the entry conditions per strategy rules are not satisfied: EMA fan is not clean on the daily, momentum is not uniformly accelerating, price is extended from the 10/21 EMA rather than pulling back to it, volume is light, and hourly OBV bearish divergence is unresolved. Neutral per strategy rules \u2014 watch for pullback to 381-384 zone (21 EMA / pivot support) with volume confirmation before considering a bullish entry.",
+        "entry": 383.0,
+        "target": 409.28,
+        "stop": 378.5,
+        "timeframe": "5-10 trading days"
+      }
+    },
+    "swing_macro_context": {
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 38,
+        "reasoning": "1. MACRO REGIME: Cautiously bullish. S&P 500 and Nasdaq both hit record highs on May 5 (7,259 and 25,326 respectively). US-Iran ceasefire talks are advancing and oil is easing from $104+ toward $102/bbl, improving risk sentiment. However, Fed is holding at 3.50-3.75% with no cuts expected through most of 2027, and the upcoming Powell-to-Warsh transition (May 15) introduces hawkish tail risk. TSLA is a high-beta growth name most sensitive to rate-tightening scenarios. Macro is directionally supportive but not a strong tailwind given the hawkish succession risk. 2. RELATIVE STRENGTH: TSLA is outperforming near-term. Daily ROC: +3.55% (5d), +0.76% (10d), +10.36% (21d). With the broader market up but not +10% over the same window, TSLA is showing positive relative strength. Price holds above all short-term EMAs (5, 10, 20, 21, 50) and the daily ADX at 30.99 with +DI > -DI confirms a live uptrend. The wiki thesis confirms the Q1 2026 gross margin threshold (18.03%) was crossed, removing the primary EV-bear blocking factor. Positive relative strength signal. 3. ASYMMETRIC R/R MATH \u2014 FAILS MINIMUM BAR AT CURRENT PRICE: Entry at current ~$395-396. Nearest daily resistance at $409.28 = ~$13.3 upside / ~3.4%. Nearest daily support at $381.40 = ~$14.1 downside / ~3.6%. R/R from current entry is approximately 0.95:1 \u2014 well below the 2:1 minimum. Even using the hourly support at $384.80 as stop, downside is ~$10.7 / 2.7% vs upside ~3.4% = 1.26:1, still below threshold. A pullback entry near $387-389 (EMA_5 = $387.00, Fib 23.6% = $392.28 zone) would improve R/R: from $388 entry, upside to $409.28 = $21.3 / 5.5%, downside to $381.40 = $6.6 / 1.7% = ~3.2:1. At current prices, the asymmetry test FAILS and the wiki thesis itself flags 'R/R fails 2:1 at all entries from current $396.' 4. CAPITAL PRESERVATION FLAGS: Hourly OBV is diverging bearishly from price (price up, OBV down) \u2014 suggesting distribution into the resistance zone. RSI_7 at 71.02 is short-term overbought. TSLA remains below its SMA_200 (-3.42%), meaning the longer-term trend is not yet restored. ATR at 3.49% is high-volatility, consistent with regime but amplifying stop-out risk. Valuation DCF gap is -97% (massively stretched). Hourly Bollinger %B at 0.825 indicates price is approaching the upper band \u2014 near-term mean-reversion risk elevated. VERDICT: Macro is cautiously bullish and relative strength favors TSLA, but the current entry price ($395-396) delivers sub-threshold R/R (approximately 1:1). The OBV divergence and RSI_7 overbought signal warn of near-term pullback into resistance. Neutral now; if price pulls back to $387-389 EMA zone with OBV stabilizing and volume drying up, the setup becomes actionable with 3:1+ asymmetry. Watching not acting.",
+        "entry": 388.0,
+        "target": 409.28,
+        "stop": 381.4,
+        "timeframe": "8-15 trading days"
+      }
+    },
+    "swing_mean_reversion": {
+      "TSLA": {
+        "signal": "bearish",
+        "confidence": 42,
+        "reasoning": "Branch A (fade the extreme) does NOT fire: daily Z-score is 0.33 (between -1 and +1), RSI-14 is 48.34 (neutral), Bollinger %B is 0.6831 (inside bands), and distance from 50-SMA is only 1.63% \u2014 well below the 5% threshold for a noteworthy extension. No statistical extreme exists at the daily level. Branch B (buy the dip in a trend) is CLOSE but does NOT yet fire cleanly: the daily swing Fib structure places the 38.2% level at $381.76, which aligns precisely with the 15-test pivot low at $381.40 \u2014 a strong confluence zone. The wiki watch zone documented this exactly: '$381-$385 pullback with bullish daily candle \u2192 $409 target.' However, current price ($389.37) has NOT reached that zone; it is sitting in the middle of the $387-$399 documented bear-rally resistance cluster (14-15 tests, per wiki technicals_tldr). Entering a long inside confirmed resistance with no reversal candle confirmation violates Branch B discipline. Neither branch fires cleanly for a long. What does fire is a modest bearish read from WITHIN the resistance cluster: (1) price is pressing into the 15-test $387-$399 resistance for the 6th consecutive run without a breakout; (2) hourly OBV is diverging bearishly from price \u2014 flagged independently by 4 of 5 swing agents in prior run, the strongest cross-confirmed signal in the wiki; (3) volume on May 5 was 0.74x average on a day that touched $402 intraday but closed at $389 \u2014 a bearish intraday reversal rejection at the upper resistance; (4) daily EMA structure is NOT aligned uptrend (ema_aligned_uptrend: false); (5) price remains below SMA-200 ($403.16). Lessons context: mean-reversion fade short failed on AMZN when ADX was 65+; here ADX is 30.99 \u2014 elevated but not extreme, so regime risk is lower. The fade is modest: target is the 38.2% Fib / 15-test pivot confluence at $381.76, which is also the wiki's stated watch-for-long zone. Stop is above the hourly resistance at $402.09 (recent hourly swing high) plus a half-ATR buffer. Confidence is held to 42 (below 50) because: (a) this is the 6th consecutive hold at resistance \u2014 repeat attempts lower fade conviction per system rules; (b) Head Trader confidence was 35 last run (below 40 deployment threshold); (c) no prediction_grading from a prior call to calibrate against. Branch designation: modified Branch A (resistance-zone fade, not a statistical Z-score extreme) confirmed by bearish OBV divergence and intraday rejection candle on May 5.",
+        "entry": 391.0,
+        "target": 381.76,
+        "stop": 404.0,
+        "timeframe": "3-7 trading days"
+      }
+    },
+    "swing_catalyst_news": {
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 52,
+        "reasoning": "PRIOR CALL ADJUSTMENT: My 2026-05-05 bearish call (entry $393.50, stop $398.50, target $381.40) was stopped out at $398.50 on the same day (verdict: stopped_out, MAE -2.19%). However, price subsequently closed at $392.51 on May 4 and $389.37 on May 5 \u2014 the directional thesis was correct but the stop was too tight relative to TSLA's daily ATR of $13.58. I am adjusting by not re-entering the same short thesis without a new catalyst or technical deterioration, given the stop-out signals intraday volatility that can whipsaw entries. CATALYST WINDOW: The next identifiable macro catalyst is the Kevin Warsh Fed Chair Senate confirmation vote on May 15 (~7 trading days) \u2014 a macro headwind for high-beta growth names like TSLA (hawkish successor = growth stock pressure). No direct TSLA-specific catalyst exists within 10 trading days; Q2 2026 earnings are ~July 22. The Warsh vote is an indirect macro headwind, not a binary TSLA event. NET NEWS SENTIMENT: Mixed. Positive: Q1 2026 EPS beat ($0.41 vs $0.33 estimate), gross margin 18.03% crossing the key 18%+ threshold, Tesla Semi mass production launched in Nevada, FSD Netherlands regulatory approval seeking EU-wide rollout, Terafab/Intel chip foundry advancing, Austin unsupervised robotaxi commercial rides active. Negative: Governance concerns deepen ($573M related-party transactions in 2025 10-K, $2B xAI/SpaceX equity swap), $25B capex plan implying negative FCF for 2026, worst delivery-production gap on record (50,363 unsold vehicles in Q1), Rivian/Uber 50k autonomous taxi partnership directly competing in robotaxi segment. Net: mixed, tilting slightly positive on fundamentals but negative on governance/capital allocation. INSIDER ACTIVITY: Quiet \u2014 no insider trades in the lookback period. No informational edge from insider flow. TECHNICAL SETUP: Post-earnings rally to $402.09 (May 5 high) stalled and reversed to $389.37 close. Hourly OBV is diverging bearishly from price (distribution at the $400 zone), confirming the failed breakout. Price is consolidating between $381.40 support and $397.82 resistance. Hourly EMAs aligned uptrend, but RSI-7 at 71 (short-term overbought on daily). Daily MACD histogram strongly positive (2.20) \u2014 underlying trend still bullish but losing steam. ADX 31 indicates a trend in force, but the failed $400 breakout with OBV divergence is a warning. With no specific TSLA catalyst within 10 trading days, mixed news flow (neither decisively bullish nor bearish), quiet insiders, and a chart caught between the failed $400 breakout and $381 support, the catalyst-news setup does not meet the threshold for a directional trade. The Warsh confirmation vote on May 15 is a macro headwind but not sized as a direct TSLA catalyst that warrants a position.",
+        "entry": 389.5,
+        "target": 397.0,
+        "stop": 381.0,
+        "timeframe": "neutral \u2014 no actionable catalyst within 10 trading days"
+      }
+    },
+    "fundamentals_analyst_agent": {
+      "TSLA": {
+        "signal": "bearish",
+        "confidence": 50.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: 4.62%, Net Margin: 4.00%, Op Margin: 4.59%"
+          },
+          "growth_signal": {
+            "signal": "neutral",
+            "details": "Revenue Growth: -2.93%, Earnings Growth: -46.50%"
+          },
+          "financial_health_signal": {
+            "signal": "bullish",
+            "details": "Current Ratio: 2.16, D/E: 0.08"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 362.47, P/B: 18.07, P/S: 15.65"
+          }
+        }
+      }
+    },
+    "technical_analyst_agent": {
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "trend_following": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "adx": 24.219263808281898,
+              "trend_strength": 0.242192638082819
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 0.3316213850163969,
+              "price_vs_bb": 0.6830993870377763,
+              "rsi_14": 48.33590401932463,
+              "rsi_28": 50.77417170963552
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.1043695213645246,
+              "momentum_3m": -0.06271268164501032,
+              "momentum_6m": -0.11930310995908755,
+              "volume_momentum": 0.733447189200757
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.3785440078825696,
+              "volatility_regime": 0.9892802461455601,
+              "volatility_z_score": -0.06615450628631393,
+              "atr_ratio": 0.03487869934624335
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.4473580197292054,
+              "kurtosis": 0.6018288242505692
+            }
+          }
+        }
+      }
+    },
+    "valuation_analyst_agent": {
+      "TSLA": {
+        "signal": "bearish",
+        "confidence": 100,
+        "reasoning": {
+          "dcf_analysis": {
+            "signal": "bearish",
+            "details": "Value: $41,971,178,060.91, Market Cap: $1,483,848,941,568.00, Gap: -97.2%, Weight: 35%\n  WACC: 10.5%, Bear: $39,479,037,902.84, Bull: $42,421,076,542.11, Range: $2,942,038,639.28"
+          },
+          "ev_ebitda_analysis": {
+            "signal": "bearish",
+            "details": "Value: $497,876,257,171.41, Market Cap: $1,483,848,941,568.00, Gap: -66.4%, Weight: 20%"
+          },
+          "dcf_scenario_analysis": {
+            "bear_case": "$39,479,037,902.84",
+            "base_case": "$42,651,925,286.54",
+            "bull_case": "$42,421,076,542.11",
+            "wacc_used": "10.5%",
+            "fcf_periods_analyzed": 8
+          }
+        }
+      }
+    },
+    "sentiment_analyst_agent": {
+      "TSLA": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      }
+    },
+    "risk_management_agent": {
+      "TSLA": {
+        "remaining_position_limit": 437.181005859375,
+        "max_account_risk_pct": 2.5,
+        "max_account_risk_dollars": 36.43175048828125,
+        "max_position_pct": 0.3,
+        "correlation_advisory": null,
+        "current_price": 395.05499267578125,
+        "volatility_metrics": {
+          "daily_volatility": 0.02340826149522134,
+          "annualized_volatility": 0.37159463124434783,
+          "volatility_percentile": 19.90950226244344,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.20483277778678852,
+          "max_correlation_with_active": 0.3108197768586607,
+          "top_correlated_tickers": [
+            {
+              "ticker": "AAPL",
+              "correlation": 0.3108197768586607
+            },
+            {
+              "ticker": "META",
+              "correlation": 0.27532911855789693
+            },
+            {
+              "ticker": "BAC",
+              "correlation": 0.26915230572824306
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 1457.27001953125,
+          "current_position_value": 0.0,
+          "available_cash": 1457.27001953125,
+          "max_position_pct": 0.3,
+          "max_position_dollars": 437.181005859375,
+          "max_account_risk_pct": 2.5,
+          "max_account_risk_dollars": 36.43175048828125,
+          "sizing_model": "PM picks conviction + account_risk_pct (\u22642.5%); qty = (capital \u00d7 risk_pct) / |entry - stop|. Hard cap: position \u2264 30% of capital ($437). Vol/correlation are context for PM to consider qualitatively."
+        }
+      }
+    }
+  },
+  "allowed_actions": {
+    "TSLA": {
+      "hold": 0,
+      "short": 1
+    }
+  },
+  "portfolio": {
+    "cash": 1457.27001953125,
+    "margin_requirement": 0.0,
+    "margin_used": 0.0,
+    "positions": {
+      "TSLA": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      }
+    },
+    "other_positions": [
+      {
+        "id": 110,
+        "run_id": "20260430_190826",
+        "mode": "swing",
+        "ticker": "BAC",
+        "direction": "long",
+        "quantity": 15,
+        "entry_price": 52.75,
+        "target_price": 55.4,
+        "target_price_2": null,
+        "stop_loss": 51.5,
+        "confidence": 55,
+        "timeframe": "5-10 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 52.75,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-04-30T19:30:48+00:00",
+        "entered_at": "2026-04-30T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 15, \"entry_price\": 52.75, \"target_price\": 55.4, \"stop_loss\": 51.5, \"risk_reward_ratio\": \"2.12:1\", \"timeframe\": \"5-10 trading days\", \"confidence\": 55, \"reasoning\": \"Head Trader bullish (55 conf), 3/5 swing agents agree. Pullback to 10/21 EMA confluence at $52.73-52.88 in ADX-54.8 uptrend. R/R 2.12:1 meets threshold. Risk mgr limit $806; 15 shares @ $52.75 = $791 within limit. Stop below wiki stop zone / 38.2% Fib at $51.50. Target $55.40 resistance (5 tests). Key risks: OBV divergence, Berkshire overhang \\u2014 sized defensively at max allowed qty but within vol-adjusted limit.\"}",
+        "last_checked_at": "2026-05-06T16:10:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.075
+      },
+      {
+        "id": 114,
+        "run_id": "20260501_144523",
+        "mode": "swing",
+        "ticker": "AAPL",
+        "direction": "long",
+        "quantity": 2,
+        "entry_price": 276.0,
+        "target_price": 294.84,
+        "target_price_2": null,
+        "stop_loss": 269.5,
+        "confidence": 42,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 277.2699890136719,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T15:00:50+00:00",
+        "entered_at": "2026-05-04T13:31:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 2, \"entry_price\": 276.0, \"target_price\": 294.84, \"stop_loss\": 269.5, \"risk_reward_ratio\": \"2.9:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 42, \"reasoning\": \"Head Trader neutral (42) \\u2014 wait for pullback to $274-278 before entry. Limit buy at $276 (preferred entry): breakout above $276.11 resistance confirmed on 2.08x volume, measured move to $294.84 intact, RSI 61.64 healthy, OBV uptrend, post-earnings drift thesis (Q2 FY2026 beat, analyst targets $299-305). R/R 2.9:1 (18.84 up / 6.50 down) clears 2:1 minimum from pullback level. Stop $269.50 below pre-earnings pivot. NOT chasing at $283 \\u2014 hourly Z-score 2.52 and Bollinger %B 1.28 flag overextension; mean reversion agent correctly warns of fade risk at current price. Entering only on constructive pullback to Fib 38.2% / daily upper BB confluence at $274-278. Size: 2 shares x $276 = $552, within risk manager cap $768 and 25% capital limit $963. ADX 16.83 is the main caveat \\u2014 trigger requires ADX rising above 19 on pullback candle. Key risks: insider net selling (-$235M, Cook sold at $251-256), ADX still sub-25, one prior portfolio loss (NVDA EMA dip, -$264) on similar setup. Sized conservatively at 2 shares.\"}",
+        "last_checked_at": "2026-05-06T16:10:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.052
+      },
+      {
+        "id": 116,
+        "run_id": "20260501_194523",
+        "mode": "swing",
+        "ticker": "JNJ",
+        "direction": "short",
+        "quantity": 3,
+        "entry_price": 229.85,
+        "target_price": 216.53,
+        "target_price_2": null,
+        "stop_loss": 235.0,
+        "confidence": 58,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 229.05999755859375,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T20:15:58+00:00",
+        "entered_at": "2026-05-01T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"short\", \"quantity\": 3, \"entry_price\": 229.85, \"entry_tolerance_pct\": 1.0, \"target_price\": 216.53, \"stop_loss\": 235.0, \"risk_reward_ratio\": \"2.59:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 58, \"account_risk_pct\": 0.51, \"reasoning\": \"4/5 swing agents bearish. Confirmed daily downtrend (EMA stack, ADX 30.72, -DI>+DI, OBV down). Bounce to 10-EMA resistance ($229-231) = textbook short entry. R/R 2.59:1. No open JNJ position. Risk-on macro removes defensive bid. 3 shares @ $229.85 = $689.55 (within 25% cap). Stop $235 above EMA21/consolidation.\"}",
+        "last_checked_at": "2026-05-06T16:10:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.51
+      },
+      {
+        "id": 118,
+        "run_id": "20260504_143030",
+        "mode": "swing",
+        "ticker": "META",
+        "direction": "short",
+        "quantity": 1,
+        "entry_price": 621.0,
+        "target_price": 575.0,
+        "target_price_2": null,
+        "stop_loss": 635.0,
+        "confidence": 62,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 611.780029296875,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-04T14:46:00+00:00",
+        "entered_at": "2026-05-04T14:48:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"short\", \"quantity\": 1, \"entry_price\": 621.0, \"entry_tolerance_pct\": 1.5, \"target_price\": 575.0, \"stop_loss\": 635.0, \"risk_reward_ratio\": \"3.3:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 62, \"account_risk_pct\": 1.0, \"reasoning\": \"Head Trader bearish 62 conf. Conditional short on bounce to $619-628 resistance (Fib 38.2% + former support) with bearish rejection candle. 3/5 swing agents bearish/conditional bearish. Post-earnings capex-shock breakdown ($669\\u2192$600, 3.26x avg vol Apr 30) confirmed structural re-rating. Daily ADX 49.52 with -DI 34.25 >> +DI 26.06; hourly ADX 50.9 with -DI 47.79 >> +DI 7.66 \\u2014 extreme bearish trend. Risk-off macro (Iran escalation May 4, Fed hawkish succession risk). R/R 3.3:1 clears 2:1 minimum. Entry $621 is limit on bounce \\u2014 do NOT chase if price breaks below $596. Stop $635 above all identified resistance. Target $575 (Fib extension support). 1 share \\u00d7 $621 = $621 within risk manager cap of $641.91. High-vol stock (ATR 3.27%) \\u2192 tolerance 1.5%. Mean-reversion bullish vote (42 conf, 0% win-rate lesson) discounted; breakout absent. No open META position per portfolio state.\"}",
+        "last_checked_at": "2026-05-06T16:10:00+00:00",
+        "entry_tolerance_pct": 1.5,
+        "account_risk_pct": 1.0
+      },
+      {
+        "id": 150,
+        "run_id": "20260505_203524",
+        "mode": "swing",
+        "ticker": "WDC",
+        "direction": "long",
+        "quantity": 2,
+        "entry_price": 446.0,
+        "target_price": 489.0,
+        "target_price_2": null,
+        "stop_loss": 428.0,
+        "confidence": 44,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 448.989990234375,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-05T21:00:57+00:00",
+        "entered_at": "2026-05-06T14:29:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 2, \"entry_price\": 446.0, \"entry_tolerance_pct\": 1.5, \"target_price\": 489.0, \"stop_loss\": 428.0, \"risk_reward_ratio\": \"2.39:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 44, \"account_risk_pct\": 0.75, \"reasoning\": \"Head Trader bullish (44 conf). 3/5 swing agents bullish. Post-earnings catalyst live (Q3 FY26 blowout: $3.0B rev, 50.5% GM first-ever above 50%, Q4 guide $3.65B, analyst upgrades $470-$572). Former ATH $446.62 flipped to support \\u2014 pullback entry at $444-448 zone. R/R 2.39:1 ($43 up / $18 down). STX correlation block resolved: STX is hold (no new position), cluster cap is not triggered. DO NOT CHASE above $452 \\u2014 limit order at $446. Stop $428 below hourly pivot cluster. Sized conservatively: 2 shares x $446 = $892 (within 25% of $5K capital). Key risk: hourly OBV divergence (institutional distribution signal) + 0% recent win rate on extended-move entries. Confidence held at 44 \\u2014 do not size up.\"}",
+        "last_checked_at": "2026-05-06T16:10:00+00:00",
+        "entry_tolerance_pct": 1.5,
+        "account_risk_pct": 0.75
+      }
+    ],
+    "realized_gains": {
+      "TSLA": {
+        "long": 0.0,
+        "short": 0.0
+      }
+    },
+    "pending_orders": [],
+    "recent_closed": [
+      {
+        "ticker": "GOOG",
+        "direction": "short",
+        "status": "stop_hit",
+        "entry_price": 383.0,
+        "exit_fill_price": 389.5,
+        "pnl": -6.5,
+        "closed_at": "2026-05-06T13:31:00+00:00",
+        "timeframe": "6-14 trading days"
+      },
+      {
+        "ticker": "AMD",
+        "direction": "short",
+        "status": "stop_hit",
+        "entry_price": 354.49,
+        "exit_fill_price": 372.31,
+        "pnl": -17.819999999999993,
+        "closed_at": "2026-05-06T13:30:46+00:00",
+        "timeframe": "8-15 trading days"
+      },
+      {
+        "ticker": "DIS",
+        "direction": "long",
+        "status": "stop_hit",
+        "entry_price": 102.5,
+        "exit_fill_price": 101.0,
+        "pnl": -4.990005493164091,
+        "closed_at": "2026-05-05T14:09:00+00:00",
+        "timeframe": "5-10 trading days"
+      },
+      {
+        "ticker": "AMZN",
+        "direction": "short",
+        "status": "stop_hit",
+        "entry_price": 269.0,
+        "exit_fill_price": 276.0,
+        "pnl": -10.14,
+        "closed_at": "2026-05-04T14:48:00+00:00",
+        "timeframe": "7-14 trading days"
+      },
+      {
+        "ticker": "NVDA",
+        "direction": "long",
+        "status": "stop_hit",
+        "entry_price": 209.25,
+        "exit_fill_price": 205.3,
+        "pnl": -63.2,
+        "closed_at": "2026-04-30T15:59:00",
+        "timeframe": "5-10 trading days"
+      }
+    ]
+  },
+  "tickers": [
+    "TSLA"
+  ],
+  "end_date": "2026-05-06",
+  "degraded_inputs": []
+}
