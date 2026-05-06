@@ -1,44 +1,42 @@
 ---
 name: GOOG thesis
-last_updated: 2026-05-05
-last_run_id: 20260505_164543
+last_updated: 2026-05-06
+last_run_id: 20260506_164526
 target_words: 500
 stale_after_days: 30
-word_count: 496
-summary: Short decision issued (40% conf, 1 share, entry ~$383, target $338.95, stop $389.50, R/R 4.32:1) — PM reaffirmed mean-reversion Branch A thesis; per_ticker_history[GOOG]=[] so no ledger fill confirmed yet; bull case (Cloud $20B, earnings blowout) remains structurally intact but entry at $383 fails every strategy's R/R threshold; DOJ cross-appeal and $190B capex are durable bear risks.
+word_count: 492
+summary: Short thesis falsified — id 149 stopped out at $389.50 (-$6.50) on May 6; signal direction reverted to neutral/hold; no new directional trade issued (conf 28); bull case (Cloud AI leadership, Google I/O May 19-20 catalyst) structurally intact; revisit at $375-385 pullback zone or May 14-15 I/O pre-positioning window.
 ---
 
 # GOOG — Thesis
 
 ## TL;DR
 
-**Prior "watch-not-act neutral" stance upgraded to short decision.** The prior thesis (run 20260501_164617) described a structurally bullish stock in a no-chase zone, waiting for a $342–$358 pullback. That pullback never materialized — price remained pinned at $383–$384 for four trading days. Run 20260505_164543 (May 5) marks a signal direction shift: the Portfolio Manager issued a short (1 share at $383, target $338.95, stop $389.50, R/R 4.32:1, conf 40%) based on mean-reversion Branch A. The falsification trigger is not a fundamental change but a decision shift: the prior thesis explicitly flagged RSI-7 97.75 and Z-score 3.29 as extreme; those readings have eased to RSI-7 90.69 and Z-score 2.56 without price breaking higher — confirming the thesis that the extension is not accelerating. No fill is yet confirmed in trade_ledger.json `per_ticker_history[GOOG]` — the decision was issued; execution pending. (Source: decisions.json, trade_ledger.json, explanation.json, run 20260505_164543)
+**Prior short thesis falsified by stop-out.** The prior thesis (run 20260505_164543) issued a mean-reversion short at $383, stop $389.50. That stop was explicitly named as the bear-invalidation trigger: "price breaks cleanly above $389.50 stop (short stopped out)." That condition was met on May 6 — id 149 stopped out at $389.50, realized P&L −$6.50. Price continued to $395.11 hourly, confirming the extension is not reversing. Run 20260506_164526 issues a Hold (conf 28) — no new directional trade in either direction. The falsified claim is the mean-reversion fade thesis: the short assumed $384.16 hourly resistance (16 tests) would cap price, but buyers absorbed that level and continued higher. ADX intensified to 74.23 — the extreme trend regime absorbed the fade exactly as the NVDA (Apr 30) and AMZN (May 4) lessons warned. (Source: trade_ledger.json per_ticker_history[GOOG] id 149, decisions.json, explanation.json, run 20260506_164526)
 
 ## Bull case
 
-**1. Google Cloud as the validated AI cloud leader.** Q1 2026 confirmed Google Cloud at $20B+ quarterly revenue (+63% YoY), cloud backlog nearly doubling QoQ to $460B+. The AI cloud acceleration is already in the numbers — Alphabet outperformed AWS, Azure, and Meta in post-earnings market reaction (+10%). (Source: web_research/GOOG.json, run 20260501_164617)
+**1. Google Cloud as the validated AI cloud leader.** Q1 2026 confirmed Google Cloud at $20B+ quarterly revenue (+62.7% YoY), cloud backlog $460B+. AI revenue +800% YoY. Alphabet signed a $200B cloud deal with Anthropic, cementing position against AWS (OpenAI GPT-5.5 pivot to Amazon Bedrock). Google also won the Pentagon AI contract for classified government work. The fundamentals are not in question. (Source: web_research/GOOG.json, run 20260506_164526)
 
-**2. Exceptional profitability and balance sheet.** Net margin 32.81%, operating margin 32.03%, ROE 31.83%, D/E 0.12, current ratio 2.01. EPS $5.11 vs. $2.62 consensus (+94%); net income $62.58B (+81% YoY). (Source: fundamentals_analyst_agent, run 20260505_164543)
+**2. Exceptional profitability and balance sheet.** Net margin 32.81%, operating margin 32.03%, ROE 31.83%, D/E 0.12, current ratio 2.01. EPS $5.11 vs. $2.62 consensus (+94%). Fundamentals agent bullish at 75% confidence. (Source: fundamentals_analyst_agent, signals_combined.json, run 20260506_164526)
 
-**3. Google I/O 2026 catalyst window approaching.** May 19–20 conference is ~10 trading days away. AI Mode, agentic commerce, Gemini in Workspace (rolling out May 4), and Pentagon AI deal signed. Analyst consensus: 45-analyst Strong Buy, avg PT $390.49. (Source: web_research/GOOG.json, swing_catalyst_news, run 20260505_164543)
+**3. Google I/O 2026 catalyst window approaching.** Android Show May 12 is the next near-term event; optimal I/O pre-positioning window opens ~May 14–15. Conference May 19–20 expected to feature AI Mode, agentic commerce, and Gemini hardware updates. Analyst consensus: 60 of 67 analysts Buy, avg PT $406.71. (Source: web_research/GOOG.json, swing_catalyst_news, run 20260506_164526)
 
-**4. Search moat and Waymo optionality.** DOJ remedy was a choice-screen mandate, not forced breakup. Waymo not in consensus estimates — each new city rollout is incremental call-option value. (Source: prior runs, web_research/GOOG.json)
+**4. Trend strength confirms structural momentum.** ADX 74.23 with +DI 42.98 vs −DI 3.72 is one of the strongest trend readings in this portfolio's history. All EMAs fully aligned bullish. The freight train has not stopped — new entries are blocked by extension, not by trend failure. (Source: swing_trend_momentum, swing_head_trader, run 20260506_164526)
 
 ## Bear case
 
-**1. Near-term mean reversion (active short thesis).** RSI-7 90.69, RSI-14 80.70, Z-score 2.56 vs. 50-SMA, Bollinger %B 0.963. Hourly resistance at $384.16 (13 tests) capping price. ADX 71.68 strong trend but no new upside breakout in four sessions. Mean-reversion Branch A (R/R 4.32:1) active. (Source: swing_mean_reversion, run 20260505_164543)
+**1. Extreme overextension blocks new entries.** RSI-7 90.7, Z-score 2.51 vs. 50-SMA, price 21.25% above 50-SMA, Bollinger %B 0.9574. R/R at $395 is ~1:1, failing the 2:1 minimum. Three independent agents (breakout, catalyst, macro) each cite structural reasons to stand aside. (Source: swing_macro_context, swing_breakout, swing_mean_reversion, run 20260506_164526)
 
-**2. DCF valuation gap 75%.** Intrinsic value: $1.15T. Market cap: $4.64T. Even bull-case DCF ($1.39T) well below market. Market pricing in extraordinary growth with no margin for error. (Source: valuation_analyst_agent, run 20260505_164543)
+**2. DCF valuation gap 76%.** Intrinsic value $1.15T; market cap $4.79T. Market pricing in extraordinary growth with no margin of safety. (Source: valuation_analyst_agent, run 20260506_164526)
 
-**3. DOJ cross-appeal — forced divestiture tail risk.** Morgan Stanley estimates search index sharing puts $15–25B in annual ad revenue at risk. Unresolved. (Source: prior web_research)
-
-**4. Capex inflation vs. near-term FCF.** Full-year 2026 capex guidance raised to as much as $190B, with 2027 signaled to "significantly increase." FCF compression real near-term. Operating margin trend: −1.5%. (Source: growth_analyst_agent, run 20260505_164543)
+**3. DOJ cross-appeal and capex overhang remain.** Morgan Stanley estimates $15–25B annual ad revenue at risk from forced divestiture. Full-year 2026 capex raised to $190B, operating margin trend −1.5%. (Source: prior web_research, growth_analyst_agent, run 20260506_164526)
 
 ## What would change my mind
 
-- **Bull invalidation:** Google Cloud quarterly growth decelerates to <40% YoY; DOJ wins forced divestiture; capex raised above $200B without revenue raise; price breaks cleanly above $389.50 stop (short stopped out).
-- **Bear invalidation:** Pullback to $342–$358 restores 3:1+ R/R for long entry. Short target $338.95 hit.
+- **Bull entry trigger:** Pullback to $375–$385 (R/R approaches 3:1) OR May 14–15 I/O pre-positioning window with RSI-7 cooling below 70. Entry at current price ($395) not valid.
+- **Bear entry trigger:** Price retraces to $375–$385 AND a confirmed bearish reversal candle on 1.5x+ volume. No new short without reversal confirmation — lesson from three consecutive failed fades (NVDA Apr 30, AMZN May 4, GOOG May 5–6).
 
 ## Last updated
 
-Sources: runs/20260505_164543 (decisions.json, trade_ledger.json, explanation.json, signals_combined.json, web_research/GOOG.json). Prior stance (run 20260501_164617 — neutral/watch) superseded by short decision. No ledger fill confirmed — per_ticker_history[GOOG]=[].
+Sources: runs/20260506_164526 (decisions.json, trade_ledger.json per_ticker_history[GOOG] id 149, explanation.json, signals_combined.json, web_research/GOOG.json). Prior short thesis (run 20260505_164543) falsified by stop-out at $389.50 on May 6, 2026.

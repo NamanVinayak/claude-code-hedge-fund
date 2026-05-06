@@ -1,78 +1,88 @@
 ---
 name: GOOG trades
-last_updated: 2026-04-29
-last_run_id: bootstrap
+last_updated: 2026-05-06
+last_run_id: 20260506_164526
 target_words: 800
 stale_after_days: 60
-word_count: 812
-summary: 2 total GOOG trades in tracker.db — 1 filled and abandoned, 1 unfilled and abandoned. No closed P&L recorded. Net lifetime result: $0 realized.
+word_count: 617
+summary: 3 total GOOG trades in ledger — id 149 (short 1 share, stopped out May 6, -$6.50 realized); id 14 (long 3 shares, abandoned, P&L null); id 7 (long 3 shares, never filled, abandoned). Net confirmed realized P&L: -$6.50. No open GOOG positions.
 ---
 
 # GOOG — Trades
 
 ## TL;DR
 
-Two GOOG trades exist in tracker.db. Trade #14 (April 15, 2026) was the only one with a fill: 3 shares entered at $331.73, target $347.50, stop $318. The position was marked "abandoned" on April 29, 2026 with exit_fill_price $347.50 recorded but pnl=NULL in the database — the exit fill field appears to have been set without a corresponding P&L calculation. Trade #7 (April 14, 2026) was placed at $315 and never filled before being abandoned. Net realized P&L in the DB: $0 (pnl field is NULL on both rows). The model's confidence on both entries was 60%.
+Three GOOG trades on record. The only confirmed realized P&L trade is id 149 — a mean-reversion short (1 share at $383.00, stopped out $389.50 on May 6, 2026) for a loss of −$6.50. Two prior bootstrapped trades (id 14 and id 7) are classified as abandoned with NULL P&L. No open GOOG positions as of run 20260506_164526. (Source: trade_ledger.json per_ticker_history[GOOG], run 20260506_164526)
 
 ---
 
 ## Open positions
 
-None. Both GOOG trades are in status "abandoned" as of 2026-04-29.
+None. No open GOOG positions confirmed in trade_ledger.json as of run 20260506_164526.
 
 ---
 
-## Closed trades — full log
+## Closed — last 30 days
 
-### Trade #14 — Long 3 shares at $331.73 (April 15, 2026)
+### Trade id 149 — Short 1 share at $383.00 (May 5, 2026) — STOPPED OUT
 
-**Model decision source:** run 20260415_093758 (swing mode)
+**Model decision source:** run 20260505_164543 (swing mode)
+
+| Field | Value |
+|---|---|
+| Trade ID | 149 |
+| Direction | Short |
+| Quantity | 1 share |
+| Entry fill price | $383.00 |
+| Target | $338.95 |
+| Stop loss | $389.50 |
+| Exit fill price | $389.50 (stop hit) |
+| Realized P&L | −$6.50 |
+| Risk/Reward (model) | 4.32:1 |
+| Confidence | 40% |
+| Status | stop_hit |
+| Entered at | 2026-05-05T13:30:00+00:00 |
+| Closed at | 2026-05-06T13:31:00+00:00 |
+| Hold duration | ~1 trading day |
+| Run ID | 20260505_164543 |
+
+**Model rationale (from raw_decision):** Mean-reversion Branch A: Z-score 2.56, RSI-7 90.69, Bollinger %B 0.963, hourly $384.16 resistance (13 tests). Head trader conf 35 but R/R 4.32:1 cleared exceptional threshold. 1 share within risk mgr $600 cap. Portfolio was 2 short / 2 long. Valuation bearish (DCF gap −75%).
+
+**Outcome:** Stop hit at $389.50 on May 6. The hourly $384.16 resistance ceiling (16 tests) was broken to the upside. ADX continued to intensify to 74.23 — extreme trend regime absorbed the mean-reversion fade, consistent with NVDA (Apr 30, −$63.20) and AMZN (May 4, −$10.14) lessons. Thesis falsification clause triggered: "price breaks cleanly above $389.50 stop." (Source: trade_ledger.json per_ticker_history[GOOG] id 149, recent_closures_30d, run 20260506_164526)
+
+---
+
+## Closed trades — historical (bootstrapped)
+
+### Trade id 14 — Long 3 shares at $331.73 (April 15, 2026) — Abandoned
 
 | Field | Value |
 |---|---|
 | Trade ID | 14 |
 | Direction | Long |
 | Quantity | 3 shares |
-| Model entry price | $332.06 |
-| Actual entry fill | $331.73 |
+| Entry fill price | $331.73 |
 | Target | $347.50 |
-| Stop loss (model) | $318.00 |
-| Exit fill recorded | $347.50 |
-| Realized P&L | NULL (database gap) |
+| Stop loss | $318.00 |
+| Exit fill recorded | $347.50 (DB field only) |
+| Realized P&L | NULL (database gap — P&L not computed) |
 | Status | Abandoned |
-| Entered at | 2026-04-15 17:14:47 |
-| Closed at | 2026-04-29 11:19:51 |
-| Hold duration | ~14 calendar days |
+| Entered at | 2026-04-15T17:14:47 |
+| Closed at | 2026-04-29T11:19:51 |
 
-**Model rationale (from 20260415_093758 decisions.json):** "7/10 strategies bullish; clean breakout above $330.58 with daily ADX 37 and hourly ADX 80; Google Cloud AI partnership catalyst." Confidence: 60%. Risk/reward: 2.08.
+**Note:** Exit fill field shows $347.50 (exact model target) but P&L is NULL — likely auto-populated target field, not confirmed Moomoo execution. If real, gross P&L would be +$47.31 on a $995.19 position (+4.75%). Unconfirmed. (Source: bootstrap, run bootstrap)
 
-**Technical setup at entry:** GOOG had broken above daily resistance at $330.58 on April 14. The model entered on confirmation at $332.06 (filled at $331.73 — slippage of $0.33, favorable). Momentum indicators were strongly bullish: daily MACD histogram +4.87 (highest in the basket), squeeze firing bullish, supertrend bullish on both daily and hourly timeframes. The primary risk acknowledged at entry was simultaneous overbought readings on both timeframes (daily RSI 77, hourly RSI 82), which increased pullback probability.
-
-**Outcome note:** The exit_fill_price field in the DB shows $347.50, which equals the exact model target. This may reflect the target being auto-filled rather than a confirmed Moomoo execution — pnl is NULL, which is unusual for a completed trade. If the exit was real at $347.50, gross P&L would be: (347.50 - 331.73) x 3 = **+$47.31** on a $995.19 position (+4.75%). This is unconfirmed pending DB reconciliation.
-
----
-
-### Trade #7 — Long 3 shares at $315.00 (April 14, 2026) — Never filled
-
-**Model decision source:** Implied from earlier swing run context (entry placed April 14, 2026)
+### Trade id 7 — Long 3 shares at $315.00 (April 14, 2026) — Never filled
 
 | Field | Value |
 |---|---|
 | Trade ID | 7 |
 | Direction | Long |
-| Quantity | 3 shares |
-| Model entry price | $315.00 |
-| Actual entry fill | None (no fill) |
-| Target | Not recorded |
-| Stop loss | Not recorded |
-| Exit fill | None |
+| Entry price | $315.00 (limit, never filled) |
 | Realized P&L | NULL |
-| Status | Abandoned |
-| Created at | 2026-04-14 08:45:51 |
-| Entered at | Never |
-| Closed at | 2026-04-29 11:19:51 |
+| Status | Abandoned (2026-04-29T11:19:51) |
 
-**Context:** This order was placed at $315 ahead of the April 14–15 breakout. GOOG was trading at ~$313 in the swing_20260411 run (target $330, hold due to 1.3:1 R:R at that level). The $315 entry appears to be a limit order that the model placed but the stock never pulled back to fill — instead, GOOG rallied directly through $315 and broke out above $330.58. The unfilled order was then abandoned and superseded by Trade #14. Net impact: $0 (no capital deployed).
+**Note:** Limit order placed at $315 ahead of the April 14–15 breakout. GOOG rallied through $315 without pulling back, leaving the order unfilled. Superseded by Trade #14. Net impact: $0. (Source: bootstrap, run bootstrap)
 
 ---
 
@@ -80,28 +90,18 @@ None. Both GOOG trades are in status "abandoned" as of 2026-04-29.
 
 | Metric | Value | Notes |
 |---|---|---|
-| Total GOOG trades in DB | 2 | IDs: 14, 7 |
-| Filled trades | 1 | Trade #14 |
-| Unfilled / abandoned | 1 | Trade #7 |
-| Confirmed realized P&L | $0 | pnl=NULL in DB for both rows |
-| Unconfirmed P&L (if #14 exit real) | +$47.31 | Needs DB reconciliation |
-| Model confidence average | 60% | Both runs |
-| Mode | Swing | Both entries |
-| Entry accuracy | 1/1 filled | Trade #14 filled within $0.33 of model price |
-| Win rate (confirmed closes) | N/A | No confirmed P&L yet |
-
----
-
-## Data quality notes
-
-1. **pnl=NULL anomaly:** Trade #14 has exit_fill_price=$347.50 (the exact model target) but pnl is NULL. The monitor or executor likely wrote the exit fill field without running the P&L calculation step. To fix: `UPDATE trade SET pnl = (exit_fill_price - entry_fill_price) * quantity WHERE id = 14` — but verify the exit was a real Moomoo fill first.
-
-2. **Trade #7 entry price context:** The $315 limit was set when GOOG was at ~$313 (swing_20260411_211655 run, April 11 data). The stock gapped through this level on the April 15 breakout without pulling back, leaving the order unfilled. This is a known pattern when the model places limit entries below market in anticipation of a pullback that does not materialize.
-
-3. **Both statuses show "abandoned":** The mass-abandon event on 2026-04-29 11:19:51 closed both trades simultaneously, suggesting a batch cleanup operation rather than individual position management. This is consistent with the tracker monitor running a periodic expiry sweep.
+| Total GOOG trades in ledger | 3 | IDs: 149, 14, 7 |
+| Filled trades | 2 | id 149 (confirmed fill + stop); id 14 (fill recorded, exit unconfirmed) |
+| Unfilled / abandoned | 1 | id 7 |
+| Confirmed realized P&L | −$6.50 | id 149 stop_hit (trade_ledger.json) |
+| Unconfirmed P&L (id 14 if exit real) | +$47.31 | Needs DB reconciliation |
+| Net confirmed P&L | −$6.50 | id 149 only |
+| Win rate (confirmed closes) | 0% (0W / 1L) | id 149 stop_hit |
+| Mode | Swing | All entries |
+| Last closed | 2026-05-06 | id 149 |
 
 ---
 
 ## Last updated
 
-Data pulled from tracker.db on 2026-04-29 using: `s.query(Trade).filter(Trade.ticker == 'GOOG').order_by(Trade.created_at.desc())`. Bootstrap date: 2026-04-29.
+Sources: trade_ledger.json per_ticker_history[GOOG] (run 20260506_164526). id 149 confirmed stopped out at $389.50 (−$6.50) on 2026-05-06. No open GOOG positions. Next potential entry: pullback to $375–$385 or May 14–15 I/O pre-positioning window per decisions.json run 20260506_164526.
