@@ -1,7 +1,7 @@
 ---
 name: swing_catalyst_news track record
-last_updated: 2026-05-05
-last_run_id: 20260505_220625
+last_updated: 2026-05-06
+last_run_id: 20260506_123913
 stale_after_days: 365
 target_words: 1200
 summary: 1 graded calls. (Appended by ai_hedge.grading.wiki_writer.)
@@ -25,3 +25,4 @@ one resolved call scored against yfinance daily OHLC.
 - 2026-05-04 | NVDA | bullish $198.5→$211.5 stop $195.8 | **stopped_out** (day 1, MFE 1.63%, MAE -1.89%) _(prior_run=20260504_125732, graded_in=20260505_163241)_
 - — | WDC | bullish $439.0→$471.13 stop $410.05 | **in_progress** (day 1, MFE 3.38%, MAE -2.39%) _(prior_run=20260504_203608, graded_in=20260505_203524)_
 - — | DIS | bullish $103.75→$107.11 stop $100.8 | **expired_wrong** (day 4, MFE 1.04%, MAE -2.39%) _(prior_run=20260501_221355, graded_in=20260505_220625)_
+- — | NVDA | bullish $198.5→$209.5 stop $194.5 | **in_progress** (day 1, MFE 0.88%, MAE -1.24%) _(prior_run=20260505_163241, graded_in=20260506_123913)_

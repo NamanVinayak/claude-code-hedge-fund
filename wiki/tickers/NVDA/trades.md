@@ -1,22 +1,22 @@
 ---
 name: NVDA trades
-last_updated: 2026-05-05
-last_run_id: 20260505_163241
+last_updated: 2026-05-06
+last_run_id: 20260506_123913
 target_words: 800
 stale_after_days: 60
-word_count: 763
-summary: One formally closed position — 16 shares at $209.25 stopped out 2026-04-30 at $205.30, P&L -$63.20 (corrected from buggy -$264.65; see lessons.md). Four prior abandoned tracker.db entries from Apr 14-29 (no realized P&L). No open positions as of 2026-05-05.
+word_count: 772
+summary: One formally closed position — 16 shares at $209.25 stopped out 2026-04-30 at $205.30, P&L -$63.20 (corrected from buggy -$264.65; see lessons.md). Four prior abandoned tracker.db entries from Apr 14-29 (no realized P&L). No open positions as of 2026-05-06. AMD earnings (May 5 AMC) did not trigger confirmation signal — 4th consecutive HOLD at EMA-21/Fib 38.2% zone.
 ---
 
 # NVDA — Trades
 
 ## TL;DR
 
-One formally closed NVDA position in Turso (trade id 112): originally booked as 67 shares @ $209.25 due to a phantom $100K budget bug (commit b2b472d), now corrected to its proper sizing of 16 shares (14.2% vol-adjusted limit on the actual $25K paper account). Stopped out at $205.30 on 2026-04-30, realized P&L **-$63.20** (corrected from the buggy -$264.65 that briefly appeared in earlier wiki versions). Four prior tracker.db entries (IDs 6, 12, 13, 21) were marked abandoned 2026-04-29 with no realized P&L. No open NVDA positions as of 2026-05-05. Latest 2026-05-05 run scored HOLD (conf 42, below 50 threshold), 3rd consecutive HOLD at the EMA-21/Fib 38.2% confluence zone ($196.75–$198.50) — waiting for hourly MACD histogram to turn positive AND a confirmed bullish reversal candle. AMD Q1 earnings tonight (May 5 AMC) is the immediate catalyst watch.
+One formally closed NVDA position in Turso (trade id 112): originally booked as 67 shares @ $209.25 due to a phantom $100K budget bug (commit b2b472d), now corrected to its proper sizing of 16 shares. Stopped out at $205.30 on 2026-04-30, realized P&L **-$63.20** (corrected from the buggy -$264.65). Four prior tracker.db entries (IDs 6, 12, 13, 21) were marked abandoned 2026-04-29 with no realized P&L. No open NVDA positions as of 2026-05-06. AMD Q1 2026 earnings (May 5 AMC) passed without triggering the confirmation signal — price slipped to $196.50 on May 6. This is the 4th consecutive HOLD run at the EMA-21/Fib 38.2% confluence zone. Hard exit deadline ~May 17 (3-day pre-earnings blackout before NVDA Q1 FY2027 ~May 20).
 
 ## Open positions
 
-None. Last position closed 2026-04-30.
+None. Last position closed 2026-04-30. No fills in per_ticker_history[NVDA] for run 20260506_123913 — hard rule #11 confirmed: HOLD decision, no entry, no new position.
 
 ## Recently Closed — last 30 days
 
@@ -34,7 +34,7 @@ None. Last position closed 2026-04-30.
 | Run | 20260430_060402 |
 | Turso trade id | 112 |
 
-**Notes:** Originally booked at 67 shares ($14,020) because aggregate.py was running with a hardcoded `--cash 100000` budget instead of reading `paper_account_size` from `tracker/watchlist.json` (which was $5K at the time, now $25K). Bug fixed in commit `b2b472d`. With proper $25K budget × 14.167% vol-adjusted limit, position should have been **16 shares ($3,348)**. The trade was corrected on 2026-05-01 to reflect the strategy-appropriate size; original 67-share buggy values are preserved in the `fills` audit log. Stop at $205.30 = hourly Fib 61.8% level from the $216.83 high. 4/5 swing agents were bullish on entry (ADX 54.67, pullback to Fib 38.2% support), but price broke below the stop intraday.
+**Notes:** Originally booked at 67 shares ($14,020) because aggregate.py was running with a hardcoded `--cash 100000` budget instead of reading `paper_account_size` from `tracker/watchlist.json` (which was $5K at the time, now $25K). Bug fixed in commit `b2b472d`. With proper $25K budget × 14.167% vol-adjusted limit, position should have been **16 shares ($3,348)**. Stop at $205.30 = hourly Fib 61.8% level from the $216.83 high. 4/5 swing agents were bullish on entry (ADX 54.67, pullback to Fib 38.2% support), but price broke below the stop intraday.
 
 ## Closed trades — 2026-04-14 to 2026-04-29
 
@@ -74,6 +74,7 @@ None. Last position closed 2026-04-30.
 | **20260501_124529** | **2026-05-01** | **hold** | n/a | $212.25 (conditional) | $194.00 (conditional) | 2.67:1 | 35 |
 | **20260504_125732** | **2026-05-04** | **hold** | n/a | $210.50 (conditional) | $194.00 (conditional) | ~2.6:1 | 44 |
 | **20260505_163241** | **2026-05-05** | **hold** | n/a | $216.83 (conditional) | $193.50 (conditional) | 3.7:1 | 42 |
+| **20260506_123913** | **2026-05-06** | **hold** | n/a | $210.00 (conditional) | $193.50 (conditional) | 3.7:1 | 38 |
 
 ## Lessons learned
 
@@ -81,10 +82,10 @@ None. Last position closed 2026-04-30.
 2. **Apr 15 entry was excellent.** Fills of $197.29 and $197.15 were below the $198.47 limit — favorable slippage. Position reached +8.1% unrealized by Apr 29.
 3. **Abandonment vs formal close.** Four prior trades (IDs 6, 12, 13, 21) show None in the DB pnl column — the +$95.70 implied gain is not in realized P&L.
 4. **Model waited correctly for pullback.** All prior runs flagged overextension. Apr 15 and Apr 30 are the only two runs where a clean entry existed near the constructive zone.
-5. **EMA pullback dip-buy: 0 wins, 1 stop, -$63.20 (corrected) in 30 days.** This setup type requires a confirmed hourly reversal candle at the EMA-21 / Fib 38.2% confluence ($196.75–$197.67) before re-entry — not a blind dip-buy.
-6. **$208.20 invalidation level must be respected.** The Apr 30 entry at $209.25 was just above $208.20. Price went on to break $208.20 decisively. The wiki's own hard stop was the right signal — trust it.
-7. **Sizing bug taught us a meta-lesson.** A buggy $100K phantom budget produced a position 4× too large. The strategy itself wasn't broken — the engineering was. Going forward, the new conviction-based sizing model + hard caps should prevent this recurring.
-8. **Three consecutive HOLDs at the same zone.** Runs 20260501_124529, 20260504_125732, and 20260505_163241 all landed at the same EMA-21/Fib 38.2% support zone ($196.75–$198.50) with HOLD verdicts pending confirmation. AMD Q1 earnings tonight (May 5 AMC) is the binary catalyst that may resolve the entry trigger. R/R improved to 3.7:1 on the extended $216.83 target. (decisions.json, 20260505_163241)
+5. **EMA pullback dip-buy: 0 wins, 1 stop, -$63.20 (corrected) in 30 days.** This setup type requires a confirmed hourly reversal candle at the EMA-21 / Fib 38.2% confluence ($196.75–$197.69) before re-entry — not a blind dip-buy.
+6. **$208.20 invalidation level must be respected.** The Apr 30 entry at $209.25 was just above $208.20. Price went on to break $208.20 decisively. Trust the hard stop.
+7. **Sizing bug taught us a meta-lesson.** A buggy $100K phantom budget produced a position 4× too large. The strategy itself wasn't broken — the engineering was. Conviction-based sizing model + hard caps prevent recurrence.
+8. **AMD earnings consumed without triggering confirmation.** Run 20260505_163241 explicitly named AMD Q1 earnings (May 5 AMC) as the entry trigger. AMD printed and NVDA declined -1% to $196.50. The catalyst hypothesis was consumed and failed to fire. Four consecutive HOLDs (runs 20260501, 20260504, 20260505, 20260506) at the same zone: each was correct per lesson rules, but the zone has not produced a bounce. Confirmation gates are unchanged. (decisions.json, 20260506_123913)
 
 ## Lifetime stats
 
