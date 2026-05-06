@@ -1,0 +1,20 @@
+{
+  "NKE": {
+    "signal": "bullish",
+    "confidence": 36,
+    "reasoning": "Branch A fires (fade the oversold extreme), but with reduced confidence. RSI-7 at 18.77 is deeply oversold (<25 threshold), RSI-14 at 28.13 is near the oversold zone, and daily bullish RSI divergence is confirmed — falling price with rising RSI over the 60-bar lookback. MACD histogram has turned positive (+0.2386), signaling downside momentum deceleration. However, the daily Z-score is only -1.14 (not yet at the -2 extreme), Bollinger pct_b is 0.1798 (near lower band but price has not pierced it), and EMA structure is fully bearish on both daily and hourly timeframes (EMA aligned downtrend, price 14.75% below 50-SMA). Hourly stabilization is encouraging: price is above hourly EMA-24/SMA-24, hourly OBV is trending up (diverging positively from daily OBV downtrend), and hourly Z-score is -0.95 (near mean), suggesting intraday stabilization. Fibonacci context: price at 43.06 is near the daily swing low (42.09) but not at a clean Fib bounce level. Nearest support at 42.09 is close. Wiki warns: RSI-7 extreme identical to Apr 14 loss (-$35.70); wiki vetoes shorting but also cautions that repeat oversold tests lower conviction for a fade. Prior call (bullish, 42 confidence, entry 43.15) is in_progress after 1 day: MFE only +0.35%, MAE -1.16% — re-affirming with minor adjustment (slightly lower entry to account for the May 5 low test). No change in thesis: wait for bounce to Bollinger middle (~44.58); stop below swing low support. Confidence kept low given macro risk-off backdrop, persistent downtrend, and lesson that the same oversold extreme failed April 14.",
+    "entry": 43.10,
+    "target": 44.58,
+    "stop": 41.85,
+    "timeframe": "4-8 trading days"
+  },
+  "DIS": {
+    "signal": "bearish",
+    "confidence": 42,
+    "reasoning": "Branch A fires (fade the overbought extreme) — post-earnings gap-up edition. The hourly data captures a significant gap-up from the daily close of $100.48 to $107.97+, consistent with earnings results released after May 5 close (wiki noted May 6 earnings binary). Hourly Z-score is +2.38 (above the +2 extreme threshold), hourly Bollinger pct_b is 1.0745 (outside upper band — a clean statistical stretch), and hourly bearish RSI divergence is present. Critically, hourly OBV is diverging from price (OBV trending down while price spiked up on 0.55x below-average relative volume) — this is a high-conviction warning that the gap lacks buying conviction. Hourly RSI-21 at 66.12 is approaching overbought. Daily context: the pre-gap daily picture showed Z-score -0.10 (near mean), all short-term EMAs overhead ($101.83-$102.53), and bullish RSI divergence — but those readings are now stale post-earnings. The gap has reset the reference frame to hourly. Branch B does not apply — no clean dip-buy in a trend; this is an earnings extension. Target is hourly Fib 50% retracement at $104.60 (also near the daily mean cluster), which represents partial gap fill. Stop is above hourly pivot resistance at $109.14. Confidence capped at 42: earnings gaps are notoriously hard to fade (they can run), ADX at 24.8 is only moderate (not extreme ADX like the failed AMZN fade at ADX 65), and the prior DIS long was already stopped out (-$4.99) showing macro/event-driven volatility in this name. Lesson applied: the AMZN mean-reversion fade on May 4 was stopped out by a strong ADX trend — DIS ADX is much lower here but the post-earnings dynamic introduces its own unpredictability. Wait for an intraday reversal candle before entering.",
+    "entry": 107.97,
+    "target": 104.60,
+    "stop": 109.20,
+    "timeframe": "2-5 trading days"
+  }
+}

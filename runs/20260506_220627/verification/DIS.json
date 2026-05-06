@@ -1,0 +1,71 @@
+{
+  "ticker": "DIS",
+  "verified_at": "2026-05-06T22:06:27",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.1314,
+      "web_value": 0.1387,
+      "source": "CNBC (DIS net margin TTM 13.87%); Yahoo Finance (12.80% as of May 4, 2026)",
+      "status": "ok",
+      "deviation": "5.3%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.18587,
+      "web_value": 0.1491,
+      "source": "GuruFocus (DIS operating margin% 14.91%, near median); CompaniesMarketCap; Macrotrends (Jun 2025 TTM: 11.12%)",
+      "status": "MISMATCH",
+      "deviation": "24.7%",
+      "action": "replaced with web value (0.1491) in all facts bundles containing operating_margin for DIS: warren_buffett__DIS.json, aswath_damodaran__DIS.json"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 15.91,
+      "web_value": 14.48,
+      "source": "GuruFocus (DIS PE ratio TTM 14.48 as of Apr 8, 2026); FullRatio (15.23 as of Apr 30, 2026)",
+      "status": "ok",
+      "deviation": "9.9%",
+      "notes": "Deviation is within 10% of the most current source (FullRatio Apr 30: 15.23). GuruFocus 14.48 gives 9.9% — still under the 20% threshold."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 94420000000.0,
+      "web_value": 95710000000.0,
+      "source": "FinanceCharts / CompaniesMarketCap (DIS revenue TTM $95.71B as of Feb 2026)",
+      "status": "ok",
+      "deviation": "1.3%",
+      "notes": "Revenue derived as market_cap / price_to_sales_ratio from facts bundle (94.42B). Web reports 95.71B TTM. Small timing difference."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 191430426624.0,
+      "web_value": 191130000000.0,
+      "source": "StockAnalysis / multiple sources (DIS market cap May 6, 2026: ~$191.13B)",
+      "status": "ok",
+      "deviation": "0.2%"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.1129,
+      "web_value": 0.1130,
+      "source": "FinanceCharts / GuruFocus (DIS ROE 11.3% as of May 2026)",
+      "status": "ok",
+      "deviation": "0.1%"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.0628,
+      "web_value": null,
+      "source": "n/a",
+      "status": "unverified",
+      "notes": "No conflicting web data found; retained as-is."
+    }
+  ],
+  "overall_status": "1 mismatch corrected",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260506_220627/facts/warren_buffett__DIS.json",
+    "runs/20260506_220627/facts/aswath_damodaran__DIS.json"
+  ]
+}

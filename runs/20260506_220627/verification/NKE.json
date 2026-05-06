@@ -1,0 +1,72 @@
+{
+  "ticker": "NKE",
+  "verified_at": "2026-05-06T22:06:27",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.0695,
+      "web_value": 0.0658,
+      "source": "GuruFocus / Macrotrends TTM average (NKE net margin TTM)",
+      "status": "ok",
+      "deviation": "5.6%",
+      "notes": "Facts bundle period=ttm; TTM avg from web ~6.58%. Single-quarter (Q3 FY2026 ended Feb 28) is 4.84% per Macrotrends/FinanceCharts, but that is quarterly not TTM — correct comparison is TTM to TTM."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": 0.06,
+      "source": "Macrotrends / Motley Fool (Nike operating margin 2026)",
+      "status": "unverified",
+      "deviation": "n/a",
+      "notes": "Facts bundle reports operating_margin=null. Web sources confirm operating margin has declined to ~6% but since our value is null there is nothing to correct."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 28.87,
+      "web_value": 28.35,
+      "source": "Yahoo Finance / GuruFocus (NKE PE ratio, May 4, 2026)",
+      "status": "ok",
+      "deviation": "1.8%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 46310000000.0,
+      "web_value": 46510000000.0,
+      "source": "Capital.com / CompaniesMarketCap (Nike revenue TTM May 2026)",
+      "status": "ok",
+      "deviation": "0.4%",
+      "notes": "Revenue is derived as market_cap / price_to_sales_ratio from the facts bundle (46.31B). Web reports 46.51B TTM."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 64981323776.0,
+      "web_value": 64000000000.0,
+      "source": "Capital.com / CompaniesMarketCap (Nike market cap May 4, 2026: $63.81B)",
+      "status": "ok",
+      "deviation": "1.5%"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.2436,
+      "web_value": 0.1476,
+      "source": "GuruFocus (NKE ROE% 14.76% as of Feb 2026, 57% below median); Yahoo Finance TTM 16.02%",
+      "status": "MISMATCH",
+      "deviation": "65.0%",
+      "action": "replaced with web value (0.1476) in all facts bundles containing return_on_equity for NKE: warren_buffett__NKE.json, aswath_damodaran__NKE.json"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.0880,
+      "web_value": null,
+      "source": "n/a",
+      "status": "unverified",
+      "notes": "No conflicting web data found; retained as-is."
+    }
+  ],
+  "overall_status": "1 mismatch corrected",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260506_220627/facts/warren_buffett__NKE.json",
+    "runs/20260506_220627/facts/aswath_damodaran__NKE.json"
+  ]
+}

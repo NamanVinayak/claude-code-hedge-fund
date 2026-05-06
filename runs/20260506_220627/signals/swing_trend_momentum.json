@@ -1,0 +1,20 @@
+{
+  "NKE": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "TREND: Confirmed daily downtrend — EMA cascade is fully bearish (5 < 10 < 21 < 50 < 200) and price is below every EMA from 5 through 200. However, ADX at 23.94 is below the required 25 threshold, disqualifying a short entry under my rules. MOMENTUM: ROC across 5d (-4.37%), 10d (-7.18%), and 21d (-2.20%) are all negative, consistent with a downtrend, but the MACD histogram has turned positive (+0.2386) — signaling deceleration of downside momentum, not acceleration. RSI-7 at 18.77 and RSI-14 at 28.13 are deeply oversold, a condition the wiki explicitly flags as a veto on new short entries (April 14 loss was triggered under identical RSI extremes). HOURLY: Hourly EMAs also aligned bearish, but price is marginally above the hourly EMA-24, suggesting a micro-bounce in progress. Hourly ROC is mildly positive (5h: +1.11%, 10h: +2.26%), inconsistent with accelerating downside momentum. LESSONS: Wiki confirms shorting at RSI extremes has burned this ticker before; the proper entry is a bounce to the 10/21 EMA zone ($44.28–$45.49) for a clean re-entry short. REGIME: Macro is strongly risk-on (S&P near ATH), which further reduces conviction on short side. No valid setup in either direction: ADX sub-threshold, momentum decelerating on the downtrend, RSI at veto-zone extremes on the short side.",
+    "entry": 43.06,
+    "target": 43.06,
+    "stop": 43.06,
+    "timeframe": "no trade — wait for bounce to 10/21 EMA zone ($44.28–$45.49) before re-evaluating short"
+  },
+  "DIS": {
+    "signal": "neutral",
+    "confidence": 25,
+    "reasoning": "TREND — DAILY: EMAs are fully tangled with no directional fan: EMA-5 (101.71), EMA-10 (102.13), EMA-21 (101.84), and EMA-50 (102.17) are all clustered within a $0.46 range. The ema_aligned_uptrend and ema_aligned_downtrend flags are both false. Daily price ($100.48) is below all EMAs. Daily ADX is 34.98 (strong) but +DI (24.98) vs -DI (29.53) are near-deadlocked — strong trend strength without clear directional dominance. MOMENTUM — DAILY: ROC is mixed in sign: 5d (-0.98%) and 10d (-3.65%) are negative while 21d (+4.36%) is positive — this explicitly triggers my neutral rule (mixed ROC signs across periods). MACD histogram is negative (-0.2668). HOURLY: A sharp post-earnings gap-up is visible — hourly price is $107.97 vs. daily close $100.48, the hourly EMAs are aligned bullish, and hourly ROC is strongly positive across all windows (5h: +0.94%, 10h: +7.17%, 21h: +4.74%). However, the gap has already launched price to pct_b = 1.07 (above upper Bollinger band) and z-score = 2.38 (extreme extension). Hourly OBV is diverging bearishly from price — a warning of potential exhaustion. This is a post-earnings spike condition, not a pullback-to-EMA entry. LESSONS: The May 5 DIS long (-$4.99) was invalidated by macro reversal. The wiki notes no new entry authorized post-stop-out. CONCLUSION: Daily EMAs tangled (neutral rule triggered), daily ROC mixed in sign (neutral rule triggered), and hourly is overextended post-gap — this is not a clean trend-momentum pullback entry.",
+    "entry": 100.48,
+    "target": 100.48,
+    "stop": 100.48,
+    "timeframe": "no trade — wait for hourly pullback to daily EMA cluster ($101.70–$102.17) to reassess if daily EMAs re-align and ROC stabilizes"
+  }
+}

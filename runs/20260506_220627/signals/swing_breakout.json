@@ -1,0 +1,20 @@
+{
+  "NKE": {
+    "signal": "neutral",
+    "confidence": 15,
+    "reasoning": "NKE has a defined consolidation range: support $42.09 (1 test, unconfirmed volume) and resistance $46.97 (4 tests, well-established). Range height = $4.88. However, NO breakout is occurring or imminent in either direction. Daily relative volume is 0.87x — well below the 1.5x required for confirmation. Daily BB width 0.1062 is moderate, not a coiled squeeze. RSI-7 at 18.77 is deeply oversold, recreating the exact RSI extreme that triggered the Apr 14 loss (-$35.70); wiki explicitly vetoes shorting at this level. MACD histogram has turned slightly positive (+0.2386), signaling downside deceleration — consistent with a bounce, not a bearish breakout. Price ($43.06) is sitting above support ($42.09) and far below resistance ($46.97), positioned mid-range. Hourly BB width 0.0602 is tighter than daily, offering a mild coil signal, but hourly relative volume is only 0.60x — no imminent firing. Hourly RSI-21 at 42.41 is neutral. Hourly OBV is trending up (possible accumulation divergence) but does not constitute a breakout signal. EMA cascade is fully bearish on all timeframes — this is an established downtrend, not a consolidating base, which is not this strategy's setup. The wiki identifies the bull trigger clearly: a daily close above $46.97 on 1.5x+ volume with measured target $51.85. That level is 9% away and has not been approached. No breakout setup qualifies today in either direction. Stand aside and wait for either: (a) a daily close above $46.97 on 1.5x+ volume for the bullish breakout, or (b) a daily close below $42.09 on 1.5x+ volume for the bearish breakdown. Squeeze is not on — BB width is moderate.",
+    "entry": 46.97,
+    "target": 51.85,
+    "stop": 44.90,
+    "timeframe": "wait — no active setup"
+  },
+  "DIS": {
+    "signal": "bullish",
+    "confidence": 62,
+    "reasoning": "DIS triggered a post-earnings gap-up breakout on May 6, consistent with the wiki's pre-stated trigger: 'gap and hold above $104.83 on 1.5x+ volume = fresh long opportunity.' The stock closed at $100.48 on May 5, then gapped up to current $108.06 — a ~7.5% gap above the prior close and decisively above the $107.11 resistance (11-test prior ceiling). Daily relative volume is 1.81x — satisfies the 1.5x confirmation threshold, correcting the key failure of the prior DIS trade on May 5 (which had only 1.23x volume). The prior hourly BB squeeze (width 0.0404 per wiki) has fired: current hourly BB width is 0.0873, an expansion from the extreme coil. Hourly RSI-21 at 66.12 is bullish without being extreme. Hourly MACD histogram at +0.7412 shows strong momentum. Hourly ADX 24.8 with +DI 35.61 vs -DI 19.43 confirms bullish directional bias. Measured move: consolidation range from $98.45 support (11 tests) to $107.11 resistance = height $8.66; breakout target = $107.11 + $8.66 = $115.77. Confidence is capped at 62 due to: (1) hourly OBV bearish divergence (OBV trending down while price surged — warning of distribution into the move); (2) hourly RSI bearish divergence flagged in the data; (3) post-earnings breakouts carry gap-fill risk if momentum fades — the prior DIS loss was triggered by a macro shock; (4) hourly BB pct_b is 1.07 (above upper band), meaning price is extended short-term. Wiki lesson: sub-threshold volume (1.23x) was the early warning sign on the failed May 5 trade — this time volume clears the bar at 1.81x, making this a higher-quality setup. Stop placed below the breakout level ($107.11) with buffer, as a close back below that level constitutes a failed breakout. Squeeze was on (0.0404 hourly width May 5) and is now firing — this is the setup type.",
+    "entry": 108.06,
+    "target": 115.77,
+    "stop": 104.50,
+    "timeframe": "5-12 trading days"
+  }
+}

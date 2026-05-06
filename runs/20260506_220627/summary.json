@@ -1,0 +1,44 @@
+{
+  "run_id": "20260506_220627",
+  "mode": "swing",
+  "started_at": "2026-05-06T22:06:49Z",
+  "ended_at": "2026-05-06T22:18:37Z",
+  "tickers": [
+    "NKE",
+    "DIS"
+  ],
+  "decisions": [
+    {
+      "ticker": "NKE",
+      "action": "hold",
+      "confidence": 18,
+      "entry": 43.88,
+      "stop": 42.09,
+      "target": 46.97,
+      "reasoning_tldr": "Head Trader neutral (18 conf), well below 40 threshold"
+    },
+    {
+      "ticker": "DIS",
+      "action": "hold",
+      "confidence": 0,
+      "entry": 108.06,
+      "stop": 104.5,
+      "target": 115.77,
+      "reasoning_tldr": "Earnings blackout enforced: earnings reported 0 days ago, 3-day blackout window active"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 2,
+    "cash": 1457.27001953125,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "mixed",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}
