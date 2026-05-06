@@ -1,0 +1,74 @@
+{
+  "ticker": "NVDA",
+  "verified_at": "2026-05-06T12:45:00",
+  "bundles_scanned": [
+    "warren_buffett__NVDA.json",
+    "ben_graham__NVDA.json",
+    "cathie_wood__NVDA.json",
+    "aswath_damodaran__NVDA.json"
+  ],
+  "bundles_with_detailed_metrics": [
+    "warren_buffett__NVDA.json",
+    "aswath_damodaran__NVDA.json"
+  ],
+  "data_period_note": "Facts bundle report_period: 2025-10-26 (Q3 FY2026 quarter). Web sources reflect FY2026 full-year ending Jan 26, 2026. Some metric differences reflect this timing gap.",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.5272,
+      "web_value": 0.545,
+      "source": "Macrotrends / FinanceCharts TTM (midpoint 53-56%)",
+      "status": "ok",
+      "deviation": "3.3%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.5903,
+      "web_value": 0.6038,
+      "source": "Macrotrends TTM Jan 2026",
+      "status": "ok",
+      "deviation": "2.2%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 40.18,
+      "web_value": 40.0,
+      "source": "FinanceCharts / FullRatio May 5, 2026 (range 39.86-40.10)",
+      "status": "ok",
+      "deviation": "0.5%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 4775932329984.0,
+      "web_value": 4790000000000.0,
+      "source": "CompaniesMarketCap May 5, 2026 (~$4.77-4.82T)",
+      "status": "ok",
+      "deviation": "0.3%"
+    },
+    {
+      "metric": "roe",
+      "our_value": 1.2154,
+      "web_value": 1.03,
+      "source": "GuruFocus / Zacks TTM (range 101-124%; using 103% as conservative midpoint)",
+      "status": "ok",
+      "deviation": "18.0%",
+      "note": "Borderline (18% < 20% threshold). High spread in web sources (101-124%). Bundle value 121.54% falls within reported range; no correction applied."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.8639,
+      "web_value": 0.65,
+      "source": "Macrotrends / FinanceCharts FY2026 TTM (range 51-77%; GuruFocus Oct 2025: 84.56%)",
+      "status": "MISMATCH",
+      "deviation": "32.9%",
+      "action": "replaced with web value (0.65) in all facts bundles containing this metric: warren_buffett__NVDA.json, aswath_damodaran__NVDA.json",
+      "note": "Bundle used Oct 2025 quarter data (84.56% per GuruFocus, consistent). FY2026 full-year report (Jan 26, 2026) shows ROA declined to 51-77% as total assets grew substantially with Blackwell ramp-up. Correction applied using midpoint of FY2026 annual range (65%) to reflect most current fiscal year data."
+    }
+  ],
+  "overall_status": "1 mismatch corrected (roa: 86.4% -> 65%)",
+  "corrections_applied": true,
+  "corrected_files": [
+    "warren_buffett__NVDA.json",
+    "aswath_damodaran__NVDA.json"
+  ]
+}

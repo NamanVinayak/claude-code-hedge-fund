@@ -1,0 +1,17 @@
+{
+  "decisions": {
+    "NVDA": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 0.0,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 0.0,
+      "stop_loss": 0.0,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "re-evaluate when hourly MACD histogram turns positive AND confirmed bullish reversal candle at/above $194.74",
+      "confidence": 38,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader conf 38 < 40 threshold; buy not allowed (no confirmed entry trigger); short contradicts all 5 agents (3 bullish, 2 neutral, 0 bearish). Conditional bull setup valid (Fib 38.2%/EMA-21 at $196.75, ADX 53.63 uptrend, earnings catalyst May 20-27, R/R 3.7:1) but two confirmation gates still unmet: hourly MACD histogram = -0.7742 (must cross above 0) and no confirmed hourly bullish reversal candle. Same unconfirmed dip-buy at this exact zone cost -$63.20 on Apr 30. Three consecutive HOLDs (runs 20260501/04/05) at same level. Macro adds left-tail risk: Iran/Hormuz conflict live, oil >$102, hawkish Warsh Fed transition May 15. No entry until both gates fire; if $194.74 hourly support breaks on a close, thesis invalidated — next support cluster $179/$174."
+    }
+  }
+}
