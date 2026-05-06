@@ -1,52 +1,51 @@
 ---
 name: AMD catalysts
-last_updated: 2026-05-05
-last_run_id: 20260505_131657
+last_updated: 2026-05-06
+last_run_id: 20260506_150729
 target_words: 400
 stale_after_days: 14
-word_count: 398
-summary: Q1 2026 earnings printing TONIGHT (May 5 AMC, ~5 PM ET); consensus revenue $9.84B (+32% YoY), EPS $1.28; data center beat vs $5.56B est is key; HSBC downgraded ahead of print; avg analyst PT $307 with stock above it; ARK sold $79.9M, CEO Su sold $16M; beat-and-lower Q2 guidance trap is the primary risk
+word_count: 399
+summary: Q1 2026 earnings resolved May 5 AMC — revenue $10.25B (+38% YoY beat), EPS $1.37 non-GAAP (+43% beat), Q2 guide $11.2B tops consensus; stock gapped ~+15% post-print; no binary within next 10 trading days; next catalyst AMD "Advancing AI 2026" July 23; MI450 delivery H2 2026; analyst PTs being revised upward post-earnings
 ---
 
 # AMD — Catalysts
 
 ## TL;DR
 
-AMD Q1 2026 earnings report **tonight (May 5, 2026) after market close, ~5 PM ET** — a live binary catalyst with no new entries permissible. Consensus: revenue ~$9.84B (+32% YoY; AMD guided $9.8B ±$300M), EPS ~$1.28 (+33% YoY), Data Center revenue $5.56B (+51.5% YoY). The analyst consensus avg PT is now **$307** (updated from $291.52 in the prior run; source: web_research/AMD.json, run 20260505_131657) — stock at $341.54 is 11% above the avg PT. HSBC downgraded ahead of earnings print. Beat-and-lower Q2 guidance (25% tariff headwinds on AI chip exports) remains the primary earnings trap, as strong AI deals are already priced in. Key institutional sell: ARK Invest sold ~$79.9M, CEO Lisa Su sold ~$16M in March.
+AMD Q1 2026 earnings **resolved May 5, 2026 after close** — a clean beat on all metrics with strong Q2 guidance. Revenue $10.25B (+38% YoY, vs $9.89B estimate), non-GAAP EPS $1.37 (+43% YoY, vs ~$1.27 estimate), Data Center revenue $5.8B (+57% YoY). Q2 2026 guidance of $11.2B revenue substantially topped the $10.5B Wall Street consensus. Stock gapped ~+15% to $408.66+ intraday. The binary earnings risk has resolved. **No near-term catalyst exists within the next 10 trading days** — next major events are AMD "Advancing AI 2026" on July 23 (~55 trading days) and MI450 delivery H2 2026. Source: web_research/AMD.json, run 20260506_150729.
 
 ## Upcoming events
 
 | Date | Event | Expected impact |
 |---|---|---|
-| May 5, 2026 (tonight, after close, ~5 PM ET) | Q1 2026 earnings | Binary — revenue consensus ~$9.84B; EPS ~$1.28; data center $5.56B key |
-| July 23, 2026 | AMD "Advancing AI 2026" flagship event, Moscone Center SF | Positive — product roadmap reveal |
-| H2 2026 | MI450 GPU first delivery (OpenAI 1GW + Meta deployment) | Positive if on-schedule; negative if delayed |
+| July 23, 2026 | AMD "Advancing AI 2026" flagship event, Moscone Center SF | Positive — product roadmap reveal; ~55 trading days out |
+| H2 2026 | MI450 GPU first delivery (OpenAI 6GW + Meta 6GW deployments) | Positive if on-schedule; negative if delayed |
 | H2 2026 | Helios rack-scale platform launch | Positive — multi-GPU hyperscale positioning |
+| ~August 4, 2026 | Q2 2026 earnings (expected) | Next binary event; Q2 EPS est ~$1.39 (analyst consensus) |
+| May 15, 2026 | Kevin Warsh Fed chair Senate confirmation (Powell exit) | Macro: potential hawkish shift risk for all growth/tech |
 | Ongoing | TSMC tariff exemption decision | Potential positive relief if enacted |
-| May 15, 2026 | Kevin Warsh Fed chair Senate confirmation (Powell exit) | Macro: potential hawkish shift risk |
 
-Sources: web_research/AMD.json run 20260505_131657; swing_catalyst_news signal run 20260505_131657.
+Sources: web_research/AMD.json, run 20260506_150729; earnings_info field.
 
 ## Recent news synthesis (within 14 days)
 
 **Positive:**
-- **OpenAI 6GW MI450 deal** — AMD signed a 6GW AI infrastructure deal with OpenAI for Instinct MI450 GPU deployment; first 1GW in H2 2026. Parallel 6GW agreement with Meta includes MI450 GPUs and 6th-gen EPYC Venice CPUs (source: web_research/AMD.json, 20260505_131657).
-- **Intel Q1 read-through** — Intel's Q1 2026 beat (+164% YTD as of May 4) provides positive sector read-through for AI CPU demand (source: web_research/AMD.json, 20260505_131657).
-- **DA Davidson upgrade** — Buy/$375 PT (raised from $220), citing structural CPU demand from agentic AI. Stifel PT raised to $320 (source: web_research/AMD.json, 20260505_131657).
-- **AMD's best April since dot-com era** — stock surged ~74% in April on AI capex cycle confirmation (source: web_research/AMD.json, 20260505_131657).
+- **Q1 2026 beat** — Revenue $10.25B (+38% YoY), EPS $1.37 non-GAAP (+43%), Data Center $5.8B (+57% YoY). Q2 guidance $11.2B tops consensus by $700M — best post-earnings stock day in seven years (source: web_research/AMD.json, run 20260506_150729).
+- **OpenAI 6GW + Meta 6GW MI450 deals confirmed** — AMD MI450 GPU deployment; DA Davidson $375 street-high Buy PT raised post-earnings; Morgan Stanley raises PT to $360 (from $255) (source: web_research/AMD.json, 20260506_150729).
+- **Macro tailwind** — S&P 500 and Nasdaq at ATH; risk-on rebound as US-Iran ceasefire talks advance, oil easing toward $102/bbl (source: web_research/AMD.json, 20260506_150729).
+- **AI capex supercycle intact** — Azure +40%, Alphabet/Amazon cloud beats; AMD positioned as primary NVIDIA alternative with ROCm stack gaining traction (source: web_research/AMD.json, 20260506_150729).
 
 **Negative:**
-- **HSBC downgraded AMD** ahead of Q1 earnings on valuation concerns; reference level $240 in the note (source: web_research/AMD.json, 20260505_131657).
-- **Northland downgrade** — Market Perform from Outperform, PT $260, citing competitive landscape (source: web_research/AMD.json, 20260505_131657).
-- **Cathie Wood sold ~$79.9M of AMD** ahead of Q1 print — largest institutional sell signal in recent history (source: web_research/AMD.json, 20260505_131657).
-- **Stock above consensus PT** — AMD at $341.54 exceeds avg PT $307 (34 analysts Buy, avg $307; source: web_research/AMD.json, 20260505_131657). Beat-and-lower Q2 guidance on 25% tariff headwinds is the primary risk.
-- **AMD fell −5.27% on May 4** to $341.54 ahead of earnings — largest single-day decline since April ATH run (source: web_research/AMD.json, 20260505_131657).
+- **HSBC downgraded AMD** ahead of Q1 earnings (Buy → Hold), raises PT to $340, citing stretched valuation at ~33x 2027 earnings (source: web_research/AMD.json, 20260506_150729).
+- **CEO Lisa Su warned gaming segment headwinds** in H2 2026 from high memory/component costs (source: web_research/AMD.json, 20260506_150729).
+- **TSMC foundry capacity constraints** cited as key risk limiting AMD's ability to fully capitalize on AI demand surge (source: web_research/AMD.json, 20260506_150729).
+- **Stock now above many pre-earnings analyst price targets** — avg consensus PT ~$301 pre-earnings; AMD trading at $408+ (source: web_research/AMD.json, 20260506_150729).
 
-## Analyst consensus (as of May 5, 2026)
+## Analyst consensus (as of May 6, 2026)
 
-- **Rating:** Buy consensus — ~34 analysts Buy (net Buy per Bloomberg/heygotrade), range includes downgrades
-- **Avg price target:** ~$307 (updated; source: web_research/AMD.json, 20260505_131657); prior run cited $291.52 (54-analyst panel), now updated to $307 from MarketBeat/TipRanks refresh
-- **Bull targets:** DA Davidson $375, Stifel $320, DA Davidson $400 (range high)
-- **Bear targets:** Northland $260, HSBC $240
+- **Rating:** Buy — 77.78% of 54 covering analysts; Morgan Stanley and DA Davidson raised PTs post-earnings
+- **Avg price target:** ~$301 pre-earnings (post-earnings revisions still in progress; stock trading above avg PT); street-high DA Davidson $375 (source: web_research/AMD.json, run 20260506_150729)
+- **Bull targets (post-earnings):** Morgan Stanley $360, DA Davidson $375
+- **Bear targets:** Northland $260, HSBC $340 (Hold)
 
-CEO Lisa Su sold ~$16M in March 2026. Cathie Wood (Ark Invest) sold ~$79.9M ahead of earnings print. Board-level insider distribution: 2:1 sellers vs buyers (source: swing_catalyst_news, run 20260505_131657).
+CEO Lisa Su sold ~$16M in March 2026. ARK Invest sold ~$79.9M ahead of Q1 print. Board-level distribution persists (2:1 sellers vs buyers, source: swing_catalyst_news, run 20260506_150729).
