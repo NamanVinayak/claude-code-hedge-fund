@@ -1,0 +1,11 @@
+{
+  "MSFT": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "TREND: Daily EMA alignment is bullishly stacked (EMA-10 415.22 > EMA-21 409.49 > EMA-50 407.34) and ADX-14 is 49.48 (very strong trend). However, -DI (26.68) exceeds +DI (25.21), indicating the dominant trend force at the daily level is currently bearish. Price at $411.38 sits below EMA-10 (-0.93%) but above EMA-21 (+0.46%) — technically in the pullback entry zone between the two EMAs. Wiki context confirms MSFT has been pinned in $404–$420 no-man's land for four consecutive sessions with no resolution. MOMENTUM ACCELERATION: FAILS the strategy requirement. ROC-5d is -4.16% and ROC-10d is -3.01% — both negative, not positive. ROC-21d is +10.33% (reflecting the prior upswing) but this alone with two negative shorter timeframes signals deceleration, not acceleration. MACD histogram is -0.8699 (negative, expanding bearishly — signal line above MACD line with no bullish crossover). OBV is trending down on both daily and hourly timeframes (distribution, not accumulation). Relative volume 0.72 — below-average buying interest. HOURLY CONFIRMATION: Hourly EMAs are tangled (neither uptrend nor downtrend alignment), hourly MACD histogram negative at -0.1283. Hourly shows very mild positive ROC (1.15%/0.24%/0.09%) but not accelerating meaningfully. LESSONS/CONFIDENCE DIAL: Recent swing_trend_momentum track record shows losses on EMA pullback setups (NVDA Apr 30, DIS May 5) — lowering confidence further. MACRO: Cautiously bullish regime (S&P ATH, Iran talks advancing) provides tailwind context, but MSFT's own technicals show distribution, not accumulation, within this environment. VERDICT: No actionable setup. Momentum is decelerating (ROC contracting short-term, MACD histogram negative/expanding bearishly), which is an explicit neutral condition per strategy rules. Wait for re-acceleration signal: breakout above $420.78 on 1.5x+ daily volume (>53M shares) with positive ROC alignment across 5/10/21d timeframes and expanding MACD histogram.",
+    "entry": 411.38,
+    "target": 420.78,
+    "stop": 407.34,
+    "timeframe": "N/A — neutral, no trade"
+  }
+}
