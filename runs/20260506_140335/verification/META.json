@@ -1,0 +1,95 @@
+{
+  "ticker": "META",
+  "verified_at": "2026-05-06T14:30:00",
+  "facts_files_checked": [
+    "warren_buffett__META.json",
+    "ben_graham__META.json",
+    "peter_lynch__META.json"
+  ],
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.3008,
+      "our_value_pct": "30.08%",
+      "web_value": 0.328,
+      "web_value_pct": "32.8%",
+      "source": "MacroTrends / CNBC (TTM through Q1 2026 ending March 31, 2026)",
+      "status": "ok",
+      "deviation": "9.0%",
+      "notes": "Our value (30.08%) aligns with FY2025 annual figure. TTM through Q1 2026 is ~32.8% per MacroTrends. Deviation 9.0% — within threshold."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.4144,
+      "our_value_pct": "41.44%",
+      "web_value": 0.41,
+      "web_value_pct": "41%",
+      "source": "Meta Q1 2026 earnings release / Macrotrends (Q1 2026 operating margin 41%, full-year TTM ~41-43%)",
+      "status": "ok",
+      "deviation": "1.1%",
+      "notes": "Our value matches Q1 2026 reported operating margin almost exactly. No correction needed."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 22.027,
+      "web_value": 21.21,
+      "source": "MacroTrends (May 04, 2026)",
+      "status": "ok",
+      "deviation": "3.9%",
+      "notes": "Small difference due to intraday price movement. Well within threshold."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 200970000000,
+      "our_value_str": "$200.97B (FY2025 annual)",
+      "web_value": 214963000000,
+      "web_value_str": "$214.96B (TTM through Q1 2026)",
+      "source": "MacroTrends / StockAnalysis (TTM through March 31, 2026)",
+      "status": "ok",
+      "deviation": "6.9%",
+      "notes": "Our value reflects FY2025 full-year revenue. TTM including Q1 2026 ($56.31B) would be ~$214.96B. Difference is timing-based, not a data error. Within threshold."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 1539350593536,
+      "our_value_str": "$1.539T",
+      "web_value": 1535000000000,
+      "web_value_str": "$1.535T",
+      "source": "CompaniesMarketCap / StockAnalysis (May 05-06, 2026)",
+      "status": "ok",
+      "deviation": "0.3%",
+      "notes": "Essentially identical — minor intraday price fluctuation."
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.2783,
+      "our_value_pct": "27.83%",
+      "web_value": 0.3293,
+      "web_value_pct": "32.93%",
+      "source": "StockAnalysis.com (TTM Q1 2026)",
+      "status": "ok",
+      "deviation": "18.3%",
+      "notes": "Borderline — 18.3% deviation is below the 20% threshold. Our value (27.83%) matches FinanceCharts Dec 2025 figure exactly, suggesting data is FY2025. TTM through Q1 2026 is ~32.93% per StockAnalysis. No correction required but worth monitoring."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.1652,
+      "our_value_pct": "16.52%",
+      "web_value": 0.1871,
+      "web_value_pct": "18.71%",
+      "source": "FinanceCharts (April 2026)",
+      "status": "ok",
+      "deviation": "11.7%",
+      "notes": "Within threshold. Difference consistent with TTM data including stronger Q1 2026 results."
+    }
+  ],
+  "overall_status": "all metrics within acceptable range — no corrections applied",
+  "corrections_applied": false,
+  "summary": "All 7 metrics for META are within the 20% deviation threshold. The facts bundles appear to use FY2025 annual data (report_period 2026-03-31 reflecting the fiscal year ended Dec 2025). TTM figures through Q1 2026 show modestly higher margins and returns due to the strong Q1 2026 quarter (revenue +33% YoY, net income $26.8B), but the deviations are timing-based rather than data errors. The data is reliable for LLM agent consumption.",
+  "data_quality_notes": [
+    "Facts bundles report_period is 2026-03-31 — this appears to reflect FY2025 (fiscal year ended Dec 31, 2025) data, not Q1 2026 TTM",
+    "Q1 2026 results (revenue $56.31B, EPS $7.31, operating margin 41%) were reported April 29, 2026 — may not be fully reflected in yfinance/SEC data yet",
+    "ROE borderline at 18.3% deviation — if updated post-Q1 2026 data ingestion, watch for potential future mismatch",
+    "No margins >100% or negative P/E detected — no obvious data bugs"
+  ]
+}

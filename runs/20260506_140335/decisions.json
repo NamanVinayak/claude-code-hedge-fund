@@ -1,0 +1,17 @@
+{
+  "decisions": {
+    "META": {
+      "action": "cover",
+      "quantity": 1,
+      "entry_price": 604.96,
+      "entry_tolerance_pct": 1.5,
+      "target_price": 604.96,
+      "stop_loss": 635.0,
+      "risk_reward_ratio": "N/A (covering existing short)",
+      "timeframe": "immediate",
+      "confidence": 55,
+      "account_risk_pct": 0.0,
+      "reasoning": "Covering short (id 118, fill $611.78) at ~$605. RSI-7 at 6.52 = extreme oversold + bullish RSI divergence on both daily/hourly frames + macro at ATH = elevated bounce risk. Short has captured ~$6.82/share gain (MFE). Head Trader consensus is hold but allowed_actions only permits cover (hold:0, cover:1). Locking in the gain before a mean-reversion spike risks stopping out the open profit. Catalyst thesis (capex shock, litigation) remains intact but R/R for holding further is degrading: only $4.96 to target $580 vs $30 adverse move to $635 stop from current levels. Cover and re-enter on bounce to $612-614 resistance zone as swing_catalyst_news recommends."
+    }
+  }
+}

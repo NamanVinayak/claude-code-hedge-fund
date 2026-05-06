@@ -1,0 +1,11 @@
+{
+  "META": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "TREND ASSESSMENT: Daily ADX 52.76 confirms an extremely strong trend, with -DI 39.5 dominating +DI 11.36 — the downtrend is clearly established. Price at $604.96 is below all EMAs (EMA-5: 620.5, EMA-10: 634.2, EMA-21: 637.1, EMA-50: 635.4). Hourly confirms ema_aligned_downtrend: true. The trend direction is unambiguously bearish. MOMENTUM ASSESSMENT: This is where the setup fails the strategy criteria. ROC 5d (-9.89%) and ROC 10d (-9.55%) are strongly negative, consistent with the downtrend, but the RSI-7 has collapsed to 6.52 — an extreme oversold reading that signals momentum exhaustion, not acceleration. RSI-14 at 28.45 is deeply oversold. The MACD histogram at -8.207 is large in magnitude but the daily MACD line (0.122) is nearly flat vs signal (8.329), suggesting the bearish impulse is losing force rather than accelerating. Hourly OBV is diverging bullishly from price (OBV trend: up vs price trending down) — a classic early warning of downtrend exhaustion. Hourly MACD histogram is -0.90 (small and contracting in magnitude), confirming slowing bearish momentum on the intraday frame. WIKI / PRIOR CONTEXT: The technicals wiki confirms an active short entered at $611.78 (run 20260505, id 118) with target $580 and stop $635 — that trade is already near its target with price at $604.96. A fresh trend-momentum short entry here does NOT meet strategy criteria: price is not pulling back to the 10 or 21 EMA for entry (it is 4.6–5.0% BELOW those EMAs), and momentum is decelerating at an extreme oversold reading rather than accelerating. LESSONS: Prior swing_trend_momentum loss (NVDA EMA pullback dip-buy stopped at 61.8% Fib) and the DIS pre-earnings long both reinforce the lesson that crowded directional moves at momentum extremes carry elevated reversal risk. CONCLUSION: Trend is bearish and strong, but momentum is not accelerating — it is exhausting at RSI-7 of 6.52. Strategy rules require standing aside when momentum is decelerating. Wait for a bounce toward the 10/21 EMA ($634–637 zone) and re-evaluation of momentum direction before re-entering. Neutral per strategy rules.",
+    "entry": 614.0,
+    "target": 580.0,
+    "stop": 635.0,
+    "timeframe": "5-10 trading days"
+  }
+}
