@@ -1,7 +1,7 @@
 ---
 name: swing_mean_reversion track record
 last_updated: 2026-05-06
-last_run_id: 20260506_211601
+last_run_id: 20260506_220627
 stale_after_days: 365
 target_words: 1200
 summary: 4 graded calls. (Appended by ai_hedge.grading.wiki_writer.)
@@ -55,3 +55,4 @@ one resolved call scored against yfinance daily OHLC.
 - 2026-05-05 | WDC | bearish $453.83→$380.73 stop $475.0 | **stopped_out** (day 1, MFE 0.0%, MAE -5.79%) _(prior_run=20260505_203524, graded_in=20260506_203627)_
 - — | MU | bearish $640.0→$545.0 stop $675.0 | **in_progress** (day 1, MFE 5.4%, MAE -1.83%) _(prior_run=20260505_211609, graded_in=20260506_211601)_
 - — | SNDK | bearish $1406.0→$960.91 stop $1480.0 | **in_progress** (day 1, MFE 8.53%, MAE -0.92%) _(prior_run=20260505_211609, graded_in=20260506_211601)_
+- — | NKE | bullish $43.15→$44.56 stop $41.9 | **in_progress** (day 1, MFE 0.35%, MAE -1.16%) _(prior_run=20260505_220625, graded_in=20260506_220627)_

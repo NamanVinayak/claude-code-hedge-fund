@@ -1,42 +1,41 @@
 ---
 name: DIS technicals
-last_updated: 2026-05-05
-last_run_id: 20260505_220625
+last_updated: 2026-05-06
+last_run_id: 20260506_220627
 target_words: 350
 stale_after_days: 7
-word_count: 345
-summary: stop hit today at $101.00 — prior open long id 117 closed at -$4.99; price $100.48 hourly / $101.31 daily; all EMAs overhead; hourly RSI-21 25.04 deeply oversold; ADX 36.98 with +DI/-DI nearly deadlocked; falling into earnings binary (May 6); no open positions, no new entry
+word_count: 344
+summary: post-earnings gap-up — price $108.06 (+7.5% from $100.48); hourly EMAs all aligned bullish; daily EMAs fully tangled ($101.71–$102.17 cluster); ADX 34.98 strong but +DI/–DI near-deadlocked; hourly RSI-21 66.12 healthy; hourly BB pct_b 1.07 (above upper band — extended); hourly OBV bearish divergence; no open positions; earnings blackout active
 ---
 
 # DIS — Technicals
 
 ## TL;DR
 
-As of May 5, 2026 (run `20260505_220625`), the prior long position (id 117) was stopped out today at $101.00 (-$4.99 realized). Price fell to $100.48 (hourly) / $101.31 (daily). The April 30 breakout is fully invalidated. All short-term EMAs ($101.97–$102.50) are overhead — price is below the entire EMA cluster. ADX 36.98 is elevated but +DI (26.02) and -DI (25.43) are nearly deadlocked, indicating chop. Hourly RSI-21 at 25.04 is deeply oversold; hourly Bollinger width 0.0404 is extremely tight (squeeze coiling). The stock is falling into the May 6 earnings binary. No open positions. No new entry authorized.
+As of May 6, 2026 (run `20260506_220627`), DIS has gapped up +7.5% to $108.06 following Q2 FY2026 earnings beat. The prior squeeze (BB width 0.0404 hourly, May 5) has fired — current hourly BB width expanded to 0.0873. Hourly EMAs are fully aligned bullish, with price above all of them. However, hourly BB pct_b = 1.07 (above the upper band — statistically extended) and hourly OBV is diverging bearishly (OBV trending down as price spiked). Daily ADX 34.98 with +DI 24.98 / -DI 29.53 shows strong trend strength but no clean directional dominance. Earnings blackout is active (0 days since earnings); no new position until May 9+ at the earliest.
 
 ---
 
 ## Multi-timeframe state
 
-All data from run `20260505_220625`.
+All data from run `20260506_220627`.
 
 | Indicator | Value | Interpretation |
 |---|---|---|
-| Price (daily) | $101.31 | Below short-term EMA cluster |
-| Price (hourly) | $100.48 | Below hard stop — stop was hit |
-| EMA-5 / EMA-10 | ~$102.33 / $102.50 | Overhead resistance |
-| EMA-21 / EMA-50 | $101.97 / $102.24 | All EMAs tangled overhead |
-| EMA-200 (daily) | $105.49 | Major overhead resistance |
-| ADX (daily) | 36.98 | Elevated — but direction unresolved |
-| +DI / -DI | 26.02 / 25.43 | Nearly deadlocked — no clean trend |
-| MACD histogram (daily) | -0.132 | Negative, decelerating |
-| RSI-7 (daily) | 33.84 | Not extreme |
-| RSI-21 (hourly) | 25.04 | Deeply oversold |
-| BB width (hourly) | 0.0404 | Squeeze — tightest reading |
-| ROC (5d) | -1.02% | Negative |
-| ROC (10d) | -4.69% | Negative |
-| ROC (21d) | +4.86% | Positive (lagging longer window) |
-| Hourly -DI | 30.48 | Dominating hourly +DI 14.62 — bearish |
+| Price (daily close prev.) | $100.48 | Pre-gap reference |
+| Price (hourly / current) | $108.06 | Post-earnings gap-up (+7.5%) |
+| EMA-5 / EMA-10 (daily) | ~$101.71 / ~$102.13 | Tangled below current price |
+| EMA-21 / EMA-50 (daily) | ~$101.84 / ~$102.17 | All four daily EMAs clustered $101.71–$102.17 |
+| ADX (daily) | 34.98 | Strong; but +DI 24.98 vs. -DI 29.53 near-deadlocked |
+| MACD histogram (daily) | -0.2668 | Negative (pre-gap daily data) |
+| RSI-7 (daily) | ~41.5 | Pre-gap; now stale |
+| Hourly RSI-21 | 66.12 | Bullish — not yet overbought |
+| Hourly OBV | **Bearish divergence** | OBV trending DOWN as price spiked — key warning |
+| Hourly ADX | 24.8 | +DI 35.61 > -DI 19.43 — bullish directional bias |
+| BB width (hourly) | 0.0873 | Expanded from 0.0404 squeeze — fired |
+| BB pct_b (hourly) | 1.07 | Above upper band — statistically extended |
+| Hourly MACD histogram | +0.7412 | Strong positive momentum |
+| Daily volume | 1.81x average | Clears 1.5x confirmation threshold |
 
 ---
 
@@ -44,19 +43,21 @@ All data from run `20260505_220625`.
 
 | Level | Value | Context |
 |---|---|---|
-| Fib 61.8% retracement | $97.89 | Post-stop stabilization zone if earnings miss |
-| Daily support (11 tests) | $98.45 | Key floor — breakdown target on miss |
-| Hourly support | $100.61 | 9 tests; now overhead |
-| **Hard stop (hit)** | $101.00 | Position id 117 stopped out May 5 |
-| EMA cluster / resistance | $101.97–$102.84 | Must reclaim on bounce |
-| Post-breakout high | $104.83 | Bull reentry trigger if held post-earnings |
-| EMA-200 overhead | $105.49 | Major institutional headwind |
-| Target (cancelled) | $107.11 | Resistance (14 tests); no position |
+| Daily support (11 tests) | $98.45 | Key floor; gap fill target if move fails |
+| Fib 61.8% retracement | $97.89 | Deep gap-fill stabilization zone |
+| Prior stop (closed) | $101.00 | Trade id 117 closed here May 5 |
+| EMA cluster / support | $101.71–$102.17 | Likely pullback landing zone post-gap |
+| Breakout level (prior ceiling) | $107.11 | 11 tests; now bull trigger level — must hold |
+| **Current price / gap price** | $108.06 | Entry here fails R/R math (0.16:1) |
+| Hourly resistance | $109.14 | Nearest overhead; only $1.08 above |
+| Measured move target | $115.77 | Range $98.45–$107.11 projected above breakout |
 
 ---
 
 ## Setup type
 
-**No open positions — earnings binary watch.** The hourly squeeze (BB width 0.0404) and deeply oversold RSI-21 suggest a volatility expansion is imminent; the direction is determined by the May 6 earnings print. Post-earnings: gap and hold above $104.83 on 1.5x+ volume = fresh long opportunity. Gap below $98.45 = wait for stabilization near $97.89 before any bounce trade. Prior setup type ("near-stop pullback consolidation — watch only") has resolved — stop was hit.
+**No open positions — earnings blackout active (until May 9+).** The pre-earnings squeeze has fired; direction is confirmed bullish by the gap-and-hold above $107.11. But price at $108.06 is statistically extended (pct_b 1.07) with OBV divergence warning. Entry here yields 0.16:1 R/R — fails the 2:1 minimum badly. **Watch setup:** If DIS pulls back to $105–107 consolidation zone on lower volume (not distribution) after May 9, evaluate fresh long with stop $104.50, target $115.77 (R/R improves to ~2.4:1 at $107 entry).
+
+*Prior setup type ("earnings binary watch — no open positions") has resolved: earnings printed and bull trigger fired. Prior setup "gap and hold above $104.83 on 1.5x+ volume" from run `20260505_220625` is confirmed achieved.*
 
 *Data freshness: 7-day stale threshold.*

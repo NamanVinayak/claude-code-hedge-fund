@@ -1,20 +1,20 @@
 ---
 name: DIS catalysts
-last_updated: 2026-05-05
-last_run_id: 20260505_220625
+last_updated: 2026-05-06
+last_run_id: 20260506_220627
 target_words: 400
 stale_after_days: 14
-word_count: 396
-summary: Q2 FY2026 earnings May 6 (TOMORROW, pre-market 8:30 AM ET, consensus EPS $1.49, rev $24.84B); prior DIS long stopped out today at -$4.99; Mandalorian/Grogu film May 22; new CEO Josh D'Amaro next month; macro cautiously bullish (S&P/Nasdaq ATH May 5, Iran-UAE ongoing, oil $104-112)
+word_count: 403
+summary: Q2 FY2026 earnings fired today (EPS $1.57 beat, rev $25.17B beat, FY26 EPS guide raised to ~12% growth); DIS +6.24% to $108.06; 3-day blackout active until May 9+; Mandalorian/Grogu film May 22; CEO D'Amaro transition June; macro strongly risk-on (S&P 7,365 record close May 6); streaming competitive threat from WBD+Netflix merger talks ongoing
 ---
 
 # DIS — Catalysts
 
 ## TL;DR
 
-Q2 FY2026 earnings are tomorrow (**May 6, 2026**, before market open, 8:30 AM ET). This is an imminent binary catalyst. Earnings blackout rule is in force: no new positions (risk manager remaining_position_limit = $0). The prior DIS long (id 117) was stopped out today at $101.00, -$4.99 realized — the position is closed heading into the print. Macro is cautiously bullish: S&P 500 and Nasdaq recovered to ATH on May 5 with Iran-UAE conflict partially easing, but oil remains $104–112/bbl and Strait of Hormuz risk is live.
+Q2 FY2026 earnings fired today (**May 6, 2026**, pre-market 8:30 AM ET) — confirmed beat. EPS $1.57 vs. $1.49 estimate; revenue $25.17B vs. $24.84B estimate. New CEO Josh D'Amaro raised FY2026 adjusted EPS growth guidance to ~12% and guided for double-digit FY2027 EPS growth. Stock gapped +6.24% to $108.06 — among the top Dow performers on the day. Earnings blackout (3-day rule) remains in force until May 9+. Macro: strongly risk-on (S&P 7,365 record close, Nasdaq 25,838 record). Secondary catalysts intact through summer.
 
-Sources: `web_research/DIS.json` and `swing_catalyst_news` signal, run `20260505_220625`.
+Sources: `web_research/DIS.json` and `swing_catalyst_news` signal, run `20260506_220627`.
 
 ---
 
@@ -22,14 +22,12 @@ Sources: `web_research/DIS.json` and `swing_catalyst_news` signal, run `20260505
 
 | Date | Event | Significance |
 |---|---|---|
-| **May 6, 2026** | **Q2 FY2026 earnings (before open, 8:30 AM ET)** | Consensus EPS $1.49, revenue $24.84B — binary gap risk; key: streaming SVOD operating income vs. $500M target, Parks performance |
-| May 3–6, 2026 | Earnings blackout window | Risk manager $0 remaining limit; no new entry until post-print |
-| May 22, 2026 | The Mandalorian and Grogu film release | First major theatrical Star Wars release in years (PG-13, 2h 12m); box office performance is a streaming brand signal |
-| May 26, 2026 | Rock 'n' Roller Coaster (Muppets) opens at Hollywood Studios | Parks attendance catalyst |
-| June 2026 | Josh D'Amaro becomes CEO (replacing Bob Iger) | Leadership transition — strategy continuity watch |
-| Ongoing | Warner Bros. Discovery + Netflix merger talks | Bearish structural risk if cleared — third major streaming competitor |
-
-**Post-earnings watch:** If DIS gaps above $104.83 on May 6 beat (sustained hold, 1.5x+ volume), evaluate fresh long entry. If gaps below $98.45 (11-test daily support), wait for stabilization near $97.89 (Fib 61.8%). [source: `decisions.json`, run `20260505_220625`]
+| **May 9+, 2026** | **Earnings blackout clears** | Earliest date for new position; re-evaluate R/R at post-gap price |
+| May 22, 2026 | The Mandalorian and Grogu film release | First major theatrical Star Wars release in years (box office = streaming brand signal) |
+| June 2026 | Josh D'Amaro becomes CEO | Leadership transition — parks-focused executive now at helm; strategy continuity watch |
+| August 2026 | Q3 FY2026 earnings | Next binary; no specific date confirmed yet |
+| Ongoing | Warner Bros. Discovery + Netflix merger talks | Bearish structural risk if cleared — combined entity ~22% US streaming share |
+| Ongoing | US midterm elections 2026 | Policy uncertainty for entertainment, media, and consumer sectors |
 
 ---
 
@@ -37,26 +35,24 @@ Sources: `web_research/DIS.json` and `swing_catalyst_news` signal, run `20260505
 
 | Headline | Sentiment | Date / Source |
 |---|---|---|
-| Q2 FY2026 earnings confirmed May 6, 8:30 AM ET — streaming profitability (SVOD OI $500M+) in focus | Neutral / binary | StockTitan / Meyka, May 2026 |
-| Motley Fool: "Is This the Week Disney Stock Finally Wakes Up?" — Q2 earnings as potential catalyst after ~15% YTD decline | Positive | Motley Fool, May 5, 2026 |
-| The Mandalorian and Grogu film releasing May 22 — first major theatrical Star Wars in years | Positive | Disney in your Day, May 2026 |
-| Big Thunder Mountain Railroad reopened May 3 after 1+ year refurbishment | Positive | Disney Tourist Blog / MickeyVisit, May 2026 |
-| Josh D'Amaro (Parks & Cruises chair) to become CEO next month, replacing Bob Iger | Neutral | CNN Business, Feb/May 2026 |
-| Prior DIS long id 117 stopped out May 5 at $101.00 (-$4.99) — pre-earnings breakout thesis invalidated | Negative | `trade_ledger.json`, run `20260505_220625` |
+| Disney Q2 FY2026: revenue $25.17B vs. $24.84B est; EPS $1.57 vs. $1.49 est; DIS +6.24% on the day | Positive | CNBC / The Walt Disney Company, May 6, 2026 |
+| CEO Josh D'Amaro (first investor call post-Q2): FY2026 adjusted EPS growth guidance raised to ~12%; FY2027 double-digit growth guided | Positive | TheWaltDisneyCompany.com, May 6, 2026 |
+| The Mandalorian and Grogu theatrical release May 22 — first major Disney theatrical Star Wars in years | Positive | Disney in your Day / MickeyBlog, May 2026 |
+| Big Thunder Mountain Railroad reopened May 3 at Magic Kingdom after 1+ year refurbishment | Positive | MickeyVisit.com, May 3, 2026 |
+| Paramount-Skydance / Warner Bros. Discovery merger nearing completion — rival streaming entity with ~22% US share | Negative | Multiple, May 2026 |
 
 ---
 
 ## Analyst consensus
 
-As of May 5, 2026 (`web_research/DIS.json`, run `20260505_220625`):
+As of May 6, 2026 (`web_research/DIS.json`, run `20260506_220627`):
 
-- **Rating**: Buy/Strong Buy (16–25 analysts)
-- **Average price target**: ~$132 (~31% implied upside from ~$101)
-- **PT range**: $77–$168
-- **Recent changes**: Raymond James upgraded to Outperform ($115 PT), April 2026. Guggenheim reiterated Buy ($140 PT), February 2026. One high-profile Underperform call citing TV networks drag. Stock down ~15% YTD at time of Raymond James upgrade.
+- **Rating**: Buy
+- **Average price target**: $131.00 (range $77–$160; median of 42 analysts; Benzinga $129.08 avg across 25 analysts; MarketBeat $133.53)
+- **Recent changes**: Raymond James upgraded to Outperform ($115 PT), April 2026. Guggenheim reiterated Buy ($140 PT), February 2026. Stock at $108.06 implies ~21% upside to median consensus PT.
 
 ---
 
 ## Competitive landscape
 
-Netflix leads global streaming with 300M+ subscribers. Disney+/Hulu bundle ranked #2. Warner Bros. Discovery and Netflix reportedly in merger talks — if cleared, a dominant third competitor emerges. Universal's Epic Universe (2025) drove 12% attendance growth at Universal Orlando vs. Disney World's 3% — parks competition intensifying. Disney wholly owns Hulu (since June 2025, $9B Comcast buyout). Disney dominated 2025 box office with 27.5% share ($2.49B domestic). $24B FY2026 content spend. [source: `web_research/DIS.json`, run `20260505_220625`]
+Netflix leads streaming with 325M subscribers and $20B content spend in 2026 — widening lead over Disney+. Paramount-Skydance / Warner Bros. Discovery merger would combine into a rival with projected 22% US streaming share — primary competitive structural risk. Universal's Epic Universe saw 12% attendance growth in March vs. Disney World's 3% — growing theme park competition. Disney spending $24B on content in FY2026 to defend position. Post-earnings, Disney remains the #2 streaming platform with a substantial film/parks moat. Source: `web_research/DIS.json`, run `20260506_220627`.
