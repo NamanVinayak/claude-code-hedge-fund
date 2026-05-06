@@ -1,11 +1,11 @@
 ---
 name: UNH trades
-last_updated: 2026-05-05
-last_run_id: 20260505_194525
+last_updated: 2026-05-06
+last_run_id: 20260506_194605
 target_words: 800
 stale_after_days: 60
-word_count: 875
-summary: Full trade journal for UNH — two cancelled/abandoned orders, zero fills, net P&L $0; four consecutive holds (Apr 30 through May 5) confirm no entry at overextended levels; system waits for $348-355 pullback
+word_count: 892
+summary: Full trade journal for UNH — two cancelled/abandoned orders, zero fills, net P&L $0; five consecutive holds (Apr 30 through May 6) confirm no entry at overextended levels; system waits for $348-355 pullback; ADX 86.49 regime continues to disqualify fade entries
 ---
 
 # UNH — Trades
@@ -85,6 +85,7 @@ The Apr 11 swing run (swing_20260411_211655) is the only run that analyzed UNH i
 | 20260501_194523 | 2026-05-01 | hold | 22% | no trade — RSI 97.45, ADX 84.15, z-score 2.34 at historic extremes; wait for $350-358 EMA pullback |
 | 20260504_194523 | 2026-05-04 | hold | 30% | no trade — RSI 94.45, ADX 85.61, z-score 2.12; Goldman $435 Conviction Buy absorbed; wait $348-355 |
 | 20260505_194525 | 2026-05-05 | hold | 22% | no trade (fourth consecutive) — RSI 94.52, ADX 86.04, z-score 2.04; volume 0.54x; wait $348-355 |
+| 20260506_194605 | 2026-05-06 | hold | 28% | no trade (fifth consecutive) — RSI 85.45 (eased from 94.52), ADX 86.49, z-score 1.74; volume 0.78x; 4/5 agents neutral; ADX 86.49 disqualifies fade; wait $348-355 EMA pullback |
 
 ## Lifetime stats
 
@@ -100,8 +101,8 @@ The Apr 11 swing run (swing_20260411_211655) is the only run that analyzed UNH i
 | Win rate (closed, filled) | n/a — no fills |
 | Average hold time | n/a — no fills |
 | Average R:R on entry | 3.0:1 (one data point, trade ID 1) |
-| Runs analyzed | 5 (swing_20260411_211655; 20260430_194522; 20260501_194523; 20260504_194523; 20260505_194525) |
-| No-trade decisions | 4 (Apr 30, May 1, May 4, May 5 — all holds) |
+| Runs analyzed | 6 (swing_20260411_211655; 20260430_194522; 20260501_194523; 20260504_194523; 20260505_194525; 20260506_194605) |
+| No-trade decisions | 5 (Apr 30, May 1, May 4, May 5, May 6 — all holds) |
 | Buy decisions | 1 |
 | Short decisions | 0 |
 | Max capital at risk | $296 (5.9% of $5,000 paper account) |
