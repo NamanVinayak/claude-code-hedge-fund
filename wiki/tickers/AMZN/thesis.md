@@ -1,16 +1,18 @@
 ---
 name: AMZN thesis
-last_updated: 2026-05-05
+last_updated: 2026-05-06
 last_run_id: 20260505_173521
 target_words: 500
 stale_after_days: 30
-word_count: 499
+word_count: 513
 summary: Prior "no capital to act" constraint falsified — portfolio now has $1,617.76 cash and short is allowed; HOLD is now a setup-quality decision, not a capital constraint; 5/5 swing agents unanimous neutral; bullish structural trend intact (ADX 65.1, EMA aligned); entry blocked by lack of a clean R/R setup; wait for 10 EMA pullback $258–$265 or confirmed breakout above $276 on 1.5x+ volume
 ---
 
 # AMZN — Thesis
 
 ## TL;DR
+
+⚠️ Recent trade: stop_hit 2026-05-04, -$10.14. Thesis under review.
 
 **Prior claim falsified:** The 20260504_173321 thesis stated "HOLD is the only allowed action — portfolio cash = $0, risk manager limit = $0." As of run 20260505_173521, that capital constraint no longer holds: portfolio cash is $1,617.76, risk manager max position is $485.33, and `allowed_actions[AMZN]` shows short: 1. **HOLD today is a setup-quality decision, not a capital-constraint decision.** All 5 swing agents returned neutral with 100% agreement — no valid entry exists from current price ($272-273). Two distinct entry scenarios are fully defined and waiting; neither is available today. [source: decisions.json, signals_combined.json, trade_ledger.json, run 20260505_173521]
 

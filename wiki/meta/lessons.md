@@ -1,9 +1,9 @@
 ---
 name: trade lessons
-last_updated: 2026-05-01
+last_updated: 2026-05-06
 target_words: 1500
 stale_after_days: 90
-word_count: 90
+word_count: 148
 summary: Running log of trade outcome lessons — one bullet per closed trade, written nightly by wiki_daily_lesson_writer
 ---
 
@@ -26,3 +26,5 @@ The "why" should reference: the thesis at the time, the macro regime, which swin
 ## Lessons
 
 2026-04-30 | NVDA | EMA pullback Fib dip-buy | -$63.20 (corrected from -$264.65) | Stop triggered at $205.30 (hourly Fib 61.8%); swing_trend_momentum and swing_breakout were bullish on AI capex thesis, but price breached the stop zone intraday amid stretched macro (RSI 81–87) with no bullish confirmation candle before exit. **Note:** trade was originally sized 67 shares ($14,020) due to a phantom $100K budget bug (fixed commit b2b472d). With the correct $25K budget at 14.2% vol-adj limit, position would have been 16 shares ($3,348). Corrected P&L reflects the strategy's actual signal quality, not the sizing error.
+2026-05-04 | AMZN | mean-reversion fade short | OUTCOME: -$10.14 | Mean-reversion short thesis (April 30 shooting star, RSI 82–88) stopped at $276 as extreme ADX 65 trend absorbed the reversal; swing_mean_reversion recommended the setup but the regime (ADX 60+) sets an elevated bar for fading overbought conditions confirmed by identical NVDA stop-out April 30.
+2026-05-05 | DIS | pre-earnings breakout long | OUTCOME: -$4.99 | Pre-earnings breakout above $103 (4/5 swing agents bullish, swing_breakout and swing_trend_momentum) invalidated by macro reversal (Iran escalation May 4, WTI +$105) that converted the April 30 risk-on tailwind into a risk-off headwind; sub-threshold entry volume (1.23x vs. 1.5x minimum) was an early warning sign.

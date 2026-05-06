@@ -1,10 +1,10 @@
 ---
 name: AMZN trades
-last_updated: 2026-05-05
+last_updated: 2026-05-06
 last_run_id: 20260505_173521
 target_words: 800
 stale_after_days: 60
-word_count: 785
+word_count: 853
 summary: All AMZN positions closed — short ID 115 stopped out at $276 on May 4 (-$10.14); runs 20260504_173321 and 20260505_173521 both HOLD (no valid entry setup); 1 prior abandoned long; net lifetime realized P&L -$10.14; capital now available but entry conditions not met
 ---
 
@@ -19,6 +19,21 @@ All AMZN positions are closed as of May 4, 2026. The short from run 20260501_173
 ## Open positions
 
 **No open AMZN positions.** [source: trade_ledger.json open_positions, per_ticker_history[AMZN], run 20260505_173521]
+
+---
+
+## Recently Closed
+
+### Trade: SHORT 1 share AMZN — CLOSED 2026-05-04
+
+| Field | Value |
+|---|---|
+| Entry price | $265.86 (fill; decision price $269.00) |
+| Exit price | $276.00 |
+| P&L | -$10.14 |
+| Closed via | stop_hit |
+| Days held | 3 (2026-05-01 → 2026-05-04) |
+| Run | `20260501_173921` |
 
 ---
 

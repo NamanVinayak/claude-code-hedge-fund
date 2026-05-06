@@ -1,16 +1,18 @@
 ---
 name: DIS thesis
-last_updated: 2026-05-05
+last_updated: 2026-05-06
 last_run_id: 20260505_220625
 target_words: 500
 stale_after_days: 30
-word_count: 496
+word_count: 510
 summary: DIS open long id 117 stopped out today (-$4.99); pre-earnings breakout thesis invalidated by price action; earnings tomorrow May 6 — reassess post-print; structural bull case (streaming profitability, valuation) remains intact
 ---
 
 # DIS — Thesis
 
 ## TL;DR
+
+⚠️ Recent trade: stop_hit 2026-05-05, -$4.99. Thesis under review.
 
 **Prior thesis falsified (additional):** The May 4 thesis claimed "An open long position (id 117, 2 shares, fill price $103.495) was confirmed in trade_ledger.json." That position was closed today (2026-05-05) at $101.00 stop, realizing a loss of -$4.99. [source: `trade_ledger.json per_ticker_history["DIS"]`, run `20260505_220625`]
 

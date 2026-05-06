@@ -1,10 +1,10 @@
 ---
 name: DIS trades
-last_updated: 2026-05-05
+last_updated: 2026-05-06
 last_run_id: 20260505_220625
 target_words: 800
 stale_after_days: 60
-word_count: 797
+word_count: 865
 summary: 1 confirmed closed trade — id 117, 2 shares long, filled $103.495 on 2026-05-01, stopped out $101.00 on 2026-05-05, realized P&L -$4.99; three prior model recommendations (2 unexecuted, 1 hold); no open positions.
 ---
 
@@ -19,6 +19,21 @@ summary: 1 confirmed closed trade — id 117, 2 shares long, filled $103.495 on 
 ## Open positions
 
 None. All DIS positions are closed as of 2026-05-05.
+
+---
+
+## Recently Closed
+
+### Trade: LONG 2 shares DIS — CLOSED 2026-05-05
+
+| Field | Value |
+|---|---|
+| Entry price | $103.495 (fill) |
+| Exit price | $101.00 |
+| P&L | -$4.99 |
+| Closed via | stop_hit |
+| Days held | 4 (2026-05-01 → 2026-05-05) |
+| Run | `20260501_221355` (decision) / `20260505_220625` (closure confirmed) |
 
 ---
 
@@ -119,4 +134,4 @@ None. All DIS positions are closed as of 2026-05-05.
 | Fill rate vs. signaled buys | 1 / 2 actionable signals (Apr 15 missed level; May 1 filled) |
 | Avg holding period (closed) | 4 calendar days (May 1 → May 5) |
 
-*Source: `per_ticker_history["DIS"]` from `trade_ledger.json`, run `20260505_220625`. Next update after May 6 earnings resolves post-earnings entry decision.*
+*Source: `per_ticker_history["DIS"]` from `trade_ledger.json`, run `20260505_220625`. Last updated by wiki_daily_lesson_writer 2026-05-06. Next update after May 6 earnings resolves post-earnings entry decision.*
