@@ -1,0 +1,20 @@
+{
+  "UNH": {
+    "signal": "bearish",
+    "confidence": 52,
+    "reasoning": "Branch A (fade the extreme) partially fires — prior bearish call (run 20260505_194525) is in_progress and directionally correct (price dropped from 370.75 to 363.87, MFE 0.6%). Daily RSI-14 at 85.45 and RSI-21 at 86.87 remain extreme overbought (well above 75 threshold). Distance from 50-SMA is +19.65% (extreme, above 10% alert level). However, Z-score 50 is now 1.74 — pulled back below the +2 trigger threshold (wiki noted 2.04–2.12 in prior runs), indicating some mean reversion is already underway. Key divergence: daily RSI divergence field shows bullish detection, but hourly OBV is trending DOWN while price remains elevated — a bearish distribution signal. Hourly MACD histogram at -1.348 (bearish) and hourly -DI (25.84) > +DI (13.76) confirm intraday selling pressure. MAJOR CONSTRAINT: ADX at 86.49 is extreme trend strength — this is significantly stronger than the ADX 65 regime that caused the AMZN mean-reversion stop-out on May 4 (per lessons). High ADX environments absorb fades. This caps confidence at 52. Entry on any dead-cat bounce toward 368–370 hourly resistance cluster (hourly pivot high 368.55 tested 41x). Target: 50-SMA at 304.10 is too far for a 2–20 day swing; realistic target is the 10-EMA at 359 or the 20-EMA zone at 340-343. Stop: above the recent swing high at 372.90. No reversal candle confirmation yet — the May 5 bar was a down-close bearish candle (open 370.48, close 363.87), which gives the bare minimum directional signal. Adjusting from prior call: Z-score has eased from 2.12 to 1.74; re-affirming bearish but with lower confidence given ADX regime risk.",
+    "entry": 368.0,
+    "target": 343.0,
+    "stop": 374.5,
+    "timeframe": "5-10 trading days"
+  },
+  "JNJ": {
+    "signal": "neutral",
+    "confidence": 35,
+    "reasoning": "Neither branch fires cleanly. Branch A (bullish fade of oversold extreme) is close but below thresholds: Z-score 50 at -1.79 (needs < -2.0), RSI-14 at 31.16 (needs < 25), Bollinger pct_b at 0.2406 (price at 225.55 vs lower band 219.81 — not yet outside the band). No RSI bullish divergence detected. The $223.78 pivot support has been tested 5 times without a decisive break — multiple tests at the same level LOWER conviction for a fresh fade (the level is holding, not setting up a fresh oversold extreme). Branch B (short-side rally fade in downtrend) also does not fire: current price (224.29 hourly) is BELOW the nearest Fib retracement levels (hourly 38.2% at 227.50, 50% at 226.63) that would provide a short entry. A short entry at Fib confluence with resistance requires price to rally first. Daily Fib from the swing high (247.21 to 223.58): price at 225.55 has already overshot the 78.6% level (228.64), meaning the decline has exceeded most Fibonacci structure — no clean dip-buy level. ADX at 35.28 with -DI (35.61) >> +DI (15.78) confirms the downtrend is intact but trend strength is moderate, not extreme. Hourly structure equally bearish (hourly ADX 32.24, -DI 29.01 > +DI 11.65). The wiki notes an active short in the ledger (3 shares at $229.06) and a recent short add signal — this is within the existing bearish thesis, not a new mean-reversion setup. Watch: if price bounces to the 226.53–228 resistance zone on declining volume, a Branch B short-side fade would trigger. If price breaks below 223.58 on volume with an RSI reading below 25 and bullish divergence forms, Branch A bullish fade would trigger. For now, neither entry condition is met.",
+    "entry": 224.29,
+    "target": 224.29,
+    "stop": 224.29,
+    "timeframe": "no trade — monitoring"
+  }
+}

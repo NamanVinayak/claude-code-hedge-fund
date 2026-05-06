@@ -1,0 +1,76 @@
+{
+  "ticker": "JNJ",
+  "verified_at": "2026-05-06T19:46:05",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.28456,
+      "web_value": 0.2183,
+      "source": "Yahoo Finance / StockAnalysis (TTM as of 2026-05-04)",
+      "status": "MISMATCH",
+      "deviation": "30.4%",
+      "action": "replaced with web value (0.2183) in all facts bundles: warren_buffett__JNJ.json, aswath_damodaran__JNJ.json",
+      "note": "Our elevated value (28.46%) reflects a prior TTM window that included a $5.6B one-time gain. Current TTM net margin per Yahoo Finance / StockAnalysis is ~21.83%."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.22921,
+      "web_value": 0.2759,
+      "source": "StockAnalysis / Macrotrends (TTM 2026)",
+      "status": "ok",
+      "deviation": "16.9%",
+      "note": "Deviation is 16.9%, just below the 20% threshold. Flagged for awareness. Web sources consistently report ~27.59%; our value may be understated. No correction applied per >20% rule."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 25.959,
+      "web_value": 26.23,
+      "source": "GuruFocus (TTM PE, 2026-04-28)",
+      "status": "ok",
+      "deviation": "1.0%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 94200000000.0,
+      "web_value": 96362000000.0,
+      "source": "Macrotrends / StockAnalysis (12 months ending 2026-03-31)",
+      "status": "ok",
+      "deviation": "2.3%",
+      "note": "Derived from market_cap / price_to_sales_ratio: 539914665984 / 5.732"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 539914665984.0,
+      "web_value": 539700000000.0,
+      "source": "StockAnalysis / CompaniesMarketCap (2026-05-04)",
+      "status": "ok",
+      "deviation": "0.04%"
+    },
+    {
+      "metric": "return_on_equity",
+      "our_value": 0.33016,
+      "web_value": 0.2642,
+      "source": "Yahoo Finance / GuruFocus (TTM ROE 26.42%, 2026-05-04)",
+      "status": "MISMATCH",
+      "deviation": "25.0%",
+      "action": "replaced with web value (0.2642) in all facts bundles: warren_buffett__JNJ.json, aswath_damodaran__JNJ.json",
+      "note": "Our value (33.0%) likely reflects an older period with the one-time gain inflating earnings used in ROE calculation."
+    },
+    {
+      "metric": "return_on_assets",
+      "our_value": 0.13455,
+      "web_value": 0.0842,
+      "source": "Yahoo Finance / Zacks (TTM ROA 8.42%, 2026-05-04)",
+      "status": "MISMATCH",
+      "deviation": "59.8%",
+      "action": "replaced with web value (0.0842) in all facts bundles: warren_buffett__JNJ.json, aswath_damodaran__JNJ.json",
+      "note": "Our value (13.46%) significantly exceeds current consensus. Likely inflated by the same one-time gain that boosted net income in the prior TTM window."
+    }
+  ],
+  "overall_status": "3 mismatches corrected (net_margin, return_on_equity, return_on_assets)",
+  "corrections_applied": true,
+  "files_updated": [
+    "facts/warren_buffett__JNJ.json",
+    "facts/aswath_damodaran__JNJ.json"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "ticker": "UNH",
+  "verified_at": "2026-05-06T19:46:05",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.026937,
+      "web_value": 0.0268,
+      "source": "Yahoo Finance (as of 2026-05-04)",
+      "status": "ok",
+      "deviation": "0.4%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.04237,
+      "web_value": 0.0419,
+      "source": "StockAnalysis / Macrotrends (TTM 2026)",
+      "status": "ok",
+      "deviation": "1.1%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 27.694,
+      "web_value": 28.02,
+      "source": "Yahoo Finance (trailing P/E, 2026-05-04)",
+      "status": "ok",
+      "deviation": "1.2%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 447900000000.0,
+      "web_value": 447560000000.0,
+      "source": "CNBC / StockAnalysis (TTM Apr 2026)",
+      "status": "ok",
+      "deviation": "0.1%",
+      "note": "Derived from market_cap / price_to_sales_ratio: 334022639616 / 0.7463"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 334022639616.0,
+      "web_value": 330470000000.0,
+      "source": "CompaniesMarketCap (2026-05-04)",
+      "status": "ok",
+      "deviation": "1.1%"
+    },
+    {
+      "metric": "return_on_equity",
+      "our_value": 0.37148,
+      "web_value": 0.1218,
+      "source": "StockAnalysis (TTM ROE, 2026-05-04); Zacks confirms ~12.18%",
+      "status": "MISMATCH",
+      "deviation": "205%",
+      "action": "replaced with web value (0.1218) in all facts bundles: warren_buffett__UNH.json, aswath_damodaran__UNH.json",
+      "note": "Our value likely reflects an older TTM window with inflated equity base or a calculation artifact. Current TTM ROE per multiple sources is ~12.18%."
+    },
+    {
+      "metric": "return_on_assets",
+      "our_value": 0.038943,
+      "web_value": 0.0378,
+      "source": "Zacks / Yahoo Finance (TTM, 2026-05-04)",
+      "status": "ok",
+      "deviation": "3.0%"
+    }
+  ],
+  "overall_status": "1 mismatch corrected (return_on_equity)",
+  "corrections_applied": true,
+  "files_updated": [
+    "facts/warren_buffett__UNH.json",
+    "facts/aswath_damodaran__UNH.json"
+  ]
+}
