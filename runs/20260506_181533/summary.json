@@ -1,0 +1,34 @@
+{
+  "run_id": "20260506_181533",
+  "mode": "swing",
+  "started_at": "2026-05-06T18:15:57Z",
+  "ended_at": "2026-05-06T18:39:35Z",
+  "tickers": [
+    "JPM"
+  ],
+  "decisions": [
+    {
+      "ticker": "JPM",
+      "action": "hold",
+      "confidence": 38,
+      "entry": 315.24,
+      "stop": 307.29,
+      "target": 320.24,
+      "reasoning_tldr": "Cluster cap: BAC+JPM exceed 30% of portfolio ($1,240 vs $437 max)"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 1,
+    "cash": 1457.27001953125,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "neutral",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

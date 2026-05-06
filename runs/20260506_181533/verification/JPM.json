@@ -1,0 +1,71 @@
+{
+  "ticker": "JPM",
+  "verified_at": "2026-05-06T18:30:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.18369673503343023,
+      "web_value": 0.2027,
+      "source": "FinanceCharts / Macrotrends (Mar 31 2026 TTM)",
+      "status": "ok",
+      "deviation": "9.4%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 15.083814,
+      "web_value": 15.07,
+      "source": "GuruFocus (May 6 2026)",
+      "status": "ok",
+      "deviation": "0.1%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 843912118272.0,
+      "web_value": 845000000000.0,
+      "source": "companiesmarketcap.com / stockanalysis.com (May 2026)",
+      "status": "ok",
+      "deviation": "0.1%"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.08469632253359725,
+      "web_value": 0.1632,
+      "source": "Investing.com / valueinvesting.io (Apr-May 2026 TTM)",
+      "status": "MISMATCH",
+      "deviation": "48.1%",
+      "action": "replaced with web value (0.1632) in all facts bundles: warren_buffett__JPM.json, aswath_damodaran__JPM.json"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.007406582275964965,
+      "web_value": 0.0129,
+      "source": "GuruFocus / Macrotrends / Investing.com (Apr-May 2026 TTM)",
+      "status": "MISMATCH",
+      "deviation": "42.6%",
+      "action": "replaced with web value (0.0129) in all facts bundles: warren_buffett__JPM.json, aswath_damodaran__JPM.json"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": null,
+      "source": "N/A — field absent in facts bundles (banks typically omit operating margin)",
+      "status": "unverified",
+      "deviation": "N/A"
+    },
+    {
+      "metric": "revenue",
+      "our_value": null,
+      "web_value": 182430000000.0,
+      "source": "Macrotrends / companiesmarketcap (TTM Apr 2026 ~$182.43B)",
+      "status": "unverified",
+      "deviation": "N/A — field not present as standalone in facts bundles"
+    }
+  ],
+  "overall_status": "2 mismatches corrected (roe, roa)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260506_181533/facts/warren_buffett__JPM.json",
+    "runs/20260506_181533/facts/aswath_damodaran__JPM.json"
+  ],
+  "notes": "ROE and ROA values in facts bundles appear to be derived from an older/stale SEC EDGAR period (report_period: 2014-09-30 — possibly a data provider issue). Web sources consistently show JPM ROE ~16-17% TTM and ROA ~1.16-1.29% TTM as of May 2026. Both metrics corrected to latest web consensus. The stale report_period date (2014-09-30) in the metrics block warrants investigation in prepare.py / facts_builder.py."
+}

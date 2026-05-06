@@ -1,0 +1,517 @@
+{
+  "mode": "swing",
+  "analyst_signals": {
+    "swing_breakout": {
+      "JPM": {
+        "signal": "neutral",
+        "confidence": 28,
+        "reasoning": "Consolidation range identified: $304.26 (daily pivot support, 12 tests) to $315.45\u2013$320.24 (hourly resistance 15 tests / daily resistance 4 tests). Wiki breakout trigger: daily close above $315.50 on 1.5x+ volume (12M+ shares). Range height (support-to-near-resistance): ~$11.19. Measured-move target if triggered: ~$326.74. CURRENT STATUS \u2014 breakout has NOT fired. Volume ratio: 0.79x daily (failing the 1.5x requirement); 0.41x hourly (also failing). OBV on both daily and hourly is in distribution, which is a headwind for a bullish breakout. MACD histogram: \u22120.7743 daily (negative momentum). BB width: 0.0325 daily / 0.0321 hourly \u2014 compressed but not at extreme squeeze levels; the squeeze is building but has not fired. Hourly price ($314.96) is knocking on hourly resistance at $315.45 (15 tests, volume-confirmed) but without volume. ADX 37.85 daily (strong trend) with +DI 25.67 > \u2212DI 19.05 \u2014 some bullish lean, but directional conviction is moderate. LESSONS CHECK: DIS May 5 pre-earnings breakout failed with sub-threshold volume (1.23x vs 1.5x minimum) \u2014 that lesson directly applies here. PRIOR CALL: no prior prediction_grading on JPM for swing_breakout. WIKI CROSS-CHECK: wiki had this exact setup flagged as untriggered in the prior run (swing_breakout voted neutral 30%); today\u2019s data confirms same: trigger at $315.50 daily close on 1.5x+ vol remains unwoken. Verdict: the coil is building and the setup could fire if volume materializes and price closes above $315.50, but per strategy rules, no confirmed breakout without volume = neutral. Flag: watch for a daily close above $315.50 with 12M+ shares traded as entry trigger.",
+        "entry": 315.5,
+        "target": 326.74,
+        "stop": 303.5,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_head_trader": {
+      "JPM": {
+        "consensus_signal": "neutral",
+        "confidence": 38,
+        "reasoning": "Vote count: 2 bullish (swing_trend_momentum 55, swing_mean_reversion 62), 1 bearish (swing_catalyst_news 62), 2 neutral (swing_breakout 28, swing_macro_context 42). No majority direction. The bullish case rests on a technically intact uptrend \u2014 daily EMA stack aligned, ADX 37.85 confirming trend strength, Fib 38.2% support cluster at $304.26\u2013$304.99 held for a third time, and hourly momentum confirming intraday recovery to $314.96. Both bullish agents agree entry is available near the 10/21 EMA pullback zone (~$309\u2013$310). The bearish case from swing_catalyst_news is not chart-based \u2014 it is grounded in a prior in-progress short (entry $311.50, target $304.26, MFE +1.51% at snapshot), Dimon's own bond-crisis / NII guide-trim commentary, Iran-Strait of Hormuz closure risk keeping WTI elevated, and Kevin Warsh hawkish Fed succession May 15 creating NIM plateau risk. This is a direct conflict between technical dip-buy logic and fundamental/macro headwinds. The macro context agent resolves it partially: the broad regime is risk-on (S&P 500 at ATH 7,338), which is a tailwind for financials, BUT current price ($314.96) is pressing volume-confirmed hourly resistance at $315.45 (15 tests) with daily relative volume only 0.79x \u2014 the breakout thesis requires 1.5x+ volume on a close above $315.50, and that trigger has NOT fired. From $314.96, the upside to $320.24 is +$5.28 (+1.68%) while downside to hourly support $311.83 is -$3.13 (-0.99%) \u2014 a 1.7:1 ratio, below the 2:1 minimum for a new entry. The prior catalyst short is still in-progress and directionally confirmed; entering a new long at resistance before the short resolves would mean holding offsetting directional views on the same name, which is contradictory. Portfolio context: book is already net short (4 shorts vs 3 longs including AMD, JNJ, META, GOOG), so a JPM long would partially offset correlation \u2014 but insufficient reason to force a sub-2:1 entry. Wiki memory: JPM has never had a short trade in the model's history; all three prior entries were long; one filled trade (+$24.60) confirmed the bullish thesis works at the right entry price ($304.78\u2013$305.30 zone). Lessons check: the three recent stop-outs (NVDA EMA pullback, AMZN mean-reversion fade, DIS pre-earnings breakout) do not directly map to a JPM dip-buy here, but the pattern of sub-threshold volume signals preceding losses (DIS 1.23x) is directly analogous to today's 0.79x daily volume \u2014 a clear lessons-based confidence dial-down. RECOMMENDED WATCH: Two clean paths forward \u2014 (A) pullback to $311\u2013$312 (hourly MA support) for a 2.5:1+ long entry targeting $320.24, stop $307.29; or (B) volume-confirmed daily close above $315.50 on 1.5x+ volume (12M+ shares) for a breakout long targeting $326.74. Neither path is available today. No actionable trade at current price.",
+        "agent_agreement_pct": 40.0,
+        "key_conflicts": "The core conflict is chart bulls (trend_momentum, mean_reversion) vs fundamental/catalyst bears (catalyst_news). swing_trend_momentum and swing_mean_reversion both read the daily EMA stack and ADX as intact bullish trend, with Fib support holding for a third time \u2014 they want to buy the dip at ~$309-$310. swing_catalyst_news is running an in-progress short from $311.50, backed by Dimon's own NII guide trim and bond-crisis warning, Iran-Strait of Hormuz risk, and a hawkish Powell replacement on May 15 \u2014 all of which create NIM headwinds that the chart doesn't show yet. This is a classic 'tape vs fundamentals' split: the technicals say dip-buy, the macro narrative says the next leg is down toward $304. swing_macro_context partially bridges this by confirming risk-on macro (S&P at ATH) but refusing to endorse entry because price is at resistance without volume \u2014 the R/R is 1.7:1, sub-threshold. swing_breakout is watching the same $315.50 resistance level as the pivot, but has not fired its trigger. Resolution: with a prior bearish signal in-progress (still directionally correct), entering a new long at resistance before the fundamental catalysts (May 15 Powell succession, May 19 shareholder meeting) resolve would be directionally inconsistent. The productive disagreement here signals 'trend extended to resistance, reversal risk elevated at this precise price' \u2014 not a coin flip, but a clear message to wait for a lower re-entry or confirmed breakout before adding a new position.",
+        "recommended_action": "hold"
+      }
+    },
+    "growth_analyst_agent": {
+      "JPM": {
+        "signal": "bearish",
+        "confidence": 62,
+        "reasoning": {
+          "historical_growth": {
+            "score": 0,
+            "revenue_growth": null,
+            "revenue_trend": 0.0,
+            "eps_growth": null,
+            "eps_trend": 0.0,
+            "fcf_growth": null,
+            "fcf_trend": 0.0
+          },
+          "growth_valuation": {
+            "score": 0.25,
+            "peg_ratio": 1.63,
+            "price_to_sales_ratio": 8.667332035207
+          },
+          "margin_expansion": {
+            "score": 0,
+            "gross_margin": null,
+            "gross_margin_trend": 0.0,
+            "operating_margin": null,
+            "operating_margin_trend": 0.0,
+            "net_margin": 0.18369673503343023,
+            "net_margin_trend": -0.0004001731231337682
+          },
+          "insider_conviction": {
+            "score": 0.5,
+            "net_flow_ratio": 0,
+            "buys": 0,
+            "sells": 0
+          },
+          "financial_health": {
+            "score": 0.8,
+            "debt_to_equity": 1.2685459659623635,
+            "current_ratio": null
+          },
+          "final_analysis": {
+            "signal": "bearish",
+            "confidence": 62,
+            "weighted_score": 0.19
+          }
+        }
+      }
+    },
+    "swing_trend_momentum": {
+      "JPM": {
+        "signal": "bullish",
+        "confidence": 55,
+        "reasoning": "TREND ASSESSMENT: Daily EMA alignment is cleanly bullish (EMA-10 310.24 > EMA-21 307.95 > EMA-50 304.20), and ADX-14 at 37.85 confirms strong trend strength with +DI 25.67 > -DI 19.05. The uptrend structure is intact with higher lows (support held at $304.26 / hourly $307.29 volume-confirmed). Current daily price (309.40) has pulled back to the 10/21 EMA zone \u2014 the textbook entry zone per this strategy. Hourly EMAs are also fully aligned bullish (EMA-24 311.82 > EMA-48 311.48 > EMA-120 310.03) and hourly price (314.96) is above all hourly EMAs. MOMENTUM ASSESSMENT (BORDERLINE): Daily momentum is DECELERATING \u2014 daily ROC-5d (-0.66%), ROC-10d (-1.15%) are both negative, and the MACD histogram (-0.7743) is below zero with MACD line (3.15) below signal line (3.92). Per strategy rules this would normally warrant a neutral call. However, hourly momentum is clearly ACCELERATING: hourly ROC-5d (+1.77%), ROC-10d (+1.54%), ROC-21d (+0.53%) are all positive, and the hourly MACD histogram (+0.46) is positive and expanding \u2014 a meaningful intraday rebound. This hourly vs. daily divergence suggests the pullback is maturing rather than deepening. LESSONS CHECK: Recent trend-momentum losses (NVDA EMA pullback -$63.20, DIS breakout -$4.99) temper confidence. The DIS loss was attributed to macro reversal (Iran escalation May 4), but the current macro regime has upgraded to strongly risk-on (US-Iran peace deal progress, S&P 500 near ATH at 7,338). Financial sector benefits directly from risk-on macro. WIKI: Prior wiki notes that $307.29 hourly support held, daily EMA stack intact, entry was previously blocked by portfolio cluster exposure \u2014 that constraint may or may not apply now. RISK: Entry at pullback to 10 EMA zone (~310.00), stop below 21 EMA to protect against trend failure. Target is the recent swing high / nearest daily resistance at 320.24. Confidence reduced to 55 due to daily momentum deceleration (borderline by strategy rules) and recent lessons on similar setups.",
+        "entry": 310.0,
+        "target": 320.24,
+        "stop": 307.5,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_macro_context": {
+      "JPM": {
+        "signal": "neutral",
+        "confidence": 42,
+        "reasoning": "1. MACRO REGIME: Strongly risk-on as of May 6, 2026 (S&P 500 at ATH 7,338.89, Nasdaq 25,670). Rally driven by AMD Q1 blowout and US-Iran peace deal optimism. Macro tailwind is real for financials. However, three offsetting risks: Iran MOU not yet signed (48h completion estimate, tail risk if talks collapse), Kevin Warsh hawkish Fed succession May 15 (tighter-for-longer re-rates financials), and Fed holding at 3.50-3.75% with zero cuts priced through 2027. Net regime read: broadly supportive but not a clean tailwind for rate-sensitive bank stocks given policy uncertainty at May 15. 2. RELATIVE STRENGTH: JPM is mildly underperforming the broad market near-term. Daily ROC 5d: -0.66%, ROC 10d: -1.15% \u2014 negative while S&P is at ATH, indicating sector rotation has not yet fully embraced financials. Hourly ROC is more encouraging (+1.77% 5d, +1.54% 10d), suggesting intraday/near-term recovery underway. Prior call from May 5 (bullish at $309.40) is in-progress with price now at $314.95 \u2014 correct directional move (+1.8%), but daily OBV trend remains 'down' and daily volume bias 10d is 'down', suggesting lack of institutional accumulation confirmation. 3. ASYMMETRY R/R: Current price $314.95 is approaching critical hourly resistance at $315.45 (15 tests, volume-confirmed). From here: upside to daily target $320.24 = +$5.29 (+1.68%); downside to nearest hourly support $311.83 = -$3.12 (-0.99%); ratio = 1.7:1. This falls below the required 2:1 minimum threshold. If using daily stop $304.26: upside $5.29 vs downside $10.69 = 0.5:1 \u2014 deeply unfavorable. The wiki-defined unlock trigger ($315.50 close on \u22651.5x daily volume) has NOT fired; current relative daily volume = 0.79x, well below threshold. Entering here before the breakout confirmation violates the asymmetry discipline. 4. CAPITAL PRESERVATION: No balance-sheet flags for JPM \u2014 record Q1 2026 EPS $5.07, strong revenue $45.9B. Portfolio cluster constraint (BAC+JPM combined >30% of portfolio) is a PM-level sizing concern, not a veto here. Daily ATR 1.70% is moderate. PRIOR CALL NOTE: Prior bullish call (May 5, confidence 52) is in-progress at 1 day elapsed, MFE +0.51%, MAE -0.84%. Direction is correct but thesis has not yet been validated. Re-affirming directional bullishness but downgrading to neutral due to poor current R/R \u2014 price is stretched to resistance without volume. The right action is to wait for either (a) pullback to $311-312 zone (hourly support) for a 2.5:1+ entry, or (b) volume-confirmed breakout above $315.50 on \u22651.5x volume as the wiki thesis defines.",
+        "entry": 311.83,
+        "target": 320.24,
+        "stop": 307.29,
+        "timeframe": "8-15 trading days"
+      }
+    },
+    "swing_mean_reversion": {
+      "JPM": {
+        "signal": "bullish",
+        "confidence": 62,
+        "reasoning": "Branch B (buy the dip in trend) fires. Branch A (fade the extreme) does NOT fire \u2014 daily Z-score is 0.95 (within -1 to +1), RSI 14 at 54.71 is neutral, Bollinger %B 0.3556 is near mid-band, and distance from 50-SMA is only 3.52% (below the 5% threshold). No RSI divergence detected on either timeframe. Branch B: EMA stack fully aligned bullish (all EMAs 5 through 200 in ascending order, ema_aligned_uptrend=true), ADX 37.85 confirms strong trend with +DI 25.67 now clearly above -DI 19.05 (spread of 6.62 \u2014 improved from near-parity in prior run). Price pulled back from swing high $320.24 down to $306.51 (May 4 low), then recovered to $309.40 (May 5 daily close). The Fib 23.6% level at $310.82 and pivot support at $304.26 (12 tests) with Fib 38.2% at $304.99 create a strong S/R confluence zone that held. Pullback volume was declining (relative volume 0.79, volume_bias_10d down) \u2014 a healthy pullback signature for Branch B. Hourly context: price has bounced sharply to $314.96, above all hourly MAs, hourly MACD histogram positive (+0.46), confirming the intraday momentum shift. Hourly %B at 0.8541 shows price near upper hourly band \u2014 some short-term overhead compression near $315.45 hourly resistance. Wiki context: prior run (May 5) noted $307.29 hourly support (22 tests, volume-confirmed) held exactly again \u2014 this is the third successful test of this level, reinforcing its strength. Entry was portfolio-blocked prior run; directional setup re-affirmed. Prior call (run 20260505): bullish at $308, verdict in_progress, MFE 0.96%, MAE -0.39% \u2014 re-affirming same thesis with slightly higher confidence given improved +DI/-DI spread and confirmed support hold. Lessons check: recent mean-reversion fade short on AMZN (stopped out -$10.14 with ADX 65+) is not analogous here since Branch A is not firing and ADX 37.85 is not in the extreme-trend regime. No lessons directly penalize this Branch B dip-buy setup.",
+        "entry": 309.4,
+        "target": 320.0,
+        "stop": 303.5,
+        "timeframe": "5-12 trading days"
+      }
+    },
+    "swing_catalyst_news": {
+      "JPM": {
+        "signal": "bearish",
+        "confidence": 62,
+        "reasoning": "PRIOR CALL STATUS: Prior bearish signal (2026-05-05, entry $311.50, target $304.26, stop $316.50) is in_progress \u2014 direction correct (MFE +1.51%, MAE 0%). Re-affirming bearish with adjusted entry at current hourly resistance. CATALYST WINDOW: Annual shareholder meeting May 19, 2026 (~9 trading days) \u2014 within the 10-day window. Dimon will present forward guidance; given his own 'increasingly complex risks' bond-crisis warning in May 2026, this event carries a bearish lean. Dimon's commentary on NII guidance ($103B full-year, trimmed from $104.5B) and Iran/oil macro risks is the dominant headline. No positive catalyst within the window. Q2 2026 earnings July 14 is 50+ trading days out. NET NEWS SENTIMENT: Bearish. (1) Dimon bond-crisis warning \u2014 self-generated bearish signal from CEO. (2) Iran-UAE conflict ongoing with Strait of Hormuz closure risk \u2014 WTI ~$104 = inflation re-acceleration = extended Fed hold = NIM plateau/downside risk to NII guide. (3) Kevin Warsh hawkish succession (Powell exits May 15) = zero cuts priced for 2026 = rate-sensitive bank headwind. Apple Card acquisition ($20B from Goldman) is structural positive but not swing-window relevant. Market partial recovery May 5 (+0.78% S&P) reduces immediate panic but geopolitical overhang persists. INSIDER ACTIVITY: Quiet. Board directors bought in March 2026; no trades in current bundle. Net neutral \u2014 no near-term informational edge. TECHNICAL SETUP: Daily chart weakening \u2014 price $309.40 is below EMA-5, EMA-10, SMA-5, SMA-10, SMA-20. MACD histogram negative (-0.77, rolling over). OBV trend down. Volume bias 10d down (relative volume 0.79). ADX 37.85 confirms strong downtrend. Nearest daily support at $304.26 (12 tests). Hourly: current price $314.96 bouncing above hourly MAs, pressing volume-confirmed resistance at $315.45 (15 tests). Hourly MACD histogram positive (+0.46) but pct_b 0.85 \u2014 near upper Bollinger. This intraday bounce into resistance is the entry opportunity for the bearish swing. LESSONS: Three recent catalyst/swing trades stopped out (DIS -$4.99, AMZN -$10.14, NVDA -$63.20); however, the bearish macro catalyst alignment here (Dimon warning + Iran/oil + hawkish Fed succession) supports rather than contradicts the directional thesis, unlike DIS where macro reversed against a bullish setup. Confidence held at 62 rather than 68 given lessons pattern and the shareholder meeting catalyst being a soft/ambiguous event (not a binary like earnings/FDA).",
+        "entry": 315.0,
+        "target": 304.26,
+        "stop": 317.5,
+        "timeframe": "6-9 trading days"
+      }
+    },
+    "fundamentals_analyst_agent": {
+      "JPM": {
+        "signal": "bearish",
+        "confidence": 100.0,
+        "reasoning": {
+          "profitability_signal": {
+            "signal": "bearish",
+            "details": "ROE: 8.47%, Net Margin: 18.37%, Op Margin: N/A"
+          },
+          "growth_signal": {
+            "signal": "bearish",
+            "details": "Revenue Growth: N/A, Earnings Growth: N/A"
+          },
+          "financial_health_signal": {
+            "signal": "bearish",
+            "details": "Current Ratio: N/A, D/E: 1.27"
+          },
+          "price_ratios_signal": {
+            "signal": "bearish",
+            "details": "P/E: 15.10, P/B: 4.00, P/S: 8.68"
+          }
+        }
+      }
+    },
+    "technical_analyst_agent": {
+      "JPM": {
+        "signal": "neutral",
+        "confidence": 13,
+        "reasoning": {
+          "trend_following": {
+            "signal": "bullish",
+            "confidence": 23,
+            "metrics": {
+              "adx": 22.760557390752616,
+              "trend_strength": 0.22760557390752617
+            }
+          },
+          "mean_reversion": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "z_score": 0.9465282184917236,
+              "price_vs_bb": 0.35562329060628345,
+              "rsi_14": 54.7082776743042,
+              "rsi_28": 58.42738432765788
+            }
+          },
+          "momentum": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "momentum_1m": 0.047823915826034624,
+              "momentum_3m": -0.005403020603354847,
+              "momentum_6m": 0.018485491933408982,
+              "volume_momentum": 0.7905376264549893
+            }
+          },
+          "volatility": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "historical_volatility": 0.2039506544404334,
+              "volatility_regime": 0.8355366466846847,
+              "volatility_z_score": -1.0471074590904221,
+              "atr_ratio": 0.017035249776123872
+            }
+          },
+          "statistical_arbitrage": {
+            "signal": "neutral",
+            "confidence": 50,
+            "metrics": {
+              "hurst_exponent": 4.686994974318529e-16,
+              "skewness": 0.0653264162928327,
+              "kurtosis": 1.1198323708957483
+            }
+          }
+        }
+      }
+    },
+    "valuation_analyst_agent": {},
+    "sentiment_analyst_agent": {
+      "JPM": {
+        "signal": "neutral",
+        "confidence": 0,
+        "reasoning": {
+          "insider_trading": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_trades": 0,
+              "bullish_trades": 0,
+              "bearish_trades": 0,
+              "weight": 0.3,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "news_sentiment": {
+            "signal": "neutral",
+            "confidence": 0,
+            "metrics": {
+              "total_articles": 0,
+              "bullish_articles": 0,
+              "bearish_articles": 0,
+              "neutral_articles": 0,
+              "weight": 0.7,
+              "weighted_bullish": 0.0,
+              "weighted_bearish": 0.0
+            }
+          },
+          "combined_analysis": {
+            "total_weighted_bullish": 0.0,
+            "total_weighted_bearish": 0.0,
+            "signal_determination": "Neutral based on weighted signal comparison"
+          }
+        }
+      }
+    },
+    "risk_management_agent": {
+      "JPM": {
+        "remaining_position_limit": 0.0,
+        "max_account_risk_pct": 1.5,
+        "max_account_risk_dollars": 21.85905029296875,
+        "max_position_pct": 0.3,
+        "correlation_advisory": {
+          "correlated_with": "BAC",
+          "abs_correlation": 0.7365600693168679,
+          "advice": "high correlation \u2014 reduce risk vs. uncorrelated trade",
+          "risk_pct_cap_applied": 1.5
+        },
+        "current_price": 315.239990234375,
+        "volatility_metrics": {
+          "daily_volatility": 0.014126552924056138,
+          "annualized_volatility": 0.22425207551786913,
+          "volatility_percentile": 63.80090497737556,
+          "data_points": 60
+        },
+        "correlation_metrics": {
+          "avg_correlation_with_active": 0.3083537897645676,
+          "max_correlation_with_active": 0.7365600693168679,
+          "top_correlated_tickers": [
+            {
+              "ticker": "BAC",
+              "correlation": 0.7365600693168679
+            },
+            {
+              "ticker": "AAPL",
+              "correlation": 0.29420014879065076
+            },
+            {
+              "ticker": "META",
+              "correlation": 0.28151700212629377
+            }
+          ]
+        },
+        "reasoning": {
+          "portfolio_value": 1457.27001953125,
+          "current_position_value": 0.0,
+          "available_cash": 1457.27001953125,
+          "max_position_pct": 0.3,
+          "max_position_dollars": 437.181005859375,
+          "max_account_risk_pct": 2.5,
+          "max_account_risk_dollars": 21.85905029296875,
+          "sizing_model": "PM picks conviction + account_risk_pct (\u22642.5%); qty = (capital \u00d7 risk_pct) / |entry - stop|. Hard cap: position \u2264 30% of capital ($437). Vol/correlation are context for PM to consider qualitatively.",
+          "cluster_capped": true,
+          "cluster_members": [
+            "BAC",
+            "JPM"
+          ],
+          "cluster_cap_pct": 0.3,
+          "cluster_exposure_before_drop": 1240.3679946899415
+        },
+        "correlation_blocked": true,
+        "correlation_block_reason": "cluster cap: ['BAC', 'JPM'] exposure $1,240 > 30% of $1,457"
+      }
+    }
+  },
+  "allowed_actions": {
+    "JPM": {
+      "hold": 0
+    }
+  },
+  "portfolio": {
+    "cash": 1457.27001953125,
+    "margin_requirement": 0.0,
+    "margin_used": 0.0,
+    "positions": {
+      "JPM": {
+        "long": 0,
+        "long_cost_basis": 0.0,
+        "short": 0,
+        "short_cost_basis": 0.0
+      }
+    },
+    "other_positions": [
+      {
+        "id": 110,
+        "run_id": "20260430_190826",
+        "mode": "swing",
+        "ticker": "BAC",
+        "direction": "long",
+        "quantity": 15,
+        "entry_price": 52.75,
+        "target_price": 55.4,
+        "target_price_2": null,
+        "stop_loss": 51.5,
+        "confidence": 55,
+        "timeframe": "5-10 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 52.75,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-04-30T19:30:48+00:00",
+        "entered_at": "2026-04-30T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 15, \"entry_price\": 52.75, \"target_price\": 55.4, \"stop_loss\": 51.5, \"risk_reward_ratio\": \"2.12:1\", \"timeframe\": \"5-10 trading days\", \"confidence\": 55, \"reasoning\": \"Head Trader bullish (55 conf), 3/5 swing agents agree. Pullback to 10/21 EMA confluence at $52.73-52.88 in ADX-54.8 uptrend. R/R 2.12:1 meets threshold. Risk mgr limit $806; 15 shares @ $52.75 = $791 within limit. Stop below wiki stop zone / 38.2% Fib at $51.50. Target $55.40 resistance (5 tests). Key risks: OBV divergence, Berkshire overhang \\u2014 sized defensively at max allowed qty but within vol-adjusted limit.\"}",
+        "last_checked_at": "2026-05-06T18:30:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.075
+      },
+      {
+        "id": 114,
+        "run_id": "20260501_144523",
+        "mode": "swing",
+        "ticker": "AAPL",
+        "direction": "long",
+        "quantity": 2,
+        "entry_price": 276.0,
+        "target_price": 294.84,
+        "target_price_2": null,
+        "stop_loss": 269.5,
+        "confidence": 42,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 277.2699890136719,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T15:00:50+00:00",
+        "entered_at": "2026-05-04T13:31:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 2, \"entry_price\": 276.0, \"target_price\": 294.84, \"stop_loss\": 269.5, \"risk_reward_ratio\": \"2.9:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 42, \"reasoning\": \"Head Trader neutral (42) \\u2014 wait for pullback to $274-278 before entry. Limit buy at $276 (preferred entry): breakout above $276.11 resistance confirmed on 2.08x volume, measured move to $294.84 intact, RSI 61.64 healthy, OBV uptrend, post-earnings drift thesis (Q2 FY2026 beat, analyst targets $299-305). R/R 2.9:1 (18.84 up / 6.50 down) clears 2:1 minimum from pullback level. Stop $269.50 below pre-earnings pivot. NOT chasing at $283 \\u2014 hourly Z-score 2.52 and Bollinger %B 1.28 flag overextension; mean reversion agent correctly warns of fade risk at current price. Entering only on constructive pullback to Fib 38.2% / daily upper BB confluence at $274-278. Size: 2 shares x $276 = $552, within risk manager cap $768 and 25% capital limit $963. ADX 16.83 is the main caveat \\u2014 trigger requires ADX rising above 19 on pullback candle. Key risks: insider net selling (-$235M, Cook sold at $251-256), ADX still sub-25, one prior portfolio loss (NVDA EMA dip, -$264) on similar setup. Sized conservatively at 2 shares.\"}",
+        "last_checked_at": "2026-05-06T18:30:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.052
+      },
+      {
+        "id": 116,
+        "run_id": "20260501_194523",
+        "mode": "swing",
+        "ticker": "JNJ",
+        "direction": "short",
+        "quantity": 3,
+        "entry_price": 229.85,
+        "target_price": 216.53,
+        "target_price_2": null,
+        "stop_loss": 235.0,
+        "confidence": 58,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 229.05999755859375,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-01T20:15:58+00:00",
+        "entered_at": "2026-05-01T13:30:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"short\", \"quantity\": 3, \"entry_price\": 229.85, \"entry_tolerance_pct\": 1.0, \"target_price\": 216.53, \"stop_loss\": 235.0, \"risk_reward_ratio\": \"2.59:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 58, \"account_risk_pct\": 0.51, \"reasoning\": \"4/5 swing agents bearish. Confirmed daily downtrend (EMA stack, ADX 30.72, -DI>+DI, OBV down). Bounce to 10-EMA resistance ($229-231) = textbook short entry. R/R 2.59:1. No open JNJ position. Risk-on macro removes defensive bid. 3 shares @ $229.85 = $689.55 (within 25% cap). Stop $235 above EMA21/consolidation.\"}",
+        "last_checked_at": "2026-05-06T18:30:00+00:00",
+        "entry_tolerance_pct": 1.0,
+        "account_risk_pct": 0.51
+      },
+      {
+        "id": 118,
+        "run_id": "20260504_143030",
+        "mode": "swing",
+        "ticker": "META",
+        "direction": "short",
+        "quantity": 1,
+        "entry_price": 621.0,
+        "target_price": 575.0,
+        "target_price_2": null,
+        "stop_loss": 635.0,
+        "confidence": 62,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 611.780029296875,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-04T14:46:00+00:00",
+        "entered_at": "2026-05-04T14:48:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"short\", \"quantity\": 1, \"entry_price\": 621.0, \"entry_tolerance_pct\": 1.5, \"target_price\": 575.0, \"stop_loss\": 635.0, \"risk_reward_ratio\": \"3.3:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 62, \"account_risk_pct\": 1.0, \"reasoning\": \"Head Trader bearish 62 conf. Conditional short on bounce to $619-628 resistance (Fib 38.2% + former support) with bearish rejection candle. 3/5 swing agents bearish/conditional bearish. Post-earnings capex-shock breakdown ($669\\u2192$600, 3.26x avg vol Apr 30) confirmed structural re-rating. Daily ADX 49.52 with -DI 34.25 >> +DI 26.06; hourly ADX 50.9 with -DI 47.79 >> +DI 7.66 \\u2014 extreme bearish trend. Risk-off macro (Iran escalation May 4, Fed hawkish succession risk). R/R 3.3:1 clears 2:1 minimum. Entry $621 is limit on bounce \\u2014 do NOT chase if price breaks below $596. Stop $635 above all identified resistance. Target $575 (Fib extension support). 1 share \\u00d7 $621 = $621 within risk manager cap of $641.91. High-vol stock (ATR 3.27%) \\u2192 tolerance 1.5%. Mean-reversion bullish vote (42 conf, 0% win-rate lesson) discounted; breakout absent. No open META position per portfolio state.\"}",
+        "last_checked_at": "2026-05-06T18:30:00+00:00",
+        "entry_tolerance_pct": 1.5,
+        "account_risk_pct": 1.0
+      },
+      {
+        "id": 150,
+        "run_id": "20260505_203524",
+        "mode": "swing",
+        "ticker": "WDC",
+        "direction": "long",
+        "quantity": 2,
+        "entry_price": 446.0,
+        "target_price": 489.0,
+        "target_price_2": null,
+        "stop_loss": 428.0,
+        "confidence": 44,
+        "timeframe": "5-12 trading days",
+        "entry_order_id": null,
+        "stop_order_id": null,
+        "target_order_id": null,
+        "status": "entered",
+        "entry_fill_price": 448.989990234375,
+        "exit_fill_price": null,
+        "pnl": null,
+        "created_at": "2026-05-05T21:00:57+00:00",
+        "entered_at": "2026-05-06T14:29:00+00:00",
+        "closed_at": null,
+        "raw_decision": "{\"action\": \"buy\", \"quantity\": 2, \"entry_price\": 446.0, \"entry_tolerance_pct\": 1.5, \"target_price\": 489.0, \"stop_loss\": 428.0, \"risk_reward_ratio\": \"2.39:1\", \"timeframe\": \"5-12 trading days\", \"confidence\": 44, \"account_risk_pct\": 0.75, \"reasoning\": \"Head Trader bullish (44 conf). 3/5 swing agents bullish. Post-earnings catalyst live (Q3 FY26 blowout: $3.0B rev, 50.5% GM first-ever above 50%, Q4 guide $3.65B, analyst upgrades $470-$572). Former ATH $446.62 flipped to support \\u2014 pullback entry at $444-448 zone. R/R 2.39:1 ($43 up / $18 down). STX correlation block resolved: STX is hold (no new position), cluster cap is not triggered. DO NOT CHASE above $452 \\u2014 limit order at $446. Stop $428 below hourly pivot cluster. Sized conservatively: 2 shares x $446 = $892 (within 25% of $5K capital). Key risk: hourly OBV divergence (institutional distribution signal) + 0% recent win rate on extended-move entries. Confidence held at 44 \\u2014 do not size up.\"}",
+        "last_checked_at": "2026-05-06T18:30:00+00:00",
+        "entry_tolerance_pct": 1.5,
+        "account_risk_pct": 0.75
+      }
+    ],
+    "realized_gains": {
+      "JPM": {
+        "long": 0.0,
+        "short": 0.0
+      }
+    },
+    "pending_orders": [],
+    "recent_closed": [
+      {
+        "ticker": "GOOG",
+        "direction": "short",
+        "status": "stop_hit",
+        "entry_price": 383.0,
+        "exit_fill_price": 389.5,
+        "pnl": -6.5,
+        "closed_at": "2026-05-06T13:31:00+00:00",
+        "timeframe": "6-14 trading days"
+      },
+      {
+        "ticker": "AMD",
+        "direction": "short",
+        "status": "stop_hit",
+        "entry_price": 354.49,
+        "exit_fill_price": 372.31,
+        "pnl": -17.819999999999993,
+        "closed_at": "2026-05-06T13:30:46+00:00",
+        "timeframe": "8-15 trading days"
+      },
+      {
+        "ticker": "DIS",
+        "direction": "long",
+        "status": "stop_hit",
+        "entry_price": 102.5,
+        "exit_fill_price": 101.0,
+        "pnl": -4.990005493164091,
+        "closed_at": "2026-05-05T14:09:00+00:00",
+        "timeframe": "5-10 trading days"
+      },
+      {
+        "ticker": "AMZN",
+        "direction": "short",
+        "status": "stop_hit",
+        "entry_price": 269.0,
+        "exit_fill_price": 276.0,
+        "pnl": -10.14,
+        "closed_at": "2026-05-04T14:48:00+00:00",
+        "timeframe": "7-14 trading days"
+      },
+      {
+        "ticker": "NVDA",
+        "direction": "long",
+        "status": "stop_hit",
+        "entry_price": 209.25,
+        "exit_fill_price": 205.3,
+        "pnl": -63.2,
+        "closed_at": "2026-04-30T15:59:00",
+        "timeframe": "5-10 trading days"
+      }
+    ]
+  },
+  "tickers": [
+    "JPM"
+  ],
+  "end_date": "2026-05-06",
+  "degraded_inputs": []
+}

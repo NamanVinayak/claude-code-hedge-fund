@@ -1,0 +1,11 @@
+{
+  "JPM": {
+    "signal": "bullish",
+    "confidence": 55,
+    "reasoning": "TREND ASSESSMENT: Daily EMA alignment is cleanly bullish (EMA-10 310.24 > EMA-21 307.95 > EMA-50 304.20), and ADX-14 at 37.85 confirms strong trend strength with +DI 25.67 > -DI 19.05. The uptrend structure is intact with higher lows (support held at $304.26 / hourly $307.29 volume-confirmed). Current daily price (309.40) has pulled back to the 10/21 EMA zone — the textbook entry zone per this strategy. Hourly EMAs are also fully aligned bullish (EMA-24 311.82 > EMA-48 311.48 > EMA-120 310.03) and hourly price (314.96) is above all hourly EMAs. MOMENTUM ASSESSMENT (BORDERLINE): Daily momentum is DECELERATING — daily ROC-5d (-0.66%), ROC-10d (-1.15%) are both negative, and the MACD histogram (-0.7743) is below zero with MACD line (3.15) below signal line (3.92). Per strategy rules this would normally warrant a neutral call. However, hourly momentum is clearly ACCELERATING: hourly ROC-5d (+1.77%), ROC-10d (+1.54%), ROC-21d (+0.53%) are all positive, and the hourly MACD histogram (+0.46) is positive and expanding — a meaningful intraday rebound. This hourly vs. daily divergence suggests the pullback is maturing rather than deepening. LESSONS CHECK: Recent trend-momentum losses (NVDA EMA pullback -$63.20, DIS breakout -$4.99) temper confidence. The DIS loss was attributed to macro reversal (Iran escalation May 4), but the current macro regime has upgraded to strongly risk-on (US-Iran peace deal progress, S&P 500 near ATH at 7,338). Financial sector benefits directly from risk-on macro. WIKI: Prior wiki notes that $307.29 hourly support held, daily EMA stack intact, entry was previously blocked by portfolio cluster exposure — that constraint may or may not apply now. RISK: Entry at pullback to 10 EMA zone (~310.00), stop below 21 EMA to protect against trend failure. Target is the recent swing high / nearest daily resistance at 320.24. Confidence reduced to 55 due to daily momentum deceleration (borderline by strategy rules) and recent lessons on similar setups.",
+    "entry": 310.0,
+    "target": 320.24,
+    "stop": 307.5,
+    "timeframe": "5-12 trading days"
+  }
+}

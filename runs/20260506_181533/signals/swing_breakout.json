@@ -1,0 +1,11 @@
+{
+  "JPM": {
+    "signal": "neutral",
+    "confidence": 28,
+    "reasoning": "Consolidation range identified: $304.26 (daily pivot support, 12 tests) to $315.45–$320.24 (hourly resistance 15 tests / daily resistance 4 tests). Wiki breakout trigger: daily close above $315.50 on 1.5x+ volume (12M+ shares). Range height (support-to-near-resistance): ~$11.19. Measured-move target if triggered: ~$326.74. CURRENT STATUS — breakout has NOT fired. Volume ratio: 0.79x daily (failing the 1.5x requirement); 0.41x hourly (also failing). OBV on both daily and hourly is in distribution, which is a headwind for a bullish breakout. MACD histogram: −0.7743 daily (negative momentum). BB width: 0.0325 daily / 0.0321 hourly — compressed but not at extreme squeeze levels; the squeeze is building but has not fired. Hourly price ($314.96) is knocking on hourly resistance at $315.45 (15 tests, volume-confirmed) but without volume. ADX 37.85 daily (strong trend) with +DI 25.67 > −DI 19.05 — some bullish lean, but directional conviction is moderate. LESSONS CHECK: DIS May 5 pre-earnings breakout failed with sub-threshold volume (1.23x vs 1.5x minimum) — that lesson directly applies here. PRIOR CALL: no prior prediction_grading on JPM for swing_breakout. WIKI CROSS-CHECK: wiki had this exact setup flagged as untriggered in the prior run (swing_breakout voted neutral 30%); today’s data confirms same: trigger at $315.50 daily close on 1.5x+ vol remains unwoken. Verdict: the coil is building and the setup could fire if volume materializes and price closes above $315.50, but per strategy rules, no confirmed breakout without volume = neutral. Flag: watch for a daily close above $315.50 with 12M+ shares traded as entry trigger.",
+    "entry": 315.5,
+    "target": 326.74,
+    "stop": 303.5,
+    "timeframe": "5-12 trading days"
+  }
+}

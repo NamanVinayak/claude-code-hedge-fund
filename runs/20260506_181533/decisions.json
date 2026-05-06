@@ -1,0 +1,17 @@
+{
+  "decisions": {
+    "JPM": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 315.24,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 320.24,
+      "stop_loss": 307.29,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "N/A",
+      "confidence": 38,
+      "account_risk_pct": 0.0,
+      "reasoning": "Cluster cap: BAC+JPM exceed 30% of portfolio ($1,240 vs $437 max). No new entries permitted. Head Trader neutral (38 conf) — price at resistance $315.45 without 1.5x vol trigger. No open JPM position to manage. Wait for pullback to $311-312 or volume-confirmed close above $315.50 on 12M+ shares for a clean entry in a future run."
+    }
+  }
+}
