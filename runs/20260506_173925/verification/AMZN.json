@@ -1,0 +1,83 @@
+{
+  "ticker": "AMZN",
+  "verified_at": "2026-05-06T17:45:00",
+  "facts_files_read": [
+    "warren_buffett__AMZN.json",
+    "ben_graham__AMZN.json",
+    "aswath_damodaran__AMZN.json"
+  ],
+  "checks": [
+    {
+      "metric": "gross_margin",
+      "our_value": 0.00638,
+      "web_value": 0.3556,
+      "source": "Macrotrends / Q1 2026 earnings release (Amazon Q1 2026 gross margin 35.56%)",
+      "status": "MISMATCH",
+      "deviation": "98.2%",
+      "note": "Our value of 0.64% is almost certainly a data bug — cost-of-goods/revenue ratio was miscomputed or a wrong field was used. Amazon Q1 2026 gross margin was confirmed at 35.56% per MacroTrends and earnings release. Flag: margin >100% or near-zero check triggered.",
+      "action": "replaced with web value (0.3556) in all facts bundles containing gross_margin: warren_buffett__AMZN.json, aswath_damodaran__AMZN.json"
+    },
+    {
+      "metric": "net_margin",
+      "our_value": 0.1266,
+      "web_value": 0.1083,
+      "source": "Macrotrends / financecharts.com — Amazon net profit margin as of March 31, 2026: 10.83%",
+      "status": "ok",
+      "deviation": "16.9%",
+      "note": "Within 20% threshold. Difference likely due to TTM period ending vs. Q1 2026 quarterly figure. Our value of 12.66% is consistent with a slightly different TTM window."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.1151,
+      "web_value": 0.1171,
+      "source": "GuruFocus — AMZN operating margin 11.71% TTM; Macrotrends Q1 2026 operating margin 11.50%",
+      "status": "ok",
+      "deviation": "1.7%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 33.03,
+      "web_value": 32.91,
+      "source": "GuruFocus PE Ratio (TTM): 32.91; companiesmarketcap.com: 33.25 as of May 4, 2026",
+      "status": "ok",
+      "deviation": "0.4%"
+    },
+    {
+      "metric": "revenue",
+      "our_value_derived": "684.7B (implied: market_cap $2.974T / P/S 4.341)",
+      "web_value": 742800000000,
+      "web_value_note": "$742.8B for TTM ending March 31, 2026 per StockAnalysis / Amazon Q1 2026 earnings release",
+      "source": "StockAnalysis.com — Amazon revenue TTM March 2026: $742.776B",
+      "status": "ok",
+      "deviation_note": "Revenue is not stored as a direct field in these facts bundles — it is embedded indirectly via P/S and market_cap. The P/S of 4.341 * market_cap $2.97T implies ~$685B revenue, vs. $742.8B web figure (~7.8% deviation). Within acceptable range given P/S ratio reflects a different share price anchor date."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 2974125916160,
+      "web_value": 2942000000000,
+      "source": "StockAnalysis.com / companiesmarketcap.com — Amazon market cap ~$2.942T as of May 2026",
+      "status": "ok",
+      "deviation": "1.1%"
+    },
+    {
+      "metric": "return_on_equity",
+      "our_value": 0.211,
+      "web_value": null,
+      "source": "not found in search results",
+      "status": "unverified"
+    },
+    {
+      "metric": "return_on_assets",
+      "our_value": 0.106,
+      "web_value": null,
+      "source": "not found in search results",
+      "status": "unverified"
+    }
+  ],
+  "overall_status": "1 mismatch corrected (gross_margin: 0.00638 → 0.3556)",
+  "corrections_applied": true,
+  "corrected_files": [
+    "runs/20260506_173925/facts/warren_buffett__AMZN.json",
+    "runs/20260506_173925/facts/aswath_damodaran__AMZN.json"
+  ]
+}

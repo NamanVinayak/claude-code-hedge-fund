@@ -1,0 +1,11 @@
+{
+  "AMZN": {
+    "signal": "neutral",
+    "confidence": 72,
+    "reasoning": "Neither branch fires cleanly. Branch A (fade the extreme) is close but blocked: RSI-14 82.32 and RSI-21 90.24 are deeply overbought (well above 75 threshold), and 50-SMA extension is extreme at +20.29% (>10% threshold). However, the Z-score of 1.99 is just below the +2.0 trigger, Bollinger %B at 0.88 is inside the upper band (not outside), there is NO RSI bearish divergence confirmed, and critically the hourly RSI-21 is only 64.43 — the wiki specifically requires hourly RSI-21 >75 plus volume-confirmed rejection at $273-276 before shorting. Current volume is 0.80x avg (below average), not showing a volume-confirmed rejection. Branch B (buy the dip in trend) does not fire — price is at $273-276 well above all Fibonacci retracement levels from the daily swing (fib_236 = $259.82 is nearest), so there is no Fibonacci pullback to enter. CRITICAL LESSON FROM PRIOR CALL: the previous mean-reversion short on AMZN (entered ~$269, stop $276, run 20260501_173921) was stopped out at exactly $276 on May 4 for -$10.14. Today price is again testing $276-278. The lesson from that trade and from the NVDA -$63.20 stop-out is that ADX 60+ regimes set an elevated bar for fading overbought — the extreme ADX 64.96 (+DI 36.89 vs -DI 10.95) means the trend has the momentum to absorb overbought RSI readings. The wiki explicitly states 'no short without hourly RSI-21 >75 + volume-confirmed rejection at $273-276' — that bar is not met today. Standing aside. Neither branch fires — neutral.",
+    "entry": 273.55,
+    "target": 273.55,
+    "stop": 273.55,
+    "timeframe": "N/A — no trade"
+  }
+}

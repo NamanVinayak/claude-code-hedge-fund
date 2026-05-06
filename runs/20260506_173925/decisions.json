@@ -1,0 +1,17 @@
+{
+  "decisions": {
+    "AMZN": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 273.55,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 284.2,
+      "stop_loss": 259.5,
+      "risk_reward_ratio": "0:1",
+      "timeframe": "watch — no entry today",
+      "confidence": 0,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader hold (62 conf). 4/5 agents neutral, 0 bearish. ADX 64.96 extreme uptrend — prior AMZN short stopped at $276 (-$10.14, May 4). Short disqualified: hourly RSI-21 only 64.43 (need >75), volume 0.80x (need 1.5x rejection confirmation). No long entry: price $273.55 is 3.84% above 10 EMA ($263.44), RSI 82.32 overbought, no pullback to $263-266 zone. Breakout long requires confirmed close above $276 on 1.5x+ volume — not met (0.80x). EMA pullback setup has 0% win rate last 30 days. Watching for pullback to $263-266 with RSI normalizing below 65 for long entry (R/R ~4:1); or confirmed daily close above $276 on 1.5x+ volume for breakout. No trade today."
+    }
+  }
+}
