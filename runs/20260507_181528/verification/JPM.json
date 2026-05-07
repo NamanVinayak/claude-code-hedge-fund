@@ -1,0 +1,81 @@
+{
+  "ticker": "JPM",
+  "verified_at": "2026-05-07T18:30:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.18369673503343023,
+      "web_value": 0.2844,
+      "source": "GuruFocus (JPMorgan Chase Net Margin % TTM, May 2026)",
+      "status": "MISMATCH",
+      "deviation": "35.4%",
+      "action": "replaced with web value in all facts bundles (warren_buffett__JPM.json, aswath_damodaran__JPM.json)"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": null,
+      "web_value": 0.3979,
+      "source": "companiesmarketcap.com (JPMorgan Chase Operating Margin, May 2026)",
+      "status": "unverified",
+      "deviation": null,
+      "action": "our_value is null — cannot calculate deviation; left unchanged"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 14.745929,
+      "web_value": 15.07,
+      "source": "GuruFocus (JPMorgan Chase P/E TTM, May 2026)",
+      "status": "ok",
+      "deviation": "2.1%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 825008128000.0,
+      "web_value": 841000000000.0,
+      "source": "marketcap.company / companiesmarketcap.com (JPM Market Cap, May 2026 ~$838-844B)",
+      "status": "ok",
+      "deviation": "1.9%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": null,
+      "web_value": 285116000000.0,
+      "source": "Macrotrends / StockAnalysis (JPMorgan Chase TTM Revenue ending March 31, 2026: $285.116B)",
+      "status": "unverified",
+      "deviation": null,
+      "note": "Revenue not directly stored as a top-level metric in facts bundles; report_period is 2014-09-30 (stale data artifact). Web TTM revenue $285.116B noted for reference only.",
+      "action": "no metric field to update"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.08469632253359725,
+      "web_value": 0.1442,
+      "source": "GuruFocus (JPMorgan Chase ROE % TTM, May 2026: 14.42%)",
+      "status": "MISMATCH",
+      "deviation": "41.3%",
+      "action": "replaced with web value in all facts bundles (warren_buffett__JPM.json, aswath_damodaran__JPM.json)"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.007406582275964965,
+      "web_value": 0.0116,
+      "source": "GuruFocus (JPMorgan Chase ROA % TTM, May 2026: 1.16%)",
+      "status": "MISMATCH",
+      "deviation": "36.2%",
+      "action": "replaced with web value in all facts bundles (warren_buffett__JPM.json, aswath_damodaran__JPM.json)"
+    }
+  ],
+  "overall_status": "3 mismatches corrected (net_margin, roe, roa); 2 metrics unverified due to null source values (operating_margin, revenue); 2 metrics within tolerance (pe_ratio, market_cap)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260507_181528/facts/warren_buffett__JPM.json",
+    "runs/20260507_181528/facts/aswath_damodaran__JPM.json"
+  ],
+  "notes": [
+    "Facts bundle report_period field shows '2014-09-30' which is stale; only the mismatched individual metric fields were corrected per protocol (no signal/score values changed).",
+    "Net margin web sources vary: GuruFocus 28.44%, FinanceCharts ~20.35% (Q1 2026), CNBC ~31.5%. Used GuruFocus 28.44% as most widely cited TTM consensus.",
+    "ROE web sources: GuruFocus 14.42%, Eulerpool ~15%, valueinvesting.io ~15.74%. Used GuruFocus 14.42% as conservative consensus.",
+    "ROA web sources: GuruFocus 1.16% (Dec 2025), finbox/investing.com ~1.29% (Apr 2026). Used 1.16% as the more conservative/recent TTM figure.",
+    "Market cap and PE ratio are within normal daily fluctuation tolerance (<5%) — no correction needed."
+  ]
+}

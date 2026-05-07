@@ -1,0 +1,11 @@
+{
+  "JPM": {
+    "signal": "bullish",
+    "confidence": 52,
+    "reasoning": "Branch B (buy the dip in trend) fires; Branch A (fade the extreme) does not fire. BRANCH A CHECK: Daily Z-score is 1.38 (needs >2), RSI-14 56.46 / RSI-21 63.0 (needs >75), Bollinger %B 0.857 (inside upper band at 316.38), no daily RSI divergence — no statistical extreme, Branch A is inactive. BRANCH B ANALYSIS: Dominant daily uptrend is intact — EMAs are fully aligned bullish (ema_aligned_uptrend: true), ADX 37.64 with +DI 31.92 vs -DI 18.52 confirming strong directional bias. Hourly price (307.89) has pulled back from the recent hourly swing high (316.30) and is now testing the hourly 78.6% Fibonacci retracement at 308.61 and approaching the volume-confirmed hourly support at 307.29 (20 tests). Pullback volume is declining (hourly relative volume 0.54 vs avg), which is the healthy signature for a continuation dip rather than a trend reversal. PRIOR CALL STATUS: Yesterday's bullish call (entry 309.40, target 320.00, stop 303.50) is in-progress with MFE +2.22% and MAE 0.0% — the thesis has not been invalidated; price consolidated and pulled back intraday to the hourly Fib zone. Re-affirming with a tighter entry near current hourly levels. CONCERNS / CONFIDENCE MODERATORS: (1) Daily OBV is trending down and diverging from price — a persistent warning that institutional distribution may be occurring. (2) Daily MACD histogram is negative (-0.4921), signaling waning momentum on the daily timeframe. (3) Lessons log shows three consecutive mean-reversion fade losses (AMZN, GOOG, AMD) all stopped by ADX >37 strong-trend environments — this argues against fading, but also cautions that the trend is strong enough to absorb pullbacks, supporting the dip-buy. (4) ADX 37.64 on the daily is at the threshold where fades fail and dip-buys historically succeed in this dataset. (5) Wiki context notes BAC+JPM cluster exposure blocked prior entry; this is a signal-only output. Confidence held at 52 (moderate) given OBV divergence and MACD histogram negative on daily.",
+    "entry": 308.50,
+    "target": 316.30,
+    "stop": 305.80,
+    "timeframe": "5-10 trading days"
+  }
+}

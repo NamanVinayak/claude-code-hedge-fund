@@ -1,0 +1,28 @@
+{
+  "JPM": {
+    "consensus_signal": "neutral",
+    "confidence": 42,
+    "reasoning": "Vote tally: 2 bullish (swing_mean_reversion 52, swing_macro_context 62), 1 bearish (swing_catalyst_news 58), 2 neutral (swing_trend_momentum 38, swing_breakout 28). This is not a majority-rules call — the disagreement structure matters more than the raw count. The two neutrals are disciplined abstentions: swing_trend_momentum requires hourly EMA recapture before re-entry (price at $307.89 is below ALL hourly EMAs, hourly ADX 10.07, bearish RSI divergence active); swing_breakout requires a daily close above $315.50 on 1.5x+ volume that has not occurred (intraday tag of $316.26 but close was $314.90, volume only 1.09x). Both are saying 'not yet' rather than 'no.' The bullish case rests on strong macro (Dow 50K ATH, Iran ceasefire imminent, risk-on regime) and a Fibonacci dip-buy at the hourly 78.6% retracement / 20-test volume-confirmed support at $307.29. The R/R on a dip-buy (~$308.50 entry / $320.24 target / $304.26 stop) is 2.7:1, which clears the minimum bar. The bearish case rests on three near-term catalysts: Kevin Warsh Senate confirmation hearing May 15 (~6 trading days, hawkish Fed succession risk), CRO Ashley Bacon insider sale of $1.26M in May 2026 (the Chief Risk Officer selling is a non-trivial credit-quality signal), and Dimon's NII guidance trim from $104.5B to $103B. Daily MACD histogram is -0.49 and OBV is diverging downward from price — distribution occurring while price rose. The regime context tips toward BULLISH weighting (macro_context veto weight in risk-on environments is high per strategy rules), but the macro tailwind also specifically benefits a short-squeeze resolution at support, not a breakout to new highs. The critical gating condition — hourly price recapture of EMAs above $310 — is not yet met. Entering a long at current hourly weakness with bearish RSI divergence active, OBV distributing, and a near-term hawkish catalyst (Warsh May 15) before technical confirmation fires is premature. Memory dial-down: the lessons log shows 4 consecutive losses, including 3 mean-reversion fades stopped by ADX 60+ regimes. The current dip-buy is NOT a fade — ADX 37.64 favors trend continuation dip-buys — but the streak of losses warrants a confidence dial-down on any directional entry. No open JPM position in tracker (book: 3 long / 2 short across 5 names). Adding a long would tilt book further net-long; a short would move toward balance but against macro regime. Wait for resolution: watch $307.29 support hold (bullish trigger) + hourly EMA recapture above $310 (momentum re-acceleration confirmation) OR breach of $307.29 on volume (breakdown signal). Neither condition is met intraday on May 7.",
+    "agent_agreement_pct": 40.0,
+    "key_conflicts": "The primary conflict is swing_catalyst_news (bearish, 58) vs swing_macro_context (bullish, 62) — two agents reading the SAME macro environment with opposite conclusions. swing_catalyst_news weights the Warsh hawkish Fed succession hearing (May 15), CRO insider selling ($1.26M), and Dimon NII guidance trim as near-term negative catalysts for financials specifically; swing_macro_context weights the Dow 50K ATH, Iran peace deal, and elevated rates as NII margin tailwind and risk-on sector rotation into banks. Both are correct — the macro regime is risk-on AND JPM has specific near-term negative catalysts. This is a 'good macro, bad actor-specific flow' tension that does not resolve to a clean directional call. Secondary conflict: swing_mean_reversion (bullish, 52) sees the Fib 78.6% pullback at $307.89 as a textbook dip-buy entry in an ADX 37 uptrend, while swing_catalyst_news wants to short the same price level targeting $304.26. They agree on entry ($308.00-$308.50) but have opposite directions — this is a rare double-agent convergence on price with directional disagreement, which in practice means the $307-$308 zone is a high-conviction decision point for the next move, not a clear trade. swing_trend_momentum abstains because hourly momentum has not re-accelerated after the intraday selloff from $316.26 to $307.89 — it is explicitly waiting for hourly MACD histogram to turn positive and price to recapture $310+ EMAs before re-entering. That gating condition is the cleanest objective trigger: if it fires, the dip-buy thesis (mean_reversion + macro_context) is confirmed and trend_momentum joins; if $307.29 support breaks instead, the catalyst_news short thesis gets its breakdown signal. Lessons memory: 4 consecutive losses including 3 mean-reversion fades stopped in ADX 60+ regimes. Current setup is NOT a fade (trend direction = long), but the loss streak warrants confidence dial-down from what would otherwise be a 65-70 bullish read to a 42 neutral.",
+    "recommended_action": "hold",
+    "entry": null,
+    "target": null,
+    "stop": null,
+    "timeframe": "wait for confirmation — monitor $307.29 support + hourly EMA recapture above $310 as bull trigger; or $307.29 breakdown as bear trigger",
+    "key_levels": {
+      "support_watch": 307.29,
+      "ema_recapture_trigger": 310.0,
+      "breakout_trigger": 315.5,
+      "daily_support": 304.26,
+      "daily_resistance": 320.24
+    },
+    "agents": {
+      "swing_trend_momentum": {"signal": "neutral", "confidence": 38},
+      "swing_mean_reversion": {"signal": "bullish", "confidence": 52},
+      "swing_breakout": {"signal": "neutral", "confidence": 28},
+      "swing_catalyst_news": {"signal": "bearish", "confidence": 58},
+      "swing_macro_context": {"signal": "bullish", "confidence": 62}
+    }
+  }
+}

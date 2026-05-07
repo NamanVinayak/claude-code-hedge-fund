@@ -1,0 +1,17 @@
+{
+  "decisions": {
+    "JPM": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": null,
+      "entry_tolerance_pct": 1.0,
+      "target_price": null,
+      "stop_loss": null,
+      "risk_reward_ratio": null,
+      "timeframe": "wait for confirmation",
+      "confidence": 42,
+      "account_risk_pct": 0.0,
+      "reasoning": "Hard pass. Risk manager correlation-blocked: BAC+JPM cluster at $1,228 vs $437 cap (30% of $1,457). Even if allowed, Head Trader neutral (42 conf) — gating conditions not met: hourly price $307.89 below all hourly EMAs, no EMA recapture above $310, bearish RSI divergence active, OBV distributing. Two directional conflicts (macro_context bullish 62 vs catalyst_news bearish 58) with no resolution. Warsh confirmation hearing May 15 + CRO insider sale ($1.26M) = near-term specific headwinds. No trade. Monitor $307.29 support hold + hourly EMA recapture above $310 as bull trigger for future run."
+    }
+  }
+}

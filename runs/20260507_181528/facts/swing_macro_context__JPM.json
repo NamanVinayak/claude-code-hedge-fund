@@ -1,0 +1,344 @@
+{
+  "ticker": "JPM",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 311.6848300149992,
+      "sma_5": 311.5299987792969,
+      "ema_10": 311.0867505576465,
+      "sma_10": 310.9950012207031,
+      "ema_20": 308.8283099954496,
+      "sma_20": 311.20649871826174,
+      "ema_21": 308.58007953752787,
+      "sma_21": 311.05237978980654,
+      "ema_50": 304.6181779549544,
+      "sma_50": 299.2553643798828,
+      "ema_200": 297.0422502594227,
+      "sma_200": 302.61402008056643,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 314.8999938964844,
+    "dist_from_50sma_pct": 5.23,
+    "price_vs_ma": {
+      "above_ema_5": true,
+      "pct_from_ema_5": 1.03,
+      "above_sma_5": true,
+      "pct_from_sma_5": 1.08,
+      "above_ema_10": true,
+      "pct_from_ema_10": 1.23,
+      "above_sma_10": true,
+      "pct_from_sma_10": 1.26,
+      "above_ema_20": true,
+      "pct_from_ema_20": 1.97,
+      "above_sma_20": true,
+      "pct_from_sma_20": 1.19,
+      "above_ema_21": true,
+      "pct_from_ema_21": 2.05,
+      "above_sma_21": true,
+      "pct_from_sma_21": 1.24,
+      "above_ema_50": true,
+      "pct_from_ema_50": 3.38,
+      "above_sma_50": true,
+      "pct_from_sma_50": 5.23,
+      "above_ema_200": true,
+      "pct_from_ema_200": 6.01,
+      "above_sma_200": true,
+      "pct_from_sma_200": 4.06,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 31390.0
+    },
+    "rsi": {
+      "rsi_7": 58.52,
+      "rsi_14": 56.46,
+      "rsi_21": 63.0
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 3.3046,
+      "signal_line": 3.7967,
+      "histogram": -0.4921,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 316.38,
+      "middle": 311.21,
+      "lower": 306.04,
+      "width": 0.0332,
+      "pct_b": 0.8571
+    },
+    "atr": {
+      "atr_14": 5.42,
+      "atr_pct": 1.72
+    },
+    "adx": {
+      "adx_14": 37.64,
+      "plus_di": 31.92,
+      "minus_di": 18.52,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 8604700,
+      "avg_volume_20": 7890510,
+      "relative_volume": 1.09,
+      "volume_bias_10d": "down",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": true
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 320.24,
+          "tests": 3,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 280.32,
+          "tests": 5,
+          "volume_confirmed": false
+        },
+        {
+          "price": 304.26,
+          "tests": 12,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 320.24,
+      "nearest_support": 304.26,
+      "recent_high": 320.24,
+      "recent_low": 304.26,
+      "prev_day_high": 310.97,
+      "prev_day_low": 306.8,
+      "prev_day_close": 309.4
+    },
+    "fibonacci": {
+      "swing_high": 320.24,
+      "swing_low": 280.32,
+      "fib_236": 310.82,
+      "fib_382": 304.99,
+      "fib_500": 300.28,
+      "fib_618": 295.57,
+      "fib_786": 288.86,
+      "fib_ext_1272": 331.1,
+      "fib_ext_1618": 344.91,
+      "fib_ext_2000": 360.16,
+      "fib_ext_low_1272": 269.46,
+      "fib_ext_low_1618": 255.64
+    },
+    "momentum": {
+      "roc_5d": 1.83,
+      "roc_10d": 0.6,
+      "roc_21d": 5.88
+    },
+    "z_score_50": 1.38,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 311.17489160638695,
+      "sma_24": 310.73187764485675,
+      "ema_48": 311.2485540992591,
+      "sma_48": 311.2119770050049,
+      "ema_120": 310.1170839788588,
+      "sma_120": 311.36949259440104,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 307.8949890136719,
+    "dist_from_50sma_pct": -1.12,
+    "price_vs_ma": {
+      "above_ema_24": false,
+      "pct_from_ema_24": -1.05,
+      "above_sma_24": false,
+      "pct_from_sma_24": -0.91,
+      "above_ema_48": false,
+      "pct_from_ema_48": -1.08,
+      "above_sma_48": false,
+      "pct_from_sma_48": -1.07,
+      "above_ema_120": false,
+      "pct_from_ema_120": -0.72,
+      "above_sma_120": false,
+      "pct_from_sma_120": -1.12
+    },
+    "rsi": {
+      "rsi_21": 49.99
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": true,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": -0.0651,
+      "signal_line": 0.1097,
+      "histogram": -0.1748,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 316.66,
+      "middle": 311.21,
+      "lower": 305.76,
+      "width": 0.035,
+      "pct_b": 0.1958
+    },
+    "atr": {
+      "atr_24": 2.01,
+      "atr_pct": 0.65
+    },
+    "adx": {
+      "adx_24": 10.07,
+      "plus_di": 21.46,
+      "minus_di": 21.95,
+      "trend_strength": "weak"
+    },
+    "volume": {
+      "current_volume": 392112,
+      "avg_volume_20": 727412,
+      "relative_volume": 0.54,
+      "volume_bias_10d": "down",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 310.97,
+          "tests": 37,
+          "volume_confirmed": false
+        },
+        {
+          "price": 315.45,
+          "tests": 18,
+          "volume_confirmed": true
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 307.29,
+          "tests": 20,
+          "volume_confirmed": true
+        },
+        {
+          "price": 311.83,
+          "tests": 35,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 310.97,
+      "nearest_support": 307.29,
+      "recent_high": 316.3,
+      "recent_low": 306.8,
+      "prev_day_high": 310.12,
+      "prev_day_low": 307.7,
+      "prev_day_close": 307.88
+    },
+    "fibonacci": {
+      "swing_high": 316.3,
+      "swing_low": 306.51,
+      "fib_236": 313.99,
+      "fib_382": 312.56,
+      "fib_500": 311.4,
+      "fib_618": 310.25,
+      "fib_786": 308.61,
+      "fib_ext_1272": 318.96,
+      "fib_ext_1618": 322.35,
+      "fib_ext_2000": 326.09,
+      "fib_ext_low_1272": 303.85,
+      "fib_ext_low_1618": 300.46
+    },
+    "momentum": {
+      "roc_5d": -2.22,
+      "roc_10d": -2.38,
+      "roc_21d": -0.0
+    },
+    "z_score_120": -1.22,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 307.07000732421875,
+      "close": 313.2300109863281,
+      "high": 314.1000061035156,
+      "low": 306.57000732421875,
+      "volume": 8865400,
+      "time": "2026-04-30"
+    },
+    {
+      "open": 313.95001220703125,
+      "close": 312.4700012207031,
+      "high": 316.0799865722656,
+      "low": 311.8299865722656,
+      "volume": 6135400,
+      "time": "2026-05-01"
+    },
+    {
+      "open": 310.6199951171875,
+      "close": 307.6499938964844,
+      "high": 310.6499938964844,
+      "low": 306.510009765625,
+      "volume": 7338200,
+      "time": "2026-05-04"
+    },
+    {
+      "open": 307.7099914550781,
+      "close": 309.3999938964844,
+      "high": 310.9700012207031,
+      "low": 306.79998779296875,
+      "volume": 6316800,
+      "time": "2026-05-05"
+    },
+    {
+      "open": 311.45001220703125,
+      "close": 314.8999938964844,
+      "high": 316.260009765625,
+      "low": 311.3500061035156,
+      "volume": 8604700,
+      "time": "2026-05-06"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 307.8949890136719,
+  "market_cap": 825008128000.0,
+  "wiki_context": {
+    "slices": {
+      "regime_full": {
+        "path": "wiki/macro/regime.md",
+        "mode": "full",
+        "content": "# Macro Regime\n\n## TL;DR\n\n**Strongly risk-on and improving.** The Dow Jones crossed 50,000 for the first time ever on May 7, 2026. S&P 500 at 7,377 (+0.17%) and Nasdaq at 25,977 (+0.53%) \u2014 both at all-time highs intraday. US-Iran peace deal is materially advancing: Iran expected to deliver its 14-point response to the US peace proposal today (May 7), lifting risk sentiment strongly. Oil has pulled back to $94-97/bbl from $100+ peak. AMD Q1 2026 blowout (+38% YoY revenue, EPS +43%) confirms the AI capex supercycle. AI semiconductor stocks continue to lead the broad rally. Regime assessment: **strongly risk-on**, with the two remaining headwinds being Kevin Warsh Fed succession (May 15, hawkish tightening-bias tail) and final signing of the Iran MOU. [sources: web_research/GOOG.json macro_context, run 20260507_164625; web_research/NVDA.json macro_context, run 20260507_123732]\n\n## Fed posture\n\nThe Federal Reserve voted to hold the federal funds rate at **3.50%\u20133.75%** on April 29 (8-4 dissent \u2014 most lopsided since October 1992). Chair Powell's tenure ended; Kevin Warsh is the leading successor candidate (hawkish, Senate confirmation pending May 15). Market pricing: zero cuts through 2026 and only one 25bp cut projected for 2026 total. The Warsh succession introduces policy uncertainty independent of the rate level \u2014 growth stocks including NVDA, AMZN, GOOG, AAPL, and META are most exposed to tightening-bias repricing. Oil pulling back from $100+ to $94-97/bbl is a meaningful disinflationary signal; if Iran deal finalizes and oil settles below $90, the Fed hold timeline could shorten materially. [source: web_research/GOOG.json macro_context, 20260507_164625]\n\n## Rate trajectory and inflation\n\nInflation above 2% target but improving: oil falling from $100+ peak toward $94-97/bbl on Iran ceasefire progress is a direct energy disinflation driver. If Iran deal finalizes and oil settles below $90, June 2026 Fed meeting rate cut probability rises. US midterm election uncertainty adds further policy noise in H2 2026. [source: web_research/GOOG.json, 20260507_164625]\n\n## Market context (May 7, 2026)\n\n**Dow Jones crossed 50,000 for the first time ever on May 7.** S&P 500 at 7,377 (+0.17%) and Nasdaq at 25,977 (+0.53%) \u2014 all-time highs intraday. AMD Q1 2026 earnings (May 5 AMC): revenue $10.25B +38% YoY, EPS $1.37 +43%, Q2 guide $11.2B beats $10.5B consensus \u2014 direct AI capex supercycle confirmation. AI semiconductor stocks leading the broad rally (AMD +17.77%, Supermicro +24.5%, Nvidia +5.5% on May 6-7). US non-farm payrolls report due May 8 \u2014 macro watch item. [source: web_research/GOOG.json macro_context, 20260507_164625; web_research/NVDA.json, 20260507_123732]\n\n## Geopolitical and regulatory\n\n**Iran-US conflict: actively de-escalating, final stage.** Iran expected to deliver 14-point response to US peace proposal on May 7 \u2014 markets have priced meaningful advance, lifting risk sentiment strongly. Oil at $94-97/bbl, down from $100+ peak. Strait of Hormuz closure threat remains a live left-tail if talks collapse, but probability continues to fall. Additional flashpoints: US-Venezuela tensions, NATO Greenland posture, tariff uncertainty. Fed leadership transition May 15 is the most proximate near-term policy risk. [source: web_research/GOOG.json macro_context, 20260507_164625]\n\n## Risk-off triggers\n\n- **Iran ceasefire collapse** \u2014 talks fail, oil re-spikes above $100, energy inflation re-accelerates\n- **Kevin Warsh hawkish confirmation signal (May 15)** \u2014 tighter-for-longer re-rates growth stocks lower\n- **AI capex ROI disappointment** \u2014 any major infrastructure player signals wasted GPU spend\n- **US non-farm payrolls surprise (May 8)** \u2014 hot jobs data could re-price rate cut expectations\n- **US tariff escalation** \u2014 additional rounds pressure supply chains and consumer sentiment\n\n## Last updated\n\n2026-05-07. Updated by run `20260507_164625`. Key changes from prior run 20260507_123732: Dow Jones crossed 50,000 for first time (new milestone); S&P 500 updated to 7,377 intraday (from 7,365.12 May 6 close); Nasdaq updated to 25,977 intraday (from 25,838.94 May 6 close); oil updated to $94-97/bbl (vs $91.73 in prior run \u2014 slight discrepancy in sources; Iran 14-point response delivery expected May 7). Regime assessment: strongly risk-on, unchanged. Warsh May 15 remains single primary tail risk.\n",
+        "last_updated": "2026-05-07",
+        "stale": false
+      },
+      "sectors_full": {
+        "missing": true,
+        "mode": "full"
+      },
+      "thesis_tldr": {
+        "path": "wiki/tickers/JPM/thesis.md",
+        "mode": "tldr",
+        "content": "JPMorgan Chase is the dominant US bank by net income and total revenue. Q1 2026 delivered record profit: EPS $5.94 beat the $5.45 consensus estimate on revenue of $45.9B [web_research/JPM.json, run 20260506_181533]. The bull case is intact but blocked by three compounding factors: (1) Iran-driven oil spike re-accelerating inflation (extending the Fed hold), (2) Jamie Dimon's self-generated bond-crisis warning plus NII guidance trim from $104.5B to $103B, and (3) a portfolio cluster cap (BAC+JPM combined $1,240 > 30% of $1,457 portfolio). New bear signal: CRO Ashley Bacon sold $1.26M in JPM stock (May 2026) \u2014 a notable insider sale from the Chief Risk Officer [web_research/JPM.json, run 20260506_181533]. Two unlock triggers remain: (a) BAC cluster exposure clears, or (b) price closes above $315.50 on \u22651.5x daily volume [run: 20260506_181533].\n\n**Prior thesis claim corrected:** The May 5 thesis (run 20260505_181525) cited \"EPS $5.07 beat $4.62 estimate.\" This figure was inaccurate. Q1 2026 actual EPS was $5.94 vs $5.45 consensus, sourced from 10-Q filed May 1 [web_research/JPM.json, run 20260506_181533].",
+        "last_updated": "2026-05-06",
+        "stale": false
+      },
+      "lessons_full": {
+        "path": "wiki/meta/lessons.md",
+        "mode": "full",
+        "content": "## Format\n\nEach lesson is one dated bullet:\n\n`[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME: +$X / -$X] | [WHY it worked or failed in 1 sentence]`\n\nThe \"why\" should reference: the thesis at the time, the macro regime, which swing strategy recommended it.\n\n---\n\n## Patterns (auto-generated by Sunday compactor, last 30 days)\n\n| Setup Type | Trades | Wins | Win Rate | Avg P&L | Total P&L |\n|---|---|---|---|---|---|\n| EMA pullback Fib dip-buy | 1 | 0 | 0% | -$63.20 | -$63.20 |\n\n## Lessons\n\n2026-04-30 | NVDA | EMA pullback Fib dip-buy | -$63.20 (corrected from -$264.65) | Stop triggered at $205.30 (hourly Fib 61.8%); swing_trend_momentum and swing_breakout were bullish on AI capex thesis, but price breached the stop zone intraday amid stretched macro (RSI 81\u201387) with no bullish confirmation candle before exit. **Note:** trade was originally sized 67 shares ($14,020) due to a phantom $100K budget bug (fixed commit b2b472d). With the correct $25K budget at 14.2% vol-adj limit, position would have been 16 shares ($3,348). Corrected P&L reflects the strategy's actual signal quality, not the sizing error.\n2026-05-04 | AMZN | mean-reversion fade short | OUTCOME: -$10.14 | Mean-reversion short thesis (April 30 shooting star, RSI 82\u201388) stopped at $276 as extreme ADX 65 trend absorbed the reversal; swing_mean_reversion recommended the setup but the regime (ADX 60+) sets an elevated bar for fading overbought conditions confirmed by identical NVDA stop-out April 30.\n2026-05-05 | DIS | pre-earnings breakout long | OUTCOME: -$4.99 | Pre-earnings breakout above $103 (4/5 swing agents bullish, swing_breakout and swing_trend_momentum) invalidated by macro reversal (Iran escalation May 4, WTI +$105) that converted the April 30 risk-on tailwind into a risk-off headwind; sub-threshold entry volume (1.23x vs. 1.5x minimum) was an early warning sign.\n2026-05-06 | GOOG | mean-reversion fade short | OUTCOME: -$6.50 | Mean-reversion short (RSI-7 90.69, Z-score 2.56) stopped at $389.50 as ADX 74.23 extreme trend absorbed the fade; swing_mean_reversion recommended the setup but the regime repeated the NVDA/AMZN pattern \u2014 ADX 60+ environments make fading overbought conditions highly unreliable; strongly risk-on macro (S&P ATH, US-Iran MOU) added upside momentum.\n2026-05-06 | AMD | statistical exhaustion short | OUTCOME: -$17.82 | Mean-reversion short (Z-score 2.6, RSI 83, +74% 21d surge) gap-stopped at $372.31 when Q1 2026 earnings blowout (+38% YoY, EPS +43%) gapped AMD +15% overnight; swing_mean_reversion and swing_catalyst_news recommended the fade but earnings binary created a non-linear gap-through-stop outcome; half-sizing to 1 share limited damage to -$17.82 vs -$35.64.\n",
+        "last_updated": "2026-05-07",
+        "stale": false
+      }
+    }
+  },
+  "prediction_grading": null
+}

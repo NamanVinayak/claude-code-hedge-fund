@@ -1,0 +1,11 @@
+{
+  "JPM": {
+    "signal": "neutral",
+    "confidence": 28,
+    "reasoning": "Range boundaries: daily support $304.26 (12 tests) to daily resistance $320.24 (3 tests), range height $15.98. Hourly consolidation range $307.29 (20-test vol-confirmed support) to $315.45 (18-test vol-confirmed resistance), range height $8.16. The wiki's critical breakout trigger ($315.50 daily close on 1.5x+ volume) did NOT fire: the 2026-05-06 daily high reached $316.26 intraday but the CLOSE was $314.90, below the trigger — a failed intraday push. Volume today: 1.09x 20-day average, well below the required 1.5x threshold (volume condition: FAIL). As of hourly snapshot, price has pulled back sharply to $307.89, now below all hourly MAs and pressing the 20-test volume-confirmed hourly support at $307.29. Hourly volume 0.54x avg (very low), hourly ADX 10.07 (weak/choppy), hourly %B at 0.196 (near lower band) with bearish RSI divergence. Daily Bollinger Band width 0.0332 (squeeze-ish, not yet expanded) — the coil is building but has not fired. OBV trending down on both timeframes (diverging from price) is a distribution signal that undermines a clean breakout thesis. MACD histogram -0.4921 daily (momentum decelerating). Squeeze status: squeeze ON (coiling) but not fired. No breakout signal: the intraday tag of $316.26 without a daily close above $315.50 on volume is suspect per strategy rules. Lesson check: DIS pre-earnings breakout (sub-threshold volume 1.23x) was a loser — reinforces the 1.5x volume discipline. Standing aside; monitoring for either (a) a daily close above $315.50 on 1.5x+ volume for a bullish breakout trigger, or (b) a close below $307.29 support on volume for a bearish breakdown signal. Entry, target, and stop set for the pending bullish breakout scenario for reference.",
+    "entry": 315.5,
+    "target": 323.48,
+    "stop": 313.5,
+    "timeframe": "5-12 trading days"
+  }
+}

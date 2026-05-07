@@ -1,0 +1,356 @@
+{
+  "ticker": "JPM",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 311.6848300149992,
+      "sma_5": 311.5299987792969,
+      "ema_10": 311.0867505576465,
+      "sma_10": 310.9950012207031,
+      "ema_20": 308.8283099954496,
+      "sma_20": 311.20649871826174,
+      "ema_21": 308.58007953752787,
+      "sma_21": 311.05237978980654,
+      "ema_50": 304.6181779549544,
+      "sma_50": 299.2553643798828,
+      "ema_200": 297.0422502594227,
+      "sma_200": 302.61402008056643,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 314.8999938964844,
+    "dist_from_50sma_pct": 5.23,
+    "price_vs_ma": {
+      "above_ema_5": true,
+      "pct_from_ema_5": 1.03,
+      "above_sma_5": true,
+      "pct_from_sma_5": 1.08,
+      "above_ema_10": true,
+      "pct_from_ema_10": 1.23,
+      "above_sma_10": true,
+      "pct_from_sma_10": 1.26,
+      "above_ema_20": true,
+      "pct_from_ema_20": 1.97,
+      "above_sma_20": true,
+      "pct_from_sma_20": 1.19,
+      "above_ema_21": true,
+      "pct_from_ema_21": 2.05,
+      "above_sma_21": true,
+      "pct_from_sma_21": 1.24,
+      "above_ema_50": true,
+      "pct_from_ema_50": 3.38,
+      "above_sma_50": true,
+      "pct_from_sma_50": 5.23,
+      "above_ema_200": true,
+      "pct_from_ema_200": 6.01,
+      "above_sma_200": true,
+      "pct_from_sma_200": 4.06,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 31390.0
+    },
+    "rsi": {
+      "rsi_7": 58.52,
+      "rsi_14": 56.46,
+      "rsi_21": 63.0
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 3.3046,
+      "signal_line": 3.7967,
+      "histogram": -0.4921,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 316.38,
+      "middle": 311.21,
+      "lower": 306.04,
+      "width": 0.0332,
+      "pct_b": 0.8571
+    },
+    "atr": {
+      "atr_14": 5.42,
+      "atr_pct": 1.72
+    },
+    "adx": {
+      "adx_14": 37.64,
+      "plus_di": 31.92,
+      "minus_di": 18.52,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 8604700,
+      "avg_volume_20": 7890510,
+      "relative_volume": 1.09,
+      "volume_bias_10d": "down",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": true
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 320.24,
+          "tests": 3,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 280.32,
+          "tests": 5,
+          "volume_confirmed": false
+        },
+        {
+          "price": 304.26,
+          "tests": 12,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 320.24,
+      "nearest_support": 304.26,
+      "recent_high": 320.24,
+      "recent_low": 304.26,
+      "prev_day_high": 310.97,
+      "prev_day_low": 306.8,
+      "prev_day_close": 309.4
+    },
+    "fibonacci": {
+      "swing_high": 320.24,
+      "swing_low": 280.32,
+      "fib_236": 310.82,
+      "fib_382": 304.99,
+      "fib_500": 300.28,
+      "fib_618": 295.57,
+      "fib_786": 288.86,
+      "fib_ext_1272": 331.1,
+      "fib_ext_1618": 344.91,
+      "fib_ext_2000": 360.16,
+      "fib_ext_low_1272": 269.46,
+      "fib_ext_low_1618": 255.64
+    },
+    "momentum": {
+      "roc_5d": 1.83,
+      "roc_10d": 0.6,
+      "roc_21d": 5.88
+    },
+    "z_score_50": 1.38,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 311.17489160638695,
+      "sma_24": 310.73187764485675,
+      "ema_48": 311.2485540992591,
+      "sma_48": 311.2119770050049,
+      "ema_120": 310.1170839788588,
+      "sma_120": 311.36949259440104,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 307.8949890136719,
+    "dist_from_50sma_pct": -1.12,
+    "price_vs_ma": {
+      "above_ema_24": false,
+      "pct_from_ema_24": -1.05,
+      "above_sma_24": false,
+      "pct_from_sma_24": -0.91,
+      "above_ema_48": false,
+      "pct_from_ema_48": -1.08,
+      "above_sma_48": false,
+      "pct_from_sma_48": -1.07,
+      "above_ema_120": false,
+      "pct_from_ema_120": -0.72,
+      "above_sma_120": false,
+      "pct_from_sma_120": -1.12
+    },
+    "rsi": {
+      "rsi_21": 49.99
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": true,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": -0.0651,
+      "signal_line": 0.1097,
+      "histogram": -0.1748,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 316.66,
+      "middle": 311.21,
+      "lower": 305.76,
+      "width": 0.035,
+      "pct_b": 0.1958
+    },
+    "atr": {
+      "atr_24": 2.01,
+      "atr_pct": 0.65
+    },
+    "adx": {
+      "adx_24": 10.07,
+      "plus_di": 21.46,
+      "minus_di": 21.95,
+      "trend_strength": "weak"
+    },
+    "volume": {
+      "current_volume": 392112,
+      "avg_volume_20": 727412,
+      "relative_volume": 0.54,
+      "volume_bias_10d": "down",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 310.97,
+          "tests": 37,
+          "volume_confirmed": false
+        },
+        {
+          "price": 315.45,
+          "tests": 18,
+          "volume_confirmed": true
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 307.29,
+          "tests": 20,
+          "volume_confirmed": true
+        },
+        {
+          "price": 311.83,
+          "tests": 35,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 310.97,
+      "nearest_support": 307.29,
+      "recent_high": 316.3,
+      "recent_low": 306.8,
+      "prev_day_high": 310.12,
+      "prev_day_low": 307.7,
+      "prev_day_close": 307.88
+    },
+    "fibonacci": {
+      "swing_high": 316.3,
+      "swing_low": 306.51,
+      "fib_236": 313.99,
+      "fib_382": 312.56,
+      "fib_500": 311.4,
+      "fib_618": 310.25,
+      "fib_786": 308.61,
+      "fib_ext_1272": 318.96,
+      "fib_ext_1618": 322.35,
+      "fib_ext_2000": 326.09,
+      "fib_ext_low_1272": 303.85,
+      "fib_ext_low_1618": 300.46
+    },
+    "momentum": {
+      "roc_5d": -2.22,
+      "roc_10d": -2.38,
+      "roc_21d": -0.0
+    },
+    "z_score_120": -1.22,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 307.07000732421875,
+      "close": 313.2300109863281,
+      "high": 314.1000061035156,
+      "low": 306.57000732421875,
+      "volume": 8865400,
+      "time": "2026-04-30"
+    },
+    {
+      "open": 313.95001220703125,
+      "close": 312.4700012207031,
+      "high": 316.0799865722656,
+      "low": 311.8299865722656,
+      "volume": 6135400,
+      "time": "2026-05-01"
+    },
+    {
+      "open": 310.6199951171875,
+      "close": 307.6499938964844,
+      "high": 310.6499938964844,
+      "low": 306.510009765625,
+      "volume": 7338200,
+      "time": "2026-05-04"
+    },
+    {
+      "open": 307.7099914550781,
+      "close": 309.3999938964844,
+      "high": 310.9700012207031,
+      "low": 306.79998779296875,
+      "volume": 6316800,
+      "time": "2026-05-05"
+    },
+    {
+      "open": 311.45001220703125,
+      "close": 314.8999938964844,
+      "high": 316.260009765625,
+      "low": 311.3500061035156,
+      "volume": 8604700,
+      "time": "2026-05-06"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 307.8949890136719,
+  "market_cap": 825008128000.0,
+  "wiki_context": {
+    "slices": {
+      "catalysts_full": {
+        "path": "wiki/tickers/JPM/catalysts.md",
+        "mode": "full",
+        "content": "# JPM \u2014 Catalysts\n\n## TL;DR\n\nThe macro backdrop improved materially on May 6 \u2014 US-Iran peace deal MOU negotiations reportedly within ~48 hours of completion, oil easing toward $102/bbl, and S&P 500 at a confirmed close of 7,338.89 [web_research/JPM.json, run 20260506_181533]. However, new insider selling emerged: JPMorgan CRO Ashley Bacon sold $1.26M in company stock \u2014 the first insider sale in the current bundle, adding a mild bearish signal [web_research/JPM.json, run 20260506_181533]. No positive catalyst exists within the 10-trading-day swing window. Annual shareholder meeting May 19 (~9 trading days) is the nearest event with potential forward-guidance impact. Next binary: **Q2 2026 earnings July 14, 2026** [web_research/JPM.json, run 20260506_181533].\n\n## Upcoming events\n\n- **Annual shareholder meeting: May 19, 2026.** (~9 trading days) Inside the extended window. Dimon to present; given his bond-crisis warning and NII trim, commentary on credit quality and NII guidance carries a bearish lean [web_research/JPM.json, run 20260506_181533].\n- **Kevin Warsh Senate confirmation: May 15 (9 days).** Powell exits as Chair May 15. Warsh (hawkish) succession introduces tighter-for-longer policy risk; markets pricing zero cuts in 2026 [web_research/JPM.json, run 20260506_181533].\n- **Q2 2026 earnings: July 14, 2026.** Consensus Q2 EPS $5.39; key read on tariff and geopolitical impact on net interest income and credit quality. 50+ trading days out [web_research/JPM.json, run 20260506_181533].\n- **Iran-US ceasefire MOU: ~48 hours.** Resolution would push oil below $100, ease inflation, and shorten Fed hold timeline \u2014 a financials positive. Failure to complete would re-spike oil and re-tighten NIM outlook [web_research/JPM.json, run 20260506_181533].\n\n## Recent news synthesis\n\n- **US-Iran peace deal progress (May 6 dominant):** White House reportedly close to a one-page MOU; oil easing from $104+ toward $102/bbl as markets price in resolution. S&P 500 close at all-time high 7,338.89 (+1.10%), Nasdaq 25,670 (+1.36%) [web_research/JPM.json, run 20260506_181533].\n- **CRO Ashley Bacon insider sale ($1.26M, May 2026):** New bearish insider signal \u2014 Chief Risk Officer selling at current levels is notable given the bond-crisis narrative from Dimon. Contrasts with board director purchases in March 2026 [web_research/JPM.json, run 20260506_181533].\n- **JPMorgan strategist Matejka (May 5):** Post-Iran-war rally is narrow \u2014 primed for broader gains on even slightly positive news. Bullish read-through if ceasefire completes [web_research/JPM.json, run 20260506_181533].\n- **Q1 2026 record earnings \u2014 fully priced (Apr 13):** EPS $5.94 beat $5.45 consensus; 10-Q filed May 1; revenue $45.9B beat $43.8B estimate; net income +13% YoY [web_research/JPM.json, run 20260506_181533].\n- **Dimon bond-crisis warning (dominant May 2026 headline):** CEO warning of \"increasingly complex set of risks\" \u2014 geopolitical tensions, energy volatility, credit headwinds. NII guidance trimmed from $104.5B to $103B full-year 2026 [web_research/JPM.json, run 20260506_181533].\n- **Campbell Global (JPM subsidiary) acquires 30,000-acre timberland:** Minor ESG/diversification positive, not swing-window relevant [web_research/JPM.json, run 20260506_181533].\n- **Harassment lawsuit refiled (minor):** Suit against exec Lorna Hajdini refiled in NY Supreme Court \u2014 minor reputational risk, not a swing catalyst [web_research/JPM.json, run 20260506_181533].\n\n## Insider activity\n\nCRO Ashley Bacon sold $1.26M in JPM stock (May 2026) \u2014 first insider sale in current bundle; bearish signal at the margin [web_research/JPM.json, run 20260506_181533]. Board directors bought in March 2026; no buys in current bundle.\n\n## Analyst consensus\n\n| Metric | Value | Source |\n|---|---|---|\n| Consensus rating | Buy | 14 Buy, 12 Hold, 0 Sell (33 analysts) [web_research/JPM.json, run 20260506_181533] |\n| Average target | $339.46 | Range $257.89\u2013$420; median $345 [web_research/JPM.json, run 20260506_181533] |\n| Evercore ISI | $340, Outperform | Maintained Apr 17 [web_research/JPM.json, run 20260506_181533] |\n| Wolfe Research | Peerperform (Jan 2026) | Downgraded on slower EPS growth vs. peers [web_research/JPM.json, run 20260506_181533] |\n\n## Last updated\n\n2026-05-06. Catalyst data from web_research/JPM.json (run 20260506_181533). Supersedes May 5 entry (run 20260505_181525) \u2014 new CRO insider sale ($1.26M) added; analyst avg PT updated to $339.46 (was $337); macro upgraded to strongly risk-on (S&P ATH confirmed 7,338.89); US-Iran ceasefire MOU ~48h materially improves macro backdrop vs. prior active-escalation framing.\n",
+        "last_updated": "2026-05-06",
+        "stale": false
+      },
+      "calendar_full": {
+        "missing": true,
+        "mode": "full"
+      },
+      "lessons_full": {
+        "path": "wiki/meta/lessons.md",
+        "mode": "full",
+        "content": "## Format\n\nEach lesson is one dated bullet:\n\n`[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME: +$X / -$X] | [WHY it worked or failed in 1 sentence]`\n\nThe \"why\" should reference: the thesis at the time, the macro regime, which swing strategy recommended it.\n\n---\n\n## Patterns (auto-generated by Sunday compactor, last 30 days)\n\n| Setup Type | Trades | Wins | Win Rate | Avg P&L | Total P&L |\n|---|---|---|---|---|---|\n| EMA pullback Fib dip-buy | 1 | 0 | 0% | -$63.20 | -$63.20 |\n\n## Lessons\n\n2026-04-30 | NVDA | EMA pullback Fib dip-buy | -$63.20 (corrected from -$264.65) | Stop triggered at $205.30 (hourly Fib 61.8%); swing_trend_momentum and swing_breakout were bullish on AI capex thesis, but price breached the stop zone intraday amid stretched macro (RSI 81\u201387) with no bullish confirmation candle before exit. **Note:** trade was originally sized 67 shares ($14,020) due to a phantom $100K budget bug (fixed commit b2b472d). With the correct $25K budget at 14.2% vol-adj limit, position would have been 16 shares ($3,348). Corrected P&L reflects the strategy's actual signal quality, not the sizing error.\n2026-05-04 | AMZN | mean-reversion fade short | OUTCOME: -$10.14 | Mean-reversion short thesis (April 30 shooting star, RSI 82\u201388) stopped at $276 as extreme ADX 65 trend absorbed the reversal; swing_mean_reversion recommended the setup but the regime (ADX 60+) sets an elevated bar for fading overbought conditions confirmed by identical NVDA stop-out April 30.\n2026-05-05 | DIS | pre-earnings breakout long | OUTCOME: -$4.99 | Pre-earnings breakout above $103 (4/5 swing agents bullish, swing_breakout and swing_trend_momentum) invalidated by macro reversal (Iran escalation May 4, WTI +$105) that converted the April 30 risk-on tailwind into a risk-off headwind; sub-threshold entry volume (1.23x vs. 1.5x minimum) was an early warning sign.\n2026-05-06 | GOOG | mean-reversion fade short | OUTCOME: -$6.50 | Mean-reversion short (RSI-7 90.69, Z-score 2.56) stopped at $389.50 as ADX 74.23 extreme trend absorbed the fade; swing_mean_reversion recommended the setup but the regime repeated the NVDA/AMZN pattern \u2014 ADX 60+ environments make fading overbought conditions highly unreliable; strongly risk-on macro (S&P ATH, US-Iran MOU) added upside momentum.\n2026-05-06 | AMD | statistical exhaustion short | OUTCOME: -$17.82 | Mean-reversion short (Z-score 2.6, RSI 83, +74% 21d surge) gap-stopped at $372.31 when Q1 2026 earnings blowout (+38% YoY, EPS +43%) gapped AMD +15% overnight; swing_mean_reversion and swing_catalyst_news recommended the fade but earnings binary created a non-linear gap-through-stop outcome; half-sizing to 1 share limited damage to -$17.82 vs -$35.64.\n",
+        "last_updated": "2026-05-07",
+        "stale": false
+      }
+    }
+  },
+  "prediction_grading": {
+    "prior_run_id": "20260506_181533",
+    "prior_run_date": "2026-05-06",
+    "days_elapsed": 1,
+    "min_days_elapsed": false,
+    "prior_signal": "bearish",
+    "prior_confidence": 62,
+    "prior_entry": 315.0,
+    "prior_target": 304.26,
+    "prior_stop": 317.5,
+    "prior_timeframe": "6-9 trading days",
+    "first_hit": "neither",
+    "first_hit_date": null,
+    "direction_correct": true,
+    "mfe_pct": 1.16,
+    "mae_pct": -0.4,
+    "current_price": 314.9,
+    "verdict": "in_progress",
+    "tie_breaker_applied": false
+  }
+}
