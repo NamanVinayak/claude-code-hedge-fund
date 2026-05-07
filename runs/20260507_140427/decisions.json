@@ -1,0 +1,17 @@
+{
+  "decisions": {
+    "META": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 622.6,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 575.0,
+      "stop_loss": 635.0,
+      "risk_reward_ratio": "3.6:1",
+      "timeframe": "5-10 trading days",
+      "confidence": 32,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader neutral (32 conf, below 40 threshold). Short open at $611.78, stop $635, target $575 — stop not breached. Price bouncing into resistance in risk-on macro but daily downtrend intact (ADX 52.15, -DI>>+DI). Allowed actions: hold or cover only. Bounce underway but 2 bullish agents vs 3 neutral — insufficient conviction to cover before stop. Let stop manage. No new positions (remaining_position_limit=0)."
+    }
+  }
+}

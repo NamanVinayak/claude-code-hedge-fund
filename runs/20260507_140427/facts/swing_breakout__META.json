@@ -1,0 +1,338 @@
+{
+  "ticker": "META",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 617.9538174926715,
+      "sma_5": 609.7819946289062,
+      "ema_10": 630.3388337254717,
+      "sma_10": 640.2170043945313,
+      "ema_20": 634.9507441672137,
+      "sma_20": 650.4455017089844,
+      "ema_21": 634.89944473143,
+      "sma_21": 648.6347627185639,
+      "ema_50": 634.5621552083684,
+      "sma_50": 628.0908483886719,
+      "ema_200": 651.3804135984848,
+      "sma_200": 675.9442517089843,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 612.8800048828125,
+    "dist_from_50sma_pct": -2.42,
+    "price_vs_ma": {
+      "above_ema_5": false,
+      "pct_from_ema_5": -0.82,
+      "above_sma_5": true,
+      "pct_from_sma_5": 0.51,
+      "above_ema_10": false,
+      "pct_from_ema_10": -2.77,
+      "above_sma_10": false,
+      "pct_from_sma_10": -4.27,
+      "above_ema_20": false,
+      "pct_from_ema_20": -3.48,
+      "above_sma_20": false,
+      "pct_from_sma_20": -5.78,
+      "above_ema_21": false,
+      "pct_from_ema_21": -3.47,
+      "above_sma_21": false,
+      "pct_from_sma_21": -5.51,
+      "above_ema_50": false,
+      "pct_from_ema_50": -3.42,
+      "above_sma_50": false,
+      "pct_from_sma_50": -2.42,
+      "above_ema_200": false,
+      "pct_from_ema_200": -5.91,
+      "above_sma_200": false,
+      "pct_from_sma_200": -9.33
+    },
+    "rsi": {
+      "rsi_7": 11.28,
+      "rsi_14": 29.65,
+      "rsi_21": 57.3
+    },
+    "rsi_divergence": {
+      "bullish": true,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": -1.7555,
+      "signal_line": 6.3121,
+      "histogram": -8.0677,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 708.15,
+      "middle": 650.45,
+      "lower": 592.74,
+      "width": 0.1774,
+      "pct_b": 0.1745
+    },
+    "atr": {
+      "atr_14": 19.14,
+      "atr_pct": 3.12
+    },
+    "adx": {
+      "adx_14": 52.15,
+      "plus_di": 12.94,
+      "minus_di": 37.73,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 19887400,
+      "avg_volume_20": 16283080,
+      "relative_volume": 1.22,
+      "volume_bias_10d": "down",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 672.19,
+          "tests": 16,
+          "volume_confirmed": false
+        },
+        {
+          "price": 691.52,
+          "tests": 1,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 520.26,
+          "tests": 1,
+          "volume_confirmed": true
+        },
+        {
+          "price": 627.61,
+          "tests": 11,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 672.19,
+      "nearest_support": 520.26,
+      "recent_high": 691.52,
+      "recent_low": 598.1,
+      "prev_day_high": 614.35,
+      "prev_day_low": 600.36,
+      "prev_day_close": 604.96
+    },
+    "fibonacci": {
+      "swing_high": 691.52,
+      "swing_low": 520.26,
+      "fib_236": 651.1,
+      "fib_382": 626.1,
+      "fib_500": 605.89,
+      "fib_618": 585.68,
+      "fib_786": 556.91,
+      "fib_ext_1272": 738.1,
+      "fib_ext_1618": 797.36,
+      "fib_ext_2000": 862.78,
+      "fib_ext_low_1272": 473.68,
+      "fib_ext_low_1618": 414.42
+    },
+    "momentum": {
+      "roc_5d": -8.41,
+      "roc_10d": -9.17,
+      "roc_21d": 6.58
+    },
+    "z_score_50": -0.38,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 614.2098820613177,
+      "sma_24": 609.7310180664062,
+      "ema_48": 623.895630611416,
+      "sma_48": 625.3977864583334,
+      "ema_120": 633.2980001323293,
+      "sma_120": 653.6471196492513,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": true
+    },
+    "current_price": 622.5999755859375,
+    "dist_from_50sma_pct": -4.75,
+    "price_vs_ma": {
+      "above_ema_24": true,
+      "pct_from_ema_24": 1.37,
+      "above_sma_24": true,
+      "pct_from_sma_24": 2.11,
+      "above_ema_48": false,
+      "pct_from_ema_48": -0.21,
+      "above_sma_48": false,
+      "pct_from_sma_48": -0.45,
+      "above_ema_120": false,
+      "pct_from_ema_120": -1.69,
+      "above_sma_120": false,
+      "pct_from_sma_120": -4.75,
+      "above_ema_aligned_downtrend": true,
+      "pct_from_ema_aligned_downtrend": 62160.0
+    },
+    "rsi": {
+      "rsi_21": 67.92
+    },
+    "rsi_divergence": {
+      "bullish": true,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": -11.1272,
+      "signal_line": -13.3796,
+      "histogram": 2.2524,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 679.11,
+      "middle": 625.4,
+      "lower": 571.68,
+      "width": 0.1718,
+      "pct_b": 0.474
+    },
+    "atr": {
+      "atr_24": 5.36,
+      "atr_pct": 0.86
+    },
+    "adx": {
+      "adx_24": 37.97,
+      "plus_di": 28.78,
+      "minus_di": 16.71,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 2671129,
+      "avg_volume_20": 2051509,
+      "relative_volume": 1.3,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 614.34,
+          "tests": 27,
+          "volume_confirmed": true
+        },
+        {
+          "price": 674.25,
+          "tests": 21,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 602.75,
+          "tests": 13,
+          "volume_confirmed": true
+        },
+        {
+          "price": 665.62,
+          "tests": 9,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 674.25,
+      "nearest_support": 602.75,
+      "recent_high": 624.95,
+      "recent_low": 598.11,
+      "prev_day_high": 613.72,
+      "prev_day_low": 612.01,
+      "prev_day_close": 612.54
+    },
+    "fibonacci": {
+      "swing_high": 624.95,
+      "swing_low": 598.11,
+      "fib_236": 618.62,
+      "fib_382": 614.7,
+      "fib_500": 611.53,
+      "fib_618": 608.36,
+      "fib_786": 603.85,
+      "fib_ext_1272": 632.25,
+      "fib_ext_1618": 641.54,
+      "fib_ext_2000": 651.79,
+      "fib_ext_low_1272": 590.81,
+      "fib_ext_low_1618": 581.52
+    },
+    "momentum": {
+      "roc_5d": 1.64,
+      "roc_10d": 3.28,
+      "roc_21d": 2.81
+    },
+    "z_score_120": -1.06,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 619.3200073242188,
+      "close": 611.9099731445312,
+      "high": 620.8499755859375,
+      "low": 600.0,
+      "volume": 52765000,
+      "time": "2026-04-30"
+    },
+    {
+      "open": 614.6900024414062,
+      "close": 608.75,
+      "high": 618.8800048828125,
+      "low": 606.1099853515625,
+      "volume": 21404000,
+      "time": "2026-05-01"
+    },
+    {
+      "open": 607.9400024414062,
+      "close": 610.4099731445312,
+      "high": 614.0,
+      "low": 602.75,
+      "volume": 16203900,
+      "time": "2026-05-04"
+    },
+    {
+      "open": 613.3099975585938,
+      "close": 604.9600219726562,
+      "high": 614.3499755859375,
+      "low": 600.3599853515625,
+      "volume": 17171300,
+      "time": "2026-05-05"
+    },
+    {
+      "open": 601.0499877929688,
+      "close": 612.8800048828125,
+      "high": 619.9500122070312,
+      "low": 598.0999755859375,
+      "volume": 19887400,
+      "time": "2026-05-06"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 622.5999755859375,
+  "market_cap": 1580422266880.0,
+  "wiki_context": {
+    "slices": {
+      "technicals_full": {
+        "path": "wiki/tickers/META/technicals.md",
+        "mode": "full",
+        "content": "# META \u2014 Technicals\n\n## TL;DR\n\nDay 7 post-earnings breakdown (May 6, 2026). Cover decision issued for trade id 118 (run 20260506_140335). RSI-7 has collapsed to **6.52** \u2014 extreme oversold reading with bullish RSI divergence confirmed on BOTH daily and hourly timeframes. ADX 52.76 (daily) confirms the underlying downtrend remains extremely strong, but momentum is exhausting at this reading. Hourly OBV is diverging bullishly from falling price \u2014 early accumulation signal. Bounce risk is elevated. Prior setup type \"post-earnings breakdown active short\" transitions to \"cover and re-enter on failed bounce.\" (source: signals_combined.json, decisions.json, run 20260506_140335)\n\n## Setup type\n\n**Post-earnings breakdown \u2014 extreme oversold, cover and re-entry watch.** Prior setup (dead-cat bounce short, entered $611.78) has been managed to the PM's cover decision. Price at $604.96 reflects ~$6.82/share gain from fill. RSI-7 at 6.52 is the defining feature of this session \u2014 a reading at this extreme historically precedes violent snap-back rallies even in ADX 50+ downtrends. Re-entry watch zone: $612\u2013614 resistance (hourly, 19 volume-confirmed tests) on failed bounce with bearish rejection candle.\n\n## Key levels (as of May 6, 2026)\n\n| Level | Price | Significance |\n|---|---|---|\n| Current price | ~$604.96 | Inside $602.75\u2013$614.34 hourly consolidation band |\n| Short entry (filled) | $611.78 | Fill price, trade id 118 (run 20260504_143030) |\n| Hourly resistance cluster | $614.34 | 19 volume-confirmed tests \u2014 re-entry short trigger zone |\n| Hourly support | $602.75 | 13 volume-confirmed tests \u2014 key floor |\n| Fibonacci 50% retracement | $605.89 | Swing high $691.52 \u2192 low $520.26 \u2014 natural bounce node |\n| Fibonacci 61.8% retracement | $585.68 | Next support if $602.75 breaks |\n| Short stop (if re-entered) | $621.00 | Above earnings-day resistance |\n| Prior short target | $580.00 | Adjusted from original $575; still valid if re-entered |\n\n## Indicator state (as of May 6, 2026)\n\n| Indicator | Value | Signal |\n|---|---|---|\n| RSI-7 (daily) | 6.52 | EXTREME oversold; bullish RSI divergence confirmed |\n| RSI-14 (daily) | 28.45 | Deeply oversold; approaching OB threshold |\n| ADX (daily) | 52.76 | Very strong confirmed downtrend |\n| -DI / +DI (daily) | 39.5 / 11.36 | Strong bearish directional dominance |\n| MACD histogram (daily) | -8.207 | Deeply negative; magnitude large but momentum decelerating |\n| Hourly OBV | Diverging up | Rising OBV vs. falling price \u2014 early accumulation signal |\n| BB width (daily) | 0.1776 | Wide \u2014 volatility already expanded; squeeze not firing |\n| Bollinger %B (daily) | 0.107 | Near lower band \u2014 bounce risk zone |\n",
+        "last_updated": "2026-05-06",
+        "stale": false
+      },
+      "lessons_full": {
+        "path": "wiki/meta/lessons.md",
+        "mode": "full",
+        "content": "## Format\n\nEach lesson is one dated bullet:\n\n`[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME: +$X / -$X] | [WHY it worked or failed in 1 sentence]`\n\nThe \"why\" should reference: the thesis at the time, the macro regime, which swing strategy recommended it.\n\n---\n\n## Patterns (auto-generated by Sunday compactor, last 30 days)\n\n| Setup Type | Trades | Wins | Win Rate | Avg P&L | Total P&L |\n|---|---|---|---|---|---|\n| EMA pullback Fib dip-buy | 1 | 0 | 0% | -$63.20 | -$63.20 |\n\n## Lessons\n\n2026-04-30 | NVDA | EMA pullback Fib dip-buy | -$63.20 (corrected from -$264.65) | Stop triggered at $205.30 (hourly Fib 61.8%); swing_trend_momentum and swing_breakout were bullish on AI capex thesis, but price breached the stop zone intraday amid stretched macro (RSI 81\u201387) with no bullish confirmation candle before exit. **Note:** trade was originally sized 67 shares ($14,020) due to a phantom $100K budget bug (fixed commit b2b472d). With the correct $25K budget at 14.2% vol-adj limit, position would have been 16 shares ($3,348). Corrected P&L reflects the strategy's actual signal quality, not the sizing error.\n2026-05-04 | AMZN | mean-reversion fade short | OUTCOME: -$10.14 | Mean-reversion short thesis (April 30 shooting star, RSI 82\u201388) stopped at $276 as extreme ADX 65 trend absorbed the reversal; swing_mean_reversion recommended the setup but the regime (ADX 60+) sets an elevated bar for fading overbought conditions confirmed by identical NVDA stop-out April 30.\n2026-05-05 | DIS | pre-earnings breakout long | OUTCOME: -$4.99 | Pre-earnings breakout above $103 (4/5 swing agents bullish, swing_breakout and swing_trend_momentum) invalidated by macro reversal (Iran escalation May 4, WTI +$105) that converted the April 30 risk-on tailwind into a risk-off headwind; sub-threshold entry volume (1.23x vs. 1.5x minimum) was an early warning sign.\n2026-05-06 | GOOG | mean-reversion fade short | OUTCOME: -$6.50 | Mean-reversion short (RSI-7 90.69, Z-score 2.56) stopped at $389.50 as ADX 74.23 extreme trend absorbed the fade; swing_mean_reversion recommended the setup but the regime repeated the NVDA/AMZN pattern \u2014 ADX 60+ environments make fading overbought conditions highly unreliable; strongly risk-on macro (S&P ATH, US-Iran MOU) added upside momentum.\n2026-05-06 | AMD | statistical exhaustion short | OUTCOME: -$17.82 | Mean-reversion short (Z-score 2.6, RSI 83, +74% 21d surge) gap-stopped at $372.31 when Q1 2026 earnings blowout (+38% YoY, EPS +43%) gapped AMD +15% overnight; swing_mean_reversion and swing_catalyst_news recommended the fade but earnings binary created a non-linear gap-through-stop outcome; half-sizing to 1 share limited damage to -$17.82 vs -$35.64.\n",
+        "last_updated": "2026-05-07",
+        "stale": false
+      }
+    }
+  },
+  "prediction_grading": null
+}
