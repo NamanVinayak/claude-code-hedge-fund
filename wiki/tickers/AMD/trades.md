@@ -1,11 +1,11 @@
 ---
 name: AMD trades
 last_updated: 2026-05-07
-last_run_id: 20260506_150729
+last_run_id: 20260507_131536
 target_words: 800
 stale_after_days: 60
-word_count: 826
-summary: 2 lifetime trades — Trade 25 (long 15 shares, abandoned, no fill); id 113 (short 1 share, stopped out 2026-05-06 at $372.31, realized P&L −$17.82); no open positions; net lifetime realized P&L −$17.82
+word_count: 855
+summary: 2 lifetime trades — Trade 25 (long 15 shares, abandoned, no fill); id 113 (short 1 share, stopped out 2026-05-06 at $372.31, realized P&L −$17.82); no open positions; net lifetime realized P&L −$17.82; run 20260507_131536 hold appended to run history
 ---
 
 # AMD — Trades
@@ -96,8 +96,9 @@ None. All AMD positions closed as of 2026-05-06.
 | 20260417_233350 | 2026-04-17 | Buy | 70% | 15 shares | $278.26 | $305 | $270 | 41.7% 21d ROC; RSI 91 + hourly STC cross down = small size despite high conviction. Abandoned. |
 | 20260501_132346 | 2026-05-01 | Short | 42% | 1 share | $354.49 | $277.74 | $372.31 | First short on AMD. 0/5 agents bullish; 2 bearish. Z-score 2.6, RSI 83, +74% 21d. Half-size for earnings binary (May 5). STOPPED OUT 2026-05-06 at $372.31. |
 | 20260506_150729 | 2026-05-06 | Hold | 38% | None | — | — | — | Post-earnings gap-up. R/R 0.70:1 fails 2:1 minimum. No new entries. Watch pullback $388–$395. |
+| 20260507_131536 | 2026-05-07 | Hold | 68% | None | — | $455.56 | $370 | Stand-aside — further extension to $421.39. R/R 1.56:1 fails 2:1 minimum. Watch $388–$395 pullback zone. 4 consecutive fade failures in ADX 60+ environments reinforce no-short stance. |
 
-Sources: decisions.json from each respective run; trade_ledger.json per_ticker_history[AMD] (run 20260506_150729).
+Sources: decisions.json from each respective run; trade_ledger.json per_ticker_history[AMD] (run 20260507_131536).
 
 ## Closed — older than 30 days
 
