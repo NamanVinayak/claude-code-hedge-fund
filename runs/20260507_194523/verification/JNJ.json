@@ -1,0 +1,52 @@
+{
+  "ticker": "JNJ",
+  "verified_at": "2026-05-07T19:52:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.2846,
+      "web_value": 0.285,
+      "source": "Macrotrends / Simply Wall St — TTM net profit margin 28.46-28.5% (elevated by $5.6B one-time gain; consensus expects normalization to ~22.5%)",
+      "status": "ok",
+      "deviation": "0.1%",
+      "note": "Bundle value matches reported TTM exactly. One-time gain acknowledged but the TTM figure is accurately reported."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.2292,
+      "web_value": 0.2639,
+      "source": "Yahoo Finance key-statistics — 26.39%; Investing.com — 27.53%; GuruFocus — 27.53% TTM",
+      "status": "ok",
+      "deviation": "13.2%",
+      "note": "Deviation is below the 20% threshold. Likely reflects timing difference (bundle uses Q1 2026 ending March 29 vs sources using slightly later data)"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 25.741,
+      "web_value": 26.23,
+      "source": "GuruFocus (April 28, 2026) — PE ratio TTM 26.23",
+      "status": "ok",
+      "deviation": "1.9%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 94200000000.0,
+      "web_value": 96362000000.0,
+      "source": "Macrotrends / companiesmarketcap.com — TTM revenue (12 months ending March 31, 2026) $96.362B",
+      "status": "ok",
+      "deviation": "2.3%",
+      "note": "Revenue implied from price_to_sales ratio (5.677) and market_cap ($534.8B) = ~$94.2B vs web $96.4B"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 534763208704.0,
+      "web_value": 540700000000.0,
+      "source": "stockanalysis.com / companiesmarketcap.com (May 2026) — market cap ~$540.7B",
+      "status": "ok",
+      "deviation": "1.1%"
+    }
+  ],
+  "overall_status": "all checks passed — no mismatches",
+  "corrections_applied": false,
+  "files_updated": []
+}

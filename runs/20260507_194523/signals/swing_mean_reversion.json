@@ -1,0 +1,20 @@
+{
+  "UNH": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "Neither branch fires cleanly. Branch A (fade the extreme): Z-score is 1.74 — below the +2 threshold required for a statistical extreme. RSI-14 is 85.67 (overbought) and price is +20.02% above the 50-SMA (extreme extension), but ADX at 86.26 is far into the danger zone where fade setups have repeatedly failed — AMZN (ADX 65, -$10.14), GOOG (ADX 74, -$6.50), and AMD all stopped out on identical overbought fades in ADX 60+ regimes. The lessons pattern is unambiguous: ADX 60+ makes fading overbought conditions highly unreliable. Additionally, daily RSI divergence is showing BULLISH (not bearish), providing zero reversal confirmation. Bollinger pct_b at 0.7431 means price is still inside the bands (not outside). Hourly RSI at 45.87 is neutral — no hourly extreme to confirm a fade. Hourly MACD histogram is -0.9259 (some hourly distribution) but hourly Z-score is only 0.85. No reversal candle is present in the recent 5-day price action. Branch B (buy the dip): Not applicable — price is 20% above the 50-SMA and in a runaway uptrend, making any pullback-to-Fib entry premature. The closest meaningful Fib support is the 23.6% retracement at $345.30 and the 10-EMA zone at $348-360, which is 5-8% below current price. Wiki confirms: 'wait for pullback to $348-359 EMA zone.' Prior call context: my prior bearish signal (entry $368, target $343, stop $374.5) is in-progress with MFE 2.65% and MAE -0.15% — the trade has moved slightly in the bearish direction. However, given ADX 86 regime risk and the strict lesson history, I am not adding a new bearish position; the in-progress call stands but no fresh signal is warranted. Standing aside until ADX weakens materially or price pulls back to the EMA support zone with a confirmed reversal candle.",
+    "entry": 367.28,
+    "target": 367.28,
+    "stop": 367.28,
+    "timeframe": "no trade — neutral"
+  },
+  "JNJ": {
+    "signal": "bearish",
+    "confidence": 52,
+    "reasoning": "Branch B bearish fires — downtrend continuation setup with entry on any relief bounce to resistance. The dominant daily trend is firmly bearish: EMA alignment is fully bearish (ema_aligned_downtrend: true), ADX 35.93 with -DI (32.88) significantly exceeding +DI (16.66), MACD line -3.51 with histogram still negative (-0.39), OBV trending down, volume_bias_10d down. Z-score -1.83 is approaching but has not yet reached the -2 extreme required for a Branch A bullish fade. RSI-14 at 34.31 is near oversold but not at the <25 extreme threshold, and critically there is NO bullish RSI divergence and NO reversal candle in the 5-day price action (consistent daily declines from $229.85 to $224.62). The $223.78 pivot support (6 daily tests) is being tested and the hourly price at $222.14 suggests this support may already be breaking intraday. Hourly indicators confirm continuation: hourly EMA fully downtrend-aligned, hourly RSI 21 at 41.06 (not yet oversold to support a bounce), hourly pct_b at 0.1381 (near lower Bollinger band but no reversal), hourly ADX -DI (26.31) > +DI (15.17). Wiki confirms active short position (id 116, entry $229.06, target $216.53, stop $235) and BofA Conference binary risk May 12 which caps conviction. No prediction_grading on this ticker (no prior self-call). Lessons: the mean-reversion short failures (AMZN, GOOG, AMD) were in high-ADX overbought regimes; JNJ's ADX at 35-36 is below the 60+ danger threshold, making bearish continuation more reliable here. Entry on relief bounce toward $226-228 resistance (hourly pivot high at 226.53, tested 30 times; daily Fib 78.6% at $228.14), with target at the $216.53 measured move (Fib extension low 1.272 at $216.35) and stop above the $231 daily resistance cluster. Risk-reward approximately 2.2:1 from the bounce entry. Confidence capped at 52 due to the BofA Conference May 12 binary event risk and the fact that the $223.78 support zone has held 6 tests — a potential exhaustion-of-sellers bounce remains possible.",
+    "entry": 226.50,
+    "target": 216.53,
+    "stop": 231.20,
+    "timeframe": "5-10 trading days"
+  }
+}

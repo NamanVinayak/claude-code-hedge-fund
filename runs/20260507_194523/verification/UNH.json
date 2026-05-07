@@ -1,0 +1,54 @@
+{
+  "ticker": "UNH",
+  "verified_at": "2026-05-07T19:52:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.02694,
+      "web_value": 0.0268,
+      "source": "Yahoo Finance (May 4, 2026) — profit margin 2.68%; CNBC — 2.85%",
+      "status": "ok",
+      "deviation": "0.5%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.04237,
+      "web_value": 0.0333,
+      "source": "StockTitan Q1 2026 earnings / Macrotrends — TTM EBIT margin 3.24-3.33%; Q1 2026 operating margin 8.0% but TTM remains depressed due to 2025 losses",
+      "status": "MISMATCH",
+      "deviation": "27.2%",
+      "action": "replaced 0.04237 with 0.0333 in all facts bundles containing the field: warren_buffett__UNH.json, aswath_damodaran__UNH.json"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 27.705,
+      "web_value": 28.02,
+      "source": "Yahoo Finance / Nasdaq (May 4, 2026) — trailing P/E 28.02",
+      "status": "ok",
+      "deviation": "1.1%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 447600000000.0,
+      "web_value": 449710000000.0,
+      "source": "companiesmarketcap.com / Yahoo Finance — TTM revenue ~$448-450B",
+      "status": "ok",
+      "deviation": "0.5%",
+      "note": "Revenue implied from price_to_sales ratio (0.7477) x market_cap ($334.6B) = ~$447.6B"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 334633041920.0,
+      "web_value": 336720000000.0,
+      "source": "Yahoo Finance / public.com (May 4, 2026) — market cap $336.72B",
+      "status": "ok",
+      "deviation": "0.6%"
+    }
+  ],
+  "overall_status": "1 mismatch corrected",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260507_194523/facts/warren_buffett__UNH.json",
+    "runs/20260507_194523/facts/aswath_damodaran__UNH.json"
+  ]
+}

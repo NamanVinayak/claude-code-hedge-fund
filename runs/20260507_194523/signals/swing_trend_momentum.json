@@ -1,0 +1,20 @@
+{
+  "UNH": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "Trend assessment: Daily EMA alignment is confirmed bullish (10 EMA $360.57 > 21 EMA $343.53 > 50 EMA $321.13) and ADX is an extreme 86.26 with +DI 39.39 far above -DI 9.19 — the uptrend is undeniably powerful. However, entry criteria are NOT met on multiple counts. Momentum-acceleration assessment: ROC-5d is NEGATIVE at -0.93 (short-term momentum reversing), while ROC-10d (+3.89) and ROC-21d (+19.35) are positive — the multiframe ROC check fails (5d negative). The MACD histogram has contracted from +1.655 (prior session per wiki) to +0.8466 — a decelerating, not accelerating, histogram. Entry-zone check: Price at $367.28 is 1.86% above EMA_10 and 6.91% above EMA_21 — well extended, not at a pullback entry zone. Hourly divergence: Hourly MACD histogram is -0.9259 (bearish), hourly -DI (21.45) > +DI (17.17), and hourly RSI-21 is only 45.87 — the intraday timeframe is actively diverging from the daily trend, a warning of short-term exhaustion. RSI-14 at 85.67 confirms extreme overbought conditions. Wiki context aligns: prior read noted 'no actionable entry — wait for pullback to $348-359 10-EMA zone'; current price remains well above that zone. Macro regime is strongly risk-on (Dow 50k, S&P ATH) which supports the longer-term UNH trend, but this strategy requires entry on pullbacks, not chasing extensions. Will stand aside and wait for a pullback to the $360-365 zone (EMA_10) before re-evaluating trend-continuation entry.",
+    "entry": 361.0,
+    "target": 395.0,
+    "stop": 354.0,
+    "timeframe": "neutral — no trade"
+  },
+  "JNJ": {
+    "signal": "bearish",
+    "confidence": 65,
+    "reasoning": "Trend assessment: Daily EMA alignment is confirmed bearish (10 EMA $227.21 > 21 EMA $230.33 > 50 EMA $232.53 > price $224.62, all above price in declining order). ADX is 35.93 — strong trend strength confirmed — with -DI 32.88 decisively above +DI 16.66, confirming directional bearish pressure. Hourly EMA alignment also confirmed bearish (ema_aligned_downtrend: true on hourly), with hourly -DI 26.31 > +DI 15.17 and hourly ADX 39.24 — both timeframes aligned bearish. Momentum-acceleration assessment: Daily ROC is negative across all measured windows: ROC-5d -1.20, ROC-10d -0.65, ROC-21d -5.78 — all three negative, satisfying the strategy's 'all negative in downtrend' requirement. MACD: line -3.51 below signal -3.12, histogram -0.3872 (bearish and expanding bearishly). Hourly MACD histogram also negative at -0.3126. Volume bias 10d is 'down' with OBV trending down on both timeframes — distribution confirmed. Z-score -1.83 (moderately extended but not extreme mean-reversion territory). Wiki context: confirms established downtrend with active short position; prior run noted RSI-14 recovering from 27.22 (oversold) to 31.16 — RSI-7 now 47.3 suggests a minor dead-cat bounce is occurring intraday, but no reversal candle confirmed. Prior-call grading: prior bearish signal (May 6, entry $226.50, target $217.15, stop $231.50) is 'in_progress' with direction_correct=true, MFE 1.57%, MAE 0.0% — the thesis is working. Re-affirming bearish: the bounce toward EMA_5 ($225.77) is the continuation entry zone. Macro headwind noted: strongly risk-on regime (Dow 50k, S&P ATH) could limit downside, but defensive healthcare rotation away from JNJ in a risk-on environment is actually a structural tailwind for the short. Confidence moderated from higher levels due to: (1) $223.78 daily pivot support holding through 6 tests — a meaningful floor, (2) RSI-14 at 34.31 approaching oversold territory which can produce counter-trend bounces, (3) BofA Conference May 12 creates binary event risk. Stop placed above EMA_10 to give room above the tested EMA_5 entry.",
+    "entry": 225.8,
+    "target": 216.5,
+    "stop": 228.5,
+    "timeframe": "5-10 trading days"
+  }
+}

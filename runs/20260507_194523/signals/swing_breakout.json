@@ -1,0 +1,20 @@
+{
+  "UNH": {
+    "signal": "neutral",
+    "confidence": 10,
+    "reasoning": "UNH is in a runaway parabolic uptrend — the polar opposite of a breakout setup. ADX 86.26 with +DI 39.39 >> -DI 9.19 signals an extreme established trend, not a consolidation coiling for a breakout. Daily BB width is 0.2916 (already wide — volatility fully expanded, the move is done). Volume ratio 0.82x fails the 1.5x minimum required for breakout confirmation. RSI-14 at 85.67 and z-score 1.74 indicate deeply overbought conditions, not a compressed base. No consolidation range exists: the only S/R pivots are well below current price ($288.99 and $293.03 are the identified resistance levels, now far beneath the $367 current price), and nearest resistance above is null — the stock is in open air. Hourly BB width 0.0242 is tight but this reflects intra-trend consolidation, not a coiled base; hourly MACD histogram is negative (-0.9259) and hourly -DI (21.45) > +DI (17.17) showing distribution, not pre-breakout accumulation. Wiki confirms five consecutive no-trade runs with identical conclusion. The DIS lesson (May 5, -$4.99) shows even 1.23x volume breakouts fail in this macro environment. No breakout setup present — the squeeze is not on, and BB width is already expanded.",
+    "entry": 367.28,
+    "target": 367.28,
+    "stop": 367.28,
+    "timeframe": "no trade"
+  },
+  "JNJ": {
+    "signal": "bearish",
+    "confidence": 42,
+    "reasoning": "JNJ is approaching a bearish breakdown of the $223.78 pivot support level, which has been tested 6 times on the daily and 15 times on the hourly without a confirmed daily close below on volume >1.5x. Consolidation range: $223.78 support to $226.53 hourly resistance (identified by 30 hourly tests, volume-unconfirmed) = range height ~$2.75. The hourly price is already at $222.14 — breaking below $223.78 intraday — but the daily close ($224.62) remains above the support, meaning no confirmed daily breakout yet per my rules. Volume ratio 1.02x is critically below the 1.5x minimum threshold required for a confirmed bearish breakdown entry — this is the primary disqualifier for a high-confidence signal. Daily BB width 0.0992 is moderately narrow (contracting vs prior expansion), suggesting a squeeze-like setup. Hourly BB width 0.0469 is tight (wiki noted 0.0369 last run, now slightly wider as the break begins). Hourly ADX 39.24 with -DI 26.31 >> +DI 15.17 confirms strong directional downside momentum. All daily and hourly EMAs are overhead in confirmed bearish alignment. MACD line -3.5087 below signal -3.1215, histogram -0.3872 (worsening). OBV trending down on both timeframes. ADX 35.93 on daily is strong (confirms trend, not yet at extreme ADX 60+ level that penalizes fades — this is directional trend territory). Wiki key levels: critical breakdown trigger $223.78, measured-move target $216.53, dead-cat bounce resistance $226.53. Prior bearish call (run 20260506_194605) is in-progress with MAE -1.27% (minor adverse move) — consistent with re-affirming the setup. BofA Healthcare Conference May 12 (~5 trading days) is a binary event risk that could trigger short squeeze from oversold levels (RSI-14 34.31). Confidence capped at 42: volume non-confirmation (1.02x vs 1.5x required) + earnings/conference binary risk + RSI approaching oversold = not yet a clean confirmed breakout signal. Wait for daily close below $223.78 with volume >1.5x average for full confirmation. Measured-move target: $223.78 - $7.25 (range from $223.78 to $231.03 hourly resistance) = $216.53.",
+    "entry": 223.5,
+    "target": 216.53,
+    "stop": 227.5,
+    "timeframe": "5-10 trading days"
+  }
+}

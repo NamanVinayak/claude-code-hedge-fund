@@ -1,0 +1,30 @@
+{
+  "decisions": {
+    "UNH": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 367.28,
+      "entry_tolerance_pct": 1.0,
+      "target_price": null,
+      "stop_loss": null,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "no trade — wait for pullback to $360-365 EMA_10 zone",
+      "confidence": 18,
+      "account_risk_pct": 0.0,
+      "reasoning": "Unanimous 5/5 neutral — ADX 86.26, RSI 85.67, z-score 1.74, no pullback to EMA entry zone. Sixth consecutive no-trade. Lessons pattern: fading ADX 60+ regimes fails (AMZN -$10, GOOG -$6.50, NVDA -$63). R/R 1.6:1 below 2:1 minimum. Only allowed action is hold. No capital deployed."
+    },
+    "JNJ": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 224.62,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 216.53,
+      "stop_loss": 228.5,
+      "risk_reward_ratio": "2.4:1",
+      "timeframe": "5-10 trading days (existing 3-share short, hold)",
+      "confidence": 58,
+      "account_risk_pct": 0.0,
+      "reasoning": "5/5 agents bearish, existing 3-share short (entry $229.06, id 116) working — unrealized gain ~$13. Position limit exhausted ($0 remaining). BofA Conference May 12 binary risk caps add-on entry. $223.78 support held 6 daily tests without 1.5x volume confirmation. RSI 34.31 approaching oversold. Hold: let short work toward $216.53 target. Stop at $228.50 protects against conference short squeeze."
+    }
+  }
+}

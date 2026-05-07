@@ -1,0 +1,44 @@
+{
+  "run_id": "20260507_194523",
+  "mode": "swing",
+  "started_at": "2026-05-07T19:46:36Z",
+  "ended_at": "2026-05-07T20:08:45Z",
+  "tickers": [
+    "UNH",
+    "JNJ"
+  ],
+  "decisions": [
+    {
+      "ticker": "UNH",
+      "action": "hold",
+      "confidence": 18,
+      "entry": 367.28,
+      "stop": null,
+      "target": null,
+      "reasoning_tldr": "Unanimous 5/5 neutral \u2014 ADX 86.26, RSI 85.67, z-score 1.74, no pullback to EMA entry zone"
+    },
+    {
+      "ticker": "JNJ",
+      "action": "hold",
+      "confidence": 58,
+      "entry": 224.62,
+      "stop": 228.5,
+      "target": 216.53,
+      "reasoning_tldr": "5/5 agents bearish, existing 3-share short (entry $229.06, id 116) working \u2014 unrealized gain ~$13"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 2,
+    "cash": 1457.27001953125,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "mixed",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}
