@@ -1,7 +1,7 @@
 ---
 name: swing_trend_momentum track record
 last_updated: 2026-05-07
-last_run_id: 20260507_131536
+last_run_id: 20260507_144525
 stale_after_days: 365
 target_words: 1200
 summary: 0 graded calls. (Appended by ai_hedge.grading.wiki_writer.)
@@ -29,3 +29,4 @@ one resolved call scored against yfinance daily OHLC.
 - — | JNJ | bearish $226.5→$217.15 stop $232.0 | **in_progress** (day 1, MFE 0.71%, MAE -0.01%) _(prior_run=20260505_194525, graded_in=20260506_194605)_
 - — | WDC | bullish $444.0→$500.0 stop $427.0 | **in_progress** (day 1, MFE 8.13%, MAE 0.0%) _(prior_run=20260505_203524, graded_in=20260506_203627)_
 - — | AMD | bullish $393.0→$457.0 stop $375.0 | **in_progress** (day 1, MFE 9.57%, MAE 0.0%) _(prior_run=20260506_150729, graded_in=20260507_131536)_
+- — | AAPL | bullish $280.2→$292.4 stop $274.5 | **in_progress** (day 1, MFE 2.79%, MAE 0.0%) _(prior_run=20260506_144523, graded_in=20260507_144525)_

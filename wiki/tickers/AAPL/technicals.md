@@ -1,41 +1,41 @@
 ---
 name: AAPL technicals
-last_updated: 2026-05-06
-last_run_id: 20260506_144523
+last_updated: 2026-05-07
+last_run_id: 20260507_144525
 target_words: 350
 stale_after_days: 7
 word_count: 349
-summary: Post-breakout trending advance — price $284.18 daily close / all-time high $284.22; ADX 24.45 (rising: 16.83→19.92→22.55→24.45, approaching 25 threshold); hourly ADX 26.81 (above 25 — trend confirmed on hourly); z-score 2.42 / Bollinger %B 1.036 (stretched above upper band); OBV uptrend confirmed; hold position, no new entry
+summary: ADX 26.78 crossed 25 threshold (confirmed strong trend on daily); price $290.41 daily / $290.69 intraday; z-score 2.58 / Bollinger %B 1.046 (above upper band — statistically stretched); hourly bearish RSI divergence active; OBV uptrend intact; hold existing 2-share long, no new entry
 ---
 
 # AAPL — Technicals
 
 ## TL;DR
 
-As of run 20260506_144523, AAPL is in active post-breakout trending advance. Daily close $284.18 (new ATH $284.22 hit on May 5). ADX has continued its upward trajectory: 16.83 → 19.92 → 22.55 → **24.45** — approaching the 25 confirmation threshold. Hourly ADX already at **26.81** (above 25 — trend is confirmed on the shorter timeframe). Daily OBV trend is up with no divergence (prior hourly bearish divergence resolved run 20260505). The main caution flag: daily Bollinger %B 1.036 (price outside upper band) and z-score 2.42 signal price is statistically stretched. RSI-7 73.67 approaching overbought. Hold existing 2-share long (Trade ID 114, fill $277.27, stop $269.50 ledger / $274.86 PM guidance). No new entries permitted. (Source: swing_trend_momentum, swing_breakout, swing_macro_context, swing_head_trader signals, run 20260506_144523.)
+As of run 20260507_144525, AAPL is in confirmed post-breakout trending advance. Daily price $290.41 (intraday high $290.69). The ADX milestone flagged in prior runs has arrived: daily ADX **26.78** (was 24.45 run 20260506_144523) — the 25 threshold is crossed, confirming a strong trend on the daily timeframe. Progression: 16.83 → 19.92 → 22.55 → 24.45 → **26.78**. +DI 40.06 >> −DI 17.25 (strong bullish directional conviction). Main caution: daily Bollinger %B 1.046 (above upper band) and z-score 2.58 signal statistical overextension. RSI-7 86.05 (extreme overbought short-term). A new hourly bearish RSI divergence has formed — price made new highs but hourly RSI rolled over. Hold existing 2-share long (Trade ID 114, fill $277.27, stop $269.50). No new entries. (Source: swing_trend_momentum, swing_breakout, swing_macro_context, swing_head_trader signals, run 20260507_144525.)
 
 ## Multi-timeframe state
 
 | timeframe | trend | momentum | note |
 |---|---|---|---|
-| Daily | Developing-to-confirmed trend (ADX 24.45, rising; +DI 37.5 >> -DI 17.45) | Accelerating — 5d ROC +4.98%, 10d ROC +6.77%, 21d ROC +9.78%; RSI-14 65.59; MACD hist +1.2585 | EMA 10 (274.39) > 21 (269.46) > 50 (264.87) aligned bullish; BB width 0.1068 expanding (not squeezing) |
-| Hourly | Confirmed trend (ADX 26.81 above 25 threshold) | Strong — hourly rel-vol 2.42x (institutional participation); hourly MACD hist positive +0.7197; OBV trend up | Bollinger %B 0.894 approaching upper band; prior bearish OBV divergence fully resolved (run 20260505_144544) |
+| Daily | Confirmed strong trend (ADX 26.78, crossed 25 threshold; +DI 40.06 >> −DI 17.25) | Accelerating — ROC-5d +6.42%, ROC-10d +5.25%, ROC-21d +13.42%; RSI-14 71.07; MACD hist +1.6037 | EMA 10 (276.77) > 21 (271.10) > 50 (265.76) aligned bullish; BB width 0.1171 expanding (further from 0.1068 last run) |
+| Hourly | Confirmed trend (ADX above 25) | Elevated — hourly rel-vol 3.81x (institutional participation); hourly MACD hist positive +0.9119 | RSI-21 81.98 with CONFIRMED bearish divergence (new development since run 20260506_144523); %B extended above upper band |
 
-Prior run (May 5, 20260505_144544): ADX 22.55, z-score 1.77, price $276.83. This run: ADX 24.45 (+1.90), z-score 2.42 (extended further as price recovered to $284.18), hourly ADX crossed 25 threshold — a meaningful positive step confirming trend strength on the hourly. Daily %B 1.036 (above upper band) is the main caution vs. prior 0.897.
+Prior run (May 6, 20260506_144523): ADX 24.45, z-score 2.42, price $284.18. This run: ADX 26.78 (+2.33 — confirmed threshold cross), z-score 2.58 (further extended as price advanced to $290.41), hourly bearish RSI divergence newly confirmed. The partial profit level of $285.50 has been exceeded. BB width 0.1171 (expanding further — volatility expansion fully underway).
 
 ## Key levels
 
 | level | value | source |
 |---|---|---|
-| Extended target — Fib ext 1.618 | $296.77 | swing_breakout, swing_head_trader, run 20260506_144523 |
-| Primary target — macro-adjusted | $291.00 | decisions.json, run 20260506_144523 |
-| Partial profit level | $285.50 | swing_head_trader synthesized_levels, run 20260506_144523 |
+| Extended target — Fib ext 1.272 (updated) | $299.60 | swing_catalyst_news, swing_macro_context, swing_head_trader, run 20260507_144525 |
+| Analyst consensus median | $301.54 | web_research/AAPL.json, run 20260507_144525 |
+| Prior primary target — reached / exceeded | $291.00 | decisions.json, run 20260506_144523 (essentially met at $290.69) |
+| Partial profit level (exceeded) | $285.50 | swing_head_trader synthesized_levels, run 20260506_144523 |
 | Current position entry (filled) | $277.27 | trade_ledger.json id 114 |
 | Breakout level / support | $276.11 | swing_breakout signal, prior runs (11 tests, broken Apr 30) |
-| Hourly volume-confirmed support | $274.86 | swing_macro_context signal, run 20260506_144523 (26 tests) |
+| Hourly volume-confirmed support | $274.86 | swing_macro_context signal, run 20260506_144523 |
 | Stop loss (ledger) | $269.50 | trade_ledger.json id 114 |
-| Base pivot low | $255.45 | swing_breakout signal, prior runs (21 tests) |
 
 ## Setup type
 
-**Post-earnings breakout continuation — active trending advance.** The $276.11 breakout is confirmed (2.08x Apr 30, 1.74x May 1). Daily ADX 24.45 approaching 25 threshold; hourly ADX 26.81 already above it — trend is confirmed on at least one timeframe. Daily Bollinger BB width 0.1068 is expanding (volatility expansion underway, not coiling). Price stretched: %B 1.036 (above upper band), z-score 2.42, price 8.54% above 50-SMA — mean-reversion risk elevated if a reversal candle forms. Hold targets unchanged: $285.50 partial / $291 primary / $296.77 extended. No new entries (stacking blocked, R/R at current price ~1.87:1 from $282.50 limit, deteriorates further at market). (Source: decisions.json, swing_breakout, swing_trend_momentum, swing_head_trader signals, run 20260506_144523.)
+**Post-earnings breakout continuation — confirmed trending advance (ADX 26.78).** Daily ADX has crossed the 25 threshold — the trend is now confirmed on both daily and hourly timeframes. BB width 0.1171 expanding (volatility expansion phase, not coiling). Price statistically stretched: %B 1.046 (above upper band), z-score 2.58, price 9.68% above 50-SMA, RSI-7 86.05 — mean-reversion risk elevated. Hourly bearish RSI divergence is a near-term timing caution, not a thesis break per swing_head_trader (52 conf). Primary target upgraded to $299.60 (Fib 1.272 extension); $291 measured-move essentially complete at $290.69. Hold. No new entries (stacking blocked, R/R at market deteriorated). (Source: decisions.json, swing_breakout, swing_trend_momentum, swing_head_trader signals, run 20260507_144525.)
