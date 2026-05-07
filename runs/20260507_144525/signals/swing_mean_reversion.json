@@ -1,0 +1,11 @@
+{
+  "AAPL": {
+    "signal": "bearish",
+    "confidence": 40,
+    "reasoning": "Branch A (Fade the Extreme) fires. Prior call (2026-05-06) was bearish with stop at $288.50 — price has since pushed to $290.69, exceeding that stop. Adjusting thesis: this is a new bearish fade setup at a more extended level. Key data: daily Z-score 2.58 (above +2 threshold), daily RSI-7 86.05 / RSI-14 71.07 (overbought), daily Bollinger %B 1.0461 (price outside upper band), distance from 50-SMA 9.68% (approaching extreme >10%). Hourly confirms: Z-score 2.49, RSI-21 81.98, and critically HOURLY BEARISH RSI DIVERGENCE is active — price made a new high but hourly RSI is rolling over. Per the prompt, hourly extreme + daily extreme = strong fade signal. Branch B does not fire — no Fibonacci dip-buy setup; price is extended above all moving averages with no pullback structure. Confidence reduced to 40 from what would otherwise be ~55 due to the lessons pattern: four consecutive mean-reversion fade shorts stopped out (AMZN ADX 65, GOOG ADX 74, AMD earnings gap, and my own prior AAPL call). However, current ADX 26.78 is materially lower than the 60+ extremes that absorbed those prior fades — it is 'strong' trend territory, not parabolic. The key differentiator for a cautious bearish lean: hourly bearish divergence is a new development since the prior run (wiki noted prior hourly divergence had resolved by 2026-05-05 but a new one has formed), the price is now ~2.1% above the prior stop level suggesting a second extension wave, and dual-timeframe overbought alignment (daily + hourly both >2 Z-score) meets the highest-confidence fade criterion per the strategy rules. Risk: ADX 26.78 means trend is still confirmed; macro context was strongly risk-on (S&P ATH, US-Iran MOU per lessons). Stop placed above the hourly recent high at $292.13 plus buffer. Entry at current market price near $291.",
+    "entry": 291.0,
+    "target": 272.0,
+    "stop": 293.5,
+    "timeframe": "5-10 trading days"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "ticker": "AAPL",
+  "score": 27,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 5,
+    "max_score": 8,
+    "details": "Near-Gaussian tails (kurtosis 0.7) \u2014 suspiciously thin; Symmetric distribution (skew -0.26); Asymmetric upside (tail ratio 1.32); Resilient (max drawdown -13.8%)"
+  },
+  "antifragility_analysis": {
+    "score": 6,
+    "max_score": 10,
+    "details": "Net debt but manageable relative to assets; High leverage (D/E 1.40) \u2014 fragile; Stable high margins (avg 31.3%, CV 0.04) \u2014 antifragile pricing power; Consistent FCF generation (10/10 periods positive)"
+  },
+  "convexity_analysis": {
+    "score": 3,
+    "max_score": 10,
+    "details": "Meaningful R&D investment (8.9% of revenue); Slight positive asymmetry (up/down ratio 1.21); Low cash relative to market cap (1%); Low FCF yield (3.4%)"
+  },
+  "fragility_analysis": {
+    "score": 6,
+    "max_score": 8,
+    "details": "Elevated leverage (D/E 1.40); Interest coverage 39.6x \u2014 debt is irrelevant; Stable earnings (growth std 0.09) \u2014 robust; Fat margins (27.0%) buffer shocks"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 3,
+    "max_score": 6,
+    "details": "Normal vol regime (1.02) \u2014 fair pricing; Stable vol-of-vol (0.0223)"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 4270495629312.0,
+  "web_context": {
+    "ticker": "AAPL",
+    "research_date": "2026-05-07",
+    "macro_context": {
+      "market_sentiment": "Strongly bullish \u2014 S&P 500 and Nasdaq at record highs driven by Iran peace hopes and strong tech earnings. S&P futures rising May 7 after record close May 6 (Nasdaq +2%, Russell 2000 and S&P 500 set new records).",
+      "fed_outlook": "Fed held rates steady at April 29, 2026 FOMC meeting (Powell's final meeting as Fed Chair) amid dissent. Rates unchanged; market pricing gradual cuts in H2 2026.",
+      "geopolitical": "Iran conflict created brief volatility (UAE missile intercept May 4 pressured Dow/Russell) but markets resilient \u2014 record highs despite ongoing Iran war. IMF warned of darkened global outlook but equity markets shrugging off.",
+      "key_events": [
+        "Fed FOMC next meeting (post-Powell): rate path watch",
+        "Iran peace talks in progress \u2014 resolution could further boost risk assets",
+        "US tariff situation ongoing \u2014 supply chain risk for AAPL China exposure"
+      ]
+    },
+    "ticker_news": [
+      {
+        "headline": "Apple Q2 2026 revenue jumps 17% on iPhone and Services; strong Q3 guidance issued",
+        "sentiment": "positive",
+        "source": "CNBC / StockTitan 10-Q, May 1 2026"
+      },
+      {
+        "headline": "Apple CEO Tim Cook warns of extended memory crunch \u2014 'We'll look at a range of options'",
+        "sentiment": "negative",
+        "source": "CNBC, May 1 2026"
+      },
+      {
+        "headline": "Apple announces $100B share buyback \u2014 capital return playbook for long-term holders",
+        "sentiment": "positive",
+        "source": "HeyGoTrade, May 2026"
+      },
+      {
+        "headline": "Apple stock climbed this week \u2014 analysts cite iPhone and Mac demand boosting guidance",
+        "sentiment": "positive",
+        "source": "Motley Fool, May 2 2026"
+      },
+      {
+        "headline": "Chart of the Day: Potential Breakout in Apple \u2014 TradeStation technical analysis",
+        "sentiment": "positive",
+        "source": "TradeStation, May 4 2026"
+      }
+    ],
+    "analyst_consensus": {
+      "rating": "buy",
+      "avg_price_target": 240.0,
+      "recent_changes": "Bernstein raised price target post-Q2; BofA highlighted App Store growth. TipRanks noted top analyst $350 target. Stock started 2026 with one downgrade but consensus remains buy/overweight. Multiple upgrades following strong Q2 beat."
+    },
+    "competitor_activity": "no data found from search results \u2014 AAPL_competitors search not executed",
+    "earnings_info": "Q2 FY2026 reported May 1 2026 \u2014 revenue +17% YoY, beat on EPS and revenue. Q3 FY2026 guidance raised. Next earnings (Q3 FY2026) expected late July / early August 2026."
+  }
+}

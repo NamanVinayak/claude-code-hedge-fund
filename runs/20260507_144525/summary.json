@@ -1,0 +1,34 @@
+{
+  "run_id": "20260507_144525",
+  "mode": "swing",
+  "started_at": "2026-05-07T14:46:23Z",
+  "ended_at": "2026-05-07T14:57:31Z",
+  "tickers": [
+    "AAPL"
+  ],
+  "decisions": [
+    {
+      "ticker": "AAPL",
+      "action": "hold",
+      "confidence": 52,
+      "entry": 290.41,
+      "stop": 269.5,
+      "target": 299.6,
+      "reasoning_tldr": "Hold 2 shares long (entry $277.27, +3.69%)"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 1,
+    "cash": 1457.27001953125,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "bullish",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

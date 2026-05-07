@@ -1,0 +1,85 @@
+{
+  "ticker": "AAPL",
+  "verified_at": "2026-05-07T14:50:00",
+  "facts_bundles_checked": [
+    "warren_buffett__AAPL.json",
+    "ben_graham__AAPL.json",
+    "charlie_munger__AAPL.json"
+  ],
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.2698,
+      "our_value_pct": "26.98%",
+      "web_value": 0.2704,
+      "web_value_pct": "27.04%",
+      "source": "FinanceCharts / Yahoo Finance (May 2026)",
+      "status": "ok",
+      "deviation": "0.2%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.3253,
+      "our_value_pct": "32.53%",
+      "web_value": 0.3189,
+      "web_value_pct": "31.89%",
+      "source": "Seeking Alpha / YCharts (TTM to Mar 2026)",
+      "status": "ok",
+      "deviation": "2.0%",
+      "note": "GuruFocus shows 35.37% based on Dec 2025 quarter; Seeking Alpha shows 31.89% TTM — our 32.53% falls within the reasonable range"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 35.24,
+      "web_value": 34.74,
+      "source": "GuruFocus (May 6, 2026)",
+      "status": "ok",
+      "deviation": "1.4%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 4270495629312.0,
+      "our_value_bn": "$4,270B",
+      "web_value": 4200000000000.0,
+      "web_value_bn": "$4,180-4,230B",
+      "source": "CompaniesMarketCap / Capital.com (May 5-6, 2026)",
+      "status": "ok",
+      "deviation": "1.7%",
+      "note": "Minor date difference explains the small gap; our value uses a slightly earlier snapshot"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 444335000000.0,
+      "our_value_bn": "$444.3B",
+      "web_value": 451440000000.0,
+      "web_value_bn": "$451.4B",
+      "source": "StockAnalysis / FinanceCharts (TTM ending Mar 28, 2026)",
+      "status": "ok",
+      "deviation": "1.6%",
+      "note": "Web sources report $451.4B TTM as of Q2 FY2026 (quarter ending Mar 28, 2026); our $444.3B likely reflects prior quarter boundary"
+    },
+    {
+      "metric": "roe",
+      "our_value": 1.626,
+      "our_value_pct": "162.6%",
+      "web_value": 1.5994,
+      "web_value_pct": "159.94%",
+      "source": "CSIMarket (Q1 2026)",
+      "status": "ok",
+      "deviation": "1.7%"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.3337,
+      "our_value_pct": "33.4%",
+      "web_value": 0.31,
+      "web_value_pct": "31%",
+      "source": "Eulerpool / MacroTrends (2026)",
+      "status": "ok",
+      "deviation": "7.6%"
+    }
+  ],
+  "overall_status": "all metrics within tolerance — no corrections needed",
+  "corrections_applied": false,
+  "summary": "All 7 metrics verified against current web sources. Maximum deviation observed was 7.6% (ROA), well below the 20% threshold. Net margin (0.2%), PE ratio (1.4%), and ROE (1.7%) are tightly aligned with web consensus. Operating margin sits in the middle of the 31.89%–35.37% range reported by different sources. Revenue and market cap show minor date-lag differences of under 2%. No facts bundle corrections were required."
+}
