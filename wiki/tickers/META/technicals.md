@@ -1,45 +1,45 @@
 ---
 name: META technicals
-last_updated: 2026-05-06
-last_run_id: 20260506_140335
+last_updated: 2026-05-07
+last_run_id: 20260507_140427
 target_words: 350
 stale_after_days: 7
-word_count: 338
-summary: Day 7 post-earnings breakdown — cover decision issued (id 118, fill $611.78, current $604.96, ~$6.82 gain); RSI-7 collapsed to 6.52 (extreme oversold); bullish RSI divergence confirmed both timeframes; ADX 52.76 confirms extreme downtrend; bounce risk elevated; R/R from current levels 0.17:1 — degraded.
+word_count: 342
+summary: Day 8 post-earnings — short id 118 still open (fill $611.78, stop $635, target $575); price $622.60 has broken above $614.34 hourly resistance into dead-cat bounce territory; RSI-7 recovered from 6.52 to 11.28 (still extreme oversold); ADX 52.15 extreme downtrend intact; hourly momentum temporarily flipped bullish; setup type "bounce into resistance — hold, let stop manage."
 ---
 
 # META — Technicals
 
 ## TL;DR
 
-Day 7 post-earnings breakdown (May 6, 2026). Cover decision issued for trade id 118 (run 20260506_140335). RSI-7 has collapsed to **6.52** — extreme oversold reading with bullish RSI divergence confirmed on BOTH daily and hourly timeframes. ADX 52.76 (daily) confirms the underlying downtrend remains extremely strong, but momentum is exhausting at this reading. Hourly OBV is diverging bullishly from falling price — early accumulation signal. Bounce risk is elevated. Prior setup type "post-earnings breakdown active short" transitions to "cover and re-enter on failed bounce." (source: signals_combined.json, decisions.json, run 20260506_140335)
+Day 8 post-earnings breakdown (May 7, 2026). Short id 118 remains open (fill $611.78, stop $635, target $575) — no cover filled. Price at **$622.60** has broken above the $614.34 hourly resistance cluster (prior re-entry short trigger zone). This is a bounce into resistance on sub-threshold volume (1.22–1.30x vs. 1.5x minimum), consistent with a dead-cat bounce in an ADX 52.15 extreme downtrend, not a trend reversal. RSI-7 has recovered from 6.52 to 11.28 — still deeply extreme oversold; bullish RSI divergence confirmed on both daily and hourly timeframes. Hourly momentum has temporarily flipped bullish. Setup type: **bounce into resistance — hold, let stop manage**. Head Trader conf 32 (below 40 threshold). (source: signals_combined.json, decisions.json, run 20260507_140427)
 
 ## Setup type
 
-**Post-earnings breakdown — extreme oversold, cover and re-entry watch.** Prior setup (dead-cat bounce short, entered $611.78) has been managed to the PM's cover decision. Price at $604.96 reflects ~$6.82/share gain from fill. RSI-7 at 6.52 is the defining feature of this session — a reading at this extreme historically precedes violent snap-back rallies even in ADX 50+ downtrends. Re-entry watch zone: $612–614 resistance (hourly, 19 volume-confirmed tests) on failed bounce with bearish rejection candle.
+**Post-earnings bounce into resistance — hold existing short.** The extreme oversold reading (RSI-7 6.52) from May 6 has triggered the predicted snap-back rally. Price has cleared the $614.34 resistance zone but on insufficient volume — 1.22–1.30x vs. the mandatory 1.5x confirmation threshold. No squeeze is firing; volatility already expanded from post-earnings breakdown. Daily structure remains bearish: all EMAs above price, ADX 52.15 with -DI 37.73 >> +DI 12.94. Hourly has temporarily recovered (+DI 28.78 > -DI 16.71) but this is a within-timeframe bounce, not a regime change. $635 stop manages the risk ceiling.
 
-## Key levels (as of May 6, 2026)
+## Key levels (as of May 7, 2026)
 
 | Level | Price | Significance |
 |---|---|---|
-| Current price | ~$604.96 | Inside $602.75–$614.34 hourly consolidation band |
-| Short entry (filled) | $611.78 | Fill price, trade id 118 (run 20260504_143030) |
-| Hourly resistance cluster | $614.34 | 19 volume-confirmed tests — re-entry short trigger zone |
-| Hourly support | $602.75 | 13 volume-confirmed tests — key floor |
-| Fibonacci 50% retracement | $605.89 | Swing high $691.52 → low $520.26 — natural bounce node |
-| Fibonacci 61.8% retracement | $585.68 | Next support if $602.75 breaks |
-| Short stop (if re-entered) | $621.00 | Above earnings-day resistance |
-| Prior short target | $580.00 | Adjusted from original $575; still valid if re-entered |
+| Current price | ~$622.60 | Above prior resistance; inside dead-cat bounce zone |
+| Short fill price | $611.78 | Fill price, trade id 118 (run 20260504_143030) |
+| Prior re-entry trigger (retired) | $614.34 | Broken to upside — prior short re-entry zone invalidated |
+| Hourly support (prior resistance) | $614.34 | Now acts as floor if bounce fails |
+| Fibonacci 50% retracement | $605.89 | Swing high $691.52 → low $520.26 — bounce launched from here |
+| Fibonacci 38.2% retracement | $626.10 | Next resistance above current price (Fib + horizontal) |
+| Short stop | $635.00 | Stop for id 118 — manages ceiling risk |
+| Target price | $575.00 | Original target for id 118 |
 
-## Indicator state (as of May 6, 2026)
+## Indicator state (as of May 7, 2026)
 
 | Indicator | Value | Signal |
 |---|---|---|
-| RSI-7 (daily) | 6.52 | EXTREME oversold; bullish RSI divergence confirmed |
-| RSI-14 (daily) | 28.45 | Deeply oversold; approaching OB threshold |
-| ADX (daily) | 52.76 | Very strong confirmed downtrend |
-| -DI / +DI (daily) | 39.5 / 11.36 | Strong bearish directional dominance |
-| MACD histogram (daily) | -8.207 | Deeply negative; magnitude large but momentum decelerating |
-| Hourly OBV | Diverging up | Rising OBV vs. falling price — early accumulation signal |
-| BB width (daily) | 0.1776 | Wide — volatility already expanded; squeeze not firing |
-| Bollinger %B (daily) | 0.107 | Near lower band — bounce risk zone |
+| RSI-7 (daily) | 11.28 | Extreme oversold; bullish RSI divergence confirmed (both TFs) |
+| RSI-14 (daily) | 29.65 | Oversold |
+| ADX (daily) | 52.15 | Very strong confirmed downtrend |
+| -DI / +DI (daily) | 37.73 / 12.94 | Strong bearish directional dominance |
+| MACD histogram (daily) | -8.07 | Deeply negative (large magnitude) |
+| Hourly +DI / -DI | 28.78 / 16.71 | Hourly momentum temporarily bullish (bounce) |
+| BB width (daily) | 0.1774 | Wide — volatility expanded; no squeeze present |
+| Bollinger %B (daily) | 0.1745 | Near lower band |
