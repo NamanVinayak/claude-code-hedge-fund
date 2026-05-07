@@ -1,22 +1,22 @@
 ---
 name: NVDA trades
-last_updated: 2026-05-06
-last_run_id: 20260506_123913
+last_updated: 2026-05-07
+last_run_id: 20260507_123732
 target_words: 800
 stale_after_days: 60
-word_count: 772
-summary: One formally closed position — 16 shares at $209.25 stopped out 2026-04-30 at $205.30, P&L -$63.20 (corrected from buggy -$264.65; see lessons.md). Four prior abandoned tracker.db entries from Apr 14-29 (no realized P&L). No open positions as of 2026-05-06. AMD earnings (May 5 AMC) did not trigger confirmation signal — 4th consecutive HOLD at EMA-21/Fib 38.2% zone.
+word_count: 805
+summary: One formally closed position — 16 shares at $209.25 stopped out 2026-04-30 at $205.30, P&L -$63.20 (corrected from buggy -$264.65; see lessons.md). Four prior abandoned tracker.db entries from Apr 14-29 (no realized P&L). No open positions as of 2026-05-07. Both entry gates fired May 6 (hourly MACD +0.9366, bullish engulfing above $194.74); breakout to $207.83; HOLD (allowed_actions blocks buy). 5-of-5 bullish consensus; hard exit deadline May 17.
 ---
 
 # NVDA — Trades
 
 ## TL;DR
 
-One formally closed NVDA position in Turso (trade id 112): originally booked as 67 shares @ $209.25 due to a phantom $100K budget bug (commit b2b472d), now corrected to its proper sizing of 16 shares. Stopped out at $205.30 on 2026-04-30, realized P&L **-$63.20** (corrected from the buggy -$264.65). Four prior tracker.db entries (IDs 6, 12, 13, 21) were marked abandoned 2026-04-29 with no realized P&L. No open NVDA positions as of 2026-05-06. AMD Q1 2026 earnings (May 5 AMC) passed without triggering the confirmation signal — price slipped to $196.50 on May 6. This is the 4th consecutive HOLD run at the EMA-21/Fib 38.2% confluence zone. Hard exit deadline ~May 17 (3-day pre-earnings blackout before NVDA Q1 FY2027 ~May 20).
+One formally closed NVDA position in Turso (trade id 112): originally booked as 67 shares @ $209.25 due to a phantom $100K budget bug (commit b2b472d), now corrected to its proper sizing of 16 shares. Stopped out at $205.30 on 2026-04-30, realized P&L **-$63.20** (corrected from the buggy -$264.65). Four prior tracker.db entries (IDs 6, 12, 13, 21) were marked abandoned 2026-04-29 with no realized P&L. No open NVDA positions as of 2026-05-07. Both entry gates fired May 6 (hourly MACD histogram +0.9366 positive; confirmed bullish engulfing candle above $194.74) — price surged to $207.83 (+4.64%). 5-of-5 swing agents bullish. HOLD this run (allowed_actions blocks new buy). Hard exit deadline ~May 17 (3-day pre-earnings blackout before NVDA Q1 FY2027 ~May 20).
 
 ## Open positions
 
-None. Last position closed 2026-04-30. No fills in per_ticker_history[NVDA] for run 20260506_123913 — hard rule #11 confirmed: HOLD decision, no entry, no new position.
+None. Last position closed 2026-04-30. No fills in per_ticker_history[NVDA] for run 20260507_123732 — hard rule #11 confirmed: per_ticker_history[NVDA] contains only trade id 112 (stop_hit, closed 2026-04-30). HOLD decision this run; buy blocked by allowed_actions; no new position entered.
 
 ## Recently Closed — last 30 days
 
@@ -75,6 +75,7 @@ None. Last position closed 2026-04-30. No fills in per_ticker_history[NVDA] for 
 | **20260504_125732** | **2026-05-04** | **hold** | n/a | $210.50 (conditional) | $194.00 (conditional) | ~2.6:1 | 44 |
 | **20260505_163241** | **2026-05-05** | **hold** | n/a | $216.83 (conditional) | $193.50 (conditional) | 3.7:1 | 42 |
 | **20260506_123913** | **2026-05-06** | **hold** | n/a | $210.00 (conditional) | $193.50 (conditional) | 3.7:1 | 38 |
+| **20260507_123732** | **2026-05-07** | **hold** (gates fired; buy blocked by allowed_actions) | n/a | $216.00 (if buy were permitted) | $198.50 (if buy were permitted) | ~2.5:1 | 60 |
 
 ## Lessons learned
 

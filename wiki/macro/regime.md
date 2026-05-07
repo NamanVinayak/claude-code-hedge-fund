@@ -1,43 +1,43 @@
 ---
 name: macro regime
-last_updated: 2026-05-06
-last_run_id: 20260506_220627
+last_updated: 2026-05-07
+last_run_id: 20260507_123732
 target_words: 400
 stale_after_days: 14
-word_count: 402
-summary: Strongly risk-on May 6 final — S&P 500 record close +1.46% at 7,365, Nasdaq +2.02% at 25,838 record, Dow +1.24% at 49,910; US-Iran peace deal MOU reportedly imminent; AMD blowout (+38% YoY) confirms AI capex supercycle; DIS +6.24% top Dow performer post-earnings; Fed 3.50-3.75% hold, Warsh transition May 15; oil easing toward $100-108/bbl
+word_count: 403
+summary: Strongly risk-on May 7 — S&P 500 and Nasdaq at all-time highs; AI semiconductor stocks leading; US-Iran peace deal further advanced with oil falling to $91.73/bbl; AMD Q1 2026 blowout (+38% YoY) confirms AI capex supercycle; Fed 3.50-3.75% hold; Kevin Warsh succession May 15 primary remaining tail risk.
 ---
 
 # Macro Regime
 
 ## TL;DR
 
-**Strongly risk-on with improving headline, but Iran tail risk and Fed transition not fully resolved.** S&P 500 confirmed record close at 7,365 (+1.46%), Nasdaq at 25,838 (+2.02%, record), Dow at 49,910 (+1.24%) on May 6 — all at new all-time highs. Rally driven by US-Iran peace deal optimism and AMD Q1 2026 blowout (+38% YoY revenue, +16% stock). DIS was among the top Dow performers at +6.24% on Q2 FY2026 earnings beat. Industrials led (+2.7%), energy lagged (-4.2%) on falling oil prices. Macro regime remains **strongly risk-on for May 6**: earnings tailwind is real, AI capex supercycle confirmed by AMD+Azure+AWS results, and geopolitical risk is partially easing. However, Iran MOU is not yet signed, Kevin Warsh Fed succession May 15 introduces tightening-bias tail risk, and inflation remains elevated. Growth stocks (AMZN, NVDA, META, AAPL) remain most sensitive to rate-tightening tail. [source: web_research/NKE.json, web_research/DIS.json macro_context, run 20260506_220627; confirmed higher than run 20260506_173925 preliminary closes]
+**Strongly risk-on and improving.** S&P 500 and Nasdaq both at all-time highs as of May 6-7, 2026, driven by AMD Q1 2026 blowout (+38% YoY revenue) confirming the AI capex supercycle and US-Iran peace deal optimism materially advancing. Oil has fallen sharply to ~$91.73/bbl — from ~$104 peak — as ceasefire framework negotiations progress. AI semiconductor stocks are leading the broad rally. Regime assessment for May 7: **strongly risk-on**, with the two remaining headwinds being Kevin Warsh Fed succession (May 15, hawkish tightening-bias tail) and confirmation that the Iran MOU is fully signed. [sources: web_research/NVDA.json macro_context, run 20260507_123732; web_research/NKE.json, web_research/DIS.json macro_context, run 20260506_220627]
 
 ## Fed posture
 
-The Federal Reserve voted to hold the federal funds rate at **3.50%–3.75%** on April 29 (8-4 dissent — most lopsided since October 1992). Chair Powell's last day is May 15; Kevin Warsh is the leading successor candidate (hawkish, Senate confirmation pending). Market pricing: zero cuts through 2026 and into 2027. The transition introduces policy uncertainty independent of the rate level — growth stocks most exposed to tightening-bias tail. Inflation elevated in part from Middle East energy spike. [source: web_research/AMZN.json macro_context, run 20260506_173925]
+The Federal Reserve voted to hold the federal funds rate at **3.50%–3.75%** on April 29 (8-4 dissent — most lopsided since October 1992). Chair Powell's final day is May 15; Kevin Warsh is the leading successor candidate (hawkish, Senate confirmation pending). Market pricing: zero cuts through 2026 and only one 25bp cut in December 2027. The Warsh succession introduces policy uncertainty independent of the rate level — growth stocks including NVDA, AMZN, AAPL, and META are most exposed to tightening-bias repricing. Inflation has been elevated in part from Middle East energy pressure; the oil decline to $91.73 is a meaningful disinflationary signal if sustained. [source: web_research/NVDA.json macro_context, 20260507_123732]
 
 ## Rate trajectory and inflation
 
-Inflation above 2% target. Oil easing from $104+ peak toward ~$102/bbl on ceasefire talks — sustained ceasefire completion could ease energy-driven inflation overhang. If Iran deal solidifies and oil falls below $95, Fed hold timeline could shorten — a growth-stock positive. June 2026 Fed meeting: rate cut probability low. US midterm election uncertainty 2026 adds further policy noise. [source: web_research/AMZN.json macro_context, run 20260506_173925]
+Inflation above 2% target but improving: oil falling from $104 peak toward $91.73/bbl on ceasefire progress is a direct energy disinflation driver. If Iran deal finalizes and oil settles below $90, the Fed hold timeline could shorten materially — a growth-stock positive. June 2026 Fed meeting: rate cut probability remains low but rising if oil easing persists. US midterm election uncertainty adds further policy noise in H2 2026. [source: web_research/NVDA.json, 20260507_123732]
 
-## Market context (May 6, 2026 — final confirmed closes)
+## Market context (May 6-7, 2026)
 
-S&P 500: 7,365 (+1.46%, record). Nasdaq: 25,838 (+2.02%, record). Dow: 49,910 (+1.24%). Rally driven by AMD Q1 2026 blowout (revenue $10.25B +38% YoY, EPS $1.37 +43%, Q2 guide $11.2B beats consensus) and US-Iran peace deal optimism. DIS +6.24% (top Dow performer) on Q2 FY2026 earnings beat. Industrials led (+2.7%), energy lagged (-4.2%). AI capex supercycle intact: AMD+Azure +40%+AWS $37.6B all confirm demand. Amazon Supply Chain Services launch rattles UPS/FedEx. US-Iran ceasefire MOU reportedly ~48 hours from completion. [source: web_research/NKE.json, web_research/DIS.json macro_context, run 20260506_220627; updated from 20260506_173925 preliminary (S&P 7,338.89) to final confirmed closes]
+S&P 500 closed at record **7,365.12 (+1.46%)** and Nasdaq at record **25,838.94 (+2.02%)** on May 6; S&P futures rising further on May 7. AI semiconductor stocks leading the broad rally. AMD Q1 2026 earnings (May 5 AMC): revenue $10.25B +38% YoY, EPS $1.37 +43%, Q2 guide $11.2B beats $10.5B consensus — direct AI capex supercycle confirmation. DIS +6.24% top Dow performer post-Q2 FY2026 earnings beat. Industrials led (+2.7%), energy lagged (-4.2%) as oil fell sharply. Amazon Supply Chain Services launch and Alphabet $200B Anthropic deal confirm continued mega-cap AI/cloud investment. [source: web_research/NVDA.json, 20260507_123732; confirmed with web_research/NKE.json and DIS.json, 20260506_220627]
 
 ## Geopolitical and regulatory
 
-**Iran-US conflict: actively de-escalating as of May 6.** US-Iran peace MOU negotiations reportedly within ~48 hours of completion; oil easing toward $102/bbl. UAE intercepted Iranian missiles May 4; ceasefire talks accelerated. Strait of Hormuz closure threat remains a live left-tail if talks collapse — oil could re-spike rapidly. Additional flashpoints: US-Venezuela tensions, NATO Greenland posture, tariff uncertainty. Fed leadership transition May 15 is the most proximate policy risk. [source: web_research/AMZN.json macro_context, run 20260506_173925]
+**Iran-US conflict: actively de-escalating, meaningfully advanced.** US-Iran peace deal framework now reflected in oil at $91.73/bbl — a significant drop from the $104+ peak. Ceasefire negotiations in Islamabad ongoing; MOU completion would remove the primary energy risk-off tail. Strait of Hormuz closure threat remains a live left-tail if talks collapse but probability falling. Additional flashpoints: US-Venezuela tensions (Maduro captured), NATO Greenland posture, tariff uncertainty. Fed leadership transition May 15 is the most proximate near-term policy risk. [source: web_research/NVDA.json macro_context, 20260507_123732]
 
 ## Risk-off triggers
 
-- **Iran-Strait of Hormuz ceasefire collapse** — failure of MOU talks spikes oil, re-accelerates inflation
+- **Iran ceasefire collapse** — talks fail, oil re-spikes above $100, energy inflation re-accelerates
 - **Kevin Warsh hawkish confirmation signal (May 15)** — tighter-for-longer re-rates growth stocks lower
-- **AI capex ROI disappointment** — any major infrastructure player signals wasted spend
+- **AI capex ROI disappointment** — any major infrastructure player signals wasted GPU spend
 - **US tariff escalation** — additional rounds pressure supply chains and consumer sentiment
-- **US midterm election volatility** — policy uncertainty ahead of November 2026
+- **US midterm election volatility** — policy uncertainty H2 2026
 
 ## Last updated
 
-2026-05-06. Updated by run `20260506_220627`. Final confirmed May 6 closes added from `web_research/NKE.json` and `web_research/DIS.json` macro_context: S&P 7,365 (+1.46%), Nasdaq 25,838 (+2.02%), Dow 49,910 (+1.24%) — higher than run 20260506_173925 preliminary closes (S&P 7,338.89). DIS +6.24% confirmed as top Dow performer on Q2 FY2026 earnings beat. Industrials +2.7%/energy -4.2% sector breakdown added. Regime assessment unchanged: strongly risk-on.
+2026-05-07. Updated by run `20260507_123732`. Key changes from prior run 20260506_220627: oil at $91.73/bbl (significantly lower than prior $102 estimate) on further US-Iran de-escalation; S&P/Nasdaq confirmed new ATH closes May 6 (7,365.12 and 25,838.94); AMD Q1 2026 blowout confirmed AI capex supercycle. Regime assessment: strongly risk-on, improved from prior. Kevin Warsh May 15 remains single primary tail risk.

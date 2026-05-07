@@ -1,56 +1,54 @@
 ---
 name: NVDA catalysts
-last_updated: 2026-05-06
-last_run_id: 20260506_123913
+last_updated: 2026-05-07
+last_run_id: 20260507_123732
 target_words: 400
 stale_after_days: 14
-word_count: 403
-summary: NVDA Q1 FY2027 earnings May 20, 2026 (after close, confirmed) is the dominant hard catalyst; AMD earnings (May 5 AMC) passed without triggering confirmation signal; oil easing toward $102 on US-Iran deal hopes; avg analyst PT $270–$274; ServiceNow and TotalEnergies AI partnerships new positives.
+word_count: 401
+summary: NVDA Q1 FY2027 earnings May 20 (after close) is the dominant hard catalyst — 9 trading days away; AMD Q1 2026 blowout (+38% YoY, confirmed May 5 AMC) provided sector tailwind driving NVDA +5.41% on May 6; Corning optical-fiber partnership announced; oil $91.73 on US-Iran de-escalation; analyst avg PT $271; hard exit ~May 17.
 ---
 
 # NVDA — Catalysts
 
 ## TL;DR
 
-The AMD Q1 2026 earnings trigger (May 5 AMC) has now passed — price slipped -1% to $196.50 post-print, failing to deliver the confirmation signal the model required. The primary hard catalyst is now squarely NVDA Q1 FY2027 earnings on **May 20, 2026** (confirmed, after market close). Hard exit deadline ~May 17 (3-day pre-earnings blackout). Fundamental catalyst posture remains strongly bullish: 57/60 analyst Buy ratings, avg PT $270–$274, Blackwell Ultra leads AMD/Intel by "two generations," and new enterprise AI partnerships continue to accumulate. Macro: S&P 500 hit ATH on May 5; May 6 futures positive as US-Iran deal hopes push oil lower (easing from $104 toward $102), providing partial regime relief.
+The primary hard catalyst is NVDA Q1 FY2027 earnings on **May 20, 2026** (confirmed, after market close) — 9 trading days away. Hard exit deadline ~May 17 (3-day pre-earnings blackout). AMD Q1 2026 blowout (May 5 AMC: $10.25B revenue +38% YoY, EPS $1.37 +43%) confirmed the AI capex supercycle and fueled NVDA's +5.41% surge to $207.83 on May 6. New positive: Nvidia multi-billion-dollar Corning optical-fiber manufacturing partnership (NC/TX, 3,000+ jobs, 10x US optical capacity). Macro: US-Iran peace deal advancing materially — oil fell to ~$91.73/bbl, risk-on regime at S&P/Nasdaq ATHs. Analyst consensus: 57/60 Buy, avg PT $271, ~30% upside from current price.
 
 ## Upcoming events
 
 | Event | Date | Impact | Source |
 |---|---|---|---|
-| NVDA Q1 FY2027 earnings | May 20, 2026 AMC (confirmed) | HIGH — binary; hard exit by ~May 17 | web_research/NVDA.json, 20260506_123913 |
-| Fed chair transition (Warsh) | May 15, 2026 | Low-medium — Kevin Warsh hawkish; policy uncertainty | web_research/NVDA.json, 20260506_123913 |
-| US-Iran ceasefire/deal talks | Ongoing; oil ~$102 and easing | High macro tail risk — if deal fails, oil spikes again | web_research/NVDA.json, 20260506_123913 |
-| Fed next meeting | June 2026 | Low — no cut expected; elevated inflation | web_research/NVDA.json, 20260506_123913 |
-| Rubin GPU architecture | Late 2026 | Medium-long — 10x inference cost improvement vs Blackwell | web_research/NVDA.json, 20260506_123913 |
-| US midterm elections | 2026 | Low — policy uncertainty layer | web_research/NVDA.json, 20260506_123913 |
+| NVDA Q1 FY2027 earnings | May 20, 2026 AMC (confirmed) | HIGH — binary; hard exit by ~May 17 | web_research/NVDA.json, 20260507_123732 |
+| Fed chair transition (Warsh) | May 15, 2026 | Low-medium — Kevin Warsh hawkish; policy uncertainty | web_research/NVDA.json, 20260507_123732 |
+| US-Iran peace deal finalization | Ongoing; oil ~$91.73 and falling | High macro positive if closed — removes energy inflation risk | web_research/NVDA.json, 20260507_123732 |
+| Fed next meeting | June 2026 | Low — no cut expected; elevated inflation | web_research/NVDA.json, 20260507_123732 |
+| Rubin GPU architecture | Late 2026 | Medium-long — 10x inference cost improvement vs Blackwell | swing_catalyst_news, 20260507_123732 |
 
 ## Recent news synthesis
 
 **Positive:**
-- ServiceNow announced significant expansion of AI partnership with NVDA to extend agentic AI governance from desktops — enterprise AI infrastructure deepening. (web_research/NVDA.json, 20260506_123913)
-- TotalEnergies collaborating with NVDA on a new supercomputer — energy sector AI adoption confirms demand diversification beyond hyperscalers. (web_research/NVDA.json, 20260506_123913)
-- DBS raised PT from $220 to $250 (April 27); avg analyst PT now ~$270–$274, implying ~38% upside from $196.50. 57/60 analyst firms rate Buy or Strong Buy. (web_research/NVDA.json, 20260506_123913)
-- Alphabet/Amazon GPU spend expansion confirmed Q1 — direct AI capex supercycle signal. (swing_macro_context, 20260506_123913)
-- Blackwell Ultra leads AMD and Intel by "two generations" per analyst commentary — technology moat intact. (swing_catalyst_news, 20260506_123913)
-- Supply-related commitments surged ~90% sequentially to $95.2B — signals massive AI infrastructure buildout demand still accelerating. (swing_catalyst_news, 20260506_123913)
+- AMD Q1 2026 earnings (May 5 AMC) blowout: $10.25B +38% YoY, EPS $1.37 +43%, Q2 guide $11.2B beats consensus — directly confirms AI GPU capex supercycle accelerating. NVDA rallied +5.41% on the confirmation. (web_research/NVDA.json, 20260507_123732)
+- Nvidia announced multi-billion-dollar partnership with Corning for three new optical-fiber manufacturing facilities in NC and TX — 3,000+ jobs created, 10x US optical capacity. AI infrastructure footprint expanding beyond chips. (web_research/NVDA.json, 20260507_123732)
+- Consensus $78.8B revenue (+78.6% YoY) and EPS $1.77 (+118% YoY) for Q1 FY2027 earnings May 20 — analysts broadly bullish on the print. (web_research/NVDA.json, 20260507_123732)
+- Stock up ~32% from late-March low of $164.11; still ~23% below avg analyst PT of $270+. (web_research/NVDA.json, 20260507_123732)
+- Alphabet/Amazon GPU capex expansion confirmed Q1. Blackwell Ultra leads AMD/Intel by "two generations." Supply commitments surged ~90% sequentially to $95.2B. (swing_catalyst_news, 20260507_123732)
 
 **Negative:**
-- AMD Q1 2026 earnings (May 5 AMC) did NOT deliver the blowout confirmation required by prior thesis — price action post-AMD print: -1% to $196.50, slipping below the Fib 38.2% zone. AMD read-through was partial, not the strong beat catalyst_news required. (swing_catalyst_news, 20260506_123913)
-- NVDA stock down ~7.82% over the past 5 days while Nasdaq hit ATH on May 5 — near-term underperformance vs market is a caution flag. (web_research/NVDA.json, 20260506_123913)
-- US-Iran conflict near UAE/Strait of Hormuz ongoing (oil WTI ~$102, easing from $104 peak). Ceasefire talks provide relief but risk not fully removed. (web_research/NVDA.json, 20260506_123913)
-- China revenue confirmed at zero — US H20 export ban, $4.5B charge fully booked. Structural drag, fully priced. (swing_catalyst_news, 20260506_123913)
+- Hyperscaler custom silicon long-term risk: Anthropic signed multi-billion deal for Google TPUs (1M units); analyst projects Google could capture 20% of AI chip market if TPUs sold externally. Key long-term moat risk. (web_research/NVDA.json, 20260507_123732)
+- Margin contraction: gross margin trend -1.6%, operating margin trend -5.2%, net margin trend -4.2% — margins still exceptional but declining sequentially. (growth_analyst_agent, 20260507_123732)
+- China revenue zero — US H20 export ban, $4.5B charge fully booked. Structural drag, fully priced. (swing_catalyst_news, 20260507_123732)
+- Daily OBV bearish divergence on daily timeframe persists — distribution signal despite price advance. (swing_breakout, 20260507_123732)
 
 ## Insider activity
 
-Quiet in current 30-day window (0 trades per sentiment_analyst_agent, 20260506_123913). Background is consistently bearish (706 of 735 historic transactions) but prior sales were at $171–177 via scheduled 10b5-1 plans — well below current $196.50 — not an acute signal.
+Quiet in current 30-day window (0 trades per sentiment_analyst_agent, 20260507_123732). Background is consistently bearish (706 of 735 historic transactions) but prior sales were at $171–177 via scheduled 10b5-1 plans — well below current $207.83 — no acute signal.
 
 ## Analyst consensus
 
 - **Rating:** Buy (57/60 firms; 2 Hold, 1 Sell)
-- **Avg price target:** ~$270–$274 (avg $270.73 per web_research; range ~$220–$380)
-- **Implied upside:** ~37–40% from $196.50 (web_research/NVDA.json, 20260506_123913)
+- **Avg price target:** ~$270.73–$274 (range $220–$380)
+- **Implied upside:** ~30% from $207.83 (web_research/NVDA.json, 20260507_123732)
 
 ## Last updated
 
-2026-05-06 — synthesized from 20260506_123913 (web_research/NVDA.json, swing_catalyst_news signal, sentiment_analyst_agent). Key change from prior run (20260505_163241): AMD earnings trigger (May 5 AMC) is now resolved and did NOT fire the confirmation signal; primary focus pivots entirely to NVDA May 20 earnings. Oil easing on US-Iran deal hopes is a modest macro positive. New partnerships (ServiceNow, TotalEnergies) added.
+2026-05-07 — synthesized from 20260507_123732 (web_research/NVDA.json, swing_catalyst_news signal, sentiment_analyst_agent). Key changes from prior run (20260506_123913): AMD earnings blowout confirmed as positive AI capex catalyst; Corning partnership added; oil at $91.73 (previously $102) on US-Iran de-escalation; analyst PT updated to $271; primary thesis now entirely focused on NVDA May 20 earnings as the hard binary.

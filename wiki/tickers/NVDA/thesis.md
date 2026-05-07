@@ -1,11 +1,11 @@
 ---
 name: NVDA thesis
-last_updated: 2026-05-06
-last_run_id: 20260506_123913
+last_updated: 2026-05-07
+last_run_id: 20260507_123732
 target_words: 500
 stale_after_days: 30
-word_count: 512
-summary: NVDA AI infrastructure thesis intact; AMD earnings (May 5 AMC) failed to trigger confirmation signal; price $196.50 now below EMA-21; 4th consecutive HOLD at Fib 38.2% zone; entry gates unchanged; hard exit deadline May 17.
+word_count: 498
+summary: Breakout confirmed May 6 — both entry gates fired simultaneously; price $207.83 (+4.64%), 5-of-5 bullish consensus; HOLD (allowed_actions blocks buy); prior zone (4-run HOLD at EMA-21/Fib 38.2%) resolved bullishly; new watch zone above $200.24; hard exit May 17 before Q1 FY2027 earnings May 20.
 ---
 
 # NVDA — Thesis
@@ -14,33 +14,33 @@ summary: NVDA AI infrastructure thesis intact; AMD earnings (May 5 AMC) failed t
 
 ⚠️ Recent trade: stop_hit 2026-04-30, -$63.20 corrected (originally -$264.65 due to sizing bug, see commit b2b472d). Thesis under review.
 
-NVDA dominates the AI chip market (~81% share) in a multi-year capex supercycle. Fundamentals remain exceptional — 61% revenue growth, 144% earnings growth, 59% operating margin, near-zero leverage, D/E 0.11. The structural thesis is intact. AMD Q1 2026 earnings (May 5 AMC) — the prior run's intended confirmation trigger — passed without firing: price slipped -1% to $196.50, now below the EMA-21 ($197.69) and Fib 38.2% zone ($196.75). This is the **4th consecutive HOLD** at this exact zone (runs 20260501, 20260504, 20260505, 20260506). Entry discipline remains paramount: the same "EMA pullback Fib dip-buy" setup was stopped out for -$63.20 on 2026-04-30 when neither hourly confirmation gate was met. Both gates remain unmet today.
+NVDA dominates the AI chip market (~81% share) in a multi-year capex supercycle. The structural thesis is intact and has materially strengthened this run. The 4-run HOLD at the EMA-21/Fib 38.2% confluence ($196.75–$197.69) has now resolved **bullishly**: both wiki-defined entry gates fired simultaneously for the first time across five consecutive runs — (1) hourly MACD histogram crossed above zero (+0.9366), and (2) confirmed bullish engulfing candle above $194.74. Price surged from $196.50 to $207.83 (+4.64%) on May 6, clearing $200.24 (17-test resistance) and $203.00 (7-test resistance) with conviction. AMD Q1 2026 blowout ($10.25B +38% YoY) confirmed the AI capex supercycle. All 5 swing agents are bullish (confidence 60). Decision: HOLD — allowed_actions blocks a new buy. Hard exit deadline ~May 17 (3-day pre-earnings blackout before NVDA Q1 FY2027 ~May 20 AMC).
 
-**Prior thesis claim falsified (2026-05-01):** the 2026-04-29 thesis stated "every run that scored a buy was entered below the EMA-10 on a pullback." The Apr 30 entry at $209.25 was above the Fib 38.2% and was stopped out as price continued lower. The real entry zone is confirmed: EMA-21 / Fib 38.2% confluence at $196.75–$197.69. What has now changed: price has slipped slightly below that zone ($196.50 vs $196.75 floor), and AMD earnings provided no catalyst boost — the confirmation trigger requirement is unchanged.
+**Prior thesis claim falsified:** The 2026-05-06 thesis stated "both entry gates remain unmet" and "AMD earnings passed without triggering confirmation signal." That claim is now falsified. Both gates fired on May 6 (hourly MACD histogram +0.9366 positive; bullish engulfing candle above $194.74 confirmed). Price is now $207.83 — above the prior watch zone and approaching the $208.20 broken-support-now-resistance level. The failing condition (lack of confirmation) has been resolved.
 
 ## Bull case
 
-- **AI capex supercycle intact.** Alphabet Q1 +7% and Amazon Q1 +2% post-earnings confirmed GPU spend expansion. ServiceNow and TotalEnergies AI partnerships added in May 2026. Analyst consensus: 57/60 Buy, avg PT $270–$274, ~38% upside from $196.50. (web_research/NVDA.json, run 20260506_123913)
-- **Technology lead is durable.** Blackwell Ultra leads AMD/Intel by "two generations" per benchmarks. Rubin architecture (TSMC 3nm, HBM4) on roadmap for late 2026, targeting 10x inference cost reduction. (web_research/NVDA.json, 20260506_123913)
-- **Fundamentals are exceptional.** ROE 121%, net margin 52.7%, operating margin 59%, current ratio 4.44, D/E 0.11. PEG ratio 0.63 — cheap relative to growth rate. Owner-earnings model shows intrinsic value ~$29T vs ~$4.78T market cap. (fundamentals_analyst_agent, valuation_analyst_agent, 20260506_123913)
-- **Daily trend structure intact.** ADX 53.63, all EMAs aligned bullish (EMA-10 $201.14 > EMA-21 $197.69 > EMA-50 $191.34), RSI-7 29.36 (short-term oversold — bounce zone). This is a pullback within an intact uptrend. (swing_trend_momentum, 20260506_123913)
-- **Hard earnings catalyst approaching.** NVDA Q1 FY2027 earnings May 20, 2026 — historically drives 8–15% move. Conditional entry ~$197.00, stop $193.50, target $210.00, R/R 3.7:1. Hard exit deadline ~May 17 (3-day pre-earnings blackout). (swing_catalyst_news, 20260506_123913)
+- **AI capex supercycle confirmed.** AMD Q1 2026 (+38% YoY revenue, +43% EPS) is the strongest direct read-through for NVDA GPU demand. Azure +40%, AWS $37.6B capex confirm hyperscaler spend. Consensus NVDA Q1 FY2027 revenue $78.8B (+78.6% YoY) with 118% EPS growth. (web_research/NVDA.json, swing_macro_context, 20260507_123732)
+- **Breakout confirmed.** Both wiki-entry gates fired simultaneously — hourly MACD histogram +0.9366 (positive), confirmed bullish engulfing candle above $194.74. ADX 51.68 with +DI > -DI; hourly ADX 37.6 with +DI 36.55 >> -DI 11.21. RSI-14 57.92 (neutral-bullish, not overbought). 5-of-5 swing agents bullish — rare consensus. (swing_head_trader, 20260507_123732)
+- **Fundamentals exceptional.** PEG 0.66, D/E 0.11, current ratio 4.44, 59% operating margin, 61% revenue growth. Blackwell Ultra leads AMD/Intel by "two generations." New Corning optical-fiber partnership (10x US optical capacity). (growth_analyst_agent, web_research/NVDA.json, 20260507_123732)
+- **Macro tailwind strengthening.** S&P 500 and Nasdaq both at all-time highs. US-Iran peace deal advancing — oil fell to $91.73/bbl. Risk-on regime removes defensive rotation headwind for growth names. (swing_macro_context, web_research/NVDA.json, 20260507_123732)
+- **Earnings catalyst ~9 days.** NVDA Q1 FY2027 earnings May 20 AMC historically drives 8–15% move. Analyst avg PT $271 (~30% upside from $207.83). Entry window 7–9 trading days with hard exit ~May 17. (swing_catalyst_news, 20260507_123732)
 
 ## Bear case
 
-- **AMD trigger failed.** Prior thesis explicitly named AMD Q1 earnings (May 5 AMC) as the confirmation catalyst. AMD printed and NVDA declined -1% — the expected positive read-through did not materialize. The single strongest near-term catalyst hypothesis has now been consumed without firing the signal. (swing_catalyst_news, 20260506_123913)
-- **Price now below EMA-21 and Fib 38.2% floor.** $196.50 is below both the EMA-21 ($197.69) and the lower end of the Fib 38.2% confluence zone ($196.75) — a mild structural deterioration vs May 5. If $194.74 hourly support breaks on a closing basis, the thesis is invalidated; next support $179/$174. (swing_trend_momentum, 20260506_123913)
-- **Four consecutive HOLDs at the same zone.** The model has declined to enter four consecutive times at this zone. Each "not yet" verdict is correct per the lesson rules, but the inability of the zone to trigger a bounce after four sessions increases the risk the level is merely pausing, not holding. (swing_head_trader, 20260506_123913)
-- **OBV trending down.** On-balance volume is declining on both daily and hourly timeframes — more selling than buying behind the surface. Volume 0.76x daily average (below the 1.5x threshold for any confirmed bounce signal). (swing_breakout, 20260506_123913)
-- **Macro adds left-tail risks.** Iran-UAE/Strait of Hormuz conflict active (oil ~$102, easing on ceasefire talks but not resolved), hawkish Warsh Fed transition May 15. Not dealbreakers but demand confirmation before committing capital. (swing_macro_context, 20260506_123913)
-- **DCF gap persists.** DCF shows ~$585B intrinsic value vs ~$4.78T market cap — 87.7% gap. Price remains a bet on AI capex compounding. (valuation_analyst_agent, 20260506_123913)
+- **Volume below threshold.** Relative volume 1.26x vs 1.5x minimum required by swing_breakout strategy. The DIS pre-earnings breakout on May 5 had similar sub-threshold volume (1.23x) and failed. Daily OBV trending down and diverging bearishly from price — distribution signal. (swing_breakout, 20260507_123732)
+- **Price chasing after breakout.** Ideal entry was $204.50–$207.00; current price $207.83 is already at the breakout level. No pullback opportunity materialized. Allowed_actions blocking buy means this run is HOLD — no position exists to ride the move. (swing_head_trader, 20260507_123732)
+- **Resistance overhead.** $208.20 broken support re-tests as resistance (multiple prior tests); $214.73 hourly cluster; $216.83 52-week high. Price sits just below the $208.20 hurdle. (technicals.md, 20260507_123732)
+- **Kevin Warsh tail risk.** Fed chair transition May 15 sits inside the trade window. Hawkish tightening-bias signal could re-rate growth stocks lower. (swing_macro_context, 20260507_123732)
+- **EMA pullback Fib dip-buy: 0% win rate last 30 days.** Prior Apr 30 entry (-$63.20) lacked confirmation candle; today's setup is different (both gates fired), but the lesson moderates confidence. (trades.md, swing_head_trader, 20260507_123732)
+- **In-house silicon risk (long-term).** Anthropic multi-billion TPU deal with Google; analyst projects Google could capture 20% AI chip market if sold externally. Not a near-term risk but a structural moat erosion signal. (web_research/NVDA.json, 20260507_123732)
 
 ## What would change my mind
 
-**Bearish flip triggers:** close below $194.74 on hourly basis (thesis invalidated — immediate hold); second hyperscaler cuts AI capex; NVDA earnings miss attributable to demand slowdown.
+**Bearish flip triggers:** close below $198.70 (hourly support, 23 tests) on a daily basis — thesis invalidated; second hyperscaler cuts AI capex; NVDA earnings miss on demand.
 
-**Bullish conviction boost:** both gates fire simultaneously — hourly MACD histogram crosses above zero AND confirmed bullish reversal candle at/above $194.74; price reclaims $200.24 on 1.5x+ volume.
+**Bullish conviction boost:** volume exceeds 1.5x on follow-through day; price clears $208.20 and holds; daily MACD histogram turns positive; allowed_actions opens buy on a future run.
 
 ## Last updated
 
-2026-05-06 — run 20260506_123913. Prior thesis (2026-05-01, run 20260501_124529) updated: AMD earnings trigger consumed without confirmation signal firing; price slipped to $196.50 (below EMA-21 and Fib 38.2% zone floor). 4th consecutive HOLD at this zone. Synthesized from swing agents, swing_head_trader, fundamentals_analyst_agent, valuation_analyst_agent signals; decisions.json; explanation.json; web_research/NVDA.json.
+2026-05-07 — run 20260507_123732. Prior thesis (2026-05-06, run 20260506_123913) falsified: "both entry gates unmet" claim superseded — both gates fired May 6. Price $207.83 (+4.64%), 5-of-5 bullish consensus. HOLD (allowed_actions). Synthesized from swing agents, swing_head_trader, fundamentals/growth/valuation analysts; decisions.json; web_research/NVDA.json.
