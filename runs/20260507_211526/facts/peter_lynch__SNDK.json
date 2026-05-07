@@ -1,0 +1,74 @@
+{
+  "signal": "bearish",
+  "score": 3.75,
+  "max_score": 10.0,
+  "growth_analysis": {
+    "score": 8.333333333333334,
+    "details": "Moderate revenue growth: 20.9%; Strong EPS growth: 265.3%"
+  },
+  "valuation_analysis": {
+    "score": 0.0,
+    "details": "No positive net income => can't compute approximate P/E; Cannot compute EPS growth rate (older EPS <= 0)"
+  },
+  "fundamentals_analysis": {
+    "score": 0.0,
+    "details": "No consistent debt/equity data available.; Low operating margin: -18.7%; Recent FCF is negative: -120,000,000"
+  },
+  "sentiment_analysis": {
+    "score": 5,
+    "details": "No news data; default to neutral sentiment"
+  },
+  "insider_activity": {
+    "score": 5,
+    "details": "No insider trades data; defaulting to neutral"
+  },
+  "web_context": {
+    "ticker": "SNDK",
+    "research_date": "2026-05-07",
+    "macro_context": {
+      "market_sentiment": "Broadly bullish risk-on environment: Nasdaq, S&P 500, and Russell 2000 all hit new records in early May 2026 fueled by AI earnings momentum and hopes of a U.S.-Iran peace deal, though most sectors outside tech saw modest pullbacks on May 7. Stocks rose sharply on Iran ceasefire reports before trimming gains.",
+      "fed_outlook": "Fed held rates steady at 3.50-3.75% on April 29, 2026 in a historically divided 8-4 vote (Powell's final meeting as chair); markets are pricing in no cuts for the rest of 2026 or early 2027, as elevated inflation partly reflecting rising energy prices continues to constrain the FOMC.",
+      "geopolitical": "An active Iran war has disrupted global energy markets and shipping routes, pushing NAND/oil supply chains into uncertainty; stocks rallied on May 6-7 on reports of U.S.-Iran negotiations approaching a deal, with oil prices falling on the news. Additional flashpoints include U.S.-Venezuela tensions and NATO posture around Greenland.",
+      "key_events": [
+        "U.S.-Iran peace talks outcome \u2014 potential major catalyst for energy prices and market risk sentiment",
+        "Nvidia Q1 FY2027 earnings scheduled May 20 \u2014 key read-through for AI chip demand",
+        "Fed leadership transition post-Powell \u2014 policy uncertainty if new chair signals different rate path",
+        "NAND/DRAM pricing cycles: Q2 2026 price hikes of 70-75% projected by Bernstein"
+      ]
+    },
+    "ticker_news": [
+      {
+        "headline": "SanDisk Q3 2026 earnings (Apr 30): EPS $23.41 beat est. $14.36 by 63%; revenue surged 251% YoY; guided Q4 to ~$8B revenue and EPS $30-33",
+        "sentiment": "positive",
+        "source": "investor.sandisk.com / IndexBox / TipRanks"
+      },
+      {
+        "headline": "SNDK surged 13% to new 52-week high on May 5 after Q3 beat; stock up ~480% YTD as of that date; signed three long-term supply contracts worth $42B",
+        "sentiment": "positive",
+        "source": "TipRanks (5/5/2026), Benzinga"
+      },
+      {
+        "headline": "Why Sandisk Stock Just Dropped \u2014 shares fell ~4.4% on May 7 after a six-day winning streak, as some analysts flagged valuation concerns and mixed spot-market signals",
+        "sentiment": "negative",
+        "source": "The Motley Fool (5/7/2026)"
+      },
+      {
+        "headline": "Prediction: Sandisk Stock Is Going to $4,000 in 1 Year \u2014 bullish long-term thesis citing AI-driven NAND supercycle and long-term customer lock-in",
+        "sentiment": "positive",
+        "source": "The Motley Fool (5/6/2026)"
+      },
+      {
+        "headline": "SanDisk's 3,314% rally (from IPO lows) 'leaves little room to run' \u2014 bearish take on stretched valuation after parabolic move",
+        "sentiment": "negative",
+        "source": "24/7 Wall St. (5/4/2026)"
+      }
+    ],
+    "analyst_consensus": {
+      "rating": "buy",
+      "avg_price_target": 1383.75,
+      "recent_changes": "Strong wave of target raises post-Q3 earnings: Susquehanna doubled target to $2,000 (from $1,000, maintains Buy); Bernstein raised to $1,700 (from $1,250, Outperform); Citigroup raised to $1,300 (from prior, Buy); RBC Capital raised to $1,000 (Sector Perform \u2014 most cautious). Goldman Sachs previously raised to $1,200 from $700 (Buy). Consensus is 13 Buys / 3 Holds, no current Sell ratings. No recent downgrades."
+    },
+    "competitor_activity": "Micron (MU) is sold out of all 2026 memory supply and reported Q1 FY2026 non-GAAP EPS of $4.78 (+57% YoY revenue), rising 125% YTD \u2014 a direct signal of industry-wide NAND/DRAM supply tightness that benefits SNDK pricing. Western Digital (WDC, SNDK's former parent) has its high-capacity drives fully committed to hyperscalers through fiscal year-end. Samsung is ramping high-density NAND but supply deficit not expected to close before early 2027. Kioxia (SNDK's JV partner) renewed manufacturing agreement through 2034, locking in supply. Bernstein flagged mixed spot-market signals suggesting memory demand softness at higher prices may temper the supercycle in H2 2026.",
+    "earnings_info": "Next earnings: Q4 FY2026 report expected August 13, 2026; analyst EPS consensus ~$31.51. Most recent quarter (Q3 FY2026, reported April 30, 2026): EPS $23.41 vs. $14.36 estimate (+63% beat); revenue surged ~251% YoY; gross margin at 78.4%; Q4 guidance: ~$8B revenue, EPS $30-33. Sources: Sandisk IR, MarketBeat, Nasdaq earnings calendar, TipRanks."
+  }
+}

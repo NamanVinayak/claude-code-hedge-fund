@@ -1,0 +1,44 @@
+{
+  "run_id": "20260507_211526",
+  "mode": "swing",
+  "started_at": "2026-05-07T21:16:19Z",
+  "ended_at": "2026-05-07T21:37:39Z",
+  "tickers": [
+    "SNDK",
+    "MU"
+  ],
+  "decisions": [
+    {
+      "ticker": "SNDK",
+      "action": "hold",
+      "confidence": 0,
+      "entry": 1339.96,
+      "stop": 1183.0,
+      "target": 1439.7,
+      "reasoning_tldr": "5/5 agents neutral"
+    },
+    {
+      "ticker": "MU",
+      "action": "hold",
+      "confidence": 0,
+      "entry": 646.63,
+      "stop": 625.0,
+      "target": 764.55,
+      "reasoning_tldr": "Bullish thesis (JEDEC May 12-13, AMD read-through, 5.5:1 R/R) blocked by risk manager cluster cap: MU+SNDK combined $874 > 30% of $1,457"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 2,
+    "cash": 1457.27001953125,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "mixed",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

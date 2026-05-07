@@ -1,0 +1,31 @@
+{
+  "decisions": {
+    "SNDK": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 1339.96,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 1439.7,
+      "stop_loss": 1183.0,
+      "risk_reward_ratio": "0.63:1",
+      "timeframe": "no trade — re-evaluate on pullback to 10-EMA ~$1,183",
+      "confidence": 0,
+      "account_risk_pct": 0.0,
+      "reasoning": "5/5 agents neutral. Parabolic extension (Z-score 2.79, RSI 82.5, 19% above 10-EMA). R/R 0.63:1 fails 2:1 min. Hourly OBV distribution. No entry — wait for pullback to ~$1,183 10-EMA."
+    },
+    "MU": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 646.63,
+      "entry_tolerance_pct": 1.5,
+      "target_price": 764.55,
+      "stop_loss": 625.0,
+      "risk_reward_ratio": "5.5:1",
+      "timeframe": "no trade — risk manager cluster cap blocks new entry",
+      "confidence": 0,
+      "account_risk_pct": 0.0,
+      "reasoning": "Bullish thesis (JEDEC May 12-13, AMD read-through, 5.5:1 R/R) blocked by risk manager cluster cap: MU+SNDK combined $874 > 30% of $1,457. Head Trader 42 conf borderline, Z-score 3.27 extreme. Stand aside."
+    }
+  },
+  "overall_synthesis": "Both tickers are in extreme parabolic extensions (SNDK Z-score 2.79, MU Z-score 3.27) with no clean entries. SNDK is a unanimous 5/5 neutral stand-aside — all agents agree the trend is powerful but the entry R/R fails badly at current prices. MU has a credible bullish catalyst thesis (JEDEC HBM4 conference May 12-13, AMD demand confirmation, 5.5:1 R/R) and Head Trader is mildly bullish (42), but the risk manager's cluster cap prevents any new position — MU+SNDK combined would exceed 30% of $1,457 capital. Additionally, MU's daily technicals remain dangerously extended (RSI 87.17, Z-score 3.27 highest in run). With the portfolio currently 3L/2S in BAC, AAPL, WDC (longs) and JNJ, META (shorts), capital is largely committed. No new positions this run. Re-evaluate MU on a pullback toward hourly support $627 or after JEDEC catalyst; re-evaluate SNDK on a pullback to 10-EMA zone ~$1,183-$1,200."
+}

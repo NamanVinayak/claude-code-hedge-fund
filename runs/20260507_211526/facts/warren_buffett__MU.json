@@ -1,0 +1,151 @@
+{
+  "ticker": "MU",
+  "score": 9,
+  "max_score": 27,
+  "fundamental_analysis": {
+    "score": 7,
+    "details": "Strong ROE of 15.8%; Conservative debt levels; Strong operating margins; Good liquidity position",
+    "metrics": {
+      "ticker": "MU",
+      "report_period": "2026-02-26",
+      "period": "ttm",
+      "currency": "USD",
+      "market_cap": 729226674176.0,
+      "enterprise_value": 731341674176.0,
+      "price_to_earnings_ratio": 30.501413,
+      "price_to_book_ratio": 13.463060540496631,
+      "price_to_sales_ratio": 19.509515602118892,
+      "enterprise_value_to_ebitda_ratio": 40.3565651791193,
+      "enterprise_value_to_revenue_ratio": 19.56609968901493,
+      "free_cash_flow_yield": 0.00228735461697802,
+      "peg_ratio": 0.23,
+      "gross_margin": 0.57,
+      "operating_margin": 0.4182,
+      "net_margin": 0.4149,
+      "return_on_equity": 0.3982,
+      "return_on_assets": 0.1385,
+      "return_on_invested_capital": 0.11968771024893474,
+      "asset_turnover": 0.45143602502475905,
+      "inventory_turnover": 2.693596648713345,
+      "receivables_turnover": 5.218204662850761,
+      "days_sales_outstanding": 69.94742896891219,
+      "operating_cycle": 205.4539830680013,
+      "working_capital_turnover": 2.149767067349169,
+      "current_ratio": 2.5179849834119086,
+      "quick_ratio": 1.7885454862929981,
+      "cash_ratio": 0.8418019905709796,
+      "operating_cash_flow_ratio": 1.5300331761829928,
+      "debt_to_equity": 0.2170589864303517,
+      "debt_to_assets": 0.14199618348269283,
+      "interest_coverage": 25.18041237113402,
+      "revenue_growth": 0.48851101111066864,
+      "earnings_growth": 9.975578406169666,
+      "book_value_growth": 0.20017283020540205,
+      "earnings_per_share_growth": 9.928571428571429,
+      "free_cash_flow_growth": 12.785123966942148,
+      "operating_income_growth": 6.492331288343558,
+      "ebitda_growth": 0.994936151475121,
+      "payout_ratio": null,
+      "earnings_per_share": 7.65,
+      "book_value_per_share": 48.275401069518715,
+      "free_cash_flow_per_share": 1.4866310160427807
+    }
+  },
+  "consistency_analysis": {
+    "score": 0,
+    "details": "Inconsistent earnings growth pattern; Total earnings growth of -1.7% over past 10 periods"
+  },
+  "moat_analysis": {
+    "score": 0,
+    "max_score": 5,
+    "details": "Inconsistent ROE: only 4/10 periods >15%; Low operating margins (avg: 2.0%) suggest limited pricing power"
+  },
+  "pricing_power_analysis": {
+    "score": 0,
+    "details": "Declining gross margins may indicate pricing pressure"
+  },
+  "book_value_analysis": {
+    "score": 2,
+    "details": "Good book value per share growth pattern; Book value CAGR: 4.5%"
+  },
+  "management_analysis": {
+    "score": 0,
+    "max_score": 2,
+    "details": "Recent common stock issuance (potential dilution); No or minimal dividends paid"
+  },
+  "intrinsic_value_analysis": {
+    "intrinsic_value": -93427837174.91183,
+    "raw_intrinsic_value": -109915102558.7198,
+    "owner_earnings": -6099450000.0,
+    "assumptions": {
+      "stage1_growth": 0.08,
+      "stage2_growth": 0.04,
+      "terminal_growth": 0.025,
+      "discount_rate": 0.1,
+      "stage1_years": 5,
+      "stage2_years": 5,
+      "historical_growth": 0.105
+    },
+    "details": [
+      "Using three-stage DCF: Stage 1 (8.0%, 5y), Stage 2 (4.0%, 5y), Terminal (2.5%)",
+      "Stage 1 PV: $-28,873,544,653",
+      "Stage 2 PV: $-23,588,665,207",
+      "Terminal PV: $-57,452,892,699",
+      "Total IV: $-109,915,102,559",
+      "Conservative IV (15% haircut): $-93,427,837,175",
+      "Owner earnings: $-6,099,450,000",
+      "Discount rate: 10.0%"
+    ]
+  },
+  "market_cap": 729226674176.0,
+  "margin_of_safety": -1.1281190615805188,
+  "web_context": {
+    "ticker": "MU",
+    "research_date": "2026-05-07",
+    "macro_context": {
+      "market_sentiment": "Strongly bullish with AI tailwinds dominant. S&P 500 hit 7,365.12 (+1.46%) and Nasdaq 25,838.94 (+2.02%) on May 6, both at all-time highs. Semiconductor sector led by AMD (+17.77%) and SMCI (+24.5%) post-earnings beats. May 7 sees mild pullback as oil hovers near $100 and markets await Iran peace deal clarity.",
+      "fed_outlook": "Fed held rates steady at 3.5%-3.75% on April 28-29. Most dissents since October 1992 (4 dissenting votes). Median projection: one rate cut in 2026. Elevated inflation partly driven by Iran war energy prices is complicating the path to cuts.",
+      "geopolitical": "US-Iran conflict is primary risk \u2014 oil briefly touched $100/barrel disrupting energy markets and Strait of Hormuz shipping. Peace deal negotiations (nuclear enrichment moratorium) sparked the May 6 market rally. US tariff policy and NATO posture in Greenland are secondary risks. Markets remain resilient, hitting record highs despite the war.",
+      "key_events": [
+        "US-Iran peace negotiations ongoing \u2014 outcome could sharply move oil prices and risk sentiment",
+        "Fed next meeting: June 2026 \u2014 rate cut odds remain low given elevated inflation",
+        "AI infrastructure spending wave continuing \u2014 SMCI, AMD earnings confirm demand strength",
+        "Semiconductor sector benefiting from AI memory demand surge and HBM supply constraints"
+      ]
+    },
+    "ticker_news": [
+      {
+        "headline": "Micron ships world's highest-capacity SSD \u2014 245TB Micron 6600 ION Data Center SSD now shipping, targeting AI/cloud hyperscalers (82% fewer racks than HDDs)",
+        "sentiment": "positive",
+        "source": "StocksToTrade / Micron IR, May 5, 2026"
+      },
+      {
+        "headline": "DA Davidson initiates MU at Buy with $1,000 price target \u2014 joins wave of aggressive Wall Street AI memory bulls",
+        "sentiment": "positive",
+        "source": "StocksToTrade, May 5, 2026"
+      },
+      {
+        "headline": "Melius Research initiates MU at Buy with $700 target, citing AI HBM/DRAM demand extending memory upcycle through decade's end",
+        "sentiment": "positive",
+        "source": "StocksToTrade, May 5, 2026"
+      },
+      {
+        "headline": "Fitch upgrades Micron credit rating to BBB+, reflecting strong AI-driven demand and improved balance sheet",
+        "sentiment": "positive",
+        "source": "StocksToTrade / Fitch Ratings, May 2026"
+      },
+      {
+        "headline": "Seeking Alpha analyst downgrades MU from Strong Buy to Buy, warning memory supply/demand equilibrium risks limit further upside",
+        "sentiment": "negative",
+        "source": "Seeking Alpha (James Foord), May 5, 2026"
+      }
+    ],
+    "analyst_consensus": {
+      "rating": "buy",
+      "avg_price_target": 565.0,
+      "recent_changes": "Strongly bullish consensus. DA Davidson initiated Buy/$1,000. Melius Research initiated Buy/$700. TD Cowen raised PT to $660 from $550 (Apr 28). Erste Group downgraded Buy->Hold (Apr 2). One Seeking Alpha analyst downgraded Strong Buy->Buy (May 5). 30+ covering analysts: ~39 Buy, 5 Hold, 0 Sell. Average PT range $482-$582 depending on source; high end $1,000, low end $249."
+    },
+    "competitor_activity": "SK Hynix holds 62% HBM market share vs Micron 21% and Samsung 17% \u2014 but Micron has overtaken Samsung. SK Hynix investing $12.85B in new memory packaging facility to extend lead. Samsung scaling production 50% in 2026. HBM4 race accelerating: SK Hynix claims 40% power efficiency improvement at 10 Gbps; Micron shipping HBM4 samples at 11 Gbps with 50% higher capacity and 30% lower power than competitor HBM3E. All three memory makers benefiting from AI supercycle, but rising supply is a bear risk if demand moderates.",
+    "earnings_info": "Next earnings expected ~June 24, 2026 (fiscal Q3 FY2026; some sources say July 1 \u2014 exact date unconfirmed). Micron most recently reported Q2 FY2026 results. HBM revenue annualized run-rate ~$8B; HBM capacity sold out through end of 2026. Street consensus EPS/revenue estimates not captured in search results \u2014 check Yahoo Finance for current estimates."
+  }
+}

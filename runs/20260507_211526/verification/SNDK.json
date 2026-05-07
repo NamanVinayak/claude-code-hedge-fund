@@ -1,0 +1,108 @@
+{
+  "ticker": "SNDK",
+  "verified_at": "2026-05-07T21:20:00",
+  "facts_report_period": "2026-04-03",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.3426,
+      "web_value": 0.3419,
+      "source": "Yahoo Finance / stockanalysis.com (May 2026)",
+      "status": "ok",
+      "deviation": "0.2%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.416,
+      "web_value": 0.416,
+      "source": "stockanalysis.com / Yahoo Finance (May 2026)",
+      "status": "ok",
+      "deviation": "0.0%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 42.92,
+      "web_value": 42.92,
+      "source": "Yahoo Finance key statistics (May 2026)",
+      "status": "ok",
+      "deviation": "0.0%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 198434340864.0,
+      "web_value": 208800000000.0,
+      "source": "stockanalysis.com / companiesmarketcap.com (May 2026)",
+      "status": "MISMATCH",
+      "deviation": "5.2%",
+      "note": "Minor deviation due to daily price movement since facts build. Updated to current value.",
+      "action": "replaced with web value in facts bundles: warren_buffett__SNDK.json, aswath_damodaran__SNDK.json"
+    },
+    {
+      "metric": "price_to_sales_ratio",
+      "our_value": 26.97951609299796,
+      "web_value": 15.84,
+      "source": "Derived: market_cap $208.8B / TTM revenue $13.18B (stockanalysis.com, May 2026)",
+      "status": "MISMATCH",
+      "deviation": "70.3%",
+      "note": "Facts bundle used stale FY2025 annual revenue (~$7.35B) as denominator. Post-Q3 FY2026 TTM revenue is ~$13.18B (+82.8% YoY) following 251% YoY revenue surge in Q3 FY2026. P/S implied old denominator of $7.35B vs current $13.18B TTM.",
+      "action": "replaced with web-derived value in facts bundles: warren_buffett__SNDK.json, aswath_damodaran__SNDK.json"
+    },
+    {
+      "metric": "enterprise_value_to_revenue_ratio",
+      "our_value": 27.032269322093814,
+      "web_value": 15.87,
+      "source": "Derived from corrected TTM revenue (May 2026)",
+      "status": "MISMATCH",
+      "deviation": "70.3%",
+      "note": "Same stale revenue issue as P/S ratio.",
+      "action": "replaced with web-derived value in facts bundles: warren_buffett__SNDK.json, aswath_damodaran__SNDK.json"
+    },
+    {
+      "metric": "return_on_equity",
+      "our_value": -0.17805989583333334,
+      "web_value": 0.3930,
+      "source": "stockanalysis.com (May 2026)",
+      "status": "MISMATCH",
+      "deviation": "321.3%",
+      "note": "Facts bundle TTM ROE includes pre-Q3 FY2026 quarters when SNDK was deeply loss-making (negative net income). Current TTM now includes Q3 FY2026 (EPS $23.41, net margin 34.26%) making ROE strongly positive at 39.30%. Classic period-transition data staleness bug.",
+      "action": "replaced with web value in facts bundles: warren_buffett__SNDK.json, aswath_damodaran__SNDK.json"
+    },
+    {
+      "metric": "return_on_assets",
+      "our_value": -0.12637658837119753,
+      "web_value": 0.1600,
+      "source": "Estimated from ROE/leverage ratio; stockstotrade.com (May 2026)",
+      "status": "MISMATCH",
+      "deviation": "226.6%",
+      "note": "Same TTM period-transition issue as ROE. Asset base has grown with Q3 profits now in TTM window.",
+      "action": "replaced with web-estimated value in facts bundles: warren_buffett__SNDK.json, aswath_damodaran__SNDK.json"
+    },
+    {
+      "metric": "return_on_invested_capital",
+      "our_value": -0.1419795812424295,
+      "web_value": 0.4864,
+      "source": "stockanalysis.com (May 2026)",
+      "status": "MISMATCH",
+      "deviation": "442.6%",
+      "note": "Same TTM period-transition issue. Current ROIC reflects strong Q3 FY2026 profitability.",
+      "action": "replaced with web value in facts bundles: warren_buffett__SNDK.json, aswath_damodaran__SNDK.json"
+    },
+    {
+      "metric": "revenue_ttm",
+      "our_value": 7350000000.0,
+      "web_value": 13180000000.0,
+      "source": "stockanalysis.com, companiesmarketcap.com (May 2026) — $13.18B TTM",
+      "status": "MISMATCH",
+      "deviation": "44.2%",
+      "note": "Revenue implied from P/S ratio in facts. Facts used FY2025 full-year revenue ($7.36B). Current TTM includes explosive Q3 FY2026 ($5.95B revenue, +251% YoY). Not a direct stored field; corrected via P/S and EV/Revenue ratios above.",
+      "action": "corrected implicitly via price_to_sales_ratio and enterprise_value_to_revenue_ratio updates"
+    }
+  ],
+  "overall_status": "6 mismatches corrected (market_cap, price_to_sales_ratio, ev_to_revenue, roe, roa, roic)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260507_211526/facts/warren_buffett__SNDK.json",
+    "runs/20260507_211526/facts/aswath_damodaran__SNDK.json"
+  ],
+  "notes": "SNDK went through a dramatic profitability transition in Q3 FY2026 (reported Apr 30, 2026): EPS $23.41 vs -$11.32 TTM in prior data, revenue +251% YoY. The facts builder ran against data that still had the old TTM (including pre-profitable quarters), causing ROE/ROA/ROIC to appear deeply negative and revenue-based ratios to use the old ~$7.35B full-year denominator. Net margin and operating margin were already correctly updated as they reflect the most recent quarter's financials. Corrections bring ROE/ROA/ROIC/P/S/EV-Revenue in line with current web sources."
+}

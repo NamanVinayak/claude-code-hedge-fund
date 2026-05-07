@@ -1,0 +1,20 @@
+{
+  "SNDK": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "Branch A fires statistically: Z-score 2.79 (above +2), daily RSI-14 82.51 (above 75), pct_b 1.07 (above upper Bollinger band), 75.1% above 50-SMA — all classic overbought extremes. However, the regime disqualifies the fade: ADX 70.42 is extreme trend strength, and the lessons log shows 4 consecutive mean-reversion fade losses (AMZN, GOOG, AMD, NVDA) all in ADX 60+ environments — the exact same condition. Wiki confirms 'parabolic trending extension — watch-not-act zone' from prior run. My prior bearish call (confidence 42, entered 1406) is still in_progress after 1 day with MFE 4.87% and MAE -2.4%, meaning price has moved slightly against the fade thesis. I am not repeating the same call with higher conviction — the ADX regime lesson is definitive. Branch B (buy the dip at Fib) does not fire: no meaningful pullback to Fibonacci levels exists. Hourly indicators are moderately constructive (RSI 56.81, not extreme; MACD histogram negative suggesting mild hourly pullback from 1439.7 high) but hourly Z-score is only 1.61, well below the daily extreme — the fade signal is not confirmed hourly. The intraday price (1340) is testing hourly support at 1334.67 but there is no reversal candle confirmation for Branch A. Neither branch fires with sufficient confidence to act. Output: neutral — stand aside and let the ADX-driven trend resolve.",
+    "entry": 1340.0,
+    "target": 1027.14,
+    "stop": 1490.0,
+    "timeframe": "no trade — neutral"
+  },
+  "MU": {
+    "signal": "bearish",
+    "confidence": 28,
+    "reasoning": "Branch A fires at extreme levels: Z-score 3.27 vs 50-period (highest in current run — escalated from 3.36 in prior wiki, now receding slightly), daily RSI-14 87.17 (extreme overbought, well above 75 threshold), pct_b 1.1245 (above upper Bollinger band), 52.22% above 50-SMA. ROC-21d +76.54% confirms parabolic extension. Branch B does not apply — price is at all-time highs with no pullback. Critical divergence signal: hourly OBV is diverging from price (bearish, confirmed in hourly_indicators), hourly relative volume only 0.38x average (distribution on very thin volume), hourly MACD histogram barely positive (+0.71) and flattening, hourly ROC-5d -2.21% (momentum stalling at hourly level). Price hit resistance at 667.67 (hourly pivot high, 5 prior tests) and closed at 666.59 — essentially at the ceiling. Wiki corroborates: prior run called 'no actionable entry' but noted Z-score 3.36 as 'highest stretch.' Key regime caution (lowers confidence severely): ADX 63.4 is in the same 60+ danger zone that caused 4 consecutive fade losses (AMZN -$10.14, GOOG -$6.50, AMD -$17.82, NVDA -$63.20). The hourly OBV divergence is a new bearish signal not present in the prior losing fades, partially raising conviction, but without a confirmed reversal candle (Branch A rule 6) the entry is premature. Entry condition: wait for a daily close below today's open (660.37) or a bearish engulfing candle before initiating. Confidence suppressed to 28% given the ADX 60+ lesson pattern; this is a 'watch closely but size minimally' setup. No prediction_grading exists for MU (first call on this ticker).",
+    "entry": 660.0,
+    "target": 497.82,
+    "stop": 703.0,
+    "timeframe": "10-18 trading days"
+  }
+}

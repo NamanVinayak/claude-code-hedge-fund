@@ -1,0 +1,95 @@
+{
+  "ticker": "MU",
+  "verified_at": "2026-05-07T21:20:00",
+  "data_period_in_bundle": "TTM as of 2026-02-26 (fiscal Q2 FY2026 end)",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.4149,
+      "web_value": 0.4147,
+      "source": "macrotrends.net / stockanalysis.com (May 2026)",
+      "status": "ok",
+      "deviation": "0.05%",
+      "note": "Previously corrected by prior verification pass. Confirmed correct."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.4182,
+      "web_value": 0.4182,
+      "source": "macrotrends.net / Micron Q2 FY2026 IR (Feb 2026)",
+      "status": "ok",
+      "deviation": "0.0%",
+      "note": "Previously corrected by prior verification pass. Confirmed correct."
+    },
+    {
+      "metric": "gross_margin",
+      "our_value": 0.57,
+      "web_value": 0.57,
+      "source": "Micron Q2 FY2026 IR / Seeking Alpha (Feb 2026)",
+      "status": "ok",
+      "deviation": "0.0%",
+      "note": "Previously corrected by prior verification pass. Confirmed correct."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 30.501413,
+      "web_value": 30.5,
+      "source": "financecharts.com / stockanalysis.com (May 2026)",
+      "status": "ok",
+      "deviation": "0.0%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 729226674176.0,
+      "web_value": 740000000000.0,
+      "source": "companiesmarketcap.com / capital.com (range $720B-$761B in May 2026)",
+      "status": "ok",
+      "deviation": "1.5%"
+    },
+    {
+      "metric": "price_to_sales_ratio",
+      "our_value": 19.509515602118892,
+      "web_value": 17.24,
+      "source": "Derived: market_cap $729B / TTM revenue $42.31B (stockanalysis.com, May 2026)",
+      "status": "ok",
+      "deviation": "13.2%",
+      "note": "Below 20% threshold. Minor lag due to Q3 FY2026 not yet in TTM window at facts build time."
+    },
+    {
+      "metric": "revenue_ttm",
+      "our_value": 37370000000.0,
+      "web_value": 42310000000.0,
+      "source": "stockanalysis.com (May 2026) — $42.31B TTM",
+      "status": "ok",
+      "deviation": "13.2%",
+      "note": "Implied from P/S ratio. Below 20% threshold. No correction needed."
+    },
+    {
+      "metric": "return_on_equity",
+      "our_value": 0.1576479276285424,
+      "web_value": 0.3982,
+      "source": "stockanalysis.com (May 2026)",
+      "status": "MISMATCH",
+      "deviation": "152.6%",
+      "note": "Facts bundle ROE (15.76%) based on Feb 2026 TTM; only Q1 and Q2 FY2026 breakout quarters partially in window. Q2 FY2026 had $23.86B revenue (+196% YoY) and exceptional margins now fully reflected in web consensus. Updated to 39.82%.",
+      "action": "replaced with web value (0.3982) in warren_buffett__MU.json and aswath_damodaran__MU.json"
+    },
+    {
+      "metric": "return_on_assets",
+      "our_value": 0.1031305103988019,
+      "web_value": 0.1385,
+      "source": "mlq.ai / macrotrends.net (May 2026)",
+      "status": "MISMATCH",
+      "deviation": "34.3%",
+      "note": "Facts ROA (10.31%) based on Feb 2026 TTM. Current web value (13.85%) reflects stronger profitability of more recent quarters now in TTM window. Deviation exceeds 20% threshold.",
+      "action": "replaced with web value (0.1385) in warren_buffett__MU.json and aswath_damodaran__MU.json"
+    }
+  ],
+  "overall_status": "5 metrics confirmed ok; 2 mismatches corrected this pass (roe, roa); 3 previously corrected by prior pass (net_margin, operating_margin, gross_margin)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260507_211526/facts/warren_buffett__MU.json",
+    "runs/20260507_211526/facts/aswath_damodaran__MU.json"
+  ],
+  "root_cause": "MU facts bundle built from fiscal Q2 FY2026 financials (period ending 2026-02-26). Micron's explosive Q2 FY2026 earnings ($23.86B revenue, +196% YoY, record gross/operating/net margins) mean TTM metrics are still catching up as older weak quarters roll off. Net/operating/gross margins were corrected in a prior verification pass. ROE and ROA corrections applied in this pass."
+}
