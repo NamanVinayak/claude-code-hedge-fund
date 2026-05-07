@@ -1,0 +1,11 @@
+{
+  "GOOG": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "Branch A (fade the extreme) fires statistically: daily Z-score 2.63 (>+2 threshold), RSI-7 91.48 / RSI-14 84.72 / RSI-21 86.97 (all >75 extreme), distance from 50-SMA +24.02% (extreme extension), Bollinger %B 0.994 (kissing upper band at $395.73). However, three conditions block the trade: (1) No reversal candle — the strategy explicitly requires a reversal-candle or momentum-shift confirmation before entry; the last 5 sessions show clean bullish closes with no hammer/engulfing/doji forming; (2) ADX 75.62 (+DI 44.61 vs -DI 3.55) is historically extreme — wiki and lessons log document three consecutive failed mean-reversion fades (NVDA -$63.20, AMZN -$10.14, GOOG -$6.50 May 6) in ADX 60+ regimes, confirming that extreme trend absorbs RSI extremes; (3) Hourly indicators lack the dual-timeframe extreme confirmation needed for high-conviction fades: hourly RSI-21 at 65.98 (not extreme), hourly Z-score 1.75 (not extreme), hourly BB %B 0.7447 (mid-bands). Hourly MACD histogram is mildly negative (-0.18) suggesting slight deceleration, but this is insufficient for reversal confirmation. Branch B (dip-buy at Fibonacci) does not fire — price is at the swing high ($396.38), far above all retracement levels (23.6% = $366.92). Self-grade note: prior bearish call May 6 (entry $384.27, stop $389.50) is logged as stopped out at -$6.50 per lessons (same ADX regime pattern). This run adjusts by standing aside entirely rather than re-entering the same failing fade thesis without reversal confirmation. Macro regime is risk-on (risk-on tailwind per prior wiki note). Neither branch fires with valid confirmation — neutral is the correct output.",
+    "entry": 395.14,
+    "target": 346.99,
+    "stop": 399.0,
+    "timeframe": "N/A — neutral, no active setup"
+  }
+}

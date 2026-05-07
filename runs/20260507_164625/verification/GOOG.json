@@ -1,0 +1,93 @@
+{
+  "ticker": "GOOG",
+  "verified_at": "2026-05-07T16:46:25",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.3281,
+      "web_value": 0.3792,
+      "source": "GuruFocus / web search aggregate (May 2026)",
+      "status": "ok",
+      "deviation": "15.6%",
+      "note": "Within 20% threshold; facts bundle value is based on TTM data through Q4 2025, web reflects Q1 2026 blended TTM"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.3203,
+      "web_value": 0.3960,
+      "source": "YCharts / CompaniesMarketCap (TTM, May 2026)",
+      "status": "MISMATCH",
+      "deviation": "23.6%",
+      "action": "replaced with web value (0.3960) in all facts bundles: warren_buffett__GOOG.json, aswath_damodaran__GOOG.json"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 29.90,
+      "web_value": 29.35,
+      "source": "MacroTrends / FullRatio / Public.com (May 4-5, 2026)",
+      "status": "ok",
+      "deviation": "1.9%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 4752888299520.0,
+      "web_value": 4810000000000.0,
+      "source": "CompaniesMarketCap / Yahoo Finance (May 7, 2026)",
+      "status": "ok",
+      "deviation": "1.2%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 402840000000.0,
+      "web_value": 422500000000.0,
+      "source": "StockAnalysis / Alphabet Q1 2026 earnings release (TTM through Mar 2026)",
+      "status": "ok",
+      "deviation": "4.9%",
+      "note": "Our value appears to be FY2025 annual figure; web TTM includes Q1 2026; delta is expected and within threshold"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.3183,
+      "web_value": 0.3888,
+      "source": "Zacks / FinanceCharts (TTM, May 4, 2026)",
+      "status": "MISMATCH",
+      "deviation": "22.1%",
+      "action": "replaced with web value (0.3888) in all facts bundles: warren_buffett__GOOG.json, aswath_damodaran__GOOG.json"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.2220,
+      "web_value": 0.1464,
+      "source": "MLQ.ai / Zacks (TTM, May 4, 2026)",
+      "status": "MISMATCH",
+      "deviation": "51.6%",
+      "note": "Our value was significantly inflated vs. web consensus — flagged as potential data bug",
+      "action": "replaced with web value (0.1464) in all facts bundles: warren_buffett__GOOG.json, aswath_damodaran__GOOG.json"
+    }
+  ],
+  "overall_status": "3 mismatches corrected (operating_margin, roe, roa)",
+  "corrections_applied": true,
+  "files_updated": [
+    "runs/20260507_164625/facts/warren_buffett__GOOG.json",
+    "runs/20260507_164625/facts/aswath_damodaran__GOOG.json"
+  ],
+  "files_not_requiring_update": [
+    "ben_graham__GOOG.json",
+    "bill_ackman__GOOG.json",
+    "cathie_wood__GOOG.json",
+    "charlie_munger__GOOG.json",
+    "michael_burry__GOOG.json",
+    "mohnish_pabrai__GOOG.json",
+    "nassim_taleb__GOOG.json",
+    "news_sentiment__GOOG.json",
+    "peter_lynch__GOOG.json",
+    "phil_fisher__GOOG.json",
+    "rakesh_jhunjhunwala__GOOG.json",
+    "stanley_druckenmiller__GOOG.json",
+    "swing_breakout__GOOG.json",
+    "swing_catalyst_news__GOOG.json",
+    "swing_macro_context__GOOG.json",
+    "swing_mean_reversion__GOOG.json",
+    "swing_trend_momentum__GOOG.json"
+  ]
+}
