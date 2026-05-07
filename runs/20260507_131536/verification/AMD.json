@@ -1,0 +1,67 @@
+{
+  "ticker": "AMD",
+  "verified_at": "2026-05-07T13:15:36",
+  "source_files_checked": [
+    "warren_buffett__AMD.json",
+    "ben_graham__AMD.json",
+    "peter_lynch__AMD.json"
+  ],
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.12151,
+      "our_value_pct": "12.15%",
+      "web_value": 0.1300,
+      "web_value_pct": "13.00%",
+      "source": "Multiple sources: CNBC (13.10%), Yahoo Finance (13.37%), Investing.com (12.51%) — mid-range ~13.00%",
+      "status": "ok",
+      "deviation": "7.0%",
+      "note": "Slight variation expected due to Q1 2026 earnings just reported May 5; our data uses report_period 2026-03-28. All sources within 12.5–13.4% range."
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.09872,
+      "our_value_pct": "9.87%",
+      "web_value": 0.1067,
+      "web_value_pct": "10.67%",
+      "source": "GuruFocus TTM operating margin 10.67%; Q1 2026 GAAP operating margin 14.4% (single quarter, not TTM)",
+      "status": "ok",
+      "deviation": "8.1%",
+      "note": "Our TTM value of 9.87% reflects pre-Q1-2026 data. Q1 2026 operating margin improved to 14.4% (GAAP), pulling the TTM higher. Deviation is ~8%, below the 20% threshold."
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 140.93,
+      "web_value": 135.82,
+      "source": "GuruFocus trailing P/E ~135.82; range across sources 131–158; analyst consensus cites ~139x trailing",
+      "status": "ok",
+      "deviation": "3.8%",
+      "note": "Web consensus trailing P/E of ~136–141 is consistent with our value of 140.93. Post-earnings stock surge (+17.77% May 6) may have shifted this slightly since facts were built."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 34630000000,
+      "our_value_display": "$34.63B",
+      "web_value": 34630000000,
+      "web_value_display": "$34.63B",
+      "source": "YCharts / CompaniesMarketCap TTM revenue $34.63B; confirmed by Q1 2026 press release (Q1 revenue $10.25B)",
+      "status": "ok",
+      "deviation": "0.0%",
+      "note": "Exact match. Our price_to_sales_ratio implied revenue ($687.1B / 19.846 = $34.6B) matches web consensus precisely."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 687118811136,
+      "our_value_display": "$687.1B",
+      "web_value": 687110000000,
+      "web_value_display": "$687.1B",
+      "source": "Public.com / CompaniesMarketCap: $687.11B as of May 2026",
+      "status": "ok",
+      "deviation": "0.0%",
+      "note": "Exact match. Note: AMD stock surged +17.77% on May 6; the $687.1B figure likely already reflects this post-earnings price."
+    }
+  ],
+  "overall_status": "all checks passed — no mismatches",
+  "corrections_applied": false,
+  "summary": "All 5 key metrics for AMD are within the 20% deviation threshold. The facts bundles appear to reflect post-Q1-2026 earnings data (report_period 2026-03-28, stock at ~$421.55). Operating margin is improving rapidly (Q1 2026 single-quarter GAAP: 14.4%) but the TTM figure of 9.87% is a reasonable trailing average including weaker prior quarters. No corrections required."
+}
