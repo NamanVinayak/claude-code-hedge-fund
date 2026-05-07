@@ -1,0 +1,68 @@
+{
+  "ticker": "DIS",
+  "verified_at": "2026-05-07T22:20:00",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.1314,
+      "web_value": 0.1387,
+      "source": "GuruFocus / CNBC (TTM as of May 6, 2026: 13.87%)",
+      "status": "ok",
+      "deviation": "5.3%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.1491,
+      "web_value": 0.1491,
+      "source": "GuruFocus (TTM operating margin: 14.91%)",
+      "status": "ok",
+      "deviation": "0%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 17.386,
+      "web_value": 15.23,
+      "source": "FinanceCharts / GuruFocus (Apr 30, 2026: 15.23; range Apr 2026: 14.48-18.18)",
+      "status": "ok",
+      "deviation": "14.2%",
+      "notes": "PE ratio shows ~14% deviation from the most recent April 30, 2026 consensus. Within the 20% threshold. The higher value in our bundle reflects an earlier snapshot date when the stock was trading higher. MacroTrends shows 18.18 as of Apr 6, 2026 which would put deviation at ~1.6%."
+    },
+    {
+      "metric": "revenue",
+      "our_value": 94427000000.0,
+      "web_value": 95710000000.0,
+      "source": "CompaniesMarketCap / FinanceCharts (TTM May 2026: $95.71B)",
+      "status": "ok",
+      "deviation": "1.3%",
+      "notes": "Revenue derived from market_cap / price_to_sales_ratio: 188,689,350,656 / 1.9983 ≈ $94.4B vs web $95.71B."
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 188689350656.0,
+      "web_value": 191920000000.0,
+      "source": "StockAnalysis / CompaniesMarketCap (May 2026: $187.65B-$191.92B range)",
+      "status": "ok",
+      "deviation": "1.7%",
+      "notes": "Facts bundle snapshot vs live price — within normal market fluctuation."
+    },
+    {
+      "metric": "return_on_equity",
+      "our_value": 0.1129,
+      "web_value": null,
+      "source": "n/a",
+      "status": "unverified",
+      "notes": "No clear TTM ROE web source retrieved. Value (11.3%) appears consistent with reported net income / book equity and is plausible given Disney's current earnings recovery."
+    },
+    {
+      "metric": "return_on_assets",
+      "our_value": 0.0628,
+      "web_value": null,
+      "source": "n/a",
+      "status": "unverified",
+      "notes": "No clear TTM ROA web source retrieved. Value (6.3%) appears plausible for a capital-intensive media/theme-park company."
+    }
+  ],
+  "overall_status": "all verifiable metrics within 20% threshold — no corrections needed",
+  "corrections_applied": false,
+  "summary": "DIS facts bundles are accurate. All key metrics — net margin (13.14% vs web 13.87%), operating margin (14.91% exact match), PE ratio (17.4 vs web 14.5-18.2 range), revenue (~$94.4B vs web $95.7B), and market cap ($188.7B vs web $187.7-191.9B) — are within acceptable bounds. No mismatches exceed the 20% correction threshold."
+}

@@ -1,0 +1,44 @@
+{
+  "run_id": "20260507_220640",
+  "mode": "swing",
+  "started_at": "2026-05-07T22:07:12Z",
+  "ended_at": "2026-05-07T22:21:07Z",
+  "tickers": [
+    "NKE",
+    "DIS"
+  ],
+  "decisions": [
+    {
+      "ticker": "NKE",
+      "action": "hold",
+      "confidence": 22,
+      "entry": null,
+      "stop": null,
+      "target": null,
+      "reasoning_tldr": "Head Trader neutral (22 conf), 4/5 agents neutral"
+    },
+    {
+      "ticker": "DIS",
+      "action": "short",
+      "confidence": 35,
+      "entry": 108.5,
+      "stop": 110.6,
+      "target": 103.0,
+      "reasoning_tldr": "Post-earnings gap fade short"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 2,
+    "cash": 1457.27001953125,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "mixed",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

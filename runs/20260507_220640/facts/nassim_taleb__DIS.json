@@ -1,0 +1,41 @@
+{
+  "ticker": "DIS",
+  "score": 25,
+  "max_score": 50,
+  "tail_risk_analysis": {
+    "score": 6,
+    "max_score": 8,
+    "details": "Moderate fat tails (kurtosis 4.3); Positive skew (1.08) favors long convexity; Asymmetric upside (tail ratio 1.30); Moderate drawdown (-25.0%)"
+  },
+  "antifragility_analysis": {
+    "score": 7,
+    "max_score": 10,
+    "details": "Net debt but manageable relative to assets; Moderate leverage (D/E 0.44); Stable high margins (avg 16.1%, CV 0.10) \u2014 antifragile pricing power; Consistent FCF generation (8/8 periods positive)"
+  },
+  "convexity_analysis": {
+    "score": 2,
+    "max_score": 10,
+    "details": "R&D data not available \u2014 no penalty for non-R&D sectors; Slight positive asymmetry (up/down ratio 1.26); Low cash relative to market cap (3%); Decent FCF yield (5.3%)"
+  },
+  "fragility_analysis": {
+    "score": 3,
+    "max_score": 8,
+    "details": "Low leverage (D/E 0.44) \u2014 not fragile; Low interest coverage (-9.7x) \u2014 fragile to rate changes; Highly volatile earnings (growth std 0.67) \u2014 fragile; Moderate margins (13.1%)"
+  },
+  "skin_in_game_analysis": {
+    "score": 1,
+    "max_score": 4,
+    "details": "No insider trade data \u2014 neutral assumption"
+  },
+  "volatility_regime_analysis": {
+    "score": 3,
+    "max_score": 6,
+    "details": "Normal vol regime (1.25) \u2014 fair pricing; Stable vol-of-vol (0.0259)"
+  },
+  "black_swan_analysis": {
+    "score": 3,
+    "max_score": 4,
+    "details": "No recent news data; No black swan signals detected"
+  },
+  "market_cap": 188689350656.0
+}

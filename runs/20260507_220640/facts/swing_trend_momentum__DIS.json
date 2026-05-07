@@ -1,0 +1,340 @@
+{
+  "ticker": "DIS",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 103.82864486226003,
+      "sma_5": 103.33600006103515,
+      "ema_10": 103.20914544237814,
+      "sma_10": 102.80500030517578,
+      "ema_20": 102.45874521083773,
+      "sma_20": 102.97100028991699,
+      "ema_21": 102.40186764469918,
+      "sma_21": 102.7904764811198,
+      "ema_50": 102.404056127169,
+      "sma_50": 100.8586003112793,
+      "ema_200": 106.3076433225923,
+      "sma_200": 108.99401134490967,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 108.05999755859375,
+    "dist_from_50sma_pct": 7.14,
+    "price_vs_ma": {
+      "above_ema_5": true,
+      "pct_from_ema_5": 4.08,
+      "above_sma_5": true,
+      "pct_from_sma_5": 4.57,
+      "above_ema_10": true,
+      "pct_from_ema_10": 4.7,
+      "above_sma_10": true,
+      "pct_from_sma_10": 5.11,
+      "above_ema_20": true,
+      "pct_from_ema_20": 5.47,
+      "above_sma_20": true,
+      "pct_from_sma_20": 4.94,
+      "above_ema_21": true,
+      "pct_from_ema_21": 5.53,
+      "above_sma_21": true,
+      "pct_from_sma_21": 5.13,
+      "above_ema_50": true,
+      "pct_from_ema_50": 5.52,
+      "above_sma_50": true,
+      "pct_from_sma_50": 7.14,
+      "above_ema_200": true,
+      "pct_from_ema_200": 1.65,
+      "above_sma_200": false,
+      "pct_from_sma_200": -0.86
+    },
+    "rsi": {
+      "rsi_7": 69.9,
+      "rsi_14": 59.56,
+      "rsi_21": 69.73
+    },
+    "rsi_divergence": {
+      "bullish": true,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 0.8548,
+      "signal_line": 0.7146,
+      "histogram": 0.1403,
+      "bullish_crossover": true
+    },
+    "bollinger": {
+      "upper": 107.5,
+      "middle": 102.97,
+      "lower": 98.44,
+      "width": 0.088,
+      "pct_b": 1.0615
+    },
+    "atr": {
+      "atr_14": 2.57,
+      "atr_pct": 2.38
+    },
+    "adx": {
+      "adx_14": 33.39,
+      "plus_di": 37.6,
+      "minus_di": 23.85,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 23219500,
+      "avg_volume_20": 8526550,
+      "relative_volume": 2.72,
+      "volume_bias_10d": "down",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": true
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 107.11,
+          "tests": 11,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 92.19,
+          "tests": 1,
+          "volume_confirmed": false
+        },
+        {
+          "price": 98.45,
+          "tests": 11,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": null,
+      "nearest_support": 98.45,
+      "recent_high": 109.14,
+      "recent_low": 97.68,
+      "prev_day_high": 101.73,
+      "prev_day_low": 100.06,
+      "prev_day_close": 100.48
+    },
+    "fibonacci": {
+      "swing_high": 109.14,
+      "swing_low": 92.19,
+      "fib_236": 105.14,
+      "fib_382": 102.67,
+      "fib_500": 100.67,
+      "fib_618": 98.66,
+      "fib_786": 95.82,
+      "fib_ext_1272": 113.75,
+      "fib_ext_1618": 119.62,
+      "fib_ext_2000": 126.09,
+      "fib_ext_low_1272": 87.58,
+      "fib_ext_low_1618": 81.71
+    },
+    "momentum": {
+      "roc_5d": 6.67,
+      "roc_10d": 3.09,
+      "roc_21d": 12.82
+    },
+    "z_score_50": 2.05,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 106.4177358945926,
+      "sma_24": 105.32729975382487,
+      "ema_48": 104.9446617535318,
+      "sma_48": 103.9308369954427,
+      "ema_120": 103.45018897965029,
+      "sma_120": 103.87887687683106,
+      "ema_aligned_uptrend": true,
+      "ema_aligned_downtrend": false
+    },
+    "current_price": 108.72000122070312,
+    "dist_from_50sma_pct": 4.66,
+    "price_vs_ma": {
+      "above_ema_24": true,
+      "pct_from_ema_24": 2.16,
+      "above_sma_24": true,
+      "pct_from_sma_24": 3.22,
+      "above_ema_48": true,
+      "pct_from_ema_48": 3.6,
+      "above_sma_48": true,
+      "pct_from_sma_48": 4.61,
+      "above_ema_120": true,
+      "pct_from_ema_120": 5.09,
+      "above_sma_120": true,
+      "pct_from_sma_120": 4.66,
+      "above_ema_aligned_uptrend": true,
+      "pct_from_ema_aligned_uptrend": 10772.0
+    },
+    "rsi": {
+      "rsi_21": 70.4
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": 1.6122,
+      "signal_line": 0.8379,
+      "histogram": 0.7743,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 110.1,
+      "middle": 103.93,
+      "lower": 97.77,
+      "width": 0.1186,
+      "pct_b": 0.8884
+    },
+    "atr": {
+      "atr_24": 1.22,
+      "atr_pct": 1.12
+    },
+    "adx": {
+      "adx_24": 27.3,
+      "plus_di": 41.18,
+      "minus_di": 19.15,
+      "trend_strength": "strong"
+    },
+    "volume": {
+      "current_volume": 1956559,
+      "avg_volume_20": 2283412,
+      "relative_volume": 0.86,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 104.83,
+          "tests": 2,
+          "volume_confirmed": false
+        },
+        {
+          "price": 109.14,
+          "tests": 6,
+          "volume_confirmed": true
+        },
+        {
+          "price": 110.48,
+          "tests": 4,
+          "volume_confirmed": true
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 100.42,
+          "tests": 15,
+          "volume_confirmed": true
+        }
+      ],
+      "nearest_resistance": 109.14,
+      "nearest_support": 100.42,
+      "recent_high": 110.48,
+      "recent_low": 100.06,
+      "prev_day_high": 108.47,
+      "prev_day_low": 107.7,
+      "prev_day_close": 108.46
+    },
+    "fibonacci": {
+      "swing_high": 110.48,
+      "swing_low": 100.06,
+      "fib_236": 108.02,
+      "fib_382": 106.5,
+      "fib_500": 105.27,
+      "fib_618": 104.04,
+      "fib_786": 102.29,
+      "fib_ext_1272": 113.31,
+      "fib_ext_1618": 116.92,
+      "fib_ext_2000": 120.9,
+      "fib_ext_low_1272": 97.23,
+      "fib_ext_low_1618": 93.62
+    },
+    "momentum": {
+      "roc_5d": -1.42,
+      "roc_10d": 1.64,
+      "roc_21d": 7.28
+    },
+    "z_score_120": 2.12,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 100.91000366210938,
+      "close": 103.75,
+      "high": 104.12000274658203,
+      "low": 100.41999816894531,
+      "volume": 9203500,
+      "time": "2026-04-30"
+    },
+    {
+      "open": 104.4000015258789,
+      "close": 103.08000183105469,
+      "high": 104.83000183105469,
+      "low": 102.97000122070312,
+      "volume": 5956900,
+      "time": "2026-05-01"
+    },
+    {
+      "open": 102.73999786376953,
+      "close": 101.30999755859375,
+      "high": 103.05000305175781,
+      "low": 101.2699966430664,
+      "volume": 8400100,
+      "time": "2026-05-04"
+    },
+    {
+      "open": 101.52999877929688,
+      "close": 100.4800033569336,
+      "high": 101.7300033569336,
+      "low": 100.05999755859375,
+      "volume": 14314700,
+      "time": "2026-05-05"
+    },
+    {
+      "open": 106.5199966430664,
+      "close": 108.05999755859375,
+      "high": 109.13999938964844,
+      "low": 105.30999755859375,
+      "volume": 23219500,
+      "time": "2026-05-06"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 108.66000366210938,
+  "market_cap": 188689350656.0,
+  "wiki_context": {
+    "slices": {
+      "technicals_tldr": {
+        "path": "wiki/tickers/DIS/technicals.md",
+        "mode": "tldr",
+        "content": "As of May 6, 2026 (run `20260506_220627`), DIS has gapped up +7.5% to $108.06 following Q2 FY2026 earnings beat. The prior squeeze (BB width 0.0404 hourly, May 5) has fired \u2014 current hourly BB width expanded to 0.0873. Hourly EMAs are fully aligned bullish, with price above all of them. However, hourly BB pct_b = 1.07 (above the upper band \u2014 statistically extended) and hourly OBV is diverging bearishly (OBV trending down as price spiked). Daily ADX 34.98 with +DI 24.98 / -DI 29.53 shows strong trend strength but no clean directional dominance. Earnings blackout is active (0 days since earnings); no new position until May 9+ at the earliest.\n\n---",
+        "last_updated": "2026-05-06",
+        "stale": false
+      },
+      "regime_tldr": {
+        "path": "wiki/macro/regime.md",
+        "mode": "tldr",
+        "content": "**Strongly risk-on and improving.** The Dow Jones crossed 50,000 for the first time ever on May 7, 2026. S&P 500 at 7,377 (+0.17%) and Nasdaq at 25,977 (+0.53%) \u2014 both at all-time highs intraday. US-Iran peace deal is materially advancing: Iran expected to deliver its 14-point response to the US peace proposal today (May 7), lifting risk sentiment strongly. Oil has pulled back to $94-97/bbl from $100+ peak. AMD Q1 2026 blowout (+38% YoY revenue, EPS +43%) confirms the AI capex supercycle. AI semiconductor stocks continue to lead the broad rally. Regime assessment: **strongly risk-on**, with the two remaining headwinds being Kevin Warsh Fed succession (May 15, hawkish tightening-bias tail) and final signing of the Iran MOU. [sources: web_research/GOOG.json macro_context, run 20260507_164625; web_research/NVDA.json macro_context, run 20260507_123732]",
+        "last_updated": "2026-05-07",
+        "stale": false
+      },
+      "lessons_full": {
+        "path": "wiki/meta/lessons.md",
+        "mode": "full",
+        "content": "## Format\n\nEach lesson is one dated bullet:\n\n`[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME: +$X / -$X] | [WHY it worked or failed in 1 sentence]`\n\nThe \"why\" should reference: the thesis at the time, the macro regime, which swing strategy recommended it.\n\n---\n\n## Patterns (auto-generated by Sunday compactor, last 30 days)\n\n| Setup Type | Trades | Wins | Win Rate | Avg P&L | Total P&L |\n|---|---|---|---|---|---|\n| EMA pullback Fib dip-buy | 1 | 0 | 0% | -$63.20 | -$63.20 |\n\n## Lessons\n\n2026-04-30 | NVDA | EMA pullback Fib dip-buy | -$63.20 (corrected from -$264.65) | Stop triggered at $205.30 (hourly Fib 61.8%); swing_trend_momentum and swing_breakout were bullish on AI capex thesis, but price breached the stop zone intraday amid stretched macro (RSI 81\u201387) with no bullish confirmation candle before exit. **Note:** trade was originally sized 67 shares ($14,020) due to a phantom $100K budget bug (fixed commit b2b472d). With the correct $25K budget at 14.2% vol-adj limit, position would have been 16 shares ($3,348). Corrected P&L reflects the strategy's actual signal quality, not the sizing error.\n2026-05-04 | AMZN | mean-reversion fade short | OUTCOME: -$10.14 | Mean-reversion short thesis (April 30 shooting star, RSI 82\u201388) stopped at $276 as extreme ADX 65 trend absorbed the reversal; swing_mean_reversion recommended the setup but the regime (ADX 60+) sets an elevated bar for fading overbought conditions confirmed by identical NVDA stop-out April 30.\n2026-05-05 | DIS | pre-earnings breakout long | OUTCOME: -$4.99 | Pre-earnings breakout above $103 (4/5 swing agents bullish, swing_breakout and swing_trend_momentum) invalidated by macro reversal (Iran escalation May 4, WTI +$105) that converted the April 30 risk-on tailwind into a risk-off headwind; sub-threshold entry volume (1.23x vs. 1.5x minimum) was an early warning sign.\n2026-05-06 | GOOG | mean-reversion fade short | OUTCOME: -$6.50 | Mean-reversion short (RSI-7 90.69, Z-score 2.56) stopped at $389.50 as ADX 74.23 extreme trend absorbed the fade; swing_mean_reversion recommended the setup but the regime repeated the NVDA/AMZN pattern \u2014 ADX 60+ environments make fading overbought conditions highly unreliable; strongly risk-on macro (S&P ATH, US-Iran MOU) added upside momentum.\n2026-05-06 | AMD | statistical exhaustion short | OUTCOME: -$17.82 | Mean-reversion short (Z-score 2.6, RSI 83, +74% 21d surge) gap-stopped at $372.31 when Q1 2026 earnings blowout (+38% YoY, EPS +43%) gapped AMD +15% overnight; swing_mean_reversion and swing_catalyst_news recommended the fade but earnings binary created a non-linear gap-through-stop outcome; half-sizing to 1 share limited damage to -$17.82 vs -$35.64.\n",
+        "last_updated": "2026-05-07",
+        "stale": false
+      }
+    }
+  },
+  "prediction_grading": null
+}

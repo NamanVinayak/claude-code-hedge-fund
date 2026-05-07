@@ -1,0 +1,20 @@
+{
+  "NKE": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "TREND ASSESSMENT: NKE is in a confirmed daily downtrend — EMA cascade is fully bearish (5 < 10 < 21 < 50 < 200), price $43.88 is below every EMA. ADX at 24.18 is below the 25 threshold required for a tradeable trend. The wiki notes the prior RSI-7 read of 18.77 (deeply oversold); current RSI-7 has bounced slightly to 28.86 with a bullish RSI divergence, but this is not enough to call a trend reversal. MOMENTUM ASSESSMENT: ROC is mixed — 5d (-1.15%) and 10d (-3.94%) are negative while 21d (+2.79%) is positive. This is not the clean all-positive, expanding ROC required for a bullish momentum signal. MACD histogram is slightly positive (+0.2576), suggesting downside momentum deceleration, not an uptrend acceleration. The hourly shows short-term price above the hourly EMAs with +DI 29.62 > -DI 14.71, but hourly ADX (23.06) is also below 25. Per strategy rules: no signal when ADX < 25, ROC is mixed in sign, and the primary daily trend is firmly bearish. The wiki correctly identifies the entry zone for a short as a bounce to the 10/21 EMA band ($44.21-$45.35) — we are nearing that zone but the bounce is not confirmed and downtrend momentum has not resumed. OBV trending down, volume bias bearish. LESSON REVIEW: The only prior EMA pullback setup in the pattern table has a 0% win rate (-$63.20). Standing aside here is correct. Wait for either: (1) ADX > 25 with -DI dominant and price rejecting the 10/21 EMA band for a short entry, or (2) a full EMA realignment for a long.",
+    "entry": 44.21,
+    "target": 46.97,
+    "stop": 42.09,
+    "timeframe": "no current setup — monitor for EMA band rejection or trend reversal confirmation"
+  },
+  "DIS": {
+    "signal": "bullish",
+    "confidence": 52,
+    "reasoning": "TREND ASSESSMENT: DIS fired a large post-earnings gap on May 6 (+7.5%), establishing a strong short-term uptrend. Short-term EMA cascade is bullish: ema_5 (103.83) > ema_10 (103.21) > ema_21 (102.40) ≈ ema_50 (102.40). ADX at 33.39 with +DI 37.60 > -DI 23.85 confirms a strong, directionally bullish trend. The daily ema_aligned_uptrend flag is false because ema_50 (102.40) is still below ema_200 (106.31), but price is above all EMAs including the 200, signaling trend emergence. Hourly EMAs are fully aligned bullish (24 > 48 > 120). MOMENTUM ASSESSMENT: ROC is all positive — 5d (+6.67%), 10d (+3.09%), 21d (+12.82%). Recent acceleration is evident. MACD histogram +0.1403 with bullish crossover. Hourly MACD histogram is +0.7743 (large positive, expanding). Both daily and hourly confirm momentum is accelerating. ENTRY CAUTION: Per strategy rules, entry requires a pullback to the 10 or 21 EMA. Current price ($108.06) is 4.7% above ema_10 and 5.5% above ema_21 — significantly overextended. Daily pct_b at 1.06 (above upper Bollinger band), Z-score 2.05. Daily OBV is diverging bearishly (price up, OBV down) from the earnings spike — a warning signal. This OBV divergence combined with overextension reduces confidence. PRIOR LESSON: DIS May 5 pre-earnings breakout lost -$4.99 due to macro reversal; the macro has now flipped strongly risk-on (Dow 50,000, US-Iran MOU advancing), which removes that specific headwind. However, the overextension makes chasing dangerous. Entry is set at a pullback to the daily 10 EMA ($103.21), which aligns with hourly Fib 38.2% ($106.50) as interim support. Confidence is moderate (52) due to: overextension, daily OBV bearish divergence, and the prior DIS stop-out teaching discipline on entry timing. Wiki notes earnings blackout through May 8; earliest clean entry is May 9 on a pullback.",
+    "entry": 103.21,
+    "target": 110.48,
+    "stop": 100.42,
+    "timeframe": "5-10 trading days"
+  }
+}

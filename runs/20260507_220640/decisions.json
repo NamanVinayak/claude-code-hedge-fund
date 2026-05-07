@@ -1,0 +1,31 @@
+{
+  "decisions": {
+    "NKE": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 0.0,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 0.0,
+      "stop_loss": 0.0,
+      "risk_reward_ratio": "N/A",
+      "timeframe": "N/A",
+      "confidence": 22,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader neutral (22 conf), 4/5 agents neutral. RSI-7 28.86 deeply oversold vetoes new short. ADX 24.18 below 25 threshold. Mean-reversion bounce underway — wait for bounce to $44.21-$45.35 EMA band rejection with ADX>25 and -DI dominant before shorting. No long allowed. Stand aside."
+    },
+    "DIS": {
+      "action": "short",
+      "quantity": 3,
+      "entry_price": 108.50,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 103.00,
+      "stop_loss": 110.60,
+      "risk_reward_ratio": "2.62:1",
+      "timeframe": "3-6 trading days",
+      "confidence": 35,
+      "account_risk_pct": 0.5,
+      "reasoning": "Post-earnings gap fade short. Dual Z-score extreme (daily 2.05, hourly 2.12), pct_b 1.06 above upper BB, OBV bearish divergence (distribution on 2.72x vol). ALL 4 bullish agents agree $108 is wrong entry — they want $103-104 pullback. Mean-reversion short: entry $108.50, target $103 (Bollinger middle/20-SMA), stop $110.60 (above $109.14 resistance cluster). R/R 2.62:1 clears 2:1 minimum. Low conviction (35) — lone bearish directional vote but statistical overextension is real. Sized conservatively: 3 shares x $108.50 = $325.50 (22.3% of capital, within 25% cap). account_risk_pct 0.5% = $7.29 risk / $2.10 stop-distance = 3 shares. Earnings blackout cleared May 9; entering May 7 at 1 day post-earnings where fade risk is highest. Prior DIS long stop-out was pre-earnings setup — structurally different."
+    }
+  },
+  "synthesis": "NKE: oversold bounce underway (RSI-7 28.86, ADX 24.18 sub-threshold) with no clean short or long entry — standing aside. DIS: post-earnings gap is statistically overextended on dual timeframes; taking a small fade short at $108.50 targeting the Bollinger middle at $103, stop $110.60 for 2.62:1 R/R. The 4 bullish agents' own preferred entry zone ($103-104) aligns with mean-reversion's fade target — low-conviction short sized at 0.5% account risk. Total new capital at risk: ~$7.29 (DIS short). Portfolio now carries 3 longs (BAC, AAPL, WDC), 3 shorts (JNJ, META, DIS)."
+}

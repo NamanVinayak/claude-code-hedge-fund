@@ -1,0 +1,20 @@
+{
+  "NKE": {
+    "signal": "neutral",
+    "confidence": 15,
+    "reasoning": "NKE has no valid breakout setup at current price. Range boundaries: support $42.09 (1 test, unconfirmed volume) to resistance $46.97 (4 tests, well-defined). Price at $43.88 is mid-range, below all EMAs from 5 through 200 in a confirmed daily downtrend. For a bullish breakout, I need price to close above $46.97 on 1.5x+ volume — that is $3.09 away with no catalyst visible. Volume ratio today is 0.93x (well below the 1.5x minimum threshold required for breakout confirmation). Daily BB width is 0.1028 — moderate, no squeeze is active. Hourly BB width at 0.0524 shows mild coiling on the hourly, but price is only at $44.41 against hourly resistance at $44.96, and the hourly RSI-21 is at 69.64 (nearly overbought), limiting upside follow-through. The May 5 DIS lesson is instructive: a sub-threshold volume breakout (1.23x) failed immediately — NKE's 0.93x is even weaker. Wiki confirms: no trade here; wait for bounce to $44.28-$45.49 EMA zone (the short-entry reassessment window, not a bull setup). For a bearish breakout below $42.09, RSI-7 at 28.86 is deeply oversold and ADX at 24.18 is below the 25 threshold — wiki vetoes new shorts at these oversold extremes. Squeeze not on, volume absent, mid-range price: this is not my setup.",
+    "entry": 46.97,
+    "target": 51.85,
+    "stop": 45.80,
+    "timeframe": "10-20 trading days"
+  },
+  "DIS": {
+    "signal": "bullish",
+    "confidence": 42,
+    "reasoning": "DIS executed a confirmed breakout above the $107.11 resistance level (11 tests) on May 6, closing at $108.06 on volume of 2.72x the 20-day average — well above the 1.5x confirmation threshold. The range was $98.45 support to $107.11 resistance (range height $8.66), and the measured move target is $107.11 + $8.66 = $115.77. The squeeze fired: prior hourly BB width was 0.0404 (tight coil on May 5), now expanded to 0.1186 — the spring released. Hourly EMAs are fully aligned bullish and daily MACD has a bullish crossover (+0.1403 histogram). This re-affirms my prior bullish call (entry $108.06, target $115.77, stop $104.50, verdict in_progress after 1 day). Confidence is held below 50 for several reasons: (1) the squeeze has already fired — BB width already wide, so I am NOT entering a coiling setup but a post-breakout continuation; (2) daily OBV is bearishly diverging from price (OBV trending down while price spiked — key distribution warning); (3) daily pct_b is 1.0615 (above upper band) and z-score is 2.05, both statistically extended; (4) hourly RSI-21 is 70.4, approaching overbought; (5) the prior DIS attempt (May 5) lost $4.99 on a similar pre-breakout setup invalidated by macro reversal. The wiki flags an earnings blackout until May 9+ and notes that entry at $108.06 yields poor R/R on a fresh long — but the measured move to $115.77 from a stop at $104.50 is 2.2:1, which is marginal but positive. I re-affirm the in-progress bullish call with reduced confidence pending pullback confirmation. A clean pullback to $105-$107 consolidation on lower volume (not distribution) would be the higher-conviction entry per wiki guidance. Entry here is sub-optimal but the breakout is structurally valid.",
+    "entry": 108.06,
+    "target": 115.77,
+    "stop": 104.50,
+    "timeframe": "5-12 trading days"
+  }
+}

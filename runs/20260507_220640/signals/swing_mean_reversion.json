@@ -1,0 +1,20 @@
+{
+  "NKE": {
+    "signal": "bullish",
+    "confidence": 40,
+    "reasoning": "Branch A fires weakly — re-affirming prior in-progress bullish call (verdict: in_progress, MFE 2.25%, MAE 0.0%). NKE is -12.44% below the 50-SMA (extreme extension) with a confirmed bullish RSI divergence on the daily timeframe (60-bar lookback). RSI-7 at 28.86 is approaching but not yet at the <25 extreme; RSI-14 at 34.83. Daily Z-score at -0.99 is just inside the neutral zone, but the distance-from-50SMA metric at -12.44% is extreme and is the primary Branch A trigger here. MACD histogram has turned positive (+0.2576), signaling downside momentum deceleration. Bollinger pct_b at 0.34 — price in the lower third. On the hourly timeframe, the picture has shifted constructively: price is ABOVE all hourly EMAs (EMA-24, EMA-48, EMA-120), hourly OBV trending up (not diverging), hourly RSI-21 at 69.64 (recovering momentum), hourly MACD histogram positive (+0.1781). This hourly-vs-daily divergence (hourly bullish, daily still oversold) suggests the reversal is already starting. Prior wiki: RSI-7 was 18.77 on May 6 — has recovered to 28.86, confirming the bounce is underway. ADX at 24.18 is moderate (NOT extreme trend), differentiating this from the AMZN/GOOG/AMD failures (all ADX 60+) — mean-reversion fades are more reliable in moderate-trend regimes. Recent price action shows three days of stabilization (May 4-6: $43.09, $43.06, $43.88) with the May 6 close forming a slight uptick. Bounce target is the 20-SMA/Bollinger middle ($44.61-$44.96 zone) — NOT the 50-SMA (too far in a downtrend). Downside risk: structural downtrend (all EMAs aligned bearish, price -30% below 200-SMA) limits confidence; this is a counter-trend bounce, not a trend reversal. Hourly support at $42.65 (4 tests, volume-confirmed) defines the stop.",
+    "entry": 44.07,
+    "target": 45.50,
+    "stop": 42.55,
+    "timeframe": "3-7 trading days"
+  },
+  "DIS": {
+    "signal": "bearish",
+    "confidence": 42,
+    "reasoning": "Branch A fires — adjusting from prior in-progress bearish call (verdict: in_progress, direction_correct: false, MFE 2.46% toward target, MAE -1.08% adverse). What I'm doing differently: prior entry was $107.97 at the initial gap-up; price has since extended further. The dual Z-score extreme now provides stronger Branch A confirmation than the prior call had at initiation. Daily Z-score: 2.05 (at overbought threshold), hourly Z-score: 2.12 (also above 2.0) — this dual-timeframe extreme is the strongest Branch A setup pattern per strategy rules ('hourly extreme + daily extreme = strong fade'). Price is ABOVE the upper Bollinger Band on the daily chart (pct_b = 1.0615), confirming statistical blow-off. Distance from 50-SMA: +7.14% (above the 5% noteworthy threshold). RSI-7: 69.9 — elevated but not at 75+ extreme; hourly RSI-21: 70.4 (approaching overbought). OBV is bearishly diverging on the daily (OBV trending down as price spiked on the May 6 earnings gap) — distribution signal on high volume (2.72x average). ADX at 33.39 is 'strong' but NOT at the 60+ extreme that caused prior fade failures (AMZN -$10.14, GOOG -$6.50, AMD -$17.82) — at ADX 33, fading overbought conditions carries meaningfully better odds. Post-earnings gap-fade context: the $8+ gap from May 5 close ($100.48) to May 6 close ($108.06) on earnings is the catalyst — such gaps commonly mean-revert 40-60% within 5-10 days as initial enthusiasm fades. Wiki confirms earnings blackout was active May 6; May 7 is 1 day post-earnings (blackout lifted). Hourly resistance at $109.14 (6 tests, volume-confirmed) and $110.48 (4 tests, volume-confirmed) cap upside. Prior stop at $109.20 is just above the $109.14 resistance cluster — maintaining. Target: return to Bollinger middle/20-SMA zone ($102.97-$103.00). Reduced confidence vs. a clean fade because RSI is not yet at 75+ and ADX 33 carries some continuation risk from a genuine earnings beat.",
+    "entry": 108.50,
+    "target": 103.00,
+    "stop": 110.60,
+    "timeframe": "3-6 trading days"
+  }
+}

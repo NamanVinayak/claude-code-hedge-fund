@@ -1,0 +1,344 @@
+{
+  "ticker": "NKE",
+  "daily_indicators": {
+    "timeframe": "daily",
+    "moving_averages": {
+      "ema_5": 43.79614639854544,
+      "sma_5": 43.75800094604492,
+      "ema_10": 44.20831867068889,
+      "sma_10": 44.28199996948242,
+      "ema_20": 45.21679122497184,
+      "sma_20": 44.61349983215332,
+      "ema_21": 45.345401264533784,
+      "sma_21": 44.54285703386579,
+      "ema_50": 49.45256115231327,
+      "sma_50": 50.11160552978516,
+      "ema_200": 58.444290446291575,
+      "sma_200": 62.98380401611328,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": true
+    },
+    "current_price": 43.880001068115234,
+    "dist_from_50sma_pct": -12.44,
+    "price_vs_ma": {
+      "above_ema_5": true,
+      "pct_from_ema_5": 0.19,
+      "above_sma_5": true,
+      "pct_from_sma_5": 0.28,
+      "above_ema_10": false,
+      "pct_from_ema_10": -0.74,
+      "above_sma_10": false,
+      "pct_from_sma_10": -0.91,
+      "above_ema_20": false,
+      "pct_from_ema_20": -2.96,
+      "above_sma_20": false,
+      "pct_from_sma_20": -1.64,
+      "above_ema_21": false,
+      "pct_from_ema_21": -3.23,
+      "above_sma_21": false,
+      "pct_from_sma_21": -1.49,
+      "above_ema_50": false,
+      "pct_from_ema_50": -11.27,
+      "above_sma_50": false,
+      "pct_from_sma_50": -12.44,
+      "above_ema_200": false,
+      "pct_from_ema_200": -24.92,
+      "above_sma_200": false,
+      "pct_from_sma_200": -30.33,
+      "above_ema_aligned_downtrend": true,
+      "pct_from_ema_aligned_downtrend": 4288.0
+    },
+    "rsi": {
+      "rsi_7": 28.86,
+      "rsi_14": 34.83,
+      "rsi_21": 55.06
+    },
+    "rsi_divergence": {
+      "bullish": true,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": -1.6664,
+      "signal_line": -1.924,
+      "histogram": 0.2576,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 46.91,
+      "middle": 44.61,
+      "lower": 42.32,
+      "width": 0.1028,
+      "pct_b": 0.3401
+    },
+    "atr": {
+      "atr_14": 1.06,
+      "atr_pct": 2.41
+    },
+    "adx": {
+      "adx_14": 24.18,
+      "plus_di": 12.97,
+      "minus_di": 32.5,
+      "trend_strength": "moderate"
+    },
+    "volume": {
+      "current_volume": 19406700,
+      "avg_volume_20": 20799395,
+      "relative_volume": 0.93,
+      "volume_bias_10d": "down",
+      "obv": {
+        "trend": "down",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 46.97,
+          "tests": 4,
+          "volume_confirmed": false
+        },
+        {
+          "price": 68.04,
+          "tests": 1,
+          "volume_confirmed": true
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 42.09,
+          "tests": 1,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 46.97,
+      "nearest_support": 42.09,
+      "recent_high": 46.97,
+      "recent_low": 42.09,
+      "prev_day_high": 43.3,
+      "prev_day_low": 42.65,
+      "prev_day_close": 43.06
+    },
+    "fibonacci": {
+      "swing_high": 54.22,
+      "swing_low": 42.09,
+      "fib_236": 51.36,
+      "fib_382": 49.59,
+      "fib_500": 48.16,
+      "fib_618": 46.72,
+      "fib_786": 44.69,
+      "fib_ext_1272": 57.52,
+      "fib_ext_1618": 61.72,
+      "fib_ext_2000": 66.35,
+      "fib_ext_low_1272": 38.79,
+      "fib_ext_low_1618": 34.59
+    },
+    "momentum": {
+      "roc_5d": -1.15,
+      "roc_10d": -3.94,
+      "roc_21d": 2.79
+    },
+    "z_score_50": -0.99,
+    "degraded_indicators": []
+  },
+  "hourly_indicators": {
+    "timeframe": "hourly",
+    "moving_averages": {
+      "ema_24": 43.929738415038415,
+      "sma_24": 43.588185946146645,
+      "ema_48": 44.02621186920452,
+      "sma_48": 43.90662137667338,
+      "ema_120": 44.29779777155892,
+      "sma_120": 44.88211062749227,
+      "ema_aligned_uptrend": false,
+      "ema_aligned_downtrend": true
+    },
+    "current_price": 44.40999984741211,
+    "dist_from_50sma_pct": -1.05,
+    "price_vs_ma": {
+      "above_ema_24": true,
+      "pct_from_ema_24": 1.09,
+      "above_sma_24": true,
+      "pct_from_sma_24": 1.89,
+      "above_ema_48": true,
+      "pct_from_ema_48": 0.87,
+      "above_sma_48": true,
+      "pct_from_sma_48": 1.15,
+      "above_ema_120": true,
+      "pct_from_ema_120": 0.25,
+      "above_sma_120": false,
+      "pct_from_sma_120": -1.05,
+      "above_ema_aligned_downtrend": true,
+      "pct_from_ema_aligned_downtrend": 4341.0
+    },
+    "rsi": {
+      "rsi_21": 69.64
+    },
+    "rsi_divergence": {
+      "bullish": false,
+      "bearish": false,
+      "lookback_bars": 60
+    },
+    "macd": {
+      "macd_line": -0.1241,
+      "signal_line": -0.3022,
+      "histogram": 0.1781,
+      "bullish_crossover": false
+    },
+    "bollinger": {
+      "upper": 45.06,
+      "middle": 43.91,
+      "lower": 42.76,
+      "width": 0.0524,
+      "pct_b": 0.7187
+    },
+    "atr": {
+      "atr_24": 0.33,
+      "atr_pct": 0.74
+    },
+    "adx": {
+      "adx_24": 23.06,
+      "plus_di": 29.62,
+      "minus_di": 14.71,
+      "trend_strength": "moderate"
+    },
+    "volume": {
+      "current_volume": 1939387,
+      "avg_volume_20": 3038975,
+      "relative_volume": 0.64,
+      "volume_bias_10d": "up",
+      "obv": {
+        "trend": "up",
+        "diverging_from_price": false
+      }
+    },
+    "support_resistance": {
+      "pivot_highs": [
+        {
+          "price": 44.07,
+          "tests": 21,
+          "volume_confirmed": true
+        },
+        {
+          "price": 44.96,
+          "tests": 15,
+          "volume_confirmed": false
+        }
+      ],
+      "pivot_lows": [
+        {
+          "price": 42.65,
+          "tests": 4,
+          "volume_confirmed": true
+        },
+        {
+          "price": 43.51,
+          "tests": 14,
+          "volume_confirmed": true
+        },
+        {
+          "price": 44.75,
+          "tests": 22,
+          "volume_confirmed": false
+        }
+      ],
+      "nearest_resistance": 44.96,
+      "nearest_support": 43.51,
+      "recent_high": 44.64,
+      "recent_low": 42.72,
+      "prev_day_high": 44.64,
+      "prev_day_low": 44.37,
+      "prev_day_close": 44.44
+    },
+    "fibonacci": {
+      "swing_high": 44.64,
+      "swing_low": 42.65,
+      "fib_236": 44.17,
+      "fib_382": 43.88,
+      "fib_500": 43.65,
+      "fib_618": 43.41,
+      "fib_786": 43.08,
+      "fib_ext_1272": 45.18,
+      "fib_ext_1618": 45.87,
+      "fib_ext_2000": 46.63,
+      "fib_ext_low_1272": 42.11,
+      "fib_ext_low_1618": 41.42
+    },
+    "momentum": {
+      "roc_5d": -0.06,
+      "roc_10d": 2.22,
+      "roc_21d": 3.06
+    },
+    "z_score_120": -0.47,
+    "degraded_indicators": []
+  },
+  "recent_prices": [
+    {
+      "open": 44.09000015258789,
+      "close": 44.36000061035156,
+      "high": 44.810001373291016,
+      "low": 43.5099983215332,
+      "volume": 21679500,
+      "time": "2026-04-30"
+    },
+    {
+      "open": 44.81999969482422,
+      "close": 44.400001525878906,
+      "high": 44.959999084472656,
+      "low": 44.220001220703125,
+      "volume": 11562800,
+      "time": "2026-05-01"
+    },
+    {
+      "open": 44.189998626708984,
+      "close": 43.09000015258789,
+      "high": 44.34000015258789,
+      "low": 43.09000015258789,
+      "volume": 33272400,
+      "time": "2026-05-04"
+    },
+    {
+      "open": 43.040000915527344,
+      "close": 43.060001373291016,
+      "high": 43.29999923706055,
+      "low": 42.650001525878906,
+      "volume": 18589700,
+      "time": "2026-05-05"
+    },
+    {
+      "open": 43.630001068115234,
+      "close": 43.880001068115234,
+      "high": 44.06999969482422,
+      "low": 43.20000076293945,
+      "volume": 19406700,
+      "time": "2026-05-06"
+    }
+  ],
+  "recent_insider_trades": [],
+  "recent_news": [],
+  "current_price": 44.40999984741211,
+  "market_cap": 65766195200.0,
+  "wiki_context": {
+    "slices": {
+      "catalysts_full": {
+        "path": "wiki/tickers/NKE/catalysts.md",
+        "mode": "full",
+        "content": "# NKE \u2014 Catalysts\n\n## TL;DR\n\nCatalyst backdrop remains almost entirely bearish: two rounds of 2026 layoffs totaling ~14,000 employees, a wave of analyst downgrades in March-April 2026, and FY2026 EPS consensus down ~30% YoY. New headwind: EEOC investigation for alleged reverse discriminatory hiring under DEI policies. The only contrarian signals are board insider buys at multi-year lows and a $0.41 quarterly dividend confirmed payable July 1, 2026. Macro is strongly risk-on May 6 (S&P 7,365 record close) but NKE is severely underperforming (-32% YTD vs. S&P ATH). Next binary event: Q4 FY2026 earnings June 25, 2026 (after market close). Upcoming positive wildcard: 2026 FIFA World Cup beginning \u2014 major consumer/apparel demand driver.\n\nSources: `web_research/NKE.json` and `swing_catalyst_news` signal, run `20260506_220627`.\n\n---\n\n## Upcoming events\n\n| Date | Event | Significance |\n|---|---|---|\n| June 25, 2026 | Q4 FY2026 earnings (after market close) | Consensus EPS ~$1.51 FY full year (down ~30% YoY); Q4 revenue guidance implies continued decline \u2014 binary risk |\n| June 12\u201315, 2026 | Enter earnings catalyst window | Re-evaluate for pre-earnings setup |\n| July 1, 2026 | Quarterly dividend $0.41/share payable | Minor positive; supports downside floor |\n| 2026 | FIFA World Cup beginning | Major global sporting event \u2014 NKE primary kit supplier for multiple national teams; footwear/apparel demand catalyst |\n| May 15, 2026 | Fed leadership transition (Warsh) | Hawkish succession; tighter-for-longer risk elevated for discretionary |\n| Ongoing | EEOC investigation | Alleged reverse discriminatory hiring under DEI policies \u2014 regulatory headline risk |\n\n**Earnings blackout note**: Risk manager enforces a 3-day blackout before earnings. Any swing position initiated before June 22 should be closed before the June 25 print.\n\n---\n\n## Recent news synthesis\n\n| Headline | Sentiment | Date / Source |\n|---|---|---|\n| Nike down 32% YTD and under EEOC investigation for alleged reverse discriminatory hiring | Negative | The Motley Fool / Yahoo Finance, May 6, 2026 |\n| Nike has conducted two rounds of 2026 layoffs, cutting approximately 14,000 employees in first four months | Negative | Motley Fool, May 6, 2026 |\n| Nike 'Win Now' turnaround underway; CEO Elliott Hill says company is 'in the middle innings' of comeback | Neutral | WWD / Motley Fool, 2026 |\n| Nike Q3 FY2026 EPS $0.35 beat estimates of $0.28 by 25%, but revenue -2.7% YoY with China weakness and excess inventory | Neutral | Nike Investor Relations / MarketBeat, March 31, 2026 |\n| Wave of analyst downgrades: DA Davidson (buy\u2192neutral, PT $72\u2192$46), CICC (outperform\u2192market perform), Piper Sandler (overweight\u2192neutral, PT $60\u2192$50), Citigroup (neutral, PT $65\u2192$53) | Negative | Multiple sources, April 2026 |\n\n---\n\n## Analyst consensus\n\nAs of May 6, 2026 (`web_research/NKE.json`, run `20260506_220627`):\n\n- **Rating**: Hold (consensus degraded from prior Buy majority)\n- **Average price target**: $62.00 (~44% implied upside from ~$43 current price)\n- **Recent changes**: DA Davidson (buy\u2192neutral, PT $72\u2192$46), CICC (outperform\u2192market perform), Piper Sandler (overweight\u2192neutral, PT $60\u2192$50), Citigroup (neutral, PT $65\u2192$53), UBS neutral ($58\u2192$54), Wells Fargo overweight but cut PT $65\u2192$55. Last upgrade: Barclays March 11 ($73 PT). Distribution: ~52% buy, 44% hold, 4% sell across 25 analysts.\n\n---\n\n## Insider activity\n\n| Insider | Transaction | Amount | Date | Signal |\n|---|---|---|---|---|\n| Robert Swan (board) | Buy \u2014 shares at $42.44 | ~$500K | Apr 7, 2026 | Bullish |\n| John Rogers Jr. (board) | Buy \u2014 shares at $43.34 | ~$173K | Apr 9, 2026 | Bullish |\n| Net insider flow (90-trade window) | Sell-side heavier | Buys $19.7M vs. Sells $33.2M | Multi-month | Bearish net |\n\n---\n\n## Competitive landscape\n\nAdidas is the sharpest near-term threat: Samba/Gazelle lifestyle dominating and CEO's turnaround plan ahead of schedule with stronger FIFA World Cup positioning. On Running and Hoka continue capturing premium performance-running share. Under Armour restructured aggressively (cut Steph Curry deal) and is less of a direct threat. Nike maintains 27% athletic footwear market share vs. Adidas 13%, but lifestyle momentum gap is a near-term headwind. Source: `web_research/NKE.json`, run `20260506_220627`.\n",
+        "last_updated": "2026-05-06",
+        "stale": false
+      },
+      "calendar_full": {
+        "missing": true,
+        "mode": "full"
+      },
+      "lessons_full": {
+        "path": "wiki/meta/lessons.md",
+        "mode": "full",
+        "content": "## Format\n\nEach lesson is one dated bullet:\n\n`[DATE] | [TICKER] | [SETUP TYPE] | [OUTCOME: +$X / -$X] | [WHY it worked or failed in 1 sentence]`\n\nThe \"why\" should reference: the thesis at the time, the macro regime, which swing strategy recommended it.\n\n---\n\n## Patterns (auto-generated by Sunday compactor, last 30 days)\n\n| Setup Type | Trades | Wins | Win Rate | Avg P&L | Total P&L |\n|---|---|---|---|---|---|\n| EMA pullback Fib dip-buy | 1 | 0 | 0% | -$63.20 | -$63.20 |\n\n## Lessons\n\n2026-04-30 | NVDA | EMA pullback Fib dip-buy | -$63.20 (corrected from -$264.65) | Stop triggered at $205.30 (hourly Fib 61.8%); swing_trend_momentum and swing_breakout were bullish on AI capex thesis, but price breached the stop zone intraday amid stretched macro (RSI 81\u201387) with no bullish confirmation candle before exit. **Note:** trade was originally sized 67 shares ($14,020) due to a phantom $100K budget bug (fixed commit b2b472d). With the correct $25K budget at 14.2% vol-adj limit, position would have been 16 shares ($3,348). Corrected P&L reflects the strategy's actual signal quality, not the sizing error.\n2026-05-04 | AMZN | mean-reversion fade short | OUTCOME: -$10.14 | Mean-reversion short thesis (April 30 shooting star, RSI 82\u201388) stopped at $276 as extreme ADX 65 trend absorbed the reversal; swing_mean_reversion recommended the setup but the regime (ADX 60+) sets an elevated bar for fading overbought conditions confirmed by identical NVDA stop-out April 30.\n2026-05-05 | DIS | pre-earnings breakout long | OUTCOME: -$4.99 | Pre-earnings breakout above $103 (4/5 swing agents bullish, swing_breakout and swing_trend_momentum) invalidated by macro reversal (Iran escalation May 4, WTI +$105) that converted the April 30 risk-on tailwind into a risk-off headwind; sub-threshold entry volume (1.23x vs. 1.5x minimum) was an early warning sign.\n2026-05-06 | GOOG | mean-reversion fade short | OUTCOME: -$6.50 | Mean-reversion short (RSI-7 90.69, Z-score 2.56) stopped at $389.50 as ADX 74.23 extreme trend absorbed the fade; swing_mean_reversion recommended the setup but the regime repeated the NVDA/AMZN pattern \u2014 ADX 60+ environments make fading overbought conditions highly unreliable; strongly risk-on macro (S&P ATH, US-Iran MOU) added upside momentum.\n2026-05-06 | AMD | statistical exhaustion short | OUTCOME: -$17.82 | Mean-reversion short (Z-score 2.6, RSI 83, +74% 21d surge) gap-stopped at $372.31 when Q1 2026 earnings blowout (+38% YoY, EPS +43%) gapped AMD +15% overnight; swing_mean_reversion and swing_catalyst_news recommended the fade but earnings binary created a non-linear gap-through-stop outcome; half-sizing to 1 share limited damage to -$17.82 vs -$35.64.\n",
+        "last_updated": "2026-05-07",
+        "stale": false
+      }
+    }
+  },
+  "prediction_grading": null
+}
