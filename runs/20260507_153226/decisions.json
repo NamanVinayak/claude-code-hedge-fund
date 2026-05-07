@@ -1,0 +1,17 @@
+{
+  "decisions": {
+    "MSFT": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 425.8,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 436.0,
+      "stop_loss": 418.0,
+      "risk_reward_ratio": "2.0:1",
+      "timeframe": "wait — reassess in 1-3 sessions",
+      "confidence": 32,
+      "account_risk_pct": 0.0,
+      "reasoning": "Head Trader conf 32 < 40 threshold; 4/5 agents neutral. Allowed actions: hold or short only. Short vetoed: hourly trend turned bullish above $420 wiki trigger, macro strongly risk-on (S&P/Nasdaq ATH, AMD AI capex blowout), making a short trade directly into upside momentum inadvisable. Daily bearish DI edge and negative MACD support a short thesis structurally, but risk-on macro + hourly recovery make stop placement above $430 too wide for acceptable R/R. 5 consecutive recent losses (-$98 total) reinforce discipline: do not force a trade in ambiguous setups. Wait for either (a) daily close above $420.78 on 53M+ volume (breakout buy — but buy is not allowed without covering a position), or (b) daily MACD histogram turning negative again + failure of the hourly $420 recapture for a clean short entry. No position change today."
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "MSFT": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "TREND ASSESSMENT: Daily EMA fan is technically bullish (10 EMA 414.99 > 21 EMA 409.89 > 50 EMA 407.60, ema_aligned_uptrend=true), satisfying the structural alignment requirement. However, ADX-14 at 46.58 reads 'strong' but the directional indicators are bearish-dominant: -DI (28.34) > +DI (20.69). The strong trend is pointing DOWN in directional terms, not up. Wiki context confirms: prior run (May 6) also showed -DI slightly ahead of +DI on ADX 49.48. OBV on daily is trending down (distribution). MOMENTUM ASSESSMENT (FAIL): Daily ROC is contradictory — roc_5d -2.47%, roc_10d -4.38% (both negative), roc_21d +11.19% (positive). This is NOT clean momentum acceleration; near-term momentum is decelerating sharply. Daily MACD histogram is -1.1312 with MACD line (6.33) below signal line (7.47) — momentum is decelerating on the daily frame. Strategy rules require ROC across 5/10/21d to all be positive AND expanding for a bullish entry; the 5d and 10d ROC being negative disqualifies the setup. HOURLY DIVERGENCE — EARLY WARNING: The hourly frame tells a very different story: hourly price (425.80) has surged well above all hourly EMAs; hourly ROC all positive (5d +2.89%, 10d +3.53%, 21d +2.43%); hourly MACD histogram expanding at +1.1867. However, the prompt rules explicitly flag 'hourly diverging from daily = early warning of trend exhaustion.' The intraday surge of ~+3.5% from yesterday's daily close (411.38) has pushed hourly price to pct_b 0.8585 — overextended, not a pullback entry. MACRO REGIME: Strongly risk-on (S&P/Nasdaq ATH, AMD blowout), which is a tailwind. But macro alone does not override the strategy's momentum requirement. LESSONS CHECK: EMA pullback dip-buy setup shows 0% win rate in the last 30 days (1 trade, -$63.20, NVDA stop-out). Not adding confidence to a borderline setup. WAIT CONDITION: A proper entry would require daily MACD histogram to turn positive and ROC 5d/10d to recover above zero, with a pullback toward the 10 EMA (414.99) or 21 EMA (409.89) on the daily. At current intraday price of 425.80, chasing is not warranted by the strategy rules.",
+    "entry": 414.99,
+    "target": 433.7,
+    "stop": 407.0,
+    "timeframe": "5-10 trading days"
+  }
+}

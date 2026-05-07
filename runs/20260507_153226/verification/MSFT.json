@@ -1,0 +1,100 @@
+{
+  "ticker": "MSFT",
+  "verified_at": "2026-05-07T15:35:00",
+  "facts_files_read": [
+    "warren_buffett__MSFT.json",
+    "ben_graham__MSFT.json",
+    "cathie_wood__MSFT.json"
+  ],
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.3969,
+      "our_value_pct": "39.69%",
+      "web_value": 0.3934,
+      "web_value_pct": "39.34%",
+      "source": "FinanceCharts (May 2026)",
+      "status": "ok",
+      "deviation": "0.9%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.4701,
+      "our_value_pct": "47.01%",
+      "web_value": 0.4709,
+      "web_value_pct": "47.09%",
+      "source": "GuruFocus (TTM, 2026)",
+      "status": "ok",
+      "deviation": "0.2%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 25.33,
+      "web_value": 24.60,
+      "source": "MacroTrends / CompaniesMarketCap (May 6, 2026)",
+      "status": "ok",
+      "deviation": "3.0%",
+      "note": "Web sources report 24.55–24.64 as of May 6, 2026; small timing difference expected"
+    },
+    {
+      "metric": "revenue_ttm",
+      "our_value": 311900000000,
+      "our_value_note": "Implied from price_to_sales_ratio=10.14 and market_cap=$3.163T",
+      "web_value": 318273000000,
+      "web_value_note": "$318.273B TTM ending March 31, 2026",
+      "source": "MacroTrends / StockAnalysis (May 2026)",
+      "status": "ok",
+      "deviation": "2.0%"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 3162656210944,
+      "our_value_note": "$3.163T",
+      "web_value": 3080000000000,
+      "web_value_note": "$3.08T as of May 7, 2026",
+      "source": "Capital.com / StockAnalysis (May 7, 2026)",
+      "status": "ok",
+      "deviation": "2.7%",
+      "note": "Difference attributable to intraday price movement between data fetch and verification"
+    },
+    {
+      "metric": "roe",
+      "our_value": 0.3604,
+      "our_value_pct": "36.04%",
+      "web_value": 0.3361,
+      "web_value_pct": "33.61%",
+      "source": "GuruFocus / FinanceCharts (TTM, 2026)",
+      "status": "ok",
+      "deviation": "7.2%",
+      "note": "Web sources range 29.94%–40.81% depending on methodology; our value falls within this range"
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.2000,
+      "our_value_pct": "20.00%",
+      "web_value": 0.1793,
+      "web_value_pct": "17.93%",
+      "source": "MacroTrends (TTM, 2026)",
+      "status": "ok",
+      "deviation": "11.5%",
+      "note": "Below 20% threshold; difference likely due to period boundary (our data includes Q3 FY2026 ending March 2026)"
+    }
+  ],
+  "overall_status": "all metrics within 20% threshold — no corrections needed",
+  "corrections_applied": false,
+  "summary": {
+    "checks_total": 7,
+    "checks_ok": 7,
+    "checks_mismatch": 0,
+    "checks_unverified": 0,
+    "max_deviation_seen": "11.5% (roa)",
+    "data_period": "TTM ending March 31, 2026 (Q3 FY2026)",
+    "notes": [
+      "All 7 key metrics verified against current web sources",
+      "No metric exceeded the 20% mismatch threshold",
+      "Market cap difference (2.7%) reflects intraday price movement between prepare.py data fetch and this verification",
+      "ROA at 11.5% deviation is the highest but still well below the 20% threshold",
+      "Facts bundles appear to use Q3 FY2026 data (period=2026-03-31) which aligns with latest reported quarter"
+    ]
+  }
+}

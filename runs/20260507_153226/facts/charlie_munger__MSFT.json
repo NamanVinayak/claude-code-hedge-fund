@@ -1,0 +1,83 @@
+{
+  "signal": "neutral",
+  "score": 6.133333333333334,
+  "max_score": 10,
+  "moat_analysis": {
+    "score": 6.666666666666667,
+    "details": "Excellent ROIC: >15% in 10/10 periods; Good pricing power: Average gross margin 69.0%; High capital requirements: Avg capex 19.8% of revenue; Invests in R&D, building intellectual property; Significant goodwill/intangible assets, suggesting brand value or IP"
+  },
+  "management_analysis": {
+    "score": 5.0,
+    "details": "Poor cash conversion: FCF/NI ratio of only 0.70; Conservative debt management: D/E ratio of 0.12; Prudent cash management: Cash/Revenue ratio of 0.10; No insider trading data available; Stable share count: Limited dilution",
+    "insider_buy_ratio": null,
+    "recent_de_ratio": 0.11849640536046548,
+    "cash_to_revenue": 0.10293429262130568,
+    "share_count_trend": "stable"
+  },
+  "predictability_analysis": {
+    "score": 9.0,
+    "details": "Moderately predictable revenue: 4.8% avg growth with some volatility; Highly predictable operations: Operating income positive in all periods; Highly predictable margins: 44.9% avg with minimal volatility; Highly predictable cash generation: Positive FCF in all periods"
+  },
+  "valuation_analysis": {
+    "score": 2.0,
+    "details": "Expensive: Only 2.0% FCF yield; Expensive: 69.6% premium to reasonable value; Stable to growing FCF supports valuation",
+    "intrinsic_value_range": {
+      "conservative": 641038000000.0,
+      "reasonable": 961557000000.0,
+      "optimistic": 1282076000000.0
+    },
+    "fcf_yield": 0.020268975103324965,
+    "normalized_fcf": 64103800000.0,
+    "margin_of_safety_vs_fair_value": -0.6959653734501255
+  },
+  "news_sentiment": "No news data available",
+  "web_context": {
+    "ticker": "MSFT",
+    "research_date": "2026-05-07",
+    "macro_context": {
+      "market_sentiment": "Strongly bullish \u2014 S&P 500 (+1.46% to 7,365), Nasdaq (+2.02% to 25,839), and Dow (+1.24% to 49,911) all closed at record highs on May 6. Futures are extending the rally on May 7 amid hopes of a U.S.-Iran peace deal. AI earnings beats (SMCI +24.5%, AMD +17.77%, NVDA +5.5%) are powering broad tech enthusiasm.",
+      "fed_outlook": "FOMC held rates at 3.5%\u20133.75% on April 29 (8-4 split, most contentious since Oct 1992). Statement flagged elevated inflation partly from energy prices. Markets are pricing no cuts through at least end of 2026; one Trump-appointed dissenter (Miran) pushed for an immediate cut, signaling political pressure on the Fed.",
+      "geopolitical": "Iran War is the dominant risk \u2014 Strait of Hormuz disruptions have pushed oil near $94/bbl. A U.S.-brokered peace deal appears imminent (Iran expected to deliver 14-point response May 7), which is the primary catalyst for the current rally. Secondary risks: U.S. intervention in Venezuela, NATO-Greenland tensions, EU-China overcapacity conflict in EVs and semiconductors.",
+      "key_events": [
+        "Iran peace deal response expected May 7 \u2014 resolution would further deflate oil prices and boost risk assets",
+        "Fed next meeting: June 2026 \u2014 no cut expected but watch for updated dot-plot",
+        "AI capex race intensifying: Big Tech combined AI capex projected >$700B in 2026",
+        "AI job-cut data: AI now leading cause of U.S. job cuts (April Challenger report) \u2014 watch for political/regulatory response"
+      ]
+    },
+    "ticker_news": [
+      {
+        "headline": "Microsoft Q3 FY2026 earnings beat: Revenue $82.9B (+18% YoY), AI revenue run rate $37B (+123% YoY), Azure growth 40%",
+        "sentiment": "positive",
+        "source": "Microsoft Investor Relations / multiple outlets, April 29 2026"
+      },
+      {
+        "headline": "Raymond James downgrades MSFT to Market Perform citing Xbox hardware sales -33%",
+        "sentiment": "negative",
+        "source": "Meyka / Globe and Mail, May 5 2026"
+      },
+      {
+        "headline": "Microsoft capex for CY2026 now ~$190B \u2014 23% above analyst expectations \u2014 as rising memory prices inflate AI infrastructure budget",
+        "sentiment": "negative",
+        "source": "The Motley Fool, May 5 2026"
+      },
+      {
+        "headline": "OpenAI aggressively pivoting to Amazon as preferred cloud provider, calling Microsoft a constraint on client reach; Microsoft loses exclusivity on OpenAI products",
+        "sentiment": "negative",
+        "source": "CNBC, April 29 2026"
+      },
+      {
+        "headline": "Microsoft AI revenue backlog nearly doubled YoY; 55 of 58 covering analysts maintain Buy with average price target ~$576, implying ~39% upside",
+        "sentiment": "positive",
+        "source": "247 Wall St. / Benzinga, May 4 2026"
+      }
+    ],
+    "analyst_consensus": {
+      "rating": "buy",
+      "avg_price_target": 569.46,
+      "recent_changes": "Raymond James downgraded to Market Perform on May 5 (Xbox weakness). Stifel downgraded to Hold on Feb 5 with PT cut to $392. Despite these, overall consensus remains strongly bullish: 65 Buy vs 2 Hold (Benzinga), Strong Buy (TipRanks/StockAnalysis). Average PT range across aggregators: $556\u2013$588, implying 34\u201342% upside from ~$414 current price."
+    },
+    "competitor_activity": "Google Cloud surged 63% YoY in Q1 2026 (revenue $20B) and its backlog doubled to $462B \u2014 outgrowing Azure's 40% and AWS's 28%. Amazon is spending $200B on AI capex in 2026 and has become OpenAI's new preferred cloud partner, directly challenging Microsoft's AI ecosystem moat. The OpenAI defection is the most structurally significant competitive threat: OpenAI has publicly stated Microsoft 'limited our ability to reach clients,' and is routing new API business to AWS. The 2026 AI cloud war (AWS vs GCP vs Azure) is intensifying across enterprise AI workloads.",
+    "earnings_info": "Most recent: Q3 FY2026, reported April 29 2026 \u2014 EPS $4.27 (beat estimate of $4.07 by 4.9%), revenue $82.9B (+18% YoY). Next earnings: Q4 FY2026, expected ~July 29 2026. Consensus Q4 EPS estimate: $4.21. Revenue estimate approximately $87.6B. MSFT on a multi-quarter earnings beat streak. Key metric to watch: Azure revenue growth rate and AI monetization (Copilot paid seats, AI revenue run-rate)."
+  }
+}

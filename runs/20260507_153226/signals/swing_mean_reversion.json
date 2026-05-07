@@ -1,0 +1,11 @@
+{
+  "MSFT": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "Neither Branch A nor Branch B fires cleanly. Branch A (fade the extreme): Daily Z-score is 0.80 (neutral, well inside the -1 to +1 band), Bollinger %B at 0.534 (near midband), RSI-14 at 46.36 — no statistical extreme exists to fade. Hourly Z-score 0.89 also neutral; hourly RSI-21 at 64.22 is elevated but not at the >75 extreme threshold. Branch A does not fire. Branch B (buy the dip in a trend): Trend structure is ambiguous — short-term EMAs are aligned uptrend and the stock bounced from $356 low to $433 high, but daily ADX-14 at 46.58 shows -DI (28.34) > +DI (20.69), a bearish directional edge, and price remains 6.1% below EMA-200 and 11% below SMA-200. The current hourly price of $425.80 sits above the 23.6% Fib retracement ($415.43) and is approaching the 7-test hourly pivot resistance at $429.91 / upper hourly Bollinger ($429.90). There is no clean Fib confluence at current price levels for a dip-buy entry. Wiki context confirms the stock has been trapped in $404-$420 no-man's-land for 5 sessions; the prior Head Trader hold was waiting for resolution above $416-420 (bull recapture) or below $404 (bear confirmation). The hourly price surge to $425.80 appears to be breaking above the $416-$420 decision zone, but the daily close ($413.96) hasn't confirmed, and the daily OBV is still trending down with volume below average (0.85x). Lessons flag: three consecutive mean-reversion fade shorts (AMZN, GOOG, AMD) all failed due to strong ADX trend absorption — while MSFT's ADX at 46.58 is below those 60-74 extremes, the lesson pattern cautions against fading without a confirmed extreme. No prior self-grading available (prediction_grading null). Given no statistical extreme for Branch A and no clean Fib/S/R confluence for Branch B, standing aside is the correct call.",
+    "entry": 425.8,
+    "target": 429.91,
+    "stop": 416.78,
+    "timeframe": "neutral — no trade"
+  }
+}
