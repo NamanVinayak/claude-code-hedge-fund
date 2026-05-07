@@ -1,50 +1,50 @@
 ---
 name: JPM technicals
-last_updated: 2026-05-06
-last_run_id: 20260506_181533
+last_updated: 2026-05-07
+last_run_id: 20260507_181528
 target_words: 350
 stale_after_days: 7
-word_count: 348
-summary: Bounced from $307.29 support to resistance at $315.24 — pressing volume-confirmed hourly resistance $315.45 (15 tests) without volume (0.79x daily); ADX 37.85 strong uptrend, +DI 25.67 > -DI 19.05 (marginal bullish lean); daily MACD histogram -0.7743 (negative); OBV distribution persists; breakout trigger $315.50 on 1.5x+ vol not fired; HOLD only (cluster cap: BAC+JPM $1,240 > 30% of $1,457 portfolio)
+word_count: 347
+summary: Failed intraday breakout attempt — high $316.26 but close $314.90 (below $315.50 trigger) on 1.09x volume (fails 1.5x gate); price sold off sharply back to $307.89, now below ALL hourly EMAs; ADX 37.64 strong daily uptrend; hourly ADX 10.07 (no hourly trend); bearish RSI divergence hourly; OBV distribution persists; $307.29 hourly support (20 tests) being tested; HOLD — cluster-blocked (BAC+JPM $1,228 > 30% of $1,457)
 ---
 
 # JPM — Technicals
 
 ## TL;DR
 
-As of run 20260506_181533, JPM has rallied from the $307.29 support low to $315.24, now pressing the 15-times-tested volume-confirmed hourly resistance at $315.45. The daily trend structure remains intact (EMA stack bullish, ADX 37.85), and the +DI/−DI spread improved to 25.67 vs 19.05 — a genuine bullish lean, versus the near-parity deadlock of the prior run. However, daily volume (0.79x) fails the 1.5x breakout threshold, OBV continues to trend down on both timeframes, and the MACD histogram is negative (-0.7743). Entry remains hard-blocked: BAC+JPM cluster exposure $1,240 > 30% cap on $1,457 portfolio. Decision: HOLD, 38% confidence [run: 20260506_181533].
+As of run 20260507_181528, JPM printed a failed intraday breakout: the high reached $316.26 (above the $315.50 trigger), but the daily close was $314.90 — below the required level on only 1.09x volume (threshold: 1.5x). Subsequently, price sold off sharply intraday to $307.89, now below ALL hourly EMAs (EMA_24 $311.17, EMA_48 $311.25, EMA_120 $310.12). Daily trend structure remains intact (EMA stack bullish, ADX 37.64), but hourly momentum is decisively bearish (hourly ADX 10.07, bearish RSI divergence, hourly MACD histogram -0.1748). Price is pressing the 20-times-tested volume-confirmed hourly support at $307.29. Entry remains hard-blocked: BAC+JPM cluster exposure $1,228 > 30% cap on $1,457 portfolio. Decision: HOLD, 42% confidence [run: 20260507_181528].
 
-## Multi-timeframe state (as of run 20260506_181533)
+## Multi-timeframe state (as of run 20260507_181528)
 
 | Timeframe | State | Notes |
 |---|---|---|
-| Daily | Bullish trend | EMA stack intact: EMA-10 (310.24) > EMA-21 (307.95) > EMA-50 (304.20); price above all daily EMAs [run: 20260506_181533] |
-| Daily | ADX 37.85 | Strong trend; +DI 25.67 > -DI 19.05 (spread 6.62 — improved from near-parity last run) [run: 20260506_181533] |
-| Daily | MACD | Histogram -0.7743 — bearish, negative territory; momentum decelerating [run: 20260506_181533] |
-| Daily | OBV | Trending down on both daily and hourly — distribution signal persists [run: 20260506_181533] |
-| Daily | RSI | RSI-14 54.71 (neutral); volume bias 10d down (relative volume 0.79x) [run: 20260506_181533] |
-| Hourly | Price | $314.96 — pressing 15-test volume-confirmed resistance at $315.45; above all hourly MAs [run: 20260506_181533] |
-| Hourly | MACD | Histogram +0.46 — positive, intraday momentum recovering [run: 20260506_181533] |
-| Hourly | BB | %B 0.8541 — near upper hourly band, price compressed against resistance [run: 20260506_181533] |
-| Hourly | ADX | BB width 0.0321 — compressed squeeze building but not fired [run: 20260506_181533] |
+| Daily | Bullish trend | EMA stack intact: EMA5 $311.68 > EMA10 $311.09 > EMA21 $308.58 > EMA50 $304.62; price $314.90 daily close above all daily EMAs [run: 20260507_181528] |
+| Daily | ADX 37.64 | Strong trend; +DI 31.92 > -DI 18.52 (bullish directional bias); momentum decelerating [run: 20260507_181528] |
+| Daily | MACD | Histogram -0.4921 — negative, momentum decelerating despite intact EMA structure [run: 20260507_181528] |
+| Daily | OBV | Trending down on both daily and hourly timeframes — distribution signal persists [run: 20260507_181528] |
+| Daily | RSI | RSI-14 56.46 (neutral); volume 1.09x (fails 1.5x breakout gate); BB width 0.0332 (squeeze coiling) [run: 20260507_181528] |
+| Hourly | Price | $307.89 — below ALL hourly EMAs; pressing 20-test volume-confirmed support at $307.29 [run: 20260507_181528] |
+| Hourly | MACD | Histogram -0.1748 — negative; no hourly momentum [run: 20260507_181528] |
+| Hourly | BB | %B 0.196 — near lower hourly band [run: 20260507_181528] |
+| Hourly | ADX | 10.07 — no hourly trend; bearish RSI divergence active [run: 20260507_181528] |
 
-## Key levels (as of run 20260506_181533)
+## Key levels (as of run 20260507_181528)
 
 | Level | Value | Source |
 |---|---|---|
-| Current price | $315.24 | [run: 20260506_181533] |
-| Hourly resistance (critical) | $315.45 | 15 tests, volume-confirmed — breakout requires close above $315.50 on ≥1.5x vol [run: 20260506_181533] |
-| Hourly support | $311.83 | Nearest support; pullback to this zone creates 2.5:1+ long R/R [run: 20260506_181533] |
-| Daily pivot support | $304.26 | 12 tests; Fib 38.2% at $304.99 — confluence zone [run: 20260506_181533] |
-| Breakout trigger | $315.50 | Daily close on ≥1.5x volume (12M+); measured-move target ~$326.74 [run: 20260506_181533] |
-| Target (full resistance) | $320.24 | Daily resistance — prior swing high [run: 20260506_181533] |
+| Current price | $307.89 (hourly) | [run: 20260507_181528] |
+| Hourly support (critical) | $307.29 | 20 tests, volume-confirmed — breakdown below triggers bearish thesis [run: 20260507_181528] |
+| EMA recapture trigger | $310.00 | Price must recover above $310 hourly for trend_momentum to re-activate bullish signal [run: 20260507_181528] |
+| Daily pivot support | $304.26 | 12 tests; next support if $307.29 fails [run: 20260507_181528] |
+| Breakout trigger | $315.50 | Daily close on ≥1.5x volume — NOT fired (high $316.26, close $314.90, vol 1.09x) [run: 20260507_181528] |
+| Target (full resistance) | $320.24 | Daily resistance — prior swing high [run: 20260507_181528] |
 
 ## Setup type
 
-**Run 20260506_181533:** Bounce from $307.29 support to hourly resistance at $315.45 — coil building at ceiling. Breakout trigger ($315.50 daily close on 1.5x+ vol) not fired; daily volume 0.79x (fails threshold). Vote: 2 bullish (swing_trend_momentum 55%, swing_mean_reversion 62%), 1 bearish (swing_catalyst_news 62%), 2 neutral (swing_breakout 28%, swing_macro_context 42%). R/R from $315.24 to $320.24 target = +$5.00 vs. downside to $311.83 = -$3.41 → ratio 1.47:1, fails 2:1 minimum. Entry locked until: (a) BAC cluster cap clears, or (b) breakout fires above $315.50 on 1.5x+ daily volume [run: 20260506_181533].
+**Run 20260507_181528:** Failed intraday breakout above $315.50 (high $316.26, close $314.90, 1.09x vol) followed by intraday reversal to $307.89 — price pressed into 20-test hourly volume-confirmed support. Vote: 2 bullish (swing_mean_reversion 52, swing_macro_context 62), 1 bearish (swing_catalyst_news 58), 2 neutral (swing_trend_momentum 38, swing_breakout 28). Dual trigger framework: bull trigger = hourly EMA recapture above $310 + $307.29 support holds; bear trigger = $307.29 breaks on volume → $304.26 target [run: 20260507_181528].
 
-**Prior setup archived to recent.md:** May 5 run (20260505_181525) — dip-bounce at $309.40 with hourly squeeze building; cluster-blocked. Price has since rallied +$5.84 to $315.24 — the squeeze fired intraday, now pressing resistance.
+**Prior setup archived to recent.md:** May 6 run (20260506_181533) — bounce from $307.29 to resistance at $315.24, pressing 15-test hourly resistance. The coil fired intraday to $316.26 but failed to close above $315.50 on required volume.
 
 ## Last updated
 
-2026-05-06. Technical read from run 20260506_181533 (JPM swing). Prior setup history in recent.md.
+2026-05-07. Technical read from run 20260507_181528 (JPM swing). Prior setup history in recent.md.

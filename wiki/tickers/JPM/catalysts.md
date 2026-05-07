@@ -1,49 +1,48 @@
 ---
 name: JPM catalysts
-last_updated: 2026-05-06
-last_run_id: 20260506_181533
+last_updated: 2026-05-07
+last_run_id: 20260507_181528
 target_words: 400
 stale_after_days: 14
-word_count: 397
-summary: US-Iran peace deal MOU ~48 hours from completion (oil easing toward $102); Q1 2026 earnings fully priced; CRO Ashley Bacon sold $1.26M in stock — new insider selling signal; Dimon bond-crisis warning remains dominant headline; shareholder meeting May 19 (~9 trading days); next binary Q2 earnings July 14; analyst avg PT upgraded to $339.46
+word_count: 396
+summary: Iran delivering 14-point peace response May 7 (oil $94-97/bbl, sharply lower); Kevin Warsh Senate confirmation hearing May 15 (~6 trading days) is nearest near-term catalyst; CRO Ashley Bacon $1.26M insider sale stands; Dimon bond-crisis warning + NII guidance trim ($103B) dominant headlines; shareholder meeting May 19 (~8 trading days); next binary Q2 2026 earnings July 14; analyst avg PT $339 (14 Buy, 12 Hold, 0 Sell)
 ---
 
 # JPM — Catalysts
 
 ## TL;DR
 
-The macro backdrop improved materially on May 6 — US-Iran peace deal MOU negotiations reportedly within ~48 hours of completion, oil easing toward $102/bbl, and S&P 500 at a confirmed close of 7,338.89 [web_research/JPM.json, run 20260506_181533]. However, new insider selling emerged: JPMorgan CRO Ashley Bacon sold $1.26M in company stock — the first insider sale in the current bundle, adding a mild bearish signal [web_research/JPM.json, run 20260506_181533]. No positive catalyst exists within the 10-trading-day swing window. Annual shareholder meeting May 19 (~9 trading days) is the nearest event with potential forward-guidance impact. Next binary: **Q2 2026 earnings July 14, 2026** [web_research/JPM.json, run 20260506_181533].
+Iran peace deal is materially advancing: Iran expected to deliver its 14-point response to the US peace proposal on May 7, driving oil down to $94-97/bbl (from $100+ peak) and pushing the Dow to cross 50,000 for the first time ever [web_research/JPM.json, run 20260507_181528]. However, the nearest specific catalyst for JPM is the **Kevin Warsh Senate confirmation hearing on May 15** (~6 trading days) — hawkish Fed chair succession introduces tighter-for-longer policy risk [signals_combined.json, run 20260507_181528]. CRO Ashley Bacon's $1.26M insider sale (May 2026) stands as an unresolved bearish signal. Next binary: **Q2 2026 earnings July 14** [web_research/JPM.json, run 20260507_181528].
 
 ## Upcoming events
 
-- **Annual shareholder meeting: May 19, 2026.** (~9 trading days) Inside the extended window. Dimon to present; given his bond-crisis warning and NII trim, commentary on credit quality and NII guidance carries a bearish lean [web_research/JPM.json, run 20260506_181533].
-- **Kevin Warsh Senate confirmation: May 15 (9 days).** Powell exits as Chair May 15. Warsh (hawkish) succession introduces tighter-for-longer policy risk; markets pricing zero cuts in 2026 [web_research/JPM.json, run 20260506_181533].
-- **Q2 2026 earnings: July 14, 2026.** Consensus Q2 EPS $5.39; key read on tariff and geopolitical impact on net interest income and credit quality. 50+ trading days out [web_research/JPM.json, run 20260506_181533].
-- **Iran-US ceasefire MOU: ~48 hours.** Resolution would push oil below $100, ease inflation, and shorten Fed hold timeline — a financials positive. Failure to complete would re-spike oil and re-tighten NIM outlook [web_research/JPM.json, run 20260506_181533].
+- **Kevin Warsh Senate confirmation: May 15, 2026.** (~6 trading days) The primary near-term risk inside the swing window. Warsh (hawkish) succession as Fed Chair introduces tighter-for-longer policy uncertainty; market pricing zero cuts in 2026 [signals_combined.json swing_catalyst_news, run 20260507_181528].
+- **Annual shareholder meeting: May 19, 2026.** (~8 trading days) Dimon to present; given his bond-crisis warning and NII guidance trim from $104.5B to $103B, guidance commentary on credit quality carries a bearish lean [web_research/JPM.json, run 20260507_181528].
+- **US-Iran peace deal resolution: in progress.** Iran delivering 14-point response May 7; if signed, oil could settle below $90/bbl — shortening the Fed hold timeline and boosting financials. If talks collapse, oil re-spikes above $100 and NIM outlook tightens [web_research/JPM.json, run 20260507_181528].
+- **US non-farm payrolls: May 8.** Hot jobs data could re-price the one remaining projected 2026 rate cut [signals_combined.json swing_macro_context, run 20260507_181528].
+- **Q2 2026 earnings: July 14, 2026.** Consensus Q2 EPS $5.39-$5.43; key read on NII trajectory, tariff impact, and credit quality. 50+ trading days out [web_research/JPM.json, run 20260507_181528].
 
 ## Recent news synthesis
 
-- **US-Iran peace deal progress (May 6 dominant):** White House reportedly close to a one-page MOU; oil easing from $104+ toward $102/bbl as markets price in resolution. S&P 500 close at all-time high 7,338.89 (+1.10%), Nasdaq 25,670 (+1.36%) [web_research/JPM.json, run 20260506_181533].
-- **CRO Ashley Bacon insider sale ($1.26M, May 2026):** New bearish insider signal — Chief Risk Officer selling at current levels is notable given the bond-crisis narrative from Dimon. Contrasts with board director purchases in March 2026 [web_research/JPM.json, run 20260506_181533].
-- **JPMorgan strategist Matejka (May 5):** Post-Iran-war rally is narrow — primed for broader gains on even slightly positive news. Bullish read-through if ceasefire completes [web_research/JPM.json, run 20260506_181533].
-- **Q1 2026 record earnings — fully priced (Apr 13):** EPS $5.94 beat $5.45 consensus; 10-Q filed May 1; revenue $45.9B beat $43.8B estimate; net income +13% YoY [web_research/JPM.json, run 20260506_181533].
-- **Dimon bond-crisis warning (dominant May 2026 headline):** CEO warning of "increasingly complex set of risks" — geopolitical tensions, energy volatility, credit headwinds. NII guidance trimmed from $104.5B to $103B full-year 2026 [web_research/JPM.json, run 20260506_181533].
-- **Campbell Global (JPM subsidiary) acquires 30,000-acre timberland:** Minor ESG/diversification positive, not swing-window relevant [web_research/JPM.json, run 20260506_181533].
-- **Harassment lawsuit refiled (minor):** Suit against exec Lorna Hajdini refiled in NY Supreme Court — minor reputational risk, not a swing catalyst [web_research/JPM.json, run 20260506_181533].
+- **Iran-US peace deal (May 7 dominant catalyst):** Iran delivering 14-point response to US proposal. Dow Jones crossed 50,000 for the first time; S&P 500 at 7,377 (ATH); oil pulled back to $94-97/bbl from $100+ peak — bullish macro backdrop for large-cap financials [web_research/JPM.json, run 20260507_181528].
+- **JPMorgan private companies index (May 6):** JPM launched index tracking 6,400 US private midsize companies with $1 trillion combined revenue — strategic positioning in private credit/data infrastructure. Minor positive [web_research/JPM.json, run 20260507_181528].
+- **JPMorgan strategist Fabio Bassi (May 7):** Cross-asset strategist says tech will remain "resilient" to higher rates; AI upstream theme is critical equity driver — institutional confidence signal [web_research/JPM.json, run 20260507_181528].
+- **CRO Ashley Bacon insider sale ($1.26M, May 2026):** Chief Risk Officer selling is a non-trivial bearish signal — especially in light of Dimon's bond-crisis warning. No insider buying in current bundle [web_research/JPM.json, run 20260507_181528].
+- **Q1 2026 record earnings — fully priced (Apr 13):** EPS $5.94 beat $5.45 consensus; net income +13% YoY; revenue $49.8B beat [web_research/JPM.json, run 20260507_181528].
+- **Harassment lawsuit refiled (minor):** Suit against exec Lorna Hajdini refiled — minor reputational risk, not a swing catalyst [web_research/JPM.json, run 20260507_181528].
 
 ## Insider activity
 
-CRO Ashley Bacon sold $1.26M in JPM stock (May 2026) — first insider sale in current bundle; bearish signal at the margin [web_research/JPM.json, run 20260506_181533]. Board directors bought in March 2026; no buys in current bundle.
+CRO Ashley Bacon sold $1.26M in JPM stock (May 2026) — first and only insider sale in current bundle; bearish signal at the margin. No insider buying in 30-day window (board director purchases were March 2026) [web_research/JPM.json, run 20260507_181528].
 
 ## Analyst consensus
 
 | Metric | Value | Source |
 |---|---|---|
-| Consensus rating | Buy | 14 Buy, 12 Hold, 0 Sell (33 analysts) [web_research/JPM.json, run 20260506_181533] |
-| Average target | $339.46 | Range $257.89–$420; median $345 [web_research/JPM.json, run 20260506_181533] |
-| Evercore ISI | $340, Outperform | Maintained Apr 17 [web_research/JPM.json, run 20260506_181533] |
-| Wolfe Research | Peerperform (Jan 2026) | Downgraded on slower EPS growth vs. peers [web_research/JPM.json, run 20260506_181533] |
+| Consensus rating | Buy | 14 Buy, 12 Hold, 0 Sell (33 analysts) [web_research/JPM.json, run 20260507_181528] |
+| Average target | $339 | Range $289-$400; median $345; current ~$308 implies ~10% upside to consensus [web_research/JPM.json, run 20260507_181528] |
+| Evercore ISI | $340, Outperform | Reiterated Apr 17 (PT raised from $320) [web_research/JPM.json, run 20260507_181528] |
 
 ## Last updated
 
-2026-05-06. Catalyst data from web_research/JPM.json (run 20260506_181533). Supersedes May 5 entry (run 20260505_181525) — new CRO insider sale ($1.26M) added; analyst avg PT updated to $339.46 (was $337); macro upgraded to strongly risk-on (S&P ATH confirmed 7,338.89); US-Iran ceasefire MOU ~48h materially improves macro backdrop vs. prior active-escalation framing.
+2026-05-07. Catalyst data from web_research/JPM.json (run 20260507_181528). Key changes from May 6: Iran deal advanced to 14-point response delivery (more concrete than "48 hours"); oil updated to $94-97/bbl (from ~$102); Dow crossed 50,000 (new milestone); Warsh confirmation updated to 6 trading days (from 9); new JPM headlines added (private companies index, Bassi macro comment). CRO Bacon insider sale and NII guidance trim unchanged. Trade ledger per_ticker_history[JPM]=[] — no open positions, no fills.

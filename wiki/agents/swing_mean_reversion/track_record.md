@@ -1,7 +1,7 @@
 ---
 name: swing_mean_reversion track record
 last_updated: 2026-05-07
-last_run_id: 20260507_164625
+last_run_id: 20260507_181528
 stale_after_days: 365
 target_words: 1200
 summary: 5 graded calls. (Appended by ai_hedge.grading.wiki_writer.)
@@ -62,3 +62,4 @@ one resolved call scored against yfinance daily OHLC.
 - — | AAPL | bearish $284.5→$268.79 stop $288.5 | **in_progress** (day 1, MFE 1.21%, MAE -1.24%) _(prior_run=20260506_144523, graded_in=20260507_144525)_
 - — | TSLA | bearish $391.0→$381.76 stop $404.0 | **in_progress** (day 1, MFE 1.79%, MAE -2.73%) _(prior_run=20260506_160353, graded_in=20260507_160055)_
 - — | GOOG | bearish $384.27→$342.97 stop $397.5 | **in_progress** (day 1, MFE 0.0%, MAE -3.15%) _(prior_run=20260506_164526, graded_in=20260507_164625)_
+- — | JPM | bullish $309.4→$320.0 stop $303.5 | **in_progress** (day 1, MFE 2.22%, MAE 0.0%) _(prior_run=20260506_181533, graded_in=20260507_181528)_
