@@ -1,0 +1,11 @@
+{
+  "TSLA": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "Branch evaluation: NEITHER branch fires cleanly. Branch A (fade extreme): RSI-7 at 76.34 crosses the 75 overbought threshold, but the daily Z-score is only 0.85 — well inside the -1 to +1 neutral zone. Bollinger Band daily pct_b = 0.80, inside the bands. No RSI divergence detected on either timeframe. No reversal candle confirmed. The strategy rules require Z-score > +2 OR price outside Bollinger Bands for a clean Branch A setup — neither condition is met. Branch B (buy the dip at Fib): Price at $398.73 daily close ($406.85 intraday) is near the recent swing high of $409.28. The daily Fibonacci structure (swing high 409.28, swing low 337.24) places current price between the swing high and Fib 23.6% ($392.28) — no meaningful pullback to a Fib confluence level. Hourly Fib shows price near 23.6% ($408.32) but this is not a dip level for a dip-buy. No Branch B setup. Prior call adjustment: My prior bearish signal (conf 42, entry $391, target $381.76, stop $404) is graded 'in_progress' but price has pushed above $404 intraday, effectively stopping out that thesis. I must not repeat the same bearish fade without a new extreme forming. Key concerns noted but not tradeable: Hourly OBV is diverging bearishly from price (confirmed by wiki as strongest cross-confirmed signal), breakout above the $387-$399 resistance cluster is happening on sub-average volume (0.85x vs. 1.5x confirmation gate), and next resistance sits at $409.28 (12-test pivot high). Lessons from recent failed fades (AMZN, GOOG, AMD — all stopped out on ADX-strong moves) argue for caution. TSLA ADX = 30.69 (moderate-strong) is below the 60+ extreme seen in failed trades, but pattern still argues for waiting. Verdict: Neither branch fires per strict rules. Output neutral. Watch for: (1) Z-score reaching +2 or price tagging $411-$416 upper Bollinger with a reversal candle for a Branch A short setup; (2) pullback to $392-$382 Fib confluence for a Branch B long setup.",
+    "entry": 398.73,
+    "target": 398.73,
+    "stop": 398.73,
+    "timeframe": "no trade — neutral"
+  }
+}

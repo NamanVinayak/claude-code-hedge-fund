@@ -1,0 +1,11 @@
+{
+  "TSLA": {
+    "signal": "neutral",
+    "confidence": 30,
+    "reasoning": "TREND ASSESSMENT: Daily EMA alignment fails the 10>21>50 uptrend fan requirement — EMA50 ($386.88) sits above EMA10 ($386.54), meaning the structure is tangled rather than properly fanned. This is a hard filter failure per my strategy rules. ADX at 30.69 confirms trend strength and +DI (23.34) > -DI (19.19) shows bullish directional bias, but the narrow DI spread and the EMA disorder prevent a clean trend-following entry. Hourly EMAs ARE in uptrend order (ema_24 > ema_48 > ema_120), providing partial confirmation, but daily structure takes precedence. MOMENTUM ASSESSMENT: ROC readings are all positive (5d: +6.96%, 10d: +2.90%, 21d: +15.02%) and MACD histogram is positive at +2.6437, suggesting active bullish momentum. However, the 10d ROC being the lowest of the three indicates non-linear burst momentum rather than smooth acceleration. RSI-7 at 76.34 is overbought, signaling near-term exhaustion risk. Critically, the hourly OBV is diverging bearishly from price — a warning that intraday accumulation is not supporting the price rise. Wiki context independently confirms: 4 of 5 swing agents flagged this hourly OBV divergence in the prior run (May 6), making it the strongest cross-confirmed signal in the dataset. ENTRY ZONE: Price at $398.73 (daily close) / $406.85 (current) is 4.3% above the 21 EMA and pushing through the $387–$399 documented bear-rally resistance cluster (7th consecutive hold per wiki). Price is overextended — not at a pullback entry zone. Pullback entry to the 21 EMA would require a drop to ~$382, which contradicts the current momentum direction. MACRO CONTEXT: Strongly risk-on regime (S&P ATH, AMD Q1 blowout, AI supercycle) provides upside tail, but this does not override the structural EMA disorder and overbought readings. LESSONS: EMA pullback setups show 0% win rate in last 30 days (-$63.20 NVDA). Not repeating the same thesis without clean confirmation. CONCLUSION: No trade — EMA fan is tangled (50 above 10), price is overextended from all short-term EMAs, hourly OBV bearishly diverging. Wait for either a clean pullback to the 21 EMA with OBV confirmation, or a proper EMA re-alignment before considering a bullish entry.",
+    "entry": 382.5,
+    "target": 409.28,
+    "stop": 377.0,
+    "timeframe": "5-10 trading days"
+  }
+}
