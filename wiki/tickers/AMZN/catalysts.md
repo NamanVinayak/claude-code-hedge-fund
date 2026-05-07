@@ -1,68 +1,72 @@
 ---
 name: AMZN catalysts
-last_updated: 2026-05-06
-last_run_id: 20260506_173925
+last_updated: 2026-05-07
+last_run_id: 20260507_173424
 target_words: 400
 stale_after_days: 14
-word_count: 388
-summary: Q1 2026 earnings fully priced; Amazon Ads Upfront May 11 (5 trading days) is nearest event — soft showcase, not binary; Q2 2026 earnings ~July 30; analyst avg PT $306 (41 analysts, Buy consensus); Amazon Supply Chain Services and OpenAI-AWS pivot are absorbed structural positives; macro: US-Iran ceasefire MOU ~48h, oil eased to ~$102, S&P/Nasdaq confirmed ATH closes May 6; Fed 3.50–3.75%, Warsh transition May 15
+word_count: 404
+summary: Q1 2026 earnings fully priced; Amazon Ads Upfront May 11 (4 trading days) is nearest event — soft showcase, not binary; Q2 2026 earnings ~July 30; analyst avg PT $313 (41 analysts, 95% Buy/Strong Buy); OpenAI-AWS pivot, Supply Chain Services, Amazon Pharmacy Ozempic, $200B capex plan all structural positives; macro: Dow crossed 50,000 for first time (May 7), S&P/Nasdaq ATH, oil $94-97/bbl on US-Iran peace advancing; Warsh Fed succession May 15 primary tail risk
 ---
 
 # AMZN — Catalysts
 
 ## TL;DR
 
-Q1 2026 earnings (April 29 after close) are fully priced — historic EPS beat ($2.78 vs $1.64) has been absorbed by price action. No new binary catalyst within 10 trading days. Amazon Ads Upfront (May 11, NYC — 5 trading days) is the nearest event; ad-showcase, not a binary. Q2 2026 earnings estimated ~July 30. All four recent structural positives (OpenAI-AWS pivot, Amazon Supply Chain Services, AWS backlog +50% QoQ, BNP Paribas PT raise) are absorbed. Macro improved: S&P 500 closed +1.10% at 7,338.89 and Nasdaq +1.36% at 25,670 on May 6 — confirmed new ATHs. US-Iran ceasefire MOU negotiations reportedly ~48 hours from completion; oil eased to ~$102. AMD Q1 blowout (+38% YoY revenue, +43% EPS) provides incremental AI cloud read-through for AMZN AWS. [source: web_research/AMZN.json, run 20260506_173925]
+Q1 2026 earnings (April 29) are fully priced — historic EPS beat ($2.78 vs $1.64 estimated, +69.5% upside) absorbed by price. No new binary catalyst within 10 trading days. Amazon Ads Upfront (May 11, NYC — 4 trading days) is the nearest event; ad-tech showcase, not a binary. Q2 2026 earnings estimated ~July 30. All recent structural positives (OpenAI-AWS pivot, Supply Chain Services, AWS backlog +50% QoQ) remain absorbed. Macro sharply improved: Dow crossed 50,000 for the first time on May 7; S&P 500 7,377 and Nasdaq 25,977 at intraday ATHs; oil $94-97/bbl on US-Iran peace deal advancing. Kevin Warsh Fed succession (May 15) remains the single primary tail risk inside the trade window. [source: web_research/AMZN.json, explanation.json, run 20260507_173424]
 
 ---
 
-## Upcoming events (as of May 6, 2026)
+## Upcoming events (as of May 7, 2026)
 
 | Event | Date | Impact |
 |---|---|---|
-| Amazon Ads Upfront 2026 | May 11, 2026 (5 trading days) | Low-medium — ad-tech showcase; constructive tone expected, not a binary |
-| Fed leadership transition | May 15, 2026 | Medium — Warsh (hawkish) succession; policy uncertainty for growth stocks |
-| Q2 2026 Earnings | ~July 30, 2026 (unconfirmed) | High — next binary; Q2 guide: revenue $194-199B, operating income $20-24B |
-| US midterm elections | November 2026 | Low-medium — tech/cloud regulation uncertainty |
-| US-Iran ceasefire MOU | ~48 hours (May 8?) | High — completion removes energy tail risk; eases inflation overhang |
+| Amazon Ads Upfront 2026 | May 11, 2026 (4 trading days) | Low-medium — ad-tech showcase; constructive tone expected, not a binary |
+| Fed leadership transition | May 15, 2026 | Medium-High — Warsh (hawkish) succession; policy uncertainty for high-duration growth stocks |
+| US non-farm payrolls | May 8, 2026 (tomorrow) | Medium — macro watch; hot data could re-price rate cut expectations |
+| Q2 2026 Earnings | ~July 30, 2026 | High — next binary; Q2 guide: revenue $194-199B, operating income $20-24B |
+| US-Iran peace deal final signing | Imminent (~48h) | High — resolution removes energy-cost tail risk and logistics cost overhang |
 
 ---
 
-## Q1 2026 earnings synthesis (fired — fully priced)
+## Q1 2026 earnings synthesis (fully priced)
 
-**Beat magnitude:** EPS $2.78 vs $1.64 estimate (+69.5% upside surprise). Revenue $181.5B (+2% above consensus, +17% YoY). AWS $37.6B (+28% YoY). AWS backlog ~$365B (+50% QoQ). Q2 2026 guide: revenue $194-199B; operating income $20-24B. [source: web_research/AMZN.json]
+**Beat magnitude:** EPS $2.78 vs $1.64 estimate (+69.5% upside surprise). Revenue $181.5B (+17% YoY, +2% above consensus). AWS $37.6B (+28% YoY, fastest in 15 quarters). AWS backlog ~$365B (+50% QoQ). Q2 2026 guide: net sales $194-199B above consensus; operating income $20-24B above consensus. Net income +77%. [source: web_research/AMZN.json — CNBC April 29, 2026]
 
-**Market reaction:** "Sell the news" shooting star on April 30 (gap to $273.88, close $265.06 on 2.05x volume). Prior AMZN short (run 20260501_173921) entered on this signal; stopped out May 4 at $276 (P&L -$10.14, ID 115, per trade_ledger.json per_ticker_history[AMZN]).
-
----
-
-## Structural positives absorbed
-
-**OpenAI-AWS partnership deepened:** OpenAI shifting aggressively from Microsoft Azure toward Amazon AWS. Microsoft reportedly considering legal action. Structural cloud-AI competitive win for AMZN. [source: web_research/AMZN.json, CNBC 2026-04-29]
-
-**Amazon Supply Chain Services:** Launched for all external businesses ("AWS of Logistics"). UPS/FedEx fell 8-9% on announcement. Long-term logistics margin diversification positive. [source: web_research/AMZN.json, CNBC 2026-05-04]
-
-**AMD Q1 AI read-through:** AMD Q1 2026 blowout (revenue $10.25B +38% YoY, EPS $1.37 non-GAAP +43%) confirms AI datacenter capex supercycle is intact — incremental positive for AWS demand. [source: web_research/AMZN.json macro_context, run 20260506_173925]
+**Market reaction:** "Sell the news" shooting star April 30 (gap to $273.88, close $265.06 on 2.05x volume). Prior AMZN short (run 20260501_173921, ID 115) entered on this signal; stopped out May 4 at $276 (P&L -$10.14, per trade_ledger.json per_ticker_history[AMZN]).
 
 ---
 
-## Analyst consensus (May 6, 2026)
+## Structural positives (absorbed)
+
+**OpenAI-AWS partnership deepening:** OpenAI shifting aggressively from Microsoft Azure toward Amazon AWS. Structural cloud-AI competitive win for AMZN on multi-year basis. [source: web_research/AMZN.json — CNBC April 29, 2026]
+
+**Amazon Supply Chain Services:** Launched for all external businesses (described as "AWS of Logistics"). UPS/FedEx fell 8-9% on announcement. Long-term logistics margin diversification positive. [source: web_research/AMZN.json — CNBC May 4, 2026]
+
+**$200B CapEx plan:** Amazon committed to $200B AI infrastructure investment, signed expanded logistics partnerships. Structural investment cycle ongoing. [source: web_research/AMZN.json — Motley Fool May 5, 2026]
+
+**Amazon Pharmacy / Ozempic:** Added Novo Nordisk's Ozempic pill (GLP-1) to Amazon Pharmacy lineup — healthcare business expansion positive. [source: web_research/AMZN.json — Yahoo Finance May 2026]
+
+**AMD Q1 AI read-through:** AMD revenue $10.25B +38% YoY confirms AI datacenter capex supercycle — incremental positive for AWS demand trajectory. [source: web_research/AMZN.json macro_context, run 20260507_173424]
+
+---
+
+## Analyst consensus (May 7, 2026)
 
 | Metric | Value | Source |
 |---|---|---|
-| Consensus rating | Buy | web_research/AMZN.json |
-| Avg price target | $306.00 | web_research/AMZN.json |
+| Consensus rating | Buy (95% Buy/Strong Buy) | web_research/AMZN.json |
+| Avg price target | $313.00 | web_research/AMZN.json |
 | Analyst count | 41 (46% Strong Buy, 49% Buy, 5% Hold) | web_research/AMZN.json |
-| PT range | $240 low / $370 high; TipRanks avg $315.09 | web_research/AMZN.json |
-| MarketBeat consensus | $311.65 | web_research/AMZN.json |
-| Recent raise | Stifel Buy $319 (May 1), BNP Paribas raised post-Q1 | web_research/AMZN.json |
-| Outlier | DA Davidson $175 (Feb 6, downgrade — lone bear) | web_research/AMZN.json |
+| PT range | $175 low (DA Davidson) / $370 high | web_research/AMZN.json |
+| Goldman Sachs | Buy, PT $325 (raised Apr 30) | web_research/AMZN.json |
+| Stifel | Buy, PT $319 (May 1) | web_research/AMZN.json |
+| Lone downgrade | DA Davidson $175 (Feb 6, 2026) | web_research/AMZN.json |
 
 ---
 
 ## What would reactivate entry conditions
 
-- **Pullback to $263-266 (10 EMA zone):** Trend-momentum and macro-context agents would re-engage with ~4:1 R/R long entry (target $284.20, stop $259.50).
+- **Pullback to $263-266 (10 EMA zone):** Trend-momentum and macro-context agents would re-engage with ~3.8:1 R/R long entry (target $292, stop $259.50).
 - **Confirmed daily close above $276 on 1.5x+ volume:** Breakout long entry ~$276.50, measured move target $296.
-- **Hourly RSI-21 >75 + volume-confirmed rejection candle at $273-276:** Mean-reversion short entry. Both conditions must be met simultaneously.
-- **Iran ceasefire completion:** Durable deal removes energy cost tail and restores clean risk-on bid for AMZN AI premium.
+- **Kevin Warsh hawkish confirmation (May 15):** Would be a bearish catalyst for high-duration growth stocks like AMZN; tighten long entry criteria.
+- **Iran ceasefire finalized:** Removes energy-cost tail and restores clean risk-on bid for AMZN AI premium.

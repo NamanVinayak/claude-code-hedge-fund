@@ -1,18 +1,18 @@
 ---
 name: AMZN trades
-last_updated: 2026-05-06
-last_run_id: 20260506_173925
+last_updated: 2026-05-07
+last_run_id: 20260507_173424
 target_words: 800
 stale_after_days: 60
-word_count: 798
-summary: All AMZN positions closed — short ID 115 stopped out at $276 on May 4 (-$10.14); runs 20260504_173321, 20260505_173521, and 20260506_173925 all HOLD (no valid entry setup); 1 prior abandoned long; net lifetime realized P&L -$10.14; capital available but entry conditions not met
+word_count: 826
+summary: All AMZN positions closed — short ID 115 stopped out at $276 on May 4 (-$10.14); runs 20260504_173321, 20260505_173521, 20260506_173925, and 20260507_173424 all HOLD (no valid entry setup); 1 prior abandoned long; net lifetime realized P&L -$10.14; capital available but entry conditions not met
 ---
 
 # AMZN — Trades
 
 ## TL;DR
 
-All AMZN positions are closed as of May 4, 2026. The short from run 20260501_173921 (1 share, filled at $265.86, stop $276) was stopped out on May 4 at $276.00, P&L -$10.14 (ID 115, trade_ledger.json per_ticker_history[AMZN]). Runs 20260504_173321, 20260505_173521, and 20260506_173925 all issued HOLD — no valid entry setup exists (unanimous or near-unanimous neutral). Run 20260506_173925 noted an intraday wick to $278.56 but price closed at $273.55 — breakout unconfirmed (0.80x volume vs 1.5x required). Net lifetime realized P&L: -$10.14 (1 closed short, 1 abandoned long at $0).
+All AMZN positions are closed as of May 4, 2026. The short from run 20260501_173921 (1 share, filled at $265.86, stop $276) was stopped out on May 4 at $276.00, P&L -$10.14 (ID 115, trade_ledger.json per_ticker_history[AMZN]). Runs 20260504_173321, 20260505_173521, 20260506_173925, and 20260507_173424 all issued HOLD — no valid entry setup exists (unanimous neutral all four runs). Run 20260507_173424 confirmed 5/5 unanimous neutral; price ~$275 in no-man's land; Warsh May 15 policy risk vetoes new longs near highs. Net lifetime realized P&L: -$10.14 (1 closed short, 1 abandoned long at $0). [source: trade_ledger.json per_ticker_history[AMZN], decisions.json, run 20260507_173424]
 
 ---
 
@@ -93,6 +93,7 @@ All AMZN positions are closed as of May 4, 2026. The short from run 20260501_173
 | 20260504_173321 | 2026-05-04 | **Hold** | N/A | N/A | N/A | N/A | 55% | No fill — no capital at time |
 | 20260505_173521 | 2026-05-05 | **Hold** | N/A | N/A | N/A | N/A | 52% | No fill — no valid entry setup |
 | 20260506_173925 | 2026-05-06 | **Hold** | N/A | N/A | N/A | 0:1 | 0% | No fill — no valid entry; intraday wick $278.56 unconfirmed (0.80x vol) |
+| 20260507_173424 | 2026-05-07 | **Hold** | N/A | N/A | N/A | 0:1 | 62% | No fill — 5/5 unanimous neutral; price ~$275 in no-man's land; Warsh May 15 veto on new longs |
 
 ---
 
@@ -109,9 +110,9 @@ All AMZN positions are closed as of May 4, 2026. The short from run 20260501_173
 | Total realized P&L | -$10.14 |
 | Total unrealized P&L | $0 (no open positions) |
 | Average confidence at entry | 55% (closed short only) |
-| Times model voted Buy | 2 of 7 runs |
-| Times model voted Hold | 4 of 7 runs |
-| Times model voted Short | 1 of 7 runs |
+| Times model voted Buy | 2 of 8 runs |
+| Times model voted Hold | 5 of 8 runs |
+| Times model voted Short | 1 of 8 runs |
 
 ---
 

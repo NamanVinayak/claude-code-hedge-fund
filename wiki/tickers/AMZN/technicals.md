@@ -1,28 +1,28 @@
 ---
 name: AMZN technicals
-last_updated: 2026-05-06
-last_run_id: 20260506_173925
+last_updated: 2026-05-07
+last_run_id: 20260507_173424
 target_words: 350
 stale_after_days: 7
-word_count: 348
-summary: HOLD — no valid entry; price $273.55 daily close / $278.56 intraday wick (unconfirmed); RSI-14 82.32/RSI-21 90.24 deeply overbought; ADX 64.96 extreme mature uptrend; EMA alignment clean bullish; $276 intraday wick did NOT close above — unconfirmed; 4/5 agents neutral, 1 bullish conditional; wait for 10 EMA pullback to $263–$266 or confirmed breakout above $276 on 1.5x+ volume
+word_count: 356
+summary: HOLD — no valid entry; price ~$274.99 daily close; RSI-14 82.43/RSI-21 90.3 deeply overbought; ADX 65.51 extreme uptrend (+DI 36.96 vs -DI 8.26); Z-score 1.93; 10 EMA $265.54 (rising); 5/5 agents unanimous neutral; wait for pullback to $263–$266 or confirmed daily close above $276 on 1.5x+ volume
 ---
 
 # AMZN — Technicals
 
 ## TL;DR
 
-As of run 20260506_173925 (May 6, 2026), price closed at $273.55; intraday high $278.56 was an **unconfirmed wick** — price failed to close above the $276 breakout trigger level. RSI-14 82.32, RSI-21 90.24 — deeply overbought. ADX 64.96 with +DI 36.89 vs -DI 10.95 — extreme bullish trend intact. Setup type: **HOLD — no valid entry from current levels.** 4/5 swing agents returned neutral; 1 bullish (conditional only at $264 pullback). No short without hourly RSI-21 >75 + volume-confirmed rejection at $273-276. No long without pullback to 10 EMA zone $263-266 OR confirmed daily close above $276 on 1.5x+ volume (volume today 0.80x — well below 1.5x gate).
+As of run 20260507_173424 (May 7, 2026), price ~$274.99 daily close. RSI-14 82.43, RSI-21 90.3 — deeply overbought. ADX 65.51 with +DI 36.96 vs -DI 8.26 — extreme bullish trend intact. Z-score 1.93 (just below +2σ). Setup type: **HOLD — no valid entry from current levels.** All 5 swing agents returned unanimous neutral. No short without hourly RSI-21 >75 + volume-confirmed rejection at $273-276 (ADX-regime lesson from ID 115 stop-out). No long without pullback to 10 EMA zone $263-266 OR confirmed daily close above $276 on 1.5x+ volume.
 
-*Prior setup (run 20260505_173521): HOLD — same regime. 10 EMA moved from $261.20 → $263.44 (rising). Intraday wick to $278.56 is new information but does not change the setup type.*
+*Prior setup (run 20260506_173925, May 6): HOLD — same regime. Price was $273.55 daily close / $278.56 intraday wick (unconfirmed). 10 EMA moved $263.44 → $265.54 (rising). Regime type unchanged.*
 
 ---
 
 ## Multi-timeframe state
 
-**Daily (primary):** EMA alignment clean bullish — 10 EMA $263.44 > 21 EMA $252.19 > 50 EMA $237.23. ADX 64.96 with +DI 36.89 vs -DI 10.95 — extreme trend strength. RSI-14 82.32, RSI-21 90.24 (deeply overbought). Z-score vs 50-SMA: 1.99 (just below +2.0). Price 20.3% above 50-SMA. BB upper band ~$279.90; Bollinger %B 0.88 (near upper band). MACD histogram positive at +1.10. Volume 0.80x 20-day average — below threshold.
+**Daily (primary):** EMA alignment clean bullish — EMA5 $270.93 > EMA10 $265.54 > EMA21 $254.26 > EMA50 $238.71. ADX 65.51 with +DI 36.96 vs -DI 8.26 — extreme trend strength. RSI-14 82.43, RSI-21 90.3 (deeply overbought). Z-score vs 50-SMA: 1.93. Price 20.22% above 50-SMA. Bollinger %B 0.90 (near upper band). MACD histogram positive at +0.99 (line 13.19 > signal 12.21 — momentum accelerating on daily). Volume 0.86x 20-day average — below 1.5x threshold.
 
-**Hourly:** Hourly RSI-21 at 64.43 — elevated but NOT at extreme fade threshold (>75 needed). Hourly relative volume 0.06x — extremely thin, near zero. 10 EMA zone $263-266 is nearest valid pullback support. [source: signals_combined.json swing_trend_momentum and swing_macro_context, run 20260506_173925]
+**Hourly:** Hourly price ~$271.50, below 24-period EMA $272.64. Hourly MACD histogram -0.609 (negative — short-term bearish pressure). Hourly RSI-21 50.89 (mid-range, NOT at extreme fade threshold). Hourly ADX: -DI 23.85 > +DI 18.36 (mild intraday bearish lean). Hourly OBV trending DOWN. Hourly relative volume near 0.06x — extremely thin. [source: signals_combined.json swing_trend_momentum and swing_breakout, run 20260507_173424]
 
 ---
 
@@ -30,35 +30,37 @@ As of run 20260506_173925 (May 6, 2026), price closed at $273.55; intraday high 
 
 | Level | Value | Source |
 |---|---|---|
-| Current price | $273.55 (close) / $278.56 (intraday wick) | Run 20260506_173925 |
-| Breakout trigger | Daily close above $276 on 1.5x+ volume | swing_breakout, run 20260506_173925 |
-| Breakout long entry | ~$276.50 (if confirmed) | swing_breakout, run 20260506_173925 |
-| Long pullback entry zone | $263–$266 (10 EMA zone) | swing_trend_momentum, run 20260506_173925 |
-| EMA-based pullback entry | ~$264 (trend_momentum) / ~$267.50 (macro_context) | signals_combined.json, run 20260506_173925 |
-| Fib extension (1.272) | $284.20 (pullback target) | swing_trend_momentum, run 20260506_173925 |
-| Breakout measured move | $296 (range height $21 added to $276) | swing_breakout, run 20260506_173925 |
-| Short re-entry trigger | Hourly RSI-21 >75 + vol rejection at $273–$276 | decisions.json, run 20260506_173925 |
-| Stop for any pullback long | $259.50 | swing_trend_momentum, run 20260506_173925 |
+| Current price | ~$274.99 daily close | Run 20260507_173424 |
+| Breakout trigger | Daily close above $276 on 1.5x+ volume | swing_breakout, run 20260507_173424 |
+| Breakout long entry | ~$276.50 (if confirmed) | swing_breakout, run 20260507_173424 |
+| Long pullback entry zone | $263–$266 (10 EMA zone) | swing_trend_momentum, run 20260507_173424 |
+| Breakout measured move target | $296 (range height $21 added to $276) | swing_breakout, run 20260507_173424 |
+| Pullback long target | $284.20 (Fib 1.272) | swing_trend_momentum, run 20260507_173424 |
+| Pullback long stop | $259.50 | swing_macro_context, run 20260507_173424 |
+| Breakout long stop | $268.00 | swing_head_trader, run 20260507_173424 |
+| Short re-entry trigger | Hourly RSI-21 >75 + vol rejection at $273–$276 | decisions.json, run 20260507_173424 |
 
 ---
 
 ## Setup type
 
-**HOLD — no valid entry.** Three potential entry scenarios defined; none active. (A) BREAKOUT LONG — requires confirmed daily close above $276 on 1.5x+ volume; today closed at $273.55 with 0.80x volume (intraday wick to $278.56 explicitly unconfirmed per swing_breakout). (B) PULLBACK LONG — requires retracement to 10 EMA zone $263-266 with RSI cooling below 65; price is 3.84% above 10 EMA. (C) SHORT — requires hourly RSI-21 >75 plus volume-confirmed rejection candle at $273-276; current hourly RSI-21 only 64.43 with 0.06x relative volume. ADX 64.96 extreme trend strength — prior short (ID 115) stopped at $276; elevated confirmation bar enforced. [source: decisions.json, signals_combined.json swing_head_trader, run 20260506_173925]
+**HOLD — no valid entry.** Three potential entry scenarios defined; none active. (A) BREAKOUT LONG — requires confirmed daily close above $276 on 1.5x+ volume; today ~$274.99 with 0.86x volume. May 6 intraday wick to $278.56 was explicitly unconfirmed (0.80x vol, no daily close above $276). (B) PULLBACK LONG — requires retracement to 10 EMA zone $263-266 with RSI cooling below 65; price is 3.56% above 10 EMA ($265.54). (C) SHORT — requires hourly RSI-21 >75 plus volume-confirmed rejection candle at $273-276; current hourly RSI-21 only 50.89 — well below threshold. ADX 65.51 extreme trend: four consecutive stop-outs on mean-reversion fades in ADX 60+ environment (NVDA Apr 30, AMZN May 4, GOOG May 6, AMD May 6) set an elevated confirmation bar. [source: decisions.json, signals_combined.json swing_head_trader, run 20260507_173424]
 
 ---
 
-## Indicator snapshot (May 6, 2026)
+## Indicator snapshot (May 7, 2026)
 
 | Indicator | Value | Interpretation |
 |---|---|---|
-| ADX | 64.96 | Extreme mature uptrend — fade risk high |
-| +DI / -DI | 36.89 / 10.95 | Bull momentum dominant |
-| RSI-14 | 82.32 | Deeply overbought |
-| RSI-21 | 90.24 | Extremely overbought |
-| Hourly RSI-21 | 64.43 | Elevated but below fade threshold (75) |
-| Hourly rel-vol | 0.06x | Near-zero — extremely thin |
-| Z-score (50-SMA) | 1.99 | Near +2σ — statistically stretched |
-| % above 50-SMA | 20.3% | Extreme extension |
-| BB %B (daily) | 0.88 | Near upper band ($279.90) |
-| Volume (daily) | 0.80x avg | Below 1.5x breakout threshold |
+| ADX | 65.51 | Extreme mature uptrend — fade risk very high |
+| +DI / -DI | 36.96 / 8.26 | Bull momentum dominant |
+| RSI-14 | 82.43 | Deeply overbought |
+| RSI-21 | 90.3 | Extremely overbought |
+| Hourly RSI-21 | 50.89 | Mid-range — well below fade threshold (75) |
+| Hourly MACD histogram | -0.609 | Short-term bearish pressure |
+| Hourly rel-vol | ~0.06x | Near-zero — extremely thin |
+| Z-score (50-SMA) | 1.93 | Near +2σ — statistically stretched |
+| % above 50-SMA | 20.22% | Extreme extension |
+| BB %B (daily) | 0.90 | Near upper band |
+| Volume (daily) | 0.86x avg | Below 1.5x breakout threshold |
+| EMA10 | $265.54 | Rising — nearest valid pullback support |
