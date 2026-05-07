@@ -1,10 +1,10 @@
 ---
 name: AMD trades
-last_updated: 2026-05-06
+last_updated: 2026-05-07
 last_run_id: 20260506_150729
 target_words: 800
 stale_after_days: 60
-word_count: 786
+word_count: 826
 summary: 2 lifetime trades — Trade 25 (long 15 shares, abandoned, no fill); id 113 (short 1 share, stopped out 2026-05-06 at $372.31, realized P&L −$17.82); no open positions; net lifetime realized P&L −$17.82
 ---
 
@@ -17,6 +17,21 @@ Two trades placed against AMD. Trade 25 (long 15 shares, limit $278.26) was neve
 ## Open positions
 
 None. All AMD positions closed as of 2026-05-06.
+
+## Recently Closed
+
+### Trade: SHORT 1 share AMD — CLOSED 2026-05-06
+
+| Field | Value |
+|---|---|
+| Entry price | $354.49 |
+| Exit price | $372.31 |
+| P&L | -$17.82 |
+| Closed via | stop_hit |
+| Days held | 5 (2026-05-01 → 2026-05-06) |
+| Run | `20260501_132346` |
+
+---
 
 ## Closed — recent (last 30 days)
 

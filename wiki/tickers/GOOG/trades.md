@@ -1,10 +1,10 @@
 ---
 name: GOOG trades
-last_updated: 2026-05-06
+last_updated: 2026-05-07
 last_run_id: 20260506_164526
 target_words: 800
 stale_after_days: 60
-word_count: 617
+word_count: 657
 summary: 3 total GOOG trades in ledger — id 149 (short 1 share, stopped out May 6, -$6.50 realized); id 14 (long 3 shares, abandoned, P&L null); id 7 (long 3 shares, never filled, abandoned). Net confirmed realized P&L: -$6.50. No open GOOG positions.
 ---
 
@@ -19,6 +19,21 @@ Three GOOG trades on record. The only confirmed realized P&L trade is id 149 —
 ## Open positions
 
 None. No open GOOG positions confirmed in trade_ledger.json as of run 20260506_164526.
+
+---
+
+## Recently Closed
+
+### Trade: SHORT 1 share GOOG — CLOSED 2026-05-06
+
+| Field | Value |
+|---|---|
+| Entry price | $383.00 |
+| Exit price | $389.50 |
+| P&L | -$6.50 |
+| Closed via | stop_hit |
+| Days held | 1 (2026-05-05 → 2026-05-06) |
+| Run | `20260505_164543` |
 
 ---
 

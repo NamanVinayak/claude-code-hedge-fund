@@ -1,16 +1,18 @@
 ---
 name: GOOG thesis
-last_updated: 2026-05-06
+last_updated: 2026-05-07
 last_run_id: 20260506_164526
 target_words: 500
 stale_after_days: 30
-word_count: 492
+word_count: 503
 summary: Short thesis falsified — id 149 stopped out at $389.50 (-$6.50) on May 6; signal direction reverted to neutral/hold; no new directional trade issued (conf 28); bull case (Cloud AI leadership, Google I/O May 19-20 catalyst) structurally intact; revisit at $375-385 pullback zone or May 14-15 I/O pre-positioning window.
 ---
 
 # GOOG — Thesis
 
 ## TL;DR
+
+⚠️ Recent trade: stop_hit 2026-05-06, -$6.50. Thesis under review.
 
 **Prior short thesis falsified by stop-out.** The prior thesis (run 20260505_164543) issued a mean-reversion short at $383, stop $389.50. That stop was explicitly named as the bear-invalidation trigger: "price breaks cleanly above $389.50 stop (short stopped out)." That condition was met on May 6 — id 149 stopped out at $389.50, realized P&L −$6.50. Price continued to $395.11 hourly, confirming the extension is not reversing. Run 20260506_164526 issues a Hold (conf 28) — no new directional trade in either direction. The falsified claim is the mean-reversion fade thesis: the short assumed $384.16 hourly resistance (16 tests) would cap price, but buyers absorbed that level and continued higher. ADX intensified to 74.23 — the extreme trend regime absorbed the fade exactly as the NVDA (Apr 30) and AMZN (May 4) lessons warned. (Source: trade_ledger.json per_ticker_history[GOOG] id 149, decisions.json, explanation.json, run 20260506_164526)
 

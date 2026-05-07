@@ -1,16 +1,18 @@
 ---
 name: AMD thesis
-last_updated: 2026-05-06
+last_updated: 2026-05-07
 last_run_id: 20260506_150729
 target_words: 500
 stale_after_days: 30
-word_count: 498
+word_count: 509
 summary: Post-earnings AI infrastructure bull thesis confirmed and extended — Q1 2026 beat drives +15% gap to $408+; prior watch zone $316–$328 falsified (never reached); short id 113 stopped out at $372.31 (−$17.82); no valid entry at current levels; conditional long pullback $388–$395 only
 ---
 
 # AMD — Thesis
 
 ## TL;DR
+
+⚠️ Recent trade: stop_hit 2026-05-06, -$17.82. Thesis under review.
 
 **Prior claim falsified:** The post-earnings entry watch zone of "$316–$328 (10 EMA / Fib 23.6% confluence)" cited in the prior thesis (run 20260501_132340) was never reached — AMD gapped approximately +15% on Q1 2026 earnings (May 5 AMC), vaulting from a ~$355 daily close to $408.66+ intraday with a high of $430.57. Additionally, the prior 1-share short (id 113, entered $354.49, run 20260501_132346) was stopped out at $372.31 for a realized loss of −$17.82 (trade_ledger.json, run 20260506_150729). AMD is a genuine AI infrastructure winner with an intact long-term bull thesis, but current levels offer no valid entry: R/R at $408 is only 0.70:1 (fails the 2:1 minimum). Stand aside; watch for a pullback to the $388–$395 zone.
 
