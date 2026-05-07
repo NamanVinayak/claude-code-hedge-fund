@@ -1,11 +1,11 @@
 ---
 name: DIS thesis
-last_updated: 2026-05-06
-last_run_id: 20260506_220627
+last_updated: 2026-05-07
+last_run_id: 20260507_220640
 target_words: 500
 stale_after_days: 30
-word_count: 498
-summary: Post-earnings gap-up confirmed ($100.48→$108.06, +7.5%, 1.81x volume); pre-stated bull trigger fired; earnings blackout (3-day) prevents new entry until May 9+; R/R at $108 catastrophically poor (0.16:1); wait for pullback to $105–107 consolidation zone for fresh long with acceptable R/R
+word_count: 497
+summary: Short decision issued — 3 shares at $108.50, target $103, stop $110.60, R/R 2.62:1 (conf 35); prior thesis "wait for pullback to $105-107 for fresh long" falsified by dual Z-score extreme and unanimous entry-price warning from all 4 bullish agents; short thesis: post-earnings gap statistically overextended (daily 2.05, hourly 2.12 Z-score), OBV distribution on 2.72x volume, all bullish agents' preferred entry zone of $103-104 aligns with fade target
 ---
 
 # DIS — Thesis
@@ -14,40 +14,42 @@ summary: Post-earnings gap-up confirmed ($100.48→$108.06, +7.5%, 1.81x volume)
 
 ⚠️ Recent trade: stop_hit 2026-05-05, -$4.99. Thesis under review.
 
-**Prior thesis falsified (additional):** The May 5 thesis stated "Earnings tomorrow May 6 — reassess post-print." The reassessment is now complete: Q2 FY2026 earnings beat (EPS $1.57 vs. $1.49 est, revenue $25.17B vs. $24.84B est) triggered the pre-stated bull restart condition — "gap and hold above $104.83 on 1.5x+ volume = fresh long opportunity." Both conditions were met: price gapped to $108.06 (+7.5%) and daily volume came in at 1.81x average (above the 1.5x minimum that failed in the prior May 5 trade). [source: `web_research/DIS.json`, `signals_combined.json swing_breakout`, run `20260506_220627`]
+**Prior thesis falsified (run `20260506_220627`):** The May 6 thesis stated "wait for pullback to $105–107 consolidation zone for fresh long with acceptable R/R" — the pre-stated bull restart trigger (gap above $104.83 on 1.5x+ vol) fired on May 6. [source: `signals_combined.json swing_breakout`, `web_research/DIS.json`, run `20260506_220627`]
 
-**However:** The earnings blackout rule (3-day window) prohibits any new position until at least May 9+. Additionally, R/R at the $108 gap price is 0.16:1 ($1.14 upside to $109.14 resistance vs. $7.36 downside to $100.61 support) — making a chase entry mathematically indefensible regardless of blackout. [source: `signals_combined.json swing_macro_context`, `risk_management_agent`, run `20260506_220627`]
+**Falsification trigger for this rewrite:** The "wait for pullback to long" thesis was not acted on because: (1) no pullback to $105-107 occurred — price remained above $108; (2) all 4 bullish agents unanimously agree that $108 is the wrong entry for a long — their preferred entry of $103-104 is exactly where the mean-reversion short is targeting. The dual Z-score extreme (daily 2.05, hourly 2.12 simultaneously) triggered a short decision instead of waiting for a long entry. [source: `signals_combined.json swing_mean_reversion`, `swing_head_trader`, `decisions.json`, run `20260507_220640`]
+
+**New thesis:** Post-earnings gap fade short. Entry $108.50, target $103.00 (Bollinger midline/20-SMA), stop $110.60, R/R 2.62:1, confidence 35%. 3 shares ($325.50), 0.5% account risk. [source: `decisions.json DIS`, run `20260507_220640`]
 
 ---
 
 ## Bull case
 
-**Q2 FY2026 beat confirms streaming inflection.** EPS $1.57 beat $1.49 estimate; revenue $25.17B beat $24.84B estimate. New CEO Josh D'Amaro raised FY2026 adjusted EPS growth guidance to ~12% and guided for double-digit EPS growth in FY2027. Streaming profitability trend intact — DTC operating income confirmed above prior guidance. [source: `web_research/DIS.json`, run `20260506_220627`]
+**Q2 FY2026 beat is genuine.** EPS $1.57 vs $1.49 estimate (+5.4% beat); revenue $25.17B vs $24.84B estimate; streaming income +88% to $582M; CEO D'Amaro raised FY2026 EPS growth guidance to ~12% and share buybacks to $8B+. [source: `web_research/DIS.json`, run `20260507_220640`]
 
-**Pre-stated breakout trigger fired.** The post-earnings gap above $104.83 on 1.81x volume satisfies both conditions of the pre-specified bull restart condition. The 11-test resistance at $107.11 has been decisively cleared. Daily volume at 1.81x addresses the key failure of the May 1 trade (only 1.23x volume). [source: `signals_combined.json swing_breakout`, run `20260506_220627`]
+**Strong trend structure.** ADX 33.39 with +DI 37.60 > -DI 23.85 — confirmed uptrend on daily. Daily MACD bullish crossover. Hourly EMAs all aligned up. ROC-21d: +12.82%. [source: `signals_combined.json swing_trend_momentum`, run `20260507_220640`]
 
-**Catalyst pipeline intact.** The Mandalorian and Grogu theatrical release May 22 (first major Star Wars film in years), Big Thunder Mountain Railroad reopened, Josh D'Amaro CEO transition June. Analyst consensus Buy with avg PT ~$131 (range $77–$160 across 42 analysts) implies ~21% upside from current price. Raymond James Outperform ($115 PT), Guggenheim Buy ($140 PT). [source: `web_research/DIS.json`, run `20260506_220627`]
-
-**Compelling valuation.** P/E 15.91 vs. market average ~20x. EV/EBITDA analysis suggests undervaluation (owner earnings model shows 1,613% gap above market cap). [source: `signals_combined.json valuation_analyst_agent`, run `20260506_220627`]
+**Mandalorian catalyst pipeline intact.** Mandalorian and Grogu theatrical release May 22 (~11 trading days). Analyst consensus Buy with avg PT $132 — ~18-22% upside from current price. [source: `web_research/DIS.json`, run `20260507_220640`]
 
 ---
 
-## Bear case
+## Bear case (active thesis)
 
-**Hourly OBV bearish divergence on gap day.** OBV trended DOWN as price spiked on 0.55x relative hourly volume — a distribution signal. If informed money is selling into the gap rather than accumulating, the move may fade. This is the single most important risk flag. [source: `signals_combined.json swing_mean_reversion`, run `20260506_220627`]
+**Dual Z-score extreme — rare overextension signal.** Daily Z-score 2.05 and hourly Z-score 2.12 are simultaneously above the 2.0 threshold — a "dual-timeframe extreme" that is the strongest Branch A mean-reversion trigger per strategy rules. [source: `signals_combined.json swing_mean_reversion`, run `20260507_220640`]
 
-**R/R at gap price is catastrophically poor.** At $108, upside to nearest resistance $109.14 = +$1.14, downside to $100.61 = -$7.36. R/R of 0.16:1 is one of the worst figures in recent run history. Even a bullish setup cannot be acted upon at these levels. [source: `signals_combined.json swing_macro_context`, run `20260506_220627`]
+**Bollinger pct_b 1.06 — price above upper band.** The daily close is statistically outside normal boundaries. Distance from 50-SMA: +7.14%. Post-earnings gaps of this magnitude commonly retrace 40-60% within 5-10 trading days. [source: `signals_combined.json swing_mean_reversion`, run `20260507_220640`]
 
-**Declining margins.** Operating margin declining (-0.52% per period trend), net margin declining (-1.06% per period). Current ratio 0.71 — short-term liquidity tight. DCF analysis shows 37.2% gap between fair value ($120B) and market cap ($191B). [source: `signals_combined.json growth_analyst_agent`, `valuation_analyst_agent`, run `20260506_220627`]
+**OBV bearish divergence on high volume.** On-balance volume trended DOWN even as price spiked on 2.72x average volume on May 6 — a distribution signal suggesting informed sellers are unloading into the gap. [source: `signals_combined.json swing_mean_reversion`, `swing_breakout`, run `20260507_220640`]
 
-**Warner Bros. Discovery + Netflix consolidation.** Combined entity would control ~22% U.S. streaming share — structural competitive pressure if cleared. [source: `web_research/DIS.json`, run `20260506_220627`]
+**Unanimous bullish agents warn against $108 entry.** All 4 bullish agents explicitly stated $108 is a poor entry — they all target $103-104 for a long. This convergence on the short-target zone provides an unusual cross-directional confirmation for the fade. [source: `signals_combined.json swing_head_trader`, run `20260507_220640`]
 
 ---
 
 ## What would change the thesis
 
-**Post-blackout pullback long (May 9+):** If DIS pulls back to $105–107 consolidation zone with volume easing (not distribution), a fresh long with stop below $104.50 and target $115.77 achieves acceptable R/R. This is the primary watch scenario.
+**Short exit (stop):** Close or sustained price above $110.60 — stops the short. Indicates the gap continuation thesis is winning.
 
-**Failed breakout — bear trigger:** If DIS closes back below the $107.11 breakout level on elevated volume before May 9, the gap is a failed breakout — reassess for short on bounce to $107–108.
+**Short target (take profit):** Price reaching $103.00 (Bollinger midline). At this level, the long case at $103-104 becomes the primary watch scenario.
 
-**Gap fill risk:** Post-earnings gaps that lack OBV confirmation (like this one) have elevated gap-fill probability. If price returns to $100–104 zone, the thesis resets to pre-earnings neutral.
+**Long reset (post-fade entry):** If price pulls back to $103-104 on declining volume (not distribution), re-evaluate fresh long with stop $100.42, target $110.48, R/R ~3:1. This is the scenario all 4 bullish agents preferred.
+
+**Thesis flip back to bull:** Two consecutive daily closes above $109.14 resistance on 1.5x+ volume — would confirm momentum continuation over mean reversion.
