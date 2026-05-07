@@ -1,7 +1,7 @@
 ---
 name: swing_mean_reversion track record
 last_updated: 2026-05-07
-last_run_id: 20260507_194523
+last_run_id: 20260507_211526
 stale_after_days: 365
 target_words: 1200
 summary: 5 graded calls. (Appended by ai_hedge.grading.wiki_writer.)
@@ -64,3 +64,4 @@ one resolved call scored against yfinance daily OHLC.
 - — | GOOG | bearish $384.27→$342.97 stop $397.5 | **in_progress** (day 1, MFE 0.0%, MAE -3.15%) _(prior_run=20260506_164526, graded_in=20260507_164625)_
 - — | JPM | bullish $309.4→$320.0 stop $303.5 | **in_progress** (day 1, MFE 2.22%, MAE 0.0%) _(prior_run=20260506_181533, graded_in=20260507_181528)_
 - — | UNH | bearish $368.0→$343.0 stop $374.5 | **in_progress** (day 1, MFE 2.65%, MAE -0.15%) _(prior_run=20260506_194605, graded_in=20260507_194523)_
+- — | SNDK | bearish $1406.0→$995.69 stop $1490.0 | **in_progress** (day 1, MFE 4.87%, MAE -2.4%) _(prior_run=20260506_211601, graded_in=20260507_211526)_
