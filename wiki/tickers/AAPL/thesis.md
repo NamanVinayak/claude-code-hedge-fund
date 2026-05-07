@@ -1,37 +1,35 @@
 ---
 name: AAPL thesis
-last_updated: 2026-05-04
-last_run_id: 20260504_144833
+last_updated: 2026-05-07
+last_run_id: 20260507_144525
 target_words: 500
 stale_after_days: 30
-word_count: 497
-summary: Position now entered — 2 shares at $277.27 fill (ID 114); 5/5 swing agents bullish (unanimous first in AAPL history); target upgraded to $291 primary / $296.77 extended; CEO transition and ADX sub-25 remain new bear flags; Iran escalation caps confidence at 55
+word_count: 499
+summary: Hold 2 shares (ID 114, entry $277.27, +4.7% unrealized); primary target upgraded to $299.60 (Fib 1.272 ext); ADX 26.78 confirms strong trend (25 threshold crossed); prior bear flag "ADX sub-25" falsified; prior primary target $291 essentially reached at $290.69; hourly bearish RSI divergence is near-term timing caution only; Kevin Warsh May 15 is the remaining tail risk; confidence 52
 ---
 
 # AAPL — Thesis
 
 ## TL;DR
 
-**Prior thesis "wait for pullback to $274–278" is now executed.** The May 1 thesis (run 20260501_144523) flagged the post-earnings drift setup and issued a conditional limit buy at $276, waiting for pullback. That pullback arrived: trade ID 114 was filled at $277.27 on 2026-05-04 (entered_at 2026-05-04T13:31). The thesis has advanced from conditional to active — 2 shares long, stop $269.50, primary target $291, extended target $296.77. This run (20260504_144833) produced 5/5 swing agent unanimous bullish consensus — the first time all five agents aligned on AAPL. Confidence is capped at 55 by the Iran geopolitical escalation (May 4 missile strike reports, Dow futures lower) and marginal R/R of 2.0:1 at current price. (Source: trade_ledger.json id 114, decisions.json, swing_head_trader signal, run 20260504_144833.)
+**Prior bear flag "ADX sub-25" is now falsified.** The May 4 thesis (run 20260504_144833) identified ADX sub-25 as a bear flag alongside Iran escalation. ADX has since risen: 16.83 → 19.92 → 22.55 → 24.45 → **26.78** — the 25 threshold is now crossed, confirming a strong daily trend. Iran risk-off tail has also reversed: oil fell from $104 to $91.73/bbl as US-Iran ceasefire progressed and S&P/Nasdaq reached all-time highs. Trade ID 114 (2 shares at $277.27, unrealized +$26.28, +4.7%) remains open. Primary target upgraded from $291 (essentially reached at $290.69) to **$299.60** (Fib 1.272 extension). Stop $269.50 unchanged. Confidence 52 — capped by statistical overextension (Z-score 2.58, RSI-7 86.05) and Kevin Warsh Fed succession May 15. Decision: HOLD. (Source: decisions.json, swing_head_trader, swing_trend_momentum, swing_macro_context signals, run 20260507_144525.)
 
 ## Bull case
 
-**5/5 unanimous bullish consensus and earnings beat.** Q2 FY2026 EPS $2.01 beat estimate $1.94; revenue $111.2B (+17% YoY); gross margin 49.3% (record); Q3 guidance +14–17% YoY vs consensus +9.5% — significant outperformance. $100B buyback authorized. Analyst consensus 78% buy, average PT $304.31, median $300. iPhone 17 sales +22% to $57B; Mac revenue +6% (MacBook Neo demand). (Source: web_research/AAPL.json, run 20260504_144833.)
+**ADX-confirmed strong trend with unanimous EMA alignment.** Daily ADX 26.78 (crossed 25, rising); +DI 40.06 >> −DI 17.25; EMA 10 (276.77) > 21 (271.10) > 50 (265.76) stacked bullish on both daily and hourly. OBV uptrend intact — institutional accumulation confirmed. ROC-5d +6.42%, ROC-10d +5.25%, ROC-21d +13.42%; MACD histogram +1.6037 positive and expanding. (Source: swing_trend_momentum, run 20260507_144525.)
 
-**Post-earnings drift thesis intact.** Breakout above $276.11 (11-test resistance) on 2.08x volume April 30, follow-through 1.74x May 1. Measured-move target $296.77 (Fib ext 1.618 from $255.45 base). Daily EMA stack aligned: 10 (271.18) > 21 (267.11) > 50 (263.56). Bullish RSI divergence on 60-bar lookback. Plus DI 40.22 >> Minus DI 13.81. (Source: swing_breakout signal, run 20260504_144833.)
+**Q2 FY2026 earnings blowout and post-earnings drift still active.** EPS $2.01 vs $1.94 estimate; revenue $111.2B (+17% YoY); gross margin 49.3% (record); iPhone 17 +22% to $57B; Services all-time high ~$31B. Q3 guidance +14–17% YoY vs analyst estimate +9.5% — significant outperformance. $100B buyback authorized; dividend raised. 78% of 77 analysts bullish; avg PT $304 (web_research/AAPL.json May 7); Bernstein and Wedbush raised to $350. Target $299.60 sits ~$2 below analyst consensus median $301.54 — in-the-money. (Source: web_research/AAPL.json, swing_catalyst_news signal, run 20260507_144525.)
 
-**Apple-Google Siri collaboration confirmed.** Reports confirm Apple is using Google foundation models to power Siri ahead of iOS 27 — partially neutralizing the prior AI-lag bear case. WWDC reveal ~25 trading days out. Capex lean at $4.3B (vs. Microsoft $190B, Google $180–190B) — outsourcing AI infrastructure cost is a margin-preserving move. (Source: web_research/AAPL.json, run 20260504_144833.)
+**Strongly risk-on macro backdrop.** S&P 500 closed record 7,365.12 (+1.46%) and Nasdaq closed record 25,838.94 (+2.02%) on May 6. AMD Q1 2026 blowout (+38% YoY) validates AI capex supercycle. Oil at $91.73/bbl (from $104 peak) — disinflationary tailwind. Mean-reversion fade pattern (4 consecutive losses: NVDA, AMZN, GOOG, AMD) makes the bearish swing_mean_reversion vote the structurally weak leg. (Source: web_research/AAPL.json macro_context, swing_macro_context signal, swing_head_trader signal, run 20260507_144525.)
 
 ## Bear case
 
-**Macro headwind — Iran escalation caps conviction.** May 4 reports of missile strikes near Jask island reversed the May 1 risk-on narrative. Dow futures declining, oil higher, Strait of Hormuz closure a left-tail risk. Even AAPL's idiosyncratic strength cannot fully offset a broad market risk-off event. (Source: swing_macro_context signal, web_research/AAPL.json macro_context, run 20260504_144833.)
+**Statistical overextension — near-term pullback risk elevated.** Z-score 2.58 (>2.5 sigma from 50-SMA); daily Bollinger %B 1.046 (above upper band); RSI-7 86.05 (extreme overbought). A new hourly bearish RSI divergence has formed since run 20260506_144523 — price made a new high but hourly RSI rolled over, suggesting near-term momentum fatigue. The $291 measured-move from the prior base is essentially complete. (Source: swing_mean_reversion, technical_analyst_agent signals, run 20260507_144525.)
 
-**Valuation extreme and ADX sub-25.** Valuation agent 100% bearish: DCF fair value ~$2.2T vs. $4.1T market cap — 45.9% premium. ADX 19.92 has risen from 16.83 (May 1) but remains below the 25 confirmation threshold. Hourly OBV is in a downtrend diverging from price. Daily z-score 2.25 signals extension. (Source: valuation_analyst_agent, swing_trend_momentum, technical_analyst_agent signals, run 20260504_144833.)
-
-**CEO transition and insider selling overhang.** Tim Cook departure September 1, 2026; John Ternus (hardware executive) is successor — not a Services/AI leader at a pivotal AI strategy moment. CEO Cook sold $12M+ at $251–256 in early April; net insider flow −$235M, zero buys. (Source: web_research/AAPL.json, swing_catalyst_news signal, run 20260504_144833.)
+**Kevin Warsh May 15 tail risk and valuation extreme.** Fed succession confirmation hearing 8 trading days out — hawkish appointment would reprice mega-cap growth stocks including AAPL. DCF fair value ~$2.2T vs $4.3T market cap (48% premium); PEG 2.52 (investors paying 152% premium above growth justification). CEO Tim Cook sold $12M+ at $251–256 April 2026; net insider flow −$235M. (Source: valuation_analyst_agent, growth_analyst_agent, web_research/AAPL.json, run 20260507_144525.)
 
 ## What would change my mind
 
-**Bearish flip:** Failure to hold $269.50 (stop level / pre-earnings pivot) would signal the breakout was false. Iran Strait of Hormuz closure materializing or a broad market -3%+ day would warrant reassessment. ADX declining back below 16 would indicate the trend is fading, not building.
+**Bearish flip:** Close below $269.50 (stop, trade ID 114) signals thesis break. Kevin Warsh confirmed hawkish with growth-stock repricing. Daily ADX reversing below 20 would indicate trend fading.
 
-**Bullish upgrade:** Close above $285.50 on 1.5x+ volume triggers partial profit consideration. ADX crossing 25 with momentum intact upgrades conviction. Analyst upgrades post-Q2 (BNP Paribas already upgraded) accelerating would support the $296–300 target range.
+**Bullish upgrade:** Close above $295 on 1.5x+ volume toward $299.60 target. Warsh confirmation without hawkish surprise removes the May 15 tail risk. Iran peace deal signed and oil settles below $90.
