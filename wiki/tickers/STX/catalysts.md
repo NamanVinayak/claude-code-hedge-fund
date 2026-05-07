@@ -1,42 +1,39 @@
 ---
 name: STX catalysts
-last_updated: 2026-05-06
-last_run_id: 20260506_203627
+last_updated: 2026-05-07
+last_run_id: 20260507_203631
 target_words: 400
 stale_after_days: 14
-word_count: 408
-summary: Q3 FY26 now 8 days old and fully priced; next catalyst Q4 FY26 ~July 16-28; no near-term binary; macro strongly risk-on (S&P 7,338.89 confirmed ATH, Nasdaq 25,670); US-Iran peace MOU ~48h from completion; stock trading ABOVE consensus analyst PT $748.65
+word_count: 388
+summary: Q3 FY26 now 9 trading days old and fully priced; next catalyst Q4 FY26 ~July 16-28; no near-term binary; macro upgraded — Dow crossed 50,000 for first time (May 7), S&P 7,377 and Nasdaq 25,977 intraday ATH; US-Iran peace deal delivering 14-point response May 7; oil $94-97/bbl; stock trading ABOVE consensus analyst PT $758.94; STX opened -3.05% May 7 on market pullback
 ---
 
 # STX — Catalysts
 
 ## TL;DR
 
-Q3 FY26 earnings landed Apr 28, 2026 — now 8 trading days old and fully priced into the ~24% post-earnings surge. Next scheduled catalyst is Q4 FY26 earnings (~July 16-28, 2026). No identifiable catalyst within the next 10 trading days. Macro backdrop: S&P 500 confirmed close at 7,338.89 (+1.10% ATH), Nasdaq 25,670 (+1.36% ATH) on May 6 — strongly risk-on, driven by AMD Q1 2026 blowout and US-Iran peace deal optimism. Iran ceasefire MOU reportedly ~48 hours from completion (oil easing toward $102). [source: web_research/STX.json, run 20260506_203627]
+Q3 FY26 earnings landed Apr 28, 2026 — now 9 trading days old and fully priced into the ~24% post-earnings surge. Next scheduled catalyst is Q4 FY26 earnings (~July 16-28, 2026). No identifiable positive catalyst within the next 10 trading days. Macro backdrop: Dow Jones crossed 50,000 for the first time (May 7), S&P 500 7,377 and Nasdaq 25,977 both at intraday ATHs — strongly risk-on, despite STX opened -3.05% May 7 on broader market pullback. US-Iran peace deal advancing: Iran delivering 14-point response to US proposal today (May 7), oil $94-97/bbl. AMD Q1 2026 blowout confirms AI capex supercycle intact. [source: web_research/STX.json, run 20260507_203631]
 
 ## Upcoming events
 
-- **Q4 FY26 earnings** — ~July 16-28, 2026 (sources vary on exact date; web_research/STX.json narrows to ~July 16-28). Guidance: $3.45B ±$100M revenue, ~$5.00 EPS. Outside the 10-day swing window.
+- **Q4 FY26 earnings** — ~July 16-28, 2026 (sources vary on exact date). Guidance: $3.45B ±$100M revenue, ~$5.00 EPS (per Q3 call). Well outside the 10-day swing window.
 - **Mozaic 4 majority ramp** — management guided Mozaic 4 to be majority of HAMR exabyte shipments exiting CY2026. Volume-shipment or qualification news is a positive catalyst.
-- **Mozaic 5 (50TB)** — targeted late 2027. Earlier sample-shipment news is upside optionality.
-- **Hyperscaler capex updates** — MSFT/META/GOOGL/AMZN quarterly prints are second-derivative AI storage signals.
-- **US-Iran ceasefire resolution** — MOU reportedly ~48h from completion; sustained peace could ease oil-driven inflation and support risk-on. [source: web_research/STX.json key_events]
+- **US-Iran ceasefire resolution** — Iran delivering 14-point response May 7; sustained peace could ease oil-driven inflation and support risk-on. [source: web_research/STX.json key_events]
+- **Kevin Warsh Fed succession (May 15)** — tightening-bias tail risk; primary near-term policy uncertainty inside the 10-day window.
+- **US non-farm payrolls (May 8)** — macro watch item per macro_context agent.
 
 ## Recent news synthesis
 
-- **Q3 FY26 print (Apr 28, 2026):** Revenue $3.11B (+44.1% YoY), non-GAAP EPS $4.10 (beat by 18.8%), FCF $953M (10-year high), non-GAAP gross margin 47%. Annual revenue growth target ≥20%. Q4 FY26 guide: $3.45B ±$100M, EPS ~$5.00. 8 trading days elapsed — fully priced. [source: web_research/STX.json earnings_info]
-- **Nearline sold out:** Large data centers = 80% of Seagate revenue; capacity allocated through CY2027. [source: web_research/STX.json]
-- **HAMR leadership:** Mozaic 3+ qualified by five major cloud customers. [source: web_research/STX.json ticker_news]
-- **Macro strongly risk-on (May 6):** S&P 500 confirmed close 7,338.89 (ATH +1.10%), Nasdaq 25,670 (ATH +1.36%), Dow 49,854 (+1.14%). AMD Q1 2026 blowout (+38% YoY) confirmed AI capex supercycle intact. US-Iran peace deal MOU ~48 hours from completion. Oil easing toward ~$102/bbl. [source: web_research/STX.json macro_context, run 20260506_203627]
+- **Q3 FY26 print (Apr 28, 2026):** Revenue $3.1B (+44% YoY), non-GAAP EPS $4.10 (beat by 17.1%), Q4 guide $3.45B and ~$5.00 EPS. 9 trading days elapsed — fully priced. [source: web_research/STX.json earnings_info]
+- **Nearline sold out:** Large data centers = 80% of revenue; capacity allocated through CY2027. [source: web_research/STX.json ticker_news Motley Fool]
+- **STX -3.05% May 7 open** — broader market pullback (oil rebounded, Iran deal uncertainty); insiders selling raises concern per TradingKey. [source: web_research/STX.json ticker_news]
+- **Insider activity:** EVP & CTO John Christopher Morris sold 5,626 shares May 4 (10b5-1 plan adopted Jan 2026); Director Stephanie Tilenius sold 1,580 shares May 5. ~$46.9M net sales in trailing 3 months, zero open-market purchases. [source: web_research/STX.json ticker_news]
+- **Macro upgraded (May 7):** Dow 50,000 first time ever; S&P 7,377 and Nasdaq 25,977 intraday ATHs. AMD Q1 2026 +38% YoY confirms AI capex supercycle. [source: web_research/STX.json macro_context]
 
 ## Analyst consensus
 
-Post-earnings PT wave (Apr 29, 2026): Rosenblatt $1,000, BofA $840, Barclays $750, Citi $740, Goldman $700. Consensus avg PT **$748.65** (TipRanks 17 analysts, Strong Buy consensus). **Stock now trading ABOVE consensus mean** ($786.42 at run time) — only Rosenblatt ($1,000) and BofA ($840) offer meaningful upside at current price. 20 analysts rate Buy as of May 5, 2026. [source: web_research/STX.json analyst_consensus]
-
-## Insider activity
-
-140 transactions over trailing 6 months — all sales, zero open-market purchases. ~$46.9M sold in trailing 3 months. Routine 10b5-1 dispositions; unambiguously net-selling. [source: web_research/STX.json, signals_combined.json swing_catalyst_news, run 20260506_203627]
+Post-Q3 PT wave: Mizuho $875 (Outperform), Morgan Stanley $767 (Overweight, #1 IT Hardware pick), Barclays $750 (Overweight), BofA and Cantor Fitzgerald $700 (ahead of earnings). Consensus avg PT **$758.94** (web_research/STX.json, ~20-23 analysts). **Stock now trading ABOVE consensus mean** (~$786 at run time) — only Mizuho ($875), Rosenblatt ($1,000), and BofA ($840) offer meaningful upside at current price. [source: web_research/STX.json analyst_consensus]
 
 ## Last updated
 
-2026-05-06 — run 20260506_203627. Macro updated to confirmed May 6 ATH closes (S&P 7,338.89, Nasdaq 25,670); US-Iran peace MOU updated to ~48h from completion. STX now trading above consensus analyst PT $748.65. Sources: web_research/STX.json (2026-05-06).
+2026-05-07 — run 20260507_203631. Macro updated: Dow 50,000 milestone (May 7 first time), S&P 7,377 / Nasdaq 25,977 intraday ATHs; US-Iran peace deal progressing (14-point response delivery). STX -3.05% May 7 open noted. Analyst consensus avg PT updated to $758.94. Sources: web_research/STX.json (2026-05-07).
