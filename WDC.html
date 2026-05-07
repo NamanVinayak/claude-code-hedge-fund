@@ -484,7 +484,7 @@
             <a class="nav-link " href="closed.html">History</a>
             <a class="nav-link " href="runs.html">All Runs</a>
         </div>
-        <div class="nav-meta">01:50 PM PT · NEXT TX <span id="countdown">--:--</span></div>
+        <div class="nav-meta">01:55 PM PT · NEXT TX <span id="countdown">--:--</span></div>
     </div>
 </nav>
 
@@ -551,7 +551,10 @@
 
 <div class="thesis-card">
     <h2>AI Thesis (from Wiki)</h2>
-    <p>Run 20260506_203627 (2026-05-06). Decision: **hold existing position — 2 shares, fill confirmed at $448.99, target $489, stop $428, R/R 2.39:1 original, conf 28.**</p><p>Prior thesis claim falsified: "Fill not yet confirmed in per_ticker_history[WDC]" (20260505_203524). Trade id 150 now appears in trade_ledger.json `per_ticker_history[WDC]` with status `entered`, `entry_fill_price: $448.99`, entered 2026-05-06 at 14:29. The limit order at $446 triggered and filled — fill confirmed. [source: trade_ledger.json per_ticker_history[WDC] id 150, run 20260506_203627]</p><p>Prior thesis claim partially updated: "Hourly OBV bearish divergence — unanimous warning." OBV bearish divergence flagged in 20260505_203524 has resolved — OBV is now trending UP with price. The primary monitoring risk has abated. [source: signals_combined.json swing_trend_momentum, swing_head_trader, run 20260506_203627]</p>
+    <p>Run 20260507_203631 (2026-05-07). Decision: **hold existing position — 2 shares, fill at $448.99 (id 150), target $489, stop $428. Price $483 (~1.2% from target), conf 15.**</p><p>Prior thesis claim partially falsified: "Hourly OBV bearish divergence resolved — OBV now trending up" (20260506_203627). Hourly OBV is now **back to trending DOWN** — distribution near the high re-emerged. This reverses the prior run's bullish OBV resolution. The existing position remains in-flight and is ~$6 from its $489 target; the correct action is to hold and let the trade complete, not to act on the OBV reversal by exiting early. Stop at $428 defines the maximum risk. [source: signals_combined.json swing_trend_momentum, swing_head_trader, trade_ledger.json id 150, run 20260507_203631]</p><p>- **Trade is working as designed.** Entry at $448.99 (near former ATH $446.62 support zone); price is now ~$483 — ~7.6% unrealized gain. Measured-move target $489 is only ~$6 (~1.2%) away. Thesis has executed cleanly on fundamentals and entry timing. [source: trade_ledger.json id 150, explanation.json WDC verdict, run 20260507_203631]
+- **Q3 FY26 catalyst — structural tailwind intact.** Revenue $3.34B (+45% YoY), first-ever 50.5% gross margin, Q4 guide $3.65B raised. AI data-center buildout (cloud = 89% of revenue) confirms sustained HDD demand. [source: web_research/WDC.json earnings_info]
+- **AI capex supercycle confirmed.** AMD Q1 2026 +38% YoY; Dow crossed 50,000 May 7. AI storage structural tailwind unimpeached. Multiple analyst PTs still above current price (TD Cowen $500, BofA $572, JP Morgan ~$530). [source: web_research/WDC.json macro_context, analyst_consensus]
+- **Institutional accumulation.** Sumitomo Mitsui DS Asset Management purchased WDC shares May 7. [source: web_research/WDC.json ticker_news]</p>
 </div>
 
 
@@ -559,6 +562,20 @@
     <h2 style="font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;">Recent AI Decisions</h2>
     
     <div class="dec-timeline">
+    
+    <div class="dec-item">
+        <span class="dec-date">20260507</span>
+        <span><span class="badge badge-hold">HOLD</span></span>
+        <span>
+            
+            <div class="conf-wrap">
+                <div class="conf-bar-bg"><div class="conf-bar" style="width:15%"></div></div>
+                <span class="conf-label">15%</span>
+            </div>
+            
+        </span>
+        <span class="dec-reason" style="font-size:12px;color:var(--muted);line-height:1.6;">Hold 2 long shares (fill $448.99, +7.6% unrealized). Only ~$6 (~1.2%) to original $489 target. Hourly OBV down, MACD histogram -1.92 — distribution near high. No new entry: R/R 1.9:1 < 2:1 min, RSI 89.57, pct_b 1.049. Let existing position run to target or stop ($428).</span>
+    </div>
     
     <div class="dec-item">
         <span class="dec-date">20260506</span>
@@ -586,20 +603,6 @@
             
         </span>
         <span class="dec-reason" style="font-size:12px;color:var(--muted);line-height:1.6;">Head Trader bullish (44 conf). 3/5 swing agents bullish. Post-earnings catalyst live (Q3 FY26 blowout: $3.0B rev, 50.5% GM first-ever above 50%, Q4 guide $3.65B, analyst upgrades $470-$572). Former ATH $446.62 flipped to support — pullback entry at $444-448 zone. R/R 2.39:1 ($43 up / $18 down). STX correlation block resolved: STX is hold (no new position), cluster cap is not triggered. DO NOT CHASE above $452 — limit order at $446. Stop $428 below hourly pivot cluster. Sized conservatively: 2 shares x $446 = $892 (within 25% of $5K capital). Key risk: hourly OBV divergence (institutional distribution signal) + 0% recent win rate on extended-move entries. Confidence held at 44 — do not size up.</span>
-    </div>
-    
-    <div class="dec-item">
-        <span class="dec-date">20260504</span>
-        <span><span class="badge badge-hold">HOLD</span></span>
-        <span>
-            
-            <div class="conf-wrap">
-                <div class="conf-bar-bg"><div class="conf-bar" style="width:52%"></div></div>
-                <span class="conf-label">52%</span>
-            </div>
-            
-        </span>
-        <span class="dec-reason" style="font-size:12px;color:var(--muted);line-height:1.6;">Head Trader bullish (52 conf) but risk manager correlation-blocked: STX+WDC cluster cap exceeded (combined $1,076 > 30% of $1,794). Cannot enter WDC without breaching cluster cap. Monitor for STX exit to free cluster capacity. Preferred entry $422-440 on pullback when capital permits.</span>
     </div>
     
     </div>
