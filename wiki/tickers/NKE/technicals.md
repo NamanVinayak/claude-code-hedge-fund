@@ -1,43 +1,43 @@
 ---
 name: NKE technicals
-last_updated: 2026-05-06
-last_run_id: 20260506_220627
+last_updated: 2026-05-07
+last_run_id: 20260507_220640
 target_words: 350
 stale_after_days: 7
-word_count: 348
-summary: downtrend intact — ADX 23.94 (below 25, trend weakening), price $43.88 below all EMAs; RSI-7 18.77 extreme oversold — DO NOT short here (wiki veto confirmed); wait for bounce to EMA zone ($44.28–$45.49) for clean short entry; MACD histogram +0.2386 signals downside deceleration
+word_count: 352
+summary: downtrend intact — ADX 24.18 (below 25, sub-threshold veto persists), price $43.88 below all EMAs; RSI-7 28.86 — recovered from 18.77 extreme but still oversold; DO NOT short here (wiki veto confirmed); wait for bounce to EMA zone ($44.21–$45.35) for clean short entry; MACD histogram +0.2576 signals continued downside deceleration; mean-reversion bounce underway
 ---
 
 # NKE — Technicals
 
 ## TL;DR
 
-As of May 6, 2026 (run `20260506_220627`), NKE remains in a confirmed daily downtrend. ADX at 23.94 is still below the 25 threshold — trend weakening signal persists from prior run. EMA cascade fully bearish on all timeframes (5 < 10 < 21 < 50 < 200). Price $43.88 is below every EMA from 5 through 200. RSI-7 at 18.77 is deeply oversold — wiki veto on shorting here is reinforced; the Apr 14 loss (-$35.70) was triggered at an identical RSI extreme. MACD histogram turned positive (+0.2386), signaling downside momentum deceleration. Wait for bounce to 10/21 EMA zone ($44.28–$45.49) for the clean short entry.
+As of May 7, 2026 (run `20260507_220640`), NKE remains in a confirmed daily downtrend. ADX at 24.18 — still below the 25 threshold, veto on new short entries persists. EMA cascade fully bearish on all timeframes (5 < 10 < 21 < 50 < 200). Price $43.88 is below every daily EMA. RSI-7 has bounced from the prior extreme of 18.77 to 28.86 — oversold bounce underway but still well within oversold territory. MACD histogram is positive (+0.2576), confirming downside momentum deceleration. On the hourly, price is ABOVE all hourly EMAs (EMA-24, EMA-48, EMA-120), hourly OBV trending up — the bounce is underway. Wiki veto on shorting in deeply oversold / sub-ADX-25 conditions remains in force. Wait for bounce to the 10/21 EMA zone ($44.21–$45.35) for the clean short entry reassessment.
 
 ---
 
 ## Multi-timeframe state
 
-All data from run `20260506_220627`.
+All data from run `20260507_220640`.
 
 | Indicator | Value | Interpretation |
 |---|---|---|
-| Price (daily / hourly) | $43.88 | Below all EMAs — bearish |
-| EMA-10 (daily) | ~$44.28 | **Short entry zone on bounce** |
-| EMA-21 (daily) | ~$45.49 | Secondary short entry zone |
+| Price (daily / hourly) | $43.88 | Below all daily EMAs — bearish |
+| EMA-10 (daily) | ~$44.21 | **Short entry zone on bounce** |
+| EMA-21 (daily) | ~$45.35 | Secondary short entry zone |
 | EMA-50 (daily) | ~$49.95 | Fanning bearish — cascade intact |
-| ADX | 23.94 | Below 25 — trend weakening (veto on new short) |
-| +DI / -DI | ~21 / ~28 | -DI leading (bearish bias) |
-| RSI-7 (daily) | 18.77 | Deeply oversold — wiki veto on shorting |
-| RSI-14 (daily) | 28.13 | Oversold zone |
-| MACD histogram (daily) | +0.2386 | Turning positive — downside deceleration |
-| BB width (daily) | 0.1062 | Moderate — no squeeze |
-| ROC (5d) | -4.37% | Bearish, decelerating |
-| ROC (10d) | -7.18% | Bearish |
-| ROC (21d) | -2.20% | Bearish |
-| Hourly RSI-21 | 42.41 | Neutral |
-| Hourly OBV | Trending up | Bullish divergence (accumulation signal) |
-| BB width (hourly) | 0.0602 | Tighter than daily — mild coil |
+| ADX | 24.18 | Below 25 — sub-threshold (veto on new short) |
+| +DI / -DI | ~18 / ~27 | -DI leading (bearish bias) |
+| RSI-7 (daily) | 28.86 | Oversold — recovered from 18.77; veto still active |
+| RSI-14 (daily) | 34.83 | Oversold zone |
+| MACD histogram (daily) | +0.2576 | Positive (up from +0.2386 prior run) — deceleration |
+| BB width (daily) | 0.1028 | Moderate — no squeeze |
+| ROC (5d) | -1.15% | Bearish but decelerating |
+| ROC (10d) | -3.94% | Bearish |
+| ROC (21d) | +2.79% | Mixed positive on 21d |
+| Hourly RSI-21 | 69.64 | Approaching overbought — bounce stretched |
+| Hourly OBV | Trending up | Accumulation signal short-term |
+| Hourly EMAs | Price above EMA-24/48/120 | Short-term bullish — bounce underway |
 
 ---
 
@@ -45,10 +45,10 @@ All data from run `20260506_220627`.
 
 | Level | Value | Context |
 |---|---|---|
-| Range low / support | $42.09 | 1 test; unconfirmed volume; bear trigger on 1.5x vol confirmed close below |
-| Current price | $43.88 | Extended below EMAs — DO NOT short here (RSI-7 18.77) |
-| 10 EMA / **short entry zone** | ~$44.28 | Target bounce level; R/R improves materially |
-| 21 EMA / secondary entry | ~$45.49 | Best short zone; prior April loss occurred before price reached this level |
+| Range low / support | $42.09 | 1 test; bear trigger on 1.5x vol confirmed close below |
+| Current price | $43.88 | Mid-range; bounce underway — DO NOT short here |
+| 10 EMA / **short entry zone** | ~$44.21 | Minimum retracement for short reassessment |
+| 21 EMA / secondary entry | ~$45.35 | Best short zone if ADX >25 by then |
 | Range high / resistance | $46.97 | 4 tests; bull trigger if closed above on 1.5x+ vol |
 | Bull breakout target | $51.85 | Measured move above $46.97 |
 
@@ -56,8 +56,8 @@ All data from run `20260506_220627`.
 
 ## Setup type
 
-**No trade — wait for bounce to $44.28–$45.49 EMA zone.** RSI-7 at 18.77 recreates the exact Apr 14 oversold extreme that led to a -$35.70 loss (insider-buying bounce). MACD histogram turning positive (+0.2386) confirms downside deceleration. ADX at 23.94 is below the 25 threshold, which independently vetoes any new short entry. R/R at current price: upside to $46.97 = +$3.09, downside risk to stop $42.09 = $1.79 — only 1.7:1, fails 2:1 minimum. Neither direction clears the bar at $43.88. Set alert at $44.28 (10 EMA) as the minimum retracement for short reassessment.
+**No trade — wait for bounce to $44.21–$45.35 EMA zone with ADX >25 and -DI dominant.** RSI-7 bounced from 18.77 to 28.86 — the oversold bounce that was warned about is in progress. Hourly RSI-21 at 69.64 (approaching overbought) suggests the near-term bounce is stretched, not a new entry opportunity. ADX at 24.18 remains below the 25 threshold, independently vetoing any new short. Mean-reversion agent (confidence 40) noted the bounce is underway but has the same warning: counter-trend only, not a reversal.
 
-*Prior setup type from run `20260505_220625` ("wait for bounce to $44.55–$45.74"): slight downward shift in EMA levels but same assessment. No key level broke between runs.*
+*Prior setup type from run `20260506_220627` ("wait for bounce to $44.28–$45.49"): EMA levels tightened slightly; RSI recovered from 18.77 to 28.86 — assessment unchanged, bounce progressing.*
 
 *Data freshness: 7-day stale threshold.*
