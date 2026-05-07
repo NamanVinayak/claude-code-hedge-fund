@@ -1,0 +1,64 @@
+{
+  "ticker": "STX",
+  "verified_at": "2026-05-07T20:36:31",
+  "checks": [
+    {
+      "metric": "net_margin",
+      "our_value": 0.2079,
+      "web_value": 0.216,
+      "source": "StockAnalysis / Yahoo Finance (TTM as of May 2026)",
+      "status": "ok",
+      "deviation": "3.9%"
+    },
+    {
+      "metric": "operating_margin",
+      "our_value": 0.2765,
+      "web_value": 0.2853,
+      "source": "StockAnalysis (TTM as of May 2026)",
+      "status": "ok",
+      "deviation": "3.2%"
+    },
+    {
+      "metric": "pe_ratio",
+      "our_value": 72.72,
+      "web_value": 74.61,
+      "source": "Yahoo Finance key statistics (TTM, May 2026)",
+      "status": "ok",
+      "deviation": "2.6%"
+    },
+    {
+      "metric": "revenue",
+      "our_value": 10727000000,
+      "web_value": 11010000000,
+      "source": "StockAnalysis / companiesmarketcap.com (TTM as of April 2026)",
+      "status": "ok",
+      "deviation": "2.6%",
+      "note": "Revenue implied from market_cap / price_to_sales_ratio = $171.86B / 16.02 ≈ $10.73B; web shows $10.05B–$11.01B TTM"
+    },
+    {
+      "metric": "market_cap",
+      "our_value": 171858067456,
+      "web_value": 176000000000,
+      "source": "Yahoo Finance / CNBC (early May 2026)",
+      "status": "ok",
+      "deviation": "2.4%"
+    },
+    {
+      "metric": "roe",
+      "our_value": -4.923,
+      "web_value": 10.0565,
+      "source": "Tickeron Q3 FY2026 (various methodologies; negative equity causes wide variation)",
+      "status": "unverified",
+      "note": "ROE is distorted by negative book equity at STX — both our value (-492%) and web values (ranging +429% to +1,788%) are driven by negative stockholders' equity, not a data error. No actionable correction possible."
+    },
+    {
+      "metric": "roa",
+      "our_value": 0.278,
+      "web_value": null,
+      "source": "No reliable web consensus found",
+      "status": "unverified"
+    }
+  ],
+  "overall_status": "all metrics within acceptable range",
+  "corrections_applied": false
+}

@@ -1,0 +1,44 @@
+{
+  "run_id": "20260507_203631",
+  "mode": "swing",
+  "started_at": "2026-05-07T20:36:55Z",
+  "ended_at": "2026-05-07T20:49:51Z",
+  "tickers": [
+    "STX",
+    "WDC"
+  ],
+  "decisions": [
+    {
+      "ticker": "STX",
+      "action": "hold",
+      "confidence": 10,
+      "entry": 786.44,
+      "stop": 786.44,
+      "target": 786.44,
+      "reasoning_tldr": "No position, no entry"
+    },
+    {
+      "ticker": "WDC",
+      "action": "hold",
+      "confidence": 15,
+      "entry": 483.15,
+      "stop": 428.0,
+      "target": 489.0,
+      "reasoning_tldr": "Hold 2 long shares (fill $448.99, +7.6% unrealized)"
+    }
+  ],
+  "portfolio_state": {
+    "positions_held": 2,
+    "cash": 1457.27001953125,
+    "exposure": 0.0
+  },
+  "agent_summary": {
+    "strategy_signals_received": 5,
+    "head_trader_synthesis": "neutral",
+    "degraded_inputs": []
+  },
+  "wiki_state": {
+    "wiki_enabled": true,
+    "wiki_pages_updated": 0
+  }
+}

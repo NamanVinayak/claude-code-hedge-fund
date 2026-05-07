@@ -1,0 +1,20 @@
+{
+  "STX": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "Branch A (fade the extreme) fires on all daily metrics: RSI-14 91.47, RSI-7 92.49, Z-score 2.62, Bollinger pct_b 1.009 (above upper band), price 63.32% above 50-SMA. These are unambiguous statistical extremes. However, the regime disqualifies this fade with high confidence: ADX 81.29 is the strongest trend reading in portfolio history (wiki confirms: 'ADX 80.29 — strongest trend reading in portfolio history'). The lessons table shows 4 consecutive mean-reversion fade failures (AMZN May 4, GOOG May 6, AMD May 6, and the pattern from NVDA Apr 30), ALL in ADX 60+ regimes — STX at 81.29 is even more extreme. Additionally, the wiki flags this is the THIRD consecutive run at this overbought extreme ($738→$771→$786), and per the prompt, repeat attempts at the same level lower conviction of a fresh fade. No RSI divergence detected on daily. The hourly RSI (56.28) is notably cooler than the daily (91.47), indicating the intraday price has already backed off — but this is NOT a confirmed reversal candle pattern; prior day closed bullish ($771→$786). Branch B (buy the dip) does not fire — price is at highs with no meaningful pullback to a Fibonacci level. Neither branch yields a credible entry with acceptable risk. Standing aside.",
+    "entry": 786.42,
+    "target": 786.42,
+    "stop": 786.42,
+    "timeframe": "no trade"
+  },
+  "WDC": {
+    "signal": "neutral",
+    "confidence": 25,
+    "reasoning": "Branch A (fade the extreme) technically fires: RSI-14 89.57, RSI-7 88.19, Z-score 2.45, Bollinger pct_b 1.049 (above upper band), price 47.24% above 50-SMA. The hourly shows corroborating signs of topping: OBV trend is DOWN (diverging bearishly from the daily up-trend), hourly MACD histogram is negative (-1.92), hourly volume_bias_10d is down, and hourly momentum ROC-5d is -0.77% (slight negative). These hourly signals are more developed than STX's hourly (where OBV just turned bullish). However, ADX 67.1 places this squarely in the same ADX 60+ regime that stopped out 4 consecutive mean-reversion fades per the lessons log. The daily-hourly divergence (daily RSI 89.57 vs hourly RSI 57.12) suggests the hourly is normalizing but no reversal candle has been confirmed yet. Wiki notes an in-progress long (trade id 150, fill $448.99, target $489, stop $428) — current price $483.15 is ~1.2% from target, and the wiki explicitly flags 'no new entry' for this ticker in the current run. A new short fade would conflict with the existing long position. Branch B does not fire — no meaningful pullback to a Fib level from current highs. Waiting for ADX to soften below 50 or for an actual confirmed reversal candle before initiating any fade. Neutral.",
+    "entry": 483.15,
+    "target": 483.15,
+    "stop": 483.15,
+    "timeframe": "no trade"
+  }
+}

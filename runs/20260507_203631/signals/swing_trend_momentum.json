@@ -1,0 +1,20 @@
+{
+  "STX": {
+    "signal": "neutral",
+    "confidence": 15,
+    "reasoning": "TREND ASSESSMENT: Uptrend fully intact and exceptionally strong. Daily EMA stack confirmed (EMA-10 $686 > EMA-21 $613 > EMA-50 $519), ADX 81.29 — among the strongest trend readings in this portfolio's history. Price making higher highs ($771 → $786 → $792 recent high) with OBV daily trend up and no bearish divergence. Macro regime is strongly risk-on (Dow 50,000, S&P/Nasdaq ATH, US-Iran MOU advancing). MOMENTUM ASSESSMENT: Daily momentum is accelerating — ROC 5d=22.25%, 10d=35.62%, 21d=67.78%, all positive and expanding. Daily MACD histogram 18.54 — bullish. HOWEVER, hourly momentum is DECELERATING: MACD histogram -5.57 (negative and below signal), hourly ROC 5d=+0.36%, 10d=-1.07% (the 10d hourly ROC is negative), hourly OBV diverging from price (bearish on shorter timeframe). Hourly RSI-21 56.28 — cooling from elevated levels. NO VALID ENTRY: Current price $786 is 14.6% above EMA-10 ($686) and 28.2% above EMA-21 ($613) — massively overextended. Strategy requires pullback to 10 or 21 EMA for entry; those levels are roughly $100-$173 below current price. Wiki confirms this is the third consecutive run flagging 'extended trend / wait for pullback' ($738 → $771 → $786). Lessons: prior EMA pullback dip-buy on NVDA in similar conditions (RSI 81-87, extreme ADX) resulted in a stop-out — elevated bar for entries in overextended ADX 60+ environments. Per strategy rules, no entry without a pullback to EMA; outputting neutral despite strong trend/momentum confirmation at the daily level.",
+    "entry": 686.23,
+    "target": 813.72,
+    "stop": 660.0,
+    "timeframe": "7-15 trading days"
+  },
+  "WDC": {
+    "signal": "neutral",
+    "confidence": 20,
+    "reasoning": "TREND ASSESSMENT: Uptrend fully intact. Daily EMA stack confirmed (EMA-10 $432 > EMA-21 $397 > EMA-50 $345), ADX 67.1 — strong trend. Price making higher highs ($434 → $442 → $465 → $483) with daily OBV trend up and no divergence. Macro regime strongly risk-on. MOMENTUM ASSESSMENT: Daily momentum accelerating — ROC 5d=17.05%, 10d=24.17%, 21d=54.88%, all positive and expanding. Daily MACD histogram 6.37 — positive. HOWEVER, hourly momentum is DECELERATING and negative: MACD histogram -1.92 (negative), hourly ROC 5d=-0.77%, 10d=-1.13% (both negative), hourly OBV trending DOWN, hourly volume bias 10d = down. Hourly ADX 24.95 — just below the 25 minimum threshold for a tradeable trend on the hourly frame, classified as 'moderate.' NO VALID ENTRY: Current price $483 is 11.95% above EMA-10 ($432) and 21.58% above EMA-21 ($397) — overextended; Bollinger pct_b 1.049 (above upper band). Strategy requires a pullback to EMA-10 or EMA-21 for entry. EXISTING POSITION: Wiki notes trade id 150 is in-flight with fill at $448.99, target $489, stop $428 — target is only ~1.2% away. Wiki explicitly flagged 'no new entry — running measured-move, hold to target.' Adding a second position on an already in-progress trade in overextended conditions is not warranted. Per strategy rules, no entry without EMA pullback; hourly momentum deceleration further disqualifies. Outputting neutral. Indicative re-entry levels shown for reference only (entry at EMA-10 pullback ~$432, target Fib ext 1.272 ~$548, stop below EMA-10).",
+    "entry": 431.58,
+    "target": 547.74,
+    "stop": 415.0,
+    "timeframe": "8-15 trading days"
+  }
+}

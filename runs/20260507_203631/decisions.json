@@ -1,0 +1,30 @@
+{
+  "decisions": {
+    "STX": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 786.44,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 786.44,
+      "stop_loss": 786.44,
+      "risk_reward_ratio": "0:1",
+      "timeframe": "0 trading days",
+      "confidence": 10,
+      "account_risk_pct": 0.0,
+      "reasoning": "No position, no entry. Unanimous 5/5 neutral. Correlation-blocked (STX+WDC cluster >30% cap). ADX 81.29, RSI 91+, pct_b above upper band — parabolic extension, 3rd consecutive no-entry run. Wait for $700-$730 pullback with RSI reset to 65-72."
+    },
+    "WDC": {
+      "action": "hold",
+      "quantity": 0,
+      "entry_price": 483.15,
+      "entry_tolerance_pct": 1.0,
+      "target_price": 489.0,
+      "stop_loss": 428.0,
+      "risk_reward_ratio": "0:1",
+      "timeframe": "hold existing position toward $489 target",
+      "confidence": 15,
+      "account_risk_pct": 0.0,
+      "reasoning": "Hold 2 long shares (fill $448.99, +7.6% unrealized). Only ~$6 (~1.2%) to original $489 target. Hourly OBV down, MACD histogram -1.92 — distribution near high. No new entry: R/R 1.9:1 < 2:1 min, RSI 89.57, pct_b 1.049. Let existing position run to target or stop ($428)."
+    }
+  }
+}

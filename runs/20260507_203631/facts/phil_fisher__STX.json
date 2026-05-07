@@ -1,0 +1,78 @@
+{
+  "signal": "bearish",
+  "score": 3.666666666666666,
+  "max_score": 10,
+  "growth_quality": {
+    "score": 3.333333333333333,
+    "details": "Minimal or negative annualized revenue growth: 2.5%; Oldest EPS near zero; skipping EPS growth calculation.; R&D ratio 7.0% indicates significant investment in future growth"
+  },
+  "margins_stability": {
+    "score": 3.333333333333333,
+    "details": "Operating margin stable or improving (0.7% -> 27.7%); No gross margin data available; Operating margin volatility is high"
+  },
+  "management_efficiency": {
+    "score": 6.666666666666666,
+    "details": "High ROE: 203.7%; High debt-to-equity: 1.24; Majority of periods have positive FCF (10/10)"
+  },
+  "valuation_analysis": {
+    "score": 0.0,
+    "details": "Very high P/E: 77.07; Excessively high P/FCF: 275.86"
+  },
+  "insider_activity": {
+    "score": 5,
+    "details": "No insider trades data; defaulting to neutral"
+  },
+  "sentiment_analysis": {
+    "score": 5,
+    "details": "No news data; defaulting to neutral sentiment"
+  },
+  "web_context": {
+    "ticker": "STX",
+    "research_date": "2026-05-07",
+    "macro_context": {
+      "market_sentiment": "Mixed but near record highs \u2014 S&P 500 set new all-time record on May 6 (7,365.12), but pulled back on May 7 (-0.38%) as oil prices rebounded and Iran peace deal optimism faded. Tech (Nvidia, Microsoft, Tesla) showed relative strength. AI/semiconductor earnings beats from AMD and Supermicro fueled optimism early in the week.",
+      "fed_outlook": "Fed held benchmark funds rate steady at 3.5%\u20133.75% at its April 28-29 meeting (Powell's final meeting as Chair) with an unusual 8-4 dissent. SEP projects one rate cut in 2026. Statement cites elevated inflation partly from rising global energy prices, signaling no imminent easing. Next FOMC meeting expected June 2026.",
+      "geopolitical": "Ongoing US-Iran war is the dominant geopolitical risk \u2014 disrupting energy markets, threatening Strait of Hormuz shipping lanes, and pushing oil prices higher. Markets rallied on May 6 on reports the US and Iran may be nearing a peace agreement, but gains partially reversed May 7 as talks remained uncertain. NATO posture in Greenland also intensifying as a secondary concern.",
+      "key_events": [
+        "US-Iran peace talks outcome \u2014 primary near-term market catalyst",
+        "Federal Reserve next meeting (June 2026) \u2014 one rate cut still on table for 2026",
+        "Ongoing AI data center capex cycle driving storage demand",
+        "Oil price volatility tied to Strait of Hormuz situation"
+      ]
+    },
+    "ticker_news": [
+      {
+        "headline": "Seagate Q3 FY2026 earnings beat: revenue $3.1B (+44% YoY), non-GAAP EPS $4.10 vs $3.50 consensus; Q4 guidance $3.45B revenue and $5.00 EPS",
+        "sentiment": "positive",
+        "source": "IndexBox / Seagate IR (April 28, 2026)"
+      },
+      {
+        "headline": "STX stock moved up 6.85% on May 5 following earnings beat and AI demand surge; stock up ~147% YTD and near 52-week highs",
+        "sentiment": "positive",
+        "source": "TradingKey (May 5, 2026)"
+      },
+      {
+        "headline": "STX opened down 3.05% on May 7 amid broader market pullback; insiders selling shares raises some concern about valuation sustainability",
+        "sentiment": "negative",
+        "source": "TradingKey (May 7, 2026)"
+      },
+      {
+        "headline": "EVP & CTO John Christopher Morris sold 5,626 STX shares on May 4 under a pre-arranged Rule 10b5-1 plan adopted January 2026; Director Stephanie Tilenius sold 1,580 shares on May 5",
+        "sentiment": "negative",
+        "source": "StockTitan / GuruFocus (May 4-5, 2026)"
+      },
+      {
+        "headline": "Seagate management stated nearline capacity is nearly fully booked through 2027, with large data centers accounting for 80% of revenue",
+        "sentiment": "positive",
+        "source": "Motley Fool / Seagate Q3 FY2026 earnings call (May 2026)"
+      }
+    ],
+    "analyst_consensus": {
+      "rating": "buy",
+      "avg_price_target": 758.94,
+      "recent_changes": "Post-Q3 earnings upgrades: Mizuho raised PT to $875 (Outperform); Morgan Stanley raised PT to $767 (Overweight) and named STX its #1 IT Hardware stock; Barclays raised PT to $750 (Overweight). BofA and Cantor Fitzgerald had raised PTs to $700 ahead of earnings. Earlier in 2026: Susquehanna upgraded from Negative to Neutral with $280 PT (Jan 16, 2026) \u2014 now significantly below current stock price (~$787). Consensus: Buy from ~20-23 analysts."
+    },
+    "competitor_activity": "Western Digital (WDC) surged 60% in April after its own earnings beat ($2.13 EPS vs $1.93 expected), positioning as a pure HDD play. Both STX and WDC have confirmed their 2026 production quotas are essentially sold out, underscoring the AI storage supercycle demand. Toshiba (private) is pursuing a cautious MAMR-first strategy before moving to HAMR. Seagate maintains a differentiated HAMR technology leadership position, already shipping 44TB drives and targeting 100TB-class products. The HDD oligopoly (just 3 players) means strong pricing power for all three.",
+    "earnings_info": "Most recent: Q3 FY2026 reported April 28, 2026 \u2014 beat estimates significantly (EPS $4.10 vs $3.50 consensus, revenue $3.1B). Next earnings (Q4 FY2026): estimated late July 2026 (sources vary: July 16, July 28, or August 4). Q4 EPS consensus estimate ~$5.01, revenue guidance ~$3.45B (provided by management on Q3 call). Sources: MarketBeat, Nasdaq.com, TipRanks."
+  }
+}
