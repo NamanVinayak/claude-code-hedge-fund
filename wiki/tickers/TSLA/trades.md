@@ -1,22 +1,22 @@
 ---
 name: TSLA trades
-last_updated: 2026-05-06
-last_run_id: 20260506_160353
+last_updated: 2026-05-07
+last_run_id: 20260507_160055
 target_words: 800
 stale_after_days: 60
-word_count: 818
-summary: No fills in trade_ledger.json per_ticker_history[TSLA]; seven swing runs analyzed (Apr 11, Apr 15, Apr 17, May 1, May 4, May 5, May 6); model recommended 1 unexecuted short (Apr 15, earnings risk) and 6 holds; consistent R/R failure and resistance-zone caution across all runs near $387-399 zone.
+word_count: 822
+summary: No fills in trade_ledger.json per_ticker_history[TSLA]; eight swing runs analyzed (Apr 11, Apr 15, Apr 17, May 1, May 4, May 5, May 6, May 7); model recommended 1 unexecuted short (Apr 15, earnings risk) and 7 holds; consistent R/R failure and resistance-zone caution across all runs near $387-409 zone.
 ---
 
 # TSLA — Trades
 
 ## TL;DR
 
-TSLA has been analyzed across seven swing runs (April–May 2026). The model recommended one short (April 15, unexecuted due to earnings binary) and six holds. No TSLA trade has ever been executed — `trade_ledger.json per_ticker_history[TSLA]` shows zero rows across all runs through 20260506_160353. The consistent theme: price keeps returning to the $387–$399 bear-rally resistance zone with R/R below 2:1, and macro or setup conditions have repeatedly blocked entry. Portfolio book tilt (currently 4 net short + 2 net long open positions in other tickers) adds an additional reason to stay neutral on TSLA at record-high market.
+TSLA has been analyzed across eight swing runs (April–May 2026). The model recommended one short (April 15, unexecuted due to earnings binary) and seven holds. No TSLA trade has ever been executed — `trade_ledger.json per_ticker_history[TSLA]` shows zero rows across all runs through 20260507_160055. The consistent theme: price keeps returning to the $387–$409.28 bear-rally resistance zone with R/R below 2:1, and macro or setup conditions have repeatedly blocked entry. On May 7, price pushed intraday to $406.85 (near the $409.28 ceiling) but failed to confirm a daily close above the zone — still watch-not-act.
 
 ## Open positions
 
-None. `trade_ledger.json per_ticker_history[TSLA]: []` (run 20260506_160353 — authoritative).
+None. `trade_ledger.json per_ticker_history[TSLA]: []` (run 20260507_160055 — authoritative).
 
 ## Model decisions log (all unexecuted)
 
@@ -52,7 +52,7 @@ None. `trade_ledger.json per_ticker_history[TSLA]: []` (run 20260506_160353 — 
 
 **Why short?** Stock bounced into $387–$399 resistance cluster. Daily downtrend intact. Four bearish strategies agreed. R/R 6.21:1 was exceptional.
 
-**Why unexecuted?** April 22 earnings binary 7 days away — any stop becomes meaningless against a 15-20% potential gap. Confidence only 49%. PM sized to 1 share and placed no order; tracker.db confirms no fill. [source: runs/20260415_093758/decisions.json]
+**Why unexecuted?** April 22 earnings binary 7 days away — any stop becomes meaningless against a 15-20% potential gap. Confidence only 49%. PM sized to 1 share and placed no order; trade_ledger confirms no fill. [source: runs/20260415_093758/decisions.json]
 
 ---
 
@@ -100,7 +100,7 @@ None. `trade_ledger.json per_ticker_history[TSLA]: []` (run 20260506_160353 — 
 | Conditional R/R | ~3:1 from entry zone midpoint |
 | Confidence | 38% |
 
-**Why hold?** Price at $390.82 still inside $387–$399 resistance cluster. 4 of 5 swing agents neutral; 1 bullish (mean_reversion, conditional limit-order only). R/R at current price ~1.96:1 fails 2:1 minimum. Head Trader conf 38, below 40 threshold. Iran escalation (May 4 missile reports near Jask) added macro veto on high-beta growth names. Three prior TSLA runs near this same zone all resulted in holds — the consistency is a signal in itself. [source: runs/20260504_161542/decisions.json, trade_ledger.json]
+**Why hold?** Price at $390.82 still inside $387–$399 resistance cluster. 4 of 5 swing agents neutral; 1 bullish (mean_reversion, conditional limit-order only). R/R at current price ~1.96:1 fails 2:1 minimum. Head Trader conf 38, below 40 threshold. Iran escalation (May 4 missile reports near Jask) added macro veto on high-beta growth names. [source: runs/20260504_161542/decisions.json, trade_ledger.json]
 
 ---
 
@@ -118,7 +118,7 @@ None. `trade_ledger.json per_ticker_history[TSLA]: []` (run 20260506_160353 — 
 | Conditional R/R | ~3:1 from $381–$385 dip zone; 1.26:1 from current price (fails 2:1) |
 | Confidence | 35% |
 
-**Why hold?** Price at $392.51 inside the $387–$399 bear-rally resistance cluster (14–15 tests). Head Trader confidence 35, below 40 capital-deployment threshold. Vote tally: 4 neutral, 1 bearish (catalyst_news, 58 conf on Warsh vote May 15 macro headwind); 0 bullish. The portfolio already carries 3 shorts (AMD, JNJ, META) — adding a 4th concentrates the short book. R/R at current price 1.26:1 (entry $392.51 to $409.28 target, stop $379) fails the 2:1 minimum. Hourly OBV bearish divergence is the strongest cross-confirmed technical read (4 of 5 agents independently flagged). [source: runs/20260505_160654/decisions.json, trade_ledger.json per_ticker_history[TSLA]=[]]
+**Why hold?** Price at $392.51 inside the $387–$399 bear-rally resistance cluster (14–15 tests). Head Trader confidence 35, below 40 capital-deployment threshold. Vote tally: 4 neutral, 1 bearish (catalyst_news, 58 conf on Warsh vote May 15 macro headwind); 0 bullish. Portfolio already carries 3 shorts (AMD, JNJ, META). [source: runs/20260505_160654/decisions.json, trade_ledger.json per_ticker_history[TSLA]=[]]
 
 ---
 
@@ -133,9 +133,27 @@ None. `trade_ledger.json per_ticker_history[TSLA]: []` (run 20260506_160353 — 
 | Conditional entry (breakout) | Daily close above $409.28 on 1.5x+ volume |
 | Target (if entered) | $409.28 (long from dip), stop $379, R/R ~3:1 |
 | Confidence | 32% |
-| Allowed actions | hold / short only (no new long per portfolio state) |
+| Allowed actions | hold / short only |
 
-**Why hold?** Price at $389.37, 7th consecutive run inside the $387–$399 resistance cluster. Head Trader confidence 32, below the 40 capital-deployment threshold. Vote tally: 4 neutral (swing_trend_momentum 30, swing_breakout 20, swing_catalyst_news 52, swing_macro_context 38), 1 bearish (swing_mean_reversion 42), 0 bullish. Short fade (entry $391, target $381.76, stop $404) delivers only 0.71:1 R/R — fails the 2:1 minimum from the short side as well. Market at S&P/Nasdaq ATH as of May 5. Book tilt: 4 net short (AMD stopped today — now JNJ, META open + AMD/GOOG closures), 2 net long (BAC, AAPL) + WDC new long; adding a 5th short into record-high market with concentrated short-book is imprudent. Bearish OBV divergence confirmed by 4/5 agents but divergence alone without level break is not a short trigger. [source: runs/20260506_160353/decisions.json, trade_ledger.json per_ticker_history[TSLA]=[]]
+**Why hold?** Price at $389.37, 7th consecutive run inside the $387–$399 resistance cluster. Head Trader confidence 32. EMA structure deteriorated (50 EMA above 10 EMA and 21 EMA). Short fade R/R 0.71:1 fails 2:1 minimum. Hourly OBV bearish divergence confirmed by 4/5 agents. [source: runs/20260506_160353/decisions.json, trade_ledger.json per_ticker_history[TSLA]=[]]
+
+---
+
+### Run: 20260507_160055 — Hold (8th consecutive)
+
+| Field | Value |
+|---|---|
+| Run date | 2026-05-07 |
+| Action | HOLD |
+| Reference price | $406.85 intraday / $398.73 daily close |
+| Conditional entry (long) | $385–$390 pullback with bullish daily reversal candle + hourly OBV reversal |
+| Conditional entry (breakout) | Daily close above $409.28 on 1.5x+ volume |
+| Target if breakout | $432 measured move; stop $404; R/R ~3.9:1 |
+| Target if dip | $409.28; stop $379; R/R ~3:1 |
+| Confidence | 38% |
+| Allowed actions | hold / short |
+
+**Why hold?** Price at $406.85 intraday — near the $409.28 ceiling but NO daily close above it. Volume 0.85x — fails the 1.5x breakout confirmation gate. RSI-7 76.34 overbought. EMA fan tangled (50 EMA $386.88 above 10 EMA $386.54). R/R from current price (upside $409.28 = 0.6%, downside to $381.40 support = 6.3%) is 0.1:1 — catastrophically below 2:1 minimum. Head Trader confidence 38, below 40 threshold. Vote tally: 5/5 neutral (cleanest possible non-trade signal). Analyst consensus PT $405.47 at essentially the same price as current — no consensus upside. Hourly OBV bearish divergence cross-confirmed by 4/5 agents across May 6 AND May 7 (two consecutive runs) — strongest cross-confirmed technical read in the dataset. Warsh Fed Chair vote May 15 (~6 days) is asymmetric risk for high-beta growth names. [source: runs/20260507_160055/decisions.json, trade_ledger.json per_ticker_history[TSLA]=[]]
 
 ---
 
@@ -149,12 +167,12 @@ None. No fills ever executed for TSLA.
 |---|---|
 | Total trades executed | 0 |
 | trade_ledger.json rows (TSLA) | 0 |
-| Model runs analyzed | 7 |
+| Model runs analyzed | 8 |
 | Unexecuted shorts recommended | 1 (Apr 15, earnings risk) |
-| Holds issued | 6 (Apr 11, Apr 17, May 1, May 4, May 5, May 6) |
+| Holds issued | 7 (Apr 11, Apr 17, May 1, May 4, May 5, May 6, May 7) |
 | Realized P&L | $0 |
 | Unrealized P&L | $0 |
 
 ## Last updated
 
-2026-05-06. Sourced from `trade_ledger.json per_ticker_history[TSLA]` (0 rows, run 20260506_160353) + decisions.json from runs swing_20260411_211655, 20260415_093758, 20260417_233350, 20260501_160246, 20260504_161542, 20260505_160654, 20260506_160353. Supersedes 2026-05-05 entry — adds 7th consecutive hold decision.
+2026-05-07. Sourced from `trade_ledger.json per_ticker_history[TSLA]` (0 rows, run 20260507_160055) + decisions.json from runs swing_20260411_211655, 20260415_093758, 20260417_233350, 20260501_160246, 20260504_161542, 20260505_160654, 20260506_160353, 20260507_160055. Supersedes 2026-05-06 entry — adds 8th consecutive hold decision; price pushed intraday to $406.85 but failed to confirm breakout; 5/5 unanimous neutral; hourly OBV divergence cross-confirmed two consecutive runs.
